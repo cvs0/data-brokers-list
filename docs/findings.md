@@ -1,51 +1,60 @@
 # Findings
 
-This pass researched all **1122** catalog rows and **1090** unique request URLs. The 154 rows added on main after the first research pass were fetched under the same rules and appended. No privacy request was submitted. Nothing is end-to-end tested. `observed_turnaround` is null everywhere.
+This pass kept the **1122** catalog rows and their stable ids. It added a headless-browser read of the automation shortlist and of catalog URLs whose research GET was blocked, a freshness recheck of every catalog URL, search-page observations, Canadian official-page notes, and verification playbooks. No privacy request was submitted. No account was created. No identity document was uploaded. No SMS was sent. No CAPTCHA was solved.
 
-`opt-outs.csv` on this branch is main's 1122-row catalog. Columns are unchanged. Stable ids for the original rows live in `data/v1/catalog-ids.csv` and on each enriched record. Catalog notes and source names are preserved under `catalog` and `catalog_claims`. They were not treated as proof.
+`opt-outs.csv` columns are unchanged. Its `http_status` values remain the 2026-10-01 catalog check. Newer HTTP results are in `data/v1/freshness-report.json`.
 
-## What the counts mean
+## Research status before and after
 
-| Research status | Records | Meaning |
-| --- | ---: | --- |
-| verified | 184 | Fetched page stated both a request type and a concrete submission path, such as a parsed form, a DSAR form, or published step-by-step instructions. |
-| partial | 651 | The page was readable, or only a shell loaded, and a removal workflow is still incomplete. Most privacy-policy URLs are here. |
-| blocked | 273 | Cloudflare challenge, HTTP 403/429, timeout, or another access failure. The URL is not marked dead. A proxy was not tested. |
-| unresearched | 0 | Every catalog URL was fetched. |
-| not_applicable | 14 | The opt-out URL now shows that the domain was transferred by court order. There is no live form. |
+| Status | Before | After |
+| --- | ---: | ---: |
+| verified | 184 | 201 |
+| partial | 651 | 717 |
+| blocked | 273 | 190 |
+| not_applicable | 14 | 14 |
 
-Verification level: **208** workflow partially inspected (form fields or an early wizard step parsed, not submitted), **641** page inspected, **273** source documented only. Direct GET content: **719** readable, **237** bot-challenge, **117** empty shell, **42** error, **7** non-HTML.
+Verification level after this pass: 243 workflow partially inspected, 689 page inspected, 190 source documented.
+Browser outcomes on the catalog rows whose URL was opened for the shortlist or the blocked retry: 114 readable, 190 still a challenge, 4 HTTP errors, 4 timeouts, 1 other error. Shared URLs are counted once per row.
 
-Automation class: **212** assisted, **325** manual, **17** not applicable, **568** unknown. **Zero** unattended automation candidates. A parsed form still had a human step, or CAPTCHA and email confirmation were not ruled out.
+A blocked URL that stayed blocked was opened again in a headless browser. If that browser still showed a challenge, HTTP 403, or timeout, the record stays blocked. `proxy_required` was not set to true. A browser that rendered the page is also not proof that a residential proxy is unnecessary for a plain HTTP client.
 
-Entry type is `unknown` for **1042** rows. The catalog category and a CPPA registry source were not treated as a finding that the company is a data broker. Ten consumer-reporting hosts were labeled from the official site plus the page text. Thirty-five pages were labeled people-search sites from their own wording. Official hosts added in this pass include Elections Canada, Elections BC, Élections Québec, Canada Post, the Canadian Marketing Association Do Not Mail service, and the federal and provincial privacy commissioners that were fetched.
+## Shortlist
 
-## Three different counts
+The 30 shortlist URLs were opened in headless Chromium. Submit buttons were not clicked, so a CAPTCHA that appears only after submit was not observed. Readable: CheckPeople, GladIKnow, USPhoneBook, NumLookup, SearchUSAPeople, PeopleConnect suppression portal, Arrests.org state request portals, Sterling, Acxiom, LexisNexis Risk Solutions, Equifax, LiveRamp, California DROP, Social Catfish, Sync.me, Apollo Interactive, UK open electoral register, Canada National Do Not Call List, DMAchoice, Elections Canada, Elections Quebec, Elections BC, Canada Post, CMA Do Not Mail. Not readable: Spokeo (challenge), CocoFinder (challenge), PublicRecords.info (challenge), FastPeopleSearch (challenge), Whitepages (challenge), OptOutPrescreen (challenge). Per-workflow notes are on each shortlist candidate and in data/v1/verification-playbooks.json.
 
-- **1122 catalog entries.** One row per name and URL, including sister brands. Stable ids for the original 968 name-and-URL pairs are unchanged.
-- **1090 unique request URLs.** Ten shared-URL groups cover 42 rows. The largest are the BeenVerified opt-out URL, the PeopleConnect suppression portal, and a TruthFinder opt-out path. A shared URL is a shared entry point. It does not by itself prove one submission covers every brand. None of the 154 added rows share a URL with an older row.
-- **Verified removal coverage is much smaller than 184.** Forty-four records are public-listing flows. One hundred forty-two are DSAR-style portals. Four hundred sixty readable pages are privacy policies. A policy that names a right and an email is partial, not a confirmed removal.
+## Freshness
 
-## Shared workflows
+Direct GET recheck on 2026-10-01T23:11:41+00:00. Drift counts: `{"blocked": 259, "moved_other_host": 10, "moved_same_site": 43, "status_changed": 10, "unchanged": 767, "unresolved_or_network_error": 1}`.
 
-PeopleConnect's suppression page says the tool applies to public data from a name search on family people-search sites, and that it does not apply to user data or to Classmates.com. The research GET only returned the page title. Form fields are still unknown.
+Moved means the final URL's host or path differs after ignoring a leading www and a trailing slash. Blocked means the recheck saw a challenge or HTTP 401/403/429/503. That is an access observation, not a dead page and not a proxy finding. Unresolved hostnames are network errors, not HTTP 404s. The catalog CSV was not rewritten.
 
-OptOutPrescreen states that a firm-offer opt-out, if the file is found, covers Equifax, Experian, Innovis, and TransUnion. It does not delete the rest of those files. The research GET was HTTP 403. That is an access observation, not evidence that a residential proxy is required.
+## Search signals
 
-Arrests.org state portals cluster into two WPForms families (20 and 9 URLs) after form ids are stripped. Each state URL is still a separate submission. A CAPTCHA marker was present. Removing a listing there does not erase the government arrest record.
+Homepage observations, one per searched domain: 67 public search forms with no result page opened, 8 pages whose copy called the search free, 29 pages with no parsed search form, and 84 homepages that did not render. No people-search query was submitted. `exposure_check` stays unknown when a result page was not opened. `search_observation` records whether the landing page showed a search form, a CAPTCHA marker, login copy, or paywall copy.
 
-Fourteen opt-out URLs, including Radaris, Rehold, and several Veriforia and related domains, now display a court-order domain transfer. They are not build targets.
+## Canada
 
-BeenVerified, TruthFinder, TruePeopleSearch, MyLife, PeopleFinders, FamilyTreeNow, SmartBackgroundChecks, Nuwber, ZoomInfo, 192.com, and PimEyes were blocked or did not expose a form in the fetched HTML. Catalog notes about their CAPTCHAs and email steps stay in `catalog_claims` only.
+51 catalog rows with a Canadian name, domain, or URL were opened in the headless browser. French-language links were followed when the page exposed one, including Canada Post, the National Do Not Call List, Élections Québec, and the Office of the Privacy Commissioner of Canada. A French page load is not a second workflow unless that page's text was quoted.
 
-## Geographic and product limits
+Eligibility was copied only when the loaded page stated it. Elections BC's page says a person who believes distributed voter lists put their privacy or security at risk can apply to omit their name and address from those lists. It does not say the voter record is deleted. The Office of the Privacy Commissioner page says to contact the organization's privacy officer before a complaint, and describes the federal and provincial paths. Environics Analytics' privacy policy says its practices are consistent with PIPEDA as well as GLBA, HIPAA, CCPA, and GDPR. That is a policy statement, not a finding that every Canadian resident can use one form.
 
-Documented eligibility was recorded only when the page stated it. US opt-out language was not copied onto pages that never mentioned geography. Canada’s National Do Not Call List, the UK open register, Elections Canada, Elections BC, and Élections Québec are official choice or public-record processes, not broker listing deletions. Elections BC’s inspected path omits a name and address from distributed lists; it does not say the voter record is deleted. Canada Post’s inspected phone path and linked database form reduce advertising mail; unaddressed mail is a separate mailbox note. The CMA Do Not Mail page describes the service, and its Register Now form was not opened. The telephone number printed there is the National Do Not Call List. California DROP is a real one-to-many deletion path for California residents and registered brokers; it was not matched broker-by-broker to this catalog. Cookie and device tools (The Trade Desk, YourAdChoices Canada, YourOnlineChoices) are not server-side removal adapters.
+The PIPEDA brief on priv.gc.ca loaded. Its captured text defines personal information and which organizations PIPEDA covers. It does not state a consumer broker opt-out. The CRTC CASL page returned a challenge. Elections Alberta's guessed registration URL was HTTP 404. Elections Saskatchewan's guessed URL was HTTP 404. Elections Ontario returned HTTP 406. Elections PEI showed a Radware captcha page. Several other provincial election and commissioner URLs timed out, returned 404, or were blocked. Those URLs were not added to `opt-outs.csv`. Outcomes are in `data/v1/canadian-coverage.json`.
 
-Canada411’s fetched page is a help index. It links to “How do I remove my listing?” and the removal steps were not on that page. Canada Pages and White Pages Canada returned bot challenges. Cogeco, Eastlink, TELUS, and SaskTel were access failures (including HTTP 401 and 403). Those URLs are not marked dead.
+## Unique workflows
 
-A search box or newsletter field on a privacy page was not treated as the opt-out. That correction also dropped a site-search form on the PhoneLookup opt-out page, on California Criminal Records Search, and on Texas Arrest Warrants Search. PhoneLookup stays verified from the written account, email, and phone-PIN steps. 411.info, Homeyou, Spectrum Mailing Lists, and SentiLink stay partial because the linked removal or do-not-sell form was not the form in the HTML.
+Shared request URLs and parsed-form families are indexed in `data/v1/workflow-groups.json`. One shared URL is one entry point. PeopleConnect's page says the suppression tool does not apply to Classmates.com or to user data; that exception is preserved. Arrests.org form families remove a commercial repost, not the government record. Catalog parenthetical brand hints remain unverified in `parent-companies.json`.
 
-## First build
+## Origin mirror
 
-The 30 workflows in `data/v1/automation-shortlist.json` are the implementation queue. Start with Spokeo, CheckPeople, CocoFinder, the GladIKnow form family, and USPhoneBook. Hold PeopleConnect, Whitepages, and FastPeopleSearch until the blocked or unopened steps are inspected in a normal browser. Do not automate Equifax SSN fields or LiveRamp identity documents. The added Canadian rows are official mail, voter-list, and Do Not Mail processes, not people-search adapters.
+This agent could not update the Origin mirror at https://cursor.com/codebase/cvs0/data-brokers-list. A fetch of that URL returned HTTP 500, and this environment has no Origin write tool. GitHub `main` before this branch is commit `18faa83`, with 1122 catalog rows and `data/v1/`. The task described Origin as still on the early catalog of about 704 rows. That drift was not re-read from Origin.
+
+To sync after this pull request merges, fast-forward the Origin codebase to GitHub `main`. Confirm `opt-outs.csv` has 1122 data rows and that `data/v1/broker-opt-outs.enriched.json` is present. Do not copy a third-party opt-out guide into the mirror.
+
+## Still unresolved
+
+- Headless-browser challenges and HTTP 403/429 responses. A residential proxy was not tested.
+- Screens behind submit buttons, email links, accounts, SMS, and CAPTCHA.
+- Whether a free search form leads to a full listing without payment. Result pages were not opened.
+- Provincial voter and commissioner pages that did not load in this environment.
+- Sister brands that share only a catalog-name hint.
+- End-to-end acknowledgement, broker confirmation, and removal. None were tested.

@@ -22,8 +22,8 @@ EVIDENCE_PATH = ROOT / "research" / "evidence" / "url-evidence.jsonl"
 OVERRIDES_PATH = ROOT / "research" / "manual" / "overrides.json"
 URL_OVERRIDES_PATH = ROOT / "research" / "manual" / "url-overrides.json"
 OUT_DIR = ROOT / "data" / "v1"
-SCHEMA_VERSION = "1.0.0"
-DATASET_VERSION = "1.0.0"
+SCHEMA_VERSION = "1.1.0"
+DATASET_VERSION = "1.1.0"
 
 REQUEST_PATTERNS = {
     "public_listing_suppression": [
@@ -700,7 +700,14 @@ def research_record(row: dict, evidence: dict | None) -> dict:
         fields_observation = "non_html"
     email_sentence = first_sentence(
         text,
-        ("confirmation email", "confirm your email", "click the link", "verification code", "click this link"),
+        (
+            "confirmation email",
+            "confirm your email",
+            "click the link",
+            "verification code",
+            "click this link",
+            "verification email",
+        ),
     ) if quality == "readable" else None
     email_required = None
     email_mechanism = "unknown"
@@ -1297,6 +1304,11 @@ def main() -> None:
                 record["identity"]["sister_brands"].append(extra)
 
     parents = parent_mappings(records)
+    browser_log = ROOT / "research" / "evidence" / "browser-pass.jsonl"
+    if browser_log.exists():
+        from apply_browser_pass import apply_observations
+
+        apply_observations(records)
     report = progress_report(records, portals, families)
     dataset = {
         "schema_version": SCHEMA_VERSION,

@@ -11,8 +11,11 @@
       "verification_level": "workflow_partially_inspected",
       "research_status": "verified",
       "implementation_effort": "medium",
-      "blockers": ["verification"],
-      "why": "Direct GET returned the opt-out form. It asks for the public profile URL and an email, then a confirmation link. The page says 24-48 hours and that listings can reappear and must be removed one URL at a time. Spokeo (data) uses the same URL. CAPTCHA was not present on the parsed form; a later step could still add one."
+      "blockers": [
+        "verification"
+      ],
+      "why": "Direct GET returned the opt-out form. It asks for the public profile URL and an email, then a confirmation link. The page says 24-48 hours and that listings can reappear and must be removed one URL at a time. Spokeo (data) uses the same URL. CAPTCHA was not present on the parsed form; a later step could still add one. Browser pass: Headless browser outcome challenge (HTTP 403). No form was submitted and no CAPTCHA was solved.",
+      "browser_note": "Headless browser outcome challenge (HTTP 403). No form was submitted and no CAPTCHA was solved."
     },
     {
       "rank": 2,
@@ -23,7 +26,8 @@
       "research_status": "verified",
       "implementation_effort": "medium",
       "blockers": [],
-      "why": "Direct GET parsed a suppression-tool email field and no login field. Information.com exposes the same single email-field shape. CAPTCHA was not in the parsed HTML and is not proven absent. The rest of the suppression flow was not walked."
+      "why": "Direct GET parsed a suppression-tool email field and no login field. Information.com exposes the same single email-field shape. CAPTCHA was not in the parsed HTML and is not proven absent. The rest of the suppression flow was not walked. Browser pass: Headless browser outcome readable (HTTP 200). No form was submitted and no CAPTCHA was solved. No CAPTCHA marker was visible on the inspected screen. A control labeled 'Continue' is a submit button. It was not clicked, so any later CAPTCHA or wizard step was not observed.",
+      "browser_note": "Headless browser outcome readable (HTTP 200). No form was submitted and no CAPTCHA was solved. No CAPTCHA marker was visible on the inspected screen. A control labeled 'Continue' is a submit button. It was not clicked, so any later CAPTCHA or wizard step was not observed."
     },
     {
       "rank": 3,
@@ -34,7 +38,8 @@
       "research_status": "verified",
       "implementation_effort": "medium",
       "blockers": [],
-      "why": "Direct GET of the remove-my-info page parsed a name-or-phone search field. cocofinder.net has the same parsed field on its own URL, so it is a second submission target with the same shape, not proof that one request covers both domains."
+      "why": "Direct GET of the remove-my-info page parsed a name-or-phone search field. cocofinder.net has the same parsed field on its own URL, so it is a second submission target with the same shape, not proof that one request covers both domains. Browser pass: Headless browser outcome challenge (HTTP 403). No form was submitted and no CAPTCHA was solved. CAPTCHA markers in the rendered page: turnstile.",
+      "browser_note": "Headless browser outcome challenge (HTTP 403). No form was submitted and no CAPTCHA was solved. CAPTCHA markers in the rendered page: turnstile."
     },
     {
       "rank": 4,
@@ -44,8 +49,11 @@
       "verification_level": "workflow_partially_inspected",
       "research_status": "verified",
       "implementation_effort": "medium",
-      "blockers": ["verification"],
-      "why": "Parsed name, city, and state fields. The same form structure appears on GovernmentRegistry.org, which is also a two-brand shared URL. Email verification is indicated. Build one adapter for this form family and keep each URL as its own submission."
+      "blockers": [
+        "verification"
+      ],
+      "why": "Parsed name, city, and state fields. The same form structure appears on GovernmentRegistry.org, which is also a two-brand shared URL. Email verification is indicated. Build one adapter for this form family and keep each URL as its own submission. Browser pass: Headless browser outcome readable (HTTP 200). No form was submitted and no CAPTCHA was solved. No CAPTCHA marker was visible on the inspected screen.",
+      "browser_note": "Headless browser outcome readable (HTTP 200). No form was submitted and no CAPTCHA was solved. No CAPTCHA marker was visible on the inspected screen."
     },
     {
       "rank": 5,
@@ -55,8 +63,12 @@
       "verification_level": "workflow_partially_inspected",
       "research_status": "verified",
       "implementation_effort": "medium",
-      "blockers": ["captcha", "verification"],
-      "why": "The opt-out page states a CAPTCHA, an emailed link, name and phone fields, and about three days to process. unitedstatesphonebook-usphonebook points at a second USPhoneBook URL with the same parsed shape. High phone-listing exposure, with two human gates."
+      "blockers": [
+        "captcha",
+        "verification"
+      ],
+      "why": "The opt-out page states a CAPTCHA, an emailed link, name and phone fields, and about three days to process. unitedstatesphonebook-usphonebook points at a second USPhoneBook URL with the same parsed shape. High phone-listing exposure, with two human gates. Browser pass: Headless browser outcome readable (HTTP 200). No form was submitted and no CAPTCHA was solved. CAPTCHA markers in the rendered page: recaptcha. Browser final URL: https://www.usphonebook.com/removal",
+      "browser_note": "Headless browser outcome readable (HTTP 200). No form was submitted and no CAPTCHA was solved. CAPTCHA markers in the rendered page: recaptcha. Browser final URL: https://www.usphonebook.com/removal"
     },
     {
       "rank": 6,
@@ -67,7 +79,8 @@
       "research_status": "verified",
       "implementation_effort": "medium",
       "blockers": [],
-      "why": "Direct GET parsed phone, full name, and state on a sale opt-out form, with a phone method also published. No CAPTCHA widget was parsed. Confirmation behavior after submit is unknown because nothing was submitted."
+      "why": "Direct GET parsed phone, full name, and state on a sale opt-out form, with a phone method also published. No CAPTCHA widget was parsed. Confirmation behavior after submit is unknown because nothing was submitted. Browser pass: Headless browser outcome readable (HTTP 200). No form was submitted and no CAPTCHA was solved. CAPTCHA markers in the rendered page: recaptcha.",
+      "browser_note": "Headless browser outcome readable (HTTP 200). No form was submitted and no CAPTCHA was solved. CAPTCHA markers in the rendered page: recaptcha."
     },
     {
       "rank": 7,
@@ -78,7 +91,8 @@
       "research_status": "verified",
       "implementation_effort": "medium",
       "blockers": [],
-      "why": "Direct GET parsed a data-removal form with first name, last name, city, and state. The catalog name links it to InfoTracer; that ownership was not re-proven on this page. InfoTracer's own opt-out URL was only a privacy-policy contact path."
+      "why": "Direct GET parsed a data-removal form with first name, last name, city, and state. The catalog name links it to InfoTracer; that ownership was not re-proven on this page. InfoTracer's own opt-out URL was only a privacy-policy contact path. Browser pass: Headless browser outcome readable (HTTP 200). No form was submitted and no CAPTCHA was solved. No CAPTCHA marker was visible on the inspected screen.",
+      "browser_note": "Headless browser outcome readable (HTTP 200). No form was submitted and no CAPTCHA was solved. No CAPTCHA marker was visible on the inspected screen."
     },
     {
       "rank": 8,
@@ -89,18 +103,22 @@
       "research_status": "verified",
       "implementation_effort": "medium",
       "blockers": [],
-      "why": "Parsed fields include a request-type select, an email, a declaration checkbox, and a full-name search. Useful where one site offers more than one request type. Later confirmation steps were not opened."
+      "why": "Parsed fields include a request-type select, an email, a declaration checkbox, and a full-name search. Useful where one site offers more than one request type. Later confirmation steps were not opened. Browser pass: Headless browser outcome challenge (HTTP 403). No form was submitted and no CAPTCHA was solved.",
+      "browser_note": "Headless browser outcome challenge (HTTP 403). No form was submitted and no CAPTCHA was solved."
     },
     {
       "rank": 9,
       "entry_id": "anywho-intelius-peopleconnect",
       "name": "PeopleConnect suppression portal",
       "automation_classification": "assisted_workflow",
-      "verification_level": "page_inspected",
-      "research_status": "partial",
+      "verification_level": "workflow_partially_inspected",
+      "research_status": "verified",
       "implementation_effort": "high",
-      "blockers": [],
-      "why": "Highest brand leverage in the catalog: many rows share suppression.peopleconnect.us. The page says the tool covers public name-search data on PeopleConnect people-search sites and explicitly excludes Classmates.com and user data. The research GET was an empty shell. A rendered reader showed Start Here, Identity, and Suppression Settings, but those forms were not opened. Do not ship this adapter until the form fields are inspected."
+      "blockers": [
+        "verification"
+      ],
+      "why": "Highest brand leverage in the catalog: many rows share suppression.peopleconnect.us. The page says the tool covers public name-search data on PeopleConnect people-search sites and explicitly excludes Classmates.com and user data. The research GET was an empty shell. A rendered reader showed Start Here, Identity, and Suppression Settings, but those forms were not opened. Do not ship this adapter until the form fields are inspected. Browser pass: Headless browser outcome readable (HTTP 200). No form was submitted and no CAPTCHA was solved. Rendered text includes: Step 1. No CAPTCHA marker was visible on the inspected screen. A control labeled 'Continue' is a submit button. It was not clicked, so any later CAPTCHA or wizard step was not observed. Browser final URL: https://suppression.peopleconnect.us/login",
+      "browser_note": "Headless browser outcome readable (HTTP 200). No form was submitted and no CAPTCHA was solved. Rendered text includes: Step 1. No CAPTCHA marker was visible on the inspected screen. A control labeled 'Continue' is a submit button. It was not clicked, so any later CAPTCHA or wizard step was not observed. Browser final URL: https://suppression.peopleconnect.us/login"
     },
     {
       "rank": 10,
@@ -110,8 +128,11 @@
       "verification_level": "workflow_partially_inspected",
       "research_status": "verified",
       "implementation_effort": "medium",
-      "blockers": ["captcha"],
-      "why": "Representative of the WPForms request-portal family. About 20 state arrest sites share one field structure and about 9 share another. Form ids differ and each URL is its own submission. A CAPTCHA marker was present. This removes a commercial repost of an arrest record, not the government record."
+      "blockers": [
+        "captcha"
+      ],
+      "why": "Representative of the WPForms request-portal family. About 20 state arrest sites share one field structure and about 9 share another. Form ids differ and each URL is its own submission. A CAPTCHA marker was present. This removes a commercial repost of an arrest record, not the government record. Browser pass: Headless browser outcome readable (HTTP 200). No form was submitted and no CAPTCHA was solved. CAPTCHA markers in the rendered page: turnstile.",
+      "browser_note": "Headless browser outcome readable (HTTP 200). No form was submitted and no CAPTCHA was solved. CAPTCHA markers in the rendered page: turnstile."
     },
     {
       "rank": 11,
@@ -121,8 +142,11 @@
       "verification_level": "workflow_partially_inspected",
       "research_status": "verified",
       "implementation_effort": "medium",
-      "blockers": ["captcha"],
-      "why": "Background-check privacy form with parsed first name, last name, email, and address. A CAPTCHA marker was present. Relevant to employment-screening exposure rather than a casual people-search listing."
+      "blockers": [
+        "captcha"
+      ],
+      "why": "Background-check privacy form with parsed first name, last name, email, and address. A CAPTCHA marker was present. Relevant to employment-screening exposure rather than a casual people-search listing. Browser pass: Headless browser outcome readable (HTTP 200). No form was submitted and no CAPTCHA was solved. CAPTCHA markers in the rendered page: recaptcha.",
+      "browser_note": "Headless browser outcome readable (HTTP 200). No form was submitted and no CAPTCHA was solved. CAPTCHA markers in the rendered page: recaptcha."
     },
     {
       "rank": 12,
@@ -132,8 +156,13 @@
       "verification_level": "page_inspected",
       "research_status": "verified",
       "implementation_effort": "high",
-      "blockers": ["bot_wall", "captcha", "verification"],
-      "why": "The official instructions are unusually specific: CAPTCHA, emailed link that expires in 24 hours, record form, confirmation page, and about three days. The research GET was blocked by Cloudflare. A rendered reader supplied the instructions. No selectors were captured. High exposure, poor direct access."
+      "blockers": [
+        "bot_wall",
+        "captcha",
+        "verification"
+      ],
+      "why": "The official instructions are unusually specific: CAPTCHA, emailed link that expires in 24 hours, record form, confirmation page, and about three days. The research GET was blocked by Cloudflare. A rendered reader supplied the instructions. No selectors were captured. High exposure, poor direct access. Browser pass: Headless browser outcome challenge (HTTP 403). No form was submitted and no CAPTCHA was solved.",
+      "browser_note": "Headless browser outcome challenge (HTTP 403). No form was submitted and no CAPTCHA was solved."
     },
     {
       "rank": 13,
@@ -143,8 +172,11 @@
       "verification_level": "workflow_partially_inspected",
       "research_status": "partial",
       "implementation_effort": "high",
-      "blockers": ["bot_wall"],
-      "why": "Only step 1 of 5 was visible: paste the profile URL. 411.com shares the URL. The research GET was a Cloudflare challenge. Catalog claims of a phone code were not on the inspected step and stay unverified."
+      "blockers": [
+        "bot_wall"
+      ],
+      "why": "Only step 1 of 5 was visible: paste the profile URL. 411.com shares the URL. The research GET was a Cloudflare challenge. Catalog claims of a phone code were not on the inspected step and stay unverified. Browser pass: Headless browser outcome challenge (HTTP 403). No form was submitted and no CAPTCHA was solved. CAPTCHA markers in the rendered page: turnstile.",
+      "browser_note": "Headless browser outcome challenge (HTTP 403). No form was submitted and no CAPTCHA was solved. CAPTCHA markers in the rendered page: turnstile."
     },
     {
       "rank": 14,
@@ -154,8 +186,11 @@
       "verification_level": "page_inspected",
       "research_status": "partial",
       "implementation_effort": "medium",
-      "blockers": ["verification"],
-      "why": "US opt-out, access, and deletion are described, with email confirmation, phone, and mail, and processing within two weeks after the confirmation. No request form fields were parsed, so this is a guided manual flow, not a filled form. Strong marketing-data coverage, weaker UI inspection."
+      "blockers": [
+        "verification"
+      ],
+      "why": "US opt-out, access, and deletion are described, with email confirmation, phone, and mail, and processing within two weeks after the confirmation. No request form fields were parsed, so this is a guided manual flow, not a filled form. Strong marketing-data coverage, weaker UI inspection. Browser pass: Headless browser outcome readable (HTTP 200). No form was submitted and no CAPTCHA was solved. No CAPTCHA marker was visible on the inspected screen.",
+      "browser_note": "Headless browser outcome readable (HTTP 200). No form was submitted and no CAPTCHA was solved. No CAPTCHA marker was visible on the inspected screen."
     },
     {
       "rank": 15,
@@ -165,8 +200,11 @@
       "verification_level": "page_inspected",
       "research_status": "verified",
       "implementation_effort": "medium",
-      "blockers": ["inaccessible_page"],
-      "why": "One official firm-offer opt-out for Equifax, Experian, Innovis, and TransUnion. Five years can be requested electronically; permanent opt-out is by mail. It does not delete other bureau data. The research GET was HTTP 403. A rendered reader saw the explanation, not the form fields. A 403 here is not proof that a residential proxy is required."
+      "blockers": [
+        "inaccessible_page"
+      ],
+      "why": "One official firm-offer opt-out for Equifax, Experian, Innovis, and TransUnion. Five years can be requested electronically; permanent opt-out is by mail. It does not delete other bureau data. The research GET was HTTP 403. A rendered reader saw the explanation, not the form fields. A 403 here is not proof that a residential proxy is required. Browser pass: Headless browser outcome challenge (HTTP 403). No form was submitted and no CAPTCHA was solved.",
+      "browser_note": "Headless browser outcome challenge (HTTP 403). No form was submitted and no CAPTCHA was solved."
     },
     {
       "rank": 16,
@@ -176,8 +214,11 @@
       "verification_level": "page_inspected",
       "research_status": "verified",
       "implementation_effort": "high",
-      "blockers": ["verification"],
-      "why": "The consumer portal separates direct marketing, FCRA prescreen lists, and public-safety suppression. Safety suppression requires documents. A LexisNexis prescreen opt-out does not cover Equifax, TransUnion, or Experian. Online, mail, and phone are offered. Online fields were not parsed."
+      "blockers": [
+        "verification"
+      ],
+      "why": "The consumer portal separates direct marketing, FCRA prescreen lists, and public-safety suppression. Safety suppression requires documents. A LexisNexis prescreen opt-out does not cover Equifax, TransUnion, or Experian. Online, mail, and phone are offered. Online fields were not parsed. Browser pass: Headless browser outcome readable (HTTP 200). No form was submitted and no CAPTCHA was solved. No CAPTCHA marker was visible on the inspected screen.",
+      "browser_note": "Headless browser outcome readable (HTTP 200). No form was submitted and no CAPTCHA was solved. No CAPTCHA marker was visible on the inspected screen."
     },
     {
       "rank": 17,
@@ -187,8 +228,11 @@
       "verification_level": "workflow_partially_inspected",
       "research_status": "verified",
       "implementation_effort": "high",
-      "blockers": ["verification"],
-      "why": "Step 1 asks for name and address. Date of birth, SSN or ITIN, email, and mobile are optional. Step 2, labeled Verify, was not opened. The page says any US state may use this sale or sharing opt-out and that the FCRA credit report is unaffected. The research GET was an empty shell; a rendered reader showed the form. Do not automate SSN collection."
+      "blockers": [
+        "verification"
+      ],
+      "why": "Step 1 asks for name and address. Date of birth, SSN or ITIN, email, and mobile are optional. Step 2, labeled Verify, was not opened. The page says any US state may use this sale or sharing opt-out and that the FCRA credit report is unaffected. The research GET was an empty shell; a rendered reader showed the form. Do not automate SSN collection. Browser pass: Headless browser outcome readable (HTTP 200). No form was submitted and no CAPTCHA was solved. CAPTCHA markers in the rendered page: recaptcha. A control labeled 'Learn more' is a submit button. It was not clicked, so any later CAPTCHA or wizard step was not observed.",
+      "browser_note": "Headless browser outcome readable (HTTP 200). No form was submitted and no CAPTCHA was solved. CAPTCHA markers in the rendered page: recaptcha. A control labeled 'Learn more' is a submit button. It was not clicked, so any later CAPTCHA or wizard step was not observed."
     },
     {
       "rank": 18,
@@ -198,8 +242,9 @@
       "verification_level": "page_inspected",
       "research_status": "verified",
       "implementation_effort": "high",
-      "blockers": ["verification"],
-      "why": "Opt-out is described for any US resident. Access, correction, and deletion are limited to states the page lists and, for access and deletion, require identity evidence. The page says deletion and opt-out have different effects and publishes a phone tree. Cookie and device opt-outs are a separate browser-specific path. Not a first unattended adapter."
+      "blockers": [],
+      "why": "Opt-out is described for any US resident. Access, correction, and deletion are limited to states the page lists and, for access and deletion, require identity evidence. The page says deletion and opt-out have different effects and publishes a phone tree. Cookie and device opt-outs are a separate browser-specific path. Not a first unattended adapter. Browser pass: Headless browser outcome readable (HTTP 200). No form was submitted and no CAPTCHA was solved. No CAPTCHA marker was visible on the inspected screen.",
+      "browser_note": "Headless browser outcome readable (HTTP 200). No form was submitted and no CAPTCHA was solved. No CAPTCHA marker was visible on the inspected screen."
     },
     {
       "rank": 19,
@@ -209,8 +254,12 @@
       "verification_level": "page_inspected",
       "research_status": "verified",
       "implementation_effort": "high",
-      "blockers": ["bot_wall", "verification"],
-      "why": "Official one-request path to registered California data brokers, limited to California residents and the state identity gateway. Brokers must check DROP at least every 45 days starting August 1, 2026, and status can take up to 90 days. It does not map one-to-one onto this catalog. The research GET hit Cloudflare. High leverage, not a per-broker form filler."
+      "blockers": [
+        "bot_wall",
+        "verification"
+      ],
+      "why": "Official one-request path to registered California data brokers, limited to California residents and the state identity gateway. Brokers must check DROP at least every 45 days starting August 1, 2026, and status can take up to 90 days. It does not map one-to-one onto this catalog. The research GET hit Cloudflare. High leverage, not a per-broker form filler. Browser pass: Headless browser outcome readable (HTTP 200). No form was submitted and no CAPTCHA was solved. Rendered text includes: Step 1. Verify your eligibility. No CAPTCHA marker was visible on the inspected screen.",
+      "browser_note": "Headless browser outcome readable (HTTP 200). No form was submitted and no CAPTCHA was solved. Rendered text includes: Step 1. Verify your eligibility. No CAPTCHA marker was visible on the inspected screen."
     },
     {
       "rank": 20,
@@ -220,8 +269,12 @@
       "verification_level": "workflow_partially_inspected",
       "research_status": "verified",
       "implementation_effort": "high",
-      "blockers": ["captcha", "login"],
-      "why": "Parsed opt-out fields include email, address, a password login, and a profile-style input, plus a CAPTCHA marker. Real people-search exposure, but login and CAPTCHA make it a later adapter."
+      "blockers": [
+        "captcha",
+        "login"
+      ],
+      "why": "Parsed opt-out fields include email, address, a password login, and a profile-style input, plus a CAPTCHA marker. Real people-search exposure, but login and CAPTCHA make it a later adapter. Browser pass: Headless browser outcome readable (HTTP 200). No form was submitted and no CAPTCHA was solved. Rendered text includes: STEP 01. CAPTCHA markers in the rendered page: turnstile. A control labeled 'Continue' is a submit button. It was not clicked, so any later CAPTCHA or wizard step was not observed. Browser final URL: https://socialcatfish.com/opt-out/?id=request_optout",
+      "browser_note": "Headless browser outcome readable (HTTP 200). No form was submitted and no CAPTCHA was solved. Rendered text includes: STEP 01. CAPTCHA markers in the rendered page: turnstile. A control labeled 'Continue' is a submit button. It was not clicked, so any later CAPTCHA or wizard step was not observed. Browser final URL: https://socialcatfish.com/opt-out/?id=request_optout"
     },
     {
       "rank": 21,
@@ -231,8 +284,11 @@
       "verification_level": "workflow_partially_inspected",
       "research_status": "verified",
       "implementation_effort": "medium",
-      "blockers": ["captcha"],
-      "why": "Caller-ID exposure. Parsed name, email, and phone fields on the unsubscribe page, with a CAPTCHA marker. A processing-time sentence was not cleanly extracted. Direct GET worked."
+      "blockers": [
+        "captcha"
+      ],
+      "why": "Caller-ID exposure. Parsed name, email, and phone fields on the unsubscribe page, with a CAPTCHA marker. A processing-time sentence was not cleanly extracted. Direct GET worked. Browser pass: Headless browser outcome readable (HTTP 200). No form was submitted and no CAPTCHA was solved. CAPTCHA markers in the rendered page: turnstile.",
+      "browser_note": "Headless browser outcome readable (HTTP 200). No form was submitted and no CAPTCHA was solved. CAPTCHA markers in the rendered page: turnstile."
     },
     {
       "rank": 22,
@@ -242,8 +298,11 @@
       "verification_level": "workflow_partially_inspected",
       "research_status": "verified",
       "implementation_effort": "medium",
-      "blockers": ["captcha"],
-      "why": "Simple parsed name, email, and message form for a marketing-site DSAR, with a CAPTCHA marker. Lower people-search exposure than the listing sites above. Included as a clean DSAR shape, not as a priority removal target."
+      "blockers": [
+        "captcha"
+      ],
+      "why": "Simple parsed name, email, and message form for a marketing-site DSAR, with a CAPTCHA marker. Lower people-search exposure than the listing sites above. Included as a clean DSAR shape, not as a priority removal target. Browser pass: Headless browser outcome readable (HTTP 200). No form was submitted and no CAPTCHA was solved. No CAPTCHA marker was visible on the inspected screen.",
+      "browser_note": "Headless browser outcome readable (HTTP 200). No form was submitted and no CAPTCHA was solved. No CAPTCHA marker was visible on the inspected screen."
     },
     {
       "rank": 23,
@@ -254,7 +313,8 @@
       "research_status": "verified",
       "implementation_effort": "high",
       "blockers": [],
-      "why": "Official GOV.UK guidance. Opt out through the register-to-vote service or the local electoral registration office. England, Scotland, Wales, Northern Ireland, and overseas voters are different contacts. The full register cannot be opted out. There is no single broker form to automate."
+      "why": "Official GOV.UK guidance. Opt out through the register-to-vote service or the local electoral registration office. England, Scotland, Wales, Northern Ireland, and overseas voters are different contacts. The full register cannot be opted out. There is no single broker form to automate. Browser pass: Headless browser outcome readable (HTTP 200). No form was submitted and no CAPTCHA was solved. No CAPTCHA marker was visible on the inspected screen.",
+      "browser_note": "Headless browser outcome readable (HTTP 200). No form was submitted and no CAPTCHA was solved. No CAPTCHA marker was visible on the inspected screen."
     },
     {
       "rank": 24,
@@ -265,7 +325,8 @@
       "research_status": "verified",
       "implementation_effort": "medium",
       "blockers": [],
-      "why": "Official CRTC telemarketing registry, not a people-search deletion. Registration is free and telemarketers have 31 days. The consumer registration form fields were not parsed; phone and email contacts were. Useful for Canadian coverage and easy to confuse with broker removal."
+      "why": "Official CRTC telemarketing registry, not a people-search deletion. Registration is free and telemarketers have 31 days. The consumer registration form fields were not parsed; phone and email contacts were. Useful for Canadian coverage and easy to confuse with broker removal. Browser pass: Headless browser outcome readable (HTTP 200). No form was submitted and no CAPTCHA was solved. No CAPTCHA marker was visible on the inspected screen. Browser final URL: https://www.lnnte-dncl.gc.ca/fr",
+      "browser_note": "Headless browser outcome readable (HTTP 200). No form was submitted and no CAPTCHA was solved. No CAPTCHA marker was visible on the inspected screen. Browser final URL: https://www.lnnte-dncl.gc.ca/fr"
     },
     {
       "rank": 25,
@@ -275,8 +336,11 @@
       "verification_level": "workflow_partially_inspected",
       "research_status": "partial",
       "implementation_effort": "high",
-      "blockers": ["login"],
-      "why": "ANA mail-preference service. The fetched page is a login and registration form, not the preference form itself. Request types and the post-login steps are unknown. Include only as a marketing-mail choice, behind account creation."
+      "blockers": [
+        "login"
+      ],
+      "why": "ANA mail-preference service. The fetched page is a login and registration form, not the preference form itself. Request types and the post-login steps are unknown. Include only as a marketing-mail choice, behind account creation. Browser pass: Headless browser outcome readable (HTTP 200). No form was submitted and no CAPTCHA was solved. No CAPTCHA marker was visible on the inspected screen.",
+      "browser_note": "Headless browser outcome readable (HTTP 200). No form was submitted and no CAPTCHA was solved. No CAPTCHA marker was visible on the inspected screen."
     },
     {
       "rank": 26,
@@ -287,7 +351,8 @@
       "research_status": "verified",
       "implementation_effort": "high",
       "blockers": [],
-      "why": "Official National Register of Electors opt-out. The page says to write to Elections Canada with name, date of birth, home and mailing addresses, and a signature. Opting out does not remove the right to vote, and the person must be added to the list again in order to vote. No web form was on the inspected page."
+      "why": "Official National Register of Electors opt-out. The page says to write to Elections Canada with name, date of birth, home and mailing addresses, and a signature. Opting out does not remove the right to vote, and the person must be added to the list again in order to vote. No web form was on the inspected page. Browser pass: Headless browser outcome readable (HTTP 500). No form was submitted and no CAPTCHA was solved. No CAPTCHA marker was visible on the inspected screen.",
+      "browser_note": "Headless browser outcome readable (HTTP 500). No form was submitted and no CAPTCHA was solved. No CAPTCHA marker was visible on the inspected screen."
     },
     {
       "rank": 27,
@@ -297,8 +362,11 @@
       "verification_level": "page_inspected",
       "research_status": "verified",
       "implementation_effort": "high",
-      "blockers": ["verification"],
-      "why": "Élections Québec states three ways to be struck from the permanent list of electors: a mailed letter, the secure contact link, or a phone request for an application. Two supporting documents are required. The contact form was not opened. This is a voters-list process, not a broker deletion."
+      "blockers": [
+        "verification"
+      ],
+      "why": "Élections Québec states three ways to be struck from the permanent list of electors: a mailed letter, the secure contact link, or a phone request for an application. Two supporting documents are required. The contact form was not opened. This is a voters-list process, not a broker deletion. Browser pass: Headless browser outcome readable (HTTP 200). No form was submitted and no CAPTCHA was solved. CAPTCHA markers in the rendered page: turnstile. Browser final URL: https://www.electionsquebec.qc.ca/voter/sinscrire-sur-la-liste-electorale-ou-modifier-une-inscription/",
+      "browser_note": "Headless browser outcome readable (HTTP 200). No form was submitted and no CAPTCHA was solved. CAPTCHA markers in the rendered page: turnstile. Browser final URL: https://www.electionsquebec.qc.ca/voter/sinscrire-sur-la-liste-electorale-ou-modifier-une-inscription/"
     },
     {
       "rank": 28,
@@ -309,18 +377,22 @@
       "research_status": "verified",
       "implementation_effort": "medium",
       "blockers": [],
-      "why": "Elections BC says a person who believes distributed voter lists put their privacy or security at risk can call 1-800-661-8683 or write to the Director, Voter Data and Geography. The request omits name and address from those lists. It does not say the voter record is deleted."
+      "why": "Elections BC says a person who believes distributed voter lists put their privacy or security at risk can call 1-800-661-8683 or write to the Director, Voter Data and Geography. The request omits name and address from those lists. It does not say the voter record is deleted. Browser pass: Headless browser outcome readable (HTTP 200). No form was submitted and no CAPTCHA was solved. No CAPTCHA marker was visible on the inspected screen.",
+      "browser_note": "Headless browser outcome readable (HTTP 200). No form was submitted and no CAPTCHA was solved. No CAPTCHA marker was visible on the inspected screen."
     },
     {
       "rank": 29,
       "entry_id": "canada-post",
       "name": "Canada Post",
-      "automation_classification": "manual_workflow",
-      "verification_level": "page_inspected",
+      "automation_classification": "assisted_workflow",
+      "verification_level": "workflow_partially_inspected",
       "research_status": "verified",
       "implementation_effort": "medium",
-      "blockers": [],
-      "why": "Official advertising-mail page. Addressed mail that uses Canada Post lists can be stopped by phone at 1-800-267-1177 or by a linked database form that was not opened. Unaddressed mail is a note on the mailbox. Removal applies only to the current address, may take 10 business days, and addressed mail can continue for 90 days. Election mail and public-interest mail continue."
+      "blockers": [
+        "login"
+      ],
+      "why": "Official advertising-mail page. Addressed mail that uses Canada Post lists can be stopped by phone at 1-800-267-1177 or by a linked database form that was not opened. Unaddressed mail is a note on the mailbox. Removal applies only to the current address, may take 10 business days, and addressed mail can continue for 90 days. Election mail and public-interest mail continue. Browser pass: Headless browser outcome readable (HTTP 200). No form was submitted and no CAPTCHA was solved. No CAPTCHA marker was visible on the inspected screen. Browser final URL: https://www.canadapost-postescanada.ca/scp/fr/soutien/bc/recevoir/faq-livraison/comment-arreter-de-recevoir-de-la-publicite.page",
+      "browser_note": "Headless browser outcome readable (HTTP 200). No form was submitted and no CAPTCHA was solved. No CAPTCHA marker was visible on the inspected screen. Browser final URL: https://www.canadapost-postescanada.ca/scp/fr/soutien/bc/recevoir/faq-livraison/comment-arreter-de-recevoir-de-la-publicite.page"
     },
     {
       "rank": 30,
@@ -331,7 +403,8 @@
       "research_status": "partial",
       "implementation_effort": "high",
       "blockers": [],
-      "why": "The Canadian Marketing Association Do Not Mail page describes a free service that reduces personally addressed marketing mail. Register Now was not opened, so the fields are unknown. The 1-866 number on the page is the National Do Not Call List, not this mail registration. Same class of gap as DMAchoice: the service is real and the form is still uninspected."
+      "why": "The Canadian Marketing Association Do Not Mail page describes a free service that reduces personally addressed marketing mail. Register Now was not opened, so the fields are unknown. The 1-866 number on the page is the National Do Not Call List, not this mail registration. Same class of gap as DMAchoice: the service is real and the form is still uninspected. Browser pass: Headless browser outcome readable (HTTP 200). No form was submitted and no CAPTCHA was solved. No CAPTCHA marker was visible on the inspected screen. Browser final URL: https://www.thecma.ca/resources/centre-des-consommateurs/recevoir-moins-de-courrier-adress%C3%A9",
+      "browser_note": "Headless browser outcome readable (HTTP 200). No form was submitted and no CAPTCHA was solved. No CAPTCHA marker was visible on the inspected screen. Browser final URL: https://www.thecma.ca/resources/centre-des-consommateurs/recevoir-moins-de-courrier-adress%C3%A9"
     }
   ]
 }

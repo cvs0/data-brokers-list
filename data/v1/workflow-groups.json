@@ -1,0 +1,321 @@
+{
+  "purpose": "Product work should implement one adapter per workflow_id. shared_request_url is one entry point. It does not by itself mean one submission removes every brand. shared_form_signature is one form shape with a separate submission per URL. Catalog-name families in parent-companies.json stay unverified until an official page says so.",
+  "workflows": [
+    {
+      "workflow_id": "portal-governmentregistry-org-opt-out-4d06d1",
+      "kind": "shared_request_url",
+      "separate_submissions": false,
+      "single_request_covers_members": null,
+      "representative_entry_id": "governmentregistry-family",
+      "member_ids": [
+        "governmentregistry-family",
+        "governmentregistry-org"
+      ],
+      "request_url": "https://www.governmentregistry.org/opt-out",
+      "brand_exceptions": [],
+      "notes": "These catalog rows publish the same request URL. Sharing a URL shows a shared entry point. It does not, by itself, prove that one submission removes every brand."
+    },
+    {
+      "workflow_id": "portal-suppression-peopleconnect-us-root-2b7825",
+      "kind": "shared_request_url",
+      "separate_submissions": false,
+      "single_request_covers_members": true,
+      "representative_entry_id": "anywho-intelius-peopleconnect",
+      "member_ids": [
+        "anywho-intelius-peopleconnect",
+        "instantcheckmate-peopleconnect",
+        "intelius-peopleconnect",
+        "intelius-peopleconnect-addresses-com",
+        "onlinesearches-intelius-peopleconnect",
+        "us-search-peopleconnect",
+        "yellowpages-people-intelius-data",
+        "zabasearch-peopleconnect-intelius"
+      ],
+      "request_url": "https://suppression.peopleconnect.us/",
+      "brand_exceptions": [
+        {
+          "from_entry_id": "anywho-intelius-peopleconnect",
+          "entry_id": "classmates-com",
+          "name": "Classmates.com",
+          "relationship": "verified_parent_exception",
+          "evidence_basis": "official_page"
+        },
+        {
+          "from_entry_id": "instantcheckmate-peopleconnect",
+          "entry_id": "classmates-com",
+          "name": "Classmates.com",
+          "relationship": "verified_parent_exception",
+          "evidence_basis": "official_page"
+        },
+        {
+          "from_entry_id": "intelius-peopleconnect",
+          "entry_id": "classmates-com",
+          "name": "Classmates.com",
+          "relationship": "verified_parent_exception",
+          "evidence_basis": "official_page"
+        },
+        {
+          "from_entry_id": "intelius-peopleconnect-addresses-com",
+          "entry_id": "classmates-com",
+          "name": "Classmates.com",
+          "relationship": "verified_parent_exception",
+          "evidence_basis": "official_page"
+        },
+        {
+          "from_entry_id": "onlinesearches-intelius-peopleconnect",
+          "entry_id": "classmates-com",
+          "name": "Classmates.com",
+          "relationship": "verified_parent_exception",
+          "evidence_basis": "official_page"
+        },
+        {
+          "from_entry_id": "us-search-peopleconnect",
+          "entry_id": "classmates-com",
+          "name": "Classmates.com",
+          "relationship": "verified_parent_exception",
+          "evidence_basis": "official_page"
+        },
+        {
+          "from_entry_id": "yellowpages-people-intelius-data",
+          "entry_id": "classmates-com",
+          "name": "Classmates.com",
+          "relationship": "verified_parent_exception",
+          "evidence_basis": "official_page"
+        },
+        {
+          "from_entry_id": "zabasearch-peopleconnect-intelius",
+          "entry_id": "classmates-com",
+          "name": "Classmates.com",
+          "relationship": "verified_parent_exception",
+          "evidence_basis": "official_page"
+        }
+      ],
+      "notes": "The page says the Suppression Tool applies to public data generated in response to a name search on the people-search sites in the PeopleConnect family. It does not apply to user data, and it does not apply to other PeopleConnect sites including Classmates.com. The page does not name every brand."
+    },
+    {
+      "workflow_id": "portal-truthfinder-com-opt-out-v2-submit-5180f4",
+      "kind": "shared_request_url",
+      "separate_submissions": false,
+      "single_request_covers_members": null,
+      "representative_entry_id": "background-hawk-truthfinder",
+      "member_ids": [
+        "background-hawk-truthfinder",
+        "criminal-com-truthfinder",
+        "northcarolinapublicrecords-org-truthfinder",
+        "public-libraries-truthfinder",
+        "recordspage-truthfinder",
+        "recordsquarry-truthfinder",
+        "southcarolinapublicrecords-com-truthfinder"
+      ],
+      "request_url": "https://www.truthfinder.com/opt-out/v2/submit/",
+      "brand_exceptions": [],
+      "notes": "These catalog rows publish the same request URL. Sharing a URL shows a shared entry point. It does not, by itself, prove that one submission removes every brand."
+    },
+    {
+      "workflow_id": "portal-beenverified-com-app-optout-search-cfb08b",
+      "kind": "shared_request_url",
+      "separate_submissions": false,
+      "single_request_covers_members": null,
+      "representative_entry_id": "backgroundchecks-org-beenverified-data",
+      "member_ids": [
+        "backgroundchecks-org-beenverified-data",
+        "beenverified",
+        "bumper-beenverified-family",
+        "freephonetracer-beenverified-form",
+        "neighborwho-beenverified-family",
+        "numberguru-beenverified-family",
+        "ownerly-beenverified-family",
+        "peoplelooker-beenverified",
+        "peoplesmart-beenverified"
+      ],
+      "request_url": "https://www.beenverified.com/app/optout/search",
+      "brand_exceptions": [],
+      "notes": "These catalog rows publish the same request URL. Sharing a URL shows a shared entry point. It does not, by itself, prove that one submission removes every brand."
+    },
+    {
+      "workflow_id": "portal-intelius-com-privacy-center-11a946",
+      "kind": "shared_request_url",
+      "separate_submissions": false,
+      "single_request_covers_members": null,
+      "representative_entry_id": "criminalrecords-com-intelius",
+      "member_ids": [
+        "criminalrecords-com-intelius",
+        "peoplefind-com-intelius",
+        "snoopstation-intelius"
+      ],
+      "request_url": "https://www.intelius.com/privacy-center",
+      "brand_exceptions": [],
+      "notes": "These catalog rows publish the same request URL. Sharing a URL shows a shared entry point. It does not, by itself, prove that one submission removes every brand."
+    },
+    {
+      "workflow_id": "portal-infotracer-com-optout-edfb75",
+      "kind": "shared_request_url",
+      "separate_submissions": false,
+      "single_request_covers_members": null,
+      "representative_entry_id": "dewarrants-org-infotracer-form",
+      "member_ids": [
+        "dewarrants-org-infotracer-form",
+        "govwarrantsearch-org-infotracer-form",
+        "infotracer",
+        "uswarrants-org-infotracer-form"
+      ],
+      "request_url": "https://infotracer.com/optout/",
+      "brand_exceptions": [],
+      "notes": "These catalog rows publish the same request URL. Sharing a URL shows a shared entry point. It does not, by itself, prove that one submission removes every brand."
+    },
+    {
+      "workflow_id": "portal-suppression-peopleconnect-us-login-eacced",
+      "kind": "shared_request_url",
+      "separate_submissions": false,
+      "single_request_covers_members": null,
+      "representative_entry_id": "peoplefinder-peopleconnect",
+      "member_ids": [
+        "peoplefinder-peopleconnect",
+        "publicrecords-com-peopleconnect"
+      ],
+      "request_url": "https://suppression.peopleconnect.us/login",
+      "brand_exceptions": [],
+      "notes": "These catalog rows publish the same request URL. Sharing a URL shows a shared entry point. It does not, by itself, prove that one submission removes every brand."
+    },
+    {
+      "workflow_id": "portal-whitepages-com-suppression-requests-fb4396",
+      "kind": "shared_request_url",
+      "separate_submissions": false,
+      "single_request_covers_members": null,
+      "representative_entry_id": "peoplesearch-whitepages",
+      "member_ids": [
+        "peoplesearch-whitepages",
+        "whitepages",
+        "whitepages-411-com"
+      ],
+      "request_url": "https://www.whitepages.com/suppression-requests",
+      "brand_exceptions": [],
+      "notes": "These catalog rows publish the same request URL. Sharing a URL shows a shared entry point. It does not, by itself, prove that one submission removes every brand."
+    },
+    {
+      "workflow_id": "portal-spokeo-com-optout-59d8ab",
+      "kind": "shared_request_url",
+      "separate_submissions": false,
+      "single_request_covers_members": null,
+      "representative_entry_id": "spokeo",
+      "member_ids": [
+        "spokeo",
+        "spokeo-data"
+      ],
+      "request_url": "https://www.spokeo.com/optout",
+      "brand_exceptions": [],
+      "notes": "These catalog rows publish the same request URL. Sharing a URL shows a shared entry point. It does not, by itself, prove that one submission removes every brand."
+    },
+    {
+      "workflow_id": "portal-dashboard-propertyrecs-com-opt-out-95aed9",
+      "kind": "shared_request_url",
+      "separate_submissions": false,
+      "single_request_covers_members": null,
+      "representative_entry_id": "propertyrecs",
+      "member_ids": [
+        "propertyrecs",
+        "propertyrecs-network"
+      ],
+      "request_url": "https://dashboard.propertyrecs.com/opt-out",
+      "brand_exceptions": [],
+      "notes": "These catalog rows publish the same request URL. Sharing a URL shows a shared entry point. It does not, by itself, prove that one submission removes every brand."
+    },
+    {
+      "workflow_id": "family-request-portal-5b03a4",
+      "kind": "shared_form_signature",
+      "separate_submissions": true,
+      "single_request_covers_members": null,
+      "representative_entry_id": "alaska-arrests",
+      "member_ids": [
+        "alaska-arrests",
+        "arkansas-arrests",
+        "colorado-arrests",
+        "florida-arrests",
+        "georgia-arrests",
+        "hawaii-arrests",
+        "illinois-arrests",
+        "iowa-arrests",
+        "louisiana-arrests",
+        "michigan-arrests",
+        "minnesota-arrests",
+        "mississippi-arrests",
+        "missouri-arrests",
+        "new-hampshire-arrests",
+        "new-mexico-arrests",
+        "oregon-arrests",
+        "south-carolina-arrests",
+        "tennessee-arrests",
+        "wisconsin-arrests",
+        "wyoming-arrests"
+      ],
+      "path": "/request-portal",
+      "brand_exceptions": [
+        {
+          "name": "Government arrest record",
+          "relationship": "out_of_scope",
+          "note": "A removal on these commercial repost sites does not erase the government arrest record."
+        }
+      ],
+      "notes": "20 fetched pages with path /request-portal exposed the same form structure after digits in field names were removed. Treat them as one implementation family. Separate URLs still mean separate submissions unless a page says otherwise."
+    },
+    {
+      "workflow_id": "family-request-portal-a2f61d",
+      "kind": "shared_form_signature",
+      "separate_submissions": true,
+      "single_request_covers_members": null,
+      "representative_entry_id": "california-arrests",
+      "member_ids": [
+        "california-arrests",
+        "kentucky-arrests",
+        "montana-arrests",
+        "new-york-arrests",
+        "pennsylvania-arrests",
+        "rhode-island-arrests",
+        "virginia-arrests",
+        "washington-arrests",
+        "west-virginia-arrests"
+      ],
+      "path": "/request-portal",
+      "brand_exceptions": [
+        {
+          "name": "Government arrest record",
+          "relationship": "out_of_scope",
+          "note": "A removal on these commercial repost sites does not erase the government arrest record."
+        }
+      ],
+      "notes": "9 fetched pages with path /request-portal exposed the same form structure after digits in field names were removed. Treat them as one implementation family. Separate URLs still mean separate submissions unless a page says otherwise."
+    },
+    {
+      "workflow_id": "family-opt-out-4223c3",
+      "kind": "shared_form_signature",
+      "separate_submissions": true,
+      "single_request_covers_members": null,
+      "representative_entry_id": "glad-i-know",
+      "member_ids": [
+        "glad-i-know",
+        "governmentregistry-family",
+        "governmentregistry-org"
+      ],
+      "path": "/opt-out",
+      "brand_exceptions": [],
+      "notes": "3 fetched pages with path /opt-out exposed the same form structure after digits in field names were removed. Treat them as one implementation family. Separate URLs still mean separate submissions unless a page says otherwise."
+    },
+    {
+      "workflow_id": "family-help-center-privacy-requests-c8e042",
+      "kind": "shared_form_signature",
+      "separate_submissions": true,
+      "single_request_covers_members": null,
+      "representative_entry_id": "kids-live-safe",
+      "member_ids": [
+        "kids-live-safe",
+        "publicdatacheck",
+        "publicrecordreports",
+        "quickpublicrecords",
+        "searchpublicrecords"
+      ],
+      "path": "/help-center/privacy-requests",
+      "brand_exceptions": [],
+      "notes": "5 fetched pages with path /help-center/privacy-requests exposed the same form structure after digits in field names were removed. Treat them as one implementation family. Separate URLs still mean separate submissions unless a page says otherwise."
+    }
+  ]
+}

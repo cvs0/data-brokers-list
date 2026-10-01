@@ -28,7 +28,14 @@
       ],
       "single_request_covers_multiple_brands": null,
       "evidence": "These catalog rows publish the same request URL. Sharing a URL shows a shared entry point. It does not, by itself, prove that one submission removes every brand.",
-      "evidence_basis": "catalog_url"
+      "evidence_basis": "catalog_url",
+      "brand_exceptions": [
+        {
+          "name": "Classmates.com",
+          "entry_id": "classmates-com",
+          "exception": "The suppression page says the tool does not apply to Classmates.com or to user data."
+        }
+      ]
     },
     {
       "group_id": "portal-truthfinder-com-opt-out-v2-submit-5180f4",
@@ -103,7 +110,14 @@
       ],
       "single_request_covers_multiple_brands": null,
       "evidence": "These catalog rows publish the same request URL. Sharing a URL shows a shared entry point. It does not, by itself, prove that one submission removes every brand.",
-      "evidence_basis": "catalog_url"
+      "evidence_basis": "catalog_url",
+      "brand_exceptions": [
+        {
+          "name": "Classmates.com",
+          "entry_id": "classmates-com",
+          "exception": "The suppression page says the tool does not apply to Classmates.com or to user data."
+        }
+      ]
     },
     {
       "group_id": "portal-whitepages-com-suppression-requests-fb4396",

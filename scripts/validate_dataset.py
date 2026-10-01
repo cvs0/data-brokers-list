@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import json
+import re
 import sys
 from collections import Counter
 from pathlib import Path
@@ -66,7 +67,7 @@ def main() -> int:
     records = dataset.get("records") or []
     if dataset.get("requests_submitted") is not False:
         fail(errors, "requests_submitted must be false.")
-    if dataset.get("schema_version") != "1.0.0":
+    if dataset.get("schema_version") != schema.get("properties", {}).get("schema_version", {}).get("const", "1.1.0"):
         fail(errors, "schema_version mismatch.")
     if len(records) != len(rows):
         fail(errors, f"record count {len(records)} != catalog {len(rows)}")
@@ -189,9 +190,63 @@ def main() -> int:
                 continue
             if candidate.get("verification_level") == "end_to_end_tested":
                 fail(errors, f"shortlist {entry_id} claims an end-to-end test")
+            inspection = (by_id[entry_id].get("verification") or {}).get("browser_inspection")
+            if not inspection:
+                fail(errors, f"shortlist {entry_id} has no browser_inspection")
+            elif inspection.get("outcome") not in {"readable", "challenge", "http_error", "timeout", "error"}:
+                fail(errors, f"shortlist {entry_id} has an invalid browser outcome")
             for key in ("rank", "why", "blockers", "implementation_effort", "automation_classification"):
                 if key not in candidate:
                     fail(errors, f"shortlist {entry_id} missing {key}")
+
+    playbook_path = ROOT / "data" / "v1" / "verification-playbooks.json"
+    if playbook_path.exists():
+        playbooks = load_json(playbook_path)
+        if playbooks.get("requests_submitted") is not False:
+            fail(errors, "verification playbooks must record that no request was submitted")
+        covered = {item.get("entry_id") for item in playbooks.get("playbooks") or []}
+        for candidate in (load_json(SHORTLIST).get("candidates") or []) if SHORTLIST.exists() else []:
+            if candidate.get("entry_id") not in covered:
+                fail(errors, f"playbook missing for shortlist {candidate.get('entry_id')}")
+        for item in playbooks.get("playbooks") or []:
+            if item.get("requests_submitted_in_this_research") is not False:
+                fail(errors, f"playbook {item.get('entry_id')} claims a submission")
+            if item.get("entry_id") not in by_id:
+                fail(errors, f"playbook unknown id {item.get('entry_id')}")
+    else:
+        fail(errors, "verification playbooks file is missing")
+
+    freshness_path = ROOT / "data" / "v1" / "freshness-report.json"
+    if not freshness_path.exists():
+        fail(errors, "freshness report is missing")
+    else:
+        freshness = load_json(freshness_path)
+        if freshness.get("catalog_rows") != len(rows):
+            fail(errors, "freshness report catalog_rows does not match the catalog")
+        if freshness.get("unique_urls") != len({row["url"] for row in rows}):
+            fail(errors, "freshness report unique URL count does not match the catalog")
+
+    groups_path = ROOT / "data" / "v1" / "workflow-groups.json"
+    if not groups_path.exists():
+        fail(errors, "workflow group index is missing")
+    else:
+        for group in load_json(groups_path).get("workflows") or []:
+            for member_id in group.get("member_ids") or []:
+                if member_id not in by_id:
+                    fail(errors, f"{group.get('workflow_id')}: unknown member {member_id}")
+                    break
+            for exception in group.get("brand_exceptions") or []:
+                exception_id = exception.get("entry_id")
+                if exception_id and exception_id not in by_id:
+                    fail(errors, f"{group.get('workflow_id')}: unknown exception {exception_id}")
+
+    for record in records:
+        inspection = record["verification"].get("browser_inspection")
+        if inspection and inspection.get("outcome") not in {"readable", "challenge", "http_error", "timeout", "error"}:
+            fail(errors, f"{record['id']}: invalid browser outcome")
+        observation = record["discovery"].get("search_observation")
+        if observation and re.search(r"\ba search query was sent\b", observation, re.I) and "not sent" not in observation.lower():
+            fail(errors, f"{record['id']}: search observation claims a submitted query")
 
     status_counts = Counter(record["verification"]["research_status"] for record in records)
     print(json.dumps({"records": len(records), "research_status": dict(status_counts), "errors": len(errors)}, indent=2))

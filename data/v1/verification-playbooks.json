@@ -1,0 +1,798 @@
+{
+  "for_authorized_tests_only": true,
+  "requests_submitted": false,
+  "playbooks": [
+    {
+      "entry_id": "spokeo",
+      "name": "Spokeo",
+      "request_url": "https://www.spokeo.com/optout",
+      "for_authorized_tests_only": true,
+      "requests_submitted_in_this_research": false,
+      "research_status": "verified",
+      "verification_level": "workflow_partially_inspected",
+      "workflow_kind": "public_listing_form",
+      "acknowledgement": "Documented on the page, not received by this research: URL Profile URL Example: \"https://www.spokeo.com/Smith-Sample/Houston/TX/p12345678\" Payment URL Example: \"https://www.spokeo.com/purchase?q=Smith%20Sample#Sample:12345678\" Email Address To complete this process, we will send you a confirmation email.",
+      "broker_confirmation": "Unknown. broker_confirmation is null because no request was submitted. A future authorized test would need a message or status the broker itself sends after the request, which this page did not demonstrate.",
+      "independent_removal_check": "The listing is public at the profile URL the person submitted. This research did not open a profile or confirm a removal.",
+      "human_gates": [
+        "verification"
+      ],
+      "do_not_automate": [
+        "Do not submit the form, create an account, upload an identity document, trigger SMS, or solve a CAPTCHA as part of research.",
+        "A parsed field list is not a selector and not an API."
+      ],
+      "notes": "HTTP GET of https://www.spokeo.com/optout returned the opt-out form text. Required inputs observed in the HTML were url and email. No request was submitted. Headless browser outcome challenge (HTTP 403). No form was submitted and no CAPTCHA was solved."
+    },
+    {
+      "entry_id": "checkpeople",
+      "name": "CheckPeople",
+      "request_url": "https://checkpeople.com/opt-out",
+      "for_authorized_tests_only": true,
+      "requests_submitted_in_this_research": false,
+      "research_status": "verified",
+      "verification_level": "workflow_partially_inspected",
+      "workflow_kind": "public_listing_form",
+      "acknowledgement": "Unknown. The inspected page did not describe an acknowledgement, and this research did not receive one.",
+      "broker_confirmation": "Unknown. broker_confirmation is null because no request was submitted. A future authorized test would need a message or status the broker itself sends after the request, which this page did not demonstrate.",
+      "independent_removal_check": "Unknown. The inspected page did not describe a public listing to re-open. Do not treat the absence of a new email as proof of removal.",
+      "human_gates": [],
+      "do_not_automate": [
+        "Do not submit the form, create an account, upload an identity document, trigger SMS, or solve a CAPTCHA as part of research.",
+        "A parsed field list is not a selector and not an API."
+      ],
+      "notes": "Request-type quotes: public_listing_suppression: Email I agree to the Terms of Service and Privacy Policy , and consent to receive transactional emails regarding my use of the Suppression Tool. | sale_sharing_opt_out: Recent Searches 09/30 09/29 09/28 09/27 09/26 09/25 Services People Search Directory Background Checks People Search Reverse Phone Lookup Public Records Get Help Blog FAQs Glossary Do's & Dont's Customer Support Why CheckPeople Testimonials Do Not Sell or Share my Personal Information Quick Links Phone Number Search Free People Search Arrest Records Criminal Background Checks Sitemap Blog Sitemap CheckPeople.com exis Headless browser outcome readable (HTTP 200). No form was sub"
+    },
+    {
+      "entry_id": "cocofinder",
+      "name": "CocoFinder",
+      "request_url": "https://cocofinder.com/remove-my-info",
+      "for_authorized_tests_only": true,
+      "requests_submitted_in_this_research": false,
+      "research_status": "verified",
+      "verification_level": "workflow_partially_inspected",
+      "workflow_kind": "public_listing_form",
+      "acknowledgement": "Unknown. The inspected page did not describe an acknowledgement, and this research did not receive one.",
+      "broker_confirmation": "Unknown. broker_confirmation is null because no request was submitted. A future authorized test would need a message or status the broker itself sends after the request, which this page did not demonstrate.",
+      "independent_removal_check": "Unknown. The inspected page did not describe a public listing to re-open. Do not treat the absence of a new email as proof of removal.",
+      "human_gates": [],
+      "do_not_automate": [
+        "Do not submit the form, create an account, upload an identity document, trigger SMS, or solve a CAPTCHA as part of research.",
+        "A parsed field list is not a selector and not an API."
+      ],
+      "notes": "Request-type quotes: public_listing_suppression: CocoFinder Opt Out: Remove My Information CocoFinder home People Search Phone Lookup People Directory Background Check Remove My Info CocoFinder is a people search engine that displays the information on any person in public records. Headless browser outcome challenge (HTTP 403). No form was submitted and no CAPTCHA was solved. CAPTCHA markers in the rendered page: turnstile."
+    },
+    {
+      "entry_id": "glad-i-know",
+      "name": "Glad I Know",
+      "request_url": "https://gladiknow.com/opt-out",
+      "for_authorized_tests_only": true,
+      "requests_submitted_in_this_research": false,
+      "research_status": "verified",
+      "verification_level": "workflow_partially_inspected",
+      "workflow_kind": "public_listing_form",
+      "acknowledgement": "Documented on the page, not received by this research: 3 Get Email Confirmation If you wish to receive a confirmation email, please enter your email address.",
+      "broker_confirmation": "Unknown. broker_confirmation is null because no request was submitted. A future authorized test would need a message or status the broker itself sends after the request, which this page did not demonstrate.",
+      "independent_removal_check": "Unknown. The inspected page did not describe a public listing to re-open. Do not treat the absence of a new email as proof of removal.",
+      "human_gates": [
+        "verification"
+      ],
+      "do_not_automate": [
+        "Do not submit the form, create an account, upload an identity document, trigger SMS, or solve a CAPTCHA as part of research.",
+        "A parsed field list is not a selector and not an API."
+      ],
+      "notes": "Request-type quotes: public_listing_suppression: pages Yellowbook ZabaSearch Zillow ZoomInfo About Us Contact Us FAQs Privacy Policy Terms of Service Do's & Don'ts Remove My Info People Directory: a b c d e f g h i j k l m n o p q r s t u v w x y z GladIKnow.com Glad I Know empowers you with simple, secure access to accurate public records, helping you make informed decisions through our comprehensive people search platform. | sale_sharing_opt_out: Your Privacy Rights by State If you live in California, Colorado, Connecticut, Delaware, Florida, Indiana, Iowa, Kentucky, Maryland, Minnesota, Montana, Nebraska, New Hampshire, New Jersey, Oregon, Rhode Island, Tennessee, Texas, Utah, or Virginia"
+    },
+    {
+      "entry_id": "usphonebook",
+      "name": "USPhoneBook",
+      "request_url": "https://www.usphonebook.com/opt-out",
+      "for_authorized_tests_only": true,
+      "requests_submitted_in_this_research": false,
+      "research_status": "verified",
+      "verification_level": "workflow_partially_inspected",
+      "workflow_kind": "dsar_portal",
+      "acknowledgement": "Documented on the page, not received by this research: You will be taken to a confirmation page verifying that we have received your request and it is being processed.",
+      "broker_confirmation": "Unknown. broker_confirmation is null because no request was submitted. A future authorized test would need a message or status the broker itself sends after the request, which this page did not demonstrate.",
+      "independent_removal_check": "Unknown. The inspected page did not describe a public listing to re-open. Do not treat the absence of a new email as proof of removal.",
+      "human_gates": [
+        "captcha",
+        "verification"
+      ],
+      "do_not_automate": [
+        "Do not submit the form, create an account, upload an identity document, trigger SMS, or solve a CAPTCHA as part of research.",
+        "A parsed field list is not a selector and not an API."
+      ],
+      "notes": "Request-type quotes: sale_sharing_opt_out: Opt Out Opt Out Home US Phone Book Opt-Out Form Depending on your state of residence, you may have the right to submit a request to opt out of the sale and sharing of certain types of personal information we collect and process. Headless browser outcome readable (HTTP 200). No form was submitted and no CAPTCHA was solved. CAPTCHA markers in the rendered page: recaptcha. Browser final URL: https://www.usphonebook.com/removal"
+    },
+    {
+      "entry_id": "numlookup",
+      "name": "NumLookup",
+      "request_url": "https://www.numlookup.com/opt_out",
+      "for_authorized_tests_only": true,
+      "requests_submitted_in_this_research": false,
+      "research_status": "verified",
+      "verification_level": "workflow_partially_inspected",
+      "workflow_kind": "dsar_portal",
+      "acknowledgement": "Unknown. The inspected page did not describe an acknowledgement, and this research did not receive one.",
+      "broker_confirmation": "Unknown. broker_confirmation is null because no request was submitted. A future authorized test would need a message or status the broker itself sends after the request, which this page did not demonstrate.",
+      "independent_removal_check": "Unknown. The inspected page did not describe a public listing to re-open. Do not treat the absence of a new email as proof of removal.",
+      "human_gates": [],
+      "do_not_automate": [
+        "Do not submit the form, create an account, upload an identity document, trigger SMS, or solve a CAPTCHA as part of research.",
+        "A parsed field list is not a selector and not an API."
+      ],
+      "notes": "Request-type quotes: sale_sharing_opt_out: Call us at +1 (844) 405-2145 Company About NumLookup NumLookup API Do Not Sell / Information Opt Out Connected to: e2 Features Reverse Phone Lookup People Search Reverse Image Search Resources Blog NumLookup vs. Catalog notes mention captcha, email, or an account. Those mentions are preserved as catalog claims and were not copied into verified fields unless the fetched page also said so. Headless browser outcome readable (HTTP 200). No form was submitted and no CAPTCHA was solved. CAPTCHA markers in the rendered page: recaptcha."
+    },
+    {
+      "entry_id": "searchusapeople-infotracer",
+      "name": "SearchUSAPeople (InfoTracer)",
+      "request_url": "https://www.searchusapeople.com/data-removal-request/",
+      "for_authorized_tests_only": true,
+      "requests_submitted_in_this_research": false,
+      "research_status": "verified",
+      "verification_level": "workflow_partially_inspected",
+      "workflow_kind": "dsar_portal",
+      "acknowledgement": "Unknown. The inspected page did not describe an acknowledgement, and this research did not receive one.",
+      "broker_confirmation": "Unknown. broker_confirmation is null because no request was submitted. A future authorized test would need a message or status the broker itself sends after the request, which this page did not demonstrate.",
+      "independent_removal_check": "Unknown. The inspected page did not describe a public listing to re-open. Do not treat the absence of a new email as proof of removal.",
+      "human_gates": [],
+      "do_not_automate": [
+        "Do not submit the form, create an account, upload an identity document, trigger SMS, or solve a CAPTCHA as part of research.",
+        "A parsed field list is not a selector and not an API."
+      ],
+      "notes": "Request-type quotes: sale_sharing_opt_out: ﻿ OTHER SEARCHES Arrest Records Asset Search Email Search Court Documents TERMS / PRIVACY Terms Privacy Policy CCPA GDPR ABOUT / HELP About FAQ Site Map Customer Service OTHER LINKS Blog Posts People Search By State Copyright RSS Feed Do Not Sell My Personal Information Catalog notes mention captcha, email, or an account. Those mentions are preserved as catalog claims and were not copied into verified fields unless the fetched page also said so. Headless browser outcome readable (HTTP 200). No form was submitted and no CAPTCHA was solved. No CAPTCHA marker was visible on the inspected screen."
+    },
+    {
+      "entry_id": "publicrecords-info",
+      "name": "PublicRecords.info",
+      "request_url": "https://www.publicrecords.info/",
+      "for_authorized_tests_only": true,
+      "requests_submitted_in_this_research": false,
+      "research_status": "verified",
+      "verification_level": "workflow_partially_inspected",
+      "workflow_kind": "public_listing_form",
+      "acknowledgement": "Unknown. The inspected page did not describe an acknowledgement, and this research did not receive one.",
+      "broker_confirmation": "Unknown. broker_confirmation is null because no request was submitted. A future authorized test would need a message or status the broker itself sends after the request, which this page did not demonstrate.",
+      "independent_removal_check": "Unknown. The inspected page did not describe a public listing to re-open. Do not treat the absence of a new email as proof of removal.",
+      "human_gates": [],
+      "do_not_automate": [
+        "Do not submit the form, create an account, upload an identity document, trigger SMS, or solve a CAPTCHA as part of research.",
+        "A parsed field list is not a selector and not an API."
+      ],
+      "notes": "Request-type quotes: public_listing_suppression: 1-877-381-8701 support@publicrecords.info Live Chat Login Terms Of Service Privacy Policy Contact Us Remove My Info Your Privacy Choices Close Account © 2026 PublicRecords.info | deletion: Access, Correction & Deletion Requests Anyone may submit a request here, with or without an account. | sale_sharing_opt_out: Do Not Sell or Share My Personal Information (DNSS) Disclosing information to advertising partners for cross-context behavioral advertising may be considered a “sale” or “sharing” of personal information under certain privacy laws. Headless browser outcome challenge (HTTP 403). No form was submitted and no CAPTCHA was solved."
+    },
+    {
+      "entry_id": "anywho-intelius-peopleconnect",
+      "name": "AnyWho (Intelius/PeopleConnect)",
+      "request_url": "https://suppression.peopleconnect.us/",
+      "for_authorized_tests_only": true,
+      "requests_submitted_in_this_research": false,
+      "research_status": "verified",
+      "verification_level": "workflow_partially_inspected",
+      "workflow_kind": "public_listing_form",
+      "acknowledgement": "Unknown. The inspected page did not describe an acknowledgement, and this research did not receive one.",
+      "broker_confirmation": "Unknown. broker_confirmation is null because no request was submitted. A future authorized test would need a message or status the broker itself sends after the request, which this page did not demonstrate.",
+      "independent_removal_check": "The page tells the person to contact PeopleConnect if public data is still visible after using the tool. This research did not search a listing.",
+      "human_gates": [
+        "verification"
+      ],
+      "do_not_automate": [
+        "Do not submit the form, create an account, upload an identity document, trigger SMS, or solve a CAPTCHA as part of research.",
+        "A parsed field list is not a selector and not an API."
+      ],
+      "notes": "A direct GET from the research environment returned a 34-character shell. A second reader returned the suppression-scope text. No request was submitted. Catalog notes about email limits were not copied in. Headless browser outcome readable (HTTP 200). No form was submitted and no CAPTCHA was solved. Rendered text includes: Step 1. No CAPTCHA marker was visible on the inspected screen. A control labeled 'Continue' is a submit button. It was not clicked, so any later CAPTCHA or wizard step was not observed. Browser final URL: https://suppression.peopleconnect.us/login"
+    },
+    {
+      "entry_id": "alaska-arrests",
+      "name": "Alaska Arrests",
+      "request_url": "https://www.alaskaarrests.org/request-portal",
+      "for_authorized_tests_only": true,
+      "requests_submitted_in_this_research": false,
+      "research_status": "verified",
+      "verification_level": "workflow_partially_inspected",
+      "workflow_kind": "dsar_portal",
+      "acknowledgement": "Unknown. The inspected page did not describe an acknowledgement, and this research did not receive one.",
+      "broker_confirmation": "Unknown. broker_confirmation is null because no request was submitted. A future authorized test would need a message or status the broker itself sends after the request, which this page did not demonstrate.",
+      "independent_removal_check": "Unknown. The inspected page did not describe a public listing to re-open. Do not treat the absence of a new email as proof of removal.",
+      "human_gates": [
+        "captcha"
+      ],
+      "do_not_automate": [
+        "Do not submit the form, create an account, upload an identity document, trigger SMS, or solve a CAPTCHA as part of research.",
+        "A parsed field list is not a selector and not an API."
+      ],
+      "notes": "Request-type quotes: deletion: Right to Delete: Request the removal of your personal data from our records. | sale_sharing_opt_out: Right to Opt Out: Request that we do not sell your personal data. | access: Pursuant to applicable state data privacy laws, you have the following rights regarding your user data: Right to Know: Find out what personal data we have about you. | correction: Right to Correct: Update incorrect or outdated personal data. Headless browser outcome readable (HTTP 200). No form was submitted and no CAPTCHA was solved. CAPTCHA markers in the rendered page: turnstile."
+    },
+    {
+      "entry_id": "sterling",
+      "name": "Sterling",
+      "request_url": "https://sterling.com/privacyrequest/",
+      "for_authorized_tests_only": true,
+      "requests_submitted_in_this_research": false,
+      "research_status": "verified",
+      "verification_level": "workflow_partially_inspected",
+      "workflow_kind": "dsar_portal",
+      "acknowledgement": "Unknown. The inspected page did not describe an acknowledgement, and this research did not receive one.",
+      "broker_confirmation": "Unknown. broker_confirmation is null because no request was submitted. A future authorized test would need a message or status the broker itself sends after the request, which this page did not demonstrate.",
+      "independent_removal_check": "Unknown. The inspected page did not describe a public listing to re-open. Do not treat the absence of a new email as proof of removal.",
+      "human_gates": [
+        "captcha"
+      ],
+      "do_not_automate": [
+        "Do not submit the form, create an account, upload an identity document, trigger SMS, or solve a CAPTCHA as part of research.",
+        "A parsed field list is not a selector and not an API."
+      ],
+      "notes": "Request-type quotes: sale_sharing_opt_out: Requestor Type Consumer Authorized Agent Parent/Legal Guardian Type of Request Know categories of personal information and/or confirm data processing activities Obtain a copy of personal information Delete personal information Opt-out of the sale of your personal information Opt-out of the cross-context behavioral advertising and targeted advertising Opt-out of automated decision-making, including profiling Limit the Platform markers in HTML: cookiebot. No API endpoint was inferred. Headless browser outcome readable (HTTP 200). No form was submitted and no CAPTCHA was solved. CAPTCHA markers in the rendered page: recaptcha."
+    },
+    {
+      "entry_id": "fastpeoplesearch",
+      "name": "FastPeopleSearch",
+      "request_url": "https://www.fastpeoplesearch.com/optout",
+      "for_authorized_tests_only": true,
+      "requests_submitted_in_this_research": false,
+      "research_status": "verified",
+      "verification_level": "page_inspected",
+      "workflow_kind": "public_listing_form",
+      "acknowledgement": "The page says a confirmation page is shown and a confirmation email is sent. None was received in this research.",
+      "broker_confirmation": "Unknown. broker_confirmation is null because no request was submitted. A future authorized test would need a message or status the broker itself sends after the request, which this page did not demonstrate.",
+      "independent_removal_check": "Unknown. The inspected page did not describe a public listing to re-open. Do not treat the absence of a new email as proof of removal.",
+      "human_gates": [
+        "bot_wall",
+        "captcha",
+        "verification"
+      ],
+      "do_not_automate": [
+        "Do not submit the form, create an account, upload an identity document, trigger SMS, or solve a CAPTCHA as part of research.",
+        "A parsed field list is not a selector and not an API."
+      ],
+      "notes": "Instructions were read from a rendered copy of the official opt-out page. The research GET returned a Cloudflare block. No request was submitted, so removal was not confirmed. Headless browser outcome challenge (HTTP 403). No form was submitted and no CAPTCHA was solved."
+    },
+    {
+      "entry_id": "whitepages",
+      "name": "Whitepages",
+      "request_url": "https://www.whitepages.com/suppression-requests",
+      "for_authorized_tests_only": true,
+      "requests_submitted_in_this_research": false,
+      "research_status": "partial",
+      "verification_level": "workflow_partially_inspected",
+      "workflow_kind": "public_listing_form",
+      "acknowledgement": "Unknown. The inspected page did not describe an acknowledgement, and this research did not receive one.",
+      "broker_confirmation": "Unknown. broker_confirmation is null because no request was submitted. A future authorized test would need a message or status the broker itself sends after the request, which this page did not demonstrate.",
+      "independent_removal_check": "Unknown. The inspected page did not describe a public listing to re-open. Do not treat the absence of a new email as proof of removal.",
+      "human_gates": [
+        "bot_wall"
+      ],
+      "do_not_automate": [
+        "Do not submit the form, create an account, upload an identity document, trigger SMS, or solve a CAPTCHA as part of research.",
+        "A parsed field list is not a selector and not an API."
+      ],
+      "notes": "Partial wizard inspection only. Direct GET was a Cloudflare challenge. No request submitted. Headless browser outcome challenge (HTTP 403). No form was submitted and no CAPTCHA was solved. CAPTCHA markers in the rendered page: turnstile."
+    },
+    {
+      "entry_id": "acxiom",
+      "name": "Acxiom",
+      "request_url": "https://www.acxiom.com/optout/",
+      "for_authorized_tests_only": true,
+      "requests_submitted_in_this_research": false,
+      "research_status": "partial",
+      "verification_level": "page_inspected",
+      "workflow_kind": "unknown",
+      "acknowledgement": "Documented on the page, not received by this research: To submit an Opt Out Request, please choose from the following options: US individual / individual acting on behalf of another – opt out request To complete the Opt Out Request above, you must provide a valid email address in order to respond to the confirmation email that validates your request.",
+      "broker_confirmation": "Unknown. broker_confirmation is null because no request was submitted. A future authorized test would need a message or status the broker itself sends after the request, which this page did not demonstrate.",
+      "independent_removal_check": "Unknown. The inspected page did not describe a public listing to re-open. Do not treat the absence of a new email as proof of removal.",
+      "human_gates": [
+        "verification"
+      ],
+      "do_not_automate": [
+        "Do not submit the form, create an account, upload an identity document, trigger SMS, or solve a CAPTCHA as part of research.",
+        "A parsed field list is not a selector and not an API."
+      ],
+      "notes": "Request-type quotes: deletion: Privacy home US consumer Opt Out Acxiom provides consumers on a nationwide basis with various rights with respect to their personal information, including a right to know the information that Acxiom has them (“Right to Know”), the right to request the deletion of their personal information (“Right to Delete”), and the right to opt out from the sale of their personal information (“Opt Out Request”). | sale_sharing_opt_out: Do Not Sell My Personal Information Limit the Use of My Sensitive Personal Information Texas Consumers: Acxiom is a data broker under Texas law. | access: Privacy home US consumer Opt Out Acxiom provides consumers on a nationwide basis with va"
+    },
+    {
+      "entry_id": "optoutprescreen-experian-equifax-transunion-innovis",
+      "name": "OptOutPrescreen (Experian/Equifax/TransUnion/Innovis)",
+      "request_url": "https://www.optoutprescreen.com/",
+      "for_authorized_tests_only": true,
+      "requests_submitted_in_this_research": false,
+      "research_status": "verified",
+      "verification_level": "page_inspected",
+      "workflow_kind": "government_or_industry_choice",
+      "acknowledgement": "Unknown. The inspected page did not describe an acknowledgement, and this research did not receive one.",
+      "broker_confirmation": "Unknown. broker_confirmation is null because no request was submitted. A future authorized test would need a message or status the broker itself sends after the request, which this page did not demonstrate.",
+      "independent_removal_check": "Unknown. The inspected page did not describe a public listing to re-open. Do not treat the absence of a new email as proof of removal.",
+      "human_gates": [
+        "inaccessible_page"
+      ],
+      "do_not_automate": [
+        "Do not submit the form, create an account, upload an identity document, trigger SMS, or solve a CAPTCHA as part of research.",
+        "A parsed field list is not a selector and not an API."
+      ],
+      "notes": "Firm-offer opt-out only. Not a people-search deletion. Research GET status 403. No request submitted. Headless browser outcome challenge (HTTP 403). No form was submitted and no CAPTCHA was solved."
+    },
+    {
+      "entry_id": "lexisnexis",
+      "name": "LexisNexis",
+      "request_url": "https://consumer.risk.lexisnexis.com/opt",
+      "for_authorized_tests_only": true,
+      "requests_submitted_in_this_research": false,
+      "research_status": "verified",
+      "verification_level": "page_inspected",
+      "workflow_kind": "public_listing_form",
+      "acknowledgement": "Unknown. The inspected page did not describe an acknowledgement, and this research did not receive one.",
+      "broker_confirmation": "Unknown. broker_confirmation is null because no request was submitted. A future authorized test would need a message or status the broker itself sends after the request, which this page did not demonstrate.",
+      "independent_removal_check": "Unknown. The inspected page did not describe a public listing to re-open. Do not treat the absence of a new email as proof of removal.",
+      "human_gates": [
+        "verification"
+      ],
+      "do_not_automate": [
+        "Do not submit the form, create an account, upload an identity document, trigger SMS, or solve a CAPTCHA as part of research.",
+        "A parsed field list is not a selector and not an API."
+      ],
+      "notes": "HTTP GET of the LexisNexis Risk consumer opt-out page returned the choice descriptions. No request was submitted. Headless browser outcome readable (HTTP 200). No form was submitted and no CAPTCHA was solved. No CAPTCHA marker was visible on the inspected screen."
+    },
+    {
+      "entry_id": "equifax",
+      "name": "Equifax",
+      "request_url": "https://myprivacy.equifax.com/opt-in-opt-out/personal-info",
+      "for_authorized_tests_only": true,
+      "requests_submitted_in_this_research": false,
+      "research_status": "verified",
+      "verification_level": "workflow_partially_inspected",
+      "workflow_kind": "dsar_portal",
+      "acknowledgement": "Unknown. The inspected page did not describe an acknowledgement, and this research did not receive one.",
+      "broker_confirmation": "Unknown. broker_confirmation is null because no request was submitted. A future authorized test would need a message or status the broker itself sends after the request, which this page did not demonstrate.",
+      "independent_removal_check": "Unknown. The inspected page did not describe a public listing to re-open. Do not treat the absence of a new email as proof of removal.",
+      "human_gates": [
+        "verification"
+      ],
+      "do_not_automate": [
+        "Do not submit the form, create an account, upload an identity document, trigger SMS, or solve a CAPTCHA as part of research.",
+        "A parsed field list is not a selector and not an API."
+      ],
+      "notes": "Rendered reader showed the step 1 form. The research GET was an empty shell. No request was submitted, so the Verify step and any later document request are unknown. Headless browser outcome readable (HTTP 200). No form was submitted and no CAPTCHA was solved. CAPTCHA markers in the rendered page: recaptcha. A control labeled 'Learn more' is a submit button. It was not clicked, so any later CAPTCHA or wizard step was not observed."
+    },
+    {
+      "entry_id": "liveramp",
+      "name": "LiveRamp",
+      "request_url": "https://liveramp.com/privacy/my-privacy-choices/",
+      "for_authorized_tests_only": true,
+      "requests_submitted_in_this_research": false,
+      "research_status": "verified",
+      "verification_level": "page_inspected",
+      "workflow_kind": "dsar_portal",
+      "acknowledgement": "Unknown. The inspected page did not describe an acknowledgement, and this research did not receive one.",
+      "broker_confirmation": "Unknown. broker_confirmation is null because no request was submitted. A future authorized test would need a message or status the broker itself sends after the request, which this page did not demonstrate.",
+      "independent_removal_check": "Unknown. The inspected page did not describe a public listing to re-open. Do not treat the absence of a new email as proof of removal.",
+      "human_gates": [],
+      "do_not_automate": [
+        "Do not submit the form, create an account, upload an identity document, trigger SMS, or solve a CAPTCHA as part of research.",
+        "A parsed field list is not a selector and not an API."
+      ],
+      "notes": "The research GET retrieved the LiveRamp US privacy-choices page. Identity-document and phone details are from that page. No request was submitted. Headless browser outcome readable (HTTP 200). No form was submitted and no CAPTCHA was solved. No CAPTCHA marker was visible on the inspected screen."
+    },
+    {
+      "entry_id": "california-drop",
+      "name": "California DROP",
+      "request_url": "https://privacy.ca.gov/drop/",
+      "for_authorized_tests_only": true,
+      "requests_submitted_in_this_research": false,
+      "research_status": "verified",
+      "verification_level": "page_inspected",
+      "workflow_kind": "government_or_industry_choice",
+      "acknowledgement": "The page says status is shown in DROP. No status was requested or received.",
+      "broker_confirmation": "Unknown. broker_confirmation is null because no request was submitted. A future authorized test would need a message or status the broker itself sends after the request, which this page did not demonstrate.",
+      "independent_removal_check": "Unknown. The inspected page did not describe a public listing to re-open. Do not treat the absence of a new email as proof of removal.",
+      "human_gates": [
+        "bot_wall",
+        "verification"
+      ],
+      "do_not_automate": [
+        "Do not submit the form, create an account, upload an identity document, trigger SMS, or solve a CAPTCHA as part of research.",
+        "A parsed field list is not a selector and not an API."
+      ],
+      "notes": "Regulator platform, not a single broker's form. Coverage of this catalog was not matched broker by broker. No request submitted. Headless browser outcome readable (HTTP 200). No form was submitted and no CAPTCHA was solved. No CAPTCHA marker was visible on the inspected screen. Clicked non-submit control 'Get started'. Landed on https://consumer.drop.privacy.ca.gov/. Browser final URL: https://consumer.drop.privacy.ca.gov/"
+    },
+    {
+      "entry_id": "social-catfish",
+      "name": "Social Catfish",
+      "request_url": "https://socialcatfish.com/opt-out/",
+      "for_authorized_tests_only": true,
+      "requests_submitted_in_this_research": false,
+      "research_status": "verified",
+      "verification_level": "workflow_partially_inspected",
+      "workflow_kind": "dsar_portal",
+      "acknowledgement": "Unknown. The inspected page did not describe an acknowledgement, and this research did not receive one.",
+      "broker_confirmation": "Unknown. broker_confirmation is null because no request was submitted. A future authorized test would need a message or status the broker itself sends after the request, which this page did not demonstrate.",
+      "independent_removal_check": "Page tells the person to check the public listing again. This research did not check a listing.",
+      "human_gates": [
+        "captcha",
+        "login"
+      ],
+      "do_not_automate": [
+        "Do not submit the form, create an account, upload an identity document, trigger SMS, or solve a CAPTCHA as part of research.",
+        "A parsed field list is not a selector and not an API."
+      ],
+      "notes": "Request-type quotes: deletion: No, Cancel Yes, Submit Again Request to Opt-Out Opt-Out Request for Access Access Request for Deletion Deletion Request to Correct Information Correct Info Request to Opt-Out form You may use this page to make a request to opt out of the sale of all of your personal information on the part of Social Catfish. | sale_sharing_opt_out: No, Cancel Yes, Submit Again Request to Opt-Out Opt-Out Request for Access Access Request for Deletion Deletion Request to Correct Information Correct Info Request to Opt-Out form You may use this page to make a request to opt out of the sale of all of your personal information on the part of Social Catfish. | access: No, Cancel Yes,"
+    },
+    {
+      "entry_id": "sync-me",
+      "name": "Sync.ME",
+      "request_url": "https://sync.me/unsubscribe/",
+      "for_authorized_tests_only": true,
+      "requests_submitted_in_this_research": false,
+      "research_status": "verified",
+      "verification_level": "workflow_partially_inspected",
+      "workflow_kind": "public_listing_form",
+      "acknowledgement": "Unknown. The inspected page did not describe an acknowledgement, and this research did not receive one.",
+      "broker_confirmation": "Unknown. broker_confirmation is null because no request was submitted. A future authorized test would need a message or status the broker itself sends after the request, which this page did not demonstrate.",
+      "independent_removal_check": "Unknown. The inspected page did not describe a public listing to re-open. Do not treat the absence of a new email as proof of removal.",
+      "human_gates": [
+        "captcha"
+      ],
+      "do_not_automate": [
+        "Do not submit the form, create an account, upload an identity document, trigger SMS, or solve a CAPTCHA as part of research.",
+        "A parsed field list is not a selector and not an API."
+      ],
+      "notes": "Request-type quotes: public_listing_suppression: se Arabic French Hindi Portuguese Spanish EN Android App iPhone App Features Spam Detector Report Spam/Fraud Business Support More Apps EN English Russian Hebrew Italian Turkish Germany Brazilian Portuguese Arabic French Hindi Portuguese Spanish EN Sign in Download Home Opt-Out Remove My Info Fill in the fields below and we will remove your information from Sync.Me within 24 hours. | sale_sharing_opt_out: Send Get started Home Download Sync.me Business Learn More Support Spam Detector Company About Us Contact Us Media Kit Blog More Apps Calendar.AI Livecaller Follow Us Terms of Use Privacy Policy Cookies Policy Edit Cookies Accessibility Opt-O"
+    },
+    {
+      "entry_id": "apollo-interactive-llc",
+      "name": "Apollo Interactive, LLC",
+      "request_url": "https://www.apollointeractive.com/privacy-policy.php",
+      "for_authorized_tests_only": true,
+      "requests_submitted_in_this_research": false,
+      "research_status": "verified",
+      "verification_level": "workflow_partially_inspected",
+      "workflow_kind": "dsar_portal",
+      "acknowledgement": "Documented on the page, not received by this research: Once we have received a\nh our Site, we may use that information to follow up with you to send you information that you have requested about Apollo or our Third Party Partners.",
+      "broker_confirmation": "Unknown. broker_confirmation is null because no request was submitted. A future authorized test would need a message or status the broker itself sends after the request, which this page did not demonstrate.",
+      "independent_removal_check": "Unknown. The inspected page did not describe a public listing to re-open. Do not treat the absence of a new email as proof of removal.",
+      "human_gates": [
+        "captcha"
+      ],
+      "do_not_automate": [
+        "Do not submit the form, create an account, upload an identity document, trigger SMS, or solve a CAPTCHA as part of research.",
+        "A parsed field list is not a selector and not an API."
+      ],
+      "notes": "Request-type quotes: deletion: Request statistics request_type requests optout_sale_and_use 418 right_to_delete 590083 optout_sensistive_info 209 right_to_correct 2 right_to_know 4 Response Statistics: Mean: 17 days, Median: 3 days Number of Right to Delete requests exempted in whole or in part under California Civil Code section 1798.145 or 1798.146: 107,700 This Privacy Policy was last updated on July 8, 2026. | sale_sharing_opt_out: Although we will take all reasonable security precautions regarding information stored on the Site, due to the open nature of the Int\nsales, you may do so by accessing our interactive webform for Do Not Sell requests. | marketing_opt_out: You may opt out of re"
+    },
+    {
+      "entry_id": "uk-open-electoral-register",
+      "name": "UK open electoral register",
+      "request_url": "https://www.gov.uk/electoral-register/opt-out-of-the-open-register",
+      "for_authorized_tests_only": true,
+      "requests_submitted_in_this_research": false,
+      "research_status": "verified",
+      "verification_level": "page_inspected",
+      "workflow_kind": "government_or_industry_choice",
+      "acknowledgement": "Unknown. The inspected page did not describe an acknowledgement, and this research did not receive one.",
+      "broker_confirmation": "Unknown. broker_confirmation is null because no request was submitted. A future authorized test would need a message or status the broker itself sends after the request, which this page did not demonstrate.",
+      "independent_removal_check": "Unknown. The inspected page did not describe a public listing to re-open. Do not treat the absence of a new email as proof of removal.",
+      "human_gates": [],
+      "do_not_automate": [
+        "Do not submit the form, create an account, upload an identity document, trigger SMS, or solve a CAPTCHA as part of research.",
+        "A parsed field list is not a selector and not an API."
+      ],
+      "notes": "Request-type quotes: other: The electoral register and the 'open register': Opt out of the 'open register' - GOV.UK Cookies on GOV.UK We use some essential cookies to make this website work. Headless browser outcome readable (HTTP 200). No form was submitted and no CAPTCHA was solved. No CAPTCHA marker was visible on the inspected screen."
+    },
+    {
+      "entry_id": "canada-national-do-not-call-list",
+      "name": "Canada National Do Not Call List",
+      "request_url": "https://www.lnnte-dncl.gc.ca/en/",
+      "for_authorized_tests_only": true,
+      "requests_submitted_in_this_research": false,
+      "research_status": "verified",
+      "verification_level": "page_inspected",
+      "workflow_kind": "government_or_industry_choice",
+      "acknowledgement": "Unknown. The inspected page did not describe an acknowledgement, and this research did not receive one.",
+      "broker_confirmation": "Unknown. broker_confirmation is null because no request was submitted. A future authorized test would need a message or status the broker itself sends after the request, which this page did not demonstrate.",
+      "independent_removal_check": "Unknown. The inspected page did not describe a public listing to re-open. Do not treat the absence of a new email as proof of removal.",
+      "human_gates": [],
+      "do_not_automate": [
+        "Do not submit the form, create an account, upload an identity document, trigger SMS, or solve a CAPTCHA as part of research.",
+        "A parsed field list is not a selector and not an API."
+      ],
+      "notes": "Request-type quotes: marketing_opt_out: National Do Not Call List (DNCL) - Canada.ca Skip to main content Skip to the footer Language selection Français fr / Gouvernement du Canada Menu Main Menu For Consumers For Consumers : home Register your number Check your registration File a complaint Deregister your number Frequently Asked Questions Who can still call you? Headless browser outcome readable (HTTP 200). No form was submitted and no CAPTCHA was solved. No CAPTCHA marker was visible on the inspected screen."
+    },
+    {
+      "entry_id": "dmachoice",
+      "name": "DMAChoice",
+      "request_url": "https://www.dmachoice.org/",
+      "for_authorized_tests_only": true,
+      "requests_submitted_in_this_research": false,
+      "research_status": "partial",
+      "verification_level": "workflow_partially_inspected",
+      "workflow_kind": "government_or_industry_choice",
+      "acknowledgement": "Unknown. The inspected page did not describe an acknowledgement, and this research did not receive one.",
+      "broker_confirmation": "Unknown. broker_confirmation is null because no request was submitted. A future authorized test would need a message or status the broker itself sends after the request, which this page did not demonstrate.",
+      "independent_removal_check": "Unknown. The inspected page did not describe a public listing to re-open. Do not treat the absence of a new email as proof of removal.",
+      "human_gates": [
+        "login"
+      ],
+      "do_not_automate": [
+        "Do not submit the form, create an account, upload an identity document, trigger SMS, or solve a CAPTCHA as part of research.",
+        "A parsed field list is not a selector and not an API."
+      ],
+      "notes": "Catalog notes mention captcha, email, or an account. Those mentions are preserved as catalog claims and were not copied into verified fields unless the fetched page also said so. Headless browser outcome readable (HTTP 200). No form was submitted and no CAPTCHA was solved. No CAPTCHA marker was visible on the inspected screen."
+    },
+    {
+      "entry_id": "elections-canada",
+      "name": "Elections Canada",
+      "request_url": "https://www.elections.ca/content.aspx?section=vot&dir=reg/des&document=index&lang=e",
+      "for_authorized_tests_only": true,
+      "requests_submitted_in_this_research": false,
+      "research_status": "verified",
+      "verification_level": "page_inspected",
+      "workflow_kind": "government_or_industry_choice",
+      "acknowledgement": "Unknown. The inspected page did not describe an acknowledgement, and this research did not receive one.",
+      "broker_confirmation": "Unknown. broker_confirmation is null because no request was submitted. A future authorized test would need a message or status the broker itself sends after the request, which this page did not demonstrate.",
+      "independent_removal_check": "Unknown. The inspected page did not describe a public listing to re-open. Do not treat the absence of a new email as proof of removal.",
+      "human_gates": [],
+      "do_not_automate": [
+        "Do not submit the form, create an account, upload an identity document, trigger SMS, or solve a CAPTCHA as part of research.",
+        "A parsed field list is not a selector and not an API."
+      ],
+      "notes": "Direct GET states the written opt-out. No request was submitted. Headless browser outcome readable (HTTP 500). No form was submitted and no CAPTCHA was solved. No CAPTCHA marker was visible on the inspected screen."
+    },
+    {
+      "entry_id": "elections-quebec",
+      "name": "Elections Quebec",
+      "request_url": "https://www.electionsquebec.qc.ca/en/vote/registering-your-name-on-the-list-of-electors-or-changing-your-information/",
+      "for_authorized_tests_only": true,
+      "requests_submitted_in_this_research": false,
+      "research_status": "verified",
+      "verification_level": "page_inspected",
+      "workflow_kind": "government_or_industry_choice",
+      "acknowledgement": "Unknown. The inspected page did not describe an acknowledgement, and this research did not receive one.",
+      "broker_confirmation": "Unknown. broker_confirmation is null because no request was submitted. A future authorized test would need a message or status the broker itself sends after the request, which this page did not demonstrate.",
+      "independent_removal_check": "Unknown. The inspected page did not describe a public listing to re-open. Do not treat the absence of a new email as proof of removal.",
+      "human_gates": [
+        "verification"
+      ],
+      "do_not_automate": [
+        "Do not submit the form, create an account, upload an identity document, trigger SMS, or solve a CAPTCHA as part of research.",
+        "A parsed field list is not a selector and not an API."
+      ],
+      "notes": "Direct GET states the three removal paths and the two-document requirement. No request was submitted. Headless browser outcome readable (HTTP 200). No form was submitted and no CAPTCHA was solved. CAPTCHA markers in the rendered page: turnstile."
+    },
+    {
+      "entry_id": "elections-bc",
+      "name": "Elections BC",
+      "request_url": "https://elections.bc.ca/resources/voters-list/the-provincial-voters-list/",
+      "for_authorized_tests_only": true,
+      "requests_submitted_in_this_research": false,
+      "research_status": "verified",
+      "verification_level": "page_inspected",
+      "workflow_kind": "government_or_industry_choice",
+      "acknowledgement": "Unknown. The inspected page did not describe an acknowledgement, and this research did not receive one.",
+      "broker_confirmation": "Unknown. broker_confirmation is null because no request was submitted. A future authorized test would need a message or status the broker itself sends after the request, which this page did not demonstrate.",
+      "independent_removal_check": "Unknown. The inspected page did not describe a public listing to re-open. Do not treat the absence of a new email as proof of removal.",
+      "human_gates": [],
+      "do_not_automate": [
+        "Do not submit the form, create an account, upload an identity document, trigger SMS, or solve a CAPTCHA as part of research.",
+        "A parsed field list is not a selector and not an API."
+      ],
+      "notes": "Direct GET. The site search field was ignored. No request was submitted. Headless browser outcome readable (HTTP 200). No form was submitted and no CAPTCHA was solved. No CAPTCHA marker was visible on the inspected screen."
+    },
+    {
+      "entry_id": "canada-post",
+      "name": "Canada Post",
+      "request_url": "https://www.canadapost-postescanada.ca/cpc/en/support/kb/receiving/delivery-faq/how-to-stop-receiving-advertising-mail.page",
+      "for_authorized_tests_only": true,
+      "requests_submitted_in_this_research": false,
+      "research_status": "verified",
+      "verification_level": "workflow_partially_inspected",
+      "workflow_kind": "government_or_industry_choice",
+      "acknowledgement": "Unknown. The inspected page did not describe an acknowledgement, and this research did not receive one.",
+      "broker_confirmation": "Unknown. broker_confirmation is null because no request was submitted. A future authorized test would need a message or status the broker itself sends after the request, which this page did not demonstrate.",
+      "independent_removal_check": "Unknown. The inspected page did not describe a public listing to re-open. Do not treat the absence of a new email as proof of removal.",
+      "human_gates": [
+        "login"
+      ],
+      "do_not_automate": [
+        "Do not submit the form, create an account, upload an identity document, trigger SMS, or solve a CAPTCHA as part of research.",
+        "A parsed field list is not a selector and not an API."
+      ],
+      "notes": "Direct GET states the phone path, the linked form, the mailbox note, and the 10-day and 90-day timing. No request was submitted. Headless browser outcome readable (HTTP 200). No form was submitted and no CAPTCHA was solved. No CAPTCHA marker was visible on the inspected screen."
+    },
+    {
+      "entry_id": "cma-do-not-mail",
+      "name": "CMA Do Not Mail",
+      "request_url": "https://www.thecma.ca/resources/consumer-centre/get-less-print-mail",
+      "for_authorized_tests_only": true,
+      "requests_submitted_in_this_research": false,
+      "research_status": "partial",
+      "verification_level": "page_inspected",
+      "workflow_kind": "government_or_industry_choice",
+      "acknowledgement": "Unknown. The inspected page did not describe an acknowledgement, and this research did not receive one.",
+      "broker_confirmation": "Unknown. broker_confirmation is null because no request was submitted. A future authorized test would need a message or status the broker itself sends after the request, which this page did not demonstrate.",
+      "independent_removal_check": "Unknown. The inspected page did not describe a public listing to re-open. Do not treat the absence of a new email as proof of removal.",
+      "human_gates": [],
+      "do_not_automate": [
+        "Do not submit the form, create an account, upload an identity document, trigger SMS, or solve a CAPTCHA as part of research.",
+        "A parsed field list is not a selector and not an API."
+      ],
+      "notes": "Direct GET describes the service and the Register Now link. The form was not opened. No request was submitted. Headless browser outcome readable (HTTP 200). No form was submitted and no CAPTCHA was solved. No CAPTCHA marker was visible on the inspected screen."
+    },
+    {
+      "entry_id": "magnite-inc",
+      "name": "Magnite Inc",
+      "request_url": "https://www.magnite.com/legal/user-choice-portal/",
+      "for_authorized_tests_only": true,
+      "requests_submitted_in_this_research": false,
+      "research_status": "verified",
+      "verification_level": "workflow_partially_inspected",
+      "workflow_kind": "dsar_portal",
+      "acknowledgement": "Unknown. The inspected page did not describe an acknowledgement, and this research did not receive one.",
+      "broker_confirmation": "Unknown. broker_confirmation is null because no request was submitted. A future authorized test would need a message or status the broker itself sends after the request, which this page did not demonstrate.",
+      "independent_removal_check": "Unknown. The inspected page did not describe a public listing to re-open. Do not treat the absence of a new email as proof of removal.",
+      "human_gates": [],
+      "do_not_automate": [
+        "Do not submit the form, create an account, upload an identity document, trigger SMS, or solve a CAPTCHA as part of research.",
+        "A parsed field list is not a selector and not an API."
+      ],
+      "notes": "Request-type quotes: access: Depending upon where you reside, you may have the right to access to or correction or deletion of personal information Magnite holds about you. Headless browser outcome readable (HTTP 200). No form was submitted and no CAPTCHA was solved. No CAPTCHA marker was visible on the inspected screen."
+    },
+    {
+      "entry_id": "demand-science-us-llc",
+      "name": "Demand Science US, LLC",
+      "request_url": "https://demandscience.com/privacy-policy/",
+      "for_authorized_tests_only": true,
+      "requests_submitted_in_this_research": false,
+      "research_status": "verified",
+      "verification_level": "workflow_partially_inspected",
+      "workflow_kind": "dsar_portal",
+      "acknowledgement": "Unknown. The inspected page did not describe an acknowledgement, and this research did not receive one.",
+      "broker_confirmation": "Unknown. broker_confirmation is null because no request was submitted. A future authorized test would need a message or status the broker itself sends after the request, which this page did not demonstrate.",
+      "independent_removal_check": "Unknown. The inspected page did not describe a public listing to re-open. Do not treat the absence of a new email as proof of removal.",
+      "human_gates": [
+        "login"
+      ],
+      "do_not_automate": [
+        "Do not submit the form, create an account, upload an identity document, trigger SMS, or solve a CAPTCHA as part of research.",
+        "A parsed field list is not a selector and not an API."
+      ],
+      "notes": "Request-type quotes: sale_sharing_opt_out: We do not sell or share your mobile number with third parties for their own marketing purposes. | marketing_opt_out: We respect your preferences and will ensure that any telemarketing communications comply with applicable laws and regulations. Headless browser outcome readable (HTTP 200). No form was submitted and no CAPTCHA was solved. No CAPTCHA marker was visible on the inspected screen."
+    },
+    {
+      "entry_id": "dtn-llc",
+      "name": "DTN, LLC",
+      "request_url": "https://www.dtn.com/do-not-sell-my-information-form/",
+      "for_authorized_tests_only": true,
+      "requests_submitted_in_this_research": false,
+      "research_status": "verified",
+      "verification_level": "workflow_partially_inspected",
+      "workflow_kind": "dsar_portal",
+      "acknowledgement": "Unknown. The inspected page did not describe an acknowledgement, and this research did not receive one.",
+      "broker_confirmation": "Unknown. broker_confirmation is null because no request was submitted. A future authorized test would need a message or status the broker itself sends after the request, which this page did not demonstrate.",
+      "independent_removal_check": "Unknown. The inspected page did not describe a public listing to re-open. Do not treat the absence of a new email as proof of removal.",
+      "human_gates": [
+        "captcha"
+      ],
+      "do_not_automate": [
+        "Do not submit the form, create an account, upload an identity document, trigger SMS, or solve a CAPTCHA as part of research.",
+        "A parsed field list is not a selector and not an API."
+      ],
+      "notes": "Request-type quotes: deletion: Delete My Personal Data | sale_sharing_opt_out: Do Not Sell or Share My Personal Information Headless browser outcome readable (HTTP 200). No form was submitted and no CAPTCHA was solved. CAPTCHA markers in the rendered page: turnstile."
+    },
+    {
+      "entry_id": "intentsify-llc",
+      "name": "Intentsify, LLC",
+      "request_url": "https://intentsify.io/privacy-policy/",
+      "for_authorized_tests_only": true,
+      "requests_submitted_in_this_research": false,
+      "research_status": "verified",
+      "verification_level": "workflow_partially_inspected",
+      "workflow_kind": "dsar_portal",
+      "acknowledgement": "Unknown. The inspected page did not describe an acknowledgement, and this research did not receive one.",
+      "broker_confirmation": "Unknown. broker_confirmation is null because no request was submitted. A future authorized test would need a message or status the broker itself sends after the request, which this page did not demonstrate.",
+      "independent_removal_check": "Unknown. The inspected page did not describe a public listing to re-open. Do not treat the absence of a new email as proof of removal.",
+      "human_gates": [],
+      "do_not_automate": [
+        "Do not submit the form, create an account, upload an identity document, trigger SMS, or solve a CAPTCHA as part of research.",
+        "A parsed field list is not a selector and not an API."
+      ],
+      "notes": "Request-type quotes: sale_sharing_opt_out: Privacy Policy • Do Not Sell My Info or Share My Info • Subscription Agreement Terms • Campaign Agreement Terms Headless browser outcome readable (HTTP 200). No form was submitted and no CAPTCHA was solved. No CAPTCHA marker was visible on the inspected screen."
+    },
+    {
+      "entry_id": "mediawallah-inc",
+      "name": "MediaWallah Inc",
+      "request_url": "https://mediawallah.com/privacy-policy/",
+      "for_authorized_tests_only": true,
+      "requests_submitted_in_this_research": false,
+      "research_status": "verified",
+      "verification_level": "workflow_partially_inspected",
+      "workflow_kind": "privacy_policy_only",
+      "acknowledgement": "Unknown. The inspected page did not describe an acknowledgement, and this research did not receive one.",
+      "broker_confirmation": "Unknown. broker_confirmation is null because no request was submitted. A future authorized test would need a message or status the broker itself sends after the request, which this page did not demonstrate.",
+      "independent_removal_check": "Unknown. The inspected page did not describe a public listing to re-open. Do not treat the absence of a new email as proof of removal.",
+      "human_gates": [],
+      "do_not_automate": [
+        "Do not submit the form, create an account, upload an identity document, trigger SMS, or solve a CAPTCHA as part of research.",
+        "A parsed field list is not a selector and not an API."
+      ],
+      "notes": "Request-type quotes: marketing_opt_out: ‍\nYour Choices as a User of our Website:\nYou may opt out of receiving promotional and marketing communications from us by emailing us at privacy@mediawallah.com or by using the opt-out mechanism included in the commercial emails we send. Headless browser outcome readable (HTTP 200). No form was submitted and no CAPTCHA was solved. No CAPTCHA marker was visible on the inspected screen."
+    },
+    {
+      "entry_id": "place-exchange-inc",
+      "name": "Place Exchange, Inc.",
+      "request_url": "https://www.placeexchange.com/do-not-sell-my-information",
+      "for_authorized_tests_only": true,
+      "requests_submitted_in_this_research": false,
+      "research_status": "verified",
+      "verification_level": "workflow_partially_inspected",
+      "workflow_kind": "dsar_portal",
+      "acknowledgement": "Unknown. The inspected page did not describe an acknowledgement, and this research did not receive one.",
+      "broker_confirmation": "Unknown. broker_confirmation is null because no request was submitted. A future authorized test would need a message or status the broker itself sends after the request, which this page did not demonstrate.",
+      "independent_removal_check": "Unknown. The inspected page did not describe a public listing to re-open. Do not treat the absence of a new email as proof of removal.",
+      "human_gates": [
+        "captcha"
+      ],
+      "do_not_automate": [
+        "Do not submit the form, create an account, upload an identity document, trigger SMS, or solve a CAPTCHA as part of research.",
+        "A parsed field list is not a selector and not an API."
+      ],
+      "notes": "Request-type quotes: sale_sharing_opt_out: Contact Us\nFor Demand Partners\nPlace Exchange SSP\nPlace Exchange Clear\nPlace Exchange Dynamic Creative\nPerView Measurement for Buyers\nFor Supply Partners\nPlace Exchange SSP\nPlace Exchange Publisher Portal\nPerView Measurement for Sellers\nAbout Place Exchange\nMarkets and Partners\nPortal Login\nNews & Events\nJoin Our Team\nContact Us\nDo Not Sell My Information\nAbout this Form Headless browser outcome readable (HTTP 200). No form was submitted and no CAPTCHA was solved. CAPTCHA markers in the rendered page: recaptcha, hcaptcha."
+    },
+    {
+      "entry_id": "terminus-software-inc",
+      "name": "Terminus Software, Inc.",
+      "request_url": "https://demandscience.com/privacy-policy?utm_campaign=terminus-redirect",
+      "for_authorized_tests_only": true,
+      "requests_submitted_in_this_research": false,
+      "research_status": "verified",
+      "verification_level": "workflow_partially_inspected",
+      "workflow_kind": "dsar_portal",
+      "acknowledgement": "Unknown. The inspected page did not describe an acknowledgement, and this research did not receive one.",
+      "broker_confirmation": "Unknown. broker_confirmation is null because no request was submitted. A future authorized test would need a message or status the broker itself sends after the request, which this page did not demonstrate.",
+      "independent_removal_check": "Unknown. The inspected page did not describe a public listing to re-open. Do not treat the absence of a new email as proof of removal.",
+      "human_gates": [
+        "login"
+      ],
+      "do_not_automate": [
+        "Do not submit the form, create an account, upload an identity document, trigger SMS, or solve a CAPTCHA as part of research.",
+        "A parsed field list is not a selector and not an API."
+      ],
+      "notes": "Request-type quotes: sale_sharing_opt_out: We do not sell or share your mobile number with third parties for their own marketing purposes. | marketing_opt_out: We respect your preferences and will ensure that any telemarketing communications comply with applicable laws and regulations. Headless browser outcome readable (HTTP 200). No form was submitted and no CAPTCHA was solved. No CAPTCHA marker was visible on the inspected screen."
+    },
+    {
+      "entry_id": "us-data-corporation",
+      "name": "US Data Corporation",
+      "request_url": "https://www.usdatacorporation.com/opt-out",
+      "for_authorized_tests_only": true,
+      "requests_submitted_in_this_research": false,
+      "research_status": "verified",
+      "verification_level": "workflow_partially_inspected",
+      "workflow_kind": "dsar_portal",
+      "acknowledgement": "Unknown. The inspected page did not describe an acknowledgement, and this research did not receive one.",
+      "broker_confirmation": "Unknown. broker_confirmation is null because no request was submitted. A future authorized test would need a message or status the broker itself sends after the request, which this page did not demonstrate.",
+      "independent_removal_check": "Unknown. The inspected page did not describe a public listing to re-open. Do not treat the absence of a new email as proof of removal.",
+      "human_gates": [],
+      "do_not_automate": [
+        "Do not submit the form, create an account, upload an identity document, trigger SMS, or solve a CAPTCHA as part of research.",
+        "A parsed field list is not a selector and not an API."
+      ],
+      "notes": "Request-type quotes: sale_sharing_opt_out: MENU\nHOME\nMARKETING LISTS & SOLUTIONS\nABOUT US\nRESOURCES\nGET A QUOTE\nPRIVACY POLICY\nREFUND POLICY\nSITE MAP\nDO NOT SELL MY INFO\nTERMS AND CONDITIONS\nCONNECT Headless browser outcome readable (HTTP 200). No form was submitted and no CAPTCHA was solved. No CAPTCHA marker was visible on the inspected screen."
+    },
+    {
+      "entry_id": "nexsales",
+      "name": "Nexsales",
+      "request_url": "https://nexsales.com/privacy-policy",
+      "for_authorized_tests_only": true,
+      "requests_submitted_in_this_research": false,
+      "research_status": "verified",
+      "verification_level": "workflow_partially_inspected",
+      "workflow_kind": "dsar_portal",
+      "acknowledgement": "Unknown. The inspected page did not describe an acknowledgement, and this research did not receive one.",
+      "broker_confirmation": "Unknown. broker_confirmation is null because no request was submitted. A future authorized test would need a message or status the broker itself sends after the request, which this page did not demonstrate.",
+      "independent_removal_check": "Unknown. The inspected page did not describe a public listing to re-open. Do not treat the absence of a new email as proof of removal.",
+      "human_gates": [],
+      "do_not_automate": [
+        "Do not submit the form, create an account, upload an identity document, trigger SMS, or solve a CAPTCHA as part of research.",
+        "A parsed field list is not a selector and not an API."
+      ],
+      "notes": "Request-type quotes: sale_sharing_opt_out: We do not sell or share any SMS consent or personal information to third parties or affiliates for SMS / Marketing Purposes. Headless browser outcome readable (HTTP 200). No form was submitted and no CAPTCHA was solved. No CAPTCHA marker was visible on the inspected screen."
+    }
+  ]
+}
