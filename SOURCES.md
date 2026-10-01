@@ -1,6 +1,6 @@
 # Sources and CSV columns
 
-`opt-outs.csv` is the catalog. It has **704** data rows. Link checks recorded in `http_status` and in the notes were made on **2026-10-01**.
+`opt-outs.csv` is the catalog. It has **915** data rows. Link checks recorded in `http_status` and in the notes were made on **2026-10-01**. The 211 rows added after the original 704 came from PersProtect URLs that were not already listed, The Markup / CalMatters pages that were not already listed, privacy-rights URLs in the California Privacy Protection Agency data broker registry, and official portals that were not already listed: the National Do Not Call Registry, DMAChoice, the Digital Advertising Alliance opt-out, and California DROP. Dead domains and HTTP 404/410 pages were left out.
 
 The Markdown files in `brokers/` repeat `name`, `url`, and `notes` for reading. They do not add URLs.
 
@@ -22,7 +22,8 @@ The Markdown files in `brokers/` repeat `name`, `url`, and `notes` for reading. 
 | --- | --- |
 | `persprotect` | PersProtect Data Broker Opt-Out List, CC BY 4.0. See [NOTICE](NOTICE). |
 | `markup` | The Markup and CalMatters opt-out page dataset, Apache 2.0. See [NOTICE](NOTICE). |
-| `manual` | URL confirmed from the company's own site or another public page, recorded by hand. |
+| `cppa` | California Privacy Protection Agency data broker registry privacy-rights URL. See [NOTICE](NOTICE). |
+| `manual` | Official opt-out page recorded from a government or industry site (FTC Do Not Call FAQ, FTC junk-mail guidance for DMAChoice, or YourAdChoices). |
 
 A row can list more than one source, for example `persprotect;markup`.
 
@@ -30,9 +31,9 @@ A row can list more than one source, for example `persprotect;markup`.
 
 | Category | File | Entries |
 | --- | --- | ---: |
-| `people-search` | [brokers/people-search.md](brokers/people-search.md) | 112 |
-| `background-checks` | [brokers/background-checks.md](brokers/background-checks.md) | 40 |
-| `marketing` | [brokers/marketing.md](brokers/marketing.md) | 69 |
+| `people-search` | [brokers/people-search.md](brokers/people-search.md) | 127 |
+| `background-checks` | [brokers/background-checks.md](brokers/background-checks.md) | 45 |
+| `marketing` | [brokers/marketing.md](brokers/marketing.md) | 85 |
 | `credit-financial` | [brokers/credit-financial.md](brokers/credit-financial.md) | 9 |
-| `public-records` | [brokers/public-records.md](brokers/public-records.md) | 65 |
-| `other` | [brokers/other.md](brokers/other.md) | 409 |
+| `public-records` | [brokers/public-records.md](brokers/public-records.md) | 70 |
+| `other` | [brokers/other.md](brokers/other.md) | 579 |

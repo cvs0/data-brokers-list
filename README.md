@@ -1,6 +1,6 @@
 # Data broker opt-out list
 
-A catalog of **704** data broker, people-search, and consumer-reporting opt-out or privacy-request pages. Each row is a real URL from the attached source data, checked on **2026-10-01**.
+A catalog of **915** data broker, people-search, and consumer-reporting opt-out or privacy-request pages. Each row is a real URL, checked on **2026-10-01**.
 
 This is a directory of links, not a removal service. Read the [disclaimer](DISCLAIMER.md) before you use it. Pages move, forms ask for different ID, and a successful request on one site does not remove you from the rest.
 
@@ -34,6 +34,11 @@ If you only do one sitting, use these. URLs are copied from [`opt-outs.csv`](opt
 | Experian | https://www.experian.com/privacy/opting_out |
 | TransUnion | https://www.transunion.com/consumer-privacy |
 | OptOutPrescreen (Experian/Equifax/TransUnion/Innovis) | https://www.optoutprescreen.com/ |
+| Radaris | https://radaris.com/control/privacy |
+| National Do Not Call Registry | https://www.donotcall.gov/ |
+| DMAChoice | https://www.dmachoice.org/ |
+| Digital Advertising Alliance opt-out | https://optout.aboutads.info/ |
+| California DROP | https://privacy.ca.gov/drop/ |
 
 Search the CSV before you send extra personal details. Notes say when a page returned HTTP 403 or 429 to an automated check, when email is part of the flow, and when an account may be required.
 
@@ -41,13 +46,13 @@ Search the CSV before you send extra personal details. Notes say when a page ret
 
 | Category | File | Entries |
 | --- | --- | ---: |
-| People search | [brokers/people-search.md](brokers/people-search.md) | 112 |
-| Background checks | [brokers/background-checks.md](brokers/background-checks.md) | 40 |
-| Marketing | [brokers/marketing.md](brokers/marketing.md) | 69 |
+| People search | [brokers/people-search.md](brokers/people-search.md) | 127 |
+| Background checks | [brokers/background-checks.md](brokers/background-checks.md) | 45 |
+| Marketing | [brokers/marketing.md](brokers/marketing.md) | 85 |
 | Credit and financial | [brokers/credit-financial.md](brokers/credit-financial.md) | 9 |
-| Public records | [brokers/public-records.md](brokers/public-records.md) | 65 |
-| Other | [brokers/other.md](brokers/other.md) | 409 |
-| **Total** | [opt-outs.csv](opt-outs.csv) | **704** |
+| Public records | [brokers/public-records.md](brokers/public-records.md) | 70 |
+| Other | [brokers/other.md](brokers/other.md) | 579 |
+| **Total** | [opt-outs.csv](opt-outs.csv) | **915** |
 
 `opt-outs.csv` is the source of truth. The Markdown files are tables generated from it. Column definitions and the check date are in [SOURCES.md](SOURCES.md).
 
@@ -62,7 +67,7 @@ California residents may also have a statewide deletion request through the stat
 
 ## Sources
 
-URLs were adapted from the PersProtect open dataset (CC BY 4.0) and The Markup / CalMatters investigation data (Apache 2.0), then checked on 2026-10-01. Credit and license details are in [NOTICE](NOTICE).
+URLs were adapted from the PersProtect open dataset (CC BY 4.0), The Markup / CalMatters investigation data (Apache 2.0), and the California Privacy Protection Agency data broker registry, then checked on 2026-10-01. Credit and license details are in [NOTICE](NOTICE).
 
 ## License
 
