@@ -2,7 +2,7 @@
 
 People-search sites that publish names, phone numbers, relatives, or address history. Many ask for a profile URL and an email confirmation.
 
-141 entries. Link responses were checked on 2026-10-01 unless a note says otherwise.
+150 entries. Link responses were checked on 2026-10-01 unless a note says otherwise.
 
 | Broker | Opt-out / privacy URL | Notes |
 | --- | --- | --- |
@@ -19,18 +19,23 @@ People-search sites that publish names, phone numbers, relatives, or address his
 | Background Hawk (TruthFinder) | https://www.truthfinder.com/opt-out/v2/submit/ | Opt-out or consumer privacy-request page. Automated check on 2026-10-01 got HTTP 403. Open the link in a browser. |
 | BackgroundChecks.org (BeenVerified data) | https://www.beenverified.com/app/optout/search | Opt-out or consumer privacy-request page. Email: privacy@beenverified.com. Automated check on 2026-10-01 got HTTP 403. Open the link in a browser. |
 | BeenVerified | https://www.beenverified.com/app/optout/search | People-search opt-out with email confirmation. One email is often limited to a single removal; further listings may need privacy@beenverified.com. Property-search opt-out: https://www.beenverified.com/app/optout/address-search. PeopleSmart, Ownerly, NeighborWho, and other Lifetime Value brands use this form. Automated check on 2026-10-01 got HTTP 403. Open the link in a browser. |
+| Bell Canada | https://support.bell.ca/Home_phone/Phone_line/How_to_unlist_my_Bell_Home_phone_number | Canadian Bell Home phone non-published listing. It is left out of 411 directory assistance and the next white and yellow pages. The monthly fee is $2 plus tax. An existing listed number stays listed until the next directory. Contact Bell customer service to request it. |
 | Bumper (BeenVerified family) | https://www.beenverified.com/app/optout/search | Opt-out or consumer privacy-request page. Email: privacy@beenverified.com. Automated check on 2026-10-01 got HTTP 403. Open the link in a browser. |
 | CallerCenter | https://www.callercenter.com/ | Published privacy-request URL is the site root. Confirm a request form is on the page before sending information. Web form. Automated check on 2026-10-01 got HTTP 403. Open the link in a browser. |
+| Canada Pages | https://www.canadapages.com/remove-info.php | Canadian people-search removal form. Include the phone number shown on the listing. Email: info@canadapages.com. The site says it tries to remove the information within 3 business days. |
+| Canada411 | https://www.canada411.ca/help.html?key=faq | Canadian phone-directory help page. To remove a listing from the print directory, directory assistance, and Canada411, ask your telephone provider for an unlisted number. A web-only removal is submitted on this page and is taken off Canada411 within two working days. |
 | Canada411 (Yellow Pages Canada) | https://corporate.yp.ca/privacy-statement | Privacy statement for Yellow Pages Canada, which operates Canada411. Use the request section. |
 | CheckPeople | https://checkpeople.com/opt-out | Opt-out form. A do-not-sell page is also at https://checkpeople.com/do-not-sell-info. Date of birth is commonly required. Automated check on 2026-10-01 got HTTP 403. Open the link in a browser. |
 | Classmates.com | https://www.classmates.com/about/privacy#p-8 | Web form (PeopleConnect). Email: privacy@classmates.com. Open-dataset difficulty: easy. Automated check on 2026-10-01 got HTTP 403. Open the link in a browser. |
 | CocoFinder | https://cocofinder.com/remove-my-info | Web form. Open-dataset difficulty: easy. Automated check on 2026-10-01 got HTTP 403. Open the link in a browser. |
 | CocoFinder.net | https://cocofinder.net/remove-my-info | Opt-out or consumer privacy-request page. Email: support@cocofinder.net. Automated check on 2026-10-01 got HTTP 403. Open the link in a browser. |
+| Cogeco | https://support.cogeco.ca/hc/en-ca/articles/360059892993-How-do-I-remove-my-name-and-Home-Phone-number-from-the-directory | Canadian Cogeco Unlisted Name and Phone Number feature. It removes the listing from directory assistance (411), printed white pages, and canada411.ca. Dial 611 from a Cogeco line. Automated check on 2026-10-01 got HTTP 403. Open the link in a browser. |
 | ConfidentialPhoneLookup | https://www.confidentialphonelookup.com/ | Published privacy-request URL is the site root. Confirm a request form is on the page before sending information. |
 | Criminal.com (TruthFinder) | https://www.truthfinder.com/opt-out/v2/submit/ | Opt-out or consumer privacy-request page. Email: feedback@criminal.com. Automated check on 2026-10-01 got HTTP 403. Open the link in a browser. |
 | CriminalRecords.com (Intelius) | https://www.intelius.com/privacy-center | Opt-out or consumer privacy-request page. Email: support@mailer.intelius.com. Automated check on 2026-10-01 got HTTP 403. Open the link in a browser. |
 | CyberBackgroundChecks | https://www.cyberbackgroundchecks.com/removal | Removal form. Automated check on 2026-10-01 got HTTP 403. Open the link in a browser. |
 | dewarrants.org (InfoTracer form) | https://infotracer.com/optout/ | This domain sends removal requests to the InfoTracer opt-out form. |
+| Eastlink | https://www.eastlink.ca/privacy-policy/ | Canadian Eastlink privacy policy. A paid non-published number keeps your name, address, and phone number out of directory publishers and directory assistance. Non-published numbers stay in the 911 database. Contact Eastlink Customer Care. Automated check on 2026-10-01 got HTTP 403. Open the link in a browser. |
 | EasyBackgroundChecks (Intelius) | https://www.intelius.com/suppression-center/ | Opt-out or consumer privacy-request page. Email: priorityoptout@intelius.com. Automated check on 2026-10-01 got HTTP 403. Open the link in a browser. |
 | Electronic Voice Services, Inc. (telephonelists.biz) | https://www.telephonelists.biz/privacy-notice-for-residents-of-california | Privacy notice or privacy-policy page. Use the state-rights, do-not-sell, or request section. Privacy-rights page submitted to the California Data Broker Registry. |
 | FaceCheck | https://facecheck.id/Face-Search/Privacy | Privacy notice or privacy-policy page. Use the state-rights, do-not-sell, or request section. |
@@ -106,6 +111,7 @@ People-search sites that publish names, phone numbers, relatives, or address his
 | RevealPhoneOwner | https://www.revealphoneowner.com | Published privacy-request URL is the site root. Confirm a request form is on the page before sending information. Automated check on 2026-10-01 got HTTP 403. Open the link in a browser. |
 | ReversePhone (Whitepages-affiliated) | https://www.reversephone.com/svc/optout/search/optouts | Opt-out or consumer privacy-request page. Email: support@reversephone.com. Automated check on 2026-10-01 got HTTP 403. Open the link in a browser. |
 | ReversePhoneLookup (Intelius/PeopleConnect) | https://www.reversephonelookup.com/remove.php | Opt-out or consumer privacy-request page. Automated check on 2026-10-01 got HTTP 403. Open the link in a browser. |
+| SaskTel | https://support.sasktel.com/app/answers/detail/a_id/15410 | Canadian SaskTel home-phone options: non-listed (removed from the SaskTel phone book) or non-published (removed from the phone book and directory assistance). Call 1-800-727-5835. Automated check on 2026-10-01 got HTTP 401. Open the link in a browser. |
 | SearchPeopleFree | https://www.searchpeoplefree.com/opt-out | Opt-out form. Check name, phone, address, and email searches; those can be separate listings. Automated check on 2026-10-01 got HTTP 403. Open the link in a browser. |
 | SearchPeopleFree.net | https://searchpeoplefree.net/resource/remove-my-info | Per-record web form (Google/Gmail login required). Email: support@searchpeoplefree.net. Open-dataset difficulty: moderate. Automated check on 2026-10-01 got HTTP 403. Open the link in a browser. |
 | SearchQuarry | https://members.searchquarry.com/opt-out | Web form. Open-dataset difficulty: easy. |
@@ -121,6 +127,7 @@ People-search sites that publish names, phone numbers, relatives, or address his
 | Superpages | https://www.superpages.com/ccpa | CCPA choices for Superpages (Thryv). The Yellow Pages listing is separate. |
 | Sync.ME | https://sync.me/unsubscribe/ | Online form. Email: privacy@sync.me. Open-dataset difficulty: easy. |
 | Telephone Directories | https://www.telephonedirectories.us/Edit_Records | Privacy notice or privacy-policy page. Use the state-rights, do-not-sell, or request section. Email: support@telephonedirectories.us. |
+| TELUS | https://www.telus.com/en/about/privacy/faqs | Canadian TELUS privacy FAQ. You can remove your name from TELUS marketing lists and exclude it from Yellow and White Page listings. From a TELUS mobile dial *611, or call 1-866-558-2273. Automated check on 2026-10-01 got HTTP 403. Open the link in a browser. |
 | ThatsThem | https://thatsthem.com/optout | Opt-out form. Skip identity-theft product offers on the results page. Automated check on 2026-10-01 got HTTP 403. Open the link in a browser. |
 | ThePublicIndex | https://thepublicindex.org/optout | Opt-out or consumer privacy-request page. Email: support@thepublicindex.org. |
 | Truecaller | https://www.truecaller.com/privacy/privacy-center | Privacy center for Truecaller caller-ID and people-search data. Use the request section. |
@@ -138,6 +145,8 @@ People-search sites that publish names, phone numbers, relatives, or address his
 | USPhoneBook | https://www.usphonebook.com/opt-out | Opt-out form. If the page hangs, the site has published support+optout@usphonebook.com for removal help. |
 | uswarrants.org (InfoTracer form) | https://infotracer.com/optout/ | This domain sends removal requests to the InfoTracer opt-out form. |
 | Veripages | https://veripages.com/inner/control-privacy | Privacy-control form. It asks for the profile URL, name, and email, usually with a captcha. Automated check on 2026-10-01 got HTTP 403. Open the link in a browser. |
+| Videotron | https://www.videotron.com/en/support/home-phone/calls-services/star-codes-add-ons | Canadian Videotron Unlisted Number add-on so your name and number are not in the phone book or given out by directory assistance (411). Contact Videotron to add it. Fees apply. |
+| White Pages Canada | https://whitepagescanada.ca/remove-info.php | Canadian people-search removal form for whitepagescanada.ca. Include the phone number on the listing. The site says removal can take up to two weeks. |
 | Whitepages | https://www.whitepages.com/suppression-requests | Suppression form. A phone call with a code is commonly required. The same request covers 411.com. Alternate email: privacyrequest@whitepages.com. Automated check on 2026-10-01 got HTTP 403. Open the link in a browser. Related domains using this form: property.whitepages.com. |
 | Whitepages (411.com) | https://www.whitepages.com/suppression-requests | Suppression form. Open-dataset difficulty: moderate. Automated check on 2026-10-01 got HTTP 403. Open the link in a browser. |
 | Whoscall | https://web.whoscall.com/en/privacy | Privacy notice for the Whoscall caller-ID service. Use the request section. |

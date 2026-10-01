@@ -2,7 +2,7 @@
 
 Registered data brokers and privacy-request pages that do not fit the categories above.
 
-581 entries. Link responses were checked on 2026-10-01 unless a note says otherwise.
+587 entries. Link responses were checked on 2026-10-01 unless a note says otherwise.
 
 | Broker | Opt-out / privacy URL | Notes |
 | --- | --- | --- |
@@ -74,6 +74,7 @@ Registered data brokers and privacy-request pages that do not fit the categories
 | BuyersRoad, Inc | https://www.experience.com/privacy-notice | Privacy notice or privacy-policy page. Use the state-rights, do-not-sell, or request section. Email: privacy@experience.com. Privacy-rights page submitted to the California Data Broker Registry. |
 | BV Insights LLC | https://big-village.com/do-not-sell-or-share-my-personal-information/ | Opt-out or consumer privacy-request page. |
 | Cadent, LLC | https://www.cadent.com/your-privacy-choices | Opt-out or consumer privacy-request page. |
+| CAI Quebec | https://formulaire.cai.gouv.qc.ca/ | Canadian Commission d'acces a l'information du Quebec form portal for access-to-information and privacy complaints. Email: formulaire@cai.gouv.qc.ca. |
 | California DROP | https://privacy.ca.gov/drop/ | California Delete Request and Opt-Out Platform, linked from the CPPA data broker registry. Account verification is required. Automated check on 2026-10-01 got HTTP 403. Open the link in a browser. |
 | CaliforniaBrokers.org (LicenseData) | http://www.californiabrokers.org/about#contact | Privacy notice or privacy-policy page. Use the state-rights, do-not-sell, or request section. Email: contact@licensedata.org. Automated check on 2026-10-01 got HTTP 403. Open the link in a browser. |
 | CaliforniaEngineering.org (LicenseData) | http://www.californiaengineering.org/about#contact | Privacy notice or privacy-policy page. Use the state-rights, do-not-sell, or request section. Email: contact@licensedata.org. Automated check on 2026-10-01 got HTTP 403. Open the link in a browser. |
@@ -377,8 +378,11 @@ Registered data brokers and privacy-request pages that do not fit the categories
 | NumLooker | https://numlooker.com/remove-my-info | Opt-out or consumer privacy-request page. Email: service@numlooker.com. Automated check on 2026-10-01 got HTTP 403. Open the link in a browser. |
 | NumLookup | https://www.numlookup.com/opt_out | Online form. Email: hello@numlookup.com. Open-dataset difficulty: easy. |
 | Ocean Global Inc | https://www.ocean.io/ | Published privacy-request URL is the site root. Confirm a request form is on the page before sending information. Automated check on 2026-10-01 got HTTP 403. Open the link in a browser. |
+| Office of the Privacy Commissioner of Canada | https://www.priv.gc.ca/en/privacy-topics/information-and-advice-for-individuals/your-privacy-rights/raise-privacy-concern/ | Canadian guidance for raising a privacy concern under PIPEDA. Contact the organization's privacy officer first. The OPC online complaint form is https://services.priv.gc.ca/plainte-complaint/en/triage. |
 | Ogury Ltd | https://privacy.ogury.com/ | Published privacy-request URL is the site root. Confirm a request form is on the page before sending information. Email: legal@ogury.co. Privacy-rights page submitted to the California Data Broker Registry. |
 | Ohio Resident Database | https://www.ohioresidentdatabase.com/opt-out | Opt-out or consumer privacy-request page. Automated check on 2026-10-01 got HTTP 403. Open the link in a browser. |
+| OIPC Alberta | https://oipc.ab.ca/privacy-correction-complaint | Canadian Office of the Information and Privacy Commissioner of Alberta form for a privacy complaint or correction request. |
+| OIPC British Columbia | https://www.oipc.bc.ca/forms/individuals/complaints/ | Canadian Office of the Information and Privacy Commissioner for British Columbia complaint form for individuals. Email: info@oipc.bc.ca. |
 | Onfocus SAS | https://adagio.io | Published privacy-request URL is the site root. Confirm a request form is on the page before sending information. Privacy-rights page submitted to the California Data Broker Registry. |
 | ONLINE MEDIA GROUP INC. | https://omginc.xyz/privacy | Opt-out or consumer privacy-request page. |
 | OnPoint Data Strategy | https://onpointdatastrategy.com/opt-out/ | Opt-out or consumer privacy-request page. |
@@ -411,6 +415,7 @@ Registered data brokers and privacy-request pages that do not fit the categories
 | PrivateNumberChecker | https://www.privatenumberchecker.com/removal-request | Opt-out or consumer privacy-request page. Automated check on 2026-10-01 got HTTP 403. Open the link in a browser. |
 | PrivCo Media LLC | https://www.privco.com/privacy-policy | Privacy notice or privacy-policy page. Use the state-rights, do-not-sell, or request section. |
 | ProdPro Inc | https://app.prodpro.com/privacy-policy | Privacy notice or privacy-policy page. Use the state-rights, do-not-sell, or request section. |
+| Profile Canada | https://www.profilecanada.com/privacystatement.cfm | Canadian business-directory privacy statement. To modify or delete information you submitted on the site, email owenmediainfo@owen-media.com. The page says a complete removal from its databases is not always possible. |
 | Project Affinity, Inc | https://www.affinity.co/legal/privacy-policy | Privacy notice or privacy-policy page. Use the state-rights, do-not-sell, or request section. |
 | PropertyChecker.com | https://propertychecker.com/optout | Opt-out or consumer privacy-request page. Email: privacy@propertychecker.com. |
 | PropertyIQ | https://www.propertyiq.com/opt-out/address-search | Online form. Email: support@propertyiq.com. Open-dataset difficulty: easy. |
@@ -456,6 +461,7 @@ Registered data brokers and privacy-request pages that do not fit the categories
 | Rhetorik Limited | https://rhetorik.com/do-not-sell-my-info/ | Opt-out or consumer privacy-request page. |
 | Rich Media LLC | https://richmediallc.com/do-not-sell-my-personal-information/ | Opt-out or consumer privacy-request page. |
 | Ripple Effect Strategies | https://www.ripple-roi.com/privacy-policy | Privacy notice or privacy-policy page. Use the state-rights, do-not-sell, or request section. Privacy-rights page submitted to the California Data Broker Registry. |
+| Rogers | https://www.rogers.com/support/cyber-security/privacy/access-to-information | Canadian Rogers privacy-access page. Use the privacy information request form linked on the page, or mail the Chief Privacy Officer, Rogers Group of Companies, 333 Bloor St. E., Toronto, ON M4W 1G9. |
 | Roq.ad Inc. | https://www.roq.ad/privacy-policy-roqad/ | Privacy notice or privacy-policy page. Use the state-rights, do-not-sell, or request section. |
 | ROR Partners, LLC | https://rorpartners.com/privacy-policy | Privacy notice or privacy-policy page. Use the state-rights, do-not-sell, or request section. Email: privacy@rorpartners.com. Privacy-rights page submitted to the California Data Broker Registry. |
 | Round Sky, Inc. | https://www.roundsky.com/supplemental-privacy-notice/ | Privacy notice or privacy-policy page. Use the state-rights, do-not-sell, or request section. The Markup and CalMatters (2025) found page code that hid this URL from search engines. |
