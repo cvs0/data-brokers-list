@@ -1,0 +1,14 @@
+{
+  "batch": "batch-010",
+  "counts": {
+    "challenge": 8,
+    "http_200": 23,
+    "http_403": 1
+  },
+  "fetched_this_run": 32,
+  "finished_at": "2026-10-01T22:18:34+00:00",
+  "requests_submitted": false,
+  "skipped_cached": 4,
+  "started_at": "2026-10-01T22:18:32+00:00",
+  "urls_in_batch": 36
+}

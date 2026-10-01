@@ -1,0 +1,14 @@
+{
+  "batch": "pilot",
+  "counts": {
+    "challenge": 6,
+    "http_200": 14,
+    "http_403": 1
+  },
+  "fetched_this_run": 21,
+  "finished_at": "2026-10-01T22:16:28+00:00",
+  "requests_submitted": false,
+  "skipped_cached": 0,
+  "started_at": "2026-10-01T22:16:27+00:00",
+  "urls_in_batch": 21
+}

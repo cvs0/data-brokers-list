@@ -16,6 +16,8 @@ Use these columns, in this order:
 
 Keep one row per URL. If two brand names share a portal, both rows may use that same URL.
 
+The enriched records in `data/v1/` are built from this CSV. Do not add or drop CSV rows without rebuilding those records. Stable IDs are derived from the name, with the domain added only when two slugs collide. Leave the CSV columns in the order above so existing consumers keep working. The ID join lives in `data/v1/catalog-ids.csv`.
+
 ## After editing the CSV
 
 Regenerate `brokers/*.md` so each file is a table:
