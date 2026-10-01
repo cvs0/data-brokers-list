@@ -1,0 +1,1130 @@
+{
+  "https://suppression.peopleconnect.us/": {
+    "identity": {
+      "entry_type": "people_search_site",
+      "entry_type_evidence": "The suppression page says the tool applies to public data from a name search on people-search sites in the PeopleConnect family.",
+      "parent_company": "PeopleConnect",
+      "single_request_covers_multiple_brands": true,
+      "single_request_coverage_evidence": "The page says the Suppression Tool applies to public data generated in response to a name search on the people-search sites in the PeopleConnect family. It does not apply to user data, and it does not apply to other PeopleConnect sites including Classmates.com. The page does not name every brand.",
+      "geographic_coverage": ["unknown"],
+      "documented_request_eligibility": [
+        "The tool applies to public data from a name search on PeopleConnect family people-search sites. It does not apply to user data collected by those sites, to Classmates.com, or to information that remains available from other sources."
+      ],
+      "supported_request_types": ["public_listing_suppression"],
+      "sister_brands": [
+        {
+          "entry_id": "classmates-com",
+          "name": "Classmates.com",
+          "relationship": "verified_parent_exception",
+          "evidence_basis": "official_page"
+        }
+      ]
+    },
+    "discovery": {
+      "public_profiles_searchable": true,
+      "exposure_check": "public",
+      "profile_identification": "The page describes suppression of a background report returned from a name search. The form fields behind Start Here were not opened."
+    },
+    "request_workflow": {
+      "submission_methods": ["web_form"],
+      "steps": [
+        {
+          "order": 1,
+          "action": "The Suppression Center landing page was read. Navigation shows Start Here, Identity, and Suppression Settings. Those screens were not opened and no form was submitted.",
+          "observed": true,
+          "source": "page_instructions",
+          "evidence": "Rendered text from https://suppression.peopleconnect.us/ included those section names and the tool's scope. The research-environment GET returned only the title."
+        }
+      ],
+      "fields_observation": "not_inspected",
+      "authorized_agent_requirements": null,
+      "automation_restrictions": "The page says PeopleConnect may restrict or withdraw the Suppression Tool if it detects abuse.",
+      "documented_processing_time": null
+    },
+    "automation": {
+      "classification": "assisted_workflow",
+      "classification_evidence": "A shared web suppression tool is documented, including an Identity section, but its fields, CAPTCHA, and confirmation steps were not inspected. The page also warns that abuse can cause the tool to be restricted.",
+      "automatable_steps": ["Open the shared Suppression Center URL. Do not assume every PeopleConnect brand is covered."],
+      "human_steps": [
+        "Complete the Identity and Suppression Settings steps, which were not inspected.",
+        "Review listings that the page says can remain, including phone, address, email, and sex-offender results."
+      ],
+      "implementation_notes": "One adapter can target suppression.peopleconnect.us for the catalog rows that use this URL. Classmates.com is an explicit exception. No form selectors were inspected. No API endpoint was inferred."
+    },
+    "verification": {
+      "submission_acknowledgement": null,
+      "independent_removal_verification": "The page tells the person to contact PeopleConnect if public data is still visible after using the tool. This research did not search a listing.",
+      "distinct_suppression_deletion_marketing_outcomes": true,
+      "outcome_distinction_notes": "Suppressing a background report does not remove user data, does not cover Classmates.com, and does not stop the name from appearing in phone, address, or email reports or on sex-offender lists.",
+      "reappearance_or_recurring_checks": "The page says public-record discrepancies can make complete removal difficult and asks the person to report public data that remains after suppression.",
+      "workflow_kind": "public_listing_form",
+      "inspection_channel": "rendered_reader",
+      "evidence_urls": ["https://suppression.peopleconnect.us/"],
+      "evidence_notes": "A direct GET from the research environment returned a 34-character shell. A second reader returned the suppression-scope text. No request was submitted. Catalog notes about email limits were not copied in.",
+      "confidence": "medium",
+      "research_status": "partial",
+      "verification_level": "page_inspected"
+    }
+  },
+  "https://myprivacy.equifax.com/opt-in-opt-out/personal-info": {
+    "identity": {
+      "entry_type": "consumer_reporting_agency",
+      "entry_type_evidence": "The page says an opt-out does not affect the Equifax credit report, which remains governed by the FCRA.",
+      "geographic_coverage": ["US"],
+      "documented_request_eligibility": [
+        "Equifax allows residents of any US state to submit requests to limit use of sensitive personal information and to opt out of or opt in to sharing or selling personal information. The page says this does not change the credit report."
+      ],
+      "supported_request_types": ["sale_sharing_opt_out", "other"]
+    },
+    "discovery": {
+      "exposure_check": "broker_confirmation_only",
+      "profile_identification": "Step 1 asks for name and address so Equifax can locate the consumer. No public profile URL is requested on the inspected step."
+    },
+    "request_workflow": {
+      "submission_methods": ["web_form", "phone"],
+      "steps": [
+        {
+          "order": 1,
+          "action": "Step 1, labeled Info, asks for name and address. Optional date of birth, SSN or ITIN, email, and mobile number were visible. The form was not submitted.",
+          "observed": true,
+          "source": "page_form",
+          "evidence": "Rendered Equifax myPrivacy page. The research-environment GET returned only the title myPrivacy."
+        },
+        {
+          "order": 2,
+          "action": "Step 2 is labeled Verify. That screen was not opened.",
+          "observed": false,
+          "source": "page_instructions",
+          "evidence": "The page chrome shows the next step name Verify."
+        }
+      ],
+      "required_fields": ["first name", "last name", "address line 1", "city", "state", "zip code"],
+      "optional_fields": ["address line 2", "date of birth", "SSN or ITIN", "email", "mobile number"],
+      "fields_observation": "form_parsed",
+      "profile_url_or_record_id_required": false,
+      "account_login_required": false,
+      "email_verification_required": null,
+      "phone_sms_verification_required": null,
+      "identity_document_required": null,
+      "identity_document_redaction": null,
+      "captcha_present": null,
+      "captcha_requirement": "unknown",
+      "published_request_limits": "The page says the request does not affect the FCRA credit report."
+    },
+    "automation": {
+      "classification": "assisted_workflow",
+      "classification_evidence": "Step 1 is a web form and a phone alternative is published, but step 2 is an unopened Verify screen and the form can collect SSN. No request was submitted.",
+      "automatable_steps": ["Open the myPrivacy URL and fill the inspected name and address fields only after the person supplies them."],
+      "human_steps": ["Complete the Verify step, which was not inspected.", "Decide whether to provide optional SSN, date of birth, email, or mobile number."],
+      "observed_blockers": ["verification"],
+      "implementation_notes": "Phone alternative published on the page: 1-866-295-6801. No selectors were copied. Direct GET did not return the form."
+    },
+    "verification": {
+      "distinct_suppression_deletion_marketing_outcomes": true,
+      "outcome_distinction_notes": "The page distinguishes a sale or sharing opt-out and a sensitive-data limit from the credit report, which it says is retained under the FCRA.",
+      "workflow_kind": "dsar_portal",
+      "inspection_channel": "rendered_reader",
+      "evidence_urls": ["https://myprivacy.equifax.com/opt-in-opt-out/personal-info"],
+      "evidence_notes": "Rendered reader showed the step 1 form. The research GET was an empty shell. No request was submitted, so the Verify step and any later document request are unknown.",
+      "confidence": "medium",
+      "research_status": "verified",
+      "verification_level": "workflow_partially_inspected"
+    }
+  },
+  "https://www.optoutprescreen.com/": {
+    "identity": {
+      "entry_type": "consumer_reporting_agency",
+      "entry_type_evidence": "The page identifies itself as the consumer credit reporting industry site for firm offers of credit or insurance and names Equifax, Experian, Innovis, and TransUnion.",
+      "single_request_covers_multiple_brands": true,
+      "single_request_coverage_evidence": "The page says an opt-out, if the file can be located, stops Equifax, Experian, Innovis, and TransUnion from including the consumer in firm-offer lists. It does not say this deletes other data those companies hold.",
+      "geographic_coverage": ["unknown"],
+      "documented_request_eligibility": [
+        "Consumers can request a five-year electronic opt-out, a permanent opt-out by mail, or an opt-in after a previous opt-out. The page limits the effect to firm offers of credit or insurance from the four named companies."
+      ],
+      "supported_request_types": ["marketing_opt_out"],
+      "sister_brands": [
+        {"entry_id": "equifax", "name": "Equifax", "relationship": "verified_sister", "evidence_basis": "official_page"},
+        {"entry_id": "experian", "name": "Experian", "relationship": "verified_sister", "evidence_basis": "official_page"},
+        {"entry_id": "transunion", "name": "TransUnion", "relationship": "verified_sister", "evidence_basis": "official_page"},
+        {"entry_id": "innovis", "name": "Innovis", "relationship": "verified_sister", "evidence_basis": "official_page"}
+      ]
+    },
+    "discovery": {
+      "exposure_check": "not_applicable",
+      "profile_identification": "The consumer supplies identity details so a credit file can be located. This page is not a public people-search listing."
+    },
+    "request_workflow": {
+      "submission_methods": ["web_form", "postal_mail"],
+      "steps": [
+        {
+          "order": 1,
+          "action": "The explanatory page was read. It offers a five-year electronic opt-out and a mailed permanent opt-out form. The electronic form was not opened and nothing was submitted.",
+          "observed": true,
+          "source": "page_instructions",
+          "evidence": "Rendered text from https://www.optoutprescreen.com/. The research-environment GET returned HTTP 403 Access Denied."
+        }
+      ],
+      "fields_observation": "not_inspected",
+      "profile_url_or_record_id_required": false
+    },
+    "automation": {
+      "classification": "assisted_workflow",
+      "classification_evidence": "The official page documents an electronic five-year opt-out and a mailed permanent opt-out for four consumer reporting agencies. The form fields were not inspected, and the research GET was denied.",
+      "automatable_steps": ["Send the person to the official OptOutPrescreen URL rather than to four separate firm-offer forms."],
+      "human_steps": ["Complete the electronic form or mail the permanent election. Fields were not inspected."],
+      "observed_blockers": ["inaccessible_page"],
+      "implementation_notes": "Direct GET was Akamai Access Denied. A rendered reader received the explanatory page. That is not evidence a residential proxy is required. No form selectors were inspected."
+    },
+    "verification": {
+      "workflow_kind": "government_or_industry_choice",
+      "inspection_channel": "rendered_reader",
+      "evidence_urls": ["https://www.optoutprescreen.com/"],
+      "evidence_notes": "Firm-offer opt-out only. Not a people-search deletion. Research GET status 403. No request submitted.",
+      "confidence": "medium",
+      "research_status": "verified",
+      "verification_level": "page_inspected"
+    }
+  },
+  "https://privacy.ca.gov/drop/": {
+    "identity": {
+      "entry_type": "regulator_guidance",
+      "entry_type_evidence": "Official California Privacy Protection Agency page for the Delete Request and Opt-out Platform.",
+      "single_request_covers_multiple_brands": true,
+      "single_request_coverage_evidence": "The page says DROP lets a person send one request to over 600 registered data brokers. It does not list those brokers on the inspected summary, and it does not say every catalog row is included.",
+      "geographic_coverage": ["US-CA"],
+      "documented_request_eligibility": [
+        "The person must be a California resident, verified through the California Identity Gateway. Login.gov is optional and only suggested if an account already exists. A parent or family member may submit for some other California residents."
+      ],
+      "supported_request_types": ["deletion", "sale_sharing_opt_out"]
+    },
+    "discovery": {
+      "exposure_check": "broker_confirmation_only",
+      "profile_identification": "The person creates a DROP profile. The page says the person chooses how much basic information to provide."
+    },
+    "request_workflow": {
+      "submission_methods": ["web_form"],
+      "steps": [
+        {
+          "order": 1,
+          "action": "Confirm California residency through the California Identity Gateway.",
+          "observed": false,
+          "source": "page_instructions",
+          "evidence": "DROP page section Eligibility and verification."
+        },
+        {
+          "order": 2,
+          "action": "Create a profile. The amount of basic information is chosen by the person.",
+          "observed": false,
+          "source": "page_instructions",
+          "evidence": "DROP page step Create your profile."
+        },
+        {
+          "order": 3,
+          "action": "Submit one DROP request to registered data brokers. The form was not submitted.",
+          "observed": false,
+          "source": "page_instructions",
+          "evidence": "DROP page step Submit your DROP request."
+        }
+      ],
+      "fields_observation": "not_inspected",
+      "account_login_required": false,
+      "identity_document_required": null,
+      "documented_processing_time": "Starting August 1, 2026, data brokers must access DROP at least once every 45 days. The page says status updates could take up to 90 days and that brokers must delete data every 45 days.",
+      "published_request_limits": "The inspected summary says the request goes to registered data brokers in DROP, not to every company in this catalog."
+    },
+    "automation": {
+      "classification": "assisted_workflow",
+      "classification_evidence": "DROP is an official one-to-many deletion and opt-out platform, but eligibility verification uses the California Identity Gateway. The research GET hit a Cloudflare interstitial.",
+      "automatable_steps": ["Explain eligibility and the 45-day and 90-day timing. Do not collect identity-gateway data into a broker adapter."],
+      "human_steps": ["Complete California residency verification.", "Choose the profile details and submit the request."],
+      "observed_blockers": ["bot_wall", "verification"],
+      "implementation_notes": "Direct GET received a Cloudflare challenge. A rendered reader returned the public DROP explainer. No API endpoint was inferred and no form was submitted."
+    },
+    "verification": {
+      "submission_acknowledgement": "The page says status is shown in DROP. No status was requested or received.",
+      "broker_confirmation": null,
+      "independent_removal_verification": null,
+      "workflow_kind": "government_or_industry_choice",
+      "inspection_channel": "rendered_reader",
+      "evidence_urls": ["https://privacy.ca.gov/drop/"],
+      "evidence_notes": "Regulator platform, not a single broker's form. Coverage of this catalog was not matched broker by broker. No request submitted.",
+      "confidence": "medium",
+      "research_status": "verified",
+      "verification_level": "page_inspected"
+    }
+  },
+  "https://www.fastpeoplesearch.com/optout": {
+    "identity": {
+      "entry_type": "people_search_site",
+      "entry_type_evidence": "The opt-out page is titled as a FastPeopleSearch do-not-sell and record-removal flow.",
+      "geographic_coverage": ["unknown"],
+      "documented_request_eligibility": ["unknown"],
+      "supported_request_types": ["public_listing_suppression", "sale_sharing_opt_out"]
+    },
+    "discovery": {
+      "public_profiles_searchable": null,
+      "exposure_check": "unknown",
+      "profile_identification": "The instructions say the form information should match the record to remove. They do not say a profile URL is required."
+    },
+    "request_workflow": {
+      "submission_methods": ["web_form", "email"],
+      "steps": [
+        {
+          "order": 1,
+          "action": "Enter name and email and complete the CAPTCHA. The page says it emails a link. The form was not submitted.",
+          "observed": true,
+          "source": "page_instructions",
+          "evidence": "Rendered FastPeopleSearch opt-out instructions. The research GET was a Cloudflare block page."
+        },
+        {
+          "order": 2,
+          "action": "Click the emailed link. The page says the link expires after 24 hours.",
+          "observed": false,
+          "source": "page_instructions",
+          "evidence": "Instruction step 2 on the opt-out page."
+        },
+        {
+          "order": 3,
+          "action": "Enter the information that matches the record. That form was not opened.",
+          "observed": false,
+          "source": "page_instructions",
+          "evidence": "Instruction step 3."
+        },
+        {
+          "order": 4,
+          "action": "The page says a confirmation page and confirmation email follow. Neither was received.",
+          "observed": false,
+          "source": "page_instructions",
+          "evidence": "Instruction step 4."
+        }
+      ],
+      "fields_observation": "not_inspected",
+      "email_verification_required": true,
+      "email_verification_mechanism": "link",
+      "captcha_present": true,
+      "captcha_type": "unspecified",
+      "captcha_provider": "unspecified",
+      "captcha_stage": "before the email link is sent",
+      "captcha_requirement": "always_required",
+      "documented_processing_time": "The page says to allow 3 days for the record to be fully removed.",
+      "authorized_agent_requirements": "An authorized agent's email can receive the form link. After submission, confirmation goes to both the agent and the subject.",
+      "profile_url_or_record_id_required": null
+    },
+    "automation": {
+      "classification": "assisted_workflow",
+      "classification_evidence": "The page publishes an ordered web flow, then requires a CAPTCHA and an emailed link before the removal form. The research GET was blocked by Cloudflare.",
+      "automatable_steps": ["Track the published four-step order and the 24-hour link limit."],
+      "human_steps": ["Complete the CAPTCHA.", "Open the emailed link and submit the record form."],
+      "observed_blockers": ["bot_wall", "captcha", "verification"],
+      "implementation_notes": "No selectors were inspected because the research GET did not return the form. Do not infer a proxy requirement from that block."
+    },
+    "verification": {
+      "submission_acknowledgement": "The page says a confirmation page is shown and a confirmation email is sent. None was received in this research.",
+      "independent_removal_verification": null,
+      "workflow_kind": "public_listing_form",
+      "inspection_channel": "rendered_reader",
+      "evidence_urls": ["https://www.fastpeoplesearch.com/optout"],
+      "evidence_notes": "Instructions were read from a rendered copy of the official opt-out page. The research GET returned a Cloudflare block. No request was submitted, so removal was not confirmed.",
+      "confidence": "medium",
+      "research_status": "verified",
+      "verification_level": "page_inspected"
+    }
+  },
+  "https://www.whitepages.com/suppression-requests": {
+    "identity": {
+      "entry_type": "people_search_site",
+      "entry_type_evidence": "The page is titled Opt-out of Whitepages and asks for a profile URL so the listing can be removed.",
+      "supported_request_types": ["public_listing_suppression"],
+      "geographic_coverage": ["unknown"],
+      "documented_request_eligibility": ["unknown"]
+    },
+    "discovery": {
+      "public_profiles_searchable": true,
+      "supported_search_inputs": ["unknown"],
+      "exposure_check": "public",
+      "profile_identification": "Step 1 of 5 asks the person to copy and paste the profile URL."
+    },
+    "request_workflow": {
+      "submission_methods": ["web_form"],
+      "steps": [
+        {
+          "order": 1,
+          "action": "Step 1 of 5 asks for the profile URL. Later steps were not opened and the form was not submitted.",
+          "observed": true,
+          "source": "page_form",
+          "evidence": "Rendered Whitepages suppression page. The research GET was a Cloudflare challenge."
+        }
+      ],
+      "fields_observation": "form_parsed",
+      "required_fields": ["profile URL"],
+      "optional_fields": [],
+      "profile_url_or_record_id_required": true,
+      "account_login_required": null,
+      "email_verification_required": null,
+      "phone_sms_verification_required": null,
+      "captcha_present": null,
+      "captcha_requirement": "unknown"
+    },
+    "automation": {
+      "classification": "assisted_workflow",
+      "classification_evidence": "Only step 1 of 5 was visible: paste a profile URL. The research GET was blocked. Catalog claims about a phone code were not treated as verified.",
+      "automatable_steps": ["Accept a profile URL the person has already found."],
+      "human_steps": ["Find the correct public profile URL.", "Complete steps 2 through 5, which were not inspected."],
+      "observed_blockers": ["bot_wall"],
+      "implementation_notes": "No CSS selectors were inspected. Do not require a phone code unless a later inspected step says so."
+    },
+    "verification": {
+      "workflow_kind": "public_listing_form",
+      "inspection_channel": "rendered_reader",
+      "evidence_urls": ["https://www.whitepages.com/suppression-requests"],
+      "evidence_notes": "Partial wizard inspection only. Direct GET was a Cloudflare challenge. No request submitted.",
+      "confidence": "medium",
+      "research_status": "partial",
+      "verification_level": "workflow_partially_inspected"
+    }
+  },
+  "https://www.phonelookup.com/opt":   {
+    "identity": {
+      "supported_request_types": [
+        "public_listing_suppression"
+      ],
+      "geographic_coverage": [
+        "unknown"
+      ],
+      "documented_request_eligibility": [
+        "The page says claiming a number and marking it unpublished removes the information PhoneLookup has on that number and opts it out of future display. A company line, or a number the person cannot receive a code on, can be sent to support instead."
+      ]
+    },
+    "request_workflow": {
+      "submission_methods": [
+        "other"
+      ],
+      "steps": [
+        {
+          "order": 1,
+          "action": "The page describes two paths and neither form was submitted: sign up, confirm email, enter the phone number, enter the PIN from a call or text, then choose Make Unpublished; or contact support for a manual removal.",
+          "observed": true,
+          "source": "page_instructions",
+          "evidence": "Phone Lookup opt-out page at https://www.phonelookup.com/opt. The parsed phone field posts to /search/number and is a site search, not the opt-out form."
+        }
+      ],
+      "fields_observation": "no_form_in_html",
+      "account_login_required": true,
+      "email_verification_required": true,
+      "email_verification_mechanism": "unknown",
+      "phone_sms_verification_required": true,
+      "documented_processing_time": "Support removals are described as within 72 hours or as soon as possible.",
+      "captcha_present": null,
+      "captcha_requirement": "unknown"
+    },
+    "automation": {
+      "classification": "manual_workflow",
+      "classification_evidence": "The inspected instructions require an account, an email confirmation, and a phone PIN before Make Unpublished. Support is the alternative when the PIN cannot be received. The on-page phone box is a search form.",
+      "automatable_steps": [
+        "Open the published opt-out instructions."
+      ],
+      "human_steps": [
+        "Create the PhoneLookup account and confirm the email.",
+        "Receive and enter the phone or SMS PIN for the number being unpublished.",
+        "Use support if the number cannot receive that code."
+      ],
+      "observed_blockers": [
+        "login",
+        "verification"
+      ],
+      "implementation_notes": "Do not submit the /search/number field as the opt-out. No request was submitted."
+    },
+    "verification": {
+      "workflow_kind": "public_listing_form",
+      "inspection_channel": "http_get",
+      "evidence_urls": [
+        "https://www.phonelookup.com/opt"
+      ],
+      "evidence_notes": "Direct GET returned the two-path instructions. The HTML form is a phone search. No request was submitted.",
+      "confidence": "medium",
+      "research_status": "verified",
+      "verification_level": "page_inspected",
+      "distinct_suppression_deletion_marketing_outcomes": null,
+      "reappearance_or_recurring_checks": "Make Unpublished is described as opting the number out of future display on this site."
+    }
+  },
+  "https://411.info/privacy":   {
+    "identity": {
+      "supported_request_types": [
+        "public_listing_suppression"
+      ]
+    },
+    "request_workflow": {
+      "submission_methods": [
+        "unknown"
+      ],
+      "steps": [
+        {
+          "order": 1,
+          "action": "The privacy policy says to use Manage / Remove Your Listing. That link was not opened. The forms on this page are business, people, and reverse-phone search boxes.",
+          "observed": true,
+          "source": "page_instructions",
+          "evidence": "https://411.info/privacy links to Manage / Remove Your Listing. Parsed actions are /search, /people, and /reverse."
+        }
+      ],
+      "fields_observation": "no_form_in_html",
+      "account_login_required": null,
+      "email_verification_required": null,
+      "phone_sms_verification_required": null
+    },
+    "automation": {
+      "classification": "unknown",
+      "classification_evidence": "The removal page was not opened. Search boxes on the privacy policy are not the removal form.",
+      "automatable_steps": [
+        "Open the privacy policy and follow the Manage / Remove Your Listing link in a later inspection."
+      ],
+      "human_steps": [
+        "Open the linked removal page. Its fields were not inspected."
+      ],
+      "observed_blockers": [],
+      "implementation_notes": "No removal form selectors were taken from the search boxes."
+    },
+    "verification": {
+      "workflow_kind": "public_listing_form",
+      "inspection_channel": "http_get",
+      "evidence_urls": [
+        "https://411.info/privacy"
+      ],
+      "evidence_notes": "The policy says a listing can be removed and links to Manage / Remove Your Listing. That page was not fetched. No request was submitted.",
+      "confidence": "low",
+      "research_status": "partial",
+      "verification_level": "page_inspected"
+    }
+  },
+  "https://spectrummailinglists.com/privacy-statement/":   {
+    "identity": {
+      "supported_request_types": [
+        "unknown"
+      ]
+    },
+    "request_workflow": {
+      "submission_methods": [
+        "unknown"
+      ],
+      "fields_observation": "no_form_in_html",
+      "steps": [
+        {
+          "order": 1,
+          "action": "Do Not Sell My Personal Information is a navigation link on this page. The parsed form is a newsletter email field, and the other input is site search. Neither was treated as the opt-out.",
+          "observed": true,
+          "source": "page_instructions",
+          "evidence": "https://spectrummailinglists.com/privacy-statement/ footer and navigation. Form fields subs_email and s."
+        }
+      ]
+    },
+    "automation": {
+      "classification": "unknown",
+      "classification_evidence": "The do-not-sell destination was not opened. The email field is a newsletter signup.",
+      "automatable_steps": [],
+      "human_steps": [
+        "Open the linked do-not-sell page before building a request."
+      ],
+      "observed_blockers": [],
+      "implementation_notes": "No request was submitted."
+    },
+    "verification": {
+      "workflow_kind": "unknown",
+      "inspection_channel": "http_get",
+      "evidence_urls": [
+        "https://spectrummailinglists.com/privacy-statement/"
+      ],
+      "evidence_notes": "A do-not-sell link is present. The page does not contain that form. No request was submitted.",
+      "confidence": "low",
+      "research_status": "partial",
+      "verification_level": "page_inspected"
+    }
+  },
+  "https://www.sentilink.com/privacy-policy":   {
+    "identity": {
+      "supported_request_types": [
+        "marketing_opt_out"
+      ],
+      "documented_request_eligibility": [
+        "The page says SentiLink does not sell or share personal information, and points interest-based advertising opt-outs to the DAA and NAI sites."
+      ]
+    },
+    "request_workflow": {
+      "submission_methods": [
+        "unknown"
+      ],
+      "fields_observation": "no_form_in_html",
+      "steps": [
+        {
+          "order": 1,
+          "action": "The privacy policy states that SentiLink does not sell or share personal information and points interest-based advertising controls to aboutads.info and the NAI. The only parsed email field is an address box, not a request form that was identified as theirs.",
+          "observed": true,
+          "source": "page_instructions",
+          "evidence": "https://www.sentilink.com/privacy-policy Sales and Sharing and Interest-Based Advertising sections."
+        }
+      ]
+    },
+    "automation": {
+      "classification": "unknown",
+      "classification_evidence": "No SentiLink request form was identified. Advertising opt-out is delegated to DAA and NAI pages.",
+      "automatable_steps": [],
+      "human_steps": [
+        "Use the DAA or NAI page the policy names if the goal is interest-based advertising control."
+      ],
+      "observed_blockers": [],
+      "implementation_notes": "The statement 'we do not sell or share' was not recorded as a sale opt-out form."
+    },
+    "verification": {
+      "workflow_kind": "privacy_policy_only",
+      "inspection_channel": "http_get",
+      "evidence_urls": [
+        "https://www.sentilink.com/privacy-policy"
+      ],
+      "evidence_notes": "Direct GET of the privacy policy. No request was submitted.",
+      "confidence": "low",
+      "research_status": "partial",
+      "verification_level": "page_inspected"
+    }
+  },
+  "https://www.homeyou.com/opt-out":   {
+    "identity": {
+      "supported_request_types": [
+        "unknown"
+      ]
+    },
+    "request_workflow": {
+      "submission_methods": [
+        "unknown"
+      ],
+      "fields_observation": "no_form_in_html",
+      "steps": [
+        {
+          "order": 1,
+          "action": "The fetched /opt-out URL shows a quote form and a pro signup (name, email, phone, company) plus a footer link labeled Do Not Sell My Info. The opt-out form itself was not in the fetched text.",
+          "observed": true,
+          "source": "page_instructions",
+          "evidence": "https://www.homeyou.com/opt-out visible text and form actions /get-a-quote and an unlabeled pro signup."
+        }
+      ]
+    },
+    "automation": {
+      "classification": "unknown",
+      "classification_evidence": "The pro signup and quote form were not treated as the opt-out. The do-not-sell link was not opened.",
+      "automatable_steps": [],
+      "human_steps": [
+        "Open the Do Not Sell My Info link and inspect that form."
+      ],
+      "observed_blockers": [],
+      "implementation_notes": "No request was submitted."
+    },
+    "verification": {
+      "workflow_kind": "unknown",
+      "inspection_channel": "http_get",
+      "evidence_urls": [
+        "https://www.homeyou.com/opt-out"
+      ],
+      "evidence_notes": "Direct GET did not include an opt-out form in the visible text. No request was submitted.",
+      "confidence": "low",
+      "research_status": "partial",
+      "verification_level": "page_inspected"
+    }
+  },
+  "https://www.oipc.bc.ca/forms/individuals/complaints/":   {
+    "identity": {
+      "entry_type": "regulator_guidance",
+      "entry_type_evidence": "The page is the Office of the Information and Privacy Commissioner for British Columbia complaint form, not a data-broker listing.",
+      "supported_request_types": [
+        "other"
+      ],
+      "geographic_coverage": [
+        "CA"
+      ],
+      "documented_request_eligibility": [
+        "Submitting this form is a complaint to the OIPC. A menu link to an access request is a different page and was not opened."
+      ]
+    },
+    "request_workflow": {
+      "submission_methods": [
+        "web_form"
+      ],
+      "fields_observation": "form_parsed",
+      "required_fields": [
+        "name",
+        "email",
+        "phone",
+        "complaint details"
+      ],
+      "steps": [
+        {
+          "order": 1,
+          "action": "The complaint form asks for name, email, phone, complaint details, and optional attachments. A Turnstile widget is present. The form was not submitted.",
+          "observed": true,
+          "source": "page_form",
+          "evidence": "https://www.oipc.bc.ca/forms/individuals/complaints/ parsed complaintFormSubmissionDto fields."
+        }
+      ]
+    },
+    "automation": {
+      "classification": "assisted_workflow",
+      "classification_evidence": "A commissioner complaint form was parsed, with a Turnstile challenge. It is not a broker-listing adapter.",
+      "automatable_steps": [
+        "Open the OIPC complaint form."
+      ],
+      "human_steps": [
+        "Complete the Turnstile challenge and describe the complaint."
+      ],
+      "observed_blockers": [
+        "captcha"
+      ],
+      "implementation_notes": "Do not send a broker opt-out to this form. No request was submitted."
+    },
+    "verification": {
+      "workflow_kind": "government_or_industry_choice",
+      "inspection_channel": "http_get",
+      "evidence_urls": [
+        "https://www.oipc.bc.ca/forms/individuals/complaints/"
+      ],
+      "evidence_notes": "The access-request wording on the page is a navigation link. The parsed form is the complaint form. No request was submitted.",
+      "confidence": "medium",
+      "research_status": "verified",
+      "verification_level": "workflow_partially_inspected"
+    }
+  },
+  "https://oipc.ab.ca/privacy-correction-complaint":   {
+    "identity": {
+      "entry_type": "regulator_guidance",
+      "entry_type_evidence": "The page is the Office of the Information and Privacy Commissioner of Alberta privacy complaint and correction guidance.",
+        "supported_request_types": [
+          "correction",
+          "other"
+        ],
+        "geographic_coverage": [
+          "CA"
+        ],
+        "documented_request_eligibility": [
+          "The page says to raise the concern with the public body, health custodian, or private organization first and to allow at least 30 business days for that response before asking the OIPC to review a privacy complaint or correction request."
+        ]
+    },
+    "request_workflow": {
+      "submission_methods": [
+        "email"
+      ],
+      "fields_observation": "no_form_in_html",
+      "documented_processing_time": "The page says to allow at least 30 business days for the organization to respond before an OIPC review.",
+      "steps": [
+        {
+          "order": 1,
+          "action": "The page says to make the complaint in writing and email it to privacy@gov.ab.ca, and to keep a copy. The site-search box was not treated as the complaint form.",
+          "observed": true,
+          "source": "page_instructions",
+          "evidence": "https://oipc.ab.ca/privacy-correction-complaint"
+        }
+      ]
+    },
+    "automation": {
+      "classification": "manual_workflow",
+      "classification_evidence": "The inspected path is a written complaint emailed to the commissioner after the person has already contacted the organization. No web form was parsed.",
+      "automatable_steps": [
+        "Open the OIPC Alberta instructions."
+      ],
+      "human_steps": [
+        "Write the complaint and send it to privacy@gov.ab.ca after giving the organization time to respond."
+      ],
+      "observed_blockers": [],
+      "implementation_notes": "No request was submitted."
+    },
+    "verification": {
+      "workflow_kind": "government_or_industry_choice",
+      "inspection_channel": "http_get",
+      "evidence_urls": [
+        "https://oipc.ab.ca/privacy-correction-complaint"
+      ],
+      "evidence_notes": "Direct GET states the email address and the 30-business-day wait. No request was submitted.",
+      "confidence": "medium",
+      "research_status": "verified",
+      "verification_level": "page_inspected"
+    }
+  },
+  "https://www.priv.gc.ca/en/privacy-topics/information-and-advice-for-individuals/your-privacy-rights/raise-privacy-concern/":   {
+    "identity": {
+      "entry_type": "regulator_guidance",
+      "entry_type_evidence": "The page is Office of the Privacy Commissioner of Canada guidance on raising a privacy concern.",
+      "supported_request_types": [
+        "other"
+      ],
+      "geographic_coverage": [
+        "CA"
+      ],
+      "documented_request_eligibility": [
+        "The OPC says to try to resolve the issue with the organization first. If that step is skipped, the OPC may not accept a complaint."
+      ]
+    },
+    "request_workflow": {
+      "submission_methods": [
+        "unknown"
+      ],
+      "steps": [
+        {
+          "order": 1,
+          "action": "The page tells the person to contact the business privacy officer or the federal institution's ATIP coordinator before complaining to the OPC. The OPC complaint form was not on this page.",
+          "observed": true,
+          "source": "page_instructions",
+          "evidence": "https://www.priv.gc.ca/en/privacy-topics/information-and-advice-for-individuals/your-privacy-rights/raise-privacy-concern/"
+        }
+      ]
+    },
+    "automation": {
+      "classification": "manual_workflow",
+      "classification_evidence": "The inspected page is guidance to contact the organization. It is not a broker form and the OPC complaint form was not opened.",
+      "automatable_steps": [
+        "Open the OPC guidance."
+      ],
+      "human_steps": [
+        "Contact the organization's privacy officer before filing with the OPC."
+      ],
+      "observed_blockers": [],
+      "implementation_notes": "No request was submitted."
+    },
+    "verification": {
+      "workflow_kind": "government_or_industry_choice",
+      "inspection_channel": "http_get",
+      "evidence_urls": [
+        "https://www.priv.gc.ca/en/privacy-topics/information-and-advice-for-individuals/your-privacy-rights/raise-privacy-concern/"
+      ],
+      "evidence_notes": "Direct GET of the OPC guidance page. No complaint form was present. No request was submitted.",
+      "confidence": "medium",
+      "research_status": "partial",
+      "verification_level": "page_inspected"
+    }
+  },
+  "https://formulaire.cai.gouv.qc.ca/":   {
+    "identity": {
+      "entry_type": "regulator_guidance",
+      "entry_type_evidence": "The page is the Commission d'accès à l'information du Québec intake form.",
+      "supported_request_types": [
+        "other"
+      ],
+      "geographic_coverage": [
+        "CA"
+      ],
+      "documented_request_eligibility": [
+        "The first screen asks whether the person is a citizen, a private organization, a public body, or a political party, and what the request concerns, including personal information or a complaint."
+      ]
+    },
+    "request_workflow": {
+      "submission_methods": [
+        "web_form"
+      ],
+      "fields_observation": "form_parsed",
+      "steps": [
+        {
+          "order": 1,
+          "action": "The first screen is a set of routing choices. Later screens were not opened and nothing was submitted.",
+          "observed": true,
+          "source": "page_form",
+          "evidence": "https://formulaire.cai.gouv.qc.ca/ visible choices include access to documents, personal information, and a complaint."
+        }
+      ]
+    },
+    "automation": {
+      "classification": "assisted_workflow",
+      "classification_evidence": "Only the first routing step of the CAI form was inspected. It is a commissioner intake, not a broker listing form.",
+      "automatable_steps": [
+        "Open the CAI form."
+      ],
+      "human_steps": [
+        "Choose the requester type and subject. Later fields were not inspected."
+      ],
+      "observed_blockers": [],
+      "implementation_notes": "No request was submitted. Later wizard fields are unknown."
+    },
+    "verification": {
+      "workflow_kind": "government_or_industry_choice",
+      "inspection_channel": "http_get",
+      "evidence_urls": [
+        "https://formulaire.cai.gouv.qc.ca/"
+      ],
+      "evidence_notes": "Direct GET showed the first routing step only. No request was submitted.",
+      "confidence": "medium",
+      "research_status": "partial",
+      "verification_level": "workflow_partially_inspected"
+    }
+  },
+  "https://www.elections.ca/content.aspx?section=vot&dir=reg/des&document=index&lang=e":   {
+    "identity": {
+      "entry_type": "public_records_source",
+      "entry_type_evidence": "The page is Elections Canada's description of the National Register of Electors.",
+      "supported_request_types": [
+        "other"
+      ],
+      "geographic_coverage": [
+        "CA"
+      ],
+      "documented_request_eligibility": [
+        "Canadians may opt out of the National Register of Electors. They do not lose the right to vote. A written request must include name, date of birth, current home and mailing addresses, and signature."
+      ]
+    },
+    "request_workflow": {
+      "submission_methods": [
+        "postal_mail"
+      ],
+      "fields_observation": "no_form_in_html",
+      "steps": [
+        {
+          "order": 1,
+          "action": "The page says to write to Elections Canada to be removed from the Register and to include name, date of birth, current home and mailing addresses, and signature. The site search box was ignored.",
+          "observed": true,
+          "source": "page_instructions",
+          "evidence": "https://www.elections.ca/content.aspx?section=vot&dir=reg/des&document=index&lang=e"
+        }
+      ]
+    },
+    "automation": {
+      "classification": "manual_workflow",
+      "classification_evidence": "Opt-out is a signed letter to Elections Canada. There is no single web form on the inspected page. Opting out does not remove the right to vote.",
+      "automatable_steps": [
+        "Open the Elections Canada register description."
+      ],
+      "human_steps": [
+        "Mail a signed request with name, date of birth, and home and mailing addresses."
+      ],
+      "observed_blockers": [],
+      "implementation_notes": "No request was submitted. This is not a broker listing deletion."
+    },
+    "verification": {
+      "workflow_kind": "government_or_industry_choice",
+      "inspection_channel": "http_get",
+      "evidence_urls": [
+        "https://www.elections.ca/content.aspx?section=vot&dir=reg/des&document=index&lang=e"
+      ],
+      "evidence_notes": "Direct GET states the written opt-out. No request was submitted.",
+      "confidence": "medium",
+      "research_status": "verified",
+      "verification_level": "page_inspected",
+      "reappearance_or_recurring_checks": "After opting out, the person must be added to the list of electors again in order to vote."
+    }
+  },
+  "https://www.electionsquebec.qc.ca/en/vote/registering-your-name-on-the-list-of-electors-or-changing-your-information/":   {
+    "identity": {
+      "entry_type": "public_records_source",
+      "entry_type_evidence": "The page is Élections Québec guidance for the permanent list of electors.",
+      "supported_request_types": [
+        "other"
+      ],
+      "geographic_coverage": [
+        "CA"
+      ],
+      "documented_request_eligibility": [
+        "A person who no longer wants to be on the list, for example because they are moving outside Québec, can ask to be struck off. The page says to consult the outside-Québec instructions first when the move may be temporary."
+      ]
+    },
+    "request_workflow": {
+      "submission_methods": [
+        "postal_mail",
+        "phone"
+      ],
+      "identity_document_required": true,
+      "fields_observation": "no_form_in_html",
+      "steps": [
+        {
+          "order": 1,
+          "action": "The page lists three ways to be struck off: mail a short letter with photocopies of two supporting documents; use the secure Contact us link and attach those copies; or call to receive an application form. The Contact us form was not opened.",
+          "observed": true,
+          "source": "page_instructions",
+          "evidence": "https://www.electionsquebec.qc.ca/en/vote/registering-your-name-on-the-list-of-electors-or-changing-your-information/"
+        }
+      ]
+    },
+    "automation": {
+      "classification": "manual_workflow",
+      "classification_evidence": "Removal from the list of electors requires a written request or a phone request for a form, plus two supporting documents. The secure contact form was not inspected.",
+      "automatable_steps": [
+        "Open the Élections Québec instructions."
+      ],
+      "human_steps": [
+        "Provide two supporting documents and send the written request, or call to obtain the application form."
+      ],
+      "observed_blockers": [
+        "verification"
+      ],
+      "implementation_notes": "No request was submitted. No identity document was uploaded."
+    },
+    "verification": {
+      "workflow_kind": "government_or_industry_choice",
+      "inspection_channel": "http_get",
+      "evidence_urls": [
+        "https://www.electionsquebec.qc.ca/en/vote/registering-your-name-on-the-list-of-electors-or-changing-your-information/"
+      ],
+      "evidence_notes": "Direct GET states the three removal paths and the two-document requirement. No request was submitted.",
+      "confidence": "medium",
+      "research_status": "verified",
+      "verification_level": "page_inspected"
+    }
+  },
+  "https://elections.bc.ca/resources/voters-list/the-provincial-voters-list/":   {
+    "identity": {
+      "entry_type": "public_records_source",
+      "entry_type_evidence": "The page is Elections BC's description of the provincial voters list.",
+      "supported_request_types": [
+        "other"
+      ],
+      "geographic_coverage": [
+        "CA"
+      ],
+      "documented_request_eligibility": [
+        "A person who believes that inclusion on lists distributed to voting places, political parties, and candidates will put their privacy or security at risk can apply to have their name and address omitted from those lists."
+      ]
+    },
+    "request_workflow": {
+      "submission_methods": [
+        "phone",
+        "postal_mail"
+      ],
+      "fields_observation": "no_form_in_html",
+      "steps": [
+        {
+          "order": 1,
+          "action": "The page says to call Elections BC Voter Services at 1-800-661-8683 or write to the Director, Voter Data and Geography, for the omission request. This is not described as deleting the voter record.",
+          "observed": true,
+          "source": "page_instructions",
+          "evidence": "https://elections.bc.ca/resources/voters-list/the-provincial-voters-list/"
+        }
+      ]
+    },
+    "automation": {
+      "classification": "manual_workflow",
+      "classification_evidence": "The inspected path is a phone call or a letter to Elections BC. It omits the name and address from distributed lists. It is not a broker deletion and the application details are given by phone or mail.",
+      "automatable_steps": [
+        "Open the Elections BC voters-list page."
+      ],
+      "human_steps": [
+        "Call 1-800-661-8683 or write to Elections BC and request the omission."
+      ],
+      "observed_blockers": [],
+      "implementation_notes": "No request was submitted."
+    },
+    "verification": {
+      "workflow_kind": "government_or_industry_choice",
+      "inspection_channel": "http_get",
+      "evidence_urls": [
+        "https://elections.bc.ca/resources/voters-list/the-provincial-voters-list/"
+      ],
+      "evidence_notes": "Direct GET. The site search field was ignored. No request was submitted.",
+      "confidence": "medium",
+      "research_status": "verified",
+      "verification_level": "page_inspected",
+      "distinct_suppression_deletion_marketing_outcomes": true,
+      "outcome_distinction_notes": "The request omits name and address from lists sent to voting places, parties, and candidates. The page does not say the person is removed from the voters list."
+    }
+  },
+  "https://www.canadapost-postescanada.ca/cpc/en/support/kb/receiving/delivery-faq/how-to-stop-receiving-advertising-mail.page":   {
+    "identity": {
+      "entry_type": "marketing_choice_service",
+      "entry_type_evidence": "The page is Canada Post's instruction for reducing advertising mail.",
+      "supported_request_types": [
+        "marketing_opt_out"
+      ],
+      "geographic_coverage": [
+        "CA"
+      ],
+      "documented_request_eligibility": [
+        "Removing a name from the Canada Post database applies only to the current address. It does not stop regular mail, community newspapers without commercial inserts, public-interest government mail, or election material."
+      ]
+    },
+    "request_workflow": {
+      "submission_methods": [
+        "phone"
+      ],
+      "fields_observation": "no_form_in_html",
+      "documented_processing_time": "The page says removal from the Canada Post database may take up to 10 business days, and addressed advertising mail may continue for up to 90 days for ongoing campaigns.",
+      "steps": [
+        {
+          "order": 1,
+          "action": "For addressed mail that uses Canada Post lists, the page says to submit the online database opt-out form or call 1-800-267-1177. The form was linked and not opened. For unaddressed mail, the page says to put a note on the mailbox.",
+          "observed": true,
+          "source": "page_instructions",
+          "evidence": "https://www.canadapost-postescanada.ca/cpc/en/support/kb/receiving/delivery-faq/how-to-stop-receiving-advertising-mail.page"
+        }
+      ]
+    },
+    "automation": {
+      "classification": "manual_workflow",
+      "classification_evidence": "The phone number was on the inspected page. The database opt-out form was a related link and its fields were not inspected. Unaddressed mail is a physical note on the mailbox.",
+      "automatable_steps": [
+        "Open the Canada Post advertising-mail page."
+      ],
+      "human_steps": [
+        "Call 1-800-267-1177 or complete the linked database form, which was not inspected.",
+        "Place a mailbox note to refuse unaddressed advertising mail."
+      ],
+      "observed_blockers": [],
+      "implementation_notes": "No request was submitted. Do not treat the unopened form as a known field list."
+    },
+    "verification": {
+      "workflow_kind": "government_or_industry_choice",
+      "inspection_channel": "http_get",
+      "evidence_urls": [
+        "https://www.canadapost-postescanada.ca/cpc/en/support/kb/receiving/delivery-faq/how-to-stop-receiving-advertising-mail.page"
+      ],
+      "evidence_notes": "Direct GET states the phone path, the linked form, the mailbox note, and the 10-day and 90-day timing. No request was submitted.",
+      "confidence": "medium",
+      "research_status": "verified",
+      "verification_level": "page_inspected",
+      "distinct_suppression_deletion_marketing_outcomes": true,
+      "outcome_distinction_notes": "Unaddressed advertising mail is stopped with a mailbox note. Addressed advertising mail that uses Canada Post lists is a separate database request. Other organizations' lists are a further, separate request.",
+      "reappearance_or_recurring_checks": "The page says the database removal applies only to the current address and must be submitted again after a move."
+    }
+  },
+  "https://www.thecma.ca/resources/consumer-centre/get-less-print-mail":   {
+    "identity": {
+      "entry_type": "marketing_choice_service",
+      "entry_type_evidence": "The page is the Canadian Marketing Association Do Not Mail service.",
+      "supported_request_types": [
+        "marketing_opt_out"
+      ],
+      "geographic_coverage": [
+        "CA"
+      ],
+      "documented_request_eligibility": [
+        "The CMA says it does not own, compile, or rent consumer mailing lists. The free Do Not Mail service is for reducing personally addressed marketing offers. Telemarketing is directed to the National Do Not Call List instead."
+      ]
+    },
+    "request_workflow": {
+      "submission_methods": [
+        "unknown"
+      ],
+      "fields_observation": "no_form_in_html",
+      "steps": [
+        {
+          "order": 1,
+          "action": "The page describes the Do Not Mail service and links to Register Now. That registration form was not opened. The telephone number on the page is the National Do Not Call List, not the mail registration.",
+          "observed": true,
+          "source": "page_instructions",
+          "evidence": "https://www.thecma.ca/resources/consumer-centre/get-less-print-mail"
+        }
+      ]
+    },
+    "automation": {
+      "classification": "unknown",
+      "classification_evidence": "The service is identified, but the registration form fields were not inspected.",
+      "automatable_steps": [
+        "Open the CMA Do Not Mail page."
+      ],
+      "human_steps": [
+        "Open Register Now and complete the registration that was not inspected."
+      ],
+      "observed_blockers": [],
+      "implementation_notes": "Do not call 1-866-580-3625 for this mail service. That number is printed as the National Do Not Call List. No request was submitted."
+    },
+    "verification": {
+      "workflow_kind": "government_or_industry_choice",
+      "inspection_channel": "http_get",
+      "evidence_urls": [
+        "https://www.thecma.ca/resources/consumer-centre/get-less-print-mail"
+      ],
+      "evidence_notes": "Direct GET describes the service and the Register Now link. The form was not opened. No request was submitted.",
+      "confidence": "medium",
+      "research_status": "partial",
+      "verification_level": "page_inspected"
+    }
+  }
+}

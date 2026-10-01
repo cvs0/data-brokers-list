@@ -1,0 +1,83 @@
+{
+  "spokeo": {
+    "request_workflow": {
+      "email_verification_mechanism": "link",
+      "published_request_limits": "Each listing has its own URL and must be opted out individually. Opting out does not remove the data from its original source.",
+      "documented_processing_time": "The page says an opt-out should be processed in 24-48 hours, depending on the request and the amount of data."
+    },
+    "verification": {
+      "reappearance_or_recurring_checks": "The page says information may reappear because Spokeo continues to receive updated public records, and it tells the person to check for additional listings.",
+      "independent_removal_verification": "The listing is public at the profile URL the person submitted. This research did not open a profile or confirm a removal.",
+      "evidence_notes": "HTTP GET of https://www.spokeo.com/optout returned the opt-out form text. Required inputs observed in the HTML were url and email. No request was submitted."
+    }
+  },
+  "liveramp": {
+    "identity": {
+      "entry_type": "data_broker",
+      "entry_type_evidence": "The privacy-choices page describes LiveRamp processing consumer personal information, including identity resolution, and offers sale, access, correction, and deletion requests.",
+      "geographic_coverage": ["US"],
+      "documented_request_eligibility": [
+        "The page says opt-out requests are available to everyone in the US, regardless of state. Access, correction, and deletion are limited to residents of the US states the page lists as having comprehensive consumer privacy laws."
+      ],
+      "supported_request_types": ["deletion", "sale_sharing_opt_out", "marketing_opt_out", "access", "correction"]
+    },
+    "discovery": {
+      "privacy_contact_email": "consumercare@liveramp.com",
+      "exposure_check": "broker_confirmation_only"
+    },
+    "request_workflow": {
+      "submission_methods": ["web_form", "email", "phone"],
+      "identity_document_required": true,
+      "identity_document_redaction": null,
+      "documented_processing_time": "The page says LiveRamp responds to an opt-out within 15 days and to access, correction, or deletion within 45 days, and may ask for more time.",
+      "authorized_agent_requirements": "The page says an opt-out, access, deletion, or correction request may be made by the consumer, a parent or guardian, a conservator, or an authorized agent."
+    },
+    "automation": {
+      "classification": "manual_workflow",
+      "classification_evidence": "Access and deletion instructions require identity documents and residency proof. A phone alternative is also published. The opt-out path is narrower, but this record does not treat the whole portal as an unattended form.",
+      "human_steps": [
+        "For access or deletion, provide the identity and residency evidence the page lists, or use the published phone path.",
+        "Choose opt-out versus deletion deliberately. The page says deletion does not stop ads and recommends opt-out when the goal is to limit sale or sharing."
+      ],
+      "implementation_notes": "Published phone path (844) 678-0045 with service codes for opt-out, access, category access, deletion, correction, employee, business-representative, and appeal requests. No form selectors or API endpoint were inferred. Device and cookie opt-outs are separate and browser-specific."
+    },
+    "verification": {
+      "distinct_suppression_deletion_marketing_outcomes": true,
+      "outcome_distinction_notes": "The page says an opt-out limits sale, sharing, and targeted use, while deletion removes information LiveRamp holds and can still leave advertising in place. Access and category access return different reports and have different verification levels.",
+      "workflow_kind": "dsar_portal",
+      "inspection_channel": "http_get",
+      "evidence_notes": "The research GET retrieved the LiveRamp US privacy-choices page. Identity-document and phone details are from that page. No request was submitted.",
+      "confidence": "medium",
+      "research_status": "verified",
+      "verification_level": "page_inspected"
+    }
+  },
+  "lexisnexis": {
+    "identity": {
+      "documented_request_eligibility": [
+        "Separate choices exist for FCRA firm-offer prescreen lists, direct marketing, and public-safety information suppression. A LexisNexis prescreen opt-out does not opt the person out of Equifax, TransUnion, or Experian lists. Safety suppression requires supporting documentation and does not generally cover law-enforcement or FCRA-regulated products."
+      ]
+    },
+    "request_workflow": {
+      "submission_methods": ["web_form", "postal_mail", "phone"]
+    },
+    "automation": {
+      "classification": "manual_workflow",
+      "classification_evidence": "The consumer portal offers online, mail, and phone submission. Safety suppression requires documents. The product paths are not interchangeable.",
+      "implementation_notes": "Published phone number on the page: 1-888-497-0011. Online form fields were not parsed from the HTML. No API endpoint was inferred."
+    },
+    "verification": {
+      "distinct_suppression_deletion_marketing_outcomes": true,
+      "outcome_distinction_notes": "Direct marketing, FCRA prescreen, and public-safety suppression are described as separate choices with different effects.",
+      "evidence_notes": "HTTP GET of the LexisNexis Risk consumer opt-out page returned the choice descriptions. No request was submitted."
+    }
+  },
+  "radaris": {
+    "verification": {
+      "evidence_notes": "The catalog opt-out URL now returns a notice that radaris.com was transferred by court order in Atlas Data Privacy Corporation v. Radaris.com. The notice also names Rehold.com and Trustoria.com. This research did not treat that case caption as a working shared opt-out. No removal form was present."
+    },
+    "automation": {
+      "implementation_notes": "Do not build a Radaris removal adapter against this URL until an official form exists again. Rehold is a separate catalog row and was not assumed to be removed by a Radaris request."
+    }
+  }
+}

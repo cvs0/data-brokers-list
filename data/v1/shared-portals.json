@@ -1,0 +1,258 @@
+{
+  "shared_request_urls": [
+    {
+      "group_id": "portal-governmentregistry-org-opt-out-4d06d1",
+      "kind": "shared_request_url",
+      "request_url": "https://www.governmentregistry.org/opt-out",
+      "member_ids": [
+        "governmentregistry-family",
+        "governmentregistry-org"
+      ],
+      "single_request_covers_multiple_brands": null,
+      "evidence": "These catalog rows publish the same request URL. Sharing a URL shows a shared entry point. It does not, by itself, prove that one submission removes every brand.",
+      "evidence_basis": "catalog_url"
+    },
+    {
+      "group_id": "portal-suppression-peopleconnect-us-root-2b7825",
+      "kind": "shared_request_url",
+      "request_url": "https://suppression.peopleconnect.us/",
+      "member_ids": [
+        "anywho-intelius-peopleconnect",
+        "instantcheckmate-peopleconnect",
+        "intelius-peopleconnect",
+        "intelius-peopleconnect-addresses-com",
+        "onlinesearches-intelius-peopleconnect",
+        "us-search-peopleconnect",
+        "yellowpages-people-intelius-data",
+        "zabasearch-peopleconnect-intelius"
+      ],
+      "single_request_covers_multiple_brands": null,
+      "evidence": "These catalog rows publish the same request URL. Sharing a URL shows a shared entry point. It does not, by itself, prove that one submission removes every brand.",
+      "evidence_basis": "catalog_url"
+    },
+    {
+      "group_id": "portal-truthfinder-com-opt-out-v2-submit-5180f4",
+      "kind": "shared_request_url",
+      "request_url": "https://www.truthfinder.com/opt-out/v2/submit/",
+      "member_ids": [
+        "background-hawk-truthfinder",
+        "criminal-com-truthfinder",
+        "northcarolinapublicrecords-org-truthfinder",
+        "public-libraries-truthfinder",
+        "recordspage-truthfinder",
+        "recordsquarry-truthfinder",
+        "southcarolinapublicrecords-com-truthfinder"
+      ],
+      "single_request_covers_multiple_brands": null,
+      "evidence": "These catalog rows publish the same request URL. Sharing a URL shows a shared entry point. It does not, by itself, prove that one submission removes every brand.",
+      "evidence_basis": "catalog_url"
+    },
+    {
+      "group_id": "portal-beenverified-com-app-optout-search-cfb08b",
+      "kind": "shared_request_url",
+      "request_url": "https://www.beenverified.com/app/optout/search",
+      "member_ids": [
+        "backgroundchecks-org-beenverified-data",
+        "beenverified",
+        "bumper-beenverified-family",
+        "freephonetracer-beenverified-form",
+        "neighborwho-beenverified-family",
+        "numberguru-beenverified-family",
+        "ownerly-beenverified-family",
+        "peoplelooker-beenverified",
+        "peoplesmart-beenverified"
+      ],
+      "single_request_covers_multiple_brands": null,
+      "evidence": "These catalog rows publish the same request URL. Sharing a URL shows a shared entry point. It does not, by itself, prove that one submission removes every brand.",
+      "evidence_basis": "catalog_url"
+    },
+    {
+      "group_id": "portal-intelius-com-privacy-center-11a946",
+      "kind": "shared_request_url",
+      "request_url": "https://www.intelius.com/privacy-center",
+      "member_ids": [
+        "criminalrecords-com-intelius",
+        "peoplefind-com-intelius",
+        "snoopstation-intelius"
+      ],
+      "single_request_covers_multiple_brands": null,
+      "evidence": "These catalog rows publish the same request URL. Sharing a URL shows a shared entry point. It does not, by itself, prove that one submission removes every brand.",
+      "evidence_basis": "catalog_url"
+    },
+    {
+      "group_id": "portal-infotracer-com-optout-edfb75",
+      "kind": "shared_request_url",
+      "request_url": "https://infotracer.com/optout/",
+      "member_ids": [
+        "dewarrants-org-infotracer-form",
+        "govwarrantsearch-org-infotracer-form",
+        "infotracer",
+        "uswarrants-org-infotracer-form"
+      ],
+      "single_request_covers_multiple_brands": null,
+      "evidence": "These catalog rows publish the same request URL. Sharing a URL shows a shared entry point. It does not, by itself, prove that one submission removes every brand.",
+      "evidence_basis": "catalog_url"
+    },
+    {
+      "group_id": "portal-suppression-peopleconnect-us-login-eacced",
+      "kind": "shared_request_url",
+      "request_url": "https://suppression.peopleconnect.us/login",
+      "member_ids": [
+        "peoplefinder-peopleconnect",
+        "publicrecords-com-peopleconnect"
+      ],
+      "single_request_covers_multiple_brands": null,
+      "evidence": "These catalog rows publish the same request URL. Sharing a URL shows a shared entry point. It does not, by itself, prove that one submission removes every brand.",
+      "evidence_basis": "catalog_url"
+    },
+    {
+      "group_id": "portal-whitepages-com-suppression-requests-fb4396",
+      "kind": "shared_request_url",
+      "request_url": "https://www.whitepages.com/suppression-requests",
+      "member_ids": [
+        "peoplesearch-whitepages",
+        "whitepages",
+        "whitepages-411-com"
+      ],
+      "single_request_covers_multiple_brands": null,
+      "evidence": "These catalog rows publish the same request URL. Sharing a URL shows a shared entry point. It does not, by itself, prove that one submission removes every brand.",
+      "evidence_basis": "catalog_url"
+    },
+    {
+      "group_id": "portal-spokeo-com-optout-59d8ab",
+      "kind": "shared_request_url",
+      "request_url": "https://www.spokeo.com/optout",
+      "member_ids": [
+        "spokeo",
+        "spokeo-data"
+      ],
+      "single_request_covers_multiple_brands": null,
+      "evidence": "These catalog rows publish the same request URL. Sharing a URL shows a shared entry point. It does not, by itself, prove that one submission removes every brand.",
+      "evidence_basis": "catalog_url"
+    },
+    {
+      "group_id": "portal-dashboard-propertyrecs-com-opt-out-95aed9",
+      "kind": "shared_request_url",
+      "request_url": "https://dashboard.propertyrecs.com/opt-out",
+      "member_ids": [
+        "propertyrecs",
+        "propertyrecs-network"
+      ],
+      "single_request_covers_multiple_brands": null,
+      "evidence": "These catalog rows publish the same request URL. Sharing a URL shows a shared entry point. It does not, by itself, prove that one submission removes every brand.",
+      "evidence_basis": "catalog_url"
+    }
+  ],
+  "workflow_families": [
+    {
+      "group_id": "family-request-portal-5b03a4",
+      "kind": "shared_form_signature",
+      "path": "/request-portal",
+      "field_names": [
+        "wpforms[fields][#][address#] wpforms-#-field_# text",
+        "wpforms[fields][#][address#] wpforms-#-field_#-address# text",
+        "wpforms[fields][#][city] wpforms-#-field_#-city text",
+        "wpforms[fields][#][primary] wpforms-#-field_# email",
+        "wpforms[fields][#][secondary] wpforms-#-field_#-secondary email",
+        "wpforms[fields][#][state] wpforms-#-field_#-state select"
+      ],
+      "member_ids": [
+        "alaska-arrests",
+        "arkansas-arrests",
+        "colorado-arrests",
+        "florida-arrests",
+        "georgia-arrests",
+        "hawaii-arrests",
+        "illinois-arrests",
+        "iowa-arrests",
+        "louisiana-arrests",
+        "michigan-arrests",
+        "minnesota-arrests",
+        "mississippi-arrests",
+        "missouri-arrests",
+        "new-hampshire-arrests",
+        "new-mexico-arrests",
+        "oregon-arrests",
+        "south-carolina-arrests",
+        "tennessee-arrests",
+        "wisconsin-arrests",
+        "wyoming-arrests"
+      ],
+      "single_request_covers_multiple_brands": null,
+      "evidence": "20 fetched pages with path /request-portal exposed the same form structure after digits in field names were removed. Treat them as one implementation family. Separate URLs still mean separate submissions unless a page says otherwise.",
+      "evidence_basis": "parsed_form_fields"
+    },
+    {
+      "group_id": "family-request-portal-a2f61d",
+      "kind": "shared_form_signature",
+      "path": "/request-portal",
+      "field_names": [
+        "wpforms[fields][#] wpforms-#-field_# email",
+        "wpforms[fields][#][address#] wpforms-#-field_# text",
+        "wpforms[fields][#][address#] wpforms-#-field_#-address# text",
+        "wpforms[fields][#][city] wpforms-#-field_#-city text",
+        "wpforms[fields][#][state] wpforms-#-field_#-state select"
+      ],
+      "member_ids": [
+        "california-arrests",
+        "kentucky-arrests",
+        "montana-arrests",
+        "new-york-arrests",
+        "pennsylvania-arrests",
+        "rhode-island-arrests",
+        "virginia-arrests",
+        "washington-arrests",
+        "west-virginia-arrests"
+      ],
+      "single_request_covers_multiple_brands": null,
+      "evidence": "9 fetched pages with path /request-portal exposed the same form structure after digits in field names were removed. Treat them as one implementation family. Separate URLs still mean separate submissions unless a page says otherwise.",
+      "evidence_basis": "parsed_form_fields"
+    },
+    {
+      "group_id": "family-opt-out-4223c3",
+      "kind": "shared_form_signature",
+      "path": "/opt-out",
+      "field_names": [
+        "city e.g. Boston text",
+        "firstName e.g. John text",
+        "firstName firstName e.g. John text",
+        "lastName e.g. Smith text",
+        "lastName lastName e.g. Smith text",
+        "state state state select",
+        "town city e.g. Boston text"
+      ],
+      "member_ids": [
+        "glad-i-know",
+        "governmentregistry-family",
+        "governmentregistry-org"
+      ],
+      "single_request_covers_multiple_brands": null,
+      "evidence": "3 fetched pages with path /opt-out exposed the same form structure after digits in field names were removed. Treat them as one implementation family. Separate URLs still mean separate submissions unless a page says otherwise.",
+      "evidence_basis": "parsed_form_fields"
+    },
+    {
+      "group_id": "family-help-center-privacy-requests-c8e042",
+      "kind": "shared_form_signature",
+      "path": "/help-center/privacy-requests",
+      "field_names": [
+        "L#fbba#a#a# L#fbba#a#a# Last Name text",
+        "States states select",
+        "city city City text",
+        "email email Email Address email",
+        "firstName firstName First Name text",
+        "requestType requestType select",
+        "zip zip Zip Code text"
+      ],
+      "member_ids": [
+        "kids-live-safe",
+        "publicdatacheck",
+        "publicrecordreports",
+        "quickpublicrecords",
+        "searchpublicrecords"
+      ],
+      "single_request_covers_multiple_brands": null,
+      "evidence": "5 fetched pages with path /help-center/privacy-requests exposed the same form structure after digits in field names were removed. Treat them as one implementation family. Separate URLs still mean separate submissions unless a page says otherwise.",
+      "evidence_basis": "parsed_form_fields"
+    }
+  ]
+}

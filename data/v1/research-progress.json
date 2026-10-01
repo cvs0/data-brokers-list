@@ -1,0 +1,57 @@
+{
+  "dataset_version": "1.0.0",
+  "schema_version": "1.0.0",
+  "generated_at": "2026-10-01T22:46:09+00:00",
+  "requests_submitted": false,
+  "catalog_entries": 1122,
+  "unique_request_urls": 1090,
+  "research_status": {
+    "blocked": 273,
+    "not_applicable": 14,
+    "partial": 651,
+    "verified": 184
+  },
+  "verification_level": {
+    "page_inspected": 641,
+    "source_documented": 273,
+    "workflow_partially_inspected": 208
+  },
+  "automation_classification": {
+    "assisted_workflow": 212,
+    "manual_workflow": 325,
+    "not_applicable": 17,
+    "unknown": 568
+  },
+  "entry_type": {
+    "consumer_reporting_agency": 10,
+    "data_broker": 5,
+    "marketing_choice_service": 6,
+    "other": 14,
+    "people_search_site": 35,
+    "public_records_source": 4,
+    "regulator_guidance": 6,
+    "unknown": 1042
+  },
+  "workflow_kind": {
+    "cookie_or_device_choice": 3,
+    "defunct_or_unavailable": 14,
+    "dsar_portal": 142,
+    "government_or_industry_choice": 14,
+    "privacy_policy_only": 460,
+    "public_listing_form": 44,
+    "unknown": 445
+  },
+  "content_quality": {
+    "challenge": 237,
+    "empty_shell": 117,
+    "error": 42,
+    "non_html": 7,
+    "readable": 719
+  },
+  "shared_request_url_groups": 10,
+  "rows_in_shared_request_url_groups": 42,
+  "workflow_families": 4,
+  "rows_in_workflow_families": 37,
+  "end_to_end_tested": 0,
+  "observed_turnaround_recorded": 0
+}

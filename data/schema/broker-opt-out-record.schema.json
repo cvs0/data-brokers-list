@@ -1,0 +1,520 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/cvs0/data-brokers-list/data/schema/broker-opt-out-record.schema.json",
+  "title": "Broker opt-out research dataset",
+  "description": "Versioned research records for the opt-outs.csv catalog. Catalog claims and independently inspected facts are separate. Boolean facts are true, false, or null. Null and the string unknown mean the fact was not established. This schema does not record submitted privacy requests.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "dataset_version",
+    "catalog_path",
+    "catalog_row_count",
+    "requests_submitted",
+    "id_join",
+    "methodology",
+    "records"
+  ],
+  "properties": {
+    "schema_version": {"type": "string", "const": "1.0.0"},
+    "dataset_version": {"type": "string", "minLength": 1},
+    "catalog_path": {"type": "string", "const": "opt-outs.csv"},
+    "catalog_row_count": {"type": "integer", "const": 1122},
+    "catalog_check_date": {"type": "string"},
+    "research_generated_at": {"type": "string"},
+    "requests_submitted": {"type": "boolean", "const": false},
+    "id_join": {"type": "string"},
+    "methodology": {"type": "string"},
+    "records": {
+      "type": "array",
+      "minItems": 1122,
+      "maxItems": 1122,
+      "items": {"$ref": "#/$defs/record"}
+    }
+  },
+  "$defs": {
+    "nullableString": {"type": ["string", "null"]},
+    "nullableBoolean": {"type": ["boolean", "null"]},
+    "unknownOrStrings": {
+      "type": "array",
+      "minItems": 1,
+      "items": {"type": "string", "minLength": 1},
+      "description": "Use [\"unknown\"] when the fact was not established. Do not mix unknown with other values."
+    },
+    "record": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "catalog",
+        "catalog_claims",
+        "identity",
+        "discovery",
+        "request_workflow",
+        "automation",
+        "verification"
+      ],
+      "properties": {
+        "id": {"type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"},
+        "catalog": {"$ref": "#/$defs/catalogRow"},
+        "catalog_claims": {"$ref": "#/$defs/catalogClaims"},
+        "identity": {"$ref": "#/$defs/identity"},
+        "discovery": {"$ref": "#/$defs/discovery"},
+        "request_workflow": {"$ref": "#/$defs/workflow"},
+        "automation": {"$ref": "#/$defs/automation"},
+        "verification": {"$ref": "#/$defs/verification"}
+      }
+    },
+    "catalogRow": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["name", "category", "url", "notes", "domain", "http_status", "sources"],
+      "properties": {
+        "name": {"type": "string", "minLength": 1},
+        "category": {
+          "type": "string",
+          "enum": [
+            "people-search",
+            "background-checks",
+            "marketing",
+            "credit-financial",
+            "public-records",
+            "other"
+          ]
+        },
+        "url": {"type": "string", "minLength": 1},
+        "notes": {"type": "string"},
+        "domain": {"type": "string", "minLength": 1},
+        "http_status": {"type": "string"},
+        "sources": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string",
+            "enum": ["persprotect", "markup", "cppa", "manual"]
+          }
+        }
+      }
+    },
+    "catalogClaims": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "Interpretations of the existing catalog row. These are leads, not independently verified workflow facts.",
+      "required": [
+        "notes",
+        "http_status_recorded",
+        "sources",
+        "listed_in_cppa_registry_per_catalog",
+        "family_hints_from_name",
+        "note_mentions_captcha",
+        "note_mentions_email",
+        "note_mentions_account",
+        "note_mentions_blocked_check"
+      ],
+      "properties": {
+        "notes": {"type": "string"},
+        "http_status_recorded": {"type": "string"},
+        "sources": {"type": "array", "items": {"type": "string"}},
+        "listed_in_cppa_registry_per_catalog": {"type": "boolean"},
+        "family_hints_from_name": {"type": "array", "items": {"type": "string"}},
+        "note_mentions_captcha": {"type": "boolean"},
+        "note_mentions_email": {"type": "boolean"},
+        "note_mentions_account": {"type": "boolean"},
+        "note_mentions_blocked_check": {"type": "boolean"}
+      }
+    },
+    "identity": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "name",
+        "domains",
+        "category",
+        "entry_type",
+        "entry_type_evidence",
+        "parent_company",
+        "sister_brands",
+        "shared_portal_group_id",
+        "workflow_family_id",
+        "single_request_covers_multiple_brands",
+        "single_request_coverage_evidence",
+        "geographic_coverage",
+        "documented_request_eligibility",
+        "supported_request_types"
+      ],
+      "properties": {
+        "name": {"type": "string"},
+        "domains": {"type": "array", "minItems": 1, "items": {"type": "string"}},
+        "category": {"type": "string"},
+        "entry_type": {
+          "type": "string",
+          "enum": [
+            "data_broker",
+            "people_search_site",
+            "consumer_reporting_agency",
+            "public_records_source",
+            "marketing_choice_service",
+            "regulator_guidance",
+            "other",
+            "unknown"
+          ]
+        },
+        "entry_type_evidence": {"type": ["string", "null"]},
+        "parent_company": {"$ref": "#/$defs/nullableString"},
+        "sister_brands": {
+          "type": "array",
+          "items": {"$ref": "#/$defs/sisterBrand"}
+        },
+        "shared_portal_group_id": {"$ref": "#/$defs/nullableString"},
+        "workflow_family_id": {"$ref": "#/$defs/nullableString"},
+        "single_request_covers_multiple_brands": {"$ref": "#/$defs/nullableBoolean"},
+        "single_request_coverage_evidence": {"$ref": "#/$defs/nullableString"},
+        "geographic_coverage": {"$ref": "#/$defs/unknownOrStrings"},
+        "documented_request_eligibility": {"$ref": "#/$defs/unknownOrStrings"},
+        "supported_request_types": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string",
+            "enum": [
+              "public_listing_suppression",
+              "deletion",
+              "sale_sharing_opt_out",
+              "marketing_opt_out",
+              "access",
+              "correction",
+              "other",
+              "unknown"
+            ]
+          }
+        }
+      }
+    },
+    "sisterBrand": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["entry_id", "name", "relationship", "evidence_basis"],
+      "properties": {
+        "entry_id": {"type": "string"},
+        "name": {"type": "string"},
+        "relationship": {
+          "type": "string",
+          "enum": [
+            "same_request_url",
+            "catalog_name_hint",
+            "verified_sister",
+            "verified_parent_exception"
+          ]
+        },
+        "evidence_basis": {
+          "type": "string",
+          "enum": ["catalog_url", "catalog_name", "official_page"]
+        }
+      }
+    },
+    "discovery": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "official_homepage",
+        "privacy_policy_url",
+        "request_url",
+        "privacy_contact_email",
+        "privacy_contact_emails",
+        "public_profiles_searchable",
+        "supported_search_inputs",
+        "search_requires_login",
+        "search_requires_payment",
+        "search_requires_captcha",
+        "profile_identification",
+        "exposure_check"
+      ],
+      "properties": {
+        "official_homepage": {"$ref": "#/$defs/nullableString"},
+        "privacy_policy_url": {"$ref": "#/$defs/nullableString"},
+        "request_url": {"$ref": "#/$defs/nullableString"},
+        "privacy_contact_email": {"$ref": "#/$defs/nullableString"},
+        "privacy_contact_emails": {"type": "array", "items": {"type": "string"}},
+        "public_profiles_searchable": {"$ref": "#/$defs/nullableBoolean"},
+        "supported_search_inputs": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string",
+            "enum": [
+              "name",
+              "location",
+              "phone",
+              "email",
+              "profile_url",
+              "other",
+              "unknown"
+            ]
+          }
+        },
+        "search_requires_login": {"$ref": "#/$defs/nullableBoolean"},
+        "search_requires_payment": {"$ref": "#/$defs/nullableBoolean"},
+        "search_requires_captcha": {"$ref": "#/$defs/nullableBoolean"},
+        "profile_identification": {"$ref": "#/$defs/nullableString"},
+        "exposure_check": {
+          "type": "string",
+          "enum": [
+            "public",
+            "broker_confirmation_only",
+            "both",
+            "unknown",
+            "not_applicable"
+          ]
+        }
+      }
+    },
+    "workflow": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "submission_methods",
+        "steps",
+        "required_fields",
+        "optional_fields",
+        "fields_observation",
+        "profile_url_or_record_id_required",
+        "account_login_required",
+        "email_verification_required",
+        "email_verification_mechanism",
+        "phone_sms_verification_required",
+        "identity_document_required",
+        "identity_document_redaction",
+        "authorized_agent_requirements",
+        "captcha_present",
+        "captcha_type",
+        "captcha_provider",
+        "captcha_stage",
+        "captcha_requirement",
+        "documented_processing_time",
+        "observed_turnaround",
+        "published_request_limits",
+        "automation_restrictions"
+      ],
+      "properties": {
+        "submission_methods": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string",
+            "enum": [
+              "web_form",
+              "email",
+              "official_api",
+              "postal_mail",
+              "phone",
+              "other",
+              "unknown"
+            ]
+          }
+        },
+        "steps": {
+          "type": "array",
+          "minItems": 1,
+          "items": {"$ref": "#/$defs/step"}
+        },
+        "required_fields": {"type": "array", "items": {"type": "string"}},
+        "optional_fields": {"type": "array", "items": {"type": "string"}},
+        "fields_observation": {
+          "type": "string",
+          "enum": ["form_parsed", "no_form_in_html", "not_inspected", "non_html"]
+        },
+        "profile_url_or_record_id_required": {"$ref": "#/$defs/nullableBoolean"},
+        "account_login_required": {"$ref": "#/$defs/nullableBoolean"},
+        "email_verification_required": {"$ref": "#/$defs/nullableBoolean"},
+        "email_verification_mechanism": {
+          "type": "string",
+          "enum": ["link", "code", "both", "unknown", "not_applicable"]
+        },
+        "phone_sms_verification_required": {"$ref": "#/$defs/nullableBoolean"},
+        "identity_document_required": {"$ref": "#/$defs/nullableBoolean"},
+        "identity_document_redaction": {"$ref": "#/$defs/nullableString"},
+        "authorized_agent_requirements": {"$ref": "#/$defs/nullableString"},
+        "captcha_present": {"$ref": "#/$defs/nullableBoolean"},
+        "captcha_type": {"$ref": "#/$defs/nullableString"},
+        "captcha_provider": {"$ref": "#/$defs/nullableString"},
+        "captcha_stage": {"$ref": "#/$defs/nullableString"},
+        "captcha_requirement": {
+          "type": "string",
+          "enum": ["always_required", "conditionally_observed", "unknown"]
+        },
+        "documented_processing_time": {"$ref": "#/$defs/nullableString"},
+        "observed_turnaround": {"$ref": "#/$defs/nullableString"},
+        "published_request_limits": {"$ref": "#/$defs/nullableString"},
+        "automation_restrictions": {"$ref": "#/$defs/nullableString"}
+      }
+    },
+    "step": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["order", "action", "observed", "source", "evidence"],
+      "properties": {
+        "order": {"type": "integer", "minimum": 1},
+        "action": {"type": "string", "minLength": 1},
+        "observed": {
+          "type": "boolean",
+          "description": "True only if this research pass actually saw the step. Instructions that describe a later screen are observed false."
+        },
+        "source": {
+          "type": "string",
+          "enum": ["http_redirect", "page_form", "page_instructions", "not_inspected"]
+        },
+        "evidence": {"type": "string"}
+      }
+    },
+    "automation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "classification",
+        "classification_evidence",
+        "automatable_steps",
+        "human_steps",
+        "observed_blockers",
+        "direct_access",
+        "implementation_notes"
+      ],
+      "properties": {
+        "classification": {
+          "type": "string",
+          "enum": [
+            "automation_candidate",
+            "assisted_workflow",
+            "manual_workflow",
+            "not_applicable",
+            "unknown"
+          ]
+        },
+        "classification_evidence": {"type": "string"},
+        "automatable_steps": {"type": "array", "items": {"type": "string"}},
+        "human_steps": {"type": "array", "items": {"type": "string"}},
+        "observed_blockers": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "captcha",
+              "login",
+              "verification",
+              "bot_wall",
+              "geo_restriction",
+              "inaccessible_page",
+              "other"
+            ]
+          }
+        },
+        "direct_access": {"$ref": "#/$defs/directAccess"},
+        "implementation_notes": {"type": "string"}
+      }
+    },
+    "directAccess": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "method",
+        "observed_http_status",
+        "final_url",
+        "content_quality",
+        "proxy_required",
+        "proxy_evidence",
+        "user_agent",
+        "notes"
+      ],
+      "properties": {
+        "method": {"type": "string"},
+        "observed_http_status": {"type": ["integer", "null"]},
+        "final_url": {"$ref": "#/$defs/nullableString"},
+        "content_quality": {
+          "type": "string",
+          "enum": [
+            "readable",
+            "challenge",
+            "empty_shell",
+            "non_html",
+            "error",
+            "not_fetched"
+          ]
+        },
+        "proxy_required": {"$ref": "#/$defs/nullableBoolean"},
+        "proxy_evidence": {"$ref": "#/$defs/nullableString"},
+        "user_agent": {"$ref": "#/$defs/nullableString"},
+        "notes": {"type": "string"}
+      }
+    },
+    "verification": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "submission_acknowledgement",
+        "broker_confirmation",
+        "independent_removal_verification",
+        "distinct_suppression_deletion_marketing_outcomes",
+        "outcome_distinction_notes",
+        "reappearance_or_recurring_checks",
+        "workflow_kind",
+        "inspection_channel",
+        "researched_at",
+        "evidence_urls",
+        "evidence_notes",
+        "confidence",
+        "research_status",
+        "verification_level"
+      ],
+      "properties": {
+        "submission_acknowledgement": {"$ref": "#/$defs/nullableString"},
+        "broker_confirmation": {"$ref": "#/$defs/nullableString"},
+        "independent_removal_verification": {"$ref": "#/$defs/nullableString"},
+        "distinct_suppression_deletion_marketing_outcomes": {"$ref": "#/$defs/nullableBoolean"},
+        "outcome_distinction_notes": {"$ref": "#/$defs/nullableString"},
+        "reappearance_or_recurring_checks": {"$ref": "#/$defs/nullableString"},
+        "workflow_kind": {
+          "type": "string",
+          "enum": [
+            "public_listing_form",
+            "dsar_portal",
+            "privacy_policy_only",
+            "cookie_or_device_choice",
+            "government_or_industry_choice",
+            "defunct_or_unavailable",
+            "unknown"
+          ]
+        },
+        "inspection_channel": {
+          "type": "string",
+          "enum": ["http_get", "rendered_reader", "not_inspected"],
+          "description": "http_get means the research environment GET returned the text used for the record. rendered_reader means a second reader returned visible text after the GET was a shell, challenge, or access denial. not_inspected means no page text was used."
+        },
+        "researched_at": {"type": ["string", "null"]},
+        "evidence_urls": {"type": "array", "items": {"type": "string"}},
+        "evidence_notes": {"type": "string"},
+        "confidence": {
+          "type": "string",
+          "enum": ["high", "medium", "low", "none"]
+        },
+        "research_status": {
+          "type": "string",
+          "enum": [
+            "verified",
+            "partial",
+            "blocked",
+            "unresearched",
+            "not_applicable"
+          ]
+        },
+        "verification_level": {
+          "type": "string",
+          "enum": [
+            "source_documented",
+            "page_inspected",
+            "workflow_partially_inspected",
+            "end_to_end_tested"
+          ]
+        }
+      }
+    }
+  }
+}

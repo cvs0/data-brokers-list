@@ -67,7 +67,9 @@ Search the CSV before you send extra personal details. Notes say when a page ret
 | Other | [brokers/other.md](brokers/other.md) | 612 |
 | **Total** | [opt-outs.csv](opt-outs.csv) | **1122** |
 
-`opt-outs.csv` is the source of truth. The Markdown files are tables generated from it. Column definitions and the check date are in [SOURCES.md](SOURCES.md).
+`opt-outs.csv` is the source of truth for links. The Markdown files are tables generated from it. Column definitions and the check date are in [SOURCES.md](SOURCES.md).
+
+Researched workflow records, with stable IDs and a JSON Schema, are in [data/v1/broker-opt-outs.enriched.json](data/v1/broker-opt-outs.enriched.json). Field definitions are in [docs/dataset-fields.md](docs/dataset-fields.md). What was verified, blocked, or not a removal workflow is summarized in [docs/findings.md](docs/findings.md). Catalog notes are preserved as claims. They are not treated as proof that a removal workflow still works. No request was submitted to produce that file.
 
 ## How to use a row
 

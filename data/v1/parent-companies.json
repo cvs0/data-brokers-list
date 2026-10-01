@@ -1,0 +1,309 @@
+{
+  "verified": [
+    {
+      "parent_company": "PeopleConnect",
+      "shared_portal_group_id": "portal-suppression-peopleconnect-us-root-2b7825",
+      "member_ids": [
+        "anywho-intelius-peopleconnect",
+        "instantcheckmate-peopleconnect",
+        "intelius-peopleconnect",
+        "intelius-peopleconnect-addresses-com",
+        "onlinesearches-intelius-peopleconnect",
+        "us-search-peopleconnect",
+        "yellowpages-people-intelius-data",
+        "zabasearch-peopleconnect-intelius"
+      ],
+      "evidence": "The page says the Suppression Tool applies to public data generated in response to a name search on the people-search sites in the PeopleConnect family. It does not apply to user data, and it does not apply to other PeopleConnect sites including Classmates.com. The page does not name every brand."
+    }
+  ],
+  "catalog_leads_unverified": [
+    {
+      "hint": "BeenVerified",
+      "members": [
+        {
+          "entry_id": "peoplelooker-beenverified",
+          "name": "PeopleLooker (BeenVerified)"
+        },
+        {
+          "entry_id": "peoplesmart-beenverified",
+          "name": "PeopleSmart (BeenVerified)"
+        }
+      ],
+      "evidence_basis": "catalog_name",
+      "note": "Parenthetical text in the catalog name is a lead. It is not independent verification of ownership."
+    },
+    {
+      "hint": "BeenVerified data",
+      "members": [
+        {
+          "entry_id": "backgroundchecks-org-beenverified-data",
+          "name": "BackgroundChecks.org (BeenVerified data)"
+        },
+        {
+          "entry_id": "open-public-records-beenverified-data",
+          "name": "Open Public Records (BeenVerified data)"
+        },
+        {
+          "entry_id": "yellowbook-beenverified-data",
+          "name": "YellowBook (BeenVerified data)"
+        }
+      ],
+      "evidence_basis": "catalog_name",
+      "note": "Parenthetical text in the catalog name is a lead. It is not independent verification of ownership."
+    },
+    {
+      "hint": "BeenVerified family",
+      "members": [
+        {
+          "entry_id": "bumper-beenverified-family",
+          "name": "Bumper (BeenVerified family)"
+        },
+        {
+          "entry_id": "neighborwho-beenverified-family",
+          "name": "NeighborWho (BeenVerified family)"
+        },
+        {
+          "entry_id": "numberguru-beenverified-family",
+          "name": "NumberGuru (BeenVerified family)"
+        },
+        {
+          "entry_id": "ownerly-beenverified-family",
+          "name": "Ownerly (BeenVerified family)"
+        }
+      ],
+      "evidence_basis": "catalog_name",
+      "note": "Parenthetical text in the catalog name is a lead. It is not independent verification of ownership."
+    },
+    {
+      "hint": "Confi-Chek",
+      "members": [
+        {
+          "entry_id": "peoplefinders-confi-chek",
+          "name": "PeopleFinders (Confi-Chek)"
+        },
+        {
+          "entry_id": "privateeye-confi-chek",
+          "name": "PrivateEye (Confi-Chek)"
+        },
+        {
+          "entry_id": "publicrecordsnow-confi-chek",
+          "name": "PublicRecordsNow (Confi-Chek)"
+        }
+      ],
+      "evidence_basis": "catalog_name",
+      "note": "Parenthetical text in the catalog name is a lead. It is not independent verification of ownership."
+    },
+    {
+      "hint": "InfoTracer",
+      "members": [
+        {
+          "entry_id": "searchusapeople-infotracer",
+          "name": "SearchUSAPeople (InfoTracer)"
+        },
+        {
+          "entry_id": "usrecords-infotracer",
+          "name": "USRecords (InfoTracer)"
+        }
+      ],
+      "evidence_basis": "catalog_name",
+      "note": "Parenthetical text in the catalog name is a lead. It is not independent verification of ownership."
+    },
+    {
+      "hint": "InfoTracer form",
+      "members": [
+        {
+          "entry_id": "dewarrants-org-infotracer-form",
+          "name": "dewarrants.org (InfoTracer form)"
+        },
+        {
+          "entry_id": "govwarrantsearch-org-infotracer-form",
+          "name": "govwarrantsearch.org (InfoTracer form)"
+        },
+        {
+          "entry_id": "uswarrants-org-infotracer-form",
+          "name": "uswarrants.org (InfoTracer form)"
+        }
+      ],
+      "evidence_basis": "catalog_name",
+      "note": "Parenthetical text in the catalog name is a lead. It is not independent verification of ownership."
+    },
+    {
+      "hint": "Intelius",
+      "members": [
+        {
+          "entry_id": "criminalrecords-com-intelius",
+          "name": "CriminalRecords.com (Intelius)"
+        },
+        {
+          "entry_id": "easybackgroundchecks-intelius",
+          "name": "EasyBackgroundChecks (Intelius)"
+        },
+        {
+          "entry_id": "peoplefind-com-intelius",
+          "name": "PeopleFind.com (Intelius)"
+        },
+        {
+          "entry_id": "snoopstation-intelius",
+          "name": "Snoopstation (Intelius)"
+        },
+        {
+          "entry_id": "usapeopledata-intelius",
+          "name": "USAPeopleData (Intelius)"
+        }
+      ],
+      "evidence_basis": "catalog_name",
+      "note": "Parenthetical text in the catalog name is a lead. It is not independent verification of ownership."
+    },
+    {
+      "hint": "Intelius/PeopleConnect",
+      "members": [
+        {
+          "entry_id": "anywho-intelius-peopleconnect",
+          "name": "AnyWho (Intelius/PeopleConnect)"
+        },
+        {
+          "entry_id": "onlinesearches-intelius-peopleconnect",
+          "name": "OnlineSearches (Intelius/PeopleConnect)"
+        },
+        {
+          "entry_id": "reversephonelookup-intelius-peopleconnect",
+          "name": "ReversePhoneLookup (Intelius/PeopleConnect)"
+        }
+      ],
+      "evidence_basis": "catalog_name",
+      "note": "Parenthetical text in the catalog name is a lead. It is not independent verification of ownership."
+    },
+    {
+      "hint": "LicenseData",
+      "members": [
+        {
+          "entry_id": "alarmscalifornia-licensedata",
+          "name": "AlarmsCalifornia (LicenseData)"
+        },
+        {
+          "entry_id": "californiabrokers-org-licensedata",
+          "name": "CaliforniaBrokers.org (LicenseData)"
+        },
+        {
+          "entry_id": "californiaengineering-org-licensedata",
+          "name": "CaliforniaEngineering.org (LicenseData)"
+        },
+        {
+          "entry_id": "californialicensing-org-licensedata",
+          "name": "CaliforniaLicensing.org (LicenseData)"
+        },
+        {
+          "entry_id": "californianursing-org-licensedata",
+          "name": "CaliforniaNursing.org (LicenseData)"
+        },
+        {
+          "entry_id": "californiapharmacists-org-licensedata",
+          "name": "CaliforniaPharmacists.org (LicenseData)"
+        },
+        {
+          "entry_id": "contractorscalifornia-org-licensedata",
+          "name": "ContractorsCalifornia.org (LicenseData)"
+        },
+        {
+          "entry_id": "dentistscalifornia-org-licensedata",
+          "name": "DentistsCalifornia.org (LicenseData)"
+        },
+        {
+          "entry_id": "firearmscalifornia-org-licensedata",
+          "name": "FireArmsCalifornia.org (LicenseData)"
+        },
+        {
+          "entry_id": "notariescalifornia-com-licensedata",
+          "name": "NotariesCalifornia.com (LicenseData)"
+        }
+      ],
+      "evidence_basis": "catalog_name",
+      "note": "Parenthetical text in the catalog name is a lead. It is not independent verification of ownership."
+    },
+    {
+      "hint": "PeopleConnect",
+      "members": [
+        {
+          "entry_id": "instantcheckmate-peopleconnect",
+          "name": "InstantCheckmate (PeopleConnect)"
+        },
+        {
+          "entry_id": "intelius-peopleconnect",
+          "name": "Intelius (PeopleConnect)"
+        },
+        {
+          "entry_id": "peoplefinder-peopleconnect",
+          "name": "PeopleFinder (PeopleConnect)"
+        },
+        {
+          "entry_id": "publicrecords-com-peopleconnect",
+          "name": "PublicRecords.com (PeopleConnect)"
+        },
+        {
+          "entry_id": "truthfinder-peopleconnect",
+          "name": "TruthFinder (PeopleConnect)"
+        },
+        {
+          "entry_id": "us-search-peopleconnect",
+          "name": "US Search (PeopleConnect)"
+        }
+      ],
+      "evidence_basis": "catalog_name",
+      "note": "Parenthetical text in the catalog name is a lead. It is not independent verification of ownership."
+    },
+    {
+      "hint": "TruthFinder",
+      "members": [
+        {
+          "entry_id": "background-hawk-truthfinder",
+          "name": "Background Hawk (TruthFinder)"
+        },
+        {
+          "entry_id": "criminal-com-truthfinder",
+          "name": "Criminal.com (TruthFinder)"
+        },
+        {
+          "entry_id": "instantcheckspy-truthfinder",
+          "name": "InstantCheckSpy (TruthFinder)"
+        },
+        {
+          "entry_id": "northcarolinapublicrecords-org-truthfinder",
+          "name": "NorthCarolinaPublicRecords.org (TruthFinder)"
+        },
+        {
+          "entry_id": "public-libraries-truthfinder",
+          "name": "Public Libraries (TruthFinder)"
+        },
+        {
+          "entry_id": "recordspage-truthfinder",
+          "name": "RecordsPage (TruthFinder)"
+        },
+        {
+          "entry_id": "recordsquarry-truthfinder",
+          "name": "RecordsQuarry (TruthFinder)"
+        },
+        {
+          "entry_id": "southcarolinapublicrecords-com-truthfinder",
+          "name": "SouthCarolinaPublicRecords.com (TruthFinder)"
+        }
+      ],
+      "evidence_basis": "catalog_name",
+      "note": "Parenthetical text in the catalog name is a lead. It is not independent verification of ownership."
+    },
+    {
+      "hint": "We Inform LLC",
+      "members": [
+        {
+          "entry_id": "truthrecord-we-inform-llc",
+          "name": "TruthRecord (We Inform LLC)"
+        },
+        {
+          "entry_id": "weinform-we-inform-llc",
+          "name": "WeInform (We Inform LLC)"
+        }
+      ],
+      "evidence_basis": "catalog_name",
+      "note": "Parenthetical text in the catalog name is a lead. It is not independent verification of ownership."
+    }
+  ]
+}
