@@ -2,7 +2,7 @@
 
 Registered data brokers and privacy-request pages that do not fit the categories above.
 
-579 entries. Link responses were checked on 2026-10-01 unless a note says otherwise.
+581 entries. Link responses were checked on 2026-10-01 unless a note says otherwise.
 
 | Broker | Opt-out / privacy URL | Notes |
 | --- | --- | --- |
@@ -82,6 +82,7 @@ Registered data brokers and privacy-request pages that do not fit the categories
 | CaliforniaPharmacists.org (LicenseData) | http://www.californiapharmacists.org/about#contact | Privacy notice or privacy-policy page. Use the state-rights, do-not-sell, or request section. Email: contact@licensedata.org. Automated check on 2026-10-01 got HTTP 403. Open the link in a browser. |
 | CallApp Software Ltd. | https://callapp.com/support/can-i-wipe-my-information-from-callapp-2 | Opt-out or consumer privacy-request page. Email: support@callapp.com. |
 | CallerSmart | https://www.callersmart.com/data | Opt-out or consumer privacy-request page. Email: feedback@callersmart.com. Automated check on 2026-10-01 got HTTP 403. Open the link in a browser. |
+| Canada National Do Not Call List | https://www.lnnte-dncl.gc.ca/en/ | Canada's National Do Not Call List, operated for the CRTC. Register a residential, mobile, fax, or VoIP number. Phone: 1-866-580-3625. |
 | Captify Technologies | https://captifytechnologies.com/data-subject-rights-request/ | Opt-out or consumer privacy-request page. Automated check on 2026-10-01 got HTTP 403. Open the link in a browser. |
 | Captiv8 Inc. | https://captiv8.io/policy/opt-out/ | Opt-out or consumer privacy-request page. Email: privacy@captiv8.io. Privacy-rights page submitted to the California Data Broker Registry. |
 | Carry Technologies Inc. | https://preferences.hightouch.com/ | Published opt-out URL is the site root. Confirm a request form is on the page before sending information. |
@@ -361,6 +362,7 @@ Registered data brokers and privacy-request pages that do not fit the categories
 | Narvar, Inc. | https://corp.narvar.com/legal/privacy-policy | Privacy notice or privacy-policy page. Use the state-rights, do-not-sell, or request section. |
 | National Do Not Call Registry | https://www.donotcall.gov/ | FTC registry for declining many live sales calls. Linked from the FTC National Do Not Call Registry FAQ. |
 | National Opinion Institute, LLC | https://nationalopinioninstitute.com/ca-privacy/ | Opt-out or consumer privacy-request page. Automated check on 2026-10-01 got HTTP 403. Open the link in a browser. |
+| NationBuilder | https://nationbuilder.com/privacy | Privacy notice for NationBuilder, which stores supporter and voter-contact data for political customers. Use the request section. |
 | Native American Netroots | https://nativeamericannetroots.net/diary/51 | Opt-out or consumer privacy-request page. Email: support@nativeamericannetroots.net. Automated check on 2026-10-01 got HTTP 403. Open the link in a browser. |
 | NC Resident Database | https://www.northcarolinaresidentdatabase.com/opt-out | Opt-out or consumer privacy-request page. Automated check on 2026-10-01 got HTTP 403. Open the link in a browser. |
 | Neptune Ops LLC | https://neptuneaii.com/legal/privacy-policy | Privacy notice or privacy-policy page. Use the state-rights, do-not-sell, or request section. Privacy-rights page submitted to the California Data Broker Registry. |
