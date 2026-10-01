@@ -1,6 +1,6 @@
 # Data broker opt-out list
 
-A catalog of **995** data broker, people-search, and consumer-reporting opt-out or privacy-request pages. Each row is a real URL, checked on **2026-10-01**.
+A catalog of **1122** data broker, people-search, and consumer-reporting opt-out or privacy-request pages. Each row is a real URL, checked on **2026-10-01**.
 
 This is a directory of links, not a removal service. Read the [disclaimer](DISCLAIMER.md) before you use it. Pages move, forms ask for different ID, and a successful request on one site does not remove you from the rest.
 
@@ -59,13 +59,13 @@ Search the CSV before you send extra personal details. Notes say when a page ret
 
 | Category | File | Entries |
 | --- | --- | ---: |
-| People search | [brokers/people-search.md](brokers/people-search.md) | 150 |
-| Background checks | [brokers/background-checks.md](brokers/background-checks.md) | 54 |
-| Marketing | [brokers/marketing.md](brokers/marketing.md) | 106 |
-| Credit and financial | [brokers/credit-financial.md](brokers/credit-financial.md) | 15 |
-| Public records | [brokers/public-records.md](brokers/public-records.md) | 83 |
-| Other | [brokers/other.md](brokers/other.md) | 587 |
-| **Total** | [opt-outs.csv](opt-outs.csv) | **995** |
+| People search | [brokers/people-search.md](brokers/people-search.md) | 165 |
+| Background checks | [brokers/background-checks.md](brokers/background-checks.md) | 62 |
+| Marketing | [brokers/marketing.md](brokers/marketing.md) | 171 |
+| Credit and financial | [brokers/credit-financial.md](brokers/credit-financial.md) | 18 |
+| Public records | [brokers/public-records.md](brokers/public-records.md) | 94 |
+| Other | [brokers/other.md](brokers/other.md) | 612 |
+| **Total** | [opt-outs.csv](opt-outs.csv) | **1122** |
 
 `opt-outs.csv` is the source of truth. The Markdown files are tables generated from it. Column definitions and the check date are in [SOURCES.md](SOURCES.md).
 
@@ -80,7 +80,7 @@ California residents may also have a statewide deletion request through the stat
 
 ## Sources
 
-URLs were adapted from the PersProtect open dataset (CC BY 4.0), The Markup / CalMatters investigation data (Apache 2.0), and the California Privacy Protection Agency data broker registry, then checked on 2026-10-01. Later rows were taken from company opt-out and privacy pages and from official choice sites, including YourOnlineChoices, YourAdChoices Canada, Canada's National Do Not Call List, and the UK open electoral register. A Canadian pass added directory-removal, advertising-mail, voters-list, telecom do-not-list, and privacy-commissioner pages. Credit and license details are in [NOTICE](NOTICE).
+URLs were adapted from the PersProtect open dataset (CC BY 4.0), The Markup / CalMatters investigation data (Apache 2.0), and the California Privacy Protection Agency data broker registry, then checked on 2026-10-01. Later rows were taken from company opt-out and privacy pages and from official choice sites, including YourOnlineChoices, YourAdChoices Canada, Canada's National Do Not Call List, and the UK open electoral register. A Canadian pass added directory-removal, advertising-mail, voters-list, telecom do-not-list, and privacy-commissioner pages. A coverage pass compared the catalog with the broker names Optery publishes in its public directory. Opt-out URLs added from that pass were opened on each company's own site. Optery's guide text was not copied. Credit and license details are in [NOTICE](NOTICE).
 
 ## License
 
