@@ -2,7 +2,7 @@
 
 Marketing and audience brokers. The link is an opt-out or the privacy page the company publishes for consumer requests.
 
-103 entries. Link responses were checked on 2026-10-01 unless a note says otherwise.
+106 entries. Link responses were checked on 2026-10-01 unless a note says otherwise.
 
 | Broker | Opt-out / privacy URL | Notes |
 | --- | --- | --- |
@@ -27,10 +27,12 @@ Marketing and audience brokers. The link is an opt-out or the privacy page the c
 | Blueprint Audiences | https://blueprintaudiences.com | Published privacy-request URL is the site root. Confirm a request form is on the page before sending information. Email: privacy@blueprintaudiences.com. Privacy-rights page submitted to the California Data Broker Registry. |
 | Bombora, Inc | https://bombora.com/privacy-philosophy/ | Opt-out or consumer privacy-request page. Automated check on 2026-10-01 got HTTP 403. Open the link in a browser. |
 | Brooks Integrated Marketing, LLC | https://www.brooksim.com/privacy-form | Opt-out or consumer privacy-request page. |
+| Canada Post | https://www.canadapost-postescanada.ca/cpc/en/support/kb/receiving/delivery-faq/how-to-stop-receiving-advertising-mail.page | Canadian page for reducing advertising mail. Consumers' Choice uses a mailbox note to stop unaddressed advertising mail. To stop addressed advertising mail that uses the Canada Post name-and-address database, use the form on the page or call 1-800-267-1177. Government, election, and community-newspaper mail still arrives. |
 | Catalina Marketing Corporation | https://www.catalina.com/legal#privacy-notice | Privacy notice or privacy-policy page. Use the state-rights, do-not-sell, or request section. |
 | Catalist LLC | https://catalist.us/privacy-policy/ | Privacy notice or privacy-policy page. Use the state-rights, do-not-sell, or request section. |
 | Claritas LLC. | https://www.claritas.com/privacy-legal/ | Opt-out or consumer privacy-request page. |
 | Clearbit | https://clearbit.com/privacy-policy | Privacy notice or privacy-policy page. Use the state-rights, do-not-sell, or request section. |
+| CMA Do Not Mail | https://www.thecma.ca/resources/consumer-centre/get-less-print-mail | Canadian Marketing Association Do Not Mail service for personally addressed marketing mail. The CMA does not own, compile, or rent the lists. Telemarketing is the separate National Do Not Call List. |
 | Cognism, Inc. | https://cognism.privacy.saymine.io/cognism | Opt-out or consumer privacy-request page. |
 | Compact Information Systems, LLC | https://deepsync.com/privacy-policy/ | Privacy notice or privacy-policy page. Use the state-rights, do-not-sell, or request section. |
 | Comscore, Inc. | https://www.comscore.com/About/Privacy-Policy | Privacy notice or privacy-policy page. Use the state-rights, do-not-sell, or request section. The Markup and CalMatters (2025) found page code that hid this URL from search engines. |
@@ -41,6 +43,7 @@ Marketing and audience brokers. The link is an opt-out or the privacy page the c
 | DMAChoice | https://www.dmachoice.org/ | Mail-preference service cited by the FTC. It may require an account and does not stop mail from companies you already do business with. |
 | Dun & Bradstreet, Inc. | https://submit-irm.trustarc.eu/services/validation/ba81b98f-997d-4216-b4cc-d64cf261b082 | Opt-out or consumer privacy-request page. |
 | Dynata | https://www.dynata.com/privacy/ | Privacy policy for Dynata survey and audience data. Panel opt-out steps are on the page. Automated check on 2026-10-01 got HTTP 403. Open the link in a browser. |
+| Environics Analytics | https://environicsanalytics.com/footer/privacy | Canadian marketing and location-data privacy policy (PIPEDA). Questions: privacy@environicsanalytics.com. The policy points Canadian consumers to the CMA Do Not Mail service, listed separately. |
 | Epsilon | https://legal.epsilon.com/dsr/ | Data-subject request form for Epsilon marketing data. Related domains using this form: legal.epsilon.com. |
 | Exact Match Marketing Inc | https://exactmatchmarketing.com/privacy-policy | Privacy notice or privacy-policy page. Use the state-rights, do-not-sell, or request section. Privacy-rights page submitted to the California Data Broker Registry. |
 | Eyeota Pte Ltd | https://www.eyeota.com/how-to-opt-out | Opt-out or consumer privacy-request page. |

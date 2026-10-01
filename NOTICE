@@ -40,6 +40,13 @@ Some `manual` rows are official consumer tools recorded from the publisher, incl
 - Canada's National Do Not Call List (CRTC): https://www.lnnte-dncl.gc.ca/en/
 - UK open electoral register (GOV.UK): https://www.gov.uk/electoral-register/opt-out-of-the-open-register
 
+Further `manual` rows are Canadian official pages, including Canada Post advertising-mail choices, the Canadian Marketing Association Do Not Mail service, Elections Canada and provincial voters-list pages, and privacy-commissioner guidance or complaint forms:
+
+- Office of the Privacy Commissioner of Canada: https://www.priv.gc.ca/en/privacy-topics/information-and-advice-for-individuals/your-privacy-rights/raise-privacy-concern/
+- Office of the Information and Privacy Commissioner for British Columbia: https://www.oipc.bc.ca/forms/individuals/complaints/
+- Office of the Information and Privacy Commissioner of Alberta: https://oipc.ab.ca/privacy-correction-complaint
+- Commission d'acces a l'information du Quebec: https://formulaire.cai.gouv.qc.ca/
+
 Those pages belong to their publishers. This repository stores the link, a category, and a short note.
 
 ## This repository

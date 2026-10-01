@@ -2,7 +2,7 @@
 
 Background-check brands and arrest-record portals. A removal here does not erase the government record underneath it.
 
-52 entries. Link responses were checked on 2026-10-01 unless a note says otherwise.
+54 entries. Link responses were checked on 2026-10-01 unless a note says otherwise.
 
 | Broker | Opt-out / privacy URL | Notes |
 | --- | --- | --- |
@@ -12,6 +12,7 @@ Background-check brands and arrest-record portals. A removal here does not erase
 | Backgrounds Online | https://clients.backgroundsonline.com/policies/privacy?right=true | Privacy page with a state-rights request option for Backgrounds Online. |
 | California Arrests | https://www.californiaarrests.org/request-portal | Arrests.org request portal for this state site. The portal URL was responding on 2026-10-01. |
 | California Criminal Records Search | https://californiacriminalrecords.org/contact | Privacy notice or privacy-policy page. Use the state-rights, do-not-sell, or request section. |
+| Certn | https://certn.co/privacy-policy/ | Canadian background-check privacy policy for Certn (Canada) Inc. and affiliates. Privacy requests: privacy@certn.co. The policy describes access, deletion, and withdrawing consent. |
 | Checkr | https://checkr.com/legal/privacy-policy | Privacy notice or privacy-policy page. Use the state-rights, do-not-sell, or request section. Email: dpo@checkr.com. |
 | Colorado Arrests | https://www.coloradoarrests.org/request-portal | Arrests.org request portal for this state site. The portal URL was responding on 2026-10-01. |
 | Delvepoint | https://www.delvepoint.com/resources-privacy.html | Privacy page for Delvepoint skip tracing. Email: optout@delvepoint.com. Mail: 1709 Hermitage Blvd, Suite 101, Tallahassee, FL 32308. |
@@ -53,6 +54,7 @@ Background-check brands and arrest-record portals. A removal here does not erase
 | Sterling Data Company LLC | https://sterling.ai/privacy-policy/ | Privacy notice or privacy-policy page. Use the state-rights, do-not-sell, or request section. Automated check on 2026-10-01 got HTTP 403. Open the link in a browser. |
 | Tennessee Arrests | https://www.tennesseearrests.org/request-portal | Arrests.org request portal for this state site. The portal URL was responding on 2026-10-01. |
 | Tracers | https://www.tracers.com/do-not-sell/ | Do-not-sell page for Tracers skip-tracing data. Phone: 877-820-8125. Automated check on 2026-10-01 got HTTP 403. Open the link in a browser. |
+| Triton Canada | https://www.tritoncanada.ca/triton-privacy-policy/ | Canadian background-screening privacy policy. Email: privacy.officer@tritonverify.com. Phone: (416) 494-4444. Mail: Triton Canada Inc., 2235 Sheppard Avenue East, Suite 1503, Toronto, ON M2J 5B5. |
 | Virginia Arrests | https://www.virginiaarrests.org/request-portal | Arrests.org request portal for this state site. The portal URL was responding on 2026-10-01. |
 | Washington Arrests | https://www.washingtonarrests.org/request-portal | Arrests.org request portal for this state site. The portal URL was responding on 2026-10-01. |
 | West Virginia Arrests | https://www.wvarrests.org/request-portal | Arrests.org request portal for this state site. The portal URL was responding on 2026-10-01. |
