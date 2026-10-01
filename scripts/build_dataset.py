@@ -189,32 +189,52 @@ IGNORE_FIELD_RE = re.compile(
 )
 
 
+SEARCH_ACTION_RE = re.compile(r"/(search|people|reverse)(/|$)", re.I)
+SEARCH_FIELD_RE = re.compile(r"search|lookup", re.I)
+
+
+def _field_blob(field: dict) -> str:
+    return " ".join(
+        part
+        for part in (
+            field.get("name"),
+            field.get("id"),
+            field.get("placeholder"),
+            field.get("aria_label"),
+            field.get("type"),
+        )
+        if part
+    )
+
+
 def request_forms(evidence: dict) -> list[dict]:
     """Keep forms that look like a request or login. Drop site search and feedback widgets."""
     selected = []
     for form in evidence.get("forms") or []:
+        action = form.get("action") or ""
+        action_path = urlparse(action).path if "://" in action else action
         fields = []
         for field in form.get("fields") or []:
             label = field.get("name") or field.get("id") or ""
-            blob = " ".join(
-                part
-                for part in (
-                    field.get("name"),
-                    field.get("id"),
-                    field.get("placeholder"),
-                    field.get("aria_label"),
-                    field.get("type"),
-                )
-                if part
-            )
-            if IGNORE_FIELD_RE.match(label) and field.get("type") != "password":
+            blob = _field_blob(field)
+            if field.get("type") != "password" and (
+                IGNORE_FIELD_RE.match(label) or SEARCH_FIELD_RE.search(label)
+            ):
                 continue
             if REQUEST_FIELD_RE.search(blob) or field.get("type") == "password":
                 fields.append(field)
-        if fields:
-            copied = dict(form)
-            copied["fields"] = fields
-            selected.append(copied)
+        if not fields:
+            continue
+        # A people/business/phone search box is not a privacy request, even when
+        # the placeholder says "name" or "phone".
+        if SEARCH_ACTION_RE.search(action_path) and not any(
+            re.search(r"e-?mail|message|comment|request|opt|password", _field_blob(field), re.I)
+            for field in fields
+        ):
+            continue
+        copied = dict(form)
+        copied["fields"] = fields
+        selected.append(copied)
     return selected
 
 
@@ -1282,7 +1302,7 @@ def main() -> None:
         "schema_version": SCHEMA_VERSION,
         "dataset_version": DATASET_VERSION,
         "catalog_path": "opt-outs.csv",
-        "catalog_row_count": 968,
+        "catalog_row_count": len(rows),
         "catalog_check_date": "2026-10-01",
         "research_generated_at": utc_now(),
         "requests_submitted": False,

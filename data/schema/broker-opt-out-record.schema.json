@@ -19,7 +19,7 @@
     "schema_version": {"type": "string", "const": "1.0.0"},
     "dataset_version": {"type": "string", "minLength": 1},
     "catalog_path": {"type": "string", "const": "opt-outs.csv"},
-    "catalog_row_count": {"type": "integer", "const": 968},
+    "catalog_row_count": {"type": "integer", "const": 1122},
     "catalog_check_date": {"type": "string"},
     "research_generated_at": {"type": "string"},
     "requests_submitted": {"type": "boolean", "const": false},
@@ -27,8 +27,8 @@
     "methodology": {"type": "string"},
     "records": {
       "type": "array",
-      "minItems": 968,
-      "maxItems": 968,
+      "minItems": 1122,
+      "maxItems": 1122,
       "items": {"$ref": "#/$defs/record"}
     }
   },

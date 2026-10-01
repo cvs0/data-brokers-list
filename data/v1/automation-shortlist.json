@@ -277,6 +277,61 @@
       "implementation_effort": "high",
       "blockers": ["login"],
       "why": "ANA mail-preference service. The fetched page is a login and registration form, not the preference form itself. Request types and the post-login steps are unknown. Include only as a marketing-mail choice, behind account creation."
+    },
+    {
+      "rank": 26,
+      "entry_id": "elections-canada",
+      "name": "Elections Canada",
+      "automation_classification": "manual_workflow",
+      "verification_level": "page_inspected",
+      "research_status": "verified",
+      "implementation_effort": "high",
+      "blockers": [],
+      "why": "Official National Register of Electors opt-out. The page says to write to Elections Canada with name, date of birth, home and mailing addresses, and a signature. Opting out does not remove the right to vote, and the person must be added to the list again in order to vote. No web form was on the inspected page."
+    },
+    {
+      "rank": 27,
+      "entry_id": "elections-quebec",
+      "name": "Elections Quebec",
+      "automation_classification": "manual_workflow",
+      "verification_level": "page_inspected",
+      "research_status": "verified",
+      "implementation_effort": "high",
+      "blockers": ["verification"],
+      "why": "Élections Québec states three ways to be struck from the permanent list of electors: a mailed letter, the secure contact link, or a phone request for an application. Two supporting documents are required. The contact form was not opened. This is a voters-list process, not a broker deletion."
+    },
+    {
+      "rank": 28,
+      "entry_id": "elections-bc",
+      "name": "Elections BC",
+      "automation_classification": "manual_workflow",
+      "verification_level": "page_inspected",
+      "research_status": "verified",
+      "implementation_effort": "medium",
+      "blockers": [],
+      "why": "Elections BC says a person who believes distributed voter lists put their privacy or security at risk can call 1-800-661-8683 or write to the Director, Voter Data and Geography. The request omits name and address from those lists. It does not say the voter record is deleted."
+    },
+    {
+      "rank": 29,
+      "entry_id": "canada-post",
+      "name": "Canada Post",
+      "automation_classification": "manual_workflow",
+      "verification_level": "page_inspected",
+      "research_status": "verified",
+      "implementation_effort": "medium",
+      "blockers": [],
+      "why": "Official advertising-mail page. Addressed mail that uses Canada Post lists can be stopped by phone at 1-800-267-1177 or by a linked database form that was not opened. Unaddressed mail is a note on the mailbox. Removal applies only to the current address, may take 10 business days, and addressed mail can continue for 90 days. Election mail and public-interest mail continue."
+    },
+    {
+      "rank": 30,
+      "entry_id": "cma-do-not-mail",
+      "name": "CMA Do Not Mail",
+      "automation_classification": "unknown",
+      "verification_level": "page_inspected",
+      "research_status": "partial",
+      "implementation_effort": "high",
+      "blockers": [],
+      "why": "The Canadian Marketing Association Do Not Mail page describes a free service that reduces personally addressed marketing mail. Register Now was not opened, so the fields are unknown. The 1-866 number on the page is the National Do Not Call List, not this mail registration. Same class of gap as DMAchoice: the service is real and the form is still uninspected."
     }
   ]
 }
