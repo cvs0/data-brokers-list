@@ -16,11 +16,13 @@
     "records"
   ],
   "properties": {
-    "schema_version": {"type": "string", "const": "1.0.0"},
+    "schema_version": {"type": "string", "const": "1.1.0"},
     "dataset_version": {"type": "string", "minLength": 1},
     "catalog_path": {"type": "string", "const": "opt-outs.csv"},
     "catalog_row_count": {"type": "integer", "const": 1122},
     "catalog_check_date": {"type": "string"},
+    "freshness_check_date": {"type": "string"},
+    "browser_pass_at": {"type": "string"},
     "research_generated_at": {"type": "string"},
     "requests_submitted": {"type": "boolean", "const": false},
     "id_join": {"type": "string"},
@@ -256,6 +258,10 @@
         "search_requires_payment": {"$ref": "#/$defs/nullableBoolean"},
         "search_requires_captcha": {"$ref": "#/$defs/nullableBoolean"},
         "profile_identification": {"$ref": "#/$defs/nullableString"},
+        "search_observation": {
+          "$ref": "#/$defs/nullableString",
+          "description": "What a public search page showed. A search query was not submitted in this research."
+        },
         "exposure_check": {
           "type": "string",
           "enum": [
@@ -361,7 +367,7 @@
         },
         "source": {
           "type": "string",
-          "enum": ["http_redirect", "page_form", "page_instructions", "not_inspected"]
+          "enum": ["http_redirect", "page_form", "page_instructions", "browser_render", "not_inspected"]
         },
         "evidence": {"type": "string"}
       }
@@ -513,7 +519,34 @@
             "workflow_partially_inspected",
             "end_to_end_tested"
           ]
-        }
+        },
+        "browser_inspection": {"$ref": "#/$defs/browserInspection"}
+      }
+    },
+    "browserInspection": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "Headless browser read of a public page. CAPTCHAs were not solved and forms were not submitted.",
+      "required": [
+        "inspected_at",
+        "outcome",
+        "final_url",
+        "http_status",
+        "captcha_visible",
+        "wizard_hint",
+        "notes"
+      ],
+      "properties": {
+        "inspected_at": {"type": ["string", "null"]},
+        "outcome": {
+          "type": "string",
+          "enum": ["readable", "challenge", "http_error", "timeout", "error"]
+        },
+        "final_url": {"type": ["string", "null"]},
+        "http_status": {"type": ["integer", "null"]},
+        "captcha_visible": {"type": ["boolean", "null"]},
+        "wizard_hint": {"type": ["string", "null"]},
+        "notes": {"type": "string"}
       }
     }
   }

@@ -69,7 +69,7 @@ Search the CSV before you send extra personal details. Notes say when a page ret
 
 `opt-outs.csv` is the source of truth for links. The Markdown files are tables generated from it. Column definitions and the check date are in [SOURCES.md](SOURCES.md).
 
-Researched workflow records, with stable IDs and a JSON Schema, are in [data/v1/broker-opt-outs.enriched.json](data/v1/broker-opt-outs.enriched.json). Field definitions are in [docs/dataset-fields.md](docs/dataset-fields.md). What was verified, blocked, or not a removal workflow is summarized in [docs/findings.md](docs/findings.md). Catalog notes are preserved as claims. They are not treated as proof that a removal workflow still works. No request was submitted to produce that file.
+Researched workflow records, with stable IDs and a JSON Schema, are in [data/v1/broker-opt-outs.enriched.json](data/v1/broker-opt-outs.enriched.json). Field definitions are in [docs/dataset-fields.md](docs/dataset-fields.md). What was verified, blocked, or not a removal workflow is summarized in [docs/findings.md](docs/findings.md). A later browser pass, freshness recheck, and verification playbooks are linked from that file. Catalog notes are preserved as claims. They are not treated as proof that a removal workflow still works. No request was submitted to produce that file.
 
 ## How to use a row
 

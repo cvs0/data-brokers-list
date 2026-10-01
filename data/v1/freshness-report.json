@@ -1,0 +1,4577 @@
+{
+  "check_date": "2026-10-01",
+  "checked_at": "2026-10-01T23:11:41+00:00",
+  "method": "Direct HTTP GET, no proxy, no form submission. www and trailing-slash differences are ignored. A blocked result is not a dead page and is not evidence that a residential proxy is required. opt-outs.csv http_status was not rewritten.",
+  "catalog_rows": 1122,
+  "unique_urls": 1090,
+  "drift_counts": {
+    "blocked": 259,
+    "moved_other_host": 10,
+    "moved_same_site": 43,
+    "status_changed": 10,
+    "unchanged": 767,
+    "unresolved_or_network_error": 1
+  },
+  "flagged": [
+    {
+      "entry_ids": [
+        "findmugshots"
+      ],
+      "names": [
+        "FindMugshots"
+      ],
+      "url": "https://www.findmugshots.com/google_remove.php",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://www.findmugshots.com/google_remove.php",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "first-advantage-corporation"
+      ],
+      "names": [
+        "First Advantage Corporation"
+      ],
+      "url": "https://fadv.com/privacy-center/",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://fadv.com/privacy-center/",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "freebackgroundchecks-com"
+      ],
+      "names": [
+        "FreeBackgroundChecks.com"
+      ],
+      "url": "https://freebackgroundchecks.com/optout/",
+      "drift": "blocked",
+      "catalog_http_status": "429",
+      "observed_http_status": 429,
+      "final_url": "https://freebackgroundchecks.com/optout/",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "massachusetts-arrests"
+      ],
+      "names": [
+        "Massachusetts Arrests"
+      ],
+      "url": "https://www.maarrests.org/request-portal",
+      "drift": "moved_same_site",
+      "catalog_http_status": "200",
+      "observed_http_status": 200,
+      "final_url": "https://www.maarrests.org/corrections",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "ohio-arrests"
+      ],
+      "names": [
+        "Ohio Arrests"
+      ],
+      "url": "https://www.ohioarrests.org/request-portal",
+      "drift": "moved_same_site",
+      "catalog_http_status": "200",
+      "observed_http_status": 200,
+      "final_url": "https://www.ohioarrests.org/corrections",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "sterling-data-company-llc"
+      ],
+      "names": [
+        "Sterling Data Company LLC"
+      ],
+      "url": "https://sterling.ai/privacy-policy/",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://sterling.ai/privacy-policy/",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "optoutprescreen-experian-equifax-transunion-innovis"
+      ],
+      "names": [
+        "OptOutPrescreen (Experian/Equifax/TransUnion/Innovis)"
+      ],
+      "url": "https://www.optoutprescreen.com/",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://www.optoutprescreen.com/",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "transunion"
+      ],
+      "names": [
+        "TransUnion"
+      ],
+      "url": "https://www.transunion.com/consumer-privacy",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://www.transunion.com/consumer-privacy",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "6sense-insights-inc"
+      ],
+      "names": [
+        "6sense Insights, Inc."
+      ],
+      "url": "https://6sense.com/privacy-policy/",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://6sense.com/privacy-policy/",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "a-direct-marketing-inc"
+      ],
+      "names": [
+        "A Direct Marketing Inc"
+      ],
+      "url": "https://www.bookyourdata.com/ccpa-ready",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://www.bookyourdata.com/ccpa-ready",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "accurate-append-inc"
+      ],
+      "names": [
+        "Accurate Append Inc."
+      ],
+      "url": "https://clients.accurateappend.com/public/optout/capture",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://clients.accurateappend.com/public/optout/capture",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "audience-acuity-llc"
+      ],
+      "names": [
+        "Audience Acuity LLC"
+      ],
+      "url": "https://audienceacuity.com/california/",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://audienceacuity.com/california/",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "audiencepoint-inc"
+      ],
+      "names": [
+        "AudiencePoint Inc."
+      ],
+      "url": "https://audiencepoint.com/cpra/",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://audiencepoint.com/cpra/",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "blue-hill-marketing-solutions-inc"
+      ],
+      "names": [
+        "Blue Hill Marketing Solutions, Inc"
+      ],
+      "url": "https://www.liftbasedata.com/request-to-know/",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://www.liftbasedata.com/request-to-know/",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "bombora-inc"
+      ],
+      "names": [
+        "Bombora, Inc"
+      ],
+      "url": "https://bombora.com/privacy-philosophy/",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://bombora.com/privacy-philosophy/",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "converge-direct-llc"
+      ],
+      "names": [
+        "Converge Direct, LLC"
+      ],
+      "url": "https://www.convergemarketing.com/compliance/",
+      "drift": "moved_same_site",
+      "catalog_http_status": "200",
+      "observed_http_status": 200,
+      "final_url": "https://www.convergemarketing.com/privacy/",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "data-axle-infousa"
+      ],
+      "names": [
+        "Data Axle (InfoUSA)"
+      ],
+      "url": "https://www.data-axle.com/do-not-sell-my-data/",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://www.data-axle.com/do-not-sell-my-data/",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "j2-global-canada-inc-fullcontact-com"
+      ],
+      "names": [
+        "J2 Global Canada, Inc."
+      ],
+      "url": "https://www.fullcontact.com/privacy/privacy-policy/",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://www.fullcontact.com/privacy/privacy-policy/",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "lotame"
+      ],
+      "names": [
+        "Lotame"
+      ],
+      "url": "https://www.lotame.com/about-lotame/privacy/lotames-opt-out/",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://www.lotame.com/about-lotame/privacy/lotames-opt-out/",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "magnite-inc"
+      ],
+      "names": [
+        "Magnite Inc"
+      ],
+      "url": "https://www.magnite.com/legal/user-choice-portal/",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://www.magnite.com/legal/user-choice-portal/",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "neustar-transunion"
+      ],
+      "names": [
+        "Neustar (TransUnion)"
+      ],
+      "url": "https://privacychoices.home.neustar/",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://privacychoices.home.neustar/",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "neustar-inc"
+      ],
+      "names": [
+        "NeuStar, Inc."
+      ],
+      "url": "https://privacychoices.home.neustar/?t=#/login",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://privacychoices.home.neustar/?t=#/login",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "openx-technologies-inc"
+      ],
+      "names": [
+        "OpenX Technologies, Inc."
+      ],
+      "url": "https://www.openx.com/privacy-center/ad-exchange-privacy-policy/",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://www.openx.com/privacy-center/ad-exchange-privacy-policy/",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "seamless-contacts-inc"
+      ],
+      "names": [
+        "Seamless Contacts, Inc."
+      ],
+      "url": "https://login.seamless.ai/personalDataRequest",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://login.seamless.ai/personalDataRequest",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "sovrn-inc"
+      ],
+      "names": [
+        "Sovrn, Inc."
+      ],
+      "url": "https://www.sovrn.com/privacy-policy/policy-center/",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://www.sovrn.com/privacy-policy/policy-center/",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "statara-solutions-llc"
+      ],
+      "names": [
+        "Statara Solutions LLC"
+      ],
+      "url": "https://statara.com/privacy/",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://statara.com/privacy/",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "techtarget-inc"
+      ],
+      "names": [
+        "TechTarget, Inc."
+      ],
+      "url": "https://www.informatechtarget.com/ccpa-privacy-notice/",
+      "drift": "status_changed",
+      "catalog_http_status": "403",
+      "observed_http_status": 200,
+      "final_url": "https://www.informatechtarget.com/ccpa-privacy-notice/",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "towerdata-inc"
+      ],
+      "names": [
+        "TowerData, Inc."
+      ],
+      "url": "https://www.towerdata.com/ccpa-form",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://www.atdata.com/ccpa-form",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "versium-analytics-inc"
+      ],
+      "names": [
+        "Versium Analytics Inc."
+      ],
+      "url": "https://versium.com/ccpa-privacy-policy",
+      "drift": "moved_same_site",
+      "catalog_http_status": "429",
+      "observed_http_status": 200,
+      "final_url": "https://versium.com/california-privacy-policy/",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "virtual-marketing-llc"
+      ],
+      "names": [
+        "Virtual Marketing LLC"
+      ],
+      "url": "https://www.fusion92.com/privacy-policy",
+      "drift": "blocked",
+      "catalog_http_status": "429",
+      "observed_http_status": 429,
+      "final_url": "https://www.fusion92.com/privacy-policy",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "zoominfo-technologies-llc"
+      ],
+      "names": [
+        "ZoomInfo Technologies, LLC"
+      ],
+      "url": "https://privacyrequest.zoominfo.com/remove/verify",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://privacyrequest.zoominfo.com/remove/verify",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "33-mile-radius-llc"
+      ],
+      "names": [
+        "33 Mile Radius LLC"
+      ],
+      "url": "https://www.33mileradius.com/privacy-policy/",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://www.33mileradius.com/privacy-policy/",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "33across-inc"
+      ],
+      "names": [
+        "33Across, Inc."
+      ],
+      "url": "https://33across.com/privacy-policy/ccpa-notice/",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://www.33across.com/privacy-policy/ccpa-notice/",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "5x5-us-llc"
+      ],
+      "names": [
+        "5X5 US, LLC"
+      ],
+      "url": "https://5x5data.com/dsr-out/",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://5x5data.com/dsr-out/",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "above-data-inc"
+      ],
+      "names": [
+        "Above Data, Inc."
+      ],
+      "url": "https://www.abovedata.io/privacy-policy/",
+      "drift": "moved_same_site",
+      "catalog_http_status": "200",
+      "observed_http_status": 200,
+      "final_url": "https://www.abovedata.io/privacy",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "adept-id-inc"
+      ],
+      "names": [
+        "Adept ID, Inc."
+      ],
+      "url": "https://www.adept-id.com/privacy-policy/",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://www.adept-id.com/privacy-policy/",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "affinity-answers-corporation"
+      ],
+      "names": [
+        "Affinity Answers Corporation"
+      ],
+      "url": "https://www.affinityanswers.com/your-privacy-choices/",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://www.affinityanswers.com/your-privacy-choices/",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "affinity-solutions"
+      ],
+      "names": [
+        "Affinity Solutions"
+      ],
+      "url": "https://www.affinity.solutions/data-privacy-notice/",
+      "drift": "blocked",
+      "catalog_http_status": "200",
+      "observed_http_status": 403,
+      "final_url": "https://www.affinity.solutions/data-privacy-notice/",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "allareacodes"
+      ],
+      "names": [
+        "AllAreaCodes"
+      ],
+      "url": "https://www.allareacodes.com/remove_name.htm",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://www.allareacodes.com/remove_name.htm",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "alphonso-inc"
+      ],
+      "names": [
+        "Alphonso Inc."
+      ],
+      "url": "https://alphonso.tv/privacy/",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://alphonso.tv/privacy/",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "altrata-inc"
+      ],
+      "names": [
+        "Altrata, Inc."
+      ],
+      "url": "https://altrata.com/online-privacy-notice",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://altrata.com/online-privacy-notice",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "american-city-business-journals-inc"
+      ],
+      "names": [
+        "American City Business Journals. Inc."
+      ],
+      "url": "https://www.acbj.com/privacy",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://www.acbj.com/privacy",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "anne-lewis-strategies-llc"
+      ],
+      "names": [
+        "Anne Lewis Strategies, LLC"
+      ],
+      "url": "https://missionwired.com/privacy-policy/#caprivacy",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://missionwired.com/privacy-policy/#caprivacy",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "aristotle-international-inc"
+      ],
+      "names": [
+        "Aristotle International, Inc."
+      ],
+      "url": "https://www.aristotle.com/privacy/addendum-for-california-residents/",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://www.aristotle.com/privacy/addendum-for-california-residents/",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "arivify-property-data"
+      ],
+      "names": [
+        "Arivify (property data)"
+      ],
+      "url": "https://www.arivify.com/removal",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://www.arivify.com/removal",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "asset-international-inc"
+      ],
+      "names": [
+        "Asset International, Inc."
+      ],
+      "url": "https://www.issgovernance.com/privacy-legal/ccpa/",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://www.iss-stoxx.com/legal/ccpa/",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "awl-holdings-llc"
+      ],
+      "names": [
+        "AWL Holdings, LLC"
+      ],
+      "url": "https://awl.com/privacy/",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://awl.com/privacy/",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "bdex-llc"
+      ],
+      "names": [
+        "BDEX, LLC"
+      ],
+      "url": "https://www.bdex.com/privacy-policy/",
+      "drift": "moved_same_site",
+      "catalog_http_status": "200",
+      "observed_http_status": 200,
+      "final_url": "https://www.bdex.com/privacy-policy-old/",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "blis-global-ltd"
+      ],
+      "names": [
+        "Blis Global Ltd"
+      ],
+      "url": "https://blis.com/privacy-centre/",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://blis.com/privacy-centre/",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "buildertrend-solutions-inc"
+      ],
+      "names": [
+        "Buildertrend Solutions, Inc."
+      ],
+      "url": "https://buildertrend.com/additional-state-disclosures/",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://buildertrend.com/additional-state-disclosures/",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "callersmart"
+      ],
+      "names": [
+        "CallerSmart"
+      ],
+      "url": "https://www.callersmart.com/data",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://www.callersmart.com/data",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "captify-technologies"
+      ],
+      "names": [
+        "Captify Technologies"
+      ],
+      "url": "https://captifytechnologies.com/data-subject-rights-request/",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://captifytechnologies.com/data-subject-rights-request/",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "censia-in"
+      ],
+      "names": [
+        "Censia, In."
+      ],
+      "url": "https://www.censia.com/ccpa/",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://www.censia.com/ccpa/",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "coloradoresidentdirectory"
+      ],
+      "names": [
+        "ColoradoResidentDirectory"
+      ],
+      "url": "https://www.coloradoresidentdirectory.com/opt-out",
+      "drift": "blocked",
+      "catalog_http_status": "200",
+      "observed_http_status": 403,
+      "final_url": "https://www.coloradoresidentdirectory.com/opt-out",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "commercial-real-estate-exchange-inc"
+      ],
+      "names": [
+        "Commercial Real Estate Exchange, Inc."
+      ],
+      "url": "https://www.crexi.com/privacy",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://www.crexi.com/privacy",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "connected-investors-llc"
+      ],
+      "names": [
+        "Connected Investors, LLC"
+      ],
+      "url": "https://connectedinvestors.com/content/privacy-policy",
+      "drift": "moved_same_site",
+      "catalog_http_status": "200",
+      "observed_http_status": 200,
+      "final_url": "https://connectedinvestors.com/privacy-policy",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "connecticut-resident-directory"
+      ],
+      "names": [
+        "Connecticut Resident Directory"
+      ],
+      "url": "https://www.connecticutresidentdirectory.com/opt-out",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://www.connecticutresidentdirectory.com/opt-out",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "costar-group"
+      ],
+      "names": [
+        "CoStar Group"
+      ],
+      "url": "https://www.costar.com/about/privacy-notice",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://www.costar.com/about/privacy-notice",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "crisil-irevna-us-llc"
+      ],
+      "names": [
+        "CRISIL Irevna US LLC"
+      ],
+      "url": "https://www.crisil.com/content/crisilcom/en/home/crisil-privacy-notice.html",
+      "drift": "moved_same_site",
+      "catalog_http_status": "200",
+      "observed_http_status": 200,
+      "final_url": "https://www.crisil.com/en/home/crisil-privacy-notice.html",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "data-trust"
+      ],
+      "names": [
+        "Data Trust"
+      ],
+      "url": "https://thedatatrust.com/do-not-sell-my-personal-information/",
+      "drift": "moved_same_site",
+      "catalog_http_status": "200",
+      "observed_http_status": 200,
+      "final_url": "https://thedatatrust.com/privacy-policy/",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "datanyze-llc"
+      ],
+      "names": [
+        "Datanyze LLC"
+      ],
+      "url": "https://www.datanyze.com/privacy-center",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://www.datanyze.com/privacy-center",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "dataskip"
+      ],
+      "names": [
+        "Dataskip"
+      ],
+      "url": "https://dataskip.io/product/start-order/",
+      "drift": "moved_same_site",
+      "catalog_http_status": "200",
+      "observed_http_status": 200,
+      "final_url": "https://dataskip.io/pricing",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "dealersocket-llc"
+      ],
+      "names": [
+        "DealerSocket, LLC"
+      ],
+      "url": "https://dealersocket.com/privacy-policy/",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://dealersocket.com/privacy-policy/",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "deloitte-consulting-llp"
+      ],
+      "names": [
+        "Deloitte Consulting LLP"
+      ],
+      "url": "https://www.deloitte.com/us/en/legal/privacy/predictrisk-privacy-notice.html",
+      "drift": "moved_same_site",
+      "catalog_http_status": "200",
+      "observed_http_status": 200,
+      "final_url": "https://www.deloitte.com/us/en/legal/predictrisk-privacy-notice.html",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "demand-science-us-llc"
+      ],
+      "names": [
+        "Demand Science US, LLC"
+      ],
+      "url": "https://demandscience.com/privacy-policy/",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://demandscience.com/privacy-policy/",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "dexknows-com-thryv"
+      ],
+      "names": [
+        "DexKnows.com (Thryv)"
+      ],
+      "url": "https://privacyportal-cdn.onetrust.com/dsarwebform/dd6500c7-03cb-45b0-8bed-97ece55a892d/cfcefb69-41db-4aee-bd00-c702df72ee0f.html",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://privacyportal-cdn.onetrust.com/dsarwebform/dd6500c7-03cb-45b0-8bed-97ece55a892d/cfcefb69-41db-4aee-bd00-c702df72ee0f.html",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "dobsearch"
+      ],
+      "names": [
+        "DOBSearch"
+      ],
+      "url": "https://www.dobsearch.com/people-finder/",
+      "drift": "moved_same_site",
+      "catalog_http_status": "200",
+      "observed_http_status": 200,
+      "final_url": "https://www.dobsearch.com/how-to-find-information-someone-online/",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "dspolitical-llc"
+      ],
+      "names": [
+        "DSPolitical, LLC"
+      ],
+      "url": "https://www.winwithoptimal.com/privacy-policy/",
+      "drift": "moved_other_host",
+      "catalog_http_status": "200",
+      "observed_http_status": 200,
+      "final_url": "https://www.onemagnify.com/privacy-policy",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "dstillery-inc"
+      ],
+      "names": [
+        "Dstillery, Inc"
+      ],
+      "url": "https://dstillery.com/privacy-policy/",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://dstillery.com/privacy-policy/",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "dtn-llc"
+      ],
+      "names": [
+        "DTN, LLC"
+      ],
+      "url": "https://www.dtn.com/do-not-sell-my-information-form/",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://www.dtn.com/do-not-sell-my-information-form/",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "economic-modeling-llc"
+      ],
+      "names": [
+        "Economic Modeling, LLC"
+      ],
+      "url": "https://lightcast.io/privacy-policy",
+      "drift": "moved_same_site",
+      "catalog_http_status": "200",
+      "observed_http_status": 200,
+      "final_url": "https://lightcast.io/legal/privacy-policy",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "ekata-inc"
+      ],
+      "names": [
+        "Ekata, Inc."
+      ],
+      "url": "https://ekata.com/privacy-policy/",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://ekata.com/privacy-policy/",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "electronic-voice-services-inc"
+      ],
+      "names": [
+        "Electronic Voice Services, Inc."
+      ],
+      "url": "https://www.evs7.com/privacy-notice-for-residents-of-california",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://www.evs7.com/privacy-notice-for-residents-of-california",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "enformion-llc"
+      ],
+      "names": [
+        "Enformion LLC"
+      ],
+      "url": "https://www.enformion.com/privacy-policy/",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://www.enformion.com/privacy-policy/",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "enigma-technologies-inc"
+      ],
+      "names": [
+        "Enigma Technologies, Inc."
+      ],
+      "url": "https://www.enigma.com/company/privacy-policy",
+      "drift": "moved_same_site",
+      "catalog_http_status": "200",
+      "observed_http_status": 200,
+      "final_url": "https://www.enigma.com/legal/privacy-policy",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "evorra-ltd"
+      ],
+      "names": [
+        "Evorra Ltd"
+      ],
+      "url": "https://evorra.com/privacy-data-policies/product-privacy-policy/",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://evorra.com/privacy-data-policies/product-privacy-policy/",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "exlservice-com-llc"
+      ],
+      "names": [
+        "ExlService.com LLC"
+      ],
+      "url": "https://www.exlservice.com/privacy-policy",
+      "drift": "moved_same_site",
+      "catalog_http_status": "200",
+      "observed_http_status": 200,
+      "final_url": "https://www.exlservice.com/privacy-notice",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "explorium-inc"
+      ],
+      "names": [
+        "Explorium Inc."
+      ],
+      "url": "https://www.explorium.ai/platform-privacy-policy/",
+      "drift": "moved_same_site",
+      "catalog_http_status": "200",
+      "observed_http_status": 200,
+      "final_url": "https://www.explorium.ai/privacy-policy/",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "fandom-inc"
+      ],
+      "names": [
+        "Fandom, Inc."
+      ],
+      "url": "https://itlaw.fandom.com/wiki/Opt-out",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://itlaw.fandom.com/wiki/Opt-out",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "findem-inc"
+      ],
+      "names": [
+        "Findem, Inc."
+      ],
+      "url": "https://www.findem.ai/do-not-sell-or-share-my-personal-information",
+      "drift": "moved_same_site",
+      "catalog_http_status": "200",
+      "observed_http_status": 200,
+      "final_url": "https://www.findem.ai/privacy-rights",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "floridaresidentsdirectory"
+      ],
+      "names": [
+        "FloridaResidentsDirectory"
+      ],
+      "url": "https://www.floridaresidentsdirectory.com/opt-out",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://www.floridaresidentsdirectory.com/opt-out",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "forager-ai-llc"
+      ],
+      "names": [
+        "Forager.ai, LLC"
+      ],
+      "url": "https://www.forager.ai/privacy-policy",
+      "drift": "moved_same_site",
+      "catalog_http_status": "200",
+      "observed_http_status": 200,
+      "final_url": "https://www.forager.ai/privacy",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "freewheel-media-inc"
+      ],
+      "names": [
+        "FreeWheel Media Inc"
+      ],
+      "url": "https://www.freewheel.com/privacy-policy#tab2_section2_6",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://www.freewheel.com/privacy-policy#tab2_section2_6",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "getemails-llc"
+      ],
+      "names": [
+        "GetEmails LLC"
+      ],
+      "url": "https://www.retention.com/article-update-privacy-policy",
+      "drift": "moved_other_host",
+      "catalog_http_status": "200",
+      "observed_http_status": 200,
+      "final_url": "https://support.retention.com/en/articles/8826172-do-i-need-to-update-my-privacy-policy",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "hireteammate-inc"
+      ],
+      "names": [
+        "HireTeamMate, Inc."
+      ],
+      "url": "https://app.hireez.com/ownyourdata",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://app.hireez.com/ownyourdata",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "hivestack-inc"
+      ],
+      "names": [
+        "Hivestack Inc."
+      ],
+      "url": "https://perion.com/ccpa/",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://perion.com/ccpa/",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "houston-association-of-realtors"
+      ],
+      "names": [
+        "Houston Association of REALTORS"
+      ],
+      "url": "https://www.har.com/question/27460_how-can-i-opt-out-of-the-zillow-listing",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://www.har.com/question/27460_how-can-i-opt-out-of-the-zillow-listing",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "i360-llc"
+      ],
+      "names": [
+        "i360, LLC"
+      ],
+      "url": "https://www.i-360.com/ccpa/",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://www.i-360.com/ccpa/",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "id5-technology-ltd"
+      ],
+      "names": [
+        "ID5 Technology Ltd"
+      ],
+      "url": "https://id5.io/platform-privacy-policy/",
+      "drift": "moved_same_site",
+      "catalog_http_status": "200",
+      "observed_http_status": 200,
+      "final_url": "https://id5.io/trust/platform-privacy-policy",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "idg-communications-inc"
+      ],
+      "names": [
+        "IDG Communications Inc."
+      ],
+      "url": "https://foundryco.com/idg-privacy-policy/",
+      "drift": "moved_same_site",
+      "catalog_http_status": "200",
+      "observed_http_status": 200,
+      "final_url": "https://foundryco.com/privacy-policy/",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "ileads-com-llc"
+      ],
+      "names": [
+        "iLeads.com, LLC"
+      ],
+      "url": "https://ileads.com/company/privacy-policy/#9",
+      "drift": "moved_same_site",
+      "catalog_http_status": "200",
+      "observed_http_status": 200,
+      "final_url": "https://ileads.com/privacy",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "illinois-prison-talk"
+      ],
+      "names": [
+        "Illinois Prison Talk"
+      ],
+      "url": "https://illinoisprisontalk.org/remove-my-info.php",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://illinoisprisontalk.org/remove-my-info.php",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "information-com"
+      ],
+      "names": [
+        "Information.com"
+      ],
+      "url": "https://information.com/opt-out",
+      "drift": "status_changed",
+      "catalog_http_status": "403",
+      "observed_http_status": 200,
+      "final_url": "https://information.com/opt-out",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "inmarket-media-llc"
+      ],
+      "names": [
+        "InMarket Media, LLC"
+      ],
+      "url": "https://inmarket.com/privacy/",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://inmarket.com/privacy/",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "intalytics-inc"
+      ],
+      "names": [
+        "Intalytics, Inc."
+      ],
+      "url": "https://kalibrate.com/data-subject-access-request-form/",
+      "drift": "moved_same_site",
+      "catalog_http_status": "200",
+      "observed_http_status": 200,
+      "final_url": "https://kalibrate.com/dsr-form/",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "intentsify-llc"
+      ],
+      "names": [
+        "Intentsify, LLC"
+      ],
+      "url": "https://intentsify.io/privacy-policy/",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://intentsify.io/privacy-policy/",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "iqvia-digital-inc"
+      ],
+      "names": [
+        "IQVIA Digital Inc."
+      ],
+      "url": "https://www.iqvia.com/about-us/privacy/ccpa/do-not-sell",
+      "drift": "moved_other_host",
+      "catalog_http_status": "200",
+      "observed_http_status": 200,
+      "final_url": "https://privacyportal.onetrust.com/webform/07e8dc4d-6686-403e-9b11-39fe7347d2f4/2f999bd2-c826-498c-a504-894eaf543b6f",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "ispot-tv-inc"
+      ],
+      "names": [
+        "iSpot.tv, Inc."
+      ],
+      "url": "https://www.ispot.tv/privacy",
+      "drift": "moved_same_site",
+      "catalog_http_status": "200",
+      "observed_http_status": 200,
+      "final_url": "https://www.ispot.tv/hub/agreements/privacy/",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "iwave"
+      ],
+      "names": [
+        "iWave"
+      ],
+      "url": "https://kindsight.io/privacy-policy/",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://kindsight.io/privacy-policy/",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "j-d-power"
+      ],
+      "names": [
+        "J.D. Power"
+      ],
+      "url": "https://www.jdpower.com/privacy/california",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://www.jdpower.com/privacy/california",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "jun-group-productions-llc"
+      ],
+      "names": [
+        "Jun Group Productions, LLC"
+      ],
+      "url": "https://jungroup.com/optout",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://jungroup.com/optout",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "kargo-global-llc"
+      ],
+      "names": [
+        "Kargo Global LLC"
+      ],
+      "url": "https://www.kargo.com/ccpa",
+      "drift": "moved_same_site",
+      "catalog_http_status": "200",
+      "observed_http_status": 200,
+      "final_url": "https://www.kargo.com/california-privacy-notice",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "kiwi-searches"
+      ],
+      "names": [
+        "Kiwi Searches"
+      ],
+      "url": "https://kiwisearches.com/privacy",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://kiwisearches.com/privacy",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "kloudend-inc"
+      ],
+      "names": [
+        "Kloudend, Inc."
+      ],
+      "url": "https://ipapi.co/donotsell/",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://ipapi.co/donotsell/",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "koddi-inc"
+      ],
+      "names": [
+        "Koddi Inc."
+      ],
+      "url": "https://koddi.com/privacy-policy/",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://koddi.com/privacy-policy/",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "komodo-health-inc"
+      ],
+      "names": [
+        "Komodo Health, Inc."
+      ],
+      "url": "https://www.komodohealth.com/privacy-notice/",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://www.komodohealth.com/privacy-notice/",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "leadpost-llc"
+      ],
+      "names": [
+        "LeadPost LLC"
+      ],
+      "url": "https://leadpost.com/privacy-policy/",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://leadpost.com/privacy-policy/",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "lightbox-parent-l-p"
+      ],
+      "names": [
+        "LightBox Parent, L.P."
+      ],
+      "url": "https://www.lightboxre.com/lightbox-individual-data-rights-request/",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://www.lightboxre.com/lightbox-individual-data-rights-request/",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "lookify"
+      ],
+      "names": [
+        "Lookify"
+      ],
+      "url": "https://lookify.io/opt-out",
+      "drift": "blocked",
+      "catalog_http_status": "200",
+      "observed_http_status": 403,
+      "final_url": "https://lookify.io/opt-out",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "loopme-limited"
+      ],
+      "names": [
+        "LoopMe Limited"
+      ],
+      "url": "https://legal.loopme.com/privacy-center",
+      "drift": "status_changed",
+      "catalog_http_status": "200",
+      "observed_http_status": 406,
+      "final_url": "https://legal.loopme.com/privacy-center",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "mediawallah-inc"
+      ],
+      "names": [
+        "MediaWallah Inc"
+      ],
+      "url": "https://mediawallah.com/privacy-policy/",
+      "drift": "blocked",
+      "catalog_http_status": "202",
+      "observed_http_status": 403,
+      "final_url": "https://mediawallah.com/privacy-policy/",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "medpro-systems"
+      ],
+      "names": [
+        "MedPro Systems"
+      ],
+      "url": "https://www.medprosystems.com/privacy-policy/",
+      "drift": "blocked",
+      "catalog_http_status": "200",
+      "observed_http_status": 403,
+      "final_url": "https://www.medprosystems.com/privacy-policy/",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "mh-sub-i-llc"
+      ],
+      "names": [
+        "MH Sub I, LLC"
+      ],
+      "url": "https://www.internetbrands.com/privacy/privacy-main",
+      "drift": "moved_same_site",
+      "catalog_http_status": "200",
+      "observed_http_status": 200,
+      "final_url": "https://www.internetbrands.com/privacy",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "michigan-residents"
+      ],
+      "names": [
+        "Michigan Residents"
+      ],
+      "url": "https://www.michiganresidentdatabase.com/opt-out",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://www.michiganresidentdatabase.com/opt-out",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "monevo-inc"
+      ],
+      "names": [
+        "Monevo, Inc."
+      ],
+      "url": "https://app.monevo.us/california-privacy-policy",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://app.monevo.us/california-privacy-policy",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "names-and-facts"
+      ],
+      "names": [
+        "Names and Facts"
+      ],
+      "url": "https://namesandfacts.com/do-not-sell-my-info",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://namesandfacts.com/do-not-sell-my-info",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "national-opinion-institute-llc"
+      ],
+      "names": [
+        "National Opinion Institute, LLC"
+      ],
+      "url": "https://nationalopinioninstitute.com/ca-privacy/",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://nationalopinioninstitute.com/ca-privacy/",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "native-american-netroots"
+      ],
+      "names": [
+        "Native American Netroots"
+      ],
+      "url": "https://nativeamericannetroots.net/diary/51",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://nativeamericannetroots.net/diary/51",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "nc-resident-database"
+      ],
+      "names": [
+        "NC Resident Database"
+      ],
+      "url": "https://www.northcarolinaresidentdatabase.com/opt-out",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://www.northcarolinaresidentdatabase.com/opt-out",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "numlooker"
+      ],
+      "names": [
+        "NumLooker"
+      ],
+      "url": "https://numlooker.com/remove-my-info",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://numlooker.com/remove-my-info",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "ohio-resident-database"
+      ],
+      "names": [
+        "Ohio Resident Database"
+      ],
+      "url": "https://www.ohioresidentdatabase.com/opt-out",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://www.ohioresidentdatabase.com/opt-out",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "pitchbook-data-inc"
+      ],
+      "names": [
+        "PitchBook Data, Inc"
+      ],
+      "url": "https://pitchbook.com/privacy-policy",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://pitchbook.com/privacy-policy",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "place-exchange-inc"
+      ],
+      "names": [
+        "Place Exchange, Inc."
+      ],
+      "url": "https://www.placeexchange.com/do-not-sell-my-information",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://www.placeexchange.com/do-not-sell-my-information",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "precisely-software-incorporated"
+      ],
+      "names": [
+        "Precisely Software Incorporated"
+      ],
+      "url": "https://www.precisely.com/your-privacy-choices/",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://www.precisely.com/your-privacy-choices/",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "privatenumberchecker"
+      ],
+      "names": [
+        "PrivateNumberChecker"
+      ],
+      "url": "https://www.privatenumberchecker.com/removal-request",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://www.privatenumberchecker.com/removal-request",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "propertyreach"
+      ],
+      "names": [
+        "PropertyReach"
+      ],
+      "url": "https://www.propertyreach.com/privacy-rights",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://www.propertyreach.com/privacy-rights",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "pwc-product-sales-llc"
+      ],
+      "names": [
+        "PwC Product Sales LLC"
+      ],
+      "url": "https://www.pwc.com/us/en/site/california-privacy.html",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://www.pwc.com/us/en/site/california-privacy.html",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "quad-graphics-inc"
+      ],
+      "names": [
+        "Quad/Graphics, Inc."
+      ],
+      "url": "https://www.quad.com/legal/privacy-policy",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://www.quad.com/legal/privacy-policy",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "qualfon"
+      ],
+      "names": [
+        "Qualfon"
+      ],
+      "url": "https://www.qualfon.com/privacy-policy/",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://www.qualfon.com/privacy-policy/",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "qurium-solutions-inc"
+      ],
+      "names": [
+        "Qurium Solutions, Inc."
+      ],
+      "url": "https://supplier.io/privacy-policy",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://supplier.io/privacy-policy",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "realtyhop-com"
+      ],
+      "names": [
+        "Realtyhop.com"
+      ],
+      "url": "https://www.realtyhop.com/resources/realtyhop-redaction-request-system/",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://www.realtyhop.com/resources/realtyhop-redaction-request-system/",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "redfin-corporation"
+      ],
+      "names": [
+        "Redfin Corporation"
+      ],
+      "url": "https://support.redfin.com/hc/en-us/articles/38493151019419",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://support.redfin.com/hc/en-us/articles/38493151019419",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "resonate"
+      ],
+      "names": [
+        "Resonate"
+      ],
+      "url": "https://www.resonate.com/privacy-policy/",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://www.resonate.com/privacy-policy/",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "reverseaustralia"
+      ],
+      "names": [
+        "Reverseaustralia"
+      ],
+      "url": "https://www.reverseaustralia.com/privacy.php",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://www.reverseaustralia.com/privacy.php",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "samba-tv-inc"
+      ],
+      "names": [
+        "Samba TV, Inc."
+      ],
+      "url": "https://www.samba.tv/users/privacy-policy",
+      "drift": "moved_other_host",
+      "catalog_http_status": "200",
+      "observed_http_status": 200,
+      "final_url": "https://samba.com/privacy-center/privacy-policy",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "search-systems-directory-of-links"
+      ],
+      "names": [
+        "Search Systems (directory of links)"
+      ],
+      "url": "https://publicrecords.searchsystems.net/opt-out.php",
+      "drift": "moved_other_host",
+      "catalog_http_status": "200",
+      "observed_http_status": 200,
+      "final_url": "https://www.searchsystems.net/privacy",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "semcasting-inc"
+      ],
+      "names": [
+        "Semcasting, Inc."
+      ],
+      "url": "https://www.semcasting.com/privacy-choice",
+      "drift": "moved_same_site",
+      "catalog_http_status": "200",
+      "observed_http_status": 200,
+      "final_url": "https://www.semcasting.com/privacy_choice",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "sheerid-inc"
+      ],
+      "names": [
+        "SheerID, Inc."
+      ],
+      "url": "https://www.sheerid.com/global-privacy-policy/",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://www.sheerid.com/global-privacy-policy/",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "site-impact-inc"
+      ],
+      "names": [
+        "Site Impact, Inc"
+      ],
+      "url": "https://www.siteimpact.com/privacypolicy.php",
+      "drift": "moved_same_site",
+      "catalog_http_status": "200",
+      "observed_http_status": 200,
+      "final_url": "https://siteimpact.com/privacy-policy",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "spy-dialer"
+      ],
+      "names": [
+        "Spy Dialer"
+      ],
+      "url": "https://www.spydialer.com/optout.aspx",
+      "drift": "moved_same_site",
+      "catalog_http_status": "200",
+      "observed_http_status": 200,
+      "final_url": "https://www.spydialer.com/consumers/",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "swoop-com-inc"
+      ],
+      "names": [
+        "Swoop.com, Inc."
+      ],
+      "url": "https://swoop.com/privacy-notice/",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://swoop.com/privacy-notice/",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "teamunify-llc"
+      ],
+      "names": [
+        "TeamUnify, LLC"
+      ],
+      "url": "https://www.teamunify.com/team/mdest/page/safe-sport/photo-opt-out",
+      "drift": "moved_other_host",
+      "catalog_http_status": "200",
+      "observed_http_status": 200,
+      "final_url": "https://www.eagleswimteam.com/page/safe-sport/photo-opt-out",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "telesign-corporation"
+      ],
+      "names": [
+        "Telesign Corporation"
+      ],
+      "url": "https://www.telesign.com/privacy-requests",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://www.telesign.com/privacy-requests",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "tennhelp"
+      ],
+      "names": [
+        "TennHelp"
+      ],
+      "url": "https://www.tennhelp.com/public-resources/change-listing.html",
+      "drift": "moved_same_site",
+      "catalog_http_status": "200",
+      "observed_http_status": 200,
+      "final_url": "https://www.tennhelp.com/public-resources/change-listing",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "terminus-software-inc"
+      ],
+      "names": [
+        "Terminus Software, Inc."
+      ],
+      "url": "https://demandscience.com/privacy-policy?utm_campaign=terminus-redirect",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://demandscience.com/privacy-policy?utm_campaign=terminus-redirect",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "the-bump"
+      ],
+      "names": [
+        "The Bump"
+      ],
+      "url": "https://support.thebump.com/hc/en-us/articles/34980593049748",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://support.thebump.com/hc/en-us/articles/34980593049748",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "the-data-group"
+      ],
+      "names": [
+        "The Data Group"
+      ],
+      "url": "https://thedatagroup.com/california-consumer-privacy-act/",
+      "drift": "moved_same_site",
+      "catalog_http_status": "200",
+      "observed_http_status": 200,
+      "final_url": "https://thedatagroup.com/privacy/california-consumer-privacy-act/",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "traackr-inc"
+      ],
+      "names": [
+        "Traackr, Inc."
+      ],
+      "url": "https://www.traackr.com/infl-privacy-notice",
+      "drift": "moved_same_site",
+      "catalog_http_status": "200",
+      "observed_http_status": 200,
+      "final_url": "https://www.traackr.com/legal/influencer-privacy-notice",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "trestle-solutions-inc"
+      ],
+      "names": [
+        "Trestle Solutions, Inc."
+      ],
+      "url": "https://trestleiq.com/privacy-policy-2022/",
+      "drift": "blocked",
+      "catalog_http_status": "202",
+      "observed_http_status": 403,
+      "final_url": "https://trestleiq.com/privacy-policy-2022/",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "trulia-llc"
+      ],
+      "names": [
+        "Trulia, LLC"
+      ],
+      "url": "https://support.trulia.com/hc/en-us/articles/221366928",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://support.trulia.com/hc/en-us/articles/221366928",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "unearth-campaigns-llc"
+      ],
+      "names": [
+        "Unearth Campaigns, LLC"
+      ],
+      "url": "https://www.unearthcampaigns.com/privacy-policy/",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://www.unearthcampaigns.com/privacy-policy/",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "upcell-llc"
+      ],
+      "names": [
+        "Upcell, LLC"
+      ],
+      "url": "https://www.upcell.io/data-claim",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://www.upcell.io/data-claim",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "us-data-corporation"
+      ],
+      "names": [
+        "US Data Corporation"
+      ],
+      "url": "https://www.usdatacorporation.com/opt-out",
+      "drift": "blocked",
+      "catalog_http_status": "202",
+      "observed_http_status": 403,
+      "final_url": "https://www.usdatacorporation.com/opt-out",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "vendelux"
+      ],
+      "names": [
+        "Vendelux"
+      ],
+      "url": "https://vendelux.com/privacy/",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://vendelux.com/privacy/",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "videoamp-inc"
+      ],
+      "names": [
+        "VideoAmp, Inc."
+      ],
+      "url": "https://www.videoamp.com/us-privacy-notice/",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://www.videoamp.com/us-privacy-notice/",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "visitiq-io"
+      ],
+      "names": [
+        "VisitIQ.io"
+      ],
+      "url": "https://visitiq.io/opt-out/",
+      "drift": "blocked",
+      "catalog_http_status": "429",
+      "observed_http_status": 429,
+      "final_url": "https://visitiq.io/opt-out/",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "winr-data-b-v"
+      ],
+      "names": [
+        "WINR Data B.V."
+      ],
+      "url": "https://www.winrdata.com/privacy-policy-us/",
+      "drift": "blocked",
+      "catalog_http_status": "202",
+      "observed_http_status": 403,
+      "final_url": "https://www.winrdata.com/privacy-policy-us/",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "wyty"
+      ],
+      "names": [
+        "Wyty"
+      ],
+      "url": "https://www.wyty.com/remove/",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://www.wyty.com/remove/",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "xad-inc"
+      ],
+      "names": [
+        "xAd, Inc."
+      ],
+      "url": "https://www.groundtruth.com/privacy-policy/",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://www.groundtruth.com/privacy-policy/",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "ziprecruiter-inc"
+      ],
+      "names": [
+        "ZipRecruiter, Inc."
+      ],
+      "url": "https://www.ziprecruiter.com/ccpa-opt-out",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://www.ziprecruiter.com/ccpa-opt-out",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "zipstorm-inc"
+      ],
+      "names": [
+        "ZipStorm, Inc."
+      ],
+      "url": "https://www.seekout.com/privacy",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://www.seekout.com/privacy",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "zs-associates-inc"
+      ],
+      "names": [
+        "ZS Associates, Inc."
+      ],
+      "url": "https://www.zs.com/data-request",
+      "drift": "moved_same_site",
+      "catalog_http_status": "200",
+      "observed_http_status": 200,
+      "final_url": "https://www.zs.com/compliance/california-privacy-notice",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "absolute-people-search"
+      ],
+      "names": [
+        "Absolute People Search"
+      ],
+      "url": "https://absolutepeoplesearch.com/optout",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://absolutepeoplesearch.com/optout",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "advancedbackgroundchecks"
+      ],
+      "names": [
+        "AdvancedBackgroundChecks"
+      ],
+      "url": "https://www.advancedbackgroundchecks.com/opt-out",
+      "drift": "blocked",
+      "catalog_http_status": "200",
+      "observed_http_status": 403,
+      "final_url": "https://www.advancedbackgroundchecks.com/opt-out",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "archives-com-ancestry"
+      ],
+      "names": [
+        "Archives.com (Ancestry)"
+      ],
+      "url": "https://www.archives.com/?_act=Optout",
+      "drift": "moved_same_site",
+      "catalog_http_status": "200",
+      "observed_http_status": 200,
+      "final_url": "https://www.archives.com/optout",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "arrestfacts-beenverified-related"
+      ],
+      "names": [
+        "ArrestFacts (BeenVerified-related)"
+      ],
+      "url": "https://arrestfacts.com/ng/control/privacy",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://nkreeger.com/ng/control/privacy",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "background-hawk-truthfinder",
+        "criminal-com-truthfinder",
+        "northcarolinapublicrecords-org-truthfinder",
+        "public-libraries-truthfinder",
+        "recordspage-truthfinder",
+        "recordsquarry-truthfinder",
+        "southcarolinapublicrecords-com-truthfinder"
+      ],
+      "names": [
+        "Background Hawk (TruthFinder)",
+        "Criminal.com (TruthFinder)",
+        "NorthCarolinaPublicRecords.org (TruthFinder)",
+        "Public Libraries (TruthFinder)",
+        "RecordsPage (TruthFinder)",
+        "RecordsQuarry (TruthFinder)",
+        "SouthCarolinaPublicRecords.com (TruthFinder)"
+      ],
+      "url": "https://www.truthfinder.com/opt-out/v2/submit/",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://www.truthfinder.com/opt-out/v2/submit/",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "backgroundchecks-org-beenverified-data",
+        "beenverified",
+        "bumper-beenverified-family",
+        "freephonetracer-beenverified-form",
+        "neighborwho-beenverified-family",
+        "numberguru-beenverified-family",
+        "ownerly-beenverified-family",
+        "peoplelooker-beenverified",
+        "peoplesmart-beenverified"
+      ],
+      "names": [
+        "BackgroundChecks.org (BeenVerified data)",
+        "BeenVerified",
+        "Bumper (BeenVerified family)",
+        "FreePhoneTracer (BeenVerified form)",
+        "NeighborWho (BeenVerified family)",
+        "NumberGuru (BeenVerified family)",
+        "Ownerly (BeenVerified family)",
+        "PeopleLooker (BeenVerified)",
+        "PeopleSmart (BeenVerified)"
+      ],
+      "url": "https://www.beenverified.com/app/optout/search",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://www.beenverified.com/svc/optout/search/",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "checkpeople"
+      ],
+      "names": [
+        "CheckPeople"
+      ],
+      "url": "https://checkpeople.com/opt-out",
+      "drift": "status_changed",
+      "catalog_http_status": "403",
+      "observed_http_status": 200,
+      "final_url": "https://checkpeople.com/opt-out",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "classmates-com"
+      ],
+      "names": [
+        "Classmates.com"
+      ],
+      "url": "https://www.classmates.com/about/privacy#p-8",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://www.classmates.com/about/privacy#p-8",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "cocofinder"
+      ],
+      "names": [
+        "CocoFinder"
+      ],
+      "url": "https://cocofinder.com/remove-my-info",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://cocofinder.com/remove-my-info",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "cocofinder-net"
+      ],
+      "names": [
+        "CocoFinder.net"
+      ],
+      "url": "https://cocofinder.net/remove-my-info",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://cocofinder.com/remove-my-info",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "criminalrecords-com-intelius",
+        "peoplefind-com-intelius",
+        "snoopstation-intelius"
+      ],
+      "names": [
+        "CriminalRecords.com (Intelius)",
+        "PeopleFind.com (Intelius)",
+        "Snoopstation (Intelius)"
+      ],
+      "url": "https://www.intelius.com/privacy-center",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://www.intelius.com/privacy-center",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "cyberbackgroundchecks"
+      ],
+      "names": [
+        "CyberBackgroundChecks"
+      ],
+      "url": "https://www.cyberbackgroundchecks.com/removal",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://www.cyberbackgroundchecks.com/removal",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "easybackgroundchecks-intelius"
+      ],
+      "names": [
+        "EasyBackgroundChecks (Intelius)"
+      ],
+      "url": "https://www.intelius.com/suppression-center/",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://www.intelius.com/suppression-center/",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "familytreenow"
+      ],
+      "names": [
+        "FamilyTreeNow"
+      ],
+      "url": "https://www.familytreenow.com/optout",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://www.familytreenow.com/optout",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "fastpeoplesearch"
+      ],
+      "names": [
+        "FastPeopleSearch"
+      ],
+      "url": "https://www.fastpeoplesearch.com/optout",
+      "drift": "blocked",
+      "catalog_http_status": "200",
+      "observed_http_status": 403,
+      "final_url": "https://www.fastpeoplesearch.com/optout",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "findpeoplefast-net"
+      ],
+      "names": [
+        "FindPeopleFast.net"
+      ],
+      "url": "https://findpeoplefast.net/company/remove-my-info",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://findpeoplefast.net/company/remove-my-info",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "findpeoplesearch"
+      ],
+      "names": [
+        "FindPeopleSearch"
+      ],
+      "url": "http://www.findpeoplesearch.com/customerservice/",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "http://www.findpeoplesearch.com/customerservice/",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "freepeoplesearch-com"
+      ],
+      "names": [
+        "FreePeopleSearch.com"
+      ],
+      "url": "https://freepeoplesearch.com/privacy-policy/",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://freepeoplesearch.com/privacy-policy/",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "infotracer-network"
+      ],
+      "names": [
+        "InfoTracer network"
+      ],
+      "url": "https://clicksearch.us/optout",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://clicksearch.us/optout",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "instantcheckspy-truthfinder"
+      ],
+      "names": [
+        "InstantCheckSpy (TruthFinder)"
+      ],
+      "url": "https://www.truthfinder.com/privacy-center",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://www.truthfinder.com/privacy-center",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "lead411-corporation"
+      ],
+      "names": [
+        "Lead411 Corporation"
+      ],
+      "url": "https://www.lead411.com/your-privacy-choices/",
+      "drift": "blocked",
+      "catalog_http_status": "200",
+      "observed_http_status": 403,
+      "final_url": "https://www.lead411.com/your-privacy-choices/",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "mylife"
+      ],
+      "names": [
+        "MyLife"
+      ],
+      "url": "https://www.mylife.com/privacyrequest",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://www.mylife.com/privacyrequest",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "national-public-data"
+      ],
+      "names": [
+        "National Public Data"
+      ],
+      "url": "https://nationalpublicdata.com/optout.html",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://nationalpublicdata.com/optout.html",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "nuwber"
+      ],
+      "names": [
+        "Nuwber"
+      ],
+      "url": "https://nuwber.com/removal/link",
+      "drift": "unresolved_or_network_error",
+      "catalog_http_status": "retrieved",
+      "observed_http_status": null,
+      "final_url": null,
+      "error": "URLError: <urlopen error [Errno -5] No address associated with hostname>"
+    },
+    {
+      "entry_ids": [
+        "peoplebyname"
+      ],
+      "names": [
+        "PeopleByName"
+      ],
+      "url": "https://www.peoplebyname.com/remove.php",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://www.peoplebyname.com/remove.php",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "peoplefinders-confi-chek"
+      ],
+      "names": [
+        "PeopleFinders (Confi-Chek)"
+      ],
+      "url": "https://www.peoplefinders.com/opt-out",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://www.peoplefinders.com/opt-out",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "peoplesearch-whitepages",
+        "whitepages",
+        "whitepages-411-com"
+      ],
+      "names": [
+        "PeopleSearch (Whitepages)",
+        "Whitepages",
+        "Whitepages (411.com)"
+      ],
+      "url": "https://www.whitepages.com/suppression-requests",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://www.whitepages.com/suppression-requests",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "peoplesearchnow"
+      ],
+      "names": [
+        "PeopleSearchNow"
+      ],
+      "url": "https://www.peoplesearchnow.com/opt-out",
+      "drift": "blocked",
+      "catalog_http_status": "200",
+      "observed_http_status": 403,
+      "final_url": "https://www.peoplesearchnow.com/opt-out",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "peoplewhiz"
+      ],
+      "names": [
+        "PeopleWhiz"
+      ],
+      "url": "https://www.peoplewhiz.com/remove-my-info",
+      "drift": "blocked",
+      "catalog_http_status": "200",
+      "observed_http_status": 403,
+      "final_url": "https://www.peoplewhiz.com/remove-my-info",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "peoplewhiz-network-mashpanel-com"
+      ],
+      "names": [
+        "PeopleWhiz network (mashpanel.com)"
+      ],
+      "url": "https://www.mashpanel.com/remove.php",
+      "drift": "moved_same_site",
+      "catalog_http_status": "200",
+      "observed_http_status": 200,
+      "final_url": "https://www.mashpanel.com/remove",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "persopo"
+      ],
+      "names": [
+        "Persopo"
+      ],
+      "url": "http://info.persopo.com/opt-out.html",
+      "drift": "moved_other_host",
+      "catalog_http_status": "200",
+      "observed_http_status": 200,
+      "final_url": "https://persopo.com/opt-out.html",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "pipl-inc"
+      ],
+      "names": [
+        "Pipl, Inc."
+      ],
+      "url": "https://pipl.com/resources/privacy-documents/privacy-policy",
+      "drift": "moved_same_site",
+      "catalog_http_status": "200",
+      "observed_http_status": 200,
+      "final_url": "https://pipl.com/privacy-center",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "privateeye-confi-chek"
+      ],
+      "names": [
+        "PrivateEye (Confi-Chek)"
+      ],
+      "url": "https://www.privateeye.com/static/view/optout/",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://privateeye.com/static/view/optout/",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "publicrecordsnow-confi-chek"
+      ],
+      "names": [
+        "PublicRecordsNow (Confi-Chek)"
+      ],
+      "url": "https://www.publicrecordsnow.com/static/view/optout/",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://publicrecordsnow.com/static/view/optout/",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "realpeoplesearch"
+      ],
+      "names": [
+        "RealPeopleSearch"
+      ],
+      "url": "https://realpeoplesearch.com/about/remove-my-info",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://realpeoplesearch.com/about/remove-my-info",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "reunion-com-mylife"
+      ],
+      "names": [
+        "Reunion.com (MyLife)"
+      ],
+      "url": "https://www.mylife.com/ccpa/index.pubview",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://www.mylife.com/ccpa/index.pubview",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "reversephone-whitepages-affiliated"
+      ],
+      "names": [
+        "ReversePhone (Whitepages-affiliated)"
+      ],
+      "url": "https://www.reversephone.com/svc/optout/search/optouts",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://www.reversephone.com/svc/optout/search/optouts",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "reversephonelookup-intelius-peopleconnect"
+      ],
+      "names": [
+        "ReversePhoneLookup (Intelius/PeopleConnect)"
+      ],
+      "url": "https://www.reversephonelookup.com/remove.php",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://www.reversephonelookup.com/remove.php",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "searchpeoplefree"
+      ],
+      "names": [
+        "SearchPeopleFree"
+      ],
+      "url": "https://www.searchpeoplefree.com/opt-out",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://www.searchpeoplefree.com/opt-out",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "searchpeoplefree-net"
+      ],
+      "names": [
+        "SearchPeopleFree.net"
+      ],
+      "url": "https://searchpeoplefree.net/resource/remove-my-info",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://searchpeoplefree.net/resource/remove-my-info",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "smartbackgroundchecks"
+      ],
+      "names": [
+        "SmartBackgroundChecks"
+      ],
+      "url": "https://www.smartbackgroundchecks.com/optout",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://www.smartbackgroundchecks.com/optout",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "spyfly"
+      ],
+      "names": [
+        "SpyFly"
+      ],
+      "url": "https://www.spyfly.com/help-center/privacy",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://www.spyfly.com/help-center/privacy",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "thatsthem"
+      ],
+      "names": [
+        "ThatsThem"
+      ],
+      "url": "https://thatsthem.com/optout",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://thatsthem.com/optout",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "truepeoplesearch"
+      ],
+      "names": [
+        "TruePeopleSearch"
+      ],
+      "url": "https://www.truepeoplesearch.com/removal",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://www.truepeoplesearch.com/removal",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "truepeoplesearch-net"
+      ],
+      "names": [
+        "TruePeopleSearch.net"
+      ],
+      "url": "https://truepeoplesearch.net/remove-my-info",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://truepeoplesearch.net/remove-my-info",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "truthfinder-peopleconnect"
+      ],
+      "names": [
+        "TruthFinder (PeopleConnect)"
+      ],
+      "url": "https://www.truthfinder.com/opt-out/",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://www.truthfinder.com/opt-out/",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "ufind-name"
+      ],
+      "names": [
+        "uFind.name"
+      ],
+      "url": "https://ufind.name/opt-out",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://ufind.name/opt-out",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "unmask"
+      ],
+      "names": [
+        "UnMask"
+      ],
+      "url": "https://unmask.com/opt-out/",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://unmask.com/opt-out/",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "us-people-search"
+      ],
+      "names": [
+        "US People Search"
+      ],
+      "url": "https://uspeoplesearch.com/purge-my-data/",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://uspeoplesearch.com/purge-my-data/",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "usa-people-search"
+      ],
+      "names": [
+        "USA-People-Search"
+      ],
+      "url": "https://www.usa-people-search.com/manage",
+      "drift": "moved_same_site",
+      "catalog_http_status": "200",
+      "observed_http_status": 200,
+      "final_url": "https://www.usa-people-search.com/removal",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "usatrace-peoplefinders"
+      ],
+      "names": [
+        "USATrace (PeopleFinders)"
+      ],
+      "url": "https://www.usatrace.com/your-privacy/",
+      "drift": "blocked",
+      "catalog_http_status": "202",
+      "observed_http_status": 403,
+      "final_url": "https://www.usatrace.com/your-privacy/",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "usphonebook"
+      ],
+      "names": [
+        "USPhoneBook"
+      ],
+      "url": "https://www.usphonebook.com/opt-out",
+      "drift": "moved_same_site",
+      "catalog_http_status": "200",
+      "observed_http_status": 200,
+      "final_url": "https://www.usphonebook.com/removal",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "veripages"
+      ],
+      "names": [
+        "Veripages"
+      ],
+      "url": "https://veripages.com/inner/control-privacy",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://veripages.com/inner/control-privacy",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "yellow-pages-directory-inc"
+      ],
+      "names": [
+        "Yellow Pages Directory Inc."
+      ],
+      "url": "https://www.yellowpagesdirectory.com/opt_out/",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://www.yellowpagesdirectory.com/opt_out/",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "yellowbook-beenverified-data"
+      ],
+      "names": [
+        "YellowBook (BeenVerified data)"
+      ],
+      "url": "https://www.beenverified.com/f/optout/search",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://www.beenverified.com/f/optout/search",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "yellowpages-yp-thryv"
+      ],
+      "names": [
+        "YellowPages (YP/Thryv)"
+      ],
+      "url": "https://www.yellowpages.com/about/ccpa-yp",
+      "drift": "status_changed",
+      "catalog_http_status": "403",
+      "observed_http_status": 200,
+      "final_url": "https://www.yellowpages.com/about/ccpa-yp",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "florida-voter-directory"
+      ],
+      "names": [
+        "Florida Voter Directory"
+      ],
+      "url": "https://www.floridavoterdirectory.com/opt-out",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://www.floridavoterdirectory.com/opt-out",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "njpropertyrecords"
+      ],
+      "names": [
+        "NJPropertyRecords"
+      ],
+      "url": "https://njpropertyrecords.com/redaction",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://njpropertyrecords.com/redaction",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "propertyrec-network"
+      ],
+      "names": [
+        "PropertyRec network"
+      ],
+      "url": "https://dashboard.propertyrec.com/opt-out",
+      "drift": "status_changed",
+      "catalog_http_status": "429",
+      "observed_http_status": 202,
+      "final_url": "https://dashboard.propertyrec.com/opt-out",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "propertyrecord-network"
+      ],
+      "names": [
+        "PropertyRecord network"
+      ],
+      "url": "https://dashboard.propertyrecord.com/opt-out",
+      "drift": "status_changed",
+      "catalog_http_status": "429",
+      "observed_http_status": 202,
+      "final_url": "https://dashboard.propertyrecord.com/opt-out",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "propertyrecs",
+        "propertyrecs-network"
+      ],
+      "names": [
+        "PropertyRecs",
+        "PropertyRecs network"
+      ],
+      "url": "https://dashboard.propertyrecs.com/opt-out",
+      "drift": "status_changed",
+      "catalog_http_status": "429",
+      "observed_http_status": 202,
+      "final_url": "https://dashboard.propertyrecs.com/opt-out",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "publicrecords-us"
+      ],
+      "names": [
+        "PublicRecords.us"
+      ],
+      "url": "https://dashboard.publicrecords.us/opt-out",
+      "drift": "status_changed",
+      "catalog_http_status": "429",
+      "observed_http_status": 202,
+      "final_url": "https://dashboard.publicrecords.us/opt-out",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "voterrecords-com"
+      ],
+      "names": [
+        "VoterRecords.com"
+      ],
+      "url": "https://voterrecords.com/faq",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://voterrecords.com/faq",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "fastbackgroundcheck"
+      ],
+      "names": [
+        "FastBackgroundCheck"
+      ],
+      "url": "https://www.fastbackgroundcheck.com/",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://www.fastbackgroundcheck.com/",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "agile-education-marketing-llc"
+      ],
+      "names": [
+        "Agile Education Marketing, LLC"
+      ],
+      "url": "https://agile-ed.com/california-privacy-rights/",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://agile-ed.com/california-privacy-rights/",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "digital-advertising-alliance-opt-out"
+      ],
+      "names": [
+        "Digital Advertising Alliance opt-out"
+      ],
+      "url": "https://optout.aboutads.info/",
+      "drift": "blocked",
+      "catalog_http_status": "429",
+      "observed_http_status": 429,
+      "final_url": "https://optout.aboutads.info/",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "salesintel-research-inc"
+      ],
+      "names": [
+        "SalesIntel Research, Inc."
+      ],
+      "url": "https://www.salesintel.io",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://www.salesintel.io",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "alarmscalifornia-licensedata"
+      ],
+      "names": [
+        "AlarmsCalifornia (LicenseData)"
+      ],
+      "url": "http://www.alarmscalifornia.org/about",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://www.alarmscalifornia.org/about",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "applovin-corporation"
+      ],
+      "names": [
+        "AppLovin Corporation"
+      ],
+      "url": "https://legal.applovin.com/privacy/",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://legal.applovin.com/privacy/",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "california-drop"
+      ],
+      "names": [
+        "California DROP"
+      ],
+      "url": "https://privacy.ca.gov/drop/",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://privacy.ca.gov/drop/",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "californiabrokers-org-licensedata"
+      ],
+      "names": [
+        "CaliforniaBrokers.org (LicenseData)"
+      ],
+      "url": "http://www.californiabrokers.org/about#contact",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://www.californiabrokers.org/about",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "californiaengineering-org-licensedata"
+      ],
+      "names": [
+        "CaliforniaEngineering.org (LicenseData)"
+      ],
+      "url": "http://www.californiaengineering.org/about#contact",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://www.californiaengineering.org/about",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "californialicensing-org-licensedata"
+      ],
+      "names": [
+        "CaliforniaLicensing.org (LicenseData)"
+      ],
+      "url": "http://www.californialicensing.org/about#contact",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://www.californialicensing.org/about",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "californianursing-org-licensedata"
+      ],
+      "names": [
+        "CaliforniaNursing.org (LicenseData)"
+      ],
+      "url": "http://www.californianursing.org/about#contact",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://www.californianursing.org/about",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "californiapharmacists-org-licensedata"
+      ],
+      "names": [
+        "CaliforniaPharmacists.org (LicenseData)"
+      ],
+      "url": "http://www.californiapharmacists.org/about#contact",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://www.californiapharmacists.org/about",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "coast-technology-llc"
+      ],
+      "names": [
+        "Coast Technology, LLC"
+      ],
+      "url": "https://coasttechnology.com/privacy-policy/",
+      "drift": "moved_same_site",
+      "catalog_http_status": "200",
+      "observed_http_status": 200,
+      "final_url": "https://www.coasttechnology.com/privacy",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "commerce-signals-inc"
+      ],
+      "names": [
+        "Commerce Signals, Inc."
+      ],
+      "url": "https://www.commercesignals.com",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://www.commercesignals.com",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "connection-holdings"
+      ],
+      "names": [
+        "Connection Holdings"
+      ],
+      "url": "https://Connectionholdings.com",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://Connectionholdings.com",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "contractorscalifornia-org-licensedata"
+      ],
+      "names": [
+        "ContractorsCalifornia.org (LicenseData)"
+      ],
+      "url": "http://www.contractorscalifornia.org/about#contact",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://www.contractorscalifornia.org/about",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "dataman-group-inc"
+      ],
+      "names": [
+        "Dataman Group Inc"
+      ],
+      "url": "https://www.datamangroup.com/california-consumer-privacy-act-ccpa/",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://www.datamangroup.com/california-consumer-privacy-act-ccpa/",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "dentistscalifornia-org-licensedata"
+      ],
+      "names": [
+        "DentistsCalifornia.org (LicenseData)"
+      ],
+      "url": "http://www.dentistscalifornia.org/about#contact",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://www.dentistscalifornia.org/about",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "donorbureau-llc"
+      ],
+      "names": [
+        "DonorBureau LLC"
+      ],
+      "url": "https://donorbureau.com/california-privacy-rights-for-california-residents-only/",
+      "drift": "moved_same_site",
+      "catalog_http_status": "200",
+      "observed_http_status": 200,
+      "final_url": "https://donorbureau.com/california-privacy-rights",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "everview-holdco-inc"
+      ],
+      "names": [
+        "EverView HoldCo, Inc"
+      ],
+      "url": "https://www.evertrue.com/privacy-policy/",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://www.evertrue.com/privacy-policy/",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "exact-opco-llc-exactcustomer-com"
+      ],
+      "names": [
+        "Exact Opco, LLC (exactcustomer.com)"
+      ],
+      "url": "https://www.exactcustomer.com",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://www.exactcustomer.com",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "firearmscalifornia-org-licensedata"
+      ],
+      "names": [
+        "FireArmsCalifornia.org (LicenseData)"
+      ],
+      "url": "http://www.firearmscalifornia.org/about#contact",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://www.firearmscalifornia.org/about",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "global-source-data-solutions-inc"
+      ],
+      "names": [
+        "Global Source Data Solutions Inc"
+      ],
+      "url": "https://gsdsi.com/privacy",
+      "drift": "moved_same_site",
+      "catalog_http_status": "200",
+      "observed_http_status": 200,
+      "final_url": "https://www.gsdsi.com/privacy-policy",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "h1-insights-inc"
+      ],
+      "names": [
+        "H1 Insights, Inc."
+      ],
+      "url": "https://www.h1.co",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://www.h1.co",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "lead-intelligence-inc"
+      ],
+      "names": [
+        "Lead Intelligence Inc."
+      ],
+      "url": "https://infutor.com/privacy-center/",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://infutor.com/privacy-center/",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "live-data-technologies-inc"
+      ],
+      "names": [
+        "Live Data Technologies, Inc."
+      ],
+      "url": "https://www.livedatatechnologies.com/opt-out",
+      "drift": "moved_other_host",
+      "catalog_http_status": "200",
+      "observed_http_status": 200,
+      "final_url": "https://www.livedatatech.com/opt-out",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "nexxen-inc"
+      ],
+      "names": [
+        "Nexxen Inc"
+      ],
+      "url": "https://nexxen.com",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://nexxen.com",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "notariescalifornia-com-licensedata"
+      ],
+      "names": [
+        "NotariesCalifornia.com (LicenseData)"
+      ],
+      "url": "http://www.notariescalifornia.com/about",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://www.notariescalifornia.com/about",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "ocean-global-inc"
+      ],
+      "names": [
+        "Ocean Global Inc"
+      ],
+      "url": "https://www.ocean.io/",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://www.ocean.io/",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "pen-link-ltd"
+      ],
+      "names": [
+        "Pen-Link, Ltd."
+      ],
+      "url": "https://www.penlink.com/privacy-policy/",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://www.penlink.com/privacy-policy/",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "quadrant-global-pte-ltd"
+      ],
+      "names": [
+        "Quadrant Global Pte. Ltd."
+      ],
+      "url": "https://www.quadrant.io/limit-data-privacy-request",
+      "drift": "moved_same_site",
+      "catalog_http_status": "200",
+      "observed_http_status": 200,
+      "final_url": "https://www.quadrant.io/privacy-policy",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "quorum-data-inc"
+      ],
+      "names": [
+        "Quorum Data, Inc"
+      ],
+      "url": "https://quorum.inc/privacy",
+      "drift": "moved_other_host",
+      "catalog_http_status": "200",
+      "observed_http_status": 200,
+      "final_url": "https://app.quorum.live/privacy",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "randall-reilly-llc"
+      ],
+      "names": [
+        "Randall-Reilly, LLC"
+      ],
+      "url": "https://fusable.com/legal/website-terms-and-privacy-notice/",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://fusable.com/legal/website-terms-and-privacy-notice/",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "reklaim-ltd"
+      ],
+      "names": [
+        "Reklaim Ltd."
+      ],
+      "url": "https://www.reklaimyours.com/privacy-policy",
+      "drift": "moved_other_host",
+      "catalog_http_status": "200",
+      "observed_http_status": 200,
+      "final_url": "https://reklaimyou.com/privacy",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "rushmore-labs-llc"
+      ],
+      "names": [
+        "Rushmore Labs, LLC"
+      ],
+      "url": "https://www.censaianalytics.com/ccpa",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://www.censaianalytics.com/ccpa",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "s-and-p-global-inc"
+      ],
+      "names": [
+        "S&P Global Inc"
+      ],
+      "url": "https://www.spglobal.com/en",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://www.spglobal.com/en",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "task-genie-inc"
+      ],
+      "names": [
+        "Task Genie, Inc."
+      ],
+      "url": "https://www.datalane.com",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://www.datalane.com",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "the-dots-global-limited"
+      ],
+      "names": [
+        "The Dots Global Limited"
+      ],
+      "url": "https://the-dots.com/",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://the-dots.com/",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "the-segerdahl-llc"
+      ],
+      "names": [
+        "The Segerdahl LLC"
+      ],
+      "url": "https://sg360.com/do-not-sell-my-info/",
+      "drift": "blocked",
+      "catalog_http_status": "200",
+      "observed_http_status": 403,
+      "final_url": "https://sg360.com/do-not-sell-my-info/",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "truthed-inc"
+      ],
+      "names": [
+        "Truthed, Inc"
+      ],
+      "url": "https://www.truthed.com/optout",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://www.truthed.com/optout",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "vi-technologies-inc"
+      ],
+      "names": [
+        "Vi Technologies, Inc."
+      ],
+      "url": "https://www.vi.co",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://www.vi.co",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "wurl-llc"
+      ],
+      "names": [
+        "WURL, LLC"
+      ],
+      "url": "https://www.wurl.com/wurl-advertising-and-media-services-privacy-notice/",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://www.wurl.com/wurl-advertising-and-media-services-privacy-notice/",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "yieldmo-inc"
+      ],
+      "names": [
+        "Yieldmo, Inc."
+      ],
+      "url": "https://yieldmo.com",
+      "drift": "blocked",
+      "catalog_http_status": "200",
+      "observed_http_status": 403,
+      "final_url": "https://yieldmo.com",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "callercenter"
+      ],
+      "names": [
+        "CallerCenter"
+      ],
+      "url": "https://www.callercenter.com/",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://www.callercenter.com/",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "people-search-expert"
+      ],
+      "names": [
+        "People Search Expert"
+      ],
+      "url": "https://www.peoplesearchexpert.com/",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://www.peoplesearchexpert.com/",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "people-search-org"
+      ],
+      "names": [
+        "People-Search.org"
+      ],
+      "url": "https://people-search.org",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://people-search.org",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "phonebooks-com"
+      ],
+      "names": [
+        "PhoneBooks.com"
+      ],
+      "url": "https://www.phonebooks.com/",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://www.phonebooks.com/",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "revealphoneowner"
+      ],
+      "names": [
+        "RevealPhoneOwner"
+      ],
+      "url": "https://www.revealphoneowner.com",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://www.revealphoneowner.com",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "publicrecordcom-llc"
+      ],
+      "names": [
+        "PublicRecordCom, LLC"
+      ],
+      "url": "https://publicrecord.com/privacy-rights/",
+      "drift": "moved_same_site",
+      "catalog_http_status": "200",
+      "observed_http_status": 200,
+      "final_url": "https://publicrecord.com/",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "192-com"
+      ],
+      "names": [
+        "192.com"
+      ],
+      "url": "https://www.192.com/c01/new-request/",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://www.192.com/c01/new-request/",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "ancestry"
+      ],
+      "names": [
+        "Ancestry"
+      ],
+      "url": "https://www.ancestry.com/c/legal/privacy-statement/privacystatement-2023-1-26",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://www.ancestry.com/c/legal/privacy-statement/privacystatement-2023-1-26",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "attom-data"
+      ],
+      "names": [
+        "ATTOM Data"
+      ],
+      "url": "https://ccpa.attomdata.com/",
+      "drift": "blocked",
+      "catalog_http_status": "200",
+      "observed_http_status": 429,
+      "final_url": "https://ccpa.attomdata.com/",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "dynata"
+      ],
+      "names": [
+        "Dynata"
+      ],
+      "url": "https://www.dynata.com/privacy/",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://www.dynata.com/privacy/",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "network-advertising-initiative"
+      ],
+      "names": [
+        "Network Advertising Initiative"
+      ],
+      "url": "https://thenai.org/how-to-opt-out/",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://thenai.org/how-to-opt-out/",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "propertyshark"
+      ],
+      "names": [
+        "PropertyShark"
+      ],
+      "url": "https://www.propertyshark.com/mason/text/privacy_policy.html",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://www.propertyshark.com/mason/text/privacy_policy.html",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "safegraph"
+      ],
+      "names": [
+        "SafeGraph"
+      ],
+      "url": "https://www.safegraph.com/consumer-data-access-request-form/",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://www.safegraph.com/consumer-data-access-request-form/",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "signalhire"
+      ],
+      "names": [
+        "SignalHire"
+      ],
+      "url": "https://www.signalhire.com/opt-out",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://www.signalhire.com/opt-out",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "smaato"
+      ],
+      "names": [
+        "Smaato"
+      ],
+      "url": "https://www.smaato.com/privacy/",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://www.smaato.com/privacy/",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "tracers"
+      ],
+      "names": [
+        "Tracers"
+      ],
+      "url": "https://www.tracers.com/do-not-sell/",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://www.tracers.com/do-not-sell/",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "transunion-canada"
+      ],
+      "names": [
+        "TransUnion Canada"
+      ],
+      "url": "https://www.transunion.ca/legal/privacy-policy",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://www.transunion.ca/legal/privacy-policy",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "voteref"
+      ],
+      "names": [
+        "VoteRef"
+      ],
+      "url": "https://voteref.com/Content/PrivacyPolicy",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://voteref.com/Content/PrivacyPolicy",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "youradchoices-canada"
+      ],
+      "names": [
+        "YourAdChoices Canada"
+      ],
+      "url": "https://www.youradchoices.ca/choices",
+      "drift": "moved_same_site",
+      "catalog_http_status": "200",
+      "observed_http_status": 200,
+      "final_url": "https://youradchoices.ca/en/tools",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "youradchoices-control"
+      ],
+      "names": [
+        "YourAdChoices control"
+      ],
+      "url": "https://youradchoices.com/control",
+      "drift": "blocked",
+      "catalog_http_status": "200",
+      "observed_http_status": 403,
+      "final_url": "https://youradchoices.com/control",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "canada-pages"
+      ],
+      "names": [
+        "Canada Pages"
+      ],
+      "url": "https://www.canadapages.com/remove-info.php",
+      "drift": "blocked",
+      "catalog_http_status": "200",
+      "observed_http_status": 403,
+      "final_url": "https://www.canadapages.com/remove-info.php",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "white-pages-canada"
+      ],
+      "names": [
+        "White Pages Canada"
+      ],
+      "url": "https://whitepagescanada.ca/remove-info.php",
+      "drift": "blocked",
+      "catalog_http_status": "200",
+      "observed_http_status": 403,
+      "final_url": "https://whitepagescanada.ca/remove-info.php",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "cogeco"
+      ],
+      "names": [
+        "Cogeco"
+      ],
+      "url": "https://support.cogeco.ca/hc/en-ca/articles/360059892993-How-do-I-remove-my-name-and-Home-Phone-number-from-the-directory",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://support.cogeco.ca/hc/en-ca/articles/360059892993-How-do-I-remove-my-name-and-Home-Phone-number-from-the-directory",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "eastlink"
+      ],
+      "names": [
+        "Eastlink"
+      ],
+      "url": "https://www.eastlink.ca/privacy-policy/",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://www.eastlink.ca/privacy-policy/",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "sasktel"
+      ],
+      "names": [
+        "SaskTel"
+      ],
+      "url": "https://support.sasktel.com/app/answers/detail/a_id/15410",
+      "drift": "blocked",
+      "catalog_http_status": "401",
+      "observed_http_status": 401,
+      "final_url": "https://support.sasktel.com/app/answers/detail/a_id/15410",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "telus"
+      ],
+      "names": [
+        "TELUS"
+      ],
+      "url": "https://www.telus.com/en/about/privacy/faqs",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://www.telus.com/en/about/privacy/faqs",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "all-biz"
+      ],
+      "names": [
+        "All Biz"
+      ],
+      "url": "https://www.allbiz.com/removal",
+      "drift": "blocked",
+      "catalog_http_status": "200",
+      "observed_http_status": 403,
+      "final_url": "https://www.allbiz.com/removal",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "allpeople"
+      ],
+      "names": [
+        "AllPeople"
+      ],
+      "url": "https://allpeople.com/removal",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://allpeople.com/removal",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "allpeople-biz"
+      ],
+      "names": [
+        "AllPeople.biz"
+      ],
+      "url": "https://allpeople.biz/removal",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://allpeople.biz/removal",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "apartments-com"
+      ],
+      "names": [
+        "Apartments.com"
+      ],
+      "url": "https://www.apartments.com/grow/about/do-not-sell-my-personal-information-california-residents",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://www.apartments.com/grow/about/do-not-sell-my-personal-information-california-residents",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "b2bhint"
+      ],
+      "names": [
+        "B2BHint"
+      ],
+      "url": "https://b2bhint.com/en/privacy-policy",
+      "drift": "blocked",
+      "catalog_http_status": "200",
+      "observed_http_status": 403,
+      "final_url": "https://b2bhint.com/en/privacy-policy",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "bizireland"
+      ],
+      "names": [
+        "BizIreland"
+      ],
+      "url": "https://www.bizireland.com/privacy",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://www.bizireland.com/privacy",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "bizarchive"
+      ],
+      "names": [
+        "Bizarchive"
+      ],
+      "url": "https://www.bizarchive.com/removal",
+      "drift": "blocked",
+      "catalog_http_status": "200",
+      "observed_http_status": 403,
+      "final_url": "https://www.bizarchive.com/removal",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "bluaziende"
+      ],
+      "names": [
+        "Bluaziende"
+      ],
+      "url": "https://www.bluaziende.com/portale/privacy-policy/",
+      "drift": "blocked",
+      "catalog_http_status": "200",
+      "observed_http_status": 403,
+      "final_url": "https://www.bluaziende.com/portale/privacy-policy/",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "brady-list"
+      ],
+      "names": [
+        "Brady List"
+      ],
+      "url": "https://giglio-bradylist.com/request-removal-0",
+      "drift": "blocked",
+      "catalog_http_status": "200",
+      "observed_http_status": 403,
+      "final_url": "https://giglio-bradylist.com/request-removal-0",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "buzzfile"
+      ],
+      "names": [
+        "Buzzfile"
+      ],
+      "url": "https://www.buzzfile.com/Company/Remove",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://www.buzzfile.com/Company/Remove",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "careerbuilder"
+      ],
+      "names": [
+        "CareerBuilder"
+      ],
+      "url": "https://edge.careerbuilder.com/optout",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://www.careerbuilder.com:443/",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "chamberofcommerce-com"
+      ],
+      "names": [
+        "ChamberofCommerce.com"
+      ],
+      "url": "https://www.chamberofcommerce.com/privacy-policy",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://www.chamberofcommerce.com/privacy-policy",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "company-check"
+      ],
+      "names": [
+        "Company Check"
+      ],
+      "url": "https://www.checkcompany.co.uk/privacy-policy",
+      "drift": "blocked",
+      "catalog_http_status": "200",
+      "observed_http_status": 403,
+      "final_url": "https://www.checkcompany.co.uk/privacy-policy",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "criminalregistry-org"
+      ],
+      "names": [
+        "CriminalRegistry.org"
+      ],
+      "url": "https://criminalregistry.org/remove.php",
+      "drift": "blocked",
+      "catalog_http_status": "200",
+      "observed_http_status": 403,
+      "final_url": "https://criminalregistry.org/remove.php",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "getprospect"
+      ],
+      "names": [
+        "GetProspect"
+      ],
+      "url": "https://getprospect.com/privacy",
+      "drift": "blocked",
+      "catalog_http_status": "200",
+      "observed_http_status": 403,
+      "final_url": "https://getprospect.com/privacy",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "homes-com"
+      ],
+      "names": [
+        "Homes.com"
+      ],
+      "url": "https://www.homes.com/about/communication-opt-out/",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://www.homes.com/about/communication-opt-out/",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "intentmacro"
+      ],
+      "names": [
+        "IntentMacro"
+      ],
+      "url": "https://intentmacro.com/ccpa-privacy/",
+      "drift": "blocked",
+      "catalog_http_status": "200",
+      "observed_http_status": 403,
+      "final_url": "https://intentmacro.com/ccpa-privacy/",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "intentgine"
+      ],
+      "names": [
+        "Intentgine"
+      ],
+      "url": "https://intentgine.com/ccpa-privacy/",
+      "drift": "blocked",
+      "catalog_http_status": "200",
+      "observed_http_status": 403,
+      "final_url": "https://intentgine.com/ccpa-privacy/",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "locate-friend"
+      ],
+      "names": [
+        "Locate-Friend"
+      ],
+      "url": "https://locate-friend.com/optout",
+      "drift": "blocked",
+      "catalog_http_status": "200",
+      "observed_http_status": 403,
+      "final_url": "https://locate-friend.com/optout",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "locatefamily"
+      ],
+      "names": [
+        "LocateFamily"
+      ],
+      "url": "https://www.locatefamily.com/removal.html",
+      "drift": "blocked",
+      "catalog_http_status": "200",
+      "observed_http_status": 403,
+      "final_url": "https://www.locatefamily.com/removal.html",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "moneybot5000"
+      ],
+      "names": [
+        "MoneyBot5000"
+      ],
+      "url": "https://www.moneybot5000.com/svc/optout/search/optouts",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://www.moneybot5000.com/svc/optout/search/optouts",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "movoto"
+      ],
+      "names": [
+        "Movoto"
+      ],
+      "url": "https://www.movoto.com/about/ca_privacy/",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://www.movoto.com/about/ca_privacy/",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "npir-org"
+      ],
+      "names": [
+        "NPIR.org"
+      ],
+      "url": "https://npir.org/privacy",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://npir.org/privacy",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "nestfully"
+      ],
+      "names": [
+        "Nestfully"
+      ],
+      "url": "https://www.nestfully.com/pages/privacy-policy",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://www.nestfully.com/pages/privacy-policy",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "xing"
+      ],
+      "names": [
+        "XING"
+      ],
+      "url": "https://privacy.xing.com/en/privacy-policy/what-rights-can-you-assert/right-of-access",
+      "drift": "status_changed",
+      "catalog_http_status": "403",
+      "observed_http_status": 200,
+      "final_url": "https://privacy.xing.com/en/privacy-policy/what-rights-can-you-assert/right-of-access",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "nexsales"
+      ],
+      "names": [
+        "Nexsales"
+      ],
+      "url": "https://nexsales.com/privacy-policy",
+      "drift": "blocked",
+      "catalog_http_status": "403",
+      "observed_http_status": 403,
+      "final_url": "https://nexsales.com/privacy-policy",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "success-ai"
+      ],
+      "names": [
+        "Success.ai"
+      ],
+      "url": "https://www.success.ai/privacy",
+      "drift": "blocked",
+      "catalog_http_status": "200",
+      "observed_http_status": 403,
+      "final_url": "https://www.success.ai/privacy",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "the-company-check"
+      ],
+      "names": [
+        "The Company Check"
+      ],
+      "url": "https://www.thecompanycheck.com/privacy-policy",
+      "drift": "blocked",
+      "catalog_http_status": "200",
+      "observed_http_status": 403,
+      "final_url": "https://www.thecompanycheck.com/privacy-policy",
+      "error": null
+    },
+    {
+      "entry_ids": [
+        "the-national-directory-of-registered-tax-return-preparers-and-pr-bec794"
+      ],
+      "names": [
+        "The National Directory of Registered Tax Return Preparers & Professionals, Ltd."
+      ],
+      "url": "https://www.ptindirectory.com/ccpa.cfm",
+      "drift": "blocked",
+      "catalog_http_status": "200",
+      "observed_http_status": 403,
+      "final_url": "https://www.ptindirectory.com/ccpa.cfm",
+      "error": null
+    }
+  ]
+}

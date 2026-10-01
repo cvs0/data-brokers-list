@@ -42,7 +42,7 @@ Empty `required_fields` means no required inputs were parsed. Check `fields_obse
 
 `official_homepage`, `privacy_policy_url`, `request_url`, and `privacy_contact_email` come from the fetched page. A catalog URL is not restated as a verified request URL when the fetch was blocked.
 
-`public_profiles_searchable` and `exposure_check` (`public`, `broker_confirmation_only`, `both`, `unknown`, `not_applicable`) are separate. Search inputs are `name`, `location`, `phone`, `email`, `profile_url`, `other`, or `unknown`. Search login, payment, and CAPTCHA stay `null` unless the fetched page shows that search step.
+`public_profiles_searchable` and `exposure_check` (`public`, `broker_confirmation_only`, `both`, `unknown`, `not_applicable`) are separate. Search inputs are `name`, `location`, `phone`, `email`, `profile_url`, `other`, or `unknown`. Search login, payment, and CAPTCHA stay `null` unless the fetched page shows that search step. `search_observation` is set when a headless browser opened a public homepage. It records the landing page only. No search query was submitted, so a result-page paywall can stay unknown.
 
 ## Request workflow
 
@@ -74,6 +74,8 @@ Empty `required_fields` means no required inputs were parsed. Check `fields_obse
 | --- | --- |
 | `verification.workflow_kind` | `public_listing_form`, `dsar_portal`, `privacy_policy_only`, `cookie_or_device_choice`, `government_or_industry_choice`, `defunct_or_unavailable`, or `unknown`. |
 | `verification.inspection_channel` | `http_get` when the research GET returned the text used above. `rendered_reader` when that GET was a shell, challenge, or access denial and a second reader supplied the visible text. `not_inspected` when no page text was used. A rendered reader is not a CAPTCHA bypass and is not evidence that a proxy is required. |
+| `verification.browser_inspection` | Optional headless-browser read. Outcomes are `readable`, `challenge`, `http_error`, `timeout`, and `error`. Forms were not submitted and CAPTCHAs were not solved. A challenge is not evidence that a residential proxy is required. |
+`verification.browser_inspection` | Optional headless-browser read. `outcome` is `readable`, `challenge`, `http_error`, `timeout`, or `error`. Forms were not submitted and CAPTCHAs were not solved. A `challenge` outcome is not evidence that a residential proxy is required. |
 | `verification.research_status` | `verified`, `partial`, `blocked`, `unresearched`, or `not_applicable`. |
 | `verification.verification_level` | `source_documented`, `page_inspected`, `workflow_partially_inspected`, or `end_to_end_tested`. |
 | `verification.confidence` | `high`, `medium`, `low`, or `none`. |
