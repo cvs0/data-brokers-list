@@ -30,6 +30,18 @@ Rows whose `sources` value includes `cppa` use the privacy-rights URL a data bro
 
 The registry page is a government publication. Notes in this catalog were written for this list.
 
+## Company sites and official choice pages
+
+Some `manual` rows are official consumer tools recorded from the publisher, including the FTC Do Not Call Registry, DMAChoice, the Digital Advertising Alliance, and California DROP. Further `manual` rows were taken from each company's own opt-out or privacy page, and from these official choice pages:
+
+- YourOnlineChoices, the European Interactive Digital Advertising Alliance choice site: https://www.youronlinechoices.com/uk/your-ad-choices
+- YourAdChoices Canada, the Digital Advertising Alliance of Canada: https://www.youradchoices.ca/choices
+- Network Advertising Initiative opt-out instructions: https://thenai.org/how-to-opt-out/
+- Canada's National Do Not Call List (CRTC): https://www.lnnte-dncl.gc.ca/en/
+- UK open electoral register (GOV.UK): https://www.gov.uk/electoral-register/opt-out-of-the-open-register
+
+Those pages belong to their publishers. This repository stores the link, a category, and a short note.
+
 ## This repository
 
 Original text, category organization, and generated Markdown in this repository are under the MIT License in [LICENSE](LICENSE). That MIT grant does not remove the attribution requirement for CC BY 4.0 material or the notice requirement for Apache 2.0 material.

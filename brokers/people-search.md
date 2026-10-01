@@ -2,14 +2,17 @@
 
 People-search sites that publish names, phone numbers, relatives, or address history. Many ask for a profile URL and an email confirmation.
 
-127 entries. Link responses were checked on 2026-10-01 unless a note says otherwise.
+141 entries. Link responses were checked on 2026-10-01 unless a note says otherwise.
 
 | Broker | Opt-out / privacy URL | Notes |
 | --- | --- | --- |
+| 192.com | https://www.192.com/c01/new-request/ | UK people-search removal form, including electoral-roll listings. Confirm the email link. Email: feedback@192.com. Submit one name and address per form. Automated check on 2026-10-01 got HTTP 403. Open the link in a browser. |
+| 411.ca | https://411.ca/privacy-policy | Privacy notice for the 411.ca Canadian directory. Use the request section. |
 | 411Locate | https://www.411locate.com/ | Published privacy-request URL is the site root. Confirm a request form is on the page before sending information. Email/contact-form request. |
 | Absolute People Search | https://absolutepeoplesearch.com/optout | Suppression-center web form + email confirmation. Open-dataset difficulty: moderate. Automated check on 2026-10-01 got HTTP 403. Open the link in a browser. |
 | AdvancedBackgroundChecks | https://www.advancedbackgroundchecks.com/opt-out | Opt-out form with email confirmation. The older /removal path returned HTTP 404 on 2026-10-01. Do-not-sell notice: https://www.advancedbackgroundchecks.com/do-not-sell. Phone on that notice: (855) 240-6392. |
 | AmericaPhoneBook | https://www.americaphonebook.com/contact.php | Privacy notice or privacy-policy page. Use the state-rights, do-not-sell, or request section. Online removal form. |
+| Ancestry | https://www.ancestry.com/c/legal/privacy-statement/privacystatement-2023-1-26 | Privacy statement for Ancestry and related brands, including Find a Grave. Account deletion is described on the page. Archives.com is listed separately. Automated check on 2026-10-01 got HTTP 403. Open the link in a browser. |
 | AnyWho (Intelius/PeopleConnect) | https://suppression.peopleconnect.us/ | Uses the PeopleConnect suppression portal shared with Intelius. |
 | Archives.com (Ancestry) | https://www.archives.com/?_act=Optout | Opt-out form. Open-dataset difficulty: easy. |
 | ArrestFacts (BeenVerified-related) | https://arrestfacts.com/ng/control/privacy | Per-profile 'Information Control' form + CAPTCHA + email verification. Email: privacy@arrestfacts.com. Open-dataset difficulty: moderate. Automated check on 2026-10-01 got HTTP 403. Open the link in a browser. |
@@ -18,6 +21,7 @@ People-search sites that publish names, phone numbers, relatives, or address his
 | BeenVerified | https://www.beenverified.com/app/optout/search | People-search opt-out with email confirmation. One email is often limited to a single removal; further listings may need privacy@beenverified.com. Property-search opt-out: https://www.beenverified.com/app/optout/address-search. PeopleSmart, Ownerly, NeighborWho, and other Lifetime Value brands use this form. Automated check on 2026-10-01 got HTTP 403. Open the link in a browser. |
 | Bumper (BeenVerified family) | https://www.beenverified.com/app/optout/search | Opt-out or consumer privacy-request page. Email: privacy@beenverified.com. Automated check on 2026-10-01 got HTTP 403. Open the link in a browser. |
 | CallerCenter | https://www.callercenter.com/ | Published privacy-request URL is the site root. Confirm a request form is on the page before sending information. Web form. Automated check on 2026-10-01 got HTTP 403. Open the link in a browser. |
+| Canada411 (Yellow Pages Canada) | https://corporate.yp.ca/privacy-statement | Privacy statement for Yellow Pages Canada, which operates Canada411. Use the request section. |
 | CheckPeople | https://checkpeople.com/opt-out | Opt-out form. A do-not-sell page is also at https://checkpeople.com/do-not-sell-info. Date of birth is commonly required. Automated check on 2026-10-01 got HTTP 403. Open the link in a browser. |
 | Classmates.com | https://www.classmates.com/about/privacy#p-8 | Web form (PeopleConnect). Email: privacy@classmates.com. Open-dataset difficulty: easy. Automated check on 2026-10-01 got HTTP 403. Open the link in a browser. |
 | CocoFinder | https://cocofinder.com/remove-my-info | Web form. Open-dataset difficulty: easy. Automated check on 2026-10-01 got HTTP 403. Open the link in a browser. |
@@ -29,6 +33,7 @@ People-search sites that publish names, phone numbers, relatives, or address his
 | dewarrants.org (InfoTracer form) | https://infotracer.com/optout/ | This domain sends removal requests to the InfoTracer opt-out form. |
 | EasyBackgroundChecks (Intelius) | https://www.intelius.com/suppression-center/ | Opt-out or consumer privacy-request page. Email: priorityoptout@intelius.com. Automated check on 2026-10-01 got HTTP 403. Open the link in a browser. |
 | Electronic Voice Services, Inc. (telephonelists.biz) | https://www.telephonelists.biz/privacy-notice-for-residents-of-california | Privacy notice or privacy-policy page. Use the state-rights, do-not-sell, or request section. Privacy-rights page submitted to the California Data Broker Registry. |
+| FaceCheck | https://facecheck.id/Face-Search/Privacy | Privacy notice or privacy-policy page. Use the state-rights, do-not-sell, or request section. |
 | FamilyTreeNow | https://www.familytreenow.com/optout | Opt-out form. Automated check on 2026-10-01 got HTTP 403. Open the link in a browser. |
 | FastPeopleSearch | https://www.fastpeoplesearch.com/optout | Opt-out form. A captcha is typical. https://www.fastpeoplesearch.com/removal is a second path and returned HTTP 403 to an automated check on 2026-10-01. |
 | FastPeopleSearch.io | https://fastpeoplesearch.io/remove-my-info | Opt-out or consumer privacy-request page. Email: support@fastpeoplesearch.io. |
@@ -37,7 +42,10 @@ People-search sites that publish names, phone numbers, relatives, or address his
 | FreePeopleDirectory (Spokeo data) | https://www.freepeopledirectory.com/optout | On-site opt-out form (profile URL based). Open-dataset difficulty: easy. |
 | FreePeopleSearch.com | https://freepeoplesearch.com/privacy-policy/ | Privacy notice or privacy-policy page. Use the state-rights, do-not-sell, or request section. Automated check on 2026-10-01 got HTTP 403. Open the link in a browser. |
 | FreePhoneTracer (BeenVerified form) | https://www.beenverified.com/app/optout/search | Removal is handled on the BeenVerified people-search opt-out. Automated check on 2026-10-01 got HTTP 403. Open the link in a browser. |
+| GEDmatch | https://www.gedmatch.com/privacy-security/ | Privacy and security page for GEDmatch genealogy data. Use the request section. |
+| GetContact | https://getcontact.com/en/privacy-overview | Privacy notice for the GetContact caller-ID app. Use the request section. |
 | govwarrantsearch.org (InfoTracer form) | https://infotracer.com/optout/ | This domain sends removal requests to the InfoTracer opt-out form. |
+| Hiya | https://www.hiya.com/legal/privacy | Privacy notice for the Hiya caller-ID service. Use the request section. |
 | IDCrawl | https://www.idcrawl.com/remove-my-information | Web form. Email: support@idcrawl.com. Open-dataset difficulty: easy. |
 | Infomatics LLC network (peoplesearch123.com) | https://www.peoplesearch123.com/optOut/name/landing | Web form. Open-dataset difficulty: easy. |
 | Infomatics LLC network (peoplesearcher.com) | https://www.peoplesearcher.com/optOut/name/landing | Web form + email confirmation. Email: support@peoplesearcher.com. Open-dataset difficulty: moderate. |
@@ -50,6 +58,7 @@ People-search sites that publish names, phone numbers, relatives, or address his
 | Intelius / PeopleConnect (address.us.com) | https://suppression.peopleconnect.us/?brand=Intelius | Published opt-out URL is the site root. Confirm a request form is on the page before sending information. |
 | Intelius / PeopleConnect (addresses.com) | https://suppression.peopleconnect.us/ | Uses the PeopleConnect suppression portal shared with Intelius. |
 | Lead411 Corporation | https://www.lead411.com/your-privacy-choices/ | Opt-out or consumer privacy-request page. |
+| MyHeritage | https://www.myheritage.com/FP/Company/popup-privacy-policy.php | Privacy policy covering account, family-tree, and DNA deletion. Email: privacy@myheritage.com. |
 | MyLife | https://www.mylife.com/privacyrequest | Privacy-request page. MyLife often asks for an account, an ID upload, or a call to (888) 704-1900. Alternate email: privacy@mylife.com. Reunion.com is related. Automated check on 2026-10-01 got HTTP 403. Open the link in a browser. |
 | National Public Data | https://nationalpublicdata.com/optout.html | Opt-out or consumer privacy-request page. Automated check on 2026-10-01 got HTTP 403. Open the link in a browser. |
 | NeighborWho (BeenVerified family) | https://www.beenverified.com/app/optout/search | Web form + email confirmation. Email: privacy@beenverified.com. Open-dataset difficulty: easy. Automated check on 2026-10-01 got HTTP 403. Open the link in a browser. |
@@ -79,6 +88,7 @@ People-search sites that publish names, phone numbers, relatives, or address his
 | Persopo | http://info.persopo.com/opt-out.html | Web form. Email: support@persopo.com. Open-dataset difficulty: easy. |
 | PhoneBooks.com | https://www.phonebooks.com/ | Published privacy-request URL is the site root. Confirm a request form is on the page before sending information. Web form. Automated check on 2026-10-01 got HTTP 403. Open the link in a browser. |
 | PhoneNumberInfo.us | https://phonenumberinfo.us/contact.php | Privacy notice or privacy-policy page. Use the state-rights, do-not-sell, or request section. Email: info@phonenumberinfo.us. |
+| PimEyes | https://pimeyes.com/en/opt-out | Opt-out form. A face photo and an anonymized ID scan are required because the service stores face fingerprints rather than names. |
 | Pipl, Inc. | https://pipl.com/resources/privacy-documents/privacy-policy | Privacy notice or privacy-policy page. Use the state-rights, do-not-sell, or request section. |
 | PrivateEye (Confi-Chek) | https://www.privateeye.com/static/view/optout/ | Web form. Open-dataset difficulty: easy. Automated check on 2026-10-01 got HTTP 403. Open the link in a browser. |
 | PrivateRecords.net | https://www.privaterecords.net/optOut/name/landing | Web form. Open-dataset difficulty: easy. |
@@ -108,10 +118,12 @@ People-search sites that publish names, phone numbers, relatives, or address his
 | Spokeo (data) | https://www.spokeo.com/optout | Opt-out or consumer privacy-request page. |
 | SpyFly | https://www.spyfly.com/help-center/privacy | Web form. Email: privacy@spyfly.com. Open-dataset difficulty: moderate. Automated check on 2026-10-01 got HTTP 403. Open the link in a browser. |
 | StateRecords.org (InfoTracer hub) | https://members.staterecords.org/opt-out | Online form. Email: privacy@staterecords.org. Open-dataset difficulty: easy. |
+| Superpages | https://www.superpages.com/ccpa | CCPA choices for Superpages (Thryv). The Yellow Pages listing is separate. |
 | Sync.ME | https://sync.me/unsubscribe/ | Online form. Email: privacy@sync.me. Open-dataset difficulty: easy. |
 | Telephone Directories | https://www.telephonedirectories.us/Edit_Records | Privacy notice or privacy-policy page. Use the state-rights, do-not-sell, or request section. Email: support@telephonedirectories.us. |
 | ThatsThem | https://thatsthem.com/optout | Opt-out form. Skip identity-theft product offers on the results page. Automated check on 2026-10-01 got HTTP 403. Open the link in a browser. |
 | ThePublicIndex | https://thepublicindex.org/optout | Opt-out or consumer privacy-request page. Email: support@thepublicindex.org. |
+| Truecaller | https://www.truecaller.com/privacy/privacy-center | Privacy center for Truecaller caller-ID and people-search data. Use the request section. |
 | TruePeopleSearch | https://www.truepeoplesearch.com/removal | Removal form asking for name, city, and state, usually with captchas. This is a different site from truepeoplesearch.net. Automated check on 2026-10-01 got HTTP 403. Open the link in a browser. |
 | TruePeopleSearch.net | https://truepeoplesearch.net/remove-my-info | Removal form. Email: support@truepeoplesearch.net. Open-dataset difficulty: easy. Automated check on 2026-10-01 got HTTP 403. Open the link in a browser. |
 | TruthFinder (PeopleConnect) | https://www.truthfinder.com/opt-out/ | TruthFinder opt-out form. PeopleConnect also runs a shared suppression portal at https://suppression.peopleconnect.us/. Automated check on 2026-10-01 got HTTP 403. Open the link in a browser. |
@@ -128,7 +140,9 @@ People-search sites that publish names, phone numbers, relatives, or address his
 | Veripages | https://veripages.com/inner/control-privacy | Privacy-control form. It asks for the profile URL, name, and email, usually with a captcha. Automated check on 2026-10-01 got HTTP 403. Open the link in a browser. |
 | Whitepages | https://www.whitepages.com/suppression-requests | Suppression form. A phone call with a code is commonly required. The same request covers 411.com. Alternate email: privacyrequest@whitepages.com. Automated check on 2026-10-01 got HTTP 403. Open the link in a browser. Related domains using this form: property.whitepages.com. |
 | Whitepages (411.com) | https://www.whitepages.com/suppression-requests | Suppression form. Open-dataset difficulty: moderate. Automated check on 2026-10-01 got HTTP 403. Open the link in a browser. |
+| Whoscall | https://web.whoscall.com/en/privacy | Privacy notice for the Whoscall caller-ID service. Use the request section. |
 | Yellow Pages Directory Inc. | https://www.yellowpagesdirectory.com/opt_out/ | Opt-out or consumer privacy-request page. Automated check on 2026-10-01 got HTTP 403. Open the link in a browser. |
+| Yellow Pages opt-out | https://optoutyp.com/ | Opt-out site for Yellow Pages listings. yellowpagesoptout.com redirects here. |
 | YellowBook (BeenVerified data) | https://www.beenverified.com/f/optout/search | Opt-out or consumer privacy-request page. Automated check on 2026-10-01 got HTTP 403. Open the link in a browser. |
 | YellowPages (YP/Thryv) | https://www.yellowpages.com/about/ccpa-yp | Opt-out or consumer privacy-request page. Email: ypcsupport@yp.com. Automated check on 2026-10-01 got HTTP 403. Open the link in a browser. |
 | YellowPages People (Intelius data) | https://suppression.peopleconnect.us/ | Published opt-out URL is the site root. Confirm a request form is on the page before sending information. Email: ypcsupport@yp.com. |

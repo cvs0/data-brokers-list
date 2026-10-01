@@ -1,6 +1,6 @@
 # Data broker opt-out list
 
-A catalog of **915** data broker, people-search, and consumer-reporting opt-out or privacy-request pages. Each row is a real URL, checked on **2026-10-01**.
+A catalog of **968** data broker, people-search, and consumer-reporting opt-out or privacy-request pages. Each row is a real URL, checked on **2026-10-01**.
 
 This is a directory of links, not a removal service. Read the [disclaimer](DISCLAIMER.md) before you use it. Pages move, forms ask for different ID, and a successful request on one site does not remove you from the rest.
 
@@ -28,16 +28,25 @@ If you only do one sitting, use these. URLs are copied from [`opt-outs.csv`](opt
 | Acxiom | https://www.acxiom.com/optout/ |
 | Epsilon | https://legal.epsilon.com/dsr/ |
 | LiveRamp | https://liveramp.com/privacy/my-privacy-choices/ |
+| The Trade Desk | https://adsrvr.org/ |
 | ZoomInfo Technologies, LLC | https://privacyrequest.zoominfo.com/remove/verify |
 | LexisNexis | https://consumer.risk.lexisnexis.com/opt |
+| Checkr | https://checkr.com/legal/privacy-policy |
+| Sterling | https://sterling.com/privacyrequest/ |
 | Equifax | https://myprivacy.equifax.com/opt-in-opt-out/personal-info |
 | Experian | https://www.experian.com/privacy/opting_out |
 | TransUnion | https://www.transunion.com/consumer-privacy |
 | OptOutPrescreen (Experian/Equifax/TransUnion/Innovis) | https://www.optoutprescreen.com/ |
 | Radaris | https://radaris.com/control/privacy |
+| PimEyes | https://pimeyes.com/en/opt-out |
+| 192.com | https://www.192.com/c01/new-request/ |
 | National Do Not Call Registry | https://www.donotcall.gov/ |
+| Canada National Do Not Call List | https://www.lnnte-dncl.gc.ca/en/ |
+| UK open electoral register | https://www.gov.uk/electoral-register/opt-out-of-the-open-register |
 | DMAChoice | https://www.dmachoice.org/ |
 | Digital Advertising Alliance opt-out | https://optout.aboutads.info/ |
+| YourOnlineChoices (EDAA) | https://www.youronlinechoices.com/uk/your-ad-choices |
+| YourAdChoices Canada | https://www.youradchoices.ca/choices |
 | California DROP | https://privacy.ca.gov/drop/ |
 
 Search the CSV before you send extra personal details. Notes say when a page returned HTTP 403 or 429 to an automated check, when email is part of the flow, and when an account may be required.
@@ -46,13 +55,13 @@ Search the CSV before you send extra personal details. Notes say when a page ret
 
 | Category | File | Entries |
 | --- | --- | ---: |
-| People search | [brokers/people-search.md](brokers/people-search.md) | 127 |
-| Background checks | [brokers/background-checks.md](brokers/background-checks.md) | 45 |
-| Marketing | [brokers/marketing.md](brokers/marketing.md) | 85 |
-| Credit and financial | [brokers/credit-financial.md](brokers/credit-financial.md) | 9 |
-| Public records | [brokers/public-records.md](brokers/public-records.md) | 70 |
-| Other | [brokers/other.md](brokers/other.md) | 579 |
-| **Total** | [opt-outs.csv](opt-outs.csv) | **915** |
+| People search | [brokers/people-search.md](brokers/people-search.md) | 141 |
+| Background checks | [brokers/background-checks.md](brokers/background-checks.md) | 52 |
+| Marketing | [brokers/marketing.md](brokers/marketing.md) | 103 |
+| Credit and financial | [brokers/credit-financial.md](brokers/credit-financial.md) | 15 |
+| Public records | [brokers/public-records.md](brokers/public-records.md) | 76 |
+| Other | [brokers/other.md](brokers/other.md) | 581 |
+| **Total** | [opt-outs.csv](opt-outs.csv) | **968** |
 
 `opt-outs.csv` is the source of truth. The Markdown files are tables generated from it. Column definitions and the check date are in [SOURCES.md](SOURCES.md).
 
@@ -67,7 +76,7 @@ California residents may also have a statewide deletion request through the stat
 
 ## Sources
 
-URLs were adapted from the PersProtect open dataset (CC BY 4.0), The Markup / CalMatters investigation data (Apache 2.0), and the California Privacy Protection Agency data broker registry, then checked on 2026-10-01. Credit and license details are in [NOTICE](NOTICE).
+URLs were adapted from the PersProtect open dataset (CC BY 4.0), The Markup / CalMatters investigation data (Apache 2.0), and the California Privacy Protection Agency data broker registry, then checked on 2026-10-01. Later rows were taken from company opt-out and privacy pages and from official choice sites, including YourOnlineChoices, YourAdChoices Canada, Canada's National Do Not Call List, and the UK open electoral register. Credit and license details are in [NOTICE](NOTICE).
 
 ## License
 
