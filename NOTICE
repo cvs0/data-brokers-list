@@ -1,0 +1,27 @@
+# Notice
+
+This repository adapts opt-out and privacy-request URLs from two public datasets. Those URLs were rechecked on 2026-10-01, categorized, and given new notes. The adaptation is not endorsed by either source.
+
+## PersProtect
+
+The PersProtect Data Broker Opt-Out List is licensed under Creative Commons Attribution 4.0 International (CC BY 4.0).
+
+- Dataset: https://github.com/Persprotect/data-broker-opt-out-list
+- Publisher: PersProtect, https://persprotect.com
+- Copyright (c) 2026 PersProtect
+- License: https://creativecommons.org/licenses/by/4.0/
+
+Rows whose `sources` value includes `persprotect` use URLs from that dataset. Changes were made: categories, notes, HTTP status, and dead or duplicate handling differ from the original file.
+
+## The Markup and CalMatters
+
+Data from The Markup and CalMatters investigation "We caught companies making it harder to delete your personal data online" is licensed under the Apache License 2.0.
+
+- Dataset: https://github.com/the-markup/investigation-data-broker-opt-out-pages
+- License: https://www.apache.org/licenses/LICENSE-2.0
+
+Rows whose `sources` value includes `markup` use URLs from that dataset. Changes were made, including which URL was kept when a company published more than one and the notes written for this catalog.
+
+## This repository
+
+Original text, category organization, and generated Markdown in this repository are under the MIT License in [LICENSE](LICENSE). That MIT grant does not remove the attribution requirement for CC BY 4.0 material or the notice requirement for Apache 2.0 material.
