@@ -2,7 +2,7 @@
 
 Registered data brokers and privacy-request pages that do not fit the categories above.
 
-587 entries. Link responses were checked on 2026-10-01 unless a note says otherwise.
+612 entries. Link responses were checked on 2026-10-01 unless a note says otherwise.
 
 | Broker | Opt-out / privacy URL | Notes |
 | --- | --- | --- |
@@ -25,6 +25,7 @@ Registered data brokers and privacy-request pages that do not fit the categories
 | Aidentified, Inc. | https://www.aidentified.com/privacy--policy | Opt-out or consumer privacy-request page. |
 | Airlines Reporting Corporation | https://www2.arccorp.com/site-privacy-policy/ | Privacy notice or privacy-policy page. Use the state-rights, do-not-sell, or request section. |
 | AlarmsCalifornia (LicenseData) | http://www.alarmscalifornia.org/about | Privacy notice or privacy-policy page. Use the state-rights, do-not-sell, or request section. Email: contact@licensedata.org. Automated check on 2026-10-01 got HTTP 403. Open the link in a browser. |
+| All Biz | https://www.allbiz.com/removal | Opt-out or consumer privacy-request page. |
 | All Good Media, LLC | https://www.attribits.com/do-not-sell | Opt-out or consumer privacy-request page. |
 | Allant Group, LLC | https://allantgroup.com/privacy-policy | Privacy notice or privacy-policy page. Use the state-rights, do-not-sell, or request section. Email: privacy@allantgroup.com. Privacy-rights page submitted to the California Data Broker Registry. |
 | AllAreaCodes | https://www.allareacodes.com/remove_name.htm | Opt-out or consumer privacy-request page. Automated check on 2026-10-01 got HTTP 403. Open the link in a browser. |
@@ -52,6 +53,7 @@ Registered data brokers and privacy-request pages that do not fit the categories
 | Azerion US Inc. | https://www.hybridtheory.com/privacy-notice/ | Privacy notice or privacy-policy page. Use the state-rights, do-not-sell, or request section. |
 | Azira LLC | https://azira.com/privacy-policy | Privacy notice or privacy-policy page. Use the state-rights, do-not-sell, or request section. |
 | B.I Science (2009) Ltd | https://www.biscience.com/ccpa/ | Opt-out or consumer privacy-request page. |
+| B2BHint | https://b2bhint.com/en/privacy-policy | Privacy notice or privacy-policy page. Use the state-rights, do-not-sell, or request section. |
 | Babel Street, Inc. | https://www.babelstreet.com/privacy | Privacy notice or privacy-policy page. Use the state-rights, do-not-sell, or request section. Email: privacy@babelstreet.com. Privacy-rights page submitted to the California Data Broker Registry. |
 | Bachmanity, Inc. | https://www.aviato.co/legal/privacy | Privacy notice or privacy-policy page. Use the state-rights, do-not-sell, or request section. Email: privacy@aviato.co. Privacy-rights page submitted to the California Data Broker Registry. |
 | Baron App, Inc. | https://legal.cameo.com/privacypolicy | Privacy notice or privacy-policy page. Use the state-rights, do-not-sell, or request section. Privacy-rights page submitted to the California Data Broker Registry. |
@@ -63,10 +65,14 @@ Registered data brokers and privacy-request pages that do not fit the categories
 | Belardi Ostroy | https://belardiwong.com/privacy-policy/ | Privacy notice or privacy-policy page. Use the state-rights, do-not-sell, or request section. |
 | Best Pick Reports, LLC | https://www.bestpickreports.com/content/privacy-policy | Privacy notice or privacy-policy page. Use the state-rights, do-not-sell, or request section. |
 | Biointelli corporation | https://www.biointelli.com | Published privacy-request URL is the site root. Confirm a request form is on the page before sending information. Email: privacy@biointelli.net. |
+| Birdeye | https://birdeye.com/ccpa/ | Opt-out or consumer privacy-request page. |
 | Biscred | https://www.biscred.com/do-not-sell-my-information | Opt-out or consumer privacy-request page. Email: privacy@biscred.com. Privacy-rights page submitted to the California Data Broker Registry. |
+| Bizarchive | https://www.bizarchive.com/removal | Opt-out or consumer privacy-request page. |
+| BizIreland | https://www.bizireland.com/privacy | Privacy notice or privacy-policy page. Use the state-rights, do-not-sell, or request section. Automated check on 2026-10-01 got HTTP 403. Open the link in a browser. |
 | Black Pearl Group Limited | https://www.blackpearl.com/privacy-policy | Privacy notice or privacy-policy page. Use the state-rights, do-not-sell, or request section. |
 | Blackbaud, Inc | https://www.blackbaud.com/company/data-subject-rights-request | Opt-out or consumer privacy-request page. |
 | Blis Global Ltd | https://blis.com/privacy-centre/ | Opt-out or consumer privacy-request page. Automated check on 2026-10-01 got HTTP 403. Open the link in a browser. |
+| Bluaziende | https://www.bluaziende.com/portale/privacy-policy/ | Privacy notice or privacy-policy page. Use the state-rights, do-not-sell, or request section. |
 | Blue Action Inc. | https://blueaction.io/do-not-sell/ | Opt-out or consumer privacy-request page. Privacy-rights page submitted to the California Data Broker Registry. |
 | Bridg, a division of Cardlytics, Inc. | https://www.bridg.com/privacy-policy | Privacy notice or privacy-policy page. Use the state-rights, do-not-sell, or request section. |
 | Buildertrend Solutions, Inc. | https://buildertrend.com/additional-state-disclosures/ | Opt-out or consumer privacy-request page. Automated check on 2026-10-01 got HTTP 403. Open the link in a browser. |
@@ -92,6 +98,7 @@ Registered data brokers and privacy-request pages that do not fit the categories
 | CellRevealer | https://www.cellrevealer.com/ | Published privacy-request URL is the site root. Confirm a request form is on the page before sending information. On-site form (phone-verified). |
 | Cengage Learning, Inc. | https://www.cengagegroup.com/privacy/ | Opt-out or consumer privacy-request page. |
 | Censia, In. | https://www.censia.com/ccpa/ | Opt-out or consumer privacy-request page. Automated check on 2026-10-01 got HTTP 403. Open the link in a browser. |
+| ChamberofCommerce.com | https://www.chamberofcommerce.com/privacy-policy | Privacy notice or privacy-policy page. Use the state-rights, do-not-sell, or request section. Automated check on 2026-10-01 got HTTP 403. Open the link in a browser. |
 | CheckSecrets (Truth Now LLC) | https://www.checksecrets.com/optOut/name/landing | Online form + email verification. Open-dataset difficulty: easy. |
 | Choreograph LLP | https://www.choreograph.com/ccpa | Opt-out or consumer privacy-request page. |
 | Circana, LLC | https://www.circana.com/the-circana-group-global-privacy-policy-and-notice | Privacy notice or privacy-policy page. Use the state-rights, do-not-sell, or request section. Email: privacy@circana.com. Privacy-rights page submitted to the California Data Broker Registry. |
@@ -112,6 +119,7 @@ Registered data brokers and privacy-request pages that do not fit the categories
 | Command Precision, Inc. | https://persistent.id/privacy-policy | Privacy notice or privacy-policy page. Use the state-rights, do-not-sell, or request section. |
 | Commerce Signals, Inc. | https://www.commercesignals.com | Published privacy-request URL is the site root. Confirm a request form is on the page before sending information. Automated check on 2026-10-01 got HTTP 403. Open the link in a browser. |
 | Commercial Real Estate Exchange, Inc. | https://www.crexi.com/privacy | Opt-out or consumer privacy-request page. Automated check on 2026-10-01 got HTTP 403. Open the link in a browser. |
+| Company Check | https://www.checkcompany.co.uk/privacy-policy | Privacy notice or privacy-policy page. Use the state-rights, do-not-sell, or request section. |
 | Complete Medical Lists, Inc. | https://www.completemedicallists.com/privacy.php | Opt-out or consumer privacy-request page. |
 | Connatix Native Exchange Inc. | https://www.jwx.com | Published privacy-request URL is the site root. Confirm a request form is on the page before sending information. Email: privacy@connatix.com. Privacy-rights page submitted to the California Data Broker Registry. |
 | Connected Investors, LLC | https://connectedinvestors.com/content/privacy-policy | Privacy notice or privacy-policy page. Use the state-rights, do-not-sell, or request section. |
@@ -126,6 +134,7 @@ Registered data brokers and privacy-request pages that do not fit the categories
 | CorporationWiki | https://www.corporationwiki.com/profiles/public | Online form + email verification. Open-dataset difficulty: easy. |
 | CoStar Group | https://www.costar.com/about/privacy-notice | Privacy notice or privacy-policy page. Use the state-rights, do-not-sell, or request section. Automated check on 2026-10-01 got HTTP 403. Open the link in a browser. |
 | Cox Automotive, Inc. | https://www.coxautoinc.com/privacy-statement/ | Privacy notice or privacy-policy page. Use the state-rights, do-not-sell, or request section. Email: consumer-privacy-ops@coxautoinc.com. Privacy-rights page submitted to the California Data Broker Registry. |
+| CPAdirectory | https://cpadirectory.com/opt-out/ | Opt-out or consumer privacy-request page. |
 | CrawlBee Corp | https://crawlbee.com/optout | Opt-out or consumer privacy-request page. |
 | Crimson Hexagon | https://www.brandwatch.com/confirmation/legal-data/ | Opt-out or consumer privacy-request page. |
 | CRISIL Irevna US LLC | https://www.crisil.com/content/crisilcom/en/home/crisil-privacy-notice.html | Privacy notice or privacy-policy page. Use the state-rights, do-not-sell, or request section. |
@@ -146,6 +155,7 @@ Registered data brokers and privacy-request pages that do not fit the categories
 | Datanyze LLC | https://www.datanyze.com/privacy-center | Opt-out or consumer privacy-request page. Automated check on 2026-10-01 got HTTP 403. Open the link in a browser. |
 | Dataskip | https://dataskip.io/product/start-order/ | Opt-out or consumer privacy-request page. |
 | Datasys Group, Inc. | https://datasys.com/privacy-policy | Privacy notice or privacy-policy page. Use the state-rights, do-not-sell, or request section. |
+| Dato Capital | https://en.datocapital.com/privacy-policy.html | Privacy notice or privacy-policy page. Use the state-rights, do-not-sell, or request section. |
 | DATONICS LLC | https://www.datonics.com/privacy/privacy-choices | Opt-out or consumer privacy-request page. |
 | DealerDirect LLC | https://www.forddirect.com/privacy | Opt-out or consumer privacy-request page. |
 | DealerSocket, LLC | https://dealersocket.com/privacy-policy/ | Privacy notice or privacy-policy page. Use the state-rights, do-not-sell, or request section. Automated check on 2026-10-01 got HTTP 403. Open the link in a browser. |
@@ -202,6 +212,7 @@ Registered data brokers and privacy-request pages that do not fit the categories
 | Exact Opco, LLC (exactcustomer.com) | https://www.exactcustomer.com | Published privacy-request URL is the site root. Confirm a request form is on the page before sending information. Automated check on 2026-10-01 got HTTP 403. Open the link in a browser. |
 | ExlService.com LLC | https://www.exlservice.com/privacy-policy | Privacy notice or privacy-policy page. Use the state-rights, do-not-sell, or request section. |
 | Explorium Inc. | https://www.explorium.ai/platform-privacy-policy/ | Privacy notice or privacy-policy page. Use the state-rights, do-not-sell, or request section. |
+| EZlocal | https://contact.ezlocal.com/form/remove-listing/ | Opt-out or consumer privacy-request page. |
 | FamilySearch | https://www.familysearch.org/en/help/helpcenter/article/how-do-i-remove-vitals-information-in-family-tree | Opt-out or consumer privacy-request page. Email: nasupport@familysearch.org. |
 | Famous Birthdays LLC | https://www.famousbirthdays.com/privacy/ | Opt-out or consumer privacy-request page. |
 | Fandom, Inc. | https://itlaw.fandom.com/wiki/Opt-out | Opt-out or consumer privacy-request page. Email: support@fandom.com. Automated check on 2026-10-01 got HTTP 403. Open the link in a browser. |
@@ -249,10 +260,12 @@ Registered data brokers and privacy-request pages that do not fit the categories
 | H1 Insights, Inc. | https://www.h1.co | Published privacy-request URL is the site root. Confirm a request form is on the page before sending information. Automated check on 2026-10-01 got HTTP 403. Open the link in a browser. |
 | Health Union, LLC | https://privacyportal.onetrust.com/webform/c402d2db-7536-4212-a23d-ed4a33c1b3b2/e3aec736-7c0a-4313-a3e7-132ff601397a | Privacy notice or privacy-policy page. Use the state-rights, do-not-sell, or request section. Email: privacy@health-union.com. Privacy-rights page submitted to the California Data Broker Registry. |
 | HealthCare, Inc., a Delaware corporation | https://www.healthcare.com/privacy-policy | Privacy notice or privacy-policy page. Use the state-rights, do-not-sell, or request section. |
+| Healthline | https://privacyportal.onetrust.com/webform/b45407c6-ee79-4a08-912e-02ce898f9a14/8aa5f9b3-91df-485c-a2a7-5bcb5891ce3c | Opt-out or consumer privacy-request page. |
 | HealthLink Dimensions, LLC | https://healthlinkdimensions.com/consumerprivacyrights | Opt-out or consumer privacy-request page. |
 | HealthWise Data | https://healthwisedata.com/privacy-policy/ | Privacy notice or privacy-policy page. Use the state-rights, do-not-sell, or request section. |
 | Heartbeat.AI Inc | https://heartbeat.ai/policy-ccpa | Opt-out or consumer privacy-request page. |
 | Helix Campaigns LLC | https://www.helixcampaigns.com/privacy/ | Opt-out or consumer privacy-request page. The Markup and CalMatters (2025) found page code that hid this URL from search engines. |
+| hiremyfriend.io | https://hiremyfriend.io/privacy-policy/ | Privacy notice or privacy-policy page. Use the state-rights, do-not-sell, or request section. |
 | HireTeamMate, Inc. | https://app.hireez.com/ownyourdata | Opt-out or consumer privacy-request page. Automated check on 2026-10-01 got HTTP 403. Open the link in a browser. |
 | Hivestack Inc. | https://perion.com/ccpa/ | Opt-out or consumer privacy-request page. Automated check on 2026-10-01 got HTTP 403. Open the link in a browser. |
 | Home Contractors Review, LLC | https://www.fivestarrated.com/privacy-policy | Privacy notice or privacy-policy page. Use the state-rights, do-not-sell, or request section. |
@@ -313,6 +326,7 @@ Registered data brokers and privacy-request pages that do not fit the categories
 | Kontext Data | https://kontextdata.com/privacy | Opt-out or consumer privacy-request page. |
 | L.S Mobile Apps Holdings Ltd | https://www.lsmapps.com/privacy-center | Opt-out or consumer privacy-request page. The Markup and CalMatters (2025) found page code that hid this URL from search engines. |
 | Labels & Lists, Inc | https://www.l2-data.com/california-privacy-rights-for-california-residents-only/ | Opt-out or consumer privacy-request page. |
+| LawLink | https://lawlink.com/privacy | Privacy notice or privacy-policy page. Use the state-rights, do-not-sell, or request section. |
 | LEAD ENHANCE LLC | https://bathroom-remodel-today.com/privacy/ | Privacy notice or privacy-policy page. Use the state-rights, do-not-sell, or request section. Privacy-rights page submitted to the California Data Broker Registry. |
 | Lead Intelligence Inc. | https://infutor.com/privacy-center/ | Privacy notice or privacy-policy page. Use the state-rights, do-not-sell, or request section. Email: privacy@infutor.com. Automated check on 2026-10-01 got HTTP 403. Open the link in a browser. |
 | Lead Me Media, LLC | https://policy.leadmemedia.com/States/privacyrequestform.html | Opt-out or consumer privacy-request page. |
@@ -330,6 +344,7 @@ Registered data brokers and privacy-request pages that do not fit the categories
 | Live Data Technologies, Inc. | https://www.livedatatechnologies.com/opt-out | Opt-out or consumer privacy-request page. |
 | LizDev,Inc | https://lizdev.com/privacy-policy/ | Privacy notice or privacy-policy page. Use the state-rights, do-not-sell, or request section. Email: privacyanddatacompliancereview@lizdev.com. |
 | Lob.com, Inc. | https://www.lob.com/privacy | Opt-out or consumer privacy-request page. |
+| Local Pages | https://localpages.com/privacy | Privacy notice or privacy-policy page. Use the state-rights, do-not-sell, or request section. |
 | Lookify | https://lookify.io/opt-out | Opt-out or consumer privacy-request page. |
 | LoopMe Limited | https://legal.loopme.com/privacy-center | Opt-out or consumer privacy-request page. |
 | M&R Strategic Services | https://www.mrss.com/privacy-policy/ | Privacy notice or privacy-policy page. Use the state-rights, do-not-sell, or request section. |
@@ -375,6 +390,7 @@ Registered data brokers and privacy-request pages that do not fit the categories
 | Nexxen Inc | https://nexxen.com | Published privacy-request URL is the site root. Confirm a request form is on the page before sending information. Email: compliance@nexxen.com. Automated check on 2026-10-01 got HTTP 403. Open the link in a browser. |
 | NFocus Consulting, Inc. | https://www.n-focus.com/privacy-policy/ | Privacy notice or privacy-policy page. Use the state-rights, do-not-sell, or request section. |
 | NotariesCalifornia.com (LicenseData) | http://www.notariescalifornia.com/about | Privacy notice or privacy-policy page. Use the state-rights, do-not-sell, or request section. Email: contact@licensedata.org. Automated check on 2026-10-01 got HTTP 403. Open the link in a browser. |
+| NPIR.org | https://npir.org/privacy | Privacy notice or privacy-policy page. Use the state-rights, do-not-sell, or request section. Automated check on 2026-10-01 got HTTP 403. Open the link in a browser. |
 | NumLooker | https://numlooker.com/remove-my-info | Opt-out or consumer privacy-request page. Email: service@numlooker.com. Automated check on 2026-10-01 got HTTP 403. Open the link in a browser. |
 | NumLookup | https://www.numlookup.com/opt_out | Online form. Email: hello@numlookup.com. Open-dataset difficulty: easy. |
 | Ocean Global Inc | https://www.ocean.io/ | Published privacy-request URL is the site root. Confirm a request form is on the page before sending information. Automated check on 2026-10-01 got HTTP 403. Open the link in a browser. |
@@ -383,6 +399,7 @@ Registered data brokers and privacy-request pages that do not fit the categories
 | Ohio Resident Database | https://www.ohioresidentdatabase.com/opt-out | Opt-out or consumer privacy-request page. Automated check on 2026-10-01 got HTTP 403. Open the link in a browser. |
 | OIPC Alberta | https://oipc.ab.ca/privacy-correction-complaint | Canadian Office of the Information and Privacy Commissioner of Alberta form for a privacy complaint or correction request. |
 | OIPC British Columbia | https://www.oipc.bc.ca/forms/individuals/complaints/ | Canadian Office of the Information and Privacy Commissioner for British Columbia complaint form for individuals. Email: info@oipc.bc.ca. |
+| OMSMB | https://www.omsmb.com/privacy-policy | Privacy notice or privacy-policy page. Use the state-rights, do-not-sell, or request section. |
 | Onfocus SAS | https://adagio.io | Published privacy-request URL is the site root. Confirm a request form is on the page before sending information. Privacy-rights page submitted to the California Data Broker Registry. |
 | ONLINE MEDIA GROUP INC. | https://omginc.xyz/privacy | Opt-out or consumer privacy-request page. |
 | OnPoint Data Strategy | https://onpointdatastrategy.com/opt-out/ | Opt-out or consumer privacy-request page. |
@@ -404,6 +421,7 @@ Registered data brokers and privacy-request pages that do not fit the categories
 | Plunge, LLC | https://www.plungedigital.com/privacy-policy/ | Privacy notice or privacy-policy page. Use the state-rights, do-not-sell, or request section. |
 | PMG Worldwide, LLC | https://www.pmg.com/privacy-policy | Privacy notice or privacy-policy page. Use the state-rights, do-not-sell, or request section. |
 | Podible Inc | https://podscribe.com/privacy | Privacy notice or privacy-policy page. Use the state-rights, do-not-sell, or request section. Email: privacy@podscribe.com. Privacy-rights page submitted to the California Data Broker Registry. |
+| Pomanda | https://pomanda.com/help/privacy-data-and-gdpr/i-want-pomanda-to-remove-my-personal-data | Privacy notice or privacy-policy page. Use the state-rights, do-not-sell, or request section. |
 | Pop Acta Media, LLC | https://popacta.com/privacy-policy/ | Privacy notice or privacy-policy page. Use the state-rights, do-not-sell, or request section. |
 | PossibleNOW, Inc. | https://www.possiblenow.com/privacy-statement | Opt-out or consumer privacy-request page. |
 | Postie, Inc | https://postie.com/your-privacy-choices/ | Opt-out or consumer privacy-request page. |
@@ -461,6 +479,7 @@ Registered data brokers and privacy-request pages that do not fit the categories
 | Rhetorik Limited | https://rhetorik.com/do-not-sell-my-info/ | Opt-out or consumer privacy-request page. |
 | Rich Media LLC | https://richmediallc.com/do-not-sell-my-personal-information/ | Opt-out or consumer privacy-request page. |
 | Ripple Effect Strategies | https://www.ripple-roi.com/privacy-policy | Privacy notice or privacy-policy page. Use the state-rights, do-not-sell, or request section. Privacy-rights page submitted to the California Data Broker Registry. |
+| RoboKiller | https://support.bendingspoons.com/privacy?app=1022831885 | Privacy notice or privacy-policy page. Use the state-rights, do-not-sell, or request section. |
 | Rogers | https://www.rogers.com/support/cyber-security/privacy/access-to-information | Canadian Rogers privacy-access page. Use the privacy information request form linked on the page, or mail the Chief Privacy Officer, Rogers Group of Companies, 333 Bloor St. E., Toronto, ON M4W 1G9. |
 | Roq.ad Inc. | https://www.roq.ad/privacy-policy-roqad/ | Privacy notice or privacy-policy page. Use the state-rights, do-not-sell, or request section. |
 | ROR Partners, LLC | https://rorpartners.com/privacy-policy | Privacy notice or privacy-policy page. Use the state-rights, do-not-sell, or request section. Email: privacy@rorpartners.com. Privacy-rights page submitted to the California Data Broker Registry. |
@@ -504,6 +523,7 @@ Registered data brokers and privacy-request pages that do not fit the categories
 | StatSocial, Inc | https://www.statsocial.com/privacy-policy | Privacy notice or privacy-policy page. Use the state-rights, do-not-sell, or request section. |
 | Steppingblocks, Inc. | https://www.steppingblocks.com/privacy-ccpa | Opt-out or consumer privacy-request page. The Markup and CalMatters (2025) found page code that hid this URL from search engines. |
 | Strategic Data Intelligence, LLC | https://www.strategicdataintelligence.com | Published privacy-request URL is the site root. Confirm a request form is on the page before sending information. Privacy-rights page submitted to the California Data Broker Registry. |
+| Streetdirectory | https://streetdirectory.com.my/privacy-policy/ | Privacy notice or privacy-policy page. Use the state-rights, do-not-sell, or request section. |
 | Subgraph, Inc | https://subgraph.tech/privacy-rights | Privacy notice or privacy-policy page. Use the state-rights, do-not-sell, or request section. Email: privacy@subgraph.tech. Privacy-rights page submitted to the California Data Broker Registry. |
 | Subsplash | https://www.subsplash.com/legal/privacy | Opt-out or consumer privacy-request page. Email: support@subsplash.com. |
 | Summit Resources, LLC | https://clientcommand.com/client-command-privacy-notice/ | Privacy notice or privacy-policy page. Use the state-rights, do-not-sell, or request section. The Markup and CalMatters (2025) found page code that hid this URL from search engines. |
@@ -523,10 +543,13 @@ Registered data brokers and privacy-request pages that do not fit the categories
 | The Alesco Group LLC | https://www.mydataprivacy.com/upload-csv | Opt-out or consumer privacy-request page. |
 | The Alesco Group LLC (alescodata.com) | https://www.alescodata.com | Published privacy-request URL is the site root. Confirm a request form is on the page before sending information. Email: legal@alescodata.com. Privacy-rights page submitted to the California Data Broker Registry. |
 | The Bump | https://support.thebump.com/hc/en-us/articles/34980593049748 | Opt-out or consumer privacy-request page. Email: support@thebump.com. Automated check on 2026-10-01 got HTTP 403. Open the link in a browser. |
+| The Company Check | https://www.thecompanycheck.com/privacy-policy | Privacy notice or privacy-policy page. Use the state-rights, do-not-sell, or request section. |
 | The Data Group | https://thedatagroup.com/california-consumer-privacy-act/ | Opt-out or consumer privacy-request page. |
 | The Dots Global Limited | https://the-dots.com/ | Published privacy-request URL is the site root. Confirm a request form is on the page before sending information. Email: help@the-dots.com. Automated check on 2026-10-01 got HTTP 403. Open the link in a browser. |
 | THE LINEA 1 MKT SL | https://Www.tl1mkt.com | Published privacy-request URL is the site root. Confirm a request form is on the page before sending information. Privacy-rights page submitted to the California Data Broker Registry. |
+| The National Directory of Registered Tax Return Preparers & Professionals, Ltd. | https://www.ptindirectory.com/ccpa.cfm | Opt-out or consumer privacy-request page. |
 | The Segerdahl LLC | https://sg360.com/do-not-sell-my-info/ | Opt-out or consumer privacy-request page. Privacy-rights page submitted to the California Data Broker Registry. |
+| Therapist.com | https://therapist.com/privacy-notice/ | Privacy notice or privacy-policy page. Use the state-rights, do-not-sell, or request section. |
 | Thomson Reuters (CLEAR) | https://privacyportal.onetrust.com/webform/dbf5ae8a-0a6a-4f4b-b527-7f94d0de6bbc/170d8ef9-9f1c-45f6-b338-9f3fb30c801e | Opt-out or consumer privacy-request page. Email: privacy.issues@thomsonreuters.com. |
 | Torre Labs, Inc. | https://torre.ai/en/terms | Opt-out or consumer privacy-request page. Email: legal@torre.ai. |
 | Traackr, Inc. | https://www.traackr.com/infl-privacy-notice | Privacy notice or privacy-policy page. Use the state-rights, do-not-sell, or request section. |
@@ -545,6 +568,7 @@ Registered data brokers and privacy-request pages that do not fit the categories
 | Uplead LLC | https://www.uplead.com/privacy/ | Opt-out or consumer privacy-request page. |
 | UPS Capital Corporation | https://www.upscapital.com/privacy-notice | Privacy notice or privacy-policy page. Use the state-rights, do-not-sell, or request section. |
 | Urban Science Applications, Inc. | https://www.urbanscience.com/privacy/ | Privacy notice or privacy-policy page. Use the state-rights, do-not-sell, or request section. Privacy-rights page submitted to the California Data Broker Registry. |
+| US Business Directory | https://us-business.info/privacy/ | Privacy notice or privacy-policy page. Use the state-rights, do-not-sell, or request section. |
 | US Data Corporation | https://www.usdatacorporation.com/opt-out | Opt-out or consumer privacy-request page. |
 | USADATA, Inc. | https://www.usadata.com/ccpa | Opt-out or consumer privacy-request page. |
 | User-Searcher | https://blog.user-searcher.com/policy | Opt-out or consumer privacy-request page. Email: admin@user-searcher.com. |
@@ -576,6 +600,7 @@ Registered data brokers and privacy-request pages that do not fit the categories
 | Webbula, LLC | https://webbula.com/privacy-center/ | Opt-out or consumer privacy-request page. |
 | WebMD Health Corp. | https://www.webmd.com/about-webmd-policies/about-ccpa-do-not-sell | Opt-out or consumer privacy-request page. Email: privacy@webmd.com. |
 | WeInform (We Inform LLC) | https://www.weinform.org/optOut/name/landing | Opt-out or consumer privacy-request page. |
+| Wellness.com | https://www.wellness.com/docs/11323/wellness-com-privacy-policy | Privacy notice or privacy-policy page. Use the state-rights, do-not-sell, or request section. |
 | Windfall Data, Inc. | https://www.windfall.com/your-privacy-choices | Opt-out or consumer privacy-request page. The Markup and CalMatters (2025) found page code that hid this URL from search engines. |
 | WINR Data B.V. | https://www.winrdata.com/privacy-policy-us/ | Privacy notice or privacy-policy page. Use the state-rights, do-not-sell, or request section. |
 | Wiza, Inc. | https://www.wiza.co | Published privacy-request URL is the site root. Confirm a request form is on the page before sending information. Privacy-rights page submitted to the California Data Broker Registry. |

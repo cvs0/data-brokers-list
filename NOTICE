@@ -49,6 +49,10 @@ Further `manual` rows are Canadian official pages, including Canada Post adverti
 
 Those pages belong to their publishers. This repository stores the link, a category, and a short note.
 
+## Optery public directory
+
+Optery publishes a directory of data-broker names at https://www.optery.com/data-brokers/. That directory is licensed CC BY-NC-SA 4.0. This repository uses those public names only as a coverage checklist. It does not copy Optery's database, opt-out guides, or descriptions. URLs added after that check come from each company's own site.
+
 ## This repository
 
 Original text, category organization, and generated Markdown in this repository are under the MIT License in [LICENSE](LICENSE). That MIT grant does not remove the attribution requirement for CC BY 4.0 material or the notice requirement for Apache 2.0 material.
