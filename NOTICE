@@ -1,6 +1,6 @@
 # Notice
 
-This repository adapts opt-out and privacy-request URLs from two public datasets. Those URLs were rechecked on 2026-10-01, categorized, and given new notes. The adaptation is not endorsed by either source.
+This repository adapts opt-out and privacy-request URLs from public datasets and the California data broker registry. Those URLs were checked on 2026-10-01, categorized, and given notes for this list. The adaptation is not endorsed by the sources.
 
 ## PersProtect
 
@@ -21,6 +21,14 @@ Data from The Markup and CalMatters investigation "We caught companies making it
 - License: https://www.apache.org/licenses/LICENSE-2.0
 
 Rows whose `sources` value includes `markup` use URLs from that dataset. Changes were made, including which URL was kept when a company published more than one and the notes written for this catalog.
+
+## California Privacy Protection Agency
+
+Rows whose `sources` value includes `cppa` use the privacy-rights URL a data broker submitted in the California Data Broker Registry published by the California Privacy Protection Agency.
+
+- Registry: https://www.cppa.ca.gov/data_broker_registry/
+
+The registry page is a government publication. Notes in this catalog were written for this list.
 
 ## This repository
 
