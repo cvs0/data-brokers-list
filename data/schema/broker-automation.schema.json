@@ -26,7 +26,7 @@
       "type": "object", "additionalProperties": false, "required": ["score", "tier"],
       "properties": {
         "score": { "type": "integer", "minimum": 0, "maximum": 100, "description": "Computed by scripts/priority.py; see docs/priority.md. Stored so diffs are reviewable." },
-        "tier": { "enum": ["launch", "next", "later", "never"] },
+        "tier": { "enum": ["launch", "next", "research", "later", "never"], "description": "research = v1 research is blocked (usually a bot wall); reach by email or letter until a browser pass succeeds." },
         "rationale": { "$ref": "#/$defs/nullableString" }
       }
     },
