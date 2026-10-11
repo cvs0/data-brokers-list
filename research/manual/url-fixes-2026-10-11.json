@@ -1,0 +1,33 @@
+{
+  "checked_at": "2026-10-11",
+  "method": "Liveness pass 2026-10-11-a found the catalog URL broken, redirected to another host, or reachable only over https. Each replacement was opened on 2026-10-11 and is linked from the broker's own homepage or is the final URL of the broker's own redirect.",
+  "fixes": [
+    {"id": "absolute-people-search", "url": "https://absolutepeoplesearch.com/public.php?funct=optout", "http_status": "200", "why": "Old /optout returns 404. The homepage links 'Do not sell my information' here."},
+    {"id": "audiencepoint-inc", "url": "https://audiencepoint.com/privacy-policy/", "http_status": "200", "why": "Old /cpra/ returns 404. The homepage links the privacy policy here."},
+    {"id": "findmugshots", "url": "https://www.findmugshots.com/optout", "http_status": "200", "why": "Old google_remove.php returns 404. The homepage links 'Do Not Sell My Info' here."},
+    {"id": "lotame", "url": "https://www.lotame.com/privacy/", "http_status": "200", "why": "Old opt-out page returns 404. The homepage links its Privacy Center here, and sends service-data requests to Epsilon's DSR portal (https://legal.epsilon.com/dsr/)."},
+    {"id": "privatenumberchecker", "url": "https://www.privatenumberchecker.com/removalrequest/", "http_status": "403", "why": "Old /removal-request returns 404. The homepage links 'REMOVAL REQUEST' here; the page itself shows a bot check to automated requests."},
+    {"id": "reversephonelookup-intelius-peopleconnect", "url": "https://www.intelius.com/privacy-center/", "http_status": "403", "why": "Old remove.php returns 404. The homepage links 'Exercise My Data Privacy Rights' to the Intelius privacy center (bot check to automated requests)."},
+    {"id": "5x5-us-llc", "url": "https://privacy.5x5data.com/5x5/opt-out", "http_status": "200", "why": "Old /dsr-out/ returns 404. The homepage links 'Do Not Sell or Share My Personal Information' here."},
+    {"id": "youradchoices-canada", "url": "https://youradchoices.ca/en/tools", "http_status": "200", "why": "Old /choices redirects to an http:// URL that times out; the https page answers."},
+    {"id": "alarmscalifornia-licensedata", "https": true, "http_status": "200", "why": "http:// times out; https answers."},
+    {"id": "californiabrokers-org-licensedata", "https": true, "http_status": "200", "why": "http:// times out; https answers."},
+    {"id": "californiaengineering-org-licensedata", "https": true, "http_status": "200", "why": "http:// times out; https answers."},
+    {"id": "californialicensing-org-licensedata", "https": true, "http_status": "200", "why": "http:// times out; https answers."},
+    {"id": "californianursing-org-licensedata", "https": true, "http_status": "200", "why": "http:// times out; https answers."},
+    {"id": "californiapharmacists-org-licensedata", "https": true, "http_status": "200", "why": "http:// times out; https answers."},
+    {"id": "contractorscalifornia-org-licensedata", "https": true, "http_status": "200", "why": "http:// times out; https answers."},
+    {"id": "dentistscalifornia-org-licensedata", "https": true, "http_status": "200", "why": "http:// times out; https answers."},
+    {"id": "firearmscalifornia-org-licensedata", "https": true, "http_status": "200", "why": "http:// times out; https answers."},
+    {"id": "notariescalifornia-com-licensedata", "https": true, "http_status": "200", "why": "http:// times out; https answers."},
+    {"id": "findpeoplesearch", "https": true, "http_status": "200", "why": "http:// times out; https answers."},
+    {"id": "persopo", "url": "https://persopo.com/opt-out.html", "http_status": "200", "why": "http://info.persopo.com times out; the https URL redirects to persopo.com/opt-out.html."},
+    {"id": "dspolitical-llc", "url": "https://www.onemagnify.com/privacy-policy", "domain": "onemagnify.com", "http_status": "200", "why": "winwithoptimal.com now redirects to OneMagnify's privacy policy."},
+    {"id": "h1-insights-inc", "url": "https://h1.com/", "domain": "h1.com", "http_status": "200", "why": "h1.co redirects to h1.com."},
+    {"id": "live-data-technologies-inc", "url": "https://www.livedatatech.com/opt-out", "domain": "livedatatech.com", "http_status": "200", "why": "livedatatechnologies.com redirects to livedatatech.com/opt-out."},
+    {"id": "quorum-data-inc", "url": "https://app.quorum.live/privacy", "http_status": "200", "why": "quorum.inc/privacy redirects to app.quorum.live/privacy."},
+    {"id": "reklaim-ltd", "url": "https://reklaimyou.com/privacy", "domain": "reklaimyou.com", "http_status": "200", "why": "reklaimyours.com redirects to reklaimyou.com."},
+    {"id": "samba-tv-inc", "url": "https://samba.com/privacy-center/privacy-policy", "domain": "samba.com", "http_status": "200", "why": "samba.tv redirects to samba.com."},
+    {"id": "arrestfacts-beenverified-related", "url": "https://nkreeger.com/page/privacy", "domain": "nkreeger.com", "http_status": "200", "why": "arrestfacts.com now redirects to nkreeger.com, an arrest-records site on the same platform. Its privacy page says removal is the 'Information Control' link on each record page."}
+  ]
+}
