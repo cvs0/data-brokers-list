@@ -67,3 +67,10 @@ jobs:
       - run: python scripts/validate_v2.py
       - run: python scripts/build_v2.py && git diff --exit-code data/v2/brokers.json data/v2/brokers.csv
 ```
+
+## Priority and bootstrapping
+
+- `data/v2/priority-impact.csv` holds the reviewed impact score (0–50) and rationale for each broker on the work list.
+- `python scripts/priority.py` adds readiness from v1 and writes `data/v2/priority.csv` (`score = min(100, impact + readiness)`, tiers `launch` / `next` / `research`). Rules are in the script's docstring.
+- `python scripts/bootstrap_v2.py` creates a starter spec for each id in `priority.csv`, copying only what v1 established (channels, CAPTCHA and email-verification requirements, mapped form fields, parsed processing days, legal bases from coverage, bot walls, PeopleConnect family coverage), each with provenance. It never overwrites an existing file unless `--force` is given.
+- Bootstrapped search methods are marked `source: inferred` until a browser pass with a synthetic identity confirms the template.

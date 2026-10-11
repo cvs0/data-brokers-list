@@ -1,0 +1,49 @@
+rank,id,impact,readiness,score,tier,rationale
+1,california-drop,50,35,85,launch,One free request reaches every CPPA-registered broker (650+); for California residents only; user files it
+2,anywho-intelius-peopleconnect,50,50,100,launch,"PeopleConnect suppression portal; 8 verified sister brands (Intelius, InstantCheckmate, TruthFinder, USSearch...)"
+3,spokeo,48,50,98,launch,Very large people-search site; listing-level opt-out; relists
+4,whitepages,48,25,73,next,Largest US directory; phone + address; premium records
+5,beenverified,47,0,47,research,"BeenVerified family (PeopleLooker, NeighborWho etc.; family unverified in repo)"
+6,fastpeoplesearch,46,40,86,launch,Free full-address profiles; top Google results for names
+7,truepeoplesearch,46,0,46,research,Free full-address profiles; top Google results for names
+8,mylife,45,0,45,research,Reputation-score profiles; hard to remove
+9,usphonebook,44,50,94,launch,Free phone/address lookup
+10,checkpeople,42,50,92,launch,"Verified, no blockers observed: easiest early win"
+11,peoplefinders-confi-chek,42,0,42,research,Confi-Chek family
+12,nuwber,42,0,42,research,Free profiles with relatives
+13,thatsthem,41,0,41,research,Free profiles incl. email/IP
+14,familytreenow,41,0,41,research,Free genealogy-style profiles with relatives and addresses
+15,cyberbackgroundchecks,40,0,40,research,Free full profiles
+16,smartbackgroundchecks,40,0,40,research,Free full profiles
+17,advancedbackgroundchecks,40,0,40,research,Free full profiles
+18,searchpeoplefree,39,0,39,research,Free full profiles
+19,peoplesearchnow,39,0,39,research,Free full profiles
+20,fastbackgroundcheck,39,0,39,research,Free full profiles
+21,usa-people-search,38,40,78,launch,Large legacy people-search
+22,infotracer,37,33,70,next,InfoTracer family root (3 sister brands)
+23,searchusapeople-infotracer,36,45,81,launch,"Verified, no blockers observed"
+24,publicrecords-info,35,50,85,launch,"Verified, no blockers observed"
+25,cocofinder,35,50,85,launch,"Verified, no blockers observed"
+26,social-catfish,35,50,85,launch,Reverse image/name search; CAPTCHA + login
+27,peekyou,34,25,59,next,Aggregates social profiles
+28,idcrawl,34,20,54,next,Aggregates social profiles and photos
+29,veripages,33,0,33,research,Free profiles
+30,peoplewhiz,33,0,33,research,Paid people-search
+31,numlookup,33,45,78,launch,Reverse phone lookup; verified
+32,sync-me,33,45,78,launch,Caller-ID database from uploaded contacts; affects Canadians
+33,glad-i-know,30,45,75,launch,Verified shortlist entry
+34,locatefamily,30,0,30,research,Free address listings; includes Canada
+35,canada411,40,40,80,launch,Canadian directory (Yellow Pages Group); core Canadian coverage
+36,411-ca,38,25,63,next,Canadian directory
+37,canada411-yellow-pages-canada,36,33,69,next,Yellow Pages Canada corporate privacy channel
+38,acxiom,40,33,73,next,Largest US marketing data broker; also operates in Canada
+39,epsilon,36,33,69,next,Major marketing data broker
+40,liveramp,36,43,79,launch,Identity graph; verified
+41,lexisnexis,40,38,78,launch,Risk/background data; postal + web channels
+42,data-axle-infousa,36,0,36,research,Business + consumer marketing lists; operates in Canada
+43,optoutprescreen-experian-equifax-transunion-innovis,35,35,70,next,US prescreened-credit-offer opt-out (4 bureaus); US residents
+44,equifax-canada,38,33,71,next,Canadian credit bureau: marketing opt-out and access
+45,transunion-canada,38,0,38,research,Canadian credit bureau: marketing opt-out and access
+46,zoominfo-technologies-llc,30,0,30,research,B2B contact profiles (work email/phone)
+47,people-data-labs-inc,30,20,50,next,B2B/person data API feeding many tools
+48,voterrecords-com,30,0,30,research,Publishes US voter-file details

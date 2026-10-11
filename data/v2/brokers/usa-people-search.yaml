@@ -1,0 +1,188 @@
+# Bootstrapped from data/v1 by scripts/bootstrap_v2.py on 2026-10-11.
+# Review before promoting lifecycle.status. null means not established, never false.
+schema_version: 2.0.0
+id: usa-people-search
+family_id: null
+covers_ids: []
+coverage_evidence_url: null
+lifecycle:
+  status: researching
+  status_reason: Bootstrapped from v1 (research_status partial, automation assisted_workflow).
+  updated_at: '2026-10-11'
+priority:
+  score: 78
+  tier: launch
+  rationale: Large legacy people-search
+jurisdiction:
+  operator_country: null
+  registries: []
+  drop_participant: null
+  publishes_canadians: null
+  legal_bases:
+  - basis: voluntary
+    eligible_residency:
+    - ANY
+    statutory_response_days: null
+    source_url: https://www.usa-people-search.com/removal
+search:
+  method: browser
+  url_template: null
+  inputs:
+  - full_name
+  - city
+  - region
+  - phone
+  input_transforms: {}
+  requires_js: null
+  results:
+    item_selector: null
+    fields: {}
+    listing_url_selector: null
+    listing_id_regex: null
+    no_results_marker: null
+    next_page_selector: null
+    max_pages: 1
+  match_fields_available: []
+removal:
+  channels:
+  - channel: web_form
+    rank: 1
+    url: https://www.usa-people-search.com/removal
+    requires:
+      captcha: always
+      captcha_provider: null
+      email_verification: link
+      login: false
+      profile_url: false
+      phone_verification: null
+      id_document: null
+    fields:
+    - canonical: first_name
+      form_name: subject-firstname
+      selector: null
+      required: true
+      transform: null
+    - canonical: last_name
+      form_name: subject-lastname
+      selector: null
+      required: true
+      transform: null
+    - canonical: email
+      form_name: subject-email
+      selector: null
+      required: true
+      transform: null
+    steps:
+    - order: 1
+      type: goto
+      target: https://www.usa-people-search.com/removal
+    - order: 2
+      type: fill
+      target: null
+      value_from: first_name
+    - order: 3
+      type: fill
+      target: null
+      value_from: last_name
+    - order: 4
+      type: fill
+      target: null
+      value_from: email
+    - order: 5
+      type: screenshot
+    - order: 6
+      type: human_task
+      human_task_kind: captcha
+    - order: 7
+      type: submit
+      target: null
+    - order: 8
+      type: screenshot
+    - order: 9
+      type: await_email
+      timeout_s: 86400
+    - order: 10
+      type: open_email_link
+    - order: 11
+      type: screenshot
+  removes_scope: unknown
+  suppression_not_deletion: null
+authorized_agent:
+  accepted: null
+  requirements: []
+  agent_channel: null
+  source_url: https://www.usa-people-search.com/privacy
+  notes: 'I am: The subject of the request An authorized agent of the subject of the request Subject First Name * Subject
+    Middle Name Subject Last Name * Subject Email * Agent First Name * Agent Last Name * Agent Email * Note: Authorized agent''s
+    email address will be used to send a link to the opt-out form.'
+identity_verification:
+  fields_requested:
+  - first_name
+  - last_name
+  - email
+  id_document: null
+  id_redaction_allowed: null
+  phone_verification: null
+timing:
+  processing_days_documented: 3
+  processing_days_observed_p50: null
+  processing_days_observed_p90: null
+  observed_sample_size: 0
+  recheck_after_days: 5
+  relist_check_interval_days: 30
+  relist_rate_observed: null
+rate_policy:
+  min_interval_s: 4
+  max_per_day: 2000
+  concurrency: 1
+  backoff_on_status:
+  - 403
+  - 429
+  - 503
+  backoff_hours: 6
+  honor_retry_after: true
+tos:
+  automation_prohibited: null
+  clause_quote: null
+  url: null
+  checked_at: null
+  policy_decision: null
+egress:
+  geo_block_observed: []
+  bot_wall_observed: null
+  proxy_policy: never_residential
+adapter:
+  id: null
+  module_path: null
+  last_e2e_at: null
+  last_e2e_result: null
+  e2e_evidence_url: null
+provenance:
+  /removal/channels/0/requires:
+    checked_at: '2026-10-01'
+    source: page_text
+    evidence_url: https://www.usa-people-search.com/manage
+  /removal/channels/0/fields:
+    checked_at: '2026-10-01'
+    source: page_text
+    evidence_url: https://www.usa-people-search.com/manage
+    note: Mapped from v1 required_fields by scripts/v2_common.py
+  /search/method:
+    checked_at: '2026-10-01'
+    source: inferred
+    evidence_url: https://www.usa-people-search.com/manage
+    note: From v1 public_profiles_searchable / exposure_check; template not yet discovered.
+  /jurisdiction/legal_bases:
+    checked_at: '2026-10-01'
+    source: page_text
+    evidence_url: https://www.usa-people-search.com/manage
+    note: Derived from v1 geographic_coverage and documented_request_eligibility.
+  /timing/processing_days_documented:
+    checked_at: '2026-10-01'
+    source: page_text
+    evidence_url: https://www.usa-people-search.com/manage
+    note: Please allow 3 days for your request to be fully processed.
+  /authorized_agent/notes:
+    checked_at: '2026-10-01'
+    source: page_text
+    evidence_url: https://www.usa-people-search.com/manage
