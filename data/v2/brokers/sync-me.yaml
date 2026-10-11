@@ -67,6 +67,22 @@ removal:
       target: null
     - order: 5
       type: screenshot
+  - channel: email
+    rank: 2
+    email: privacy@sync.me
+    template_id: voluntary_optout
+    requires:
+      captcha: none
+      captcha_provider: null
+      email_verification: null
+      login: false
+      profile_url: false
+      phone_verification: null
+      id_document: null
+    steps:
+    - order: 1
+      type: send_email
+      target: voluntary_optout
   removes_scope: unknown
   suppression_not_deletion: null
 authorized_agent:
@@ -131,3 +147,7 @@ provenance:
     note: se Arabic French Hindi Portuguese Spanish EN Android App iPhone App Features Spam Detector Report Spam/Fraud Business
       Support More Apps EN English Russian Hebrew Italian Turkish Germany Brazilian Portuguese Arabic French Hindi Portuguese
       Spanish EN Sign in Download Home Opt-Out Remove My Info Fill i
+  /removal/channels/1/email:
+    checked_at: '2026-10-11'
+    source: page_text
+    evidence_url: https://sync.me/privacy/

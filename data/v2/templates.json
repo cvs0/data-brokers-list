@@ -1,0 +1,294 @@
+{
+ "templates": {
+  "authorized-agent-cover": {
+   "id": "authorized-agent-cover",
+   "basis": "voluntary",
+   "jurisdictions": [
+    "ANY"
+   ],
+   "language": "en",
+   "statutory_response_days": null,
+   "subject": "Privacy request submitted by an authorized agent for {{full_name}}",
+   "placeholders": [
+    "broker_name",
+    "full_name",
+    "agent_name",
+    "agent_email",
+    "date"
+   ],
+   "body": "Hello {{broker_name}} privacy team,\n\n{{agent_name}} is submitting the attached request on behalf of {{full_name}}, who has signed a written permission for us to act for them. The signed permission is attached.\n\nIf your process requires {{full_name}} to verify their identity directly or confirm this authorization with you, please contact them through the channel you normally use and copy {{agent_email}}.\n\nPlease send all replies about this request to {{agent_email}}.\n\nThank you,\n{{agent_name}}\n{{date}}\n"
+  },
+  "ccpa_delete": {
+   "id": "ccpa_delete",
+   "basis": "ccpa_delete",
+   "jurisdictions": [
+    "US-CA"
+   ],
+   "language": "en",
+   "statutory_response_days": 45,
+   "subject": "CCPA request to delete and to opt out of sale/sharing",
+   "placeholders": [
+    "broker_name",
+    "full_name",
+    "email",
+    "street_address",
+    "city",
+    "region",
+    "postal_code",
+    "profile_urls",
+    "date"
+   ],
+   "body": "Hello {{broker_name}} privacy team,\n\nI'm a California resident. Under the California Consumer Privacy Act, as amended by the CPRA (Cal. Civ. Code §1798.105 and §1798.120), I'm asking you to:\n\n1. Delete all personal information you hold about me, and tell your service providers and contractors to do the same.\n2. Stop selling or sharing my personal information.\n\nThe details you need to find my records:\n\n- Name: {{full_name}}\n- Address: {{street_address}}, {{city}}, {{region}} {{postal_code}}\n- Listing URLs (if any): {{profile_urls}}\n\nThe law gives you 45 days to respond, and 15 business days to act on the opt-out of sale or sharing. Please confirm by email at {{email}} when both are done. If you deny any part of this request, tell me which part and why.\n\nIf you're a registered data broker, you also have to process deletion requests sent through the California Delete Request and Opt-out Platform (DROP).\n\nThank you,\n{{full_name}}\n{{date}}\n"
+  },
+  "ccpa_opt_out": {
+   "id": "ccpa_opt_out",
+   "basis": "ccpa_opt_out",
+   "jurisdictions": [
+    "US-CA"
+   ],
+   "language": "en",
+   "statutory_response_days": 15,
+   "subject": "CCPA request to opt out of sale and sharing",
+   "placeholders": [
+    "broker_name",
+    "full_name",
+    "email",
+    "city",
+    "region",
+    "date"
+   ],
+   "body": "Hello {{broker_name}} privacy team,\n\nI'm a California resident. Under Cal. Civ. Code §1798.120 I'm opting out of the sale and sharing of my personal information, and under §1798.121 I'm asking you to limit the use of any sensitive personal information about me.\n\n- Name: {{full_name}}\n- City and state: {{city}}, {{region}}\n- Email: {{email}}\n\nThe regulations give you 15 business days to act on this request. Please confirm by email when it's done.\n\nThank you,\n{{full_name}}\n{{date}}\n"
+  },
+  "eu_gdpr_erasure": {
+   "id": "eu_gdpr_erasure",
+   "basis": "eu_gdpr",
+   "jurisdictions": [
+    "EU"
+   ],
+   "language": "en",
+   "statutory_response_days": 30,
+   "subject": "GDPR Article 17 erasure request and Article 21 objection",
+   "placeholders": [
+    "broker_name",
+    "full_name",
+    "email",
+    "city",
+    "country",
+    "profile_urls",
+    "date"
+   ],
+   "body": "Hello {{broker_name}} data protection officer,\n\nI live in {{country}}. Under the General Data Protection Regulation I'm asking you to:\n\n1. Erase all personal data you hold about me without undue delay (Article 17).\n2. Treat this as my objection to any processing for direct marketing or based on legitimate interests (Article 21).\n3. Tell every recipient you disclosed my data to about this erasure (Article 19).\n\nThe details you need to find my records:\n\n- Name: {{full_name}}\n- City and country: {{city}}, {{country}}\n- Listing URLs (if any): {{profile_urls}}\n\nArticle 12(3) gives you one month to respond. Please confirm in writing at {{email}}. If you refuse, tell me why and confirm my right to complain to a supervisory authority.\n\nThank you,\n{{full_name}}\n{{date}}\n"
+  },
+  "pipeda_withdraw": {
+   "id": "pipeda_withdraw",
+   "basis": "pipeda",
+   "jurisdictions": [
+    "CA"
+   ],
+   "language": "en",
+   "statutory_response_days": 30,
+   "subject": "PIPEDA: withdrawal of consent and request to delete my personal information",
+   "placeholders": [
+    "broker_name",
+    "full_name",
+    "email",
+    "city",
+    "region",
+    "profile_urls",
+    "date"
+   ],
+   "body": "Hello {{broker_name}} privacy officer,\n\nI live in Canada. Under the Personal Information Protection and Electronic Documents Act (PIPEDA), Schedule 1, Principle 4.3.8, I withdraw any consent to your collection, use or disclosure of my personal information. Under Principles 4.5.3 and 4.9, I'm asking you to:\n\n1. Delete or anonymize the personal information you hold about me, including any listing on your website.\n2. Stop disclosing or selling it to anyone else.\n3. Tell me which personal information you held, where you got it, and who you disclosed it to.\n\nThe details you need to find my records:\n\n- Name: {{full_name}}\n- City and province: {{city}}, {{region}}\n- Listing URLs (if any): {{profile_urls}}\n\nPIPEDA gives you 30 days to respond to the access part of this request. Please confirm in writing at {{email}}. If you don't resolve this, I may file a complaint with the Office of the Privacy Commissioner of Canada.\n\nThank you,\n{{full_name}}\n{{date}}\n"
+  },
+  "quebec_cessation": {
+   "id": "quebec_cessation",
+   "basis": "quebec_law25",
+   "jurisdictions": [
+    "CA-QC"
+   ],
+   "language": "fr-CA",
+   "statutory_response_days": 30,
+   "subject": "Demande de cessation de diffusion et de suppression de mes renseignements personnels",
+   "placeholders": [
+    "broker_name",
+    "full_name",
+    "email",
+    "city",
+    "profile_urls",
+    "date"
+   ],
+   "body": "Bonjour,\n\nJe réside au Québec. En vertu de la Loi sur la protection des renseignements personnels dans le secteur privé, telle que modifiée par la Loi 25, je vous demande :\n\n1. de cesser de diffuser mes renseignements personnels et de désindexer tout hyperlien rattaché à mon nom (article 28.1);\n2. de supprimer les renseignements personnels que vous détenez à mon sujet (article 28);\n3. de me dire quels renseignements vous déteniez, d'où ils proviennent et à qui vous les avez communiqués (article 27).\n\nLes renseignements nécessaires pour retrouver mon dossier :\n\n- Nom : {{full_name}}\n- Ville : {{city}}, Québec\n- Adresses URL de mes fiches (le cas échéant) : {{profile_urls}}\n\nLa loi vous accorde 30 jours pour répondre. Merci de me confirmer par écrit à {{email}} lorsque ce sera fait. À défaut de réponse, je pourrai m'adresser à la Commission d'accès à l'information.\n\nMerci,\n{{full_name}}\n{{date}}\n"
+  },
+  "quebec_cessation_en": {
+   "id": "quebec_cessation_en",
+   "basis": "quebec_law25",
+   "jurisdictions": [
+    "CA-QC"
+   ],
+   "language": "en",
+   "statutory_response_days": 30,
+   "subject": "Request to stop disseminating and to delete my personal information (Quebec Law 25)",
+   "placeholders": [
+    "broker_name",
+    "full_name",
+    "email",
+    "city",
+    "profile_urls",
+    "date"
+   ],
+   "body": "Hello {{broker_name}} privacy officer,\n\nI live in Quebec. Under Quebec's Act respecting the protection of personal information in the private sector, as amended by Law 25, I'm asking you to:\n\n1. Stop disseminating my personal information and de-index any hyperlink attached to my name (section 28.1).\n2. Delete the personal information you hold about me (section 28).\n3. Tell me which personal information you held, where you got it, and who you disclosed it to (section 27).\n\nThe details you need to find my records:\n\n- Name: {{full_name}}\n- City: {{city}}, Quebec\n- Listing URLs (if any): {{profile_urls}}\n\nThe law gives you 30 days to respond. Please confirm in writing at {{email}}. If you don't respond, I may apply to the Commission d'accès à l'information.\n\nThank you,\n{{full_name}}\n{{date}}\n"
+  },
+  "state_privacy_delete": {
+   "id": "state_privacy_delete",
+   "basis": "state_privacy_law",
+   "jurisdictions": [
+    "US-VA",
+    "US-CO",
+    "US-CT",
+    "US-UT",
+    "US-TX",
+    "US-OR",
+    "US-MT",
+    "US-IA",
+    "US-DE",
+    "US-NH",
+    "US-NJ",
+    "US-TN",
+    "US-MN",
+    "US-MD",
+    "US-IN",
+    "US-KY",
+    "US-RI",
+    "US-NE"
+   ],
+   "language": "en",
+   "statutory_response_days": 45,
+   "subject": "Request to delete my personal data and opt out of its sale",
+   "placeholders": [
+    "broker_name",
+    "full_name",
+    "email",
+    "city",
+    "region",
+    "profile_urls",
+    "us_state_law_name",
+    "date"
+   ],
+   "body": "Hello {{broker_name}} privacy team,\n\nI live in {{region}}. Under the {{us_state_law_name}}, I'm exercising my rights to:\n\n1. Delete the personal data you've collected about me or obtained about me from others.\n2. Opt out of the sale of my personal data and of its use for targeted advertising and profiling.\n\nThe details you need to find my records:\n\n- Name: {{full_name}}\n- City and state: {{city}}, {{region}}\n- Listing URLs (if any): {{profile_urls}}\n\nState privacy laws give you 45 days to respond. Please confirm by email at {{email}}. If you decline, tell me why and how to appeal.\n\nThank you,\n{{full_name}}\n{{date}}\n"
+  },
+  "uk_gdpr_erasure": {
+   "id": "uk_gdpr_erasure",
+   "basis": "uk_gdpr",
+   "jurisdictions": [
+    "GB"
+   ],
+   "language": "en",
+   "statutory_response_days": 30,
+   "subject": "UK GDPR erasure request and objection to processing",
+   "placeholders": [
+    "broker_name",
+    "full_name",
+    "email",
+    "city",
+    "profile_urls",
+    "date"
+   ],
+   "body": "Hello {{broker_name}} data protection officer,\n\nI live in the United Kingdom. Under the UK GDPR I'm asking you to erase all personal data you hold about me (Article 17), and I object to any processing for direct marketing or based on legitimate interests (Article 21).\n\n- Name: {{full_name}}\n- City: {{city}}\n- Listing URLs (if any): {{profile_urls}}\n\nYou have one month to respond. Please confirm in writing at {{email}}. If you refuse, I may complain to the Information Commissioner's Office.\n\nThank you,\n{{full_name}}\n{{date}}\n"
+  },
+  "voluntary_optout": {
+   "id": "voluntary_optout",
+   "basis": "voluntary",
+   "jurisdictions": [
+    "ANY"
+   ],
+   "language": "en",
+   "statutory_response_days": null,
+   "subject": "Opt-out request: please remove my personal information",
+   "placeholders": [
+    "broker_name",
+    "full_name",
+    "email",
+    "city",
+    "region",
+    "profile_urls",
+    "date"
+   ],
+   "body": "Hello {{broker_name}} privacy team,\n\nI'm asking you to remove my personal information from your website and from any data you sell, license or share, and to suppress it so it doesn't reappear.\n\nThe details you need to find my records:\n\n- Name: {{full_name}}\n- City and state/province: {{city}}, {{region}}\n- Listing URLs (if any): {{profile_urls}}\n\nPlease reply to {{email}} to confirm when this is done. If you need anything else to process this request, tell me what it is and why.\n\nThank you,\n{{full_name}}\n{{date}}\n"
+  }
+ },
+ "template_by_residency": {
+  "US-CA": [
+   "ccpa_delete",
+   "ccpa_opt_out"
+  ],
+  "US-VA": [
+   "state_privacy_delete"
+  ],
+  "US-CO": [
+   "state_privacy_delete"
+  ],
+  "US-CT": [
+   "state_privacy_delete"
+  ],
+  "US-UT": [
+   "state_privacy_delete"
+  ],
+  "US-TX": [
+   "state_privacy_delete"
+  ],
+  "US-OR": [
+   "state_privacy_delete"
+  ],
+  "US-MT": [
+   "state_privacy_delete"
+  ],
+  "US-IA": [
+   "state_privacy_delete"
+  ],
+  "US-DE": [
+   "state_privacy_delete"
+  ],
+  "US-NH": [
+   "state_privacy_delete"
+  ],
+  "US-NJ": [
+   "state_privacy_delete"
+  ],
+  "US-TN": [
+   "state_privacy_delete"
+  ],
+  "US-MN": [
+   "state_privacy_delete"
+  ],
+  "US-MD": [
+   "state_privacy_delete"
+  ],
+  "US-IN": [
+   "state_privacy_delete"
+  ],
+  "US-KY": [
+   "state_privacy_delete"
+  ],
+  "US-RI": [
+   "state_privacy_delete"
+  ],
+  "US-NE": [
+   "state_privacy_delete"
+  ],
+  "CA-QC": [
+   "quebec_cessation",
+   "quebec_cessation_en"
+  ],
+  "CA": [
+   "pipeda_withdraw"
+  ],
+  "EU": [
+   "eu_gdpr_erasure"
+  ],
+  "GB": [
+   "uk_gdpr_erasure"
+  ],
+  "ANY": [
+   "voluntary_optout"
+  ]
+ }
+}

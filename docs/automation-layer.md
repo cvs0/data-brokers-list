@@ -48,15 +48,33 @@ python scripts/build_v2.py      # writes brokers.json and brokers.csv
 
 `draft → researching → adapter_dev → e2e_tested → live`, with `paused` (layout changed or blocked), `deprecated` and `defunct`.
 
-## Suggested CI
+## Export for apps (`data/v2/frame-export.json`)
 
-The maintainer token used for this PR cannot write workflow files. Add this as `.github/workflows/validate.yml`:
+`python scripts/build_frame_export.py` joins everything into one artifact an app can import without reading the rest of the repo:
+
+- `brokers[]`: one object per active catalog row (same ids as `data/v1/catalog-ids.csv`), with the opt-out and request URLs, liveness verdict, family (parent company, shared portal, which spec covers it), priority, a `removal` block (primary flow `portal | form | email | letter | phone | drop | manual`, privacy email and where it came from, required canonical fields, verification steps, documented processing days, the broker's own registry-reported median, re-check and relist intervals), a `search` block, a `jurisdiction` block (coverage, statutory bases, CPPA registration, DROP) and an `automation` block (v1 class, research status, spec lifecycle, bot wall, ToS decision, `adapter_ready`).
+- `archived[]`: rows removed from the catalog, with reason and evidence (`docs/liveness.md`).
+- `template_by_residency` and `templates`: which request template to use for a person's residency (`US-CA`, other US privacy-law states, `CA`, `CA-QC`, `EU`, `GB`, `ANY`). Bodies are in `data/v2/templates.json` and `templates/*.md`.
+- `meta`: export version, counts and a SHA-256 of the broker array so importers can skip unchanged builds.
+
+`data/v2/frame-export.ndjson` has the same broker objects, one per line. Precedence for every field is v2 spec > v1 evidence > CPPA registry > page fill, and anything that didn't come from v1 has a `provenance` entry with its URL, date and confidence. `data/schema/frame-export.schema.json` describes the format; `python scripts/validate_export.py` checks it against the schema and the catalog (same ids and count, unique domains, nothing archived still active, templates exist).
+
+`python scripts/enrich_v2.py` copies CPPA registrations, statutory legal bases, known privacy emails (as a ranked email channel with the right template) and extracted processing times into the v2 specs, filling only empty values.
+
+## CI
+
+The maintainer token on the automation box can't write workflow files. Add this as `.github/workflows/validate.yml` in the GitHub web UI:
 
 ```yaml
 name: validate
-on: [push, pull_request]
+on:
+  push:
+  pull_request:
+  schedule:
+    - cron: "17 9 * * 1"   # Mondays: liveness pass (results are uploaded, nothing is committed)
 jobs:
   validate:
+    if: github.event_name != 'schedule'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -66,6 +84,25 @@ jobs:
       - run: python scripts/validate_dataset.py
       - run: python scripts/validate_v2.py
       - run: python scripts/build_v2.py && git diff --exit-code data/v2/brokers.json data/v2/brokers.csv
+      - run: python scripts/validate_export.py
+  liveness:
+    if: github.event_name == 'schedule'
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: pip install -r requirements.txt
+      - run: cd scripts && python liveness_check.py --pass-label "$(date +%F)-a"
+      - run: sleep 3000
+      - run: cd scripts && python liveness_check.py --pass-label "$(date +%F)-b" && python classify_liveness.py && python archive_entries.py --dry-run | tee ../liveness-plan.txt
+      - uses: actions/upload-artifact@v4
+        with:
+          name: liveness
+          path: |
+            research/evidence/liveness-report.json
+            liveness-plan.txt
 ```
 
 ## Priority and bootstrapping

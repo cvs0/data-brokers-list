@@ -15,8 +15,13 @@ priority:
   rationale: B2B/person data API feeding many tools
 jurisdiction:
   operator_country: null
-  registries: []
-  drop_participant: null
+  registries:
+  - registry: ca_cppa
+    registration_id: null
+    registered_name: People Data Labs
+    checked_at: '2026-10-11'
+    source_url: https://cppa.ca.gov/data_broker_registry/
+  drop_participant: true
   publishes_canadians: null
   legal_bases:
   - basis: voluntary
@@ -24,6 +29,16 @@ jurisdiction:
     - ANY
     statutory_response_days: null
     source_url: https://privacy.peopledatalabs.com/policies?name=privacy-center#people-data-labs-privacy-center
+  - basis: ccpa_delete
+    eligible_residency:
+    - US-CA
+    statutory_response_days: 45
+    source_url: https://cppa.ca.gov/data_broker_registry/
+  - basis: ccpa_opt_out
+    eligible_residency:
+    - US-CA
+    statutory_response_days: 15
+    source_url: https://cppa.ca.gov/data_broker_registry/
 search:
   method: none
   url_template: null
@@ -64,6 +79,22 @@ removal:
       target: null
     - order: 4
       type: screenshot
+  - channel: email
+    rank: 2
+    email: privacy@peopledatalabs.com
+    template_id: ccpa_delete
+    requires:
+      captcha: none
+      captcha_provider: null
+      email_verification: null
+      login: false
+      profile_url: false
+      phone_verification: null
+      id_document: null
+    steps:
+    - order: 1
+      type: send_email
+      target: ccpa_delete
   removes_scope: unknown
   suppression_not_deletion: null
 authorized_agent:
@@ -122,3 +153,16 @@ provenance:
     source: page_text
     evidence_url: https://privacy.peopledatalabs.com/policies?name=privacy-center#people-data-labs-privacy-center
     note: Derived from v1 geographic_coverage and documented_request_eligibility.
+  /jurisdiction/registries:
+    checked_at: '2026-10-11'
+    source: registry
+    evidence_url: https://cppa.ca.gov/data_broker_registry/
+  /jurisdiction/drop_participant:
+    checked_at: '2026-10-11'
+    source: registry
+    evidence_url: https://cppa.ca.gov/data_broker_registry/
+    note: Listed in the CPPA data broker registry (domain match).
+  /removal/channels/1/email:
+    checked_at: '2026-10-11'
+    source: registry
+    evidence_url: https://cppa.ca.gov/data_broker_registry/

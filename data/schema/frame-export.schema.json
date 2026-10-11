@@ -1,0 +1,167 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/cvs0/data-brokers-list/data/schema/frame-export.schema.json",
+  "title": "Data broker export for scan and removal apps",
+  "description": "data/v2/frame-export.json, built by scripts/build_frame_export.py. One object per active catalog row, plus the archived rows and request templates. null means unknown.",
+  "type": "object",
+  "required": ["meta", "template_by_residency", "templates", "brokers", "archived"],
+  "additionalProperties": false,
+  "$defs": {
+    "nstr": { "type": ["string", "null"] },
+    "nint": { "type": ["integer", "null"] },
+    "nbool": { "type": ["boolean", "null"] },
+    "url": { "type": "string", "pattern": "^https?://" },
+    "nurl": { "type": ["string", "null"], "pattern": "^https?://" },
+    "date": { "type": ["string", "null"] },
+    "flow": { "enum": ["portal", "form", "email", "letter", "phone", "drop", "api", "manual"] },
+    "canonical": { "enum": ["full_name", "first_name", "middle_name", "last_name", "name_aliases", "city", "region", "postal_code", "country", "street_address", "past_cities", "age", "age_range", "birth_year", "birth_date", "phone", "email", "relatives", "profile_url", "record_id", "signature", "id_document", "reason_free_text", "location", "name", "address"] },
+    "provenance": {
+      "type": "object",
+      "required": ["source", "source_url", "checked_at", "confidence"],
+      "properties": {
+        "source": { "enum": ["page_fill", "ca_cppa_registry"] },
+        "source_url": { "$ref": "#/$defs/url" },
+        "checked_at": { "type": "string" },
+        "confidence": { "enum": ["extracted", "uncertain", "official"] }
+      },
+      "additionalProperties": false
+    },
+    "broker": {
+      "type": "object",
+      "required": ["id", "name", "category", "domain", "opt_out_url", "request_url", "liveness", "family", "priority", "removal", "search", "jurisdiction", "automation", "provenance"],
+      "additionalProperties": false,
+      "properties": {
+        "id": { "type": "string", "pattern": "^[a-z0-9][a-z0-9-]*$" },
+        "name": { "type": "string", "minLength": 1 },
+        "category": { "enum": ["people-search", "background-checks", "marketing", "credit-financial", "public-records", "other"] },
+        "domain": { "type": "string", "minLength": 3 },
+        "opt_out_url": { "$ref": "#/$defs/url" },
+        "request_url": { "$ref": "#/$defs/url" },
+        "privacy_policy_url": { "$ref": "#/$defs/nurl" },
+        "notes": { "$ref": "#/$defs/nstr" },
+        "sources": { "type": "array", "items": { "type": "string" } },
+        "last_http_status": { "$ref": "#/$defs/nint" },
+        "liveness": {
+          "type": "object",
+          "required": ["verdict", "checked_at"],
+          "properties": {
+            "verdict": { "enum": ["alive", "blocked", "url_drift", "https_upgrade", "flaky", "pending_recheck", null] },
+            "checked_at": { "$ref": "#/$defs/date" }
+          },
+          "additionalProperties": false
+        },
+        "family": {
+          "type": "object",
+          "required": ["parent_company", "shared_portal_group_id", "covered_by", "covers"],
+          "properties": {
+            "parent_company": { "$ref": "#/$defs/nstr" },
+            "shared_portal_group_id": { "$ref": "#/$defs/nstr" },
+            "covered_by": { "$ref": "#/$defs/nstr" },
+            "covers": { "type": "array", "items": { "type": "string" } }
+          },
+          "additionalProperties": false
+        },
+        "priority": {
+          "type": ["object", "null"],
+          "required": ["rank", "score", "tier"],
+          "properties": {
+            "rank": { "type": "integer", "minimum": 1 },
+            "score": { "type": "integer", "minimum": 0, "maximum": 100 },
+            "tier": { "enum": ["launch", "next", "research", "later", "never"] }
+          },
+          "additionalProperties": false
+        },
+        "removal": {
+          "type": "object",
+          "required": ["primary_flow", "flows", "privacy_email", "required_info", "verification", "processing_days", "recheck_after_days", "relist_check_interval_days"],
+          "additionalProperties": false,
+          "properties": {
+            "primary_flow": { "$ref": "#/$defs/flow" },
+            "flows": { "type": "array", "items": { "$ref": "#/$defs/flow" }, "uniqueItems": true },
+            "privacy_email": { "type": ["string", "null"], "pattern": "^[^@\\s]+@[^@\\s]+\\.[a-z]{2,}$" },
+            "privacy_email_confidence": { "enum": ["v1", "registry", "extracted", "uncertain", null] },
+            "required_info": { "type": "array", "items": { "$ref": "#/$defs/canonical" }, "uniqueItems": true },
+            "verification": { "type": "array", "items": { "enum": ["email_link", "email_code", "id_document", "phone_sms", "phone_call", "captcha", "account_login", "profile_url"] }, "uniqueItems": true },
+            "id_document": { "type": "boolean" },
+            "processing_days": { "type": ["integer", "null"], "minimum": 0, "maximum": 365 },
+            "processing_days_source": { "enum": ["documented", "page_fill", null] },
+            "registry_reported_median_days": { "type": ["number", "null"] },
+            "recheck_after_days": { "type": "integer", "minimum": 1 },
+            "relist_check_interval_days": { "type": "integer", "minimum": 1 },
+            "suppression_not_deletion": { "$ref": "#/$defs/nbool" }
+          }
+        },
+        "search": {
+          "type": "object",
+          "required": ["method", "url_template", "inputs", "spec_ready"],
+          "additionalProperties": false,
+          "properties": {
+            "method": { "enum": ["http_get", "http_form_post", "browser", "official_api", "broker_confirmation_only", "none", null] },
+            "url_template": { "$ref": "#/$defs/nstr" },
+            "search_page": { "$ref": "#/$defs/nurl" },
+            "inputs": { "type": "array", "items": { "type": "string" } },
+            "public_profiles": { "$ref": "#/$defs/nbool" },
+            "requires_login": { "$ref": "#/$defs/nbool" },
+            "requires_payment": { "$ref": "#/$defs/nbool" },
+            "spec_ready": { "type": "boolean" }
+          }
+        },
+        "jurisdiction": {
+          "type": "object",
+          "required": ["coverage", "statutory_bases", "registries", "drop_participant"],
+          "additionalProperties": false,
+          "properties": {
+            "coverage": { "type": "array", "items": { "type": "string" } },
+            "statutory_bases": { "type": "array", "items": { "enum": ["ccpa_delete", "ccpa_opt_out", "state_privacy_law", "pipeda", "quebec_law25", "uk_gdpr", "eu_gdpr"] } },
+            "registries": { "type": "array", "items": { "type": "object", "required": ["registry", "legal_name", "year"] } },
+            "drop_participant": { "$ref": "#/$defs/nbool" }
+          }
+        },
+        "automation": {
+          "type": "object",
+          "required": ["v1_class", "research_status", "spec_status", "bot_wall", "adapter_ready"],
+          "additionalProperties": false,
+          "properties": {
+            "v1_class": { "$ref": "#/$defs/nstr" },
+            "research_status": { "$ref": "#/$defs/nstr" },
+            "spec_status": { "enum": ["draft", "researching", "adapter_dev", "e2e_tested", "live", "paused", "deprecated", "defunct", null] },
+            "blockers": { "type": "array", "items": { "type": "string" } },
+            "bot_wall": { "type": "boolean" },
+            "tos_policy": { "enum": ["automate", "email_or_letter_only", "user_assisted_only", null] },
+            "adapter_ready": { "type": "boolean" }
+          }
+        },
+        "provenance": { "type": "object", "additionalProperties": { "$ref": "#/$defs/provenance" } }
+      }
+    },
+    "archived": {
+      "type": "object",
+      "required": ["id", "name", "domain", "url", "reason", "archived_at", "evidence"],
+      "properties": {
+        "id": { "type": "string" },
+        "name": { "type": "string" },
+        "domain": { "type": "string" },
+        "url": { "type": "string" },
+        "category": { "type": "string" },
+        "reason": { "enum": ["seized", "parked", "dns_dead", "gone", "unreachable", "merged", "duplicate"] },
+        "merged_into": { "$ref": "#/$defs/nstr" },
+        "archived_at": { "type": "string" },
+        "evidence": { "type": "object" },
+        "catalog_row": { "type": "object" }
+      }
+    }
+  },
+  "properties": {
+    "meta": {
+      "type": "object",
+      "required": ["export_version", "repo", "generated_at", "content_sha256", "counts"],
+      "properties": {
+        "counts": { "type": "object", "required": ["active", "archived", "by_category"] }
+      }
+    },
+    "template_by_residency": { "type": "object", "additionalProperties": { "type": "array", "items": { "type": "string" }, "minItems": 1 } },
+    "templates": { "type": "object", "additionalProperties": { "type": "object", "required": ["id", "basis", "jurisdictions", "language", "subject", "placeholders"] } },
+    "brokers": { "type": "array", "items": { "$ref": "#/$defs/broker" } },
+    "archived": { "type": "array", "items": { "$ref": "#/$defs/archived" } }
+  }
+}

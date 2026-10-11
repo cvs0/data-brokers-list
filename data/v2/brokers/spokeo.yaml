@@ -15,8 +15,13 @@ priority:
   rationale: Very large people-search site; listing-level opt-out; relists
 jurisdiction:
   operator_country: null
-  registries: []
-  drop_participant: null
+  registries:
+  - registry: ca_cppa
+    registration_id: null
+    registered_name: Spokeo, Inc.
+    checked_at: '2026-10-11'
+    source_url: https://cppa.ca.gov/data_broker_registry/
+  drop_participant: true
   publishes_canadians: null
   legal_bases:
   - basis: voluntary
@@ -24,6 +29,16 @@ jurisdiction:
     - ANY
     statutory_response_days: null
     source_url: https://www.spokeo.com/optout
+  - basis: ccpa_delete
+    eligible_residency:
+    - US-CA
+    statutory_response_days: 45
+    source_url: https://cppa.ca.gov/data_broker_registry/
+  - basis: ccpa_opt_out
+    eligible_residency:
+    - US-CA
+    statutory_response_days: 15
+    source_url: https://cppa.ca.gov/data_broker_registry/
 search:
   method: http_get
   url_template: null
@@ -92,7 +107,7 @@ removal:
   - channel: email
     rank: 2
     email: privacy@spokeo.com
-    template_id: voluntary_optout
+    template_id: ccpa_delete
     requires:
       captcha: none
       captcha_provider: null
@@ -104,7 +119,7 @@ removal:
     steps:
     - order: 1
       type: send_email
-      target: voluntary_optout
+      target: ccpa_delete
   removes_scope: listing
   suppression_not_deletion: null
 authorized_agent:
@@ -188,3 +203,12 @@ provenance:
     source: page_text
     evidence_url: https://www.spokeo.com/optout
     note: 'v1: listing suppression with a profile URL or record id required.'
+  /jurisdiction/registries:
+    checked_at: '2026-10-11'
+    source: registry
+    evidence_url: https://cppa.ca.gov/data_broker_registry/
+  /jurisdiction/drop_participant:
+    checked_at: '2026-10-11'
+    source: registry
+    evidence_url: https://cppa.ca.gov/data_broker_registry/
+    note: Listed in the CPPA data broker registry (domain match).

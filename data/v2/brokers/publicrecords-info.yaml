@@ -120,7 +120,7 @@ identity_verification:
   id_redaction_allowed: null
   phone_verification: null
 timing:
-  processing_days_documented: null
+  processing_days_documented: 2
   processing_days_observed_p50: null
   processing_days_observed_p90: null
   observed_sample_size: 0
@@ -185,3 +185,9 @@ provenance:
     checked_at: '2026-10-01'
     source: page_text
     evidence_url: https://www.publicrecords.info/
+  /timing/processing_days_documented:
+    checked_at: '2026-10-11'
+    source: page_text
+    evidence_url: https://www.publicrecords.info/privacy-policy
+    note: Although your request will be processed immediately, there may be a delay of up to 48 hours to complete your request
+      due to browser caching

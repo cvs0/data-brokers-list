@@ -47,3 +47,5 @@ rank,id,impact,readiness,score,tier,rationale
 46,zoominfo-technologies-llc,30,0,30,research,B2B contact profiles (work email/phone)
 47,people-data-labs-inc,30,20,50,next,B2B/person data API feeding many tools
 48,voterrecords-com,30,0,30,research,Publishes US voter-file details
+49,white-pages-canada,34,0,34,research,"Canadian residential directory with name, address and phone; removal form; Canadian home market"
+50,canada-pages,33,0,33,research,Canadian directory (Canada Pages) with residential listings; removal form; Canadian home market
