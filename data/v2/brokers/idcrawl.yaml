@@ -1,0 +1,124 @@
+# Bootstrapped from data/v1 by scripts/bootstrap_v2.py on 2026-10-11.
+# Review before promoting lifecycle.status. null means not established, never false.
+schema_version: 2.0.0
+id: idcrawl
+family_id: null
+covers_ids: []
+coverage_evidence_url: null
+lifecycle:
+  status: researching
+  status_reason: Bootstrapped from v1 (research_status partial, automation unknown).
+  updated_at: '2026-10-11'
+priority:
+  score: 54
+  tier: next
+  rationale: Aggregates social profiles and photos
+jurisdiction:
+  operator_country: null
+  registries: []
+  drop_participant: null
+  publishes_canadians: null
+  legal_bases:
+  - basis: voluntary
+    eligible_residency:
+    - ANY
+    statutory_response_days: null
+    source_url: https://www.idcrawl.com/remove-my-information
+search:
+  method: none
+  url_template: null
+  inputs: []
+  input_transforms: {}
+  requires_js: null
+  results:
+    item_selector: null
+    fields: {}
+    listing_url_selector: null
+    listing_id_regex: null
+    no_results_marker: null
+    next_page_selector: null
+    max_pages: 1
+  match_fields_available: []
+removal:
+  channels:
+  - channel: web_form
+    rank: 1
+    url: https://www.idcrawl.com/remove-my-information
+    requires:
+      captcha: null
+      captcha_provider: null
+      email_verification: null
+      login: null
+      profile_url: null
+      phone_verification: null
+      id_document: null
+    fields: []
+    steps:
+    - order: 1
+      type: goto
+      target: https://www.idcrawl.com/remove-my-information
+    - order: 2
+      type: screenshot
+    - order: 3
+      type: submit
+      target: null
+    - order: 4
+      type: screenshot
+  removes_scope: unknown
+  suppression_not_deletion: null
+authorized_agent:
+  accepted: null
+  requirements: []
+  agent_channel: null
+  source_url: null
+  notes: null
+identity_verification:
+  fields_requested: []
+  id_document: null
+  id_redaction_allowed: null
+  phone_verification: null
+timing:
+  processing_days_documented: null
+  processing_days_observed_p50: null
+  processing_days_observed_p90: null
+  observed_sample_size: 0
+  recheck_after_days: 14
+  relist_check_interval_days: 30
+  relist_rate_observed: null
+rate_policy:
+  min_interval_s: 4
+  max_per_day: 2000
+  concurrency: 1
+  backoff_on_status:
+  - 403
+  - 429
+  - 503
+  backoff_hours: 6
+  honor_retry_after: true
+tos:
+  automation_prohibited: null
+  clause_quote: null
+  url: null
+  checked_at: null
+  policy_decision: null
+egress:
+  geo_block_observed: []
+  bot_wall_observed: null
+  proxy_policy: never_residential
+adapter:
+  id: null
+  module_path: null
+  last_e2e_at: null
+  last_e2e_result: null
+  e2e_evidence_url: null
+provenance:
+  /removal/channels/0:
+    checked_at: '2026-10-01'
+    source: inferred
+    evidence_url: https://www.idcrawl.com/remove-my-information
+    note: v1 submission method is unknown; the published request URL is used as a starting point.
+  /jurisdiction/legal_bases:
+    checked_at: '2026-10-01'
+    source: page_text
+    evidence_url: https://www.idcrawl.com/remove-my-information
+    note: Derived from v1 geographic_coverage and documented_request_eligibility.

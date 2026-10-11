@@ -1,0 +1,49 @@
+id,impact,rationale
+california-drop,50,One free request reaches every CPPA-registered broker (650+); for California residents only; user files it
+anywho-intelius-peopleconnect,50,"PeopleConnect suppression portal; 8 verified sister brands (Intelius, InstantCheckmate, TruthFinder, USSearch...)"
+spokeo,48,Very large people-search site; listing-level opt-out; relists
+whitepages,48,Largest US directory; phone + address; premium records
+beenverified,47,"BeenVerified family (PeopleLooker, NeighborWho etc.; family unverified in repo)"
+fastpeoplesearch,46,Free full-address profiles; top Google results for names
+truepeoplesearch,46,Free full-address profiles; top Google results for names
+mylife,45,Reputation-score profiles; hard to remove
+usphonebook,44,Free phone/address lookup
+checkpeople,42,"Verified, no blockers observed: easiest early win"
+peoplefinders-confi-chek,42,Confi-Chek family
+nuwber,42,Free profiles with relatives
+thatsthem,41,Free profiles incl. email/IP
+familytreenow,41,Free genealogy-style profiles with relatives and addresses
+cyberbackgroundchecks,40,Free full profiles
+smartbackgroundchecks,40,Free full profiles
+advancedbackgroundchecks,40,Free full profiles
+searchpeoplefree,39,Free full profiles
+peoplesearchnow,39,Free full profiles
+fastbackgroundcheck,39,Free full profiles
+usa-people-search,38,Large legacy people-search
+infotracer,37,InfoTracer family root (3 sister brands)
+searchusapeople-infotracer,36,"Verified, no blockers observed"
+publicrecords-info,35,"Verified, no blockers observed"
+cocofinder,35,"Verified, no blockers observed"
+social-catfish,35,Reverse image/name search; CAPTCHA + login
+peekyou,34,Aggregates social profiles
+idcrawl,34,Aggregates social profiles and photos
+veripages,33,Free profiles
+peoplewhiz,33,Paid people-search
+numlookup,33,Reverse phone lookup; verified
+sync-me,33,Caller-ID database from uploaded contacts; affects Canadians
+glad-i-know,30,Verified shortlist entry
+locatefamily,30,Free address listings; includes Canada
+canada411,40,Canadian directory (Yellow Pages Group); core Canadian coverage
+411-ca,38,Canadian directory
+canada411-yellow-pages-canada,36,Yellow Pages Canada corporate privacy channel
+acxiom,40,Largest US marketing data broker; also operates in Canada
+epsilon,36,Major marketing data broker
+liveramp,36,Identity graph; verified
+lexisnexis,40,Risk/background data; postal + web channels
+data-axle-infousa,36,Business + consumer marketing lists; operates in Canada
+optoutprescreen-experian-equifax-transunion-innovis,35,US prescreened-credit-offer opt-out (4 bureaus); US residents
+equifax-canada,38,Canadian credit bureau: marketing opt-out and access
+transunion-canada,38,Canadian credit bureau: marketing opt-out and access
+zoominfo-technologies-llc,30,B2B contact profiles (work email/phone)
+people-data-labs-inc,30,B2B/person data API feeding many tools
+voterrecords-com,30,Publishes US voter-file details

@@ -1,0 +1,142 @@
+# Bootstrapped from data/v1 by scripts/bootstrap_v2.py on 2026-10-11.
+# Review before promoting lifecycle.status. null means not established, never false.
+schema_version: 2.0.0
+id: equifax-canada
+family_id: null
+covers_ids: []
+coverage_evidence_url: null
+lifecycle:
+  status: researching
+  status_reason: Bootstrapped from v1 (research_status partial, automation manual_workflow).
+  updated_at: '2026-10-11'
+priority:
+  score: 71
+  tier: next
+  rationale: 'Canadian credit bureau: marketing opt-out and access'
+jurisdiction:
+  operator_country: null
+  registries: []
+  drop_participant: null
+  publishes_canadians: null
+  legal_bases:
+  - basis: pipeda
+    eligible_residency:
+    - CA
+    statutory_response_days: 30
+    source_url: https://www.equifax.ca/c/portal/update_language?redirect=%2Fprivacy%2F&groupId=5520243&privateLayout=false&layoutId=152&languageId=fr_FR
+  - basis: voluntary
+    eligible_residency:
+    - ANY
+    statutory_response_days: null
+    source_url: https://www.equifax.ca/privacy/
+search:
+  method: none
+  url_template: null
+  inputs: []
+  input_transforms: {}
+  requires_js: null
+  results:
+    item_selector: null
+    fields: {}
+    listing_url_selector: null
+    listing_id_regex: null
+    no_results_marker: null
+    next_page_selector: null
+    max_pages: 1
+  match_fields_available: []
+removal:
+  channels:
+  - channel: email
+    rank: 1
+    email: chief.privacy.officer@equifax.com
+    template_id: voluntary_optout
+    requires:
+      captcha: none
+      captcha_provider: null
+      email_verification: null
+      login: false
+      profile_url: null
+      phone_verification: null
+      id_document: null
+    steps:
+    - order: 1
+      type: send_email
+      target: voluntary_optout
+  - channel: postal_mail
+    rank: 2
+    postal_address: null
+    template_id: voluntary_optout
+    requires:
+      captcha: none
+      captcha_provider: null
+      email_verification: none
+      login: false
+      profile_url: null
+      phone_verification: false
+      id_document: null
+    steps:
+    - order: 1
+      type: send_letter
+      target: voluntary_optout
+  removes_scope: unknown
+  suppression_not_deletion: null
+authorized_agent:
+  accepted: null
+  requirements: []
+  agent_channel: null
+  source_url: null
+  notes: null
+identity_verification:
+  fields_requested: []
+  id_document: null
+  id_redaction_allowed: null
+  phone_verification: null
+timing:
+  processing_days_documented: null
+  processing_days_observed_p50: null
+  processing_days_observed_p90: null
+  observed_sample_size: 0
+  recheck_after_days: 14
+  relist_check_interval_days: 30
+  relist_rate_observed: null
+rate_policy:
+  min_interval_s: 4
+  max_per_day: 2000
+  concurrency: 1
+  backoff_on_status:
+  - 403
+  - 429
+  - 503
+  backoff_hours: 6
+  honor_retry_after: true
+tos:
+  automation_prohibited: null
+  clause_quote: null
+  url: null
+  checked_at: null
+  policy_decision: null
+egress:
+  geo_block_observed: []
+  bot_wall_observed: null
+  proxy_policy: never_residential
+adapter:
+  id: null
+  module_path: null
+  last_e2e_at: null
+  last_e2e_result: null
+  e2e_evidence_url: null
+provenance:
+  /removal/channels/0/email:
+    checked_at: '2026-10-01'
+    source: page_text
+    evidence_url: https://www.equifax.ca/privacy/
+  /removal/channels/1/channel:
+    checked_at: '2026-10-01'
+    source: page_text
+    evidence_url: https://www.equifax.ca/privacy/
+    note: Postal address still to be copied from the broker's page.
+  /jurisdiction/legal_bases:
+    checked_at: '2026-10-01'
+    source: page_text
+    evidence_url: https://www.equifax.ca/privacy/
+    note: Derived from v1 geographic_coverage and documented_request_eligibility.

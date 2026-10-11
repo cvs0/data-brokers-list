@@ -1,0 +1,180 @@
+# Bootstrapped from data/v1 by scripts/bootstrap_v2.py on 2026-10-11.
+# Review before promoting lifecycle.status. null means not established, never false.
+schema_version: 2.0.0
+id: social-catfish
+family_id: null
+covers_ids: []
+coverage_evidence_url: null
+lifecycle:
+  status: researching
+  status_reason: Bootstrapped from v1 (research_status verified, automation assisted_workflow).
+  updated_at: '2026-10-11'
+priority:
+  score: 85
+  tier: launch
+  rationale: Reverse image/name search; CAPTCHA + login
+jurisdiction:
+  operator_country: null
+  registries: []
+  drop_participant: null
+  publishes_canadians: null
+  legal_bases:
+  - basis: voluntary
+    eligible_residency:
+    - ANY
+    statutory_response_days: null
+    source_url: https://socialcatfish.com/opt-out/?id=request_optout
+search:
+  method: browser
+  url_template: null
+  inputs:
+  - email
+  - city
+  - region
+  - full_name
+  - phone
+  input_transforms: {}
+  requires_js: null
+  results:
+    item_selector: null
+    fields: {}
+    listing_url_selector: null
+    listing_id_regex: null
+    no_results_marker: null
+    next_page_selector: null
+    max_pages: 1
+  match_fields_available: []
+removal:
+  channels:
+  - channel: web_form
+    rank: 1
+    url: https://socialcatfish.com/opt-out/?id=request_optout
+    requires:
+      captcha: conditional
+      captcha_provider: null
+      email_verification: null
+      login: true
+      profile_url: true
+      phone_verification: null
+      id_document: null
+    fields:
+    - canonical: email
+      form_name: email
+      selector: null
+      required: true
+      transform: null
+    steps:
+    - order: 1
+      type: goto
+      target: https://socialcatfish.com/opt-out/?id=request_optout
+    - order: 2
+      type: human_task
+      human_task_kind: login
+    - order: 3
+      type: fill
+      target: null
+      value_from: email
+    - order: 4
+      type: screenshot
+    - order: 5
+      type: human_task
+      human_task_kind: captcha
+    - order: 6
+      type: submit
+      target: null
+    - order: 7
+      type: screenshot
+  - channel: phone
+    rank: 2
+    requires:
+      captcha: none
+      captcha_provider: null
+      email_verification: null
+      login: null
+      profile_url: null
+      phone_verification: null
+      id_document: null
+    steps:
+    - order: 1
+      type: human_task
+      human_task_kind: phone_call
+  removes_scope: unknown
+  suppression_not_deletion: null
+authorized_agent:
+  accepted: null
+  requirements: []
+  agent_channel: null
+  source_url: https://socialcatfish.com/privacy-lock/
+  notes: 'dress How to Search Someone by Username Online Dating Safety & Scam Prevention How to Fi
+
+    kota Tennessee Texas Utah Virginia Virgin Islands Vermont Washington Wisconsin West Virginia Wyoming Click Here to Add
+    Next State STEP 03 I am submitting as an authorized agent of a third-party organization Submit Now About Social Catfish
+    is an online dating investigation service based in California, USA.'
+identity_verification:
+  fields_requested:
+  - email
+  id_document: null
+  id_redaction_allowed: null
+  phone_verification: null
+timing:
+  processing_days_documented: null
+  processing_days_observed_p50: null
+  processing_days_observed_p90: null
+  observed_sample_size: 0
+  recheck_after_days: 14
+  relist_check_interval_days: 30
+  relist_rate_observed: null
+rate_policy:
+  min_interval_s: 4
+  max_per_day: 2000
+  concurrency: 1
+  backoff_on_status:
+  - 403
+  - 429
+  - 503
+  backoff_hours: 6
+  honor_retry_after: true
+tos:
+  automation_prohibited: null
+  clause_quote: null
+  url: null
+  checked_at: null
+  policy_decision: null
+egress:
+  geo_block_observed: []
+  bot_wall_observed: null
+  proxy_policy: never_residential
+adapter:
+  id: null
+  module_path: null
+  last_e2e_at: null
+  last_e2e_result: null
+  e2e_evidence_url: null
+provenance:
+  /removal/channels/0/requires:
+    checked_at: '2026-10-01'
+    source: page_text
+    evidence_url: https://socialcatfish.com/opt-out/
+  /removal/channels/0/fields:
+    checked_at: '2026-10-01'
+    source: page_text
+    evidence_url: https://socialcatfish.com/opt-out/
+    note: Mapped from v1 required_fields by scripts/v2_common.py
+  /removal/channels/1/channel:
+    checked_at: '2026-10-01'
+    source: page_text
+    evidence_url: https://socialcatfish.com/opt-out/
+  /search/method:
+    checked_at: '2026-10-01'
+    source: inferred
+    evidence_url: https://socialcatfish.com/opt-out/
+    note: From v1 public_profiles_searchable / exposure_check; template not yet discovered.
+  /jurisdiction/legal_bases:
+    checked_at: '2026-10-01'
+    source: page_text
+    evidence_url: https://socialcatfish.com/opt-out/
+    note: Derived from v1 geographic_coverage and documented_request_eligibility.
+  /authorized_agent/notes:
+    checked_at: '2026-10-01'
+    source: page_text
+    evidence_url: https://socialcatfish.com/opt-out/
