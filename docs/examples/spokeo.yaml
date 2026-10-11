@@ -1,0 +1,99 @@
+# Example v2 automation spec (docs/examples/spokeo.yaml). Values with provenance source "inferred" must be confirmed by a browser pass before lifecycle.status moves past adapter_dev.
+schema_version: "2.0.0"
+id: spokeo
+family_id: null
+covers_ids: [spokeo-data]
+coverage_evidence_url: https://www.spokeo.com/optout
+lifecycle:
+  status: researching
+  status_reason: "Homepage returned a challenge (HTTP 403) to the v1 browser pass; search step not yet observed."
+  updated_at: "2026-10-11"
+priority:
+  score: 92
+  tier: launch
+  rationale: "Large US people-search site; public profiles; form + email channel; listing-level removal so relist checks matter."
+jurisdiction:
+  operator_country: US
+  registries: []            # TODO: check CPPA registry and Vermont registry; v1 catalog_claims.listed_in_cppa_registry_per_catalog=false
+  drop_participant: null
+  publishes_canadians: null
+  legal_bases:
+    - { basis: ccpa_delete, eligible_residency: [US-CA], statutory_response_days: 45, source_url: https://www.spokeo.com/privacy }
+    - { basis: voluntary, eligible_residency: [ANY], statutory_response_days: null, source_url: https://www.spokeo.com/optout }
+search:
+  method: browser
+  url_template: "https://www.spokeo.com/{first_name}-{last_name}/{region}/{city}"
+  inputs: [first_name, last_name, region, city]
+  input_transforms: { first_name: slug_hyphen, last_name: slug_hyphen, region: region_name, city: slug_hyphen }
+  requires_js: null
+  results:
+    strategy: css
+    item_selector: null       # fill from browser pass
+    fields: {}
+    listing_url_selector: null
+    listing_id_regex: "/p(\\d+)$"
+    no_results_marker: null
+    max_pages: 1
+  match_fields_available: [full_name, age, city, region, relatives, past_cities]
+removal:
+  removes_scope: listing
+  suppression_not_deletion: true
+  channels:
+    - channel: web_form
+      rank: 1
+      url: https://www.spokeo.com/optout
+      requires: { captcha: null, captcha_provider: null, email_verification: link, login: false, profile_url: true, phone_verification: null, id_document: null }
+      fields:
+        - { canonical: profile_url, form_name: url, selector: "input[name=url]", required: true, transform: null }
+        - { canonical: email, form_name: email, selector: "input[name=email]", required: true, transform: null }
+      steps:
+        - { order: 1, type: goto, target: "https://www.spokeo.com/optout" }
+        - { order: 2, type: fill, target: "input[name=url]", value_from: profile_url }
+        - { order: 3, type: fill, target: "input[name=email]", value_from: email }
+        - { order: 4, type: screenshot }
+        - { order: 5, type: submit, target: "form" }
+        - { order: 6, type: screenshot }
+        - { order: 7, type: await_email, timeout_s: 86400 }
+        - { order: 8, type: open_email_link }
+        - { order: 9, type: screenshot }
+      success_markers: []
+      failure_markers: []
+      confirmation_email: { from_domain: spokeo.com, subject_regex: null, link_regex: "https://www\\.spokeo\\.com/optout/confirm[^\\s\"]+", expires_hours: null }
+    - channel: email
+      rank: 2
+      email: privacy@spokeo.com
+      template_id: ccpa_delete
+      requires: { captcha: none, captcha_provider: null, email_verification: none, login: false, profile_url: true, phone_verification: false, id_document: null }
+authorized_agent:
+  accepted: null
+  requirements: []
+  agent_channel: null
+  source_url: null
+  notes: "Check privacy policy CCPA section for agent instructions."
+identity_verification:
+  fields_requested: [profile_url, email]
+  id_document: null
+  id_redaction_allowed: null
+  phone_verification: null
+timing:
+  processing_days_documented: 2      # "24-48 hours" in v1 documented_processing_time
+  processing_days_observed_p50: null
+  processing_days_observed_p90: null
+  observed_sample_size: 0
+  recheck_after_days: 4
+  relist_check_interval_days: 30
+  relist_rate_observed: null
+rate_policy: { min_interval_s: 4, max_per_day: 2000, concurrency: 1, backoff_on_status: [403, 429, 503], backoff_hours: 6, honor_retry_after: true }
+tos:
+  automation_prohibited: null
+  clause_quote: null
+  url: https://www.spokeo.com/terms-of-use
+  checked_at: null
+  policy_decision: null
+egress: { geo_block_observed: [], bot_wall_observed: challenge_page, proxy_policy: never_residential }
+adapter: { id: null, module_path: null, last_e2e_at: null, last_e2e_result: null, e2e_evidence_url: null }
+provenance:
+  /removal/channels/0/fields: { checked_at: "2026-10-01", source: page_text, evidence_url: https://www.spokeo.com/optout, note: "v1 parsed input names url, email" }
+  /timing/processing_days_documented: { checked_at: "2026-10-01", source: page_text, evidence_url: https://www.spokeo.com/optout }
+  /search/url_template: { checked_at: "2026-10-11", source: inferred, evidence_url: https://www.spokeo.com/optout, note: "Derived from the profile URL example on the opt-out page; confirm in browser pass." }
+  /removal/channels/0/confirmation_email/link_regex: { checked_at: "2026-10-11", source: inferred, evidence_url: null, note: "Placeholder; replace after first real confirmation email." }

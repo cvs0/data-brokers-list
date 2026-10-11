@@ -1,0 +1,265 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/cvs0/data-brokers-list/data/schema/broker-automation.schema.json",
+  "title": "Broker automation spec (v2 layer)",
+  "description": "One file per broker or broker family under data/v2/brokers/<id>.yaml. Joins the v1 research record by id. v1 stays the evidence layer; this file is the machine-executable layer a worker can run. Unknown is always null (never false).",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "id", "lifecycle", "priority", "jurisdiction", "search", "removal", "authorized_agent", "timing", "rate_policy", "tos", "provenance"],
+  "properties": {
+    "schema_version": { "const": "2.0.0" },
+    "id": { "type": "string", "pattern": "^[a-z0-9][a-z0-9-]*$", "description": "Must equal a v1 records[].id (or a new id added to opt-outs.csv and catalog-ids.csv in the same PR)." },
+    "family_id": { "$ref": "#/$defs/nullableId", "description": "Id of the root spec when one request or one adapter serves several brands (e.g. PeopleConnect)." },
+    "covers_ids": { "type": "array", "items": { "$ref": "#/$defs/id" }, "uniqueItems": true, "description": "Other v1 ids removed by this spec's request. Requires coverage_evidence_url." },
+    "coverage_evidence_url": { "$ref": "#/$defs/nullableUrl" },
+
+    "lifecycle": {
+      "type": "object", "additionalProperties": false, "required": ["status", "updated_at"],
+      "properties": {
+        "status": { "enum": ["draft", "researching", "adapter_dev", "e2e_tested", "live", "paused", "deprecated", "defunct"] },
+        "status_reason": { "$ref": "#/$defs/nullableString" },
+        "updated_at": { "type": "string", "format": "date" }
+      }
+    },
+
+    "priority": {
+      "type": "object", "additionalProperties": false, "required": ["score", "tier"],
+      "properties": {
+        "score": { "type": "integer", "minimum": 0, "maximum": 100, "description": "Computed by scripts/priority.py; see docs/priority.md. Stored so diffs are reviewable." },
+        "tier": { "enum": ["launch", "next", "research", "later", "never"], "description": "research = v1 research is blocked (usually a bot wall); reach by email or letter until a browser pass succeeds." },
+        "rationale": { "$ref": "#/$defs/nullableString" }
+      }
+    },
+
+    "jurisdiction": {
+      "type": "object", "additionalProperties": false, "required": ["operator_country", "registries", "drop_participant", "publishes_canadians", "legal_bases"],
+      "properties": {
+        "operator_country": { "type": ["string", "null"], "pattern": "^[A-Z]{2}$" },
+        "registries": {
+          "type": "array",
+          "items": {
+            "type": "object", "additionalProperties": false, "required": ["registry", "checked_at"],
+            "properties": {
+              "registry": { "enum": ["ca_cppa", "vermont_sos", "texas_sos", "oregon_dcbs", "other"] },
+              "registration_id": { "$ref": "#/$defs/nullableString" },
+              "registered_name": { "$ref": "#/$defs/nullableString" },
+              "checked_at": { "type": "string", "format": "date" },
+              "source_url": { "$ref": "#/$defs/nullableUrl" }
+            }
+          }
+        },
+        "drop_participant": { "$ref": "#/$defs/nullableBoolean", "description": "True when listed in the CPPA data broker registry (so bound to process California DROP requests)." },
+        "publishes_canadians": { "$ref": "#/$defs/nullableBoolean", "description": "True only when a search for a Canadian location returned listings." },
+        "legal_bases": {
+          "type": "array",
+          "items": {
+            "type": "object", "additionalProperties": false, "required": ["basis", "eligible_residency"],
+            "properties": {
+              "basis": { "enum": ["ccpa_delete", "ccpa_opt_out", "state_privacy_law", "pipeda", "quebec_law25", "uk_gdpr", "eu_gdpr", "voluntary"] },
+              "eligible_residency": { "type": "array", "minItems": 1, "items": { "type": "string", "description": "ISO 3166 country (CA) or subdivision (US-CA, CA-QC), or ANY." } },
+              "statutory_response_days": { "type": ["integer", "null"], "minimum": 1 },
+              "source_url": { "$ref": "#/$defs/nullableUrl" }
+            }
+          }
+        }
+      }
+    },
+
+    "search": {
+      "type": "object", "additionalProperties": false, "required": ["method"],
+      "properties": {
+        "method": { "enum": ["http_get", "http_form_post", "browser", "official_api", "broker_confirmation_only", "none"] },
+        "url_template": { "$ref": "#/$defs/nullableString", "description": "RFC 6570 level-1 template using canonical input names, e.g. https://example.com/name/{first_name}-{last_name}/{city}-{region}" },
+        "inputs": { "type": "array", "items": { "$ref": "#/$defs/canonicalField" }, "uniqueItems": true },
+        "input_transforms": { "type": "object", "additionalProperties": { "enum": ["lower", "upper", "slug_hyphen", "slug_underscore", "plus_for_space", "region_code", "region_name", "e164", "digits_only"] } },
+        "requires_js": { "$ref": "#/$defs/nullableBoolean" },
+        "results": {
+          "type": "object", "additionalProperties": false,
+          "properties": {
+            "strategy": { "enum": ["css", "json_ld", "embedded_json", "api_json", "llm_fallback"] },
+            "item_selector": { "$ref": "#/$defs/nullableString" },
+            "fields": { "type": "object", "propertyNames": { "$ref": "#/$defs/canonicalField" }, "additionalProperties": { "type": "string", "description": "CSS selector or JSON pointer relative to item" } },
+            "listing_url_selector": { "$ref": "#/$defs/nullableString" },
+            "listing_id_regex": { "$ref": "#/$defs/nullableString", "description": "Extracts the broker's stable record id from the listing URL (used in the relist fingerprint)." },
+            "no_results_marker": { "$ref": "#/$defs/nullableString" },
+            "next_page_selector": { "$ref": "#/$defs/nullableString" },
+            "max_pages": { "type": "integer", "minimum": 1, "maximum": 5, "default": 1 }
+          }
+        },
+        "match_fields_available": { "type": "array", "items": { "$ref": "#/$defs/canonicalField" }, "uniqueItems": true, "description": "Which fields a listing exposes for scoring (Plan 3 §2)." }
+      }
+    },
+
+    "removal": {
+      "type": "object", "additionalProperties": false, "required": ["channels"],
+      "properties": {
+        "channels": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/channel" } },
+        "removes_scope": { "enum": ["listing", "all_listings_for_person", "account", "marketing_only", "unknown"] },
+        "suppression_not_deletion": { "$ref": "#/$defs/nullableBoolean", "description": "True when the broker hides the record but keeps it (so re-listing is likely)." }
+      }
+    },
+
+    "authorized_agent": {
+      "type": "object", "additionalProperties": false, "required": ["accepted"],
+      "properties": {
+        "accepted": { "$ref": "#/$defs/nullableBoolean" },
+        "requirements": { "type": "array", "items": { "enum": ["signed_permission", "consumer_verifies_identity", "consumer_confirms_agent", "power_of_attorney", "agent_registration", "agent_portal_account"] }, "uniqueItems": true },
+        "agent_channel": { "enum": ["same_as_consumer", "email", "dedicated_portal", "postal_mail", null] },
+        "source_url": { "$ref": "#/$defs/nullableUrl" },
+        "notes": { "$ref": "#/$defs/nullableString" }
+      }
+    },
+
+    "identity_verification": {
+      "type": "object", "additionalProperties": false,
+      "properties": {
+        "fields_requested": { "type": "array", "items": { "$ref": "#/$defs/canonicalField" }, "uniqueItems": true },
+        "id_document": { "enum": ["never", "sometimes", "always", null] },
+        "id_redaction_allowed": { "$ref": "#/$defs/nullableBoolean" },
+        "phone_verification": { "$ref": "#/$defs/nullableBoolean" }
+      }
+    },
+
+    "timing": {
+      "type": "object", "additionalProperties": false, "required": ["processing_days_documented", "recheck_after_days", "relist_check_interval_days"],
+      "properties": {
+        "processing_days_documented": { "type": ["integer", "null"], "minimum": 0, "description": "Upper bound in days parsed from v1 documented_processing_time (e.g. '24-48 hours' -> 2)." },
+        "processing_days_observed_p50": { "type": ["integer", "null"], "minimum": 0 },
+        "processing_days_observed_p90": { "type": ["integer", "null"], "minimum": 0 },
+        "observed_sample_size": { "type": "integer", "minimum": 0, "default": 0 },
+        "recheck_after_days": { "type": "integer", "minimum": 1, "description": "Default processing_days_documented + 2, else 14." },
+        "relist_check_interval_days": { "type": "integer", "minimum": 7, "default": 30 },
+        "relist_rate_observed": { "type": ["number", "null"], "minimum": 0, "maximum": 1 }
+      }
+    },
+
+    "rate_policy": {
+      "type": "object", "additionalProperties": false, "required": ["min_interval_s", "max_per_day"],
+      "properties": {
+        "min_interval_s": { "type": "number", "minimum": 1 },
+        "max_per_day": { "type": "integer", "minimum": 1 },
+        "concurrency": { "type": "integer", "minimum": 1, "maximum": 2, "default": 1 },
+        "backoff_on_status": { "type": "array", "items": { "type": "integer" }, "default": [403, 429, 503] },
+        "backoff_hours": { "type": "number", "minimum": 1, "default": 6 },
+        "honor_retry_after": { "const": true }
+      }
+    },
+
+    "tos": {
+      "type": "object", "additionalProperties": false, "required": ["automation_prohibited", "checked_at"],
+      "properties": {
+        "automation_prohibited": { "$ref": "#/$defs/nullableBoolean" },
+        "clause_quote": { "$ref": "#/$defs/nullableString", "maxLength": 600 },
+        "url": { "$ref": "#/$defs/nullableUrl" },
+        "checked_at": { "type": ["string", "null"], "format": "date" },
+        "policy_decision": { "enum": ["automate", "email_or_letter_only", "user_assisted_only", null], "description": "What Frame does given the ToS. automation_prohibited=true forces email_or_letter_only or user_assisted_only." }
+      }
+    },
+
+    "egress": {
+      "type": "object", "additionalProperties": false,
+      "properties": {
+        "geo_block_observed": { "type": "array", "items": { "type": "string", "pattern": "^[A-Z]{2}$" }, "uniqueItems": true },
+        "bot_wall_observed": { "enum": ["none", "challenge_page", "hard_block", null] },
+        "proxy_policy": { "const": "never_residential" }
+      }
+    },
+
+    "adapter": {
+      "type": "object", "additionalProperties": false,
+      "properties": {
+        "id": { "type": ["string", "null"], "pattern": "^[a-z0-9-]+@[0-9]+$" },
+        "module_path": { "$ref": "#/$defs/nullableString" },
+        "last_e2e_at": { "type": ["string", "null"], "format": "date" },
+        "last_e2e_result": { "enum": ["pass", "fail", "partial", null] },
+        "e2e_evidence_url": { "$ref": "#/$defs/nullableUrl", "description": "Private evidence store reference; never personal data in the public repo." }
+      }
+    },
+
+    "provenance": {
+      "type": "object",
+      "description": "Per-field verification. Keys are JSON Pointers into this document (e.g. /search/url_template).",
+      "propertyNames": { "pattern": "^/" },
+      "additionalProperties": {
+        "type": "object", "additionalProperties": false, "required": ["checked_at", "source"],
+        "properties": {
+          "checked_at": { "type": "string", "format": "date" },
+          "source": { "enum": ["observed_submission", "observed_browser", "page_text", "official_doc", "broker_email", "registry", "manual_override", "inferred"] },
+          "evidence_url": { "$ref": "#/$defs/nullableUrl" },
+          "note": { "$ref": "#/$defs/nullableString" }
+        }
+      }
+    }
+  },
+
+  "$defs": {
+    "id": { "type": "string", "pattern": "^[a-z0-9][a-z0-9-]*$" },
+    "nullableId": { "type": ["string", "null"], "pattern": "^[a-z0-9][a-z0-9-]*$" },
+    "nullableString": { "type": ["string", "null"] },
+    "nullableBoolean": { "type": ["boolean", "null"] },
+    "nullableUrl": { "type": ["string", "null"], "format": "uri" },
+    "canonicalField": {
+      "enum": ["full_name", "first_name", "middle_name", "last_name", "name_aliases", "city", "region", "postal_code", "country", "street_address", "past_cities", "age", "age_range", "birth_year", "birth_date", "phone", "email", "relatives", "profile_url", "record_id", "signature", "id_document", "reason_free_text"]
+    },
+    "channel": {
+      "type": "object", "additionalProperties": false, "required": ["channel", "rank", "requires"],
+      "properties": {
+        "channel": { "enum": ["web_form", "email", "postal_mail", "official_portal", "official_api", "phone", "drop"] },
+        "rank": { "type": "integer", "minimum": 1, "description": "1 = try first." },
+        "url": { "$ref": "#/$defs/nullableUrl" },
+        "email": { "type": ["string", "null"], "format": "email" },
+        "postal_address": { "$ref": "#/$defs/nullableString" },
+        "template_id": { "$ref": "#/$defs/nullableString", "description": "Letter or email template in templates/<id>.md (ccpa_delete, pipeda_withdraw, quebec_cessation, voluntary_optout)." },
+        "requires": {
+          "type": "object", "additionalProperties": false,
+          "required": ["captcha", "email_verification", "login", "profile_url", "phone_verification", "id_document"],
+          "properties": {
+            "captcha": { "enum": ["none", "conditional", "always", null] },
+            "captcha_provider": { "enum": ["recaptcha_v2", "recaptcha_v3", "hcaptcha", "turnstile", "custom", null] },
+            "email_verification": { "enum": ["none", "link", "code", null] },
+            "login": { "$ref": "#/$defs/nullableBoolean" },
+            "profile_url": { "$ref": "#/$defs/nullableBoolean" },
+            "phone_verification": { "$ref": "#/$defs/nullableBoolean" },
+            "id_document": { "enum": ["never", "sometimes", "always", null] }
+          }
+        },
+        "fields": {
+          "type": "array",
+          "items": {
+            "type": "object", "additionalProperties": false, "required": ["canonical", "required"],
+            "properties": {
+              "canonical": { "$ref": "#/$defs/canonicalField" },
+              "form_name": { "$ref": "#/$defs/nullableString", "description": "HTML name attribute observed (v1 required_fields holds raw label text; this is the clean name)." },
+              "selector": { "$ref": "#/$defs/nullableString" },
+              "required": { "type": "boolean" },
+              "transform": { "type": ["string", "null"] }
+            }
+          }
+        },
+        "steps": { "type": "array", "items": { "$ref": "#/$defs/step" } },
+        "success_markers": { "type": "array", "items": { "type": "string" } },
+        "failure_markers": { "type": "array", "items": { "type": "string" } },
+        "confirmation_email": {
+          "type": "object", "additionalProperties": false,
+          "properties": {
+            "from_domain": { "$ref": "#/$defs/nullableString" },
+            "subject_regex": { "$ref": "#/$defs/nullableString" },
+            "link_regex": { "$ref": "#/$defs/nullableString" },
+            "expires_hours": { "type": ["integer", "null"] }
+          }
+        }
+      }
+    },
+    "step": {
+      "type": "object", "additionalProperties": false, "required": ["order", "type"],
+      "properties": {
+        "order": { "type": "integer", "minimum": 1 },
+        "type": { "enum": ["goto", "fill", "select", "check", "click", "submit", "wait_for", "assert_text", "screenshot", "await_email", "open_email_link", "human_task", "send_email", "send_letter"] },
+        "target": { "$ref": "#/$defs/nullableString", "description": "CSS selector, URL, or template id depending on type" },
+        "value_from": { "oneOf": [{ "$ref": "#/$defs/canonicalField" }, { "type": "null" }] },
+        "human_task_kind": { "enum": ["captcha", "login", "phone_call", "id_upload", "confirm_match", null] },
+        "timeout_s": { "type": "integer", "minimum": 1, "maximum": 172800 }
+      }
+    }
+  }
+}
