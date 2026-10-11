@@ -1,0 +1,3 @@
+# Needed for schema validation and the v2 automation layer.
+jsonschema>=4.18
+pyyaml>=6.0

@@ -71,6 +71,8 @@ Search the CSV before you send extra personal details. Notes say when a page ret
 
 Researched workflow records, with stable IDs and a JSON Schema, are in [data/v1/broker-opt-outs.enriched.json](data/v1/broker-opt-outs.enriched.json). Field definitions are in [docs/dataset-fields.md](docs/dataset-fields.md). What was verified, blocked, or not a removal workflow is summarized in [docs/findings.md](docs/findings.md). A later browser pass, freshness recheck, and verification playbooks are linked from that file. Catalog notes are preserved as claims. They are not treated as proof that a removal workflow still works. No request was submitted to produce that file.
 
+Machine-executable automation specs (search templates, canonical form fields, ranked removal channels, legal basis, re-check timing, rate limits) live in a separate v2 layer under `data/v2/`, validated by [data/schema/broker-automation.schema.json](data/schema/broker-automation.schema.json). See [docs/automation-layer.md](docs/automation-layer.md).
+
 ## How to use a row
 
 1. Open the URL in a normal browser. Some sites block datacenter checks and still work for people.
