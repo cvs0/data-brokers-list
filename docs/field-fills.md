@@ -2,7 +2,7 @@
 
 Two overlays sit on top of the v1 evidence layer. Neither rewrites `data/v1/broker-opt-outs.enriched.json`; v1 values always win.
 
-## `data/v1/field-fills.json` (scripts/rescrape_fields.py)
+## `data/v1/field-fills.json` (`scripts/research/rescrape_fields.py`)
 
 For every catalog row missing one of the key fields (request URL, submission methods, required info, search page, jurisdiction, privacy email, verification, processing time, privacy policy URL), the script reads up to four of the broker's own public pages: the catalog URL, the homepage and the privacy policy.
 
@@ -17,7 +17,7 @@ Every filled field records `value`, `source_url`, `checked_at` and `confidence`:
 
 The raw per-page log is `research/evidence/rescrape.jsonl`.
 
-## `data/v1/registry-matches.json` (scripts/fetch_registries.py)
+## `data/v1/registry-matches.json` (`scripts/research/fetch_registries.py`)
 
 Matches catalog rows to the California Privacy Protection Agency's data broker registry (2026 registrations, https://cppa.ca.gov/data_broker_registry/). The raw CSV is kept in `research/registries/`.
 
@@ -29,6 +29,6 @@ Re-run both with:
 
 ```
 pip install -r requirements.txt
-python scripts/fetch_registries.py
-python scripts/rescrape_fields.py --workers 16
+python scripts/research/fetch_registries.py
+python scripts/research/rescrape_fields.py --workers 16
 ```

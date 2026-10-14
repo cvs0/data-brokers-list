@@ -11,7 +11,7 @@
 | `data/v1/parent-companies.json` | Verified parents, plus unverified name hints. |
 | `data/v1/automation-shortlist.json` | First-implementation shortlist. |
 | `data/v1/research-progress.json` | Counts from the latest build. |
-| `scripts/validate_dataset.py` | ID, type, enum, group, and catalog-link checks. |
+| `scripts/research/validate_dataset.py` | ID, type, enum, group, and catalog-link checks. |
 
 Join key: `records[].id` equals `catalog-ids.csv`. `records[].catalog.name` plus `records[].catalog.url` equals the catalog row. `name` + `url` is unique.
 
@@ -75,7 +75,6 @@ Empty `required_fields` means no required inputs were parsed. Check `fields_obse
 | `verification.workflow_kind` | `public_listing_form`, `dsar_portal`, `privacy_policy_only`, `cookie_or_device_choice`, `government_or_industry_choice`, `defunct_or_unavailable`, or `unknown`. |
 | `verification.inspection_channel` | `http_get` when the research GET returned the text used above. `rendered_reader` when that GET was a shell, challenge, or access denial and a second reader supplied the visible text. `not_inspected` when no page text was used. A rendered reader is not a CAPTCHA bypass and is not evidence that a proxy is required. |
 | `verification.browser_inspection` | Optional headless-browser read. Outcomes are `readable`, `challenge`, `http_error`, `timeout`, and `error`. Forms were not submitted and CAPTCHAs were not solved. A challenge is not evidence that a residential proxy is required. |
-`verification.browser_inspection` | Optional headless-browser read. `outcome` is `readable`, `challenge`, `http_error`, `timeout`, or `error`. Forms were not submitted and CAPTCHAs were not solved. A `challenge` outcome is not evidence that a residential proxy is required. |
 | `verification.research_status` | `verified`, `partial`, `blocked`, `unresearched`, or `not_applicable`. |
 | `verification.verification_level` | `source_documented`, `page_inspected`, `workflow_partially_inspected`, or `end_to_end_tested`. |
 | `verification.confidence` | `high`, `medium`, `low`, or `none`. |
@@ -91,10 +90,10 @@ Empty `required_fields` means no required inputs were parsed. Check `fields_obse
 ## Rebuild
 
 ```bash
-python3 scripts/fetch_evidence.py --batch pilot
-python3 scripts/fetch_evidence.py --batch all
-python3 scripts/build_dataset.py
-python3 scripts/validate_dataset.py
+python3 scripts/research/fetch_evidence.py --batch pilot
+python3 scripts/research/fetch_evidence.py --batch all
+python3 scripts/research/build_dataset.py
+python3 scripts/research/validate_dataset.py
 ```
 
 The fetch log is `research/evidence/url-evidence.jsonl`. Completed batches write `research/checkpoints/`. The fetcher skips URLs already in the log. It does not submit forms.

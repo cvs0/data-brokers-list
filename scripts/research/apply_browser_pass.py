@@ -7,6 +7,17 @@ Catalog columns and stable ids are left unchanged.
 
 from __future__ import annotations
 
+import sys
+from pathlib import Path
+
+_here = Path(__file__).resolve().parent
+_scripts = _here if (_here / "bootstrap_path.py").exists() else _here.parent
+if str(_scripts) not in sys.path:
+    sys.path.insert(0, str(_scripts))
+import bootstrap_path
+
+bootstrap_path.install()
+
 import json
 import re
 from collections import Counter, defaultdict
@@ -717,6 +728,8 @@ def write_findings(before: dict, report: dict, freshness: dict, canadian_summary
     return "\n".join(
         [
             "# Findings",
+            "",
+            "The counts below are from the catalog used for this pass. The current link list is [`opt-outs.csv`](../opt-outs.csv). Current search, removal, location, and legal facts are in [v4.md](v4.md).",
             "",
             "This pass kept the **1122** catalog rows and their stable ids. It added a headless-browser read of the automation shortlist and of catalog URLs whose research GET was blocked, a freshness recheck of every catalog URL, search-page observations, Canadian official-page notes, and verification playbooks. No privacy request was submitted. No account was created. No identity document was uploaded. No SMS was sent. No CAPTCHA was solved.",
             "",

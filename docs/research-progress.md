@@ -1,5 +1,7 @@
 # Research progress
 
+Counts below are for the catalog that was current when this file was built. The current link list is [`opt-outs.csv`](../opt-outs.csv).
+
 Dataset version `1.1.0`, schema `1.1.0`, generated 2026-10-01T23:11:41+00:00.
 
 Catalog entries: **1122**. Unique request URLs: **1090**.

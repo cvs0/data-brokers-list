@@ -1,0 +1,500 @@
+company,domain,optOutUrl,optOutEmail,difficulty,dataExposed,optOutMethod,guide
+24Counter,24counter.com,https://24counter.com/opt-out/,,,,,
+Whitepages (411.com),411.com,https://www.whitepages.com/suppression-requests,,Moderate,"Name, phone numbers, address history, age range and relatives",Suppression form,https://persprotect.com/data-broker-opt-out/411com
+411.info,411.info,https://411.info/manage/,,,,,
+411Locate,411locate.com,https://www.411locate.com/,,Moderate,"Name, address, phone, email, neighbors, property records, judgments and liens, marriage/divorce and birth records, criminal status",Email/contact-form request,https://persprotect.com/data-broker-opt-out/411locate
+Absolute People Search,absolutepeoplesearch.com,https://absolutepeoplesearch.com/optout,,Moderate,"Full name, contact information, employment history, relatives and associates, criminal history and mugshots, social media and dating accounts, asset info",Suppression-center web form + email confirmation,https://persprotect.com/data-broker-opt-out/absolutepeoplesearch
+Acxiom,acxiom.com,https://www.acxiom.com/optout/,,Moderate,"A marketing profile: demographics, household and lifestyle data, purchase behavior and inferred interests sold to advertisers",Consumer opt-out portal,https://persprotect.com/data-broker-opt-out/acxiom
+Intelius / PeopleConnect,address.us.com,https://suppression.peopleconnect.us/?brand=Intelius,,,,,
+Intelius / PeopleConnect,addresses.com,https://suppression.peopleconnect.us/?brand=Intelius,,Easy,"Address history, phone numbers, age and relatives",Web form,https://persprotect.com/data-broker-opt-out/addressescom
+Address Scoop,addressscoop.com,,support@addressscoop.com,,,,
+Adstra (American List Counsel),adstradata.com,https://privacyportal.onetrust.com/webform/3d2d5e0c-bd98-46b8-906c-ede68a6f6a80/f54a1b10-bb5d-4c99-9521-3e08dc527583,privacy.officer@adstradata.com,Moderate,"Compiled marketing identity data — name, postal/email address, phone, IP, browsing activity — used for audience targeting",Web form (OneTrust) or email,https://persprotect.com/data-broker-opt-out/adstradata
+Advanced People Search,advanced-people-search.com,https://www.advanced-people-search.com/static/view/optout/,,,,,
+AdvancedBackgroundChecks,advancedbackgroundchecks.com,https://www.advancedbackgroundchecks.com/removal,,Easy,"Names, phone numbers, current and past addresses, email addresses and relatives",Web form,https://persprotect.com/data-broker-opt-out/advancedbackgroundchecks
+InfoTracer network,affordablebackgroundchecks.com,https://infotracer.com/optout/,,,,,
+Arrests.org (1337 Services LLC),alabamaarrests.org,https://www.alabamaarrests.org/request-portal,privacy@arrests.org,,,,
+StateRecords.org network,alabamacourtrecords.us,https://alabamacourtrecords.us/optout/,privacy@courtrecords.us,,,,
+AlarmsCalifornia (LicenseData),alarmscalifornia.org,http://www.alarmscalifornia.org/about,contact@licensedata.org,,,,
+Arrests.org (1337 Services LLC),alaskaarrests.org,https://www.alaskaarrests.org/request-portal,privacy@arrests.org,,,,
+StateRecords.org network,alaskacourtrecords.us,https://alaskacourtrecords.us/optout/,privacy@courtrecords.us,,,,
+AllAreaCodes,allareacodes.com,https://www.allareacodes.com/remove_name.htm,,,,,
+AllHighSchools.com,allhighschools.com,,press@allhighschools.com,,,,
+Alliant,alliantinsight.com,https://privacyportal-cdn.onetrust.com/dsarwebform/591ac1c1-3a1e-496f-9e43-ff4afb5fef85/2b52262e-8ada-4725-b86e-e4b960336f96.html,compliance@alliantdata.com,Moderate,"Cooperative database of consumer purchasing and transactional data contributed by marketers, used to model audiences",Web opt-out + email/phone,https://persprotect.com/data-broker-opt-out/alliantinsight
+AllPeople,allpeople.com,,allpeople-help@allpeople.com,Easy,"Names, contact details, address history and relatives",Web form,https://persprotect.com/data-broker-opt-out/allpeople
+"Amedisys, Inc.",amedisys.com,https://cdn.amedisys.com/userfiles/CCPA%20Request%20Form.pdf,privacy@amedisys.com,,,,
+AmericaPhoneBook,americaphonebook.com,https://www.americaphonebook.com/contact.php,,Easy,"Name, phone number, address, and city/state/ZIP tied to your phone listing",Online removal form,https://persprotect.com/data-broker-opt-out/americaphonebook
+Ancestry.com UK Limited,ancestry.co.uk,,support@ancestry.co.uk,,,,
+AnswerLady (PeopleFinders),answerlady.com,,customercare@peoplefinders.com,,,,
+AnyWho (Intelius/PeopleConnect),anywho.com,https://suppression.peopleconnect.us/?brand=Intelius,,Easy,"Names, phone numbers, current and past addresses",Web form,https://persprotect.com/data-broker-opt-out/anywho
+Archives.com (Ancestry),archives.com,https://www.archives.com/?_act=Optout,,Easy,"Genealogy and public records: names, relatives, birth/marriage/death records and address history",Opt-out form,https://persprotect.com/data-broker-opt-out/archives
+Areacode-Lookup,areacode-lookup.com,https://www.areacode-lookup.com/optout,,,,,
+Arivify (property data),arivify.com,https://www.arivify.com/removal,,,,,
+Arrests.org (1337 Services LLC),arizonaarrests.org,https://www.arizonaarrests.org/request-portal,privacy@arrests.org,,,,
+StateRecords.org network,arizonacourtrecords.us,https://arizonacourtrecords.us/optout/,privacy@courtrecords.us,,,,
+Arrests.org (1337 Services LLC),arkansasarrests.org,https://www.arkansasarrests.org/request-portal,privacy@arrests.org,,,,
+StateRecords.org network,arkansascourtrecords.us,https://arkansascourtrecords.us/optout/,privacy@courtrecords.us,,,,
+ArrestFacts (BeenVerified-related),arrestfacts.com,https://arrestfacts.com/ng/control/privacy,privacy@arrestfacts.com,Moderate,"Full name, arrest and detention records, criminal accusations, civil and judicial data",Per-profile 'Information Control' form + CAPTCHA + email verification,https://persprotect.com/data-broker-opt-out/arrestfacts
+Arrests.org,arrests.org,,info@arrests.org,Moderate,"Mugshot, full name, date of birth, address, height/weight, charges, prior arrests",Online form + ID upload (email fallback),https://persprotect.com/data-broker-opt-out/arrests
+AtData (formerly TowerData),atdata.com,https://instantdata.atdata.com/optout,privacy@atdata.com,Easy,"Email-centric marketing data — email address linked to name, postal address, and demographic attributes — sold for email targeting and verification",Web opt-out form,https://persprotect.com/data-broker-opt-out/atdata
+PeopleWhiz network,azerch.com,https://www.azerch.com/Policies/Privacy,,,,,
+BackgroundAlert,backgroundalert.com,https://www.backgroundalert.com/optout/,,,,,
+Veriforia/Dataveria network,backgroundcheck.run,https://backgroundcheck.run/ng/control/privacy,,Moderate,"Full name, aliases, date of birth, address and email history, phone numbers, relatives, employment, property records, criminal records, bankruptcies, liens, judgments",Per-profile web form + CAPTCHA + email confirmation,https://persprotect.com/data-broker-opt-out/backgroundcheckrun
+BackgroundCheckers,backgroundcheckers.net,https://www.backgroundcheckers.net/optOut/name/landing,,Moderate,"Full name, address history, phone numbers, relatives, marital status, criminal histories, court and arrest records, social and dating profiles",Web form + CAPTCHA + email verification,https://persprotect.com/data-broker-opt-out/backgroundcheckers
+BackgroundChecks.org (BeenVerified data),backgroundchecks.org,https://www.beenverified.com/app/optout/search,privacy@beenverified.com,,,,
+Background Hawk (TruthFinder),backgroundhawk.com,https://www.truthfinder.com/opt-out/v2/submit/,,,,,
+"Bay Collective IP, LLC",bayparcels.com,,info@baycollective.com,,,,
+BeenVerified (Lifetime Value Co),beenverified.com,https://www.beenverified.com/app/optout/search,privacy@beenverified.com,Easy,"Contact information, address history, relatives, social profiles and employment data",Web form + email confirmation,https://persprotect.com/data-broker-opt-out/beenverified
+BestHistorySites,besthistorysites.net,https://besthistorysites.net/opt-out,,,,,
+Oracle BlueKai,bluekai.com,https://bluekai.com/consumers_optout.php,,,,,
+Bumper (BeenVerified family),bumper.com,https://www.beenverified.com/app/optout/search,privacy@beenverified.com,,,,
+Arrests.org-style site,californiaarrestrecords.org,https://www.californiaarrestrecords.org/request-portal,,,,,
+Arrests.org (1337 Services LLC),californiaarrests.org,https://www.californiaarrests.org/request-portal,privacy@arrests.org,,,,
+CaliforniaBrokers.org (LicenseData),californiabrokers.org,http://www.californiabrokers.org/about#contact,contact@licensedata.org,,,,
+StateRecords.org network,californiacourtrecords.us,https://californiacourtrecords.us/optout/,privacy@courtrecords.us,,,,
+California Criminal Records Search,californiacriminalrecords.org,https://californiacriminalrecords.org/contact,,,,,
+CaliforniaEngineering.org (LicenseData),californiaengineering.org,http://www.californiaengineering.org/about#contact,contact@licensedata.org,,,,
+CaliforniaLicensing.org (LicenseData),californialicensing.org,http://www.californialicensing.org/about#contact,contact@licensedata.org,,,,
+CaliforniaNursing.org (LicenseData),californianursing.org,http://www.californianursing.org/about#contact,contact@licensedata.org,,,,
+CaliforniaPharmacists.org (LicenseData),californiapharmacists.org,http://www.californiapharmacists.org/about#contact,contact@licensedata.org,,,,
+CallApp Software Ltd.,callapp.com,https://callapp.com/support/can-i-wipe-my-information-from-callapp-2,support@callapp.com,,,,
+CallerCenter,callercenter.com,https://www.callercenter.com/,,Easy,Reverse phone and caller-reputation data linking a number to a name and location,Web form,https://persprotect.com/data-broker-opt-out/callercenter
+Caller Name,callername.com,,callername@rumex.bh,Easy,"Phone numbers, names, address, city/state, caller details",Online form (email verification),https://persprotect.com/data-broker-opt-out/callername
+CallerSmart,callersmart.com,https://www.callersmart.com/data,feedback@callersmart.com,,,,
+CallTruth,calltruth.com,https://www.calltruth.com/,,Easy,Reverse phone and caller-reputation data linking a number to a name,Web form,https://persprotect.com/data-broker-opt-out/calltruth
+CellRevealer,cellrevealer.com,https://www.cellrevealer.com/,,Easy,"Name, age, current and past addresses, prior phone numbers, email addresses, and relatives tied to a phone number",On-site form (phone-verified),https://persprotect.com/data-broker-opt-out/cellrevealer
+Veriforia/Dataveria network,centeda.com,https://centeda.com/control/privacy,,Easy,"Contact info, address history, phone numbers, age and relatives",Control / privacy page,https://persprotect.com/data-broker-opt-out/centeda
+CheckPeople,checkpeople.com,https://checkpeople.com/do-not-sell-info,,Easy,"Contact info, address history, phone numbers and relatives",Web form,https://persprotect.com/data-broker-opt-out/checkpeople
+CheckSecrets (Truth Now LLC),checksecrets.com,https://checksecrets.com/,,Easy,"Name, phone numbers, email and physical addresses, court and criminal records, employment and education history",Online form + email verification,https://persprotect.com/data-broker-opt-out/checksecrets
+CheckThem,checkthem.com,https://www.checkthem.com/optout/,support@checkthem.com,Easy,"Contact info, phone numbers, address history and relatives",Web form,https://persprotect.com/data-broker-opt-out/checkthem
+City-Data.com,city-data.com,https://www.city-data.com/delrequest/form.php,others@city-data.com,,,,
+Classmates.com,classmates.com,https://www.classmates.com/about/privacy#p-8,privacy@classmates.com,Easy,"Name, school/graduation details, yearbook photos and approximate age",Web form (PeopleConnect),https://persprotect.com/data-broker-opt-out/classmates
+InfoTracer network,clicksearch.us,https://clicksearch.us/optout,,,,,
+Veriforia/Dataveria network,clubset.com,https://clubset.com/control/privacy,,Easy,"Contact info, address history, phone numbers and relatives",Control / privacy page,https://persprotect.com/data-broker-opt-out/clubset
+Clustermaps.NET,clustermaps.net,https://clustermaps.net/opt-out/,support@clustermaps.net,,,,
+ClustrMaps,clustrmaps.com,https://clustrmaps.com/bl/opt-out,,Easy,"Home address details, current and past residents, phone numbers and approximate age",Web form,https://persprotect.com/data-broker-opt-out/clustrmaps
+CocoFinder,cocofinder.com,https://cocofinder.com/remove-my-info,,Easy,"Contact info, address history, phone numbers and relatives",Web form,https://persprotect.com/data-broker-opt-out/cocofinder
+CocoFinder.net,cocofinder.net,https://cocofinder.net/remove-my-info,support@cocofinder.net,,,,
+Arrests.org (1337 Services LLC),coloradoarrests.org,https://www.coloradoarrests.org/request-portal,privacy@arrests.org,,,,
+StateRecords.org network,coloradocourtrecords.us,https://coloradocourtrecords.us/optout/,privacy@courtrecords.us,,,,
+ColoradoResidentDirectory,coloradoresidentdirectory.com,https://www.coloradoresidentdirectory.com/opt-out,,,,,
+ConfidentialPhoneLookup,confidentialphonelookup.com,https://www.confidentialphonelookup.com/,,,,,
+StateRecords.org network,connecticutcourtrecords.us,https://connecticutcourtrecords.us/optout/,privacy@courtrecords.us,,,,
+Connecticut Resident Directory,connecticutresidentdirectory.com,https://www.connecticutresidentdirectory.com/opt-out,,,,,
+ContractorsCalifornia.org (LicenseData),contractorscalifornia.org,http://www.contractorscalifornia.org/about#contact,contact@licensedata.org,,,,
+CoreLogic (Cotality),corelogic.com,https://www.corelogic.com/ccpa,privacy@corelogic.com,,,,
+CorporationWiki,corporationwiki.com,https://www.corporationwiki.com/profiles/public,,Easy,"Name, business affiliations, company roles, associated company addresses, professional connections",Online form + email verification,https://persprotect.com/data-broker-opt-out/corporationwiki
+Veriforia/Dataveria network,councilon.com,https://councilon.com/ex/control/privacy,,Moderate,"Full name, phone numbers, address history, relatives, and aggregated public-record and social data",On-site Control Profile form + email confirmation,https://persprotect.com/data-broker-opt-out/councilon
+CourtCaseFinder,courtcasefinder.com,https://courtcasefinder.com,help@courtcasefinder.com,Moderate,"Full name, criminal and police records, driving records, bankruptcies, lawsuits, felonies and misdemeanors, jail records",Web form + CAPTCHA + email verification,https://persprotect.com/data-broker-opt-out/courtcasefinder
+CourtRecordFinder.com,courtrecordfinder.com,,privacy@cisnationwide.com,,,,
+StateRecords.org network (hub),courtrecords.us,https://courtrecords.us/optout/,privacy@courtrecords.us,,,,
+Crime Informer,crimeinformer.com,,support@crimeinformer.com,,,,
+Criminal.com (TruthFinder),criminal.com,https://www.truthfinder.com/opt-out/v2/submit/,feedback@criminal.com,,,,
+CriminalPages (InfoTracer-linked),criminalpages.com,https://members.criminalpages.com/customer/opt-out,,,,,
+CriminalRecords.com (Intelius),criminalrecords.com,https://www.intelius.com/privacy-center,support@mailer.intelius.com,,,,
+Arrests.org (1337 Services LLC),ctarrests.org,https://www.ctarrests.org/request-portal,privacy@arrests.org,,,,
+Cubib,cubib.com,https://cubib.com/optout.php,,,,,
+CyberBackgroundChecks,cyberbackgroundchecks.com,https://www.cyberbackgroundchecks.com/removal,,Easy,"Full contact details, address history, phone numbers, email addresses and relatives",Web form,https://persprotect.com/data-broker-opt-out/cyberbackgroundchecks
+Data Axle (InfoUSA),data-axle.com,https://www.data-axle.com/do-not-sell-my-data/,privacyteam@data-axle.com,Easy,"Consumer and business contact records — name, address, phone, email — compiled and sold for marketing and list-building",Web privacy rights form,https://persprotect.com/data-broker-opt-out/dataaxle
+Oracle Data Cloud (Datalogix/BlueKai),datacloudoptout.oracle.com,https://datacloudoptout.oracle.com/,privacy_ww@oracle.com,,,,
+Veriforia/Dataveria network,dataveria.com,https://dataveria.com/opt-out/privacy,support@dataveria.com,Easy,"Contact info, address history, phone numbers and relatives",Web form (control/privacy),https://persprotect.com/data-broker-opt-out/dataveria
+Arrests.org (1337 Services LLC),dcarrests.org,https://www.dcarrests.org/request-portal,privacy@arrests.org,,,,
+StateRecords.org network,delawarecourtrecords.us,https://delawarecourtrecords.us/optout/,privacy@courtrecords.us,,,,
+DentistsCalifornia.org (LicenseData),dentistscalifornia.org,http://www.dentistscalifornia.org/about#contact,contact@licensedata.org,,,,
+InfoTracer,dewarrants.org,https://infotracer.com/optout/,,,,,
+DexKnows.com (Thryv),dexknows.com,https://privacyportal-cdn.onetrust.com/dsarwebform/dd6500c7-03cb-45b0-8bed-97ece55a892d/cfcefb69-41db-4aee-bd00-c702df72ee0f.html,clientcareemail@thryv.com,,,,
+DOBSearch,dobsearch.com,https://www.dobsearch.com/people-finder/,,Easy,"Name, age/date-of-birth indicators, address history and phone numbers",Web form,https://persprotect.com/data-broker-opt-out/dobsearch
+"FTC (govt, not a data broker)",donotcall.gov,https://www.donotcall.gov/,,,,,
+Drunk Drivers,drunkdrivers.org,https://drunkdrivers.org/remove-my-info/,drunkdrivers.org@aol.com,,,,
+EasyBackgroundChecks (Intelius),easybackgroundchecks.com,https://www.intelius.com/suppression-center/,priorityoptout@intelius.com,,,,
+EmailTracer,emailtracer.com,https://emailtracer.com/optout,privacy@emailtracer.com,,,,
+Epieos,epieos.com,,contact@epieos.com,,,,
+Epsilon,epsilon.com,https://legal.epsilon.com/dsr/,privacy@epsilon.com,Moderate,"A marketing profile: demographics, household and purchase data, and inferred interests sold to advertisers",Data-subject-rights request,https://persprotect.com/data-broker-opt-out/epsilon
+Equifax,equifax.com,https://myprivacy.equifax.com/,,Moderate,"Demographic data, purchasing behavior, and address history sold to marketers, insurers, and analytics buyers outside the credit context",Web privacy portal (myPrivacy),https://persprotect.com/data-broker-opt-out/equifaxmarketing
+Experian,experian.com,https://www.experian.com/privacy/opting_out,,Moderate,"Marketing profiles covering purchasing behavior, demographics, and household composition sold to advertisers, separate from your credit file",Web opt-out form (by channel/sector),https://persprotect.com/data-broker-opt-out/experianmarketingservices
+"BuyersRoad, Inc.",experience.com,,privacy@experience.com,,,,
+First Advantage Corporation,fadv.com,https://fadv.com/privacy-center/non-us-residents/your-rights/,privacy@fadv.com,,,,
+FamilySearch,familysearch.org,https://www.familysearch.org/en/help/helpcenter/article/how-do-i-remove-vitals-information-in-family-tree,nasupport@familysearch.org,,,,
+FamilyTreeNow,familytreenow.com,https://www.familytreenow.com/optout,,Easy,"Age, current and past addresses, and an unusually detailed map of relatives and associates",Web form,https://persprotect.com/data-broker-opt-out/familytreenow
+"Fandom, Inc.",fandom.com,https://itlaw.fandom.com/wiki/Opt-out,support@fandom.com,,,,
+FastBackgroundCheck,fastbackgroundcheck.com,https://www.fastbackgroundcheck.com/,,Easy,"Contact info, address history, phone numbers and relatives",Web form,https://persprotect.com/data-broker-opt-out/fastbackgroundcheck
+FastPeopleSearch,fastpeoplesearch.com,https://www.fastpeoplesearch.com/removal,,Easy,"Phone numbers, current and past addresses, relatives and associates",Web form,https://persprotect.com/data-broker-opt-out/fastpeoplesearch
+FastPeopleSearch.io,fastpeoplesearch.io,https://fastpeoplesearch.io/remove-my-info,support@fastpeoplesearch.io,,,,
+FindMugshots,findmugshots.com,https://www.findmugshots.com/google_remove.php,,,,,
+FindPeopleFast.net,findpeoplefast.net,https://findpeoplefast.net/company/remove-my-info,support@findpeoplefast.net,Easy,"Names, phone numbers, address history and relatives",Web form,https://persprotect.com/data-broker-opt-out/findpeoplefast
+FindPeopleSearch,findpeoplesearch.com,http://www.findpeoplesearch.com/customerservice/,,Easy,"Full name, age, current and previous cities, current and past phone numbers, email addresses, relatives and associates",Customer-service contact form,https://persprotect.com/data-broker-opt-out/findpeoplesearch
+FindWhoCallsYou,findwhocallsyou.com,,findwhocallsyou@gmail.com,,,,
+FireArmsCalifornia.org (LicenseData),firearmscalifornia.org,http://www.firearmscalifornia.org/about#contact,contact@licensedata.org,,,,
+Arrests.org (1337 Services LLC),flarrests.org,https://www.flarrests.org/request-portal,privacy@arrests.org,,,,
+StateRecords.org network,floridacourtrecords.us,https://floridacourtrecords.us/optout/,privacy@courtrecords.us,,,,
+FloridaParcels.com,floridaparcels.com,https://floridaparcels.com/redaction/,info@areaplot.com,,,,
+FloridaResidentsDirectory,floridaresidentsdirectory.com,https://www.floridaresidentsdirectory.com/opt-out,,Easy,"Full name, age, gender, residential address, voting profile, estimated salary/net worth, neighbors, social media links",Online form,https://persprotect.com/data-broker-opt-out/floridaresidentsdirectory
+Florida Voter Directory,floridavoterdirectory.com,https://www.floridavoterdirectory.com/opt-out,,,,,
+Foller.me,foller.me,https://www.foller.me/do-not-sell,support@foller.me,,,,
+FreeBackgroundCheck.org,freebackgroundcheck.org,https://www.freebackgroundcheck.org/,,Moderate,"Full name, property addresses, phone numbers, vehicle/license-plate info, court cases, arrest warrants, assets",'Your Privacy Choices' web form + CAPTCHA + email confirmation,https://persprotect.com/data-broker-opt-out/freebackgroundcheck
+FreeBackgroundChecks.com,freebackgroundchecks.com,https://freebackgroundchecks.com/optout/,privacy@freebackgroundchecks.com,,,,
+FreePeopleDirectory (Spokeo data),freepeopledirectory.com,https://www.freepeopledirectory.com/optout,,Easy,"Name, address history, phone numbers, relatives, and other contact details aggregated from third-party sources",On-site opt-out form (profile URL based),https://persprotect.com/data-broker-opt-out/freepeopledirectory
+FreePeopleSearch.com,freepeoplesearch.com,https://freepeoplesearch.com/remove-info/,,,,,
+FreePeopleSearch.io,freepeoplesearch.io,,contact@freepeoplesearch.com,,,,
+BeenVerified (LTV),freephonetracer.com,https://www.beenverified.com/app/optout/search,privacy@beenverified.com,,,,
+FuryForums.com (VerticalScope),furyforums.com,,privacy@verticalscope.com,,,,
+"Genius Media Group, Inc.",genius.com,,gdpr@genius.com,,,,
+Arrests.org (1337 Services LLC),georgiaarrests.org,https://www.georgiaarrests.org/request-portal,privacy@arrests.org,,,,
+StateRecords.org network,georgiacourtrecords.us,https://georgiacourtrecords.us/optout/,privacy@courtrecords.us,,,,
+GetEmail.io,getemail.io,https://getemail.io/privacy_policy/,getemailsales@dnb.com,,,,
+Glad I Know,gladiknow.com,https://gladiknow.com/opt-out,,,,,
+GoLookUp,golookup.com,https://golookup.com/support/optout,,Moderate,"Contact info, address history, background and public-record details",Email / opt-out form,https://persprotect.com/data-broker-opt-out/golookup
+GovernmentRegistry.org,governmentregistry.org,https://www.governmentregistry.org/opt-out,privacy@governmentregistry.org,Easy,"Personal and public-record data tied to your name and state, used to point searchers at government records",Online form,https://persprotect.com/data-broker-opt-out/governmentregistry
+GovQA (Granicus),govqa.us,,dpo@granicus.com,,,,
+GovernmentRegistry family,govregistry.us,https://www.governmentregistry.org/opt-out,,Moderate,"Name, addresses, phone numbers, and other aggregated public-records identifiers",Opt out via parent InfoTracer + email verification,https://persprotect.com/data-broker-opt-out/govregistry
+InfoTracer,govwarrantsearch.org,https://infotracer.com/optout/,,Moderate,"Name, address history, phone numbers, age, and links to warrant and criminal-record lookups",Online form via InfoTracer + email verification,https://persprotect.com/data-broker-opt-out/govwarrantsearch
+Houston Association of REALTORS,har.com,https://www.har.com/question/27460_how-can-i-opt-out-of-the-zillow-listing,privacy@har.com,,,,
+Arrests.org (1337 Services LLC),hawaiiarrests.org,https://www.hawaiiarrests.org/request-portal,privacy@arrests.org,,,,
+StateRecords.org network,hawaiicourtrecords.us,https://hawaiicourtrecords.us/optout/,privacy@courtrecords.us,,,,
+"HireRight, LLC",hireright.com,https://www.hireright.com/legal/united-states-opt-out-rights-outside-of-california,HireRightPrivacy@hireright.com,,,,
+Hodges Directory,hodges-directory.us,https://hodges-directory.us/,,,,,
+Homemetry (property-directory network),homemetry.com,https://homemetry.com/control/privacy,privacy@homemetry.com,Easy,"Property and home-value data, residents and contact details by address",Web form (control/privacy),https://persprotect.com/data-broker-opt-out/homemetry
+HomeOwnershipReport,homeownershipreport.com,https://www.homeownershipreport.com/,,,,,
+HPCC-USA (Online Phone Directory),hpcc-usa.org,https://www.hpcc-usa.org/research/change-listing.html,,,,,
+HudwayGlass / Homemetry (property directory),hudwayglass.com,https://hudwayglass.com/page/privacy,removals-hudwayglass@hudwayglass.com,,,,
+Arrests.org (1337 Services LLC),idahoarrests.org,https://www.idahoarrests.org/request-portal,privacy@arrests.org,,,,
+StateRecords.org network,idahocourtrecords.us,https://idahocourtrecords.us/optout/,privacy@courtrecords.us,,,,
+IDCrawl,idcrawl.com,https://www.idcrawl.com/remove-my-information,support@idcrawl.com,Easy,"An aggregated identity: social-media profiles, usernames, photos and contact details pulled together by name",Web form,https://persprotect.com/data-broker-opt-out/idcrawl
+IDnotify,idnotify.com,https://portal.idnotify.com/privacy-policy,memberservices@idnotify.com,,,,
+IDStrong,idstrong.com,https://www.idstrong.com/remove-my-information/,privacy@idstrong.com,Moderate,"Full name, address history, phone numbers, and other identity/public-record details aggregated by its monitoring service",Web form + email verification (state privacy form for CA/CO/CT/UT/VA),https://persprotect.com/data-broker-opt-out/idstrong
+IDTrue,idtrue.com,https://www.idtrue.com/optout/,privacy@idtrue.com,Moderate,"Background data: contact info, address history, public records and relatives",Web form,https://persprotect.com/data-broker-opt-out/idtrue
+Arrests.org (1337 Services LLC),illinoisarrests.org,https://www.illinoisarrests.org/request-portal,privacy@arrests.org,,,,
+StateRecords.org network,illinoiscourtrecords.us,https://illinoiscourtrecords.us/optout/,privacy@courtrecords.us,,,,
+Illinois Prison Talk,illinoisprisontalk.org,https://illinoisprisontalk.org/remove-my-info.php,,,,,
+Arrests.org (1337 Services LLC),indianaarrests.org,https://www.indianaarrests.org/request-portal,privacy@arrests.org,,,,
+StateRecords.org network,indianacourtrecords.us,https://indianacourtrecords.us/optout/,privacy@courtrecords.us,,,,
+Information.com,information.com,https://information.com/opt-out,support@information.com,,,,
+Veriforia/Dataveria network,inforver.com,https://inforver.com/control/privacy,,Easy,"Contact info, address history, phone numbers and relatives",Web form,https://persprotect.com/data-broker-opt-out/inforver
+InfoTracer,infotracer.com,https://infotracer.com/optout/,privacy@infotracer.com,Moderate,"Deep background data: contact info, address history, court/criminal and public records, relatives",Web form + email confirmation,https://persprotect.com/data-broker-opt-out/infotracer
+InmatesSearcher,inmatessearcher.com,https://www.inmatessearcher.com/optOut/name/landing,,Easy,"Inmate, arrest, and criminal records, bankruptcies, addresses, phone numbers",Online form + email verification,https://persprotect.com/data-broker-opt-out/inmatessearcher
+Innovis,innovis.com,https://www.innovis.com/personal/optOutOptIn,,,,,
+InstantCheckmate (PeopleConnect),instantcheckmate.com,https://suppression.peopleconnect.us/,,Easy,"Background, criminal and public records, contact info and relatives",Web form (PeopleConnect suppression),https://persprotect.com/data-broker-opt-out/instantcheckmate
+InstantCheckSpy (TruthFinder),instantcheckspy.com,https://www.truthfinder.com/privacy-center,privacy@truthfinder.com,,,,
+Intelius (PeopleConnect),intelius.com,https://suppression.peopleconnect.us/,,Easy,"Background report data: contact info, address history, relatives, and public records",Web form (PeopleConnect suppression),https://persprotect.com/data-broker-opt-out/intelius
+Arrests.org (1337 Services LLC),iowaarrests.org,https://www.iowaarrests.org/request-portal,privacy@arrests.org,,,,
+StateRecords.org network,iowacourtrecords.us,https://iowacourtrecords.us/optout/,privacy@courtrecords.us,,,,
+IPQualityScore LLC,ipqualityscore.com,https://www.ipqualityscore.com/domain-reputation/optout.networkadvertising.org,Support@IPQualityScore.com,,,,
+Saavn Media Limited,jiosaavn.com,,legal@jiosaavn.com,,,,
+Arrests.org (1337 Services LLC),kansasarrests.org,https://www.kansasarrests.org/request-portal,privacy@arrests.org,,,,
+StateRecords.org network,kansascourtrecords.us,https://kansascourtrecords.us/optout/,privacy@courtrecords.us,,,,
+Arrests.org (1337 Services LLC),kentuckyarrests.org,https://www.kentuckyarrests.org/request-portal,privacy@arrests.org,,,,
+StateRecords.org network,kentuckycourtrecords.us,https://kentuckycourtrecords.us/optout/,privacy@courtrecords.us,,,,
+Kids Live Safe,kidslivesafe.com,https://www.kidslivesafe.com/help-center/privacy-requests,,,,,
+Kiwi Searches,kiwisearches.com,https://kiwisearches.com/privacy,support@kiwisearches.com,,,,
+Veriforia/Dataveria network,kwold.com,https://kwold.com/ns/control/privacy,,,,,
+Lenso AI,lenso.ai,https://lenso.ai/en/opt-out,contact@lenso.ai,,,,
+LexisNexis,lexisnexis.com,https://optout.lexisnexis.com/,privacy.information.mgr@lexisnexis.com,Hard,"Contact and address history, relatives, and data used in risk, identity and people-search products",Opt-out form (identity verification),https://persprotect.com/data-broker-opt-out/lexisnexis
+LicensePlateData,licenseplatedata.com,https://licenseplatedata.com/contact,,,,,
+LiveRamp,liveramp.com,https://submit-irm.trustarc.com/services/validation/697ea013-8e66-44aa-94c5-fa9d38dd439c,consumercare@liveramp.com,Easy,"Identity graph linking your email, devices, and offline records to advertising IDs used to target you across sites and apps",Web privacy form,https://persprotect.com/data-broker-opt-out/liverampusa
+Locate-Friend,locate-friend.com,,panchamithracreators@gmail.com,,,,
+LocatePeople,locatepeople.org,https://www.locatepeople.org/optout,support@locatepeople.org,,,,
+Lookify,lookify.io,https://lookify.io/opt-out,,,,,
+Lotame,lotame.com,https://www.lotame.com/about-lotame/privacy/lotames-opt-out/,,,,,
+Arrests.org (1337 Services LLC),louisianaarrests.org,https://www.louisianaarrests.org/request-portal,privacy@arrests.org,,,,
+StateRecords.org network,louisianacourtrecords.us,https://louisianacourtrecords.us/optout/,privacy@courtrecords.us,,,,
+Arrests.org (1337 Services LLC),maarrests.org,https://www.maarrests.org/request-portal,privacy@arrests.org,,,,
+Arrests.org (1337 Services LLC),mainearrests.org,https://www.mainearrests.org/request-portal,privacy@arrests.org,,,,
+StateRecords.org network,mainecourtrecords.us,https://mainecourtrecords.us/optout/,privacy@courtrecords.us,,,,
+MansionQuest.com,mansionquest.com,,contact@mansionquest.com,,,,
+MarriedDivorce,marrieddivorce.com,,info@marrieddivorce.com,,,,
+Arrests.org (1337 Services LLC),marylandarrests.org,https://www.marylandarrests.org/request-portal,privacy@arrests.org,,,,
+StateRecords.org network,marylandcourtrecords.us,https://marylandcourtrecords.us/optout/,privacy@courtrecords.us,,,,
+PeopleWhiz network,mashpanel.com,https://www.mashpanel.com/remove.php,,,,,
+StateRecords.org network,massachusettscourtrecords.us,https://massachusettscourtrecords.us/optout/,privacy@courtrecords.us,,,,
+MediFind,medifind.com,,privacy@medifind.com,,,,
+Melissa,melissa.com,https://apps.melissa.com/user/consumerprivacy.aspx,consumerrequest@melissa.com,,,,
+Merkle (Dentsu),merkle.com,https://www.merkle.com/en/privacy-policy/data-product-privacy-notice/control-your-personal-information.html,americas.dpo@dentsu.com,,,,
+Arrests.org (1337 Services LLC),michiganarrests.org,https://www.michiganarrests.org/request-portal,privacy@arrests.org,,,,
+StateRecords.org network,michigancourtrecords.us,https://michigancourtrecords.us/optout/,privacy@courtrecords.us,,,,
+Michigan Residents,michiganresidentdatabase.com,https://www.michiganresidentdatabase.com/opt-out,,,,,
+MineralHolders,mineralholders.com,https://www.mineralholders.com/opt-out,support@mineralholders.com,,,,
+Arrests.org (1337 Services LLC),minnesotaarrests.org,https://www.minnesotaarrests.org/request-portal,privacy@arrests.org,,,,
+StateRecords.org network,minnesotacourtrecords.us,https://minnesotacourtrecords.us/optout/,privacy@courtrecords.us,,,,
+StateRecords.org network,mississippicourtrecords.us,https://mississippicourtrecords.us/optout/,privacy@courtrecords.us,,,,
+Mississippi People Records,mississippipeoplerecords.org,https://mississippipeoplerecords.org/privacy-policy,privacy@mississippi.org,,,,
+Arrests.org (1337 Services LLC),missouriarrests.org,https://www.missouriarrests.org/request-portal,privacy@arrests.org,,,,
+StateRecords.org network,missouricourtrecords.us,https://missouricourtrecords.us/optout/,privacy@courtrecords.us,,,,
+Modern Hire,modernhire.com,,support@modernhire.com,,,,
+Arrests.org (1337 Services LLC),montanaarrests.org,https://www.montanaarrests.org/request-portal,privacy@arrests.org,,,,
+StateRecords.org network,montanacourtrecords.us,https://montanacourtrecords.us/optout/,privacy@courtrecords.us,,,,
+Arrests.org (1337 Services LLC),msarrests.org,https://www.msarrests.org/request-portal,privacy@arrests.org,,,,
+MugshotLook,mugshotlook.com,https://www.mugshotlook.com,,Easy,"Mugshot photos, name, arrest records, public-records profile data",Online form + email verification,https://persprotect.com/data-broker-opt-out/mugshotlook
+MyLife,mylife.com,https://www.mylife.com/ccpa/index.pubview,privacy@mylife.com,Hard,"A “Reputation Score”, contact info, age, background and public-record details",CCPA deletion request / email,https://persprotect.com/data-broker-opt-out/mylife
+PropertyRecs,mypropertyrecs.com,https://dashboard.propertyrecs.com/opt-out,support@propertyrecs.com,,,,
+Names and Facts,namesandfacts.com,https://namesandfacts.com/do-not-sell-my-info,,,,,
+National Public Data,nationalpublicdata.com,https://nationalpublicdata.com/optout.html,,,,,
+Native American Netroots,nativeamericannetroots.net,https://nativeamericannetroots.net/diary/51,support@nativeamericannetroots.net,,,,
+Arrests.org (1337 Services LLC),ncarrests.org,https://www.ncarrests.org/request-portal,privacy@arrests.org,,,,
+ncprofiles.com,ncprofiles.com,,info@ncprofiles.com,,,,
+NCTUE (Telecom & Utilities Exchange),nctue.com,https://www.nctueconsumerportal.com/,,,,,
+Arrests.org (1337 Services LLC),ndarrests.org,https://www.ndarrests.org/request-portal,privacy@arrests.org,,,,
+Arrests.org (1337 Services LLC),nebraskaarrests.org,https://www.nebraskaarrests.org/request-portal,privacy@arrests.org,,,,
+StateRecords.org network,nebraskacourtrecords.us,https://nebraskacourtrecords.us/optout/,privacy@courtrecords.us,,,,
+Neighbor.report,neighbor.report,https://neighbor.report/remove,,Easy,"Name, address, phone number and neighborhood associations",Web form,https://persprotect.com/data-broker-opt-out/neighborreport
+NeighborWho (BeenVerified family),neighborwho.com,https://www.beenverified.com/app/optout/search,privacy@beenverified.com,Easy,"Address and property records, residents, contact info and relatives",Web form + email confirmation,https://persprotect.com/data-broker-opt-out/neighborwho
+Neustar (TransUnion),neustar.com,https://privacychoices.home.neustar/,privacy@team.neustar,,,,
+Arrests.org (1337 Services LLC),nevadaarrests.org,https://www.nevadaarrests.org/request-portal,privacy@arrests.org,,,,
+StateRecords.org network,nevadacourtrecords.us,https://nevadacourtrecords.us/optout/,privacy@courtrecords.us,,,,
+NewEnglandFacts,newenglandfacts.com,https://newenglandfacts.com/,csr@newenglandfacts.com,Easy,"Contact info, address history, phone numbers, age and relatives",Control / privacy page,https://persprotect.com/data-broker-opt-out/newenglandfacts
+StateRecords.org network,newhampshirecourtrecords.us,https://newhampshirecourtrecords.us/optout/,privacy@courtrecords.us,,,,
+StateRecords.org network,newjerseycourtrecords.us,https://newjerseycourtrecords.us/optout/,privacy@courtrecords.us,,,,
+StateRecords.org network,newmexicocourtrecords.us,https://newmexicocourtrecords.us/optout/,privacy@courtrecords.us,,,,
+StateRecords.org network,newyorkcourtrecords.us,https://newyorkcourtrecords.us/optout/,privacy@courtrecords.us,,,,
+Arrests.org (1337 Services LLC),nharrests.org,https://www.nharrests.org/request-portal,privacy@arrests.org,,,,
+Nielsen,nielsen.com,https://sites.nielsen.com/legal/privacy-statement/exelate-privacy-policy/opt-in-opt-out/,privacy.department@nielsen.com,,,,
+Arrests.org (1337 Services LLC),njarrests.org,https://www.njarrests.org/request-portal,privacy@arrests.org,,,,
+NJPropertyRecords,njpropertyrecords.com,https://njpropertyrecords.com/redaction,Support@NJPropertyRecords.com,,,,
+Arrests.org (1337 Services LLC),nmarrests.org,https://www.nmarrests.org/request-portal,privacy@arrests.org,,,,
+NoCallerName,nocallername.com,,support@nocallername.com,,,,
+StateRecords.org network,northcarolinacourtrecords.us,https://northcarolinacourtrecords.us/optout/,privacy@courtrecords.us,,,,
+NorthCarolinaPublicRecords.org (TruthFinder),northcarolinapublicrecords.org,https://www.truthfinder.com/opt-out/v2/submit/,,,,,
+NC Resident Database,northcarolinaresidentdatabase.com,https://www.northcarolinaresidentdatabase.com/opt-out,,,,,
+StateRecords.org network,northdakotacourtrecords.us,https://northdakotacourtrecords.us/optout/,privacy@courtrecords.us,,,,
+NotariesCalifornia.com (LicenseData),notariescalifornia.com,http://www.notariescalifornia.com/about,contact@licensedata.org,,,,
+Numbercom,number.com,,privacy@thenumber.com,,,,
+NumberGuru (BeenVerified family),numberguru.com,https://www.beenverified.com/app/optout/search,privacy@beenverified.com,Easy,Reverse phone data: a phone number tied to a name and location,Web form,https://persprotect.com/data-broker-opt-out/numberguru
+Numberville,numberville.com,https://numberville.com/,,,,,
+NumLooker,numlooker.com,https://numlooker.com/remove-my-info,service@numlooker.com,,,,
+NumLookup,numlookup.com,https://www.numlookup.com/opt_out,hello@numlookup.com,Easy,"Phone numbers, owner names, carrier, location, line type",Online form,https://persprotect.com/data-broker-opt-out/numlookup
+Nuwber,nuwber.com,https://nuwber.com/removal/link,support@nuwber.com,Easy,"Phone numbers, current and past addresses, relatives and associates",Web form,https://persprotect.com/data-broker-opt-out/nuwber
+Arrests.org (1337 Services LLC),nyarrests.org,https://www.nyarrests.org/request-portal,privacy@arrests.org,,,,
+OfficialUSA,officialusa.com,https://www.officialusa.com/opt-out/,,,,,
+Arrests.org (1337 Services LLC),ohioarrests.org,https://www.ohioarrests.org/request-portal,privacy@arrests.org,,,,
+StateRecords.org network,ohiocourtrecords.us,https://ohiocourtrecords.us/optout/,privacy@courtrecords.us,,,,
+Ohio Resident Database,ohioresidentdatabase.com,https://www.ohioresidentdatabase.com/opt-out,,,,,
+Arrests.org (1337 Services LLC),oklahomaarrests.org,https://www.oklahomaarrests.org/request-portal,privacy@arrests.org,,,,
+StateRecords.org network,oklahomacourtrecords.us,https://oklahomacourtrecords.us/optout/,privacy@courtrecords.us,,,,
+OldPhoneBook,oldphonebook.com,https://www.oldphonebook.com/,,,,,
+OnlineSearches (Intelius/PeopleConnect),onlinesearches.com,https://suppression.peopleconnect.us/,,Moderate,"Phone numbers, email addresses, physical addresses, and links to public records, court documents, and background data",Online suppression form (email-verified),https://persprotect.com/data-broker-opt-out/onlinesearches
+Open Public Records (BeenVerified data),open-public-records.com,https://www.open-public-records.com/records_removal.htm,,Moderate,"Court and public records, criminal-records lookups, addresses, phone numbers",Online removal-request form (powered by BeenVerified),https://persprotect.com/data-broker-opt-out/openpublicrecords
+SeeThroughNY,opengovny.com,,info@empirecenter.org,,,,
+OpenPeopleSearch,openpeoplesearch.com,https://openpeoplesearch.com/Consumer,info@openpeoplesearch.com,Moderate,"Full name, date of birth, current and past addresses, email addresses, phone numbers and phone types, occupation, employer",Web form + identity verification,https://persprotect.com/data-broker-opt-out/openpeoplesearch
+OptOutPrescreen (Experian/Equifax/TransUnion/Innovis),optoutprescreen.com,https://www.optoutprescreen.com/,,,,,
+Arrests.org (1337 Services LLC),oregonarrest.org,https://www.oregonarrest.org/request-portal,privacy@arrests.org,,,,
+StateRecords.org network,oregoncourtrecords.us,https://oregoncourtrecords.us/optout/,privacy@courtrecords.us,,,,
+Ownerly (BeenVerified family),ownerly.com,https://www.beenverified.com/app/optout/search,privacy@beenverified.com,Easy,"Property ownership and home-value data, owner contact info, address history",Web form + email confirmation,https://persprotect.com/data-broker-opt-out/ownerly
+PeekYou,peekyou.com,https://www.peekyou.com/about/contact/optout/,,Easy,"Aggregated online identity: usernames, social-media profiles, links and basic contact info",Web form (select listing),https://persprotect.com/data-broker-opt-out/peekyou
+PeepsLocator,peepslocator.com,,support@peepslocator.com,,,,
+Arrests.org (1337 Services LLC),pennsylvaniaarrests.org,https://www.pennsylvaniaarrests.org/request-portal,privacy@arrests.org,,,,
+StateRecords.org network,pennsylvaniacourtrecords.us,https://pennsylvaniacourtrecords.us/optout/,privacy@courtrecords.us,,,,
+People-Background-Check,people-background-check.com,https://www.people-background-check.com/,,Moderate,"Full name and aliases, date of birth, address history, phone numbers, relatives, property records, criminal history, bankruptcies, liens, marriage and divorce records, professional history, death records",Per-profile web form + email verification,https://persprotect.com/data-broker-opt-out/peoplebackgroundcheck
+People-Search.org,people-search.org,https://people-search.org,,Moderate,"Full name, age and date of birth, phone numbers, previous addresses, aliases, relatives, voting records, arrest and criminal records, marriage and divorce records",Web form + CAPTCHA,https://persprotect.com/data-broker-opt-out/peoplesearchorg
+PeopleSearcher,people-searchers.com,https://www.peoplesearcher.com/,,,,,
+PeopleWhiz network,people-wizard.com,https://www.peoplewhiz.com/optout,support@peoplewhiz.com,,,,
+YellowPages People (Intelius data),people.yellowpages.com,https://suppression.peopleconnect.us/,ypcsupport@yp.com,,,,
+PeopleByName,peoplebyname.com,https://www.peoplebyname.com/remove.php,,Moderate,"Name, phone number, address and relatives",Email / removal form,https://persprotect.com/data-broker-opt-out/peoplebyname
+PeopleByPhone,peoplebyphone.com,https://www.peoplebyphone.com/remove-my-number/,,,,,
+"PeopleConnect, Inc.",peopleconnect.us,https://peopleconnect.us/california-privacy-rights-disclosure,privacy@peopleconnect.us,,,,
+PeopleFind.com (Intelius),peoplefind.com,https://www.intelius.com/privacy-center,,,,,
+PeopleFinder (PeopleConnect),peoplefinder.com,https://suppression.peopleconnect.us/login,support@mailer.intelius.com,,,,
+PeopleFinder.Info,peoplefinder.info,https://peoplefinder.info/optout,support@peoplefinder.info,,,,
+PeopleFinders (Confi-Chek),peoplefinders.com,https://www.peoplefinders.com/opt-out,,Easy,"Addresses, phone numbers, age, relatives and associates",Web form (paste profile URL),https://persprotect.com/data-broker-opt-out/peoplefinders
+PeopleLooker (BeenVerified),peoplelooker.com,https://www.beenverified.com/app/optout/search,privacy@beenverified.com,Easy,"Contact info, address history, relatives, and social/employment data",Web form + email confirmation,https://persprotect.com/data-broker-opt-out/peoplelooker
+PeopleSearch (Whitepages),peoplesearch.com,https://www.whitepages.com/suppression-requests,,,,,
+Infomatics LLC network,peoplesearch123.com,https://www.peoplesearch123.com/optOut/name/landing,,Easy,"Address history, phone numbers, age and relatives",Web form,https://persprotect.com/data-broker-opt-out/peoplesearch123
+Infomatics LLC network,peoplesearcher.com,https://www.peoplesearcher.com/optOut/name/landing,support@peoplesearcher.com,Moderate,"Full name, current and previous addresses, phone numbers, relatives, criminal records, marriage and death records, bankruptcies, social media profiles, photos",Web form + email confirmation,https://persprotect.com/data-broker-opt-out/peoplesearcher
+People Search Expert,peoplesearchexpert.com,https://www.peoplesearchexpert.com/,,Moderate,"Full name, addresses, phone numbers, email addresses, date of birth, relatives, social media accounts",Per-record web form + CAPTCHA,https://persprotect.com/data-broker-opt-out/peoplesearchexpert
+PeopleSearchNow,peoplesearchnow.com,https://www.peoplesearchnow.com/opt-out,,Easy,"Address history, phone numbers, age and relatives",Web form,https://persprotect.com/data-broker-opt-out/peoplesearchnow
+PeopleSearchSite,peoplesearchsite.com,https://peoplesearchsite.com/,,,,,
+Infomatics LLC network,peoplesearchusa.org,https://www.peoplesearchusa.org/optOut/name/landing,,Easy,"Name, current and past addresses, phone numbers, age, relatives",Online form + email verification,https://persprotect.com/data-broker-opt-out/peoplesearchusa
+PeopleSmart (BeenVerified),peoplesmart.com,https://www.beenverified.com/app/optout/search,privacy@beenverified.com,Easy,"Contact information, address history, relatives and associates",Web form (PeopleConnect suppression),https://persprotect.com/data-broker-opt-out/peoplesmart
+PeopleWhiz network,peopleswhized.com,https://www.peoplewhiz.com/optout,support@peoplewhiz.com,,,,
+PeopleWhiz network,peopleswhizr.com,https://www.peoplewhiz.com/optout,support@peoplewhiz.com,,,,
+PeopleWhiz network,peopleswiz.com,https://www.peoplewhiz.com/optout,support@peoplewhiz.com,,,,
+PeopleWhiz network,peopleswizard.com,https://www.peoplewhiz.com/optout,support@peoplewhiz.com,,,,
+PeopleWhiz,peoplewhiz.com,https://www.peoplewhiz.com/remove-my-info,support@peoplewhiz.com,Easy,"Contact info, address history, public records and relatives",Web form,https://persprotect.com/data-broker-opt-out/peoplewhiz
+PeopleWhiz network,peoplewhiz.net,https://www.peoplewhiz.com/optout,support@peoplewhiz.com,,,,
+PeopleWhiz network,peoplewhized.com,https://www.peoplewhiz.com/optout,support@peoplewhiz.com,,,,
+PeopleWhiz network,peoplewhized.net,https://www.peoplewhiz.com/optout,support@peoplewhiz.com,,,,
+PeopleWhiz network,peoplewhizr.com,https://www.peoplewhiz.com/optout,support@peoplewhiz.com,,,,
+PeopleWhiz network,peoplewhizr.net,https://www.peoplewhiz.com/optout,support@peoplewhiz.com,,,,
+Spokeo (data),peoplewin.com,https://www.spokeo.com/optout,,,,,
+PeopleWhiz network,peoplewiz.com,https://www.peoplewhiz.com/optout,support@peoplewhiz.com,,,,
+PeopleWhiz network,peoplewizard.net,https://www.peoplewhiz.com/optout,support@peoplewhiz.com,,,,
+PeopleWhiz network,peoplewizr.com,https://www.peoplewhiz.com/optout,support@peoplewhiz.com,,,,
+Infomatics LLC network,personsearchers.com,https://www.personsearchers.com/optOut/name/landing,support@personsearchers.com,Easy,"Contact info, address history, phone numbers and relatives",Control / privacy page,https://persprotect.com/data-broker-opt-out/personsearchers
+Persopo,persopo.com,http://info.persopo.com/opt-out.html,support@persopo.com,Easy,"Contact info, address history, public records and relatives",Web form,https://persprotect.com/data-broker-opt-out/persopo
+PhoneBooks.com,phonebooks.com,https://www.phonebooks.com/,,Easy,"Names, phone numbers, address history and relatives",Web form,https://persprotect.com/data-broker-opt-out/phonebooks
+First Beat Media,phonelookup.com,https://www.phonelookup.com/opt,,,,,
+PhoneNumberInfo.us,phonenumberinfo.us,https://phonenumberinfo.us/contact.php,info@phonenumberinfo.us,,,,
+PhoneNumbers.org,phonenumbers.org,https://phonenumbers.org/optout/,privacy@privacy.phonenumbers.org,Easy,"Phone numbers, owner names, public-records directory data",Online form (Do Not Sell),https://persprotect.com/data-broker-opt-out/phonenumbersorg
+"PhoneOwner, Inc.",phoneowner.com,,privacy@phoneowner.com,Easy,"Reverse phone data: a phone number tied to a name, address and relatives",Web form,https://persprotect.com/data-broker-opt-out/phoneowner
+PLCom.net,plcom.net,,csr@plcom.net,,,,
+"Point Digital Finance, Inc.",pointcom.com,,policies@point.com,,,,
+"Poshmark, Inc.",poshmark.com,,support@poshmark.com,,,,
+TelephoneDirectories.us,premium.telephonedirectories.us,https://www.telephonedirectories.us/Edit_Records,support@telephonedirectories.us,,,,
+PrivateEye (Confi-Chek),privateeye.com,https://www.privateeye.com/static/view/optout/,,Easy,"Address history, phone numbers, age and relatives",Web form,https://persprotect.com/data-broker-opt-out/privateeye
+PrivateNumberChecker,privatenumberchecker.com,https://www.privatenumberchecker.com/removal-request,,,,,
+PrivateRecords.net,privaterecords.net,https://www.privaterecords.net/,,Easy,"Contact info, address history, public-record and background details",Web form,https://persprotect.com/data-broker-opt-out/privaterecords
+Infomatics LLC network,privatereports.com,https://www.privatereports.com/optOut/name/landingPage,support@privatereports.com,,,,
+Profile.systems,profile.systems,https://profile.systems/,,,,,
+ProPeopleSearch,propeoplesearch.com,https://propeoplesearch.com/optout,,,,,
+Whitepages (Property Intel),property.whitepages.com,https://www.whitepages.com/suppression-requests,,,,,
+PropertyChecker.com,propertychecker.com,https://propertychecker.com/optout,privacy@propertychecker.com,,,,
+PropertyIQ,propertyiq.com,https://www.propertyiq.com/opt-out/address-search,support@propertyiq.com,Easy,"Property ownership, owner names, phone numbers, past addresses, sale history, current value, mortgage records, property taxes, neighbors",Online form,https://persprotect.com/data-broker-opt-out/propertyiq
+PropertyReach,propertyreach.com,https://www.propertyreach.com/privacy-rights,compliance@propertyreach.com,,,,
+PropertyRec network,propertyrec.com,https://dashboard.propertyrec.com/opt-out,,,,,
+PropertyRecord network,propertyrecord.com,https://dashboard.propertyrecord.com/opt-out,,,,,
+PropertyRecs network,propertyrecs.com,https://dashboard.propertyrecs.com/opt-out,,,,,
+Pub360,pub360.com,https://pub360.com/,,Easy,"Address history, phone numbers, public records and relatives",Web form,https://persprotect.com/data-broker-opt-out/pub360
+PublicDataCheck,publicdatacheck.com,https://www.publicdatacheck.com/,,Moderate,"Full name, address history, phone numbers, email addresses, voter registration, vehicle and weapons-permit records, criminal records, financial history",Web form + CAPTCHA + email verification,https://persprotect.com/data-broker-opt-out/publicdatacheck
+PublicDataDigger,publicdatadigger.com,https://publicdatadigger.com/remove,,,,,
+PublicDataUSA,publicdatausa.com,https://www.publicdatausa.com/,,Easy,"Address history, phone numbers and public-record details",Web form,https://persprotect.com/data-broker-opt-out/publicdatausa
+PublicFinders,publicfinders.com,https://www.publicfinders.com/,,,,,
+PublicInfoServices,publicinfoservices.com,https://www.publicinfoservices.com/,,Easy,"Name, age, current and past addresses, phone numbers, relatives",Online Remove Me From Website form + email verification,https://persprotect.com/data-broker-opt-out/publicinfoservices
+Public Libraries (TruthFinder),publiclibraries.com,https://www.truthfinder.com/opt-out/v2/submit/,netadmin@publiclibraries.com,,,,
+PublicRecord.com,publicrecord.com,https://www.publicrecords.us/,,,,,
+PublicRecordCenter.com,publicrecordcenter.com,https://www.publicrecordcenter.com/remove.html,,,,,
+PublicRecordReports,publicrecordreports.com,https://www.publicrecordreports.com/help-center/privacy-requests,,,,,
+PublicRecords.com (PeopleConnect),publicrecords.com,https://suppression.peopleconnect.us/login,support@mailer.intelius.com,,,,
+PublicRecords.info,publicrecords.info,https://www.publicrecords.info/,,,,,
+PublicRecords.us,publicrecords.us,https://dashboard.publicrecords.us/opt-out,,,,,
+PublicRecordsNow (Confi-Chek),publicrecordsnow.com,https://www.publicrecordsnow.com/static/view/optout/,,Easy,"Address history, phone numbers, relatives and public-record details",Web form,https://persprotect.com/data-broker-opt-out/publicrecordsnow
+PublicRecordsReviews,publicrecordsreviews.com,https://www.publicrecordsreviews.com/,,Easy,"Contact info, address history, public-record details and relatives",Web form,https://persprotect.com/data-broker-opt-out/publicrecordsreviews
+PublicRecordsSearcher.com,publicrecordssearcher.com,,support@searchpublicrecords.com,,,,
+PublicReports (Intelius),publicreports.com,https://www.publicreports.com/,csr@publicreports.com,,,,
+PublicSearcher,publicsearcher.com,https://www.publicsearcher.com/,,Moderate,"Full name, age, current and past addresses, phone numbers, relatives, neighbors, marriage and divorce records, education, bankruptcies, criminal records, social media",Web form + CAPTCHA + email confirmation,https://persprotect.com/data-broker-opt-out/publicsearcher
+QuickPeopleTrace (PeopleFinders),quickpeopletrace.com,,clients@quickpeopletrace.com,Easy,"Contact info, address history, phone numbers and relatives",Control / privacy page,https://persprotect.com/data-broker-opt-out/quickpeopletrace
+QuickPublicRecords,quickpublicrecords.com,https://www.quickpublicrecords.com/help-center/privacy-requests,support@quickpublicrecords.com,,,,
+Radaris,radaris.com,https://radaris.com/control/privacy,support@radaris.com,Moderate,"Full profile with contact details, work history, education, relatives and property records",Account claim + email verification,https://persprotect.com/data-broker-opt-out/radaris
+Radaris Germany,radaris.de,,customer-service@radaris.com,,,,
+Rain Street (ArrestFacts),rain-street.org,https://rain-street.org/page/contact,support@arrestfacts.com,,,,
+RealPeopleSearch,realpeoplesearch.com,https://realpeoplesearch.com/about/remove-my-info,support@realpeoplesearch.com,Moderate,"Full name, age and date of birth, phone numbers, email addresses, relatives, criminal, arrest, marriage and divorce records",Google Form (Gmail login required),https://persprotect.com/data-broker-opt-out/realpeoplesearch
+Realtyhop.com,realtyhop.com,https://www.realtyhop.com/resources/realtyhop-redaction-request-system/,privacy-realtyhop@renthop.com,Easy,"Property ownership, transaction history, tax and mortgage details, and address records",Online form,https://persprotect.com/data-broker-opt-out/realtyhop
+RecordsFinder,recordsfinder.com,https://members.recordsfinder.com/ccpaOptOut,privacy@recordsfinder.com,Easy,"Contact info, address history, court and public records, relatives",Web form,https://persprotect.com/data-broker-opt-out/recordsfinder
+RecordsPage (TruthFinder),recordspage.org,https://www.truthfinder.com/opt-out/v2/submit/,,,,,
+RecordsQuarry (TruthFinder),recordsquarry.com,https://www.truthfinder.com/opt-out/v2/submit/,help@truthfinder.com,,,,
+Redfin Corporation,redfin.com,https://support.redfin.com/hc/en-us/articles/38493151019419,privacy@redfin.com,,,,
+Rehold,rehold.com,https://rehold.com/control/privacy,,Easy,"Home address details, current and past residents, phone numbers",Web form (control/privacy),https://persprotect.com/data-broker-opt-out/rehold
+Reunion.com (MyLife),reunion.com,https://www.mylife.com/ccpa/index.pubview,privacy@mylife.com,,,,
+RevealName,revealname.com,https://revealname.com,,,,,
+RevealPhoneOwner,revealphoneowner.com,https://www.revealphoneowner.com,,,,,
+Reverseaustralia,reverseaustralia.com,https://www.reverseaustralia.com/privacy.php,residential@reverseaustralia.com,,,,
+Reverse Caller Lookup,reversecallerlookup.com,,support@reversecallerlookup.com,,,,
+ReversePhone (Whitepages-affiliated),reversephone.com,https://www.reversephone.com/svc/optout/search/optouts,support@reversephone.com,,,,
+ReversePhoneCheck,reversephonecheck.com,https://www.reversephonecheck.com,,,,,
+ReversePhoneLookup (Intelius/PeopleConnect),reversephonelookup.com,https://www.reversephonelookup.com/remove.php,,,,,
+StateRecords.org network,rhodeislandcourtrecords.us,https://rhodeislandcourtrecords.us/optout/,privacy@courtrecords.us,,,,
+RhodeIslandPeopleRecords.org,rhodeislandpeoplerecords.org,https://rhodeislandpeoplerecords.org/opt-out,privacy@rhodeislandpeoplerecord.org,,,,
+Arrests.org (1337 Services LLC),riarrests.org,https://www.riarrests.org/request-portal,privacy@arrests.org,,,,
+RoboKiller,robokiller.com,,support@robokiller.com,,,,
+Valassis / RRD,rrd.com,https://privacyportal.onetrust.com/webform/45e4be25-919b-483f-9f95-12809576a2b3/6e633594-9a81-48bb-97ab-6fb29bf46019,DataPrivacy@rrd.com,,,,
+"SageStream, LLC",sagestreamllc.com,https://www.sagestreamllc.com/opt-out-opt-in/index.html,,,,,
+"Salary.com, LLC",salary.com,https://www.salary.com/legal/privacy-controls/,privacy@salary.com,,,,
+Arrests.org (1337 Services LLC),scarrests.org,https://www.scarrests.org/request-portal,privacy@arrests.org,,,,
+"Scribd, Inc.",scribd.com,https://www.scribd.com/document/253240908/Opt-Out-Form,privacy@scribd.com,,,,
+Arrests.org (1337 Services LLC),sdarrests.org,https://www.sdarrests.org/request-portal,privacy@arrests.org,,,,
+SealedRecords,sealedrecords.net,https://www.sealedrecords.net,support@sealedrecords.net,Easy,"Contact info, address history, public and court records, relatives",Web form,https://persprotect.com/data-broker-opt-out/sealedrecords
+"Searchbug, Inc.",searchbug.com,https://www.searchbug.com/ccpa.aspx,support@searchbug.zohodesk.com,Easy,"Names, phone numbers, address history and reverse-lookup data",Web form,https://persprotect.com/data-broker-opt-out/searchbug
+SearchMobileNumber.com,searchmobilenumber.com,https://searchmobilenumber.com/privacy-policy,ilaunchweb@gmail.com,,,,
+SearchPeopleFree,searchpeoplefree.com,https://www.searchpeoplefree.com/opt-out,,Easy,"Phone numbers, address history, age and relatives",Web form,https://persprotect.com/data-broker-opt-out/searchpeoplefree
+SearchPeopleFree.net,searchpeoplefree.net,https://searchpeoplefree.net/resource/remove-my-info,support@searchpeoplefree.net,Moderate,"Full name, address history, phone numbers, social media profiles, background-check details",Per-record web form (Google/Gmail login required),https://persprotect.com/data-broker-opt-out/searchpeoplefreenet
+SearchPublicRecords,searchpublicrecords.com,https://www.searchpublicrecords.com/help-center/privacy-requests,,Moderate,"Full name, residential and business addresses, phone numbers, relatives, neighbors, arrest records and warrants, liens, bankruptcies, social media profiles, property records",Web form + CAPTCHA + email verification,https://persprotect.com/data-broker-opt-out/searchpublicrecords
+SearchQuarry,searchquarry.com,https://members.searchquarry.com/opt-out,,Easy,"Contact info, address and phone records, public-record and vehicle data",Web form,https://persprotect.com/data-broker-opt-out/searchquarry
+Search Systems (directory of links),searchsystems.net,https://publicrecords.searchsystems.net/opt-out.php,webmaster@searchsystems.net,,,,
+SearchUSAPeople (InfoTracer),searchusapeople.com,https://www.searchusapeople.com/data-removal-request/,,Easy,"Name, current and past addresses, phone numbers, age, relatives",Online data-removal form + email verification (InfoTracer network),https://persprotect.com/data-broker-opt-out/searchusapeople
+Searqle,searqle.com,https://searqle.com/opt-out-information/,support@searqle.com,,,,
+SecretInfo,secretinfo.org,https://www.secretinfo.org/api/helper/optOutLight/search,support@secretinfo.org,,,,
+SeekHD,seekhd.com,https://www.seekhd.com/optout,contact@seekhd.com,,,,
+SimpleContacts,simplecontacts.com,https://www.simplecontacts.com/opt-out,support@simplecontacts.com,,,,
+SmartBackgroundChecks,smartbackgroundchecks.com,https://www.smartbackgroundchecks.com/optout,,Easy,"Names, phone numbers, current and past addresses, email addresses and relatives",Web form,https://persprotect.com/data-broker-opt-out/smartbackgroundchecks
+Snoopstation (Intelius),snoopstation.com,https://www.intelius.com/privacy-center,support@mailer.intelius.com,,,,
+Social Catfish,socialcatfish.com,https://socialcatfish.com/opt-out/,,Easy,"Identity data tied to images, email, phone and usernames (reverse lookup / verification)",Web form,https://persprotect.com/data-broker-opt-out/socialcatfish
+StateRecords.org network,southcarolinacourtrecords.us,https://southcarolinacourtrecords.us/optout/,privacy@courtrecords.us,,,,
+SouthCarolinaPublicRecords.com (TruthFinder),southcarolinapublicrecords.com,https://www.truthfinder.com/opt-out/v2/submit/,,,,,
+StateRecords.org network,southdakotacourtrecords.us,https://southdakotacourtrecords.us/optout/,privacy@courtrecords.us,,,,
+Spokeo,spokeo.com,https://www.spokeo.com/optout,privacy@spokeo.com,Easy,"Full name and aliases, current and past addresses, phone numbers, email addresses, relatives, age, and social-media profiles",Web form + email confirmation,https://persprotect.com/data-broker-opt-out/spokeo
+Spy Dialer,spydialer.com,https://www.spydialer.com/optout.aspx,,Easy,"Reverse phone, address and email lookups linking a number to a name and location",Web form,https://persprotect.com/data-broker-opt-out/spydialer
+SpyFly,spyfly.com,https://www.spyfly.com,privacy@spyfly.com,Moderate,"Background-report data: contact info, address history, public and court records",Web form,https://persprotect.com/data-broker-opt-out/spyfly
+StateRecords.org network,statecourts.org,https://www.statecourts.org/optout/,privacy@courtrecords.us,,,,
+StateRecords.org (InfoTracer hub),staterecords.org,https://members.staterecords.org/opt-out,privacy@staterecords.org,Easy,"Public-record data aggregated by name and location, including address history and other government-sourced records",Online form,https://persprotect.com/data-broker-opt-out/staterecords
+Subsplash,subsplash.com,https://www.subsplash.com/legal/privacy,support@subsplash.com,,,,
+Sync.ME,sync.me,https://sync.me/unsubscribe/,privacy@sync.me,Easy,"Phone numbers, names, social profile photos, caller-ID details",Online form,https://persprotect.com/data-broker-opt-out/syncme
+Tapad,tapad.com,,privacy@tapad.com,Moderate,"Cross-device identity graph linking your phones, tablets, and computers for unified ad targeting",Browser cookie opt-out + email,https://persprotect.com/data-broker-opt-out/tapad
+"TeamUnify, LLC",teamunify.com,https://www.teamunify.com/team/mdest/page/safe-sport/photo-opt-out,privacy@nbcuni.com,,,,
+Telephone Directories,telephonedirectories.us,https://www.telephonedirectories.us/Edit_Records,support@telephonedirectories.us,,,,
+Telguarder AS,telguarder.com,,support@telguarder.com,,,,
+Arrests.org (1337 Services LLC),tennesseearrests.org,https://www.tennesseearrests.org/request-portal,privacy@arrests.org,,,,
+StateRecords.org network,tennesseecourtrecords.us,https://tennesseecourtrecords.us/optout/,privacy@courtrecords.us,,,,
+TennHelp,tennhelp.com,https://www.tennhelp.com/public-resources/change-listing.html,,,,,
+Arrests.org (1337 Services LLC),texasarrests.org,https://www.texasarrests.org/request-portal,privacy@arrests.org,,,,
+StateRecords.org network,texascourtrecords.us,https://texascourtrecords.us/optout/,privacy@courtrecords.us,,,,
+TexasWarrantRoundup.org,texaswarrantroundup.org,https://texaswarrantroundup.org/InfoPayOpt-OutNew.pdf,,,,,
+ThatsThem,thatsthem.com,https://thatsthem.com/optout,,Easy,"Reverse-lookup data: name tied to email, phone, address, and sometimes IP and vehicle data",Web form,https://persprotect.com/data-broker-opt-out/thatsthem
+The Dots Global Limited,the-dots.com,https://the-dots.com/,help@the-dots.com,,,,
+The Bump,thebump.com,https://support.thebump.com/hc/en-us/articles/34980593049748,support@thebump.com,,,,
+Data Trust,thedatatrust.com,https://thedatatrust.com/do-not-sell-my-personal-information/,info@thedatatrust.com,,,,
+"The Georgia Gazette, LLC",thegeorgiagazette.com,,Support@TheGeorgiaGazette.com,,,,
+"Ladders, Inc.",theladders.com,,support@theladders.com,,,,
+ThePublicIndex,thepublicindex.org,https://thepublicindex.org/optout,support@thepublicindex.org,,,,
+Thomson Reuters (CLEAR),thomsonreuters.com,https://privacyportal.onetrust.com/webform/dbf5ae8a-0a6a-4f4b-b527-7f94d0de6bbc/170d8ef9-9f1c-45f6-b338-9f3fb30c801e,privacy.issues@thomsonreuters.com,,,,
+Topwa.org,topwa.org,https://www.topwa.org,,,,,
+"Torre Labs, Inc.",torre.ai,https://torre.ai/en/terms,legal@torre.ai,,,,
+"TowerData, Inc.",towerdata.com,https://www.towerdata.com/ccpa-form,privacy@towerdata.com,,,,
+Transparent Nevada,transparentnevada.com,,office@npri.org,,,,
+TransUnion,transunion.com,https://www.transunion.com/consumer-privacy,,Moderate,"Marketing and audience data sold to advertisers via TransUnion's TruAudience/marketing solutions, distinct from your credit file",Web privacy form or phone,https://persprotect.com/data-broker-opt-out/transunionmarketing
+TruePeopleSearch,truepeoplesearch.com,https://www.truepeoplesearch.com/removal,,Easy,"Phone numbers, current and past addresses, relatives and associates",Web form,https://persprotect.com/data-broker-opt-out/truepeoplesearch
+TruePeopleSearch.net,truepeoplesearch.net,https://truepeoplesearch.net/remove-my-info,support@truepeoplesearch.net,Easy,"Phone numbers, address history and relatives",Removal form,https://persprotect.com/data-broker-opt-out/truepeoplesearchnet
+"Trulia, LLC",trulia.com,https://support.trulia.com/hc/en-us/articles/221366928,customerservice@trulia.com,,,,
+Veriforia/Dataveria network,trustifo.com,https://trustifo.com/page/privacy,,,,,
+TruthFinder (PeopleConnect),truthfinder.com,https://suppression.peopleconnect.us/,,Easy,"Background-report data: contact info, address history, possible criminal and court records, relatives",Web form (PeopleConnect suppression),https://persprotect.com/data-broker-opt-out/truthfinder
+TruthRecord (We Inform LLC),truthrecord.org,https://www.truthrecord.org/name_search/landing_page,,Easy,"Background and public-record data: contact info, address history, court and criminal records",Web form,https://persprotect.com/data-broker-opt-out/truthrecord
+TruthViewer,truthviewer.com,https://www.truthviewer.com/api/helper/optOutLight/search,,Easy,"Contact info, address history, public records and relatives",Web form,https://persprotect.com/data-broker-opt-out/truthviewer
+uFind.name,ufind.name,https://ufind.name/opt-out,support@ufind.name,,,,
+UnitedStatesPhonebook (USPhoneBook),unitedstatesphonebook.com,https://www.usphonebook.com/removal,,,,,
+Deepdy Ltd,unknownphone.com,,unknownadmin@unknownphone.com,,,,
+UnMask,unmask.com,https://unmask.com/opt-out/,,Easy,"Background data: contact info, address history, public and court records, relatives",Web form,https://persprotect.com/data-broker-opt-out/unmask
+USA Public Data Search,usa-official.com,https://usa-official.com/optout,support@usa-official.com,,,,
+USA-People-Search,usa-people-search.com,https://www.usa-people-search.com/manage,,Easy,"Address history, phone numbers, age and relatives",Web form (manage/optout),https://persprotect.com/data-broker-opt-out/usa-people-search
+USAPeopleData (Intelius),usapeopledata.com,http://www.usapeopledata.com/,,,,,
+USATrace (PeopleFinders),usatrace.com,https://www.usatrace.com/your-privacy/,research@usatrace.com,Moderate,"Full name, age, current and past addresses, phone numbers, email address, spouse and relative names",Email request (subject 'Block Info' to research@usatrace.com),https://persprotect.com/data-broker-opt-out/usatrace
+User-Searcher,user-searcher.com,https://blog.user-searcher.com/policy,admin@user-searcher.com,,,,
+US People Search,uspeoplesearch.com,,contact@uspeoplesearch.net,,,,
+USPhoneBook,usphonebook.com,https://www.usphonebook.com/opt-out,,Easy,"Phone numbers (reverse phone lookup), names, addresses and relatives",Web form,https://persprotect.com/data-broker-opt-out/usphonebook
+USPhoneLookup,usphonelookup.com,,support@usphonelookup.com,,,,
+USRecords (InfoTracer),usrecords.net,https://www.usrecords.net,,,,,
+US Search (PeopleConnect),ussearch.com,https://suppression.peopleconnect.us/,,Easy,"Contact information, age, address history, relatives and associates",Web form (PeopleConnect suppression),https://persprotect.com/data-broker-opt-out/ussearch
+InfoTracer,uswarrants.org,https://infotracer.com/optout/,,,,,
+Arrests.org (1337 Services LLC),utaharrests.org,https://www.utaharrests.org/request-portal,privacy@arrests.org,,,,
+StateRecords.org network,utahcourtrecords.us,https://utahcourtrecords.us/optout/,privacy@courtrecords.us,,,,
+Veriforia/Dataveria network,verecor.com,https://verecor.com/control/privacy,,,,,
+Veriforia/Dataveria network,vericora.com,https://vericora.com/ng/control/privacy,,,,,
+Veriforia/Dataveria network,veriforia.com,https://veriforia.com/ng/control/privacy,,Easy,"Contact info, address history, phone numbers and relatives",Control / privacy page,https://persprotect.com/data-broker-opt-out/veriforia
+VerifyPublicRecords (CISNationwide),verifypublicrecords.com,https://verifypublicrecords.com/Opt%20Out.html,,,,,
+VerifyRecords (InfoPay),verifyrecords.com,https://verifyrecords.com/optout.html,support@verifyrecords.com,,,,
+InfoTracer network,verifythem.org,https://infotracer.com/optout,,,,,
+Veripages,veripages.com,https://veripages.com/inner/control-privacy,,Easy,"Names, phone numbers, address history and relatives",Web form,https://persprotect.com/data-broker-opt-out/veripages
+StateRecords.org network,vermontcourtrecords.us,https://vermontcourtrecords.us/optout/,privacy@courtrecords.us,,,,
+Arrests.org (1337 Services LLC),virginiaarrests.org,https://www.virginiaarrests.org/request-portal,privacy@arrests.org,,,,
+StateRecords.org network,virginiacourtrecords.us,https://virginiacourtrecords.us/optout/,privacy@courtrecords.us,,,,
+Veriforia/Dataveria network,virtory.com,https://virtory.com/prvt/control/privacy,,Moderate,"Contact details, address history, court records, and linked online profiles",Online form + email confirmation,https://persprotect.com/data-broker-opt-out/virtory
+VoterRecords.com,voterrecords.com,https://voterrecords.com/faq,admin@voterrecords.com,Easy,"Voter-registration data: full name, home address, age, political party affiliation and voting district",Per-record opt-out form,https://persprotect.com/data-broker-opt-out/voterrecords
+Arrests.org (1337 Services LLC),vtarrests.org,https://www.vtarrests.org/request-portal,privacy@arrests.org,,,,
+Arrests.org (1337 Services LLC),washingtonarrests.org,https://www.washingtonarrests.org/request-portal,privacy@arrests.org,,,,
+StateRecords.org network,washingtoncourtrecords.us,https://washingtoncourtrecords.us/optout/,privacy@courtrecords.us,,,,
+WebMD Health Corp.,webmd.com,https://www.webmd.com/about-webmd-policies/about-ccpa-do-not-sell,privacy@webmd.com,,,,
+WeInform (We Inform LLC),weinform.org,https://www.weinform.org/optOut/name/landing,,,,,
+Veriforia/Dataveria network,wellnut.com,https://wellnut.com/noi/control/privacy,support@wellnut.com,Easy,"Contact info, address history, phone numbers and relatives",Control / privacy page,https://persprotect.com/data-broker-opt-out/wellnut
+StateRecords.org network,westvirginiacourtrecords.us,https://westvirginiacourtrecords.us/optout/,privacy@courtrecords.us,,,,
+Whitepages,whitepages.com,https://www.whitepages.com/suppression-requests,,Moderate,"Address history, landline and mobile phone numbers, age range, relatives and associates",Suppression form + phone verification,https://persprotect.com/data-broker-opt-out/whitepages
+Arrests.org (1337 Services LLC),wisconsinarrests.org,https://www.wisconsinarrests.org/request-portal,privacy@arrests.org,,,,
+StateRecords.org network,wisconsincourtrecords.us,https://wisconsincourtrecords.us/optout/,privacy@courtrecords.us,,,,
+Arrests.org (1337 Services LLC),wvarrests.org,https://www.wvarrests.org/request-portal,privacy@arrests.org,,,,
+Arrests.org (1337 Services LLC),wyomingarrests.org,https://www.wyomingarrests.org/request-portal,privacy@arrests.org,,,,
+StateRecords.org network,wyomingcourtrecords.us,https://wyomingcourtrecords.us/optout/,privacy@courtrecords.us,,,,
+Wyty,wyty.com,https://www.wyty.com/remove/,support@wyty.com,,,,
+X-Ray Contact,x-ray.contact,https://x-ray.contact/blog/x-ray-contact-privacy-policy-update-account-deletion/,support@x-ray.contact,,,,
+The Yankee Group (people search),yankeegroup.com,https://www.yankeegroup.com/optout/,,,,,
+YellowBook (BeenVerified data),yellowbook.com,https://www.beenverified.com/f/optout/search,,,,,
+YellowPages (YP/Thryv),yellowpages.com,https://www.yellowpages.com/about/ccpa-yp,ypcsupport@yp.com,,,,
+Yellow Pages Directory Inc.,yellowpagesdirectory.com,https://www.yellowpagesdirectory.com/opt_out/,,,,,
+"YouMail, Inc.",youmail.com,,support@youmail.com,,,,
+ZabaSearch (PeopleConnect/Intelius),zabasearch.com,https://suppression.peopleconnect.us/,,Easy,"Names, current and past addresses, phone numbers and age",Web form (block records),https://persprotect.com/data-broker-opt-out/zabasearch
+"ZipRecruiter, Inc.",ziprecruiter.com,https://www.ziprecruiter.com/ccpa-opt-out,dsars@ziprecruiter.com,,,,
+Zlookup,zlookup.com,https://www.zlookup.com/opt_out,hello@zlookup.com,,,,
+ZoSearch,zosearch.com,,support@zosearch.com,,,,
+"Zumper, Inc.",zumper.com,,press@zumper.com,,,,

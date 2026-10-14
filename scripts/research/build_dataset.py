@@ -8,12 +8,22 @@ submitted by this script.
 
 from __future__ import annotations
 
+import sys
+from pathlib import Path
+
+_here = Path(__file__).resolve().parent
+_scripts = _here if (_here / "bootstrap_path.py").exists() else _here.parent
+if str(_scripts) not in sys.path:
+    sys.path.insert(0, str(_scripts))
+import bootstrap_path
+
+bootstrap_path.install()
+
 import hashlib
 import json
 import re
 from collections import defaultdict
 from datetime import datetime, timezone
-from pathlib import Path
 from urllib.parse import urlparse
 
 from catalog import ROOT, assign_ids, load_catalog, shared_url_groups
@@ -1224,6 +1234,8 @@ def render_progress_md(report: dict) -> str:
     return "\n".join(
         [
             "# Research progress",
+            "",
+            "Counts below are for the catalog that was current when this file was built. The current link list is [`opt-outs.csv`](../opt-outs.csv).",
             "",
             f"Dataset version `{report['dataset_version']}`, schema `{report['schema_version']}`, generated {report['generated_at']}.",
             "",

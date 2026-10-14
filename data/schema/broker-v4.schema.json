@@ -1,0 +1,435 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/cvs0/data-brokers-list/data/schema/broker-v4.schema.json",
+  "title": "Broker profile scan (v4)",
+  "description": "Every v3 field, plus related-domain and stated-removal emails, the search-page CAPTCHA, an automation summary, and the outcome of one synthetic search. Null means that fact was not established. Removal forms are not submitted and no CAPTCHA is solved. The search test does not store a response body or a listing URL.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "checked_at", "broker_count", "brokers"],
+  "properties": {
+    "schema_version": { "const": "4.0.0" },
+    "checked_at": { "type": "string" },
+    "method": { "type": "string" },
+    "broker_count": { "type": "integer", "minimum": 1 },
+    "counts": { "type": "object" },
+    "brokers": {
+      "type": "object",
+      "minProperties": 1,
+      "additionalProperties": { "$ref": "#/$defs/broker" }
+    }
+  },
+  "$defs": {
+    "nullableString": { "type": ["string", "null"] },
+    "nullableBoolean": { "type": ["boolean", "null"] },
+    "nullableInt": { "type": ["integer", "null"] },
+    "broker": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "schema_version", "id", "name", "category", "domain", "checked_at",
+        "liveness", "liveness_detail", "homepage", "logo_url", "images", "theme_color",
+        "languages", "legal_name", "search", "removal", "bot_defense", "legal", "pages",
+        "automation", "location", "network", "request", "search_test"
+      ],
+      "properties": {
+        "schema_version": { "const": "4.0.0" },
+        "id": { "type": "string" },
+        "name": { "type": "string" },
+        "category": { "type": "string" },
+        "domain": { "type": "string" },
+        "checked_at": { "type": "string" },
+        "liveness": {
+          "enum": ["alive", "blocked", "dead", "opt_out_missing", "likely_dead", "robots_disallowed", "error", "not_checked"]
+        },
+        "liveness_detail": { "type": "string" },
+        "homepage": { "$ref": "#/$defs/nullableString" },
+        "logo_url": { "$ref": "#/$defs/nullableString" },
+        "images": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["url", "kind", "source_page"],
+            "properties": {
+              "url": { "type": "string" },
+              "kind": { "enum": ["logo", "icon", "apple_touch_icon", "og_image", "twitter_image", "json_ld"] },
+              "source_page": { "type": "string" }
+            }
+          }
+        },
+        "theme_color": { "$ref": "#/$defs/nullableString" },
+        "languages": { "type": "array", "items": { "type": "string" } },
+        "legal_name": { "$ref": "#/$defs/nullableString" },
+        "search": { "$ref": "#/$defs/search" },
+        "search_test": { "$ref": "#/$defs/searchTest" },
+        "removal": { "$ref": "#/$defs/removal" },
+        "bot_defense": { "$ref": "#/$defs/bot" },
+        "legal": { "$ref": "#/$defs/legal" },
+        "automation": { "$ref": "#/$defs/automation" },
+        "location": { "$ref": "#/$defs/location" },
+        "network": { "$ref": "#/$defs/network" },
+        "request": { "$ref": "#/$defs/request" },
+        "pages": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["url", "final_url", "status", "role", "title", "liveness"],
+            "properties": {
+              "url": { "type": "string" },
+              "final_url": { "$ref": "#/$defs/nullableString" },
+              "status": { "$ref": "#/$defs/nullableInt" },
+              "role": { "type": "string" },
+              "title": { "type": "string" },
+              "liveness": { "type": "string" }
+            }
+          }
+        }
+      }
+    },
+    "field": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "A public form control. Extra attributes stay null until a form-detail read of that page. value is the HTML default, never a typed entry, and password, hidden, email, and token defaults are omitted.",
+      "required": ["name", "type", "canonical", "required", "id", "label", "inputmode", "pattern", "minlength", "maxlength", "min", "max", "step", "accept", "multiple", "disabled", "readonly", "checked", "value"],
+      "properties": {
+        "name": { "type": "string" },
+        "type": { "type": "string" },
+        "canonical": { "$ref": "#/$defs/nullableString" },
+        "required": { "type": "boolean" },
+        "autocomplete": { "$ref": "#/$defs/nullableString" },
+        "placeholder": { "$ref": "#/$defs/nullableString" },
+        "options": { "type": "array", "items": { "type": "string" } },
+        "id": { "$ref": "#/$defs/nullableString" },
+        "label": { "$ref": "#/$defs/nullableString" },
+        "inputmode": { "$ref": "#/$defs/nullableString" },
+        "pattern": { "$ref": "#/$defs/nullableString" },
+        "minlength": { "type": ["integer", "null"], "minimum": 0, "maximum": 100000 },
+        "maxlength": { "type": ["integer", "null"], "minimum": 0, "maximum": 100000 },
+        "min": { "$ref": "#/$defs/nullableString" },
+        "max": { "$ref": "#/$defs/nullableString" },
+        "step": { "$ref": "#/$defs/nullableString" },
+        "accept": { "$ref": "#/$defs/nullableString" },
+        "multiple": { "$ref": "#/$defs/nullableBoolean" },
+        "disabled": { "$ref": "#/$defs/nullableBoolean" },
+        "readonly": { "$ref": "#/$defs/nullableBoolean" },
+        "checked": { "$ref": "#/$defs/nullableBoolean" },
+        "value": { "$ref": "#/$defs/nullableString" }
+      }
+    },
+    "formMeta": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "The form element around the stored controls. hidden_names are names only. novalidate is null until that form was read.",
+      "required": ["id", "name", "autocomplete", "novalidate", "submit_label", "hidden_names"],
+      "properties": {
+        "id": { "$ref": "#/$defs/nullableString" },
+        "name": { "$ref": "#/$defs/nullableString" },
+        "autocomplete": { "$ref": "#/$defs/nullableString" },
+        "novalidate": { "$ref": "#/$defs/nullableBoolean" },
+        "submit_label": { "$ref": "#/$defs/nullableString" },
+        "hidden_names": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "searchTest": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "One synthetic search of the stored public form. Null means that broker was not tested. page_kind is results, empty, loader, form, or other. result_count is how many records the page stated, or 0 when it stated nobody matched. path_prefix is only the first segment of the response path. The query, the response body, record text, and listing URLs are not stored.",
+      "required": ["outcome", "http_status", "path_prefix", "fields_sent", "missing", "page_kind", "result_count", "checked_at"],
+      "properties": {
+        "outcome": {
+          "enum": [
+            "results", "submitted", "no_results", "unfilled", "challenge",
+            "captcha", "http_error", "robots", "error", null
+          ]
+        },
+        "http_status": { "$ref": "#/$defs/nullableInt" },
+        "path_prefix": { "$ref": "#/$defs/nullableString" },
+        "fields_sent": { "type": "array", "items": { "type": "string" } },
+        "missing": { "type": "array", "items": { "type": "string" } },
+        "page_kind": { "enum": ["results", "empty", "loader", "form", "other", null] },
+        "result_count": { "type": ["integer", "null"], "minimum": 0 },
+        "checked_at": { "$ref": "#/$defs/nullableString" }
+      }
+    },
+    "search": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["available", "method", "page_url", "form_action", "inputs", "form_meta", "url_pattern", "directory_prefixes", "paywall", "login_wall", "captcha_provider", "captcha_sitekey", "captcha_checked", "captcha_detail"],
+      "properties": {
+        "available": { "$ref": "#/$defs/nullableBoolean" },
+        "method": { "enum": ["http_get", "http_form_post", "none", "unknown"] },
+        "page_url": { "$ref": "#/$defs/nullableString" },
+        "form_action": { "$ref": "#/$defs/nullableString" },
+        "inputs": { "type": "array", "items": { "$ref": "#/$defs/field" } },
+        "form_meta": { "$ref": "#/$defs/formMeta" },
+        "url_pattern": { "$ref": "#/$defs/nullableString" },
+        "directory_prefixes": { "type": "array", "items": { "type": "string" } },
+        "paywall": { "$ref": "#/$defs/nullableBoolean" },
+        "login_wall": { "$ref": "#/$defs/nullableBoolean" },
+        "captcha_provider": { "enum": ["recaptcha_v2", "recaptcha_v3", "recaptcha_enterprise", "hcaptcha", "turnstile", "arkose", "geetest", "friendly", "mtcaptcha", "datadome", "perimeterx", "custom", null] },
+        "captcha_sitekey": { "$ref": "#/$defs/nullableString" },
+        "captcha_checked": { "$ref": "#/$defs/nullableBoolean" },
+        "captcha_detail": { "$ref": "#/$defs/captchaDetailOrNull" }
+      }
+    },
+    "removal": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "url", "final_url", "http_status", "kinds", "channels", "emails", "phones",
+        "postal_address", "portal", "form_fields", "form_meta", "csrf_field_name", "requires_profile_url", "form_action", "form_method",
+        "captcha", "consent_vendor", "success_text", "suppression_not_deletion",
+        "processing_days", "processing_text"
+      ],
+      "properties": {
+        "url": { "$ref": "#/$defs/nullableString" },
+        "final_url": { "$ref": "#/$defs/nullableString" },
+        "http_status": { "$ref": "#/$defs/nullableInt" },
+        "kinds": { "type": "array", "items": { "type": "string" } },
+        "channels": { "type": "array", "items": { "enum": ["web_form", "email", "postal_mail", "phone", "official_portal"] } },
+        "emails": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["email", "confidence", "source_url"],
+            "properties": {
+              "email": { "type": "string" },
+              "confidence": { "enum": ["extracted", "related_domain", "stated_removal", "uncertain"] },
+              "source_url": { "type": "string" }
+            }
+          }
+        },
+        "phones": { "type": "array", "items": { "type": "string" } },
+        "postal_address": { "$ref": "#/$defs/nullableString" },
+        "portal": {
+          "type": ["object", "null"],
+          "additionalProperties": false,
+          "required": ["vendor", "url"],
+          "properties": {
+            "vendor": { "type": "string" },
+            "url": { "type": "string" }
+          }
+        },
+        "form_fields": { "type": "array", "items": { "$ref": "#/$defs/field" } },
+        "form_meta": { "$ref": "#/$defs/formMeta" },
+        "csrf_field_name": { "$ref": "#/$defs/nullableString" },
+        "requires_profile_url": { "$ref": "#/$defs/nullableBoolean" },
+        "form_action": { "$ref": "#/$defs/nullableString" },
+        "form_method": { "enum": ["http_get", "http_form_post", null] },
+        "captcha": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["provider", "sitekey", "pages", "checked", "checked_url", "detail"],
+          "properties": {
+            "provider": { "enum": ["recaptcha_v2", "recaptcha_v3", "recaptcha_enterprise", "hcaptcha", "turnstile", "arkose", "geetest", "friendly", "mtcaptcha", "datadome", "perimeterx", "custom", null] },
+            "sitekey": { "$ref": "#/$defs/nullableString" },
+            "pages": { "type": "array", "items": { "type": "string" } },
+            "checked": { "$ref": "#/$defs/nullableBoolean" },
+            "checked_url": { "$ref": "#/$defs/nullableString" },
+            "detail": { "$ref": "#/$defs/captchaDetailOrNull" }
+          }
+        },
+        "consent_vendor": { "$ref": "#/$defs/nullableString" },
+        "success_text": { "$ref": "#/$defs/nullableString" },
+        "suppression_not_deletion": { "$ref": "#/$defs/nullableBoolean" },
+        "processing_days": { "$ref": "#/$defs/nullableInt" },
+        "processing_text": { "$ref": "#/$defs/nullableString" }
+      }
+    },
+    "bot": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["vendor", "outcome"],
+      "properties": {
+        "vendor": { "$ref": "#/$defs/nullableString" },
+        "outcome": { "enum": ["none", "challenge_page", "hard_block", "unknown"] }
+      }
+    },
+    "automation": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "Computed from the stored search and removal fields. A machine can fill a search when inputs are stored and that page has no CAPTCHA. A removal is fillable through a captcha-free form, or through an extracted, related-domain, or stated-removal email. removal_blocker is null when one of those paths exists.",
+      "required": [
+        "search_scanned", "search_fillable", "search_captcha", "search_fields",
+        "removal_form_fillable", "removal_email_usable", "removal_fields",
+        "removal_path", "fully_automatable", "usable_emails",
+        "search_required", "removal_required", "email_verification", "id_document",
+        "shared_removal_ids", "removal_captcha", "captcha_blocks_form", "captcha_email_fallback",
+        "removal_blocker"
+      ],
+      "properties": {
+        "search_scanned": { "type": "boolean" },
+        "search_fillable": { "type": "boolean" },
+        "search_captcha": { "type": "boolean" },
+        "search_fields": { "type": "array", "items": { "type": "string" } },
+        "removal_form_fillable": { "type": "boolean" },
+        "removal_email_usable": { "type": "boolean" },
+        "removal_fields": { "type": "array", "items": { "type": "string" } },
+        "removal_path": { "enum": ["form", "email", null] },
+        "fully_automatable": { "type": "boolean" },
+        "usable_emails": { "type": "array", "items": { "type": "string" } },
+        "search_required": { "type": "array", "items": { "type": "string" } },
+        "removal_required": { "type": "array", "items": { "type": "string" } },
+        "email_verification": { "$ref": "#/$defs/nullableBoolean" },
+        "id_document": { "$ref": "#/$defs/nullableBoolean" },
+        "shared_removal_ids": { "type": "array", "items": { "type": "string" } },
+        "removal_captcha": { "type": "boolean" },
+        "captcha_blocks_form": { "type": "boolean" },
+        "captcha_email_fallback": { "type": "boolean" },
+        "removal_blocker": {
+          "enum": [
+            "captcha_form", "generic_inbox", "phone_postal", "portal", "phone", "postal",
+            "bot_wall", "fetch_error", "opt_out_gone", "robots", "captcha_no_form", "no_channel",
+            null
+          ]
+        }
+      }
+    },
+    "location": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "Where the broker operates and which regions a page, site name, domain, search form, or California Privacy Protection Agency filing established. Null means that fact was not established.",
+      "required": [
+        "country", "region", "locality", "postal_code", "street", "postal_address",
+        "coverage", "search_regions", "sources"
+      ],
+      "properties": {
+        "country": { "$ref": "#/$defs/nullableString" },
+        "region": { "$ref": "#/$defs/nullableString" },
+        "locality": { "$ref": "#/$defs/nullableString" },
+        "postal_code": { "$ref": "#/$defs/nullableString" },
+        "street": { "$ref": "#/$defs/nullableString" },
+        "postal_address": { "$ref": "#/$defs/nullableString" },
+        "coverage": { "type": "array", "items": { "type": "string" } },
+        "search_regions": { "type": "array", "items": { "type": "string" } },
+        "sources": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "legal": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "privacy_policy_url", "terms_url", "automation_prohibited", "automation_clause",
+        "residency", "authorized_agent", "data_categories",
+        "sells_personal_information", "sells_clause", "children_not_directed"
+      ],
+      "properties": {
+        "privacy_policy_url": { "$ref": "#/$defs/nullableString" },
+        "terms_url": { "$ref": "#/$defs/nullableString" },
+        "automation_prohibited": { "$ref": "#/$defs/nullableBoolean" },
+        "automation_clause": { "$ref": "#/$defs/nullableString" },
+        "residency": { "type": "array", "items": { "type": "string" } },
+        "authorized_agent": { "$ref": "#/$defs/nullableBoolean" },
+        "data_categories": { "type": "array", "items": { "type": "string" } },
+        "sells_personal_information": { "$ref": "#/$defs/nullableBoolean" },
+        "sells_clause": { "$ref": "#/$defs/nullableString" },
+        "children_not_directed": { "$ref": "#/$defs/nullableBoolean" }
+      }
+    },
+    "network": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "Public DNS, certificate, registration, and response-header facts. Empty arrays mean the lookup ran and found none. Null means that fact was not established. Registration facts come from RDAP and do not include a person's name or email.",
+      "required": [
+        "checked", "addresses", "ipv6", "cname", "mx", "mail_provider", "spf", "dmarc", "dkim",
+        "nameservers", "dns_provider", "soa_primary", "caa", "dnssec", "asn", "asn_country", "prefix",
+        "cdn", "server", "tls_org", "tls_issuer", "tls_names", "tls_version", "tls_not_before", "tls_not_after",
+        "registrar", "registered", "registration_expires", "domain_status"
+      ],
+      "properties": {
+        "checked": { "type": "boolean" },
+        "addresses": { "type": "array", "items": { "type": "string" } },
+        "ipv6": { "type": "array", "items": { "type": "string" } },
+        "cname": { "$ref": "#/$defs/nullableString" },
+        "mx": { "type": "array", "items": { "type": "string" } },
+        "mail_provider": { "$ref": "#/$defs/nullableString" },
+        "spf": { "$ref": "#/$defs/nullableString" },
+        "dmarc": { "enum": ["none", "quarantine", "reject", null] },
+        "dkim": { "type": "array", "items": { "type": "string" } },
+        "nameservers": { "type": "array", "items": { "type": "string" } },
+        "dns_provider": { "$ref": "#/$defs/nullableString" },
+        "soa_primary": { "$ref": "#/$defs/nullableString" },
+        "caa": { "type": "array", "items": { "type": "string" } },
+        "dnssec": { "$ref": "#/$defs/nullableBoolean" },
+        "asn": { "$ref": "#/$defs/nullableString" },
+        "asn_country": { "$ref": "#/$defs/nullableString" },
+        "prefix": { "$ref": "#/$defs/nullableString" },
+        "cdn": { "$ref": "#/$defs/nullableString" },
+        "server": { "$ref": "#/$defs/nullableString" },
+        "tls_org": { "$ref": "#/$defs/nullableString" },
+        "tls_issuer": { "$ref": "#/$defs/nullableString" },
+        "tls_names": { "type": "array", "items": { "type": "string" } },
+        "tls_version": { "$ref": "#/$defs/nullableString" },
+        "tls_not_before": { "$ref": "#/$defs/nullableString" },
+        "tls_not_after": { "$ref": "#/$defs/nullableString" },
+        "registrar": { "$ref": "#/$defs/nullableString" },
+        "registered": { "$ref": "#/$defs/nullableString" },
+        "registration_expires": { "$ref": "#/$defs/nullableString" },
+        "domain_status": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "request": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "How the stored removal URL is reached. Null means that fact was not established.",
+      "required": [
+        "removal_host", "same_site", "https", "redirected", "redirect_count",
+        "form_enctype", "content_type", "hsts", "hsts_max_age", "hsts_subdomains", "hsts_preload",
+        "http_version", "http3", "frame_options", "nosniff", "referrer_policy", "csp", "powered_by", "cookie_names"
+      ],
+      "properties": {
+        "removal_host": { "$ref": "#/$defs/nullableString" },
+        "same_site": { "$ref": "#/$defs/nullableBoolean" },
+        "https": { "$ref": "#/$defs/nullableBoolean" },
+        "redirected": { "$ref": "#/$defs/nullableBoolean" },
+        "redirect_count": { "$ref": "#/$defs/nullableInt" },
+        "form_enctype": { "enum": ["urlencoded", "multipart", "text", null] },
+        "content_type": { "$ref": "#/$defs/nullableString" },
+        "hsts": { "$ref": "#/$defs/nullableBoolean" },
+        "hsts_max_age": { "$ref": "#/$defs/nullableInt" },
+        "hsts_subdomains": { "$ref": "#/$defs/nullableBoolean" },
+        "hsts_preload": { "$ref": "#/$defs/nullableBoolean" },
+        "http_version": { "$ref": "#/$defs/nullableString" },
+        "http3": { "$ref": "#/$defs/nullableBoolean" },
+        "frame_options": { "$ref": "#/$defs/nullableString" },
+        "nosniff": { "$ref": "#/$defs/nullableBoolean" },
+        "referrer_policy": { "$ref": "#/$defs/nullableString" },
+        "csp": { "$ref": "#/$defs/nullableBoolean" },
+        "powered_by": { "$ref": "#/$defs/nullableString" },
+        "cookie_names": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "captchaDetailOrNull": {
+      "anyOf": [
+        { "type": "null" },
+        { "$ref": "#/$defs/captchaDetail" }
+      ]
+    },
+    "captchaDetail": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "Public settings read from the CAPTCHA widget. Null inside a field means the widget did not state it. Nothing here solves a CAPTCHA.",
+      "required": [
+        "mode", "invisible", "size", "theme", "action", "badge", "language",
+        "appearance", "enterprise", "api_domain", "script_path", "token_field", "callback"
+      ],
+      "properties": {
+        "mode": { "enum": ["checkbox", "invisible", "score", null] },
+        "invisible": { "$ref": "#/$defs/nullableBoolean" },
+        "size": { "enum": ["normal", "compact", "invisible", "flexible", null] },
+        "theme": { "enum": ["light", "dark", "auto", null] },
+        "action": { "$ref": "#/$defs/nullableString" },
+        "badge": { "enum": ["bottomright", "bottomleft", "inline", null] },
+        "language": { "$ref": "#/$defs/nullableString" },
+        "appearance": { "enum": ["always", "execute", "interaction-only", null] },
+        "enterprise": { "$ref": "#/$defs/nullableBoolean" },
+        "api_domain": { "$ref": "#/$defs/nullableString" },
+        "script_path": { "$ref": "#/$defs/nullableString" },
+        "token_field": { "$ref": "#/$defs/nullableString" },
+        "callback": { "$ref": "#/$defs/nullableString" }
+      }
+    }
+  }
+}

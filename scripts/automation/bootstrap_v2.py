@@ -6,11 +6,22 @@ v1 does not establish stays null. Generated specs start as `draft` (v1 blocked)
 or `researching`. Existing files are left alone unless --force is passed, so
 hand edits are never overwritten.
 
-  python scripts/bootstrap_v2.py                 # every id in data/v2/priority.csv
-  python scripts/bootstrap_v2.py --ids spokeo    # selected ids
+  python scripts/automation/bootstrap_v2.py                 # every id in data/v2/priority.csv
+  python scripts/automation/bootstrap_v2.py --ids spokeo    # selected ids
 """
 
 from __future__ import annotations
+
+import sys
+from pathlib import Path
+
+_here = Path(__file__).resolve().parent
+_scripts = _here if (_here / "bootstrap_path.py").exists() else _here.parent
+if str(_scripts) not in sys.path:
+    sys.path.insert(0, str(_scripts))
+import bootstrap_path
+
+bootstrap_path.install()
 
 import argparse
 import csv
@@ -19,7 +30,7 @@ from datetime import date
 from v2_common import BROKERS_DIR, V2_DIR, canonical_field, dump_yaml, form_name, processing_days, v1_records
 
 PRIORITY = V2_DIR / "priority.csv"
-HEADER = ("# Bootstrapped from data/v1 by scripts/bootstrap_v2.py on {today}.\n"
+HEADER = ("# Bootstrapped from data/v1 by scripts/automation/bootstrap_v2.py on {today}.\n"
           "# Review before promoting lifecycle.status. null means not established, never false.")
 SEARCH_INPUTS = {"name": ["full_name"], "location": ["city", "region"], "phone": ["phone"], "email": ["email"],
                  "profile_url": ["profile_url"]}
@@ -104,7 +115,7 @@ def build_spec(rec: dict, prio: dict, today: str, peers: dict) -> dict:
             cite(f"/removal/channels/{len(channels) - 1}", source="inferred",
                  note="v1 submission method is unknown; the published request URL is used as a starting point.")
         if fields:
-            cite(f"/removal/channels/{len(channels) - 1}/fields", note="Mapped from v1 required_fields by scripts/v2_common.py")
+            cite(f"/removal/channels/{len(channels) - 1}/fields", note="Mapped from v1 required_fields by scripts/automation/v2_common.py")
         rank += 1
     if email:
         template = "ccpa_delete" if ccpa else "voluntary_optout"

@@ -10,13 +10,23 @@ residential proxy is required.
 
 from __future__ import annotations
 
+import sys
+from pathlib import Path
+
+_here = Path(__file__).resolve().parent
+_scripts = _here if (_here / "bootstrap_path.py").exists() else _here.parent
+if str(_scripts) not in sys.path:
+    sys.path.insert(0, str(_scripts))
+import bootstrap_path
+
+bootstrap_path.install()
+
 import argparse
 import asyncio
 import json
 import re
 from collections import defaultdict
 from datetime import datetime, timezone
-from pathlib import Path
 from urllib.parse import urljoin, urlparse
 
 from playwright.async_api import async_playwright

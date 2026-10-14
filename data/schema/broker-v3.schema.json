@@ -1,0 +1,200 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/cvs0/data-brokers-list/data/schema/broker-v3.schema.json",
+  "title": "Broker profile scan (v3)",
+  "description": "One record per catalog broker. Values are read from the broker's public pages. Null means the page did not establish the fact. No form is submitted and no CAPTCHA is solved.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "checked_at", "broker_count", "brokers"],
+  "properties": {
+    "schema_version": { "const": "3.0.0" },
+    "checked_at": { "type": "string" },
+    "method": { "type": "string" },
+    "broker_count": { "type": "integer", "minimum": 1 },
+    "counts": { "type": "object" },
+    "brokers": {
+      "type": "object",
+      "minProperties": 1,
+      "additionalProperties": { "$ref": "#/$defs/broker" }
+    }
+  },
+  "$defs": {
+    "nullableString": { "type": ["string", "null"] },
+    "nullableBoolean": { "type": ["boolean", "null"] },
+    "nullableInt": { "type": ["integer", "null"] },
+    "broker": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "schema_version", "id", "name", "category", "domain", "checked_at",
+        "liveness", "liveness_detail", "homepage", "logo_url", "images", "theme_color",
+        "languages", "legal_name", "search", "removal", "bot_defense", "legal", "pages"
+      ],
+      "properties": {
+        "schema_version": { "const": "3.0.0" },
+        "id": { "type": "string" },
+        "name": { "type": "string" },
+        "category": { "type": "string" },
+        "domain": { "type": "string" },
+        "checked_at": { "type": "string" },
+        "liveness": {
+          "enum": ["alive", "blocked", "dead", "opt_out_missing", "likely_dead", "robots_disallowed", "error", "not_checked"]
+        },
+        "liveness_detail": { "type": "string" },
+        "homepage": { "$ref": "#/$defs/nullableString" },
+        "logo_url": { "$ref": "#/$defs/nullableString" },
+        "images": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["url", "kind", "source_page"],
+            "properties": {
+              "url": { "type": "string" },
+              "kind": { "enum": ["logo", "icon", "apple_touch_icon", "og_image", "twitter_image", "json_ld"] },
+              "source_page": { "type": "string" }
+            }
+          }
+        },
+        "theme_color": { "$ref": "#/$defs/nullableString" },
+        "languages": { "type": "array", "items": { "type": "string" } },
+        "legal_name": { "$ref": "#/$defs/nullableString" },
+        "search": { "$ref": "#/$defs/search" },
+        "removal": { "$ref": "#/$defs/removal" },
+        "bot_defense": { "$ref": "#/$defs/bot" },
+        "legal": { "$ref": "#/$defs/legal" },
+        "pages": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["url", "final_url", "status", "role", "title", "liveness"],
+            "properties": {
+              "url": { "type": "string" },
+              "final_url": { "$ref": "#/$defs/nullableString" },
+              "status": { "$ref": "#/$defs/nullableInt" },
+              "role": { "type": "string" },
+              "title": { "type": "string" },
+              "liveness": { "type": "string" }
+            }
+          }
+        }
+      }
+    },
+    "field": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["name", "type", "canonical", "required"],
+      "properties": {
+        "name": { "type": "string" },
+        "type": { "type": "string" },
+        "canonical": { "$ref": "#/$defs/nullableString" },
+        "required": { "type": "boolean" },
+        "autocomplete": { "$ref": "#/$defs/nullableString" },
+        "placeholder": { "$ref": "#/$defs/nullableString" },
+        "options": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "search": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["available", "method", "page_url", "form_action", "inputs", "url_pattern", "directory_prefixes", "paywall", "login_wall"],
+      "properties": {
+        "available": { "$ref": "#/$defs/nullableBoolean" },
+        "method": { "enum": ["http_get", "http_form_post", "none", "unknown"] },
+        "page_url": { "$ref": "#/$defs/nullableString" },
+        "form_action": { "$ref": "#/$defs/nullableString" },
+        "inputs": { "type": "array", "items": { "$ref": "#/$defs/field" } },
+        "url_pattern": { "$ref": "#/$defs/nullableString" },
+        "directory_prefixes": { "type": "array", "items": { "type": "string" } },
+        "paywall": { "$ref": "#/$defs/nullableBoolean" },
+        "login_wall": { "$ref": "#/$defs/nullableBoolean" }
+      }
+    },
+    "removal": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "url", "final_url", "http_status", "kinds", "channels", "emails", "phones",
+        "postal_address", "portal", "form_fields", "csrf_field_name", "requires_profile_url",
+        "captcha", "consent_vendor", "success_text", "suppression_not_deletion",
+        "processing_days", "processing_text"
+      ],
+      "properties": {
+        "url": { "$ref": "#/$defs/nullableString" },
+        "final_url": { "$ref": "#/$defs/nullableString" },
+        "http_status": { "$ref": "#/$defs/nullableInt" },
+        "kinds": { "type": "array", "items": { "type": "string" } },
+        "channels": { "type": "array", "items": { "enum": ["web_form", "email", "postal_mail", "phone", "official_portal"] } },
+        "emails": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["email", "confidence", "source_url"],
+            "properties": {
+              "email": { "type": "string" },
+              "confidence": { "enum": ["extracted", "uncertain"] },
+              "source_url": { "type": "string" }
+            }
+          }
+        },
+        "phones": { "type": "array", "items": { "type": "string" } },
+        "postal_address": { "$ref": "#/$defs/nullableString" },
+        "portal": {
+          "type": ["object", "null"],
+          "additionalProperties": false,
+          "required": ["vendor", "url"],
+          "properties": {
+            "vendor": { "type": "string" },
+            "url": { "type": "string" }
+          }
+        },
+        "form_fields": { "type": "array", "items": { "$ref": "#/$defs/field" } },
+        "csrf_field_name": { "$ref": "#/$defs/nullableString" },
+        "requires_profile_url": { "$ref": "#/$defs/nullableBoolean" },
+        "captcha": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["provider", "sitekey", "pages"],
+          "properties": {
+            "provider": { "enum": ["recaptcha_v2", "recaptcha_v3", "recaptcha_enterprise", "hcaptcha", "turnstile", "arkose", "geetest", "friendly", "mtcaptcha", "datadome", "perimeterx", "custom", null] },
+            "sitekey": { "$ref": "#/$defs/nullableString" },
+            "pages": { "type": "array", "items": { "type": "string" } }
+          }
+        },
+        "consent_vendor": { "$ref": "#/$defs/nullableString" },
+        "success_text": { "$ref": "#/$defs/nullableString" },
+        "suppression_not_deletion": { "$ref": "#/$defs/nullableBoolean" },
+        "processing_days": { "$ref": "#/$defs/nullableInt" },
+        "processing_text": { "$ref": "#/$defs/nullableString" }
+      }
+    },
+    "bot": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["vendor", "outcome"],
+      "properties": {
+        "vendor": { "$ref": "#/$defs/nullableString" },
+        "outcome": { "enum": ["none", "challenge_page", "hard_block", "unknown"] }
+      }
+    },
+    "legal": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "privacy_policy_url", "terms_url", "automation_prohibited", "automation_clause",
+        "residency", "authorized_agent", "data_categories"
+      ],
+      "properties": {
+        "privacy_policy_url": { "$ref": "#/$defs/nullableString" },
+        "terms_url": { "$ref": "#/$defs/nullableString" },
+        "automation_prohibited": { "$ref": "#/$defs/nullableBoolean" },
+        "automation_clause": { "$ref": "#/$defs/nullableString" },
+        "residency": { "type": "array", "items": { "type": "string" } },
+        "authorized_agent": { "$ref": "#/$defs/nullableBoolean" },
+        "data_categories": { "type": "array", "items": { "type": "string" } }
+      }
+    }
+  }
+}

@@ -1,5 +1,7 @@
 # Findings
 
+The counts below are from the 1122-row catalog used for this pass. The current link list is [`opt-outs.csv`](../opt-outs.csv). Current search, removal, location, and legal facts are in [v4.md](v4.md).
+
 This pass kept the **1122** catalog rows and their stable ids. It added a headless-browser read of the automation shortlist and of catalog URLs whose research GET was blocked, a freshness recheck of every catalog URL, search-page observations, Canadian official-page notes, and verification playbooks. No privacy request was submitted. No account was created. No identity document was uploaded. No SMS was sent. No CAPTCHA was solved.
 
 `opt-outs.csv` columns are unchanged. Its `http_status` values remain the 2026-10-01 catalog check. Newer HTTP results are in `data/v1/freshness-report.json`.
@@ -27,6 +29,29 @@ The 30 shortlist URLs were opened in headless Chromium. Submit buttons were not 
 Direct GET recheck on 2026-10-01T23:11:41+00:00. Drift counts: `{"blocked": 259, "moved_other_host": 10, "moved_same_site": 43, "status_changed": 10, "unchanged": 767, "unresolved_or_network_error": 1}`.
 
 Moved means the final URL's host or path differs after ignoring a leading www and a trailing slash. Blocked means the recheck saw a challenge or HTTP 401/403/429/503. That is an access observation, not a dead page and not a proxy finding. Unresolved hostnames are network errors, not HTTP 404s. The catalog CSV was not rewritten.
+
+## Page maps and contact emails
+
+A separate pass on 2026-10-12 fetched each broker's homepage, catalog URL, same-site privacy and opt-out links, and a bounded sitemap slice. robots.txt was honored. Forms were not submitted. Results are in `data/v1/broker-maps.json`, `data/v1/broker-liveness.csv`, `data/v1/broker-emails.csv`, and [broker-maps.md](broker-maps.md).
+
+| Liveness | Brokers |
+| --- | ---: |
+| alive | 929 |
+| robots_disallowed | 124 |
+| blocked | 47 |
+| opt_out_missing | 10 |
+| error | 8 |
+| dead | 4 |
+
+Dead: Nuwber (`nuwber.com` does not resolve), Locate-Friend (`locate-friend.com` does not resolve), Blue Action Inc. (homepage and opt-out URL are gone), PeopleWhiz network / azerch.com (parked). Ten other catalog URLs returned 404 or 410 while the site itself still responded. Those are listed in [broker-maps.md](broker-maps.md). A bot wall or a robots.txt disallow is not a dead broker.
+
+578 brokers had at least one published email (346 extracted privacy or removal mailboxes, 232 uncertain addresses such as info@ or support@). The rest of the fetched pages did not publish an address. Addresses that v1 had left empty were written into `data/v1/field-fills.json`. v1 records were not rewritten.
+
+## v3 profiles
+
+v3 is the default broker record. A pass on 2026-10-12 wrote one profile per catalog id to `data/v3/brokers.json`. Schema: `data/schema/broker-v3.schema.json`. Notes: [v3.md](v3.md).
+
+914 opt-out URLs loaded, 50 were blocked, 123 were disallowed by robots.txt, 21 failed before a status, 10 opt-out URLs were gone on a live site, and the same 4 brokers as above were dead. 950 profiles include a logo or icon link. 462 had a public search form, with the form action and input names in `search.url_pattern`. 213 had removal form fields, 577 had an email, and 486 pages included a CAPTCHA marker. A later browser pass opened lookup homepages the static fetch never read, and catalog URLs that were blocked or failed, when robots.txt allowed the URL. A challenge that did not clear stayed blocked. Site-search and cookie widgets are not stored as the removal form. A field is null when the page we could read did not establish it. No search was submitted and no CAPTCHA was solved.
 
 ## Search signals
 

@@ -1,6 +1,6 @@
 {
  "schema": "field-fills/1.0",
- "generated_at": "2026-10-11T17:23:46+00:00",
+ "generated_at": "2026-10-12T23:00:35+00:00",
  "method": "Overlay on data/v1. Each value was read from the broker's own public page named in source_url (robots.txt honoured, no form submitted, no login, no CAPTCHA). 'extracted' = parsed directly from a form or a sentence on the page; 'uncertain' = a keyword match that needs a human check. v1 values always win; this file only fills fields v1 left empty.",
  "key_fields": [
   "request_url",
@@ -15,8 +15,8 @@
  ],
  "counts": {
   "jurisdiction:uncertain": 514,
-  "privacy_contact_email:extracted": 88,
-  "privacy_contact_email:uncertain": 62,
+  "privacy_contact_email:extracted": 128,
+  "privacy_contact_email:uncertain": 94,
   "privacy_policy_url:extracted": 194,
   "processing_time:extracted": 154,
   "processing_time:uncertain": 8,
@@ -65,6 +65,8 @@
     "evidence": "the unsubscribe link in the emails that we send, replying “STOP” or “UNSUBSCRIBE” to the SMS messages that we send, or by contacting us using the details provided in the section “ HO"
    }
   },
+  "192-com": {},
+  "24counter": {},
   "33-mile-radius-llc": {
    "verification": {
     "value": [
@@ -77,6 +79,8 @@
     "evidence": "ng services, including providing events. We may also send you marketing communications by SMS, email, and telephone, subject to any consent requirements under applicable law. Targeted"
    }
   },
+  "33across-inc": {},
+  "360-media-direct": {},
   "411-ca": {
    "submission_methods": {
     "value": [
@@ -172,6 +176,9 @@
     "evidence": "Laws or regions named on the page; this is not proof of where the broker publishes data."
    }
   },
+  "411locate": {},
+  "5x5-us-llc": {},
+  "6sense-insights-inc": {},
   "a-direct-marketing-inc": {
    "privacy_policy_url": {
     "value": "https://www.bookyourdata.com/privacy-policy",
@@ -207,6 +214,13 @@
     "source_url": "https://www.bookyourdata.com/ccpa-ready",
     "checked_at": "2026-10-11",
     "confidence": "extracted",
+    "evidence": null
+   },
+   "privacy_contact_email": {
+    "value": "data@bookyourdata.com",
+    "source_url": "https://optout.bookyourdata.com/",
+    "checked_at": "2026-10-12",
+    "confidence": "uncertain",
     "evidence": null
    }
   },
@@ -245,6 +259,7 @@
     "evidence": null
    }
   },
+  "accurate-append-inc": {},
   "ach-address-clearing-house": {
    "required_info": {
     "value": [
@@ -297,6 +312,7 @@
     "evidence": "Laws or regions named on the page; this is not proof of where the broker publishes data."
    }
   },
+  "adapt-io": {},
   "addapptation-inc": {
    "privacy_contact_email": {
     "value": "privacy@propensity.com",
@@ -419,6 +435,7 @@
     "evidence": "ase note that we will only process the personal data provided in your request in order to verify your email address and to reply to your enquiry according to the applicable data protection laws. In"
    }
   },
+  "adstra-american-list-counsel": {},
   "adswizz-inc": {
    "privacy_contact_email": {
     "value": "privacy@www.adswizz.com",
@@ -534,6 +551,7 @@
     "evidence": null
    }
   },
+  "advisortarget-llc": {},
   "affinity-answers-corporation": {
    "privacy_policy_url": {
     "value": "https://www.affinityanswers.com/privacy-policy/",
@@ -645,10 +663,10 @@
   },
   "aged-solar-leads": {
    "privacy_contact_email": {
-    "value": "info@agedsolarleads.com",
-    "source_url": "https://agedsolarleads.com/privacy-policy/",
-    "checked_at": "2026-10-11",
-    "confidence": "uncertain",
+    "value": "privacy@agedsolarleads.com",
+    "source_url": "https://agedsolarleads.com/terms-conditions/",
+    "checked_at": "2026-10-12",
+    "confidence": "extracted",
     "evidence": null
    },
    "verification": {
@@ -778,6 +796,8 @@
     "evidence": "Technologies technical solutions. This specific subset of information may include gender, passport number and information, IP address, location, user name and information, and e-mail addre"
    }
   },
+  "alarmscalifornia-licensedata": {},
+  "alaska-arrests": {},
   "alikeaudience-inc": {
    "privacy_policy_url": {
     "value": "https://www.alikeaudience.com/privacy-policy/#privacy-policy-updates",
@@ -905,6 +925,7 @@
     "evidence": null
    }
   },
+  "allareacodes": {},
   "alliant": {
    "privacy_policy_url": {
     "value": "https://alliantinsight.com/alliant-privacy-policy/",
@@ -950,6 +971,7 @@
     "evidence": "Laws or regions named on the page; this is not proof of where the broker publishes data."
    }
   },
+  "allpeople": {},
   "allpeople-biz": {
    "privacy_policy_url": {
     "value": "https://allpeople.biz/privacy",
@@ -1019,6 +1041,13 @@
     },
     "source_url": "https://altairdata.com/consumer-info/",
     "checked_at": "2026-10-11",
+    "confidence": "extracted",
+    "evidence": null
+   },
+   "privacy_contact_email": {
+    "value": "privacy@altairdata.com",
+    "source_url": "https://altairdata.com/terms-of-service/",
+    "checked_at": "2026-10-12",
     "confidence": "extracted",
     "evidence": null
    }
@@ -1153,6 +1182,7 @@
     "evidence": "ising practices, go to optout.aboutads.info and optout.networkadvertising.org/ . Once you click the links, you may choose to opt out of such advertising from all participating advertising compan"
    }
   },
+  "american-city-business-journals-inc": {},
   "americaphonebook": {
    "privacy_policy_url": {
     "value": "https://www.americaphonebook.com/privacypolicy.htm",
@@ -1238,13 +1268,6 @@
    }
   },
   "analyticsiq-inc-privacyportal-onetrust-com": {
-   "privacy_contact_email": {
-    "value": "privacy@anteriad.com",
-    "source_url": "https://anteriad.com/privacy-policy",
-    "checked_at": "2026-10-11",
-    "confidence": "uncertain",
-    "evidence": null
-   },
    "submission_methods": {
     "value": [
      "email",
@@ -1362,14 +1385,21 @@
     "checked_at": "2026-10-11",
     "confidence": "uncertain",
     "evidence": "se. The consumer must complete ANCHOR’s verification process by responding to the request confirmation email sent by Anchor. California consumers may click ANCHOR CPRA Request to submit CPRA request"
+   },
+   "privacy_contact_email": {
+    "value": "privacyteam@anchorcomputer.com",
+    "source_url": "https://ecom2.anchorcomputer.com/privacyrequest",
+    "checked_at": "2026-10-12",
+    "confidence": "extracted",
+    "evidence": null
    }
   },
   "andrews-wharton-inc": {
    "privacy_contact_email": {
-    "value": "successdelivered@andrewswharton.com",
-    "source_url": "https://www.andrewswharton.com/",
-    "checked_at": "2026-10-11",
-    "confidence": "uncertain",
+    "value": "privacy@andrewswharton.com",
+    "source_url": "https://www.andrewswharton.com/contact-us",
+    "checked_at": "2026-10-12",
+    "confidence": "extracted",
     "evidence": null
    },
    "required_info": {
@@ -1488,6 +1518,8 @@
     "evidence": null
    }
   },
+  "anywho-intelius-peopleconnect": {},
+  "apartments-com": {},
   "apollo-interactive-llc": {
    "jurisdiction": {
     "value": [
@@ -1548,6 +1580,13 @@
     "checked_at": "2026-10-11",
     "confidence": "uncertain",
     "evidence": "vin marketing communications on our Website, we may contact you periodically by e-mail or text message (SMS), to provide information regarding our products, services and content that may be of"
+   },
+   "privacy_contact_email": {
+    "value": "dataprotection@applovin.com",
+    "source_url": "https://applovin.com/en/privacy-data-request",
+    "checked_at": "2026-10-12",
+    "confidence": "extracted",
+    "evidence": null
    }
   },
   "appscience": {
@@ -1636,6 +1675,8 @@
     "evidence": null
    }
   },
+  "arivify-property-data": {},
+  "arkansas-arrests": {},
   "arounddeal": {
    "jurisdiction": {
     "value": [
@@ -1646,6 +1687,13 @@
     "checked_at": "2026-10-11",
     "confidence": "uncertain",
     "evidence": "Laws or regions named on the page; this is not proof of where the broker publishes data."
+   },
+   "privacy_contact_email": {
+    "value": "support@arounddeal.com",
+    "source_url": "https://www.arounddeal.com/privacy-center/privacy-policy",
+    "checked_at": "2026-10-12",
+    "confidence": "uncertain",
+    "evidence": null
    }
   },
   "arrestfacts-beenverified-related": {
@@ -1659,6 +1707,7 @@
     "evidence": "Laws or regions named on the page; this is not proof of where the broker publishes data."
    }
   },
+  "asset-international-inc": {},
   "astoria-company-marketing-llc": {
    "jurisdiction": {
     "value": [
@@ -1701,6 +1750,15 @@
     "checked_at": "2026-10-11",
     "confidence": "uncertain",
     "evidence": "Laws or regions named on the page; this is not proof of where the broker publishes data."
+   }
+  },
+  "attom-data": {
+   "privacy_contact_email": {
+    "value": "privacy@attomdata.com",
+    "source_url": "https://www.attomdata.com/privacy/",
+    "checked_at": "2026-10-12",
+    "confidence": "extracted",
+    "evidence": null
    }
   },
   "audience-acuity-llc": {
@@ -1748,6 +1806,7 @@
     "evidence": null
    }
   },
+  "audience-mix-llc": {},
   "audiencepoint-inc": {
    "privacy_policy_url": {
     "value": "https://audiencepoint.com/privacy-policy/",
@@ -1797,6 +1856,9 @@
     "evidence": "60 Modulo Activation · first-party data su DV360 Campaign Engine Modulo Outbound · Email, SMS e WhatsApp Market Intelligence Modulo AI · analisi competitiva in tempo reale Soluzioni S"
    }
   },
+  "autoweb-inc": {},
+  "awl-holdings-llc": {},
+  "awl-holdings-llc-privacyportal-eu-onetrust-com": {},
   "azerion-us-inc": {
    "jurisdiction": {
     "value": [
@@ -1903,6 +1965,8 @@
     "evidence": null
    }
   },
+  "background-hawk-truthfinder": {},
+  "backgroundcheckers": {},
   "backgroundchecks-org-beenverified-data": {
    "jurisdiction": {
     "value": [
@@ -2200,6 +2264,15 @@
     "evidence": "Protocol address, and email address. YES Social Security number, driver’s license number, passport number, or other similar identifiers. NO B. Personal information categories listed in the"
    }
   },
+  "biointelli-corporation": {
+   "privacy_contact_email": {
+    "value": "sales@biointelli.com",
+    "source_url": "https://biointelli.com/contact/",
+    "checked_at": "2026-10-12",
+    "confidence": "uncertain",
+    "evidence": null
+   }
+  },
   "birdeye": {
    "privacy_contact_email": {
     "value": "privacy@birdeye.com",
@@ -2298,6 +2371,8 @@
     "evidence": null
    }
   },
+  "bizireland": {},
+  "black-pearl-group-limited": {},
   "blackbaud-inc": {
    "privacy_policy_url": {
     "value": "https://www.blackbaud.com/company/privacy-policy/north-america",
@@ -2326,6 +2401,8 @@
     "evidence": "Laws or regions named on the page; this is not proof of where the broker publishes data."
    }
   },
+  "blis-global-ltd": {},
+  "bluaziende": {},
   "blue-hill-marketing-solutions-inc": {
    "privacy_policy_url": {
     "value": "https://www.liftbasedata.com/privacy-policy/",
@@ -2441,6 +2518,7 @@
     "evidence": "Laws or regions named on the page; this is not proof of where the broker publishes data."
    }
   },
+  "brady-list": {},
   "bridg-a-division-of-cardlytics-inc": {
    "privacy_contact_email": {
     "value": "info@bridg.com",
@@ -2491,6 +2569,7 @@
     "evidence": null
    }
   },
+  "buildertrend-solutions-inc": {},
   "bumper-beenverified-family": {
    "privacy_policy_url": {
     "value": "https://www.bumper.com/privacy-policy/",
@@ -2549,6 +2628,13 @@
     "source_url": "https://www.bumper.com/privacy-policy/",
     "checked_at": "2026-10-11",
     "confidence": "extracted",
+    "evidence": null
+   },
+   "privacy_contact_email": {
+    "value": "support@bumper.com",
+    "source_url": "https://support.bumper.com/hc/en-us",
+    "checked_at": "2026-10-12",
+    "confidence": "uncertain",
     "evidence": null
    }
   },
@@ -2730,11 +2816,16 @@
    "privacy_contact_email": {
     "value": "info@cppa.ca.gov",
     "source_url": "https://privacy.ca.gov/privacy-policy/",
-    "checked_at": "2026-10-11",
+    "checked_at": "2026-10-12",
     "confidence": "uncertain",
     "evidence": null
    }
   },
+  "californiabrokers-org-licensedata": {},
+  "californiaengineering-org-licensedata": {},
+  "californialicensing-org-licensedata": {},
+  "californianursing-org-licensedata": {},
+  "californiapharmacists-org-licensedata": {},
   "callapp-software-ltd": {
    "privacy_contact_email": {
     "value": "dpo@callapp.com",
@@ -2772,6 +2863,7 @@
     "evidence": "cts will be disclosed to a user if a Contact tries to communicate with the user (by call, SMS, etc.). Collected Information regarding users’ Contacts will not be shared with third par"
    }
   },
+  "callercenter": {},
   "callersmart": {
    "privacy_policy_url": {
     "value": "https://www.callersmart.com/privacy",
@@ -2861,6 +2953,7 @@
     "evidence": null
    }
   },
+  "canada-post": {},
   "canada411": {
    "privacy_policy_url": {
     "value": "https://www.canada411.ca/help.html?key=faq#Privacy",
@@ -2931,6 +3024,17 @@
     "evidence": "Linked from the site as the privacy policy."
    }
   },
+  "careerbuilder": {},
+  "carry-technologies-inc": {
+   "privacy_contact_email": {
+    "value": "privacy@hightouch.com",
+    "source_url": "https://hightouch.com/privacy-policy",
+    "checked_at": "2026-10-12",
+    "confidence": "extracted",
+    "evidence": null
+   }
+  },
+  "catalina-marketing-corporation": {},
   "catalist-llc": {
    "jurisdiction": {
     "value": [
@@ -2954,6 +3058,7 @@
     "evidence": "siness transaction purposes, and consent No Government identification information such as passport number, Social Security number, and driver’s license number. Employee, recruiters, and ot"
    }
   },
+  "cause-iq": {},
   "cb-information-services-inc": {
    "jurisdiction": {
     "value": [
@@ -3010,6 +3115,7 @@
     "evidence": "r specific qualifications for that job) and references. • Compliance information (such as government-issued identification numbers and right-to-work documentation). We may receive this information"
    }
   },
+  "cellrevealer": {},
   "cengage-learning-inc": {
    "required_info": {
     "value": [
@@ -3053,10 +3159,10 @@
     "evidence": "Linked from the site as the privacy policy."
    },
    "privacy_contact_email": {
-    "value": "support@censia.com",
-    "source_url": "https://www.censia.com/privacy-policy/",
-    "checked_at": "2026-10-11",
-    "confidence": "uncertain",
+    "value": "privacy@censia.com",
+    "source_url": "https://www.censia.com/terms-of-use/",
+    "checked_at": "2026-10-12",
+    "confidence": "extracted",
     "evidence": null
    },
    "submission_methods": {
@@ -3113,6 +3219,7 @@
     "evidence": null
    }
   },
+  "chamberofcommerce-com": {},
   "checkr": {
    "required_info": {
     "value": [
@@ -3135,6 +3242,8 @@
     "evidence": "ide us with personal information when, for example, you sign up for our email newsletter, SMS programs, webinars, or demos. Such personal information might include your email address,"
    }
   },
+  "checksecrets-truth-now-llc": {},
+  "chexsystems": {},
   "choreograph-llp": {
    "verification": {
     "value": [
@@ -3194,6 +3303,7 @@
     "evidence": "Laws or regions named on the page; this is not proof of where the broker publishes data."
    }
   },
+  "cision-us-inc": {},
   "city-data-com": {
    "privacy_policy_url": {
     "value": "https://www.city-data.com/terms.html#priv",
@@ -3238,6 +3348,7 @@
     "evidence": "iously. Once you complete the form, we will validate your e-mail address by sending you a confirmation link on which you must click. Remember to check your spam folder as well. After that, your req"
    }
   },
+  "cityzor": {},
   "civis-analytics-inc": {
    "required_info": {
     "value": [
@@ -3301,6 +3412,9 @@
     "evidence": "you may opt-out of receiving these mailings by contacting Clarity’s Consumer Support team by phone at 1-866-390-3118 or by mail at Clarity Services, Inc., A part of Experian PO Box 16, Allen,"
    }
   },
+  "clarivate": {},
+  "classmates-com": {},
+  "clay-labs-inc": {},
   "clearbit": {
    "verification": {
     "value": [
@@ -3410,10 +3524,10 @@
   },
   "cma-do-not-mail": {
    "privacy_contact_email": {
-    "value": "donotmail@thecma.ca",
-    "source_url": "https://www.thecma.ca/resources/consumer-centre/get-less-print-mail",
-    "checked_at": "2026-10-11",
-    "confidence": "uncertain",
+    "value": "privacyofficer@thecma.ca",
+    "source_url": "https://thecma.ca/privacy-policy",
+    "checked_at": "2026-10-12",
+    "confidence": "extracted",
     "evidence": null
    }
   },
@@ -3493,6 +3607,16 @@
     "evidence": "ct with Us through the Service. To contact You: To contact You by email, telephone calls, SMS, or other equivalent forms of electronic communication, such as a mobile application's pu"
    }
   },
+  "cogeco": {},
+  "cognism-inc": {
+   "privacy_contact_email": {
+    "value": "privacy@cognism.com",
+    "source_url": "https://www.cognism.com/en/privacy-policy",
+    "checked_at": "2026-10-12",
+    "confidence": "extracted",
+    "evidence": null
+   }
+  },
   "collective-data-solutions": {
    "privacy_contact_email": {
     "value": "sales@collectivedata.io",
@@ -3512,6 +3636,7 @@
     "evidence": "Laws or regions named on the page; this is not proof of where the broker publishes data."
    }
   },
+  "colorado-arrests": {},
   "coloradoresidentdirectory": {
    "request_url": {
     "value": "https://www.coloradoresidentdirectory.com/opt-out",
@@ -3604,6 +3729,8 @@
     "evidence": "the unsubscribe link in the emails that we send, replying \"STOP\" or \"UNSUBSCRIBE\" to the SMS messages that we send, or by contacting us using the details provided in the section \"HOW"
    }
   },
+  "commerce-signals-inc": {},
+  "commercial-real-estate-exchange-inc": {},
   "compact-information-systems-llc": {
    "jurisdiction": {
     "value": [
@@ -3940,6 +4067,8 @@
     "evidence": "Not Sell My Personal Information | Privacy Policy | Cookie Policy | Cookie Preferences | SMS Terms of Service | Terms of Use | Site Map Copyright ©2026 Exact Data. All Rights Reserve"
    }
   },
+  "contactout-limited": {},
+  "contractorscalifornia-org-licensedata": {},
   "converge-direct-llc": {
    "jurisdiction": {
     "value": [
@@ -3982,6 +4111,7 @@
     "evidence": "button, you agree to our Terms of Use , Privacy Policy , and that we may contact you, by SMS, at the phone number and email address you provide in this form in accordance with our Te"
    }
   },
+  "corelogic-cotality": {},
   "corporationwiki": {
    "jurisdiction": {
     "value": [
@@ -4002,6 +4132,7 @@
     "evidence": "e, but there is no federal law that limits how the companies that are scanning everyone’s drivers license can use, share or keep the data provided. Had such restrictions been enshrined in law, we"
    }
   },
+  "costar-group": {},
   "courtcasefinder": {
    "privacy_policy_url": {
     "value": "https://courtcasefinder.com/privacy",
@@ -4038,6 +4169,7 @@
     "evidence": "dents, moving citations, speeding tickets, DUI & DWI charges, civil & criminal penalties, driver's license suspensions & revocations, parking fines, and other driving offenses & DMV actions. Munic"
    }
   },
+  "courtlistener": {},
   "courtrec-com": {
    "privacy_policy_url": {
     "value": "https://www.courtrec.com/privacy",
@@ -4113,6 +4245,15 @@
     "evidence": null
    }
   },
+  "cox-automotive-inc": {
+   "privacy_contact_email": {
+    "value": "brenna.buehler@coxautoinc.com",
+    "source_url": "https://www.coxautoinc.com/newsroom/media-contacts/",
+    "checked_at": "2026-10-12",
+    "confidence": "uncertain",
+    "evidence": null
+   }
+  },
   "cpadirectory": {
    "privacy_policy_url": {
     "value": "https://cpadirectory.com/privacy",
@@ -4149,6 +4290,7 @@
     "evidence": null
    }
   },
+  "crawlbee-corp": {},
   "criminal-com-truthfinder": {
    "privacy_policy_url": {
     "value": "https://criminal.com/privacy-policy/",
@@ -4337,6 +4479,8 @@
     "evidence": "Laws or regions named on the page; this is not proof of where the broker publishes data."
    }
   },
+  "cross-pixel-media-inc": {},
+  "crunchbase-inc": {},
   "ctam-leadshare-corp": {
    "required_info": {
     "value": [
@@ -4407,6 +4551,7 @@
     "evidence": "Laws or regions named on the page; this is not proof of where the broker publishes data."
    }
   },
+  "cyberbackgroundchecks": {},
   "data-axle-infousa": {
    "request_url": {
     "value": "https://www.data-axle.com/privacy-rights-request/",
@@ -4576,6 +4721,7 @@
     "evidence": "cluding targeted offers and ads through our Site, third-party sites and by mail, email or text message (with your consent, where required by law). To help maintain the safety, security and int"
    }
   },
+  "datadesk-inc": {},
   "datafy-llc": {
    "jurisdiction": {
     "value": [
@@ -4618,6 +4764,13 @@
     "source_url": "https://data-lead.com/support/removal_request",
     "checked_at": "2026-10-11",
     "confidence": "extracted",
+    "evidence": null
+   },
+   "privacy_contact_email": {
+    "value": "legal@data-lead.com",
+    "source_url": "https://data-lead.com/terms",
+    "checked_at": "2026-10-12",
+    "confidence": "uncertain",
     "evidence": null
    }
   },
@@ -4725,6 +4878,7 @@
     "evidence": "transactions Communicate with customers Maintain account records 3. Mobile Information & SMS Data Mobile information, including phone numbers and opt-in data, will not be shared, sol"
    }
   },
+  "datasys-group-inc": {},
   "datax": {
    "privacy_policy_url": {
     "value": "https://dataxltd.com/privacy-policy/",
@@ -4741,6 +4895,13 @@
     "checked_at": "2026-10-11",
     "confidence": "uncertain",
     "evidence": "Laws or regions named on the page; this is not proof of where the broker publishes data."
+   },
+   "privacy_contact_email": {
+    "value": "sales@dataxltd.com",
+    "source_url": "https://dataxltd.com/contact-us/",
+    "checked_at": "2026-10-12",
+    "confidence": "uncertain",
+    "evidence": null
    }
   },
   "dato-capital": {
@@ -4822,6 +4983,7 @@
     "evidence": null
    }
   },
+  "dealersocket-llc": {},
   "dealerx-partners-llc": {
    "jurisdiction": {
     "value": [
@@ -4847,6 +5009,7 @@
     "evidence": null
    }
   },
+  "decide-technologies-inc": {},
   "decisionlinks": {
    "jurisdiction": {
     "value": [
@@ -4897,8 +5060,16 @@
     "checked_at": "2026-10-11",
     "confidence": "uncertain",
     "evidence": "Laws or regions named on the page; this is not proof of where the broker publishes data."
+   },
+   "privacy_contact_email": {
+    "value": "privacy@definitivehc.com",
+    "source_url": "https://www.definitivehc.com/privacy-center/notices",
+    "checked_at": "2026-10-12",
+    "confidence": "extracted",
+    "evidence": null
    }
   },
+  "delivr-ai-inc": {},
   "deloitte-consulting-llp": {
    "privacy_policy_url": {
     "value": "https://www.deloitte.com/us/en/legal/predictrisk-privacy-notice.html#washington-state",
@@ -5043,6 +5214,7 @@
     "evidence": "Laws or regions named on the page; this is not proof of where the broker publishes data."
    }
   },
+  "dentistscalifornia-org-licensedata": {},
   "dewarrants-org-infotracer-form": {
    "required_info": {
     "value": [
@@ -5063,6 +5235,7 @@
     "evidence": "Laws or regions named on the page; this is not proof of where the broker publishes data."
    }
   },
+  "dexknows-com-thryv": {},
   "diablo-media": {
    "jurisdiction": {
     "value": [
@@ -5131,6 +5304,8 @@
     "evidence": null
    }
   },
+  "digital-advertising-alliance-opt-out": {},
+  "digital-media-solutions-llc": {},
   "digital-viking-media-inc": {
    "verification": {
     "value": [
@@ -5175,6 +5350,7 @@
     "evidence": "d protect against fraudulent requests. If you make a Request to Delete, we may ask you to confirm your request before we delete your personal information. (4) Request to Opt-Out of Sale and/or Sharing"
    }
   },
+  "disqus-inc": {},
   "distribution-processing-center": {
    "required_info": {
     "value": [
@@ -5205,6 +5381,13 @@
     "checked_at": "2026-10-11",
     "confidence": "uncertain",
     "evidence": "Laws or regions named on the page; this is not proof of where the broker publishes data."
+   },
+   "privacy_contact_email": {
+    "value": "consumer@ana.net",
+    "source_url": "https://www.dmachoice.org/static/contact_us.php",
+    "checked_at": "2026-10-12",
+    "confidence": "uncertain",
+    "evidence": null
    }
   },
   "dobsearch": {
@@ -5461,6 +5644,16 @@
     "evidence": null
    }
   },
+  "dun-and-bradstreet-inc-dnb-com": {
+   "privacy_contact_email": {
+    "value": "custservprivacy@dnb.com",
+    "source_url": "https://www.dnb.com/en-ca/utilities/privacy-policy.html",
+    "checked_at": "2026-10-12",
+    "confidence": "extracted",
+    "evidence": null
+   }
+  },
+  "dun-and-bradstreet-inc-submit-irm-trustarc-eu": {},
   "dynata": {
    "submission_methods": {
     "value": [
@@ -5649,6 +5842,7 @@
     "evidence": null
    }
   },
+  "ekata-inc": {},
   "el-toro-com-llc": {
    "jurisdiction": {
     "value": [
@@ -5687,6 +5881,13 @@
     "checked_at": "2026-10-11",
     "confidence": "uncertain",
     "evidence": "1 Canada Revenue Agency (CRA); Department of National Defence; provincial and territorial driver's licence agencies; data extracts or final lists of electors from recent provincial, territorial an"
+   },
+   "privacy_contact_email": {
+    "value": "aiprp-atip@elections.ca",
+    "source_url": "https://www.elections.ca/content.aspx?section=pri&document=index&lang=e",
+    "checked_at": "2026-10-12",
+    "confidence": "uncertain",
+    "evidence": null
    }
   },
   "elections-ontario": {
@@ -5721,6 +5922,13 @@
     "checked_at": "2026-10-11",
     "confidence": "extracted",
     "evidence": "Linked from the site as the privacy policy."
+   },
+   "privacy_contact_email": {
+    "value": "operations-electorales@electionsquebec.qc.ca",
+    "source_url": "https://www.pes.electionsquebec.qc.ca/mfa_soutien.php",
+    "checked_at": "2026-10-12",
+    "confidence": "uncertain",
+    "evidence": null
    }
   },
   "electronic-voice-services-inc": {
@@ -5785,10 +5993,10 @@
   },
   "elocal-usa-llc": {
    "privacy_contact_email": {
-    "value": "correspondence@elocal.com",
-    "source_url": "https://www.elocal.com/privacy-california/#do-not-sell",
-    "checked_at": "2026-10-11",
-    "confidence": "uncertain",
+    "value": "privacy@elocal.com",
+    "source_url": "https://elocal.com/privacy/",
+    "checked_at": "2026-10-12",
+    "confidence": "extracted",
     "evidence": null
    },
    "jurisdiction": {
@@ -5946,6 +6154,7 @@
     "evidence": "CPA rights request. If you would like to exercise your CCPA rights over the phone, please call us at 1-650-241-6600 and clearly state that you are a resident of the state of California and w"
    }
   },
+  "equimine-inc": {},
   "everview-holdco-inc": {
    "jurisdiction": {
     "value": [
@@ -6161,6 +6370,17 @@
     "evidence": "t@experian.com In order to exercise your rights through our online privacy portal, please click the link below: Online Privacy Portal To learn more about your rights stated above, please see our"
    }
   },
+  "experian-health-inc": {},
+  "experian-uk": {
+   "privacy_contact_email": {
+    "value": "uk.dpo@experian.com",
+    "source_url": "https://www.experian.co.uk/privacy/consumer-information-portal/summary",
+    "checked_at": "2026-10-12",
+    "confidence": "uncertain",
+    "evidence": null
+   }
+  },
+  "explorium-inc": {},
   "eyeota-pte-ltd": {
    "processing_time": {
     "value": {
@@ -6171,8 +6391,19 @@
     "checked_at": "2026-10-11",
     "confidence": "extracted",
     "evidence": null
+   },
+   "privacy_contact_email": {
+    "value": "privacy@eyeota.com",
+    "source_url": "https://www.eyeota.com/privacy-center-contact-us",
+    "checked_at": "2026-10-12",
+    "confidence": "extracted",
+    "evidence": null
    }
   },
+  "ezlocal": {},
+  "facecheck": {},
+  "familysearch": {},
+  "familytreenow": {},
   "famous-birthdays-llc": {
    "privacy_contact_email": {
     "value": "info@globalprivacycontrol.org",
@@ -6182,6 +6413,7 @@
     "evidence": null
    }
   },
+  "fandom-inc": {},
   "faraday-inc": {
    "jurisdiction": {
     "value": [
@@ -6203,6 +6435,7 @@
     "evidence": "2025, in response to identity theft concerns, Faraday started requiring (1) a scan of US Government Issued Identification, such as drivers license, passport, or ID card, and (2) a scan of a utilit"
    }
   },
+  "fastbackgroundcheck": {},
   "fastbase": {
    "jurisdiction": {
     "value": [
@@ -6256,6 +6489,7 @@
     "evidence": "Laws or regions named on the page; this is not proof of where the broker publishes data."
    }
   },
+  "fastpeoplesearch-io": {},
   "fetch-rewards-llc": {
    "verification": {
     "value": [
@@ -6329,6 +6563,7 @@
     "evidence": "Laws or regions named on the page; this is not proof of where the broker publishes data."
    }
   },
+  "fideo-intelligence-inc": {},
   "fifty-technology-limited": {
    "verification": {
     "value": [
@@ -6438,6 +6673,8 @@
     "evidence": "Laws or regions named on the page; this is not proof of where the broker publishes data."
    }
   },
+  "findpeoplefast-net": {},
+  "findpeoplesearch": {},
   "finthrive-healthcare-inc": {
    "privacy_policy_url": {
     "value": "https://finthrive.com/privacy-policy-overview",
@@ -6456,6 +6693,7 @@
     "evidence": "garding your personal data. To review the Notice and a description of your rights, please click on the link below: California Texas - Equation Consulting, LLC Texas - TSG Holdco, LLC 12. How Many C"
    }
   },
+  "firearmscalifornia-org-licensedata": {},
   "firmfuel": {
    "required_info": {
     "value": [
@@ -6568,8 +6806,26 @@
     "checked_at": "2026-10-11",
     "confidence": "uncertain",
     "evidence": "and Make Unpublished To Claim your phone number, You must first - Signup to PhoneLookup - Confirm Your Email Address - Enter Phone # You Would like to Claim (Remove or Opt out Of) - You will receive"
+   },
+   "privacy_contact_email": {
+    "value": "privacy@acxiom.com",
+    "source_url": "https://www.phonelookup.com/faq",
+    "checked_at": "2026-10-12",
+    "confidence": "uncertain",
+    "evidence": null
    }
   },
+  "first-direct-inc": {},
+  "first-orion-corp": {
+   "privacy_contact_email": {
+    "value": "privacy@firstorion.com",
+    "source_url": "https://firstorion.com/legal",
+    "checked_at": "2026-10-12",
+    "confidence": "extracted",
+    "evidence": null
+   }
+  },
+  "florida-arrests": {},
   "florida-voter-directory": {
    "privacy_policy_url": {
     "value": "https://www.floridavoterdirectory.com/privacy-policy",
@@ -6609,6 +6865,8 @@
     "evidence": "Laws or regions named on the page; this is not proof of where the broker publishes data."
    }
   },
+  "floridaresidentsdirectory": {},
+  "fmadata": {},
   "focus-usa-inc": {
    "verification": {
     "value": [
@@ -6812,6 +7070,13 @@
     "checked_at": "2026-10-11",
     "confidence": "uncertain",
     "evidence": "that you cannot unsubscribe from updates regarding service terms or legal notices. Text (SMS). If you have elected to receive SMS messages, you can always unsubscribe at any time by"
+   },
+   "privacy_contact_email": {
+    "value": "privacy@foursquare.com",
+    "source_url": "https://foursquare.com/legal/privacy-center/foursquare-privacy-policy-consumer-services/",
+    "checked_at": "2026-10-12",
+    "confidence": "extracted",
+    "evidence": null
    }
   },
   "fourthwall-media-inc": {
@@ -6869,6 +7134,9 @@
     "evidence": "otice to the requestor explaining our decision. To exercise the Right to Opt-Out, you may call us at (833) 510-1503 then press “0” or submit a request by clicking on the following link: ‍ Ri"
    }
   },
+  "freebackgroundchecks-com": {},
+  "freepeopledirectory-spokeo-data": {},
+  "freepeoplesearch-com": {},
   "freephonetracer-beenverified-form": {
    "jurisdiction": {
     "value": [
@@ -7014,6 +7282,8 @@
     "evidence": null
    }
   },
+  "general-motors-llc": {},
+  "georgia-arrests": {},
   "getcontact": {
    "jurisdiction": {
     "value": [
@@ -7023,6 +7293,13 @@
     "checked_at": "2026-10-11",
     "confidence": "uncertain",
     "evidence": "Laws or regions named on the page; this is not proof of where the broker publishes data."
+   },
+   "privacy_contact_email": {
+    "value": "support@getcontact.com",
+    "source_url": "https://getcontact.com/privacy",
+    "checked_at": "2026-10-12",
+    "confidence": "uncertain",
+    "evidence": null
    }
   },
   "getemails-llc": {
@@ -7187,6 +7464,9 @@
     "evidence": "riodically if you would like to review and/or opt out of these future uses. We use Google reCAPTCHA to help protect our privacy-request form against spam and automated abuse. This service p"
    }
   },
+  "glad-i-know": {},
+  "governmentregistry-family": {},
+  "governmentregistry-org": {},
   "govwarrantsearch-org-infotracer-form": {
    "required_info": {
     "value": [
@@ -7220,10 +7500,10 @@
   },
   "gravy-analytics": {
    "privacy_contact_email": {
-    "value": "privacy@unacast.com",
-    "source_url": "https://www.unacast.com/privacy-policy",
-    "checked_at": "2026-10-11",
-    "confidence": "uncertain",
+    "value": "privacy@gravyanalytics.com",
+    "source_url": "https://gravyanalytics.com/privacy-policy",
+    "checked_at": "2026-10-12",
+    "confidence": "extracted",
     "evidence": null
    },
    "submission_methods": {
@@ -7318,6 +7598,7 @@
     "evidence": null
    }
   },
+  "great-lakes-list-inc": {},
   "grin-technologies-inc": {
    "required_info": {
     "value": [
@@ -7445,6 +7726,8 @@
     "evidence": "Laws or regions named on the page; this is not proof of where the broker publishes data."
    }
   },
+  "h1-insights-inc": {},
+  "hawaii-arrests": {},
   "health-union-llc": {
    "privacy_policy_url": {
     "value": "https://health-union.com/privacy-notice/",
@@ -7511,6 +7794,7 @@
     "evidence": null
    }
   },
+  "healthcare-inc-a-delaware-corporation": {},
   "healthline": {
    "privacy_policy_url": {
     "value": "https://www.healthline.com/about/privacy-notice",
@@ -7518,6 +7802,13 @@
     "checked_at": "2026-10-11",
     "confidence": "extracted",
     "evidence": "Linked from the site as the privacy policy."
+   },
+   "privacy_contact_email": {
+    "value": "licensing@healthline.com",
+    "source_url": "https://www.healthline.com/about/about-us",
+    "checked_at": "2026-10-12",
+    "confidence": "uncertain",
+    "evidence": null
    }
   },
   "healthlink-dimensions-llc": {
@@ -7558,6 +7849,15 @@
     "evidence": "Laws or regions named on the page; this is not proof of where the broker publishes data."
    }
   },
+  "heartbeat-ai-inc": {
+   "privacy_contact_email": {
+    "value": "contact@heartbeat.ai",
+    "source_url": "https://heartbeat.ai/",
+    "checked_at": "2026-10-12",
+    "confidence": "uncertain",
+    "evidence": null
+   }
+  },
   "helix-campaigns-llc": {
    "required_info": {
     "value": [
@@ -7569,6 +7869,7 @@
     "evidence": null
    }
   },
+  "hiremyfriend-io": {},
   "hireright-llc": {
    "jurisdiction": {
     "value": [
@@ -7580,6 +7881,7 @@
     "evidence": "Laws or regions named on the page; this is not proof of where the broker publishes data."
    }
   },
+  "hireteammate-inc": {},
   "hivestack-inc": {
    "jurisdiction": {
     "value": [
@@ -7615,6 +7917,16 @@
     "evidence": "ng services, including providing events. We may also send you marketing communications by SMS, email, and telephone, subject to any consent requirements under applicable law. Targeted"
    }
   },
+  "home-media": {
+   "privacy_contact_email": {
+    "value": "feedback@neighborhoodalerts.com",
+    "source_url": "https://www.neighborhoodalerts.com/pages/about",
+    "checked_at": "2026-10-12",
+    "confidence": "uncertain",
+    "evidence": null
+   }
+  },
+  "homes-com": {},
   "homeyou": {
    "submission_methods": {
     "value": [
@@ -7659,6 +7971,7 @@
     "evidence": "it a request through our online form at Do Not Sell or Share My Personal Information , or call us toll-free at (844) 466-3968 . To submit a request to know/access, delete, or correct your personal inf"
    }
   },
+  "houston-association-of-realtors": {},
   "hubspot-inc": {
    "jurisdiction": {
     "value": [
@@ -7692,6 +8005,7 @@
     "evidence": null
    }
   },
+  "hunt-club-inc": {},
   "hunter-web-services-inc": {
    "jurisdiction": {
     "value": [
@@ -7746,6 +8060,17 @@
     "evidence": "Laws or regions named on the page; this is not proof of where the broker publishes data."
    }
   },
+  "id5-technology-ltd": {
+   "privacy_contact_email": {
+    "value": "privacy@id5.io",
+    "source_url": "https://id5.io/trust/privacy-policy",
+    "checked_at": "2026-10-12",
+    "confidence": "extracted",
+    "evidence": null
+   }
+  },
+  "idaho-arrests": {},
+  "idcrawl": {},
   "idmap-inc": {
    "required_info": {
     "value": [
@@ -7898,6 +8223,7 @@
     "evidence": "his feature. To opt out of this sharing, see Sections 8 and 16. Form security (Cloudflare Turnstile). We use Turnstile, a security service provided by Cloudflare, Inc., to protect the conta"
    }
   },
+  "illinois-arrests": {},
   "illinois-prison-talk": {
    "privacy_policy_url": {
     "value": "https://illinoisprisontalk.org/privacy-policy.php",
@@ -7947,6 +8273,13 @@
     "checked_at": "2026-10-11",
     "confidence": "uncertain",
     "evidence": "Laws or regions named on the page; this is not proof of where the broker publishes data."
+   },
+   "privacy_contact_email": {
+    "value": "dpo@illumin.com",
+    "source_url": "https://illumin.com/legalcenter/corporate/",
+    "checked_at": "2026-10-12",
+    "confidence": "extracted",
+    "evidence": null
    }
   },
   "impact": {
@@ -8038,6 +8371,20 @@
     "evidence": null
    }
   },
+  "infofree": {
+   "privacy_contact_email": {
+    "value": "info@infofree.com",
+    "source_url": "https://infofree.com/",
+    "checked_at": "2026-10-12",
+    "confidence": "uncertain",
+    "evidence": null
+   }
+  },
+  "infomatics-llc-network-peoplesearch123-com": {},
+  "infomatics-llc-network-peoplesearcher-com": {},
+  "infomatics-llc-network-peoplesearchusa-org": {},
+  "infomatics-llc-network-personsearchers-com": {},
+  "infomatics-llc-network-privatereports-com": {},
   "infopay-inc": {
    "submission_methods": {
     "value": [
@@ -8056,8 +8403,16 @@
     "checked_at": "2026-10-11",
     "confidence": "extracted",
     "evidence": "Linked from the site as the privacy policy."
+   },
+   "privacy_contact_email": {
+    "value": "casey.clemenza@informa.com",
+    "source_url": "https://www.informa.com/media/media-contacts/",
+    "checked_at": "2026-10-12",
+    "confidence": "uncertain",
+    "evidence": null
    }
   },
+  "infotracer-network": {},
   "inmar-oiq-llc": {
    "verification": {
     "value": [
@@ -8090,6 +8445,7 @@
     "evidence": null
    }
   },
+  "inmatessearcher": {},
   "innovation-brands-corp": {
    "privacy_contact_email": {
     "value": "privacy@proxima.ai",
@@ -8189,6 +8545,7 @@
     "evidence": null
    }
   },
+  "instantcheckmate-peopleconnect": {},
   "instantcheckspy-truthfinder": {
    "privacy_policy_url": {
     "value": "https://instantcheckspy.com/privacy.php",
@@ -8246,6 +8603,9 @@
     "evidence": "complete the form below. Email * First Name * Last Name * Address * City * State * Zip * CAPTCHA Site Map Contact Privacy Policy Do Not Sell My Personal Information Copyright ©2025 IDM."
    }
   },
+  "intelius-peopleconnect": {},
+  "intelius-peopleconnect-address-us-com": {},
+  "intelius-peopleconnect-addresses-com": {},
   "intentgine": {
    "request_url": {
     "value": "https://intentgine.com/ccpa-privacy/",
@@ -8337,6 +8697,13 @@
     "checked_at": "2026-10-11",
     "confidence": "uncertain",
     "evidence": "Laws or regions named on the page; this is not proof of where the broker publishes data."
+   },
+   "privacy_contact_email": {
+    "value": "privacy@pharosiq.com",
+    "source_url": "https://pharosiq.com/legal/",
+    "checked_at": "2026-10-12",
+    "confidence": "uncertain",
+    "evidence": null
    }
   },
   "intentsify-llc": {
@@ -8481,6 +8848,7 @@
     "evidence": "th Data Privacy Policy Privacy Policy Online Privacy Policy DPF Policy GDPR at IQVIA CCPA Text Message Service Privacy Policy Text Message Service Terms of Use Respecting privacy is a core pri"
    }
   },
+  "iqvia-digital-inc-privacyportal-onetrust-com": {},
   "irbsearch": {
    "privacy_contact_email": {
     "value": "optout@irbsearch.com",
@@ -8591,6 +8959,7 @@
     "evidence": null
    }
   },
+  "j-d-power": {},
   "j2-global-canada-inc-campaigner-com": {
    "jurisdiction": {
     "value": [
@@ -8937,6 +9306,8 @@
     "evidence": "se select a State. ZIP* Valid Zip Code is required. Age* Select Age Please select an Age. Confirmation Email* Valid email is required. Please confirm you are human... Continue Your information delet"
    }
   },
+  "kind-skiptracing-inc": {},
+  "kiwi-searches": {},
   "kloudend-inc": {
    "privacy_policy_url": {
     "value": "https://ipapi.co/privacy/",
@@ -8997,6 +9368,13 @@
     "checked_at": "2026-10-11",
     "confidence": "uncertain",
     "evidence": "received! Oops! Something went wrong while submitting the form. This site is protected by reCAPTCHA and the Google Privacy Policy and Terms of Service apply. Products Audiences Activation P"
+   },
+   "privacy_contact_email": {
+    "value": "privacy@rbarrel.com",
+    "source_url": "https://www.rbarrel.com/privacy-choices",
+    "checked_at": "2026-10-12",
+    "confidence": "extracted",
+    "evidence": null
    }
   },
   "kochava": {
@@ -9084,6 +9462,9 @@
     "evidence": "Laws or regions named on the page; this is not proof of where the broker publishes data."
    }
   },
+  "komodo-health-inc": {},
+  "kontext-data": {},
+  "l-s-mobile-apps-holdings-ltd": {},
   "la-county-arrest-records": {
    "processing_time": {
     "value": {
@@ -9105,6 +9486,13 @@
     "checked_at": "2026-10-11",
     "confidence": "uncertain",
     "evidence": "ol address, email address, account name, social security number, driver’s license number, passport number, or other similar identifiers), or information that identifies, relates to, descri"
+   },
+   "privacy_contact_email": {
+    "value": "info@lead-enhance.com",
+    "source_url": "https://www.lead-enhance.com/",
+    "checked_at": "2026-10-12",
+    "confidence": "uncertain",
+    "evidence": null
    }
   },
   "lead-intelligence-inc": {
@@ -9145,6 +9533,7 @@
     "evidence": null
    }
   },
+  "lead-me-media-llc": {},
   "lead411-corporation": {
    "request_url": {
     "value": "https://www.lead411.com/your-privacy-choices/",
@@ -9211,6 +9600,7 @@
     "evidence": "cy request, email us at support@lead411.io. To opt-out of “sharing/targeted advertising,” click the link in the bottom left footer of www.lead411.com. A Lead411 profile allows you to be found on"
    }
   },
+  "leadcrunch": {},
   "leadiq-inc": {
    "jurisdiction": {
     "value": [
@@ -9295,6 +9685,7 @@
     "evidence": null
    }
   },
+  "learnmore-llc": {},
   "leidos-digital-solutions-inc": {
    "privacy_policy_url": {
     "value": "https://leidosiq.com/privacy-statement/",
@@ -9324,6 +9715,7 @@
     "evidence": "of your request, your office name and contact information. If you prefer, reach out to us by phone at 703-206-0188 or use our Live Chat option from within your IQ system. Contact Us Get Train"
    }
   },
+  "lenso-ai": {},
   "lexisnexis": {
    "jurisdiction": {
     "value": [
@@ -9548,6 +9940,7 @@
     "evidence": null
    }
   },
+  "locate-friend": {},
   "locatefamily": {
    "request_url": {
     "value": "https://www.locatefamily.com/removal.html",
@@ -9670,6 +10063,16 @@
     "evidence": "If you reside in California: If you have any issues exercising your rights, you may also call us toll free at 1-866-I-OPT-OUT and enter service code 815#. You may also designate an authorized agent t"
    }
   },
+  "lotame": {
+   "privacy_contact_email": {
+    "value": "privacy@lotame.com",
+    "source_url": "https://www.lotame.com/privacy/corporate-privacy-notice/",
+    "checked_at": "2026-10-12",
+    "confidence": "extracted",
+    "evidence": null
+   }
+  },
+  "louisiana-arrests": {},
   "lusha-systems-inc": {
    "verification": {
     "value": [
@@ -9778,6 +10181,7 @@
     "evidence": null
    }
   },
+  "madison-logic": {},
   "magnite-inc": {
    "privacy_policy_url": {
     "value": "https://www.magnite.com/legal/advertising-platform-privacy-policy/",
@@ -9815,6 +10219,7 @@
     "evidence": "emailing us at [email protected] or at [email protected] . If you need help, you can also call us at + 1.888.812.3839 . HOW TO LOCATE YOUR DIGITAL IDENTIFIERS Web Browsing As described in ou"
    }
   },
+  "malvern-media-inc": {},
   "malvern-media-inc-malvernmedia-com": {
    "required_info": {
     "value": [
@@ -9898,6 +10303,8 @@
     "evidence": "Laws or regions named on the page; this is not proof of where the broker publishes data."
    }
   },
+  "marriott-international-inc": {},
+  "massachusetts-arrests": {},
   "matchbook-data-llc": {
    "verification": {
     "value": [
@@ -10278,8 +10685,17 @@
     "checked_at": "2026-10-11",
     "confidence": "uncertain",
     "evidence": "sages may vary by account. Message and data rates may apply. To opt-out, text STOP to any text message we send you. An opt-out confirmation message will be sent back to you. To request support"
+   },
+   "privacy_contact_email": {
+    "value": "contact@microbilt.com",
+    "source_url": "https://www.microbilt.com/contact-us",
+    "checked_at": "2026-10-12",
+    "confidence": "uncertain",
+    "evidence": null
    }
   },
+  "mightyrep": {},
+  "milestone-marketing-solutions": {},
   "mineralholders": {
    "required_info": {
     "value": [
@@ -10305,6 +10721,8 @@
     "evidence": "r updates to our Terms or this Privacy Policy). Text Messages. If you receive an unwanted text message from us, you may opt out of receiving future text messages from us by following the instr"
    }
   },
+  "minnesota-arrests": {},
+  "mississippi-arrests": {},
   "missouri-arrests": {
    "verification": {
     "value": [
@@ -10373,6 +10791,7 @@
     "evidence": null
    }
   },
+  "monevo-inc": {},
   "moneybot5000": {
    "privacy_policy_url": {
     "value": "https://www.moneybot5000.com/faq/privacy-policy/",
@@ -10434,6 +10853,7 @@
     "evidence": null
    }
   },
+  "montana-arrests": {},
   "moody-s-corporation": {
    "required_info": {
     "value": [
@@ -10524,6 +10944,16 @@
     "evidence": null
    }
   },
+  "mpac": {
+   "privacy_contact_email": {
+    "value": "bianca.lazarich@mpac.ca",
+    "source_url": "https://mpac.ca/en/OurServices/SupportMunicipalities/MPACContactsMunicipalities",
+    "checked_at": "2026-10-12",
+    "confidence": "uncertain",
+    "evidence": null
+   }
+  },
+  "mugshotlook": {},
   "muraena": {
    "required_info": {
     "value": [
@@ -10582,6 +11012,7 @@
     "evidence": null
    }
   },
+  "mylife": {},
   "nachal-inc": {
    "jurisdiction": {
     "value": [
@@ -10591,6 +11022,16 @@
     "checked_at": "2026-10-11",
     "confidence": "uncertain",
     "evidence": "Laws or regions named on the page; this is not proof of where the broker publishes data."
+   }
+  },
+  "names-and-facts": {},
+  "narvar-inc": {
+   "privacy_contact_email": {
+    "value": "hr@narvar.com",
+    "source_url": "https://corp.narvar.com/about",
+    "checked_at": "2026-10-12",
+    "confidence": "uncertain",
+    "evidence": null
    }
   },
   "national-do-not-call-registry": {
@@ -10648,6 +11089,7 @@
     "evidence": "Laws or regions named on the page; this is not proof of where the broker publishes data."
    }
   },
+  "national-public-data": {},
   "nationbuilder": {
    "submission_methods": {
     "value": [
@@ -10717,6 +11159,8 @@
     "evidence": "Laws or regions named on the page; this is not proof of where the broker publishes data."
    }
   },
+  "nctue": {},
+  "neighborwho-beenverified-family": {},
   "neptune-ops-llc": {
    "verification": {
     "value": [
@@ -10728,6 +11172,7 @@
     "evidence": "40-1855. We will not require consumers or authorized agents to create an account, provide government-issued identification, or provide more information than is reasonably necessary to process a con"
    }
   },
+  "nestfully": {},
   "network-advertising-initiative": {
    "privacy_policy_url": {
     "value": "https://thenai.org/privacy-policy/",
@@ -10744,6 +11189,8 @@
     "evidence": null
    }
   },
+  "neustar-inc": {},
+  "neustar-transunion": {},
   "nevada-arrests": {
    "verification": {
     "value": [
@@ -10777,6 +11224,8 @@
     "evidence": null
    }
   },
+  "new-hampshire-arrests": {},
+  "new-mexico-arrests": {},
   "new-mexico-data-insights": {
    "verification": {
     "value": [
@@ -10798,6 +11247,7 @@
     "evidence": null
    }
   },
+  "new-york-arrests": {},
   "next-wave-marketing-strategies-inc": {
    "verification": {
     "value": [
@@ -10853,6 +11303,13 @@
     "checked_at": "2026-10-11",
     "confidence": "uncertain",
     "evidence": "t request take to go into effect? Your request will be processed after you respond to the confirmation email. Please note that this opt out request is not effective for removal of data that may have"
+   },
+   "privacy_contact_email": {
+    "value": "h.paulus@nexxagroup.com",
+    "source_url": "https://www.nexxagroup.com/holly-contact/",
+    "checked_at": "2026-10-12",
+    "confidence": "uncertain",
+    "evidence": null
    }
   },
   "nexxen-inc": {
@@ -11030,6 +11487,9 @@
     "evidence": "Laws or regions named on the page; this is not proof of where the broker publishes data."
    }
   },
+  "northcarolinapublicrecords-org-truthfinder": {},
+  "notariescalifornia-com-licensedata": {},
+  "npir-org": {},
   "numberguru-beenverified-family": {
    "privacy_policy_url": {
     "value": "https://www.numberguru.com/privacy-policy/",
@@ -11089,8 +11549,16 @@
     "checked_at": "2026-10-11",
     "confidence": "extracted",
     "evidence": null
+   },
+   "privacy_contact_email": {
+    "value": "support@numberguru.com",
+    "source_url": "https://support.numberguru.com/hc/en-us",
+    "checked_at": "2026-10-12",
+    "confidence": "uncertain",
+    "evidence": null
    }
   },
+  "numlooker": {},
   "numlookup": {
    "privacy_contact_email": {
     "value": "hello@numlookup.com",
@@ -11120,6 +11588,7 @@
     "evidence": "see Texas Utah Vermont Virginia Washington West Virginia Wisconsin Wyoming Got Questions? Call us at +1 (844) 405-2145 Company About NumLookup NumLookup API Do Not Sell / Information Opt Out"
    }
   },
+  "nuwber": {},
   "ocean-global-inc": {
    "jurisdiction": {
     "value": [
@@ -11130,6 +11599,15 @@
     "checked_at": "2026-10-11",
     "confidence": "uncertain",
     "evidence": "Laws or regions named on the page; this is not proof of where the broker publishes data."
+   }
+  },
+  "office-of-the-privacy-commissioner-of-canada": {
+   "privacy_contact_email": {
+    "value": "publications@priv.gc.ca",
+    "source_url": "https://www.priv.gc.ca/en/contact-the-opc/",
+    "checked_at": "2026-10-12",
+    "confidence": "uncertain",
+    "evidence": null
    }
   },
   "ogury-ltd": {
@@ -11154,6 +11632,8 @@
     "evidence": null
    }
   },
+  "ohio-arrests": {},
+  "ohio-resident-database": {},
   "onaudience-ltd": {
    "jurisdiction": {
     "value": [
@@ -11195,6 +11675,9 @@
     "evidence": "Laws or regions named on the page; this is not proof of where the broker publishes data."
    }
   },
+  "online-media-group-inc": {},
+  "onlinesearches-intelius-peopleconnect": {},
+  "onpoint-data-strategy": {},
   "open-public-records-beenverified-data": {
    "required_info": {
     "value": [
@@ -11345,6 +11828,13 @@
     "checked_at": "2026-10-11",
     "confidence": "uncertain",
     "evidence": "Laws or regions named on the page; this is not proof of where the broker publishes data."
+   },
+   "privacy_contact_email": {
+    "value": "privacy@optable.co",
+    "source_url": "https://www.optable.co/term-and-conditions",
+    "checked_at": "2026-10-12",
+    "confidence": "extracted",
+    "evidence": null
    }
   },
   "optoutprescreen-experian-equifax-transunion-innovis": {
@@ -11375,8 +11865,16 @@
     "checked_at": "2026-10-11",
     "confidence": "uncertain",
     "evidence": "Laws or regions named on the page; this is not proof of where the broker publishes data."
+   },
+   "privacy_contact_email": {
+    "value": "privacy-oraclelifesciences_ww@oracle.com",
+    "source_url": "https://www.oracle.com/legal/privacy/life-sciences-healthcare-research-privacy-policy/",
+    "checked_at": "2026-10-12",
+    "confidence": "extracted",
+    "evidence": null
    }
   },
+  "oregon-arrests": {},
   "orgio-inc": {
    "required_info": {
     "value": [
@@ -11494,6 +11992,7 @@
     "evidence": "Laws or regions named on the page; this is not proof of where the broker publishes data."
    }
   },
+  "paedae-inc": {},
   "parade-pet": {
    "submission_methods": {
     "value": [
@@ -11524,6 +12023,8 @@
     "evidence": null
    }
   },
+  "paramount-lists-inc": {},
+  "path2response-llc": {},
   "peekyou": {
    "jurisdiction": {
     "value": [
@@ -11559,6 +12060,8 @@
     "evidence": "Laws or regions named on the page; this is not proof of where the broker publishes data."
    }
   },
+  "pennsylvania-arrests": {},
+  "people-data-labs-inc": {},
   "people-search-expert": {
    "request_url": {
     "value": "https://www.peoplesearchexpert.com/",
@@ -11750,6 +12253,7 @@
     "evidence": "Laws or regions named on the page; this is not proof of where the broker publishes data."
    }
   },
+  "peoplefinders-confi-chek": {},
   "peoplefindersdaas": {
    "privacy_contact_email": {
     "value": "privacy@peoplefindersdaas.com",
@@ -11881,6 +12385,17 @@
     "evidence": "of 5 You can opt out and have your listing removed from the Whitepages website. Copy and paste the URL of your profile. Next Find People People Search Reverse Phone Lookup Reverse Address Look"
    }
   },
+  "peoplesearchnow": {},
+  "peoplesmart-beenverified": {
+   "privacy_contact_email": {
+    "value": "dpo@peoplesmart.com",
+    "source_url": "https://www.peoplesmart.com/privacy-policy/",
+    "checked_at": "2026-10-12",
+    "confidence": "extracted",
+    "evidence": null
+   }
+  },
+  "peoplewhiz": {},
   "peoplewhiz-network-azerch-com": {
    "privacy_policy_url": {
     "value": "https://www.azerch.com/privacy.html",
@@ -11926,6 +12441,7 @@
     "evidence": null
    }
   },
+  "peoplewhizr": {},
   "persopo": {
    "required_info": {
     "value": [
@@ -11957,6 +12473,8 @@
     "evidence": "entifier, Internet Protocol address, email address, account name, Social Security number, driver's license number, passport number, or other similar identifiers. YES B. Personal information catego"
    }
   },
+  "phonebooks-com": {},
+  "phonenumberinfo-us": {},
   "phonenumbers-org": {
    "required_info": {
     "value": [
@@ -11987,6 +12505,13 @@
     "checked_at": "2026-10-11",
     "confidence": "uncertain",
     "evidence": "sed to help you create albums, collages, and other creations that you can share. A flight confirmation email you receive may be used to create a “check-in” button that appears in your Gmail When you"
+   },
+   "privacy_contact_email": {
+    "value": "support@phonenumbers.org",
+    "source_url": "https://phonenumbers.org/terms/",
+    "checked_at": "2026-10-12",
+    "confidence": "uncertain",
+    "evidence": null
    }
   },
   "pimeyes": {
@@ -12022,6 +12547,7 @@
     "evidence": null
    }
   },
+  "pitchbook-data-inc": {},
   "place-exchange-inc": {
    "privacy_policy_url": {
     "value": "https://www.placeexchange.com/privacy",
@@ -12067,6 +12593,24 @@
     "evidence": null
    }
   },
+  "pludo-inc": {
+   "privacy_contact_email": {
+    "value": "privacy@cashmereai.com",
+    "source_url": "https://www.cashmereai.com/policy/privacy-policy",
+    "checked_at": "2026-10-12",
+    "confidence": "extracted",
+    "evidence": null
+   }
+  },
+  "plug-chargers-llc": {
+   "privacy_contact_email": {
+    "value": "dataretrieval@plug-industries.com",
+    "source_url": "https://www.plug-industries.com/do-not-sell",
+    "checked_at": "2026-10-12",
+    "confidence": "uncertain",
+    "evidence": null
+   }
+  },
   "podible-inc": {
    "jurisdiction": {
     "value": [
@@ -12087,6 +12631,13 @@
     "checked_at": "2026-10-11",
     "confidence": "uncertain",
     "evidence": "Laws or regions named on the page; this is not proof of where the broker publishes data."
+   },
+   "privacy_contact_email": {
+    "value": "theteam@pomanda.com",
+    "source_url": "https://pomanda.com/contact",
+    "checked_at": "2026-10-12",
+    "confidence": "uncertain",
+    "evidence": null
    }
   },
   "pop-acta-media-llc": {
@@ -12380,6 +12931,8 @@
     "evidence": "Laws or regions named on the page; this is not proof of where the broker publishes data."
    }
   },
+  "privatenumberchecker": {},
+  "privaterecords-net": {},
   "privco-media-llc": {
    "jurisdiction": {
     "value": [
@@ -12413,6 +12966,7 @@
     "evidence": "nks on this website are affiliate links, which means that we may earn a commission if you click on the link or make a purchase using the link. When you make a purchase, the price you pay will be th"
    }
   },
+  "prodpro-inc": {},
   "profile-canada": {
    "required_info": {
     "value": [
@@ -12492,8 +13046,16 @@
     "checked_at": "2026-10-11",
     "confidence": "uncertain",
     "evidence": "greement, this Policy, or other legal notices). Text Messages .If you receive an unwanted text message from us, you may opt out of receiving future text messages by following the instructions"
+   },
+   "privacy_contact_email": {
+    "value": "support@propertyradar.com",
+    "source_url": "https://www.propertyradar.com/support",
+    "checked_at": "2026-10-12",
+    "confidence": "uncertain",
+    "evidence": null
    }
   },
+  "propertyreach": {},
   "propertyrec-network": {
    "privacy_policy_url": {
     "value": "https://www.propertyrec.com/privacy",
@@ -12728,6 +13290,7 @@
     "evidence": null
    }
   },
+  "propertyshark": {},
   "prospectbase-uk-limited": {
    "jurisdiction": {
     "value": [
@@ -13087,6 +13650,8 @@
     "evidence": "Laws or regions named on the page; this is not proof of where the broker publishes data."
    }
   },
+  "publicrecordssearcher": {},
+  "publicsearcher": {},
   "pubmatic-inc": {
    "privacy_policy_url": {
     "value": "https://pubmatic.com/legal/privacy-policy/",
@@ -13101,6 +13666,13 @@
     ],
     "source_url": "https://pubmatic.com/legal/ccpa-privacy-policy/",
     "checked_at": "2026-10-11",
+    "confidence": "extracted",
+    "evidence": null
+   },
+   "privacy_contact_email": {
+    "value": "dpo@pubmatic.com",
+    "source_url": "https://pubmatic.com/legal/careers-privacy-policy/",
+    "checked_at": "2026-10-12",
     "confidence": "extracted",
     "evidence": null
    }
@@ -13128,6 +13700,7 @@
     "evidence": null
    }
   },
+  "purecars-technologies-llc": {},
   "pwc-product-sales-llc": {
    "privacy_policy_url": {
     "value": "https://www.pwc.com/us/en/site/privacy.html#our-processing-activities",
@@ -13184,6 +13757,13 @@
     "checked_at": "2026-10-11",
     "confidence": "extracted",
     "evidence": null
+   },
+   "privacy_contact_email": {
+    "value": "existingcustomer@quad.com",
+    "source_url": "https://www.quad.com/contact",
+    "checked_at": "2026-10-12",
+    "confidence": "uncertain",
+    "evidence": null
    }
   },
   "quadrant-global-pte-ltd": {
@@ -13199,6 +13779,7 @@
     "evidence": "Laws or regions named on the page; this is not proof of where the broker publishes data."
    }
   },
+  "qualfon": {},
   "quickpublicrecords": {
    "required_info": {
     "value": [
@@ -13261,6 +13842,8 @@
     "evidence": "Section 13). 1.5 Data We Do Not Collect Quorum does not collect Social Security numbers, driver's license numbers, financial account numbers, biometric data (fingerprints, facial recognition), ge"
    }
   },
+  "qurium-solutions-inc": {},
+  "rampedup-llc": {},
   "randall-reilly-llc": {
    "privacy_policy_url": {
     "value": "https://fusable.com/legal/privacy-policy/",
@@ -13369,6 +13952,7 @@
     "evidence": "our child’s information. This includes safeguarding your name, address, and phone number. SMS Policy These Terms ONLY APPLIES TO text messaging OPT INS: Real Intent text messaging pro"
    }
   },
+  "realeflow-llc": {},
   "reallygreatrate-inc": {
    "privacy_contact_email": {
     "value": "info@rgrmarketing.com",
@@ -13387,6 +13971,7 @@
     "evidence": "o engage before the competition does. Learn more Contact Us Get started with free* leads. Call us at 310-540-8900 Don’t take our word for it—find out for yourself how good our leads are and"
    }
   },
+  "realpeoplesearch": {},
   "realsatisfied": {
    "jurisdiction": {
     "value": [
@@ -13428,6 +14013,16 @@
     "checked_at": "2026-10-11",
     "confidence": "uncertain",
     "evidence": "Laws or regions named on the page; this is not proof of where the broker publishes data."
+   }
+  },
+  "realtyhop-com": {},
+  "recordsfinder": {
+   "privacy_contact_email": {
+    "value": "privacy@recordsfinder.com",
+    "source_url": "https://recordsfinder.com/optout/",
+    "checked_at": "2026-10-12",
+    "confidence": "extracted",
+    "evidence": null
    }
   },
   "recordspage-truthfinder": {
@@ -13549,6 +14144,7 @@
     "evidence": "u have the right to request that we delete your Personal Information. Once we receive and confirm your request, we will delete (and direct our service providers to delete) your Personal Information fr"
    }
   },
+  "redi-data-inc": {},
   "reklaim-ltd": {
    "jurisdiction": {
     "value": [
@@ -13691,6 +14287,7 @@
     "evidence": "Laws or regions named on the page; this is not proof of where the broker publishes data."
    }
   },
+  "reunion-com-mylife": {},
   "revcontent": {
    "verification": {
     "value": [
@@ -13864,6 +14461,13 @@
     "checked_at": "2026-10-11",
     "confidence": "extracted",
     "evidence": null
+   },
+   "privacy_contact_email": {
+    "value": "corporate@reverseaustralia.com",
+    "source_url": "https://www.reverseaustralia.com/contact.php",
+    "checked_at": "2026-10-12",
+    "confidence": "uncertain",
+    "evidence": null
    }
   },
   "reversephone-whitepages-affiliated": {
@@ -13938,6 +14542,7 @@
     "evidence": "Laws or regions named on the page; this is not proof of where the broker publishes data."
    }
   },
+  "revonect": {},
   "revoptimal-llc": {
    "jurisdiction": {
     "value": [
@@ -14094,6 +14699,7 @@
     "evidence": null
    }
   },
+  "rogers": {},
   "roq-ad-inc": {
    "required_info": {
     "value": [
@@ -14171,8 +14777,16 @@
     "checked_at": "2026-10-11",
     "confidence": "uncertain",
     "evidence": "Laws or regions named on the page; this is not proof of where the broker publishes data."
+   },
+   "privacy_contact_email": {
+    "value": "privacy@rushmorelabs.com",
+    "source_url": "https://rushmorelabs.com/california-privacy-notice/",
+    "checked_at": "2026-10-12",
+    "confidence": "extracted",
+    "evidence": null
    }
   },
+  "s-and-p-global-inc": {},
   "sabio-inc": {
    "submission_methods": {
     "value": [
@@ -14304,6 +14918,22 @@
     "checked_at": "2026-10-11",
     "confidence": "uncertain",
     "evidence": "Laws or regions named on the page; this is not proof of where the broker publishes data."
+   },
+   "privacy_contact_email": {
+    "value": "privacy@salesforce.com",
+    "source_url": "https://www.salesforce.com/company/legal/privacy/?bc=HL",
+    "checked_at": "2026-10-12",
+    "confidence": "extracted",
+    "evidence": null
+   }
+  },
+  "salesgear-io": {
+   "privacy_contact_email": {
+    "value": "sales@salesgear.io",
+    "source_url": "https://www.salesgear.io/contact-us",
+    "checked_at": "2026-10-12",
+    "confidence": "uncertain",
+    "evidence": null
    }
   },
   "salesintel-research-inc": {
@@ -14353,6 +14983,7 @@
     "evidence": null
    }
   },
+  "salutary-data-llc": {},
   "samba-tv-inc": {
    "jurisdiction": {
     "value": [
@@ -14362,8 +14993,17 @@
     "checked_at": "2026-10-11",
     "confidence": "uncertain",
     "evidence": "Laws or regions named on the page; this is not proof of where the broker publishes data."
+   },
+   "privacy_contact_email": {
+    "value": "privacy@samba.tv",
+    "source_url": "https://samba.com/privacy-center/notice-of-right-to-opt-out",
+    "checked_at": "2026-10-12",
+    "confidence": "extracted",
+    "evidence": null
    }
   },
+  "sasktel": {},
+  "sba-loan-data": {},
   "sbfe-llc": {
    "privacy_contact_email": {
     "value": "ccpa@sbfe.org",
@@ -14440,6 +15080,17 @@
     "checked_at": "2026-10-11",
     "confidence": "uncertain",
     "evidence": "Laws or regions named on the page; this is not proof of where the broker publishes data."
+   }
+  },
+  "sealedrecords": {},
+  "seamless-contacts-inc": {},
+  "search-systems-directory-of-links": {
+   "privacy_contact_email": {
+    "value": "info@searchsystems.net",
+    "source_url": "https://www.searchsystems.net/contact",
+    "checked_at": "2026-10-12",
+    "confidence": "uncertain",
+    "evidence": null
    }
   },
   "searchbug-inc": {
@@ -14549,6 +15200,7 @@
     "evidence": null
    }
   },
+  "searchpeoplefree-net": {},
   "searchpublicrecords": {
    "required_info": {
     "value": [
@@ -14584,6 +15236,7 @@
     "evidence": "se select a State. ZIP* Valid Zip Code is required. Age* Select Age Please select an Age. Confirmation Email* Valid email is required. Please confirm you are human... Continue Your information delet"
    }
   },
+  "searchusapeople-infotracer": {},
   "secretinfo": {
    "required_info": {
     "value": [
@@ -14728,6 +15381,22 @@
     "checked_at": "2026-10-11",
     "confidence": "uncertain",
     "evidence": "Laws or regions named on the page; this is not proof of where the broker publishes data."
+   },
+   "privacy_contact_email": {
+    "value": "dpo@sharethis.com",
+    "source_url": "https://sharethis.com/privacy/",
+    "checked_at": "2026-10-12",
+    "confidence": "extracted",
+    "evidence": null
+   }
+  },
+  "sharethrough-inc": {
+   "privacy_contact_email": {
+    "value": "dataprotection@sharethrough.com",
+    "source_url": "https://privacy-center.sharethrough.com/en/do-not-sell-my-personal-information/",
+    "checked_at": "2026-10-12",
+    "confidence": "extracted",
+    "evidence": null
    }
   },
   "sheerid-inc": {
@@ -14993,6 +15662,13 @@
     "checked_at": "2026-10-11",
     "confidence": "uncertain",
     "evidence": "Laws or regions named on the page; this is not proof of where the broker publishes data."
+   },
+   "privacy_contact_email": {
+    "value": "privacy@skydeo.com",
+    "source_url": "https://skydeo.com/privacy-policy/",
+    "checked_at": "2026-10-12",
+    "confidence": "extracted",
+    "evidence": null
    }
   },
   "slashdot-media-llc": {
@@ -15308,6 +15984,8 @@
     "evidence": null
    }
   },
+  "south-carolina-arrests": {},
+  "southcarolinapublicrecords-com-truthfinder": {},
   "sovrn-inc": {
    "privacy_policy_url": {
     "value": "https://www.sovrn.com/privacy-policy/privacy-policy/",
@@ -15528,6 +16206,7 @@
     "evidence": "ur dedicated data subject request portal powered by Osano: Privacy Inquiry . You may also call us at (512) 387-8158. SpyCloud generally fulfills information rights requests free of charge. H"
    }
   },
+  "spyfly": {},
   "stackadapt-inc": {
    "submission_methods": {
     "value": [
@@ -15585,6 +16264,7 @@
     "evidence": "Laws or regions named on the page; this is not proof of where the broker publishes data."
    }
   },
+  "statara-solutions-llc": {},
   "staterecords-org-network-alabamacourtrecords-us": {
    "required_info": {
     "value": [
@@ -17245,6 +17925,7 @@
     "evidence": "Laws or regions named on the page; this is not proof of where the broker publishes data."
    }
   },
+  "streetdirectory": {},
   "subgraph-inc": {
    "jurisdiction": {
     "value": [
@@ -17325,6 +18006,16 @@
     "evidence": null
    }
   },
+  "summit-resources-llc": {
+   "privacy_contact_email": {
+    "value": "privacy@clientcommand.com",
+    "source_url": "https://clientcommand.com/data-privacy/",
+    "checked_at": "2026-10-12",
+    "confidence": "extracted",
+    "evidence": null
+   }
+  },
+  "superpages": {},
   "swarm-holdings-inc": {
    "verification": {
     "value": [
@@ -17375,6 +18066,7 @@
     "evidence": "se we would collect information from you to enable us to provide this assistance, such as government-issued I.D. information, airline and flight information, lodging and dates of travel, or non-pre"
    }
   },
+  "swordfish-ai-inc": {},
   "sync-me": {
    "privacy_contact_email": {
     "value": "privacy@sync.me",
@@ -17414,6 +18106,8 @@
     "evidence": "he registration, we may contact you with the number your provided us (via inbound call or SMS) in order to authenticate your identity and prevent fraud. Legal basis (GDPR only, if app"
    }
   },
+  "t-mobile-usa-inc": {},
+  "taboola-inc": {},
   "tagis-inc": {
    "privacy_policy_url": {
     "value": "https://www.amplemarket.com/legal/data-broker-privacy-notice",
@@ -17432,6 +18126,8 @@
     "evidence": "arketing Text Messages: To opt out of marketing text messages, you must reply STOP to the text message. You agree that texting ‘STOP’ in response to our text message is the only reasonable met"
    }
   },
+  "tapad-inc": {},
+  "targetsmart-communications-llc": {},
   "task-genie-inc": {
    "privacy_policy_url": {
     "value": "https://www.datalane.com/privacy-policy",
@@ -17491,10 +18187,10 @@
   },
   "teads-holding-co": {
    "privacy_contact_email": {
-    "value": "support@teads.com",
-    "source_url": "https://my.outbrain.com/login",
-    "checked_at": "2026-10-11",
-    "confidence": "uncertain",
+    "value": "dpo@outbrain.com",
+    "source_url": "https://www.outbrain.com/legal",
+    "checked_at": "2026-10-12",
+    "confidence": "extracted",
     "evidence": null
    }
   },
@@ -17671,6 +18367,7 @@
     "evidence": "Laws or regions named on the page; this is not proof of where the broker publishes data."
    }
   },
+  "tennessee-arrests": {},
   "tennhelp": {
    "required_info": {
     "value": [
@@ -17705,6 +18402,13 @@
     "source_url": "https://www.tennhelp.com/public-resources/change-listing",
     "checked_at": "2026-10-11",
     "confidence": "extracted",
+    "evidence": null
+   },
+   "privacy_contact_email": {
+    "value": "copyright@tennhelp.com",
+    "source_url": "https://www.tennhelp.com/public-resources/terms-of-service",
+    "checked_at": "2026-10-12",
+    "confidence": "uncertain",
     "evidence": null
    }
   },
@@ -17773,6 +18477,7 @@
     "evidence": "Laws or regions named on the page; this is not proof of where the broker publishes data."
    }
   },
+  "thatsthem": {},
   "the-alesco-group-llc": {
    "required_info": {
     "value": [
@@ -17846,6 +18551,15 @@
     "evidence": null
    }
   },
+  "the-bump": {
+   "privacy_contact_email": {
+    "value": "help@thebump.com",
+    "source_url": "https://support.thebump.com/hc/en-us/articles/34980593049748-How-Can-I-Remove-My-Registry-From-The-Bump",
+    "checked_at": "2026-10-12",
+    "confidence": "uncertain",
+    "evidence": null
+   }
+  },
   "the-company-check": {
    "privacy_contact_email": {
     "value": "support@thecompanycheck.com",
@@ -17892,6 +18606,7 @@
     "evidence": "e processing your request. This may include: Requesting additional information, such as a government-issued ID or other identifying documents Verifying details provided in your request against our"
    }
   },
+  "the-dots-global-limited": {},
   "the-linea-1-mkt-sl": {
    "privacy_contact_email": {
     "value": "privacy@tl1mkt.com",
@@ -18086,6 +18801,15 @@
     "evidence": "and advertisements through the Websites, third-party sites, direct mail, and via email or text message (with your consent, where required by law); to administer and manage our communications p"
    }
   },
+  "thomson-reuters-clear": {
+   "privacy_contact_email": {
+    "value": "privacy.enquiries@thomsonreuters.com",
+    "source_url": "https://www.thomsonreuters.com/en/privacy-statement",
+    "checked_at": "2026-10-12",
+    "confidence": "extracted",
+    "evidence": null
+   }
+  },
   "top4backgroundchecks": {
    "required_info": {
     "value": [
@@ -18200,6 +18924,15 @@
     "evidence": null
    }
   },
+  "transcend": {
+   "privacy_contact_email": {
+    "value": "support@transcend.io",
+    "source_url": "https://transcend.io/",
+    "checked_at": "2026-10-12",
+    "confidence": "uncertain",
+    "evidence": null
+   }
+  },
   "transparent-nevada": {
    "required_info": {
     "value": [
@@ -18229,6 +18962,9 @@
     "evidence": "sed to help you create albums, collages, and other creations that you can share. A flight confirmation email you receive may be used to create a “check-in” button that appears in your Gmail When you"
    }
   },
+  "transunion": {},
+  "transunion-canada": {},
+  "trestle-solutions-inc": {},
   "triplelift-inc": {
    "required_info": {
     "value": [
@@ -18248,6 +18984,13 @@
     },
     "source_url": "https://triplelift.com/user-rights-policy-and-opt-out/",
     "checked_at": "2026-10-11",
+    "confidence": "extracted",
+    "evidence": null
+   },
+   "privacy_contact_email": {
+    "value": "privacy@triplelift.com",
+    "source_url": "https://triplelift.com/resources/blog/triplelift-iab-ccpa-compliance-framework/",
+    "checked_at": "2026-10-12",
     "confidence": "extracted",
     "evidence": null
    }
@@ -18310,6 +19053,12 @@
     "evidence": "uecaller Calling with Truecaller Caller ID for Messaging Apps Reverse Phone Number Lookup SMS Sender ID Lookup Scam & Spam Number Lookup Phone Number Locator Instant Messaging Contact"
    }
   },
+  "truepeoplesearch": {},
+  "truepeoplesearch-net": {},
+  "trulia-llc": {},
+  "truthed-inc": {},
+  "truthfinder-peopleconnect": {},
+  "truthrecord-we-inform-llc": {},
   "truthviewer": {
    "required_info": {
     "value": [
@@ -18357,6 +19106,7 @@
     "evidence": "political election and advertising entity; and your state, media market, target and tier. SMS. When you participate in our SMS service, we may obtain your cell phone number, your carr"
    }
   },
+  "ufind-name": {},
   "uk-open-electoral-register": {
    "privacy_contact_email": {
     "value": "dataprotection@dsit.gov.uk",
@@ -18423,6 +19173,7 @@
     "evidence": "Laws or regions named on the page; this is not proof of where the broker publishes data."
    }
   },
+  "unmask": {},
   "upcell-llc": {
    "request_url": {
     "value": "https://www.upcell.io/data-claim",
@@ -18494,6 +19245,7 @@
     "evidence": null
    }
   },
+  "ups-capital-corporation": {},
   "urban-science-applications-inc": {
    "required_info": {
     "value": [
@@ -18548,6 +19300,8 @@
     "evidence": "kies and similar technologies The Site uses cookies for technical purposes. We use Google reCAPTCHA to protect our forms from automated submissions. reCAPTCHA collects information about you"
    }
   },
+  "us-people-search": {},
+  "us-search-peopleconnect": {},
   "usa-people-search": {
    "jurisdiction": {
     "value": [
@@ -18578,6 +19332,7 @@
     "evidence": "Laws or regions named on the page; this is not proof of where the broker publishes data."
    }
   },
+  "usapeopledata-intelius": {},
   "usaphonesbook": {
    "jurisdiction": {
     "value": [
@@ -18612,6 +19367,7 @@
     "evidence": "Laws or regions named on the page; this is not proof of where the broker publishes data."
    }
   },
+  "usrecords-infotracer": {},
   "uswarrants-org-infotracer-form": {
    "required_info": {
     "value": [
@@ -18650,6 +19406,7 @@
     "evidence": "ing Omnichannel advertising solutions, including print and digital advertising, email and SMS marketing, as well as digital coupons Demand-side platform (DSP) services for advertisers"
    }
   },
+  "valid-number": {},
   "vdx-tv": {
    "jurisdiction": {
     "value": [
@@ -18739,6 +19496,13 @@
     "checked_at": "2026-10-11",
     "confidence": "uncertain",
     "evidence": "Laws or regions named on the page; this is not proof of where the broker publishes data."
+   },
+   "privacy_contact_email": {
+    "value": "privacy@veraset.com",
+    "source_url": "https://www.veraset.com/legal/privacy-policy",
+    "checked_at": "2026-10-12",
+    "confidence": "extracted",
+    "evidence": null
    }
   },
   "verifypublicrecords-cisnationwide": {
@@ -18910,6 +19674,7 @@
     "evidence": "Laws or regions named on the page; this is not proof of where the broker publishes data."
    }
   },
+  "viant-us-llc": {},
   "videoamp-inc": {
    "privacy_policy_url": {
     "value": "https://videoamp.com/website-privacy-policy",
@@ -18935,6 +19700,16 @@
     "checked_at": "2026-10-11",
     "confidence": "uncertain",
     "evidence": "Laws or regions named on the page; this is not proof of where the broker publishes data."
+   }
+  },
+  "virginia-arrests": {},
+  "virtual-marketing-llc": {
+   "privacy_contact_email": {
+    "value": "privacy@fusion92.com",
+    "source_url": "https://www.fusion92.com/privacy-policy",
+    "checked_at": "2026-10-12",
+    "confidence": "extracted",
+    "evidence": null
    }
   },
   "visitiq-io": {
@@ -18987,6 +19762,7 @@
     "evidence": "Laws or regions named on the page; this is not proof of where the broker publishes data."
    }
   },
+  "visual-visitor-l-l-c": {},
   "vizio-services-llc": {
    "privacy_policy_url": {
     "value": "https://www.inscape.tv/privacy",
@@ -19011,6 +19787,18 @@
     "checked_at": "2026-10-11",
     "confidence": "uncertain",
     "evidence": "Laws or regions named on the page; this is not proof of where the broker publishes data."
+   }
+  },
+  "voteref": {},
+  "voterrecords-com": {},
+  "voxtur-data-services": {},
+  "vrtcal-markets-inc": {
+   "privacy_contact_email": {
+    "value": "hello@vrtcal.com",
+    "source_url": "https://www.vrtcal.com/company-overview/",
+    "checked_at": "2026-10-12",
+    "confidence": "uncertain",
+    "evidence": null
    }
   },
   "warmly-inc": {
@@ -19043,6 +19831,7 @@
     "evidence": "Laws or regions named on the page; this is not proof of where the broker publishes data."
    }
   },
+  "washington-arrests": {},
   "wealthfeed-inc": {
    "jurisdiction": {
     "value": [
@@ -19134,6 +19923,7 @@
     "evidence": null
    }
   },
+  "weinform-we-inform-llc": {},
   "wellness-com": {
    "required_info": {
     "value": [
@@ -19146,6 +19936,7 @@
     "evidence": null
    }
   },
+  "west-virginia-arrests": {},
   "white-pages-canada": {
    "request_url": {
     "value": "https://whitepagescanada.ca/remove-info.php",
@@ -19330,6 +20121,8 @@
     "evidence": "Laws or regions named on the page; this is not proof of where the broker publishes data."
    }
   },
+  "winr-data-b-v": {},
+  "wisconsin-arrests": {},
   "wisdom-media-group": {
    "jurisdiction": {
     "value": [
@@ -19419,6 +20212,8 @@
     "evidence": "Laws or regions named on the page; this is not proof of where the broker publishes data."
    }
   },
+  "wyoming-arrests": {},
+  "wyty": {},
   "xad-inc": {
    "jurisdiction": {
     "value": [
@@ -19504,6 +20299,7 @@
     "evidence": "Laws or regions named on the page; this is not proof of where the broker publishes data."
    }
   },
+  "yellow-pages-directory-inc": {},
   "yellow-pages-opt-out": {
    "required_info": {
     "value": [
@@ -19534,6 +20330,10 @@
     "evidence": "pt out of delivery. Name Email* Address* City* State* Zip* Send This site is protected by reCAPTCHA and the Google Privacy Policy and Terms of Service apply. Copyright © 2026 Yellow Pages O"
    }
   },
+  "yellowbook-beenverified-data": {},
+  "yellowpages-people-intelius-data": {},
+  "yellowpages-yp-thryv": {},
+  "yieldmo-inc": {},
   "yobi-ventures-inc": {
    "jurisdiction": {
     "value": [
@@ -19546,6 +20346,7 @@
     "evidence": "Laws or regions named on the page; this is not proof of where the broker publishes data."
    }
   },
+  "youradchoices-control": {},
   "youronlinechoices-edaa": {
    "required_info": {
     "value": [
@@ -19566,8 +20367,16 @@
     "checked_at": "2026-10-11",
     "confidence": "uncertain",
     "evidence": "Laws or regions named on the page; this is not proof of where the broker publishes data."
+   },
+   "privacy_contact_email": {
+    "value": "privacy@edaa.eu",
+    "source_url": "https://www.youronlinechoices.com/uk/terms-conditions",
+    "checked_at": "2026-10-12",
+    "confidence": "uncertain",
+    "evidence": null
    }
   },
+  "zabasearch-peopleconnect-intelius": {},
   "zenleads-inc": {
    "privacy_policy_url": {
     "value": "https://www.apollo.io/privacy-policy",
@@ -19628,6 +20437,15 @@
     "evidence": "Laws or regions named on the page; this is not proof of where the broker publishes data."
    }
   },
+  "zeta-global-corp": {
+   "privacy_contact_email": {
+    "value": "privacy@zetaglobal.com",
+    "source_url": "https://www.zetaglobal.com/privacy-policy/",
+    "checked_at": "2026-10-12",
+    "confidence": "extracted",
+    "evidence": null
+   }
+  },
   "ziff-davis-llc": {
    "privacy_policy_url": {
     "value": "https://www.ziffdavis.com/privacy",
@@ -19675,6 +20493,7 @@
     "evidence": "e of interest to you, for example, upcoming promotions. You may unsubscribe or opt out of SMS messages at any time at no cost. 6. Information We Share with Third Parties Ziff Davis Co"
    }
   },
+  "ziprecruiter-inc": {},
   "zipstorm-inc": {
    "submission_methods": {
     "value": [
@@ -19729,6 +20548,13 @@
     "checked_at": "2026-10-11",
     "confidence": "uncertain",
     "evidence": "Laws or regions named on the page; this is not proof of where the broker publishes data."
+   },
+   "privacy_contact_email": {
+    "value": "hello@zlookup.com",
+    "source_url": "https://www.zlookup.com/privacy",
+    "checked_at": "2026-10-12",
+    "confidence": "uncertain",
+    "evidence": null
    }
   },
   "zoominfo-technologies-llc": {
@@ -19767,6 +20593,7 @@
     "confidence": "uncertain",
     "evidence": "Laws or regions named on the page; this is not proof of where the broker publishes data."
    }
-  }
+  },
+  "zumper": {}
  }
 }

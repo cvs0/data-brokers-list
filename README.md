@@ -1,6 +1,6 @@
 # Data broker opt-out list
 
-A catalog of **1122** data broker, people-search, and consumer-reporting opt-out or privacy-request pages. Each row is a real URL, checked on **2026-10-01**.
+A catalog of **723** data broker, people-search, and consumer-reporting opt-out or privacy-request pages. Each row is a real URL, checked on **2026-10-01**.
 
 This is a directory of links, not a removal service. Read the [disclaimer](DISCLAIMER.md) before you use it. Pages move, forms ask for different ID, and a successful request on one site does not remove you from the rest.
 
@@ -18,7 +18,6 @@ If you only do one sitting, use these. URLs are copied from [`opt-outs.csv`](opt
 | TruthFinder (PeopleConnect) | https://www.truthfinder.com/opt-out/ |
 | CheckPeople | https://checkpeople.com/opt-out |
 | MyLife | https://www.mylife.com/privacyrequest |
-| Nuwber | https://nuwber.com/removal/link |
 | TruePeopleSearch | https://www.truepeoplesearch.com/removal |
 | FastPeopleSearch | https://www.fastpeoplesearch.com/optout |
 | PeopleFinders (Confi-Chek) | https://www.peoplefinders.com/opt-out |
@@ -37,7 +36,6 @@ If you only do one sitting, use these. URLs are copied from [`opt-outs.csv`](opt
 | Experian | https://www.experian.com/privacy/opting_out |
 | TransUnion | https://www.transunion.com/consumer-privacy |
 | OptOutPrescreen (Experian/Equifax/TransUnion/Innovis) | https://www.optoutprescreen.com/ |
-| Radaris | https://radaris.com/control/privacy |
 | PimEyes | https://pimeyes.com/en/opt-out |
 | 192.com | https://www.192.com/c01/new-request/ |
 | National Do Not Call Registry | https://www.donotcall.gov/ |
@@ -59,19 +57,19 @@ Search the CSV before you send extra personal details. Notes say when a page ret
 
 | Category | File | Entries |
 | --- | --- | ---: |
-| People search | [brokers/people-search.md](brokers/people-search.md) | 165 |
-| Background checks | [brokers/background-checks.md](brokers/background-checks.md) | 62 |
-| Marketing | [brokers/marketing.md](brokers/marketing.md) | 171 |
-| Credit and financial | [brokers/credit-financial.md](brokers/credit-financial.md) | 18 |
-| Public records | [brokers/public-records.md](brokers/public-records.md) | 94 |
-| Other | [brokers/other.md](brokers/other.md) | 612 |
-| **Total** | [opt-outs.csv](opt-outs.csv) | **1122** |
+| People search | [brokers/people-search.md](brokers/people-search.md) | 138 |
+| Background checks | [brokers/background-checks.md](brokers/background-checks.md) | 74 |
+| Marketing | [brokers/marketing.md](brokers/marketing.md) | 120 |
+| Credit and financial | [brokers/credit-financial.md](brokers/credit-financial.md) | 16 |
+| Public records | [brokers/public-records.md](brokers/public-records.md) | 87 |
+| Other | [brokers/other.md](brokers/other.md) | 288 |
+| **Total** | [opt-outs.csv](opt-outs.csv) | **723** |
 
 `opt-outs.csv` is the source of truth for links. The Markdown files are tables generated from it. Column definitions and the check date are in [SOURCES.md](SOURCES.md).
 
-Researched workflow records, with stable IDs and a JSON Schema, are in [data/v1/broker-opt-outs.enriched.json](data/v1/broker-opt-outs.enriched.json). Field definitions are in [docs/dataset-fields.md](docs/dataset-fields.md). What was verified, blocked, or not a removal workflow is summarized in [docs/findings.md](docs/findings.md). A later browser pass, freshness recheck, and verification playbooks are linked from that file. Catalog notes are preserved as claims. They are not treated as proof that a removal workflow still works. No request was submitted to produce that file.
+The default broker record for a full public-page scan is the v3 profile in [data/v3/brokers.json](data/v3/brokers.json). Notes are in [docs/v3.md](docs/v3.md). The working profile for search, removal, location, and legal facts is v4 in [data/v4/brokers.json](data/v4/brokers.json). Notes are in [docs/v4.md](docs/v4.md). A 2026-10-12 page map of an earlier, larger catalog is in [docs/broker-maps.md](docs/broker-maps.md). Commands that build and check these files are grouped in [scripts/README.md](scripts/README.md).
 
-Machine-executable automation specs (search templates, canonical form fields, ranked removal channels, legal basis, re-check timing, rate limits) live in a separate v2 layer under `data/v2/`, validated by [data/schema/broker-automation.schema.json](data/schema/broker-automation.schema.json). See [docs/automation-layer.md](docs/automation-layer.md).
+Earlier layers are still in the repo. Researched workflow records are in [data/v1/broker-opt-outs.enriched.json](data/v1/broker-opt-outs.enriched.json) ([docs/dataset-fields.md](docs/dataset-fields.md), [docs/findings.md](docs/findings.md)). Hand-reviewed automation specs for a short list of brokers are in `data/v2/` ([docs/automation-layer.md](docs/automation-layer.md)). Catalog notes are claims. They are not proof that a removal workflow still works. No request was submitted to produce these files.
 
 ## How to use a row
 

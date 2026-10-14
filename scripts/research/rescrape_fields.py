@@ -19,6 +19,17 @@ Rules:
 
 from __future__ import annotations
 
+import sys
+from pathlib import Path
+
+_here = Path(__file__).resolve().parent
+_scripts = _here if (_here / "bootstrap_path.py").exists() else _here.parent
+if str(_scripts) not in sys.path:
+    sys.path.insert(0, str(_scripts))
+import bootstrap_path
+
+bootstrap_path.install()
+
 import argparse
 import json
 import re
@@ -27,7 +38,6 @@ import time
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime, timezone
 from html.parser import HTMLParser
-from pathlib import Path
 from urllib.parse import urljoin, urlparse
 from urllib.robotparser import RobotFileParser
 

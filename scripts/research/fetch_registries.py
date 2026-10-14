@@ -15,6 +15,17 @@ and the sensitive-data flags. No personal data: registrants are companies.
 
 from __future__ import annotations
 
+import sys
+from pathlib import Path
+
+_here = Path(__file__).resolve().parent
+_scripts = _here if (_here / "bootstrap_path.py").exists() else _here.parent
+if str(_scripts) not in sys.path:
+    sys.path.insert(0, str(_scripts))
+import bootstrap_path
+
+bootstrap_path.install()
+
 import argparse
 import csv
 import io
