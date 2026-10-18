@@ -1,6 +1,6 @@
 # Data broker opt-out list
 
-A catalog of **723** data broker, people-search, and consumer-reporting opt-out or privacy-request pages. Each row is a real URL, checked on **2026-10-01**.
+A catalog of **709** data broker, people-search, and consumer-reporting opt-out or privacy-request pages. Each row is a real URL, checked on **2026-10-01**.
 
 This is a directory of links, not a removal service. Read the [disclaimer](DISCLAIMER.md) before you use it. Pages move, forms ask for different ID, and a successful request on one site does not remove you from the rest.
 
@@ -58,12 +58,12 @@ Search the CSV before you send extra personal details. Notes say when a page ret
 | Category | File | Entries |
 | --- | --- | ---: |
 | People search | [brokers/people-search.md](brokers/people-search.md) | 138 |
-| Background checks | [brokers/background-checks.md](brokers/background-checks.md) | 74 |
+| Background checks | [brokers/background-checks.md](brokers/background-checks.md) | 67 |
 | Marketing | [brokers/marketing.md](brokers/marketing.md) | 120 |
 | Credit and financial | [brokers/credit-financial.md](brokers/credit-financial.md) | 16 |
-| Public records | [brokers/public-records.md](brokers/public-records.md) | 87 |
-| Other | [brokers/other.md](brokers/other.md) | 288 |
-| **Total** | [opt-outs.csv](opt-outs.csv) | **723** |
+| Public records | [brokers/public-records.md](brokers/public-records.md) | 81 |
+| Other | [brokers/other.md](brokers/other.md) | 287 |
+| **Total** | [opt-outs.csv](opt-outs.csv) | **709** |
 
 `opt-outs.csv` is the source of truth for links. The Markdown files are tables generated from it. Column definitions and the check date are in [SOURCES.md](SOURCES.md).
 
