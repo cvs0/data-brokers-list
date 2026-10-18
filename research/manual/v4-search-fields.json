@@ -3,6 +3,10 @@
     "what": {
       "canonical": "full_name",
       "evidence": "People search form (form id PeopleSearch, submits GET to /search/). The field has id c411PeopleWhat and placeholder \"e.g. J Smith, John Smith\": a person's name. The label rules did not match the field name \"what\"."
+    },
+    "where": {
+      "canonical": "city",
+      "evidence": "Same People search form (GET to /search/). The field has id c411PeopleWhere and placeholder \"e.g. Toronto, Ontario\": the person's location. A city alone works: /search/?stype=si&what=John+Smith&where=Toronto returned \"John Smith in Toronto\", 184 results (live check 2026-10-18). Optional (not required). The label rules did not match the field name \"where\"."
     }
   },
   "white-pages-canada": {
