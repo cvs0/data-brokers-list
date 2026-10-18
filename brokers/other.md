@@ -2,7 +2,7 @@
 
 Registered data brokers and privacy-request pages that do not fit the categories above.
 
-288 entries. Link responses were checked on 2026-10-01 unless a note says otherwise.
+287 entries. Link responses were checked on 2026-10-01 unless a note says otherwise.
 
 | Broker | Opt-out / privacy URL | Notes |
 | --- | --- | --- |
@@ -104,7 +104,6 @@ Registered data brokers and privacy-request pages that do not fit the categories
 | Evorra Ltd | https://evorra.com/privacy-data-policies/product-privacy-policy/ | Privacy notice or privacy-policy page. Use the state-rights, do-not-sell, or request section. Automated check on 2026-10-01 got HTTP 403. Open the link in a browser. |
 | Exact Opco, LLC (exactcustomer.com) | https://www.exactcustomer.com | Published privacy-request URL is the site root. Confirm a request form is on the page before sending information. Automated check on 2026-10-01 got HTTP 403. Open the link in a browser. |
 | Explorium Inc. | https://www.explorium.ai/platform-privacy-policy/ | Privacy notice or privacy-policy page. Use the state-rights, do-not-sell, or request section. |
-| FamilySearch | https://www.familysearch.org/en/help/helpcenter/article/how-do-i-remove-vitals-information-in-family-tree | Opt-out or consumer privacy-request page. Email: nasupport@familysearch.org. |
 | Fideo Intelligence, Inc. | https://app.fideo.ai/your-privacy-choices | Opt-out or consumer privacy-request page. The Markup and CalMatters (2025) found page code that hid this URL from search engines. |
 | Findem, Inc. | https://www.findem.ai/do-not-sell-or-share-my-personal-information | Opt-out or consumer privacy-request page. The Markup and CalMatters (2025) found page code that hid this URL from search engines. |
 | FireArmsCalifornia.org (LicenseData) | http://www.firearmscalifornia.org/about#contact | Privacy notice or privacy-policy page. Use the state-rights, do-not-sell, or request section. Email: contact@licensedata.org. Automated check on 2026-10-01 got HTTP 403. Open the link in a browser. |
