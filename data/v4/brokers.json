@@ -6559,7 +6559,7 @@
      {
       "name": "uf_state",
       "type": "select",
-      "canonical": null,
+      "canonical": "region",
       "required": false,
       "autocomplete": null,
       "placeholder": null,
@@ -6635,7 +6635,7 @@
      {
       "name": "uf_city",
       "type": "text",
-      "canonical": null,
+      "canonical": "city",
       "required": false,
       "autocomplete": null,
       "placeholder": null,
@@ -6819,9 +6819,61 @@
      "US",
      "US-ID"
     ],
-    "search_regions": [],
+    "search_regions": [
+     "AL",
+     "AK",
+     "AZ",
+     "AR",
+     "CA",
+     "CO",
+     "CT",
+     "DE",
+     "FL",
+     "GA",
+     "HI",
+     "ID",
+     "IL",
+     "IN",
+     "IA",
+     "KS",
+     "KY",
+     "LA",
+     "ME",
+     "MD",
+     "MA",
+     "MI",
+     "MN",
+     "MS",
+     "MO",
+     "MT",
+     "NE",
+     "NV",
+     "NH",
+     "NJ",
+     "NM",
+     "NY",
+     "NC",
+     "ND",
+     "OH",
+     "OK",
+     "OR",
+     "PA",
+     "RI",
+     "SC",
+     "SD",
+     "TN",
+     "TX",
+     "UT",
+     "VT",
+     "VA",
+     "WA",
+     "WV",
+     "WI",
+     "WY"
+    ],
     "sources": [
-     "site_name"
+     "site_name",
+     "search_form"
     ]
    },
    "network": {
@@ -6898,7 +6950,9 @@
     "search_captcha": false,
     "search_fields": [
      "first_name",
-     "last_name"
+     "last_name",
+     "region",
+     "city"
     ],
     "removal_form_fillable": false,
     "removal_email_usable": true,
@@ -144987,7 +145041,7 @@
      {
       "name": "bgus_st",
       "type": "select",
-      "canonical": null,
+      "canonical": "region",
       "required": false,
       "autocomplete": null,
       "placeholder": null,
@@ -145202,9 +145256,60 @@
     "coverage": [
      "US"
     ],
-    "search_regions": [],
+    "search_regions": [
+     "AK",
+     "AL",
+     "AZ",
+     "AR",
+     "CA",
+     "CO",
+     "CT",
+     "DE",
+     "FL",
+     "GA",
+     "HI",
+     "ID",
+     "IL",
+     "IN",
+     "IA",
+     "KS",
+     "KY",
+     "LA",
+     "ME",
+     "MD",
+     "MA",
+     "MI",
+     "MN",
+     "MS",
+     "MO",
+     "MT",
+     "NE",
+     "NV",
+     "NH",
+     "NJ",
+     "NM",
+     "NY",
+     "NC",
+     "ND",
+     "OH",
+     "OK",
+     "OR",
+     "PA",
+     "RI",
+     "SC",
+     "SD",
+     "TN",
+     "TX",
+     "UT",
+     "VT",
+     "VA",
+     "WA",
+     "WV",
+     "WI",
+     "WY"
+    ],
     "sources": [
-     "manual"
+     "search_form"
     ]
    },
    "network": {
@@ -145284,7 +145389,8 @@
     "search_fields": [
      "first_name",
      "last_name",
-     "city"
+     "city",
+     "region"
     ],
     "removal_form_fillable": false,
     "removal_email_usable": false,
@@ -146207,7 +146313,7 @@
      {
       "name": "state",
       "type": "select",
-      "canonical": null,
+      "canonical": "region",
       "required": false,
       "autocomplete": null,
       "placeholder": null,
@@ -146429,7 +146535,8 @@
     "search_fields": [
      "first_name",
      "last_name",
-     "city"
+     "city",
+     "region"
     ],
     "removal_form_fillable": false,
     "removal_email_usable": false,
@@ -150985,17 +151092,17 @@
     "available": true,
     "method": "http_get",
     "page_url": "https://www.fastpeoplesearch.com/",
-    "form_action": "https://www.fastpeoplesearch.com/search",
+    "form_action": "https://www.fastpeoplesearch.com/name/",
     "inputs": [
      {
-      "name": "name",
+      "name": "first_name",
       "type": "text",
-      "canonical": "full_name",
+      "canonical": "first_name",
       "required": true,
-      "autocomplete": "off",
-      "placeholder": "e.g John Doe",
-      "id": "search-name-name",
-      "label": "Enter first and last name to search for",
+      "autocomplete": null,
+      "placeholder": null,
+      "id": null,
+      "label": "Name (first part of the result path)",
       "inputmode": null,
       "pattern": null,
       "minlength": null,
@@ -151011,14 +151118,14 @@
       "value": null
      },
      {
-      "name": "address",
+      "name": "last_name",
       "type": "text",
-      "canonical": "postal_code",
-      "required": false,
-      "autocomplete": "off",
-      "placeholder": "City & State, or Zip",
-      "id": "search-name-address",
-      "label": "Add a city & state to your name search",
+      "canonical": "last_name",
+      "required": true,
+      "autocomplete": null,
+      "placeholder": null,
+      "id": null,
+      "label": "Name (last part of the result path)",
       "inputmode": null,
       "pattern": null,
       "minlength": null,
@@ -151034,7 +151141,7 @@
       "value": null
      }
     ],
-    "url_pattern": "https://www.fastpeoplesearch.com/search?name={name}&address={address}",
+    "url_pattern": "https://www.fastpeoplesearch.com/name/{first_name}-{last_name}",
     "directory_prefixes": [
      "/name",
      "/address",
@@ -151045,15 +151152,15 @@
     "captcha_provider": null,
     "captcha_sitekey": null,
     "form_meta": {
-     "id": "form-search-name",
+     "id": null,
      "name": null,
      "autocomplete": null,
-     "novalidate": false,
-     "submit_label": "Free Search",
+     "novalidate": null,
+     "submit_label": null,
      "hidden_names": []
     },
-    "captcha_checked": true,
-    "captcha_detail": null
+    "captcha_detail": null,
+    "captcha_checked": true
    },
    "removal": {
     "url": "https://www.fastpeoplesearch.com/optout",
@@ -151521,8 +151628,8 @@
     "search_fillable": true,
     "search_captcha": false,
     "search_fields": [
-     "full_name",
-     "postal_code"
+     "first_name",
+     "last_name"
     ],
     "removal_form_fillable": false,
     "removal_email_usable": false,
@@ -151536,7 +151643,8 @@
     "fully_automatable": false,
     "usable_emails": [],
     "search_required": [
-     "full_name"
+     "first_name",
+     "last_name"
     ],
     "removal_required": [
      "first_name",
@@ -153297,7 +153405,7 @@
      {
       "name": "stateFld",
       "type": "select",
-      "canonical": null,
+      "canonical": "region",
       "required": false,
       "autocomplete": null,
       "placeholder": null,
@@ -153373,7 +153481,7 @@
      {
       "name": "cityFld",
       "type": "text",
-      "canonical": null,
+      "canonical": "city",
       "required": false,
       "autocomplete": null,
       "placeholder": null,
@@ -153506,9 +153614,61 @@
     "coverage": [
      "US"
     ],
-    "search_regions": [],
+    "search_regions": [
+     "AL",
+     "AK",
+     "AZ",
+     "AR",
+     "CA",
+     "CO",
+     "CT",
+     "DE",
+     "FL",
+     "GA",
+     "HI",
+     "ID",
+     "IL",
+     "IN",
+     "IA",
+     "KS",
+     "KY",
+     "LA",
+     "ME",
+     "MD",
+     "MA",
+     "MI",
+     "MN",
+     "MS",
+     "MO",
+     "MT",
+     "NE",
+     "NV",
+     "NH",
+     "NJ",
+     "NM",
+     "NY",
+     "NC",
+     "ND",
+     "OH",
+     "OK",
+     "OR",
+     "PA",
+     "RI",
+     "SC",
+     "SD",
+     "TN",
+     "TX",
+     "UT",
+     "VT",
+     "VA",
+     "WA",
+     "WV",
+     "WI",
+     "WY"
+    ],
     "sources": [
-     "page"
+     "page",
+     "search_form"
     ]
    },
    "network": {
@@ -153595,7 +153755,9 @@
     "search_captcha": false,
     "search_fields": [
      "first_name",
-     "last_name"
+     "last_name",
+     "region",
+     "city"
     ],
     "removal_form_fillable": false,
     "removal_email_usable": false,
@@ -179756,7 +179918,7 @@
      {
       "name": "city_name",
       "type": "text",
-      "canonical": null,
+      "canonical": "city",
       "required": false,
       "autocomplete": "off",
       "placeholder": null,
@@ -179779,7 +179941,7 @@
      {
       "name": "state_name",
       "type": "select",
-      "canonical": null,
+      "canonical": "region",
       "required": true,
       "autocomplete": null,
       "placeholder": null,
@@ -180029,9 +180191,62 @@
     "coverage": [
      "US"
     ],
-    "search_regions": [],
+    "search_regions": [
+     "AL",
+     "AK",
+     "AZ",
+     "AR",
+     "CA",
+     "CO",
+     "CT",
+     "DE",
+     "FL",
+     "GA",
+     "HI",
+     "ID",
+     "IL",
+     "IN",
+     "IA",
+     "KS",
+     "KY",
+     "LA",
+     "ME",
+     "MD",
+     "MA",
+     "MI",
+     "MN",
+     "MS",
+     "MO",
+     "MT",
+     "NE",
+     "NV",
+     "NH",
+     "NJ",
+     "NM",
+     "NY",
+     "NC",
+     "ND",
+     "OH",
+     "OK",
+     "OR",
+     "PA",
+     "RI",
+     "SC",
+     "SD",
+     "TN",
+     "TX",
+     "UT",
+     "VT",
+     "VA",
+     "WA",
+     "WV",
+     "WI",
+     "WY",
+     "DC"
+    ],
     "sources": [
-     "page"
+     "page",
+     "search_form"
     ]
    },
    "network": {
@@ -180112,7 +180327,9 @@
     "search_captcha": false,
     "search_fields": [
      "first_name",
-     "last_name"
+     "last_name",
+     "city",
+     "region"
     ],
     "removal_form_fillable": false,
     "removal_email_usable": true,
@@ -180124,7 +180341,8 @@
     ],
     "search_required": [
      "first_name",
-     "last_name"
+     "last_name",
+     "region"
     ],
     "removal_required": [],
     "email_verification": null,
@@ -186319,7 +186537,7 @@
      {
       "name": "stateSel",
       "type": "select",
-      "canonical": null,
+      "canonical": "region",
       "required": false,
       "autocomplete": null,
       "placeholder": null,
@@ -186578,9 +186796,61 @@
      "US-CA",
      "US"
     ],
-    "search_regions": [],
+    "search_regions": [
+     "AL",
+     "AK",
+     "AZ",
+     "AR",
+     "CA",
+     "CO",
+     "CT",
+     "DE",
+     "FL",
+     "GA",
+     "HI",
+     "ID",
+     "IL",
+     "IN",
+     "IA",
+     "KS",
+     "KY",
+     "LA",
+     "ME",
+     "MD",
+     "MA",
+     "MI",
+     "MN",
+     "MS",
+     "MO",
+     "MT",
+     "NE",
+     "NV",
+     "NH",
+     "NJ",
+     "NM",
+     "NY",
+     "NC",
+     "ND",
+     "OH",
+     "OK",
+     "OR",
+     "PA",
+     "RI",
+     "SC",
+     "SD",
+     "TN",
+     "TX",
+     "UT",
+     "VT",
+     "VA",
+     "WA",
+     "WV",
+     "WI",
+     "WY"
+    ],
     "sources": [
-     "page"
+     "page",
+     "search_form"
     ]
    },
    "network": {
@@ -186665,6 +186935,7 @@
     "search_fields": [
      "first_name",
      "last_name",
+     "region",
      "city"
     ],
     "removal_form_fillable": false,
@@ -276539,7 +276810,7 @@
      {
       "name": "field",
       "type": "select",
-      "canonical": null,
+      "canonical": "region",
       "required": false,
       "autocomplete": null,
       "placeholder": null,
@@ -277120,9 +277391,62 @@
     "coverage": [
      "US"
     ],
-    "search_regions": [],
+    "search_regions": [
+     "AL",
+     "AK",
+     "AZ",
+     "AR",
+     "CA",
+     "CO",
+     "CT",
+     "DE",
+     "DC",
+     "FL",
+     "GA",
+     "HI",
+     "ID",
+     "IL",
+     "IN",
+     "IA",
+     "KS",
+     "KY",
+     "LA",
+     "ME",
+     "MD",
+     "MA",
+     "MI",
+     "MN",
+     "MS",
+     "MO",
+     "MT",
+     "NE",
+     "NV",
+     "NH",
+     "NJ",
+     "NM",
+     "NY",
+     "NC",
+     "ND",
+     "OH",
+     "OK",
+     "OR",
+     "PA",
+     "RI",
+     "SC",
+     "SD",
+     "TN",
+     "TX",
+     "UT",
+     "VT",
+     "VA",
+     "WA",
+     "WV",
+     "WI",
+     "WY"
+    ],
     "sources": [
-     "page"
+     "page",
+     "search_form"
     ]
    },
    "network": {
@@ -277197,7 +277521,8 @@
     "search_captcha": false,
     "search_fields": [
      "first_name",
-     "last_name"
+     "last_name",
+     "region"
     ],
     "removal_form_fillable": true,
     "removal_email_usable": false,

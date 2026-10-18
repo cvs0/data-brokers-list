@@ -28,5 +28,59 @@
       "canonical": "full_name",
       "evidence": "Homepage form, POST to /search. The control has id search-name, label \"Enter a name\", and placeholder \"e.g. Jon West\". The label rules did not match \"q[query]\". A browser-fetch form submit of q[query]=John Smith on 2026-10-18 landed on /name/john-smith, \"John Smith - 3,628 People Found\"."
     }
+  },
+  "staterecords-org-infotracer-hub": {
+    "state_name": {
+      "canonical": "region",
+      "evidence": "Homepage form id init-form. The select is marked required, labelled \"Select State:*\", and its choices are US state codes (value AL, label Alabama … ) after an empty \"Select State\". The stored choices start at AL, so every search was sent for Alabama. Frame fills a select only with one of its own choices, matched against the person's region code or name; untagged, Frame sent the select's first choice."
+    },
+    "city_name": {
+      "canonical": "city",
+      "evidence": "Homepage form id init-form, text box labelled \"City:\" next to the first name, last name, and state controls."
+    }
+  },
+  "background-hawk-truthfinder": {
+    "bgus_st": {
+      "canonical": "region",
+      "evidence": "Homepage search form (POST): first name bgus_fn, last name bgus_ln, city bgus_cy, then this select whose stored choices are the US state codes (AK, AL, AZ …, 50 of them). The stored choices start at AK, so every search was sent for Alaska. Frame fills a select only with one of its own choices, matched against the person's region code or name; untagged, Frame sent the select's first choice. The page answered the box's headless browser with a robot challenge on 2026-10-18, so this tag rests on the stored form; the 2026-10-18 batch-2 read of the live form showed the same US state list."
+    }
+  },
+  "govwarrantsearch-org-infotracer-form": {
+    "stateFld": {
+      "canonical": "region",
+      "evidence": "Homepage form id records3form (POST to searching.php). The select's choices are \"**Nationwide\" (value Nationwide) then US states with code values (AL = Alabama …). Frame fills a select only with one of its own choices, matched against the person's region code or name; untagged, Frame sent the select's first choice."
+    },
+    "cityFld": {
+      "canonical": "city",
+      "evidence": "Homepage form id records3form, text box after the state select. A submit of John / Smith / Colorado / Denver on 2026-10-18 forwarded with city=Denver&state=CO. The submit then lands on infotracer.com/loading (\"Searching for John S. in Colorado\"), InfoTracer's paid report flow, which shows no free result rows."
+    }
+  },
+  "uswarrants-org-infotracer-form": {
+    "stateSel": {
+      "canonical": "region",
+      "evidence": "Homepage form id recordsForm (POST to /search). The select's choices are \"All States\" then US states with code values (AL = Alabama …), beside fname, lname, and a city box with placeholder \"City (optional)\". Frame fills a select only with one of its own choices, matched against the person's region code or name; untagged, Frame sent the select's first choice. A submit of John / Smith / Colorado / Denver on 2026-10-18 forwarded with state=CO&city=Denver to infotracer.com/loading, InfoTracer's paid report flow, which shows no free result rows."
+    }
+  },
+  "idaho-arrests": {
+    "uf_state": {
+      "canonical": "region",
+      "evidence": "Homepage form id ufForm. The select's first choice is \"Nationwide\" (empty value), then US states with code values (AL = Alabama …). Frame fills a select only with one of its own choices, matched against the person's region code or name; untagged, Frame sent the select's first choice."
+    },
+    "uf_city": {
+      "canonical": "city",
+      "evidence": "Homepage form id ufForm, text box after the state select. A submit of John / Smith / Colorado / Denver on 2026-10-18 forwarded with state=CO&city=Denver. The submit then lands on infotracer.com/loading (\"Searching for John S. in Colorado\"), InfoTracer's paid report flow, which shows no free result rows."
+    }
+  },
+  "checkpeople": {
+    "state": {
+      "canonical": "region",
+      "evidence": "Homepage form id heroTabPeople (POST to /landing), beside firstName, lastName, and city. The live select's first choice is \"All States\" (empty value), then US states with code values (AL = Alabama …). The stored form kept no choices, so Frame sends the person's region code, which is the value the page uses."
+    }
+  },
+  "sealedrecords": {
+    "field": {
+      "canonical": "region",
+      "evidence": "Name search form id email-form on /name/landing (First-Name, Last-Name, then this select). The live select's choices are \"All States\" (value all) then US states with code values (AL = Alabama …). Frame fills a select only with one of its own choices, matched against the person's region code or name; untagged, Frame sent the select's first choice."
+    }
   }
 }

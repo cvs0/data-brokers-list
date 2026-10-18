@@ -717,5 +717,41 @@
     "not_a_person_search": true,
     "kind": "optout",
     "evidence": "The stored search form on https://www.tennhelp.com/public-resources/change-listing is the broker's own opt-out, unsubscribe, privacy-request, or listing-change form, not a search for a person: submit button \"Submit\", controls Last Name:; First Name:; City:; State Abbrev:; Company:; Your Position:; Email:; Phone Number:. Frame planned it as a name search and would have typed the person's name into an opt-out or privacy request (a removal channel, not a search)."
+  },
+  "fastpeoplesearch": {
+    "checked": "2026-10-18",
+    "evidence": "Homepage form id form-search-name has a required name box (id search-name-name, placeholder \"e.g John Doe\") and a combined \"City & State, or Zip\" box. Its action is /search, but the site's app.js cancels that submit and opens /name/<name slug>, adding _<location slug> when the location box is filled. The stored GET /search?name=John+Smith answers 404, so Frame's search never reached a results page. url_pattern stores the name-only path; the two controls are the path's parts, not page control names. The location variant is not stored: Frame drops a path segment it cannot fill completely, and a person without a city would then get no name either.",
+    "result_check": "Rendered locally 2026-10-18 (US exit): a scripted submit of \"John Smith\" landed on /name/john-smith, and \"John Smith\" + \"Denver, CO\" on /name/john-smith_denver-co. Both showed a Cloudflare challenge to the headless browser, so no result rows were read. GET /search?name=John+Smith returned HTTP 404.",
+    "form": {
+      "method": "http_get",
+      "page_url": "https://www.fastpeoplesearch.com/",
+      "form_action": "https://www.fastpeoplesearch.com/name/",
+      "url_pattern": "https://www.fastpeoplesearch.com/name/{first_name}-{last_name}",
+      "form_id": null,
+      "form_name": null,
+      "submit_label": null,
+      "hidden_names": [],
+      "inputs": [
+        {
+          "name": "first_name",
+          "type": "text",
+          "canonical": "first_name",
+          "required": true,
+          "id": null,
+          "label": "Name (first part of the result path)",
+          "placeholder": null
+        },
+        {
+          "name": "last_name",
+          "type": "text",
+          "canonical": "last_name",
+          "required": true,
+          "id": null,
+          "label": "Name (last part of the result path)",
+          "placeholder": null
+        }
+      ]
+    },
+    "captcha_widget": false
   }
 }
