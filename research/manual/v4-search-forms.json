@@ -448,5 +448,100 @@
       ]
     },
     "captcha_widget": false
+  },
+  "voterrecords-com": {
+    "checked": "2026-10-18",
+    "evidence": "Homepage form id searchForm has one search box (name search, placeholder \"John M Smith\") with action \"#\". The page's Search() script strips non-letters, joins the words with hyphens, lowercases them, and opens /voters/<first>-<last>/1. url_pattern stores that path. The two controls are the path's parts, not page control names. The catalog stored no form (robots.txt had disallowed the scan). Country US: the site says it holds more than 100 million US voter records.",
+    "result_check": "GET /voters/John-Smith/1 (and /voters/john-smith/1) returned \"John Smith has 5,111 Voter Records\".",
+    "form": {
+      "method": "http_get",
+      "page_url": "https://voterrecords.com/",
+      "form_action": "https://voterrecords.com/voters/",
+      "url_pattern": "https://voterrecords.com/voters/{first_name}-{last_name}/1",
+      "form_id": null,
+      "form_name": null,
+      "submit_label": null,
+      "hidden_names": [],
+      "inputs": [
+        {
+          "name": "first_name",
+          "type": "text",
+          "canonical": "first_name",
+          "required": true,
+          "id": null,
+          "label": "Name (first part of the result path)",
+          "placeholder": null
+        },
+        {
+          "name": "last_name",
+          "type": "text",
+          "canonical": "last_name",
+          "required": true,
+          "id": null,
+          "label": "Name (last part of the result path)",
+          "placeholder": null
+        }
+      ]
+    },
+    "captcha_widget": false,
+    "country": "US"
+  },
+  "npir-org": {
+    "checked": "2026-10-18",
+    "evidence": "Homepage form, GET to /npi, one required search box with placeholder \"Search by name or NPI number\" (the NPI registry of US health care providers). The catalog stored no form (a Cloudflare challenge stopped the scan). Country US: NPI numbers are issued by the US Centers for Medicare & Medicaid Services.",
+    "result_check": "GET /npi?search=John+Smith returned \"NPI Lookup - Search the NPI Registry\" listing John Smith providers.",
+    "form": {
+      "method": "http_get",
+      "page_url": "https://npir.org/",
+      "form_action": "https://npir.org/npi",
+      "url_pattern": null,
+      "form_id": null,
+      "form_name": null,
+      "submit_label": null,
+      "hidden_names": [],
+      "inputs": [
+        {
+          "name": "search",
+          "type": "search",
+          "canonical": "full_name",
+          "required": true,
+          "id": null,
+          "label": null,
+          "placeholder": "Search by name or NPI number"
+        }
+      ]
+    },
+    "captcha_widget": false,
+    "country": "US"
+  },
+  "background-hawk-truthfinder": {
+    "checked": "2026-10-18",
+    "evidence": "The live homepage search form's state dropdown lists the US states (Alabama … Wyoming) and no Canadian province. The stored form kept the dropdown without its choices, so no country was derived.",
+    "country": "US"
+  },
+  "peoplefinders-confi-chek": {
+    "checked": "2026-10-18",
+    "evidence": "The live homepage search form's state dropdown lists the US states (Alabama … Wyoming) and no Canadian province. The stored form kept no choices, so no country was derived.",
+    "country": "US"
+  },
+  "peoplesearchnow": {
+    "checked": "2026-10-18",
+    "evidence": "The live homepage search form's state dropdown lists the US states (Alabama … Wyoming) and no Canadian province, and the page names the United States. The stored form kept no choices, so no country was derived.",
+    "country": "US"
+  },
+  "secretinfo": {
+    "checked": "2026-10-18",
+    "evidence": "The live search page (/name/landing) has a state dropdown listing the US states (Alabama … Wyoming) and no Canadian province.",
+    "country": "US"
+  },
+  "truthviewer": {
+    "checked": "2026-10-18",
+    "evidence": "The live search page (/review/peopleSearch/list) has a state dropdown listing the US states (Alabama … Wyoming) and no Canadian province, and says its search is nationwide.",
+    "country": "US"
+  },
+  "alumni-us": {
+    "checked": "2026-10-18",
+    "evidence": "The live homepage title is \"Alumni US | All the best American graduates in one site!\".",
+    "country": "US"
   }
 }

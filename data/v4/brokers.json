@@ -10,9 +10,9 @@
   "with_extracted_email": 198,
   "with_stated_email": 12,
   "no_channel_remaining": 38,
-  "with_search": 398,
-  "with_search_fillable": 323,
-  "search_unscanned": 36,
+  "with_search": 400,
+  "with_search_fillable": 325,
+  "search_unscanned": 34,
   "fully_automatable": 173,
   "search_tested": 172,
   "search_results": 14,
@@ -25,7 +25,7 @@
   "search_page_results": 14,
   "search_page_loader": 8,
   "search_page_form": 15,
-  "with_country": 606,
+  "with_country": 614,
   "with_region": 477,
   "with_locality": 359,
   "with_removal_action": 135,
@@ -47,8 +47,8 @@
   "removal_offsite": 89,
   "with_hsts": 275,
   "with_form_enctype": 216,
-  "with_field_detail": 428,
-  "with_field_label": 334,
+  "with_field_detail": 430,
+  "with_field_label": 335,
   "with_field_constraint": 113,
   "with_submit_label": 360,
   "with_hidden_names": 249,
@@ -70,7 +70,7 @@
   "removal_captcha_checked": 350,
   "search_captcha_widget": 72,
   "search_captcha_sitekey": 46,
-  "search_captcha_checked": 371,
+  "search_captcha_checked": 373,
   "captcha_blocks_form": 83,
   "captcha_email_fallback": 28,
   "removal_captcha_checkbox": 79,
@@ -96,8 +96,8 @@
    "captcha_no_form": 24,
    "no_channel": 38
   },
-  "lookup_search": 243,
-  "lookup_search_fillable": 216,
+  "lookup_search": 244,
+  "lookup_search_fillable": 217,
   "liveness": {
    "alive": 558,
    "blocked": 39,
@@ -131808,15 +131808,19 @@
     }
    ],
    "location": {
-    "country": null,
+    "country": "US",
     "region": null,
     "locality": null,
     "postal_code": null,
     "street": null,
     "postal_address": null,
-    "coverage": [],
+    "coverage": [
+     "US"
+    ],
     "search_regions": [],
-    "sources": []
+    "sources": [
+     "manual"
+    ]
    },
    "network": {
     "checked": true,
@@ -143387,15 +143391,19 @@
     }
    ],
    "location": {
-    "country": null,
+    "country": "US",
     "region": null,
     "locality": null,
     "postal_code": null,
     "street": null,
     "postal_address": null,
-    "coverage": [],
+    "coverage": [
+     "US"
+    ],
     "search_regions": [],
-    "sources": []
+    "sources": [
+     "manual"
+    ]
    },
    "network": {
     "checked": true,
@@ -155270,15 +155278,19 @@
     }
    ],
    "location": {
-    "country": null,
+    "country": "US",
     "region": null,
     "locality": null,
     "postal_code": null,
     "street": null,
     "postal_address": null,
-    "coverage": [],
+    "coverage": [
+     "US"
+    ],
     "search_regions": [],
-    "sources": []
+    "sources": [
+     "manual"
+    ]
    },
    "network": {
     "checked": true,
@@ -174274,15 +174286,19 @@
     }
    ],
    "location": {
-    "country": null,
+    "country": "US",
     "region": null,
     "locality": null,
     "postal_code": null,
     "street": null,
     "postal_address": null,
-    "coverage": [],
+    "coverage": [
+     "US"
+    ],
     "search_regions": [],
-    "sources": []
+    "sources": [
+     "manual"
+    ]
    },
    "network": {
     "checked": true,
@@ -175666,15 +175682,19 @@
     }
    ],
    "location": {
-    "country": null,
+    "country": "US",
     "region": null,
     "locality": null,
     "postal_code": null,
     "street": null,
     "postal_address": null,
-    "coverage": [],
+    "coverage": [
+     "US"
+    ],
     "search_regions": [],
-    "sources": []
+    "sources": [
+     "manual"
+    ]
    },
    "network": {
     "checked": true,
@@ -240971,12 +240991,59 @@
    "languages": [],
    "legal_name": null,
    "search": {
-    "available": null,
-    "method": "unknown",
-    "page_url": null,
-    "form_action": null,
-    "inputs": [],
-    "url_pattern": null,
+    "available": true,
+    "method": "http_get",
+    "page_url": "https://voterrecords.com/",
+    "form_action": "https://voterrecords.com/voters/",
+    "inputs": [
+     {
+      "name": "first_name",
+      "type": "text",
+      "canonical": "first_name",
+      "required": true,
+      "autocomplete": null,
+      "placeholder": null,
+      "id": null,
+      "label": "Name (first part of the result path)",
+      "inputmode": null,
+      "pattern": null,
+      "minlength": null,
+      "maxlength": null,
+      "min": null,
+      "max": null,
+      "step": null,
+      "accept": null,
+      "multiple": false,
+      "disabled": false,
+      "readonly": false,
+      "checked": false,
+      "value": null
+     },
+     {
+      "name": "last_name",
+      "type": "text",
+      "canonical": "last_name",
+      "required": true,
+      "autocomplete": null,
+      "placeholder": null,
+      "id": null,
+      "label": "Name (last part of the result path)",
+      "inputmode": null,
+      "pattern": null,
+      "minlength": null,
+      "maxlength": null,
+      "min": null,
+      "max": null,
+      "step": null,
+      "accept": null,
+      "multiple": false,
+      "disabled": false,
+      "readonly": false,
+      "checked": false,
+      "value": null
+     }
+    ],
+    "url_pattern": "https://voterrecords.com/voters/{first_name}-{last_name}/1",
     "directory_prefixes": [],
     "paywall": null,
     "login_wall": null,
@@ -240990,8 +241057,8 @@
     },
     "captcha_provider": null,
     "captcha_sitekey": null,
-    "captcha_checked": null,
-    "captcha_detail": null
+    "captcha_detail": null,
+    "captcha_checked": true
    },
    "removal": {
     "url": "https://voterrecords.com/faq",
@@ -241075,15 +241142,19 @@
     }
    ],
    "location": {
-    "country": null,
+    "country": "US",
     "region": null,
     "locality": null,
     "postal_code": null,
     "street": null,
     "postal_address": null,
-    "coverage": [],
+    "coverage": [
+     "US"
+    ],
     "search_regions": [],
-    "sources": []
+    "sources": [
+     "manual"
+    ]
    },
    "network": {
     "checked": true,
@@ -241157,17 +241228,23 @@
     "cookie_names": []
    },
    "automation": {
-    "search_scanned": false,
-    "search_fillable": false,
+    "search_scanned": true,
+    "search_fillable": true,
     "search_captcha": false,
-    "search_fields": [],
+    "search_fields": [
+     "first_name",
+     "last_name"
+    ],
     "removal_form_fillable": false,
     "removal_email_usable": false,
     "removal_fields": [],
     "removal_path": null,
     "fully_automatable": false,
     "usable_emails": [],
-    "search_required": [],
+    "search_required": [
+     "first_name",
+     "last_name"
+    ],
     "removal_required": [],
     "email_verification": null,
     "id_document": null,
@@ -314930,15 +315007,19 @@
     }
    ],
    "location": {
-    "country": null,
+    "country": "US",
     "region": null,
     "locality": null,
     "postal_code": null,
     "street": null,
     "postal_address": null,
-    "coverage": [],
+    "coverage": [
+     "US"
+    ],
     "search_regions": [],
-    "sources": []
+    "sources": [
+     "manual"
+    ]
    },
    "network": {
     "checked": true,
@@ -328714,11 +328795,35 @@
    "languages": [],
    "legal_name": null,
    "search": {
-    "available": null,
-    "method": "unknown",
-    "page_url": null,
-    "form_action": null,
-    "inputs": [],
+    "available": true,
+    "method": "http_get",
+    "page_url": "https://npir.org/",
+    "form_action": "https://npir.org/npi",
+    "inputs": [
+     {
+      "name": "search",
+      "type": "search",
+      "canonical": "full_name",
+      "required": true,
+      "autocomplete": null,
+      "placeholder": "Search by name or NPI number",
+      "id": null,
+      "label": null,
+      "inputmode": null,
+      "pattern": null,
+      "minlength": null,
+      "maxlength": null,
+      "min": null,
+      "max": null,
+      "step": null,
+      "accept": null,
+      "multiple": false,
+      "disabled": false,
+      "readonly": false,
+      "checked": false,
+      "value": null
+     }
+    ],
     "url_pattern": null,
     "directory_prefixes": [],
     "paywall": null,
@@ -328733,8 +328838,8 @@
     },
     "captcha_provider": null,
     "captcha_sitekey": null,
-    "captcha_checked": null,
-    "captcha_detail": null
+    "captcha_detail": null,
+    "captcha_checked": true
    },
    "removal": {
     "url": "https://npir.org/privacy",
@@ -328818,15 +328923,19 @@
     }
    ],
    "location": {
-    "country": null,
+    "country": "US",
     "region": null,
     "locality": null,
     "postal_code": null,
     "street": null,
     "postal_address": null,
-    "coverage": [],
+    "coverage": [
+     "US"
+    ],
     "search_regions": [],
-    "sources": []
+    "sources": [
+     "manual"
+    ]
    },
    "network": {
     "checked": true,
@@ -328901,17 +329010,21 @@
     "cookie_names": []
    },
    "automation": {
-    "search_scanned": false,
-    "search_fillable": false,
+    "search_scanned": true,
+    "search_fillable": true,
     "search_captcha": false,
-    "search_fields": [],
+    "search_fields": [
+     "full_name"
+    ],
     "removal_form_fillable": false,
     "removal_email_usable": false,
     "removal_fields": [],
     "removal_path": null,
     "fully_automatable": false,
     "usable_emails": [],
-    "search_required": [],
+    "search_required": [
+     "full_name"
+    ],
     "removal_required": [],
     "email_verification": null,
     "id_document": null,

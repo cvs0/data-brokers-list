@@ -2116,7 +2116,7 @@ def place_search_form(record: dict) -> None:
     cleared only when the entry says the rendered search page showed no widget.
     """
     entry = _search_form_overrides().get(record["id"])
-    if not entry:
+    if not entry or not entry.get("form"):
         return
     form = entry["form"]
     search = record["search"]
@@ -2155,7 +2155,11 @@ def place_search_form(record: dict) -> None:
 
 
 def place_search_country(record: dict) -> None:
-    """The country a search-form entry established from the live page, when no other source had one."""
+    """The country a search-form entry established from the live page, when no other source had one.
+
+    An entry may carry only a country: the live search form lists one country's states, or the site says where it
+    searches, while the stored form kept no choices.
+    """
     regions = record.pop("_scanned_search_regions", None)
     if regions and not record["location"]["search_regions"]:
         record["location"]["search_regions"] = regions
