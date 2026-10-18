@@ -2043,5 +2043,167 @@
     "not_a_person_search": true,
     "kind": "site_search",
     "evidence": "The stored search form is the GOV.UK website search, not the electoral register: a synthetic query lands on https://www.gov.uk/search/all?keywords=John+Smith. It searches the site's pages, not records about a person."
+  },
+  "cyberbackgroundchecks": {
+    "checked": "2026-10-18",
+    "evidence": "Homepage name form (SearchCriteriaViewModel.FirstName / LastName / City) has no useful GET action: the page's script opens /people/<first>-<last>/<state>/<city>. The stored GET to the homepage only reloads it, so Frame never reached a results page. url_pattern stores the result path; the controls are the path's parts. Frame fills path placeholders as lowercase slugs and stops the path before the first segment it cannot fill, so a person with no city still gets the name (and state) page. Held back from catalog PR #19 because a made-up name showed unrelated \"expanded\" rows that Frame's classifier read as found; Frame PR #756 now handles those pages.",
+    "result_check": "Rendered 2026-10-18 (US exit, catalog PR #19): /people/john-smith/co/denver reached a real results page for John Smith in Denver, CO. A made-up name also built a page with padded \"expanded\" rows under the searched name (classifier false-found before Frame #756).",
+    "form": {
+      "method": "http_get",
+      "page_url": "https://www.cyberbackgroundchecks.com/",
+      "form_action": "https://www.cyberbackgroundchecks.com/people/",
+      "url_pattern": "https://www.cyberbackgroundchecks.com/people/{first_name}-{last_name}/{region}/{city}",
+      "form_id": null,
+      "form_name": null,
+      "submit_label": null,
+      "hidden_names": [],
+      "inputs": [
+        {
+          "name": "first_name",
+          "type": "text",
+          "canonical": "first_name",
+          "required": true,
+          "id": null,
+          "label": "First name (part of the result path)",
+          "placeholder": null
+        },
+        {
+          "name": "last_name",
+          "type": "text",
+          "canonical": "last_name",
+          "required": true,
+          "id": null,
+          "label": "Last name (part of the result path)",
+          "placeholder": null
+        },
+        {
+          "name": "region",
+          "type": "text",
+          "canonical": "region",
+          "required": false,
+          "id": null,
+          "label": "State code (path segment)",
+          "placeholder": null
+        },
+        {
+          "name": "city",
+          "type": "text",
+          "canonical": "city",
+          "required": false,
+          "id": null,
+          "label": "City (path segment)",
+          "placeholder": null
+        }
+      ]
+    },
+    "country": "US"
+  },
+  "fastbackgroundcheck": {
+    "checked": "2026-10-18",
+    "evidence": "Homepage people form (search-input-name, search-input-name-address2) is submitted by script to /people/<first>-<last>/<city>-<state>. The stored GET /?search-input-name=… only reloads the homepage. url_pattern stores the result path (city and state share one path segment). page_url is the /people/ base so the homepage's removal CAPTCHA marker is not treated as a search CAPTCHA. Frame fills path placeholders as lowercase slugs and stops the path before the first segment it cannot fill. Held back from catalog PR #19 because a made-up name showed unrelated \"expanded\" rows that Frame's classifier read as found; Frame PR #756 now handles those pages.",
+    "result_check": "Rendered 2026-10-18 (US exit, catalog PR #19): /people/john-smith/denver-co reached a real results page. A made-up name also built a page with padded \"expanded\" rows under the searched name (classifier false-found before Frame #756).",
+    "form": {
+      "method": "http_get",
+      "page_url": "https://www.fastbackgroundcheck.com/people/",
+      "form_action": "https://www.fastbackgroundcheck.com/people/",
+      "url_pattern": "https://www.fastbackgroundcheck.com/people/{first_name}-{last_name}/{city}-{region}",
+      "form_id": null,
+      "form_name": null,
+      "submit_label": null,
+      "hidden_names": [],
+      "inputs": [
+        {
+          "name": "first_name",
+          "type": "text",
+          "canonical": "first_name",
+          "required": true,
+          "id": null,
+          "label": "First name (part of the result path)",
+          "placeholder": null
+        },
+        {
+          "name": "last_name",
+          "type": "text",
+          "canonical": "last_name",
+          "required": true,
+          "id": null,
+          "label": "Last name (part of the result path)",
+          "placeholder": null
+        },
+        {
+          "name": "city",
+          "type": "text",
+          "canonical": "city",
+          "required": false,
+          "id": null,
+          "label": "City (path segment, joined with state)",
+          "placeholder": null
+        },
+        {
+          "name": "region",
+          "type": "text",
+          "canonical": "region",
+          "required": false,
+          "id": null,
+          "label": "State code (path segment, joined with city)",
+          "placeholder": null
+        }
+      ]
+    },
+    "captcha_widget": false,
+    "country": "US"
+  },
+  "usphonebook": {
+    "checked": "2026-10-18",
+    "evidence": "Homepage hero form is a phone-number search (searchTextField labeled \"Phone Number\"); the site's people pages are /<first>-<last>/<state>/<city>. The stored POST to /search never reaches a name results page, and the name box was left untagged. url_pattern stores the people path; the controls are the path's parts. Frame fills path placeholders as lowercase slugs and stops the path before the first segment it cannot fill, so a person with no city still gets the name (and state) page. Held back from catalog PR #19 because a made-up name showed unrelated \"expanded\" rows that Frame's classifier read as found; Frame PR #756 now handles those pages.",
+    "result_check": "Rendered 2026-10-18 (US exit, catalog PR #19): /john-smith/co/denver reached a real results page (\"247 Public Records Found for John Smith in Denver, co\"). A made-up name also built a page with padded \"expanded\" rows under the searched name (classifier false-found before Frame #756).",
+    "form": {
+      "method": "http_get",
+      "page_url": "https://www.usphonebook.com/",
+      "form_action": "https://www.usphonebook.com/",
+      "url_pattern": "https://www.usphonebook.com/{first_name}-{last_name}/{region}/{city}",
+      "form_id": null,
+      "form_name": null,
+      "submit_label": null,
+      "hidden_names": [],
+      "inputs": [
+        {
+          "name": "first_name",
+          "type": "text",
+          "canonical": "first_name",
+          "required": true,
+          "id": null,
+          "label": "First name (part of the result path)",
+          "placeholder": null
+        },
+        {
+          "name": "last_name",
+          "type": "text",
+          "canonical": "last_name",
+          "required": true,
+          "id": null,
+          "label": "Last name (part of the result path)",
+          "placeholder": null
+        },
+        {
+          "name": "region",
+          "type": "text",
+          "canonical": "region",
+          "required": false,
+          "id": null,
+          "label": "State code (path segment)",
+          "placeholder": null
+        },
+        {
+          "name": "city",
+          "type": "text",
+          "canonical": "city",
+          "required": false,
+          "id": null,
+          "label": "City (path segment)",
+          "placeholder": null
+        }
+      ]
+    }
   }
 }
