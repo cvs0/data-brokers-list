@@ -11,8 +11,8 @@
   },
   "white-pages-canada": {
     "txtwhat": {
-      "canonical": "full_name",
-      "evidence": "Name search form (GET to /dir/name_search.php). The field's placeholder is \"Enter a Name\" and its pair txtwhere is the city. The label rules did not match the field name \"txtwhat\"."
+      "canonical": "last_name",
+      "evidence": "Name search form (GET to /dir/name_search.php), placeholder \"Enter a Name\". The search matches a surname within a city, not a full name: live checks 2026-10-18 through Frame's worker gave \"No record found.\" for txtwhat=John+Smith&txtwhere=Toronto, for \"Smith John\", \"J Smith\", and for a full name taken from its own listings, while txtwhat=Smith&txtwhere=Toronto listed Smith entries in Toronto (\"Showing page 1 of 281\"). Without txtwhere the page lists nothing. The label rules did not match the field name \"txtwhat\"."
     }
   },
   "192-com": {

@@ -307852,7 +307852,7 @@
      {
       "name": "txtwhat",
       "type": "text",
-      "canonical": "full_name",
+      "canonical": "last_name",
       "required": false,
       "autocomplete": null,
       "placeholder": "Enter a Name",
@@ -308227,7 +308227,7 @@
     "search_fillable": true,
     "search_captcha": false,
     "search_fields": [
-     "full_name",
+     "last_name",
      "city"
     ],
     "removal_form_fillable": false,
