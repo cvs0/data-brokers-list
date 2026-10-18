@@ -291963,7 +291963,7 @@
      {
       "name": "where",
       "type": "text",
-      "canonical": null,
+      "canonical": "city",
       "required": false,
       "autocomplete": "off",
       "placeholder": "e.g. Toronto, Ontario",
@@ -292198,7 +292198,8 @@
     "search_fillable": true,
     "search_captcha": false,
     "search_fields": [
-     "full_name"
+     "full_name",
+     "city"
     ],
     "removal_form_fillable": false,
     "removal_email_usable": false,
@@ -292264,7 +292265,7 @@
      {
       "name": "txtwhat",
       "type": "text",
-      "canonical": "full_name",
+      "canonical": "last_name",
       "required": false,
       "autocomplete": null,
       "placeholder": "Enter a Name",
@@ -292639,7 +292640,7 @@
     "search_fillable": true,
     "search_captcha": false,
     "search_fields": [
-     "full_name",
+     "last_name",
      "city"
     ],
     "removal_form_fillable": false,
