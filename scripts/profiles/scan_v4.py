@@ -71,6 +71,7 @@ V3_PATH = ROOT / "data" / "v3" / "brokers.json"
 MAPS_PATH = ROOT / "data" / "v1" / "broker-maps.json"
 LOG_PATH = ROOT / "research" / "evidence" / "v4.jsonl"
 SEARCH_FIELDS_PATH = ROOT / "research" / "manual" / "v4-search-fields.json"
+SEARCH_FORMS_PATH = ROOT / "research" / "manual" / "v4-search-forms.json"
 SEARCH_TEST_LOG = ROOT / "research" / "evidence" / "search-tests.jsonl"
 OUT_PATH = ROOT / "data" / "v4" / "brokers.json"
 CSV_PATH = ROOT / "data" / "v4" / "brokers.csv"
@@ -2090,6 +2091,86 @@ def place_form_detail(record: dict) -> None:
         record[side]["form_meta"] = normalize_form_meta(meta if isinstance(meta, dict) else None, seen and isinstance(meta, dict))
 
 
+_FIELD_KEYS = (
+    "name", "type", "canonical", "required", "autocomplete", "placeholder", "id", "label", "inputmode", "pattern",
+    "minlength", "maxlength", "min", "max", "step", "accept", "multiple", "disabled", "readonly", "checked", "value",
+)
+_SEARCH_FORM_CACHE: dict | None = None
+
+
+def _search_form_overrides() -> dict:
+    global _SEARCH_FORM_CACHE
+    if _SEARCH_FORM_CACHE is None:
+        _SEARCH_FORM_CACHE = (
+            json.loads(SEARCH_FORMS_PATH.read_text(encoding="utf-8")) if SEARCH_FORMS_PATH.exists() else {}
+        )
+    return _SEARCH_FORM_CACHE
+
+
+def place_search_form(record: dict) -> None:
+    """Replace a missing or wrong public search form with one read from the live page, from research/manual/v4-search-forms.json.
+
+    Each entry records the page it was read from and the evidence: the form's submit URL and method, its controls, and
+    the URL a synthetic name search landed on. A GET search whose page builds the result URL in script stores that URL
+    as url_pattern, with {control} placeholders. Nothing else about the broker changes. A stored CAPTCHA marker is
+    cleared only when the entry says the rendered search page showed no widget.
+    """
+    entry = _search_form_overrides().get(record["id"])
+    if not entry:
+        return
+    form = entry["form"]
+    search = record["search"]
+    # The scanned form's state or province list still says where the site searches.
+    record["_scanned_search_regions"] = _form_regions(record)
+    search["available"] = True
+    search["method"] = form["method"]
+    search["page_url"] = form["page_url"]
+    search["form_action"] = form.get("form_action")
+    search["url_pattern"] = form.get("url_pattern")
+    inputs = []
+    for raw in form["inputs"]:
+        field = {key: raw.get(key) for key in _FIELD_KEYS}
+        field["required"] = bool(raw.get("required"))
+        field["multiple"] = bool(raw.get("multiple", False))
+        field["disabled"] = bool(raw.get("disabled", False))
+        field["readonly"] = bool(raw.get("readonly", False))
+        field["checked"] = bool(raw.get("checked", False))
+        if raw.get("options"):
+            field["options"] = list(raw["options"])
+        inputs.append(field)
+    search["inputs"] = inputs
+    search["form_meta"] = {
+        "id": form.get("form_id"),
+        "name": form.get("form_name"),
+        "autocomplete": None,
+        "novalidate": None,
+        "submit_label": form.get("submit_label"),
+        "hidden_names": list(form.get("hidden_names") or []),
+    }
+    if entry.get("captcha_widget") is False:
+        search["captcha_provider"] = None
+        search["captcha_sitekey"] = None
+        search["captcha_detail"] = None
+        record["_captcha_search_checked"] = True
+
+
+def place_search_country(record: dict) -> None:
+    """The country a search-form entry established from the live page, when no other source had one."""
+    regions = record.pop("_scanned_search_regions", None)
+    if regions and not record["location"]["search_regions"]:
+        record["location"]["search_regions"] = regions
+        if "search_form" not in record["location"]["sources"]:
+            record["location"]["sources"].append("search_form")
+    entry = _search_form_overrides().get(record["id"]) or {}
+    country = entry.get("country")
+    if country and not record["location"].get("country"):
+        record["location"]["country"] = country
+        if country not in record["location"]["coverage"]:
+            record["location"]["coverage"].append(country)
+        if "manual" not in record["location"]["sources"]:
+            record["location"]["sources"].append("manual")
+
+
 def place_search_fields(record: dict) -> None:
     """Tag a stored search control the label rules left untagged, from research/manual/v4-search-fields.json.
 
@@ -2118,8 +2199,10 @@ def annotate(record: dict) -> None:
     """Add facts a removal client can use without re-reading the pages."""
     clean_processing(record)
     place_form_detail(record)
+    place_search_form(record)
     place_search_fields(record)
     place_location(record)
+    place_search_country(record)
     place_network(record)
     search = record["search"]
     search.setdefault("captcha_provider", None)
@@ -3104,7 +3187,7 @@ def write_outputs(report: dict) -> None:
         "",
         "The recrawl covers brokers whose v3 pages had loaded and still had no form, email, phone, postal address, portal, or CAPTCHA. It requests up to four unfetched same-site opt-out or privacy URLs, then opens the catalog URL and the homepage in a browser when a form is still missing.",
         "",
-        "A machine can fill a search when the stored inputs are present and that page has no CAPTCHA. The form has to ask for a name, phone number, or address. `search.captcha_provider` is the CAPTCHA on the search page. It is separate from the removal CAPTCHA. Lookup search is people-search, background-checks, and public-records. A search control the label rules left untagged can take a canonical value from [`research/manual/v4-search-fields.json`](../research/manual/v4-search-fields.json), which records the page evidence for each one. A control the scan already tagged keeps its value.",
+        "A machine can fill a search when the stored inputs are present and that page has no CAPTCHA. The form has to ask for a name, phone number, or address. `search.captcha_provider` is the CAPTCHA on the search page. It is separate from the removal CAPTCHA. Lookup search is people-search, background-checks, and public-records. A search control the label rules left untagged can take a canonical value from [`research/manual/v4-search-fields.json`](../research/manual/v4-search-fields.json), which records the page evidence for each one. A control the scan already tagged keeps its value. A search form the scan missed or stored wrong (robots.txt kept it off the page, the controls have no name attribute, or another form was stored) can be replaced from [`research/manual/v4-search-forms.json`](../research/manual/v4-search-forms.json), which keeps the form read from the rendered page, where a synthetic search landed, and the date. `url_pattern` holds a result URL the page builds in script, with `{control}` placeholders.",
         "",
         "`search_test` is on every broker. `outcome` is `results` when the response is a results page, `no_results` when the site said nobody matched, `submitted` when the form was accepted and the page was still a form, a loader, or something else, `unfilled` when a required field had no synthetic value, and `challenge` when the response was a bot wall. `page_kind` is `results`, `empty`, `loader`, `form`, or `other`. `result_count` is the number the page stated, or 0 when it stated that nobody matched, and null when the page stated no number. `http_status` is the response status. `path_prefix` is the first segment of the response path. `fields_sent` and `missing` are field names only. Brokers that were not tested keep every value null. The query, the response body, record text, and listing URLs are not stored.",
         "",

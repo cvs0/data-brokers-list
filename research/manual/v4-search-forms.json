@@ -1,0 +1,452 @@
+{
+  "checkpeople": {
+    "checked": "2026-10-18",
+    "evidence": "Homepage people form id heroTabPeople, POST to /landing, hidden _token and aid. firstName and lastName are marked required; city is a text box; state is a dropdown starting \"All States\". The catalog stored no form (robots.txt had disallowed the scan).",
+    "result_check": "Submitting the form with a synthetic name through the browser-fetch service landed on a results page titled \"Results For: John Smith\" (information.com, the same operator's results host).",
+    "form": {
+      "method": "http_form_post",
+      "page_url": "https://checkpeople.com/",
+      "form_action": "https://checkpeople.com/landing",
+      "url_pattern": null,
+      "form_id": "heroTabPeople",
+      "form_name": null,
+      "submit_label": null,
+      "hidden_names": [
+        "_token",
+        "aid"
+      ],
+      "inputs": [
+        {
+          "name": "firstName",
+          "type": "text",
+          "canonical": "first_name",
+          "required": true,
+          "id": "heroFirstName",
+          "label": "First Name",
+          "placeholder": null
+        },
+        {
+          "name": "lastName",
+          "type": "text",
+          "canonical": "last_name",
+          "required": true,
+          "id": "heroLastName",
+          "label": "Last Name",
+          "placeholder": null
+        },
+        {
+          "name": "city",
+          "type": "text",
+          "canonical": "city",
+          "required": false,
+          "id": "heroCity",
+          "label": "City",
+          "placeholder": null
+        },
+        {
+          "name": "state",
+          "type": "select",
+          "canonical": null,
+          "required": false,
+          "id": "heroState",
+          "label": null,
+          "placeholder": null
+        }
+      ]
+    },
+    "captcha_widget": false
+  },
+  "information-com": {
+    "checked": "2026-10-18",
+    "evidence": "Homepage name form (firstName, lastName, city, state). Its script sends the search as a GET to /pf/<id>/searching, which forwards to /pf/nso1/res with the same parameters. The catalog stored no form (robots.txt had disallowed the scan).",
+    "result_check": "GET /pf/nso1/res?firstName=John&lastName=Smith&city=&state= returned a results page titled \"Results For: John Smith\". The nso1 path segment is the site's own results path and may change.",
+    "form": {
+      "method": "http_get",
+      "page_url": "https://information.com/",
+      "form_action": "https://information.com/pf/nso1/res",
+      "url_pattern": "https://information.com/pf/nso1/res?firstName={firstName}&lastName={lastName}&city={city}&state={state}",
+      "form_id": null,
+      "form_name": null,
+      "submit_label": null,
+      "hidden_names": [],
+      "inputs": [
+        {
+          "name": "firstName",
+          "type": "text",
+          "canonical": "first_name",
+          "required": false,
+          "id": "firstName",
+          "label": "First Name",
+          "placeholder": null
+        },
+        {
+          "name": "lastName",
+          "type": "text",
+          "canonical": "last_name",
+          "required": false,
+          "id": "lastName",
+          "label": "Last Name",
+          "placeholder": null
+        },
+        {
+          "name": "city",
+          "type": "text",
+          "canonical": "city",
+          "required": false,
+          "id": "city",
+          "label": "City",
+          "placeholder": null
+        },
+        {
+          "name": "state",
+          "type": "select",
+          "canonical": null,
+          "required": false,
+          "id": null,
+          "label": null,
+          "placeholder": null
+        }
+      ]
+    },
+    "captcha_widget": false
+  },
+  "peoplesearch-whitepages": {
+    "checked": "2026-10-18",
+    "evidence": "Homepage form, GET to /search. s_name is required with placeholder \"e.g. Jon Snow\" (a whole name); s_loc is a combined city-and-state box and stays untagged. The stored form had s_name untagged. The rendered page had no CAPTCHA widget, so the stored reCAPTCHA marker is cleared.",
+    "result_check": "GET /search?s_name=John+Smith returned \"John Smith Phone Number & Address (100+ People Found)\".",
+    "form": {
+      "method": "http_get",
+      "page_url": "https://peoplesearch.com/",
+      "form_action": "https://peoplesearch.com/search",
+      "url_pattern": null,
+      "form_id": null,
+      "form_name": null,
+      "submit_label": null,
+      "hidden_names": [],
+      "inputs": [
+        {
+          "name": "s_name",
+          "type": "text",
+          "canonical": "full_name",
+          "required": true,
+          "id": "name-input",
+          "label": null,
+          "placeholder": "e.g. Jon Snow"
+        },
+        {
+          "name": "s_loc",
+          "type": "text",
+          "canonical": null,
+          "required": false,
+          "id": "location-input",
+          "label": null,
+          "placeholder": "e.g. New York, NY"
+        }
+      ]
+    },
+    "captcha_widget": false
+  },
+  "whitepages-411-com": {
+    "checked": "2026-10-18",
+    "evidence": "Homepage form discovery-person-form has s_name (required, \"e.g. John Smith\") and s_loc, but a plain GET of its /search action returns 404: the page's script sends the name to /person-search/First-Last. url_pattern stores that path. The two controls are the path's parts, not page control names.",
+    "result_check": "The browser-fetch form submit of s_name=John Smith landed on /person-search/John-Smith, and a direct GET of that URL returned \"John Smith | Phone Number & Address | 411\". /person-search/John%20Smith returns 404, hence first and last name.",
+    "form": {
+      "method": "http_get",
+      "page_url": "https://www.411.com/",
+      "form_action": "https://www.411.com/person-search/",
+      "url_pattern": "https://www.411.com/person-search/{first_name}-{last_name}",
+      "form_id": null,
+      "form_name": null,
+      "submit_label": null,
+      "hidden_names": [],
+      "inputs": [
+        {
+          "name": "first_name",
+          "type": "text",
+          "canonical": "first_name",
+          "required": true,
+          "id": null,
+          "label": "Name (first part of the result path)",
+          "placeholder": null
+        },
+        {
+          "name": "last_name",
+          "type": "text",
+          "canonical": "last_name",
+          "required": true,
+          "id": null,
+          "label": "Name (last part of the result path)",
+          "placeholder": null
+        }
+      ]
+    },
+    "captcha_widget": false
+  },
+  "phonebooks-com": {
+    "checked": "2026-10-18",
+    "evidence": "Homepage Name Search box (data-testid search-bar, no name attribute; the page builds the URL in script). Submitting it opens /employee-results?name=<name>. The catalog had the form with nameless controls, which Frame drops. The rendered page had no CAPTCHA widget, so the stored Turnstile marker is cleared.",
+    "result_check": "GET /employee-results?name=John+Smith returned \"We Have 247 Results for John Smith\" with ages and cities.",
+    "form": {
+      "method": "http_get",
+      "page_url": "https://www.phonebooks.com/",
+      "form_action": "https://www.phonebooks.com/employee-results",
+      "url_pattern": "https://www.phonebooks.com/employee-results?name={name}",
+      "form_id": null,
+      "form_name": null,
+      "submit_label": null,
+      "hidden_names": [],
+      "inputs": [
+        {
+          "name": "name",
+          "type": "search",
+          "canonical": "full_name",
+          "required": true,
+          "id": null,
+          "label": "Name Search",
+          "placeholder": "Name Search"
+        }
+      ]
+    },
+    "captcha_widget": false
+  },
+  "ufind-name": {
+    "checked": "2026-10-18",
+    "evidence": "Homepage form, GET to /search, q is required with placeholder \"Enter the name\". The catalog stored no form (robots.txt had disallowed the scan). Country US: the result page lists US cities and states.",
+    "result_check": "GET /search?q=John+Smith redirected to /John+Smith, titled \"John Smith: 400 records - Addresses, Phone Numbers, Cars\".",
+    "form": {
+      "method": "http_get",
+      "page_url": "https://ufind.name/",
+      "form_action": "https://ufind.name/search",
+      "url_pattern": null,
+      "form_id": null,
+      "form_name": null,
+      "submit_label": null,
+      "hidden_names": [],
+      "inputs": [
+        {
+          "name": "q",
+          "type": "text",
+          "canonical": "full_name",
+          "required": true,
+          "id": "inpSearchMainPage",
+          "label": null,
+          "placeholder": "Enter the name"
+        }
+      ]
+    },
+    "captcha_widget": false,
+    "country": "US"
+  },
+  "advancedbackgroundchecks": {
+    "checked": "2026-10-18",
+    "evidence": "Homepage form with First Name and Last Name (both required), City (optional) and State (optional). The inputs have no name attribute; the page's script opens /find/name/first-last. The catalog stored the nameless controls, which Frame drops. The rendered page had no CAPTCHA widget, so the stored reCAPTCHA marker is cleared.",
+    "result_check": "A browser submit of John / Smith opened /find/name/john-smith. GET of that URL through the browser-fetch service returned \"John Smith - Public Records Search\". A second read hit a Cloudflare challenge, so results are intermittent.",
+    "form": {
+      "method": "http_get",
+      "page_url": "https://www.advancedbackgroundchecks.com/",
+      "form_action": "https://www.advancedbackgroundchecks.com/find/name/",
+      "url_pattern": "https://www.advancedbackgroundchecks.com/find/name/{first_name}-{last_name}",
+      "form_id": null,
+      "form_name": null,
+      "submit_label": null,
+      "hidden_names": [],
+      "inputs": [
+        {
+          "name": "first_name",
+          "type": "text",
+          "canonical": "first_name",
+          "required": true,
+          "id": null,
+          "label": "First Name",
+          "placeholder": null
+        },
+        {
+          "name": "last_name",
+          "type": "text",
+          "canonical": "last_name",
+          "required": true,
+          "id": null,
+          "label": "Last Name",
+          "placeholder": null
+        }
+      ]
+    },
+    "captcha_widget": false
+  },
+  "usa-people-search": {
+    "checked": "2026-10-18",
+    "evidence": "Homepage form id PeopleForm, POST to /Results/Search, hidden _token and IsOptOut. Name has placeholder \"Full Name\"; Location (\"City, State\") stays untagged. The catalog stored no form (robots.txt had disallowed the scan). Country US from the site name and the US \"City, State\" location box.",
+    "result_check": "The browser-fetch form submit landed on /name/john-smith, which answered with a Cloudflare challenge the service did not clear. The form is right; the results page is walled.",
+    "form": {
+      "method": "http_form_post",
+      "page_url": "https://www.usa-people-search.com/",
+      "form_action": "https://www.usa-people-search.com/Results/Search",
+      "url_pattern": null,
+      "form_id": "PeopleForm",
+      "form_name": null,
+      "submit_label": null,
+      "hidden_names": [
+        "_token",
+        "IsOptOut"
+      ],
+      "inputs": [
+        {
+          "name": "Name",
+          "type": "text",
+          "canonical": "full_name",
+          "required": false,
+          "id": "FullName",
+          "label": null,
+          "placeholder": "Full Name"
+        },
+        {
+          "name": "Location",
+          "type": "text",
+          "canonical": null,
+          "required": false,
+          "id": "Location",
+          "label": null,
+          "placeholder": "City, State"
+        }
+      ]
+    },
+    "captcha_widget": false,
+    "country": "US"
+  },
+  "searchpeoplefree": {
+    "checked": "2026-10-18",
+    "evidence": "Homepage form (Alpine.js x-model first, middle, last, location; no name attributes). The script opens /find/first-last. The catalog stored the nameless controls, which Frame drops.",
+    "result_check": "A browser submit of John / Smith opened /find/john-smith behind a Cloudflare challenge; the browser-fetch service's read of /find/John-Smith failed with a 403. The form is right; the results page is walled.",
+    "form": {
+      "method": "http_get",
+      "page_url": "https://www.searchpeoplefree.com/",
+      "form_action": "https://www.searchpeoplefree.com/find/",
+      "url_pattern": "https://www.searchpeoplefree.com/find/{first_name}-{last_name}",
+      "form_id": null,
+      "form_name": null,
+      "submit_label": null,
+      "hidden_names": [],
+      "inputs": [
+        {
+          "name": "first_name",
+          "type": "text",
+          "canonical": "first_name",
+          "required": true,
+          "id": null,
+          "label": "First Name",
+          "placeholder": null
+        },
+        {
+          "name": "last_name",
+          "type": "text",
+          "canonical": "last_name",
+          "required": true,
+          "id": null,
+          "label": "Last Name",
+          "placeholder": null
+        }
+      ]
+    },
+    "captcha_widget": false
+  },
+  "names-and-facts": {
+    "checked": "2026-10-18",
+    "evidence": "Homepage form id search-person-form, GET to /search. The search box has label \"Search people\" and placeholder \"Name & Last Name\". The catalog stored no form (robots.txt had disallowed the scan).",
+    "result_check": "GET /search?search=John+Smith answered with a Cloudflare challenge the browser-fetch service did not clear (twice). The form is right; the results page is walled.",
+    "form": {
+      "method": "http_get",
+      "page_url": "https://namesandfacts.com/",
+      "form_action": "https://namesandfacts.com/search",
+      "url_pattern": null,
+      "form_id": "search-person-form",
+      "form_name": null,
+      "submit_label": null,
+      "hidden_names": [],
+      "inputs": [
+        {
+          "name": "search",
+          "type": "search",
+          "canonical": "full_name",
+          "required": false,
+          "id": "main-search-input",
+          "label": "Search people",
+          "placeholder": "Name & Last Name"
+        }
+      ]
+    },
+    "captcha_widget": false
+  },
+  "voteref": {
+    "checked": "2026-10-18",
+    "evidence": "Homepage form id search_form, GET to /. A states dropdown (first choice \"All States\", value empty) and a search box with placeholder \"Search Registered Voters by Name or Address…\". The catalog stored no form (robots.txt had disallowed the scan). Country US: the dropdown lists US states and the site publishes US voter rolls.",
+    "result_check": "GET /?states_select=&search=John+Smith answered with a Cloudflare challenge the browser-fetch service did not clear. The form is right; the results page is walled.",
+    "form": {
+      "method": "http_get",
+      "page_url": "https://voteref.com/",
+      "form_action": "https://voteref.com/",
+      "url_pattern": null,
+      "form_id": "search_form",
+      "form_name": null,
+      "submit_label": null,
+      "hidden_names": [],
+      "inputs": [
+        {
+          "name": "states_select",
+          "type": "select",
+          "canonical": null,
+          "required": false,
+          "id": "states",
+          "label": null,
+          "placeholder": null
+        },
+        {
+          "name": "search",
+          "type": "search",
+          "canonical": "full_name",
+          "required": false,
+          "id": "voter-search",
+          "label": null,
+          "placeholder": "Search Registered Voters by Name or Address…"
+        }
+      ]
+    },
+    "captcha_widget": false,
+    "country": "US"
+  },
+  "whitepages": {
+    "checked": "2026-10-18",
+    "evidence": "Homepage name form, GET to /header-search/name, s_name required (\"e.g. John Snow\") and s_loc (\"e.g. Seattle, WA\", untagged). The catalog had stored the phone box on the privacy-choices page as the search, so Frame asked for a phone number.",
+    "result_check": "GET /header-search/name?s_name=John+Smith redirected to /name/John-Smith?searchedName=John%20Smith, which answered with a Cloudflare challenge the browser-fetch service did not clear. The form is right; the results page is walled.",
+    "form": {
+      "method": "http_get",
+      "page_url": "https://www.whitepages.com/",
+      "form_action": "https://www.whitepages.com/header-search/name",
+      "url_pattern": null,
+      "form_id": null,
+      "form_name": null,
+      "submit_label": null,
+      "hidden_names": [],
+      "inputs": [
+        {
+          "name": "s_name",
+          "type": "text",
+          "canonical": "full_name",
+          "required": true,
+          "id": "desktop-sticky-name-input",
+          "label": null,
+          "placeholder": "e.g. John Snow"
+        },
+        {
+          "name": "s_loc",
+          "type": "text",
+          "canonical": null,
+          "required": false,
+          "id": "desktop-sticky-location-input",
+          "label": null,
+          "placeholder": "e.g. Seattle, WA"
+        }
+      ]
+    },
+    "captcha_widget": false
+  }
+}

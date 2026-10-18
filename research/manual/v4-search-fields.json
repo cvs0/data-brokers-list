@@ -22,5 +22,11 @@
       "canonical": "full_name",
       "evidence": "Homepage name search (GET). The field's label and placeholder are \"Enter a name\" and its pair main-search-location is the city. The label rules did not match \"main-search-name Enter a name\"."
     }
+  },
+  "people-search-org": {
+    "q[query]": {
+      "canonical": "full_name",
+      "evidence": "Homepage form, POST to /search. The control has id search-name, label \"Enter a name\", and placeholder \"e.g. Jon West\". The label rules did not match \"q[query]\". A browser-fetch form submit of q[query]=John Smith on 2026-10-18 landed on /name/john-smith, \"John Smith - 3,628 People Found\"."
+    }
   }
 }

@@ -214,7 +214,7 @@ zlookup,Zlookup,zlookup.com,other,alive,captcha_form,Removal form is behind a CA
 411-reverse-lookup-canada,411 Reverse Lookup Canada,411reverselookup.ca,people-search,alive,captcha_form,Removal form is behind a CAPTCHA widget and no usable removal email was found,recaptcha_v2,,checkbox,true,,true,,web_form;postal_mail;phone
 411locate,411Locate,411locate.com,people-search,alive,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,false,,,,
 absolute-people-search,Absolute People Search,absolutepeoplesearch.com,people-search,opt_out_missing,phone_postal,Phone and a mailing address are the only channels,recaptcha_v2,6Lcs1CUjAAAAAGboweLdAjYCmgw9I1ofpf6TR32i,,false,recaptcha_v2,,,postal_mail;phone
-advancedbackgroundchecks,AdvancedBackgroundChecks,advancedbackgroundchecks.com,people-search,alive,captcha_form,Removal form is behind a CAPTCHA widget and no usable removal email was found,recaptcha_v2,6LdYzessAAAAACnQqZugXee4rNpMsD-6X1paSkS8,invisible,true,recaptcha_v2,true,,web_form;phone
+advancedbackgroundchecks,AdvancedBackgroundChecks,advancedbackgroundchecks.com,people-search,alive,captcha_form,Removal form is behind a CAPTCHA widget and no usable removal email was found,recaptcha_v2,6LdYzessAAAAACnQqZugXee4rNpMsD-6X1paSkS8,invisible,true,,true,,web_form;phone
 alumni-us,Alumni US,alumnius.net,people-search,alive,captcha_form,Removal form is behind a CAPTCHA widget and no usable removal email was found,recaptcha_v2,6LeJZx8UAAAAAG1Pz-HImpKLjGd-bKLV7BLw7mVf,checkbox,true,,true,,web_form
 americaphonebook,AmericaPhoneBook,americaphonebook.com,people-search,alive,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,false,,,,
 ancestry,Ancestry,ancestry.com,people-search,alive,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,false,,,,
@@ -271,7 +271,7 @@ peoplesearchnow,PeopleSearchNow,peoplesearchnow.com,people-search,robots_disallo
 peoplewhiz,PeopleWhiz,peoplewhiz.com,people-search,robots_disallowed,captcha_form,Removal form is behind a CAPTCHA widget and no usable removal email was found,turnstile,,,false,turnstile,true,support@peoplewhiz.com,web_form;email
 peoplewhiz-network-mashpanel-com,PeopleWhiz network (mashpanel.com),mashpanel.com,people-search,alive,captcha_form,Removal form is behind a CAPTCHA widget and no usable removal email was found,recaptcha_v2,,checkbox,true,recaptcha_v2,true,,web_form
 persopo,Persopo,persopo.com,people-search,alive,phone,The only published channel is a phone number,,,,false,,,,phone
-phonebooks-com,PhoneBooks.com,phonebooks.com,people-search,robots_disallowed,phone,The only published channel is a phone number,turnstile,,,false,turnstile,,,phone
+phonebooks-com,PhoneBooks.com,phonebooks.com,people-search,robots_disallowed,phone,The only published channel is a phone number,turnstile,,,false,,,,phone
 phonenumbers-org,PhoneNumbers.org,phonenumbers.org,people-search,alive,generic_inbox,"Only a generic inbox was found, and the page does not say to use it for removal",,,,false,,,support@phonenumbers.org,email;phone
 privaterecords-net,PrivateRecords.net,privaterecords.net,people-search,error,fetch_error,The opt-out URL failed before a page was read,,,,false,,,,
 publicdatacheck,PublicDataCheck,publicdatacheck.com,people-search,alive,captcha_form,Removal form is behind a CAPTCHA widget and no usable removal email was found,turnstile,0x4AAAAAAAgFHkiRuynTw4bF,checkbox,true,,true,,web_form;phone
