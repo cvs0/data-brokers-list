@@ -2113,9 +2113,32 @@ def place_search_form(record: dict) -> None:
     Each entry records the page it was read from and the evidence: the form's submit URL and method, its controls, and
     the URL a synthetic name search landed on. A GET search whose page builds the result URL in script stores that URL
     as url_pattern, with {control} placeholders. Nothing else about the broker changes. A stored CAPTCHA marker is
-    cleared only when the entry says the rendered search page showed no widget.
+    cleared only when the entry says the rendered search page showed no widget. An entry marked not_a_person_search
+    clears a stored form that is not a search for a person (a contact, demo, sign-up, or opt-out form, or a site search),
+    so the broker reads as having no public search, the same as a page where none was found.
     """
     entry = _search_form_overrides().get(record["id"])
+    if entry and entry.get("not_a_person_search"):
+        # The stored "search" is a contact, sign-up, demo, or opt-out form (or a site search): not a person search.
+        # Its state or province list still says where the broker works.
+        record["_scanned_search_regions"] = _form_regions(record)
+        record["search"].update(
+            {
+                "available": False,
+                "method": "none",
+                "page_url": None,
+                "form_action": None,
+                "inputs": [],
+                "url_pattern": None,
+                "directory_prefixes": [],
+                "form_meta": {"id": None, "name": None, "autocomplete": None, "novalidate": None, "submit_label": None, "hidden_names": []},
+                "captcha_provider": None,
+                "captcha_sitekey": None,
+                "captcha_detail": None,
+            }
+        )
+        record.pop("_captcha_search_checked", None)
+        return
     if not entry or not entry.get("form"):
         return
     form = entry["form"]

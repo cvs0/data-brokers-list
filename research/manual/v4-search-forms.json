@@ -543,5 +543,179 @@
     "checked": "2026-10-18",
     "evidence": "The live homepage title is \"Alumni US | All the best American graduates in one site!\".",
     "country": "US"
+  },
+  "claritas-llc": {
+    "checked": "2026-10-18",
+    "not_a_person_search": true,
+    "kind": "contact",
+    "evidence": "The stored search form on https://claritas.com/ is a sales, demo, newsletter, or contact form, not a search for a person: submit button \"Submit\", controls Email; First Name* *; Last Name* *; Email Address* *; Phone*; Company* *; Management Level* *; Industry* *. Frame planned it as a name search and would have typed the person's name into a sales lead or contact form."
+  },
+  "lionshare-marketing-inc": {
+    "checked": "2026-10-18",
+    "not_a_person_search": true,
+    "kind": "contact",
+    "evidence": "The stored search form on https://www.lionsharemarketing.com/ is a sales, demo, newsletter, or contact form, not a search for a person: submit button \"Send\", controls your-name; your-email; CRM/Marketing Automation; Business Intelligence & Analytics; New Mover Programs/New Parent Programs; Digital Campaigns; Other; your-company. Frame planned it as a name search and would have typed the person's name into a sales lead or contact form."
+  },
+  "lusha-systems-inc": {
+    "checked": "2026-10-18",
+    "not_a_person_search": true,
+    "kind": "contact",
+    "evidence": "The stored search form on https://www.lusha.com/ is a sales, demo, newsletter, or contact form, not a search for a person: submit button \"Submit\", controls Work email address; First name; Last name; Phone number; What is your current position? (Title); How many employees in your company?; How can we help?. Frame planned it as a name search and would have typed the person's name into a sales lead or contact form."
+  },
+  "affinity-solutions": {
+    "checked": "2026-10-18",
+    "not_a_person_search": true,
+    "kind": "contact",
+    "evidence": "The stored search form on https://www.affinity.solutions/ is a sales, demo, newsletter, or contact form, not a search for a person: submit button \"Submit Form\", controls Δ; First Name *; Last Name *; Email *; Company *; Industry *; Job Title *; Comments. Frame planned it as a name search and would have typed the person's name into a sales lead or contact form."
+  },
+  "bb-direct-inc": {
+    "checked": "2026-10-18",
+    "not_a_person_search": true,
+    "kind": "contact",
+    "evidence": "The stored search form on https://www.bbdirect.com/ is a sales, demo, newsletter, or contact form, not a search for a person: submit button \"Get My Count Now\", controls First Name; Last Name; Email; Mobile Phone; Describe your Target Audience *; Enter:. Frame planned it as a name search and would have typed the person's name into a sales lead or contact form."
+  },
+  "cuebiq-group-llc": {
+    "checked": "2026-10-18",
+    "not_a_person_search": true,
+    "kind": "contact",
+    "evidence": "The stored search form on https://cuebiq.com/ is a sales, demo, newsletter, or contact form, not a search for a person: submit button \"Request Live Demo\", controls Email (Required); First Name (Required); Last Name (Required); Title (Required); Phone (Required); Company Name (Required). Frame planned it as a name search and would have typed the person's name into a sales lead or contact form."
+  },
+  "inbound-insight-llc": {
+    "checked": "2026-10-18",
+    "not_a_person_search": true,
+    "kind": "contact",
+    "evidence": "The stored search form on https://inboundinsight.com/ is a sales, demo, newsletter, or contact form, not a search for a person: submit button \"Send Message\", controls Name *; Email *; Phone; Message *; honeypot. Frame planned it as a name search and would have typed the person's name into a sales lead or contact form."
+  },
+  "jmr-media-consulting-inc": {
+    "checked": "2026-10-18",
+    "not_a_person_search": true,
+    "kind": "contact",
+    "evidence": "The stored search form on https://jmr-media.com/ is a sales, demo, newsletter, or contact form, not a search for a person: submit button \"None\", controls firstName; lastName; email. Frame planned it as a name search and would have typed the person's name into a sales lead or contact form."
+  },
+  "multimedia-lists-inc": {
+    "checked": "2026-10-18",
+    "not_a_person_search": true,
+    "kind": "contact",
+    "evidence": "The stored search form on https://multimedialists.com/ is a sales, demo, newsletter, or contact form, not a search for a person: submit button \"Subscribe\", controls First Name; Last Name; Email; Phone Number. Frame planned it as a name search and would have typed the person's name into a sales lead or contact form."
+  },
+  "owmn-ltd": {
+    "checked": "2026-10-18",
+    "not_a_person_search": true,
+    "kind": "contact",
+    "evidence": "The stored search form on https://www.thebridgecorp.com/ is a sales, demo, newsletter, or contact form, not a search for a person: submit button \"Submit\", controls First name *; Last name *; Work Email *; Phone number *; Company name *; Company Type *; Industry *; Primary Role *. Frame planned it as a name search and would have typed the person's name into a sales lead or contact form."
+  },
+  "plunge-llc": {
+    "checked": "2026-10-18",
+    "not_a_person_search": true,
+    "kind": "contact",
+    "evidence": "The stored search form on https://www.plungedigital.com/ is a sales, demo, newsletter, or contact form, not a search for a person: submit button \"Send\", controls First name; Last name; Company *; Email *; Phone; Street Address; Address Line 2; City. Frame planned it as a name search and would have typed the person's name into a sales lead or contact form."
+  },
+  "rhetorik-limited": {
+    "checked": "2026-10-18",
+    "not_a_person_search": true,
+    "kind": "contact",
+    "evidence": "The stored search form on https://rhetorik.com/request-a-demo/ is a sales, demo, newsletter, or contact form, not a search for a person: submit button \"Submit Form\", controls Updates; First Name; Last Name; Phone; Email; Message. Frame planned it as a name search and would have typed the person's name into a sales lead or contact form."
+  },
+  "ventiveiq-llc": {
+    "checked": "2026-10-18",
+    "not_a_person_search": true,
+    "kind": "contact",
+    "evidence": "The stored search form on https://ventiveiq.com/ is a sales, demo, newsletter, or contact form, not a search for a person: submit button \"Submit\", controls your-name; your-email; company-name; your-phone; services; I agree to allow Ventiveiq to communicat; I agree to allow Ventiveiq to store and . Frame planned it as a name search and would have typed the person's name into a sales lead or contact form."
+  },
+  "fushia-media-llc": {
+    "checked": "2026-10-18",
+    "not_a_person_search": true,
+    "kind": "contact",
+    "evidence": "The stored search form on https://fushiamedia.com/ is a sales, demo, newsletter, or contact form, not a search for a person: submit button \"Send Message Now\", controls Name Required; Email Address Required; Phone Optional; Message Required. Frame planned it as a name search and would have typed the person's name into a sales lead or contact form."
+  },
+  "reallygreatrate-inc": {
+    "checked": "2026-10-18",
+    "not_a_person_search": true,
+    "kind": "contact",
+    "evidence": "The stored search form on https://www.rgrmarketing.com/ is a sales, demo, newsletter, or contact form, not a search for a person: submit button \"Get Started\", controls Name *; Last name *; Email *; Phone *; Company *; Lead Type *; Notes. Frame planned it as a name search and would have typed the person's name into a sales lead or contact form."
+  },
+  "the-linea-1-mkt-sl": {
+    "checked": "2026-10-18",
+    "not_a_person_search": true,
+    "kind": "contact",
+    "evidence": "The stored search form on https://tl1mkt.com/ is a sales, demo, newsletter, or contact form, not a search for a person: submit button \"Talk to us →\", controls Name; Work email; Message (optional); I agree to the processing of my personal. Frame planned it as a name search and would have typed the person's name into a sales lead or contact form."
+  },
+  "vertical-int-inc": {
+    "checked": "2026-10-18",
+    "not_a_person_search": true,
+    "kind": "contact",
+    "evidence": "The stored search form on https://enrichlayer.com/ is a sales, demo, newsletter, or contact form, not a search for a person: submit button \"Talk to sales!\", controls _hp; Your full name; work@email.com; I agree to the Privacy Policy. Frame planned it as a name search and would have typed the person's name into a sales lead or contact form."
+  },
+  "amerilist": {
+    "checked": "2026-10-18",
+    "not_a_person_search": true,
+    "kind": "contact",
+    "evidence": "The stored search form on https://www.amerilist.com/ is a sales, demo, newsletter, or contact form, not a search for a person: submit button \"Sign Up!\", controls Email; First Name; g-recaptcha-response. Frame planned it as a name search and would have typed the person's name into a sales lead or contact form."
+  },
+  "intentmacro": {
+    "checked": "2026-10-18",
+    "not_a_person_search": true,
+    "kind": "contact",
+    "evidence": "The stored search form on https://intentmacro.com/ is a sales, demo, newsletter, or contact form, not a search for a person: submit button \"Submit\", controls Name*; Email*; Phone Number*; Company*; Job Title*; Message; Δ. Frame planned it as a name search and would have typed the person's name into a sales lead or contact form."
+  },
+  "mch": {
+    "checked": "2026-10-18",
+    "not_a_person_search": true,
+    "kind": "contact",
+    "evidence": "The stored search form on https://www.mchdata.com/ is a sales, demo, newsletter, or contact form, not a search for a person: submit button \"Submit\", controls First Name; Last Name; Email; Company; Custom-Pet; Why-Relationship. Frame planned it as a name search and would have typed the person's name into a sales lead or contact form."
+  },
+  "compact-information-systems-llc": {
+    "checked": "2026-10-18",
+    "not_a_person_search": true,
+    "kind": "optout",
+    "evidence": "The stored search form on https://privacy.deepsync.com/ is the broker's own opt-out, unsubscribe, privacy-request, or listing-change form, not a search for a person: submit button \"Submit request\", controls Myself; A deceased individual; Someone I'm authorized to represent; First name; Last name; Email address; Additional email 1; Additional email 2. Frame planned it as a name search and would have typed the person's name into an opt-out or privacy request (a removal channel, not a search)."
+  },
+  "datamentors-llc": {
+    "checked": "2026-10-18",
+    "not_a_person_search": true,
+    "kind": "optout",
+    "evidence": "The stored search form on https://optout.porchgroupmedia.com/ is the broker's own opt-out, unsubscribe, privacy-request, or listing-change form, not a search for a person: submit button \"Submit\", controls Myself; An Individual for whom I have legal guar; A deceased member of my family; First Name; First Name; Last Name; Address 1 [include Apt# if applicable]; City. Frame planned it as a name search and would have typed the person's name into an opt-out or privacy request (a removal channel, not a search)."
+  },
+  "m1-data-and-analytics-llc": {
+    "checked": "2026-10-18",
+    "not_a_person_search": true,
+    "kind": "optout",
+    "evidence": "The stored search form on https://m1-data.com/unsubscribe/ is the broker's own opt-out, unsubscribe, privacy-request, or listing-change form, not a search for a person: submit button \"SUBMIT UNSUBSCRIBE\", controls FName; LName; Address; Apartment; City; State; Zip; EmailId. Frame planned it as a name search and would have typed the person's name into an opt-out or privacy request (a removal channel, not a search)."
+  },
+  "publicnsa-llc": {
+    "checked": "2026-10-18",
+    "not_a_person_search": true,
+    "kind": "optout",
+    "evidence": "The stored search form on https://optout.bigdbm.com/ is the broker's own opt-out, unsubscribe, privacy-request, or listing-change form, not a search for a person: submit button \"Submit\", controls All; Address Only; Phone Only; Email Only; First Name; Last Name; Email; Phone. Frame planned it as a name search and would have typed the person's name into an opt-out or privacy request (a removal channel, not a search)."
+  },
+  "source-path-digital": {
+    "checked": "2026-10-18",
+    "not_a_person_search": true,
+    "kind": "optout",
+    "evidence": "The stored search form on https://sourcepathdigital.com/california-consumer-portal/ is the broker's own opt-out, unsubscribe, privacy-request, or listing-change form, not a search for a person: submit button \"Submit Privacy Request\", controls Delete my personal information; Tell me what personal information Source; Tell me what personal information Source; Correct inaccurate personal information ; Do not sell or share my personal informa; Limit the use or disclosure of my sensit; First Name *; Last Name *. Frame planned it as a name search and would have typed the person's name into an opt-out or privacy request (a removal channel, not a search)."
+  },
+  "the-alesco-group-llc": {
+    "checked": "2026-10-18",
+    "not_a_person_search": true,
+    "kind": "optout",
+    "evidence": "The stored search form on https://mydataprivacy.com/ is the broker's own opt-out, unsubscribe, privacy-request, or listing-change form, not a search for a person: submit button \"Download\", controls First Name *; Last Name *; Email Address *; Company Name. Frame planned it as a name search and would have typed the person's name into an opt-out or privacy request (a removal channel, not a search)."
+  },
+  "xcelerated-data-llc": {
+    "checked": "2026-10-18",
+    "not_a_person_search": true,
+    "kind": "optout",
+    "evidence": "The stored search form on https://xcelerated.com/unsubscribe/ is the broker's own opt-out, unsubscribe, privacy-request, or listing-change form, not a search for a person: submit button \"Submit Form\", controls First Name; Last Name; Your Address; Your Apt / Suite; Your City; Your State; Your Zip Code; Your Email. Frame planned it as a name search and would have typed the person's name into an opt-out or privacy request (a removal channel, not a search)."
+  },
+  "datalead": {
+    "checked": "2026-10-18",
+    "not_a_person_search": true,
+    "kind": "optout",
+    "evidence": "The stored search form on https://data-lead.com/support/removal_request is the broker's own opt-out, unsubscribe, privacy-request, or listing-change form, not a search for a person: submit button \"Send\", controls Full Name*; Email*; Phone; subject; https://data-lead.com/person/name/.../id; message; privacy; What is Eight + Three. Frame planned it as a name search and would have typed the person's name into an opt-out or privacy request (a removal channel, not a search)."
+  },
+  "tennhelp": {
+    "checked": "2026-10-18",
+    "not_a_person_search": true,
+    "kind": "optout",
+    "evidence": "The stored search form on https://www.tennhelp.com/public-resources/change-listing is the broker's own opt-out, unsubscribe, privacy-request, or listing-change form, not a search for a person: submit button \"Submit\", controls Last Name:; First Name:; City:; State Abbrev:; Company:; Your Position:; Email:; Phone Number:. Frame planned it as a name search and would have typed the person's name into an opt-out or privacy request (a removal channel, not a search)."
   }
 }
