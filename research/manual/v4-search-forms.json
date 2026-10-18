@@ -521,7 +521,56 @@
   },
   "peoplefinders-confi-chek": {
     "checked": "2026-10-18",
-    "evidence": "The live homepage search form's state dropdown lists the US states (Alabama … Wyoming) and no Canadian province. The stored form kept no choices, so no country was derived.",
+    "evidence": "Homepage name form (unnamed First name, Last name, City (Optional), state select) is submitted by script to /people/<first>-<last>/<state>/<city>. The stored GET /?first_name=…&last_name=… only reloads the homepage, and it also tagged phone, email, and postal boxes from other tabs. Frame fills path placeholders as lowercase slugs and stops the path before the first segment it cannot fill, so a person with no city still gets the name (and state) page. The live homepage search form's state dropdown lists the US states (Alabama … Wyoming) and no Canadian province. The stored form kept no choices, so no country was derived.",
+    "result_check": "Rendered 2026-10-18 (US exit): a scripted submit of John / Smith / Denver / Colorado landed on /people/john-smith/co/denver?landing=all (\"We found 100 results for John Smith in Denver, CO\"); /people/john-smith answered \"We found 100 results for John Smith in the United States\".",
+    "form": {
+      "method": "http_get",
+      "page_url": "https://www.peoplefinders.com/",
+      "form_action": "https://www.peoplefinders.com/people/",
+      "url_pattern": "https://www.peoplefinders.com/people/{first_name}-{last_name}/{region}/{city}",
+      "form_id": null,
+      "form_name": null,
+      "submit_label": null,
+      "hidden_names": [],
+      "inputs": [
+        {
+          "name": "first_name",
+          "type": "text",
+          "canonical": "first_name",
+          "required": true,
+          "id": null,
+          "label": "First name (part of the result path)",
+          "placeholder": null
+        },
+        {
+          "name": "last_name",
+          "type": "text",
+          "canonical": "last_name",
+          "required": true,
+          "id": null,
+          "label": "Last name (part of the result path)",
+          "placeholder": null
+        },
+        {
+          "name": "region",
+          "type": "text",
+          "canonical": "region",
+          "required": false,
+          "id": null,
+          "label": "State code (path segment)",
+          "placeholder": null
+        },
+        {
+          "name": "city",
+          "type": "text",
+          "canonical": "city",
+          "required": false,
+          "id": null,
+          "label": "City (path segment)",
+          "placeholder": null
+        }
+      ]
+    },
     "country": "US"
   },
   "peoplesearchnow": {
@@ -753,5 +802,428 @@
       ]
     },
     "captcha_widget": false
+  },
+  "anywho-intelius-peopleconnect": {
+    "checked": "2026-10-18",
+    "evidence": "Homepage name form (fullName, cityState) has no action: the page's script opens /people/<first>+<last>, then /<state>/<city> when a place is given. The stored GET /?fullName=…&cityState=… only reloads the homepage, so Frame never reached a results page. url_pattern stores the result path; the controls are the path's parts. Frame fills path placeholders as lowercase slugs and stops the path before the first segment it cannot fill, so a person with no city still gets the name (and state) page.",
+    "result_check": "Rendered 2026-10-18 (US exit): a scripted submit of \"John Smith\" landed on /people/john+smith (\"71,456 Reports for John Smith\"). /people/john+smith/co/denver answered \"549 Reports for John Smith in Denver, Colorado\", /people/john+smith/co \"2,251 Reports … in Colorado\", and /people/quillon+vanderwekken/co/denver \"Results Not Found for Quillon Vanderwekken in Denver, Colorado\".",
+    "form": {
+      "method": "http_get",
+      "page_url": "https://www.anywho.com/",
+      "form_action": "https://www.anywho.com/people/",
+      "url_pattern": "https://www.anywho.com/people/{first_name}+{last_name}/{region}/{city}",
+      "form_id": null,
+      "form_name": null,
+      "submit_label": null,
+      "hidden_names": [],
+      "inputs": [
+        {
+          "name": "first_name",
+          "type": "text",
+          "canonical": "first_name",
+          "required": true,
+          "id": null,
+          "label": "First name (part of the result path)",
+          "placeholder": null
+        },
+        {
+          "name": "last_name",
+          "type": "text",
+          "canonical": "last_name",
+          "required": true,
+          "id": null,
+          "label": "Last name (part of the result path)",
+          "placeholder": null
+        },
+        {
+          "name": "region",
+          "type": "text",
+          "canonical": "region",
+          "required": false,
+          "id": null,
+          "label": "State code (path segment)",
+          "placeholder": null
+        },
+        {
+          "name": "city",
+          "type": "text",
+          "canonical": "city",
+          "required": false,
+          "id": null,
+          "label": "City (path segment)",
+          "placeholder": null
+        }
+      ]
+    }
+  },
+  "intelius-peopleconnect-addresses-com": {
+    "checked": "2026-10-18",
+    "evidence": "Homepage name form (firstName, lastName, state select) has no action: the page's script opens /people/<first>+<last>/<state>/. The stored GET /?firstName=…&lastName=…&state=… only reloads the homepage. The form has no city box and a city segment answers 404, so none is stored. Frame fills path placeholders as lowercase slugs and stops the path before the first segment it cannot fill, so a person with no city still gets the name (and state) page.",
+    "result_check": "Rendered 2026-10-18 (US exit): a scripted submit of John / Smith / Colorado landed on /people/john+smith/co/ (\"Found 20 Results for John Smith in Colorado\"). /people/john+smith/co/denver answered HTTP 404.",
+    "form": {
+      "method": "http_get",
+      "page_url": "https://www.addresses.com/",
+      "form_action": "https://www.addresses.com/people/",
+      "url_pattern": "https://www.addresses.com/people/{first_name}+{last_name}/{region}/",
+      "form_id": null,
+      "form_name": null,
+      "submit_label": null,
+      "hidden_names": [],
+      "inputs": [
+        {
+          "name": "first_name",
+          "type": "text",
+          "canonical": "first_name",
+          "required": true,
+          "id": null,
+          "label": "First name (part of the result path)",
+          "placeholder": null
+        },
+        {
+          "name": "last_name",
+          "type": "text",
+          "canonical": "last_name",
+          "required": true,
+          "id": null,
+          "label": "Last name (part of the result path)",
+          "placeholder": null
+        },
+        {
+          "name": "region",
+          "type": "text",
+          "canonical": "region",
+          "required": false,
+          "id": null,
+          "label": "State code (path segment)",
+          "placeholder": null
+        }
+      ]
+    }
+  },
+  "freepeopledirectory-spokeo-data": {
+    "checked": "2026-10-18",
+    "evidence": "Homepage form id form-submit (fname, lname, address_data \"City & State\") has no action: the page's script opens /name/<First>-<Last>/<ST>/<City>. The stored GET to the homepage only reloads it. The site answers the lowercase path with the same page. Frame fills path placeholders as lowercase slugs and stops the path before the first segment it cannot fill, so a person with no city still gets the name (and state) page.",
+    "result_check": "Rendered 2026-10-18 (US exit): a scripted submit of John / Smith / \"Denver, CO\" landed on /name/John-Smith/CO/Denver (\"274 Reports for John Smith in Denver, CO\"). /name/john-smith/co/denver showed the same page, and /name/quillon-vanderwekken/co/denver answered \"No Result for \\\"Quillon Vanderwekken\\\"\".",
+    "form": {
+      "method": "http_get",
+      "page_url": "https://freepeopledirectory.com/",
+      "form_action": "https://freepeopledirectory.com/name/",
+      "url_pattern": "https://freepeopledirectory.com/name/{first_name}-{last_name}/{region}/{city}",
+      "form_id": null,
+      "form_name": null,
+      "submit_label": null,
+      "hidden_names": [],
+      "inputs": [
+        {
+          "name": "first_name",
+          "type": "text",
+          "canonical": "first_name",
+          "required": true,
+          "id": null,
+          "label": "First name (part of the result path)",
+          "placeholder": null
+        },
+        {
+          "name": "last_name",
+          "type": "text",
+          "canonical": "last_name",
+          "required": true,
+          "id": null,
+          "label": "Last name (part of the result path)",
+          "placeholder": null
+        },
+        {
+          "name": "region",
+          "type": "text",
+          "canonical": "region",
+          "required": false,
+          "id": null,
+          "label": "State code (path segment)",
+          "placeholder": null
+        },
+        {
+          "name": "city",
+          "type": "text",
+          "canonical": "city",
+          "required": false,
+          "id": null,
+          "label": "City (path segment)",
+          "placeholder": null
+        }
+      ]
+    }
+  },
+  "mylife": {
+    "checked": "2026-10-18",
+    "evidence": "Homepage form id search-form has one box, search (placeholder \"Enter any name\"), and no action: the page's script opens /pub-multisearch.pubview with search, searchFirstName, and searchLastName. The stored GET /?search=… only reloads the homepage. The script's searchLocation is not stored: with a city alone it returned no rows.",
+    "result_check": "Rendered 2026-10-18 (US exit): a scripted submit of \"John Smith\" landed on /pub-multisearch.pubview?search=John+Smith&searchFirstName=John&searchLastName=Smith&… (\"We Found 100 Results for John Smith\"); the same URL without the tracking parameters showed the same page.",
+    "form": {
+      "method": "http_get",
+      "page_url": "https://www.mylife.com/",
+      "form_action": "https://www.mylife.com/pub-multisearch.pubview",
+      "url_pattern": "https://www.mylife.com/pub-multisearch.pubview?search={search}&searchFirstName={searchFirstName}&searchLastName={searchLastName}",
+      "form_id": null,
+      "form_name": null,
+      "submit_label": null,
+      "hidden_names": [],
+      "inputs": [
+        {
+          "name": "search",
+          "type": "text",
+          "canonical": "full_name",
+          "required": true,
+          "id": "single-search-input",
+          "label": null,
+          "placeholder": "Enter any name"
+        },
+        {
+          "name": "searchFirstName",
+          "type": "text",
+          "canonical": "first_name",
+          "required": false,
+          "id": null,
+          "label": null,
+          "placeholder": null
+        },
+        {
+          "name": "searchLastName",
+          "type": "text",
+          "canonical": "last_name",
+          "required": false,
+          "id": null,
+          "label": null,
+          "placeholder": null
+        }
+      ]
+    }
+  },
+  "national-public-data": {
+    "checked": "2026-10-18",
+    "evidence": "Homepage form id page-search-form (main-search-name, main-search-location; the controls have ids, not names) is submitted by script as GET /search/?name=<name>, which forwards to the listing page /people/<surname initial>/<first>-<last>/. The stored GET /?main-search-name=… only reloads the homepage, and /people/<first>-<last>/ without the initial answers 404, so the search URL is stored, not the listing path. The location box is not stored: the site forwards to the same nationwide page with or without it.",
+    "result_check": "Rendered 2026-10-18 (US exit): /search/?name=John+Smith forwarded to /people/s/john-smith/ (\"John Smith 22037 people found\"); a scripted submit of \"Quillon Vanderwekken\" landed on /search/?name=Quillon+Vanderwekken (\"Quillon Vanderwekken: Results Not Found\").",
+    "form": {
+      "method": "http_get",
+      "page_url": "https://nationalpublicdata.com/",
+      "form_action": "https://nationalpublicdata.com/search/",
+      "url_pattern": "https://nationalpublicdata.com/search/?name={name}",
+      "form_id": null,
+      "form_name": null,
+      "submit_label": null,
+      "hidden_names": [],
+      "inputs": [
+        {
+          "name": "name",
+          "type": "text",
+          "canonical": "full_name",
+          "required": true,
+          "id": "main-search-name",
+          "label": "Enter a name",
+          "placeholder": null
+        }
+      ]
+    }
+  },
+  "onlinesearches-intelius-peopleconnect": {
+    "checked": "2026-10-18",
+    "evidence": "Homepage form (first_last_name, city_state) has no action: the page's script opens /name/<first>-<last>/<ST>/<City>?category=public. The stored GET to the homepage only reloads it. The lowercase path without the category parameter shows the same results. Frame fills path placeholders as lowercase slugs and stops the path before the first segment it cannot fill, so a person with no city still gets the name (and state) page.",
+    "result_check": "Rendered 2026-10-18 (US exit): a scripted submit of \"John Smith\" + \"Denver, CO\" landed on /name/john-smith/CO/Denver?category=public (\"10 Results found for John Smith\"); /name/john-smith/co/denver showed the same summary.",
+    "form": {
+      "method": "http_get",
+      "page_url": "https://www.publicrecords.onlinesearches.com/",
+      "form_action": "https://www.publicrecords.onlinesearches.com/name/",
+      "url_pattern": "https://www.publicrecords.onlinesearches.com/name/{first_name}-{last_name}/{region}/{city}",
+      "form_id": null,
+      "form_name": null,
+      "submit_label": null,
+      "hidden_names": [],
+      "inputs": [
+        {
+          "name": "first_name",
+          "type": "text",
+          "canonical": "first_name",
+          "required": true,
+          "id": null,
+          "label": "First name (part of the result path)",
+          "placeholder": null
+        },
+        {
+          "name": "last_name",
+          "type": "text",
+          "canonical": "last_name",
+          "required": true,
+          "id": null,
+          "label": "Last name (part of the result path)",
+          "placeholder": null
+        },
+        {
+          "name": "region",
+          "type": "text",
+          "canonical": "region",
+          "required": false,
+          "id": null,
+          "label": "State code (path segment)",
+          "placeholder": null
+        },
+        {
+          "name": "city",
+          "type": "text",
+          "canonical": "city",
+          "required": false,
+          "id": null,
+          "label": "City (path segment)",
+          "placeholder": null
+        }
+      ]
+    }
+  },
+  "spokeo-data": {
+    "checked": "2026-10-18",
+    "evidence": "PeopleWin homepage form (fullName, cityState) has no action: the page's script opens /<First>-<Last>/<State>/<City>. The stored GET /?fullName=… only reloads the homepage. The lowercase path with the state code shows the same page. Frame fills path placeholders as lowercase slugs and stops the path before the first segment it cannot fill, so a person with no city still gets the name (and state) page.",
+    "result_check": "Rendered 2026-10-18 (US exit): a scripted submit of \"John Smith\" + \"Denver, CO\" landed on /John-Smith/Colorado/Denver (\"John Smith in Denver, Colorado - 549 Results\"). /john-smith/co/denver showed the same page and /john-smith \"John Smith - 71,456 Results\".",
+    "form": {
+      "method": "http_get",
+      "page_url": "https://peoplewin.com/",
+      "form_action": "https://peoplewin.com/",
+      "url_pattern": "https://peoplewin.com/{first_name}-{last_name}/{region}/{city}",
+      "form_id": null,
+      "form_name": null,
+      "submit_label": null,
+      "hidden_names": [],
+      "inputs": [
+        {
+          "name": "first_name",
+          "type": "text",
+          "canonical": "first_name",
+          "required": true,
+          "id": null,
+          "label": "First name (part of the result path)",
+          "placeholder": null
+        },
+        {
+          "name": "last_name",
+          "type": "text",
+          "canonical": "last_name",
+          "required": true,
+          "id": null,
+          "label": "Last name (part of the result path)",
+          "placeholder": null
+        },
+        {
+          "name": "region",
+          "type": "text",
+          "canonical": "region",
+          "required": false,
+          "id": null,
+          "label": "State code (path segment)",
+          "placeholder": null
+        },
+        {
+          "name": "city",
+          "type": "text",
+          "canonical": "city",
+          "required": false,
+          "id": null,
+          "label": "City (path segment)",
+          "placeholder": null
+        }
+      ]
+    }
+  },
+  "zabasearch-peopleconnect-intelius": {
+    "checked": "2026-10-18",
+    "evidence": "Homepage form (firstName, lastName, city, state) has no action; the site's people pages are /people/<first>-<last>/<state>/. The stored GET /?firstName=…&type=… only reloads the homepage (the scripted submit did not leave it in the box's browser). No city segment is stored: the listing pages narrow by state. Frame fills path placeholders as lowercase slugs and stops the path before the first segment it cannot fill, so a person with no city still gets the name (and state) page. A name with no listing answers HTTP 404 here rather than a no-results page.",
+    "result_check": "Fetched 2026-10-18 (US exit, rendered): /people/john-smith/colorado/ and /people/john-smith/co/ both answered \"More than 10 records found for John Smith\"; /people/quillon-vanderwekken/co/ answered a 404 page.",
+    "form": {
+      "method": "http_get",
+      "page_url": "https://www.zabasearch.com/",
+      "form_action": "https://www.zabasearch.com/people/",
+      "url_pattern": "https://www.zabasearch.com/people/{first_name}-{last_name}/{region}/",
+      "form_id": null,
+      "form_name": null,
+      "submit_label": null,
+      "hidden_names": [],
+      "inputs": [
+        {
+          "name": "first_name",
+          "type": "text",
+          "canonical": "first_name",
+          "required": true,
+          "id": null,
+          "label": "First name (part of the result path)",
+          "placeholder": null
+        },
+        {
+          "name": "last_name",
+          "type": "text",
+          "canonical": "last_name",
+          "required": true,
+          "id": null,
+          "label": "Last name (part of the result path)",
+          "placeholder": null
+        },
+        {
+          "name": "region",
+          "type": "text",
+          "canonical": "region",
+          "required": false,
+          "id": null,
+          "label": "State code (path segment)",
+          "placeholder": null
+        }
+      ]
+    }
+  },
+  "spokeo": {
+    "checked": "2026-10-18",
+    "evidence": "Homepage form id homepage_hero_form (q) GETs /search?q=<name>, which forwards to the nationwide /<First>-<Last> page; the site's location pages are /<First>-<Last>/<State>/<City>, and it forwards the lowercase path with a state code there. Storing the location path narrows a common name to the person's city instead of the nationwide list. Frame fills path placeholders as lowercase slugs and stops the path before the first segment it cannot fill, so a person with no city still gets the name (and state) page.",
+    "result_check": "Rendered 2026-10-18 (US exit): /search?q=John+Smith forwarded to /John-Smith (\"John Smith (70,761 matches)\"); /john-smith/co/denver forwarded to /John-Smith/Colorado/Denver (\"John Smith in Denver, CO\", 621 results).",
+    "form": {
+      "method": "http_get",
+      "page_url": "https://www.spokeo.com/",
+      "form_action": "https://www.spokeo.com/",
+      "url_pattern": "https://www.spokeo.com/{first_name}-{last_name}/{region}/{city}",
+      "form_id": null,
+      "form_name": null,
+      "submit_label": null,
+      "hidden_names": [],
+      "inputs": [
+        {
+          "name": "first_name",
+          "type": "text",
+          "canonical": "first_name",
+          "required": true,
+          "id": null,
+          "label": "First name (part of the result path)",
+          "placeholder": null
+        },
+        {
+          "name": "last_name",
+          "type": "text",
+          "canonical": "last_name",
+          "required": true,
+          "id": null,
+          "label": "Last name (part of the result path)",
+          "placeholder": null
+        },
+        {
+          "name": "region",
+          "type": "text",
+          "canonical": "region",
+          "required": false,
+          "id": null,
+          "label": "State code (path segment)",
+          "placeholder": null
+        },
+        {
+          "name": "city",
+          "type": "text",
+          "canonical": "city",
+          "required": false,
+          "id": null,
+          "label": "City (path segment)",
+          "placeholder": null
+        }
+      ]
+    }
   }
 }
