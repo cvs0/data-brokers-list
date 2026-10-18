@@ -70,6 +70,7 @@ from v2_common import canonical_field, processing_days
 V3_PATH = ROOT / "data" / "v3" / "brokers.json"
 MAPS_PATH = ROOT / "data" / "v1" / "broker-maps.json"
 LOG_PATH = ROOT / "research" / "evidence" / "v4.jsonl"
+SEARCH_FIELDS_PATH = ROOT / "research" / "manual" / "v4-search-fields.json"
 SEARCH_TEST_LOG = ROOT / "research" / "evidence" / "search-tests.jsonl"
 OUT_PATH = ROOT / "data" / "v4" / "brokers.json"
 CSV_PATH = ROOT / "data" / "v4" / "brokers.csv"
@@ -2089,10 +2090,35 @@ def place_form_detail(record: dict) -> None:
         record[side]["form_meta"] = normalize_form_meta(meta if isinstance(meta, dict) else None, seen and isinstance(meta, dict))
 
 
+def place_search_fields(record: dict) -> None:
+    """Tag a stored search control the label rules left untagged, from research/manual/v4-search-fields.json.
+
+    Only a control with no canonical value is tagged. A control the scan already tagged keeps its value.
+    """
+    manual = _search_field_overrides().get(record["id"]) or {}
+    for field in record["search"].get("inputs") or []:
+        entry = manual.get(field.get("name"))
+        if entry and field.get("canonical") is None:
+            field["canonical"] = entry["canonical"]
+
+
+_SEARCH_FIELD_CACHE: dict | None = None
+
+
+def _search_field_overrides() -> dict:
+    global _SEARCH_FIELD_CACHE
+    if _SEARCH_FIELD_CACHE is None:
+        _SEARCH_FIELD_CACHE = (
+            json.loads(SEARCH_FIELDS_PATH.read_text(encoding="utf-8")) if SEARCH_FIELDS_PATH.exists() else {}
+        )
+    return _SEARCH_FIELD_CACHE
+
+
 def annotate(record: dict) -> None:
     """Add facts a removal client can use without re-reading the pages."""
     clean_processing(record)
     place_form_detail(record)
+    place_search_fields(record)
     place_location(record)
     place_network(record)
     search = record["search"]
@@ -3078,7 +3104,7 @@ def write_outputs(report: dict) -> None:
         "",
         "The recrawl covers brokers whose v3 pages had loaded and still had no form, email, phone, postal address, portal, or CAPTCHA. It requests up to four unfetched same-site opt-out or privacy URLs, then opens the catalog URL and the homepage in a browser when a form is still missing.",
         "",
-        "A machine can fill a search when the stored inputs are present and that page has no CAPTCHA. The form has to ask for a name, phone number, or address. `search.captcha_provider` is the CAPTCHA on the search page. It is separate from the removal CAPTCHA. Lookup search is people-search, background-checks, and public-records.",
+        "A machine can fill a search when the stored inputs are present and that page has no CAPTCHA. The form has to ask for a name, phone number, or address. `search.captcha_provider` is the CAPTCHA on the search page. It is separate from the removal CAPTCHA. Lookup search is people-search, background-checks, and public-records. A search control the label rules left untagged can take a canonical value from [`research/manual/v4-search-fields.json`](../research/manual/v4-search-fields.json), which records the page evidence for each one. A control the scan already tagged keeps its value.",
         "",
         "`search_test` is on every broker. `outcome` is `results` when the response is a results page, `no_results` when the site said nobody matched, `submitted` when the form was accepted and the page was still a form, a loader, or something else, `unfilled` when a required field had no synthetic value, and `challenge` when the response was a bot wall. `page_kind` is `results`, `empty`, `loader`, `form`, or `other`. `result_count` is the number the page stated, or 0 when it stated that nobody matched, and null when the page stated no number. `http_status` is the response status. `path_prefix` is the first segment of the response path. `fields_sent` and `missing` are field names only. Brokers that were not tested keep every value null. The query, the response body, record text, and listing URLs are not stored.",
         "",

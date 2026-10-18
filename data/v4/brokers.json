@@ -169214,7 +169214,7 @@
      {
       "name": "main-search-name",
       "type": "text",
-      "canonical": null,
+      "canonical": "full_name",
       "required": false,
       "autocomplete": "off",
       "placeholder": "Enter a name",
@@ -169461,6 +169461,7 @@
     "search_fillable": true,
     "search_captcha": false,
     "search_fields": [
+     "full_name",
      "city"
     ],
     "removal_form_fillable": false,
@@ -288909,7 +288910,7 @@
      {
       "name": "looking_for",
       "type": "text",
-      "canonical": null,
+      "canonical": "full_name",
       "required": false,
       "autocomplete": null,
       "placeholder": "e.g. John Smith",
@@ -289184,7 +289185,9 @@
     "search_scanned": true,
     "search_fillable": false,
     "search_captcha": true,
-    "search_fields": [],
+    "search_fields": [
+     "full_name"
+    ],
     "removal_form_fillable": false,
     "removal_email_usable": false,
     "removal_fields": [],
@@ -307524,7 +307527,7 @@
      {
       "name": "what",
       "type": "text",
-      "canonical": null,
+      "canonical": "full_name",
       "required": false,
       "autocomplete": null,
       "placeholder": "e.g. J Smith, John Smith",
@@ -307781,7 +307784,9 @@
     "search_scanned": true,
     "search_fillable": true,
     "search_captcha": false,
-    "search_fields": [],
+    "search_fields": [
+     "full_name"
+    ],
     "removal_form_fillable": false,
     "removal_email_usable": false,
     "removal_fields": [],
@@ -307846,7 +307851,7 @@
      {
       "name": "txtwhat",
       "type": "text",
-      "canonical": null,
+      "canonical": "full_name",
       "required": false,
       "autocomplete": null,
       "placeholder": "Enter a Name",
@@ -308221,6 +308226,7 @@
     "search_fillable": true,
     "search_captcha": false,
     "search_fields": [
+     "full_name",
      "city"
     ],
     "removal_form_fillable": false,

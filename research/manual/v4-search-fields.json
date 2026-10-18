@@ -1,0 +1,26 @@
+{
+  "canada411": {
+    "what": {
+      "canonical": "full_name",
+      "evidence": "People search form (form id PeopleSearch, submits GET to /search/). The field has id c411PeopleWhat and placeholder \"e.g. J Smith, John Smith\": a person's name. The label rules did not match the field name \"what\"."
+    }
+  },
+  "white-pages-canada": {
+    "txtwhat": {
+      "canonical": "full_name",
+      "evidence": "Name search form (GET to /dir/name_search.php). The field's placeholder is \"Enter a Name\" and its pair txtwhere is the city. The label rules did not match the field name \"txtwhat\"."
+    }
+  },
+  "192-com": {
+    "looking_for": {
+      "canonical": "full_name",
+      "evidence": "People search form (POST to /people/search/). The field has label \"WHO:\", id peopleBusinesses_name, and placeholder \"e.g. John Smith\". The label rules did not match the field name \"looking_for\"."
+    }
+  },
+  "national-public-data": {
+    "main-search-name": {
+      "canonical": "full_name",
+      "evidence": "Homepage name search (GET). The field's label and placeholder are \"Enter a name\" and its pair main-search-location is the city. The label rules did not match \"main-search-name Enter a name\"."
+    }
+  }
+}
