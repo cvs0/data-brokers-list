@@ -97,7 +97,7 @@ speedeon-data-llc,Speedeon Data LLC,speedeondata.com,marketing,alive,phone,The o
 statara-solutions-llc,Statara Solutions LLC,statara.com,marketing,robots_disallowed,robots,robots.txt disallows the client. A later read still found no removal channel,,,,false,,,,
 towerdata-inc,"TowerData, Inc.",towerdata.com,marketing,alive,phone,The only published channel is a phone number,recaptcha_v2,6LfiqCUUAAAAAGzo0BG2sKBIF-oZVi1_rXgUm5xn,checkbox,true,,,,phone
 voilanorbert,VoilaNorbert,voilanorbert.com,marketing,alive,generic_inbox,"Only a generic inbox was found, and the page does not say to use it for removal",,,,false,,,me@voilanorbert.com;support@voilanorbert.com,email
-youradchoices-canada,YourAdChoices Canada,youradchoices.ca,marketing,alive,postal,The only published channel is a mailing address,custom,6LehCgYfAAAAAF9vS8viDIaBm8ch5JdRYmW44MPp,,true,custom,,,postal_mail
+youradchoices-canada,YourAdChoices Canada,youradchoices.ca,marketing,alive,postal,The only published channel is a mailing address,custom,6LehCgYfAAAAAF9vS8viDIaBm8ch5JdRYmW44MPp,,true,,,,postal_mail
 youradchoices-control,YourAdChoices control,youradchoices.com,marketing,robots_disallowed,robots,robots.txt disallows the client. A later read still found no removal channel,,,,false,,,,
 360-media-direct,360 Media Direct,360-media-direct.privacy.saymine.io,other,robots_disallowed,robots,robots.txt disallows the client. A later read still found no removal channel,,,,false,,,,
 5x5-us-llc,"5X5 US, LLC",5x5coop.com,other,opt_out_missing,opt_out_gone,The catalog opt-out URL returned 404 or 410,,,,false,,,,
@@ -154,7 +154,7 @@ infomatics-llc-network-personsearchers-com,Infomatics LLC network (personsearche
 infomatics-llc-network-privatereports-com,Infomatics LLC network (privatereports.com),privatereports.com,other,error,fetch_error,The opt-out URL failed before a page was read,,,,false,,,,
 information-com,Information.com,information.com,other,robots_disallowed,robots,robots.txt disallows the client. A later read still found no removal channel,,,,false,,,,
 iqvia-digital-inc,IQVIA Digital Inc.,iqvia.com,other,alive,captcha_no_form,A CAPTCHA widget is on the removal page and no form fields or usable email were stored,recaptcha_v2,6LfiqCUUAAAAAGzo0BG2sKBIF-oZVi1_rXgUm5xn,checkbox,true,,,,
-iqvia-digital-inc-privacyportal-onetrust-com,IQVIA Digital Inc. (privacyportal.onetrust.com),iqviadigital.com,other,alive,portal,An official privacy portal is linked and its fields were not stored,recaptcha_v2,6LfiqCUUAAAAAGzo0BG2sKBIF-oZVi1_rXgUm5xn,checkbox,true,recaptcha_enterprise,,,official_portal
+iqvia-digital-inc-privacyportal-onetrust-com,IQVIA Digital Inc. (privacyportal.onetrust.com),iqviadigital.com,other,alive,portal,An official privacy portal is linked and its fields were not stored,recaptcha_v2,6LfiqCUUAAAAAGzo0BG2sKBIF-oZVi1_rXgUm5xn,checkbox,true,,,,official_portal
 kids-live-safe,Kids Live Safe,kidslivesafe.com,other,alive,captcha_form,Removal form is behind a CAPTCHA widget and no usable removal email was found,turnstile,0x4AAAAAAAgFHkiRuynTw4bF,checkbox,true,,true,,web_form;phone
 kind-skiptracing-inc,"Kind Skiptracing, Inc",kindskiptracing.com,other,alive,generic_inbox,"Only a generic inbox was found, and the page does not say to use it for removal",,,,false,,,info@kindskiptracing.com,email
 kiwi-searches,Kiwi Searches,kiwisearches.com,other,robots_disallowed,robots,robots.txt disallows the client. A later read still found no removal channel,,,,false,,,,

@@ -2115,12 +2115,20 @@ def place_search_form(record: dict) -> None:
     as url_pattern, with {control} placeholders. Nothing else about the broker changes. A stored CAPTCHA marker is
     cleared only when the entry says the rendered search page showed no widget. An entry marked not_a_person_search
     clears a stored form that is not a search for a person (a contact, demo, sign-up, or opt-out form, or a site search),
-    so the broker reads as having no public search, the same as a page where none was found.
+    so the broker reads as having no public search, the same as a page where none was found. That includes a form that
+    only forwards the name to another company's search through an affiliate or tracking link; that company has its own
+    entry. An entry marked paywall keeps the stored form and sets search.paywall: a synthetic search showed that the
+    site returns no records without an account or a purchase (an empty results page that links to a paid report, or a
+    page that says so).
     """
     entry = _search_form_overrides().get(record["id"])
+    if entry and entry.get("paywall"):
+        # The search runs, but the site shows no records until the visitor registers or buys a report.
+        record["search"]["paywall"] = True
     if entry and entry.get("not_a_person_search"):
         # The stored "search" is a contact, sign-up, demo, or opt-out form (or a site search): not a person search.
-        # Its state or province list still says where the broker works.
+        # Its state or province list still says where the broker works, including a control only the manual tags name.
+        place_search_fields(record)
         record["_scanned_search_regions"] = _form_regions(record)
         record["search"].update(
             {
@@ -2188,6 +2196,12 @@ def place_search_country(record: dict) -> None:
         record["location"]["search_regions"] = regions
         if "search_form" not in record["location"]["sources"]:
             record["location"]["sources"].append("search_form")
+        # The form's states or provinces name one country, as they would have if the form were still stored.
+        form_country = _form_country(regions)
+        if form_country and not record["location"].get("country"):
+            record["location"]["country"] = form_country
+            if form_country not in record["location"]["coverage"]:
+                record["location"]["coverage"].append(form_country)
     entry = _search_form_overrides().get(record["id"]) or {}
     country = entry.get("country")
     if country and not record["location"].get("country"):
@@ -3214,7 +3228,7 @@ def write_outputs(report: dict) -> None:
         "",
         "The recrawl covers brokers whose v3 pages had loaded and still had no form, email, phone, postal address, portal, or CAPTCHA. It requests up to four unfetched same-site opt-out or privacy URLs, then opens the catalog URL and the homepage in a browser when a form is still missing.",
         "",
-        "A machine can fill a search when the stored inputs are present and that page has no CAPTCHA. The form has to ask for a name, phone number, or address. `search.captcha_provider` is the CAPTCHA on the search page. It is separate from the removal CAPTCHA. Lookup search is people-search, background-checks, and public-records. A search control the label rules left untagged can take a canonical value from [`research/manual/v4-search-fields.json`](../research/manual/v4-search-fields.json), which records the page evidence for each one. A control the scan already tagged keeps its value. A search form the scan missed or stored wrong (robots.txt kept it off the page, the controls have no name attribute, or another form was stored) can be replaced from [`research/manual/v4-search-forms.json`](../research/manual/v4-search-forms.json), which keeps the form read from the rendered page, where a synthetic search landed, and the date. `url_pattern` holds a result URL the page builds in script, with `{control}` placeholders.",
+        "A machine can fill a search when the stored inputs are present and that page has no CAPTCHA. The form has to ask for a name, phone number, or address. `search.captcha_provider` is the CAPTCHA on the search page. It is separate from the removal CAPTCHA. Lookup search is people-search, background-checks, and public-records. A search control the label rules left untagged can take a canonical value from [`research/manual/v4-search-fields.json`](../research/manual/v4-search-fields.json), which records the page evidence for each one. A control the scan already tagged keeps its value. A search form the scan missed or stored wrong (robots.txt kept it off the page, the controls have no name attribute, or another form was stored) can be replaced from [`research/manual/v4-search-forms.json`](../research/manual/v4-search-forms.json), which keeps the form read from the rendered page, where a synthetic search landed, and the date. `url_pattern` holds a result URL the page builds in script, with `{control}` placeholders. An entry there marked `not_a_person_search` clears a stored form that is not a search for a person: a contact, demo, or opt-out form, a site search, or a form that only forwards the name to another company through an affiliate or tracking link. An entry marked `paywall` keeps the form and sets `search.paywall` when a synthetic search returned no records without an account or a purchase.",
         "",
         "`search_test` is on every broker. `outcome` is `results` when the response is a results page, `no_results` when the site said nobody matched, `submitted` when the form was accepted and the page was still a form, a loader, or something else, `unfilled` when a required field had no synthetic value, and `challenge` when the response was a bot wall. `page_kind` is `results`, `empty`, `loader`, `form`, or `other`. `result_count` is the number the page stated, or 0 when it stated that nobody matched, and null when the page stated no number. `http_status` is the response status. `path_prefix` is the first segment of the response path. `fields_sent` and `missing` are field names only. Brokers that were not tested keep every value null. The query, the response body, record text, and listing URLs are not stored.",
         "",

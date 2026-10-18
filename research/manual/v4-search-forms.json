@@ -516,8 +516,10 @@
   },
   "background-hawk-truthfinder": {
     "checked": "2026-10-18",
-    "evidence": "The live homepage search form's state dropdown lists the US states (Alabama … Wyoming) and no Canadian province. The stored form kept the dropdown without its choices, so no country was derived.",
-    "country": "US"
+    "evidence": "The live homepage search form's state dropdown lists the US states (Alabama … Wyoming) and no Canadian province. The stored form kept the dropdown without its choices, so no country was derived. The live search form sends the name to tracking.truthfinder.com, TruthFinder's affiliate tracker; a synthetic search (John Smith, Denver CO) ended on a 404 there. The search is TruthFinder's (catalog entry truthfinder-peopleconnect).",
+    "country": "US",
+    "not_a_person_search": true,
+    "kind": "affiliate_redirect"
   },
   "peoplefinders-confi-chek": {
     "checked": "2026-10-18",
@@ -1225,5 +1227,821 @@
         }
       ]
     }
+  },
+  "alaska-arrests": {
+    "checked": "2026-10-18",
+    "paywall": true,
+    "kind": "paid_report_link",
+    "evidence": "A synthetic search (John Smith, Denver CO) at https://www.alaskaarrests.org/Results?fname=John&lname=Smith&state=CO&city=Denver returned a results page with no records. Its only link to records is a paid InfoTracer report (infotracer.net/loading)."
+  },
+  "arkansas-arrests": {
+    "checked": "2026-10-18",
+    "paywall": true,
+    "kind": "paid_report_link",
+    "evidence": "A synthetic search (John Smith, Denver CO) at https://www.arkansasarrests.org/Results?fname=John&lname=Smith&state=CO&city=Denver returned a results page with no records. Its only link to records is a paid InfoTracer report (infotracer.net/loading)."
+  },
+  "california-arrests": {
+    "checked": "2026-10-18",
+    "paywall": true,
+    "kind": "paid_report_link",
+    "evidence": "A synthetic search (John Smith, Denver CO) at https://www.californiaarrests.org/Results?fname=John&lname=Smith&state=CO&city=Denver returned a results page with no records. Its only link to records is a paid InfoTracer report (infotracer.net/loading)."
+  },
+  "colorado-arrests": {
+    "checked": "2026-10-18",
+    "paywall": true,
+    "kind": "paid_report_link",
+    "evidence": "A synthetic search (John Smith, Denver CO) at https://www.coloradoarrests.org/Results?fname=John&lname=Smith&state=CO&city=Denver returned a results page with no records. Its only link to records is a paid InfoTracer report (infotracer.net/loading)."
+  },
+  "florida-arrests": {
+    "checked": "2026-10-18",
+    "paywall": true,
+    "kind": "paid_report_link",
+    "evidence": "A synthetic search (John Smith, Denver CO) at https://www.flarrests.org/Results?fname=John&lname=Smith&state=CO&city=Denver returned a results page with no records. Its only link to records is a paid InfoTracer report (infotracer.net/loading)."
+  },
+  "georgia-arrests": {
+    "checked": "2026-10-18",
+    "paywall": true,
+    "kind": "paid_report_link",
+    "evidence": "A synthetic search (John Smith, Denver CO) at https://www.georgiaarrests.org/Results?fname=John&lname=Smith&state=CO&city=Denver returned a results page with no records. Its only link to records is a paid InfoTracer report (infotracer.net/loading)."
+  },
+  "hawaii-arrests": {
+    "checked": "2026-10-18",
+    "paywall": true,
+    "kind": "paid_report_link",
+    "evidence": "A synthetic search (John Smith, Denver CO) at https://www.hawaiiarrests.org/Results?fname=John&lname=Smith&state=CO&city=Denver returned a results page with no records. Its only link to records is a paid InfoTracer report (infotracer.net/loading)."
+  },
+  "idaho-arrests": {
+    "checked": "2026-10-18",
+    "paywall": true,
+    "kind": "paid_report_link",
+    "evidence": "The search form on https://www.idahoarrests.org/ sends the name to infotracer.com/loading, InfoTracer's paid report flow. The site itself shows no arrest records."
+  },
+  "iowa-arrests": {
+    "checked": "2026-10-18",
+    "paywall": true,
+    "kind": "paid_report_link",
+    "evidence": "A synthetic search (John Smith, Denver CO) at https://www.iowaarrests.org/Results?fname=John&lname=Smith&state=CO&city=Denver returned a results page with no records. Its only link to records is a paid InfoTracer report (infotracer.net/loading)."
+  },
+  "kentucky-arrests": {
+    "checked": "2026-10-18",
+    "paywall": true,
+    "kind": "paid_report_link",
+    "evidence": "A synthetic search (John Smith, Denver CO) at https://www.kentuckyarrests.org/Results?fname=John&lname=Smith&state=CO&city=Denver returned a results page with no records. Its only link to records is a paid InfoTracer report (infotracer.net/loading)."
+  },
+  "louisiana-arrests": {
+    "checked": "2026-10-18",
+    "paywall": true,
+    "kind": "paid_report_link",
+    "evidence": "A synthetic search (John Smith, Denver CO) at https://www.louisianaarrests.org/Results?fname=John&lname=Smith&state=CO&city=Denver returned a 404 page with no records whose only link to records is a paid InfoTracer report (infotracer.net/loading)."
+  },
+  "massachusetts-arrests": {
+    "checked": "2026-10-18",
+    "paywall": true,
+    "kind": "paid_report_link",
+    "evidence": "A synthetic search (John Smith, Denver CO) at https://www.maarrests.org/Results?fname=John&lname=Smith&state=CO&city=Denver returned a results page with no records. Its only link to records is a paid InfoTracer report (infotracer.net/loading)."
+  },
+  "michigan-arrests": {
+    "checked": "2026-10-18",
+    "paywall": true,
+    "kind": "paid_report_link",
+    "evidence": "A synthetic search (John Smith, Denver CO) at https://www.michiganarrests.org/Results?fname=John&lname=Smith&state=CO&city=Denver returned a results page with no records. Its only link to records is a paid InfoTracer report (infotracer.net/loading)."
+  },
+  "minnesota-arrests": {
+    "checked": "2026-10-18",
+    "paywall": true,
+    "kind": "paid_report_link",
+    "evidence": "A synthetic search (John Smith, Denver CO) at https://www.minnesotaarrests.org/Results?fname=John&lname=Smith&state=CO&city=Denver returned a results page with no records. Its only link to records is a paid InfoTracer report (infotracer.net/loading)."
+  },
+  "mississippi-arrests": {
+    "checked": "2026-10-18",
+    "paywall": true,
+    "kind": "paid_report_link",
+    "evidence": "A synthetic search (John Smith, Denver CO) at https://www.msarrests.org/Results?fname=John&lname=Smith&state=CO&city=Denver returned a results page with no records. Its only link to records is a paid InfoTracer report (infotracer.net/loading)."
+  },
+  "missouri-arrests": {
+    "checked": "2026-10-18",
+    "paywall": true,
+    "kind": "paid_report_link",
+    "evidence": "A synthetic search (John Smith, Denver CO) at https://www.missouriarrests.org/Results?fname=John&lname=Smith&state=CO&city=Denver returned a results page with no records. Its only link to records is a paid InfoTracer report (infotracer.net/loading)."
+  },
+  "montana-arrests": {
+    "checked": "2026-10-18",
+    "paywall": true,
+    "kind": "paid_report_link",
+    "evidence": "A synthetic search (John Smith, Denver CO) at https://www.montanaarrests.org/Results?fname=John&lname=Smith&state=CO&city=Denver returned a results page with no records. Its only link to records is a paid InfoTracer report (infotracer.net/loading)."
+  },
+  "new-hampshire-arrests": {
+    "checked": "2026-10-18",
+    "paywall": true,
+    "kind": "paid_report_link",
+    "evidence": "A synthetic search (John Smith, Denver CO) at https://www.nharrests.org/Results?fname=John&lname=Smith&state=CO&city=Denver returned a results page with no records. Its only link to records is a paid InfoTracer report (infotracer.net/loading)."
+  },
+  "new-mexico-arrests": {
+    "checked": "2026-10-18",
+    "paywall": true,
+    "kind": "paid_report_link",
+    "evidence": "A synthetic search (John Smith, Denver CO) at https://www.nmarrests.org/Results?fname=John&lname=Smith&state=CO&city=Denver returned a results page with no records. Its only link to records is a paid InfoTracer report (infotracer.net/loading)."
+  },
+  "new-york-arrests": {
+    "checked": "2026-10-18",
+    "paywall": true,
+    "kind": "paid_report_link",
+    "evidence": "A synthetic search (John Smith, Denver CO) at https://www.nyarrests.org/Results?fname=John&lname=Smith&state=CO&city=Denver returned a results page with no records. Its only link to records is a paid InfoTracer report (infotracer.net/loading)."
+  },
+  "ohio-arrests": {
+    "checked": "2026-10-18",
+    "paywall": true,
+    "kind": "paid_report_link",
+    "evidence": "A synthetic search (John Smith, Denver CO) at https://www.ohioarrests.org/Results?fname=John&lname=Smith&state=CO&city=Denver returned a results page with no records. Its only link to records is a paid InfoTracer report (infotracer.net/loading)."
+  },
+  "oregon-arrests": {
+    "checked": "2026-10-18",
+    "paywall": true,
+    "kind": "paid_report_link",
+    "evidence": "A synthetic search (John Smith, Denver CO) at https://www.oregonarrest.org/Results?fname=John&lname=Smith&state=CO&city=Denver returned a results page with no records. Its only link to records is a paid InfoTracer report (infotracer.net/loading)."
+  },
+  "pennsylvania-arrests": {
+    "checked": "2026-10-18",
+    "paywall": true,
+    "kind": "paid_report_link",
+    "evidence": "A synthetic search (John Smith, Denver CO) at https://www.pennsylvaniaarrests.org/Results?fname=John&lname=Smith&state=CO&city=Denver returned a results page with no records. Its only link to records is a paid InfoTracer report (infotracer.net/loading)."
+  },
+  "rhode-island-arrests": {
+    "checked": "2026-10-18",
+    "paywall": true,
+    "kind": "paid_report_link",
+    "evidence": "A synthetic search (John Smith, Denver CO) at https://www.riarrests.org/Results?fname=John&lname=Smith&state=CO&city=Denver returned a results page with no records. Its only link to records is a paid InfoTracer report (infotracer.net/loading)."
+  },
+  "south-carolina-arrests": {
+    "checked": "2026-10-18",
+    "paywall": true,
+    "kind": "paid_report_link",
+    "evidence": "A synthetic search (John Smith, Denver CO) at https://www.scarrests.org/Results?fname=John&lname=Smith&state=CO&city=Denver returned a results page with no records. Its only link to records is a paid InfoTracer report (infotracer.net/loading)."
+  },
+  "tennessee-arrests": {
+    "checked": "2026-10-18",
+    "paywall": true,
+    "kind": "paid_report_link",
+    "evidence": "A synthetic search (John Smith, Denver CO) at https://www.tennesseearrests.org/Results?fname=John&lname=Smith&state=CO&city=Denver returned a results page with no records. Its only link to records is a paid InfoTracer report (infotracer.net/loading)."
+  },
+  "virginia-arrests": {
+    "checked": "2026-10-18",
+    "paywall": true,
+    "kind": "paid_report_link",
+    "evidence": "A synthetic search (John Smith, Denver CO) at https://www.virginiaarrests.org/Results?fname=John&lname=Smith&state=CO&city=Denver returned a results page with no records. Its only link to records is a paid InfoTracer report (infotracer.net/loading)."
+  },
+  "washington-arrests": {
+    "checked": "2026-10-18",
+    "paywall": true,
+    "kind": "paid_report_link",
+    "evidence": "A synthetic search (John Smith, Denver CO) at https://www.washingtonarrests.org/Results?fname=John&lname=Smith&state=CO&city=Denver returned a results page with no records. Its only link to records is a paid InfoTracer report (infotracer.net/loading)."
+  },
+  "west-virginia-arrests": {
+    "checked": "2026-10-18",
+    "paywall": true,
+    "kind": "paid_report_link",
+    "evidence": "A synthetic search (John Smith, Denver CO) at https://www.wvarrests.org/Results?fname=John&lname=Smith&state=CO&city=Denver returned a results page with no records. Its only link to records is a paid InfoTracer report (infotracer.net/loading)."
+  },
+  "wisconsin-arrests": {
+    "checked": "2026-10-18",
+    "paywall": true,
+    "kind": "paid_report_link",
+    "evidence": "A synthetic search (John Smith, Denver CO) at https://www.wisconsinarrests.org/Results?fname=John&lname=Smith&state=CO&city=Denver returned a results page with no records. Its only link to records is a paid InfoTracer report (infotracer.net/loading)."
+  },
+  "wyoming-arrests": {
+    "checked": "2026-10-18",
+    "paywall": true,
+    "kind": "paid_report_link",
+    "evidence": "A synthetic search (John Smith, Denver CO) at https://www.wyomingarrests.org/Results?fname=John&lname=Smith&state=CO&city=Denver returned a results page with no records. Its only link to records is a paid InfoTracer report (infotracer.net/loading)."
+  },
+  "nevada-arrests": {
+    "checked": "2026-10-18",
+    "paywall": true,
+    "kind": "paid_report_link",
+    "evidence": "A synthetic search (John Smith, Denver CO) at https://www.nevadaarrests.org/Results?fname=John&lname=Smith&state=CO&city=Denver returned a results page with no records. Its only link to records is a paid InfoTracer report (infotracer.net/loading)."
+  },
+  "alabama-arrests": {
+    "checked": "2026-10-18",
+    "paywall": true,
+    "kind": "paid_report_link",
+    "evidence": "A synthetic search (John Smith, Denver CO) at https://www.alabamaarrests.org/Results?fname=John&lname=Smith&state=CO&city=Denver returned a results page with no records. Its only link to records is a paid InfoTracer report (infotracer.net/loading)."
+  },
+  "connecticut-arrests": {
+    "checked": "2026-10-18",
+    "paywall": true,
+    "kind": "paid_report_link",
+    "evidence": "A synthetic search (John Smith, Denver CO) at https://www.ctarrests.org/Results?fname=John&lname=Smith&state=CO&city=Denver returned a results page with no records. Its only link to records is a paid InfoTracer report (infotracer.net/loading)."
+  },
+  "indiana-arrests": {
+    "checked": "2026-10-18",
+    "paywall": true,
+    "kind": "paid_report_link",
+    "evidence": "A synthetic search (John Smith, Denver CO) at https://www.indianaarrests.org/Results?fname=John&lname=Smith&state=CO&city=Denver returned a results page with no records. Its only link to records is a paid InfoTracer report (infotracer.net/loading)."
+  },
+  "kansas-arrests": {
+    "checked": "2026-10-18",
+    "paywall": true,
+    "kind": "paid_report_link",
+    "evidence": "A synthetic search (John Smith, Denver CO) at https://www.kansasarrests.org/Results?fname=John&lname=Smith&state=CO&city=Denver returned a results page with no records. Its only link to records is a paid InfoTracer report (infotracer.net/loading)."
+  },
+  "maine-arrests": {
+    "checked": "2026-10-18",
+    "paywall": true,
+    "kind": "paid_report_link",
+    "evidence": "A synthetic search (John Smith, Denver CO) at https://www.mainearrests.org/Results?fname=John&lname=Smith&state=CO&city=Denver returned a results page with no records. Its only link to records is a paid InfoTracer report (infotracer.net/loading)."
+  },
+  "maryland-arrests": {
+    "checked": "2026-10-18",
+    "paywall": true,
+    "kind": "paid_report_link",
+    "evidence": "A synthetic search (John Smith, Denver CO) at https://www.marylandarrests.org/Results?fname=John&lname=Smith&state=CO&city=Denver returned a results page with no records. Its only link to records is a paid InfoTracer report (infotracer.net/loading)."
+  },
+  "nebraska-arrests": {
+    "checked": "2026-10-18",
+    "paywall": true,
+    "kind": "paid_report_link",
+    "evidence": "A synthetic search (John Smith, Denver CO) at https://www.nebraskaarrests.org/Results?fname=John&lname=Smith&state=CO&city=Denver returned a results page with no records. Its only link to records is a paid InfoTracer report (infotracer.net/loading)."
+  },
+  "north-carolina-arrests": {
+    "checked": "2026-10-18",
+    "paywall": true,
+    "kind": "paid_report_link",
+    "evidence": "A synthetic search (John Smith, Denver CO) at https://www.ncarrests.org/Results?fname=John&lname=Smith&state=CO&city=Denver returned a results page with no records. Its only link to records is a paid InfoTracer report (infotracer.net/loading)."
+  },
+  "north-dakota-arrests": {
+    "checked": "2026-10-18",
+    "paywall": true,
+    "kind": "paid_report_link",
+    "evidence": "A synthetic search (John Smith, Denver CO) at https://www.ndarrests.org/Results?fname=John&lname=Smith&state=CO&city=Denver returned a results page with no records. Its only link to records is a paid InfoTracer report (infotracer.net/loading)."
+  },
+  "south-dakota-arrests": {
+    "checked": "2026-10-18",
+    "paywall": true,
+    "kind": "paid_report_link",
+    "evidence": "A synthetic search (John Smith, Denver CO) at https://www.sdarrests.org/Results?fname=John&lname=Smith&state=CO&city=Denver returned a results page with no records. Its only link to records is a paid InfoTracer report (infotracer.net/loading)."
+  },
+  "utah-arrests": {
+    "checked": "2026-10-18",
+    "paywall": true,
+    "kind": "paid_report_link",
+    "evidence": "A synthetic search (John Smith, Denver CO) at https://www.utaharrests.org/Results?fname=John&lname=Smith&state=CO&city=Denver returned a results page with no records. Its only link to records is a paid InfoTracer report (infotracer.net/loading)."
+  },
+  "washington-dc-arrests": {
+    "checked": "2026-10-18",
+    "paywall": true,
+    "kind": "paid_report_link",
+    "evidence": "A synthetic search (John Smith, Denver CO) at https://www.dcarrests.org/Results?fname=John&lname=Smith&state=CO&city=Denver returned a results page with no records. Its only link to records is a paid InfoTracer report (infotracer.net/loading)."
+  },
+  "texas-arrests": {
+    "checked": "2026-10-18",
+    "paywall": true,
+    "kind": "paid_report_link",
+    "evidence": "A synthetic search (John Smith, Denver CO) at https://www.texasarrests.org/Results?fname=John&lname=Smith&state=CO&city=Denver returned a results page with no records. Its only link to records is a paid InfoTracer report (infotracer.net/loading)."
+  },
+  "vermont-arrests": {
+    "checked": "2026-10-18",
+    "paywall": true,
+    "kind": "paid_report_link",
+    "evidence": "A synthetic search (John Smith, Denver CO) at https://www.vtarrests.org/Results?fname=John&lname=Smith&state=CO&city=Denver returned a results page with no records. Its only link to records is a paid InfoTracer report (infotracer.net/loading)."
+  },
+  "la-county-arrest-records": {
+    "checked": "2026-10-18",
+    "paywall": true,
+    "kind": "paid_report_link",
+    "evidence": "A synthetic search (John Smith) at https://www.lacountyarrestrecords.org/Results?fname=John&lname=Smith&state=CA returned a results page with no records, on the same template as the state arrests sites. Its only link to records is a paid InfoTracer report."
+  },
+  "dewarrants-org-infotracer-form": {
+    "checked": "2026-10-18",
+    "paywall": true,
+    "kind": "paid_report_link",
+    "evidence": "A synthetic search (John Smith) at https://www.dewarrants.org/Results?fname=John&lname=Smith&state=CO returned a results page with no records, on the same template as the state arrests sites. Its only link to records is a paid InfoTracer report."
+  },
+  "staterecords-org-network-alabamacourtrecords-us": {
+    "checked": "2026-10-18",
+    "paywall": true,
+    "kind": "register_or_purchase",
+    "evidence": "A synthetic search (John Smith, CO) posted to https://alabamacourtrecords.us/search/loading/ returned a page that says a search of any records will only be conducted and made available after you register for an account or purchase a report. No records are shown."
+  },
+  "staterecords-org-network-alaskacourtrecords-us": {
+    "checked": "2026-10-18",
+    "paywall": true,
+    "kind": "register_or_purchase",
+    "evidence": "A synthetic search (John Smith, CO) posted to https://alaskacourtrecords.us/search/loading/ returned a page that says a search of any records will only be conducted and made available after you register for an account or purchase a report. No records are shown."
+  },
+  "staterecords-org-network-arizonacourtrecords-us": {
+    "checked": "2026-10-18",
+    "paywall": true,
+    "kind": "register_or_purchase",
+    "evidence": "A synthetic search (John Smith, CO) posted to https://arizonacourtrecords.us/search/loading/ returned a page that says a search of any records will only be conducted and made available after you register for an account or purchase a report. No records are shown."
+  },
+  "staterecords-org-network-arkansascourtrecords-us": {
+    "checked": "2026-10-18",
+    "paywall": true,
+    "kind": "register_or_purchase",
+    "evidence": "A synthetic search (John Smith, CO) posted to https://arkansascourtrecords.us/search/loading/ returned a page that says a search of any records will only be conducted and made available after you register for an account or purchase a report. No records are shown."
+  },
+  "staterecords-org-network-californiacourtrecords-us": {
+    "checked": "2026-10-18",
+    "paywall": true,
+    "kind": "register_or_purchase",
+    "evidence": "A synthetic search (John Smith, CO) posted to https://californiacourtrecords.us/search/loading/ returned a page that says a search of any records will only be conducted and made available after you register for an account or purchase a report. No records are shown."
+  },
+  "staterecords-org-network-coloradocourtrecords-us": {
+    "checked": "2026-10-18",
+    "paywall": true,
+    "kind": "register_or_purchase",
+    "evidence": "A synthetic search (John Smith, CO) posted to https://coloradocourtrecords.us/search/loading/ returned a page that says a search of any records will only be conducted and made available after you register for an account or purchase a report. No records are shown."
+  },
+  "staterecords-org-network-connecticutcourtrecords-us": {
+    "checked": "2026-10-18",
+    "paywall": true,
+    "kind": "register_or_purchase",
+    "evidence": "A synthetic search (John Smith, CO) posted to https://connecticutcourtrecords.us/search/loading/ returned a page that says a search of any records will only be conducted and made available after you register for an account or purchase a report. No records are shown."
+  },
+  "staterecords-org-network-delawarecourtrecords-us": {
+    "checked": "2026-10-18",
+    "paywall": true,
+    "kind": "register_or_purchase",
+    "evidence": "A synthetic search (John Smith, CO) posted to https://delawarecourtrecords.us/search/loading/ returned a page that says a search of any records will only be conducted and made available after you register for an account or purchase a report. No records are shown."
+  },
+  "staterecords-org-network-floridacourtrecords-us": {
+    "checked": "2026-10-18",
+    "paywall": true,
+    "kind": "register_or_purchase",
+    "evidence": "A synthetic search (John Smith, CO) posted to https://floridacourtrecords.us/search/loading/ returned a page that says a search of any records will only be conducted and made available after you register for an account or purchase a report. No records are shown."
+  },
+  "staterecords-org-network-georgiacourtrecords-us": {
+    "checked": "2026-10-18",
+    "paywall": true,
+    "kind": "register_or_purchase",
+    "evidence": "A synthetic search (John Smith, CO) posted to https://georgiacourtrecords.us/search/loading/ returned a page that says a search of any records will only be conducted and made available after you register for an account or purchase a report. No records are shown."
+  },
+  "staterecords-org-network-hawaiicourtrecords-us": {
+    "checked": "2026-10-18",
+    "paywall": true,
+    "kind": "register_or_purchase",
+    "evidence": "A synthetic search (John Smith, CO) posted to https://hawaiicourtrecords.us/search/loading/ returned a page that says a search of any records will only be conducted and made available after you register for an account or purchase a report. No records are shown."
+  },
+  "staterecords-org-network-hub": {
+    "checked": "2026-10-18",
+    "paywall": true,
+    "kind": "register_or_purchase",
+    "evidence": "A synthetic search (John Smith, CO) posted to https://courtrecords.us/search/loading/ returned a page that says a search of any records will only be conducted and made available after you register for an account or purchase a report. No records are shown."
+  },
+  "staterecords-org-network-idahocourtrecords-us": {
+    "checked": "2026-10-18",
+    "paywall": true,
+    "kind": "register_or_purchase",
+    "evidence": "A synthetic search (John Smith, CO) posted to https://idahocourtrecords.us/search/loading/ returned a page that says a search of any records will only be conducted and made available after you register for an account or purchase a report. No records are shown."
+  },
+  "staterecords-org-network-illinoiscourtrecords-us": {
+    "checked": "2026-10-18",
+    "paywall": true,
+    "kind": "register_or_purchase",
+    "evidence": "A synthetic search (John Smith, CO) posted to https://illinoiscourtrecords.us/search/loading/ returned a page that says a search of any records will only be conducted and made available after you register for an account or purchase a report. No records are shown."
+  },
+  "staterecords-org-network-indianacourtrecords-us": {
+    "checked": "2026-10-18",
+    "paywall": true,
+    "kind": "register_or_purchase",
+    "evidence": "A synthetic search (John Smith, CO) posted to https://indianacourtrecords.us/search/loading/ returned a page that says a search of any records will only be conducted and made available after you register for an account or purchase a report. No records are shown."
+  },
+  "staterecords-org-network-iowacourtrecords-us": {
+    "checked": "2026-10-18",
+    "paywall": true,
+    "kind": "register_or_purchase",
+    "evidence": "A synthetic search (John Smith, CO) posted to https://iowacourtrecords.us/search/loading/ returned a page that says a search of any records will only be conducted and made available after you register for an account or purchase a report. No records are shown."
+  },
+  "staterecords-org-network-kansascourtrecords-us": {
+    "checked": "2026-10-18",
+    "paywall": true,
+    "kind": "register_or_purchase",
+    "evidence": "A synthetic search (John Smith, CO) posted to https://kansascourtrecords.us/search/loading/ returned a page that says a search of any records will only be conducted and made available after you register for an account or purchase a report. No records are shown."
+  },
+  "staterecords-org-network-kentuckycourtrecords-us": {
+    "checked": "2026-10-18",
+    "paywall": true,
+    "kind": "register_or_purchase",
+    "evidence": "A synthetic search (John Smith, CO) posted to https://kentuckycourtrecords.us/search/loading/ returned a page that says a search of any records will only be conducted and made available after you register for an account or purchase a report. No records are shown."
+  },
+  "staterecords-org-network-louisianacourtrecords-us": {
+    "checked": "2026-10-18",
+    "paywall": true,
+    "kind": "register_or_purchase",
+    "evidence": "A synthetic search (John Smith, CO) posted to https://louisianacourtrecords.us/search/loading/ returned a page that says a search of any records will only be conducted and made available after you register for an account or purchase a report. No records are shown."
+  },
+  "staterecords-org-network-mainecourtrecords-us": {
+    "checked": "2026-10-18",
+    "paywall": true,
+    "kind": "register_or_purchase",
+    "evidence": "A synthetic search (John Smith, CO) posted to https://mainecourtrecords.us/search/loading/ returned a page that says a search of any records will only be conducted and made available after you register for an account or purchase a report. No records are shown."
+  },
+  "staterecords-org-network-marylandcourtrecords-us": {
+    "checked": "2026-10-18",
+    "paywall": true,
+    "kind": "register_or_purchase",
+    "evidence": "A synthetic search (John Smith, CO) posted to https://marylandcourtrecords.us/search/loading/ returned a page that says a search of any records will only be conducted and made available after you register for an account or purchase a report. No records are shown."
+  },
+  "staterecords-org-network-massachusettscourtrecords-us": {
+    "checked": "2026-10-18",
+    "paywall": true,
+    "kind": "register_or_purchase",
+    "evidence": "A synthetic search (John Smith, CO) posted to https://massachusettscourtrecords.us/search/loading/ returned a page that says a search of any records will only be conducted and made available after you register for an account or purchase a report. No records are shown."
+  },
+  "staterecords-org-network-michigancourtrecords-us": {
+    "checked": "2026-10-18",
+    "paywall": true,
+    "kind": "register_or_purchase",
+    "evidence": "A synthetic search (John Smith, CO) posted to https://michigancourtrecords.us/search/loading/ returned a page that says a search of any records will only be conducted and made available after you register for an account or purchase a report. No records are shown."
+  },
+  "staterecords-org-network-minnesotacourtrecords-us": {
+    "checked": "2026-10-18",
+    "paywall": true,
+    "kind": "register_or_purchase",
+    "evidence": "A synthetic search (John Smith, CO) posted to https://minnesotacourtrecords.us/search/loading/ returned a page that says a search of any records will only be conducted and made available after you register for an account or purchase a report. No records are shown."
+  },
+  "staterecords-org-network-mississippicourtrecords-us": {
+    "checked": "2026-10-18",
+    "paywall": true,
+    "kind": "register_or_purchase",
+    "evidence": "A synthetic search (John Smith, CO) posted to https://mississippicourtrecords.us/search/loading/ returned a page that says a search of any records will only be conducted and made available after you register for an account or purchase a report. No records are shown."
+  },
+  "staterecords-org-network-missouricourtrecords-us": {
+    "checked": "2026-10-18",
+    "paywall": true,
+    "kind": "register_or_purchase",
+    "evidence": "A synthetic search (John Smith, CO) posted to https://missouricourtrecords.us/search/loading/ returned a page that says a search of any records will only be conducted and made available after you register for an account or purchase a report. No records are shown."
+  },
+  "staterecords-org-network-montanacourtrecords-us": {
+    "checked": "2026-10-18",
+    "paywall": true,
+    "kind": "register_or_purchase",
+    "evidence": "A synthetic search (John Smith, CO) posted to https://montanacourtrecords.us/search/loading/ returned a page that says a search of any records will only be conducted and made available after you register for an account or purchase a report. No records are shown."
+  },
+  "staterecords-org-network-nebraskacourtrecords-us": {
+    "checked": "2026-10-18",
+    "paywall": true,
+    "kind": "register_or_purchase",
+    "evidence": "A synthetic search (John Smith, CO) posted to https://nebraskacourtrecords.us/search/loading/ returned a page that says a search of any records will only be conducted and made available after you register for an account or purchase a report. No records are shown."
+  },
+  "staterecords-org-network-nevadacourtrecords-us": {
+    "checked": "2026-10-18",
+    "paywall": true,
+    "kind": "register_or_purchase",
+    "evidence": "A synthetic search (John Smith, CO) posted to https://nevadacourtrecords.us/search/loading/ returned a page that says a search of any records will only be conducted and made available after you register for an account or purchase a report. No records are shown."
+  },
+  "staterecords-org-network-newhampshirecourtrecords-us": {
+    "checked": "2026-10-18",
+    "paywall": true,
+    "kind": "register_or_purchase",
+    "evidence": "A synthetic search (John Smith, CO) posted to https://newhampshirecourtrecords.us/search/loading/ returned a page that says a search of any records will only be conducted and made available after you register for an account or purchase a report. No records are shown."
+  },
+  "staterecords-org-network-newjerseycourtrecords-us": {
+    "checked": "2026-10-18",
+    "paywall": true,
+    "kind": "register_or_purchase",
+    "evidence": "A synthetic search (John Smith, CO) posted to https://newjerseycourtrecords.us/search/loading/ returned a page that says a search of any records will only be conducted and made available after you register for an account or purchase a report. No records are shown."
+  },
+  "staterecords-org-network-newmexicocourtrecords-us": {
+    "checked": "2026-10-18",
+    "paywall": true,
+    "kind": "register_or_purchase",
+    "evidence": "A synthetic search (John Smith, CO) posted to https://newmexicocourtrecords.us/search/loading/ returned a page that says a search of any records will only be conducted and made available after you register for an account or purchase a report. No records are shown."
+  },
+  "staterecords-org-network-newyorkcourtrecords-us": {
+    "checked": "2026-10-18",
+    "paywall": true,
+    "kind": "register_or_purchase",
+    "evidence": "A synthetic search (John Smith, CO) posted to https://newyorkcourtrecords.us/search/loading/ returned a page that says a search of any records will only be conducted and made available after you register for an account or purchase a report. No records are shown."
+  },
+  "staterecords-org-network-northcarolinacourtrecords-us": {
+    "checked": "2026-10-18",
+    "paywall": true,
+    "kind": "register_or_purchase",
+    "evidence": "A synthetic search (John Smith, CO) posted to https://northcarolinacourtrecords.us/search/loading/ returned a page that says a search of any records will only be conducted and made available after you register for an account or purchase a report. No records are shown."
+  },
+  "staterecords-org-network-northdakotacourtrecords-us": {
+    "checked": "2026-10-18",
+    "paywall": true,
+    "kind": "register_or_purchase",
+    "evidence": "A synthetic search (John Smith, CO) posted to https://northdakotacourtrecords.us/search/loading/ returned a page that says a search of any records will only be conducted and made available after you register for an account or purchase a report. No records are shown."
+  },
+  "staterecords-org-network-ohiocourtrecords-us": {
+    "checked": "2026-10-18",
+    "paywall": true,
+    "kind": "register_or_purchase",
+    "evidence": "A synthetic search (John Smith, CO) posted to https://ohiocourtrecords.us/search/loading/ returned a page that says a search of any records will only be conducted and made available after you register for an account or purchase a report. No records are shown."
+  },
+  "staterecords-org-network-oklahomacourtrecords-us": {
+    "checked": "2026-10-18",
+    "paywall": true,
+    "kind": "register_or_purchase",
+    "evidence": "A synthetic search (John Smith, CO) posted to https://oklahomacourtrecords.us/search/loading/ returned a page that says a search of any records will only be conducted and made available after you register for an account or purchase a report. No records are shown."
+  },
+  "staterecords-org-network-oregoncourtrecords-us": {
+    "checked": "2026-10-18",
+    "paywall": true,
+    "kind": "register_or_purchase",
+    "evidence": "A synthetic search (John Smith, CO) posted to https://oregoncourtrecords.us/search/loading/ returned a page that says a search of any records will only be conducted and made available after you register for an account or purchase a report. No records are shown."
+  },
+  "staterecords-org-network-pennsylvaniacourtrecords-us": {
+    "checked": "2026-10-18",
+    "paywall": true,
+    "kind": "register_or_purchase",
+    "evidence": "A synthetic search (John Smith, CO) posted to https://pennsylvaniacourtrecords.us/search/loading/ returned a page that says a search of any records will only be conducted and made available after you register for an account or purchase a report. No records are shown."
+  },
+  "staterecords-org-network-rhodeislandcourtrecords-us": {
+    "checked": "2026-10-18",
+    "paywall": true,
+    "kind": "register_or_purchase",
+    "evidence": "A synthetic search (John Smith, CO) posted to https://rhodeislandcourtrecords.us/search/loading/ returned a page that says a search of any records will only be conducted and made available after you register for an account or purchase a report. No records are shown."
+  },
+  "staterecords-org-network-southcarolinacourtrecords-us": {
+    "checked": "2026-10-18",
+    "paywall": true,
+    "kind": "register_or_purchase",
+    "evidence": "A synthetic search (John Smith, CO) posted to https://southcarolinacourtrecords.us/search/loading/ returned a page that says a search of any records will only be conducted and made available after you register for an account or purchase a report. No records are shown."
+  },
+  "staterecords-org-network-southdakotacourtrecords-us": {
+    "checked": "2026-10-18",
+    "paywall": true,
+    "kind": "register_or_purchase",
+    "evidence": "A synthetic search (John Smith, CO) posted to https://southdakotacourtrecords.us/search/loading/ returned a page that says a search of any records will only be conducted and made available after you register for an account or purchase a report. No records are shown."
+  },
+  "staterecords-org-network-tennesseecourtrecords-us": {
+    "checked": "2026-10-18",
+    "paywall": true,
+    "kind": "register_or_purchase",
+    "evidence": "A synthetic search (John Smith, CO) posted to https://tennesseecourtrecords.us/search/loading/ returned a page that says a search of any records will only be conducted and made available after you register for an account or purchase a report. No records are shown."
+  },
+  "staterecords-org-network-texascourtrecords-us": {
+    "checked": "2026-10-18",
+    "paywall": true,
+    "kind": "register_or_purchase",
+    "evidence": "A synthetic search (John Smith, CO) posted to https://texascourtrecords.us/search/loading/ returned a page that says a search of any records will only be conducted and made available after you register for an account or purchase a report. No records are shown."
+  },
+  "staterecords-org-network-utahcourtrecords-us": {
+    "checked": "2026-10-18",
+    "paywall": true,
+    "kind": "register_or_purchase",
+    "evidence": "A synthetic search (John Smith, CO) posted to https://utahcourtrecords.us/search/loading/ returned a page that says a search of any records will only be conducted and made available after you register for an account or purchase a report. No records are shown."
+  },
+  "staterecords-org-network-vermontcourtrecords-us": {
+    "checked": "2026-10-18",
+    "paywall": true,
+    "kind": "register_or_purchase",
+    "evidence": "A synthetic search (John Smith, CO) posted to https://vermontcourtrecords.us/search/loading/ returned a page that says a search of any records will only be conducted and made available after you register for an account or purchase a report. No records are shown."
+  },
+  "staterecords-org-network-virginiacourtrecords-us": {
+    "checked": "2026-10-18",
+    "paywall": true,
+    "kind": "register_or_purchase",
+    "evidence": "A synthetic search (John Smith, CO) posted to https://virginiacourtrecords.us/search/loading/ returned a page that says a search of any records will only be conducted and made available after you register for an account or purchase a report. No records are shown."
+  },
+  "staterecords-org-network-washingtoncourtrecords-us": {
+    "checked": "2026-10-18",
+    "paywall": true,
+    "kind": "register_or_purchase",
+    "evidence": "A synthetic search (John Smith, CO) posted to https://washingtoncourtrecords.us/search/loading/ returned a page that says a search of any records will only be conducted and made available after you register for an account or purchase a report. No records are shown."
+  },
+  "staterecords-org-network-westvirginiacourtrecords-us": {
+    "checked": "2026-10-18",
+    "paywall": true,
+    "kind": "register_or_purchase",
+    "evidence": "A synthetic search (John Smith, CO) posted to https://westvirginiacourtrecords.us/search/loading/ returned a page that says a search of any records will only be conducted and made available after you register for an account or purchase a report. No records are shown."
+  },
+  "staterecords-org-network-wisconsincourtrecords-us": {
+    "checked": "2026-10-18",
+    "paywall": true,
+    "kind": "register_or_purchase",
+    "evidence": "A synthetic search (John Smith, CO) posted to https://wisconsincourtrecords.us/search/loading/ returned a page that says a search of any records will only be conducted and made available after you register for an account or purchase a report. No records are shown."
+  },
+  "staterecords-org-network-wyomingcourtrecords-us": {
+    "checked": "2026-10-18",
+    "paywall": true,
+    "kind": "register_or_purchase",
+    "evidence": "A synthetic search (John Smith, CO) posted to https://wyomingcourtrecords.us/search/loading/ returned a page that says a search of any records will only be conducted and made available after you register for an account or purchase a report. No records are shown."
+  },
+  "searchbug-inc": {
+    "checked": "2026-10-18",
+    "paywall": true,
+    "kind": "register_or_purchase",
+    "evidence": "A synthetic people search (John Smith, Denver CO) landed on services/pay.aspx, titled 'People Search John Smith in Denver, CO | Order on Searchbug', which charges $1.95 for the people search. No records are shown before payment."
+  },
+  "archives-com-ancestry": {
+    "checked": "2026-10-18",
+    "paywall": true,
+    "kind": "register_or_purchase",
+    "evidence": "A synthetic search (John Smith) returned record counts only, with the message 'You must be a member to view these records!'. No records are shown without a membership."
+  },
+  "privateeye-confi-chek": {
+    "checked": "2026-10-18",
+    "not_a_person_search": true,
+    "kind": "affiliate_redirect",
+    "evidence": "A synthetic search (John Smith, Denver CO) opened peoplefinders.com results with an affiliate utm tag. The search is PeopleFinders' (catalog entry peoplefinders-confi-chek)."
+  },
+  "findmugshots": {
+    "checked": "2026-10-18",
+    "not_a_person_search": true,
+    "kind": "affiliate_redirect",
+    "evidence": "A synthetic search (John Smith, Denver CO) forwarded to peoplefinders.com. The search is PeopleFinders' (catalog entry peoplefinders-confi-chek)."
+  },
+  "glad-i-know": {
+    "checked": "2026-10-18",
+    "not_a_person_search": true,
+    "kind": "affiliate_redirect",
+    "evidence": "A synthetic search (John Smith, Denver CO) opened truthfinder.com/results in a new window. The search is TruthFinder's (catalog entry truthfinder-peopleconnect)."
+  },
+  "thepublicindex": {
+    "checked": "2026-10-18",
+    "not_a_person_search": true,
+    "kind": "affiliate_redirect",
+    "evidence": "A synthetic search (John Smith, Denver CO) opened a beenverified.com affiliate page. The search is BeenVerified's own."
+  },
+  "searchusapeople-infotracer": {
+    "checked": "2026-10-18",
+    "not_a_person_search": true,
+    "kind": "affiliate_redirect",
+    "evidence": "The stored search is https://infotracer.com/loading/?firstname=…&lastname=…, InfoTracer's report flow; the site has no search of its own. The search is InfoTracer's."
+  },
+  "dobsearch": {
+    "checked": "2026-10-18",
+    "not_a_person_search": true,
+    "kind": "affiliate_redirect",
+    "evidence": "The search form submits to htrk1.beenverified.com/aff_c, BeenVerified's affiliate tracking link, which answered 404 to a synthetic search. The site has no search of its own."
+  },
+  "illinois-prison-talk": {
+    "checked": "2026-10-18",
+    "not_a_person_search": true,
+    "kind": "affiliate_redirect",
+    "evidence": "The search form submits to htrk1.beenverified.com/aff_c, BeenVerified's affiliate tracking link, which answered 404 to a synthetic search. The site has no search of its own."
+  },
+  "search-systems-directory-of-links": {
+    "checked": "2026-10-18",
+    "not_a_person_search": true,
+    "kind": "affiliate_redirect",
+    "evidence": "The name form posts to click-ad.php, an ad click that forwards to htrk1.beenverified.com/aff_c (BeenVerified's affiliate tracker). The site is a directory of links with no person search of its own."
+  },
+  "recordsquarry-truthfinder": {
+    "checked": "2026-10-18",
+    "not_a_person_search": true,
+    "kind": "affiliate_redirect",
+    "evidence": "The stored search is a click-id redirect service (clickid-service…run.app/redirect-pass/) that answered 422 to a synthetic search; the catalog lists the site as a TruthFinder affiliate. The site has no search of its own."
+  },
+  "publicrecordscenter": {
+    "checked": "2026-10-18",
+    "not_a_person_search": true,
+    "kind": "affiliate_redirect",
+    "evidence": "The stored search is https://tracking.truthfinder.com?firstName=…&lastName=…, TruthFinder's affiliate tracker (it answered 403 to a synthetic search). The site has no search of its own; the search is TruthFinder's."
+  },
+  "criminalrecords-com-intelius": {
+    "checked": "2026-10-18",
+    "not_a_person_search": true,
+    "kind": "affiliate_redirect",
+    "evidence": "The stored search is https://tracking.intelius.com/?firstName=…&lastName=…, Intelius' affiliate tracking link (it answered a Cloudflare 403 to a synthetic search). The site has no search of its own; the search is Intelius' (catalog entry intelius-peopleconnect)."
+  },
+  "easybackgroundchecks-intelius": {
+    "checked": "2026-10-18",
+    "not_a_person_search": true,
+    "kind": "affiliate_redirect",
+    "evidence": "The stored search is https://tracking.intelius.com/?firstName=…&lastName=…, Intelius' affiliate tracking link (it answered a Cloudflare 403 to a synthetic search). The site has no search of its own; the search is Intelius' (catalog entry intelius-peopleconnect)."
+  },
+  "peoplefind-com-intelius": {
+    "checked": "2026-10-18",
+    "not_a_person_search": true,
+    "kind": "affiliate_redirect",
+    "evidence": "The stored search is https://tracking.intelius.com/?firstName=…&lastName=…, Intelius' affiliate tracking link (it answered a Cloudflare 403 to a synthetic search). The site has no search of its own; the search is Intelius' (catalog entry intelius-peopleconnect)."
+  },
+  "peoplefinder-peopleconnect": {
+    "checked": "2026-10-18",
+    "not_a_person_search": true,
+    "kind": "affiliate_redirect",
+    "evidence": "The stored search is https://tracking.intelius.com/?firstName=…&lastName=…, Intelius' affiliate tracking link (it answered a Cloudflare 403 to a synthetic search). The site has no search of its own; the search is Intelius' (catalog entry intelius-peopleconnect)."
+  },
+  "publicrecords-com-peopleconnect": {
+    "checked": "2026-10-18",
+    "not_a_person_search": true,
+    "kind": "affiliate_redirect",
+    "evidence": "The stored search is https://tracking.intelius.com/?firstName=…&lastName=…, Intelius' affiliate tracking link (it answered a Cloudflare 403 to a synthetic search). The site has no search of its own; the search is Intelius' (catalog entry intelius-peopleconnect)."
+  },
+  "snoopstation-intelius": {
+    "checked": "2026-10-18",
+    "not_a_person_search": true,
+    "kind": "affiliate_redirect",
+    "evidence": "The stored search is https://tracking.intelius.com/?firstName=…&lastName=…, Intelius' affiliate tracking link (it answered a Cloudflare 403 to a synthetic search). The site has no search of its own; the search is Intelius' (catalog entry intelius-peopleconnect)."
+  },
+  "experian": {
+    "checked": "2026-10-18",
+    "not_a_person_search": true,
+    "kind": "site_search",
+    "evidence": "The stored search form is the site search on the Experian homepage: a synthetic query lands on https://www.experian.com/?q=John+Smith. It searches the site's pages, not records about a person."
+  },
+  "liveramp": {
+    "checked": "2026-10-18",
+    "not_a_person_search": true,
+    "kind": "site_search",
+    "evidence": "The stored search form is the LiveRamp website search ('Search Results'): a synthetic query lands on https://liveramp.com/search?query=John+Smith. It searches the site's pages, not records about a person."
+  },
+  "aidentified-inc": {
+    "checked": "2026-10-18",
+    "not_a_person_search": true,
+    "kind": "site_search",
+    "evidence": "The stored search form is the Aidentified knowledge base search: a synthetic query lands on https://support.aidentified.com/kb-search-results?q=John+Smith. It searches the site's pages, not records about a person."
+  },
+  "azira-llc": {
+    "checked": "2026-10-18",
+    "not_a_person_search": true,
+    "kind": "site_search",
+    "evidence": "The stored search form is the Azira website search: a synthetic query lands on https://www.azira.com/search?query=John+Smith. It searches the site's pages, not records about a person."
+  },
+  "bridg-a-division-of-cardlytics-inc": {
+    "checked": "2026-10-18",
+    "not_a_person_search": true,
+    "kind": "site_search",
+    "evidence": "The stored search form is the Bridg website search: a synthetic query lands on https://www.bridg.com/search?query=John+Smith. It searches the site's pages, not records about a person."
+  },
+  "complete-medical-lists-inc": {
+    "checked": "2026-10-18",
+    "not_a_person_search": true,
+    "kind": "site_search",
+    "evidence": "The stored search form is a search of the mailing lists the company sells: a synthetic query lands on https://completemedicallists.com/mailing_lists_search_results.php?search=John+Smith. It searches the site's pages, not records about a person."
+  },
+  "definitive-healthcare-llc": {
+    "checked": "2026-10-18",
+    "not_a_person_search": true,
+    "kind": "site_search",
+    "evidence": "The stored search form is the Definitive Healthcare website search: a synthetic query lands on https://www.definitivehc.com/search?search=John+Smith. It searches the site's pages, not records about a person."
+  },
+  "leadspace-inc": {
+    "checked": "2026-10-18",
+    "not_a_person_search": true,
+    "kind": "site_search",
+    "evidence": "The stored search form is the Leadspace help centre search: a synthetic query lands on https://support.leadspace.com/hc/en-us/search?query=John+Smith. It searches the site's pages, not records about a person."
+  },
+  "opensend-inc": {
+    "checked": "2026-10-18",
+    "not_a_person_search": true,
+    "kind": "site_search",
+    "evidence": "The stored search form is the Opensend help centre search: a synthetic query lands on https://help.opensend.com/kb-search-results?q=John+Smith. It searches the site's pages, not records about a person."
+  },
+  "unacast-inc": {
+    "checked": "2026-10-18",
+    "not_a_person_search": true,
+    "kind": "site_search",
+    "evidence": "The stored search form is the Unacast website search: a synthetic query lands on https://www.unacast.com/search?query=John+Smith. It searches the site's pages, not records about a person."
+  },
+  "california-drop": {
+    "checked": "2026-10-18",
+    "not_a_person_search": true,
+    "kind": "site_search",
+    "evidence": "The stored search form is the privacy.ca.gov website search: a synthetic query lands on https://privacy.ca.gov/serp/?q=John+Smith. It searches the site's pages, not records about a person."
+  },
+  "global-source-data-solutions-inc": {
+    "checked": "2026-10-18",
+    "not_a_person_search": true,
+    "kind": "site_search",
+    "evidence": "The stored search form is the GSDSI sitewide search of products and resources: a synthetic query lands on https://www.gsdsi.com/search?q=John+Smith. It searches the site's pages, not records about a person."
+  },
+  "iqvia-digital-inc-privacyportal-onetrust-com": {
+    "checked": "2026-10-18",
+    "not_a_person_search": true,
+    "kind": "site_search",
+    "evidence": "The stored search form is the IQVIA Digital website search: a synthetic query lands on https://www.iqviadigital.com/hs-search-results?q=John+Smith. It searches the site's pages, not records about a person."
+  },
+  "skydeo-inc": {
+    "checked": "2026-10-18",
+    "not_a_person_search": true,
+    "kind": "site_search",
+    "evidence": "The stored search form is a search of Skydeo's audience segments: a synthetic query lands on https://skydeo.com/segments/?q=John+Smith. It searches the site's pages, not records about a person."
+  },
+  "clearbit": {
+    "checked": "2026-10-18",
+    "not_a_person_search": true,
+    "kind": "site_search",
+    "evidence": "The stored search form is the Clearbit help centre search: a synthetic query lands on https://help.clearbit.com/hc/en-us/search?query=John+Smith. It searches the site's pages, not records about a person."
+  },
+  "gravy-analytics": {
+    "checked": "2026-10-18",
+    "not_a_person_search": true,
+    "kind": "site_search",
+    "evidence": "The stored search form is the Gravy Analytics website search: a synthetic query lands on https://gravyanalytics.com/hs-search-results?q=John+Smith. It searches the site's pages, not records about a person."
+  },
+  "youradchoices-canada": {
+    "checked": "2026-10-18",
+    "not_a_person_search": true,
+    "kind": "site_search",
+    "evidence": "The stored search form is the AdChoices Canada website search: a synthetic query lands on https://youradchoices.ca/search?q=John+Smith. It searches the site's pages, not records about a person."
+  },
+  "cause-iq": {
+    "checked": "2026-10-18",
+    "not_a_person_search": true,
+    "kind": "site_search",
+    "evidence": "The stored search form is a search of nonprofit organizations: a synthetic query lands on https://www.causeiq.com/search/organizations/?q=John+Smith. It searches the site's pages, not records about a person."
+  },
+  "uk-open-electoral-register": {
+    "checked": "2026-10-18",
+    "not_a_person_search": true,
+    "kind": "site_search",
+    "evidence": "The stored search form is the GOV.UK website search, not the electoral register: a synthetic query lands on https://www.gov.uk/search/all?keywords=John+Smith. It searches the site's pages, not records about a person."
   }
 }
