@@ -1,0 +1,2047 @@
+{
+  "checkpeople": {
+    "checked": "2026-10-18",
+    "evidence": "Homepage people form id heroTabPeople, POST to /landing, hidden _token and aid. firstName and lastName are marked required; city is a text box; state is a dropdown starting \"All States\". The catalog stored no form (robots.txt had disallowed the scan).",
+    "result_check": "Submitting the form with a synthetic name through the browser-fetch service landed on a results page titled \"Results For: John Smith\" (information.com, the same operator's results host).",
+    "form": {
+      "method": "http_form_post",
+      "page_url": "https://checkpeople.com/",
+      "form_action": "https://checkpeople.com/landing",
+      "url_pattern": null,
+      "form_id": "heroTabPeople",
+      "form_name": null,
+      "submit_label": null,
+      "hidden_names": [
+        "_token",
+        "aid"
+      ],
+      "inputs": [
+        {
+          "name": "firstName",
+          "type": "text",
+          "canonical": "first_name",
+          "required": true,
+          "id": "heroFirstName",
+          "label": "First Name",
+          "placeholder": null
+        },
+        {
+          "name": "lastName",
+          "type": "text",
+          "canonical": "last_name",
+          "required": true,
+          "id": "heroLastName",
+          "label": "Last Name",
+          "placeholder": null
+        },
+        {
+          "name": "city",
+          "type": "text",
+          "canonical": "city",
+          "required": false,
+          "id": "heroCity",
+          "label": "City",
+          "placeholder": null
+        },
+        {
+          "name": "state",
+          "type": "select",
+          "canonical": null,
+          "required": false,
+          "id": "heroState",
+          "label": null,
+          "placeholder": null
+        }
+      ]
+    },
+    "captcha_widget": false
+  },
+  "information-com": {
+    "checked": "2026-10-18",
+    "evidence": "Homepage name form (firstName, lastName, city, state). Its script sends the search as a GET to /pf/<id>/searching, which forwards to /pf/nso1/res with the same parameters. The catalog stored no form (robots.txt had disallowed the scan).",
+    "result_check": "GET /pf/nso1/res?firstName=John&lastName=Smith&city=&state= returned a results page titled \"Results For: John Smith\". The nso1 path segment is the site's own results path and may change.",
+    "form": {
+      "method": "http_get",
+      "page_url": "https://information.com/",
+      "form_action": "https://information.com/pf/nso1/res",
+      "url_pattern": "https://information.com/pf/nso1/res?firstName={firstName}&lastName={lastName}&city={city}&state={state}",
+      "form_id": null,
+      "form_name": null,
+      "submit_label": null,
+      "hidden_names": [],
+      "inputs": [
+        {
+          "name": "firstName",
+          "type": "text",
+          "canonical": "first_name",
+          "required": false,
+          "id": "firstName",
+          "label": "First Name",
+          "placeholder": null
+        },
+        {
+          "name": "lastName",
+          "type": "text",
+          "canonical": "last_name",
+          "required": false,
+          "id": "lastName",
+          "label": "Last Name",
+          "placeholder": null
+        },
+        {
+          "name": "city",
+          "type": "text",
+          "canonical": "city",
+          "required": false,
+          "id": "city",
+          "label": "City",
+          "placeholder": null
+        },
+        {
+          "name": "state",
+          "type": "select",
+          "canonical": null,
+          "required": false,
+          "id": null,
+          "label": null,
+          "placeholder": null
+        }
+      ]
+    },
+    "captcha_widget": false
+  },
+  "peoplesearch-whitepages": {
+    "checked": "2026-10-18",
+    "evidence": "Homepage form, GET to /search. s_name is required with placeholder \"e.g. Jon Snow\" (a whole name); s_loc is a combined city-and-state box and stays untagged. The stored form had s_name untagged. The rendered page had no CAPTCHA widget, so the stored reCAPTCHA marker is cleared.",
+    "result_check": "GET /search?s_name=John+Smith returned \"John Smith Phone Number & Address (100+ People Found)\".",
+    "form": {
+      "method": "http_get",
+      "page_url": "https://peoplesearch.com/",
+      "form_action": "https://peoplesearch.com/search",
+      "url_pattern": null,
+      "form_id": null,
+      "form_name": null,
+      "submit_label": null,
+      "hidden_names": [],
+      "inputs": [
+        {
+          "name": "s_name",
+          "type": "text",
+          "canonical": "full_name",
+          "required": true,
+          "id": "name-input",
+          "label": null,
+          "placeholder": "e.g. Jon Snow"
+        },
+        {
+          "name": "s_loc",
+          "type": "text",
+          "canonical": null,
+          "required": false,
+          "id": "location-input",
+          "label": null,
+          "placeholder": "e.g. New York, NY"
+        }
+      ]
+    },
+    "captcha_widget": false
+  },
+  "whitepages-411-com": {
+    "checked": "2026-10-18",
+    "evidence": "Homepage form discovery-person-form has s_name (required, \"e.g. John Smith\") and s_loc, but a plain GET of its /search action returns 404: the page's script sends the name to /person-search/First-Last. url_pattern stores that path. The two controls are the path's parts, not page control names.",
+    "result_check": "The browser-fetch form submit of s_name=John Smith landed on /person-search/John-Smith, and a direct GET of that URL returned \"John Smith | Phone Number & Address | 411\". /person-search/John%20Smith returns 404, hence first and last name.",
+    "form": {
+      "method": "http_get",
+      "page_url": "https://www.411.com/",
+      "form_action": "https://www.411.com/person-search/",
+      "url_pattern": "https://www.411.com/person-search/{first_name}-{last_name}",
+      "form_id": null,
+      "form_name": null,
+      "submit_label": null,
+      "hidden_names": [],
+      "inputs": [
+        {
+          "name": "first_name",
+          "type": "text",
+          "canonical": "first_name",
+          "required": true,
+          "id": null,
+          "label": "Name (first part of the result path)",
+          "placeholder": null
+        },
+        {
+          "name": "last_name",
+          "type": "text",
+          "canonical": "last_name",
+          "required": true,
+          "id": null,
+          "label": "Name (last part of the result path)",
+          "placeholder": null
+        }
+      ]
+    },
+    "captcha_widget": false
+  },
+  "phonebooks-com": {
+    "checked": "2026-10-18",
+    "evidence": "Homepage Name Search box (data-testid search-bar, no name attribute; the page builds the URL in script). Submitting it opens /employee-results?name=<name>. The catalog had the form with nameless controls, which Frame drops. The rendered page had no CAPTCHA widget, so the stored Turnstile marker is cleared.",
+    "result_check": "GET /employee-results?name=John+Smith returned \"We Have 247 Results for John Smith\" with ages and cities.",
+    "form": {
+      "method": "http_get",
+      "page_url": "https://www.phonebooks.com/",
+      "form_action": "https://www.phonebooks.com/employee-results",
+      "url_pattern": "https://www.phonebooks.com/employee-results?name={name}",
+      "form_id": null,
+      "form_name": null,
+      "submit_label": null,
+      "hidden_names": [],
+      "inputs": [
+        {
+          "name": "name",
+          "type": "search",
+          "canonical": "full_name",
+          "required": true,
+          "id": null,
+          "label": "Name Search",
+          "placeholder": "Name Search"
+        }
+      ]
+    },
+    "captcha_widget": false
+  },
+  "ufind-name": {
+    "checked": "2026-10-18",
+    "evidence": "Homepage form, GET to /search, q is required with placeholder \"Enter the name\". The catalog stored no form (robots.txt had disallowed the scan). Country US: the result page lists US cities and states.",
+    "result_check": "GET /search?q=John+Smith redirected to /John+Smith, titled \"John Smith: 400 records - Addresses, Phone Numbers, Cars\".",
+    "form": {
+      "method": "http_get",
+      "page_url": "https://ufind.name/",
+      "form_action": "https://ufind.name/search",
+      "url_pattern": null,
+      "form_id": null,
+      "form_name": null,
+      "submit_label": null,
+      "hidden_names": [],
+      "inputs": [
+        {
+          "name": "q",
+          "type": "text",
+          "canonical": "full_name",
+          "required": true,
+          "id": "inpSearchMainPage",
+          "label": null,
+          "placeholder": "Enter the name"
+        }
+      ]
+    },
+    "captcha_widget": false,
+    "country": "US"
+  },
+  "advancedbackgroundchecks": {
+    "checked": "2026-10-18",
+    "evidence": "Homepage form with First Name and Last Name (both required), City (optional) and State (optional). The inputs have no name attribute; the page's script opens /find/name/first-last. The catalog stored the nameless controls, which Frame drops. The rendered page had no CAPTCHA widget, so the stored reCAPTCHA marker is cleared.",
+    "result_check": "A browser submit of John / Smith opened /find/name/john-smith. GET of that URL through the browser-fetch service returned \"John Smith - Public Records Search\". A second read hit a Cloudflare challenge, so results are intermittent.",
+    "form": {
+      "method": "http_get",
+      "page_url": "https://www.advancedbackgroundchecks.com/",
+      "form_action": "https://www.advancedbackgroundchecks.com/find/name/",
+      "url_pattern": "https://www.advancedbackgroundchecks.com/find/name/{first_name}-{last_name}",
+      "form_id": null,
+      "form_name": null,
+      "submit_label": null,
+      "hidden_names": [],
+      "inputs": [
+        {
+          "name": "first_name",
+          "type": "text",
+          "canonical": "first_name",
+          "required": true,
+          "id": null,
+          "label": "First Name",
+          "placeholder": null
+        },
+        {
+          "name": "last_name",
+          "type": "text",
+          "canonical": "last_name",
+          "required": true,
+          "id": null,
+          "label": "Last Name",
+          "placeholder": null
+        }
+      ]
+    },
+    "captcha_widget": false
+  },
+  "usa-people-search": {
+    "checked": "2026-10-18",
+    "evidence": "Homepage form id PeopleForm, POST to /Results/Search, hidden _token and IsOptOut. Name has placeholder \"Full Name\"; Location (\"City, State\") stays untagged. The catalog stored no form (robots.txt had disallowed the scan). Country US from the site name and the US \"City, State\" location box.",
+    "result_check": "The browser-fetch form submit landed on /name/john-smith, which answered with a Cloudflare challenge the service did not clear. The form is right; the results page is walled.",
+    "form": {
+      "method": "http_form_post",
+      "page_url": "https://www.usa-people-search.com/",
+      "form_action": "https://www.usa-people-search.com/Results/Search",
+      "url_pattern": null,
+      "form_id": "PeopleForm",
+      "form_name": null,
+      "submit_label": null,
+      "hidden_names": [
+        "_token",
+        "IsOptOut"
+      ],
+      "inputs": [
+        {
+          "name": "Name",
+          "type": "text",
+          "canonical": "full_name",
+          "required": false,
+          "id": "FullName",
+          "label": null,
+          "placeholder": "Full Name"
+        },
+        {
+          "name": "Location",
+          "type": "text",
+          "canonical": null,
+          "required": false,
+          "id": "Location",
+          "label": null,
+          "placeholder": "City, State"
+        }
+      ]
+    },
+    "captcha_widget": false,
+    "country": "US"
+  },
+  "searchpeoplefree": {
+    "checked": "2026-10-18",
+    "evidence": "Homepage form (Alpine.js x-model first, middle, last, location; no name attributes). The script opens /find/first-last. The catalog stored the nameless controls, which Frame drops.",
+    "result_check": "A browser submit of John / Smith opened /find/john-smith behind a Cloudflare challenge; the browser-fetch service's read of /find/John-Smith failed with a 403. The form is right; the results page is walled.",
+    "form": {
+      "method": "http_get",
+      "page_url": "https://www.searchpeoplefree.com/",
+      "form_action": "https://www.searchpeoplefree.com/find/",
+      "url_pattern": "https://www.searchpeoplefree.com/find/{first_name}-{last_name}",
+      "form_id": null,
+      "form_name": null,
+      "submit_label": null,
+      "hidden_names": [],
+      "inputs": [
+        {
+          "name": "first_name",
+          "type": "text",
+          "canonical": "first_name",
+          "required": true,
+          "id": null,
+          "label": "First Name",
+          "placeholder": null
+        },
+        {
+          "name": "last_name",
+          "type": "text",
+          "canonical": "last_name",
+          "required": true,
+          "id": null,
+          "label": "Last Name",
+          "placeholder": null
+        }
+      ]
+    },
+    "captcha_widget": false
+  },
+  "names-and-facts": {
+    "checked": "2026-10-18",
+    "evidence": "Homepage form id search-person-form, GET to /search. The search box has label \"Search people\" and placeholder \"Name & Last Name\". The catalog stored no form (robots.txt had disallowed the scan).",
+    "result_check": "GET /search?search=John+Smith answered with a Cloudflare challenge the browser-fetch service did not clear (twice). The form is right; the results page is walled.",
+    "form": {
+      "method": "http_get",
+      "page_url": "https://namesandfacts.com/",
+      "form_action": "https://namesandfacts.com/search",
+      "url_pattern": null,
+      "form_id": "search-person-form",
+      "form_name": null,
+      "submit_label": null,
+      "hidden_names": [],
+      "inputs": [
+        {
+          "name": "search",
+          "type": "search",
+          "canonical": "full_name",
+          "required": false,
+          "id": "main-search-input",
+          "label": "Search people",
+          "placeholder": "Name & Last Name"
+        }
+      ]
+    },
+    "captcha_widget": false
+  },
+  "voteref": {
+    "checked": "2026-10-18",
+    "evidence": "Homepage form id search_form, GET to /. A states dropdown (first choice \"All States\", value empty) and a search box with placeholder \"Search Registered Voters by Name or Address…\". The catalog stored no form (robots.txt had disallowed the scan). Country US: the dropdown lists US states and the site publishes US voter rolls.",
+    "result_check": "GET /?states_select=&search=John+Smith answered with a Cloudflare challenge the browser-fetch service did not clear. The form is right; the results page is walled.",
+    "form": {
+      "method": "http_get",
+      "page_url": "https://voteref.com/",
+      "form_action": "https://voteref.com/",
+      "url_pattern": null,
+      "form_id": "search_form",
+      "form_name": null,
+      "submit_label": null,
+      "hidden_names": [],
+      "inputs": [
+        {
+          "name": "states_select",
+          "type": "select",
+          "canonical": null,
+          "required": false,
+          "id": "states",
+          "label": null,
+          "placeholder": null
+        },
+        {
+          "name": "search",
+          "type": "search",
+          "canonical": "full_name",
+          "required": false,
+          "id": "voter-search",
+          "label": null,
+          "placeholder": "Search Registered Voters by Name or Address…"
+        }
+      ]
+    },
+    "captcha_widget": false,
+    "country": "US"
+  },
+  "whitepages": {
+    "checked": "2026-10-18",
+    "evidence": "Homepage name form, GET to /header-search/name, s_name required (\"e.g. John Snow\") and s_loc (\"e.g. Seattle, WA\", untagged). The catalog had stored the phone box on the privacy-choices page as the search, so Frame asked for a phone number.",
+    "result_check": "GET /header-search/name?s_name=John+Smith redirected to /name/John-Smith?searchedName=John%20Smith, which answered with a Cloudflare challenge the browser-fetch service did not clear. The form is right; the results page is walled.",
+    "form": {
+      "method": "http_get",
+      "page_url": "https://www.whitepages.com/",
+      "form_action": "https://www.whitepages.com/header-search/name",
+      "url_pattern": null,
+      "form_id": null,
+      "form_name": null,
+      "submit_label": null,
+      "hidden_names": [],
+      "inputs": [
+        {
+          "name": "s_name",
+          "type": "text",
+          "canonical": "full_name",
+          "required": true,
+          "id": "desktop-sticky-name-input",
+          "label": null,
+          "placeholder": "e.g. John Snow"
+        },
+        {
+          "name": "s_loc",
+          "type": "text",
+          "canonical": null,
+          "required": false,
+          "id": "desktop-sticky-location-input",
+          "label": null,
+          "placeholder": "e.g. Seattle, WA"
+        }
+      ]
+    },
+    "captcha_widget": false
+  },
+  "voterrecords-com": {
+    "checked": "2026-10-18",
+    "evidence": "Homepage form id searchForm has one search box (name search, placeholder \"John M Smith\") with action \"#\". The page's Search() script strips non-letters, joins the words with hyphens, lowercases them, and opens /voters/<first>-<last>/1. url_pattern stores that path. The two controls are the path's parts, not page control names. The catalog stored no form (robots.txt had disallowed the scan). Country US: the site says it holds more than 100 million US voter records.",
+    "result_check": "GET /voters/John-Smith/1 (and /voters/john-smith/1) returned \"John Smith has 5,111 Voter Records\".",
+    "form": {
+      "method": "http_get",
+      "page_url": "https://voterrecords.com/",
+      "form_action": "https://voterrecords.com/voters/",
+      "url_pattern": "https://voterrecords.com/voters/{first_name}-{last_name}/1",
+      "form_id": null,
+      "form_name": null,
+      "submit_label": null,
+      "hidden_names": [],
+      "inputs": [
+        {
+          "name": "first_name",
+          "type": "text",
+          "canonical": "first_name",
+          "required": true,
+          "id": null,
+          "label": "Name (first part of the result path)",
+          "placeholder": null
+        },
+        {
+          "name": "last_name",
+          "type": "text",
+          "canonical": "last_name",
+          "required": true,
+          "id": null,
+          "label": "Name (last part of the result path)",
+          "placeholder": null
+        }
+      ]
+    },
+    "captcha_widget": false,
+    "country": "US"
+  },
+  "npir-org": {
+    "checked": "2026-10-18",
+    "evidence": "Homepage form, GET to /npi, one required search box with placeholder \"Search by name or NPI number\" (the NPI registry of US health care providers). The catalog stored no form (a Cloudflare challenge stopped the scan). Country US: NPI numbers are issued by the US Centers for Medicare & Medicaid Services.",
+    "result_check": "GET /npi?search=John+Smith returned \"NPI Lookup - Search the NPI Registry\" listing John Smith providers.",
+    "form": {
+      "method": "http_get",
+      "page_url": "https://npir.org/",
+      "form_action": "https://npir.org/npi",
+      "url_pattern": null,
+      "form_id": null,
+      "form_name": null,
+      "submit_label": null,
+      "hidden_names": [],
+      "inputs": [
+        {
+          "name": "search",
+          "type": "search",
+          "canonical": "full_name",
+          "required": true,
+          "id": null,
+          "label": null,
+          "placeholder": "Search by name or NPI number"
+        }
+      ]
+    },
+    "captcha_widget": false,
+    "country": "US"
+  },
+  "background-hawk-truthfinder": {
+    "checked": "2026-10-18",
+    "evidence": "The live homepage search form's state dropdown lists the US states (Alabama … Wyoming) and no Canadian province. The stored form kept the dropdown without its choices, so no country was derived. The live search form sends the name to tracking.truthfinder.com, TruthFinder's affiliate tracker; a synthetic search (John Smith, Denver CO) ended on a 404 there. The search is TruthFinder's (catalog entry truthfinder-peopleconnect).",
+    "country": "US",
+    "not_a_person_search": true,
+    "kind": "affiliate_redirect"
+  },
+  "peoplefinders-confi-chek": {
+    "checked": "2026-10-18",
+    "evidence": "Homepage name form (unnamed First name, Last name, City (Optional), state select) is submitted by script to /people/<first>-<last>/<state>/<city>. The stored GET /?first_name=…&last_name=… only reloads the homepage, and it also tagged phone, email, and postal boxes from other tabs. Frame fills path placeholders as lowercase slugs and stops the path before the first segment it cannot fill, so a person with no city still gets the name (and state) page. The live homepage search form's state dropdown lists the US states (Alabama … Wyoming) and no Canadian province. The stored form kept no choices, so no country was derived.",
+    "result_check": "Rendered 2026-10-18 (US exit): a scripted submit of John / Smith / Denver / Colorado landed on /people/john-smith/co/denver?landing=all (\"We found 100 results for John Smith in Denver, CO\"); /people/john-smith answered \"We found 100 results for John Smith in the United States\".",
+    "form": {
+      "method": "http_get",
+      "page_url": "https://www.peoplefinders.com/",
+      "form_action": "https://www.peoplefinders.com/people/",
+      "url_pattern": "https://www.peoplefinders.com/people/{first_name}-{last_name}/{region}/{city}",
+      "form_id": null,
+      "form_name": null,
+      "submit_label": null,
+      "hidden_names": [],
+      "inputs": [
+        {
+          "name": "first_name",
+          "type": "text",
+          "canonical": "first_name",
+          "required": true,
+          "id": null,
+          "label": "First name (part of the result path)",
+          "placeholder": null
+        },
+        {
+          "name": "last_name",
+          "type": "text",
+          "canonical": "last_name",
+          "required": true,
+          "id": null,
+          "label": "Last name (part of the result path)",
+          "placeholder": null
+        },
+        {
+          "name": "region",
+          "type": "text",
+          "canonical": "region",
+          "required": false,
+          "id": null,
+          "label": "State code (path segment)",
+          "placeholder": null
+        },
+        {
+          "name": "city",
+          "type": "text",
+          "canonical": "city",
+          "required": false,
+          "id": null,
+          "label": "City (path segment)",
+          "placeholder": null
+        }
+      ]
+    },
+    "country": "US"
+  },
+  "peoplesearchnow": {
+    "checked": "2026-10-18",
+    "evidence": "The live homepage search form's state dropdown lists the US states (Alabama … Wyoming) and no Canadian province, and the page names the United States. The stored form kept no choices, so no country was derived.",
+    "country": "US"
+  },
+  "secretinfo": {
+    "checked": "2026-10-18",
+    "evidence": "The live search page (/name/landing) has a state dropdown listing the US states (Alabama … Wyoming) and no Canadian province.",
+    "country": "US"
+  },
+  "truthviewer": {
+    "checked": "2026-10-18",
+    "evidence": "The live search page (/review/peopleSearch/list) has a state dropdown listing the US states (Alabama … Wyoming) and no Canadian province, and says its search is nationwide.",
+    "country": "US"
+  },
+  "alumni-us": {
+    "checked": "2026-10-18",
+    "evidence": "The live homepage title is \"Alumni US | All the best American graduates in one site!\".",
+    "country": "US"
+  },
+  "claritas-llc": {
+    "checked": "2026-10-18",
+    "not_a_person_search": true,
+    "kind": "contact",
+    "evidence": "The stored search form on https://claritas.com/ is a sales, demo, newsletter, or contact form, not a search for a person: submit button \"Submit\", controls Email; First Name* *; Last Name* *; Email Address* *; Phone*; Company* *; Management Level* *; Industry* *. Frame planned it as a name search and would have typed the person's name into a sales lead or contact form."
+  },
+  "lionshare-marketing-inc": {
+    "checked": "2026-10-18",
+    "not_a_person_search": true,
+    "kind": "contact",
+    "evidence": "The stored search form on https://www.lionsharemarketing.com/ is a sales, demo, newsletter, or contact form, not a search for a person: submit button \"Send\", controls your-name; your-email; CRM/Marketing Automation; Business Intelligence & Analytics; New Mover Programs/New Parent Programs; Digital Campaigns; Other; your-company. Frame planned it as a name search and would have typed the person's name into a sales lead or contact form."
+  },
+  "lusha-systems-inc": {
+    "checked": "2026-10-18",
+    "not_a_person_search": true,
+    "kind": "contact",
+    "evidence": "The stored search form on https://www.lusha.com/ is a sales, demo, newsletter, or contact form, not a search for a person: submit button \"Submit\", controls Work email address; First name; Last name; Phone number; What is your current position? (Title); How many employees in your company?; How can we help?. Frame planned it as a name search and would have typed the person's name into a sales lead or contact form."
+  },
+  "affinity-solutions": {
+    "checked": "2026-10-18",
+    "not_a_person_search": true,
+    "kind": "contact",
+    "evidence": "The stored search form on https://www.affinity.solutions/ is a sales, demo, newsletter, or contact form, not a search for a person: submit button \"Submit Form\", controls Δ; First Name *; Last Name *; Email *; Company *; Industry *; Job Title *; Comments. Frame planned it as a name search and would have typed the person's name into a sales lead or contact form."
+  },
+  "bb-direct-inc": {
+    "checked": "2026-10-18",
+    "not_a_person_search": true,
+    "kind": "contact",
+    "evidence": "The stored search form on https://www.bbdirect.com/ is a sales, demo, newsletter, or contact form, not a search for a person: submit button \"Get My Count Now\", controls First Name; Last Name; Email; Mobile Phone; Describe your Target Audience *; Enter:. Frame planned it as a name search and would have typed the person's name into a sales lead or contact form."
+  },
+  "cuebiq-group-llc": {
+    "checked": "2026-10-18",
+    "not_a_person_search": true,
+    "kind": "contact",
+    "evidence": "The stored search form on https://cuebiq.com/ is a sales, demo, newsletter, or contact form, not a search for a person: submit button \"Request Live Demo\", controls Email (Required); First Name (Required); Last Name (Required); Title (Required); Phone (Required); Company Name (Required). Frame planned it as a name search and would have typed the person's name into a sales lead or contact form."
+  },
+  "inbound-insight-llc": {
+    "checked": "2026-10-18",
+    "not_a_person_search": true,
+    "kind": "contact",
+    "evidence": "The stored search form on https://inboundinsight.com/ is a sales, demo, newsletter, or contact form, not a search for a person: submit button \"Send Message\", controls Name *; Email *; Phone; Message *; honeypot. Frame planned it as a name search and would have typed the person's name into a sales lead or contact form."
+  },
+  "jmr-media-consulting-inc": {
+    "checked": "2026-10-18",
+    "not_a_person_search": true,
+    "kind": "contact",
+    "evidence": "The stored search form on https://jmr-media.com/ is a sales, demo, newsletter, or contact form, not a search for a person: submit button \"None\", controls firstName; lastName; email. Frame planned it as a name search and would have typed the person's name into a sales lead or contact form."
+  },
+  "multimedia-lists-inc": {
+    "checked": "2026-10-18",
+    "not_a_person_search": true,
+    "kind": "contact",
+    "evidence": "The stored search form on https://multimedialists.com/ is a sales, demo, newsletter, or contact form, not a search for a person: submit button \"Subscribe\", controls First Name; Last Name; Email; Phone Number. Frame planned it as a name search and would have typed the person's name into a sales lead or contact form."
+  },
+  "owmn-ltd": {
+    "checked": "2026-10-18",
+    "not_a_person_search": true,
+    "kind": "contact",
+    "evidence": "The stored search form on https://www.thebridgecorp.com/ is a sales, demo, newsletter, or contact form, not a search for a person: submit button \"Submit\", controls First name *; Last name *; Work Email *; Phone number *; Company name *; Company Type *; Industry *; Primary Role *. Frame planned it as a name search and would have typed the person's name into a sales lead or contact form."
+  },
+  "plunge-llc": {
+    "checked": "2026-10-18",
+    "not_a_person_search": true,
+    "kind": "contact",
+    "evidence": "The stored search form on https://www.plungedigital.com/ is a sales, demo, newsletter, or contact form, not a search for a person: submit button \"Send\", controls First name; Last name; Company *; Email *; Phone; Street Address; Address Line 2; City. Frame planned it as a name search and would have typed the person's name into a sales lead or contact form."
+  },
+  "rhetorik-limited": {
+    "checked": "2026-10-18",
+    "not_a_person_search": true,
+    "kind": "contact",
+    "evidence": "The stored search form on https://rhetorik.com/request-a-demo/ is a sales, demo, newsletter, or contact form, not a search for a person: submit button \"Submit Form\", controls Updates; First Name; Last Name; Phone; Email; Message. Frame planned it as a name search and would have typed the person's name into a sales lead or contact form."
+  },
+  "ventiveiq-llc": {
+    "checked": "2026-10-18",
+    "not_a_person_search": true,
+    "kind": "contact",
+    "evidence": "The stored search form on https://ventiveiq.com/ is a sales, demo, newsletter, or contact form, not a search for a person: submit button \"Submit\", controls your-name; your-email; company-name; your-phone; services; I agree to allow Ventiveiq to communicat; I agree to allow Ventiveiq to store and . Frame planned it as a name search and would have typed the person's name into a sales lead or contact form."
+  },
+  "fushia-media-llc": {
+    "checked": "2026-10-18",
+    "not_a_person_search": true,
+    "kind": "contact",
+    "evidence": "The stored search form on https://fushiamedia.com/ is a sales, demo, newsletter, or contact form, not a search for a person: submit button \"Send Message Now\", controls Name Required; Email Address Required; Phone Optional; Message Required. Frame planned it as a name search and would have typed the person's name into a sales lead or contact form."
+  },
+  "reallygreatrate-inc": {
+    "checked": "2026-10-18",
+    "not_a_person_search": true,
+    "kind": "contact",
+    "evidence": "The stored search form on https://www.rgrmarketing.com/ is a sales, demo, newsletter, or contact form, not a search for a person: submit button \"Get Started\", controls Name *; Last name *; Email *; Phone *; Company *; Lead Type *; Notes. Frame planned it as a name search and would have typed the person's name into a sales lead or contact form."
+  },
+  "the-linea-1-mkt-sl": {
+    "checked": "2026-10-18",
+    "not_a_person_search": true,
+    "kind": "contact",
+    "evidence": "The stored search form on https://tl1mkt.com/ is a sales, demo, newsletter, or contact form, not a search for a person: submit button \"Talk to us →\", controls Name; Work email; Message (optional); I agree to the processing of my personal. Frame planned it as a name search and would have typed the person's name into a sales lead or contact form."
+  },
+  "vertical-int-inc": {
+    "checked": "2026-10-18",
+    "not_a_person_search": true,
+    "kind": "contact",
+    "evidence": "The stored search form on https://enrichlayer.com/ is a sales, demo, newsletter, or contact form, not a search for a person: submit button \"Talk to sales!\", controls _hp; Your full name; work@email.com; I agree to the Privacy Policy. Frame planned it as a name search and would have typed the person's name into a sales lead or contact form."
+  },
+  "amerilist": {
+    "checked": "2026-10-18",
+    "not_a_person_search": true,
+    "kind": "contact",
+    "evidence": "The stored search form on https://www.amerilist.com/ is a sales, demo, newsletter, or contact form, not a search for a person: submit button \"Sign Up!\", controls Email; First Name; g-recaptcha-response. Frame planned it as a name search and would have typed the person's name into a sales lead or contact form."
+  },
+  "intentmacro": {
+    "checked": "2026-10-18",
+    "not_a_person_search": true,
+    "kind": "contact",
+    "evidence": "The stored search form on https://intentmacro.com/ is a sales, demo, newsletter, or contact form, not a search for a person: submit button \"Submit\", controls Name*; Email*; Phone Number*; Company*; Job Title*; Message; Δ. Frame planned it as a name search and would have typed the person's name into a sales lead or contact form."
+  },
+  "mch": {
+    "checked": "2026-10-18",
+    "not_a_person_search": true,
+    "kind": "contact",
+    "evidence": "The stored search form on https://www.mchdata.com/ is a sales, demo, newsletter, or contact form, not a search for a person: submit button \"Submit\", controls First Name; Last Name; Email; Company; Custom-Pet; Why-Relationship. Frame planned it as a name search and would have typed the person's name into a sales lead or contact form."
+  },
+  "compact-information-systems-llc": {
+    "checked": "2026-10-18",
+    "not_a_person_search": true,
+    "kind": "optout",
+    "evidence": "The stored search form on https://privacy.deepsync.com/ is the broker's own opt-out, unsubscribe, privacy-request, or listing-change form, not a search for a person: submit button \"Submit request\", controls Myself; A deceased individual; Someone I'm authorized to represent; First name; Last name; Email address; Additional email 1; Additional email 2. Frame planned it as a name search and would have typed the person's name into an opt-out or privacy request (a removal channel, not a search)."
+  },
+  "datamentors-llc": {
+    "checked": "2026-10-18",
+    "not_a_person_search": true,
+    "kind": "optout",
+    "evidence": "The stored search form on https://optout.porchgroupmedia.com/ is the broker's own opt-out, unsubscribe, privacy-request, or listing-change form, not a search for a person: submit button \"Submit\", controls Myself; An Individual for whom I have legal guar; A deceased member of my family; First Name; First Name; Last Name; Address 1 [include Apt# if applicable]; City. Frame planned it as a name search and would have typed the person's name into an opt-out or privacy request (a removal channel, not a search)."
+  },
+  "m1-data-and-analytics-llc": {
+    "checked": "2026-10-18",
+    "not_a_person_search": true,
+    "kind": "optout",
+    "evidence": "The stored search form on https://m1-data.com/unsubscribe/ is the broker's own opt-out, unsubscribe, privacy-request, or listing-change form, not a search for a person: submit button \"SUBMIT UNSUBSCRIBE\", controls FName; LName; Address; Apartment; City; State; Zip; EmailId. Frame planned it as a name search and would have typed the person's name into an opt-out or privacy request (a removal channel, not a search)."
+  },
+  "publicnsa-llc": {
+    "checked": "2026-10-18",
+    "not_a_person_search": true,
+    "kind": "optout",
+    "evidence": "The stored search form on https://optout.bigdbm.com/ is the broker's own opt-out, unsubscribe, privacy-request, or listing-change form, not a search for a person: submit button \"Submit\", controls All; Address Only; Phone Only; Email Only; First Name; Last Name; Email; Phone. Frame planned it as a name search and would have typed the person's name into an opt-out or privacy request (a removal channel, not a search)."
+  },
+  "source-path-digital": {
+    "checked": "2026-10-18",
+    "not_a_person_search": true,
+    "kind": "optout",
+    "evidence": "The stored search form on https://sourcepathdigital.com/california-consumer-portal/ is the broker's own opt-out, unsubscribe, privacy-request, or listing-change form, not a search for a person: submit button \"Submit Privacy Request\", controls Delete my personal information; Tell me what personal information Source; Tell me what personal information Source; Correct inaccurate personal information ; Do not sell or share my personal informa; Limit the use or disclosure of my sensit; First Name *; Last Name *. Frame planned it as a name search and would have typed the person's name into an opt-out or privacy request (a removal channel, not a search)."
+  },
+  "the-alesco-group-llc": {
+    "checked": "2026-10-18",
+    "not_a_person_search": true,
+    "kind": "optout",
+    "evidence": "The stored search form on https://mydataprivacy.com/ is the broker's own opt-out, unsubscribe, privacy-request, or listing-change form, not a search for a person: submit button \"Download\", controls First Name *; Last Name *; Email Address *; Company Name. Frame planned it as a name search and would have typed the person's name into an opt-out or privacy request (a removal channel, not a search)."
+  },
+  "xcelerated-data-llc": {
+    "checked": "2026-10-18",
+    "not_a_person_search": true,
+    "kind": "optout",
+    "evidence": "The stored search form on https://xcelerated.com/unsubscribe/ is the broker's own opt-out, unsubscribe, privacy-request, or listing-change form, not a search for a person: submit button \"Submit Form\", controls First Name; Last Name; Your Address; Your Apt / Suite; Your City; Your State; Your Zip Code; Your Email. Frame planned it as a name search and would have typed the person's name into an opt-out or privacy request (a removal channel, not a search)."
+  },
+  "datalead": {
+    "checked": "2026-10-18",
+    "not_a_person_search": true,
+    "kind": "optout",
+    "evidence": "The stored search form on https://data-lead.com/support/removal_request is the broker's own opt-out, unsubscribe, privacy-request, or listing-change form, not a search for a person: submit button \"Send\", controls Full Name*; Email*; Phone; subject; https://data-lead.com/person/name/.../id; message; privacy; What is Eight + Three. Frame planned it as a name search and would have typed the person's name into an opt-out or privacy request (a removal channel, not a search)."
+  },
+  "tennhelp": {
+    "checked": "2026-10-18",
+    "not_a_person_search": true,
+    "kind": "optout",
+    "evidence": "The stored search form on https://www.tennhelp.com/public-resources/change-listing is the broker's own opt-out, unsubscribe, privacy-request, or listing-change form, not a search for a person: submit button \"Submit\", controls Last Name:; First Name:; City:; State Abbrev:; Company:; Your Position:; Email:; Phone Number:. Frame planned it as a name search and would have typed the person's name into an opt-out or privacy request (a removal channel, not a search)."
+  },
+  "fastpeoplesearch": {
+    "checked": "2026-10-18",
+    "evidence": "Homepage form id form-search-name has a required name box (id search-name-name, placeholder \"e.g John Doe\") and a combined \"City & State, or Zip\" box. Its action is /search, but the site's app.js cancels that submit and opens /name/<name slug>, adding _<location slug> when the location box is filled. The stored GET /search?name=John+Smith answers 404, so Frame's search never reached a results page. url_pattern stores the name-only path; the two controls are the path's parts, not page control names. The location variant is not stored: Frame drops a path segment it cannot fill completely, and a person without a city would then get no name either.",
+    "result_check": "Rendered locally 2026-10-18 (US exit): a scripted submit of \"John Smith\" landed on /name/john-smith, and \"John Smith\" + \"Denver, CO\" on /name/john-smith_denver-co. Both showed a Cloudflare challenge to the headless browser, so no result rows were read. GET /search?name=John+Smith returned HTTP 404.",
+    "form": {
+      "method": "http_get",
+      "page_url": "https://www.fastpeoplesearch.com/",
+      "form_action": "https://www.fastpeoplesearch.com/name/",
+      "url_pattern": "https://www.fastpeoplesearch.com/name/{first_name}-{last_name}",
+      "form_id": null,
+      "form_name": null,
+      "submit_label": null,
+      "hidden_names": [],
+      "inputs": [
+        {
+          "name": "first_name",
+          "type": "text",
+          "canonical": "first_name",
+          "required": true,
+          "id": null,
+          "label": "Name (first part of the result path)",
+          "placeholder": null
+        },
+        {
+          "name": "last_name",
+          "type": "text",
+          "canonical": "last_name",
+          "required": true,
+          "id": null,
+          "label": "Name (last part of the result path)",
+          "placeholder": null
+        }
+      ]
+    },
+    "captcha_widget": false
+  },
+  "anywho-intelius-peopleconnect": {
+    "checked": "2026-10-18",
+    "evidence": "Homepage name form (fullName, cityState) has no action: the page's script opens /people/<first>+<last>, then /<state>/<city> when a place is given. The stored GET /?fullName=…&cityState=… only reloads the homepage, so Frame never reached a results page. url_pattern stores the result path; the controls are the path's parts. Frame fills path placeholders as lowercase slugs and stops the path before the first segment it cannot fill, so a person with no city still gets the name (and state) page.",
+    "result_check": "Rendered 2026-10-18 (US exit): a scripted submit of \"John Smith\" landed on /people/john+smith (\"71,456 Reports for John Smith\"). /people/john+smith/co/denver answered \"549 Reports for John Smith in Denver, Colorado\", /people/john+smith/co \"2,251 Reports … in Colorado\", and /people/quillon+vanderwekken/co/denver \"Results Not Found for Quillon Vanderwekken in Denver, Colorado\".",
+    "form": {
+      "method": "http_get",
+      "page_url": "https://www.anywho.com/",
+      "form_action": "https://www.anywho.com/people/",
+      "url_pattern": "https://www.anywho.com/people/{first_name}+{last_name}/{region}/{city}",
+      "form_id": null,
+      "form_name": null,
+      "submit_label": null,
+      "hidden_names": [],
+      "inputs": [
+        {
+          "name": "first_name",
+          "type": "text",
+          "canonical": "first_name",
+          "required": true,
+          "id": null,
+          "label": "First name (part of the result path)",
+          "placeholder": null
+        },
+        {
+          "name": "last_name",
+          "type": "text",
+          "canonical": "last_name",
+          "required": true,
+          "id": null,
+          "label": "Last name (part of the result path)",
+          "placeholder": null
+        },
+        {
+          "name": "region",
+          "type": "text",
+          "canonical": "region",
+          "required": false,
+          "id": null,
+          "label": "State code (path segment)",
+          "placeholder": null
+        },
+        {
+          "name": "city",
+          "type": "text",
+          "canonical": "city",
+          "required": false,
+          "id": null,
+          "label": "City (path segment)",
+          "placeholder": null
+        }
+      ]
+    }
+  },
+  "intelius-peopleconnect-addresses-com": {
+    "checked": "2026-10-18",
+    "evidence": "Homepage name form (firstName, lastName, state select) has no action: the page's script opens /people/<first>+<last>/<state>/. The stored GET /?firstName=…&lastName=…&state=… only reloads the homepage. The form has no city box and a city segment answers 404, so none is stored. Frame fills path placeholders as lowercase slugs and stops the path before the first segment it cannot fill, so a person with no city still gets the name (and state) page.",
+    "result_check": "Rendered 2026-10-18 (US exit): a scripted submit of John / Smith / Colorado landed on /people/john+smith/co/ (\"Found 20 Results for John Smith in Colorado\"). /people/john+smith/co/denver answered HTTP 404.",
+    "form": {
+      "method": "http_get",
+      "page_url": "https://www.addresses.com/",
+      "form_action": "https://www.addresses.com/people/",
+      "url_pattern": "https://www.addresses.com/people/{first_name}+{last_name}/{region}/",
+      "form_id": null,
+      "form_name": null,
+      "submit_label": null,
+      "hidden_names": [],
+      "inputs": [
+        {
+          "name": "first_name",
+          "type": "text",
+          "canonical": "first_name",
+          "required": true,
+          "id": null,
+          "label": "First name (part of the result path)",
+          "placeholder": null
+        },
+        {
+          "name": "last_name",
+          "type": "text",
+          "canonical": "last_name",
+          "required": true,
+          "id": null,
+          "label": "Last name (part of the result path)",
+          "placeholder": null
+        },
+        {
+          "name": "region",
+          "type": "text",
+          "canonical": "region",
+          "required": false,
+          "id": null,
+          "label": "State code (path segment)",
+          "placeholder": null
+        }
+      ]
+    }
+  },
+  "freepeopledirectory-spokeo-data": {
+    "checked": "2026-10-18",
+    "evidence": "Homepage form id form-submit (fname, lname, address_data \"City & State\") has no action: the page's script opens /name/<First>-<Last>/<ST>/<City>. The stored GET to the homepage only reloads it. The site answers the lowercase path with the same page. Frame fills path placeholders as lowercase slugs and stops the path before the first segment it cannot fill, so a person with no city still gets the name (and state) page.",
+    "result_check": "Rendered 2026-10-18 (US exit): a scripted submit of John / Smith / \"Denver, CO\" landed on /name/John-Smith/CO/Denver (\"274 Reports for John Smith in Denver, CO\"). /name/john-smith/co/denver showed the same page, and /name/quillon-vanderwekken/co/denver answered \"No Result for \\\"Quillon Vanderwekken\\\"\".",
+    "form": {
+      "method": "http_get",
+      "page_url": "https://freepeopledirectory.com/",
+      "form_action": "https://freepeopledirectory.com/name/",
+      "url_pattern": "https://freepeopledirectory.com/name/{first_name}-{last_name}/{region}/{city}",
+      "form_id": null,
+      "form_name": null,
+      "submit_label": null,
+      "hidden_names": [],
+      "inputs": [
+        {
+          "name": "first_name",
+          "type": "text",
+          "canonical": "first_name",
+          "required": true,
+          "id": null,
+          "label": "First name (part of the result path)",
+          "placeholder": null
+        },
+        {
+          "name": "last_name",
+          "type": "text",
+          "canonical": "last_name",
+          "required": true,
+          "id": null,
+          "label": "Last name (part of the result path)",
+          "placeholder": null
+        },
+        {
+          "name": "region",
+          "type": "text",
+          "canonical": "region",
+          "required": false,
+          "id": null,
+          "label": "State code (path segment)",
+          "placeholder": null
+        },
+        {
+          "name": "city",
+          "type": "text",
+          "canonical": "city",
+          "required": false,
+          "id": null,
+          "label": "City (path segment)",
+          "placeholder": null
+        }
+      ]
+    }
+  },
+  "mylife": {
+    "checked": "2026-10-18",
+    "evidence": "Homepage form id search-form has one box, search (placeholder \"Enter any name\"), and no action: the page's script opens /pub-multisearch.pubview with search, searchFirstName, and searchLastName. The stored GET /?search=… only reloads the homepage. The script's searchLocation is not stored: with a city alone it returned no rows.",
+    "result_check": "Rendered 2026-10-18 (US exit): a scripted submit of \"John Smith\" landed on /pub-multisearch.pubview?search=John+Smith&searchFirstName=John&searchLastName=Smith&… (\"We Found 100 Results for John Smith\"); the same URL without the tracking parameters showed the same page.",
+    "form": {
+      "method": "http_get",
+      "page_url": "https://www.mylife.com/",
+      "form_action": "https://www.mylife.com/pub-multisearch.pubview",
+      "url_pattern": "https://www.mylife.com/pub-multisearch.pubview?search={search}&searchFirstName={searchFirstName}&searchLastName={searchLastName}",
+      "form_id": null,
+      "form_name": null,
+      "submit_label": null,
+      "hidden_names": [],
+      "inputs": [
+        {
+          "name": "search",
+          "type": "text",
+          "canonical": "full_name",
+          "required": true,
+          "id": "single-search-input",
+          "label": null,
+          "placeholder": "Enter any name"
+        },
+        {
+          "name": "searchFirstName",
+          "type": "text",
+          "canonical": "first_name",
+          "required": false,
+          "id": null,
+          "label": null,
+          "placeholder": null
+        },
+        {
+          "name": "searchLastName",
+          "type": "text",
+          "canonical": "last_name",
+          "required": false,
+          "id": null,
+          "label": null,
+          "placeholder": null
+        }
+      ]
+    }
+  },
+  "national-public-data": {
+    "checked": "2026-10-18",
+    "evidence": "Homepage form id page-search-form (main-search-name, main-search-location; the controls have ids, not names) is submitted by script as GET /search/?name=<name>, which forwards to the listing page /people/<surname initial>/<first>-<last>/. The stored GET /?main-search-name=… only reloads the homepage, and /people/<first>-<last>/ without the initial answers 404, so the search URL is stored, not the listing path. The location box is not stored: the site forwards to the same nationwide page with or without it.",
+    "result_check": "Rendered 2026-10-18 (US exit): /search/?name=John+Smith forwarded to /people/s/john-smith/ (\"John Smith 22037 people found\"); a scripted submit of \"Quillon Vanderwekken\" landed on /search/?name=Quillon+Vanderwekken (\"Quillon Vanderwekken: Results Not Found\").",
+    "form": {
+      "method": "http_get",
+      "page_url": "https://nationalpublicdata.com/",
+      "form_action": "https://nationalpublicdata.com/search/",
+      "url_pattern": "https://nationalpublicdata.com/search/?name={name}",
+      "form_id": null,
+      "form_name": null,
+      "submit_label": null,
+      "hidden_names": [],
+      "inputs": [
+        {
+          "name": "name",
+          "type": "text",
+          "canonical": "full_name",
+          "required": true,
+          "id": "main-search-name",
+          "label": "Enter a name",
+          "placeholder": null
+        }
+      ]
+    }
+  },
+  "onlinesearches-intelius-peopleconnect": {
+    "checked": "2026-10-18",
+    "evidence": "Homepage form (first_last_name, city_state) has no action: the page's script opens /name/<first>-<last>/<ST>/<City>?category=public. The stored GET to the homepage only reloads it. The lowercase path without the category parameter shows the same results. Frame fills path placeholders as lowercase slugs and stops the path before the first segment it cannot fill, so a person with no city still gets the name (and state) page.",
+    "result_check": "Rendered 2026-10-18 (US exit): a scripted submit of \"John Smith\" + \"Denver, CO\" landed on /name/john-smith/CO/Denver?category=public (\"10 Results found for John Smith\"); /name/john-smith/co/denver showed the same summary.",
+    "form": {
+      "method": "http_get",
+      "page_url": "https://www.publicrecords.onlinesearches.com/",
+      "form_action": "https://www.publicrecords.onlinesearches.com/name/",
+      "url_pattern": "https://www.publicrecords.onlinesearches.com/name/{first_name}-{last_name}/{region}/{city}",
+      "form_id": null,
+      "form_name": null,
+      "submit_label": null,
+      "hidden_names": [],
+      "inputs": [
+        {
+          "name": "first_name",
+          "type": "text",
+          "canonical": "first_name",
+          "required": true,
+          "id": null,
+          "label": "First name (part of the result path)",
+          "placeholder": null
+        },
+        {
+          "name": "last_name",
+          "type": "text",
+          "canonical": "last_name",
+          "required": true,
+          "id": null,
+          "label": "Last name (part of the result path)",
+          "placeholder": null
+        },
+        {
+          "name": "region",
+          "type": "text",
+          "canonical": "region",
+          "required": false,
+          "id": null,
+          "label": "State code (path segment)",
+          "placeholder": null
+        },
+        {
+          "name": "city",
+          "type": "text",
+          "canonical": "city",
+          "required": false,
+          "id": null,
+          "label": "City (path segment)",
+          "placeholder": null
+        }
+      ]
+    }
+  },
+  "spokeo-data": {
+    "checked": "2026-10-18",
+    "evidence": "PeopleWin homepage form (fullName, cityState) has no action: the page's script opens /<First>-<Last>/<State>/<City>. The stored GET /?fullName=… only reloads the homepage. The lowercase path with the state code shows the same page. Frame fills path placeholders as lowercase slugs and stops the path before the first segment it cannot fill, so a person with no city still gets the name (and state) page.",
+    "result_check": "Rendered 2026-10-18 (US exit): a scripted submit of \"John Smith\" + \"Denver, CO\" landed on /John-Smith/Colorado/Denver (\"John Smith in Denver, Colorado - 549 Results\"). /john-smith/co/denver showed the same page and /john-smith \"John Smith - 71,456 Results\".",
+    "form": {
+      "method": "http_get",
+      "page_url": "https://peoplewin.com/",
+      "form_action": "https://peoplewin.com/",
+      "url_pattern": "https://peoplewin.com/{first_name}-{last_name}/{region}/{city}",
+      "form_id": null,
+      "form_name": null,
+      "submit_label": null,
+      "hidden_names": [],
+      "inputs": [
+        {
+          "name": "first_name",
+          "type": "text",
+          "canonical": "first_name",
+          "required": true,
+          "id": null,
+          "label": "First name (part of the result path)",
+          "placeholder": null
+        },
+        {
+          "name": "last_name",
+          "type": "text",
+          "canonical": "last_name",
+          "required": true,
+          "id": null,
+          "label": "Last name (part of the result path)",
+          "placeholder": null
+        },
+        {
+          "name": "region",
+          "type": "text",
+          "canonical": "region",
+          "required": false,
+          "id": null,
+          "label": "State code (path segment)",
+          "placeholder": null
+        },
+        {
+          "name": "city",
+          "type": "text",
+          "canonical": "city",
+          "required": false,
+          "id": null,
+          "label": "City (path segment)",
+          "placeholder": null
+        }
+      ]
+    }
+  },
+  "zabasearch-peopleconnect-intelius": {
+    "checked": "2026-10-18",
+    "evidence": "Homepage form (firstName, lastName, city, state) has no action; the site's people pages are /people/<first>-<last>/<state>/. The stored GET /?firstName=…&type=… only reloads the homepage (the scripted submit did not leave it in the box's browser). No city segment is stored: the listing pages narrow by state. Frame fills path placeholders as lowercase slugs and stops the path before the first segment it cannot fill, so a person with no city still gets the name (and state) page. A name with no listing answers HTTP 404 here rather than a no-results page.",
+    "result_check": "Fetched 2026-10-18 (US exit, rendered): /people/john-smith/colorado/ and /people/john-smith/co/ both answered \"More than 10 records found for John Smith\"; /people/quillon-vanderwekken/co/ answered a 404 page.",
+    "form": {
+      "method": "http_get",
+      "page_url": "https://www.zabasearch.com/",
+      "form_action": "https://www.zabasearch.com/people/",
+      "url_pattern": "https://www.zabasearch.com/people/{first_name}-{last_name}/{region}/",
+      "form_id": null,
+      "form_name": null,
+      "submit_label": null,
+      "hidden_names": [],
+      "inputs": [
+        {
+          "name": "first_name",
+          "type": "text",
+          "canonical": "first_name",
+          "required": true,
+          "id": null,
+          "label": "First name (part of the result path)",
+          "placeholder": null
+        },
+        {
+          "name": "last_name",
+          "type": "text",
+          "canonical": "last_name",
+          "required": true,
+          "id": null,
+          "label": "Last name (part of the result path)",
+          "placeholder": null
+        },
+        {
+          "name": "region",
+          "type": "text",
+          "canonical": "region",
+          "required": false,
+          "id": null,
+          "label": "State code (path segment)",
+          "placeholder": null
+        }
+      ]
+    }
+  },
+  "spokeo": {
+    "checked": "2026-10-18",
+    "evidence": "Homepage form id homepage_hero_form (q) GETs /search?q=<name>, which forwards to the nationwide /<First>-<Last> page; the site's location pages are /<First>-<Last>/<State>/<City>, and it forwards the lowercase path with a state code there. Storing the location path narrows a common name to the person's city instead of the nationwide list. Frame fills path placeholders as lowercase slugs and stops the path before the first segment it cannot fill, so a person with no city still gets the name (and state) page.",
+    "result_check": "Rendered 2026-10-18 (US exit): /search?q=John+Smith forwarded to /John-Smith (\"John Smith (70,761 matches)\"); /john-smith/co/denver forwarded to /John-Smith/Colorado/Denver (\"John Smith in Denver, CO\", 621 results).",
+    "form": {
+      "method": "http_get",
+      "page_url": "https://www.spokeo.com/",
+      "form_action": "https://www.spokeo.com/",
+      "url_pattern": "https://www.spokeo.com/{first_name}-{last_name}/{region}/{city}",
+      "form_id": null,
+      "form_name": null,
+      "submit_label": null,
+      "hidden_names": [],
+      "inputs": [
+        {
+          "name": "first_name",
+          "type": "text",
+          "canonical": "first_name",
+          "required": true,
+          "id": null,
+          "label": "First name (part of the result path)",
+          "placeholder": null
+        },
+        {
+          "name": "last_name",
+          "type": "text",
+          "canonical": "last_name",
+          "required": true,
+          "id": null,
+          "label": "Last name (part of the result path)",
+          "placeholder": null
+        },
+        {
+          "name": "region",
+          "type": "text",
+          "canonical": "region",
+          "required": false,
+          "id": null,
+          "label": "State code (path segment)",
+          "placeholder": null
+        },
+        {
+          "name": "city",
+          "type": "text",
+          "canonical": "city",
+          "required": false,
+          "id": null,
+          "label": "City (path segment)",
+          "placeholder": null
+        }
+      ]
+    }
+  },
+  "alaska-arrests": {
+    "checked": "2026-10-18",
+    "paywall": true,
+    "kind": "paid_report_link",
+    "evidence": "A synthetic search (John Smith, Denver CO) at https://www.alaskaarrests.org/Results?fname=John&lname=Smith&state=CO&city=Denver returned a results page with no records. Its only link to records is a paid InfoTracer report (infotracer.net/loading)."
+  },
+  "arkansas-arrests": {
+    "checked": "2026-10-18",
+    "paywall": true,
+    "kind": "paid_report_link",
+    "evidence": "A synthetic search (John Smith, Denver CO) at https://www.arkansasarrests.org/Results?fname=John&lname=Smith&state=CO&city=Denver returned a results page with no records. Its only link to records is a paid InfoTracer report (infotracer.net/loading)."
+  },
+  "california-arrests": {
+    "checked": "2026-10-18",
+    "paywall": true,
+    "kind": "paid_report_link",
+    "evidence": "A synthetic search (John Smith, Denver CO) at https://www.californiaarrests.org/Results?fname=John&lname=Smith&state=CO&city=Denver returned a results page with no records. Its only link to records is a paid InfoTracer report (infotracer.net/loading)."
+  },
+  "colorado-arrests": {
+    "checked": "2026-10-18",
+    "paywall": true,
+    "kind": "paid_report_link",
+    "evidence": "A synthetic search (John Smith, Denver CO) at https://www.coloradoarrests.org/Results?fname=John&lname=Smith&state=CO&city=Denver returned a results page with no records. Its only link to records is a paid InfoTracer report (infotracer.net/loading)."
+  },
+  "florida-arrests": {
+    "checked": "2026-10-18",
+    "paywall": true,
+    "kind": "paid_report_link",
+    "evidence": "A synthetic search (John Smith, Denver CO) at https://www.flarrests.org/Results?fname=John&lname=Smith&state=CO&city=Denver returned a results page with no records. Its only link to records is a paid InfoTracer report (infotracer.net/loading)."
+  },
+  "georgia-arrests": {
+    "checked": "2026-10-18",
+    "paywall": true,
+    "kind": "paid_report_link",
+    "evidence": "A synthetic search (John Smith, Denver CO) at https://www.georgiaarrests.org/Results?fname=John&lname=Smith&state=CO&city=Denver returned a results page with no records. Its only link to records is a paid InfoTracer report (infotracer.net/loading)."
+  },
+  "hawaii-arrests": {
+    "checked": "2026-10-18",
+    "paywall": true,
+    "kind": "paid_report_link",
+    "evidence": "A synthetic search (John Smith, Denver CO) at https://www.hawaiiarrests.org/Results?fname=John&lname=Smith&state=CO&city=Denver returned a results page with no records. Its only link to records is a paid InfoTracer report (infotracer.net/loading)."
+  },
+  "idaho-arrests": {
+    "checked": "2026-10-18",
+    "paywall": true,
+    "kind": "paid_report_link",
+    "evidence": "The search form on https://www.idahoarrests.org/ sends the name to infotracer.com/loading, InfoTracer's paid report flow. The site itself shows no arrest records."
+  },
+  "iowa-arrests": {
+    "checked": "2026-10-18",
+    "paywall": true,
+    "kind": "paid_report_link",
+    "evidence": "A synthetic search (John Smith, Denver CO) at https://www.iowaarrests.org/Results?fname=John&lname=Smith&state=CO&city=Denver returned a results page with no records. Its only link to records is a paid InfoTracer report (infotracer.net/loading)."
+  },
+  "kentucky-arrests": {
+    "checked": "2026-10-18",
+    "paywall": true,
+    "kind": "paid_report_link",
+    "evidence": "A synthetic search (John Smith, Denver CO) at https://www.kentuckyarrests.org/Results?fname=John&lname=Smith&state=CO&city=Denver returned a results page with no records. Its only link to records is a paid InfoTracer report (infotracer.net/loading)."
+  },
+  "louisiana-arrests": {
+    "checked": "2026-10-18",
+    "paywall": true,
+    "kind": "paid_report_link",
+    "evidence": "A synthetic search (John Smith, Denver CO) at https://www.louisianaarrests.org/Results?fname=John&lname=Smith&state=CO&city=Denver returned a 404 page with no records whose only link to records is a paid InfoTracer report (infotracer.net/loading)."
+  },
+  "massachusetts-arrests": {
+    "checked": "2026-10-18",
+    "paywall": true,
+    "kind": "paid_report_link",
+    "evidence": "A synthetic search (John Smith, Denver CO) at https://www.maarrests.org/Results?fname=John&lname=Smith&state=CO&city=Denver returned a results page with no records. Its only link to records is a paid InfoTracer report (infotracer.net/loading)."
+  },
+  "michigan-arrests": {
+    "checked": "2026-10-18",
+    "paywall": true,
+    "kind": "paid_report_link",
+    "evidence": "A synthetic search (John Smith, Denver CO) at https://www.michiganarrests.org/Results?fname=John&lname=Smith&state=CO&city=Denver returned a results page with no records. Its only link to records is a paid InfoTracer report (infotracer.net/loading)."
+  },
+  "minnesota-arrests": {
+    "checked": "2026-10-18",
+    "paywall": true,
+    "kind": "paid_report_link",
+    "evidence": "A synthetic search (John Smith, Denver CO) at https://www.minnesotaarrests.org/Results?fname=John&lname=Smith&state=CO&city=Denver returned a results page with no records. Its only link to records is a paid InfoTracer report (infotracer.net/loading)."
+  },
+  "mississippi-arrests": {
+    "checked": "2026-10-18",
+    "paywall": true,
+    "kind": "paid_report_link",
+    "evidence": "A synthetic search (John Smith, Denver CO) at https://www.msarrests.org/Results?fname=John&lname=Smith&state=CO&city=Denver returned a results page with no records. Its only link to records is a paid InfoTracer report (infotracer.net/loading)."
+  },
+  "missouri-arrests": {
+    "checked": "2026-10-18",
+    "paywall": true,
+    "kind": "paid_report_link",
+    "evidence": "A synthetic search (John Smith, Denver CO) at https://www.missouriarrests.org/Results?fname=John&lname=Smith&state=CO&city=Denver returned a results page with no records. Its only link to records is a paid InfoTracer report (infotracer.net/loading)."
+  },
+  "montana-arrests": {
+    "checked": "2026-10-18",
+    "paywall": true,
+    "kind": "paid_report_link",
+    "evidence": "A synthetic search (John Smith, Denver CO) at https://www.montanaarrests.org/Results?fname=John&lname=Smith&state=CO&city=Denver returned a results page with no records. Its only link to records is a paid InfoTracer report (infotracer.net/loading)."
+  },
+  "new-hampshire-arrests": {
+    "checked": "2026-10-18",
+    "paywall": true,
+    "kind": "paid_report_link",
+    "evidence": "A synthetic search (John Smith, Denver CO) at https://www.nharrests.org/Results?fname=John&lname=Smith&state=CO&city=Denver returned a results page with no records. Its only link to records is a paid InfoTracer report (infotracer.net/loading)."
+  },
+  "new-mexico-arrests": {
+    "checked": "2026-10-18",
+    "paywall": true,
+    "kind": "paid_report_link",
+    "evidence": "A synthetic search (John Smith, Denver CO) at https://www.nmarrests.org/Results?fname=John&lname=Smith&state=CO&city=Denver returned a results page with no records. Its only link to records is a paid InfoTracer report (infotracer.net/loading)."
+  },
+  "new-york-arrests": {
+    "checked": "2026-10-18",
+    "paywall": true,
+    "kind": "paid_report_link",
+    "evidence": "A synthetic search (John Smith, Denver CO) at https://www.nyarrests.org/Results?fname=John&lname=Smith&state=CO&city=Denver returned a results page with no records. Its only link to records is a paid InfoTracer report (infotracer.net/loading)."
+  },
+  "ohio-arrests": {
+    "checked": "2026-10-18",
+    "paywall": true,
+    "kind": "paid_report_link",
+    "evidence": "A synthetic search (John Smith, Denver CO) at https://www.ohioarrests.org/Results?fname=John&lname=Smith&state=CO&city=Denver returned a results page with no records. Its only link to records is a paid InfoTracer report (infotracer.net/loading)."
+  },
+  "oregon-arrests": {
+    "checked": "2026-10-18",
+    "paywall": true,
+    "kind": "paid_report_link",
+    "evidence": "A synthetic search (John Smith, Denver CO) at https://www.oregonarrest.org/Results?fname=John&lname=Smith&state=CO&city=Denver returned a results page with no records. Its only link to records is a paid InfoTracer report (infotracer.net/loading)."
+  },
+  "pennsylvania-arrests": {
+    "checked": "2026-10-18",
+    "paywall": true,
+    "kind": "paid_report_link",
+    "evidence": "A synthetic search (John Smith, Denver CO) at https://www.pennsylvaniaarrests.org/Results?fname=John&lname=Smith&state=CO&city=Denver returned a results page with no records. Its only link to records is a paid InfoTracer report (infotracer.net/loading)."
+  },
+  "rhode-island-arrests": {
+    "checked": "2026-10-18",
+    "paywall": true,
+    "kind": "paid_report_link",
+    "evidence": "A synthetic search (John Smith, Denver CO) at https://www.riarrests.org/Results?fname=John&lname=Smith&state=CO&city=Denver returned a results page with no records. Its only link to records is a paid InfoTracer report (infotracer.net/loading)."
+  },
+  "south-carolina-arrests": {
+    "checked": "2026-10-18",
+    "paywall": true,
+    "kind": "paid_report_link",
+    "evidence": "A synthetic search (John Smith, Denver CO) at https://www.scarrests.org/Results?fname=John&lname=Smith&state=CO&city=Denver returned a results page with no records. Its only link to records is a paid InfoTracer report (infotracer.net/loading)."
+  },
+  "tennessee-arrests": {
+    "checked": "2026-10-18",
+    "paywall": true,
+    "kind": "paid_report_link",
+    "evidence": "A synthetic search (John Smith, Denver CO) at https://www.tennesseearrests.org/Results?fname=John&lname=Smith&state=CO&city=Denver returned a results page with no records. Its only link to records is a paid InfoTracer report (infotracer.net/loading)."
+  },
+  "virginia-arrests": {
+    "checked": "2026-10-18",
+    "paywall": true,
+    "kind": "paid_report_link",
+    "evidence": "A synthetic search (John Smith, Denver CO) at https://www.virginiaarrests.org/Results?fname=John&lname=Smith&state=CO&city=Denver returned a results page with no records. Its only link to records is a paid InfoTracer report (infotracer.net/loading)."
+  },
+  "washington-arrests": {
+    "checked": "2026-10-18",
+    "paywall": true,
+    "kind": "paid_report_link",
+    "evidence": "A synthetic search (John Smith, Denver CO) at https://www.washingtonarrests.org/Results?fname=John&lname=Smith&state=CO&city=Denver returned a results page with no records. Its only link to records is a paid InfoTracer report (infotracer.net/loading)."
+  },
+  "west-virginia-arrests": {
+    "checked": "2026-10-18",
+    "paywall": true,
+    "kind": "paid_report_link",
+    "evidence": "A synthetic search (John Smith, Denver CO) at https://www.wvarrests.org/Results?fname=John&lname=Smith&state=CO&city=Denver returned a results page with no records. Its only link to records is a paid InfoTracer report (infotracer.net/loading)."
+  },
+  "wisconsin-arrests": {
+    "checked": "2026-10-18",
+    "paywall": true,
+    "kind": "paid_report_link",
+    "evidence": "A synthetic search (John Smith, Denver CO) at https://www.wisconsinarrests.org/Results?fname=John&lname=Smith&state=CO&city=Denver returned a results page with no records. Its only link to records is a paid InfoTracer report (infotracer.net/loading)."
+  },
+  "wyoming-arrests": {
+    "checked": "2026-10-18",
+    "paywall": true,
+    "kind": "paid_report_link",
+    "evidence": "A synthetic search (John Smith, Denver CO) at https://www.wyomingarrests.org/Results?fname=John&lname=Smith&state=CO&city=Denver returned a results page with no records. Its only link to records is a paid InfoTracer report (infotracer.net/loading)."
+  },
+  "nevada-arrests": {
+    "checked": "2026-10-18",
+    "paywall": true,
+    "kind": "paid_report_link",
+    "evidence": "A synthetic search (John Smith, Denver CO) at https://www.nevadaarrests.org/Results?fname=John&lname=Smith&state=CO&city=Denver returned a results page with no records. Its only link to records is a paid InfoTracer report (infotracer.net/loading)."
+  },
+  "alabama-arrests": {
+    "checked": "2026-10-18",
+    "paywall": true,
+    "kind": "paid_report_link",
+    "evidence": "A synthetic search (John Smith, Denver CO) at https://www.alabamaarrests.org/Results?fname=John&lname=Smith&state=CO&city=Denver returned a results page with no records. Its only link to records is a paid InfoTracer report (infotracer.net/loading)."
+  },
+  "connecticut-arrests": {
+    "checked": "2026-10-18",
+    "paywall": true,
+    "kind": "paid_report_link",
+    "evidence": "A synthetic search (John Smith, Denver CO) at https://www.ctarrests.org/Results?fname=John&lname=Smith&state=CO&city=Denver returned a results page with no records. Its only link to records is a paid InfoTracer report (infotracer.net/loading)."
+  },
+  "indiana-arrests": {
+    "checked": "2026-10-18",
+    "paywall": true,
+    "kind": "paid_report_link",
+    "evidence": "A synthetic search (John Smith, Denver CO) at https://www.indianaarrests.org/Results?fname=John&lname=Smith&state=CO&city=Denver returned a results page with no records. Its only link to records is a paid InfoTracer report (infotracer.net/loading)."
+  },
+  "kansas-arrests": {
+    "checked": "2026-10-18",
+    "paywall": true,
+    "kind": "paid_report_link",
+    "evidence": "A synthetic search (John Smith, Denver CO) at https://www.kansasarrests.org/Results?fname=John&lname=Smith&state=CO&city=Denver returned a results page with no records. Its only link to records is a paid InfoTracer report (infotracer.net/loading)."
+  },
+  "maine-arrests": {
+    "checked": "2026-10-18",
+    "paywall": true,
+    "kind": "paid_report_link",
+    "evidence": "A synthetic search (John Smith, Denver CO) at https://www.mainearrests.org/Results?fname=John&lname=Smith&state=CO&city=Denver returned a results page with no records. Its only link to records is a paid InfoTracer report (infotracer.net/loading)."
+  },
+  "maryland-arrests": {
+    "checked": "2026-10-18",
+    "paywall": true,
+    "kind": "paid_report_link",
+    "evidence": "A synthetic search (John Smith, Denver CO) at https://www.marylandarrests.org/Results?fname=John&lname=Smith&state=CO&city=Denver returned a results page with no records. Its only link to records is a paid InfoTracer report (infotracer.net/loading)."
+  },
+  "nebraska-arrests": {
+    "checked": "2026-10-18",
+    "paywall": true,
+    "kind": "paid_report_link",
+    "evidence": "A synthetic search (John Smith, Denver CO) at https://www.nebraskaarrests.org/Results?fname=John&lname=Smith&state=CO&city=Denver returned a results page with no records. Its only link to records is a paid InfoTracer report (infotracer.net/loading)."
+  },
+  "north-carolina-arrests": {
+    "checked": "2026-10-18",
+    "paywall": true,
+    "kind": "paid_report_link",
+    "evidence": "A synthetic search (John Smith, Denver CO) at https://www.ncarrests.org/Results?fname=John&lname=Smith&state=CO&city=Denver returned a results page with no records. Its only link to records is a paid InfoTracer report (infotracer.net/loading)."
+  },
+  "north-dakota-arrests": {
+    "checked": "2026-10-18",
+    "paywall": true,
+    "kind": "paid_report_link",
+    "evidence": "A synthetic search (John Smith, Denver CO) at https://www.ndarrests.org/Results?fname=John&lname=Smith&state=CO&city=Denver returned a results page with no records. Its only link to records is a paid InfoTracer report (infotracer.net/loading)."
+  },
+  "south-dakota-arrests": {
+    "checked": "2026-10-18",
+    "paywall": true,
+    "kind": "paid_report_link",
+    "evidence": "A synthetic search (John Smith, Denver CO) at https://www.sdarrests.org/Results?fname=John&lname=Smith&state=CO&city=Denver returned a results page with no records. Its only link to records is a paid InfoTracer report (infotracer.net/loading)."
+  },
+  "utah-arrests": {
+    "checked": "2026-10-18",
+    "paywall": true,
+    "kind": "paid_report_link",
+    "evidence": "A synthetic search (John Smith, Denver CO) at https://www.utaharrests.org/Results?fname=John&lname=Smith&state=CO&city=Denver returned a results page with no records. Its only link to records is a paid InfoTracer report (infotracer.net/loading)."
+  },
+  "washington-dc-arrests": {
+    "checked": "2026-10-18",
+    "paywall": true,
+    "kind": "paid_report_link",
+    "evidence": "A synthetic search (John Smith, Denver CO) at https://www.dcarrests.org/Results?fname=John&lname=Smith&state=CO&city=Denver returned a results page with no records. Its only link to records is a paid InfoTracer report (infotracer.net/loading)."
+  },
+  "texas-arrests": {
+    "checked": "2026-10-18",
+    "paywall": true,
+    "kind": "paid_report_link",
+    "evidence": "A synthetic search (John Smith, Denver CO) at https://www.texasarrests.org/Results?fname=John&lname=Smith&state=CO&city=Denver returned a results page with no records. Its only link to records is a paid InfoTracer report (infotracer.net/loading)."
+  },
+  "vermont-arrests": {
+    "checked": "2026-10-18",
+    "paywall": true,
+    "kind": "paid_report_link",
+    "evidence": "A synthetic search (John Smith, Denver CO) at https://www.vtarrests.org/Results?fname=John&lname=Smith&state=CO&city=Denver returned a results page with no records. Its only link to records is a paid InfoTracer report (infotracer.net/loading)."
+  },
+  "la-county-arrest-records": {
+    "checked": "2026-10-18",
+    "paywall": true,
+    "kind": "paid_report_link",
+    "evidence": "A synthetic search (John Smith) at https://www.lacountyarrestrecords.org/Results?fname=John&lname=Smith&state=CA returned a results page with no records, on the same template as the state arrests sites. Its only link to records is a paid InfoTracer report."
+  },
+  "dewarrants-org-infotracer-form": {
+    "checked": "2026-10-18",
+    "paywall": true,
+    "kind": "paid_report_link",
+    "evidence": "A synthetic search (John Smith) at https://www.dewarrants.org/Results?fname=John&lname=Smith&state=CO returned a results page with no records, on the same template as the state arrests sites. Its only link to records is a paid InfoTracer report."
+  },
+  "staterecords-org-network-alabamacourtrecords-us": {
+    "checked": "2026-10-18",
+    "paywall": true,
+    "kind": "register_or_purchase",
+    "evidence": "A synthetic search (John Smith, CO) posted to https://alabamacourtrecords.us/search/loading/ returned a page that says a search of any records will only be conducted and made available after you register for an account or purchase a report. No records are shown."
+  },
+  "staterecords-org-network-alaskacourtrecords-us": {
+    "checked": "2026-10-18",
+    "paywall": true,
+    "kind": "register_or_purchase",
+    "evidence": "A synthetic search (John Smith, CO) posted to https://alaskacourtrecords.us/search/loading/ returned a page that says a search of any records will only be conducted and made available after you register for an account or purchase a report. No records are shown."
+  },
+  "staterecords-org-network-arizonacourtrecords-us": {
+    "checked": "2026-10-18",
+    "paywall": true,
+    "kind": "register_or_purchase",
+    "evidence": "A synthetic search (John Smith, CO) posted to https://arizonacourtrecords.us/search/loading/ returned a page that says a search of any records will only be conducted and made available after you register for an account or purchase a report. No records are shown."
+  },
+  "staterecords-org-network-arkansascourtrecords-us": {
+    "checked": "2026-10-18",
+    "paywall": true,
+    "kind": "register_or_purchase",
+    "evidence": "A synthetic search (John Smith, CO) posted to https://arkansascourtrecords.us/search/loading/ returned a page that says a search of any records will only be conducted and made available after you register for an account or purchase a report. No records are shown."
+  },
+  "staterecords-org-network-californiacourtrecords-us": {
+    "checked": "2026-10-18",
+    "paywall": true,
+    "kind": "register_or_purchase",
+    "evidence": "A synthetic search (John Smith, CO) posted to https://californiacourtrecords.us/search/loading/ returned a page that says a search of any records will only be conducted and made available after you register for an account or purchase a report. No records are shown."
+  },
+  "staterecords-org-network-coloradocourtrecords-us": {
+    "checked": "2026-10-18",
+    "paywall": true,
+    "kind": "register_or_purchase",
+    "evidence": "A synthetic search (John Smith, CO) posted to https://coloradocourtrecords.us/search/loading/ returned a page that says a search of any records will only be conducted and made available after you register for an account or purchase a report. No records are shown."
+  },
+  "staterecords-org-network-connecticutcourtrecords-us": {
+    "checked": "2026-10-18",
+    "paywall": true,
+    "kind": "register_or_purchase",
+    "evidence": "A synthetic search (John Smith, CO) posted to https://connecticutcourtrecords.us/search/loading/ returned a page that says a search of any records will only be conducted and made available after you register for an account or purchase a report. No records are shown."
+  },
+  "staterecords-org-network-delawarecourtrecords-us": {
+    "checked": "2026-10-18",
+    "paywall": true,
+    "kind": "register_or_purchase",
+    "evidence": "A synthetic search (John Smith, CO) posted to https://delawarecourtrecords.us/search/loading/ returned a page that says a search of any records will only be conducted and made available after you register for an account or purchase a report. No records are shown."
+  },
+  "staterecords-org-network-floridacourtrecords-us": {
+    "checked": "2026-10-18",
+    "paywall": true,
+    "kind": "register_or_purchase",
+    "evidence": "A synthetic search (John Smith, CO) posted to https://floridacourtrecords.us/search/loading/ returned a page that says a search of any records will only be conducted and made available after you register for an account or purchase a report. No records are shown."
+  },
+  "staterecords-org-network-georgiacourtrecords-us": {
+    "checked": "2026-10-18",
+    "paywall": true,
+    "kind": "register_or_purchase",
+    "evidence": "A synthetic search (John Smith, CO) posted to https://georgiacourtrecords.us/search/loading/ returned a page that says a search of any records will only be conducted and made available after you register for an account or purchase a report. No records are shown."
+  },
+  "staterecords-org-network-hawaiicourtrecords-us": {
+    "checked": "2026-10-18",
+    "paywall": true,
+    "kind": "register_or_purchase",
+    "evidence": "A synthetic search (John Smith, CO) posted to https://hawaiicourtrecords.us/search/loading/ returned a page that says a search of any records will only be conducted and made available after you register for an account or purchase a report. No records are shown."
+  },
+  "staterecords-org-network-hub": {
+    "checked": "2026-10-18",
+    "paywall": true,
+    "kind": "register_or_purchase",
+    "evidence": "A synthetic search (John Smith, CO) posted to https://courtrecords.us/search/loading/ returned a page that says a search of any records will only be conducted and made available after you register for an account or purchase a report. No records are shown."
+  },
+  "staterecords-org-network-idahocourtrecords-us": {
+    "checked": "2026-10-18",
+    "paywall": true,
+    "kind": "register_or_purchase",
+    "evidence": "A synthetic search (John Smith, CO) posted to https://idahocourtrecords.us/search/loading/ returned a page that says a search of any records will only be conducted and made available after you register for an account or purchase a report. No records are shown."
+  },
+  "staterecords-org-network-illinoiscourtrecords-us": {
+    "checked": "2026-10-18",
+    "paywall": true,
+    "kind": "register_or_purchase",
+    "evidence": "A synthetic search (John Smith, CO) posted to https://illinoiscourtrecords.us/search/loading/ returned a page that says a search of any records will only be conducted and made available after you register for an account or purchase a report. No records are shown."
+  },
+  "staterecords-org-network-indianacourtrecords-us": {
+    "checked": "2026-10-18",
+    "paywall": true,
+    "kind": "register_or_purchase",
+    "evidence": "A synthetic search (John Smith, CO) posted to https://indianacourtrecords.us/search/loading/ returned a page that says a search of any records will only be conducted and made available after you register for an account or purchase a report. No records are shown."
+  },
+  "staterecords-org-network-iowacourtrecords-us": {
+    "checked": "2026-10-18",
+    "paywall": true,
+    "kind": "register_or_purchase",
+    "evidence": "A synthetic search (John Smith, CO) posted to https://iowacourtrecords.us/search/loading/ returned a page that says a search of any records will only be conducted and made available after you register for an account or purchase a report. No records are shown."
+  },
+  "staterecords-org-network-kansascourtrecords-us": {
+    "checked": "2026-10-18",
+    "paywall": true,
+    "kind": "register_or_purchase",
+    "evidence": "A synthetic search (John Smith, CO) posted to https://kansascourtrecords.us/search/loading/ returned a page that says a search of any records will only be conducted and made available after you register for an account or purchase a report. No records are shown."
+  },
+  "staterecords-org-network-kentuckycourtrecords-us": {
+    "checked": "2026-10-18",
+    "paywall": true,
+    "kind": "register_or_purchase",
+    "evidence": "A synthetic search (John Smith, CO) posted to https://kentuckycourtrecords.us/search/loading/ returned a page that says a search of any records will only be conducted and made available after you register for an account or purchase a report. No records are shown."
+  },
+  "staterecords-org-network-louisianacourtrecords-us": {
+    "checked": "2026-10-18",
+    "paywall": true,
+    "kind": "register_or_purchase",
+    "evidence": "A synthetic search (John Smith, CO) posted to https://louisianacourtrecords.us/search/loading/ returned a page that says a search of any records will only be conducted and made available after you register for an account or purchase a report. No records are shown."
+  },
+  "staterecords-org-network-mainecourtrecords-us": {
+    "checked": "2026-10-18",
+    "paywall": true,
+    "kind": "register_or_purchase",
+    "evidence": "A synthetic search (John Smith, CO) posted to https://mainecourtrecords.us/search/loading/ returned a page that says a search of any records will only be conducted and made available after you register for an account or purchase a report. No records are shown."
+  },
+  "staterecords-org-network-marylandcourtrecords-us": {
+    "checked": "2026-10-18",
+    "paywall": true,
+    "kind": "register_or_purchase",
+    "evidence": "A synthetic search (John Smith, CO) posted to https://marylandcourtrecords.us/search/loading/ returned a page that says a search of any records will only be conducted and made available after you register for an account or purchase a report. No records are shown."
+  },
+  "staterecords-org-network-massachusettscourtrecords-us": {
+    "checked": "2026-10-18",
+    "paywall": true,
+    "kind": "register_or_purchase",
+    "evidence": "A synthetic search (John Smith, CO) posted to https://massachusettscourtrecords.us/search/loading/ returned a page that says a search of any records will only be conducted and made available after you register for an account or purchase a report. No records are shown."
+  },
+  "staterecords-org-network-michigancourtrecords-us": {
+    "checked": "2026-10-18",
+    "paywall": true,
+    "kind": "register_or_purchase",
+    "evidence": "A synthetic search (John Smith, CO) posted to https://michigancourtrecords.us/search/loading/ returned a page that says a search of any records will only be conducted and made available after you register for an account or purchase a report. No records are shown."
+  },
+  "staterecords-org-network-minnesotacourtrecords-us": {
+    "checked": "2026-10-18",
+    "paywall": true,
+    "kind": "register_or_purchase",
+    "evidence": "A synthetic search (John Smith, CO) posted to https://minnesotacourtrecords.us/search/loading/ returned a page that says a search of any records will only be conducted and made available after you register for an account or purchase a report. No records are shown."
+  },
+  "staterecords-org-network-mississippicourtrecords-us": {
+    "checked": "2026-10-18",
+    "paywall": true,
+    "kind": "register_or_purchase",
+    "evidence": "A synthetic search (John Smith, CO) posted to https://mississippicourtrecords.us/search/loading/ returned a page that says a search of any records will only be conducted and made available after you register for an account or purchase a report. No records are shown."
+  },
+  "staterecords-org-network-missouricourtrecords-us": {
+    "checked": "2026-10-18",
+    "paywall": true,
+    "kind": "register_or_purchase",
+    "evidence": "A synthetic search (John Smith, CO) posted to https://missouricourtrecords.us/search/loading/ returned a page that says a search of any records will only be conducted and made available after you register for an account or purchase a report. No records are shown."
+  },
+  "staterecords-org-network-montanacourtrecords-us": {
+    "checked": "2026-10-18",
+    "paywall": true,
+    "kind": "register_or_purchase",
+    "evidence": "A synthetic search (John Smith, CO) posted to https://montanacourtrecords.us/search/loading/ returned a page that says a search of any records will only be conducted and made available after you register for an account or purchase a report. No records are shown."
+  },
+  "staterecords-org-network-nebraskacourtrecords-us": {
+    "checked": "2026-10-18",
+    "paywall": true,
+    "kind": "register_or_purchase",
+    "evidence": "A synthetic search (John Smith, CO) posted to https://nebraskacourtrecords.us/search/loading/ returned a page that says a search of any records will only be conducted and made available after you register for an account or purchase a report. No records are shown."
+  },
+  "staterecords-org-network-nevadacourtrecords-us": {
+    "checked": "2026-10-18",
+    "paywall": true,
+    "kind": "register_or_purchase",
+    "evidence": "A synthetic search (John Smith, CO) posted to https://nevadacourtrecords.us/search/loading/ returned a page that says a search of any records will only be conducted and made available after you register for an account or purchase a report. No records are shown."
+  },
+  "staterecords-org-network-newhampshirecourtrecords-us": {
+    "checked": "2026-10-18",
+    "paywall": true,
+    "kind": "register_or_purchase",
+    "evidence": "A synthetic search (John Smith, CO) posted to https://newhampshirecourtrecords.us/search/loading/ returned a page that says a search of any records will only be conducted and made available after you register for an account or purchase a report. No records are shown."
+  },
+  "staterecords-org-network-newjerseycourtrecords-us": {
+    "checked": "2026-10-18",
+    "paywall": true,
+    "kind": "register_or_purchase",
+    "evidence": "A synthetic search (John Smith, CO) posted to https://newjerseycourtrecords.us/search/loading/ returned a page that says a search of any records will only be conducted and made available after you register for an account or purchase a report. No records are shown."
+  },
+  "staterecords-org-network-newmexicocourtrecords-us": {
+    "checked": "2026-10-18",
+    "paywall": true,
+    "kind": "register_or_purchase",
+    "evidence": "A synthetic search (John Smith, CO) posted to https://newmexicocourtrecords.us/search/loading/ returned a page that says a search of any records will only be conducted and made available after you register for an account or purchase a report. No records are shown."
+  },
+  "staterecords-org-network-newyorkcourtrecords-us": {
+    "checked": "2026-10-18",
+    "paywall": true,
+    "kind": "register_or_purchase",
+    "evidence": "A synthetic search (John Smith, CO) posted to https://newyorkcourtrecords.us/search/loading/ returned a page that says a search of any records will only be conducted and made available after you register for an account or purchase a report. No records are shown."
+  },
+  "staterecords-org-network-northcarolinacourtrecords-us": {
+    "checked": "2026-10-18",
+    "paywall": true,
+    "kind": "register_or_purchase",
+    "evidence": "A synthetic search (John Smith, CO) posted to https://northcarolinacourtrecords.us/search/loading/ returned a page that says a search of any records will only be conducted and made available after you register for an account or purchase a report. No records are shown."
+  },
+  "staterecords-org-network-northdakotacourtrecords-us": {
+    "checked": "2026-10-18",
+    "paywall": true,
+    "kind": "register_or_purchase",
+    "evidence": "A synthetic search (John Smith, CO) posted to https://northdakotacourtrecords.us/search/loading/ returned a page that says a search of any records will only be conducted and made available after you register for an account or purchase a report. No records are shown."
+  },
+  "staterecords-org-network-ohiocourtrecords-us": {
+    "checked": "2026-10-18",
+    "paywall": true,
+    "kind": "register_or_purchase",
+    "evidence": "A synthetic search (John Smith, CO) posted to https://ohiocourtrecords.us/search/loading/ returned a page that says a search of any records will only be conducted and made available after you register for an account or purchase a report. No records are shown."
+  },
+  "staterecords-org-network-oklahomacourtrecords-us": {
+    "checked": "2026-10-18",
+    "paywall": true,
+    "kind": "register_or_purchase",
+    "evidence": "A synthetic search (John Smith, CO) posted to https://oklahomacourtrecords.us/search/loading/ returned a page that says a search of any records will only be conducted and made available after you register for an account or purchase a report. No records are shown."
+  },
+  "staterecords-org-network-oregoncourtrecords-us": {
+    "checked": "2026-10-18",
+    "paywall": true,
+    "kind": "register_or_purchase",
+    "evidence": "A synthetic search (John Smith, CO) posted to https://oregoncourtrecords.us/search/loading/ returned a page that says a search of any records will only be conducted and made available after you register for an account or purchase a report. No records are shown."
+  },
+  "staterecords-org-network-pennsylvaniacourtrecords-us": {
+    "checked": "2026-10-18",
+    "paywall": true,
+    "kind": "register_or_purchase",
+    "evidence": "A synthetic search (John Smith, CO) posted to https://pennsylvaniacourtrecords.us/search/loading/ returned a page that says a search of any records will only be conducted and made available after you register for an account or purchase a report. No records are shown."
+  },
+  "staterecords-org-network-rhodeislandcourtrecords-us": {
+    "checked": "2026-10-18",
+    "paywall": true,
+    "kind": "register_or_purchase",
+    "evidence": "A synthetic search (John Smith, CO) posted to https://rhodeislandcourtrecords.us/search/loading/ returned a page that says a search of any records will only be conducted and made available after you register for an account or purchase a report. No records are shown."
+  },
+  "staterecords-org-network-southcarolinacourtrecords-us": {
+    "checked": "2026-10-18",
+    "paywall": true,
+    "kind": "register_or_purchase",
+    "evidence": "A synthetic search (John Smith, CO) posted to https://southcarolinacourtrecords.us/search/loading/ returned a page that says a search of any records will only be conducted and made available after you register for an account or purchase a report. No records are shown."
+  },
+  "staterecords-org-network-southdakotacourtrecords-us": {
+    "checked": "2026-10-18",
+    "paywall": true,
+    "kind": "register_or_purchase",
+    "evidence": "A synthetic search (John Smith, CO) posted to https://southdakotacourtrecords.us/search/loading/ returned a page that says a search of any records will only be conducted and made available after you register for an account or purchase a report. No records are shown."
+  },
+  "staterecords-org-network-tennesseecourtrecords-us": {
+    "checked": "2026-10-18",
+    "paywall": true,
+    "kind": "register_or_purchase",
+    "evidence": "A synthetic search (John Smith, CO) posted to https://tennesseecourtrecords.us/search/loading/ returned a page that says a search of any records will only be conducted and made available after you register for an account or purchase a report. No records are shown."
+  },
+  "staterecords-org-network-texascourtrecords-us": {
+    "checked": "2026-10-18",
+    "paywall": true,
+    "kind": "register_or_purchase",
+    "evidence": "A synthetic search (John Smith, CO) posted to https://texascourtrecords.us/search/loading/ returned a page that says a search of any records will only be conducted and made available after you register for an account or purchase a report. No records are shown."
+  },
+  "staterecords-org-network-utahcourtrecords-us": {
+    "checked": "2026-10-18",
+    "paywall": true,
+    "kind": "register_or_purchase",
+    "evidence": "A synthetic search (John Smith, CO) posted to https://utahcourtrecords.us/search/loading/ returned a page that says a search of any records will only be conducted and made available after you register for an account or purchase a report. No records are shown."
+  },
+  "staterecords-org-network-vermontcourtrecords-us": {
+    "checked": "2026-10-18",
+    "paywall": true,
+    "kind": "register_or_purchase",
+    "evidence": "A synthetic search (John Smith, CO) posted to https://vermontcourtrecords.us/search/loading/ returned a page that says a search of any records will only be conducted and made available after you register for an account or purchase a report. No records are shown."
+  },
+  "staterecords-org-network-virginiacourtrecords-us": {
+    "checked": "2026-10-18",
+    "paywall": true,
+    "kind": "register_or_purchase",
+    "evidence": "A synthetic search (John Smith, CO) posted to https://virginiacourtrecords.us/search/loading/ returned a page that says a search of any records will only be conducted and made available after you register for an account or purchase a report. No records are shown."
+  },
+  "staterecords-org-network-washingtoncourtrecords-us": {
+    "checked": "2026-10-18",
+    "paywall": true,
+    "kind": "register_or_purchase",
+    "evidence": "A synthetic search (John Smith, CO) posted to https://washingtoncourtrecords.us/search/loading/ returned a page that says a search of any records will only be conducted and made available after you register for an account or purchase a report. No records are shown."
+  },
+  "staterecords-org-network-westvirginiacourtrecords-us": {
+    "checked": "2026-10-18",
+    "paywall": true,
+    "kind": "register_or_purchase",
+    "evidence": "A synthetic search (John Smith, CO) posted to https://westvirginiacourtrecords.us/search/loading/ returned a page that says a search of any records will only be conducted and made available after you register for an account or purchase a report. No records are shown."
+  },
+  "staterecords-org-network-wisconsincourtrecords-us": {
+    "checked": "2026-10-18",
+    "paywall": true,
+    "kind": "register_or_purchase",
+    "evidence": "A synthetic search (John Smith, CO) posted to https://wisconsincourtrecords.us/search/loading/ returned a page that says a search of any records will only be conducted and made available after you register for an account or purchase a report. No records are shown."
+  },
+  "staterecords-org-network-wyomingcourtrecords-us": {
+    "checked": "2026-10-18",
+    "paywall": true,
+    "kind": "register_or_purchase",
+    "evidence": "A synthetic search (John Smith, CO) posted to https://wyomingcourtrecords.us/search/loading/ returned a page that says a search of any records will only be conducted and made available after you register for an account or purchase a report. No records are shown."
+  },
+  "searchbug-inc": {
+    "checked": "2026-10-18",
+    "paywall": true,
+    "kind": "register_or_purchase",
+    "evidence": "A synthetic people search (John Smith, Denver CO) landed on services/pay.aspx, titled 'People Search John Smith in Denver, CO | Order on Searchbug', which charges $1.95 for the people search. No records are shown before payment."
+  },
+  "archives-com-ancestry": {
+    "checked": "2026-10-18",
+    "paywall": true,
+    "kind": "register_or_purchase",
+    "evidence": "A synthetic search (John Smith) returned record counts only, with the message 'You must be a member to view these records!'. No records are shown without a membership."
+  },
+  "privateeye-confi-chek": {
+    "checked": "2026-10-18",
+    "not_a_person_search": true,
+    "kind": "affiliate_redirect",
+    "evidence": "A synthetic search (John Smith, Denver CO) opened peoplefinders.com results with an affiliate utm tag. The search is PeopleFinders' (catalog entry peoplefinders-confi-chek)."
+  },
+  "findmugshots": {
+    "checked": "2026-10-18",
+    "not_a_person_search": true,
+    "kind": "affiliate_redirect",
+    "evidence": "A synthetic search (John Smith, Denver CO) forwarded to peoplefinders.com. The search is PeopleFinders' (catalog entry peoplefinders-confi-chek)."
+  },
+  "glad-i-know": {
+    "checked": "2026-10-18",
+    "not_a_person_search": true,
+    "kind": "affiliate_redirect",
+    "evidence": "A synthetic search (John Smith, Denver CO) opened truthfinder.com/results in a new window. The search is TruthFinder's (catalog entry truthfinder-peopleconnect)."
+  },
+  "thepublicindex": {
+    "checked": "2026-10-18",
+    "not_a_person_search": true,
+    "kind": "affiliate_redirect",
+    "evidence": "A synthetic search (John Smith, Denver CO) opened a beenverified.com affiliate page. The search is BeenVerified's own."
+  },
+  "searchusapeople-infotracer": {
+    "checked": "2026-10-18",
+    "not_a_person_search": true,
+    "kind": "affiliate_redirect",
+    "evidence": "The stored search is https://infotracer.com/loading/?firstname=…&lastname=…, InfoTracer's report flow; the site has no search of its own. The search is InfoTracer's."
+  },
+  "dobsearch": {
+    "checked": "2026-10-18",
+    "not_a_person_search": true,
+    "kind": "affiliate_redirect",
+    "evidence": "The search form submits to htrk1.beenverified.com/aff_c, BeenVerified's affiliate tracking link, which answered 404 to a synthetic search. The site has no search of its own."
+  },
+  "illinois-prison-talk": {
+    "checked": "2026-10-18",
+    "not_a_person_search": true,
+    "kind": "affiliate_redirect",
+    "evidence": "The search form submits to htrk1.beenverified.com/aff_c, BeenVerified's affiliate tracking link, which answered 404 to a synthetic search. The site has no search of its own."
+  },
+  "search-systems-directory-of-links": {
+    "checked": "2026-10-18",
+    "not_a_person_search": true,
+    "kind": "affiliate_redirect",
+    "evidence": "The name form posts to click-ad.php, an ad click that forwards to htrk1.beenverified.com/aff_c (BeenVerified's affiliate tracker). The site is a directory of links with no person search of its own."
+  },
+  "recordsquarry-truthfinder": {
+    "checked": "2026-10-18",
+    "not_a_person_search": true,
+    "kind": "affiliate_redirect",
+    "evidence": "The stored search is a click-id redirect service (clickid-service…run.app/redirect-pass/) that answered 422 to a synthetic search; the catalog lists the site as a TruthFinder affiliate. The site has no search of its own."
+  },
+  "publicrecordscenter": {
+    "checked": "2026-10-18",
+    "not_a_person_search": true,
+    "kind": "affiliate_redirect",
+    "evidence": "The stored search is https://tracking.truthfinder.com?firstName=…&lastName=…, TruthFinder's affiliate tracker (it answered 403 to a synthetic search). The site has no search of its own; the search is TruthFinder's."
+  },
+  "criminalrecords-com-intelius": {
+    "checked": "2026-10-18",
+    "not_a_person_search": true,
+    "kind": "affiliate_redirect",
+    "evidence": "The stored search is https://tracking.intelius.com/?firstName=…&lastName=…, Intelius' affiliate tracking link (it answered a Cloudflare 403 to a synthetic search). The site has no search of its own; the search is Intelius' (catalog entry intelius-peopleconnect)."
+  },
+  "easybackgroundchecks-intelius": {
+    "checked": "2026-10-18",
+    "not_a_person_search": true,
+    "kind": "affiliate_redirect",
+    "evidence": "The stored search is https://tracking.intelius.com/?firstName=…&lastName=…, Intelius' affiliate tracking link (it answered a Cloudflare 403 to a synthetic search). The site has no search of its own; the search is Intelius' (catalog entry intelius-peopleconnect)."
+  },
+  "peoplefind-com-intelius": {
+    "checked": "2026-10-18",
+    "not_a_person_search": true,
+    "kind": "affiliate_redirect",
+    "evidence": "The stored search is https://tracking.intelius.com/?firstName=…&lastName=…, Intelius' affiliate tracking link (it answered a Cloudflare 403 to a synthetic search). The site has no search of its own; the search is Intelius' (catalog entry intelius-peopleconnect)."
+  },
+  "peoplefinder-peopleconnect": {
+    "checked": "2026-10-18",
+    "not_a_person_search": true,
+    "kind": "affiliate_redirect",
+    "evidence": "The stored search is https://tracking.intelius.com/?firstName=…&lastName=…, Intelius' affiliate tracking link (it answered a Cloudflare 403 to a synthetic search). The site has no search of its own; the search is Intelius' (catalog entry intelius-peopleconnect)."
+  },
+  "publicrecords-com-peopleconnect": {
+    "checked": "2026-10-18",
+    "not_a_person_search": true,
+    "kind": "affiliate_redirect",
+    "evidence": "The stored search is https://tracking.intelius.com/?firstName=…&lastName=…, Intelius' affiliate tracking link (it answered a Cloudflare 403 to a synthetic search). The site has no search of its own; the search is Intelius' (catalog entry intelius-peopleconnect)."
+  },
+  "snoopstation-intelius": {
+    "checked": "2026-10-18",
+    "not_a_person_search": true,
+    "kind": "affiliate_redirect",
+    "evidence": "The stored search is https://tracking.intelius.com/?firstName=…&lastName=…, Intelius' affiliate tracking link (it answered a Cloudflare 403 to a synthetic search). The site has no search of its own; the search is Intelius' (catalog entry intelius-peopleconnect)."
+  },
+  "experian": {
+    "checked": "2026-10-18",
+    "not_a_person_search": true,
+    "kind": "site_search",
+    "evidence": "The stored search form is the site search on the Experian homepage: a synthetic query lands on https://www.experian.com/?q=John+Smith. It searches the site's pages, not records about a person."
+  },
+  "liveramp": {
+    "checked": "2026-10-18",
+    "not_a_person_search": true,
+    "kind": "site_search",
+    "evidence": "The stored search form is the LiveRamp website search ('Search Results'): a synthetic query lands on https://liveramp.com/search?query=John+Smith. It searches the site's pages, not records about a person."
+  },
+  "aidentified-inc": {
+    "checked": "2026-10-18",
+    "not_a_person_search": true,
+    "kind": "site_search",
+    "evidence": "The stored search form is the Aidentified knowledge base search: a synthetic query lands on https://support.aidentified.com/kb-search-results?q=John+Smith. It searches the site's pages, not records about a person."
+  },
+  "azira-llc": {
+    "checked": "2026-10-18",
+    "not_a_person_search": true,
+    "kind": "site_search",
+    "evidence": "The stored search form is the Azira website search: a synthetic query lands on https://www.azira.com/search?query=John+Smith. It searches the site's pages, not records about a person."
+  },
+  "bridg-a-division-of-cardlytics-inc": {
+    "checked": "2026-10-18",
+    "not_a_person_search": true,
+    "kind": "site_search",
+    "evidence": "The stored search form is the Bridg website search: a synthetic query lands on https://www.bridg.com/search?query=John+Smith. It searches the site's pages, not records about a person."
+  },
+  "complete-medical-lists-inc": {
+    "checked": "2026-10-18",
+    "not_a_person_search": true,
+    "kind": "site_search",
+    "evidence": "The stored search form is a search of the mailing lists the company sells: a synthetic query lands on https://completemedicallists.com/mailing_lists_search_results.php?search=John+Smith. It searches the site's pages, not records about a person."
+  },
+  "definitive-healthcare-llc": {
+    "checked": "2026-10-18",
+    "not_a_person_search": true,
+    "kind": "site_search",
+    "evidence": "The stored search form is the Definitive Healthcare website search: a synthetic query lands on https://www.definitivehc.com/search?search=John+Smith. It searches the site's pages, not records about a person."
+  },
+  "leadspace-inc": {
+    "checked": "2026-10-18",
+    "not_a_person_search": true,
+    "kind": "site_search",
+    "evidence": "The stored search form is the Leadspace help centre search: a synthetic query lands on https://support.leadspace.com/hc/en-us/search?query=John+Smith. It searches the site's pages, not records about a person."
+  },
+  "opensend-inc": {
+    "checked": "2026-10-18",
+    "not_a_person_search": true,
+    "kind": "site_search",
+    "evidence": "The stored search form is the Opensend help centre search: a synthetic query lands on https://help.opensend.com/kb-search-results?q=John+Smith. It searches the site's pages, not records about a person."
+  },
+  "unacast-inc": {
+    "checked": "2026-10-18",
+    "not_a_person_search": true,
+    "kind": "site_search",
+    "evidence": "The stored search form is the Unacast website search: a synthetic query lands on https://www.unacast.com/search?query=John+Smith. It searches the site's pages, not records about a person."
+  },
+  "california-drop": {
+    "checked": "2026-10-18",
+    "not_a_person_search": true,
+    "kind": "site_search",
+    "evidence": "The stored search form is the privacy.ca.gov website search: a synthetic query lands on https://privacy.ca.gov/serp/?q=John+Smith. It searches the site's pages, not records about a person."
+  },
+  "global-source-data-solutions-inc": {
+    "checked": "2026-10-18",
+    "not_a_person_search": true,
+    "kind": "site_search",
+    "evidence": "The stored search form is the GSDSI sitewide search of products and resources: a synthetic query lands on https://www.gsdsi.com/search?q=John+Smith. It searches the site's pages, not records about a person."
+  },
+  "iqvia-digital-inc-privacyportal-onetrust-com": {
+    "checked": "2026-10-18",
+    "not_a_person_search": true,
+    "kind": "site_search",
+    "evidence": "The stored search form is the IQVIA Digital website search: a synthetic query lands on https://www.iqviadigital.com/hs-search-results?q=John+Smith. It searches the site's pages, not records about a person."
+  },
+  "skydeo-inc": {
+    "checked": "2026-10-18",
+    "not_a_person_search": true,
+    "kind": "site_search",
+    "evidence": "The stored search form is a search of Skydeo's audience segments: a synthetic query lands on https://skydeo.com/segments/?q=John+Smith. It searches the site's pages, not records about a person."
+  },
+  "clearbit": {
+    "checked": "2026-10-18",
+    "not_a_person_search": true,
+    "kind": "site_search",
+    "evidence": "The stored search form is the Clearbit help centre search: a synthetic query lands on https://help.clearbit.com/hc/en-us/search?query=John+Smith. It searches the site's pages, not records about a person."
+  },
+  "gravy-analytics": {
+    "checked": "2026-10-18",
+    "not_a_person_search": true,
+    "kind": "site_search",
+    "evidence": "The stored search form is the Gravy Analytics website search: a synthetic query lands on https://gravyanalytics.com/hs-search-results?q=John+Smith. It searches the site's pages, not records about a person."
+  },
+  "youradchoices-canada": {
+    "checked": "2026-10-18",
+    "not_a_person_search": true,
+    "kind": "site_search",
+    "evidence": "The stored search form is the AdChoices Canada website search: a synthetic query lands on https://youradchoices.ca/search?q=John+Smith. It searches the site's pages, not records about a person."
+  },
+  "cause-iq": {
+    "checked": "2026-10-18",
+    "not_a_person_search": true,
+    "kind": "site_search",
+    "evidence": "The stored search form is a search of nonprofit organizations: a synthetic query lands on https://www.causeiq.com/search/organizations/?q=John+Smith. It searches the site's pages, not records about a person."
+  },
+  "uk-open-electoral-register": {
+    "checked": "2026-10-18",
+    "not_a_person_search": true,
+    "kind": "site_search",
+    "evidence": "The stored search form is the GOV.UK website search, not the electoral register: a synthetic query lands on https://www.gov.uk/search/all?keywords=John+Smith. It searches the site's pages, not records about a person."
+  }
+}
