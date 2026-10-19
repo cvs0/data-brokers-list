@@ -1,6 +1,6 @@
 {
  "schema_version": "4.0.0",
- "checked_at": "2026-10-19T19:48:59+00:00",
+ "checked_at": "2026-10-19T19:59:23+00:00",
  "method": "v3 records, with privacy and removal mailboxes on another domain kept as related_domain. Brokers whose loaded pages published no removal channel were crawled again for unfetched same-site opt-out and privacy URLs, then the catalog URL and homepage were opened once in a browser when those pages still showed no form. That recrawl honors robots.txt. A later pass reads the catalog URL and homepage of brokers whose robots.txt had disallowed the research client. A search pass reads homepages whose public search form was missing, including pages robots.txt had disallowed, and stores a name, phone, or address form. Those passes submit no form, no login, and no CAPTCHA. A legal pass re-reads stored privacy and terms text and fetches an unread privacy or terms page when robots.txt allows it. A network pass looks up public DNS and the site certificate, and reads response headers for the removal URL when robots.txt allows it. A later pass adds IPv6, SPF, DMARC, DKIM selectors, CAA, DNSSEC, the address block, certificate dates, RDAP registration, and the removal response's security headers. A captcha pass re-reads the removal URL and the search page for a widget. A browser reads the page when the static HTML has no widget and the page has a removal form, a stored CAPTCHA, or a public search form. A later pass reads the public widget settings, including whether it is a checkbox, an invisible check, or a score. A form pass re-reads stored search and removal forms for labels, limits, autocomplete, the submit button, and hidden field names. A browser opens when the static HTML does not contain the stored fields. Nothing is submitted. A search test then submits one synthetic query on each broker whose search and removal are both fillable. It does not consult robots.txt. Removal forms are not submitted and CAPTCHAs are not solved. search_test is on every broker. It stores the outcome, status, field names, the first path segment, the page kind, and a result count when the page states one. A loader page is followed to the count endpoint. The response body, record text, and listing URLs are not stored.",
  "broker_count": 709,
  "counts": {
@@ -25,7 +25,7 @@
   "search_page_results": 14,
   "search_page_loader": 8,
   "search_page_form": 15,
-  "with_country": 623,
+  "with_country": 625,
   "with_region": 477,
   "with_locality": 359,
   "with_removal_action": 135,
@@ -48,9 +48,9 @@
   "with_hsts": 275,
   "with_form_enctype": 216,
   "with_field_detail": 384,
-  "with_field_label": 285,
-  "with_field_constraint": 78,
-  "with_submit_label": 297,
+  "with_field_label": 283,
+  "with_field_constraint": 77,
+  "with_submit_label": 296,
   "with_hidden_names": 204,
   "with_ipv6": 263,
   "with_spf": 518,
@@ -104069,17 +104069,63 @@
     "available": true,
     "method": "http_get",
     "page_url": "https://namesandfacts.com/",
-    "form_action": "https://namesandfacts.com/search",
+    "form_action": "https://namesandfacts.com/",
     "inputs": [
      {
-      "name": "search",
-      "type": "search",
-      "canonical": "full_name",
+      "name": "first",
+      "type": "text",
+      "canonical": "first_name",
       "required": false,
       "autocomplete": null,
-      "placeholder": "Name & Last Name",
-      "id": "main-search-input",
-      "label": "Search people",
+      "placeholder": null,
+      "id": null,
+      "label": null,
+      "inputmode": null,
+      "pattern": null,
+      "minlength": null,
+      "maxlength": null,
+      "min": null,
+      "max": null,
+      "step": null,
+      "accept": null,
+      "multiple": false,
+      "disabled": false,
+      "readonly": false,
+      "checked": false,
+      "value": null
+     },
+     {
+      "name": "last",
+      "type": "text",
+      "canonical": "last_name",
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null,
+      "id": null,
+      "label": null,
+      "inputmode": null,
+      "pattern": null,
+      "minlength": null,
+      "maxlength": null,
+      "min": null,
+      "max": null,
+      "step": null,
+      "accept": null,
+      "multiple": false,
+      "disabled": false,
+      "readonly": false,
+      "checked": false,
+      "value": null
+     },
+     {
+      "name": "state",
+      "type": "text",
+      "canonical": "region",
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null,
+      "id": null,
+      "label": null,
       "inputmode": null,
       "pattern": null,
       "minlength": null,
@@ -104095,12 +104141,12 @@
       "value": null
      }
     ],
-    "url_pattern": null,
+    "url_pattern": "https://namesandfacts.com/p/{last}/{first}?Addresses%5B0%5D%5Bstate%5D={state}",
     "directory_prefixes": [],
     "paywall": null,
     "login_wall": null,
     "form_meta": {
-     "id": "search-person-form",
+     "id": null,
      "name": null,
      "autocomplete": null,
      "novalidate": null,
@@ -104194,15 +104240,19 @@
     }
    ],
    "location": {
-    "country": null,
+    "country": "US",
     "region": null,
     "locality": null,
     "postal_code": null,
     "street": null,
     "postal_address": null,
-    "coverage": [],
+    "coverage": [
+     "US"
+    ],
     "search_regions": [],
-    "sources": []
+    "sources": [
+     "manual"
+    ]
    },
    "network": {
     "checked": true,
@@ -104277,7 +104327,9 @@
     "search_fillable": true,
     "search_captcha": false,
     "search_fields": [
-     "full_name"
+     "first_name",
+     "last_name",
+     "region"
     ],
     "removal_form_fillable": false,
     "removal_email_usable": false,
@@ -137428,15 +137480,19 @@
     }
    ],
    "location": {
-    "country": null,
+    "country": "US",
     "region": null,
     "locality": null,
     "postal_code": null,
     "street": null,
     "postal_address": null,
-    "coverage": [],
+    "coverage": [
+     "US"
+    ],
     "search_regions": [],
-    "sources": []
+    "sources": [
+     "manual"
+    ]
    },
    "network": {
     "checked": true,
@@ -268461,7 +268517,7 @@
    "legal_name": null,
    "search": {
     "available": true,
-    "method": "http_form_post",
+    "method": "http_get",
     "page_url": "https://www.192.com/",
     "form_action": "https://www.192.com/people/search/",
     "inputs": [
@@ -268471,13 +268527,13 @@
       "canonical": "full_name",
       "required": false,
       "autocomplete": null,
-      "placeholder": "e.g. John Smith",
-      "id": "peopleBusinesses_name",
-      "label": "WHO:",
+      "placeholder": null,
+      "id": null,
+      "label": null,
       "inputmode": null,
       "pattern": null,
       "minlength": null,
-      "maxlength": 75,
+      "maxlength": null,
       "min": null,
       "max": null,
       "step": null,
@@ -268491,16 +268547,16 @@
      {
       "name": "location",
       "type": "text",
-      "canonical": null,
+      "canonical": "city",
       "required": false,
       "autocomplete": null,
-      "placeholder": "e.g. London or SW6",
-      "id": "where_location",
-      "label": "WHERE:",
+      "placeholder": null,
+      "id": null,
+      "label": null,
       "inputmode": null,
       "pattern": null,
       "minlength": null,
-      "maxlength": 75,
+      "maxlength": null,
       "min": null,
       "max": null,
       "step": null,
@@ -268512,16 +268568,16 @@
       "value": null
      }
     ],
-    "url_pattern": "https://www.192.com/people/search/",
+    "url_pattern": "https://www.192.com/people/search/?looking_for={looking_for}&location={location}",
     "directory_prefixes": [],
     "paywall": null,
     "login_wall": null,
     "form_meta": {
-     "id": "js-ont-header-search-form",
+     "id": null,
      "name": null,
      "autocomplete": null,
-     "novalidate": false,
-     "submit_label": "Search",
+     "novalidate": null,
+     "submit_label": null,
      "hidden_names": []
     },
     "captcha_provider": null,
@@ -268748,7 +268804,8 @@
     "search_fillable": false,
     "search_captcha": true,
     "search_fields": [
-     "full_name"
+     "full_name",
+     "city"
     ],
     "removal_form_fillable": false,
     "removal_email_usable": false,

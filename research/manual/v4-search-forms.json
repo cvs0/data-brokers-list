@@ -309,27 +309,46 @@
     "captcha_widget": false
   },
   "names-and-facts": {
-    "checked": "2026-10-18",
-    "evidence": "Homepage form id search-person-form, GET to /search. The search box has label \"Search people\" and placeholder \"Name & Last Name\". The catalog stored no form (robots.txt had disallowed the scan).",
-    "result_check": "GET /search?search=John+Smith answered with a Cloudflare challenge the browser-fetch service did not clear (twice). The form is right; the results page is walled.",
+    "checked": "2026-10-19",
+    "country": "US",
+    "evidence": "The homepage form's GET /search?search=… draws no results (the page keeps only the search box). The site's own name pages are /<letter>/<last>/<first>, for example /j/smith/john, reached from its directory (/name/j/john lists \"John Smith\" → /j/smith/john). The leading letter is not checked (/a/smith/john and /s/smith/john serve the same page). The state filter its results page links to is ?Addresses[0][state]=<code>. The data is US only: Ontario returned \"We couldn't find any matches for John Smith using the filters you specified: State: ON\". So the country is US. The pages sit behind Cloudflare, which a residential exit passes with no challenge widget.",
+    "result_check": "Residential US exit, browser, 2026-10-19: /j/smith/john?Addresses[0][state]=CO returned \"We found 20 people named John Smith with State: Colorado\", with rows \"Lived in … Denver, CO …\". /q/vanderwekken/quillon returned \"Search name: Quillon Vanderwekken Oh no! We couldn't find the person you are looking for.\"",
     "form": {
       "method": "http_get",
       "page_url": "https://namesandfacts.com/",
-      "form_action": "https://namesandfacts.com/search",
-      "url_pattern": null,
-      "form_id": "search-person-form",
+      "form_action": "https://namesandfacts.com/",
+      "url_pattern": "https://namesandfacts.com/p/{last}/{first}?Addresses%5B0%5D%5Bstate%5D={state}",
+      "form_id": null,
       "form_name": null,
       "submit_label": null,
       "hidden_names": [],
       "inputs": [
         {
-          "name": "search",
-          "type": "search",
-          "canonical": "full_name",
+          "name": "first",
+          "type": "text",
+          "canonical": "first_name",
           "required": false,
-          "id": "main-search-input",
-          "label": "Search people",
-          "placeholder": "Name & Last Name"
+          "id": null,
+          "label": null,
+          "placeholder": null
+        },
+        {
+          "name": "last",
+          "type": "text",
+          "canonical": "last_name",
+          "required": false,
+          "id": null,
+          "label": null,
+          "placeholder": null
+        },
+        {
+          "name": "state",
+          "type": "text",
+          "canonical": "region",
+          "required": false,
+          "id": null,
+          "label": null,
+          "placeholder": null
         }
       ]
     },
@@ -2537,7 +2556,38 @@
   "192-com": {
     "checked": "2026-10-19",
     "country": "GB",
-    "evidence": "The live homepage (https://www.192.com/, fetched 2026-10-19) reads \"Search for People, Businesses & Places in the UK\" and \"192.com gives you more information about people, businesses, and places in the UK\". Its people search covers the UK electoral roll and directories. A synthetic search for John Smith (Toronto ON) returned UK people, and the stored entry had no country, so Frame planned it for US and Canadian addresses."
+    "evidence": "The live homepage (https://www.192.com/, fetched 2026-10-19) reads \"Search for People, Businesses & Places in the UK\" and \"192.com gives you more information about people, businesses, and places in the UK\". Its people search covers the UK electoral roll and directories. A synthetic search for John Smith (Toronto ON) returned UK people, and the stored entry had no country, so Frame planned it for US and Canadian addresses. The people search is a plain GET, /people/search/?looking_for=<name>&location=<town>. The stored form had it as a POST with the location unmapped; the location is the town.",
+    "result_check": "From a GB residential exit (browser, 2026-10-19): /people/search/?looking_for=John+Smith&location=London returned \"100 Results for John Smith in or near London … 1 John H Smith ER 2006-08, 2014-26 London, Greater London, SE2…\". Quillon Vanderwekken returned \"Sorry, your search for Quillon Vanderwekken in London returned no results.\" No sign-in is needed for the result list.",
+    "form": {
+      "method": "http_get",
+      "page_url": "https://www.192.com/",
+      "form_action": "https://www.192.com/people/search/",
+      "url_pattern": "https://www.192.com/people/search/?looking_for={looking_for}&location={location}",
+      "form_id": null,
+      "form_name": null,
+      "submit_label": null,
+      "hidden_names": [],
+      "inputs": [
+        {
+          "name": "looking_for",
+          "type": "text",
+          "canonical": "full_name",
+          "required": false,
+          "id": null,
+          "label": null,
+          "placeholder": null
+        },
+        {
+          "name": "location",
+          "type": "text",
+          "canonical": "city",
+          "required": false,
+          "id": null,
+          "label": null,
+          "placeholder": null
+        }
+      ]
+    }
   },
   "backgroundcheckers": {
     "checked": "2026-10-19",
@@ -3651,5 +3701,10 @@
     "paywall": true,
     "kind": "paid_report_link",
     "evidence": "The search form on https://www.illinoisarrests.org/ does not search the site: its script (form-redirect plugin) sends the name to https://infotracer.net/loading/?ltid=criminal&…&firstname=…&lastname=…&state=…&city=…&tid=illinoisarrests, InfoTracer's paid report flow (catalog entry infotracer); the stored GET /Results answers an empty 200 page. Same as the other <state>arrests.org sites."
+  },
+  "wyty": {
+    "checked": "2026-10-19",
+    "country": "US",
+    "evidence": "The homepage name search (txtFirstName, txtLastName, txtCity, ddlStates) has a state dropdown of US states only (AK … WY) and no Canadian province, so the country is US. The search is guarded by an invisible Cloudflare Turnstile check. From a datacenter browser the submit came back \"We couldn't verify your browser. Please try your search again.\" Two residential US exits got \"403 - Forbidden: Access is denied\" on the homepage itself (2026-10-19). No search could be read. Frame's Cloudflare solver stays off."
   }
 }
