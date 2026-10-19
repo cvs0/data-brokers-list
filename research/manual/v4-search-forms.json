@@ -7,8 +7,8 @@
     "country": "US"
   },
   "information-com": {
-    "checked": "2026-10-18",
-    "evidence": "Homepage name form (firstName, lastName, city, state). Its script sends the search as a GET to /pf/<id>/searching, which forwards to /pf/nso1/res with the same parameters. The catalog stored no form (robots.txt had disallowed the scan).",
+    "checked": "2026-10-19",
+    "evidence": "Homepage name form (firstName, lastName, city, state). Its script sends the search as a GET to /pf/<id>/searching, which forwards to /pf/nso1/res with the same parameters. The catalog stored no form (robots.txt had disallowed the scan). Re-checked 2026-10-19: /pf/nso1/res now shows the same screen for any name, \"We found 10+ results for <name> in <city>, <state>. Preparing to build report, please wait.\", also for a made-up name (Quillon Vanderwekken, Denver CO), followed by a paid report. Nothing on it can be read as a listing.",
     "result_check": "GET /pf/nso1/res?firstName=John&lastName=Smith&city=&state= returned a results page titled \"Results For: John Smith\". The nso1 path segment is the site's own results path and may change.",
     "form": {
       "method": "http_get",
@@ -58,7 +58,9 @@
         }
       ]
     },
-    "captcha_widget": false
+    "captcha_widget": false,
+    "paywall": true,
+    "kind": "register_or_purchase"
   },
   "peoplesearch-whitepages": {
     "checked": "2026-10-18",
@@ -2207,10 +2209,58 @@
     "evidence": "Same funnel as PeopleWhizr and Truthed: the form opens an /hflow/searching animation that reads the same for John Smith (Denver CO) and a made-up name (Quillon Vanderwekken); no person is listed before checkout."
   },
   "beenverified": {
-    "checked": "2026-10-18",
-    "paywall": true,
-    "kind": "register_or_purchase",
-    "evidence": "The form opens /lp/…/loading, a step-by-step funnel. Its page carries a hidden \"Sorry, we have 0 results\" step for every search, so John Smith (Denver CO) and a made-up name (Quillon Vanderwekken) read the same; no person is listed before sign-up."
+    "checked": "2026-10-19",
+    "evidence": "The homepage name form on beenverified.com hands the name to a \"searching\" page (/lp/a19763/2/loading) whose script loads GET /hk/teaser/?exporttype=jsonp&rc=100&fn=…&ln=…&state=…&city=… and draws the free preview from it (names, ages, cities) before any paywall. That JSONP is the search the site itself runs; nothing is bought or registered to read it. The results URL renders with no CAPTCHA widget (the stored widget belongs to the homepage form), so the stored CAPTCHA marker is cleared.",
+    "result_check": "GET https://www.beenverified.com/hk/teaser/?exporttype=jsonp&rc=100&fn=John&ln=Smith&state=CO&city=Denver&callback=parseResults returned parseResults({\"response\":{…\"RecordCount\":100,\"Records\":[{\"Names\":[{\"First\":\"JOHN\",…\"Last\":\"SMITH\"}],\"Addresses\":[{…\"City\":\"DENVER\",\"State\":\"CO\"…; the same call for a made-up name (Quillon Vanderwekken) returned \"RecordCount\":0,\"Records\":[] (2026-10-19, rendered in a browser).",
+    "form": {
+      "method": "http_get",
+      "page_url": "https://www.beenverified.com/",
+      "form_action": "https://www.beenverified.com/hk/teaser/",
+      "url_pattern": "https://www.beenverified.com/hk/teaser/?exporttype=jsonp&rc=100&fn={fn}&ln={ln}&state={state}&city={city}&callback=parseResults",
+      "form_id": null,
+      "form_name": null,
+      "submit_label": null,
+      "hidden_names": [],
+      "inputs": [
+        {
+          "name": "fn",
+          "type": "text",
+          "canonical": "first_name",
+          "required": false,
+          "id": null,
+          "label": null,
+          "placeholder": null
+        },
+        {
+          "name": "ln",
+          "type": "text",
+          "canonical": "last_name",
+          "required": false,
+          "id": null,
+          "label": null,
+          "placeholder": null
+        },
+        {
+          "name": "state",
+          "type": "text",
+          "canonical": "region",
+          "required": false,
+          "id": null,
+          "label": null,
+          "placeholder": null
+        },
+        {
+          "name": "city",
+          "type": "text",
+          "canonical": "city",
+          "required": false,
+          "id": null,
+          "label": null,
+          "placeholder": null
+        }
+      ]
+    },
+    "captcha_widget": false
   },
   "veripages": {
     "checked": "2026-10-18",
@@ -2373,7 +2423,9 @@
   "checksecrets-truth-now-llc": {
     "checked": "2026-10-19",
     "country": "US",
-    "evidence": "The live name search form at https://www.checksecrets.com/name/landing (fetched 2026-10-19 through a residential proxy) has one location dropdown, `field`, with 53 options: All States, then Alabama … Wyoming. It lists no Canadian province. A synthetic search for John Smith, Toronto ON stayed on the form. The stored form kept no choices, so no country was derived, and Frame planned this broker for Canadian addresses."
+    "evidence": "The live name search form at https://www.checksecrets.com/name/landing (fetched 2026-10-19 through a residential proxy) has one location dropdown, `field`, with 53 options: All States, then Alabama … Wyoming. It lists no Canadian province. A synthetic search for John Smith, Toronto ON stayed on the form. The stored form kept no choices, so no country was derived, and Frame planned this broker for Canadian addresses. Submitting the name form at https://www.checksecrets.com/name/landing (John Smith, 2026-10-19, headless browser on a US datacenter address) moves to a \"Searching… Please Be Patient\" page whose script calls POST /api/content/peopleSearch/peopleSearch. That call answered HTTP 412 with {\"captcha\":{\"type\":\"creditCard.authorize\",…,\"creditCardData\":{\"price\":0.3}}}: the results are only released after a card authorization. The page never shows a count or names before that. The stored GET (?First-Name=…) only reloads the form.",
+    "paywall": true,
+    "kind": "register_or_purchase"
   },
   "infomatics-llc-network-peoplesearcher-com": {
     "checked": "2026-10-19",
@@ -2383,12 +2435,16 @@
   "infomatics-llc-network-peoplesearchusa-org": {
     "checked": "2026-10-19",
     "country": "US",
-    "evidence": "The live name search form at https://www.peoplesearchusa.org/name/landing (fetched 2026-10-19 through a residential proxy) has one location dropdown, `field`, with 53 options: All States, then Alabama … Wyoming. It lists no Canadian province. A synthetic search for John Smith, Toronto ON stayed on the form. The stored form kept no choices, so no country was derived, and Frame planned this broker for Canadian addresses."
+    "evidence": "The live name search form at https://www.peoplesearchusa.org/name/landing (fetched 2026-10-19 through a residential proxy) has one location dropdown, `field`, with 53 options: All States, then Alabama … Wyoming. It lists no Canadian province. A synthetic search for John Smith, Toronto ON stayed on the form. The stored form kept no choices, so no country was derived, and Frame planned this broker for Canadian addresses. Submitting the name form at https://www.peoplesearchusa.org/name/landing (John Smith, 2026-10-19, headless browser on a US datacenter address) moves to a \"Searching… Please Be Patient\" page whose script calls POST /api/content/peopleSearch/peopleSearch. That call answered HTTP 412 with {\"captcha\":{\"type\":\"creditCard.authorize\",…,\"creditCardData\":{\"price\":0.3}}}: the results are only released after a card authorization. The page never shows a count or names before that. The stored GET (?First-Name=…) only reloads the form.",
+    "paywall": true,
+    "kind": "register_or_purchase"
   },
   "inmatessearcher": {
     "checked": "2026-10-19",
     "country": "US",
-    "evidence": "The live name search form at https://www.inmatessearcher.com/name/landing (fetched 2026-10-19 through a residential proxy) has one location dropdown, `field`, with 53 options: All States, then Alabama … Wyoming. It lists no Canadian province. A synthetic search for John Smith, Toronto ON stayed on the form. The stored form kept no choices, so no country was derived, and Frame planned this broker for Canadian addresses."
+    "evidence": "The live name search form at https://www.inmatessearcher.com/name/landing (fetched 2026-10-19 through a residential proxy) has one location dropdown, `field`, with 53 options: All States, then Alabama … Wyoming. It lists no Canadian province. A synthetic search for John Smith, Toronto ON stayed on the form. The stored form kept no choices, so no country was derived, and Frame planned this broker for Canadian addresses. Submitting the name form at https://www.inmatessearcher.com/name/landing (John Smith, 2026-10-19, headless browser on a US datacenter address) moves to a \"Searching… Please Be Patient\" page whose script calls POST /api/content/peopleSearch/peopleSearch. That call answered HTTP 412 with {\"captcha\":{\"type\":\"creditCard.authorize\",…,\"creditCardData\":{\"price\":0.3}}}: the results are only released after a card authorization. The page never shows a count or names before that. The stored GET (?First-Name=…) only reloads the form.",
+    "paywall": true,
+    "kind": "register_or_purchase"
   },
   "weinform-we-inform-llc": {
     "checked": "2026-10-19",
@@ -2399,5 +2455,411 @@
     "checked": "2026-10-19",
     "offline": true,
     "evidence": "mashpanel.com is no longer a working people search. The homepage (title \"Usa People Search for free on mashpanel.com\") is a static restore. The catalog's search URL (https://www.mashpanel.com/searchResults?firstName=John&lastName=Smith, fetched 2026-10-19) returns a 1 KB notice: \"The DEMO version only includes 4 pages: http://mashpanel.com http://mashpanel.com/remove.html http://mashpanel.com/about-us.html http://mashpanel.com/contact-us.html ... Visit https://www.waybackmachinedownloader.com/... to buy a fully functioning site\". No search runs and no records are shown. The record's stored country (CA) is left as is; with the site offline, Frame no longer plans it."
+  },
+  "411locate": {
+    "checked": "2026-10-19",
+    "offline": true,
+    "evidence": "https://411locate.com/ redirects to forsale.godaddy.com/forsale/411locate.com (the domain is listed for sale; 2026-10-19). No people search runs there."
+  },
+  "bumper-beenverified-family": {
+    "checked": "2026-10-19",
+    "evidence": "The homepage name form on bumper.com hands the name to a \"searching\" page (its /lp/…/loading page) whose script loads GET /hk/teaser/?exporttype=jsonp&rc=100&fn=…&ln=…&state=…&city=… and draws the free preview from it (names, ages, cities) before any paywall. That JSONP is the search the site itself runs; nothing is bought or registered to read it. The results URL renders with no CAPTCHA widget (the stored widget belongs to the homepage form), so the stored CAPTCHA marker is cleared.",
+    "result_check": "GET https://www.bumper.com/hk/teaser/?exporttype=jsonp&rc=100&fn=John&ln=Smith&state=CO&city=Denver&callback=parseResults returned parseResults({\"response\":{…\"RecordCount\":100,\"Records\":[{\"Names\":[{\"First\":\"JOHN\",…\"Last\":\"SMITH\"}],\"Addresses\":[{…\"City\":\"DENVER\",\"State\":\"CO\"…; the same call for a made-up name (Quillon Vanderwekken) returned \"RecordCount\":0,\"Records\":[] (2026-10-19, rendered in a browser).",
+    "form": {
+      "method": "http_get",
+      "page_url": "https://www.bumper.com/",
+      "form_action": "https://www.bumper.com/hk/teaser/",
+      "url_pattern": "https://www.bumper.com/hk/teaser/?exporttype=jsonp&rc=100&fn={fn}&ln={ln}&state={state}&city={city}&callback=parseResults",
+      "form_id": null,
+      "form_name": null,
+      "submit_label": null,
+      "hidden_names": [],
+      "inputs": [
+        {
+          "name": "fn",
+          "type": "text",
+          "canonical": "first_name",
+          "required": false,
+          "id": null,
+          "label": null,
+          "placeholder": null
+        },
+        {
+          "name": "ln",
+          "type": "text",
+          "canonical": "last_name",
+          "required": false,
+          "id": null,
+          "label": null,
+          "placeholder": null
+        },
+        {
+          "name": "state",
+          "type": "text",
+          "canonical": "region",
+          "required": false,
+          "id": null,
+          "label": null,
+          "placeholder": null
+        },
+        {
+          "name": "city",
+          "type": "text",
+          "canonical": "city",
+          "required": false,
+          "id": null,
+          "label": null,
+          "placeholder": null
+        }
+      ]
+    },
+    "captcha_widget": false
+  },
+  "classmates-com": {
+    "checked": "2026-10-19",
+    "country": "US",
+    "not_a_person_search": true,
+    "kind": "register_or_purchase",
+    "evidence": "The stored form posts first and last name to https://www.classmates.com/seo/registration, the site's sign-up. Classmates shows yearbook and member listings only to registered members; there is no public name search to run."
+  },
+  "criminal-com-truthfinder": {
+    "checked": "2026-10-19",
+    "country": "US",
+    "not_a_person_search": true,
+    "kind": "affiliate_redirect",
+    "evidence": "The stored GET /search/search.php?fname=…&lname=…&city=…&state=… redirects to www.truthfinder.com/search/ with affiliate parameters (utm_source=REVEN), a TruthFinder question funnel (\"What else do you know about John Smith?\"). The search is TruthFinder's (catalog entry truthfinder-peopleconnect). Checked 2026-10-19."
+  },
+  "findpeoplesearch": {
+    "checked": "2026-10-19",
+    "offline": true,
+    "evidence": "https://www.findpeoplesearch.com/ redirects to an article on searchhounds.com (\"how to search prison and jail records online\"; 2026-10-19). No people search runs on the domain any more."
+  },
+  "infomatics-llc-network-privatereports-com": {
+    "checked": "2026-10-19",
+    "paywall": true,
+    "kind": "register_or_purchase",
+    "evidence": "Submitting the name form at https://www.privatereports.com/nameSearch/landingPage (John Smith, 2026-10-19, headless browser on a US datacenter address) moves to a \"Searching… Please Be Patient\" page whose script calls POST /api/content/peopleSearch/peopleSearch. That call answered HTTP 412 with {\"captcha\":{\"type\":\"creditCard.authorize\",…,\"creditCardData\":{\"price\":0.3}}}: the results are only released after a card authorization. The page never shows a count or names before that. The stored GET (?First-Name=…) only reloads the form."
+  },
+  "instantcheckmate-peopleconnect": {
+    "checked": "2026-10-19",
+    "evidence": "The homepage form's stored GET (/search/?firstName=…) only reloads the homepage or a question funnel. The site's own results page is /results/?firstName=…&lastName=…&state=… (the page the form's funnel and its affiliates' hand-offs land on), which lists the matches before any paywall. The results URL renders with no CAPTCHA widget (the stored widget belongs to the homepage form), so the stored CAPTCHA marker is cleared.",
+    "result_check": "GET https://www.instantcheckmate.com/results/?firstName=John&lastName=Smith&state=CO rendered \"Incredible! 56 Matches Found\"; for a made-up name (Quillon Vanderwekken, CO) it rendered 'Your search for \"Quillon Vanderwekken\" may be too broad. Add more details like city and state…', the site's no-results page (2026-10-19).",
+    "form": {
+      "method": "http_get",
+      "page_url": "https://www.instantcheckmate.com/",
+      "form_action": "https://www.instantcheckmate.com/results/",
+      "url_pattern": "https://www.instantcheckmate.com/results/?firstName={firstName}&lastName={lastName}&state={state}",
+      "form_id": null,
+      "form_name": null,
+      "submit_label": null,
+      "hidden_names": [],
+      "inputs": [
+        {
+          "name": "firstName",
+          "type": "text",
+          "canonical": "first_name",
+          "required": false,
+          "id": null,
+          "label": null,
+          "placeholder": null
+        },
+        {
+          "name": "lastName",
+          "type": "text",
+          "canonical": "last_name",
+          "required": false,
+          "id": null,
+          "label": null,
+          "placeholder": null
+        },
+        {
+          "name": "state",
+          "type": "text",
+          "canonical": "region",
+          "required": false,
+          "id": null,
+          "label": null,
+          "placeholder": null
+        }
+      ]
+    },
+    "captcha_widget": false
+  },
+  "intelius-peopleconnect": {
+    "checked": "2026-10-19",
+    "evidence": "The homepage form's stored GET (/search/?firstName=…) only reloads the homepage or a question funnel. The site's own results page is /results/?firstName=…&lastName=…&state=… (the page the form's funnel and its affiliates' hand-offs land on), which lists the matches before any paywall. The results URL renders with no CAPTCHA widget (the stored widget belongs to the homepage form), so the stored CAPTCHA marker is cleared.",
+    "result_check": "GET https://www.intelius.com/results/?firstName=John&lastName=Smith&state=CO rendered \"Next Step: Select A Result Below\" with John Smith result rows; for a made-up name (Quillon Vanderwekken, CO) it rendered 'Your search for \"Quillon Vanderwekken\" may be too broad. Add more details like city and state…', the site's no-results page (2026-10-19).",
+    "form": {
+      "method": "http_get",
+      "page_url": "https://www.intelius.com/",
+      "form_action": "https://www.intelius.com/results/",
+      "url_pattern": "https://www.intelius.com/results/?firstName={firstName}&lastName={lastName}&state={state}",
+      "form_id": null,
+      "form_name": null,
+      "submit_label": null,
+      "hidden_names": [],
+      "inputs": [
+        {
+          "name": "firstName",
+          "type": "text",
+          "canonical": "first_name",
+          "required": false,
+          "id": null,
+          "label": null,
+          "placeholder": null
+        },
+        {
+          "name": "lastName",
+          "type": "text",
+          "canonical": "last_name",
+          "required": false,
+          "id": null,
+          "label": null,
+          "placeholder": null
+        },
+        {
+          "name": "state",
+          "type": "text",
+          "canonical": "region",
+          "required": false,
+          "id": null,
+          "label": null,
+          "placeholder": null
+        }
+      ]
+    },
+    "captcha_widget": false
+  },
+  "mugshotlook": {
+    "checked": "2026-10-19",
+    "paywall": true,
+    "kind": "register_or_purchase",
+    "evidence": "Submitting the name form at https://www.mugshotlook.com/nameSearch/landingPage (John Smith, 2026-10-19, headless browser on a US datacenter address) moves to a \"Searching… Please Be Patient\" page whose script calls POST /api/content/peopleSearch/peopleSearch. That call answered HTTP 412 with {\"captcha\":{\"type\":\"creditCard.authorize\",…,\"creditCardData\":{\"price\":0.3}}}: the results are only released after a card authorization. The page never shows a count or names before that. The stored GET (?First-Name=…) only reloads the form."
+  },
+  "peoplelooker-beenverified": {
+    "checked": "2026-10-19",
+    "evidence": "The homepage name form on peoplelooker.com hands the name to a \"searching\" page (/lp/6b8dbc/2/loading) whose script loads GET /hk/teaser/?exporttype=jsonp&rc=100&fn=…&ln=…&state=…&city=… and draws the free preview from it (names, ages, cities) before any paywall. That JSONP is the search the site itself runs; nothing is bought or registered to read it. The results URL renders with no CAPTCHA widget (the stored widget belongs to the homepage form), so the stored CAPTCHA marker is cleared.",
+    "result_check": "GET https://www.peoplelooker.com/hk/teaser/?exporttype=jsonp&rc=100&fn=John&ln=Smith&state=CO&city=Denver&callback=parseResults returned parseResults({\"response\":{…\"RecordCount\":100,\"Records\":[{\"Names\":[{\"First\":\"JOHN\",…\"Last\":\"SMITH\"}],\"Addresses\":[{…\"City\":\"DENVER\",\"State\":\"CO\"…; the same call for a made-up name (Quillon Vanderwekken) returned \"RecordCount\":0,\"Records\":[] (2026-10-19, rendered in a browser).",
+    "form": {
+      "method": "http_get",
+      "page_url": "https://www.peoplelooker.com/",
+      "form_action": "https://www.peoplelooker.com/hk/teaser/",
+      "url_pattern": "https://www.peoplelooker.com/hk/teaser/?exporttype=jsonp&rc=100&fn={fn}&ln={ln}&state={state}&city={city}&callback=parseResults",
+      "form_id": null,
+      "form_name": null,
+      "submit_label": null,
+      "hidden_names": [],
+      "inputs": [
+        {
+          "name": "fn",
+          "type": "text",
+          "canonical": "first_name",
+          "required": false,
+          "id": null,
+          "label": null,
+          "placeholder": null
+        },
+        {
+          "name": "ln",
+          "type": "text",
+          "canonical": "last_name",
+          "required": false,
+          "id": null,
+          "label": null,
+          "placeholder": null
+        },
+        {
+          "name": "state",
+          "type": "text",
+          "canonical": "region",
+          "required": false,
+          "id": null,
+          "label": null,
+          "placeholder": null
+        },
+        {
+          "name": "city",
+          "type": "text",
+          "canonical": "city",
+          "required": false,
+          "id": null,
+          "label": null,
+          "placeholder": null
+        }
+      ]
+    },
+    "captcha_widget": false
+  },
+  "peoplesmart-beenverified": {
+    "checked": "2026-10-19",
+    "evidence": "The homepage name form on peoplesmart.com hands the name to a \"searching\" page (/lp/88dce3/2/loading) whose script loads GET /hk/teaser/?exporttype=jsonp&rc=100&fn=…&ln=…&state=…&city=… and draws the free preview from it (names, ages, cities) before any paywall. That JSONP is the search the site itself runs; nothing is bought or registered to read it. The results URL renders with no CAPTCHA widget (the stored widget belongs to the homepage form), so the stored CAPTCHA marker is cleared.",
+    "result_check": "GET https://www.peoplesmart.com/hk/teaser/?exporttype=jsonp&rc=100&fn=John&ln=Smith&state=CO&city=Denver&callback=parseResults returned parseResults({\"response\":{…\"RecordCount\":100,\"Records\":[{\"Names\":[{\"First\":\"JOHN\",…\"Last\":\"SMITH\"}],\"Addresses\":[{…\"City\":\"DENVER\",\"State\":\"CO\"…; the same call for a made-up name (Quillon Vanderwekken) returned \"RecordCount\":0,\"Records\":[] (2026-10-19, rendered in a browser).",
+    "form": {
+      "method": "http_get",
+      "page_url": "https://www.peoplesmart.com/",
+      "form_action": "https://www.peoplesmart.com/hk/teaser/",
+      "url_pattern": "https://www.peoplesmart.com/hk/teaser/?exporttype=jsonp&rc=100&fn={fn}&ln={ln}&state={state}&city={city}&callback=parseResults",
+      "form_id": null,
+      "form_name": null,
+      "submit_label": null,
+      "hidden_names": [],
+      "inputs": [
+        {
+          "name": "fn",
+          "type": "text",
+          "canonical": "first_name",
+          "required": false,
+          "id": null,
+          "label": null,
+          "placeholder": null
+        },
+        {
+          "name": "ln",
+          "type": "text",
+          "canonical": "last_name",
+          "required": false,
+          "id": null,
+          "label": null,
+          "placeholder": null
+        },
+        {
+          "name": "state",
+          "type": "text",
+          "canonical": "region",
+          "required": false,
+          "id": null,
+          "label": null,
+          "placeholder": null
+        },
+        {
+          "name": "city",
+          "type": "text",
+          "canonical": "city",
+          "required": false,
+          "id": null,
+          "label": null,
+          "placeholder": null
+        }
+      ]
+    },
+    "captcha_widget": false
+  },
+  "persopo": {
+    "checked": "2026-10-19",
+    "country": "US",
+    "not_a_person_search": true,
+    "kind": "affiliate_redirect",
+    "evidence": "The homepage form (firstName, lastName, state) goes to tracking.truthfinder.com (an affiliate tracker) and lands on www.truthfinder.com/results/ with the name: John Smith CO gave TruthFinder's \"59 Matches Found\" page. The search is TruthFinder's (catalog entry truthfinder-peopleconnect). Checked 2026-10-19."
+  },
+  "publicrecordcom-llc": {
+    "checked": "2026-10-19",
+    "paywall": true,
+    "kind": "register_or_purchase",
+    "evidence": "The homepage name form goes to /fnl/<id>?firstName=…&lastName=…&city=…&state=…, a funnel (\"Searching For: John Smith in Denver, CO … 47%\", then \"What age range best fits John?\"). Its result screen is not a search result: for a made-up name (Quillon Vanderwekken, Denver CO) it said \"We found 10+ results for Quillon Vanderwekken in Denver, CO. Preparing to build report, please wait.\" (2026-10-19), so nothing on it can be read as a listing. The report itself is sold."
+  },
+  "publicsearcher": {
+    "checked": "2026-10-19",
+    "paywall": true,
+    "kind": "register_or_purchase",
+    "evidence": "Submitting the name form at https://www.publicsearcher.com/nameSearch/landingPage (John Smith, 2026-10-19, headless browser on a US datacenter address) moves to a \"Searching… Please Be Patient\" page whose script calls POST /api/content/peopleSearch/peopleSearch. That call answered HTTP 412 with {\"captcha\":{\"type\":\"creditCard.authorize\",…,\"creditCardData\":{\"price\":0.3}}}: the results are only released after a card authorization. The page never shows a count or names before that. The stored GET (?First-Name=…) only reloads the form."
+  },
+  "sealedrecords": {
+    "checked": "2026-10-19",
+    "paywall": true,
+    "kind": "register_or_purchase",
+    "evidence": "Submitting the name form at https://www.sealedrecords.net/name/landing (John Smith, 2026-10-19, headless browser on a US datacenter address) moves to a \"Searching… Please Be Patient\" page whose script calls POST /api/content/peopleSearch/peopleSearch. That call answered HTTP 412 with {\"captcha\":{\"type\":\"creditCard.authorize\",…,\"creditCardData\":{\"price\":0.3}}}: the results are only released after a card authorization. The page never shows a count or names before that. The stored GET (?First-Name=…) only reloads the form."
+  },
+  "searchquarry": {
+    "checked": "2026-10-19",
+    "country": "US",
+    "not_a_person_search": true,
+    "kind": "affiliate_redirect",
+    "evidence": "The stored search is the site's blog search (/searchquarry-blog?q=). Its people form (/namesearch/search?fname=…&lname=…&city=…) shows a \"78% Initiating Your Secure Connection\" animation and then lands on www.truthfinder.com/results/ with affiliate parameters (utm_source=BLACKS). The search is TruthFinder's (catalog entry truthfinder-peopleconnect). Checked 2026-10-19."
+  },
+  "transparent-nevada": {
+    "checked": "2026-10-19",
+    "evidence": "The stored GET (?name=…&email=…&zipCode=…) is the homepage's newsletter/contact box. The site's name search is GET /search?q=<name> (Nevada public employee salaries and pensions). The results URL renders with no CAPTCHA widget (the stored widget belongs to the homepage form), so the stored CAPTCHA marker is cleared.",
+    "result_check": "GET https://transparentnevada.com/search?q=John%20Smith showed \"Showing 41,270 results for “John Smith”\" with John Smith rows; a made-up name showed \"No records matched your search exactly. Here are 69 similar results\" (2026-10-19).",
+    "form": {
+      "method": "http_get",
+      "page_url": "https://transparentnevada.com/",
+      "form_action": "https://transparentnevada.com/search",
+      "url_pattern": "https://transparentnevada.com/search?q={q}",
+      "form_id": null,
+      "form_name": null,
+      "submit_label": null,
+      "hidden_names": [],
+      "inputs": [
+        {
+          "name": "q",
+          "type": "text",
+          "canonical": "full_name",
+          "required": false,
+          "id": null,
+          "label": null,
+          "placeholder": null
+        }
+      ]
+    },
+    "captcha_widget": false
+  },
+  "truthfinder-peopleconnect": {
+    "checked": "2026-10-19",
+    "evidence": "The homepage form's stored GET (/search/?firstName=…) only reloads the homepage or a question funnel. The site's own results page is /results/?firstName=…&lastName=…&state=… (the page the form's funnel and its affiliates' hand-offs land on), which lists the matches before any paywall. The results URL renders with no CAPTCHA widget (the stored widget belongs to the homepage form), so the stored CAPTCHA marker is cleared.",
+    "result_check": "GET https://www.truthfinder.com/results/?firstName=John&lastName=Smith&state=CO rendered \"Incredible! 59 Matches Found - Select Your Result Now\"; for a made-up name (Quillon Vanderwekken, CO) it rendered 'Your search for \"Quillon Vanderwekken\" may be too broad. Add more details like city and state…', the site's no-results page (2026-10-19).",
+    "form": {
+      "method": "http_get",
+      "page_url": "https://www.truthfinder.com/",
+      "form_action": "https://www.truthfinder.com/results/",
+      "url_pattern": "https://www.truthfinder.com/results/?firstName={firstName}&lastName={lastName}&state={state}",
+      "form_id": null,
+      "form_name": null,
+      "submit_label": null,
+      "hidden_names": [],
+      "inputs": [
+        {
+          "name": "firstName",
+          "type": "text",
+          "canonical": "first_name",
+          "required": false,
+          "id": null,
+          "label": null,
+          "placeholder": null
+        },
+        {
+          "name": "lastName",
+          "type": "text",
+          "canonical": "last_name",
+          "required": false,
+          "id": null,
+          "label": null,
+          "placeholder": null
+        },
+        {
+          "name": "state",
+          "type": "text",
+          "canonical": "region",
+          "required": false,
+          "id": null,
+          "label": null,
+          "placeholder": null
+        }
+      ]
+    },
+    "captcha_widget": false
+  },
+  "zoominfo-technologies-llc": {
+    "checked": "2026-10-19",
+    "country": "US",
+    "not_a_person_search": true,
+    "kind": "register_or_purchase",
+    "evidence": "The stored GET (?fullName=…&title=…) is the homepage's \"expand\" lead form (form id fc-expand) for a sales demo / free trial. ZoomInfo's contact records are only shown to account holders; there is no public name search."
+  },
+  "publicrecordssearcher": {
+    "checked": "2026-10-19",
+    "country": "US",
+    "not_a_person_search": true,
+    "kind": "affiliate_redirect",
+    "evidence": "The stored GET /search.php?firstName=…&lastName=…&state=… redirects to www.truthfinder.com/search/ with affiliate parameters (utm_source=CV4T), TruthFinder's question funnel (\"What else do you know about John Smith?\"; 2026-10-19). The search is TruthFinder's (catalog entry truthfinder-peopleconnect)."
   }
 }
