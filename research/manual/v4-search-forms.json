@@ -1825,10 +1825,49 @@
     "evidence": "A synthetic search (John Smith, Denver CO) opened a beenverified.com affiliate page. The search is BeenVerified's own."
   },
   "searchusapeople-infotracer": {
-    "checked": "2026-10-18",
-    "not_a_person_search": true,
-    "kind": "affiliate_redirect",
-    "evidence": "The stored search is https://infotracer.com/loading/?firstname=…&lastname=…, InfoTracer's report flow; the site has no search of its own. The search is InfoTracer's."
+    "checked": "2026-10-19",
+    "evidence": "The name search hands off to InfoTracer's report flow, https://infotracer.com/loading/?…&firstname=…&lastname=…&state=… (searchusapeople.com's nameForm is a GET to infotracer.com/loading/). That page shows a bare \"I'm not a robot\" link (no widget, no terms), then about 45 seconds of a progress bar, then lands on /name/results/ (\"Found N Results in <state>\", every name masked as initials and stars, e.g. \"J*** S****\", with ages and cities) or, for a name it doesn't have, /name/nohit/. Reading that page is the search; nothing past it (selecting a result, the plan pages) is clicked. Frame renders it on its slow-render list and reads masked rows as \"is this you?\", never a confirmed match.",
+    "result_check": "In a browser, John Smith (CO) ended on https://infotracer.com/name/results/: \"Found 97 Results in Colorado\", rows such as \"J*** S**** Denver, CO Eagle, CO\"; Quillon Vanderwekken (CO) ended on /name/nohit/ (2026-10-19, about 47 s each, the robot link clicked).",
+    "form": {
+      "method": "http_get",
+      "page_url": "https://www.searchusapeople.com/",
+      "form_action": "https://infotracer.com/loading/",
+      "url_pattern": "https://infotracer.com/loading/?s=rw&source=somecotton&addPixel=yes&searchType=name&type=name&firstname={firstname}&lastname={lastname}&state={state}&city=",
+      "form_id": null,
+      "form_name": null,
+      "submit_label": null,
+      "hidden_names": [],
+      "inputs": [
+        {
+          "name": "firstname",
+          "type": "text",
+          "canonical": "first_name",
+          "required": false,
+          "id": null,
+          "label": null,
+          "placeholder": null
+        },
+        {
+          "name": "lastname",
+          "type": "text",
+          "canonical": "last_name",
+          "required": false,
+          "id": null,
+          "label": null,
+          "placeholder": null
+        },
+        {
+          "name": "state",
+          "type": "text",
+          "canonical": "region",
+          "required": false,
+          "id": null,
+          "label": null,
+          "placeholder": null
+        }
+      ]
+    },
+    "captcha_widget": false
   },
   "dobsearch": {
     "checked": "2026-10-18",
@@ -3152,5 +3191,231 @@
         }
       ]
     }
+  },
+  "infotracer": {
+    "checked": "2026-10-19",
+    "evidence": "The name search hands off to InfoTracer's report flow, https://infotracer.com/loading/?…&firstname=…&lastname=…&state=… (the homepage name form opens a BeenVerified affiliate link in a new tab; the site's own /loading/ GET still runs InfoTracer's search). That page shows a bare \"I'm not a robot\" link (no widget, no terms), then about 45 seconds of a progress bar, then lands on /name/results/ (\"Found N Results in <state>\", every name masked as initials and stars, e.g. \"J*** S****\", with ages and cities) or, for a name it doesn't have, /name/nohit/. Reading that page is the search; nothing past it (selecting a result, the plan pages) is clicked. Frame renders it on its slow-render list and reads masked rows as \"is this you?\", never a confirmed match.",
+    "result_check": "In a browser, John Smith (CO) ended on https://infotracer.com/name/results/: \"Found 97 Results in Colorado\", rows such as \"J*** S**** Denver, CO Eagle, CO\"; Quillon Vanderwekken (CO) ended on /name/nohit/ (2026-10-19, about 47 s each, the robot link clicked).",
+    "form": {
+      "method": "http_get",
+      "page_url": "https://infotracer.com/",
+      "form_action": "https://infotracer.com/loading/",
+      "url_pattern": "https://infotracer.com/loading/?ltid=home&mercSubId=home-name&type=name&searchTab=name&firstname={firstname}&lastname={lastname}&state={state}&city=",
+      "form_id": null,
+      "form_name": null,
+      "submit_label": null,
+      "hidden_names": [],
+      "inputs": [
+        {
+          "name": "firstname",
+          "type": "text",
+          "canonical": "first_name",
+          "required": false,
+          "id": null,
+          "label": null,
+          "placeholder": null
+        },
+        {
+          "name": "lastname",
+          "type": "text",
+          "canonical": "last_name",
+          "required": false,
+          "id": null,
+          "label": null,
+          "placeholder": null
+        },
+        {
+          "name": "state",
+          "type": "text",
+          "canonical": "region",
+          "required": false,
+          "id": null,
+          "label": null,
+          "placeholder": null
+        }
+      ]
+    },
+    "captcha_widget": false
+  },
+  "govwarrantsearch-org-infotracer-form": {
+    "checked": "2026-10-19",
+    "evidence": "The name search hands off to InfoTracer's report flow, https://infotracer.com/loading/?…&firstname=…&lastname=…&state=… (govwarrantsearch.org's form posts to searching.php, which redirects there). That page shows a bare \"I'm not a robot\" link (no widget, no terms), then about 45 seconds of a progress bar, then lands on /name/results/ (\"Found N Results in <state>\", every name masked as initials and stars, e.g. \"J*** S****\", with ages and cities) or, for a name it doesn't have, /name/nohit/. Reading that page is the search; nothing past it (selecting a result, the plan pages) is clicked. Frame renders it on its slow-render list and reads masked rows as \"is this you?\", never a confirmed match.",
+    "result_check": "In a browser, John Smith (CO) ended on https://infotracer.com/name/results/: \"Found 97 Results in Colorado\", rows such as \"J*** S**** Denver, CO Eagle, CO\"; Quillon Vanderwekken (CO) ended on /name/nohit/ (2026-10-19, about 47 s each, the robot link clicked).",
+    "form": {
+      "method": "http_get",
+      "page_url": "https://www.govwarrantsearch.org/",
+      "form_action": "https://infotracer.com/loading/",
+      "url_pattern": "https://infotracer.com/loading/?ltid=criminal&mercSubId=arrest-name&type=arrest-records&searchTab=name&s=rw&addPixel=yes&source=ssl948&firstname={firstname}&lastname={lastname}&state={state}&city=&tid=govwarrantsearch",
+      "form_id": null,
+      "form_name": null,
+      "submit_label": null,
+      "hidden_names": [],
+      "inputs": [
+        {
+          "name": "firstname",
+          "type": "text",
+          "canonical": "first_name",
+          "required": false,
+          "id": null,
+          "label": null,
+          "placeholder": null
+        },
+        {
+          "name": "lastname",
+          "type": "text",
+          "canonical": "last_name",
+          "required": false,
+          "id": null,
+          "label": null,
+          "placeholder": null
+        },
+        {
+          "name": "state",
+          "type": "text",
+          "canonical": "region",
+          "required": false,
+          "id": null,
+          "label": null,
+          "placeholder": null
+        }
+      ]
+    },
+    "captcha_widget": false
+  },
+  "uswarrants-org-infotracer-form": {
+    "checked": "2026-10-19",
+    "evidence": "The name search hands off to InfoTracer's report flow, https://infotracer.net/loading/?…&firstname=…&lastname=…&state=… (uswarrants.org's form redirects to infotracer.net/loading/, which forwards to infotracer.com). That page shows a bare \"I'm not a robot\" link (no widget, no terms), then about 45 seconds of a progress bar, then lands on /name/results/ (\"Found N Results in <state>\", every name masked as initials and stars, e.g. \"J*** S****\", with ages and cities) or, for a name it doesn't have, /name/nohit/. Reading that page is the search; nothing past it (selecting a result, the plan pages) is clicked. Frame renders it on its slow-render list and reads masked rows as \"is this you?\", never a confirmed match.",
+    "result_check": "In a browser, John Smith (CO) ended on https://infotracer.com/name/results/: \"Found 97 Results in Colorado\", rows such as \"J*** S**** Denver, CO Eagle, CO\"; Quillon Vanderwekken (CO) ended on /name/nohit/ (2026-10-19, about 47 s each, the robot link clicked).",
+    "form": {
+      "method": "http_get",
+      "page_url": "https://www.uswarrants.org/",
+      "form_action": "https://infotracer.net/loading/",
+      "url_pattern": "https://infotracer.net/loading/?ltid=criminal&mercSubId=arrest-name&type=arrest-records&searchTab=name&s=rw&addPixel=yes&source=ssl948&firstname={firstname}&lastname={lastname}&state={state}&city=&tid=uswarrants",
+      "form_id": null,
+      "form_name": null,
+      "submit_label": null,
+      "hidden_names": [],
+      "inputs": [
+        {
+          "name": "firstname",
+          "type": "text",
+          "canonical": "first_name",
+          "required": false,
+          "id": null,
+          "label": null,
+          "placeholder": null
+        },
+        {
+          "name": "lastname",
+          "type": "text",
+          "canonical": "last_name",
+          "required": false,
+          "id": null,
+          "label": null,
+          "placeholder": null
+        },
+        {
+          "name": "state",
+          "type": "text",
+          "canonical": "region",
+          "required": false,
+          "id": null,
+          "label": null,
+          "placeholder": null
+        }
+      ]
+    },
+    "captcha_widget": false
+  },
+  "usrecords-infotracer": {
+    "checked": "2026-10-19",
+    "evidence": "The name search hands off to InfoTracer's report flow, https://infotracer.net/loading/?…&firstname=…&lastname=…&state=… (usrecords.net's script builds the infotracer.net/loading/ URL from its usrecords_localize.remote_url). That page shows a bare \"I'm not a robot\" link (no widget, no terms), then about 45 seconds of a progress bar, then lands on /name/results/ (\"Found N Results in <state>\", every name masked as initials and stars, e.g. \"J*** S****\", with ages and cities) or, for a name it doesn't have, /name/nohit/. Reading that page is the search; nothing past it (selecting a result, the plan pages) is clicked. Frame renders it on its slow-render list and reads masked rows as \"is this you?\", never a confirmed match.",
+    "result_check": "In a browser, John Smith (CO) ended on https://infotracer.com/name/results/: \"Found 97 Results in Colorado\", rows such as \"J*** S**** Denver, CO Eagle, CO\"; Quillon Vanderwekken (CO) ended on /name/nohit/ (2026-10-19, about 47 s each, the robot link clicked).",
+    "form": {
+      "method": "http_get",
+      "page_url": "https://www.usrecords.net/",
+      "form_action": "https://infotracer.net/loading/",
+      "url_pattern": "https://infotracer.net/loading/?ltid=criminal&mercSubId=arrest-name&type=arrest-records&searchTab=name&s=rw&addPixel=yes&source=ssl948&firstname={firstname}&lastname={lastname}&state={state}&city=&tid=usrecords",
+      "form_id": null,
+      "form_name": null,
+      "submit_label": null,
+      "hidden_names": [],
+      "inputs": [
+        {
+          "name": "firstname",
+          "type": "text",
+          "canonical": "first_name",
+          "required": false,
+          "id": null,
+          "label": null,
+          "placeholder": null
+        },
+        {
+          "name": "lastname",
+          "type": "text",
+          "canonical": "last_name",
+          "required": false,
+          "id": null,
+          "label": null,
+          "placeholder": null
+        },
+        {
+          "name": "state",
+          "type": "text",
+          "canonical": "region",
+          "required": false,
+          "id": null,
+          "label": null,
+          "placeholder": null
+        }
+      ]
+    },
+    "captcha_widget": false
+  },
+  "affordable-background-checks": {
+    "checked": "2026-10-19",
+    "evidence": "The name search hands off to InfoTracer's report flow, https://infotracer.com/loading/?…&firstname=…&lastname=…&state=… (affordablebackgroundchecks.com's nameForm is a GET to infotracer.com/loading/). That page shows a bare \"I'm not a robot\" link (no widget, no terms), then about 45 seconds of a progress bar, then lands on /name/results/ (\"Found N Results in <state>\", every name masked as initials and stars, e.g. \"J*** S****\", with ages and cities) or, for a name it doesn't have, /name/nohit/. Reading that page is the search; nothing past it (selecting a result, the plan pages) is clicked. Frame renders it on its slow-render list and reads masked rows as \"is this you?\", never a confirmed match.",
+    "result_check": "In a browser, John Smith (CO) ended on https://infotracer.com/name/results/: \"Found 97 Results in Colorado\", rows such as \"J*** S**** Denver, CO Eagle, CO\"; Quillon Vanderwekken (CO) ended on /name/nohit/ (2026-10-19, about 47 s each, the robot link clicked).",
+    "form": {
+      "method": "http_get",
+      "page_url": "https://www.affordablebackgroundchecks.com/",
+      "form_action": "https://infotracer.com/loading/",
+      "url_pattern": "https://infotracer.com/loading/?type=name&source=DAGHoldings&tid=DAGHoldings&addPixel=yes&s=rw&firstname={firstname}&lastname={lastname}&state={state}&city=",
+      "form_id": null,
+      "form_name": null,
+      "submit_label": null,
+      "hidden_names": [],
+      "inputs": [
+        {
+          "name": "firstname",
+          "type": "text",
+          "canonical": "first_name",
+          "required": false,
+          "id": null,
+          "label": null,
+          "placeholder": null
+        },
+        {
+          "name": "lastname",
+          "type": "text",
+          "canonical": "last_name",
+          "required": false,
+          "id": null,
+          "label": null,
+          "placeholder": null
+        },
+        {
+          "name": "state",
+          "type": "text",
+          "canonical": "region",
+          "required": false,
+          "id": null,
+          "label": null,
+          "placeholder": null
+        }
+      ]
+    },
+    "captcha_widget": false,
+    "paywall": false
   }
 }
