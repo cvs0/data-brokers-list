@@ -2173,22 +2173,112 @@
     }
   },
   "publicrecords-info": {
-    "checked": "2026-10-18",
-    "paywall": true,
-    "kind": "register_or_purchase",
-    "evidence": "A synthetic search (John Smith, Denver CO) and a made-up name (Quillon Vanderwekken) both ended on the paid-plan page. Same operator and page template on each: the homepage name form goes to /feature/age-verification (or /feature/disclaimer), then an \"I Agree\" step to /feature/notice, then /feature/package. The page data (__NEXT_DATA__) carries the plan prices (a $1 trial, $35/mo recurring, $9.95) and a checkoutFormId, and claims numberOfRecords 250 even for an empty name. No person is shown. /report/background-check/search answers 404."
+    "checked": "2026-10-19",
+    "evidence": "The homepage's people pop-up (name + state) does not post a form: its script calls GET /api/client?query=tlo/teaser/summary&fullName=…&state=…&usePhoneticLastName=false and draws \"Your search returned N public records for … in …\" (or \"Your search returned no results\") from the answer, before the disclaimer, \"I Agree\" and plan pages. That call is the search the site itself runs and needs no cookie or account; nothing is agreed to, bought or registered to read it. The earlier \"numberOfRecords 250 even for an empty name\" came from the plan page's data, not from this search. The answer is a count for the name only (numberOfStateMatches and cities stay empty), so a hit is \"is this you?\", never a removal on its own.",
+    "result_check": "GET https://www.publicrecords.info/api/client?query=tlo/teaser/summary&fullName=John%20Smith&state=co&usePhoneticLastName=false returned {\"numberOfRecords\":200,…,\"success\":true}; Quillon Vanderwekken returned \"numberOfRecords\":0; Jared Polis (CO) 1; Barack Obama 20 (2026-10-19).",
+    "form": {
+      "method": "http_get",
+      "page_url": "https://www.publicrecords.info/",
+      "form_action": "https://www.publicrecords.info/api/client",
+      "url_pattern": "https://www.publicrecords.info/api/client?query=tlo/teaser/summary&fullName={fullName}&state={state}&usePhoneticLastName=false",
+      "form_id": null,
+      "form_name": null,
+      "submit_label": null,
+      "hidden_names": [],
+      "inputs": [
+        {
+          "name": "fullName",
+          "type": "text",
+          "canonical": "full_name",
+          "required": false,
+          "id": null,
+          "label": null,
+          "placeholder": null
+        },
+        {
+          "name": "state",
+          "type": "text",
+          "canonical": "region",
+          "required": false,
+          "id": null,
+          "label": null,
+          "placeholder": null
+        }
+      ]
+    },
+    "captcha_widget": false
   },
   "publicrecords-us": {
-    "checked": "2026-10-18",
-    "paywall": true,
-    "kind": "register_or_purchase",
-    "evidence": "A synthetic search (John Smith, Denver CO) and a made-up name (Quillon Vanderwekken) both ended on the paid-plan page. Same operator and page template on each: the homepage name form goes to /feature/age-verification (or /feature/disclaimer), then an \"I Agree\" step to /feature/notice, then /feature/package. The page data (__NEXT_DATA__) carries the plan prices (a $1 trial, $35/mo recurring, $9.95) and a checkoutFormId, and claims numberOfRecords 250 even for an empty name. No person is shown."
+    "checked": "2026-10-19",
+    "evidence": "The homepage's people pop-up (name + state) does not post a form: its script calls GET /api/client?query=tlo/teaser/summary&fullName=…&state=…&usePhoneticLastName=false and draws \"Your search returned N public records for … in …\" (or \"Your search returned no results\") from the answer, before the disclaimer, \"I Agree\" and plan pages. That call is the search the site itself runs and needs no cookie or account; nothing is agreed to, bought or registered to read it. The earlier \"numberOfRecords 250 even for an empty name\" came from the plan page's data, not from this search. The answer is a count for the name only (numberOfStateMatches and cities stay empty), so a hit is \"is this you?\", never a removal on its own.",
+    "result_check": "GET https://www.publicrecords.us/api/client?query=tlo/teaser/summary&fullName=John%20Smith&state=co&usePhoneticLastName=false returned {\"numberOfRecords\":200,…,\"success\":true}; Quillon Vanderwekken returned \"numberOfRecords\":0; Jared Polis (CO) 1; Barack Obama 20 (2026-10-19).",
+    "form": {
+      "method": "http_get",
+      "page_url": "https://www.publicrecords.us/",
+      "form_action": "https://www.publicrecords.us/api/client",
+      "url_pattern": "https://www.publicrecords.us/api/client?query=tlo/teaser/summary&fullName={fullName}&state={state}&usePhoneticLastName=false",
+      "form_id": null,
+      "form_name": null,
+      "submit_label": null,
+      "hidden_names": [],
+      "inputs": [
+        {
+          "name": "fullName",
+          "type": "text",
+          "canonical": "full_name",
+          "required": false,
+          "id": null,
+          "label": null,
+          "placeholder": null
+        },
+        {
+          "name": "state",
+          "type": "text",
+          "canonical": "region",
+          "required": false,
+          "id": null,
+          "label": null,
+          "placeholder": null
+        }
+      ]
+    },
+    "captcha_widget": false
   },
   "courtrec-com": {
-    "checked": "2026-10-18",
-    "paywall": true,
-    "kind": "register_or_purchase",
-    "evidence": "A synthetic search (John Smith, Denver CO) and a made-up name (Quillon Vanderwekken) both ended on the paid-plan page. Same operator and page template on each: the homepage name form goes to /feature/age-verification (or /feature/disclaimer), then an \"I Agree\" step to /feature/notice, then /feature/package. The page data (__NEXT_DATA__) carries the plan prices (a $1 trial, $35/mo recurring, $9.95) and a checkoutFormId, and claims numberOfRecords 250 even for an empty name. No person is shown."
+    "checked": "2026-10-19",
+    "evidence": "The homepage's people pop-up (name + state) does not post a form: its script calls GET /api/client?query=tlo/teaser/summary&fullName=…&state=…&usePhoneticLastName=false and draws \"Your search returned N public records for … in …\" (or \"Your search returned no results\") from the answer, before the disclaimer, \"I Agree\" and plan pages. That call is the search the site itself runs and needs no cookie or account; nothing is agreed to, bought or registered to read it. The earlier \"numberOfRecords 250 even for an empty name\" came from the plan page's data, not from this search. The answer is a count for the name only (numberOfStateMatches and cities stay empty), so a hit is \"is this you?\", never a removal on its own.",
+    "result_check": "GET https://www.courtrec.com/api/client?query=tlo/teaser/summary&fullName=John%20Smith&state=co&usePhoneticLastName=false returned {\"numberOfRecords\":200,…,\"success\":true}; Quillon Vanderwekken returned \"numberOfRecords\":0; Jared Polis (CO) 1; Barack Obama 20 (2026-10-19).",
+    "form": {
+      "method": "http_get",
+      "page_url": "https://www.courtrec.com/",
+      "form_action": "https://www.courtrec.com/api/client",
+      "url_pattern": "https://www.courtrec.com/api/client?query=tlo/teaser/summary&fullName={fullName}&state={state}&usePhoneticLastName=false",
+      "form_id": null,
+      "form_name": null,
+      "submit_label": null,
+      "hidden_names": [],
+      "inputs": [
+        {
+          "name": "fullName",
+          "type": "text",
+          "canonical": "full_name",
+          "required": false,
+          "id": null,
+          "label": null,
+          "placeholder": null
+        },
+        {
+          "name": "state",
+          "type": "text",
+          "canonical": "region",
+          "required": false,
+          "id": null,
+          "label": null,
+          "placeholder": null
+        }
+      ]
+    },
+    "captcha_widget": false
   },
   "peoplewhizr": {
     "checked": "2026-10-18",
@@ -2861,5 +2951,206 @@
     "not_a_person_search": true,
     "kind": "affiliate_redirect",
     "evidence": "The stored GET /search.php?firstName=…&lastName=…&state=… redirects to www.truthfinder.com/search/ with affiliate parameters (utm_source=CV4T), TruthFinder's question funnel (\"What else do you know about John Smith?\"; 2026-10-19). The search is TruthFinder's (catalog entry truthfinder-peopleconnect)."
+  },
+  "connecticut-resident-directory": {
+    "checked": "2026-10-19",
+    "evidence": "The homepage form puts the city in a \"City, State\" typeahead that only accepts a Connecticut place; filled with an out-of-state city it answers \"Invalid search parameters\" or searches the wrong place. Submitting the name alone redirects to the site's own name listing, /name/<first>-<last>, which lists every Connecticut entry for that name. That listing is the search; no city is needed.",
+    "result_check": "GET https://www.connecticutresidentdirectory.com/name/john-smith: \"94 public records for John Smith in Connecticut\"; /name/quillon-vanderwekken: 0 public records for Quillon Vanderwekken in Connecticut (2026-10-19).",
+    "form": {
+      "method": "http_get",
+      "page_url": "https://www.connecticutresidentdirectory.com/",
+      "form_action": "https://www.connecticutresidentdirectory.com/name/",
+      "url_pattern": "https://www.connecticutresidentdirectory.com/name/{first}-{last}",
+      "form_id": null,
+      "form_name": null,
+      "submit_label": null,
+      "hidden_names": [],
+      "inputs": [
+        {
+          "name": "first",
+          "type": "text",
+          "canonical": "first_name",
+          "required": false,
+          "id": null,
+          "label": null,
+          "placeholder": null
+        },
+        {
+          "name": "last",
+          "type": "text",
+          "canonical": "last_name",
+          "required": false,
+          "id": null,
+          "label": null,
+          "placeholder": null
+        }
+      ]
+    }
+  },
+  "florida-voter-directory": {
+    "checked": "2026-10-19",
+    "evidence": "The homepage form puts the city in a \"City, State\" typeahead that only accepts a Florida place; filled with an out-of-state city it answers \"Invalid search parameters\" or searches the wrong place. Submitting the name alone redirects to the site's own name listing, /name/<first>-<last>, which lists every Florida entry for that name. That listing is the search; no city is needed.",
+    "result_check": "GET https://www.floridavoterdirectory.com/name/john-smith: \"963 records for John Smith in Florida\"; /name/quillon-vanderwekken: 0 records for Quillon Vanderwekken in Florida (2026-10-19).",
+    "form": {
+      "method": "http_get",
+      "page_url": "https://www.floridavoterdirectory.com/",
+      "form_action": "https://www.floridavoterdirectory.com/name/",
+      "url_pattern": "https://www.floridavoterdirectory.com/name/{first}-{last}",
+      "form_id": null,
+      "form_name": null,
+      "submit_label": null,
+      "hidden_names": [],
+      "inputs": [
+        {
+          "name": "first",
+          "type": "text",
+          "canonical": "first_name",
+          "required": false,
+          "id": null,
+          "label": null,
+          "placeholder": null
+        },
+        {
+          "name": "last",
+          "type": "text",
+          "canonical": "last_name",
+          "required": false,
+          "id": null,
+          "label": null,
+          "placeholder": null
+        }
+      ]
+    }
+  },
+  "floridaresidentsdirectory": {
+    "checked": "2026-10-19",
+    "evidence": "The homepage form puts the city in a \"City, State\" typeahead that only accepts a Florida place; filled with an out-of-state city it answers \"Invalid search parameters\" or searches the wrong place. Submitting the name alone redirects to the site's own name listing, /name/<first>-<last>, which lists every Florida entry for that name. That listing is the search; no city is needed.",
+    "result_check": "GET https://www.floridaresidentsdirectory.com/name/john-smith: \"John Smith in Florida … 1252 Records Available\"; /name/quillon-vanderwekken: We found no results for Quillon Vanderwekken in Florida (2026-10-19).",
+    "form": {
+      "method": "http_get",
+      "page_url": "https://www.floridaresidentsdirectory.com/",
+      "form_action": "https://www.floridaresidentsdirectory.com/name/",
+      "url_pattern": "https://www.floridaresidentsdirectory.com/name/{first}-{last}",
+      "form_id": null,
+      "form_name": null,
+      "submit_label": null,
+      "hidden_names": [],
+      "inputs": [
+        {
+          "name": "first",
+          "type": "text",
+          "canonical": "first_name",
+          "required": false,
+          "id": null,
+          "label": null,
+          "placeholder": null
+        },
+        {
+          "name": "last",
+          "type": "text",
+          "canonical": "last_name",
+          "required": false,
+          "id": null,
+          "label": null,
+          "placeholder": null
+        }
+      ]
+    }
+  },
+  "ohio-resident-database": {
+    "checked": "2026-10-19",
+    "evidence": "The homepage form puts the city in a \"City, State\" typeahead that only accepts a Ohio place; filled with an out-of-state city it answers \"Invalid search parameters\" or searches the wrong place. Submitting the name alone redirects to the site's own name listing, /name/<first>-<last>, which lists every Ohio entry for that name. That listing is the search; no city is needed.",
+    "result_check": "GET https://www.ohioresidentdatabase.com/name/john-smith: \"John Smith in Ohio with a list of person cards\"; /name/quillon-vanderwekken: HTTP 404 with the page text \"No Results for your query\" (2026-10-19).",
+    "form": {
+      "method": "http_get",
+      "page_url": "https://www.ohioresidentdatabase.com/",
+      "form_action": "https://www.ohioresidentdatabase.com/name/",
+      "url_pattern": "https://www.ohioresidentdatabase.com/name/{first}-{last}",
+      "form_id": null,
+      "form_name": null,
+      "submit_label": null,
+      "hidden_names": [],
+      "inputs": [
+        {
+          "name": "first",
+          "type": "text",
+          "canonical": "first_name",
+          "required": false,
+          "id": null,
+          "label": null,
+          "placeholder": null
+        },
+        {
+          "name": "last",
+          "type": "text",
+          "canonical": "last_name",
+          "required": false,
+          "id": null,
+          "label": null,
+          "placeholder": null
+        }
+      ]
+    }
+  },
+  "michigan-residents": {
+    "checked": "2026-10-19",
+    "evidence": "The homepage form puts the city in a \"City, State\" typeahead that only accepts a Michigan place; filled with an out-of-state city it answers \"Invalid search parameters\" or searches the wrong place. Submitting the name alone redirects to the site's own name listing, /name/<first>-<last>, which lists every Michigan entry for that name. That listing is the search; no city is needed.",
+    "result_check": "GET https://www.michiganresidentdatabase.com/name/john-smith: \"John Smith in Michigan: 680 Records Found\"; /name/quillon-vanderwekken: the site's own no-match page (2026-10-19).",
+    "form": {
+      "method": "http_get",
+      "page_url": "https://www.michiganresidentdatabase.com/",
+      "form_action": "https://www.michiganresidentdatabase.com/name/",
+      "url_pattern": "https://www.michiganresidentdatabase.com/name/{first}-{last}",
+      "form_id": null,
+      "form_name": null,
+      "submit_label": null,
+      "hidden_names": [],
+      "inputs": [
+        {
+          "name": "first",
+          "type": "text",
+          "canonical": "first_name",
+          "required": false,
+          "id": null,
+          "label": null,
+          "placeholder": null
+        },
+        {
+          "name": "last",
+          "type": "text",
+          "canonical": "last_name",
+          "required": false,
+          "id": null,
+          "label": null,
+          "placeholder": null
+        }
+      ]
+    }
+  },
+  "nc-resident-database": {
+    "checked": "2026-10-19",
+    "evidence": "The homepage form's location box is a \"City, State\" typeahead for North Carolina places; an out-of-state city searches the wrong place. /search?name=<full name> alone shows a short \"Searching for records... This will only take a few seconds\" page, then navigates by script to /name/<first>-<last>, which lists every North Carolina entry for the name, or says \"No Records Found\". A direct GET of /name/<first>-<last> for a name it doesn't have answers a bare 404 (the same page as any wrong URL), so the search goes through /search.",
+    "result_check": "In a browser, /search?name=John+Smith ended on /name/john-smith: \"John Smith in North Carolina - 1,343 persons found\"; /search?name=Quillon+Vanderwekken ended on /name/quillon-vanderwekken: \"No Records Found\" (2026-10-19).",
+    "form": {
+      "method": "http_get",
+      "page_url": "https://www.northcarolinaresidentdatabase.com/",
+      "form_action": "https://www.northcarolinaresidentdatabase.com/search",
+      "url_pattern": "https://www.northcarolinaresidentdatabase.com/search?name={name}",
+      "form_id": null,
+      "form_name": null,
+      "submit_label": null,
+      "hidden_names": [],
+      "inputs": [
+        {
+          "name": "name",
+          "type": "text",
+          "canonical": "full_name",
+          "required": false,
+          "id": null,
+          "label": null,
+          "placeholder": null
+        }
+      ]
+    }
   }
 }
