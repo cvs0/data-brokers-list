@@ -2347,5 +2347,17 @@
     "kind": "register_or_purchase",
     "country": "US",
     "evidence": "The stored URL /name/landing is the homepage's Angular search form, not a results page. Submitting it (First name, Last name, state) after the FCRA \"I Agree\" notice opens /name/loader \"Searching for John Smith 1%\". The app's only search call, POST /api/content/peopleSearch/peopleSearch, answered 412 with a creditCard.authorize step ($0.30 card hold) for John Smith and for a made-up name (Quillon Vanderwekken), read 2026-10-18 in a headless browser. No person is listed before a card is entered. Fifteen sibling sites serve the same app shell and are not changed here."
+  },
+  "freebackgroundchecks-com": {
+    "checked": "2026-10-19",
+    "offline": true,
+    "country": "US",
+    "evidence": "DNS for freebackgroundchecks.com and www.freebackgroundchecks.com returns SERVFAIL from public resolvers (Node dns.resolve4 on a US server and getaddrinfo, 2026-10-19), and Frame's residential proxy could not open a tunnel to it on any exit in three measurement runs (2026-10-18). example.com resolved normally from the same host."
+  },
+  "governmentregistry-org": {
+    "checked": "2026-10-19",
+    "offline": true,
+    "country": "US",
+    "evidence": "DNS for governmentregistry.org and www.governmentregistry.org returns SERVFAIL from public resolvers (Node dns.resolve4 on a US server and getaddrinfo, 2026-10-19), and Frame's residential proxy could not open a tunnel to it on any exit in three measurement runs (2026-10-18). example.com resolved normally from the same host."
   }
 }
