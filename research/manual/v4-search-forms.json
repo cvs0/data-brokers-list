@@ -2359,5 +2359,45 @@
     "offline": true,
     "country": "US",
     "evidence": "DNS for governmentregistry.org and www.governmentregistry.org returns SERVFAIL from public resolvers (Node dns.resolve4 on a US server and getaddrinfo, 2026-10-19), and Frame's residential proxy could not open a tunnel to it on any exit in three measurement runs (2026-10-18). example.com resolved normally from the same host."
+  },
+  "192-com": {
+    "checked": "2026-10-19",
+    "country": "GB",
+    "evidence": "The live homepage (https://www.192.com/, fetched 2026-10-19) reads \"Search for People, Businesses & Places in the UK\" and \"192.com gives you more information about people, businesses, and places in the UK\". Its people search covers the UK electoral roll and directories. A synthetic search for John Smith (Toronto ON) returned UK people, and the stored entry had no country, so Frame planned it for US and Canadian addresses."
+  },
+  "backgroundcheckers": {
+    "checked": "2026-10-19",
+    "country": "US",
+    "evidence": "The live name search form at https://www.backgroundcheckers.net/name/landing (fetched 2026-10-19 through a residential proxy) has one location dropdown, `state`, with 53 options: All States, then Alabama … Wyoming. It lists no Canadian province. A synthetic search for John Smith, Toronto ON stayed on the form. The stored form kept no choices, so no country was derived, and Frame planned this broker for Canadian addresses."
+  },
+  "checksecrets-truth-now-llc": {
+    "checked": "2026-10-19",
+    "country": "US",
+    "evidence": "The live name search form at https://www.checksecrets.com/name/landing (fetched 2026-10-19 through a residential proxy) has one location dropdown, `field`, with 53 options: All States, then Alabama … Wyoming. It lists no Canadian province. A synthetic search for John Smith, Toronto ON stayed on the form. The stored form kept no choices, so no country was derived, and Frame planned this broker for Canadian addresses."
+  },
+  "infomatics-llc-network-peoplesearcher-com": {
+    "checked": "2026-10-19",
+    "country": "US",
+    "evidence": "The live name search form at https://www.peoplesearcher.com/name/landing (fetched 2026-10-19 through a residential proxy) has one location dropdown, `state`, with 53 options: All States, then Alabama … Wyoming. It lists no Canadian province. A synthetic search for John Smith, Toronto ON stayed on the form. The stored form kept no choices, so no country was derived, and Frame planned this broker for Canadian addresses."
+  },
+  "infomatics-llc-network-peoplesearchusa-org": {
+    "checked": "2026-10-19",
+    "country": "US",
+    "evidence": "The live name search form at https://www.peoplesearchusa.org/name/landing (fetched 2026-10-19 through a residential proxy) has one location dropdown, `field`, with 53 options: All States, then Alabama … Wyoming. It lists no Canadian province. A synthetic search for John Smith, Toronto ON stayed on the form. The stored form kept no choices, so no country was derived, and Frame planned this broker for Canadian addresses."
+  },
+  "inmatessearcher": {
+    "checked": "2026-10-19",
+    "country": "US",
+    "evidence": "The live name search form at https://www.inmatessearcher.com/name/landing (fetched 2026-10-19 through a residential proxy) has one location dropdown, `field`, with 53 options: All States, then Alabama … Wyoming. It lists no Canadian province. A synthetic search for John Smith, Toronto ON stayed on the form. The stored form kept no choices, so no country was derived, and Frame planned this broker for Canadian addresses."
+  },
+  "weinform-we-inform-llc": {
+    "checked": "2026-10-19",
+    "country": "US",
+    "evidence": "The live name search form at https://www.weinform.org/name_search/landing_page (fetched 2026-10-19 through a residential proxy) has one location dropdown, `state`, with 53 options: All States, then Alabama … Wyoming. It lists no Canadian province. A synthetic search for John Smith, Toronto ON stayed on the form. The stored form kept no choices, so no country was derived, and Frame planned this broker for Canadian addresses."
+  },
+  "peoplewhiz-network-mashpanel-com": {
+    "checked": "2026-10-19",
+    "offline": true,
+    "evidence": "mashpanel.com is no longer a working people search. The homepage (title \"Usa People Search for free on mashpanel.com\") is a static restore. The catalog's search URL (https://www.mashpanel.com/searchResults?firstName=John&lastName=Smith, fetched 2026-10-19) returns a 1 KB notice: \"The DEMO version only includes 4 pages: http://mashpanel.com http://mashpanel.com/remove.html http://mashpanel.com/about-us.html http://mashpanel.com/contact-us.html ... Visit https://www.waybackmachinedownloader.com/... to buy a fully functioning site\". No search runs and no records are shown. The record's stored country (CA) is left as is; with the site offline, Frame no longer plans it."
   }
 }
