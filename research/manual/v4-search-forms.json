@@ -3644,5 +3644,50 @@
       ]
     },
     "captcha_widget": false
+  },
+  "us-search-peopleconnect": {
+    "checked": "2026-10-19",
+    "evidence": "US Search (Intelius LLC d/b/a US Search, PeopleConnect) has no search form on its homepage (a Get Started link), but its results page is a plain GET, https://www.ussearch.com/results/?firstName=…&lastName=…&state=…, the same shape as intelius.com/results/. It sits behind Cloudflare's managed challenge, which a real browser on one sticky residential exit passes with the challenge's own checkbox (no solver, about 10 s). The page lists the free results (names, ages, cities) before any report is bought; nothing on it is clicked.",
+    "result_check": "In Frame's browser on a sticky US exit, John Smith (CO): \"Your Search Results for John Smith in CO … 56 results were found.\"; Quillon Vanderwekken (CO): \"We were unable to find any results for Quillon Vanderwekken in our background check database.\" (2026-10-19, two runs each about 13 s).",
+    "form": {
+      "method": "http_get",
+      "page_url": "https://www.ussearch.com/",
+      "form_action": "https://www.ussearch.com/results/",
+      "url_pattern": "https://www.ussearch.com/results/?firstName={firstName}&lastName={lastName}&state={state}",
+      "form_id": null,
+      "form_name": null,
+      "submit_label": null,
+      "hidden_names": [],
+      "inputs": [
+        {
+          "name": "firstName",
+          "type": "text",
+          "canonical": "first_name",
+          "required": false,
+          "id": null,
+          "label": null,
+          "placeholder": null
+        },
+        {
+          "name": "lastName",
+          "type": "text",
+          "canonical": "last_name",
+          "required": false,
+          "id": null,
+          "label": null,
+          "placeholder": null
+        },
+        {
+          "name": "state",
+          "type": "text",
+          "canonical": "region",
+          "required": false,
+          "id": null,
+          "label": null,
+          "placeholder": null
+        }
+      ]
+    },
+    "captcha_widget": false
   }
 }
