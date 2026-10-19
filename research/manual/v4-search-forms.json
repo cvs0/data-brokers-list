@@ -545,9 +545,11 @@
     "country": "US"
   },
   "truthviewer": {
-    "checked": "2026-10-18",
-    "evidence": "The live search page (/review/peopleSearch/list) has a state dropdown listing the US states (Alabama … Wyoming) and no Canadian province, and says its search is nationwide.",
-    "country": "US"
+    "checked": "2026-10-19",
+    "evidence": "The search page (/review/peopleSearch/list) is a review page with a generic \"START HERE\" form. Submitting it (John Smith, all states; local browser, 2026-10-19) redirects to www.peoplesearcher.com/?uxc=…&ui_fname=John&ui_lname=Smith&ui_state=all and on to its /name/loader \"Searching for John Smith 1%\" funnel. TruthViewer has no search of its own; the search is PeopleSearcher's (catalog entry infomatics-llc-network-peoplesearcher-com).",
+    "country": "US",
+    "not_a_person_search": true,
+    "kind": "affiliate_redirect"
   },
   "alumni-us": {
     "checked": "2026-10-18",
@@ -2570,8 +2572,10 @@
   },
   "weinform-we-inform-llc": {
     "checked": "2026-10-19",
-    "country": "US",
-    "evidence": "The live name search form at https://www.weinform.org/name_search/landing_page (fetched 2026-10-19 through a residential proxy) has one location dropdown, `state`, with 53 options: All States, then Alabama … Wyoming. It lists no Canadian province. A synthetic search for John Smith, Toronto ON stayed on the form. The stored form kept no choices, so no country was derived, and Frame planned this broker for Canadian addresses."
+    "paywall": true,
+    "kind": "register_or_purchase",
+    "evidence": "The name search URL (/name_search/landing_page?First-Name=…&Last-Name=…) opens a notice that the visitor must certify by selecting \"I Agree\" to the Privacy Policy and Terms of Use (and that WeInform is not a consumer reporting agency under the FCRA) before anything is searched; its offer call lists a $14.95 price. No person is listed before that agreement, which Frame does not click (local browser, John Smith, 2026-10-19). Same operator template as TruthViewer and PeopleSearcher (/api/uxc/find/composite).",
+    "country": "US"
   },
   "peoplewhiz-network-mashpanel-com": {
     "checked": "2026-10-19",
@@ -3635,5 +3639,17 @@
       ]
     },
     "captcha_widget": false
+  },
+  "heartbeat-ai-inc": {
+    "checked": "2026-10-19",
+    "not_a_person_search": true,
+    "kind": "register_or_purchase",
+    "evidence": "heartbeat.ai is a B2B healthcare-recruiting contact database (powered by Swordfish.ai): its homepage search takes a role and location (\"Cardiologists in Tampa, FL\") and returns clinician counts only; profiles and contacts need an account (plans from $1,999/month, or a sales call for a 25-contact test). There is no free lookup of a person by name. The homepage also answers bots with a \"Checking for any bots …\" page (2026-10-19)."
+  },
+  "illinois-arrests": {
+    "checked": "2026-10-19",
+    "paywall": true,
+    "kind": "paid_report_link",
+    "evidence": "The search form on https://www.illinoisarrests.org/ does not search the site: its script (form-redirect plugin) sends the name to https://infotracer.net/loading/?ltid=criminal&…&firstname=…&lastname=…&state=…&city=…&tid=illinoisarrests, InfoTracer's paid report flow (catalog entry infotracer); the stored GET /Results answers an empty 200 page. Same as the other <state>arrests.org sites."
   }
 }
