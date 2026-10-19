@@ -225,42 +225,56 @@
   },
   "usa-people-search": {
     "checked": "2026-10-18",
-    "evidence": "Homepage form id PeopleForm, POST to /Results/Search, hidden _token and IsOptOut. Name has placeholder \"Full Name\"; Location (\"City, State\") stays untagged. The catalog stored no form (robots.txt had disallowed the scan). Country US from the site name and the US \"City, State\" location box.",
-    "result_check": "The browser-fetch form submit landed on /name/john-smith, which answered with a Cloudflare challenge the service did not clear. The form is right; the results page is walled.",
+    "evidence": "Homepage form PeopleForm (Name, Location \"City, State\") posts to /Results/Search, which redirects to /name/<first>-<last>/<city>-<st>. The stored recipe sent no location and landed on /name/-results (HTTP 400). url_pattern stores the result path; Frame fills path placeholders as lowercase slugs and stops before a segment it cannot fill.",
+    "result_check": "Rendered 2026-10-18 through Frame's browser-fetch (US exit): /name/john-smith/denver-co → \"Found 100+ matches for John Smith in Denver, CO\" with listings; /name/quillon-vanderwekken/denver-co → \"Found 1 match\" listing a different person (a padded page; Frame reads it as not listed from frame PR #760).",
     "form": {
-      "method": "http_form_post",
+      "method": "http_get",
       "page_url": "https://www.usa-people-search.com/",
-      "form_action": "https://www.usa-people-search.com/Results/Search",
-      "url_pattern": null,
-      "form_id": "PeopleForm",
+      "form_action": "https://www.usa-people-search.com/name/",
+      "url_pattern": "https://www.usa-people-search.com/name/{first_name}-{last_name}/{city}-{region}",
+      "form_id": null,
       "form_name": null,
       "submit_label": null,
-      "hidden_names": [
-        "_token",
-        "IsOptOut"
-      ],
+      "hidden_names": [],
       "inputs": [
         {
-          "name": "Name",
+          "name": "first_name",
           "type": "text",
-          "canonical": "full_name",
-          "required": false,
-          "id": "FullName",
-          "label": null,
-          "placeholder": "Full Name"
+          "canonical": "first_name",
+          "required": true,
+          "id": null,
+          "label": "First name (part of the result path)",
+          "placeholder": null
         },
         {
-          "name": "Location",
+          "name": "last_name",
           "type": "text",
-          "canonical": null,
+          "canonical": "last_name",
+          "required": true,
+          "id": null,
+          "label": "Last name (part of the result path)",
+          "placeholder": null
+        },
+        {
+          "name": "city",
+          "type": "text",
+          "canonical": "city",
           "required": false,
-          "id": "Location",
-          "label": null,
-          "placeholder": "City, State"
+          "id": null,
+          "label": "City (path segment, with the state)",
+          "placeholder": null
+        },
+        {
+          "name": "region",
+          "type": "text",
+          "canonical": "region",
+          "required": false,
+          "id": null,
+          "label": "State code (path segment, with the city)",
+          "placeholder": null
         }
       ]
     },
-    "captcha_widget": false,
     "country": "US"
   },
   "searchpeoplefree": {
@@ -2197,5 +2211,59 @@
     "paywall": true,
     "kind": "register_or_purchase",
     "evidence": "The form opens /lp/…/loading, a step-by-step funnel. Its page carries a hidden \"Sorry, we have 0 results\" step for every search, so John Smith (Denver CO) and a made-up name (Quillon Vanderwekken) read the same; no person is listed before sign-up."
+  },
+  "veripages": {
+    "checked": "2026-10-18",
+    "evidence": "Homepage form FindPersonForm (name \"First and Last Name\", city_state \"City, State\") GETs /srv/a.go_search, which answers only a JSON redirect to /inner/profile/search?fname=<first>&lname=<last>&state=<ST>&city=<city>. The stored recipe put the person's city alone in city_state and got \"Invalid location\". url_pattern stores the redirect target with separate fields.",
+    "result_check": "Rendered 2026-10-18 through Frame's browser-fetch (US exit): John Smith, Denver CO → \"602 individuals named John Smith found in Denver, CO\" with listings; a made-up name (Quillon Vanderwekken) → \"No records found for Quillon Vanderwekken\".",
+    "form": {
+      "method": "http_get",
+      "page_url": "https://veripages.com/",
+      "form_action": "https://veripages.com/inner/profile/search",
+      "url_pattern": "https://veripages.com/inner/profile/search?fname={fname}&lname={lname}&state={state}&city={city}",
+      "form_id": null,
+      "form_name": null,
+      "submit_label": null,
+      "hidden_names": [],
+      "inputs": [
+        {
+          "name": "fname",
+          "type": "text",
+          "canonical": "first_name",
+          "required": true,
+          "id": null,
+          "label": "First name",
+          "placeholder": null
+        },
+        {
+          "name": "lname",
+          "type": "text",
+          "canonical": "last_name",
+          "required": true,
+          "id": null,
+          "label": "Last name",
+          "placeholder": null
+        },
+        {
+          "name": "state",
+          "type": "text",
+          "canonical": "region",
+          "required": false,
+          "id": null,
+          "label": "State code",
+          "placeholder": null
+        },
+        {
+          "name": "city",
+          "type": "text",
+          "canonical": "city",
+          "required": false,
+          "id": null,
+          "label": "City",
+          "placeholder": null
+        }
+      ]
+    },
+    "country": "US"
   }
 }
