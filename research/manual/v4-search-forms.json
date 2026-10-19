@@ -1,60 +1,10 @@
 {
   "checkpeople": {
     "checked": "2026-10-18",
-    "evidence": "Homepage people form id heroTabPeople, POST to /landing, hidden _token and aid. firstName and lastName are marked required; city is a text box; state is a dropdown starting \"All States\". The catalog stored no form (robots.txt had disallowed the scan).",
-    "result_check": "Submitting the form with a synthetic name through the browser-fetch service landed on a results page titled \"Results For: John Smith\" (information.com, the same operator's results host).",
-    "form": {
-      "method": "http_form_post",
-      "page_url": "https://checkpeople.com/",
-      "form_action": "https://checkpeople.com/landing",
-      "url_pattern": null,
-      "form_id": "heroTabPeople",
-      "form_name": null,
-      "submit_label": null,
-      "hidden_names": [
-        "_token",
-        "aid"
-      ],
-      "inputs": [
-        {
-          "name": "firstName",
-          "type": "text",
-          "canonical": "first_name",
-          "required": true,
-          "id": "heroFirstName",
-          "label": "First Name",
-          "placeholder": null
-        },
-        {
-          "name": "lastName",
-          "type": "text",
-          "canonical": "last_name",
-          "required": true,
-          "id": "heroLastName",
-          "label": "Last Name",
-          "placeholder": null
-        },
-        {
-          "name": "city",
-          "type": "text",
-          "canonical": "city",
-          "required": false,
-          "id": "heroCity",
-          "label": "City",
-          "placeholder": null
-        },
-        {
-          "name": "state",
-          "type": "select",
-          "canonical": null,
-          "required": false,
-          "id": "heroState",
-          "label": null,
-          "placeholder": null
-        }
-      ]
-    },
-    "captcha_widget": false
+    "evidence": "The homepage people form (POST /landing) hands the name to information.com's /pf/nso1/res, the same operator's results host (catalog entry information-com). That page is a script-built funnel: John Smith (Denver CO) and a made-up name (Quillon Vanderwekken) both get the same 2 MB page whose only result text is a script template (\"0 Records matched\"). The search is information.com's.",
+    "not_a_person_search": true,
+    "kind": "affiliate_redirect",
+    "country": "US"
   },
   "information-com": {
     "checked": "2026-10-18",
@@ -2205,5 +2155,47 @@
         }
       ]
     }
+  },
+  "publicrecords-info": {
+    "checked": "2026-10-18",
+    "paywall": true,
+    "kind": "register_or_purchase",
+    "evidence": "A synthetic search (John Smith, Denver CO) and a made-up name (Quillon Vanderwekken) both ended on the paid-plan page. Same operator and page template on each: the homepage name form goes to /feature/age-verification (or /feature/disclaimer), then an \"I Agree\" step to /feature/notice, then /feature/package. The page data (__NEXT_DATA__) carries the plan prices (a $1 trial, $35/mo recurring, $9.95) and a checkoutFormId, and claims numberOfRecords 250 even for an empty name. No person is shown. /report/background-check/search answers 404."
+  },
+  "publicrecords-us": {
+    "checked": "2026-10-18",
+    "paywall": true,
+    "kind": "register_or_purchase",
+    "evidence": "A synthetic search (John Smith, Denver CO) and a made-up name (Quillon Vanderwekken) both ended on the paid-plan page. Same operator and page template on each: the homepage name form goes to /feature/age-verification (or /feature/disclaimer), then an \"I Agree\" step to /feature/notice, then /feature/package. The page data (__NEXT_DATA__) carries the plan prices (a $1 trial, $35/mo recurring, $9.95) and a checkoutFormId, and claims numberOfRecords 250 even for an empty name. No person is shown."
+  },
+  "courtrec-com": {
+    "checked": "2026-10-18",
+    "paywall": true,
+    "kind": "register_or_purchase",
+    "evidence": "A synthetic search (John Smith, Denver CO) and a made-up name (Quillon Vanderwekken) both ended on the paid-plan page. Same operator and page template on each: the homepage name form goes to /feature/age-verification (or /feature/disclaimer), then an \"I Agree\" step to /feature/notice, then /feature/package. The page data (__NEXT_DATA__) carries the plan prices (a $1 trial, $35/mo recurring, $9.95) and a checkoutFormId, and claims numberOfRecords 250 even for an empty name. No person is shown."
+  },
+  "peoplewhizr": {
+    "checked": "2026-10-18",
+    "paywall": true,
+    "kind": "register_or_purchase",
+    "evidence": "The form goes through /flow/gatherdata/… to /flow/searching/john/~/smith/denver/CO/~, an animated \"searching\" funnel. Its only search call, POST /xhr/search2 {fn, mn, ln, city, state, age, version 4}, answers 404 (browser and plain curl). The \"Multiple results found\" step shows for a made-up name (Quillon Vanderwekken) too; no person is listed before checkout."
+  },
+  "truthed-inc": {
+    "checked": "2026-10-18",
+    "paywall": true,
+    "kind": "register_or_purchase",
+    "evidence": "Same operator and template as PeopleWhizr (\"67 Billion records\"). A form submit lands on /hflow/flow/search/<uuid> \"Searching in Denver, Colorado… 5%\", identical for John Smith and for a made-up name (Quillon Vanderwekken); no person is listed before checkout."
+  },
+  "peoplewhiz": {
+    "checked": "2026-10-18",
+    "paywall": true,
+    "kind": "register_or_purchase",
+    "evidence": "Same funnel as PeopleWhizr and Truthed: the form opens an /hflow/searching animation that reads the same for John Smith (Denver CO) and a made-up name (Quillon Vanderwekken); no person is listed before checkout."
+  },
+  "beenverified": {
+    "checked": "2026-10-18",
+    "paywall": true,
+    "kind": "register_or_purchase",
+    "evidence": "The form opens /lp/…/loading, a step-by-step funnel. Its page carries a hidden \"Sorry, we have 0 results\" step for every search, so John Smith (Denver CO) and a made-up name (Quillon Vanderwekken) read the same; no person is listed before sign-up."
   }
 }
