@@ -1825,10 +1825,49 @@
     "evidence": "A synthetic search (John Smith, Denver CO) opened a beenverified.com affiliate page. The search is BeenVerified's own."
   },
   "searchusapeople-infotracer": {
-    "checked": "2026-10-18",
-    "not_a_person_search": true,
-    "kind": "affiliate_redirect",
-    "evidence": "The stored search is https://infotracer.com/loading/?firstname=…&lastname=…, InfoTracer's report flow; the site has no search of its own. The search is InfoTracer's."
+    "checked": "2026-10-19",
+    "evidence": "The name search hands off to InfoTracer's report flow, https://infotracer.com/loading/?…&firstname=…&lastname=…&state=… (searchusapeople.com's nameForm is a GET to infotracer.com/loading/). That page shows a bare \"I'm not a robot\" link (no widget, no terms), then about 45 seconds of a progress bar, then lands on /name/results/ (\"Found N Results in <state>\", every name masked as initials and stars, e.g. \"J*** S****\", with ages and cities) or, for a name it doesn't have, /name/nohit/. Reading that page is the search; nothing past it (selecting a result, the plan pages) is clicked. Frame renders it on its slow-render list and reads masked rows as \"is this you?\", never a confirmed match.",
+    "result_check": "In a browser, John Smith (CO) ended on https://infotracer.com/name/results/: \"Found 97 Results in Colorado\", rows such as \"J*** S**** Denver, CO Eagle, CO\"; Quillon Vanderwekken (CO) ended on /name/nohit/ (2026-10-19, about 47 s each, the robot link clicked).",
+    "form": {
+      "method": "http_get",
+      "page_url": "https://www.searchusapeople.com/",
+      "form_action": "https://infotracer.com/loading/",
+      "url_pattern": "https://infotracer.com/loading/?s=rw&source=somecotton&addPixel=yes&searchType=name&type=name&firstname={firstname}&lastname={lastname}&state={state}&city=",
+      "form_id": null,
+      "form_name": null,
+      "submit_label": null,
+      "hidden_names": [],
+      "inputs": [
+        {
+          "name": "firstname",
+          "type": "text",
+          "canonical": "first_name",
+          "required": false,
+          "id": null,
+          "label": null,
+          "placeholder": null
+        },
+        {
+          "name": "lastname",
+          "type": "text",
+          "canonical": "last_name",
+          "required": false,
+          "id": null,
+          "label": null,
+          "placeholder": null
+        },
+        {
+          "name": "state",
+          "type": "text",
+          "canonical": "region",
+          "required": false,
+          "id": null,
+          "label": null,
+          "placeholder": null
+        }
+      ]
+    },
+    "captcha_widget": false
   },
   "dobsearch": {
     "checked": "2026-10-18",
@@ -2173,22 +2212,112 @@
     }
   },
   "publicrecords-info": {
-    "checked": "2026-10-18",
-    "paywall": true,
-    "kind": "register_or_purchase",
-    "evidence": "A synthetic search (John Smith, Denver CO) and a made-up name (Quillon Vanderwekken) both ended on the paid-plan page. Same operator and page template on each: the homepage name form goes to /feature/age-verification (or /feature/disclaimer), then an \"I Agree\" step to /feature/notice, then /feature/package. The page data (__NEXT_DATA__) carries the plan prices (a $1 trial, $35/mo recurring, $9.95) and a checkoutFormId, and claims numberOfRecords 250 even for an empty name. No person is shown. /report/background-check/search answers 404."
+    "checked": "2026-10-19",
+    "evidence": "The homepage's people pop-up (name + state) does not post a form: its script calls GET /api/client?query=tlo/teaser/summary&fullName=…&state=…&usePhoneticLastName=false and draws \"Your search returned N public records for … in …\" (or \"Your search returned no results\") from the answer, before the disclaimer, \"I Agree\" and plan pages. That call is the search the site itself runs and needs no cookie or account; nothing is agreed to, bought or registered to read it. The earlier \"numberOfRecords 250 even for an empty name\" came from the plan page's data, not from this search. The answer is a count for the name only (numberOfStateMatches and cities stay empty), so a hit is \"is this you?\", never a removal on its own.",
+    "result_check": "GET https://www.publicrecords.info/api/client?query=tlo/teaser/summary&fullName=John%20Smith&state=co&usePhoneticLastName=false returned {\"numberOfRecords\":200,…,\"success\":true}; Quillon Vanderwekken returned \"numberOfRecords\":0; Jared Polis (CO) 1; Barack Obama 20 (2026-10-19).",
+    "form": {
+      "method": "http_get",
+      "page_url": "https://www.publicrecords.info/",
+      "form_action": "https://www.publicrecords.info/api/client",
+      "url_pattern": "https://www.publicrecords.info/api/client?query=tlo/teaser/summary&fullName={fullName}&state={state}&usePhoneticLastName=false",
+      "form_id": null,
+      "form_name": null,
+      "submit_label": null,
+      "hidden_names": [],
+      "inputs": [
+        {
+          "name": "fullName",
+          "type": "text",
+          "canonical": "full_name",
+          "required": false,
+          "id": null,
+          "label": null,
+          "placeholder": null
+        },
+        {
+          "name": "state",
+          "type": "text",
+          "canonical": "region",
+          "required": false,
+          "id": null,
+          "label": null,
+          "placeholder": null
+        }
+      ]
+    },
+    "captcha_widget": false
   },
   "publicrecords-us": {
-    "checked": "2026-10-18",
-    "paywall": true,
-    "kind": "register_or_purchase",
-    "evidence": "A synthetic search (John Smith, Denver CO) and a made-up name (Quillon Vanderwekken) both ended on the paid-plan page. Same operator and page template on each: the homepage name form goes to /feature/age-verification (or /feature/disclaimer), then an \"I Agree\" step to /feature/notice, then /feature/package. The page data (__NEXT_DATA__) carries the plan prices (a $1 trial, $35/mo recurring, $9.95) and a checkoutFormId, and claims numberOfRecords 250 even for an empty name. No person is shown."
+    "checked": "2026-10-19",
+    "evidence": "The homepage's people pop-up (name + state) does not post a form: its script calls GET /api/client?query=tlo/teaser/summary&fullName=…&state=…&usePhoneticLastName=false and draws \"Your search returned N public records for … in …\" (or \"Your search returned no results\") from the answer, before the disclaimer, \"I Agree\" and plan pages. That call is the search the site itself runs and needs no cookie or account; nothing is agreed to, bought or registered to read it. The earlier \"numberOfRecords 250 even for an empty name\" came from the plan page's data, not from this search. The answer is a count for the name only (numberOfStateMatches and cities stay empty), so a hit is \"is this you?\", never a removal on its own.",
+    "result_check": "GET https://www.publicrecords.us/api/client?query=tlo/teaser/summary&fullName=John%20Smith&state=co&usePhoneticLastName=false returned {\"numberOfRecords\":200,…,\"success\":true}; Quillon Vanderwekken returned \"numberOfRecords\":0; Jared Polis (CO) 1; Barack Obama 20 (2026-10-19).",
+    "form": {
+      "method": "http_get",
+      "page_url": "https://www.publicrecords.us/",
+      "form_action": "https://www.publicrecords.us/api/client",
+      "url_pattern": "https://www.publicrecords.us/api/client?query=tlo/teaser/summary&fullName={fullName}&state={state}&usePhoneticLastName=false",
+      "form_id": null,
+      "form_name": null,
+      "submit_label": null,
+      "hidden_names": [],
+      "inputs": [
+        {
+          "name": "fullName",
+          "type": "text",
+          "canonical": "full_name",
+          "required": false,
+          "id": null,
+          "label": null,
+          "placeholder": null
+        },
+        {
+          "name": "state",
+          "type": "text",
+          "canonical": "region",
+          "required": false,
+          "id": null,
+          "label": null,
+          "placeholder": null
+        }
+      ]
+    },
+    "captcha_widget": false
   },
   "courtrec-com": {
-    "checked": "2026-10-18",
-    "paywall": true,
-    "kind": "register_or_purchase",
-    "evidence": "A synthetic search (John Smith, Denver CO) and a made-up name (Quillon Vanderwekken) both ended on the paid-plan page. Same operator and page template on each: the homepage name form goes to /feature/age-verification (or /feature/disclaimer), then an \"I Agree\" step to /feature/notice, then /feature/package. The page data (__NEXT_DATA__) carries the plan prices (a $1 trial, $35/mo recurring, $9.95) and a checkoutFormId, and claims numberOfRecords 250 even for an empty name. No person is shown."
+    "checked": "2026-10-19",
+    "evidence": "The homepage's people pop-up (name + state) does not post a form: its script calls GET /api/client?query=tlo/teaser/summary&fullName=…&state=…&usePhoneticLastName=false and draws \"Your search returned N public records for … in …\" (or \"Your search returned no results\") from the answer, before the disclaimer, \"I Agree\" and plan pages. That call is the search the site itself runs and needs no cookie or account; nothing is agreed to, bought or registered to read it. The earlier \"numberOfRecords 250 even for an empty name\" came from the plan page's data, not from this search. The answer is a count for the name only (numberOfStateMatches and cities stay empty), so a hit is \"is this you?\", never a removal on its own.",
+    "result_check": "GET https://www.courtrec.com/api/client?query=tlo/teaser/summary&fullName=John%20Smith&state=co&usePhoneticLastName=false returned {\"numberOfRecords\":200,…,\"success\":true}; Quillon Vanderwekken returned \"numberOfRecords\":0; Jared Polis (CO) 1; Barack Obama 20 (2026-10-19).",
+    "form": {
+      "method": "http_get",
+      "page_url": "https://www.courtrec.com/",
+      "form_action": "https://www.courtrec.com/api/client",
+      "url_pattern": "https://www.courtrec.com/api/client?query=tlo/teaser/summary&fullName={fullName}&state={state}&usePhoneticLastName=false",
+      "form_id": null,
+      "form_name": null,
+      "submit_label": null,
+      "hidden_names": [],
+      "inputs": [
+        {
+          "name": "fullName",
+          "type": "text",
+          "canonical": "full_name",
+          "required": false,
+          "id": null,
+          "label": null,
+          "placeholder": null
+        },
+        {
+          "name": "state",
+          "type": "text",
+          "canonical": "region",
+          "required": false,
+          "id": null,
+          "label": null,
+          "placeholder": null
+        }
+      ]
+    },
+    "captcha_widget": false
   },
   "peoplewhizr": {
     "checked": "2026-10-18",
@@ -2861,5 +2990,468 @@
     "not_a_person_search": true,
     "kind": "affiliate_redirect",
     "evidence": "The stored GET /search.php?firstName=…&lastName=…&state=… redirects to www.truthfinder.com/search/ with affiliate parameters (utm_source=CV4T), TruthFinder's question funnel (\"What else do you know about John Smith?\"; 2026-10-19). The search is TruthFinder's (catalog entry truthfinder-peopleconnect)."
+  },
+  "connecticut-resident-directory": {
+    "checked": "2026-10-19",
+    "evidence": "The homepage form puts the city in a \"City, State\" typeahead that only accepts a Connecticut place; filled with an out-of-state city it answers \"Invalid search parameters\" or searches the wrong place. Submitting the name alone redirects to the site's own name listing, /name/<first>-<last>, which lists every Connecticut entry for that name. That listing is the search; no city is needed.",
+    "result_check": "GET https://www.connecticutresidentdirectory.com/name/john-smith: \"94 public records for John Smith in Connecticut\"; /name/quillon-vanderwekken: 0 public records for Quillon Vanderwekken in Connecticut (2026-10-19).",
+    "form": {
+      "method": "http_get",
+      "page_url": "https://www.connecticutresidentdirectory.com/",
+      "form_action": "https://www.connecticutresidentdirectory.com/name/",
+      "url_pattern": "https://www.connecticutresidentdirectory.com/name/{first}-{last}",
+      "form_id": null,
+      "form_name": null,
+      "submit_label": null,
+      "hidden_names": [],
+      "inputs": [
+        {
+          "name": "first",
+          "type": "text",
+          "canonical": "first_name",
+          "required": false,
+          "id": null,
+          "label": null,
+          "placeholder": null
+        },
+        {
+          "name": "last",
+          "type": "text",
+          "canonical": "last_name",
+          "required": false,
+          "id": null,
+          "label": null,
+          "placeholder": null
+        }
+      ]
+    }
+  },
+  "florida-voter-directory": {
+    "checked": "2026-10-19",
+    "evidence": "The homepage form puts the city in a \"City, State\" typeahead that only accepts a Florida place; filled with an out-of-state city it answers \"Invalid search parameters\" or searches the wrong place. Submitting the name alone redirects to the site's own name listing, /name/<first>-<last>, which lists every Florida entry for that name. That listing is the search; no city is needed.",
+    "result_check": "GET https://www.floridavoterdirectory.com/name/john-smith: \"963 records for John Smith in Florida\"; /name/quillon-vanderwekken: 0 records for Quillon Vanderwekken in Florida (2026-10-19).",
+    "form": {
+      "method": "http_get",
+      "page_url": "https://www.floridavoterdirectory.com/",
+      "form_action": "https://www.floridavoterdirectory.com/name/",
+      "url_pattern": "https://www.floridavoterdirectory.com/name/{first}-{last}",
+      "form_id": null,
+      "form_name": null,
+      "submit_label": null,
+      "hidden_names": [],
+      "inputs": [
+        {
+          "name": "first",
+          "type": "text",
+          "canonical": "first_name",
+          "required": false,
+          "id": null,
+          "label": null,
+          "placeholder": null
+        },
+        {
+          "name": "last",
+          "type": "text",
+          "canonical": "last_name",
+          "required": false,
+          "id": null,
+          "label": null,
+          "placeholder": null
+        }
+      ]
+    }
+  },
+  "floridaresidentsdirectory": {
+    "checked": "2026-10-19",
+    "evidence": "The homepage form puts the city in a \"City, State\" typeahead that only accepts a Florida place; filled with an out-of-state city it answers \"Invalid search parameters\" or searches the wrong place. Submitting the name alone redirects to the site's own name listing, /name/<first>-<last>, which lists every Florida entry for that name. That listing is the search; no city is needed.",
+    "result_check": "GET https://www.floridaresidentsdirectory.com/name/john-smith: \"John Smith in Florida … 1252 Records Available\"; /name/quillon-vanderwekken: We found no results for Quillon Vanderwekken in Florida (2026-10-19).",
+    "form": {
+      "method": "http_get",
+      "page_url": "https://www.floridaresidentsdirectory.com/",
+      "form_action": "https://www.floridaresidentsdirectory.com/name/",
+      "url_pattern": "https://www.floridaresidentsdirectory.com/name/{first}-{last}",
+      "form_id": null,
+      "form_name": null,
+      "submit_label": null,
+      "hidden_names": [],
+      "inputs": [
+        {
+          "name": "first",
+          "type": "text",
+          "canonical": "first_name",
+          "required": false,
+          "id": null,
+          "label": null,
+          "placeholder": null
+        },
+        {
+          "name": "last",
+          "type": "text",
+          "canonical": "last_name",
+          "required": false,
+          "id": null,
+          "label": null,
+          "placeholder": null
+        }
+      ]
+    }
+  },
+  "ohio-resident-database": {
+    "checked": "2026-10-19",
+    "evidence": "The homepage form puts the city in a \"City, State\" typeahead that only accepts a Ohio place; filled with an out-of-state city it answers \"Invalid search parameters\" or searches the wrong place. Submitting the name alone redirects to the site's own name listing, /name/<first>-<last>, which lists every Ohio entry for that name. That listing is the search; no city is needed.",
+    "result_check": "GET https://www.ohioresidentdatabase.com/name/john-smith: \"John Smith in Ohio with a list of person cards\"; /name/quillon-vanderwekken: HTTP 404 with the page text \"No Results for your query\" (2026-10-19).",
+    "form": {
+      "method": "http_get",
+      "page_url": "https://www.ohioresidentdatabase.com/",
+      "form_action": "https://www.ohioresidentdatabase.com/name/",
+      "url_pattern": "https://www.ohioresidentdatabase.com/name/{first}-{last}",
+      "form_id": null,
+      "form_name": null,
+      "submit_label": null,
+      "hidden_names": [],
+      "inputs": [
+        {
+          "name": "first",
+          "type": "text",
+          "canonical": "first_name",
+          "required": false,
+          "id": null,
+          "label": null,
+          "placeholder": null
+        },
+        {
+          "name": "last",
+          "type": "text",
+          "canonical": "last_name",
+          "required": false,
+          "id": null,
+          "label": null,
+          "placeholder": null
+        }
+      ]
+    }
+  },
+  "michigan-residents": {
+    "checked": "2026-10-19",
+    "evidence": "The homepage form puts the city in a \"City, State\" typeahead that only accepts a Michigan place; filled with an out-of-state city it answers \"Invalid search parameters\" or searches the wrong place. Submitting the name alone redirects to the site's own name listing, /name/<first>-<last>, which lists every Michigan entry for that name. That listing is the search; no city is needed.",
+    "result_check": "GET https://www.michiganresidentdatabase.com/name/john-smith: \"John Smith in Michigan: 680 Records Found\"; /name/quillon-vanderwekken: the site's own no-match page (2026-10-19).",
+    "form": {
+      "method": "http_get",
+      "page_url": "https://www.michiganresidentdatabase.com/",
+      "form_action": "https://www.michiganresidentdatabase.com/name/",
+      "url_pattern": "https://www.michiganresidentdatabase.com/name/{first}-{last}",
+      "form_id": null,
+      "form_name": null,
+      "submit_label": null,
+      "hidden_names": [],
+      "inputs": [
+        {
+          "name": "first",
+          "type": "text",
+          "canonical": "first_name",
+          "required": false,
+          "id": null,
+          "label": null,
+          "placeholder": null
+        },
+        {
+          "name": "last",
+          "type": "text",
+          "canonical": "last_name",
+          "required": false,
+          "id": null,
+          "label": null,
+          "placeholder": null
+        }
+      ]
+    }
+  },
+  "nc-resident-database": {
+    "checked": "2026-10-19",
+    "evidence": "The homepage form's location box is a \"City, State\" typeahead for North Carolina places; an out-of-state city searches the wrong place. /search?name=<full name> alone shows a short \"Searching for records... This will only take a few seconds\" page, then navigates by script to /name/<first>-<last>, which lists every North Carolina entry for the name, or says \"No Records Found\". A direct GET of /name/<first>-<last> for a name it doesn't have answers a bare 404 (the same page as any wrong URL), so the search goes through /search.",
+    "result_check": "In a browser, /search?name=John+Smith ended on /name/john-smith: \"John Smith in North Carolina - 1,343 persons found\"; /search?name=Quillon+Vanderwekken ended on /name/quillon-vanderwekken: \"No Records Found\" (2026-10-19).",
+    "form": {
+      "method": "http_get",
+      "page_url": "https://www.northcarolinaresidentdatabase.com/",
+      "form_action": "https://www.northcarolinaresidentdatabase.com/search",
+      "url_pattern": "https://www.northcarolinaresidentdatabase.com/search?name={name}",
+      "form_id": null,
+      "form_name": null,
+      "submit_label": null,
+      "hidden_names": [],
+      "inputs": [
+        {
+          "name": "name",
+          "type": "text",
+          "canonical": "full_name",
+          "required": false,
+          "id": null,
+          "label": null,
+          "placeholder": null
+        }
+      ]
+    }
+  },
+  "infotracer": {
+    "checked": "2026-10-19",
+    "evidence": "The name search hands off to InfoTracer's report flow, https://infotracer.com/loading/?…&firstname=…&lastname=…&state=… (the homepage name form opens a BeenVerified affiliate link in a new tab; the site's own /loading/ GET still runs InfoTracer's search). That page shows a bare \"I'm not a robot\" link (no widget, no terms), then about 45 seconds of a progress bar, then lands on /name/results/ (\"Found N Results in <state>\", every name masked as initials and stars, e.g. \"J*** S****\", with ages and cities) or, for a name it doesn't have, /name/nohit/. Reading that page is the search; nothing past it (selecting a result, the plan pages) is clicked. Frame renders it on its slow-render list and reads masked rows as \"is this you?\", never a confirmed match.",
+    "result_check": "In a browser, John Smith (CO) ended on https://infotracer.com/name/results/: \"Found 97 Results in Colorado\", rows such as \"J*** S**** Denver, CO Eagle, CO\"; Quillon Vanderwekken (CO) ended on /name/nohit/ (2026-10-19, about 47 s each, the robot link clicked).",
+    "form": {
+      "method": "http_get",
+      "page_url": "https://infotracer.com/",
+      "form_action": "https://infotracer.com/loading/",
+      "url_pattern": "https://infotracer.com/loading/?ltid=home&mercSubId=home-name&type=name&searchTab=name&firstname={firstname}&lastname={lastname}&state={state}&city=",
+      "form_id": null,
+      "form_name": null,
+      "submit_label": null,
+      "hidden_names": [],
+      "inputs": [
+        {
+          "name": "firstname",
+          "type": "text",
+          "canonical": "first_name",
+          "required": false,
+          "id": null,
+          "label": null,
+          "placeholder": null
+        },
+        {
+          "name": "lastname",
+          "type": "text",
+          "canonical": "last_name",
+          "required": false,
+          "id": null,
+          "label": null,
+          "placeholder": null
+        },
+        {
+          "name": "state",
+          "type": "text",
+          "canonical": "region",
+          "required": false,
+          "id": null,
+          "label": null,
+          "placeholder": null
+        }
+      ]
+    },
+    "captcha_widget": false
+  },
+  "govwarrantsearch-org-infotracer-form": {
+    "checked": "2026-10-19",
+    "evidence": "The name search hands off to InfoTracer's report flow, https://infotracer.com/loading/?…&firstname=…&lastname=…&state=… (govwarrantsearch.org's form posts to searching.php, which redirects there). That page shows a bare \"I'm not a robot\" link (no widget, no terms), then about 45 seconds of a progress bar, then lands on /name/results/ (\"Found N Results in <state>\", every name masked as initials and stars, e.g. \"J*** S****\", with ages and cities) or, for a name it doesn't have, /name/nohit/. Reading that page is the search; nothing past it (selecting a result, the plan pages) is clicked. Frame renders it on its slow-render list and reads masked rows as \"is this you?\", never a confirmed match.",
+    "result_check": "In a browser, John Smith (CO) ended on https://infotracer.com/name/results/: \"Found 97 Results in Colorado\", rows such as \"J*** S**** Denver, CO Eagle, CO\"; Quillon Vanderwekken (CO) ended on /name/nohit/ (2026-10-19, about 47 s each, the robot link clicked).",
+    "form": {
+      "method": "http_get",
+      "page_url": "https://www.govwarrantsearch.org/",
+      "form_action": "https://infotracer.com/loading/",
+      "url_pattern": "https://infotracer.com/loading/?ltid=criminal&mercSubId=arrest-name&type=arrest-records&searchTab=name&s=rw&addPixel=yes&source=ssl948&firstname={firstname}&lastname={lastname}&state={state}&city=&tid=govwarrantsearch",
+      "form_id": null,
+      "form_name": null,
+      "submit_label": null,
+      "hidden_names": [],
+      "inputs": [
+        {
+          "name": "firstname",
+          "type": "text",
+          "canonical": "first_name",
+          "required": false,
+          "id": null,
+          "label": null,
+          "placeholder": null
+        },
+        {
+          "name": "lastname",
+          "type": "text",
+          "canonical": "last_name",
+          "required": false,
+          "id": null,
+          "label": null,
+          "placeholder": null
+        },
+        {
+          "name": "state",
+          "type": "text",
+          "canonical": "region",
+          "required": false,
+          "id": null,
+          "label": null,
+          "placeholder": null
+        }
+      ]
+    },
+    "captcha_widget": false
+  },
+  "uswarrants-org-infotracer-form": {
+    "checked": "2026-10-19",
+    "evidence": "The name search hands off to InfoTracer's report flow, https://infotracer.net/loading/?…&firstname=…&lastname=…&state=… (uswarrants.org's form redirects to infotracer.net/loading/, which forwards to infotracer.com). That page shows a bare \"I'm not a robot\" link (no widget, no terms), then about 45 seconds of a progress bar, then lands on /name/results/ (\"Found N Results in <state>\", every name masked as initials and stars, e.g. \"J*** S****\", with ages and cities) or, for a name it doesn't have, /name/nohit/. Reading that page is the search; nothing past it (selecting a result, the plan pages) is clicked. Frame renders it on its slow-render list and reads masked rows as \"is this you?\", never a confirmed match.",
+    "result_check": "In a browser, John Smith (CO) ended on https://infotracer.com/name/results/: \"Found 97 Results in Colorado\", rows such as \"J*** S**** Denver, CO Eagle, CO\"; Quillon Vanderwekken (CO) ended on /name/nohit/ (2026-10-19, about 47 s each, the robot link clicked).",
+    "form": {
+      "method": "http_get",
+      "page_url": "https://www.uswarrants.org/",
+      "form_action": "https://infotracer.net/loading/",
+      "url_pattern": "https://infotracer.net/loading/?ltid=criminal&mercSubId=arrest-name&type=arrest-records&searchTab=name&s=rw&addPixel=yes&source=ssl948&firstname={firstname}&lastname={lastname}&state={state}&city=&tid=uswarrants",
+      "form_id": null,
+      "form_name": null,
+      "submit_label": null,
+      "hidden_names": [],
+      "inputs": [
+        {
+          "name": "firstname",
+          "type": "text",
+          "canonical": "first_name",
+          "required": false,
+          "id": null,
+          "label": null,
+          "placeholder": null
+        },
+        {
+          "name": "lastname",
+          "type": "text",
+          "canonical": "last_name",
+          "required": false,
+          "id": null,
+          "label": null,
+          "placeholder": null
+        },
+        {
+          "name": "state",
+          "type": "text",
+          "canonical": "region",
+          "required": false,
+          "id": null,
+          "label": null,
+          "placeholder": null
+        }
+      ]
+    },
+    "captcha_widget": false
+  },
+  "usrecords-infotracer": {
+    "checked": "2026-10-19",
+    "evidence": "The name search hands off to InfoTracer's report flow, https://infotracer.net/loading/?…&firstname=…&lastname=…&state=… (usrecords.net's script builds the infotracer.net/loading/ URL from its usrecords_localize.remote_url). That page shows a bare \"I'm not a robot\" link (no widget, no terms), then about 45 seconds of a progress bar, then lands on /name/results/ (\"Found N Results in <state>\", every name masked as initials and stars, e.g. \"J*** S****\", with ages and cities) or, for a name it doesn't have, /name/nohit/. Reading that page is the search; nothing past it (selecting a result, the plan pages) is clicked. Frame renders it on its slow-render list and reads masked rows as \"is this you?\", never a confirmed match.",
+    "result_check": "In a browser, John Smith (CO) ended on https://infotracer.com/name/results/: \"Found 97 Results in Colorado\", rows such as \"J*** S**** Denver, CO Eagle, CO\"; Quillon Vanderwekken (CO) ended on /name/nohit/ (2026-10-19, about 47 s each, the robot link clicked).",
+    "form": {
+      "method": "http_get",
+      "page_url": "https://www.usrecords.net/",
+      "form_action": "https://infotracer.net/loading/",
+      "url_pattern": "https://infotracer.net/loading/?ltid=criminal&mercSubId=arrest-name&type=arrest-records&searchTab=name&s=rw&addPixel=yes&source=ssl948&firstname={firstname}&lastname={lastname}&state={state}&city=&tid=usrecords",
+      "form_id": null,
+      "form_name": null,
+      "submit_label": null,
+      "hidden_names": [],
+      "inputs": [
+        {
+          "name": "firstname",
+          "type": "text",
+          "canonical": "first_name",
+          "required": false,
+          "id": null,
+          "label": null,
+          "placeholder": null
+        },
+        {
+          "name": "lastname",
+          "type": "text",
+          "canonical": "last_name",
+          "required": false,
+          "id": null,
+          "label": null,
+          "placeholder": null
+        },
+        {
+          "name": "state",
+          "type": "text",
+          "canonical": "region",
+          "required": false,
+          "id": null,
+          "label": null,
+          "placeholder": null
+        }
+      ]
+    },
+    "captcha_widget": false
+  },
+  "affordable-background-checks": {
+    "checked": "2026-10-19",
+    "evidence": "The name search hands off to InfoTracer's report flow, https://infotracer.com/loading/?…&firstname=…&lastname=…&state=… (affordablebackgroundchecks.com's nameForm is a GET to infotracer.com/loading/). That page shows a bare \"I'm not a robot\" link (no widget, no terms), then about 45 seconds of a progress bar, then lands on /name/results/ (\"Found N Results in <state>\", every name masked as initials and stars, e.g. \"J*** S****\", with ages and cities) or, for a name it doesn't have, /name/nohit/. Reading that page is the search; nothing past it (selecting a result, the plan pages) is clicked. Frame renders it on its slow-render list and reads masked rows as \"is this you?\", never a confirmed match.",
+    "result_check": "In a browser, John Smith (CO) ended on https://infotracer.com/name/results/: \"Found 97 Results in Colorado\", rows such as \"J*** S**** Denver, CO Eagle, CO\"; Quillon Vanderwekken (CO) ended on /name/nohit/ (2026-10-19, about 47 s each, the robot link clicked).",
+    "form": {
+      "method": "http_get",
+      "page_url": "https://www.affordablebackgroundchecks.com/",
+      "form_action": "https://infotracer.com/loading/",
+      "url_pattern": "https://infotracer.com/loading/?type=name&source=DAGHoldings&tid=DAGHoldings&addPixel=yes&s=rw&firstname={firstname}&lastname={lastname}&state={state}&city=",
+      "form_id": null,
+      "form_name": null,
+      "submit_label": null,
+      "hidden_names": [],
+      "inputs": [
+        {
+          "name": "firstname",
+          "type": "text",
+          "canonical": "first_name",
+          "required": false,
+          "id": null,
+          "label": null,
+          "placeholder": null
+        },
+        {
+          "name": "lastname",
+          "type": "text",
+          "canonical": "last_name",
+          "required": false,
+          "id": null,
+          "label": null,
+          "placeholder": null
+        },
+        {
+          "name": "state",
+          "type": "text",
+          "canonical": "region",
+          "required": false,
+          "id": null,
+          "label": null,
+          "placeholder": null
+        }
+      ]
+    },
+    "captcha_widget": false,
+    "paywall": false
+  },
+  "idcrawl": {
+    "checked": "2026-10-19",
+    "evidence": "The people search lands on https://www.idcrawl.com/<first>-<last> (slug of the name). John Smith shows \"Found over 10,000 people named John Smith …\"; a made-up name (Quillon Vanderwekken) shows \"Explore profiles, social media accounts, and public records for …\" with no Found-over count. The page is often behind AWS WAF's puzzle (gokuProps + challenge.js/captcha.js); Frame solves that only for idcrawl.com via CapSolver AntiAwsWafTask (~$0.002/solve), then reads the results. No form beyond the search, no terms clicks.",
+    "result_check": "John Smith (CO) → needs_review name_only_count (Found over 10,000); Quillon Vanderwekken → not_found no_match_text (Explore profiles…). Checked 2026-10-19 residential and with the AWS WAF solver.",
+    "form": {
+      "method": "http_get",
+      "page_url": "https://www.idcrawl.com/",
+      "form_action": "https://www.idcrawl.com/",
+      "url_pattern": "https://www.idcrawl.com/{first_name}-{last_name}",
+      "form_id": null,
+      "form_name": null,
+      "submit_label": null,
+      "hidden_names": [],
+      "inputs": [
+        {
+          "name": "first_name",
+          "type": "text",
+          "canonical": "first_name",
+          "required": false,
+          "id": null,
+          "label": null,
+          "placeholder": null
+        },
+        {
+          "name": "last_name",
+          "type": "text",
+          "canonical": "last_name",
+          "required": false,
+          "id": null,
+          "label": null,
+          "placeholder": null
+        }
+      ]
+    },
+    "captcha_widget": false
   }
 }
