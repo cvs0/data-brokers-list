@@ -1006,57 +1006,11 @@
     }
   },
   "onlinesearches-intelius-peopleconnect": {
-    "checked": "2026-10-18",
-    "evidence": "Homepage form (first_last_name, city_state) has no action: the page's script opens /name/<first>-<last>/<ST>/<City>?category=public. The stored GET to the homepage only reloads it. The lowercase path without the category parameter shows the same results. Frame fills path placeholders as lowercase slugs and stops the path before the first segment it cannot fill, so a person with no city still gets the name (and state) page.",
-    "result_check": "Rendered 2026-10-18 (US exit): a scripted submit of \"John Smith\" + \"Denver, CO\" landed on /name/john-smith/CO/Denver?category=public (\"10 Results found for John Smith\"); /name/john-smith/co/denver showed the same summary.",
-    "form": {
-      "method": "http_get",
-      "page_url": "https://www.publicrecords.onlinesearches.com/",
-      "form_action": "https://www.publicrecords.onlinesearches.com/name/",
-      "url_pattern": "https://www.publicrecords.onlinesearches.com/name/{first_name}-{last_name}/{region}/{city}",
-      "form_id": null,
-      "form_name": null,
-      "submit_label": null,
-      "hidden_names": [],
-      "inputs": [
-        {
-          "name": "first_name",
-          "type": "text",
-          "canonical": "first_name",
-          "required": true,
-          "id": null,
-          "label": "First name (part of the result path)",
-          "placeholder": null
-        },
-        {
-          "name": "last_name",
-          "type": "text",
-          "canonical": "last_name",
-          "required": true,
-          "id": null,
-          "label": "Last name (part of the result path)",
-          "placeholder": null
-        },
-        {
-          "name": "region",
-          "type": "text",
-          "canonical": "region",
-          "required": false,
-          "id": null,
-          "label": "State code (path segment)",
-          "placeholder": null
-        },
-        {
-          "name": "city",
-          "type": "text",
-          "canonical": "city",
-          "required": false,
-          "id": null,
-          "label": "City (path segment)",
-          "placeholder": null
-        }
-      ]
-    }
+    "checked": "2026-10-19",
+    "not_a_person_search": true,
+    "kind": "affiliate_redirect",
+    "country": "US",
+    "evidence": "Homepage form (first_last_name, city_state) has no action: the page's script opens /name/<first>-<last>/<ST>/<City>?category=public. The stored GET to the homepage only reloads it. The lowercase path without the category parameter shows the same results. Frame fills path placeholders as lowercase slugs and stops the path before the first segment it cannot fill, so a person with no city still gets the name (and state) page. Re-checked 2026-10-19: for a name it has no page for (Quillon Vanderwekken, CO), the hand-off lands on www.intelius.com/search/?affid=…&src=ONLSRCH, Intelius's \"Searching for … in CO\" funnel. The search is Intelius's (catalog entry intelius-peopleconnect, read on its /results/ page), so it is marked as an affiliate, not searched twice."
   },
   "spokeo-data": {
     "checked": "2026-10-18",
@@ -3331,93 +3285,17 @@
   },
   "uswarrants-org-infotracer-form": {
     "checked": "2026-10-19",
-    "evidence": "The name search hands off to InfoTracer's report flow, https://infotracer.net/loading/?…&firstname=…&lastname=…&state=… (uswarrants.org's form redirects to infotracer.net/loading/, which forwards to infotracer.com). That page shows a bare \"I'm not a robot\" link (no widget, no terms), then about 45 seconds of a progress bar, then lands on /name/results/ (\"Found N Results in <state>\", every name masked as initials and stars, e.g. \"J*** S****\", with ages and cities) or, for a name it doesn't have, /name/nohit/. Reading that page is the search; nothing past it (selecting a result, the plan pages) is clicked. Frame renders it on its slow-render list and reads masked rows as \"is this you?\", never a confirmed match.",
-    "result_check": "In a browser, John Smith (CO) ended on https://infotracer.com/name/results/: \"Found 97 Results in Colorado\", rows such as \"J*** S**** Denver, CO Eagle, CO\"; Quillon Vanderwekken (CO) ended on /name/nohit/ (2026-10-19, about 47 s each, the robot link clicked).",
-    "form": {
-      "method": "http_get",
-      "page_url": "https://www.uswarrants.org/",
-      "form_action": "https://infotracer.net/loading/",
-      "url_pattern": "https://infotracer.net/loading/?ltid=criminal&mercSubId=arrest-name&type=arrest-records&searchTab=name&s=rw&addPixel=yes&source=ssl948&firstname={firstname}&lastname={lastname}&state={state}&city=&tid=uswarrants",
-      "form_id": null,
-      "form_name": null,
-      "submit_label": null,
-      "hidden_names": [],
-      "inputs": [
-        {
-          "name": "firstname",
-          "type": "text",
-          "canonical": "first_name",
-          "required": false,
-          "id": null,
-          "label": null,
-          "placeholder": null
-        },
-        {
-          "name": "lastname",
-          "type": "text",
-          "canonical": "last_name",
-          "required": false,
-          "id": null,
-          "label": null,
-          "placeholder": null
-        },
-        {
-          "name": "state",
-          "type": "text",
-          "canonical": "region",
-          "required": false,
-          "id": null,
-          "label": null,
-          "placeholder": null
-        }
-      ]
-    },
-    "captcha_widget": false
+    "not_a_person_search": true,
+    "kind": "affiliate_redirect",
+    "country": "US",
+    "evidence": "The name search hands off to InfoTracer's report flow, https://infotracer.net/loading/?…&firstname=…&lastname=…&state=… (uswarrants.org's form redirects to infotracer.net/loading/, which forwards to infotracer.com). That page shows a bare \"I'm not a robot\" link (no widget, no terms), then about 45 seconds of a progress bar, then lands on /name/results/ (\"Found N Results in <state>\", every name masked as initials and stars, e.g. \"J*** S****\", with ages and cities) or, for a name it doesn't have, /name/nohit/. Reading that page is the search; nothing past it (selecting a result, the plan pages) is clicked. Frame renders it on its slow-render list and reads masked rows as \"is this you?\", never a confirmed match. Re-checked 2026-10-19: infotracer.net/loading/ now answers \"403 Forbidden\" to residential US exits (browser, both test names), while infotracer.com reads normally. The search is InfoTracer's (catalog entry infotracer), so it is marked as an affiliate and not searched twice."
   },
   "usrecords-infotracer": {
     "checked": "2026-10-19",
-    "evidence": "The name search hands off to InfoTracer's report flow, https://infotracer.net/loading/?…&firstname=…&lastname=…&state=… (usrecords.net's script builds the infotracer.net/loading/ URL from its usrecords_localize.remote_url). That page shows a bare \"I'm not a robot\" link (no widget, no terms), then about 45 seconds of a progress bar, then lands on /name/results/ (\"Found N Results in <state>\", every name masked as initials and stars, e.g. \"J*** S****\", with ages and cities) or, for a name it doesn't have, /name/nohit/. Reading that page is the search; nothing past it (selecting a result, the plan pages) is clicked. Frame renders it on its slow-render list and reads masked rows as \"is this you?\", never a confirmed match.",
-    "result_check": "In a browser, John Smith (CO) ended on https://infotracer.com/name/results/: \"Found 97 Results in Colorado\", rows such as \"J*** S**** Denver, CO Eagle, CO\"; Quillon Vanderwekken (CO) ended on /name/nohit/ (2026-10-19, about 47 s each, the robot link clicked).",
-    "form": {
-      "method": "http_get",
-      "page_url": "https://www.usrecords.net/",
-      "form_action": "https://infotracer.net/loading/",
-      "url_pattern": "https://infotracer.net/loading/?ltid=criminal&mercSubId=arrest-name&type=arrest-records&searchTab=name&s=rw&addPixel=yes&source=ssl948&firstname={firstname}&lastname={lastname}&state={state}&city=&tid=usrecords",
-      "form_id": null,
-      "form_name": null,
-      "submit_label": null,
-      "hidden_names": [],
-      "inputs": [
-        {
-          "name": "firstname",
-          "type": "text",
-          "canonical": "first_name",
-          "required": false,
-          "id": null,
-          "label": null,
-          "placeholder": null
-        },
-        {
-          "name": "lastname",
-          "type": "text",
-          "canonical": "last_name",
-          "required": false,
-          "id": null,
-          "label": null,
-          "placeholder": null
-        },
-        {
-          "name": "state",
-          "type": "text",
-          "canonical": "region",
-          "required": false,
-          "id": null,
-          "label": null,
-          "placeholder": null
-        }
-      ]
-    },
-    "captcha_widget": false
+    "not_a_person_search": true,
+    "kind": "affiliate_redirect",
+    "country": "US",
+    "evidence": "The name search hands off to InfoTracer's report flow, https://infotracer.net/loading/?…&firstname=…&lastname=…&state=… (usrecords.net's script builds the infotracer.net/loading/ URL from its usrecords_localize.remote_url). That page shows a bare \"I'm not a robot\" link (no widget, no terms), then about 45 seconds of a progress bar, then lands on /name/results/ (\"Found N Results in <state>\", every name masked as initials and stars, e.g. \"J*** S****\", with ages and cities) or, for a name it doesn't have, /name/nohit/. Reading that page is the search; nothing past it (selecting a result, the plan pages) is clicked. Frame renders it on its slow-render list and reads masked rows as \"is this you?\", never a confirmed match. Re-checked 2026-10-19: infotracer.net/loading/ now answers \"403 Forbidden\" to residential US exits (browser, both test names, and a separate probe), while infotracer.com reads normally. The search is InfoTracer's (catalog entry infotracer), so it is marked as an affiliate and not searched twice. An InfoTracer render costs about 0.6 to 2.6 MB of proxy traffic."
   },
   "affordable-background-checks": {
     "checked": "2026-10-19",
@@ -3706,5 +3584,18 @@
     "checked": "2026-10-19",
     "country": "US",
     "evidence": "The homepage name search (txtFirstName, txtLastName, txtCity, ddlStates) has a state dropdown of US states only (AK … WY) and no Canadian province, so the country is US. The search is guarded by an invisible Cloudflare Turnstile check. From a datacenter browser the submit came back \"We couldn't verify your browser. Please try your search again.\" Two residential US exits got \"403 - Forbidden: Access is denied\" on the homepage itself (2026-10-19). No search could be read. Frame's Cloudflare solver stays off."
+  },
+  "finalscout": {
+    "checked": "2026-10-19",
+    "not_a_person_search": true,
+    "kind": "register_or_purchase",
+    "evidence": "finalscout.com/find?name=… is a B2B professional-email finder: \"Find professional email by name and company website. Enter the full name and company website to search for the professional email address.\" It needs a company website, and results need an account (Sign in / Free Trial / Pricing). There is no free lookup of a private person by name and location; the search stayed on that form for both test names (residential browser, 2026-10-19)."
+  },
+  "privaterecords-net": {
+    "checked": "2026-10-19",
+    "paywall": true,
+    "kind": "register_or_purchase",
+    "country": "US",
+    "evidence": "The name search (/name/landing?firstName=…&lastName=…&state=…) opens a notice that the visitor must certify by selecting \"I Agree\" to the Privacy Policy and Terms of Use (and that PrivateRecords is not a consumer reporting agency under the FCRA) before anything is searched. No person is listed before that agreement, which Frame does not click (residential browser, John Smith and Quillon Vanderwekken, 2026-10-19). This is the same template as WeInform and PeopleSearcher."
   }
 }
