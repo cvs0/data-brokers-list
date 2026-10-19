@@ -2319,5 +2319,33 @@
       ]
     },
     "country": "US"
+  },
+  "propertyrec-network": {
+    "checked": "2026-10-18",
+    "not_a_person_search": true,
+    "kind": "contact",
+    "country": "US",
+    "evidence": "The stored search form on https://www.propertyrec.com/ is the site's contact form (inputs contact-name, contact-email, contact-message). A GET with contact-name=John Smith only reloads the homepage (read 2026-10-18 through Frame's browser-fetch, US exit). It is not a person search, and a contact form is never submitted."
+  },
+  "propertyrecord-network": {
+    "checked": "2026-10-18",
+    "not_a_person_search": true,
+    "kind": "contact",
+    "country": "US",
+    "evidence": "The stored search form on https://www.propertyrecord.com/ is the site's contact form (inputs contact-name, contact-email, contact-message). A GET with contact-name=John Smith only reloads the homepage (read 2026-10-18 through Frame's browser-fetch, US exit). It is not a person search, and a contact form is never submitted."
+  },
+  "propertyrecs-network": {
+    "checked": "2026-10-18",
+    "not_a_person_search": true,
+    "kind": "contact",
+    "country": "US",
+    "evidence": "The stored search form on https://www.propertyrecs.com/ is the site's contact form (inputs contact-name, contact-email, contact-message). A GET with contact-name=John Smith only reloads the homepage (read 2026-10-18 through Frame's browser-fetch, US exit). It is not a person search, and a contact form is never submitted."
+  },
+  "infomatics-llc-network-peoplesearch123-com": {
+    "checked": "2026-10-18",
+    "paywall": true,
+    "kind": "register_or_purchase",
+    "country": "US",
+    "evidence": "The stored URL /name/landing is the homepage's Angular search form, not a results page. Submitting it (First name, Last name, state) after the FCRA \"I Agree\" notice opens /name/loader \"Searching for John Smith 1%\". The app's only search call, POST /api/content/peopleSearch/peopleSearch, answered 412 with a creditCard.authorize step ($0.30 card hold) for John Smith and for a made-up name (Quillon Vanderwekken), read 2026-10-18 in a headless browser. No person is listed before a card is entered. Fifteen sibling sites serve the same app shell and are not changed here."
   }
 }
