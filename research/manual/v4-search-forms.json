@@ -2265,5 +2265,59 @@
       ]
     },
     "country": "US"
+  },
+  "smartbackgroundchecks": {
+    "checked": "2026-10-18",
+    "evidence": "Homepage form searchForm posts to /search.php (a bare POST answers 403) and lands on /people/<first>-<last>/<city>/<st>. The stored recipe put the city alone in inputCityState and landed on /people/john-smith/denver, which answers 404 \"0 Results Found\" even for John Smith. url_pattern stores the result path; Frame fills path placeholders as lowercase slugs and stops before a segment it cannot fill.",
+    "result_check": "Rendered 2026-10-18 through Frame's browser-fetch (US exit): /people/john-smith/denver/co → \"John Smith Found 247 name matches\" with listings; /people/quillon-vanderwekken/denver/co (a made-up name) → \"Found 1 name matches\" listing a different person (a padded page; Frame reads it as not listed from frame PR #764).",
+    "form": {
+      "method": "http_get",
+      "page_url": "https://www.smartbackgroundchecks.com/",
+      "form_action": "https://www.smartbackgroundchecks.com/people/",
+      "url_pattern": "https://www.smartbackgroundchecks.com/people/{first_name}-{last_name}/{city}/{region}",
+      "form_id": null,
+      "form_name": null,
+      "submit_label": null,
+      "hidden_names": [],
+      "inputs": [
+        {
+          "name": "first_name",
+          "type": "text",
+          "canonical": "first_name",
+          "required": true,
+          "id": null,
+          "label": "First name (part of the result path)",
+          "placeholder": null
+        },
+        {
+          "name": "last_name",
+          "type": "text",
+          "canonical": "last_name",
+          "required": true,
+          "id": null,
+          "label": "Last name (part of the result path)",
+          "placeholder": null
+        },
+        {
+          "name": "city",
+          "type": "text",
+          "canonical": "city",
+          "required": false,
+          "id": null,
+          "label": "City (path segment)",
+          "placeholder": null
+        },
+        {
+          "name": "region",
+          "type": "text",
+          "canonical": "region",
+          "required": false,
+          "id": null,
+          "label": "State code (path segment, after the city)",
+          "placeholder": null
+        }
+      ]
+    },
+    "country": "US"
   }
 }
