@@ -1,11 +1,4 @@
 {
-  "checkpeople": {
-    "checked": "2026-10-18",
-    "evidence": "The homepage people form (POST /landing) hands the name to information.com's /pf/nso1/res, the same operator's results host (catalog entry information-com). That page is a script-built funnel: John Smith (Denver CO) and a made-up name (Quillon Vanderwekken) both get the same 2 MB page whose only result text is a script template (\"0 Records matched\"). The search is information.com's.",
-    "not_a_person_search": true,
-    "kind": "affiliate_redirect",
-    "country": "US"
-  },
   "information-com": {
     "checked": "2026-10-19",
     "evidence": "Homepage name form (firstName, lastName, city, state). Its script sends the search as a GET to /pf/<id>/searching, which forwards to /pf/nso1/res with the same parameters. The catalog stored no form (robots.txt had disallowed the scan). Re-checked 2026-10-19: /pf/nso1/res now shows the same screen for any name, \"We found 10+ results for <name> in <city>, <state>. Preparing to build report, please wait.\", also for a made-up name (Quillon Vanderwekken, Denver CO), followed by a paid report. Nothing on it can be read as a listing.",
@@ -3443,6 +3436,465 @@
         },
         {
           "name": "last_name",
+          "type": "text",
+          "canonical": "last_name",
+          "required": false,
+          "id": null,
+          "label": null,
+          "placeholder": null
+        }
+      ]
+    },
+    "captcha_widget": false
+  },
+  "americaphonebook": {
+    "checked": "2026-10-19",
+    "evidence": "The white-pages search is GET https://americaphonebook.com/search.php?first=…&last=…&city=…&state=…. With a city it returns only that exact city's listings, and for John Smith with city Denver, CO it said \"There is no match in our free White Pages database\" while the same search with the city left empty listed 98 John Smiths in Colorado with street addresses and cities. The search leaves city empty and reads the city from each listing.",
+    "result_check": "John Smith, state CO, city empty: \"Here are your 98 results\" (JOHN D SMITH … ARVADA, CO …); Quillon Vanderwekken, CO: \"There is no match in our free White Pages database\" (2026-10-19).",
+    "form": {
+      "method": "http_get",
+      "page_url": "https://americaphonebook.com/",
+      "form_action": "https://americaphonebook.com/search.php",
+      "url_pattern": "https://americaphonebook.com/search.php?first={first}&last={last}&city=&state={state}",
+      "form_id": null,
+      "form_name": null,
+      "submit_label": null,
+      "hidden_names": [],
+      "inputs": [
+        {
+          "name": "first",
+          "type": "text",
+          "canonical": "first_name",
+          "required": false,
+          "id": null,
+          "label": null,
+          "placeholder": null
+        },
+        {
+          "name": "last",
+          "type": "text",
+          "canonical": "last_name",
+          "required": false,
+          "id": null,
+          "label": null,
+          "placeholder": null
+        },
+        {
+          "name": "state",
+          "type": "text",
+          "canonical": "region",
+          "required": false,
+          "id": null,
+          "label": null,
+          "placeholder": null
+        }
+      ]
+    },
+    "captcha_widget": false
+  },
+  "unitedstatesphonebook-usphonebook": {
+    "checked": "2026-10-19",
+    "evidence": "The white-pages search is GET https://unitedstatesphonebook.com/search.php?first=…&last=…&city=…&state=…. With a city it returns only that exact city's listings, and for John Smith with city Denver, CO it said \"There is no match in our free White Pages database\" while the same search with the city left empty listed 98 John Smiths in Colorado with street addresses and cities. The search leaves city empty and reads the city from each listing.",
+    "result_check": "John Smith, state CO, city empty: \"Here are your 98 results\" (JOHN D SMITH … ARVADA, CO …); Quillon Vanderwekken, CO: \"There is no match in our free White Pages database\" (2026-10-19).",
+    "form": {
+      "method": "http_get",
+      "page_url": "https://unitedstatesphonebook.com/",
+      "form_action": "https://unitedstatesphonebook.com/search.php",
+      "url_pattern": "https://unitedstatesphonebook.com/search.php?first={first}&last={last}&city=&state={state}",
+      "form_id": null,
+      "form_name": null,
+      "submit_label": null,
+      "hidden_names": [],
+      "inputs": [
+        {
+          "name": "first",
+          "type": "text",
+          "canonical": "first_name",
+          "required": false,
+          "id": null,
+          "label": null,
+          "placeholder": null
+        },
+        {
+          "name": "last",
+          "type": "text",
+          "canonical": "last_name",
+          "required": false,
+          "id": null,
+          "label": null,
+          "placeholder": null
+        },
+        {
+          "name": "state",
+          "type": "text",
+          "canonical": "region",
+          "required": false,
+          "id": null,
+          "label": null,
+          "placeholder": null
+        }
+      ]
+    },
+    "captcha_widget": false
+  },
+  "spy-dialer": {
+    "checked": "2026-10-19",
+    "evidence": "spydialer.com's homepage is one ASP.NET form holding the phone, people and address searches. The people search (shown by the PEOPLE tab) is TxtBxFrstNm, TxtBxMddlNm, TxtBxLstNm, TxtBxNmCty and the state select DrpDwnLstNmeStt, sent with its own button nClck_NmSrchBttn; the FirstNameTextBox / LastNameTextBox / NameCityTextBox inputs the crawl picked up are hidden alternates. A submit without that button reloads the homepage. With it the search lands on /peopleresult.aspx. Frame sends the form with that button (its worker's submitter list).",
+    "result_check": "In a browser, John Smith, Denver, CO: /peopleresult.aspx \"NO RECORD FOUND!\" (the free database is small); Michael Johnson, Denver, CO: \"Total Hits: 1 RECORD 1 MICHAEL A JOHNSON 80s 550 E 12th AVE, Denver, CO\"; John Smith with no city: \"TOO MANY RESULTS! … Please narrow your search by adding a city\"; Mary Smith, Boulder, CO: \"NO RECORD FOUND!\" (2026-10-19).",
+    "form": {
+      "method": "http_form_post",
+      "page_url": "https://www.spydialer.com/",
+      "form_action": "https://www.spydialer.com/",
+      "url_pattern": "https://www.spydialer.com/",
+      "form_id": null,
+      "form_name": null,
+      "submit_label": null,
+      "hidden_names": [],
+      "inputs": [
+        {
+          "name": "ctl00$ContentPlaceHolder1$TxtBxFrstNm",
+          "type": "text",
+          "canonical": "first_name",
+          "required": false,
+          "id": null,
+          "label": null,
+          "placeholder": null
+        },
+        {
+          "name": "ctl00$ContentPlaceHolder1$TxtBxLstNm",
+          "type": "text",
+          "canonical": "last_name",
+          "required": false,
+          "id": null,
+          "label": null,
+          "placeholder": null
+        },
+        {
+          "name": "ctl00$ContentPlaceHolder1$TxtBxNmCty",
+          "type": "text",
+          "canonical": "city",
+          "required": false,
+          "id": null,
+          "label": null,
+          "placeholder": null
+        },
+        {
+          "name": "ctl00$ContentPlaceHolder1$DrpDwnLstNmeStt",
+          "type": "select-one",
+          "canonical": "region",
+          "required": false,
+          "id": null,
+          "label": null,
+          "placeholder": null
+        }
+      ]
+    },
+    "captcha_widget": false
+  },
+  "us-search-peopleconnect": {
+    "checked": "2026-10-19",
+    "evidence": "US Search (Intelius LLC d/b/a US Search, PeopleConnect) has no search form on its homepage (a Get Started link), but its results page is a plain GET, https://www.ussearch.com/results/?firstName=…&lastName=…&state=…, the same shape as intelius.com/results/. It sits behind Cloudflare's managed challenge, which a real browser on one sticky residential exit passes with the challenge's own checkbox (no solver, about 10 s). The page lists the free results (names, ages, cities) before any report is bought; nothing on it is clicked.",
+    "result_check": "In Frame's browser on a sticky US exit, John Smith (CO): \"Your Search Results for John Smith in CO … 56 results were found.\"; Quillon Vanderwekken (CO): \"We were unable to find any results for Quillon Vanderwekken in our background check database.\" (2026-10-19, two runs each about 13 s).",
+    "form": {
+      "method": "http_get",
+      "page_url": "https://www.ussearch.com/",
+      "form_action": "https://www.ussearch.com/results/",
+      "url_pattern": "https://www.ussearch.com/results/?firstName={firstName}&lastName={lastName}&state={state}",
+      "form_id": null,
+      "form_name": null,
+      "submit_label": null,
+      "hidden_names": [],
+      "inputs": [
+        {
+          "name": "firstName",
+          "type": "text",
+          "canonical": "first_name",
+          "required": false,
+          "id": null,
+          "label": null,
+          "placeholder": null
+        },
+        {
+          "name": "lastName",
+          "type": "text",
+          "canonical": "last_name",
+          "required": false,
+          "id": null,
+          "label": null,
+          "placeholder": null
+        },
+        {
+          "name": "state",
+          "type": "text",
+          "canonical": "region",
+          "required": false,
+          "id": null,
+          "label": null,
+          "placeholder": null
+        }
+      ]
+    },
+    "captcha_widget": false
+  },
+  "alarmscalifornia-licensedata": {
+    "checked": "2026-10-19",
+    "evidence": "The licensedata.org registry search (GET https://alarmscalifornia.org/licenses?q=…) matches only single words: a two-word query never matches, because license holders are stored with middle initials and business names (\"STEVEN E SMITH\", \"SMITH CONSTRUCTION\"). On contractorscalifornia.org, q=John Smith and q=Smith John both returned 0 license holders while q=Smith returned 146 and q=John 2,647. The search therefore sends the surname only and Frame walks the paged list (20 rows a page, ?page=N) for the first name or initial; rows read \"ERIC SMITH Contractor California Inactive\".",
+    "result_check": "contractorscalifornia.org: q=Smith \"146 license holders\" with rows such as \"ERIC SMITH Contractor California Inactive\" and page links ?page=2…8; q=John Smith \"0 license holders\" (2026-10-19). Same licensedata.org template on all ten registries.",
+    "form": {
+      "method": "http_get",
+      "page_url": "https://alarmscalifornia.org/",
+      "form_action": "https://alarmscalifornia.org/licenses",
+      "url_pattern": "https://alarmscalifornia.org/licenses?q={q}",
+      "form_id": null,
+      "form_name": null,
+      "submit_label": null,
+      "hidden_names": [],
+      "inputs": [
+        {
+          "name": "q",
+          "type": "text",
+          "canonical": "last_name",
+          "required": false,
+          "id": null,
+          "label": null,
+          "placeholder": null
+        }
+      ]
+    },
+    "captcha_widget": false
+  },
+  "californiabrokers-org-licensedata": {
+    "checked": "2026-10-19",
+    "evidence": "The licensedata.org registry search (GET https://californiabrokers.org/licenses?q=…) matches only single words: a two-word query never matches, because license holders are stored with middle initials and business names (\"STEVEN E SMITH\", \"SMITH CONSTRUCTION\"). On contractorscalifornia.org, q=John Smith and q=Smith John both returned 0 license holders while q=Smith returned 146 and q=John 2,647. The search therefore sends the surname only and Frame walks the paged list (20 rows a page, ?page=N) for the first name or initial; rows read \"ERIC SMITH Contractor California Inactive\".",
+    "result_check": "contractorscalifornia.org: q=Smith \"146 license holders\" with rows such as \"ERIC SMITH Contractor California Inactive\" and page links ?page=2…8; q=John Smith \"0 license holders\" (2026-10-19). Same licensedata.org template on all ten registries.",
+    "form": {
+      "method": "http_get",
+      "page_url": "https://californiabrokers.org/",
+      "form_action": "https://californiabrokers.org/licenses",
+      "url_pattern": "https://californiabrokers.org/licenses?q={q}",
+      "form_id": null,
+      "form_name": null,
+      "submit_label": null,
+      "hidden_names": [],
+      "inputs": [
+        {
+          "name": "q",
+          "type": "text",
+          "canonical": "last_name",
+          "required": false,
+          "id": null,
+          "label": null,
+          "placeholder": null
+        }
+      ]
+    },
+    "captcha_widget": false
+  },
+  "californiaengineering-org-licensedata": {
+    "checked": "2026-10-19",
+    "evidence": "The licensedata.org registry search (GET https://californiaengineering.org/licenses?q=…) matches only single words: a two-word query never matches, because license holders are stored with middle initials and business names (\"STEVEN E SMITH\", \"SMITH CONSTRUCTION\"). On contractorscalifornia.org, q=John Smith and q=Smith John both returned 0 license holders while q=Smith returned 146 and q=John 2,647. The search therefore sends the surname only and Frame walks the paged list (20 rows a page, ?page=N) for the first name or initial; rows read \"ERIC SMITH Contractor California Inactive\".",
+    "result_check": "contractorscalifornia.org: q=Smith \"146 license holders\" with rows such as \"ERIC SMITH Contractor California Inactive\" and page links ?page=2…8; q=John Smith \"0 license holders\" (2026-10-19). Same licensedata.org template on all ten registries.",
+    "form": {
+      "method": "http_get",
+      "page_url": "https://californiaengineering.org/",
+      "form_action": "https://californiaengineering.org/licenses",
+      "url_pattern": "https://californiaengineering.org/licenses?q={q}",
+      "form_id": null,
+      "form_name": null,
+      "submit_label": null,
+      "hidden_names": [],
+      "inputs": [
+        {
+          "name": "q",
+          "type": "text",
+          "canonical": "last_name",
+          "required": false,
+          "id": null,
+          "label": null,
+          "placeholder": null
+        }
+      ]
+    },
+    "captcha_widget": false
+  },
+  "californialicensing-org-licensedata": {
+    "checked": "2026-10-19",
+    "evidence": "The licensedata.org registry search (GET https://californialicensing.org/licenses?q=…) matches only single words: a two-word query never matches, because license holders are stored with middle initials and business names (\"STEVEN E SMITH\", \"SMITH CONSTRUCTION\"). On contractorscalifornia.org, q=John Smith and q=Smith John both returned 0 license holders while q=Smith returned 146 and q=John 2,647. The search therefore sends the surname only and Frame walks the paged list (20 rows a page, ?page=N) for the first name or initial; rows read \"ERIC SMITH Contractor California Inactive\".",
+    "result_check": "contractorscalifornia.org: q=Smith \"146 license holders\" with rows such as \"ERIC SMITH Contractor California Inactive\" and page links ?page=2…8; q=John Smith \"0 license holders\" (2026-10-19). Same licensedata.org template on all ten registries.",
+    "form": {
+      "method": "http_get",
+      "page_url": "https://californialicensing.org/",
+      "form_action": "https://californialicensing.org/licenses",
+      "url_pattern": "https://californialicensing.org/licenses?q={q}",
+      "form_id": null,
+      "form_name": null,
+      "submit_label": null,
+      "hidden_names": [],
+      "inputs": [
+        {
+          "name": "q",
+          "type": "text",
+          "canonical": "last_name",
+          "required": false,
+          "id": null,
+          "label": null,
+          "placeholder": null
+        }
+      ]
+    },
+    "captcha_widget": false
+  },
+  "californianursing-org-licensedata": {
+    "checked": "2026-10-19",
+    "evidence": "The licensedata.org registry search (GET https://californianursing.org/licenses?q=…) matches only single words: a two-word query never matches, because license holders are stored with middle initials and business names (\"STEVEN E SMITH\", \"SMITH CONSTRUCTION\"). On contractorscalifornia.org, q=John Smith and q=Smith John both returned 0 license holders while q=Smith returned 146 and q=John 2,647. The search therefore sends the surname only and Frame walks the paged list (20 rows a page, ?page=N) for the first name or initial; rows read \"ERIC SMITH Contractor California Inactive\".",
+    "result_check": "contractorscalifornia.org: q=Smith \"146 license holders\" with rows such as \"ERIC SMITH Contractor California Inactive\" and page links ?page=2…8; q=John Smith \"0 license holders\" (2026-10-19). Same licensedata.org template on all ten registries.",
+    "form": {
+      "method": "http_get",
+      "page_url": "https://californianursing.org/",
+      "form_action": "https://californianursing.org/licenses",
+      "url_pattern": "https://californianursing.org/licenses?q={q}",
+      "form_id": null,
+      "form_name": null,
+      "submit_label": null,
+      "hidden_names": [],
+      "inputs": [
+        {
+          "name": "q",
+          "type": "text",
+          "canonical": "last_name",
+          "required": false,
+          "id": null,
+          "label": null,
+          "placeholder": null
+        }
+      ]
+    },
+    "captcha_widget": false
+  },
+  "californiapharmacists-org-licensedata": {
+    "checked": "2026-10-19",
+    "evidence": "The licensedata.org registry search (GET https://californiapharmacists.org/licenses?q=…) matches only single words: a two-word query never matches, because license holders are stored with middle initials and business names (\"STEVEN E SMITH\", \"SMITH CONSTRUCTION\"). On contractorscalifornia.org, q=John Smith and q=Smith John both returned 0 license holders while q=Smith returned 146 and q=John 2,647. The search therefore sends the surname only and Frame walks the paged list (20 rows a page, ?page=N) for the first name or initial; rows read \"ERIC SMITH Contractor California Inactive\".",
+    "result_check": "contractorscalifornia.org: q=Smith \"146 license holders\" with rows such as \"ERIC SMITH Contractor California Inactive\" and page links ?page=2…8; q=John Smith \"0 license holders\" (2026-10-19). Same licensedata.org template on all ten registries.",
+    "form": {
+      "method": "http_get",
+      "page_url": "https://californiapharmacists.org/",
+      "form_action": "https://californiapharmacists.org/licenses",
+      "url_pattern": "https://californiapharmacists.org/licenses?q={q}",
+      "form_id": null,
+      "form_name": null,
+      "submit_label": null,
+      "hidden_names": [],
+      "inputs": [
+        {
+          "name": "q",
+          "type": "text",
+          "canonical": "last_name",
+          "required": false,
+          "id": null,
+          "label": null,
+          "placeholder": null
+        }
+      ]
+    },
+    "captcha_widget": false
+  },
+  "contractorscalifornia-org-licensedata": {
+    "checked": "2026-10-19",
+    "evidence": "The licensedata.org registry search (GET https://contractorscalifornia.org/licenses?q=…) matches only single words: a two-word query never matches, because license holders are stored with middle initials and business names (\"STEVEN E SMITH\", \"SMITH CONSTRUCTION\"). On contractorscalifornia.org, q=John Smith and q=Smith John both returned 0 license holders while q=Smith returned 146 and q=John 2,647. The search therefore sends the surname only and Frame walks the paged list (20 rows a page, ?page=N) for the first name or initial; rows read \"ERIC SMITH Contractor California Inactive\".",
+    "result_check": "contractorscalifornia.org: q=Smith \"146 license holders\" with rows such as \"ERIC SMITH Contractor California Inactive\" and page links ?page=2…8; q=John Smith \"0 license holders\" (2026-10-19). Same licensedata.org template on all ten registries.",
+    "form": {
+      "method": "http_get",
+      "page_url": "https://contractorscalifornia.org/",
+      "form_action": "https://contractorscalifornia.org/licenses",
+      "url_pattern": "https://contractorscalifornia.org/licenses?q={q}",
+      "form_id": null,
+      "form_name": null,
+      "submit_label": null,
+      "hidden_names": [],
+      "inputs": [
+        {
+          "name": "q",
+          "type": "text",
+          "canonical": "last_name",
+          "required": false,
+          "id": null,
+          "label": null,
+          "placeholder": null
+        }
+      ]
+    },
+    "captcha_widget": false
+  },
+  "dentistscalifornia-org-licensedata": {
+    "checked": "2026-10-19",
+    "evidence": "The licensedata.org registry search (GET https://dentistscalifornia.org/licenses?q=…) matches only single words: a two-word query never matches, because license holders are stored with middle initials and business names (\"STEVEN E SMITH\", \"SMITH CONSTRUCTION\"). On contractorscalifornia.org, q=John Smith and q=Smith John both returned 0 license holders while q=Smith returned 146 and q=John 2,647. The search therefore sends the surname only and Frame walks the paged list (20 rows a page, ?page=N) for the first name or initial; rows read \"ERIC SMITH Contractor California Inactive\".",
+    "result_check": "contractorscalifornia.org: q=Smith \"146 license holders\" with rows such as \"ERIC SMITH Contractor California Inactive\" and page links ?page=2…8; q=John Smith \"0 license holders\" (2026-10-19). Same licensedata.org template on all ten registries.",
+    "form": {
+      "method": "http_get",
+      "page_url": "https://dentistscalifornia.org/",
+      "form_action": "https://dentistscalifornia.org/licenses",
+      "url_pattern": "https://dentistscalifornia.org/licenses?q={q}",
+      "form_id": null,
+      "form_name": null,
+      "submit_label": null,
+      "hidden_names": [],
+      "inputs": [
+        {
+          "name": "q",
+          "type": "text",
+          "canonical": "last_name",
+          "required": false,
+          "id": null,
+          "label": null,
+          "placeholder": null
+        }
+      ]
+    },
+    "captcha_widget": false
+  },
+  "firearmscalifornia-org-licensedata": {
+    "checked": "2026-10-19",
+    "evidence": "The licensedata.org registry search (GET https://firearmscalifornia.org/licenses?q=…) matches only single words: a two-word query never matches, because license holders are stored with middle initials and business names (\"STEVEN E SMITH\", \"SMITH CONSTRUCTION\"). On contractorscalifornia.org, q=John Smith and q=Smith John both returned 0 license holders while q=Smith returned 146 and q=John 2,647. The search therefore sends the surname only and Frame walks the paged list (20 rows a page, ?page=N) for the first name or initial; rows read \"ERIC SMITH Contractor California Inactive\".",
+    "result_check": "contractorscalifornia.org: q=Smith \"146 license holders\" with rows such as \"ERIC SMITH Contractor California Inactive\" and page links ?page=2…8; q=John Smith \"0 license holders\" (2026-10-19). Same licensedata.org template on all ten registries.",
+    "form": {
+      "method": "http_get",
+      "page_url": "https://firearmscalifornia.org/",
+      "form_action": "https://firearmscalifornia.org/licenses",
+      "url_pattern": "https://firearmscalifornia.org/licenses?q={q}",
+      "form_id": null,
+      "form_name": null,
+      "submit_label": null,
+      "hidden_names": [],
+      "inputs": [
+        {
+          "name": "q",
+          "type": "text",
+          "canonical": "last_name",
+          "required": false,
+          "id": null,
+          "label": null,
+          "placeholder": null
+        }
+      ]
+    },
+    "captcha_widget": false
+  },
+  "notariescalifornia-com-licensedata": {
+    "checked": "2026-10-19",
+    "evidence": "The licensedata.org registry search (GET https://notariescalifornia.com/licenses?q=…) matches only single words: a two-word query never matches, because license holders are stored with middle initials and business names (\"STEVEN E SMITH\", \"SMITH CONSTRUCTION\"). On contractorscalifornia.org, q=John Smith and q=Smith John both returned 0 license holders while q=Smith returned 146 and q=John 2,647. The search therefore sends the surname only and Frame walks the paged list (20 rows a page, ?page=N) for the first name or initial; rows read \"ERIC SMITH Contractor California Inactive\".",
+    "result_check": "contractorscalifornia.org: q=Smith \"146 license holders\" with rows such as \"ERIC SMITH Contractor California Inactive\" and page links ?page=2…8; q=John Smith \"0 license holders\" (2026-10-19). Same licensedata.org template on all ten registries.",
+    "form": {
+      "method": "http_get",
+      "page_url": "https://notariescalifornia.com/",
+      "form_action": "https://notariescalifornia.com/licenses",
+      "url_pattern": "https://notariescalifornia.com/licenses?q={q}",
+      "form_id": null,
+      "form_name": null,
+      "submit_label": null,
+      "hidden_names": [],
+      "inputs": [
+        {
+          "name": "q",
           "type": "text",
           "canonical": "last_name",
           "required": false,
