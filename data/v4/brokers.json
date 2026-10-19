@@ -142167,8 +142167,8 @@
    "languages": [],
    "legal_name": null,
    "search": {
-    "available": null,
-    "method": "unknown",
+    "available": false,
+    "method": "none",
     "page_url": null,
     "form_action": null,
     "inputs": [],
@@ -142186,8 +142186,8 @@
     },
     "captcha_provider": null,
     "captcha_sitekey": null,
-    "captcha_checked": null,
-    "captcha_detail": null
+    "captcha_detail": null,
+    "captcha_checked": null
    },
    "removal": {
     "url": "https://checkpeople.com/opt-out",
@@ -142364,7 +142364,7 @@
     "cookie_names": []
    },
    "automation": {
-    "search_scanned": false,
+    "search_scanned": true,
     "search_fillable": false,
     "search_captcha": false,
     "search_fields": [],
