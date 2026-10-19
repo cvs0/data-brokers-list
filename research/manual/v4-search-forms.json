@@ -3417,5 +3417,41 @@
     },
     "captcha_widget": false,
     "paywall": false
+  },
+  "idcrawl": {
+    "checked": "2026-10-19",
+    "evidence": "The people search lands on https://www.idcrawl.com/<first>-<last> (slug of the name). John Smith shows \"Found over 10,000 people named John Smith …\"; a made-up name (Quillon Vanderwekken) shows \"Explore profiles, social media accounts, and public records for …\" with no Found-over count. The page is often behind AWS WAF's puzzle (gokuProps + challenge.js/captcha.js); Frame solves that only for idcrawl.com via CapSolver AntiAwsWafTask (~$0.002/solve), then reads the results. No form beyond the search, no terms clicks.",
+    "result_check": "John Smith (CO) → needs_review name_only_count (Found over 10,000); Quillon Vanderwekken → not_found no_match_text (Explore profiles…). Checked 2026-10-19 residential and with the AWS WAF solver.",
+    "form": {
+      "method": "http_get",
+      "page_url": "https://www.idcrawl.com/",
+      "form_action": "https://www.idcrawl.com/",
+      "url_pattern": "https://www.idcrawl.com/{first_name}-{last_name}",
+      "form_id": null,
+      "form_name": null,
+      "submit_label": null,
+      "hidden_names": [],
+      "inputs": [
+        {
+          "name": "first_name",
+          "type": "text",
+          "canonical": "first_name",
+          "required": false,
+          "id": null,
+          "label": null,
+          "placeholder": null
+        },
+        {
+          "name": "last_name",
+          "type": "text",
+          "canonical": "last_name",
+          "required": false,
+          "id": null,
+          "label": null,
+          "placeholder": null
+        }
+      ]
+    },
+    "captcha_widget": false
   }
 }
