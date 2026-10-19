@@ -1,10 +1,57 @@
 {
   "checkpeople": {
-    "checked": "2026-10-18",
-    "evidence": "The homepage people form (POST /landing) hands the name to information.com's /pf/nso1/res, the same operator's results host (catalog entry information-com). That page is a script-built funnel: John Smith (Denver CO) and a made-up name (Quillon Vanderwekken) both get the same 2 MB page whose only result text is a script template (\"0 Records matched\"). The search is information.com's.",
-    "not_a_person_search": true,
-    "kind": "affiliate_redirect",
-    "country": "US"
+    "checked": "2026-10-19",
+    "evidence": "CheckPeople's name form (POST https://checkpeople.com/landing: firstName, lastName, city, state) redirects to its results page on information.com, https://information.com/pf/nso1/res?aid=11&firstName=…&lastName=…&city=…&state=… (the same GET works without the form's _token). That page runs about 50 seconds of progress bars and then draws, in place, either the record list (\"99 RECORDS FOUND\", rows such as \"JOHN MATHEW SMITH Best match Lived in: Denver, CO · Costa Mesa, CA Relatives: …\", every report button marked locked) or, for a name it has no record of, a teaser with no rows (\"10+ public records located for <name> in Colorado\"). Reading that page is the search; nothing on it (select report, continue, email) is clicked. Frame renders it on its slow-render list, waits for that wording, and reads only the drawn rows.",
+    "result_check": "In a browser, John Smith (Denver, CO): \"99 RECORDS FOUND … 41 Sources checked 99 Records matched 57 Exact name matches\", ten rows, several in Denver; Quillon Vanderwekken (Denver, CO): \"Step 1 complete. 41 sources checked for Quillon Vanderwekken … 10+ public records located for Quillon Vanderwekken in Colorado\", no rows (2026-10-19, about 49 s each).",
+    "form": {
+      "method": "http_get",
+      "page_url": "https://checkpeople.com/",
+      "form_action": "https://information.com/pf/nso1/res",
+      "url_pattern": "https://information.com/pf/nso1/res?aid=11&firstName={firstName}&lastName={lastName}&city={city}&state={state}",
+      "form_id": null,
+      "form_name": null,
+      "submit_label": null,
+      "hidden_names": [],
+      "inputs": [
+        {
+          "name": "firstName",
+          "type": "text",
+          "canonical": "first_name",
+          "required": false,
+          "id": null,
+          "label": null,
+          "placeholder": null
+        },
+        {
+          "name": "lastName",
+          "type": "text",
+          "canonical": "last_name",
+          "required": false,
+          "id": null,
+          "label": null,
+          "placeholder": null
+        },
+        {
+          "name": "city",
+          "type": "text",
+          "canonical": "city",
+          "required": false,
+          "id": null,
+          "label": null,
+          "placeholder": null
+        },
+        {
+          "name": "state",
+          "type": "text",
+          "canonical": "region",
+          "required": false,
+          "id": null,
+          "label": null,
+          "placeholder": null
+        }
+      ]
+    },
+    "captcha_widget": false
   },
   "information-com": {
     "checked": "2026-10-19",
@@ -3445,6 +3492,150 @@
           "name": "last_name",
           "type": "text",
           "canonical": "last_name",
+          "required": false,
+          "id": null,
+          "label": null,
+          "placeholder": null
+        }
+      ]
+    },
+    "captcha_widget": false
+  },
+  "americaphonebook": {
+    "checked": "2026-10-19",
+    "evidence": "The white-pages search is GET https://americaphonebook.com/search.php?first=…&last=…&city=…&state=…. With a city it returns only that exact city's listings, and for John Smith with city Denver, CO it said \"There is no match in our free White Pages database\" while the same search with the city left empty listed 98 John Smiths in Colorado with street addresses and cities. The search leaves city empty and reads the city from each listing.",
+    "result_check": "John Smith, state CO, city empty: \"Here are your 98 results\" (JOHN D SMITH … ARVADA, CO …); Quillon Vanderwekken, CO: \"There is no match in our free White Pages database\" (2026-10-19).",
+    "form": {
+      "method": "http_get",
+      "page_url": "https://americaphonebook.com/",
+      "form_action": "https://americaphonebook.com/search.php",
+      "url_pattern": "https://americaphonebook.com/search.php?first={first}&last={last}&city=&state={state}",
+      "form_id": null,
+      "form_name": null,
+      "submit_label": null,
+      "hidden_names": [],
+      "inputs": [
+        {
+          "name": "first",
+          "type": "text",
+          "canonical": "first_name",
+          "required": false,
+          "id": null,
+          "label": null,
+          "placeholder": null
+        },
+        {
+          "name": "last",
+          "type": "text",
+          "canonical": "last_name",
+          "required": false,
+          "id": null,
+          "label": null,
+          "placeholder": null
+        },
+        {
+          "name": "state",
+          "type": "text",
+          "canonical": "region",
+          "required": false,
+          "id": null,
+          "label": null,
+          "placeholder": null
+        }
+      ]
+    },
+    "captcha_widget": false
+  },
+  "unitedstatesphonebook-usphonebook": {
+    "checked": "2026-10-19",
+    "evidence": "The white-pages search is GET https://unitedstatesphonebook.com/search.php?first=…&last=…&city=…&state=…. With a city it returns only that exact city's listings, and for John Smith with city Denver, CO it said \"There is no match in our free White Pages database\" while the same search with the city left empty listed 98 John Smiths in Colorado with street addresses and cities. The search leaves city empty and reads the city from each listing.",
+    "result_check": "John Smith, state CO, city empty: \"Here are your 98 results\" (JOHN D SMITH … ARVADA, CO …); Quillon Vanderwekken, CO: \"There is no match in our free White Pages database\" (2026-10-19).",
+    "form": {
+      "method": "http_get",
+      "page_url": "https://unitedstatesphonebook.com/",
+      "form_action": "https://unitedstatesphonebook.com/search.php",
+      "url_pattern": "https://unitedstatesphonebook.com/search.php?first={first}&last={last}&city=&state={state}",
+      "form_id": null,
+      "form_name": null,
+      "submit_label": null,
+      "hidden_names": [],
+      "inputs": [
+        {
+          "name": "first",
+          "type": "text",
+          "canonical": "first_name",
+          "required": false,
+          "id": null,
+          "label": null,
+          "placeholder": null
+        },
+        {
+          "name": "last",
+          "type": "text",
+          "canonical": "last_name",
+          "required": false,
+          "id": null,
+          "label": null,
+          "placeholder": null
+        },
+        {
+          "name": "state",
+          "type": "text",
+          "canonical": "region",
+          "required": false,
+          "id": null,
+          "label": null,
+          "placeholder": null
+        }
+      ]
+    },
+    "captcha_widget": false
+  },
+  "spy-dialer": {
+    "checked": "2026-10-19",
+    "evidence": "spydialer.com's homepage is one ASP.NET form holding the phone, people and address searches. The people search (shown by the PEOPLE tab) is TxtBxFrstNm, TxtBxMddlNm, TxtBxLstNm, TxtBxNmCty and the state select DrpDwnLstNmeStt, sent with its own button nClck_NmSrchBttn; the FirstNameTextBox / LastNameTextBox / NameCityTextBox inputs the crawl picked up are hidden alternates. A submit without that button reloads the homepage. With it the search lands on /peopleresult.aspx. Frame sends the form with that button (its worker's submitter list).",
+    "result_check": "In a browser, John Smith, Denver, CO: /peopleresult.aspx \"NO RECORD FOUND!\" (the free database is small); Michael Johnson, Denver, CO: \"Total Hits: 1 RECORD 1 MICHAEL A JOHNSON 80s 550 E 12th AVE, Denver, CO\"; John Smith with no city: \"TOO MANY RESULTS! … Please narrow your search by adding a city\"; Mary Smith, Boulder, CO: \"NO RECORD FOUND!\" (2026-10-19).",
+    "form": {
+      "method": "http_form_post",
+      "page_url": "https://www.spydialer.com/",
+      "form_action": "https://www.spydialer.com/",
+      "url_pattern": "https://www.spydialer.com/",
+      "form_id": null,
+      "form_name": null,
+      "submit_label": null,
+      "hidden_names": [],
+      "inputs": [
+        {
+          "name": "ctl00$ContentPlaceHolder1$TxtBxFrstNm",
+          "type": "text",
+          "canonical": "first_name",
+          "required": false,
+          "id": null,
+          "label": null,
+          "placeholder": null
+        },
+        {
+          "name": "ctl00$ContentPlaceHolder1$TxtBxLstNm",
+          "type": "text",
+          "canonical": "last_name",
+          "required": false,
+          "id": null,
+          "label": null,
+          "placeholder": null
+        },
+        {
+          "name": "ctl00$ContentPlaceHolder1$TxtBxNmCty",
+          "type": "text",
+          "canonical": "city",
+          "required": false,
+          "id": null,
+          "label": null,
+          "placeholder": null
+        },
+        {
+          "name": "ctl00$ContentPlaceHolder1$DrpDwnLstNmeStt",
+          "type": "select-one",
+          "canonical": "region",
           "required": false,
           "id": null,
           "label": null,
