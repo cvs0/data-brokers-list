@@ -1,6 +1,6 @@
 {
  "schema_version": "4.0.0",
- "checked_at": "2026-10-19T06:21:30+00:00",
+ "checked_at": "2026-10-19T07:58:20+00:00",
  "method": "v3 records, with privacy and removal mailboxes on another domain kept as related_domain. Brokers whose loaded pages published no removal channel were crawled again for unfetched same-site opt-out and privacy URLs, then the catalog URL and homepage were opened once in a browser when those pages still showed no form. That recrawl honors robots.txt. A later pass reads the catalog URL and homepage of brokers whose robots.txt had disallowed the research client. A search pass reads homepages whose public search form was missing, including pages robots.txt had disallowed, and stores a name, phone, or address form. Those passes submit no form, no login, and no CAPTCHA. A legal pass re-reads stored privacy and terms text and fetches an unread privacy or terms page when robots.txt allows it. A network pass looks up public DNS and the site certificate, and reads response headers for the removal URL when robots.txt allows it. A later pass adds IPv6, SPF, DMARC, DKIM selectors, CAA, DNSSEC, the address block, certificate dates, RDAP registration, and the removal response's security headers. A captcha pass re-reads the removal URL and the search page for a widget. A browser reads the page when the static HTML has no widget and the page has a removal form, a stored CAPTCHA, or a public search form. A later pass reads the public widget settings, including whether it is a checkbox, an invisible check, or a score. A form pass re-reads stored search and removal forms for labels, limits, autocomplete, the submit button, and hidden field names. A browser opens when the static HTML does not contain the stored fields. Nothing is submitted. A search test then submits one synthetic query on each broker whose search and removal are both fillable. It does not consult robots.txt. Removal forms are not submitted and CAPTCHAs are not solved. search_test is on every broker. It stores the outcome, status, field names, the first path segment, the page kind, and a result count when the page states one. A loader page is followed to the count endpoint. The response body, record text, and listing URLs are not stored.",
  "broker_count": 709,
  "counts": {
@@ -25,7 +25,7 @@
   "search_page_results": 14,
   "search_page_loader": 8,
   "search_page_form": 15,
-  "with_country": 616,
+  "with_country": 623,
   "with_region": 477,
   "with_locality": 359,
   "with_removal_action": 135,
@@ -99,9 +99,9 @@
   "lookup_search": 226,
   "lookup_search_fillable": 200,
   "liveness": {
-   "alive": 558,
+   "alive": 557,
    "blocked": 39,
-   "dead": 2,
+   "dead": 3,
    "error": 20,
    "opt_out_missing": 8,
    "robots_disallowed": 82
@@ -1725,15 +1725,19 @@
     }
    ],
    "location": {
-    "country": null,
+    "country": "US",
     "region": null,
     "locality": null,
     "postal_code": null,
     "street": null,
     "postal_address": null,
-    "coverage": [],
+    "coverage": [
+     "US"
+    ],
     "search_regions": [],
-    "sources": []
+    "sources": [
+     "manual"
+    ]
    },
    "network": {
     "checked": true,
@@ -7951,15 +7955,19 @@
     }
    ],
    "location": {
-    "country": null,
+    "country": "US",
     "region": null,
     "locality": null,
     "postal_code": null,
     "street": null,
     "postal_address": null,
-    "coverage": [],
+    "coverage": [
+     "US"
+    ],
     "search_regions": [],
-    "sources": []
+    "sources": [
+     "manual"
+    ]
    },
    "network": {
     "checked": true,
@@ -67577,15 +67585,19 @@
     }
    ],
    "location": {
-    "country": null,
+    "country": "US",
     "region": null,
     "locality": null,
     "postal_code": null,
     "street": null,
     "postal_address": null,
-    "coverage": [],
+    "coverage": [
+     "US"
+    ],
     "search_regions": [],
-    "sources": []
+    "sources": [
+     "manual"
+    ]
    },
    "network": {
     "checked": true,
@@ -138781,15 +138793,19 @@
     }
    ],
    "location": {
-    "country": null,
+    "country": "US",
     "region": null,
     "locality": null,
     "postal_code": null,
     "street": null,
     "postal_address": null,
-    "coverage": [],
+    "coverage": [
+     "US"
+    ],
     "search_regions": [],
-    "sources": []
+    "sources": [
+     "manual"
+    ]
    },
    "network": {
     "checked": true,
@@ -152692,15 +152708,19 @@
     }
    ],
    "location": {
-    "country": null,
+    "country": "US",
     "region": null,
     "locality": null,
     "postal_code": null,
     "street": null,
     "postal_address": null,
-    "coverage": [],
+    "coverage": [
+     "US"
+    ],
     "search_regions": [],
-    "sources": []
+    "sources": [
+     "manual"
+    ]
    },
    "network": {
     "checked": true,
@@ -153062,15 +153082,19 @@
     }
    ],
    "location": {
-    "country": null,
+    "country": "US",
     "region": null,
     "locality": null,
     "postal_code": null,
     "street": null,
     "postal_address": null,
-    "coverage": [],
+    "coverage": [
+     "US"
+    ],
     "search_regions": [],
-    "sources": []
+    "sources": [
+     "manual"
+    ]
    },
    "network": {
     "checked": true,
@@ -164459,8 +164483,8 @@
    "category": "people-search",
    "domain": "mashpanel.com",
    "checked_at": "2026-10-12T23:20:27+00:00",
-   "liveness": "alive",
-   "liveness_detail": "catalog URL redirected and the final page loaded",
+   "liveness": "dead",
+   "liveness_detail": "site offline (checked 2026-10-19): mashpanel.com is no longer a working people search. The homepage (title \"Usa People Search for free on mashpanel.com\") is a static restore. The catalog's search URL (https://www.mashpanel.com/searchResults?firstName=John&lastName=Smith, fetched 2026-10-19) returns a 1 KB notice: \"The DEMO version only includes 4 pages: http://mashpanel.com http://mashpanel.com/remove.html http://mashpanel.com/about-us.html http://mashpanel.com/contact-us.html ... Visit https://www.waybackmachinedownloader.com/... to buy a fully functioning site\". No search runs and no records are shown.",
    "homepage": "https://www.mashpanel.com/",
    "logo_url": "https://www.mashpanel.com/images/logo.png",
    "images": [
@@ -273396,15 +273420,19 @@
     }
    ],
    "location": {
-    "country": null,
+    "country": "GB",
     "region": null,
     "locality": null,
     "postal_code": null,
     "street": null,
     "postal_address": null,
-    "coverage": [],
+    "coverage": [
+     "GB"
+    ],
     "search_regions": [],
-    "sources": []
+    "sources": [
+     "manual"
+    ]
    },
    "network": {
     "checked": true,
