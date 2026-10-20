@@ -2,11 +2,11 @@
  "schema_version": "3.0.0",
  "checked_at": "2026-10-13T01:15:55+00:00",
  "method": "Public pages only: homepage, catalog URL, and mapped privacy, contact, and legal links. robots.txt honored. No form submitted, no login, no CAPTCHA solved. A browser opened lookup homepages the static fetch never read, and catalog URLs that were blocked or failed, when robots.txt allowed the URL. Image fields are URLs, not copied files. People-search listing URLs are not stored. Null means the fetched page did not establish that fact. Every catalog id has a record.",
- "broker_count": 709,
+ "broker_count": 710,
  "counts": {
   "liveness": {
    "alive": 558,
-   "blocked": 39,
+   "blocked": 40,
    "error": 20,
    "opt_out_missing": 8,
    "robots_disallowed": 84
@@ -154372,6 +154372,138 @@
      "role": "catalog",
      "title": "Do Not Sell My Personal Information | ThisNumber",
      "liveness": "alive"
+    }
+   ]
+  },
+  "canada-pages": {
+   "schema_version": "3.0.0",
+   "id": "canada-pages",
+   "name": "Canada Pages",
+   "category": "people-search",
+   "domain": "canadapages.com",
+   "checked_at": "2026-10-20T07:21:37+00:00",
+   "liveness": "blocked",
+   "liveness_detail": "catalog URL returned a bot wall or HTTP 401/403/429/503",
+   "homepage": "https://canadapages.com/",
+   "logo_url": null,
+   "images": [],
+   "theme_color": null,
+   "languages": [],
+   "legal_name": null,
+   "search": {
+    "available": null,
+    "method": "unknown",
+    "page_url": null,
+    "form_action": null,
+    "inputs": [],
+    "url_pattern": null,
+    "directory_prefixes": [],
+    "paywall": null,
+    "login_wall": null
+   },
+   "removal": {
+    "url": "https://www.canadapages.com/remove-info.php",
+    "final_url": "https://www.canadapages.com/remove-info.php",
+    "http_status": 403,
+    "kinds": [
+     "opt_out"
+    ],
+    "channels": [],
+    "emails": [],
+    "phones": [],
+    "postal_address": null,
+    "portal": null,
+    "form_fields": [],
+    "csrf_field_name": null,
+    "requires_profile_url": null,
+    "captcha": {
+     "provider": null,
+     "sitekey": null,
+     "pages": []
+    },
+    "consent_vendor": null,
+    "success_text": null,
+    "suppression_not_deletion": null,
+    "processing_days": null,
+    "processing_text": null
+   },
+   "bot_defense": {
+    "vendor": "cloudflare",
+    "outcome": "hard_block"
+   },
+   "legal": {
+    "privacy_policy_url": null,
+    "terms_url": null,
+    "automation_prohibited": null,
+    "automation_clause": null,
+    "residency": [],
+    "authorized_agent": null,
+    "data_categories": []
+   },
+   "pages": [
+    {
+     "url": "https://canadapages.com/",
+     "final_url": "https://canadapages.com/",
+     "status": 403,
+     "role": "home",
+     "title": "Just a moment...",
+     "liveness": "blocked"
+    },
+    {
+     "url": "https://www.canadapages.com/",
+     "final_url": "https://www.canadapages.com/",
+     "status": 403,
+     "role": "home",
+     "title": "Just a moment...",
+     "liveness": "blocked"
+    },
+    {
+     "url": "https://www.canadapages.com/remove-info.php",
+     "final_url": "https://www.canadapages.com/remove-info.php",
+     "status": 403,
+     "role": "catalog",
+     "title": "Just a moment...",
+     "liveness": "blocked"
+    },
+    {
+     "url": "https://www.canadapages.com/member/data-removal.php",
+     "final_url": "https://www.canadapages.com/member/data-removal.php",
+     "status": 403,
+     "role": "other",
+     "title": "Just a moment...",
+     "liveness": "blocked"
+    },
+    {
+     "url": "https://www.canadapages.com/privacy-policy.php",
+     "final_url": "https://www.canadapages.com/privacy-policy.php",
+     "status": 403,
+     "role": "privacy",
+     "title": "Just a moment...",
+     "liveness": "blocked"
+    },
+    {
+     "url": "https://www.canadapages.com/contact.php",
+     "final_url": "https://www.canadapages.com/contact.php",
+     "status": 403,
+     "role": "other",
+     "title": "Just a moment...",
+     "liveness": "blocked"
+    },
+    {
+     "url": "https://www.canadapages.com/tos.php",
+     "final_url": "https://www.canadapages.com/tos.php",
+     "status": 403,
+     "role": "other",
+     "title": "Just a moment...",
+     "liveness": "blocked"
+    },
+    {
+     "url": "https://www.canadapages.com/member/remove-phone-listing.php",
+     "final_url": "https://www.canadapages.com/member/remove-phone-listing.php",
+     "status": 403,
+     "role": "other",
+     "title": "Just a moment...",
+     "liveness": "blocked"
     }
    ]
   }

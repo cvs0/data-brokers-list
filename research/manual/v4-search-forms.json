@@ -3905,5 +3905,42 @@
       ]
     },
     "captcha_widget": false
+  },
+  "canada-pages": {
+    "checked": "2026-10-20",
+    "country": "CA",
+    "evidence": "People search on https://www.canadapages.com/wp/search.php (the same GET form is on the removal page). txtwhat is one box, placeholder \"First or Last Name\"; txtwhere is placeholder \"Location\". The search matches a surname in a city, not a full name. Live checks 2026-10-20: txtwhat=Smith&txtwhere=Toronto returned \"Total 1965 Listings for Smith in Toronto\" (rows such as \"L E Smith\", \"Roger Smith\", and \"J Smith\", each with a street and a phone). txtwhat=John+Smith&txtwhere=Toronto and txtwhat=Vanderwekken&txtwhere=Toronto both returned \"No record found.\" A name with no city stayed on the form: \"Please. Properly Fill the Person Name and Location Fields.\" One homepage form POSTs the same fields; the tested result URL is the GET. The search page had no CAPTCHA widget (a reCAPTCHA is on the removal form, which was not submitted). An earlier pass had dropped this row because the homepage looked like a publisher site.",
+    "result_check": "GET /wp/search.php?txtwhat=Smith&txtwhere=Toronto: \"Total 1965 Listings for Smith in Toronto\". GET the same URL with txtwhat=John+Smith, and with txtwhat=Vanderwekken: \"No record found.\" (2026-10-20).",
+    "form": {
+      "method": "http_get",
+      "page_url": "https://www.canadapages.com/wp/search.php",
+      "form_action": "https://www.canadapages.com/wp/search.php",
+      "url_pattern": "https://www.canadapages.com/wp/search.php?txtwhat={txtwhat}&txtwhere={txtwhere}",
+      "form_id": null,
+      "form_name": "frm1",
+      "submit_label": "Search",
+      "hidden_names": [],
+      "inputs": [
+        {
+          "name": "txtwhat",
+          "type": "text",
+          "canonical": "last_name",
+          "required": false,
+          "id": "autowhat3",
+          "label": null,
+          "placeholder": "First or Last Name"
+        },
+        {
+          "name": "txtwhere",
+          "type": "text",
+          "canonical": "city",
+          "required": false,
+          "id": "autocomplete3",
+          "label": null,
+          "placeholder": "Location"
+        }
+      ]
+    },
+    "captcha_widget": false
   }
 }

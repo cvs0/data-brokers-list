@@ -222,6 +222,7 @@ archives-com-ancestry,Archives.com (Ancestry),archives.com,people-search,error,p
 background-hawk-truthfinder,Background Hawk (TruthFinder),backgroundhawk.com,people-search,alive,captcha_no_form,A CAPTCHA widget is on the removal page and no form fields or usable email were stored,recaptcha_enterprise,6LdFxVQtAAAAAK6XNodX8W6CM56PH1xTrPGVZSqh,invisible,true,,,,
 bumper-beenverified-family,Bumper (BeenVerified family),bumper.com,people-search,robots_disallowed,phone_postal,Phone and a mailing address are the only channels,recaptcha_v2,,,false,,,,postal_mail;phone
 callercenter,CallerCenter,callercenter.com,people-search,blocked,bot_wall,The opt-out URL returned a bot wall and a browser retry did not reveal a removal channel,,,,false,,,,
+canada-pages,Canada Pages,canadapages.com,people-search,blocked,bot_wall,The opt-out URL returned a bot wall and a browser retry did not reveal a removal channel,,,,,,,,
 canada411,Canada411,canada411.ca,people-search,alive,phone,The only published channel is a phone number,,,,false,,,,phone
 checkpeople,CheckPeople,checkpeople.com,people-search,robots_disallowed,robots,robots.txt disallows the client. A later read still found no removal channel,,,,false,,,,
 classmates-com,Classmates.com,classmates.com,people-search,blocked,bot_wall,The opt-out URL returned a bot wall and a browser retry did not reveal a removal channel,,,,false,,,,

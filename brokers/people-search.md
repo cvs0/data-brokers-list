@@ -2,7 +2,7 @@
 
 People-search sites that publish names, phone numbers, relatives, or address history. Many ask for a profile URL and an email confirmation.
 
-138 entries. Link responses were checked on 2026-10-01 unless a note says otherwise.
+139 entries. Link responses were checked on 2026-10-01 unless a note says otherwise.
 
 | Broker | Opt-out / privacy URL | Notes |
 | --- | --- | --- |
@@ -22,6 +22,7 @@ People-search sites that publish names, phone numbers, relatives, or address his
 | BeenVerified | https://www.beenverified.com/app/optout/search | People-search opt-out with email confirmation. One email is often limited to a single removal; further listings may need privacy@beenverified.com. Property-search opt-out: https://www.beenverified.com/app/optout/address-search. PeopleSmart, Ownerly, NeighborWho, and other Lifetime Value brands use this form. Automated check on 2026-10-01 got HTTP 403. Open the link in a browser. |
 | Bumper (BeenVerified family) | https://www.beenverified.com/app/optout/search | Opt-out or consumer privacy-request page. Email: privacy@beenverified.com. Automated check on 2026-10-01 got HTTP 403. Open the link in a browser. |
 | CallerCenter | https://www.callercenter.com/ | Published privacy-request URL is the site root. Confirm a request form is on the page before sending information. Web form. Automated check on 2026-10-01 got HTTP 403. Open the link in a browser. |
+| Canada Pages | https://www.canadapages.com/remove-info.php | Canadian people-search removal form. Include the phone number shown on the listing. Email: info@canadapages.com. The site says it tries to remove the information within 3 business days. Rechecked in a browser 2026-10-20. No removal request was submitted. |
 | Canada411 | https://www.canada411.ca/help.html?key=faq | Canadian phone-directory help page. To remove a listing from the print directory, directory assistance, and Canada411, ask your telephone provider for an unlisted number. A web-only removal is submitted on this page and is taken off Canada411 within two working days. |
 | CheckPeople | https://checkpeople.com/opt-out | Opt-out form. A do-not-sell page is also at https://checkpeople.com/do-not-sell-info. Date of birth is commonly required. Automated check on 2026-10-01 got HTTP 403. Open the link in a browser. |
 | Classmates.com | https://www.classmates.com/about/privacy#p-8 | Web form (PeopleConnect). Email: privacy@classmates.com. Open-dataset difficulty: easy. Automated check on 2026-10-01 got HTTP 403. Open the link in a browser. |

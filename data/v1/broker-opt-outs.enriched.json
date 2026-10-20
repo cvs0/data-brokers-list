@@ -144967,7 +144967,7 @@
         "name": "Canada Pages",
         "category": "people-search",
         "url": "https://www.canadapages.com/remove-info.php",
-        "notes": "Canadian people-search removal form. Include the phone number shown on the listing. Email: info@canadapages.com. The site says it tries to remove the information within 3 business days.",
+        "notes": "Canadian people-search removal form. Include the phone number shown on the listing. Email: info@canadapages.com. The site says it tries to remove the information within 3 business days. Rechecked in a browser 2026-10-20. No removal request was submitted.",
         "domain": "canadapages.com",
         "http_status": "200",
         "sources": [
@@ -144975,7 +144975,7 @@
         ]
       },
       "catalog_claims": {
-        "notes": "Canadian people-search removal form. Include the phone number shown on the listing. Email: info@canadapages.com. The site says it tries to remove the information within 3 business days.",
+        "notes": "Canadian people-search removal form. Include the phone number shown on the listing. Email: info@canadapages.com. The site says it tries to remove the information within 3 business days. Rechecked in a browser 2026-10-20. No removal request was submitted.",
         "http_status_recorded": "200",
         "sources": [
           "manual"
