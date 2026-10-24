@@ -2,7 +2,7 @@
 
 People-search sites that publish names, phone numbers, relatives, or address history. Many ask for a profile URL and an email confirmation.
 
-141 entries. Link responses were checked on 2026-10-01 unless a note says otherwise.
+143 entries. Link responses were checked on 2026-10-01 unless a note says otherwise.
 
 | Broker | Opt-out / privacy URL | Notes |
 | --- | --- | --- |
@@ -47,6 +47,7 @@ People-search sites that publish names, phone numbers, relatives, or address his
 | FreePeopleSearch.com | https://freepeoplesearch.com/privacy-policy/ | Privacy notice or privacy-policy page. Use the state-rights, do-not-sell, or request section. Automated check on 2026-10-01 got HTTP 403. Open the link in a browser. |
 | FreePhoneTracer (BeenVerified form) | https://www.beenverified.com/app/optout/search | Removal is handled on the BeenVerified people-search opt-out. Automated check on 2026-10-01 got HTTP 403. Open the link in a browser. |
 | GEDmatch | https://www.gedmatch.com/privacy-security/ | Privacy and security page for GEDmatch genealogy data. Use the request section. |
+| Geni | https://www.geni.com/privacy | Genealogy site in the MyHeritage family with a public people search. GET /search?search_type=people&names=Smith returned "1-20 of 760275 people". The same search with a surname that has no match returned "No results." No CAPTCHA on those pages. Checked 2026-10-24. The privacy policy says public profiles are for deceased relatives and public figures, private profiles are for living relatives and minors, and a person can turn off "Let the public search for me" in account settings or email privacy@geni.com. State privacy rights: https://www.geni.com/privacy/state_rights. No request was submitted. |
 | GetContact | https://getcontact.com/en/privacy-overview | Privacy notice for the GetContact caller-ID app. Use the request section. |
 | govwarrantsearch.org (InfoTracer form) | https://infotracer.com/optout/ | This domain sends removal requests to the InfoTracer opt-out form. |
 | Hiya | https://www.hiya.com/legal/privacy | Privacy notice for the Hiya caller-ID service. Use the request section. |
@@ -67,6 +68,7 @@ People-search sites that publish names, phone numbers, relatives, or address his
 | MyHeritage | https://www.myheritage.com/FP/Company/popup-privacy-policy.php | Privacy policy covering account, family-tree, and DNA deletion. Email: privacy@myheritage.com. |
 | MyLife | https://www.mylife.com/privacyrequest | Privacy-request page. MyLife often asks for an account, an ID upload, or a call to (888) 704-1900. Alternate email: privacy@mylife.com. Reunion.com is related. Automated check on 2026-10-01 got HTTP 403. Open the link in a browser. |
 | National Public Data | https://nationalpublicdata.com/optout.html | Opt-out or consumer privacy-request page. Automated check on 2026-10-01 got HTTP 403. Open the link in a browser. |
+| Nécrologie.ca | https://necrologie.ca/fr/politique-de-confidentialite/ | Quebec and Canada obituary site. Free search GET https://necrologie.ca/api/search?q={name}. Checked 2026-10-24: q=Smith returned total 210, q=Tremblay returned total 335, and a surname with no match returned total 0. The on-page form at /fr/recherche/ returned an error page on that check; the search API returned the counts. Notices include the name, dates, place, and notice text. The privacy policy says a person can ask for a notice or a message to be withdrawn. Law 25 access, correction, and deletion requests go to info@necrologie.ca or Nécrologie.ca, 4388 Rue Saint-Denis, Suite 200 #770, Montréal, QC H2J 2L1. No request was submitted. |
 | NeighborWho (BeenVerified family) | https://www.beenverified.com/app/optout/search | Web form + email confirmation. Email: privacy@beenverified.com. Open-dataset difficulty: easy. Automated check on 2026-10-01 got HTTP 403. Open the link in a browser. |
 | NoCallerName | https://nocallername.com/privacy | Privacy notice or privacy-policy page. Use the state-rights, do-not-sell, or request section. |
 | NorthCarolinaPublicRecords.org (TruthFinder) | https://www.truthfinder.com/opt-out/v2/submit/ | Opt-out or consumer privacy-request page. Automated check on 2026-10-01 got HTTP 403. Open the link in a browser. |

@@ -716,3 +716,5 @@ landlord-credit-bureau,Landlord Credit Bureau,landlordcreditbureau.ca,credit-fin
 frontlobby,FrontLobby,frontlobby.com,credit-financial,alive,,,,,0,false,false,,,false,,,,,,CA,,,CA,,,,,,,,,,,,frontlobby.com,true,,,,,,,,,0,no_channel,,,,,,
 echovita,Echovita,echovita.com,people-search,alive,,,,,0,true,true,full_name,,false,,,,,,CA,,,CA,,,,,,,,,,,,echovita.com,true,,,,,,,,,0,no_channel,,,,,,
 inmemoriam,InMemoriam,inmemoriam.ca,people-search,alive,,,,,0,true,true,first_name;last_name,,false,,,,,,CA,,,CA,,,,,,,,,,,,inmemoriam.ca,true,,,,,,,,,0,no_channel,,,,,,
+necrologie-ca,Nécrologie.ca,necrologie.ca,people-search,alive,,,,,0,true,true,full_name,,false,,,,,,CA,,,CA,,,,,,,,,,,,necrologie.ca,true,,,,,,,,,0,no_channel,,,,,,
+geni,Geni,geni.com,people-search,alive,,,,,0,true,true,full_name,,false,,,,,,,,,,,,,,,,,,,,,geni.com,true,,,,,,,,,1,no_channel,,,,,,
