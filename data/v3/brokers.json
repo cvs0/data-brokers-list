@@ -1,23 +1,23 @@
 {
  "schema_version": "3.0.0",
- "checked_at": "2026-10-24T17:34:56+00:00",
+ "checked_at": "2026-10-24T17:52:06+00:00",
  "method": "Public pages only: homepage, catalog URL, and mapped privacy, contact, and legal links. robots.txt honored. No form submitted, no login, no CAPTCHA solved. A browser opened lookup homepages the static fetch never read, and catalog URLs that were blocked or failed, when robots.txt allowed the URL. Image fields are URLs, not copied files. People-search listing URLs are not stored. Null means the fetched page did not establish that fact. Every catalog id has a record.",
  "broker_count": 719,
  "counts": {
   "liveness": {
-   "alive": 559,
+   "alive": 557,
    "blocked": 39,
-   "error": 20,
-   "not_checked": 9,
-   "opt_out_missing": 8,
-   "robots_disallowed": 84
+   "error": 24,
+   "not_checked": 11,
+   "opt_out_missing": 5,
+   "robots_disallowed": 83
   },
-  "with_logo": 604,
-  "with_image": 604,
+  "with_logo": 602,
+  "with_image": 602,
   "with_search": 362,
-  "with_email": 358,
-  "with_captcha": 327,
-  "with_form": 127
+  "with_email": 356,
+  "with_captcha": 326,
+  "with_form": 126
  },
  "brokers": {
   "alaska-arrests": {
@@ -11752,8 +11752,8 @@
    "category": "credit-financial",
    "domain": "sagestreamllc.com",
    "checked_at": "2026-10-12T23:25:01+00:00",
-   "liveness": "robots_disallowed",
-   "liveness_detail": "robots.txt disallows this client",
+   "liveness": "error",
+   "liveness_detail": "catalog URL was not fetched",
    "homepage": "https://sagestreamllc.com/",
    "logo_url": null,
    "images": [],
@@ -11772,7 +11772,7 @@
     "login_wall": null
    },
    "removal": {
-    "url": "https://www.sagestreamllc.com/opt-out-opt-in/index.html",
+    "url": "https://consumer.risk.lexisnexis.com/opt",
     "final_url": null,
     "http_status": null,
     "kinds": [
@@ -14449,8 +14449,8 @@
    "category": "marketing",
    "domain": "audiencepoint.com",
    "checked_at": "2026-10-12T23:11:50+00:00",
-   "liveness": "opt_out_missing",
-   "liveness_detail": "catalog URL returned 404 or 410; the site itself still responded",
+   "liveness": "alive",
+   "liveness_detail": "catalog URL loaded",
    "homepage": "https://audiencepoint.com/",
    "logo_url": "https://audiencepoint.com/wp-content/uploads/2025/12/audience-point-logo.png",
    "images": [
@@ -14562,13 +14562,14 @@
     "login_wall": null
    },
    "removal": {
-    "url": "https://audiencepoint.com/cpra/",
-    "final_url": "https://audiencepoint.com/cpra/",
-    "http_status": 404,
+    "url": "https://audiencepoint.com/privacy-policy/",
+    "final_url": "https://audiencepoint.com/privacy-policy/",
+    "http_status": 200,
     "kinds": [
      "opt_out"
     ],
     "channels": [
+     "web_form",
      "email",
      "phone"
     ],
@@ -14595,7 +14596,16 @@
     ],
     "postal_address": null,
     "portal": null,
-    "form_fields": [],
+    "form_fields": [
+     {
+      "name": "your-email",
+      "type": "email",
+      "canonical": "email",
+      "required": false,
+      "autocomplete": null,
+      "placeholder": "Email Address"
+     }
+    ],
     "csrf_field_name": null,
     "requires_profile_url": null,
     "captcha": {
@@ -20850,8 +20860,8 @@
    "category": "marketing",
    "domain": "lotame.com",
    "checked_at": "2026-10-12T23:20:09+00:00",
-   "liveness": "opt_out_missing",
-   "liveness_detail": "catalog URL returned 404 or 410; the site itself still responded",
+   "liveness": "error",
+   "liveness_detail": "catalog URL was not fetched",
    "homepage": "https://www.lotame.com/",
    "logo_url": "https://www.lotame.com/wp-content/uploads/2025/05/amazon-logo.svg",
    "images": [
@@ -20971,9 +20981,9 @@
     "login_wall": null
    },
    "removal": {
-    "url": "https://www.lotame.com/about-lotame/privacy/lotames-opt-out/",
-    "final_url": "https://www.lotame.com/about-lotame/privacy/lotames-opt-out/",
-    "http_status": 404,
+    "url": "https://www.lotame.com/privacy/information-privacy-choices-services/",
+    "final_url": null,
+    "http_status": null,
     "kinds": [
      "opt_out"
     ],
@@ -26670,8 +26680,8 @@
    "category": "other",
    "domain": "5x5coop.com",
    "checked_at": "2026-10-12T23:10:14+00:00",
-   "liveness": "opt_out_missing",
-   "liveness_detail": "catalog URL returned 404 or 410; the site itself still responded",
+   "liveness": "error",
+   "liveness_detail": "catalog URL was not fetched",
    "homepage": "https://5x5data.com/",
    "logo_url": "https://5x5data.com/wp-content/uploads/2024/11/Logo-Black-1.svg",
    "images": [
@@ -26773,9 +26783,9 @@
     "login_wall": null
    },
    "removal": {
-    "url": "https://5x5data.com/dsr-out/",
-    "final_url": "https://5x5data.com/dsr-out/",
-    "http_status": 404,
+    "url": "https://privacy.5x5data.com/5x5/opt-out",
+    "final_url": null,
+    "http_status": null,
     "kinds": [
      "opt_out"
     ],
@@ -47537,8 +47547,8 @@
    "category": "other",
    "domain": "rbarrel.com",
    "checked_at": "2026-10-12T23:24:16+00:00",
-   "liveness": "alive",
-   "liveness_detail": "catalog URL loaded",
+   "liveness": "error",
+   "liveness_detail": "catalog URL was not fetched",
    "homepage": "https://www.rbarrel.com/",
    "logo_url": "https://cdn.prod.website-files.com/6295cd2f641c4ed2ebd6e507/62972568c40951e6a896a0e9_head-logo.svg",
    "images": [
@@ -47645,15 +47655,13 @@
     "login_wall": null
    },
    "removal": {
-    "url": "https://www.rbarrel.com/opt-out",
-    "final_url": "https://www.rbarrel.com/opt-out",
-    "http_status": 200,
+    "url": "https://www.rbarrel.com/privacy-center/",
+    "final_url": null,
+    "http_status": null,
     "kinds": [
-     "opt_out",
-     "do_not_sell"
+     "opt_out"
     ],
     "channels": [
-     "web_form",
      "email"
     ],
     "emails": [
@@ -47666,32 +47674,7 @@
     "phones": [],
     "postal_address": null,
     "portal": null,
-    "form_fields": [
-     {
-      "name": "marketing-2",
-      "type": "checkbox",
-      "canonical": null,
-      "required": false,
-      "autocomplete": null,
-      "placeholder": null
-     },
-     {
-      "name": "personalization-2",
-      "type": "checkbox",
-      "canonical": null,
-      "required": false,
-      "autocomplete": null,
-      "placeholder": null
-     },
-     {
-      "name": "analytics-2",
-      "type": "checkbox",
-      "canonical": null,
-      "required": false,
-      "autocomplete": null,
-      "placeholder": null
-     }
-    ],
+    "form_fields": [],
     "csrf_field_name": null,
     "requires_profile_url": null,
     "captcha": {
@@ -59330,37 +59313,19 @@
    "id": "samba-tv-inc",
    "name": "Samba TV, Inc.",
    "category": "other",
-   "domain": "samba.tv",
-   "checked_at": "2026-10-12T23:25:17+00:00",
-   "liveness": "alive",
-   "liveness_detail": "catalog URL redirected and the final page loaded",
-   "homepage": "https://samba.tv/",
-   "logo_url": "https://framerusercontent.com/images/fZarkObP4dVHhUxRLd8NOsj3Jo0.png",
-   "images": [
-    {
-     "url": "https://framerusercontent.com/images/Lgs75RiIjCvkpdhdkHiMTzADnM.png",
-     "kind": "icon",
-     "source_page": "https://samba.tv/"
-    },
-    {
-     "url": "https://framerusercontent.com/images/0edrdRzz4tkA2YUilkvXlr8IEWM.png",
-     "kind": "icon",
-     "source_page": "https://samba.tv/"
-    },
-    {
-     "url": "https://framerusercontent.com/images/fZarkObP4dVHhUxRLd8NOsj3Jo0.png",
-     "kind": "apple_touch_icon",
-     "source_page": "https://samba.tv/"
-    }
-   ],
+   "domain": "samba.com",
+   "checked_at": "2026-10-24T17:51:37+00:00",
+   "liveness": "not_checked",
+   "liveness_detail": "no crawl result in this log",
+   "homepage": null,
+   "logo_url": null,
+   "images": [],
    "theme_color": null,
-   "languages": [
-    "en"
-   ],
+   "languages": [],
    "legal_name": null,
    "search": {
-    "available": false,
-    "method": "none",
+    "available": null,
+    "method": "unknown",
     "page_url": null,
     "form_action": null,
     "inputs": [],
@@ -59370,34 +59335,17 @@
     "login_wall": null
    },
    "removal": {
-    "url": "https://www.samba.tv/users/privacy-policy",
-    "final_url": "https://samba.com/privacy-center/privacy-policy",
-    "http_status": 200,
+    "url": "https://samba.com/privacy-center/privacy-policy",
+    "final_url": null,
+    "http_status": null,
     "kinds": [
      "opt_out"
     ],
-    "channels": [
-     "email",
-     "official_portal"
-    ],
-    "emails": [
-     {
-      "email": "privacy@samba.tv",
-      "confidence": "extracted",
-      "source_url": "https://samba.com/privacy-center/notice-of-right-to-opt-out"
-     },
-     {
-      "email": "support@samba.tv",
-      "confidence": "uncertain",
-      "source_url": "https://samba.com/privacy-center/samba-terms-of-service"
-     }
-    ],
+    "channels": [],
+    "emails": [],
     "phones": [],
     "postal_address": null,
-    "portal": {
-     "vendor": "onetrust",
-     "url": "https://privacyportal-cdn.onetrust.com/dsarwebform/87c5ee85-893d-4972-ba26-2e82b743d041/d84d9664-facb-4de3-85fd-a2e339b73dbf.html"
-    },
+    "portal": null,
     "form_fields": [],
     "csrf_field_name": null,
     "requires_profile_url": null,
@@ -59414,90 +59362,18 @@
    },
    "bot_defense": {
     "vendor": null,
-    "outcome": "none"
+    "outcome": "unknown"
    },
    "legal": {
-    "privacy_policy_url": "https://samba.com/privacy-center/privacy-policy",
+    "privacy_policy_url": null,
     "terms_url": null,
     "automation_prohibited": null,
     "automation_clause": null,
-    "residency": [
-     "US-CA",
-     "US"
-    ],
+    "residency": [],
     "authorized_agent": null,
-    "data_categories": [
-     "identifiers",
-     "precise_location",
-     "internet_activity"
-    ]
+    "data_categories": []
    },
-   "pages": [
-    {
-     "url": "https://samba.tv/",
-     "final_url": "https://samba.tv/",
-     "status": 200,
-     "role": "home",
-     "title": "Samba TV",
-     "liveness": "alive"
-    },
-    {
-     "url": "https://www.samba.tv/",
-     "final_url": "https://samba.tv/",
-     "status": 200,
-     "role": "home",
-     "title": "Samba TV",
-     "liveness": "alive"
-    },
-    {
-     "url": "https://www.samba.tv/users/privacy-policy",
-     "final_url": "https://samba.com/privacy-center/privacy-policy",
-     "status": 200,
-     "role": "catalog",
-     "title": "Samba",
-     "liveness": "alive"
-    },
-    {
-     "url": "https://samba.com/privacy-center/privacy-policy",
-     "final_url": "https://samba.com/privacy-center/privacy-policy",
-     "status": 200,
-     "role": "privacy",
-     "title": "Samba",
-     "liveness": "alive"
-    },
-    {
-     "url": "https://samba.com/privacy-center/notice-of-right-to-opt-out",
-     "final_url": "https://samba.com/privacy-center/notice-of-right-to-opt-out",
-     "status": 200,
-     "role": "privacy",
-     "title": "Samba",
-     "liveness": "alive"
-    },
-    {
-     "url": "https://samba.tv/privacy-center/consumer-privacy-center",
-     "final_url": "https://samba.tv/privacy-center/consumer-privacy-center",
-     "status": 200,
-     "role": "privacy",
-     "title": "Samba TV",
-     "liveness": "alive"
-    },
-    {
-     "url": "https://samba.com/privacy-center/samba-terms-of-service",
-     "final_url": "https://samba.com/privacy-center/samba-terms-of-service",
-     "status": 200,
-     "role": "privacy",
-     "title": "Samba",
-     "liveness": "alive"
-    },
-    {
-     "url": "https://samba.com/privacy-center/cookie-policy",
-     "final_url": "https://samba.com/privacy-center/cookie-policy",
-     "status": 200,
-     "role": "privacy",
-     "title": "Samba",
-     "liveness": "alive"
-    }
-   ]
+   "pages": []
   },
   "sbfe-llc": {
    "schema_version": "3.0.0",
@@ -117555,102 +117431,19 @@
    "id": "live-data-technologies-inc",
    "name": "Live Data Technologies, Inc.",
    "category": "other",
-   "domain": "livedatatechnologies.com",
-   "checked_at": "2026-10-12T23:19:54+00:00",
-   "liveness": "alive",
-   "liveness_detail": "catalog URL redirected and the final page loaded",
-   "homepage": "https://www.livedatatech.com/",
-   "logo_url": "https://cdn.prod.website-files.com/6571f8eafc0f1150ea56848a/6ac68545c109302704ec6ac5_6ac6852bc78e1b250a03ec66_logo-the-cmo-club-negative.png",
-   "images": [
-    {
-     "url": "https://cdn.prod.website-files.com/65705b930fb2e670f3206741/65ce5d7e5c14a33817daac5d_Group%2044189.png",
-     "kind": "icon",
-     "source_page": "https://www.livedatatech.com/"
-    },
-    {
-     "url": "https://cdn.prod.website-files.com/65705b930fb2e670f3206741/657cabd4848bed1e078a4105_Frame%202182.png",
-     "kind": "apple_touch_icon",
-     "source_page": "https://www.livedatatech.com/"
-    },
-    {
-     "url": "https://cdn.prod.website-files.com/65705b930fb2e670f3206741/67ae74ec2cc4de28903decee_image%201792.png",
-     "kind": "og_image",
-     "source_page": "https://www.livedatatech.com/"
-    },
-    {
-     "url": "https://cdn.prod.website-files.com/65705b930fb2e670f3206741/657cb4efdeed95030646ede2_Live%20Data%20Logo.svg",
-     "kind": "json_ld",
-     "source_page": "https://www.livedatatech.com/"
-    },
-    {
-     "url": "https://cdn.prod.website-files.com/6571f8eafc0f1150ea56848a/6ac68545c109302704ec6ac5_6ac6852bc78e1b250a03ec66_logo-the-cmo-club-negative.png",
-     "kind": "logo",
-     "source_page": "https://www.livedatatech.com/"
-    },
-    {
-     "url": "https://cdn.prod.website-files.com/6571f8eafc0f1150ea56848a/664f6c3e897104198c19a61c_Frame-44261.svg",
-     "kind": "logo",
-     "source_page": "https://www.livedatatech.com/"
-    },
-    {
-     "url": "https://cdn.prod.website-files.com/6571f8eafc0f1150ea56848a/6a556cb603cd1552b1e8379b_logo-mind-the-product.svg",
-     "kind": "logo",
-     "source_page": "https://www.livedatatech.com/"
-    },
-    {
-     "url": "https://cdn.prod.website-files.com/6571f8eafc0f1150ea56848a/6ab6bf2ee48381cd3357af29_6a5e4e59223ec7e2cb43d8e1_logo-business-times.svg",
-     "kind": "logo",
-     "source_page": "https://www.livedatatech.com/"
-    },
-    {
-     "url": "https://cdn.prod.website-files.com/6571f8eafc0f1150ea56848a/6ab6bf6a60e95da32d0e3813_6a5567db5787a240ff743d65_logo-bloomberg.svg",
-     "kind": "logo",
-     "source_page": "https://www.livedatatech.com/"
-    },
-    {
-     "url": "https://cdn.prod.website-files.com/6571f8eafc0f1150ea56848a/6792c4976b2b6f4071397d66_image.png",
-     "kind": "logo",
-     "source_page": "https://www.livedatatech.com/"
-    },
-    {
-     "url": "https://cdn.prod.website-files.com/6571f8eafc0f1150ea56848a/6ab6bf6a60e95da32d0e3816_6a556b86405a3a8ab870ae7c_logo-tfn.png",
-     "kind": "logo",
-     "source_page": "https://www.livedatatech.com/"
-    },
-    {
-     "url": "https://cdn.prod.website-files.com/6571f8eafc0f1150ea56848a/6ab6bf6a60e95da32d0e3819_6a556e04b42db4aaad8fa004_logo-business-insider.svg",
-     "kind": "logo",
-     "source_page": "https://www.livedatatech.com/"
-    },
-    {
-     "url": "https://cdn.prod.website-files.com/6571f8eafc0f1150ea56848a/6a556eda711856fd9583e0a1_logo-cnbc.svg",
-     "kind": "logo",
-     "source_page": "https://www.livedatatech.com/"
-    },
-    {
-     "url": "https://cdn.prod.website-files.com/6571f8eafc0f1150ea56848a/67860e4dda02945f81818615_image.png",
-     "kind": "logo",
-     "source_page": "https://www.livedatatech.com/"
-    },
-    {
-     "url": "https://cdn.prod.website-files.com/6571f8eafc0f1150ea56848a/664f71bb1e24a7d497a7ea62_Frame-44263.svg",
-     "kind": "logo",
-     "source_page": "https://www.livedatatech.com/"
-    },
-    {
-     "url": "https://cdn.prod.website-files.com/6571f8eafc0f1150ea56848a/678b335a85127a30897849a5_image.png",
-     "kind": "logo",
-     "source_page": "https://www.livedatatech.com/"
-    }
-   ],
+   "domain": "livedatatech.com",
+   "checked_at": "2026-10-24T17:51:55+00:00",
+   "liveness": "not_checked",
+   "liveness_detail": "no crawl result in this log",
+   "homepage": null,
+   "logo_url": null,
+   "images": [],
    "theme_color": null,
-   "languages": [
-    "en"
-   ],
-   "legal_name": "Live Data Technologies",
+   "languages": [],
+   "legal_name": null,
    "search": {
-    "available": false,
-    "method": "none",
+    "available": null,
+    "method": "unknown",
     "page_url": null,
     "form_action": null,
     "inputs": [],
@@ -117660,70 +117453,24 @@
     "login_wall": null
    },
    "removal": {
-    "url": "https://www.livedatatechnologies.com/opt-out",
-    "final_url": "https://www.livedatatech.com/opt-out",
-    "http_status": 200,
+    "url": "https://www.livedatatech.com/opt-out",
+    "final_url": null,
+    "http_status": null,
     "kinds": [
-     "opt_out",
-     "do_not_sell"
+     "opt_out"
     ],
-    "channels": [
-     "web_form",
-     "email"
-    ],
-    "emails": [
-     {
-      "email": "remove@livedatatechnologies.com",
-      "confidence": "extracted",
-      "source_url": "https://www.livedatatech.com/opt-out"
-     }
-    ],
+    "channels": [],
+    "emails": [],
     "phones": [],
     "postal_address": null,
     "portal": null,
-    "form_fields": [
-     {
-      "name": "Full-Name",
-      "type": "text",
-      "canonical": "full_name",
-      "required": true,
-      "autocomplete": null,
-      "placeholder": "Your full name *"
-     },
-     {
-      "name": "Work-Email",
-      "type": "email",
-      "canonical": "email",
-      "required": true,
-      "autocomplete": null,
-      "placeholder": "Your work email *"
-     },
-     {
-      "name": "Postal-Address",
-      "type": "text",
-      "canonical": "postal_code",
-      "required": true,
-      "autocomplete": null,
-      "placeholder": "Your postal address *"
-     },
-     {
-      "name": "Message",
-      "type": "text",
-      "canonical": null,
-      "required": false,
-      "autocomplete": null,
-      "placeholder": "I'd like to request an opt-out according to CCPA"
-     }
-    ],
+    "form_fields": [],
     "csrf_field_name": null,
     "requires_profile_url": null,
     "captcha": {
-     "provider": "recaptcha_v2",
-     "sitekey": "6Le5WqMrAAAAAPPKSz2F2e0gTWIT2LHpczi-8SYI",
-     "pages": [
-      "https://www.livedatatech.com/",
-      "https://www.livedatatech.com/opt-out"
-     ]
+     "provider": null,
+     "sitekey": null,
+     "pages": []
     },
     "consent_vendor": null,
     "success_text": null,
@@ -117733,56 +117480,18 @@
    },
    "bot_defense": {
     "vendor": null,
-    "outcome": "none"
+    "outcome": "unknown"
    },
    "legal": {
     "privacy_policy_url": null,
     "terms_url": null,
     "automation_prohibited": null,
     "automation_clause": null,
-    "residency": [
-     "US-CA",
-     "US"
-    ],
+    "residency": [],
     "authorized_agent": null,
-    "data_categories": [
-     "identifiers"
-    ]
+    "data_categories": []
    },
-   "pages": [
-    {
-     "url": "https://livedatatechnologies.com/",
-     "final_url": "https://www.livedatatech.com/",
-     "status": 200,
-     "role": "home",
-     "title": "Live Data",
-     "liveness": "alive"
-    },
-    {
-     "url": "https://www.livedatatechnologies.com/",
-     "final_url": "https://www.livedatatech.com/",
-     "status": 200,
-     "role": "home",
-     "title": "Live Data",
-     "liveness": "alive"
-    },
-    {
-     "url": "https://www.livedatatechnologies.com/opt-out",
-     "final_url": "https://www.livedatatech.com/opt-out",
-     "status": 200,
-     "role": "catalog",
-     "title": "Optout — Live Data Technologies",
-     "liveness": "alive"
-    },
-    {
-     "url": "https://www.livedatatech.com/opt-out",
-     "final_url": "https://www.livedatatech.com/opt-out",
-     "status": 200,
-     "role": "opt_out",
-     "title": "Optout — Live Data Technologies",
-     "liveness": "alive"
-    }
-   ]
+   "pages": []
   },
   "modigie-inc": {
    "schema_version": "3.0.0",
@@ -154586,7 +154295,7 @@
    "name": "Data Axle Canada",
    "category": "marketing",
    "domain": "dataaxlecanada.ca",
-   "checked_at": "2026-10-24T17:34:56+00:00",
+   "checked_at": "2026-10-24T17:52:06+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -154653,7 +154362,7 @@
    "name": "Prospects Influential",
    "category": "marketing",
    "domain": "prospectsinfluential.com",
-   "checked_at": "2026-10-24T17:34:56+00:00",
+   "checked_at": "2026-10-24T17:52:06+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -154720,7 +154429,7 @@
    "name": "Openroom",
    "category": "background-checks",
    "domain": "openroom.ca",
-   "checked_at": "2026-10-24T17:34:56+00:00",
+   "checked_at": "2026-10-24T17:52:06+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -154787,7 +154496,7 @@
    "name": "Landlord Credit Bureau",
    "category": "credit-financial",
    "domain": "landlordcreditbureau.ca",
-   "checked_at": "2026-10-24T17:34:56+00:00",
+   "checked_at": "2026-10-24T17:52:06+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -154854,7 +154563,7 @@
    "name": "FrontLobby",
    "category": "credit-financial",
    "domain": "frontlobby.com",
-   "checked_at": "2026-10-24T17:34:56+00:00",
+   "checked_at": "2026-10-24T17:52:06+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -154921,7 +154630,7 @@
    "name": "Echovita",
    "category": "people-search",
    "domain": "echovita.com",
-   "checked_at": "2026-10-24T17:34:56+00:00",
+   "checked_at": "2026-10-24T17:52:06+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -154988,7 +154697,7 @@
    "name": "InMemoriam",
    "category": "people-search",
    "domain": "inmemoriam.ca",
-   "checked_at": "2026-10-24T17:34:56+00:00",
+   "checked_at": "2026-10-24T17:52:06+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -155055,7 +154764,7 @@
    "name": "Nécrologie.ca",
    "category": "people-search",
    "domain": "necrologie.ca",
-   "checked_at": "2026-10-24T17:34:56+00:00",
+   "checked_at": "2026-10-24T17:52:06+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -155122,7 +154831,7 @@
    "name": "Geni",
    "category": "people-search",
    "domain": "geni.com",
-   "checked_at": "2026-10-24T17:34:56+00:00",
+   "checked_at": "2026-10-24T17:52:06+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,

@@ -2496,16 +2496,22 @@
     "evidence": "The stored URL /name/landing is the homepage's Angular search form, not a results page. Submitting it (First name, Last name, state) after the FCRA \"I Agree\" notice opens /name/loader \"Searching for John Smith 1%\". The app's only search call, POST /api/content/peopleSearch/peopleSearch, answered 412 with a creditCard.authorize step ($0.30 card hold) for John Smith and for a made-up name (Quillon Vanderwekken), read 2026-10-18 in a headless browser. No person is listed before a card is entered. Fifteen sibling sites serve the same app shell and are not changed here."
   },
   "freebackgroundchecks-com": {
-    "checked": "2026-10-19",
+    "checked": "2026-10-24",
     "offline": true,
     "country": "US",
-    "evidence": "DNS for freebackgroundchecks.com and www.freebackgroundchecks.com returns SERVFAIL from public resolvers (Node dns.resolve4 on a US server and getaddrinfo, 2026-10-19), and Frame's residential proxy could not open a tunnel to it on any exit in three measurement runs (2026-10-18). example.com resolved normally from the same host."
+    "evidence": "DNS for freebackgroundchecks.com and www.freebackgroundchecks.com still does not resolve (getaddrinfo, 2026-10-24). 1.1.1.1 and 8.8.8.8 returned SERVFAIL with no address. example.com and freebackgroundcheck.org resolved from the same host. An earlier check on 2026-10-19 also returned SERVFAIL."
+  },
+  "governmentregistry-family": {
+    "checked": "2026-10-24",
+    "offline": true,
+    "country": "US",
+    "evidence": "govregistry.us and the catalog opt-out host governmentregistry.org did not resolve (getaddrinfo, 2026-10-24). 1.1.1.1 and 8.8.8.8 returned SERVFAIL with no address. example.com resolved from the same host. The row had been marked robots_disallowed from an older crawl."
   },
   "governmentregistry-org": {
-    "checked": "2026-10-19",
+    "checked": "2026-10-24",
     "offline": true,
     "country": "US",
-    "evidence": "DNS for governmentregistry.org and www.governmentregistry.org returns SERVFAIL from public resolvers (Node dns.resolve4 on a US server and getaddrinfo, 2026-10-19), and Frame's residential proxy could not open a tunnel to it on any exit in three measurement runs (2026-10-18). example.com resolved normally from the same host."
+    "evidence": "DNS for governmentregistry.org and www.governmentregistry.org still does not resolve (getaddrinfo, 2026-10-24). 1.1.1.1 and 8.8.8.8 returned SERVFAIL with no address. example.com resolved from the same host. An earlier check on 2026-10-19 also returned SERVFAIL."
   },
   "192-com": {
     "checked": "2026-10-19",
@@ -3831,5 +3837,81 @@
       ]
     },
     "captcha_widget": false
+  },
+  "sagestream-llc": {
+    "checked": "2026-10-24",
+    "liveness": "alive",
+    "liveness_detail": "https://consumer.risk.lexisnexis.com/opt answered HTTP 200 on 2026-10-24, titled Opt-Out - LexisNexis Risk Solutions Consumer Disclosure. The old sagestreamllc.com opt-out redirected to the LexisNexis consumer site. No request was submitted.",
+    "evidence": "GET https://consumer.risk.lexisnexis.com/opt returned HTTP 200 (18698 bytes) on 2026-10-24. No form was submitted."
+  },
+  "audiencepoint-inc": {
+    "checked": "2026-10-24",
+    "liveness": "alive",
+    "liveness_detail": "https://audiencepoint.com/privacy-policy/ answered HTTP 200 on 2026-10-24. The old /cpra/ path returned HTTP 404. No request was submitted.",
+    "evidence": "GET https://audiencepoint.com/privacy-policy/ returned HTTP 200, titled AudiencePoint, Inc. Privacy Policy. The page names privacy@audiencepoint.com. No request was submitted."
+  },
+  "lotame": {
+    "checked": "2026-10-24",
+    "liveness": "alive",
+    "liveness_detail": "https://www.lotame.com/privacy/information-privacy-choices-services/ answered HTTP 200 on 2026-10-24. The old /about-lotame/privacy/lotames-opt-out/ path returned HTTP 404. No request was submitted.",
+    "evidence": "GET the privacy-choices URL returned HTTP 200, titled Information about your Privacy Rights and Choices. No request was submitted."
+  },
+  "5x5-us-llc": {
+    "checked": "2026-10-24",
+    "liveness": "alive",
+    "liveness_detail": "https://privacy.5x5data.com/5x5/opt-out answered HTTP 200 on 2026-10-24. It is a JavaScript opt-out app titled Opt Out - 5x5 Data. The old /dsr-out/ path returned HTTP 404. No request was submitted.",
+    "evidence": "GET https://privacy.5x5data.com/5x5/opt-out returned HTTP 200 and a page whose only visible text is the title, with a module script at /assets/5x5-opt-out-BqDj_h_x.js. No request was submitted."
+  },
+  "knower-tech-usa-llc": {
+    "checked": "2026-10-24",
+    "liveness": "alive",
+    "liveness_detail": "https://www.rbarrel.com/privacy-center/ answered HTTP 200 on 2026-10-24, titled Privacy Center - RainBarrel. The old /opt-out path returned HTTP 404. No request was submitted.",
+    "evidence": "GET https://www.rbarrel.com/privacy-center/ returned HTTP 200. The catalog notes name privacy@rbarrel.com. No request was submitted."
+  },
+  "samba-tv-inc": {
+    "checked": "2026-10-24",
+    "liveness": "alive",
+    "liveness_detail": "https://samba.com/privacy-center/privacy-policy answered HTTP 200 on 2026-10-24. The old samba.tv/users/privacy-policy path redirected here. No request was submitted.",
+    "evidence": "GET https://samba.com/privacy-center/privacy-policy returned HTTP 200, titled Samba. No request was submitted."
+  },
+  "live-data-technologies-inc": {
+    "checked": "2026-10-24",
+    "liveness": "alive",
+    "liveness_detail": "https://www.livedatatech.com/opt-out answered HTTP 200 on 2026-10-24, titled Optout — Live Data Technologies. The old livedatatechnologies.com/opt-out path redirects here. The page loads a reCAPTCHA badge. No request was submitted.",
+    "evidence": "GET https://www.livedatatech.com/opt-out returned HTTP 200 (29500 bytes) on 2026-10-24. No request was submitted."
+  },
+  "lead-enhance-llc": {
+    "checked": "2026-10-24",
+    "liveness": "alive",
+    "liveness_detail": "https://bathroom-remodel-today.com/privacy/ redirects to https://signin.leadgenesis.info/login (HTTP 200, titled Sign in · NEXUS) on 2026-10-24. It is not a public request page. No request was submitted.",
+    "evidence": "GET of the catalog privacy URL followed the redirect to the LeadGenesis sign-in. The catalog URL was left in place. No account was created and no request was submitted."
+  },
+  "illinois-arrests": {
+    "checked": "2026-10-24",
+    "not_a_person_search": true,
+    "kind": "affiliate_redirect",
+    "liveness": "alive",
+    "liveness_detail": "illinoisarrests.org answered HTTP 200 on 2026-10-24. The on-site /Results URL returned an empty body. The homepage search script sends the name to infotracer.net.",
+    "evidence": "The homepage form still posts to /Results, and form-redirect/script.js prevents that submit and sends the name to https://infotracer.net/loading/ (tid=illinoisarrests). GET /Results?fname=John&lname=Smith&stage=1&rType=Warrant returned HTTP 200 with an empty body. The request portal at /request-portal returned HTTP 200. The InfoTracer page was not opened and no request was submitted."
+  },
+  "louisiana-arrests": {
+    "checked": "2026-10-24",
+    "not_a_person_search": true,
+    "kind": "affiliate_redirect",
+    "liveness": "alive",
+    "liveness_detail": "louisianaarrests.org answered HTTP 200 on 2026-10-24. The on-site /Results URL returned HTTP 404. The homepage search script sends the name to infotracer.net.",
+    "evidence": "The homepage form still posts to /Results, and form-redirect/script.js prevents that submit and sends the name to https://infotracer.net/loading/ (tid=louisianaarrests). GET /Results?fname=John&lname=Smith&stage=1&rType=Warrant returned HTTP 404, titled 404 - Page not found. The request portal at /request-portal returned HTTP 200. The InfoTracer page was not opened and no request was submitted."
+  },
+  "california-criminal-records-search": {
+    "checked": "2026-10-24",
+    "liveness": "alive",
+    "liveness_detail": "californiacriminalrecords.org answered HTTP 200 on 2026-10-24. Its name-results URL returned HTTP 404.",
+    "evidence": "The homepage form is a GET to /search/name/results.php. That URL with fname=John and lname=Smith returned HTTP 404, titled 404 Not Found, including after a homepage visit set a CSRF cookie. The contact page returned HTTP 200. No form was submitted."
+  },
+  "texas-arrest-warrants-search": {
+    "checked": "2026-10-24",
+    "liveness": "alive",
+    "liveness_detail": "texasarrestwarrants.org answered HTTP 200 on 2026-10-24. Its name-results URL returned HTTP 404.",
+    "evidence": "The homepage form is a GET to /search/name/results.php. That URL with fname=John and lname=Smith returned HTTP 404, titled Not Found (#404). The privacy policy returned HTTP 200. No form was submitted."
   }
 }

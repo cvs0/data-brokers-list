@@ -28,7 +28,7 @@ Marketing and audience brokers. The link is an opt-out or the privacy page the c
 | AtData (formerly TowerData) | https://privacyportal-cdn.onetrust.com/dsarwebform/b38ccfa3-c14a-451e-bf1d-974d1e278b7c/6214ac53-9059-474d-a847-800250556e9d.html | Web opt-out form. Email: privacy@atdata.com. Open-dataset difficulty: easy. |
 | Audience Acuity LLC | https://audienceacuity.com/california/ | Opt-out or consumer privacy-request page. Automated check on 2026-10-01 got HTTP 403. Open the link in a browser. |
 | Audience Mix LLC | https://www.audiencemix.net/do-no-sell-or-share-my-personal-informat | Privacy notice or privacy-policy page. Use the state-rights, do-not-sell, or request section. Email: privacy@audiencemix.net. Privacy-rights page submitted to the California Data Broker Registry. |
-| AudiencePoint Inc. | https://audiencepoint.com/cpra/ | Opt-out or consumer privacy-request page. Automated check on 2026-10-01 got HTTP 403. Open the link in a browser. |
+| AudiencePoint Inc. | https://audiencepoint.com/privacy-policy/ | Consumer privacy requests: privacy@audiencepoint.com. The old /cpra/ path returned HTTP 404 on 2026-10-24. This privacy policy answered HTTP 200. No request was submitted. |
 | Audiencerate | https://www.audiencerate.com/privacy-policy.html | Privacy notice or privacy-policy page. Use the state-rights, do-not-sell, or request section. |
 | BH MARKETING GROUP LLC | https://usmarketinggrp.com/privacy-policy/#CCPA | Privacy notice or privacy-policy page. Use the state-rights, do-not-sell, or request section. |
 | Blue Hill Marketing Solutions, Inc | https://www.liftbasedata.com/request-to-know/ | Opt-out or consumer privacy-request page. The Markup and CalMatters (2025) found page code that hid this URL from search engines. Automated check on 2026-10-01 got HTTP 403. Open the link in a browser. |
@@ -82,7 +82,7 @@ Marketing and audience brokers. The link is an opt-out or the privacy page the c
 | ListMatch | https://listmatch.com/privacy/privacy.php | Privacy notice or privacy-policy page. Use the state-rights, do-not-sell, or request section. |
 | LiveIntent | https://privacy.liveintent.com/ | Published opt-out URL is the site root. Confirm a request form is on the page before sending information. |
 | LiveRamp | https://liveramp.com/privacy/my-privacy-choices/ | LiveRamp consumer privacy-choices page. |
-| Lotame | https://www.lotame.com/about-lotame/privacy/lotames-opt-out/ | Opt-out or consumer privacy-request page. Automated check on 2026-10-01 got HTTP 403. Open the link in a browser. |
+| Lotame | https://www.lotame.com/privacy/information-privacy-choices-services/ | Privacy rights and choices page. The old opt-out path /about-lotame/privacy/lotames-opt-out/ returned HTTP 404 on 2026-10-24. This page describes how to make a privacy-rights request. No request was submitted. |
 | Lusha Systems, Inc. | https://www.lusha.com/legal/ccpa/ | Opt-out or consumer privacy-request page. |
 | Madison Logic | https://madisonlogic-privacy.my.onetrust.com/webform/b7449bea-44c6-4823-a2ac-30a8f33047d0/9a375b0c-9030-44ce-bfd3-217fd7a71993 | Privacy-request form. Email: privacy@madisonlogic.com. Phone: 1-800-401-7413. |
 | Malvern Media Inc. (malvernmedia.com) | https://www.malvernmedia.com/privacy-policy | Privacy notice or privacy-policy page. Use the state-rights, do-not-sell, or request section. Privacy-rights page submitted to the California Data Broker Registry. |
