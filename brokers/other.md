@@ -7,7 +7,7 @@ Registered data brokers and privacy-request pages that do not fit the categories
 | Broker | Opt-out / privacy URL | Notes |
 | --- | --- | --- |
 | 360 Media Direct | https://360-media-direct.privacy.saymine.io/360_Media_Direct | Opt-out or consumer privacy-request page. |
-| 5X5 US, LLC | https://5x5data.com/dsr-out/ | Opt-out or consumer privacy-request page. The Markup and CalMatters (2025) found page code that hid this URL from search engines. Automated check on 2026-10-01 got HTTP 403. Open the link in a browser. |
+| 5X5 US, LLC | https://privacy.5x5data.com/5x5/opt-out | Opt-out page. The old path /dsr-out/ returned HTTP 404 on 2026-10-24 and this page answered HTTP 200. No request was submitted. |
 | Above Data, Inc. | https://www.abovedata.io/privacy-policy/ | Privacy notice or privacy-policy page. Use the state-rights, do-not-sell, or request section. |
 | ACH, Address Clearing House | https://www.achcoop.com/privacy-policy | Privacy notice or privacy-policy page. Use the state-rights, do-not-sell, or request section. |
 | ActivImpact, LLC | https://activimpact.ai/privacy-policy | Privacy notice or privacy-policy page. Use the state-rights, do-not-sell, or request section. Email: privacy@activimpact.ai. Privacy-rights page submitted to the California Data Broker Registry. |
@@ -120,8 +120,8 @@ Registered data brokers and privacy-request pages that do not fit the categories
 | GetEmails LLC | https://www.retention.com/article-update-privacy-policy | Privacy notice or privacy-policy page. Use the state-rights, do-not-sell, or request section. |
 | Glad I Know | https://gladiknow.com/opt-out | Opt-out or consumer privacy-request page. |
 | Global Source Data Solutions Inc | https://gsdsi.com/privacy | Privacy notice or privacy-policy page. Use the state-rights, do-not-sell, or request section. Email: privacy@gsdsi.com. Privacy-rights page submitted to the California Data Broker Registry. |
-| GovernmentRegistry family | https://www.governmentregistry.org/opt-out | Opt out via parent InfoTracer + email verification. Open-dataset difficulty: moderate. |
-| GovernmentRegistry.org | https://www.governmentregistry.org/opt-out | Online form. Email: privacy@governmentregistry.org. Open-dataset difficulty: easy. |
+| GovernmentRegistry family | https://www.governmentregistry.org/opt-out | Opt out via parent InfoTracer + email verification. Open-dataset difficulty: moderate. Checked 2026-10-24: govregistry.us and governmentregistry.org do not resolve (getaddrinfo failed; 1.1.1.1 and 8.8.8.8 returned SERVFAIL). example.com resolved from the same host. |
+| GovernmentRegistry.org | https://www.governmentregistry.org/opt-out | Online form. Email: privacy@governmentregistry.org. Open-dataset difficulty: easy. Checked 2026-10-24: governmentregistry.org does not resolve (getaddrinfo failed; 1.1.1.1 and 8.8.8.8 returned SERVFAIL). example.com resolved from the same host. |
 | GrayHair Software LLC | https://grayhairsoftware.com/privacy-policy/ | Privacy notice or privacy-policy page. Use the state-rights, do-not-sell, or request section. |
 | Great Lakes List, Inc. | https://www.greatlakeslists.com/privacy-policy | Privacy notice or privacy-policy page. Use the state-rights, do-not-sell, or request section. |
 | Guidestar Direct, Corp. | https://www.carneydirect.com/privacy-policy/ | Privacy notice or privacy-policy page. Use the state-rights, do-not-sell, or request section. |
@@ -155,11 +155,11 @@ Registered data brokers and privacy-request pages that do not fit the categories
 | Kids Live Safe | https://www.kidslivesafe.com/help-center/privacy-requests | Opt-out or consumer privacy-request page. |
 | Kind Skiptracing, Inc | https://kindskiptracing.com | Published privacy-request URL is the site root. Confirm a request form is on the page before sending information. Email: compliance@kindskiptracing.com. Privacy-rights page submitted to the California Data Broker Registry. |
 | Kiwi Searches | https://kiwisearches.com/privacy | Opt-out or consumer privacy-request page. Email: support@kiwisearches.com. Automated check on 2026-10-01 got HTTP 403. Open the link in a browser. |
-| Knower Tech USA, LLC | https://www.rbarrel.com/opt-out | Opt-out or consumer privacy-request page. |
+| Knower Tech USA, LLC | https://www.rbarrel.com/privacy-center/ | RainBarrel privacy center for opt-out and deletion. Email: privacy@rbarrel.com. The old /opt-out path returned HTTP 404 on 2026-10-24. No request was submitted. |
 | Komodo Health, Inc. | https://www.komodohealth.com/privacy-notice/ | Privacy notice or privacy-policy page. Use the state-rights, do-not-sell, or request section. Automated check on 2026-10-01 got HTTP 403. Open the link in a browser. |
 | Kontext Data | https://kontextdata.com/privacy | Opt-out or consumer privacy-request page. |
 | Labels & Lists, Inc | https://www.l2-data.com/california-privacy-rights-for-california-residents-only/ | Opt-out or consumer privacy-request page. |
-| LEAD ENHANCE LLC | https://bathroom-remodel-today.com/privacy/ | Privacy notice or privacy-policy page. Use the state-rights, do-not-sell, or request section. Privacy-rights page submitted to the California Data Broker Registry. |
+| LEAD ENHANCE LLC | https://bathroom-remodel-today.com/privacy/ | Privacy notice or privacy-policy page. Use the state-rights, do-not-sell, or request section. Privacy-rights page submitted to the California Data Broker Registry. Checked 2026-10-24: this privacy URL redirects to a LeadGenesis sign-in page (signin.leadgenesis.info/login). It is not a public request page. No request was submitted. |
 | Lead Intelligence Inc. | https://infutor.com/privacy-center/ | Privacy notice or privacy-policy page. Use the state-rights, do-not-sell, or request section. Email: privacy@infutor.com. Automated check on 2026-10-01 got HTTP 403. Open the link in a browser. |
 | Lead Me Media, LLC | https://policy.leadmemedia.com/States/privacyrequestform.html | Opt-out or consumer privacy-request page. |
 | LeadIQ, Inc | https://www.leadiq.com/privacy-center | Opt-out or consumer privacy-request page. |
@@ -169,7 +169,7 @@ Registered data brokers and privacy-request pages that do not fit the categories
 | LicensePlateData | https://licenseplatedata.com/contact | Privacy notice or privacy-policy page. Use the state-rights, do-not-sell, or request section. |
 | LightBox Parent, L.P. | https://www.lightboxre.com/lightbox-individual-data-rights-request/ | Opt-out or consumer privacy-request page. Automated check on 2026-10-01 got HTTP 403. Open the link in a browser. |
 | ListsOnline.com, Inc. | https://www.everleads.com/privacy | Privacy notice or privacy-policy page. Use the state-rights, do-not-sell, or request section. Email: privacy@everleads.com. Privacy-rights page submitted to the California Data Broker Registry. |
-| Live Data Technologies, Inc. | https://www.livedatatechnologies.com/opt-out | Opt-out or consumer privacy-request page. |
+| Live Data Technologies, Inc. | https://www.livedatatech.com/opt-out | Opt-out page on livedatatech.com. The old livedatatechnologies.com/opt-out path redirects here. Email: remove@livedatatechnologies.com. The page loads a reCAPTCHA badge. No request was submitted. Checked 2026-10-24. |
 | Lookify | https://lookify.io/opt-out | Opt-out or consumer privacy-request page. |
 | M1 Data & Analytics, LLC | https://m1-data.com/disclosures/ | Opt-out or consumer privacy-request page. |
 | Malvern Media Inc. | https://privacyportal.privacypillar.com/dsar/form?orgid=369c8ff9-8ffb-4308-8362-f01691e77db8&propid=64c8904f-8bac-4dd9-8e6c-d052be1918a2&formid=6e6ff4b8-2296-4589-ae7f-563fa743ec2d&status=publish | Opt-out or consumer privacy-request page. |
@@ -229,7 +229,7 @@ Registered data brokers and privacy-request pages that do not fit the categories
 | Roq.ad Inc. | https://www.roq.ad/privacy-policy-roqad/ | Privacy notice or privacy-policy page. Use the state-rights, do-not-sell, or request section. |
 | Rushmore Labs, LLC | https://www.censaianalytics.com/ccpa | Privacy notice or privacy-policy page. Use the state-rights, do-not-sell, or request section. Email: privacy@rushmorelabs.com. Automated check on 2026-10-01 got HTTP 403. Open the link in a browser. |
 | Salutary Data LLC. | https://salutarydata.com/privacy-opt-out-and-disclosure-form/ | Opt-out or consumer privacy-request page. |
-| Samba TV, Inc. | https://www.samba.tv/users/privacy-policy | Privacy notice or privacy-policy page. Use the state-rights, do-not-sell, or request section. |
+| Samba TV, Inc. | https://samba.com/privacy-center/privacy-policy | Privacy policy. The old samba.tv/users/privacy-policy path redirected here on 2026-10-24. No request was submitted. |
 | SBFE, LLC | https://www.sbfe.org/connect/ccpa | Opt-out or consumer privacy-request page. |
 | SciLeads Ltd | https://scileads.com/privacy-policy/ | Privacy notice or privacy-policy page. Use the state-rights, do-not-sell, or request section. Email: privacy@scileads.com. Privacy-rights page submitted to the California Data Broker Registry. |
 | Search Systems (directory of links) | https://publicrecords.searchsystems.net/opt-out.php | Opt-out or consumer privacy-request page. Email: webmaster@searchsystems.net. |

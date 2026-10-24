@@ -53,7 +53,7 @@ landlord-credit-bureau,Landlord Credit Bureau,landlordcreditbureau.ca,credit-fin
 microbilt,MicroBilt,microbilt.com,credit-financial,alive,generic_inbox,"Only a generic inbox was found, and the page does not say to use it for removal",,,,false,,,contact@microbilt.com;sales@microbilt.com;support@microbilt.com;customeraccounts@microbilt.com,email;phone
 nctue,NCTUE,nctue.com,credit-financial,alive,phone_postal,Phone and a mailing address are the only channels,,,,false,,,,postal_mail;phone
 optoutprescreen-experian-equifax-transunion-innovis,OptOutPrescreen (Experian/Equifax/TransUnion/Innovis),optoutprescreen.com,credit-financial,alive,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,false,,,,
-sagestream-llc,"SageStream, LLC",sagestreamllc.com,credit-financial,robots_disallowed,robots,robots.txt disallows the client. A later read still found no removal channel,,,,false,,,,
+sagestream-llc,"SageStream, LLC",sagestreamllc.com,credit-financial,alive,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,false,,,,
 transunion,TransUnion,transunion.com,credit-financial,robots_disallowed,robots,robots.txt disallows the client. A later read still found no removal channel,recaptcha_v2,,,false,,,,
 a-direct-marketing-inc,A Direct Marketing Inc,bookyourdata.com,marketing,alive,generic_inbox,"Only a generic inbox was found, and the page does not say to use it for removal",turnstile,0x4AAAAAADpzS6xky9xVLo2I,,false,turnstile,,data@bookyourdata.com,email;phone
 accurate-append-inc,Accurate Append Inc.,clients.accurateappend.com,marketing,blocked,captcha_form,Removal form is behind a CAPTCHA widget and no usable removal email was found,turnstile,,checkbox,false,,true,,web_form;phone
@@ -105,7 +105,7 @@ voilanorbert,VoilaNorbert,voilanorbert.com,marketing,alive,generic_inbox,"Only a
 youradchoices-canada,YourAdChoices Canada,youradchoices.ca,marketing,alive,postal,The only published channel is a mailing address,custom,6LehCgYfAAAAAF9vS8viDIaBm8ch5JdRYmW44MPp,,true,,,,postal_mail
 youradchoices-control,YourAdChoices control,youradchoices.com,marketing,robots_disallowed,robots,robots.txt disallows the client. A later read still found no removal channel,,,,false,,,,
 360-media-direct,360 Media Direct,360-media-direct.privacy.saymine.io,other,robots_disallowed,robots,robots.txt disallows the client. A later read still found no removal channel,,,,false,,,,
-5x5-us-llc,"5X5 US, LLC",5x5coop.com,other,opt_out_missing,opt_out_gone,The catalog opt-out URL returned 404 or 410,,,,false,,,,
+5x5-us-llc,"5X5 US, LLC",5x5coop.com,other,alive,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,false,,,,
 affinity-solutions,Affinity Solutions,affinity.solutions,other,alive,captcha_form,Removal form is behind a CAPTCHA widget and no usable removal email was found,turnstile,0x4AAAAAADTKQwsjwzE_w3e8,checkbox,true,,true,,web_form;phone;official_portal
 alliant,Alliant,alliantinsight.com,other,alive,generic_inbox,"Only a generic inbox was found, and the page does not say to use it for removal",recaptcha_v2,6LfiqCUUAAAAAGzo0BG2sKBIF-oZVi1_rXgUm5xn,checkbox,true,recaptcha_enterprise,,compliance@alliantdata.com,email;postal_mail;phone;official_portal
 altrata-inc,"Altrata, Inc.",altrata.com,other,alive,phone,The only published channel is a phone number,,,,false,,,,phone
@@ -163,12 +163,13 @@ iqvia-digital-inc-privacyportal-onetrust-com,IQVIA Digital Inc. (privacyportal.o
 kids-live-safe,Kids Live Safe,kidslivesafe.com,other,alive,captcha_form,Removal form is behind a CAPTCHA widget and no usable removal email was found,turnstile,0x4AAAAAAAgFHkiRuynTw4bF,checkbox,true,,true,,web_form;phone
 kind-skiptracing-inc,"Kind Skiptracing, Inc",kindskiptracing.com,other,alive,generic_inbox,"Only a generic inbox was found, and the page does not say to use it for removal",,,,false,,,info@kindskiptracing.com,email
 kiwi-searches,Kiwi Searches,kiwisearches.com,other,robots_disallowed,robots,robots.txt disallows the client. A later read still found no removal channel,,,,false,,,,
-knower-tech-usa-llc,"Knower Tech USA, LLC",rbarrel.com,other,alive,captcha_form,Removal form is behind a CAPTCHA widget and no usable removal email was found,recaptcha_v2,,,true,,true,info@rbarrel.com,web_form;email
+knower-tech-usa-llc,"Knower Tech USA, LLC",rbarrel.com,other,alive,generic_inbox,"Only a generic inbox was found, and the page does not say to use it for removal",recaptcha_v2,,,true,,,info@rbarrel.com,email
 labels-and-lists-inc,"Labels & Lists, Inc",l2-data.com,other,robots_disallowed,robots,robots.txt disallows the client. A later read still found no removal channel,,,,false,,,,
 lead-intelligence-inc,Lead Intelligence Inc.,infutor.com,other,alive,portal,An official privacy portal is linked and its fields were not stored,,,,false,,,,phone;official_portal
 lead-me-media-llc,"Lead Me Media, LLC",policy.leadmemedia.com,other,alive,captcha_form,Removal form is behind a CAPTCHA widget and no usable removal email was found,recaptcha_v3,6LfIx1EqAAAAAGiZ-aHd5nEOq8i33jgC9dHqvQXi,score,true,,true,,web_form
 lenso-ai,Lenso AI,lenso.ai,other,alive,captcha_form,Removal form is behind a CAPTCHA widget and no usable removal email was found,turnstile,,checkbox,true,,true,,web_form
 licenseplatedata,LicensePlateData,licenseplatedata.com,other,alive,captcha_form,Removal form is behind a CAPTCHA widget and no usable removal email was found,turnstile,0x4AAAAAAB5Jbptit0q4na62,checkbox,true,,true,,web_form
+live-data-technologies-inc,"Live Data Technologies, Inc.",livedatatech.com,other,alive,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,,,,,
 lookify,Lookify,lookify.io,other,blocked,phone,The only published channel is a phone number,turnstile,,,false,turnstile,,,phone
 m1-data-and-analytics-llc,"M1 Data & Analytics, LLC",m1-data.com,other,alive,generic_inbox,"Only a generic inbox was found, and the page does not say to use it for removal",recaptcha_v3,6LeT3D8fAAAAADODgURSYJATZv8SYVmK_mN0f8r8,score,false,,,service@m1-data.com,email;phone
 michigan-residents,Michigan Residents,michiganresidentdatabase.com,other,blocked,bot_wall,The opt-out URL returned a bot wall and a browser retry did not reveal a removal channel,,,,false,,,,
@@ -194,6 +195,7 @@ randall-reilly-llc,"Randall-Reilly, LLC",fusable.com,other,alive,portal,An offic
 redi-data-inc,Redi-Data Inc.,redidata.com,other,alive,captcha_form,Removal form is behind a CAPTCHA widget and no usable removal email was found,recaptcha_v2,6LecNRMmAAAAAMKqXOxJg1zOQfigZ_VHXX8zhvr-,invisible,true,,true,,web_form
 revenue-roll-inc,Revenue Roll Inc.,meettie.com,other,alive,generic_inbox,"Only a generic inbox was found, and the page does not say to use it for removal",,,,false,,,info@meettie.com;legal@meettie.com,email
 salutary-data-llc,Salutary Data LLC.,salutarydata.com,other,robots_disallowed,generic_inbox,"Only a generic inbox was found, and the page does not say to use it for removal",recaptcha_v2,,,false,,,info@salutarydata.com,email;phone
+samba-tv-inc,"Samba TV, Inc.",samba.com,other,alive,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,,,,,
 spy-dialer,Spy Dialer,spydialer.com,other,alive,generic_inbox,"Only a generic inbox was found, and the page does not say to use it for removal",recaptcha_v2,6Lfo9tIrAAAAAPHnHsd2C1VRdHun9vmWMmiik8Fb,,false,,,support@spydialer.com,email;phone
 swordfish-ai-inc,Swordfish AI Inc.,swordfish.ai,other,alive,captcha_no_form,A CAPTCHA widget is on the removal page and no form fields or usable email were stored,turnstile,0x4AAAAAAAcmowv2mNm8IvFa,checkbox,true,,,,
 targetsmart-communications-llc,TargetSmart Communications LLC,privacy.targetsmart.com,other,robots_disallowed,robots,robots.txt disallows the client. A later read still found no removal channel,,,,false,,,,
