@@ -1,19 +1,19 @@
 {
  "schema_version": "4.0.0",
- "checked_at": "2026-10-19T20:39:40+00:00",
+ "checked_at": "2026-10-24T09:11:12+00:00",
  "method": "v3 records, with privacy and removal mailboxes on another domain kept as related_domain. Brokers whose loaded pages published no removal channel were crawled again for unfetched same-site opt-out and privacy URLs, then the catalog URL and homepage were opened once in a browser when those pages still showed no form. That recrawl honors robots.txt. A later pass reads the catalog URL and homepage of brokers whose robots.txt had disallowed the research client. A search pass reads homepages whose public search form was missing, including pages robots.txt had disallowed, and stores a name, phone, or address form. Those passes submit no form, no login, and no CAPTCHA. A legal pass re-reads stored privacy and terms text and fetches an unread privacy or terms page when robots.txt allows it. A network pass looks up public DNS and the site certificate, and reads response headers for the removal URL when robots.txt allows it. A later pass adds IPv6, SPF, DMARC, DKIM selectors, CAA, DNSSEC, the address block, certificate dates, RDAP registration, and the removal response's security headers. A captcha pass re-reads the removal URL and the search page for a widget. A browser reads the page when the static HTML has no widget and the page has a removal form, a stored CAPTCHA, or a public search form. A later pass reads the public widget settings, including whether it is a checkbox, an invisible check, or a score. A form pass re-reads stored search and removal forms for labels, limits, autocomplete, the submit button, and hidden field names. A browser opens when the static HTML does not contain the stored fields. Nothing is submitted. A search test then submits one synthetic query on each broker whose search and removal are both fillable. It does not consult robots.txt. Removal forms are not submitted and CAPTCHAs are not solved. search_test is on every broker. It stores the outcome, status, field names, the first path segment, the page kind, and a result count when the page states one. A loader page is followed to the count endpoint. The response body, record text, and listing URLs are not stored.",
- "broker_count": 709,
+ "broker_count": 710,
  "counts": {
   "with_related_email": 126,
-  "with_form": 158,
+  "with_form": 159,
   "with_email": 409,
   "with_extracted_email": 198,
   "with_stated_email": 12,
   "no_channel_remaining": 36,
-  "with_search": 322,
-  "with_search_fillable": 275,
+  "with_search": 321,
+  "with_search_fillable": 274,
   "search_unscanned": 35,
-  "fully_automatable": 137,
+  "fully_automatable": 136,
   "search_tested": 172,
   "search_results": 14,
   "search_submitted": 64,
@@ -32,11 +32,11 @@
   "shared_removal": 58,
   "email_verification": 28,
   "id_document": 1,
-  "with_privacy": 577,
+  "with_privacy": 578,
   "with_terms": 398,
   "with_automation_clause": 81,
   "with_authorized_agent": 140,
-  "with_residency": 518,
+  "with_residency": 519,
   "sells_personal_information": 4,
   "does_not_sell": 64,
   "children_not_directed": 38,
@@ -47,11 +47,11 @@
   "removal_offsite": 89,
   "with_hsts": 275,
   "with_form_enctype": 216,
-  "with_field_detail": 381,
-  "with_field_label": 282,
-  "with_field_constraint": 76,
-  "with_submit_label": 296,
-  "with_hidden_names": 204,
+  "with_field_detail": 380,
+  "with_field_label": 281,
+  "with_field_constraint": 75,
+  "with_submit_label": 295,
+  "with_hidden_names": 203,
   "with_ipv6": 263,
   "with_spf": 518,
   "with_dmarc": 445,
@@ -65,13 +65,13 @@
   "with_http3": 266,
   "with_csp": 182,
   "with_hsts_preload": 119,
-  "removal_captcha": 249,
-  "removal_captcha_sitekey": 139,
+  "removal_captcha": 250,
+  "removal_captcha_sitekey": 140,
   "removal_captcha_checked": 350,
   "search_captcha_widget": 44,
   "search_captcha_sitekey": 21,
-  "search_captcha_checked": 298,
-  "captcha_blocks_form": 83,
+  "search_captcha_checked": 297,
+  "captcha_blocks_form": 84,
   "captcha_email_fallback": 28,
   "removal_captcha_checkbox": 79,
   "removal_captcha_invisible": 30,
@@ -83,7 +83,7 @@
   "search_captcha_invisible": 4,
   "search_captcha_score": 3,
   "removal_blockers": {
-   "captcha_form": 55,
+   "captcha_form": 56,
    "generic_inbox": 51,
    "phone_postal": 25,
    "portal": 4,
@@ -99,7 +99,7 @@
   "lookup_search": 221,
   "lookup_search_fillable": 197,
   "liveness": {
-   "alive": 555,
+   "alive": 556,
    "blocked": 39,
    "dead": 5,
    "error": 20,
@@ -142147,8 +142147,8 @@
    "languages": [],
    "legal_name": null,
    "search": {
-    "available": false,
-    "method": "none",
+    "available": null,
+    "method": "unknown",
     "page_url": null,
     "form_action": null,
     "inputs": [],
@@ -142166,8 +142166,8 @@
     },
     "captcha_provider": null,
     "captcha_sitekey": null,
-    "captcha_detail": null,
-    "captcha_checked": null
+    "captcha_checked": null,
+    "captcha_detail": null
    },
    "removal": {
     "url": "https://checkpeople.com/opt-out",
@@ -142344,7 +142344,7 @@
     "cookie_names": []
    },
    "automation": {
-    "search_scanned": true,
+    "search_scanned": false,
     "search_fillable": false,
     "search_captcha": false,
     "search_fields": [],
@@ -261375,76 +261375,27 @@
    "languages": [],
    "legal_name": null,
    "search": {
-    "available": true,
-    "method": "http_form_post",
-    "page_url": "https://www.confidentialphonelookup.com/",
-    "form_action": "https://www.confidentialphonelookup.com/meta_data_search.php",
-    "inputs": [
-     {
-      "name": "tel",
-      "type": "tel",
-      "canonical": "phone",
-      "required": true,
-      "autocomplete": null,
-      "placeholder": "(555) 555-5555",
-      "id": "tel",
-      "label": "Enter telephone number",
-      "inputmode": null,
-      "pattern": ".{14}",
-      "minlength": null,
-      "maxlength": null,
-      "min": null,
-      "max": null,
-      "step": null,
-      "accept": null,
-      "multiple": false,
-      "disabled": false,
-      "readonly": false,
-      "checked": false,
-      "value": null
-     },
-     {
-      "name": "10202612",
-      "type": "hidden",
-      "canonical": null,
-      "required": false,
-      "autocomplete": null,
-      "placeholder": null,
-      "id": null,
-      "label": null,
-      "inputmode": null,
-      "pattern": null,
-      "minlength": null,
-      "maxlength": null,
-      "min": null,
-      "max": null,
-      "step": null,
-      "accept": null,
-      "multiple": null,
-      "disabled": null,
-      "readonly": null,
-      "checked": null,
-      "value": null
-     }
-    ],
-    "url_pattern": "https://www.confidentialphonelookup.com/meta_data_search.php",
+    "available": false,
+    "method": "none",
+    "page_url": null,
+    "form_action": null,
+    "inputs": [],
+    "url_pattern": null,
     "directory_prefixes": [],
     "paywall": null,
     "login_wall": null,
     "captcha_provider": null,
     "captcha_sitekey": null,
     "form_meta": {
-     "id": "register",
+     "id": null,
      "name": null,
      "autocomplete": null,
-     "novalidate": false,
-     "submit_label": "Search",
-     "hidden_names": [
-      "10202613"
-     ]
+     "novalidate": null,
+     "submit_label": null,
+     "hidden_names": []
     },
-    "captcha_checked": true,
-    "captcha_detail": null
+    "captcha_detail": null,
+    "captcha_checked": null
    },
    "removal": {
     "url": "https://www.confidentialphonelookup.com/",
@@ -261550,7 +261501,7 @@
     }
    ],
    "location": {
-    "country": "CA",
+    "country": null,
     "region": null,
     "locality": null,
     "postal_code": null,
@@ -261559,11 +261510,13 @@
     "coverage": [
      "CA-QC",
      "CA-BC",
-     "CA"
+     "CA",
+     "US"
     ],
     "search_regions": [],
     "sources": [
-     "page"
+     "page",
+     "manual"
     ]
    },
    "network": {
@@ -261634,20 +261587,16 @@
    },
    "automation": {
     "search_scanned": true,
-    "search_fillable": true,
+    "search_fillable": false,
     "search_captcha": false,
-    "search_fields": [
-     "phone"
-    ],
+    "search_fields": [],
     "removal_form_fillable": false,
     "removal_email_usable": false,
     "removal_fields": [],
     "removal_path": null,
     "fully_automatable": false,
     "usable_emails": [],
-    "search_required": [
-     "phone"
-    ],
+    "search_required": [],
     "removal_required": [],
     "email_verification": null,
     "id_document": null,
@@ -273030,53 +272979,27 @@
    ],
    "legal_name": "Equifax Inc.",
    "search": {
-    "available": true,
-    "method": "http_form_post",
-    "page_url": "https://www.equifax.ca/personal/",
-    "form_action": "https://www.equifax.ca/personal/search",
-    "inputs": [
-     {
-      "name": "efxNavSiteSearchQuery",
-      "type": "search",
-      "canonical": null,
-      "required": false,
-      "autocomplete": null,
-      "placeholder": "Search Personal",
-      "id": "efxNavSiteSearchQuery",
-      "label": null,
-      "inputmode": null,
-      "pattern": null,
-      "minlength": null,
-      "maxlength": null,
-      "min": null,
-      "max": null,
-      "step": null,
-      "accept": null,
-      "multiple": false,
-      "disabled": false,
-      "readonly": false,
-      "checked": false,
-      "value": null
-     }
-    ],
-    "url_pattern": "https://www.equifax.ca/personal/search",
-    "directory_prefixes": [
-     "/search"
-    ],
+    "available": false,
+    "method": "none",
+    "page_url": null,
+    "form_action": null,
+    "inputs": [],
+    "url_pattern": null,
+    "directory_prefixes": [],
     "paywall": null,
     "login_wall": null,
     "captcha_provider": null,
     "captcha_sitekey": null,
     "form_meta": {
-     "id": "efxNavSiteSearch",
-     "name": "efxNavSiteSearch",
+     "id": null,
+     "name": null,
      "autocomplete": null,
-     "novalidate": false,
-     "submit_label": "Search",
+     "novalidate": null,
+     "submit_label": null,
      "hidden_names": []
     },
-    "captcha_checked": true,
-    "captcha_detail": null
+    "captcha_detail": null,
+    "captcha_checked": null
    },
    "removal": {
     "url": "https://www.equifax.ca/privacy/",
@@ -273322,14 +273245,14 @@
    },
    "automation": {
     "search_scanned": true,
-    "search_fillable": true,
+    "search_fillable": false,
     "search_captcha": false,
     "search_fields": [],
     "removal_form_fillable": false,
     "removal_email_usable": true,
     "removal_fields": [],
     "removal_path": "email",
-    "fully_automatable": true,
+    "fully_automatable": false,
     "usable_emails": [
      "chief.privacy.officer@equifax.com"
     ],
@@ -287392,6 +287315,408 @@
      "phone",
      "email"
     ],
+    "removal_path": null,
+    "fully_automatable": false,
+    "usable_emails": [],
+    "search_required": [],
+    "removal_required": [],
+    "email_verification": null,
+    "id_document": null,
+    "shared_removal_ids": [],
+    "removal_captcha": true,
+    "captcha_blocks_form": true,
+    "captcha_email_fallback": false,
+    "removal_blocker": "captcha_form"
+   },
+   "search_test": {
+    "outcome": null,
+    "http_status": null,
+    "path_prefix": null,
+    "fields_sent": [],
+    "missing": [],
+    "page_kind": null,
+    "result_count": null,
+    "checked_at": null
+   }
+  },
+  "canada-pages": {
+   "schema_version": "4.0.0",
+   "id": "canada-pages",
+   "name": "Canada Pages",
+   "category": "people-search",
+   "domain": "canadapages.com",
+   "checked_at": "2026-10-12T23:13:28+00:00",
+   "liveness": "alive",
+   "liveness_detail": "People search returned listings on 2026-10-24. The search URL is sometimes a Cloudflare challenge from a datacenter address and sometimes the listings page; a successful read showed the listings.",
+   "homepage": "https://www.canadapages.com/",
+   "logo_url": "https://www.canadapages.com/images/cp-logo-white.webp",
+   "images": [
+    {
+     "url": "https://www.canadapages.com/canada-pages.ico",
+     "kind": "icon",
+     "source_page": "https://www.canadapages.com/"
+    },
+    {
+     "url": "https://www.canadapages.com/images/CanadaPages-com.jpg",
+     "kind": "og_image",
+     "source_page": "https://www.canadapages.com/"
+    },
+    {
+     "url": "https://www.canadapages.com/images/cp-logo-white.webp",
+     "kind": "logo",
+     "source_page": "https://www.canadapages.com/"
+    }
+   ],
+   "theme_color": null,
+   "languages": [
+    "en"
+   ],
+   "legal_name": null,
+   "search": {
+    "available": true,
+    "method": "http_get",
+    "page_url": "https://www.canadapages.com/",
+    "form_action": "https://www.canadapages.com/wp/search.php",
+    "inputs": [
+     {
+      "name": "txtwhat",
+      "type": "text",
+      "canonical": "last_name",
+      "required": false,
+      "autocomplete": null,
+      "placeholder": "First or Last Name",
+      "id": null,
+      "label": null,
+      "inputmode": null,
+      "pattern": null,
+      "minlength": null,
+      "maxlength": null,
+      "min": null,
+      "max": null,
+      "step": null,
+      "accept": null,
+      "multiple": false,
+      "disabled": false,
+      "readonly": false,
+      "checked": false,
+      "value": null
+     },
+     {
+      "name": "txtwhere",
+      "type": "text",
+      "canonical": "city",
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null,
+      "id": "autocomplete1",
+      "label": null,
+      "inputmode": null,
+      "pattern": null,
+      "minlength": null,
+      "maxlength": null,
+      "min": null,
+      "max": null,
+      "step": null,
+      "accept": null,
+      "multiple": false,
+      "disabled": false,
+      "readonly": false,
+      "checked": false,
+      "value": null
+     }
+    ],
+    "url_pattern": "https://www.canadapages.com/wp/search.php?txtwhat={txtwhat}&txtwhere={txtwhere}",
+    "directory_prefixes": [],
+    "paywall": null,
+    "login_wall": null,
+    "form_meta": {
+     "id": null,
+     "name": null,
+     "autocomplete": null,
+     "novalidate": null,
+     "submit_label": "Find",
+     "hidden_names": []
+    },
+    "captcha_provider": null,
+    "captcha_sitekey": null,
+    "captcha_detail": null,
+    "captcha_checked": true
+   },
+   "removal": {
+    "url": "https://www.canadapages.com/remove-info.php",
+    "final_url": "https://www.canadapages.com/remove-info.php",
+    "http_status": 200,
+    "kinds": [
+     "opt_out"
+    ],
+    "channels": [
+     "web_form",
+     "postal_mail"
+    ],
+    "emails": [],
+    "phones": [],
+    "postal_address": "P.o. Box 23, St Ambroise 204-243-2009 Cobs Bread (Robson Street) 1709 Robson Street, Vancou",
+    "portal": null,
+    "form_fields": [
+     {
+      "name": "txtwhat",
+      "type": "text",
+      "canonical": null,
+      "required": false,
+      "autocomplete": "off",
+      "placeholder": "What do you want to find?",
+      "id": null,
+      "label": null,
+      "inputmode": null,
+      "pattern": null,
+      "minlength": null,
+      "maxlength": null,
+      "min": null,
+      "max": null,
+      "step": null,
+      "accept": null,
+      "multiple": null,
+      "disabled": null,
+      "readonly": null,
+      "checked": null,
+      "value": null
+     },
+     {
+      "name": "txtwhere",
+      "type": "text",
+      "canonical": null,
+      "required": false,
+      "autocomplete": "off",
+      "placeholder": "Where",
+      "id": null,
+      "label": null,
+      "inputmode": null,
+      "pattern": null,
+      "minlength": null,
+      "maxlength": null,
+      "min": null,
+      "max": null,
+      "step": null,
+      "accept": null,
+      "multiple": null,
+      "disabled": null,
+      "readonly": null,
+      "checked": null,
+      "value": null
+     }
+    ],
+    "csrf_field_name": null,
+    "requires_profile_url": null,
+    "captcha": {
+     "provider": "recaptcha_v2",
+     "sitekey": "6LdsTDwUAAAAAJ-EC9YOGnZHYAWSOS5IHoW7GQu7",
+     "pages": [
+      "https://www.canadapages.com/remove-info.php",
+      "https://www.canadapages.com/privacy-policy.php",
+      "https://www.canadapages.com/contact.php"
+     ],
+     "checked": null,
+     "checked_url": null,
+     "detail": {
+      "mode": null,
+      "invisible": null,
+      "size": null,
+      "theme": null,
+      "action": null,
+      "badge": null,
+      "language": null,
+      "appearance": null,
+      "enterprise": false,
+      "api_domain": null,
+      "script_path": null,
+      "token_field": null,
+      "callback": null
+     }
+    },
+    "consent_vendor": null,
+    "success_text": null,
+    "suppression_not_deletion": null,
+    "processing_days": 5,
+    "processing_text": "* We’ll endeavor take the information removed within 3 business days",
+    "form_action": null,
+    "form_method": null,
+    "form_meta": {
+     "id": null,
+     "name": null,
+     "autocomplete": null,
+     "novalidate": null,
+     "submit_label": null,
+     "hidden_names": []
+    }
+   },
+   "bot_defense": {
+    "vendor": null,
+    "outcome": "none"
+   },
+   "legal": {
+    "privacy_policy_url": "https://www.canadapages.com/privacy-policy.php",
+    "terms_url": null,
+    "automation_prohibited": null,
+    "automation_clause": null,
+    "residency": [
+     "CA-QC",
+     "CA-BC"
+    ],
+    "authorized_agent": null,
+    "data_categories": [
+     "identifiers"
+    ],
+    "sells_personal_information": null,
+    "sells_clause": null,
+    "children_not_directed": null
+   },
+   "pages": [
+    {
+     "url": "https://canadapages.com/",
+     "final_url": "https://www.canadapages.com/",
+     "status": 200,
+     "role": "home",
+     "title": "Canada Pages, Everything About Canada",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.canadapages.com/",
+     "final_url": "https://www.canadapages.com/",
+     "status": 200,
+     "role": "home",
+     "title": "Canada Pages, Everything About Canada",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.canadapages.com/remove-info.php",
+     "final_url": "https://www.canadapages.com/remove-info.php",
+     "status": 200,
+     "role": "catalog",
+     "title": "Remove your Info, Canada Pages",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.canadapages.com/member/data-removal.php",
+     "final_url": "https://www.canadapages.com/member/data-removal.php",
+     "status": 200,
+     "role": "other",
+     "title": "Remove Your Data - Canada Pages",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.canadapages.com/privacy-policy.php",
+     "final_url": "https://www.canadapages.com/privacy-policy.php",
+     "status": 200,
+     "role": "privacy",
+     "title": "Your Privacy is Important to us, Read our Privacy Policy - Canada Pages",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.canadapages.com/contact.php",
+     "final_url": "https://www.canadapages.com/contact.php",
+     "status": 200,
+     "role": "other",
+     "title": "Contact us, Address, Email, and Phone Number, Canada Pages",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.canadapages.com/tos.php",
+     "final_url": null,
+     "status": null,
+     "role": "other",
+     "title": "",
+     "liveness": "error"
+    },
+    {
+     "url": "https://www.canadapages.com/member/remove-phone-listing.php",
+     "final_url": null,
+     "status": null,
+     "role": "other",
+     "title": "",
+     "liveness": "error"
+    }
+   ],
+   "location": {
+    "country": "CA",
+    "region": null,
+    "locality": null,
+    "postal_code": null,
+    "street": null,
+    "postal_address": "P.o. Box 23, St Ambroise 204-243-2009 Cobs Bread (Robson Street) 1709 Robson Street, Vancou",
+    "coverage": [
+     "CA-QC",
+     "CA-BC",
+     "CA"
+    ],
+    "search_regions": [],
+    "sources": [
+     "site_name",
+     "page"
+    ]
+   },
+   "network": {
+    "checked": false,
+    "addresses": [],
+    "ipv6": [],
+    "cname": null,
+    "mx": [],
+    "mail_provider": null,
+    "spf": null,
+    "dmarc": null,
+    "dkim": [],
+    "nameservers": [],
+    "dns_provider": null,
+    "soa_primary": null,
+    "caa": [],
+    "dnssec": null,
+    "asn": null,
+    "asn_country": null,
+    "prefix": null,
+    "cdn": null,
+    "server": null,
+    "tls_org": null,
+    "tls_issuer": null,
+    "tls_names": [],
+    "tls_version": null,
+    "tls_not_before": null,
+    "tls_not_after": null,
+    "registrar": null,
+    "registered": null,
+    "registration_expires": null,
+    "domain_status": []
+   },
+   "request": {
+    "removal_host": "canadapages.com",
+    "same_site": true,
+    "https": true,
+    "redirected": false,
+    "redirect_count": null,
+    "form_enctype": null,
+    "content_type": null,
+    "hsts": null,
+    "hsts_max_age": null,
+    "hsts_subdomains": null,
+    "hsts_preload": null,
+    "http_version": null,
+    "http3": null,
+    "frame_options": null,
+    "nosniff": null,
+    "referrer_policy": null,
+    "csp": null,
+    "powered_by": null,
+    "cookie_names": []
+   },
+   "automation": {
+    "search_scanned": true,
+    "search_fillable": true,
+    "search_captcha": false,
+    "search_fields": [
+     "last_name",
+     "city"
+    ],
+    "removal_form_fillable": false,
+    "removal_email_usable": false,
+    "removal_fields": [],
     "removal_path": null,
     "fully_automatable": false,
     "usable_emails": [],
