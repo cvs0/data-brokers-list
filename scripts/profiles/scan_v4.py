@@ -2127,6 +2127,14 @@ def place_search_form(record: dict) -> None:
         # The site is gone: its name servers no longer answer for the domain, so no page loads from any network.
         record["liveness"] = "dead"
         record["liveness_detail"] = f"site offline (checked {entry['checked']}): {entry['evidence']}"
+    elif entry and entry.get("liveness") in {
+        "alive", "blocked", "dead", "opt_out_missing", "likely_dead", "robots_disallowed", "error", "not_checked"
+    }:
+        # A later live read of this broker. It replaces the crawl liveness and, when set, the detail line.
+        record["liveness"] = entry["liveness"]
+        detail = entry.get("liveness_detail")
+        if isinstance(detail, str) and detail:
+            record["liveness_detail"] = detail
     if entry and entry.get("paywall"):
         # The search runs, but the site shows no records until the visitor registers or buys a report.
         record["search"]["paywall"] = True
@@ -2212,6 +2220,19 @@ def place_search_country(record: dict) -> None:
             if form_country not in record["location"]["coverage"]:
                 record["location"]["coverage"].append(form_country)
     entry = _search_form_overrides().get(record["id"]) or {}
+    if entry.get("country_override"):
+        # The live page disagreed with the country derived from residency words or a filing.
+        # country may be null when the page covers more than one country.
+        country = entry.get("country") or None
+        record["location"]["country"] = country
+        if country and country not in record["location"]["coverage"]:
+            record["location"]["coverage"].append(country)
+        for code in entry.get("also_covers") or []:
+            if code and code not in record["location"]["coverage"]:
+                record["location"]["coverage"].append(code)
+        if "manual" not in record["location"]["sources"]:
+            record["location"]["sources"].append("manual")
+        return
     country = entry.get("country")
     if country and not record["location"].get("country"):
         record["location"]["country"] = country
@@ -3237,7 +3258,7 @@ def write_outputs(report: dict) -> None:
         "",
         "The recrawl covers brokers whose v3 pages had loaded and still had no form, email, phone, postal address, portal, or CAPTCHA. It requests up to four unfetched same-site opt-out or privacy URLs, then opens the catalog URL and the homepage in a browser when a form is still missing.",
         "",
-        "A machine can fill a search when the stored inputs are present and that page has no CAPTCHA. The form has to ask for a name, phone number, or address. `search.captcha_provider` is the CAPTCHA on the search page. It is separate from the removal CAPTCHA. Lookup search is people-search, background-checks, and public-records. A search control the label rules left untagged can take a canonical value from [`research/manual/v4-search-fields.json`](../research/manual/v4-search-fields.json), which records the page evidence for each one. A control the scan already tagged keeps its value. A search form the scan missed or stored wrong (robots.txt kept it off the page, the controls have no name attribute, or another form was stored) can be replaced from [`research/manual/v4-search-forms.json`](../research/manual/v4-search-forms.json), which keeps the form read from the rendered page, where a synthetic search landed, and the date. `url_pattern` holds a result URL the page builds in script, with `{control}` placeholders. An entry there marked `not_a_person_search` clears a stored form that is not a search for a person: a contact, demo, or opt-out form, a site search, or a form that only forwards the name to another company through an affiliate or tracking link. An entry marked `paywall` keeps the form and sets `search.paywall` when a synthetic search returned no records without an account or a purchase, and `\"paywall\": false` clears a paywall read from homepage text when a synthetic search showed results without one. An entry marked `offline` sets `liveness` to `dead` when the domain no longer resolves.",
+        "A machine can fill a search when the stored inputs are present and that page has no CAPTCHA. The form has to ask for a name, phone number, or address. `search.captcha_provider` is the CAPTCHA on the search page. It is separate from the removal CAPTCHA. Lookup search is people-search, background-checks, and public-records. A search control the label rules left untagged can take a canonical value from [`research/manual/v4-search-fields.json`](../research/manual/v4-search-fields.json), which records the page evidence for each one. A control the scan already tagged keeps its value. A search form the scan missed or stored wrong (robots.txt kept it off the page, the controls have no name attribute, or another form was stored) can be replaced from [`research/manual/v4-search-forms.json`](../research/manual/v4-search-forms.json), which keeps the form read from the rendered page, where a synthetic search landed, and the date. `url_pattern` holds a result URL the page builds in script, with `{control}` placeholders. An entry there marked `not_a_person_search` clears a stored form that is not a search for a person: a contact, demo, or opt-out form, a site search, or a form that only forwards the name to another company through an affiliate or tracking link. An entry marked `paywall` keeps the form and sets `search.paywall` when a synthetic search returned no records without an account or a purchase, and `\"paywall\": false` clears a paywall read from homepage text when a synthetic search showed results without one. An entry marked `offline` sets `liveness` to `dead` when the domain no longer resolves. An entry may also set `liveness` and `liveness_detail` from that live read. An entry with `country_override` replaces the derived country. `country` may be null when the page covers more than one country, and `also_covers` adds those codes to `coverage`.",
         "",
         "`search_test` is on every broker. `outcome` is `results` when the response is a results page, `no_results` when the site said nobody matched, `submitted` when the form was accepted and the page was still a form, a loader, or something else, `unfilled` when a required field had no synthetic value, and `challenge` when the response was a bot wall. `page_kind` is `results`, `empty`, `loader`, `form`, or `other`. `result_count` is the number the page stated, or 0 when it stated that nobody matched, and null when the page stated no number. `http_status` is the response status. `path_prefix` is the first segment of the response path. `fields_sent` and `missing` are field names only. Brokers that were not tested keep every value null. The query, the response body, record text, and listing URLs are not stored.",
         "",

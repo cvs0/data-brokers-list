@@ -3597,5 +3597,58 @@
     "kind": "register_or_purchase",
     "country": "US",
     "evidence": "The name search (/name/landing?firstName=…&lastName=…&state=…) opens a notice that the visitor must certify by selecting \"I Agree\" to the Privacy Policy and Terms of Use (and that PrivateRecords is not a consumer reporting agency under the FCRA) before anything is searched. No person is listed before that agreement, which Frame does not click (residential browser, John Smith and Quillon Vanderwekken, 2026-10-19). This is the same template as WeInform and PeopleSearcher."
+  },
+  "canada-pages": {
+    "checked": "2026-10-24",
+    "country": "CA",
+    "liveness": "alive",
+    "liveness_detail": "People search returned listings on 2026-10-24. The search URL is sometimes a Cloudflare challenge from a datacenter address and sometimes the listings page; a successful read showed the listings.",
+    "evidence": "People search on https://www.canadapages.com/ (GET form action https://www.canadapages.com/wp/search.php). txtwhat is one box, placeholder \"First or Last Name\"; txtwhere is the city. The search matches a surname in a city, not a full name. Live checks 2026-10-24: txtwhat=Smith&txtwhere=Toronto returned \"Total 1965 Listings for Smith in Toronto\". txtwhat=John+Smith&txtwhere=Toronto and txtwhat=Vanderwekken&txtwhere=Toronto both returned \"No record found.\" The removal form at /remove-info.php still asks for the phone number on the listing and says removal is attempted within 3 business days. That form was not submitted. An earlier pass had dropped this row because the homepage looked like a publisher site.",
+    "result_check": "GET /wp/search.php?txtwhat=Smith&txtwhere=Toronto: \"Total 1965 Listings for Smith in Toronto\". GET the same URL with txtwhat=John+Smith, and with txtwhat=Vanderwekken: \"No record found.\" (2026-10-24).",
+    "form": {
+      "method": "http_get",
+      "page_url": "https://www.canadapages.com/",
+      "form_action": "https://www.canadapages.com/wp/search.php",
+      "url_pattern": "https://www.canadapages.com/wp/search.php?txtwhat={txtwhat}&txtwhere={txtwhere}",
+      "form_id": null,
+      "form_name": null,
+      "submit_label": "Find",
+      "hidden_names": [],
+      "inputs": [
+        {
+          "name": "txtwhat",
+          "type": "text",
+          "canonical": "last_name",
+          "required": false,
+          "id": null,
+          "label": null,
+          "placeholder": "First or Last Name"
+        },
+        {
+          "name": "txtwhere",
+          "type": "text",
+          "canonical": "city",
+          "required": false,
+          "id": "autocomplete1",
+          "label": null,
+          "placeholder": null
+        }
+      ]
+    },
+    "captcha_widget": false
+  },
+  "confidentialphonelookup": {
+    "checked": "2026-10-24",
+    "not_a_person_search": true,
+    "country": null,
+    "country_override": true,
+    "also_covers": ["US"],
+    "evidence": "The homepage form posts tel to /meta_data_search.php. That URL returned HTTP 404 on 2026-10-24, both with the page's hidden field (the field name changes between reads; it was 10202624 on this check and 10202612 in the stored form) and without it. The page says a search returns the carrier and the city and state of the area code and prefix, not a named person. The stored country CA came from the words Quebec and British Columbia in an area-code list that also says \"Contains USA and Canada.\" It is not a Canada-only directory. Nothing was submitted except the placeholder (555) 555-5555."
+  },
+  "equifax-canada": {
+    "checked": "2026-10-24",
+    "not_a_person_search": true,
+    "kind": "site_search",
+    "evidence": "The stored form on https://www.equifax.ca/personal/ is the header site search (name efxNavSiteSearchQuery, placeholder \"Search Personal\", action /personal/search). GET /personal/search?efxNavSiteSearchQuery=Smith returned the Equifax.ca product pages titled \"Personal Search\" and did not list a person (2026-10-24). It is not a search of Equifax credit files."
   }
 }

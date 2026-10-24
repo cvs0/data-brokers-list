@@ -1,22 +1,22 @@
 {
  "schema_version": "3.0.0",
- "checked_at": "2026-10-13T01:15:55+00:00",
+ "checked_at": "2026-10-24T08:59:36+00:00",
  "method": "Public pages only: homepage, catalog URL, and mapped privacy, contact, and legal links. robots.txt honored. No form submitted, no login, no CAPTCHA solved. A browser opened lookup homepages the static fetch never read, and catalog URLs that were blocked or failed, when robots.txt allowed the URL. Image fields are URLs, not copied files. People-search listing URLs are not stored. Null means the fetched page did not establish that fact. Every catalog id has a record.",
- "broker_count": 709,
+ "broker_count": 710,
  "counts": {
   "liveness": {
-   "alive": 558,
+   "alive": 559,
    "blocked": 39,
    "error": 20,
    "opt_out_missing": 8,
    "robots_disallowed": 84
   },
-  "with_logo": 603,
-  "with_image": 603,
-  "with_search": 361,
+  "with_logo": 604,
+  "with_image": 604,
+  "with_search": 362,
   "with_email": 358,
-  "with_captcha": 326,
-  "with_form": 126
+  "with_captcha": 327,
+  "with_form": 127
  },
  "brokers": {
   "alaska-arrests": {
@@ -136876,6 +136876,210 @@
      "role": "legal",
      "title": "Terms & Conditions, White Pages Canada",
      "liveness": "alive"
+    }
+   ]
+  },
+  "canada-pages": {
+   "schema_version": "3.0.0",
+   "id": "canada-pages",
+   "name": "Canada Pages",
+   "category": "people-search",
+   "domain": "canadapages.com",
+   "checked_at": "2026-10-12T23:13:28+00:00",
+   "liveness": "alive",
+   "liveness_detail": "catalog URL loaded",
+   "homepage": "https://www.canadapages.com/",
+   "logo_url": "https://www.canadapages.com/images/cp-logo-white.webp",
+   "images": [
+    {
+     "url": "https://www.canadapages.com/canada-pages.ico",
+     "kind": "icon",
+     "source_page": "https://www.canadapages.com/"
+    },
+    {
+     "url": "https://www.canadapages.com/images/CanadaPages-com.jpg",
+     "kind": "og_image",
+     "source_page": "https://www.canadapages.com/"
+    },
+    {
+     "url": "https://www.canadapages.com/images/cp-logo-white.webp",
+     "kind": "logo",
+     "source_page": "https://www.canadapages.com/"
+    }
+   ],
+   "theme_color": null,
+   "languages": [
+    "en"
+   ],
+   "legal_name": null,
+   "search": {
+    "available": true,
+    "method": "http_get",
+    "page_url": "https://www.canadapages.com/",
+    "form_action": "https://www.canadapages.com/directory/search.php",
+    "inputs": [
+     {
+      "name": "txtwhat",
+      "type": "text",
+      "canonical": null,
+      "required": false,
+      "autocomplete": "off",
+      "placeholder": "What do you want to find?"
+     },
+     {
+      "name": "txtwhere",
+      "type": "text",
+      "canonical": null,
+      "required": false,
+      "autocomplete": "off",
+      "placeholder": "Where"
+     },
+     {
+      "name": "search",
+      "type": "hidden",
+      "canonical": "full_name",
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     }
+    ],
+    "url_pattern": "https://www.canadapages.com/directory/search.php?txtwhat={txtwhat}&txtwhere={txtwhere}",
+    "directory_prefixes": [],
+    "paywall": null,
+    "login_wall": null
+   },
+   "removal": {
+    "url": "https://www.canadapages.com/remove-info.php",
+    "final_url": "https://www.canadapages.com/remove-info.php",
+    "http_status": 200,
+    "kinds": [
+     "opt_out"
+    ],
+    "channels": [
+     "web_form",
+     "postal_mail"
+    ],
+    "emails": [],
+    "phones": [],
+    "postal_address": "P.o. Box 23, St Ambroise 204-243-2009 Cobs Bread (Robson Street) 1709 Robson Street, Vancou",
+    "portal": null,
+    "form_fields": [
+     {
+      "name": "txtwhat",
+      "type": "text",
+      "canonical": null,
+      "required": false,
+      "autocomplete": "off",
+      "placeholder": "What do you want to find?"
+     },
+     {
+      "name": "txtwhere",
+      "type": "text",
+      "canonical": null,
+      "required": false,
+      "autocomplete": "off",
+      "placeholder": "Where"
+     }
+    ],
+    "csrf_field_name": null,
+    "requires_profile_url": null,
+    "captcha": {
+     "provider": "recaptcha_v2",
+     "sitekey": "6LdsTDwUAAAAAJ-EC9YOGnZHYAWSOS5IHoW7GQu7",
+     "pages": [
+      "https://www.canadapages.com/remove-info.php",
+      "https://www.canadapages.com/privacy-policy.php",
+      "https://www.canadapages.com/contact.php"
+     ]
+    },
+    "consent_vendor": null,
+    "success_text": null,
+    "suppression_not_deletion": null,
+    "processing_days": 5,
+    "processing_text": "* We’ll endeavor take the information removed within 3 business days"
+   },
+   "bot_defense": {
+    "vendor": null,
+    "outcome": "none"
+   },
+   "legal": {
+    "privacy_policy_url": "https://www.canadapages.com/privacy-policy.php",
+    "terms_url": null,
+    "automation_prohibited": null,
+    "automation_clause": null,
+    "residency": [
+     "CA-QC",
+     "CA-BC"
+    ],
+    "authorized_agent": null,
+    "data_categories": [
+     "identifiers"
+    ]
+   },
+   "pages": [
+    {
+     "url": "https://canadapages.com/",
+     "final_url": "https://www.canadapages.com/",
+     "status": 200,
+     "role": "home",
+     "title": "Canada Pages, Everything About Canada",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.canadapages.com/",
+     "final_url": "https://www.canadapages.com/",
+     "status": 200,
+     "role": "home",
+     "title": "Canada Pages, Everything About Canada",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.canadapages.com/remove-info.php",
+     "final_url": "https://www.canadapages.com/remove-info.php",
+     "status": 200,
+     "role": "catalog",
+     "title": "Remove your Info, Canada Pages",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.canadapages.com/member/data-removal.php",
+     "final_url": "https://www.canadapages.com/member/data-removal.php",
+     "status": 200,
+     "role": "other",
+     "title": "Remove Your Data - Canada Pages",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.canadapages.com/privacy-policy.php",
+     "final_url": "https://www.canadapages.com/privacy-policy.php",
+     "status": 200,
+     "role": "privacy",
+     "title": "Your Privacy is Important to us, Read our Privacy Policy - Canada Pages",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.canadapages.com/contact.php",
+     "final_url": "https://www.canadapages.com/contact.php",
+     "status": 200,
+     "role": "other",
+     "title": "Contact us, Address, Email, and Phone Number, Canada Pages",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.canadapages.com/tos.php",
+     "final_url": null,
+     "status": null,
+     "role": "other",
+     "title": "",
+     "liveness": "error"
+    },
+    {
+     "url": "https://www.canadapages.com/member/remove-phone-listing.php",
+     "final_url": null,
+     "status": null,
+     "role": "other",
+     "title": "",
+     "liveness": "error"
     }
    ]
   },
