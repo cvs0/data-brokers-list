@@ -3650,5 +3650,123 @@
     "not_a_person_search": true,
     "kind": "site_search",
     "evidence": "The stored form on https://www.equifax.ca/personal/ is the header site search (name efxNavSiteSearchQuery, placeholder \"Search Personal\", action /personal/search). GET /personal/search?efxNavSiteSearchQuery=Smith returned the Equifax.ca product pages titled \"Personal Search\" and did not list a person (2026-10-24). It is not a search of Equifax credit files."
+  },
+  "data-axle-canada": {
+    "checked": "2026-10-24",
+    "not_a_person_search": true,
+    "kind": "contact",
+    "country": "CA",
+    "liveness": "alive",
+    "liveness_detail": "dataaxlecanada.ca answered HTTP 200 on 2026-10-24. infocanada.ca redirects there. There is no public name search.",
+    "evidence": "The homepage is a mailing-list sales site (Sign In / Try Us) and says the Canadian consumer database has 11 million consumers. The privacy policy at https://www.dataaxlecanada.ca/privacy-policy/ is the Data Axle policy and links https://www.data-axle.com/privacy-rights-request/ (HTTP 200) and the authorized-agent form. Neither form was submitted."
+  },
+  "prospects-influential": {
+    "checked": "2026-10-24",
+    "not_a_person_search": true,
+    "kind": "contact",
+    "country": "CA",
+    "country_override": true,
+    "also_covers": [
+      "US"
+    ],
+    "liveness": "alive",
+    "liveness_detail": "prospectsinfluential.com answered HTTP 200 on 2026-10-24. The site sells consumer mailing lists and has no public name search.",
+    "evidence": "Prospects Influential lists a West Vancouver, BC office and a Bellingham, WA office and sells consumer mailing lists. The privacy policy follows the CSA Model Code. Principle 9 says a consumer can ask whether a file exists, must provide enough detail to locate it, and that detail will not be used for anything else. Contact info@pilists.com or 800-352-2282. No request was submitted."
+  },
+  "openroom": {
+    "checked": "2026-10-24",
+    "not_a_person_search": true,
+    "kind": "register_or_purchase",
+    "country": "CA",
+    "liveness": "alive",
+    "liveness_detail": "openroom.ca answered HTTP 200 on 2026-10-24. The tenant-screening search requires an account.",
+    "evidence": "Openroom says it is a registered consumer reporting agency and publishes court and landlord-tenant board orders. https://openroom.ca/tenant-screening/ says to search by name, address, and birth date, and the page text includes \"Log in to search\". The search links go to /login. No account was created. Privacy requests for information that is not those public materials go to privacy@openroom.ca. The dispute form at https://form.openroom.ca/dispute-record was not submitted."
+  },
+  "landlord-credit-bureau": {
+    "checked": "2026-10-24",
+    "not_a_person_search": true,
+    "kind": "contact",
+    "country": "CA",
+    "liveness": "alive",
+    "liveness_detail": "landlordcreditbureau.ca answered HTTP 200 on 2026-10-24. There is no public name search. The Privacy Policy link goes to a 404 page.",
+    "evidence": "Landlord Credit Bureau says it operates in British Columbia, Alberta, Saskatchewan, Manitoba, and Ontario, and that it is registered in Ontario as a consumer reporting agency. Tenants view or dispute a tenant record from https://landlordcreditbureau.ca/view-your-tenant-record/. The visible signup on that page is a guide download, not a person search, and it was not submitted. Email support@landlordcreditbureau.com. The record-request and dispute PDFs were not submitted."
+  },
+  "frontlobby": {
+    "checked": "2026-10-24",
+    "not_a_person_search": true,
+    "kind": "register_or_purchase",
+    "country": "CA",
+    "liveness": "alive",
+    "liveness_detail": "frontlobby.com answered HTTP 200 on 2026-10-24. The LTB order search sends visitors to an account signup.",
+    "evidence": "https://frontlobby.com/ltb-orders/ says it is a free LTB order search. The buttons go to https://app.frontlobby.com/signup/landlord. No account was created. The Canada privacy policy says housing providers may report rental data to credit bureaus and that access requests go to support@frontlobby.com. The dispute PDF linked from that policy was not submitted."
+  },
+  "echovita": {
+    "checked": "2026-10-24",
+    "country": "CA",
+    "liveness": "alive",
+    "liveness_detail": "echovita.com/ca answered HTTP 200 on 2026-10-24. A surname search returned obituary counts.",
+    "evidence": "Echovita's Canada FAQ says notices use names, cities, and dates and add a list of predeceased and survived relatives. The header form on /ca/obituaries does not filter results. The results form posts SearchModel.Query with a rotating verification token and then redirects. The stable public URL is a GET that must include range=seven-days; without range the name is ignored. Removal is by chat or https://www.echovita.com/ca/contact-us with the reason User information removal. The FAQ lists support@echovita.com. Nothing was submitted.",
+    "result_check": "GET /ca/obituaries?q=Smith&range=seven-days: \"172 Obituaries\". GET the same URL with q=Vanderwekken: \"0 Obituaries\". (2026-10-24). No CAPTCHA on those pages.",
+    "form": {
+      "method": "http_get",
+      "page_url": "https://www.echovita.com/ca/obituaries",
+      "form_action": "https://www.echovita.com/ca/obituaries",
+      "url_pattern": "https://www.echovita.com/ca/obituaries?q={q}&range=seven-days",
+      "form_id": null,
+      "form_name": null,
+      "submit_label": null,
+      "hidden_names": [],
+      "inputs": [
+        {
+          "name": "q",
+          "type": "text",
+          "canonical": "full_name",
+          "required": false,
+          "id": null,
+          "label": null,
+          "placeholder": null
+        }
+      ]
+    },
+    "captcha_widget": false
+  },
+  "inmemoriam": {
+    "checked": "2026-10-24",
+    "country": "CA",
+    "liveness": "alive",
+    "liveness_detail": "inmemoriam.ca answered HTTP 200 on 2026-10-24. A surname search returned notice counts.",
+    "evidence": "InMemoriam publishes Canadian death notices for IciMédias. The homepage form is a GET to /search-results/ with first_name and last_name. An empty first name still searches. The results page loads https://www.google.com/recaptcha/api.js, and the surname GET still returned a count without a challenge. Access is a written request to chiefprivacyofficer@IciMedias.ca. No request was submitted.",
+    "result_check": "GET /search-results/?first_name=&last_name=Smith: \"2582 Results Found\". GET the same URL with last_name=Vanderwekken: \"0 Results Found\". (2026-10-24).",
+    "form": {
+      "method": "http_get",
+      "page_url": "https://www.inmemoriam.ca/",
+      "form_action": "https://www.inmemoriam.ca/search-results/",
+      "url_pattern": "https://www.inmemoriam.ca/search-results/?first_name={first_name}&last_name={last_name}",
+      "form_id": null,
+      "form_name": null,
+      "submit_label": null,
+      "hidden_names": [],
+      "inputs": [
+        {
+          "name": "first_name",
+          "type": "text",
+          "canonical": "first_name",
+          "required": false,
+          "id": null,
+          "label": null,
+          "placeholder": null
+        },
+        {
+          "name": "last_name",
+          "type": "text",
+          "canonical": "last_name",
+          "required": false,
+          "id": null,
+          "label": null,
+          "placeholder": null
+        }
+      ]
+    },
+    "captcha_widget": false
   }
 }
