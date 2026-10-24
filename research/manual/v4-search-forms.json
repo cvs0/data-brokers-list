@@ -3768,5 +3768,68 @@
       ]
     },
     "captcha_widget": false
+  },
+  "necrologie-ca": {
+    "checked": "2026-10-24",
+    "country": "CA",
+    "liveness": "alive",
+    "liveness_detail": "necrologie.ca answered HTTP 200 on 2026-10-24. The search API returned obituary counts.",
+    "evidence": "Nécrologie.ca publishes death notices for Quebec and Canada. The page form is a GET to /fr/recherche/ with field q. On 2026-10-24 that HTML page returned an error state. The same site's public search API, GET /api/search?q=, returned totals: Smith 210, Tremblay 335, and a surname with no match 0. Each hit has a name, dates, municipality, province, and notice text. The privacy policy says a person can ask for a notice to be withdrawn, at info@necrologie.ca. No request was submitted.",
+    "result_check": "GET /api/search?q=Smith: total 210. GET q=Tremblay: total 335. GET q=Vanderwekken: total 0. (2026-10-24).",
+    "form": {
+      "method": "http_get",
+      "page_url": "https://necrologie.ca/fr/",
+      "form_action": "https://necrologie.ca/fr/recherche/",
+      "url_pattern": "https://necrologie.ca/api/search?q={q}",
+      "form_id": "hero-search-form",
+      "form_name": null,
+      "submit_label": null,
+      "hidden_names": [],
+      "inputs": [
+        {
+          "name": "q",
+          "type": "text",
+          "canonical": "full_name",
+          "required": false,
+          "id": null,
+          "label": null,
+          "placeholder": "Nom, ville, maison funéraire…"
+        }
+      ]
+    },
+    "captcha_widget": false
+  },
+  "geni": {
+    "checked": "2026-10-24",
+    "country": null,
+    "country_override": true,
+    "liveness": "alive",
+    "liveness_detail": "geni.com answered HTTP 200 on 2026-10-24. A public people search returned a result count.",
+    "evidence": "Geni is a genealogy site in the MyHeritage family. The search form is a GET to /search with search_type=people and names. Checked 2026-10-24: names=Smith returned \"1-20 of 760275 people\". names=Vanderwekken returned \"No results.\" No CAPTCHA on those pages. The first Smith results page did not contain the word Canada, so this check did not show a Canada-only filter. The privacy policy says a person can turn off public search in account settings or email privacy@geni.com. Nothing was submitted.",
+    "result_check": "GET /search?search_type=people&names=Smith: \"1-20 of 760275 people\". GET the same URL with names=Vanderwekken: \"No results.\" (2026-10-24).",
+    "form": {
+      "method": "http_get",
+      "page_url": "https://www.geni.com/search",
+      "form_action": "https://www.geni.com/search",
+      "url_pattern": "https://www.geni.com/search?search_type=people&names={names}",
+      "form_id": "basic_search_form",
+      "form_name": null,
+      "submit_label": null,
+      "hidden_names": [
+        "search_type"
+      ],
+      "inputs": [
+        {
+          "name": "names",
+          "type": "text",
+          "canonical": "full_name",
+          "required": false,
+          "id": null,
+          "label": null,
+          "placeholder": null
+        }
+      ]
+    },
+    "captcha_widget": false
   }
 }
