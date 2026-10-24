@@ -2,7 +2,7 @@
 
 Background-check brands and arrest-record portals. A removal here does not erase the government record underneath it.
 
-67 entries. Link responses were checked on 2026-10-01 unless a note says otherwise.
+68 entries. Link responses were checked on 2026-10-01 unless a note says otherwise.
 
 | Broker | Opt-out / privacy URL | Notes |
 | --- | --- | --- |
@@ -52,6 +52,7 @@ Background-check brands and arrest-record portals. A removal here does not erase
 | North Carolina Arrests | https://infotracer.com/do-not-sell-share-my-personal-information/ | Name search on this site has no CAPTCHA. Removal is the InfoTracer opt-out. Email: privacy@infotracer.com. Checked 2026-10-13. No search was submitted. |
 | North Dakota Arrests | https://infotracer.com/do-not-sell-share-my-personal-information/ | Name search on this site has no CAPTCHA. Removal is the InfoTracer opt-out. Email: privacy@infotracer.com. Checked 2026-10-13. No search was submitted. |
 | Ohio Arrests | https://www.ohioarrests.org/request-portal | Arrests.org request portal for this state site. The portal URL was responding on 2026-10-01. |
+| Openroom | https://openroom.ca/privacy/ | Canadian rental-records site. Openroom says it is a registered consumer reporting agency and publishes court and landlord-tenant board orders, including tenant names and rental addresses. The tenant-screening page offers a search by name, address, and birth date, and a logged-out visit is sent to /login. No account was created. The privacy policy says access, correction, and consent withdrawal apply where the information is not those public materials. Email privacy@openroom.ca (Weiting Bollu, CEO). Dispute form https://form.openroom.ca/dispute-record was not submitted. Checked 2026-10-24. |
 | Oregon Arrests | https://www.oregonarrest.org/request-portal | Arrests.org request portal for this state site. The portal URL was responding on 2026-10-01. |
 | Pennsylvania Arrests | https://www.pennsylvaniaarrests.org/request-portal | Arrests.org request portal for this state site. The portal URL was responding on 2026-10-01. |
 | PeopleWhizr | https://www.peoplewhizr.com/optout | Opt-out or consumer privacy-request page. |

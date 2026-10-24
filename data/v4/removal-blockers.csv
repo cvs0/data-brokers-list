@@ -28,6 +28,7 @@ new-hampshire-arrests,New Hampshire Arrests,nharrests.org,background-checks,aliv
 new-mexico-arrests,New Mexico Arrests,nmarrests.org,background-checks,alive,phone_postal,Phone and a mailing address are the only channels,,,,true,,,,postal_mail;phone
 new-york-arrests,New York Arrests,nyarrests.org,background-checks,alive,captcha_no_form,A CAPTCHA widget is on the removal page and no form fields or usable email were stored,turnstile,0x4AAAAAADypakHEOSYCaA2m,checkbox,true,turnstile,,,
 ohio-arrests,Ohio Arrests,ohioarrests.org,background-checks,alive,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,false,,,,
+openroom,Openroom,openroom.ca,background-checks,alive,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,,,,,
 oregon-arrests,Oregon Arrests,oregonarrest.org,background-checks,alive,postal,The only published channel is a mailing address,,,,true,,,,postal_mail
 pennsylvania-arrests,Pennsylvania Arrests,pennsylvaniaarrests.org,background-checks,alive,captcha_no_form,A CAPTCHA widget is on the removal page and no form fields or usable email were stored,turnstile,0x4AAAAAADyp56n_92FSO5ZN,checkbox,true,turnstile,,,
 peoplewhizr,PeopleWhizr,peoplewhizr.com,background-checks,alive,generic_inbox,"Only a generic inbox was found, and the page does not say to use it for removal",,,,false,,,info@peoplewhizr.com,email;phone
@@ -46,7 +47,9 @@ chexsystems,ChexSystems,chexsystems.com,credit-financial,robots_disallowed,robot
 clarity-services,Clarity Services,clarityservices.com,credit-financial,alive,phone_postal,Phone and a mailing address are the only channels,,,,false,,,,postal_mail;phone
 datax,DataX,dataxltd.com,credit-financial,alive,generic_inbox,"Only a generic inbox was found, and the page does not say to use it for removal",recaptcha_v2,6LertLEUAAAAAIy0dMsC97-mycmJWoShvKAOZ7mH,,false,,,sales@dataxltd.com,email
 equifax,Equifax,equifax.com,credit-financial,alive,phone_postal,Phone and a mailing address are the only channels,,,,false,,,,postal_mail;phone
+frontlobby,FrontLobby,frontlobby.com,credit-financial,alive,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,,,,,
 innovis,Innovis,innovis.com,credit-financial,alive,phone_postal,Phone and a mailing address are the only channels,,,,false,,,,postal_mail;phone
+landlord-credit-bureau,Landlord Credit Bureau,landlordcreditbureau.ca,credit-financial,alive,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,,,,,
 microbilt,MicroBilt,microbilt.com,credit-financial,alive,generic_inbox,"Only a generic inbox was found, and the page does not say to use it for removal",,,,false,,,contact@microbilt.com;sales@microbilt.com;support@microbilt.com;customeraccounts@microbilt.com,email;phone
 nctue,NCTUE,nctue.com,credit-financial,alive,phone_postal,Phone and a mailing address are the only channels,,,,false,,,,postal_mail;phone
 optoutprescreen-experian-equifax-transunion-innovis,OptOutPrescreen (Experian/Equifax/TransUnion/Innovis),optoutprescreen.com,credit-financial,alive,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,false,,,,
@@ -66,6 +69,7 @@ atdata-formerly-towerdata,AtData (formerly TowerData),atdata.com,marketing,alive
 buzzfile,Buzzfile,buzzfile.com,marketing,alive,captcha_form,Removal form is behind a CAPTCHA widget and no usable removal email was found,recaptcha_v2,,,true,recaptcha_v2,true,,web_form;phone
 catalina-marketing-corporation,Catalina Marketing Corporation,catalina.com,marketing,alive,phone,The only published channel is a phone number,,,,true,,,,phone
 cause-iq,Cause IQ,causeiq.com,marketing,alive,phone_postal,Phone and a mailing address are the only channels,,,,true,,,,postal_mail;phone
+data-axle-canada,Data Axle Canada,dataaxlecanada.ca,marketing,alive,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,,,,,
 datagma,Datagma,datagma.com,marketing,alive,captcha_no_form,A CAPTCHA widget is on the removal page and no form fields or usable email were stored,recaptcha_v2,6LeqZZcpAAAAAJmvzEDKV--ki8f4Tx5UqtvDY5tM,invisible,true,,,,
 digital-advertising-alliance-opt-out,Digital Advertising Alliance opt-out,optout.aboutads.info,marketing,alive,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,false,,,,
 distribution-processing-center,Distribution Processing Center,dpcoptout.com,marketing,alive,phone,The only published channel is a phone number,hcaptcha,,checkbox,true,,,,phone
@@ -89,6 +93,7 @@ neustar-inc,"NeuStar, Inc.",privacychoices.home.neustar,marketing,error,fetch_er
 nexxa,NEXXA,nexxagroup.com,marketing,alive,generic_inbox,"Only a generic inbox was found, and the page does not say to use it for removal",,,,true,,,info@nexxagroup.com,email;phone;official_portal
 oracle-data-cloud-bluekai,Oracle (Data Cloud / BlueKai),oracle.com,marketing,alive,generic_inbox,"Only a generic inbox was found, and the page does not say to use it for removal",,,,false,,,br-recruiting_br@oracle.com,email;phone
 paramount-lists-inc,"Paramount Lists, Inc.",paramountdirectmarketing.com,marketing,alive,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,false,,,,
+prospects-influential,Prospects Influential,prospectsinfluential.com,marketing,alive,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,,,,,
 reallygreatrate-inc,"ReallyGreatRate, Inc",rgrmarketing.com,marketing,alive,generic_inbox,"Only a generic inbox was found, and the page does not say to use it for removal",recaptcha_v3,6Lc4FssiAAAAADmv6iNc8PihKOCBsykkSx7Qc2r_,score,true,,,info@rgrmarketing.com;jeff@rgrmarketing.com;affiliate@rgrmarketing.com;sales@rgrmarketing.com,email;phone;official_portal
 revonect,Revonect,revonect.com,marketing,alive,phone,The only published channel is a phone number,,,,false,,,,phone
 seamless-contacts-inc,"Seamless Contacts, Inc.",login.seamless.ai,marketing,robots_disallowed,robots,robots.txt disallows the client. A later read still found no removal channel,,,,false,,,,
@@ -232,6 +237,7 @@ confidentialphonelookup,ConfidentialPhoneLookup,confidentialphonelookup.com,peop
 courtrec-com,CourtRec.com,courtrec.com,people-search,robots_disallowed,generic_inbox,"Only a generic inbox was found, and the page does not say to use it for removal",,,,false,,,support@courtrec.com,email;phone
 cyberbackgroundchecks,CyberBackgroundChecks,cyberbackgroundchecks.com,people-search,robots_disallowed,generic_inbox,"Only a generic inbox was found, and the page does not say to use it for removal",,,,false,,,support@cyberbackgroundchecks.com,email
 dewarrants-org-infotracer-form,dewarrants.org (InfoTracer form),dewarrants.org,people-search,blocked,phone,The only published channel is a phone number,,,,false,,,,phone
+echovita,Echovita,echovita.com,people-search,alive,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,,,,,
 electronic-voice-services-inc-telephonelists-biz,"Electronic Voice Services, Inc. (telephonelists.biz)",telephonelists.biz,people-search,alive,phone,The only published channel is a phone number,,,,false,,,,phone
 facecheck,FaceCheck,facecheck.id,people-search,alive,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,false,,,,
 familytreenow,FamilyTreeNow,familytreenow.com,people-search,blocked,phone,The only published channel is a phone number,,,,false,,,,phone
@@ -249,6 +255,7 @@ infomatics-llc-network-peoplesearch123-com,Infomatics LLC network (peoplesearch1
 infomatics-llc-network-peoplesearcher-com,Infomatics LLC network (peoplesearcher.com),peoplesearcher.com,people-search,error,fetch_error,The opt-out URL failed before a page was read,,,,false,,,,
 infomatics-llc-network-peoplesearchusa-org,Infomatics LLC network (peoplesearchusa.org),peoplesearchusa.org,people-search,error,fetch_error,The opt-out URL failed before a page was read,,,,false,,,,
 infotracer-network,InfoTracer network,clicksearch.us,people-search,robots_disallowed,robots,robots.txt disallows the client. A later read still found no removal channel,,,,false,,,,
+inmemoriam,InMemoriam,inmemoriam.ca,people-search,alive,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,,,,,
 instantcheckmate-peopleconnect,InstantCheckmate (PeopleConnect),instantcheckmate.com,people-search,alive,phone,The only published channel is a phone number,,,,false,,,,phone
 instantcheckspy-truthfinder,InstantCheckSpy (TruthFinder),instantcheckspy.com,people-search,alive,phone,The only published channel is a phone number,recaptcha_enterprise,6LdFxVQtAAAAAK6XNodX8W6CM56PH1xTrPGVZSqh,invisible,true,,,,phone
 intelius-peopleconnect,Intelius (PeopleConnect),intelius.com,people-search,alive,phone,The only published channel is a phone number,,,,false,,,,phone

@@ -2,7 +2,7 @@
 
 Marketing and audience brokers. The link is an opt-out or the privacy page the company publishes for consumer requests.
 
-120 entries. Link responses were checked on 2026-10-01 unless a note says otherwise.
+122 entries. Link responses were checked on 2026-10-01 unless a note says otherwise.
 
 | Broker | Opt-out / privacy URL | Notes |
 | --- | --- | --- |
@@ -47,6 +47,7 @@ Marketing and audience brokers. The link is an opt-out or the privacy page the c
 | Cognism, Inc. | https://cognism.privacy.saymine.io/cognism | Opt-out or consumer privacy-request page. |
 | Compact Information Systems, LLC | https://deepsync.com/privacy-policy/ | Privacy notice or privacy-policy page. Use the state-rights, do-not-sell, or request section. |
 | Compile (McKesson) | https://privacyportal.onetrust.com/webform/599133ba-bafa-4e24-8173-6e59b6c96dab/1554ac76-9012-4a4d-8cd4-53776f517530 | Opt-out or consumer privacy-request page. |
+| Data Axle Canada | https://www.dataaxlecanada.ca/privacy-policy/ | Canadian consumer and business mailing-list compiler, formerly InfoCanada (infocanada.ca redirects here). The site says the Canadian consumer database has 11 million consumers. There is no public name search. The privacy policy lists Infogroup Canada Corp. among Data Axle affiliates and links the consumer privacy-rights request at https://www.data-axle.com/privacy-rights-request/ and the authorized-agent form. Those forms were not submitted. Checked 2026-10-24. |
 | Data Axle (InfoUSA) | https://www.data-axle.com/do-not-sell-my-data/ | Web privacy rights form. Email: privacyteam@data-axle.com. Open-dataset difficulty: easy. Automated check on 2026-10-01 got HTTP 403. Open the link in a browser. |
 | Datagma | https://form.typeform.com/to/MCuF90xu | Privacy notice or privacy-policy page. Use the state-rights, do-not-sell, or request section. |
 | DataLead | https://data-lead.com/support/removal_request | Opt-out or consumer privacy-request page. |
@@ -102,6 +103,7 @@ Marketing and audience brokers. The link is an opt-out or the privacy page the c
 | Oracle (Data Cloud / BlueKai) | https://www.oracle.com/legal/privacy/privacy-choices/ | Oracle privacy choices. The old Data Cloud / BlueKai cookie opt-out (datacloudoptout.oracle.com) now redirects to an advertising end-of-life contracts page. Oracle Advertising shut down on September 30, 2024. |
 | Paramount Lists, Inc. | https://www.paramountdirectmarketing.com/privacy-policy.php | Privacy notice or privacy-policy page. Use the state-rights, do-not-sell, or request section. |
 | People Data Labs, Inc. | https://privacy.peopledatalabs.com/policies?name=privacy-center#people-data-labs-privacy-center | Opt-out or consumer privacy-request page. |
+| Prospects Influential | https://www.prospectsinfluential.com/privacy-policy/ | Canadian and U.S. direct-mail list broker in West Vancouver, BC. Sells consumer mailing lists. There is no public name search. The privacy code follows the CSA Model Code. A consumer can ask whether a file exists; the policy says the person must provide enough detail to locate the file and that detail will not be used for anything else. Contact info@pilists.com or 800-352-2282. No request was submitted. Checked 2026-10-24. |
 | ReallyGreatRate, Inc | https://www.rgrmarketing.com/ | Published privacy-request URL is the site root. Confirm a request form is on the page before sending information. Privacy-rights page submitted to the California Data Broker Registry. |
 | Revonect | https://revonect.com/privacy_policy | Privacy notice or privacy-policy page. Use the state-rights, do-not-sell, or request section. |
 | RocketReach LLC | https://rocketreach.co/privacy | Opt-out or consumer privacy-request page. |

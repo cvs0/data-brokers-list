@@ -2,7 +2,7 @@
 
 Credit bureaus, the prescreen opt-out, and related financial-data companies. A marketing opt-out is separate from a credit freeze.
 
-16 entries. Link responses were checked on 2026-10-01 unless a note says otherwise.
+18 entries. Link responses were checked on 2026-10-01 unless a note says otherwise.
 
 | Broker | Opt-out / privacy URL | Notes |
 | --- | --- | --- |
@@ -14,7 +14,9 @@ Credit bureaus, the prescreen opt-out, and related financial-data companies. A m
 | Experian | https://www.experian.com/privacy/opting_out | Marketing opt-out page for direct mail, phone, email, targeted ads, and prescreened offers. Separate from a credit freeze and from OptOutPrescreen. |
 | Experian Health, Inc. | https://consumerprivacy.experian.com/ | Experian Health consumer privacy portal. The request flow starts on this host. |
 | Experian UK | https://www.experian.co.uk/privacy/consumer-information-portal/ | Experian UK consumer information portal for privacy requests. Separate from the U.S. Experian marketing opt-out. |
+| FrontLobby | https://frontlobby.com/privacy-policy-canada/ | Canadian rent-reporting platform. The Canada privacy policy says housing providers may use FrontLobby to report rental data to credit bureaus, and that a person can ask for access by emailing support@frontlobby.com. A dispute can go to the credit bureaus or to FrontLobby's dispute process. The dispute PDF linked from the policy was not submitted. The free LTB order search buttons go to an account signup at app.frontlobby.com. No account was created. Checked 2026-10-24. |
 | Innovis | https://www.innovis.com/personal/optOutOptIn | Firm offers of credit or insurance. Innovis directs consumers to OptOutPrescreen or 1-888-567-8688. Mail: Innovis Consumer Assistance, PO Box 530088, Atlanta, GA 30353-0088. Consumer phone: 1-800-540-2505. |
+| Landlord Credit Bureau | https://landlordcreditbureau.ca/view-your-tenant-record/ | Canadian rental-history bureau, registered in Ontario as a consumer reporting agency (2642985 Ontario Inc.). It says it operates in British Columbia, Alberta, Saskatchewan, Manitoba, and Ontario, and that rent can be reported to Equifax and to Landlord Credit Bureau. A tenant can view and dispute a tenant record. There is no public name search. The site's Privacy Policy link goes to a 404 page. Email support@landlordcreditbureau.com. Record-request and dispute PDFs were not submitted. Checked 2026-10-24. |
 | MicroBilt | https://www.microbilt.com/Cms_Data/Contents/Microbilt/Media/Docs/ConsumerAffair/0222_Update/MicroBilt-Consumer-Opt-Out-Form-03-01-21-.pdf | Consumer opt-out form for MicroBilt. Mail: MicroBilt, Attn: Consumer Affairs, P.O. Box 440693, Kennesaw, GA 30160. Phone: 888-222-7621. |
 | NCTUE | https://www.nctueconsumerportal.com/ | Consumer portal for the National Consumer Telecom and Utilities Exchange, which reports phone, utility, and pay-TV account history. File disclosure and related requests start at the portal. |
 | OptOutPrescreen (Experian/Equifax/TransUnion/Innovis) | https://www.optoutprescreen.com/ | Official opt-out for prescreened firm offers of credit or insurance. Shared with Equifax, Experian, TransUnion, and Innovis. Phone: 1-888-567-8688. Automated check on 2026-10-01 got HTTP 403. Open the link in a browser. |

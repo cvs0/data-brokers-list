@@ -2,7 +2,7 @@
 
 People-search sites that publish names, phone numbers, relatives, or address history. Many ask for a profile URL and an email confirmation.
 
-139 entries. Link responses were checked on 2026-10-01 unless a note says otherwise.
+141 entries. Link responses were checked on 2026-10-01 unless a note says otherwise.
 
 | Broker | Opt-out / privacy URL | Notes |
 | --- | --- | --- |
@@ -35,6 +35,7 @@ People-search sites that publish names, phone numbers, relatives, or address his
 | CyberBackgroundChecks | https://www.cyberbackgroundchecks.com/removal | Removal form. Automated check on 2026-10-01 got HTTP 403. Open the link in a browser. |
 | dewarrants.org (InfoTracer form) | https://infotracer.com/optout/ | This domain sends removal requests to the InfoTracer opt-out form. |
 | EasyBackgroundChecks (Intelius) | https://www.intelius.com/suppression-center/ | Opt-out or consumer privacy-request page. Email: priorityoptout@intelius.com. Automated check on 2026-10-01 got HTTP 403. Open the link in a browser. |
+| Echovita | https://www.echovita.com/ca/privacy-policy | Canadian obituary site (Echovita Inc.). Notices list names, cities, and dates and add predeceased and survived relatives. Free search is a GET that must include range=seven-days or the name is ignored. Checked 2026-10-24: q=Smith with that range returned 172 obituaries; q=Vanderwekken returned 0. No CAPTCHA on those result pages. Removal: contact support by chat or at https://www.echovita.com/ca/contact-us and choose User information removal. The FAQ lists support@echovita.com. No removal request was submitted. |
 | Electronic Voice Services, Inc. (telephonelists.biz) | https://www.telephonelists.biz/privacy-notice-for-residents-of-california | Privacy notice or privacy-policy page. Use the state-rights, do-not-sell, or request section. Privacy-rights page submitted to the California Data Broker Registry. |
 | FaceCheck | https://facecheck.id/Face-Search/Privacy | Privacy notice or privacy-policy page. Use the state-rights, do-not-sell, or request section. |
 | FamilyTreeNow | https://www.familytreenow.com/optout | Opt-out form. Automated check on 2026-10-01 got HTTP 403. Open the link in a browser. |
@@ -55,6 +56,7 @@ People-search sites that publish names, phone numbers, relatives, or address his
 | Infomatics LLC network (peoplesearchusa.org) | https://www.peoplesearchusa.org/optOut/name/landing | Online form + email verification. Open-dataset difficulty: easy. |
 | InfoTracer | https://infotracer.com/optout/ | Opt-out form. InfoTracer also offers a mail-in form and lists fax 1-617-933-9946. Several smaller lookup domains send people to this same form. Related domains using this form: affordablebackgroundchecks.com, verifythem.org. |
 | InfoTracer network | https://clicksearch.us/optout | Opt-out or consumer privacy-request page. Automated check on 2026-10-01 got HTTP 403. Open the link in a browser. |
+| InMemoriam | https://www.inmemoriam.ca/privacy.php?lang=en | Canadian death notices published by IciMédias Inc. Notices name the deceased and relatives. Free surname search: GET /search-results/ with last_name. Checked 2026-10-24: last_name=Smith returned 2582 results; last_name=Vanderwekken returned 0. The results page loads a reCAPTCHA script; the surname search still returned a count without a challenge. Access is a written request to the Chief Privacy Officer, chiefprivacyofficer@IciMedias.ca. No request was submitted. |
 | InstantCheckmate (PeopleConnect) | https://suppression.peopleconnect.us/ | Uses the PeopleConnect suppression portal shared with Intelius. |
 | InstantCheckSpy (TruthFinder) | https://www.truthfinder.com/privacy-center | Opt-out or consumer privacy-request page. Email: privacy@truthfinder.com. Automated check on 2026-10-01 got HTTP 403. Open the link in a browser. |
 | Intelius (PeopleConnect) | https://suppression.peopleconnect.us/ | PeopleConnect suppression portal. Also used for Instant Checkmate, US Search, ZabaSearch, AnyWho, and Addresses.com. TruthFinder publishes its own form as well. |
