@@ -1,14 +1,14 @@
 {
  "schema_version": "3.0.0",
- "checked_at": "2026-10-24T17:52:06+00:00",
+ "checked_at": "2026-10-25T03:49:22+00:00",
  "method": "Public pages only: homepage, catalog URL, and mapped privacy, contact, and legal links. robots.txt honored. No form submitted, no login, no CAPTCHA solved. A browser opened lookup homepages the static fetch never read, and catalog URLs that were blocked or failed, when robots.txt allowed the URL. Image fields are URLs, not copied files. People-search listing URLs are not stored. Null means the fetched page did not establish that fact. Every catalog id has a record.",
- "broker_count": 719,
+ "broker_count": 740,
  "counts": {
   "liveness": {
    "alive": 557,
    "blocked": 39,
    "error": 24,
-   "not_checked": 11,
+   "not_checked": 32,
    "opt_out_missing": 5,
    "robots_disallowed": 83
   },
@@ -59314,7 +59314,7 @@
    "name": "Samba TV, Inc.",
    "category": "other",
    "domain": "samba.com",
-   "checked_at": "2026-10-24T17:51:37+00:00",
+   "checked_at": "2026-10-25T03:48:52+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -117432,7 +117432,7 @@
    "name": "Live Data Technologies, Inc.",
    "category": "other",
    "domain": "livedatatech.com",
-   "checked_at": "2026-10-24T17:51:55+00:00",
+   "checked_at": "2026-10-25T03:49:10+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -154295,7 +154295,7 @@
    "name": "Data Axle Canada",
    "category": "marketing",
    "domain": "dataaxlecanada.ca",
-   "checked_at": "2026-10-24T17:52:06+00:00",
+   "checked_at": "2026-10-25T03:49:22+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -154362,7 +154362,7 @@
    "name": "Prospects Influential",
    "category": "marketing",
    "domain": "prospectsinfluential.com",
-   "checked_at": "2026-10-24T17:52:06+00:00",
+   "checked_at": "2026-10-25T03:49:22+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -154429,7 +154429,7 @@
    "name": "Openroom",
    "category": "background-checks",
    "domain": "openroom.ca",
-   "checked_at": "2026-10-24T17:52:06+00:00",
+   "checked_at": "2026-10-25T03:49:22+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -154496,7 +154496,7 @@
    "name": "Landlord Credit Bureau",
    "category": "credit-financial",
    "domain": "landlordcreditbureau.ca",
-   "checked_at": "2026-10-24T17:52:06+00:00",
+   "checked_at": "2026-10-25T03:49:22+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -154563,7 +154563,7 @@
    "name": "FrontLobby",
    "category": "credit-financial",
    "domain": "frontlobby.com",
-   "checked_at": "2026-10-24T17:52:06+00:00",
+   "checked_at": "2026-10-25T03:49:22+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -154630,7 +154630,7 @@
    "name": "Echovita",
    "category": "people-search",
    "domain": "echovita.com",
-   "checked_at": "2026-10-24T17:52:06+00:00",
+   "checked_at": "2026-10-25T03:49:22+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -154697,7 +154697,7 @@
    "name": "InMemoriam",
    "category": "people-search",
    "domain": "inmemoriam.ca",
-   "checked_at": "2026-10-24T17:52:06+00:00",
+   "checked_at": "2026-10-25T03:49:22+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -154764,7 +154764,7 @@
    "name": "Nécrologie.ca",
    "category": "people-search",
    "domain": "necrologie.ca",
-   "checked_at": "2026-10-24T17:52:06+00:00",
+   "checked_at": "2026-10-25T03:49:22+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -154831,7 +154831,7 @@
    "name": "Geni",
    "category": "people-search",
    "domain": "geni.com",
-   "checked_at": "2026-10-24T17:52:06+00:00",
+   "checked_at": "2026-10-25T03:49:22+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -154853,6 +154853,1413 @@
    },
    "removal": {
     "url": "https://www.geni.com/privacy",
+    "final_url": null,
+    "http_status": null,
+    "kinds": [
+     "opt_out"
+    ],
+    "channels": [],
+    "emails": [],
+    "phones": [],
+    "postal_address": null,
+    "portal": null,
+    "form_fields": [],
+    "csrf_field_name": null,
+    "requires_profile_url": null,
+    "captcha": {
+     "provider": null,
+     "sitekey": null,
+     "pages": []
+    },
+    "consent_vendor": null,
+    "success_text": null,
+    "suppression_not_deletion": null,
+    "processing_days": null,
+    "processing_text": null
+   },
+   "bot_defense": {
+    "vendor": null,
+    "outcome": "unknown"
+   },
+   "legal": {
+    "privacy_policy_url": null,
+    "terms_url": null,
+    "automation_prohibited": null,
+    "automation_clause": null,
+    "residency": [],
+    "authorized_agent": null,
+    "data_categories": []
+   },
+   "pages": []
+  },
+  "fqsg-avis-de-deces": {
+   "schema_version": "3.0.0",
+   "id": "fqsg-avis-de-deces",
+   "name": "FQSG Avis de décès",
+   "category": "people-search",
+   "domain": "federationgenealogie.qc.ca",
+   "checked_at": "2026-10-25T03:49:22+00:00",
+   "liveness": "not_checked",
+   "liveness_detail": "no crawl result in this log",
+   "homepage": null,
+   "logo_url": null,
+   "images": [],
+   "theme_color": null,
+   "languages": [],
+   "legal_name": null,
+   "search": {
+    "available": null,
+    "method": "unknown",
+    "page_url": null,
+    "form_action": null,
+    "inputs": [],
+    "url_pattern": null,
+    "directory_prefixes": [],
+    "paywall": null,
+    "login_wall": null
+   },
+   "removal": {
+    "url": "https://federationgenealogie.qc.ca/politique-confidentialite",
+    "final_url": null,
+    "http_status": null,
+    "kinds": [
+     "opt_out"
+    ],
+    "channels": [],
+    "emails": [],
+    "phones": [],
+    "postal_address": null,
+    "portal": null,
+    "form_fields": [],
+    "csrf_field_name": null,
+    "requires_profile_url": null,
+    "captcha": {
+     "provider": null,
+     "sitekey": null,
+     "pages": []
+    },
+    "consent_vendor": null,
+    "success_text": null,
+    "suppression_not_deletion": null,
+    "processing_days": null,
+    "processing_text": null
+   },
+   "bot_defense": {
+    "vendor": null,
+    "outcome": "unknown"
+   },
+   "legal": {
+    "privacy_policy_url": null,
+    "terms_url": null,
+    "automation_prohibited": null,
+    "automation_clause": null,
+    "residency": [],
+    "authorized_agent": null,
+    "data_categories": []
+   },
+   "pages": []
+  },
+  "domaine-funeraire": {
+   "schema_version": "3.0.0",
+   "id": "domaine-funeraire",
+   "name": "Domaine funéraire (Corporation des thanatologues du Québec)",
+   "category": "people-search",
+   "domain": "domainefuneraire.com",
+   "checked_at": "2026-10-25T03:49:22+00:00",
+   "liveness": "not_checked",
+   "liveness_detail": "no crawl result in this log",
+   "homepage": null,
+   "logo_url": null,
+   "images": [],
+   "theme_color": null,
+   "languages": [],
+   "legal_name": null,
+   "search": {
+    "available": null,
+    "method": "unknown",
+    "page_url": null,
+    "form_action": null,
+    "inputs": [],
+    "url_pattern": null,
+    "directory_prefixes": [],
+    "paywall": null,
+    "login_wall": null
+   },
+   "removal": {
+    "url": "https://www.domainefuneraire.com/politique-de-confidentialite",
+    "final_url": null,
+    "http_status": null,
+    "kinds": [
+     "opt_out"
+    ],
+    "channels": [],
+    "emails": [],
+    "phones": [],
+    "postal_address": null,
+    "portal": null,
+    "form_fields": [],
+    "csrf_field_name": null,
+    "requires_profile_url": null,
+    "captcha": {
+     "provider": null,
+     "sitekey": null,
+     "pages": []
+    },
+    "consent_vendor": null,
+    "success_text": null,
+    "suppression_not_deletion": null,
+    "processing_days": null,
+    "processing_text": null
+   },
+   "bot_defense": {
+    "vendor": null,
+    "outcome": "unknown"
+   },
+   "legal": {
+    "privacy_policy_url": null,
+    "terms_url": null,
+    "automation_prohibited": null,
+    "automation_clause": null,
+    "residency": [],
+    "authorized_agent": null,
+    "data_categories": []
+   },
+   "pages": []
+  },
+  "canadian-obituaries": {
+   "schema_version": "3.0.0",
+   "id": "canadian-obituaries",
+   "name": "Canadian Obituaries",
+   "category": "people-search",
+   "domain": "canadianobituaries.com",
+   "checked_at": "2026-10-25T03:49:22+00:00",
+   "liveness": "not_checked",
+   "liveness_detail": "no crawl result in this log",
+   "homepage": null,
+   "logo_url": null,
+   "images": [],
+   "theme_color": null,
+   "languages": [],
+   "legal_name": null,
+   "search": {
+    "available": null,
+    "method": "unknown",
+    "page_url": null,
+    "form_action": null,
+    "inputs": [],
+    "url_pattern": null,
+    "directory_prefixes": [],
+    "paywall": null,
+    "login_wall": null
+   },
+   "removal": {
+    "url": "https://canadianobituaries.com/contact/",
+    "final_url": null,
+    "http_status": null,
+    "kinds": [
+     "opt_out"
+    ],
+    "channels": [],
+    "emails": [],
+    "phones": [],
+    "postal_address": null,
+    "portal": null,
+    "form_fields": [],
+    "csrf_field_name": null,
+    "requires_profile_url": null,
+    "captcha": {
+     "provider": null,
+     "sitekey": null,
+     "pages": []
+    },
+    "consent_vendor": null,
+    "success_text": null,
+    "suppression_not_deletion": null,
+    "processing_days": null,
+    "processing_text": null
+   },
+   "bot_defense": {
+    "vendor": null,
+    "outcome": "unknown"
+   },
+   "legal": {
+    "privacy_policy_url": null,
+    "terms_url": null,
+    "automation_prohibited": null,
+    "automation_clause": null,
+    "residency": [],
+    "authorized_agent": null,
+    "data_categories": []
+   },
+   "pages": []
+  },
+  "cooperative-funeraire-du-grand-montreal": {
+   "schema_version": "3.0.0",
+   "id": "cooperative-funeraire-du-grand-montreal",
+   "name": "Coopérative funéraire du Grand Montréal",
+   "category": "people-search",
+   "domain": "cfgrandmontreal.com",
+   "checked_at": "2026-10-25T03:49:22+00:00",
+   "liveness": "not_checked",
+   "liveness_detail": "no crawl result in this log",
+   "homepage": null,
+   "logo_url": null,
+   "images": [],
+   "theme_color": null,
+   "languages": [],
+   "legal_name": null,
+   "search": {
+    "available": null,
+    "method": "unknown",
+    "page_url": null,
+    "form_action": null,
+    "inputs": [],
+    "url_pattern": null,
+    "directory_prefixes": [],
+    "paywall": null,
+    "login_wall": null
+   },
+   "removal": {
+    "url": "https://cfgrandmontreal.com/en/politique-confidentialite",
+    "final_url": null,
+    "http_status": null,
+    "kinds": [
+     "opt_out"
+    ],
+    "channels": [],
+    "emails": [],
+    "phones": [],
+    "postal_address": null,
+    "portal": null,
+    "form_fields": [],
+    "csrf_field_name": null,
+    "requires_profile_url": null,
+    "captcha": {
+     "provider": null,
+     "sitekey": null,
+     "pages": []
+    },
+    "consent_vendor": null,
+    "success_text": null,
+    "suppression_not_deletion": null,
+    "processing_days": null,
+    "processing_text": null
+   },
+   "bot_defense": {
+    "vendor": null,
+    "outcome": "unknown"
+   },
+   "legal": {
+    "privacy_policy_url": null,
+    "terms_url": null,
+    "automation_prohibited": null,
+    "automation_clause": null,
+    "residency": [],
+    "authorized_agent": null,
+    "data_categories": []
+   },
+   "pages": []
+  },
+  "cooperative-funeraire-des-deux-rives": {
+   "schema_version": "3.0.0",
+   "id": "cooperative-funeraire-des-deux-rives",
+   "name": "Coopérative funéraire des Deux Rives",
+   "category": "people-search",
+   "domain": "coopfuneraire2rives.com",
+   "checked_at": "2026-10-25T03:49:22+00:00",
+   "liveness": "not_checked",
+   "liveness_detail": "no crawl result in this log",
+   "homepage": null,
+   "logo_url": null,
+   "images": [],
+   "theme_color": null,
+   "languages": [],
+   "legal_name": null,
+   "search": {
+    "available": null,
+    "method": "unknown",
+    "page_url": null,
+    "form_action": null,
+    "inputs": [],
+    "url_pattern": null,
+    "directory_prefixes": [],
+    "paywall": null,
+    "login_wall": null
+   },
+   "removal": {
+    "url": "https://coopfuneraire2rives.com/politique-de-confidentialite",
+    "final_url": null,
+    "http_status": null,
+    "kinds": [
+     "opt_out"
+    ],
+    "channels": [],
+    "emails": [],
+    "phones": [],
+    "postal_address": null,
+    "portal": null,
+    "form_fields": [],
+    "csrf_field_name": null,
+    "requires_profile_url": null,
+    "captcha": {
+     "provider": null,
+     "sitekey": null,
+     "pages": []
+    },
+    "consent_vendor": null,
+    "success_text": null,
+    "suppression_not_deletion": null,
+    "processing_days": null,
+    "processing_text": null
+   },
+   "bot_defense": {
+    "vendor": null,
+    "outcome": "unknown"
+   },
+   "legal": {
+    "privacy_policy_url": null,
+    "terms_url": null,
+    "automation_prohibited": null,
+    "automation_clause": null,
+    "residency": [],
+    "authorized_agent": null,
+    "data_categories": []
+   },
+   "pages": []
+  },
+  "alliance-funeraire-du-royaume": {
+   "schema_version": "3.0.0",
+   "id": "alliance-funeraire-du-royaume",
+   "name": "Alliance funéraire du Royaume",
+   "category": "people-search",
+   "domain": "afdr.coop",
+   "checked_at": "2026-10-25T03:49:22+00:00",
+   "liveness": "not_checked",
+   "liveness_detail": "no crawl result in this log",
+   "homepage": null,
+   "logo_url": null,
+   "images": [],
+   "theme_color": null,
+   "languages": [],
+   "legal_name": null,
+   "search": {
+    "available": null,
+    "method": "unknown",
+    "page_url": null,
+    "form_action": null,
+    "inputs": [],
+    "url_pattern": null,
+    "directory_prefixes": [],
+    "paywall": null,
+    "login_wall": null
+   },
+   "removal": {
+    "url": "https://afdr.coop/nous-joindre",
+    "final_url": null,
+    "http_status": null,
+    "kinds": [
+     "opt_out"
+    ],
+    "channels": [],
+    "emails": [],
+    "phones": [],
+    "postal_address": null,
+    "portal": null,
+    "form_fields": [],
+    "csrf_field_name": null,
+    "requires_profile_url": null,
+    "captcha": {
+     "provider": null,
+     "sitekey": null,
+     "pages": []
+    },
+    "consent_vendor": null,
+    "success_text": null,
+    "suppression_not_deletion": null,
+    "processing_days": null,
+    "processing_text": null
+   },
+   "bot_defense": {
+    "vendor": null,
+    "outcome": "unknown"
+   },
+   "legal": {
+    "privacy_policy_url": null,
+    "terms_url": null,
+    "automation_prohibited": null,
+    "automation_clause": null,
+    "residency": [],
+    "authorized_agent": null,
+    "data_categories": []
+   },
+   "pages": []
+  },
+  "cooperative-funeraire-de-l-abitibi": {
+   "schema_version": "3.0.0",
+   "id": "cooperative-funeraire-de-l-abitibi",
+   "name": "Coopérative funéraire de l'Abitibi",
+   "category": "people-search",
+   "domain": "cfa.coop",
+   "checked_at": "2026-10-25T03:49:22+00:00",
+   "liveness": "not_checked",
+   "liveness_detail": "no crawl result in this log",
+   "homepage": null,
+   "logo_url": null,
+   "images": [],
+   "theme_color": null,
+   "languages": [],
+   "legal_name": null,
+   "search": {
+    "available": null,
+    "method": "unknown",
+    "page_url": null,
+    "form_action": null,
+    "inputs": [],
+    "url_pattern": null,
+    "directory_prefixes": [],
+    "paywall": null,
+    "login_wall": null
+   },
+   "removal": {
+    "url": "https://cfa.coop/web/content/143111/Politique%20de%20confidentialit%C3%A9?unique=e509e84302b735b4ac29264cdcb56d29b10ae1bf&download=false",
+    "final_url": null,
+    "http_status": null,
+    "kinds": [
+     "opt_out"
+    ],
+    "channels": [],
+    "emails": [],
+    "phones": [],
+    "postal_address": null,
+    "portal": null,
+    "form_fields": [],
+    "csrf_field_name": null,
+    "requires_profile_url": null,
+    "captcha": {
+     "provider": null,
+     "sitekey": null,
+     "pages": []
+    },
+    "consent_vendor": null,
+    "success_text": null,
+    "suppression_not_deletion": null,
+    "processing_days": null,
+    "processing_text": null
+   },
+   "bot_defense": {
+    "vendor": null,
+    "outcome": "unknown"
+   },
+   "legal": {
+    "privacy_policy_url": null,
+    "terms_url": null,
+    "automation_prohibited": null,
+    "automation_clause": null,
+    "residency": [],
+    "authorized_agent": null,
+    "data_categories": []
+   },
+   "pages": []
+  },
+  "cooperative-funeraire-haute-cote-nord-manicouagan": {
+   "schema_version": "3.0.0",
+   "id": "cooperative-funeraire-haute-cote-nord-manicouagan",
+   "name": "Coopérative funéraire Haute-Côte-Nord - Manicouagan",
+   "category": "people-search",
+   "domain": "cfhcn.ca",
+   "checked_at": "2026-10-25T03:49:22+00:00",
+   "liveness": "not_checked",
+   "liveness_detail": "no crawl result in this log",
+   "homepage": null,
+   "logo_url": null,
+   "images": [],
+   "theme_color": null,
+   "languages": [],
+   "legal_name": null,
+   "search": {
+    "available": null,
+    "method": "unknown",
+    "page_url": null,
+    "form_action": null,
+    "inputs": [],
+    "url_pattern": null,
+    "directory_prefixes": [],
+    "paywall": null,
+    "login_wall": null
+   },
+   "removal": {
+    "url": "https://cfhcn.ca/politique-confidentialite",
+    "final_url": null,
+    "http_status": null,
+    "kinds": [
+     "opt_out"
+    ],
+    "channels": [],
+    "emails": [],
+    "phones": [],
+    "postal_address": null,
+    "portal": null,
+    "form_fields": [],
+    "csrf_field_name": null,
+    "requires_profile_url": null,
+    "captcha": {
+     "provider": null,
+     "sitekey": null,
+     "pages": []
+    },
+    "consent_vendor": null,
+    "success_text": null,
+    "suppression_not_deletion": null,
+    "processing_days": null,
+    "processing_text": null
+   },
+   "bot_defense": {
+    "vendor": null,
+    "outcome": "unknown"
+   },
+   "legal": {
+    "privacy_policy_url": null,
+    "terms_url": null,
+    "automation_prohibited": null,
+    "automation_clause": null,
+    "residency": [],
+    "authorized_agent": null,
+    "data_categories": []
+   },
+   "pages": []
+  },
+  "cooperative-funeraire-de-l-outaouais": {
+   "schema_version": "3.0.0",
+   "id": "cooperative-funeraire-de-l-outaouais",
+   "name": "Coopérative funéraire de l'Outaouais",
+   "category": "people-search",
+   "domain": "cfo.coop",
+   "checked_at": "2026-10-25T03:49:22+00:00",
+   "liveness": "not_checked",
+   "liveness_detail": "no crawl result in this log",
+   "homepage": null,
+   "logo_url": null,
+   "images": [],
+   "theme_color": null,
+   "languages": [],
+   "legal_name": null,
+   "search": {
+    "available": null,
+    "method": "unknown",
+    "page_url": null,
+    "form_action": null,
+    "inputs": [],
+    "url_pattern": null,
+    "directory_prefixes": [],
+    "paywall": null,
+    "login_wall": null
+   },
+   "removal": {
+    "url": "https://www.cfo.coop/en/politique-confidentialite",
+    "final_url": null,
+    "http_status": null,
+    "kinds": [
+     "opt_out"
+    ],
+    "channels": [],
+    "emails": [],
+    "phones": [],
+    "postal_address": null,
+    "portal": null,
+    "form_fields": [],
+    "csrf_field_name": null,
+    "requires_profile_url": null,
+    "captcha": {
+     "provider": null,
+     "sitekey": null,
+     "pages": []
+    },
+    "consent_vendor": null,
+    "success_text": null,
+    "suppression_not_deletion": null,
+    "processing_days": null,
+    "processing_text": null
+   },
+   "bot_defense": {
+    "vendor": null,
+    "outcome": "unknown"
+   },
+   "legal": {
+    "privacy_policy_url": null,
+    "terms_url": null,
+    "automation_prohibited": null,
+    "automation_clause": null,
+    "residency": [],
+    "authorized_agent": null,
+    "data_categories": []
+   },
+   "pages": []
+  },
+  "cooperative-funeraire-de-l-estrie": {
+   "schema_version": "3.0.0",
+   "id": "cooperative-funeraire-de-l-estrie",
+   "name": "Coopérative funéraire de l'Estrie",
+   "category": "people-search",
+   "domain": "coopfuneraireestrie.com",
+   "checked_at": "2026-10-25T03:49:22+00:00",
+   "liveness": "not_checked",
+   "liveness_detail": "no crawl result in this log",
+   "homepage": null,
+   "logo_url": null,
+   "images": [],
+   "theme_color": null,
+   "languages": [],
+   "legal_name": null,
+   "search": {
+    "available": null,
+    "method": "unknown",
+    "page_url": null,
+    "form_action": null,
+    "inputs": [],
+    "url_pattern": null,
+    "directory_prefixes": [],
+    "paywall": null,
+    "login_wall": null
+   },
+   "removal": {
+    "url": "https://coopfuneraireestrie.com/nous-joindre",
+    "final_url": null,
+    "http_status": null,
+    "kinds": [
+     "opt_out"
+    ],
+    "channels": [],
+    "emails": [],
+    "phones": [],
+    "postal_address": null,
+    "portal": null,
+    "form_fields": [],
+    "csrf_field_name": null,
+    "requires_profile_url": null,
+    "captcha": {
+     "provider": null,
+     "sitekey": null,
+     "pages": []
+    },
+    "consent_vendor": null,
+    "success_text": null,
+    "suppression_not_deletion": null,
+    "processing_days": null,
+    "processing_text": null
+   },
+   "bot_defense": {
+    "vendor": null,
+    "outcome": "unknown"
+   },
+   "legal": {
+    "privacy_policy_url": null,
+    "terms_url": null,
+    "automation_prohibited": null,
+    "automation_clause": null,
+    "residency": [],
+    "authorized_agent": null,
+    "data_categories": []
+   },
+   "pages": []
+  },
+  "residence-funeraire-lac-st-jean": {
+   "schema_version": "3.0.0",
+   "id": "residence-funeraire-lac-st-jean",
+   "name": "Résidence funéraire Lac St-Jean",
+   "category": "people-search",
+   "domain": "residencefunerairelacstjean.com",
+   "checked_at": "2026-10-25T03:49:22+00:00",
+   "liveness": "not_checked",
+   "liveness_detail": "no crawl result in this log",
+   "homepage": null,
+   "logo_url": null,
+   "images": [],
+   "theme_color": null,
+   "languages": [],
+   "legal_name": null,
+   "search": {
+    "available": null,
+    "method": "unknown",
+    "page_url": null,
+    "form_action": null,
+    "inputs": [],
+    "url_pattern": null,
+    "directory_prefixes": [],
+    "paywall": null,
+    "login_wall": null
+   },
+   "removal": {
+    "url": "https://residencefunerairelacstjean.com/politique-confidentialite",
+    "final_url": null,
+    "http_status": null,
+    "kinds": [
+     "opt_out"
+    ],
+    "channels": [],
+    "emails": [],
+    "phones": [],
+    "postal_address": null,
+    "portal": null,
+    "form_fields": [],
+    "csrf_field_name": null,
+    "requires_profile_url": null,
+    "captcha": {
+     "provider": null,
+     "sitekey": null,
+     "pages": []
+    },
+    "consent_vendor": null,
+    "success_text": null,
+    "suppression_not_deletion": null,
+    "processing_days": null,
+    "processing_text": null
+   },
+   "bot_defense": {
+    "vendor": null,
+    "outcome": "unknown"
+   },
+   "legal": {
+    "privacy_policy_url": null,
+    "terms_url": null,
+    "automation_prohibited": null,
+    "automation_clause": null,
+    "residency": [],
+    "authorized_agent": null,
+    "data_categories": []
+   },
+   "pages": []
+  },
+  "cooperative-funeraire-brunet": {
+   "schema_version": "3.0.0",
+   "id": "cooperative-funeraire-brunet",
+   "name": "Coopérative funéraire Brunet",
+   "category": "people-search",
+   "domain": "coopfbrunet.com",
+   "checked_at": "2026-10-25T03:49:22+00:00",
+   "liveness": "not_checked",
+   "liveness_detail": "no crawl result in this log",
+   "homepage": null,
+   "logo_url": null,
+   "images": [],
+   "theme_color": null,
+   "languages": [],
+   "legal_name": null,
+   "search": {
+    "available": null,
+    "method": "unknown",
+    "page_url": null,
+    "form_action": null,
+    "inputs": [],
+    "url_pattern": null,
+    "directory_prefixes": [],
+    "paywall": null,
+    "login_wall": null
+   },
+   "removal": {
+    "url": "https://coopfbrunet.com/nous-joindre",
+    "final_url": null,
+    "http_status": null,
+    "kinds": [
+     "opt_out"
+    ],
+    "channels": [],
+    "emails": [],
+    "phones": [],
+    "postal_address": null,
+    "portal": null,
+    "form_fields": [],
+    "csrf_field_name": null,
+    "requires_profile_url": null,
+    "captcha": {
+     "provider": null,
+     "sitekey": null,
+     "pages": []
+    },
+    "consent_vendor": null,
+    "success_text": null,
+    "suppression_not_deletion": null,
+    "processing_days": null,
+    "processing_text": null
+   },
+   "bot_defense": {
+    "vendor": null,
+    "outcome": "unknown"
+   },
+   "legal": {
+    "privacy_policy_url": null,
+    "terms_url": null,
+    "automation_prohibited": null,
+    "automation_clause": null,
+    "residency": [],
+    "authorized_agent": null,
+    "data_categories": []
+   },
+   "pages": []
+  },
+  "cooperative-funeraire-matawinie-montcalm": {
+   "schema_version": "3.0.0",
+   "id": "cooperative-funeraire-matawinie-montcalm",
+   "name": "Coopérative funéraire Matawinie-Montcalm",
+   "category": "people-search",
+   "domain": "cfmm.coop",
+   "checked_at": "2026-10-25T03:49:22+00:00",
+   "liveness": "not_checked",
+   "liveness_detail": "no crawl result in this log",
+   "homepage": null,
+   "logo_url": null,
+   "images": [],
+   "theme_color": null,
+   "languages": [],
+   "legal_name": null,
+   "search": {
+    "available": null,
+    "method": "unknown",
+    "page_url": null,
+    "form_action": null,
+    "inputs": [],
+    "url_pattern": null,
+    "directory_prefixes": [],
+    "paywall": null,
+    "login_wall": null
+   },
+   "removal": {
+    "url": "https://cfmm.coop/nous-joindre",
+    "final_url": null,
+    "http_status": null,
+    "kinds": [
+     "opt_out"
+    ],
+    "channels": [],
+    "emails": [],
+    "phones": [],
+    "postal_address": null,
+    "portal": null,
+    "form_fields": [],
+    "csrf_field_name": null,
+    "requires_profile_url": null,
+    "captcha": {
+     "provider": null,
+     "sitekey": null,
+     "pages": []
+    },
+    "consent_vendor": null,
+    "success_text": null,
+    "suppression_not_deletion": null,
+    "processing_days": null,
+    "processing_text": null
+   },
+   "bot_defense": {
+    "vendor": null,
+    "outcome": "unknown"
+   },
+   "legal": {
+    "privacy_policy_url": null,
+    "terms_url": null,
+    "automation_prohibited": null,
+    "automation_clause": null,
+    "residency": [],
+    "authorized_agent": null,
+    "data_categories": []
+   },
+   "pages": []
+  },
+  "cooperative-funeraire-des-laurentides": {
+   "schema_version": "3.0.0",
+   "id": "cooperative-funeraire-des-laurentides",
+   "name": "Coopérative funéraire des Laurentides",
+   "category": "people-search",
+   "domain": "coopfunerairelaurentides.org",
+   "checked_at": "2026-10-25T03:49:22+00:00",
+   "liveness": "not_checked",
+   "liveness_detail": "no crawl result in this log",
+   "homepage": null,
+   "logo_url": null,
+   "images": [],
+   "theme_color": null,
+   "languages": [],
+   "legal_name": null,
+   "search": {
+    "available": null,
+    "method": "unknown",
+    "page_url": null,
+    "form_action": null,
+    "inputs": [],
+    "url_pattern": null,
+    "directory_prefixes": [],
+    "paywall": null,
+    "login_wall": null
+   },
+   "removal": {
+    "url": "https://www.coopfunerairelaurentides.org/nous-joindre",
+    "final_url": null,
+    "http_status": null,
+    "kinds": [
+     "opt_out"
+    ],
+    "channels": [],
+    "emails": [],
+    "phones": [],
+    "postal_address": null,
+    "portal": null,
+    "form_fields": [],
+    "csrf_field_name": null,
+    "requires_profile_url": null,
+    "captcha": {
+     "provider": null,
+     "sitekey": null,
+     "pages": []
+    },
+    "consent_vendor": null,
+    "success_text": null,
+    "suppression_not_deletion": null,
+    "processing_days": null,
+    "processing_text": null
+   },
+   "bot_defense": {
+    "vendor": null,
+    "outcome": "unknown"
+   },
+   "legal": {
+    "privacy_policy_url": null,
+    "terms_url": null,
+    "automation_prohibited": null,
+    "automation_clause": null,
+    "residency": [],
+    "authorized_agent": null,
+    "data_categories": []
+   },
+   "pages": []
+  },
+  "residence-funeraire-maska": {
+   "schema_version": "3.0.0",
+   "id": "residence-funeraire-maska",
+   "name": "Résidence Funéraire Maska",
+   "category": "people-search",
+   "domain": "rfmaska.coop",
+   "checked_at": "2026-10-25T03:49:22+00:00",
+   "liveness": "not_checked",
+   "liveness_detail": "no crawl result in this log",
+   "homepage": null,
+   "logo_url": null,
+   "images": [],
+   "theme_color": null,
+   "languages": [],
+   "legal_name": null,
+   "search": {
+    "available": null,
+    "method": "unknown",
+    "page_url": null,
+    "form_action": null,
+    "inputs": [],
+    "url_pattern": null,
+    "directory_prefixes": [],
+    "paywall": null,
+    "login_wall": null
+   },
+   "removal": {
+    "url": "https://rfmaska.coop/politique-confidentialite",
+    "final_url": null,
+    "http_status": null,
+    "kinds": [
+     "opt_out"
+    ],
+    "channels": [],
+    "emails": [],
+    "phones": [],
+    "postal_address": null,
+    "portal": null,
+    "form_fields": [],
+    "csrf_field_name": null,
+    "requires_profile_url": null,
+    "captcha": {
+     "provider": null,
+     "sitekey": null,
+     "pages": []
+    },
+    "consent_vendor": null,
+    "success_text": null,
+    "suppression_not_deletion": null,
+    "processing_days": null,
+    "processing_text": null
+   },
+   "bot_defense": {
+    "vendor": null,
+    "outcome": "unknown"
+   },
+   "legal": {
+    "privacy_policy_url": null,
+    "terms_url": null,
+    "automation_prohibited": null,
+    "automation_clause": null,
+    "residency": [],
+    "authorized_agent": null,
+    "data_categories": []
+   },
+   "pages": []
+  },
+  "dignity-memorial": {
+   "schema_version": "3.0.0",
+   "id": "dignity-memorial",
+   "name": "Dignity Memorial",
+   "category": "people-search",
+   "domain": "dignitymemorial.com",
+   "checked_at": "2026-10-25T03:49:22+00:00",
+   "liveness": "not_checked",
+   "liveness_detail": "no crawl result in this log",
+   "homepage": null,
+   "logo_url": null,
+   "images": [],
+   "theme_color": null,
+   "languages": [],
+   "legal_name": null,
+   "search": {
+    "available": null,
+    "method": "unknown",
+    "page_url": null,
+    "form_action": null,
+    "inputs": [],
+    "url_pattern": null,
+    "directory_prefixes": [],
+    "paywall": null,
+    "login_wall": null
+   },
+   "removal": {
+    "url": "https://www.dignitymemorial.com/en-ca/contact-us",
+    "final_url": null,
+    "http_status": null,
+    "kinds": [
+     "opt_out"
+    ],
+    "channels": [],
+    "emails": [],
+    "phones": [],
+    "postal_address": null,
+    "portal": null,
+    "form_fields": [],
+    "csrf_field_name": null,
+    "requires_profile_url": null,
+    "captcha": {
+     "provider": null,
+     "sitekey": null,
+     "pages": []
+    },
+    "consent_vendor": null,
+    "success_text": null,
+    "suppression_not_deletion": null,
+    "processing_days": null,
+    "processing_text": null
+   },
+   "bot_defense": {
+    "vendor": null,
+    "outcome": "unknown"
+   },
+   "legal": {
+    "privacy_policy_url": null,
+    "terms_url": null,
+    "automation_prohibited": null,
+    "automation_clause": null,
+    "residency": [],
+    "authorized_agent": null,
+    "data_categories": []
+   },
+   "pages": []
+  },
+  "interment-net": {
+   "schema_version": "3.0.0",
+   "id": "interment-net",
+   "name": "Interment.net",
+   "category": "people-search",
+   "domain": "interment.net",
+   "checked_at": "2026-10-25T03:49:22+00:00",
+   "liveness": "not_checked",
+   "liveness_detail": "no crawl result in this log",
+   "homepage": null,
+   "logo_url": null,
+   "images": [],
+   "theme_color": null,
+   "languages": [],
+   "legal_name": null,
+   "search": {
+    "available": null,
+    "method": "unknown",
+    "page_url": null,
+    "form_action": null,
+    "inputs": [],
+    "url_pattern": null,
+    "directory_prefixes": [],
+    "paywall": null,
+    "login_wall": null
+   },
+   "removal": {
+    "url": "https://www.interment.net/contact.php",
+    "final_url": null,
+    "http_status": null,
+    "kinds": [
+     "opt_out"
+    ],
+    "channels": [],
+    "emails": [],
+    "phones": [],
+    "postal_address": null,
+    "portal": null,
+    "form_fields": [],
+    "csrf_field_name": null,
+    "requires_profile_url": null,
+    "captcha": {
+     "provider": null,
+     "sitekey": null,
+     "pages": []
+    },
+    "consent_vendor": null,
+    "success_text": null,
+    "suppression_not_deletion": null,
+    "processing_days": null,
+    "processing_text": null
+   },
+   "bot_defense": {
+    "vendor": null,
+    "outcome": "unknown"
+   },
+   "legal": {
+    "privacy_policy_url": null,
+    "terms_url": null,
+    "automation_prohibited": null,
+    "automation_clause": null,
+    "residency": [],
+    "authorized_agent": null,
+    "data_categories": []
+   },
+   "pages": []
+  },
+  "mount-pleasant-group": {
+   "schema_version": "3.0.0",
+   "id": "mount-pleasant-group",
+   "name": "Mount Pleasant Group",
+   "category": "people-search",
+   "domain": "mountpleasantgroup.com",
+   "checked_at": "2026-10-25T03:49:22+00:00",
+   "liveness": "not_checked",
+   "liveness_detail": "no crawl result in this log",
+   "homepage": null,
+   "logo_url": null,
+   "images": [],
+   "theme_color": null,
+   "languages": [],
+   "legal_name": null,
+   "search": {
+    "available": null,
+    "method": "unknown",
+    "page_url": null,
+    "form_action": null,
+    "inputs": [],
+    "url_pattern": null,
+    "directory_prefixes": [],
+    "paywall": null,
+    "login_wall": null
+   },
+   "removal": {
+    "url": "https://www.mountpleasantgroup.com/privacy",
+    "final_url": null,
+    "http_status": null,
+    "kinds": [
+     "opt_out"
+    ],
+    "channels": [],
+    "emails": [],
+    "phones": [],
+    "postal_address": null,
+    "portal": null,
+    "form_fields": [],
+    "csrf_field_name": null,
+    "requires_profile_url": null,
+    "captcha": {
+     "provider": null,
+     "sitekey": null,
+     "pages": []
+    },
+    "consent_vendor": null,
+    "success_text": null,
+    "suppression_not_deletion": null,
+    "processing_days": null,
+    "processing_text": null
+   },
+   "bot_defense": {
+    "vendor": null,
+    "outcome": "unknown"
+   },
+   "legal": {
+    "privacy_policy_url": null,
+    "terms_url": null,
+    "automation_prohibited": null,
+    "automation_clause": null,
+    "residency": [],
+    "authorized_agent": null,
+    "data_categories": []
+   },
+   "pages": []
+  },
+  "kearney-funeral-services": {
+   "schema_version": "3.0.0",
+   "id": "kearney-funeral-services",
+   "name": "Kearney Funeral Services",
+   "category": "people-search",
+   "domain": "kearneyfs.com",
+   "checked_at": "2026-10-25T03:49:22+00:00",
+   "liveness": "not_checked",
+   "liveness_detail": "no crawl result in this log",
+   "homepage": null,
+   "logo_url": null,
+   "images": [],
+   "theme_color": null,
+   "languages": [],
+   "legal_name": null,
+   "search": {
+    "available": null,
+    "method": "unknown",
+    "page_url": null,
+    "form_action": null,
+    "inputs": [],
+    "url_pattern": null,
+    "directory_prefixes": [],
+    "paywall": null,
+    "login_wall": null
+   },
+   "removal": {
+    "url": "https://www.kearneyfs.com/privacy-policy",
+    "final_url": null,
+    "http_status": null,
+    "kinds": [
+     "opt_out"
+    ],
+    "channels": [],
+    "emails": [],
+    "phones": [],
+    "postal_address": null,
+    "portal": null,
+    "form_fields": [],
+    "csrf_field_name": null,
+    "requires_profile_url": null,
+    "captcha": {
+     "provider": null,
+     "sitekey": null,
+     "pages": []
+    },
+    "consent_vendor": null,
+    "success_text": null,
+    "suppression_not_deletion": null,
+    "processing_days": null,
+    "processing_text": null
+   },
+   "bot_defense": {
+    "vendor": null,
+    "outcome": "unknown"
+   },
+   "legal": {
+    "privacy_policy_url": null,
+    "terms_url": null,
+    "automation_prohibited": null,
+    "automation_clause": null,
+    "residency": [],
+    "authorized_agent": null,
+    "data_categories": []
+   },
+   "pages": []
+  },
+  "basic-funerals": {
+   "schema_version": "3.0.0",
+   "id": "basic-funerals",
+   "name": "Basic Funerals",
+   "category": "people-search",
+   "domain": "basicfunerals.ca",
+   "checked_at": "2026-10-25T03:49:22+00:00",
+   "liveness": "not_checked",
+   "liveness_detail": "no crawl result in this log",
+   "homepage": null,
+   "logo_url": null,
+   "images": [],
+   "theme_color": null,
+   "languages": [],
+   "legal_name": null,
+   "search": {
+    "available": null,
+    "method": "unknown",
+    "page_url": null,
+    "form_action": null,
+    "inputs": [],
+    "url_pattern": null,
+    "directory_prefixes": [],
+    "paywall": null,
+    "login_wall": null
+   },
+   "removal": {
+    "url": "https://www.basicfunerals.ca/privacy-policy",
+    "final_url": null,
+    "http_status": null,
+    "kinds": [
+     "opt_out"
+    ],
+    "channels": [],
+    "emails": [],
+    "phones": [],
+    "postal_address": null,
+    "portal": null,
+    "form_fields": [],
+    "csrf_field_name": null,
+    "requires_profile_url": null,
+    "captcha": {
+     "provider": null,
+     "sitekey": null,
+     "pages": []
+    },
+    "consent_vendor": null,
+    "success_text": null,
+    "suppression_not_deletion": null,
+    "processing_days": null,
+    "processing_text": null
+   },
+   "bot_defense": {
+    "vendor": null,
+    "outcome": "unknown"
+   },
+   "legal": {
+    "privacy_policy_url": null,
+    "terms_url": null,
+    "automation_prohibited": null,
+    "automation_clause": null,
+    "residency": [],
+    "authorized_agent": null,
+    "data_categories": []
+   },
+   "pages": []
+  },
+  "le-necrologue": {
+   "schema_version": "3.0.0",
+   "id": "le-necrologue",
+   "name": "Le Nécrologue",
+   "category": "people-search",
+   "domain": "lenecrologue.com",
+   "checked_at": "2026-10-25T03:49:22+00:00",
+   "liveness": "not_checked",
+   "liveness_detail": "no crawl result in this log",
+   "homepage": null,
+   "logo_url": null,
+   "images": [],
+   "theme_color": null,
+   "languages": [],
+   "legal_name": null,
+   "search": {
+    "available": null,
+    "method": "unknown",
+    "page_url": null,
+    "form_action": null,
+    "inputs": [],
+    "url_pattern": null,
+    "directory_prefixes": [],
+    "paywall": null,
+    "login_wall": null
+   },
+   "removal": {
+    "url": "https://www.lenecrologue.com/privacy-policy/",
     "final_url": null,
     "http_status": null,
     "kinds": [
