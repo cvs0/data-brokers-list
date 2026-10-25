@@ -5338,5 +5338,65 @@
     "checked": "2026-10-24",
     "country": "US",
     "evidence": "The terms give PeopleByName.com, PO Box 670781, Coral Springs, FL 33067. Checked 2026-10-24."
+  },
+  "judyrecords": {
+    "checked": "2026-10-24",
+    "country": "US",
+    "liveness": "alive",
+    "liveness_detail": "judyrecords.com answered HTTP 200 on 2026-10-24. A name search returned court cases.",
+    "evidence": "Free full-text search of US court records. It says it holds more than 770 million cases, and case pages name the parties. Free search is a GET to / with search, which leads to /getSearchResults/. Too many searches send the page to /captcha. The info page says to email removal@judyrecords.com to remove a page (accepted when the record was sealed or expunged by a court order) and suppression@judyrecords.com to remove a page from search engine results. The terms page has no rule against automated searches. Nothing was submitted.",
+    "result_check": "GET /?search=john smith: \"Page 1 of 2,071,433 total results for: john smith\" (252,133 cases). search=Alder Northwind: \"1 total results\", a word match on a vessel case, not a person. (2026-10-24).",
+    "form": {
+      "method": "http_get",
+      "page_url": "https://www.judyrecords.com/",
+      "form_action": "https://www.judyrecords.com/",
+      "url_pattern": "https://www.judyrecords.com/?search={search}",
+      "form_id": null,
+      "form_name": null,
+      "submit_label": "Search",
+      "hidden_names": [],
+      "inputs": [
+        {
+          "name": "search",
+          "type": "text",
+          "canonical": "full_name",
+          "required": false,
+          "id": null,
+          "label": null,
+          "placeholder": "search anything"
+        }
+      ]
+    },
+    "captcha_widget": false
+  },
+  "mugshots-com": {
+    "checked": "2026-10-24",
+    "country": "US",
+    "liveness": "alive",
+    "liveness_detail": "mugshots.com answered HTTP 200 on 2026-10-24. A name search returned arrest records.",
+    "evidence": "Arrest-record and booking-photo database that calls itself a news organization. Records name the arrested person and give the booking state. Free search is a GET to /search.html with q. The record maintenance page says it does not charge to remove or update records and removes a record after an expungement, seal, no-information, record restriction, identity theft or death, sent as court documentation to mugshots.com1@gmail.com. No terms page was found (/terms.html returned 404). Nothing was submitted.",
+    "result_check": "GET /search.html?q=John Smith: \"John Smith ( 28843 results)\". q=Alder Northwind: \"No exact matches.\" (2026-10-24).",
+    "form": {
+      "method": "http_get",
+      "page_url": "https://mugshots.com/",
+      "form_action": "https://mugshots.com/search.html",
+      "url_pattern": "https://mugshots.com/search.html?q={q}",
+      "form_id": null,
+      "form_name": null,
+      "submit_label": "SEARCH",
+      "hidden_names": [],
+      "inputs": [
+        {
+          "name": "q",
+          "type": "text",
+          "canonical": "full_name",
+          "required": true,
+          "id": null,
+          "label": null,
+          "placeholder": null
+        }
+      ]
+    },
+    "captcha_widget": false
   }
 }

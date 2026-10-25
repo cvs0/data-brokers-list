@@ -2,20 +2,20 @@
  "schema_version": "3.0.0",
  "checked_at": "2026-10-25T04:19:11+00:00",
  "method": "Public pages only: homepage, catalog URL, and mapped privacy, contact, and legal links. robots.txt honored. No form submitted, no login, no CAPTCHA solved. A browser opened lookup homepages the static fetch never read, and catalog URLs that were blocked or failed, when robots.txt allowed the URL. Image fields are URLs, not copied files. People-search listing URLs are not stored. Null means the fetched page did not establish that fact. Every catalog id has a record.",
- "broker_count": 749,
+ "broker_count": 751,
  "counts": {
   "liveness": {
-   "alive": 566,
+   "alive": 568,
    "blocked": 39,
    "error": 24,
    "not_checked": 32,
    "opt_out_missing": 5,
    "robots_disallowed": 83
   },
-  "with_logo": 611,
-  "with_image": 611,
-  "with_search": 366,
-  "with_email": 360,
+  "with_logo": 613,
+  "with_image": 613,
+  "with_search": 368,
+  "with_email": 361,
   "with_captcha": 329,
   "with_form": 134
  },
@@ -157890,6 +157890,269 @@
      "status": 200,
      "role": "catalog",
      "title": "Datenschutz",
+     "liveness": "alive"
+    }
+   ]
+  },
+  "judyrecords": {
+   "schema_version": "3.0.0",
+   "id": "judyrecords",
+   "name": "judyrecords",
+   "category": "public-records",
+   "domain": "judyrecords.com",
+   "checked_at": "2026-10-25T04:17:54+00:00",
+   "liveness": "alive",
+   "liveness_detail": "catalog URL loaded",
+   "homepage": "https://www.judyrecords.com/",
+   "logo_url": "https://www.judyrecords.com/apple-touch-icon.png",
+   "images": [
+    {
+     "url": "https://www.judyrecords.com/apple-touch-icon.png",
+     "kind": "apple_touch_icon",
+     "source_page": "https://www.judyrecords.com/"
+    },
+    {
+     "url": "https://www.judyrecords.com/favicon-32x32.png",
+     "kind": "icon",
+     "source_page": "https://www.judyrecords.com/"
+    },
+    {
+     "url": "https://www.judyrecords.com/favicon-16x16.png",
+     "kind": "icon",
+     "source_page": "https://www.judyrecords.com/"
+    },
+    {
+     "url": "https://www.judyrecords.com/safari-pinned-tab.svg",
+     "kind": "icon",
+     "source_page": "https://www.judyrecords.com/"
+    }
+   ],
+   "theme_color": "#dedede",
+   "languages": [],
+   "legal_name": null,
+   "search": {
+    "available": true,
+    "method": "http_get",
+    "page_url": "https://www.judyrecords.com/",
+    "form_action": "https://www.judyrecords.com/",
+    "inputs": [
+     {
+      "name": "search",
+      "type": "text",
+      "canonical": "full_name",
+      "required": false,
+      "autocomplete": "off",
+      "placeholder": "search anything"
+     }
+    ],
+    "url_pattern": "https://www.judyrecords.com/?search={search}",
+    "directory_prefixes": [],
+    "paywall": null,
+    "login_wall": null
+   },
+   "removal": {
+    "url": "https://www.judyrecords.com/info",
+    "final_url": "https://www.judyrecords.com/info",
+    "http_status": 200,
+    "kinds": [
+     "opt_out"
+    ],
+    "channels": [
+     "email"
+    ],
+    "emails": [
+     {
+      "email": "suppression@judyrecords.com",
+      "confidence": "extracted",
+      "source_url": "https://www.judyrecords.com/info"
+     },
+     {
+      "email": "removal@judyrecords.com",
+      "confidence": "extracted",
+      "source_url": "https://www.judyrecords.com/info"
+     },
+     {
+      "email": "api@judyrecords.com",
+      "confidence": "uncertain",
+      "source_url": "https://www.judyrecords.com/info"
+     },
+     {
+      "email": "info@judyrecords.com",
+      "confidence": "uncertain",
+      "source_url": "https://www.judyrecords.com/info"
+     }
+    ],
+    "phones": [],
+    "postal_address": null,
+    "portal": null,
+    "form_fields": [],
+    "csrf_field_name": null,
+    "requires_profile_url": null,
+    "captcha": {
+     "provider": null,
+     "sitekey": null,
+     "pages": []
+    },
+    "consent_vendor": null,
+    "success_text": null,
+    "suppression_not_deletion": null,
+    "processing_days": null,
+    "processing_text": null
+   },
+   "bot_defense": {
+    "vendor": null,
+    "outcome": "none"
+   },
+   "legal": {
+    "privacy_policy_url": null,
+    "terms_url": null,
+    "automation_prohibited": null,
+    "automation_clause": null,
+    "residency": [
+     "US"
+    ],
+    "authorized_agent": null,
+    "data_categories": [
+     "identifiers",
+     "employment"
+    ]
+   },
+   "pages": [
+    {
+     "url": "https://judyrecords.com/",
+     "final_url": "https://www.judyrecords.com/",
+     "status": 200,
+     "role": "home",
+     "title": "Free Public Records Search - judyrecords",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.judyrecords.com/",
+     "final_url": "https://www.judyrecords.com/",
+     "status": 200,
+     "role": "home",
+     "title": "Free Public Records Search - judyrecords",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.judyrecords.com/info",
+     "final_url": "https://www.judyrecords.com/info",
+     "status": 200,
+     "role": "catalog",
+     "title": "Info - judyrecords",
+     "liveness": "alive"
+    }
+   ]
+  },
+  "mugshots-com": {
+   "schema_version": "3.0.0",
+   "id": "mugshots-com",
+   "name": "Mugshots.com",
+   "category": "background-checks",
+   "domain": "mugshots.com",
+   "checked_at": "2026-10-25T04:17:53+00:00",
+   "liveness": "alive",
+   "liveness_detail": "catalog URL loaded",
+   "homepage": "https://mugshots.com/",
+   "logo_url": "https://mugshots.com/favicon.png",
+   "images": [
+    {
+     "url": "https://mugshots.com/favicon.png",
+     "kind": "icon",
+     "source_page": "https://mugshots.com/"
+    }
+   ],
+   "theme_color": null,
+   "languages": [],
+   "legal_name": null,
+   "search": {
+    "available": true,
+    "method": "http_get",
+    "page_url": "https://mugshots.com/",
+    "form_action": "https://mugshots.com/search.html",
+    "inputs": [
+     {
+      "name": "q",
+      "type": "text",
+      "canonical": "full_name",
+      "required": true,
+      "autocomplete": null,
+      "placeholder": null
+     }
+    ],
+    "url_pattern": "https://mugshots.com/search.html?q={q}",
+    "directory_prefixes": [],
+    "paywall": null,
+    "login_wall": null
+   },
+   "removal": {
+    "url": "https://mugshots.com/record-maintenance",
+    "final_url": "https://mugshots.com/record-maintenance",
+    "http_status": 200,
+    "kinds": [
+     "opt_out"
+    ],
+    "channels": [],
+    "emails": [],
+    "phones": [],
+    "postal_address": null,
+    "portal": null,
+    "form_fields": [],
+    "csrf_field_name": null,
+    "requires_profile_url": null,
+    "captcha": {
+     "provider": null,
+     "sitekey": null,
+     "pages": []
+    },
+    "consent_vendor": null,
+    "success_text": null,
+    "suppression_not_deletion": null,
+    "processing_days": 2,
+    "processing_text": "THE CONTENT WILL BE DELETED WITHIN 48 HOURS"
+   },
+   "bot_defense": {
+    "vendor": null,
+    "outcome": "none"
+   },
+   "legal": {
+    "privacy_policy_url": null,
+    "terms_url": null,
+    "automation_prohibited": null,
+    "automation_clause": null,
+    "residency": [
+     "US"
+    ],
+    "authorized_agent": null,
+    "data_categories": [
+     "identifiers",
+     "employment",
+     "education"
+    ]
+   },
+   "pages": [
+    {
+     "url": "https://mugshots.com/",
+     "final_url": "https://mugshots.com/",
+     "status": 200,
+     "role": "home",
+     "title": "Best search engine for True crime stories | Mugshots.com",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.mugshots.com/",
+     "final_url": "https://mugshots.com/",
+     "status": 200,
+     "role": "home",
+     "title": "Best search engine for True crime stories | Mugshots.com",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://mugshots.com/record-maintenance",
+     "final_url": "https://mugshots.com/record-maintenance",
+     "status": 200,
+     "role": "catalog",
+     "title": "Best search engine for True crime stories | Mugshots.com",
      "liveness": "alive"
     }
    ]

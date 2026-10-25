@@ -82,6 +82,7 @@ intelius-peopleconnect-addresses-com,addresses.com,captcha,,http_get,,,,,,2026-1
 intentgine,intentgine.com,unfilled,,http_form_post,,,,full_name;email;phone,form_fields[field_fc92444];form_fields[field_79ee9dd];form_fields[message],2026-10-13T20:03:53+00:00
 intentmacro,intentmacro.com,submitted,200,http_form_post,,other,,full_name;email;phone,,2026-10-13T19:31:53+00:00
 jmr-media-consulting-inc,jmr-media.com,submitted,200,http_form_post,,other,,first_name;last_name;email,,2026-10-13T19:31:53+00:00
+judyrecords,judyrecords.com,results,200,browser,getSearchResults,results,2071433,full_name,,2026-10-25T04:20:47+00:00
 kansas-arrests,kansasarrests.org,no_results,200,http_get,results,empty,0,first_name;last_name;region;city;sex,,2026-10-13T19:44:01+00:00
 kids-live-safe,kidslivesafe.com,submitted,200,http_get,,form,,full_name,,2026-10-25T03:02:44+00:00
 lead-enhance-llc,lead-enhance.com,unfilled,,http_get,,,,full_name;email;phone,company;message,2026-10-13T20:03:53+00:00
@@ -93,6 +94,7 @@ maryland-arrests,marylandarrests.org,no_results,200,http_get,Results,empty,0,fir
 melissa,melissa.com,challenge,403,http_form_post,submissions,,,first_name;last_name;phone;email;accounttype,,2026-10-13T19:08:56+00:00
 mineralholders,mineralholders.com,submitted,200,http_get,search,results,1,full_name,,2026-10-25T03:33:57+00:00
 mugshotlook,mugshotlook.com,results,200,http_get,nameSearch,results,,first_name;last_name;region,,2026-10-13T19:44:08+00:00
+mugshots-com,mugshots.com,results,200,browser,search.html,results,28843,full_name,,2026-10-25T04:20:47+00:00
 names-and-facts,namesandfacts.com,challenge,403,http_get,p,,,first_name;last_name;region,,2026-10-25T03:33:57+00:00
 nebraska-arrests,nebraskaarrests.org,no_results,200,http_get,results,empty,0,first_name;last_name;region;city;sex,,2026-10-13T19:44:09+00:00
 neighborwho-beenverified-family,neighborwho.com,submitted,200,http_get,lp,other,,street_address,,2026-10-25T03:33:58+00:00

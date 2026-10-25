@@ -748,3 +748,5 @@ libra-memoria,Libra Memoria,libramemoria.com,alive,https://cdn-ext.prsmedia.fr/L
 nz-companies-office-individuals,NZ Companies Office director and shareholder search,app.companiesoffice.govt.nz,alive,https://www.companiesoffice.govt.nz/_resources/themes/base/dist/img/logos/co-logo-tiny.png,unknown,,https://www.companiesoffice.govt.nz/about-us/privacy/,web_form,,recaptcha_v3,
 abn-lookup,ABN Lookup,abr.business.gov.au,alive,https://abr.business.gov.au/Images/logo-gov.png,http_form_post,https://abr.business.gov.au/,https://abr.business.gov.au/Home/PrivacyPolicies,web_form,,recaptcha_v2,
 north-data,North Data,northdata.de,alive,https://www.northdata.de/ui/v1-515-11/favicon.png,http_get,https://www.northdata.de/,https://www.northdata.de/_privacy,web_form;email,info@northdata.de,,
+judyrecords,judyrecords,judyrecords.com,alive,https://www.judyrecords.com/apple-touch-icon.png,http_get,https://www.judyrecords.com/,https://www.judyrecords.com/info,email,suppression@judyrecords.com,,
+mugshots-com,Mugshots.com,mugshots.com,alive,https://mugshots.com/favicon.png,http_get,https://mugshots.com/,https://mugshots.com/record-maintenance,,,,

@@ -2,30 +2,30 @@
  "schema_version": "4.0.0",
  "checked_at": "2026-10-25T04:20:36+00:00",
  "method": "v3 records, with privacy and removal mailboxes on another domain kept as related_domain. Brokers whose loaded pages published no removal channel were crawled again for unfetched same-site opt-out and privacy URLs, then the catalog URL and homepage were opened once in a browser when those pages still showed no form. That recrawl honors robots.txt. A later pass reads the catalog URL and homepage of brokers whose robots.txt had disallowed the research client. A search pass reads homepages whose public search form was missing, including pages robots.txt had disallowed, and stores a name, phone, or address form. Those passes submit no form, no login, and no CAPTCHA. A legal pass re-reads stored privacy and terms text and fetches an unread privacy or terms page when robots.txt allows it. A network pass looks up public DNS and the site certificate, and reads response headers for the removal URL when robots.txt allows it. A later pass adds IPv6, SPF, DMARC, DKIM selectors, CAA, DNSSEC, the address block, certificate dates, RDAP registration, and the removal response's security headers. A captcha pass re-reads the removal URL and the search page for a widget. A browser reads the page when the static HTML has no widget and the page has a removal form, a stored CAPTCHA, or a public search form. A later pass reads the public widget settings, including whether it is a checkbox, an invisible check, or a score. A form pass re-reads stored search and removal forms for labels, limits, autocomplete, the submit button, and hidden field names. A browser opens when the static HTML does not contain the stored fields. Nothing is submitted. A search test then submits one synthetic query on each broker whose search and removal are both fillable, or with --searchable on each broker with a public search. A robots.txt disallow does not stop the test or count against a search; when --robots is set the log only notes it as robots_disallowed. Brokers whose homepage robots.txt disallowed the research client were later opened in a browser, and their liveness is the result of that read. Removal forms are not submitted and CAPTCHAs are not solved. search_test is on every broker. It stores the outcome, status, field names, the first path segment, the page kind, and a result count when the page states one. A loader page is followed to the count endpoint. The response body, record text, and listing URLs are not stored.",
- "broker_count": 749,
+ "broker_count": 751,
  "counts": {
   "with_related_email": 129,
   "with_form": 166,
-  "with_email": 411,
-  "with_extracted_email": 197,
+  "with_email": 412,
+  "with_extracted_email": 198,
   "with_stated_email": 12,
-  "no_channel_remaining": 73,
-  "with_search": 282,
-  "with_search_fillable": 262,
+  "no_channel_remaining": 74,
+  "with_search": 284,
+  "with_search_fillable": 264,
   "search_unscanned": 37,
-  "fully_automatable": 134,
-  "search_tested": 240,
-  "search_results": 17,
+  "fully_automatable": 135,
+  "search_tested": 242,
+  "search_results": 19,
   "search_submitted": 88,
   "search_no_results": 66,
   "search_unfilled": 9,
   "search_challenge": 47,
-  "search_result_count": 73,
+  "search_result_count": 75,
   "search_empty": 66,
-  "search_page_results": 22,
+  "search_page_results": 24,
   "search_page_loader": 12,
   "search_page_form": 18,
-  "with_country": 681,
+  "with_country": 683,
   "with_region": 477,
   "with_locality": 359,
   "with_removal_action": 138,
@@ -36,7 +36,7 @@
   "with_terms": 398,
   "with_automation_clause": 81,
   "with_authorized_agent": 140,
-  "with_residency": 520,
+  "with_residency": 522,
   "sells_personal_information": 4,
   "does_not_sell": 64,
   "children_not_directed": 38,
@@ -47,10 +47,10 @@
   "removal_offsite": 90,
   "with_hsts": 273,
   "with_form_enctype": 215,
-  "with_field_detail": 352,
+  "with_field_detail": 354,
   "with_field_label": 228,
   "with_field_constraint": 64,
-  "with_submit_label": 249,
+  "with_submit_label": 251,
   "with_hidden_names": 165,
   "with_ipv6": 263,
   "with_spf": 516,
@@ -70,7 +70,7 @@
   "removal_captcha_checked": 349,
   "search_captcha_widget": 16,
   "search_captcha_sitekey": 6,
-  "search_captcha_checked": 259,
+  "search_captcha_checked": 261,
   "captcha_blocks_form": 85,
   "captcha_email_fallback": 28,
   "removal_captcha_checkbox": 78,
@@ -94,12 +94,12 @@
    "opt_out_gone": 1,
    "robots": 23,
    "captcha_no_form": 24,
-   "no_channel": 75
+   "no_channel": 76
   },
-  "lookup_search": 217,
-  "lookup_search_fillable": 203,
+  "lookup_search": 219,
+  "lookup_search_fillable": 205,
   "liveness": {
-   "alive": 620,
+   "alive": 622,
    "blocked": 50,
    "dead": 6,
    "error": 20,
@@ -315856,6 +315856,564 @@
     "page_kind": null,
     "result_count": null,
     "checked_at": "2026-10-25T04:09:54+00:00"
+   }
+  },
+  "judyrecords": {
+   "schema_version": "4.0.0",
+   "id": "judyrecords",
+   "name": "judyrecords",
+   "category": "public-records",
+   "domain": "judyrecords.com",
+   "checked_at": "2026-10-25T04:17:54+00:00",
+   "liveness": "alive",
+   "liveness_detail": "judyrecords.com answered HTTP 200 on 2026-10-24. A name search returned court cases.",
+   "homepage": "https://www.judyrecords.com/",
+   "logo_url": "https://www.judyrecords.com/apple-touch-icon.png",
+   "images": [
+    {
+     "url": "https://www.judyrecords.com/apple-touch-icon.png",
+     "kind": "apple_touch_icon",
+     "source_page": "https://www.judyrecords.com/"
+    },
+    {
+     "url": "https://www.judyrecords.com/favicon-32x32.png",
+     "kind": "icon",
+     "source_page": "https://www.judyrecords.com/"
+    },
+    {
+     "url": "https://www.judyrecords.com/favicon-16x16.png",
+     "kind": "icon",
+     "source_page": "https://www.judyrecords.com/"
+    },
+    {
+     "url": "https://www.judyrecords.com/safari-pinned-tab.svg",
+     "kind": "icon",
+     "source_page": "https://www.judyrecords.com/"
+    }
+   ],
+   "theme_color": "#dedede",
+   "languages": [],
+   "legal_name": null,
+   "search": {
+    "available": true,
+    "method": "http_get",
+    "page_url": "https://www.judyrecords.com/",
+    "form_action": "https://www.judyrecords.com/",
+    "inputs": [
+     {
+      "name": "search",
+      "type": "text",
+      "canonical": "full_name",
+      "required": false,
+      "autocomplete": null,
+      "placeholder": "search anything",
+      "id": null,
+      "label": null,
+      "inputmode": null,
+      "pattern": null,
+      "minlength": null,
+      "maxlength": null,
+      "min": null,
+      "max": null,
+      "step": null,
+      "accept": null,
+      "multiple": false,
+      "disabled": false,
+      "readonly": false,
+      "checked": false,
+      "value": null
+     }
+    ],
+    "url_pattern": "https://www.judyrecords.com/?search={search}",
+    "directory_prefixes": [],
+    "paywall": null,
+    "login_wall": null,
+    "form_meta": {
+     "id": null,
+     "name": null,
+     "autocomplete": null,
+     "novalidate": null,
+     "submit_label": "Search",
+     "hidden_names": []
+    },
+    "captcha_provider": null,
+    "captcha_sitekey": null,
+    "captcha_detail": null,
+    "captcha_checked": true
+   },
+   "removal": {
+    "url": "https://www.judyrecords.com/info",
+    "final_url": "https://www.judyrecords.com/info",
+    "http_status": 200,
+    "kinds": [
+     "opt_out"
+    ],
+    "channels": [
+     "email"
+    ],
+    "emails": [
+     {
+      "email": "suppression@judyrecords.com",
+      "confidence": "extracted",
+      "source_url": "https://www.judyrecords.com/info"
+     },
+     {
+      "email": "removal@judyrecords.com",
+      "confidence": "extracted",
+      "source_url": "https://www.judyrecords.com/info"
+     },
+     {
+      "email": "api@judyrecords.com",
+      "confidence": "uncertain",
+      "source_url": "https://www.judyrecords.com/info"
+     },
+     {
+      "email": "info@judyrecords.com",
+      "confidence": "uncertain",
+      "source_url": "https://www.judyrecords.com/info"
+     }
+    ],
+    "phones": [],
+    "postal_address": null,
+    "portal": null,
+    "form_fields": [],
+    "csrf_field_name": null,
+    "requires_profile_url": null,
+    "captcha": {
+     "provider": null,
+     "sitekey": null,
+     "pages": [],
+     "checked": null,
+     "checked_url": null,
+     "detail": null
+    },
+    "consent_vendor": null,
+    "success_text": null,
+    "suppression_not_deletion": null,
+    "processing_days": null,
+    "processing_text": null,
+    "form_action": null,
+    "form_method": null,
+    "form_meta": {
+     "id": null,
+     "name": null,
+     "autocomplete": null,
+     "novalidate": null,
+     "submit_label": null,
+     "hidden_names": []
+    }
+   },
+   "bot_defense": {
+    "vendor": null,
+    "outcome": "none"
+   },
+   "legal": {
+    "privacy_policy_url": null,
+    "terms_url": null,
+    "automation_prohibited": null,
+    "automation_clause": null,
+    "residency": [
+     "US"
+    ],
+    "authorized_agent": null,
+    "data_categories": [
+     "identifiers",
+     "employment"
+    ],
+    "sells_personal_information": null,
+    "sells_clause": null,
+    "children_not_directed": null
+   },
+   "pages": [
+    {
+     "url": "https://judyrecords.com/",
+     "final_url": "https://www.judyrecords.com/",
+     "status": 200,
+     "role": "home",
+     "title": "Free Public Records Search - judyrecords",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.judyrecords.com/",
+     "final_url": "https://www.judyrecords.com/",
+     "status": 200,
+     "role": "home",
+     "title": "Free Public Records Search - judyrecords",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.judyrecords.com/info",
+     "final_url": "https://www.judyrecords.com/info",
+     "status": 200,
+     "role": "catalog",
+     "title": "Info - judyrecords",
+     "liveness": "alive"
+    }
+   ],
+   "location": {
+    "country": "US",
+    "region": null,
+    "locality": null,
+    "postal_code": null,
+    "street": null,
+    "postal_address": null,
+    "coverage": [
+     "US"
+    ],
+    "search_regions": [],
+    "sources": [
+     "page"
+    ]
+   },
+   "network": {
+    "checked": false,
+    "addresses": [],
+    "ipv6": [],
+    "cname": null,
+    "mx": [],
+    "mail_provider": null,
+    "spf": null,
+    "dmarc": null,
+    "dkim": [],
+    "nameservers": [],
+    "dns_provider": null,
+    "soa_primary": null,
+    "caa": [],
+    "dnssec": null,
+    "asn": null,
+    "asn_country": null,
+    "prefix": null,
+    "cdn": null,
+    "server": null,
+    "tls_org": null,
+    "tls_issuer": null,
+    "tls_names": [],
+    "tls_version": null,
+    "tls_not_before": null,
+    "tls_not_after": null,
+    "registrar": null,
+    "registered": null,
+    "registration_expires": null,
+    "domain_status": []
+   },
+   "request": {
+    "removal_host": "judyrecords.com",
+    "same_site": true,
+    "https": true,
+    "redirected": false,
+    "redirect_count": null,
+    "form_enctype": null,
+    "content_type": null,
+    "hsts": null,
+    "hsts_max_age": null,
+    "hsts_subdomains": null,
+    "hsts_preload": null,
+    "http_version": null,
+    "http3": null,
+    "frame_options": null,
+    "nosniff": null,
+    "referrer_policy": null,
+    "csp": null,
+    "powered_by": null,
+    "cookie_names": []
+   },
+   "automation": {
+    "search_scanned": true,
+    "search_fillable": true,
+    "search_captcha": false,
+    "search_fields": [
+     "full_name"
+    ],
+    "removal_form_fillable": false,
+    "removal_email_usable": true,
+    "removal_fields": [],
+    "removal_path": "email",
+    "fully_automatable": true,
+    "usable_emails": [
+     "suppression@judyrecords.com",
+     "removal@judyrecords.com"
+    ],
+    "search_required": [],
+    "removal_required": [],
+    "email_verification": null,
+    "id_document": null,
+    "shared_removal_ids": [],
+    "removal_captcha": false,
+    "captcha_blocks_form": false,
+    "captcha_email_fallback": false,
+    "removal_blocker": null
+   },
+   "search_test": {
+    "outcome": "results",
+    "http_status": 200,
+    "path_prefix": "getSearchResults",
+    "fields_sent": [
+     "full_name"
+    ],
+    "missing": [],
+    "page_kind": "results",
+    "result_count": 2071433,
+    "checked_at": "2026-10-25T04:20:47+00:00"
+   }
+  },
+  "mugshots-com": {
+   "schema_version": "4.0.0",
+   "id": "mugshots-com",
+   "name": "Mugshots.com",
+   "category": "background-checks",
+   "domain": "mugshots.com",
+   "checked_at": "2026-10-25T04:17:53+00:00",
+   "liveness": "alive",
+   "liveness_detail": "mugshots.com answered HTTP 200 on 2026-10-24. A name search returned arrest records.",
+   "homepage": "https://mugshots.com/",
+   "logo_url": "https://mugshots.com/favicon.png",
+   "images": [
+    {
+     "url": "https://mugshots.com/favicon.png",
+     "kind": "icon",
+     "source_page": "https://mugshots.com/"
+    }
+   ],
+   "theme_color": null,
+   "languages": [],
+   "legal_name": null,
+   "search": {
+    "available": true,
+    "method": "http_get",
+    "page_url": "https://mugshots.com/",
+    "form_action": "https://mugshots.com/search.html",
+    "inputs": [
+     {
+      "name": "q",
+      "type": "text",
+      "canonical": "full_name",
+      "required": true,
+      "autocomplete": null,
+      "placeholder": null,
+      "id": null,
+      "label": null,
+      "inputmode": null,
+      "pattern": null,
+      "minlength": null,
+      "maxlength": null,
+      "min": null,
+      "max": null,
+      "step": null,
+      "accept": null,
+      "multiple": false,
+      "disabled": false,
+      "readonly": false,
+      "checked": false,
+      "value": null
+     }
+    ],
+    "url_pattern": "https://mugshots.com/search.html?q={q}",
+    "directory_prefixes": [],
+    "paywall": null,
+    "login_wall": null,
+    "form_meta": {
+     "id": null,
+     "name": null,
+     "autocomplete": null,
+     "novalidate": null,
+     "submit_label": "SEARCH",
+     "hidden_names": []
+    },
+    "captcha_provider": null,
+    "captcha_sitekey": null,
+    "captcha_detail": null,
+    "captcha_checked": true
+   },
+   "removal": {
+    "url": "https://mugshots.com/record-maintenance",
+    "final_url": "https://mugshots.com/record-maintenance",
+    "http_status": 200,
+    "kinds": [
+     "opt_out"
+    ],
+    "channels": [],
+    "emails": [],
+    "phones": [],
+    "postal_address": null,
+    "portal": null,
+    "form_fields": [],
+    "csrf_field_name": null,
+    "requires_profile_url": null,
+    "captcha": {
+     "provider": null,
+     "sitekey": null,
+     "pages": [],
+     "checked": null,
+     "checked_url": null,
+     "detail": null
+    },
+    "consent_vendor": null,
+    "success_text": null,
+    "suppression_not_deletion": null,
+    "processing_days": 2,
+    "processing_text": "THE CONTENT WILL BE DELETED WITHIN 48 HOURS",
+    "form_action": null,
+    "form_method": null,
+    "form_meta": {
+     "id": null,
+     "name": null,
+     "autocomplete": null,
+     "novalidate": null,
+     "submit_label": null,
+     "hidden_names": []
+    }
+   },
+   "bot_defense": {
+    "vendor": null,
+    "outcome": "none"
+   },
+   "legal": {
+    "privacy_policy_url": null,
+    "terms_url": null,
+    "automation_prohibited": null,
+    "automation_clause": null,
+    "residency": [
+     "US"
+    ],
+    "authorized_agent": null,
+    "data_categories": [
+     "identifiers",
+     "employment",
+     "education"
+    ],
+    "sells_personal_information": null,
+    "sells_clause": null,
+    "children_not_directed": null
+   },
+   "pages": [
+    {
+     "url": "https://mugshots.com/",
+     "final_url": "https://mugshots.com/",
+     "status": 200,
+     "role": "home",
+     "title": "Best search engine for True crime stories | Mugshots.com",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.mugshots.com/",
+     "final_url": "https://mugshots.com/",
+     "status": 200,
+     "role": "home",
+     "title": "Best search engine for True crime stories | Mugshots.com",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://mugshots.com/record-maintenance",
+     "final_url": "https://mugshots.com/record-maintenance",
+     "status": 200,
+     "role": "catalog",
+     "title": "Best search engine for True crime stories | Mugshots.com",
+     "liveness": "alive"
+    }
+   ],
+   "location": {
+    "country": "US",
+    "region": null,
+    "locality": null,
+    "postal_code": null,
+    "street": null,
+    "postal_address": null,
+    "coverage": [
+     "US"
+    ],
+    "search_regions": [],
+    "sources": [
+     "page"
+    ]
+   },
+   "network": {
+    "checked": false,
+    "addresses": [],
+    "ipv6": [],
+    "cname": null,
+    "mx": [],
+    "mail_provider": null,
+    "spf": null,
+    "dmarc": null,
+    "dkim": [],
+    "nameservers": [],
+    "dns_provider": null,
+    "soa_primary": null,
+    "caa": [],
+    "dnssec": null,
+    "asn": null,
+    "asn_country": null,
+    "prefix": null,
+    "cdn": null,
+    "server": null,
+    "tls_org": null,
+    "tls_issuer": null,
+    "tls_names": [],
+    "tls_version": null,
+    "tls_not_before": null,
+    "tls_not_after": null,
+    "registrar": null,
+    "registered": null,
+    "registration_expires": null,
+    "domain_status": []
+   },
+   "request": {
+    "removal_host": "mugshots.com",
+    "same_site": true,
+    "https": true,
+    "redirected": false,
+    "redirect_count": null,
+    "form_enctype": null,
+    "content_type": null,
+    "hsts": null,
+    "hsts_max_age": null,
+    "hsts_subdomains": null,
+    "hsts_preload": null,
+    "http_version": null,
+    "http3": null,
+    "frame_options": null,
+    "nosniff": null,
+    "referrer_policy": null,
+    "csp": null,
+    "powered_by": null,
+    "cookie_names": []
+   },
+   "automation": {
+    "search_scanned": true,
+    "search_fillable": true,
+    "search_captcha": false,
+    "search_fields": [
+     "full_name"
+    ],
+    "removal_form_fillable": false,
+    "removal_email_usable": false,
+    "removal_fields": [],
+    "removal_path": null,
+    "fully_automatable": false,
+    "usable_emails": [],
+    "search_required": [
+     "full_name"
+    ],
+    "removal_required": [],
+    "email_verification": null,
+    "id_document": null,
+    "shared_removal_ids": [],
+    "removal_captcha": false,
+    "captcha_blocks_form": false,
+    "captcha_email_fallback": false,
+    "removal_blocker": "no_channel"
+   },
+   "search_test": {
+    "outcome": "results",
+    "http_status": 200,
+    "path_prefix": "search.html",
+    "fields_sent": [
+     "full_name"
+    ],
+    "missing": [],
+    "page_kind": "results",
+    "result_count": 28843,
+    "checked_at": "2026-10-25T04:20:47+00:00"
    }
   }
  }
