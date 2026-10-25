@@ -86,5 +86,11 @@
       "canonical": "region",
       "evidence": "Name search form id email-form on /name/landing (First-Name, Last-Name, then this select). The live select's choices are \"All States\" (value all) then US states with code values (AL = Alabama …). Frame fills a select only with one of its own choices, matched against the person's region code or name; untagged, Frame sent the select's first choice."
     }
+  },
+  "mineralholders": {
+    "owner_name": {
+      "canonical": "full_name",
+      "evidence": "Homepage owner search (GET to /search), placeholder \"Owner Name\" on 2026-10-24: the name of a mineral or royalty owner. The label rules did not match the field name owner_name. robots.txt disallows /search for all user agents, so the search test records robots and does not run it."
+    }
   }
 }
