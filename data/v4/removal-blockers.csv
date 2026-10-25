@@ -24,6 +24,7 @@ minnesota-arrests,Minnesota Arrests,minnesotaarrests.org,background-checks,alive
 mississippi-arrests,Mississippi Arrests,msarrests.org,background-checks,alive,captcha_no_form,A CAPTCHA widget is on the removal page and no form fields or usable email were stored,recaptcha_v3,6Lec9w8pAAAAABYABmPiCFlAsnMZAtkVUSJ7e4ak,score,true,,,,
 missouri-arrests,Missouri Arrests,missouriarrests.org,background-checks,alive,captcha_no_form,A CAPTCHA widget is on the removal page and no form fields or usable email were stored,turnstile,0x4AAAAAADyouBDjhGFeDUDb,checkbox,true,,,,
 montana-arrests,Montana Arrests,montanaarrests.org,background-checks,alive,phone_postal,Phone and a mailing address are the only channels,,,,true,,,,postal_mail;phone
+mugshots-com,Mugshots.com,mugshots.com,background-checks,alive,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,,,,,
 new-hampshire-arrests,New Hampshire Arrests,nharrests.org,background-checks,alive,postal,The only published channel is a mailing address,,,,true,,,,postal_mail
 new-mexico-arrests,New Mexico Arrests,nmarrests.org,background-checks,alive,phone_postal,Phone and a mailing address are the only channels,,,,true,,,,postal_mail;phone
 new-york-arrests,New York Arrests,nyarrests.org,background-checks,alive,captcha_no_form,A CAPTCHA widget is on the removal page and no form fields or usable email were stored,turnstile,0x4AAAAAADypakHEOSYCaA2m,checkbox,true,,,,

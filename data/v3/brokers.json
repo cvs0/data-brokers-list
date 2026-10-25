@@ -1,21 +1,21 @@
 {
  "schema_version": "3.0.0",
- "checked_at": "2026-10-25T03:49:22+00:00",
+ "checked_at": "2026-10-25T04:18:41+00:00",
  "method": "Public pages only: homepage, catalog URL, and mapped privacy, contact, and legal links. robots.txt honored. No form submitted, no login, no CAPTCHA solved. A browser opened lookup homepages the static fetch never read, and catalog URLs that were blocked or failed, when robots.txt allowed the URL. Image fields are URLs, not copied files. People-search listing URLs are not stored. Null means the fetched page did not establish that fact. Every catalog id has a record.",
- "broker_count": 740,
+ "broker_count": 742,
  "counts": {
   "liveness": {
-   "alive": 557,
+   "alive": 559,
    "blocked": 39,
    "error": 24,
    "not_checked": 32,
    "opt_out_missing": 5,
    "robots_disallowed": 83
   },
-  "with_logo": 602,
-  "with_image": 602,
-  "with_search": 362,
-  "with_email": 356,
+  "with_logo": 604,
+  "with_image": 604,
+  "with_search": 364,
+  "with_email": 357,
   "with_captcha": 326,
   "with_form": 126
  },
@@ -59314,7 +59314,7 @@
    "name": "Samba TV, Inc.",
    "category": "other",
    "domain": "samba.com",
-   "checked_at": "2026-10-25T03:48:52+00:00",
+   "checked_at": "2026-10-25T04:18:13+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -117432,7 +117432,7 @@
    "name": "Live Data Technologies, Inc.",
    "category": "other",
    "domain": "livedatatech.com",
-   "checked_at": "2026-10-25T03:49:10+00:00",
+   "checked_at": "2026-10-25T04:18:30+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -154295,7 +154295,7 @@
    "name": "Data Axle Canada",
    "category": "marketing",
    "domain": "dataaxlecanada.ca",
-   "checked_at": "2026-10-25T03:49:22+00:00",
+   "checked_at": "2026-10-25T04:18:41+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -154362,7 +154362,7 @@
    "name": "Prospects Influential",
    "category": "marketing",
    "domain": "prospectsinfluential.com",
-   "checked_at": "2026-10-25T03:49:22+00:00",
+   "checked_at": "2026-10-25T04:18:41+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -154429,7 +154429,7 @@
    "name": "Openroom",
    "category": "background-checks",
    "domain": "openroom.ca",
-   "checked_at": "2026-10-25T03:49:22+00:00",
+   "checked_at": "2026-10-25T04:18:41+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -154496,7 +154496,7 @@
    "name": "Landlord Credit Bureau",
    "category": "credit-financial",
    "domain": "landlordcreditbureau.ca",
-   "checked_at": "2026-10-25T03:49:22+00:00",
+   "checked_at": "2026-10-25T04:18:41+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -154563,7 +154563,7 @@
    "name": "FrontLobby",
    "category": "credit-financial",
    "domain": "frontlobby.com",
-   "checked_at": "2026-10-25T03:49:22+00:00",
+   "checked_at": "2026-10-25T04:18:41+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -154630,7 +154630,7 @@
    "name": "Echovita",
    "category": "people-search",
    "domain": "echovita.com",
-   "checked_at": "2026-10-25T03:49:22+00:00",
+   "checked_at": "2026-10-25T04:18:41+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -154697,7 +154697,7 @@
    "name": "InMemoriam",
    "category": "people-search",
    "domain": "inmemoriam.ca",
-   "checked_at": "2026-10-25T03:49:22+00:00",
+   "checked_at": "2026-10-25T04:18:41+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -154764,7 +154764,7 @@
    "name": "Nécrologie.ca",
    "category": "people-search",
    "domain": "necrologie.ca",
-   "checked_at": "2026-10-25T03:49:22+00:00",
+   "checked_at": "2026-10-25T04:18:41+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -154831,7 +154831,7 @@
    "name": "Geni",
    "category": "people-search",
    "domain": "geni.com",
-   "checked_at": "2026-10-25T03:49:22+00:00",
+   "checked_at": "2026-10-25T04:18:41+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -154898,7 +154898,7 @@
    "name": "FQSG Avis de décès",
    "category": "people-search",
    "domain": "federationgenealogie.qc.ca",
-   "checked_at": "2026-10-25T03:49:22+00:00",
+   "checked_at": "2026-10-25T04:18:41+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -154965,7 +154965,7 @@
    "name": "Domaine funéraire (Corporation des thanatologues du Québec)",
    "category": "people-search",
    "domain": "domainefuneraire.com",
-   "checked_at": "2026-10-25T03:49:22+00:00",
+   "checked_at": "2026-10-25T04:18:41+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -155032,7 +155032,7 @@
    "name": "Canadian Obituaries",
    "category": "people-search",
    "domain": "canadianobituaries.com",
-   "checked_at": "2026-10-25T03:49:22+00:00",
+   "checked_at": "2026-10-25T04:18:41+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -155099,7 +155099,7 @@
    "name": "Coopérative funéraire du Grand Montréal",
    "category": "people-search",
    "domain": "cfgrandmontreal.com",
-   "checked_at": "2026-10-25T03:49:22+00:00",
+   "checked_at": "2026-10-25T04:18:41+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -155166,7 +155166,7 @@
    "name": "Coopérative funéraire des Deux Rives",
    "category": "people-search",
    "domain": "coopfuneraire2rives.com",
-   "checked_at": "2026-10-25T03:49:22+00:00",
+   "checked_at": "2026-10-25T04:18:41+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -155233,7 +155233,7 @@
    "name": "Alliance funéraire du Royaume",
    "category": "people-search",
    "domain": "afdr.coop",
-   "checked_at": "2026-10-25T03:49:22+00:00",
+   "checked_at": "2026-10-25T04:18:41+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -155300,7 +155300,7 @@
    "name": "Coopérative funéraire de l'Abitibi",
    "category": "people-search",
    "domain": "cfa.coop",
-   "checked_at": "2026-10-25T03:49:22+00:00",
+   "checked_at": "2026-10-25T04:18:41+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -155367,7 +155367,7 @@
    "name": "Coopérative funéraire Haute-Côte-Nord - Manicouagan",
    "category": "people-search",
    "domain": "cfhcn.ca",
-   "checked_at": "2026-10-25T03:49:22+00:00",
+   "checked_at": "2026-10-25T04:18:41+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -155434,7 +155434,7 @@
    "name": "Coopérative funéraire de l'Outaouais",
    "category": "people-search",
    "domain": "cfo.coop",
-   "checked_at": "2026-10-25T03:49:22+00:00",
+   "checked_at": "2026-10-25T04:18:41+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -155501,7 +155501,7 @@
    "name": "Coopérative funéraire de l'Estrie",
    "category": "people-search",
    "domain": "coopfuneraireestrie.com",
-   "checked_at": "2026-10-25T03:49:22+00:00",
+   "checked_at": "2026-10-25T04:18:41+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -155568,7 +155568,7 @@
    "name": "Résidence funéraire Lac St-Jean",
    "category": "people-search",
    "domain": "residencefunerairelacstjean.com",
-   "checked_at": "2026-10-25T03:49:22+00:00",
+   "checked_at": "2026-10-25T04:18:41+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -155635,7 +155635,7 @@
    "name": "Coopérative funéraire Brunet",
    "category": "people-search",
    "domain": "coopfbrunet.com",
-   "checked_at": "2026-10-25T03:49:22+00:00",
+   "checked_at": "2026-10-25T04:18:41+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -155702,7 +155702,7 @@
    "name": "Coopérative funéraire Matawinie-Montcalm",
    "category": "people-search",
    "domain": "cfmm.coop",
-   "checked_at": "2026-10-25T03:49:22+00:00",
+   "checked_at": "2026-10-25T04:18:41+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -155769,7 +155769,7 @@
    "name": "Coopérative funéraire des Laurentides",
    "category": "people-search",
    "domain": "coopfunerairelaurentides.org",
-   "checked_at": "2026-10-25T03:49:22+00:00",
+   "checked_at": "2026-10-25T04:18:41+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -155836,7 +155836,7 @@
    "name": "Résidence Funéraire Maska",
    "category": "people-search",
    "domain": "rfmaska.coop",
-   "checked_at": "2026-10-25T03:49:22+00:00",
+   "checked_at": "2026-10-25T04:18:41+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -155903,7 +155903,7 @@
    "name": "Dignity Memorial",
    "category": "people-search",
    "domain": "dignitymemorial.com",
-   "checked_at": "2026-10-25T03:49:22+00:00",
+   "checked_at": "2026-10-25T04:18:41+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -155970,7 +155970,7 @@
    "name": "Interment.net",
    "category": "people-search",
    "domain": "interment.net",
-   "checked_at": "2026-10-25T03:49:22+00:00",
+   "checked_at": "2026-10-25T04:18:41+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -156037,7 +156037,7 @@
    "name": "Mount Pleasant Group",
    "category": "people-search",
    "domain": "mountpleasantgroup.com",
-   "checked_at": "2026-10-25T03:49:22+00:00",
+   "checked_at": "2026-10-25T04:18:41+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -156104,7 +156104,7 @@
    "name": "Kearney Funeral Services",
    "category": "people-search",
    "domain": "kearneyfs.com",
-   "checked_at": "2026-10-25T03:49:22+00:00",
+   "checked_at": "2026-10-25T04:18:41+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -156171,7 +156171,7 @@
    "name": "Basic Funerals",
    "category": "people-search",
    "domain": "basicfunerals.ca",
-   "checked_at": "2026-10-25T03:49:22+00:00",
+   "checked_at": "2026-10-25T04:18:41+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -156238,7 +156238,7 @@
    "name": "Le Nécrologue",
    "category": "people-search",
    "domain": "lenecrologue.com",
-   "checked_at": "2026-10-25T03:49:22+00:00",
+   "checked_at": "2026-10-25T04:18:41+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -156298,6 +156298,269 @@
     "data_categories": []
    },
    "pages": []
+  },
+  "judyrecords": {
+   "schema_version": "3.0.0",
+   "id": "judyrecords",
+   "name": "judyrecords",
+   "category": "public-records",
+   "domain": "judyrecords.com",
+   "checked_at": "2026-10-25T04:17:54+00:00",
+   "liveness": "alive",
+   "liveness_detail": "catalog URL loaded",
+   "homepage": "https://www.judyrecords.com/",
+   "logo_url": "https://www.judyrecords.com/apple-touch-icon.png",
+   "images": [
+    {
+     "url": "https://www.judyrecords.com/apple-touch-icon.png",
+     "kind": "apple_touch_icon",
+     "source_page": "https://www.judyrecords.com/"
+    },
+    {
+     "url": "https://www.judyrecords.com/favicon-32x32.png",
+     "kind": "icon",
+     "source_page": "https://www.judyrecords.com/"
+    },
+    {
+     "url": "https://www.judyrecords.com/favicon-16x16.png",
+     "kind": "icon",
+     "source_page": "https://www.judyrecords.com/"
+    },
+    {
+     "url": "https://www.judyrecords.com/safari-pinned-tab.svg",
+     "kind": "icon",
+     "source_page": "https://www.judyrecords.com/"
+    }
+   ],
+   "theme_color": "#dedede",
+   "languages": [],
+   "legal_name": null,
+   "search": {
+    "available": true,
+    "method": "http_get",
+    "page_url": "https://www.judyrecords.com/",
+    "form_action": "https://www.judyrecords.com/",
+    "inputs": [
+     {
+      "name": "search",
+      "type": "text",
+      "canonical": "full_name",
+      "required": false,
+      "autocomplete": "off",
+      "placeholder": "search anything"
+     }
+    ],
+    "url_pattern": "https://www.judyrecords.com/?search={search}",
+    "directory_prefixes": [],
+    "paywall": null,
+    "login_wall": null
+   },
+   "removal": {
+    "url": "https://www.judyrecords.com/info",
+    "final_url": "https://www.judyrecords.com/info",
+    "http_status": 200,
+    "kinds": [
+     "opt_out"
+    ],
+    "channels": [
+     "email"
+    ],
+    "emails": [
+     {
+      "email": "suppression@judyrecords.com",
+      "confidence": "extracted",
+      "source_url": "https://www.judyrecords.com/info"
+     },
+     {
+      "email": "removal@judyrecords.com",
+      "confidence": "extracted",
+      "source_url": "https://www.judyrecords.com/info"
+     },
+     {
+      "email": "api@judyrecords.com",
+      "confidence": "uncertain",
+      "source_url": "https://www.judyrecords.com/info"
+     },
+     {
+      "email": "info@judyrecords.com",
+      "confidence": "uncertain",
+      "source_url": "https://www.judyrecords.com/info"
+     }
+    ],
+    "phones": [],
+    "postal_address": null,
+    "portal": null,
+    "form_fields": [],
+    "csrf_field_name": null,
+    "requires_profile_url": null,
+    "captcha": {
+     "provider": null,
+     "sitekey": null,
+     "pages": []
+    },
+    "consent_vendor": null,
+    "success_text": null,
+    "suppression_not_deletion": null,
+    "processing_days": null,
+    "processing_text": null
+   },
+   "bot_defense": {
+    "vendor": null,
+    "outcome": "none"
+   },
+   "legal": {
+    "privacy_policy_url": null,
+    "terms_url": null,
+    "automation_prohibited": null,
+    "automation_clause": null,
+    "residency": [
+     "US"
+    ],
+    "authorized_agent": null,
+    "data_categories": [
+     "identifiers",
+     "employment"
+    ]
+   },
+   "pages": [
+    {
+     "url": "https://judyrecords.com/",
+     "final_url": "https://www.judyrecords.com/",
+     "status": 200,
+     "role": "home",
+     "title": "Free Public Records Search - judyrecords",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.judyrecords.com/",
+     "final_url": "https://www.judyrecords.com/",
+     "status": 200,
+     "role": "home",
+     "title": "Free Public Records Search - judyrecords",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.judyrecords.com/info",
+     "final_url": "https://www.judyrecords.com/info",
+     "status": 200,
+     "role": "catalog",
+     "title": "Info - judyrecords",
+     "liveness": "alive"
+    }
+   ]
+  },
+  "mugshots-com": {
+   "schema_version": "3.0.0",
+   "id": "mugshots-com",
+   "name": "Mugshots.com",
+   "category": "background-checks",
+   "domain": "mugshots.com",
+   "checked_at": "2026-10-25T04:17:53+00:00",
+   "liveness": "alive",
+   "liveness_detail": "catalog URL loaded",
+   "homepage": "https://mugshots.com/",
+   "logo_url": "https://mugshots.com/favicon.png",
+   "images": [
+    {
+     "url": "https://mugshots.com/favicon.png",
+     "kind": "icon",
+     "source_page": "https://mugshots.com/"
+    }
+   ],
+   "theme_color": null,
+   "languages": [],
+   "legal_name": null,
+   "search": {
+    "available": true,
+    "method": "http_get",
+    "page_url": "https://mugshots.com/",
+    "form_action": "https://mugshots.com/search.html",
+    "inputs": [
+     {
+      "name": "q",
+      "type": "text",
+      "canonical": "full_name",
+      "required": true,
+      "autocomplete": null,
+      "placeholder": null
+     }
+    ],
+    "url_pattern": "https://mugshots.com/search.html?q={q}",
+    "directory_prefixes": [],
+    "paywall": null,
+    "login_wall": null
+   },
+   "removal": {
+    "url": "https://mugshots.com/record-maintenance",
+    "final_url": "https://mugshots.com/record-maintenance",
+    "http_status": 200,
+    "kinds": [
+     "opt_out"
+    ],
+    "channels": [],
+    "emails": [],
+    "phones": [],
+    "postal_address": null,
+    "portal": null,
+    "form_fields": [],
+    "csrf_field_name": null,
+    "requires_profile_url": null,
+    "captcha": {
+     "provider": null,
+     "sitekey": null,
+     "pages": []
+    },
+    "consent_vendor": null,
+    "success_text": null,
+    "suppression_not_deletion": null,
+    "processing_days": 2,
+    "processing_text": "THE CONTENT WILL BE DELETED WITHIN 48 HOURS"
+   },
+   "bot_defense": {
+    "vendor": null,
+    "outcome": "none"
+   },
+   "legal": {
+    "privacy_policy_url": null,
+    "terms_url": null,
+    "automation_prohibited": null,
+    "automation_clause": null,
+    "residency": [
+     "US"
+    ],
+    "authorized_agent": null,
+    "data_categories": [
+     "identifiers",
+     "employment",
+     "education"
+    ]
+   },
+   "pages": [
+    {
+     "url": "https://mugshots.com/",
+     "final_url": "https://mugshots.com/",
+     "status": 200,
+     "role": "home",
+     "title": "Best search engine for True crime stories | Mugshots.com",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.mugshots.com/",
+     "final_url": "https://mugshots.com/",
+     "status": 200,
+     "role": "home",
+     "title": "Best search engine for True crime stories | Mugshots.com",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://mugshots.com/record-maintenance",
+     "final_url": "https://mugshots.com/record-maintenance",
+     "status": 200,
+     "role": "catalog",
+     "title": "Best search engine for True crime stories | Mugshots.com",
+     "liveness": "alive"
+    }
+   ]
   }
  }
 }

@@ -2,7 +2,7 @@
 
 Court, voter, property, and other public-record aggregators. Taking a profile off one of these sites does not seal the official record.
 
-81 entries. Link responses were checked on 2026-10-01 unless a note says otherwise.
+82 entries. Link responses were checked on 2026-10-01 unless a note says otherwise.
 
 | Broker | Opt-out / privacy URL | Notes |
 | --- | --- | --- |
@@ -13,6 +13,7 @@ Court, voter, property, and other public-record aggregators. Taking a profile of
 | CourtListener | https://wiki.free.law/c/terms/courtlistener/courtlistenercom-content-removal-policy | Content-removal policy for CourtListener court records. A removal here does not seal the official court record. |
 | First American | https://www.firstam.com/privacy-policy/ | Privacy notice for First American title and property data. Use the state-rights, do-not-sell, or request section. |
 | Florida Voter Directory | https://www.floridavoterdirectory.com/opt-out | Opt-out or consumer privacy-request page. Automated check on 2026-10-01 got HTTP 403. Open the link in a browser. |
+| judyrecords | https://www.judyrecords.com/info | Free full-text search of US court records. It says it holds more than 770 million cases, and case pages name the parties. Free search is a GET to / with search. Checked 2026-10-24: GET /?search=john+smith led to /getSearchResults/?page=1 with "Page 1 of 2,071,433 total results for: john smith" (252,133 cases). The made-up name Alder Northwind returned "1 total results", a word match on a vessel case, not a person. Too many searches send the page to /captcha. The info page says to email removal@judyrecords.com to remove a page, accepted when the record was sealed or expunged by a court order, and suppression@judyrecords.com to remove a page from search engine results. The terms page has no rule against automated searches. No request was submitted. |
 | NJPropertyRecords | https://njpropertyrecords.com/redaction | Opt-out or consumer privacy-request page. Email: Support@NJPropertyRecords.com. Automated check on 2026-10-01 got HTTP 403. Open the link in a browser. |
 | PropertyRadar, Inc. | https://www.propertyradar.com/privacy-policy | Privacy notice or privacy-policy page. Use the state-rights, do-not-sell, or request section. The Markup and CalMatters (2025) found page code that hid this URL from search engines. |
 | PropertyRec network | https://dashboard.propertyrec.com/opt-out | Opt-out or consumer privacy-request page. Automated check on 2026-10-01 got HTTP 429. Open the link in a browser. |

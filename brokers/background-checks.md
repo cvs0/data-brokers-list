@@ -2,7 +2,7 @@
 
 Background-check brands and arrest-record portals. A removal here does not erase the government record underneath it.
 
-68 entries. Link responses were checked on 2026-10-01 unless a note says otherwise.
+69 entries. Link responses were checked on 2026-10-01 unless a note says otherwise.
 
 | Broker | Opt-out / privacy URL | Notes |
 | --- | --- | --- |
@@ -44,6 +44,7 @@ Background-check brands and arrest-record portals. A removal here does not erase
 | Missouri Arrests | https://www.missouriarrests.org/request-portal | Arrests.org request portal for this state site. The portal URL was responding on 2026-10-01. |
 | Montana Arrests | https://www.montanaarrests.org/request-portal | Arrests.org request portal for this state site. The portal URL was responding on 2026-10-01. |
 | MugshotLook | https://www.mugshotlook.com | Published privacy-request URL is the site root. Confirm a request form is on the page before sending information. Online form + email verification. |
+| Mugshots.com | https://mugshots.com/record-maintenance | Arrest-record and booking-photo database that calls itself a news organization. Records name the arrested person and give the booking state. Free search is a GET to /search.html with q. Checked 2026-10-24: q=John Smith: "John Smith ( 28843 results)". q=Alder Northwind: "No exact matches." The record maintenance page says it does not charge to remove or update records. It removes a record after an expungement, seal, no-information, record restriction, identity theft or death, sent as court documentation to mugshots.com1@gmail.com with the Mugshots.com ID. No terms page was found (/terms.html returned 404). No request was submitted. |
 | Nebraska Arrests | https://infotracer.com/do-not-sell-share-my-personal-information/ | Name search on this site has no CAPTCHA. Removal is the InfoTracer opt-out. Email: privacy@infotracer.com. Checked 2026-10-13. No search was submitted. |
 | Nevada Arrests | https://www.nevadaarrests.org/the-privacy-request-portal/ | Opt-out or consumer privacy-request page. |
 | New Hampshire Arrests | https://www.nharrests.org/request-portal | Arrests.org request portal for this state site. The portal URL was responding on 2026-10-01. |

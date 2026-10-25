@@ -739,3 +739,5 @@ mount-pleasant-group,Mount Pleasant Group,mountpleasantgroup.com,people-search,a
 kearney-funeral-services,Kearney Funeral Services,kearneyfs.com,people-search,alive,,,,,0,true,true,full_name,,false,,,,,,CA,,,CA,,,,,,,,,,,,kearneyfs.com,true,,,,,,,,,0,no_channel,,,,,,
 basic-funerals,Basic Funerals,basicfunerals.ca,people-search,alive,,,,,0,true,true,full_name,,false,,,,,,CA,,,CA,,,,,,,,,,,,basicfunerals.ca,true,,,,,,,,,0,no_channel,,,,,,
 le-necrologue,Le Nécrologue,lenecrologue.com,people-search,alive,,,,,0,true,true,full_name,,false,,,,,,CA,,,CA,,,,,,,,,,,,lenecrologue.com,true,,,,,,,,,0,no_channel,,,,,,
+judyrecords,judyrecords,judyrecords.com,public-records,alive,email,suppression@judyrecords.com,extracted,,0,true,true,full_name,email,true,results,200,getSearchResults,results,2071433,US,,,US,,,,,,,,,,,,judyrecords.com,true,,,,,,,,Search,0,,,,,,,
+mugshots-com,Mugshots.com,mugshots.com,background-checks,alive,,,,,0,true,true,full_name,,false,results,200,search.html,results,28843,US,,,US,,full_name,,,,,,,,,,mugshots.com,true,,,,,,,,SEARCH,0,no_channel,,,,,,
