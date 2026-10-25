@@ -16464,7 +16464,7 @@
   "skopenow": {
    "id": "skopenow",
    "name": "Skopenow",
-   "category": "background-checks",
+   "category": "people-search",
    "domain": "skopenow.com",
    "catalog_url": "https://www.skopenow.com/skopenow-privacy-preferences",
    "liveness": "alive",
