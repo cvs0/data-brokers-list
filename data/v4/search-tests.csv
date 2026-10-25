@@ -19,6 +19,7 @@ californianursing-org-licensedata,californianursing.org,challenge,403,http_get,l
 callapp-software-ltd,callapp.com,results,200,http_get,search-result,results,,code;phone,,2026-10-13T19:43:25+00:00
 certn,certn.co,unfilled,,http_form_post,,,,full_name,widget,2026-10-13T20:03:53+00:00
 clearbit,clearbit.com,submitted,200,http_get,hc,form,,full_name,,2026-10-13T19:43:27+00:00
+companies-house-officers,find-and-update.company-information.service.gov.uk,results,200,http_get,search,results,104,full_name,,2026-10-25T04:09:52+00:00
 complete-medical-lists-inc,completemedicallists.com,results,200,http_form_post,mailing_lists_search_results.php,results,,full_name,,2026-10-13T19:43:28+00:00
 connecticut-arrests,ctarrests.org,no_results,200,http_get,results,empty,0,first_name;last_name;region;city;sex,,2026-10-13T19:43:29+00:00
 consumerbase-llc,exactdata.com,challenge,403,http_form_post,submissions,,,first_name;last_name;email;phone,,2026-10-13T19:08:53+00:00
@@ -27,6 +28,8 @@ courtcasefinder,courtcasefinder.com,no_results,200,http_form_post,search,empty,0
 criminal-com-truthfinder,criminal.com,challenge,403,http_get,search,,,first_name;last_name;city;region,,2026-10-13T19:02:04+00:00
 criminalrecords-com-intelius,criminalrecords.com,challenge,403,http_get,search,,,first_name;last_name;city;region,,2026-10-13T19:31:16+00:00
 criminalregistry-org,criminalregistry.org,challenge,403,http_get,search,,,first_name;last_name;city;region,,2026-10-13T19:02:05+00:00
+das-oertliche,dasoertliche.de,http_error,410,http_get,,,,full_name;city;form_name,,2026-10-25T04:10:08+00:00
+das-telefonbuch,dastelefonbuch.de,http_error,410,http_form_post,Suche,,,full_name;city,,2026-10-25T04:10:08+00:00
 data-axle-infousa,data-axle.com,submitted,200,http_get,search,other,,full_name,,2026-10-13T19:31:17+00:00
 datalead,data-lead.com,submitted,200,http_form_post,support,form,,full_name;email;phone;subject,,2026-10-13T19:43:30+00:00
 datamentors-llc,porchgroupmedia.com,submitted,200,http_form_post,submit2.action.php,other,,who;first_name;middle_name;last_name;street_address;city;region;postal_code;email;phone;last_name,,2026-10-13T19:31:23+00:00
@@ -49,6 +52,7 @@ glad-i-know,gladiknow.com,submitted,200,http_get,,form,,first_name;last_name;cit
 global-source-data-solutions-inc,gsdsi.com,submitted,200,http_get,search,other,,full_name,,2026-10-13T19:31:38+00:00
 governmentregistry-org,governmentregistry.org,submitted,200,http_get,,form,,first_name;last_name;city;region,,2026-10-13T20:48:08+00:00
 heartbeat-ai-inc,heartbeat.ai,submitted,200,http_get,,other,,full_name,,2026-10-13T19:31:42+00:00
+hitta-se,hitta.se,submitted,200,http_get,nolltraff,other,,full_name,,2026-10-25T04:10:08+00:00
 idaho-arrests,idahoarrests.org,submitted,200,http_get,loading,loader,,first_name;last_name;region;city,,2026-10-13T21:20:52+00:00
 ileads-com-llc,ileads.com,submitted,200,http_get,submit-request,other,,first_name;last_name;street_address;city;region;postal_code;email;phone,,2026-10-13T19:31:46+00:00
 inbound-insight-llc,inboundinsight.com,submitted,200,http_get,,other,,full_name;email;phone,,2026-10-13T19:31:46+00:00
@@ -61,6 +65,7 @@ kansas-arrests,kansasarrests.org,no_results,200,http_get,results,empty,0,first_n
 lead-enhance-llc,lead-enhance.com,unfilled,,http_get,,,,full_name;email;phone,company;message,2026-10-13T20:03:53+00:00
 lead411-corporation,lead411.com,submitted,200,http_get,,other,,full_name,,2026-10-13T19:32:02+00:00
 leadspace-inc,leadspace.com,submitted,200,http_get,hc,form,,full_name,,2026-10-13T19:44:03+00:00
+libra-memoria,libramemoria.com,submitted,200,http_get,avis,other,,last_name;first_name,,2026-10-25T04:10:08+00:00
 maine-arrests,mainearrests.org,no_results,200,http_get,results,empty,0,first_name;last_name;region;city;sex,,2026-10-13T19:44:04+00:00
 maryland-arrests,marylandarrests.org,no_results,200,http_get,Results,empty,0,first_name;last_name;region;city;sex,,2026-10-13T19:44:06+00:00
 melissa,melissa.com,challenge,403,http_form_post,submissions,,,first_name;last_name;phone;email;accounttype,,2026-10-13T19:08:56+00:00
@@ -71,6 +76,7 @@ new-mexico-data-insights,newmexicodatainsights.com,unfilled,,http_get,,,,full_na
 nielsen,nielsen.com,submitted,200,http_get,,other,,full_name,,2026-10-13T19:32:08+00:00
 north-carolina-arrests,ncarrests.org,no_results,200,http_get,Results,empty,0,first_name;last_name;region;city;sex,,2026-10-13T19:44:11+00:00
 north-dakota-arrests,ndarrests.org,no_results,200,http_get,results,empty,0,first_name;last_name;region;city;sex,,2026-10-13T19:44:13+00:00
+north-data,northdata.de,challenge,403,http_get,,,,full_name,,2026-10-25T04:09:54+00:00
 notariescalifornia-com-licensedata,notariescalifornia.com,challenge,403,http_get,licenses,,,full_name,,2026-10-13T19:02:37+00:00
 ohio-resident-database,ohioresidentdatabase.com,no_results,404,http_get,name,empty,0,full_name;city,,2026-10-13T19:32:14+00:00
 onlinesearches-intelius-peopleconnect,onlinesearches.com,submitted,200,http_get,,form,,full_name;city,,2026-10-13T20:48:20+00:00
