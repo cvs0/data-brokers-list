@@ -1,42 +1,42 @@
 {
  "schema_version": "4.0.0",
- "checked_at": "2026-10-25T04:03:01+00:00",
+ "checked_at": "2026-10-25T04:20:36+00:00",
  "method": "v3 records, with privacy and removal mailboxes on another domain kept as related_domain. Brokers whose loaded pages published no removal channel were crawled again for unfetched same-site opt-out and privacy URLs, then the catalog URL and homepage were opened once in a browser when those pages still showed no form. That recrawl honors robots.txt. A later pass reads the catalog URL and homepage of brokers whose robots.txt had disallowed the research client. A search pass reads homepages whose public search form was missing, including pages robots.txt had disallowed, and stores a name, phone, or address form. Those passes submit no form, no login, and no CAPTCHA. A legal pass re-reads stored privacy and terms text and fetches an unread privacy or terms page when robots.txt allows it. A network pass looks up public DNS and the site certificate, and reads response headers for the removal URL when robots.txt allows it. A later pass adds IPv6, SPF, DMARC, DKIM selectors, CAA, DNSSEC, the address block, certificate dates, RDAP registration, and the removal response's security headers. A captcha pass re-reads the removal URL and the search page for a widget. A browser reads the page when the static HTML has no widget and the page has a removal form, a stored CAPTCHA, or a public search form. A later pass reads the public widget settings, including whether it is a checkbox, an invisible check, or a score. A form pass re-reads stored search and removal forms for labels, limits, autocomplete, the submit button, and hidden field names. A browser opens when the static HTML does not contain the stored fields. Nothing is submitted. A search test then submits one synthetic query on each broker whose search and removal are both fillable, or with --searchable on each broker with a public search. A robots.txt disallow does not stop the test or count against a search; when --robots is set the log only notes it as robots_disallowed. Brokers whose homepage robots.txt disallowed the research client were later opened in a browser, and their liveness is the result of that read. Removal forms are not submitted and CAPTCHAs are not solved. search_test is on every broker. It stores the outcome, status, field names, the first path segment, the page kind, and a result count when the page states one. A loader page is followed to the count endpoint. The response body, record text, and listing URLs are not stored.",
- "broker_count": 740,
+ "broker_count": 749,
  "counts": {
-  "with_related_email": 126,
-  "with_form": 158,
-  "with_email": 407,
-  "with_extracted_email": 196,
+  "with_related_email": 129,
+  "with_form": 166,
+  "with_email": 411,
+  "with_extracted_email": 197,
   "with_stated_email": 12,
-  "no_channel_remaining": 72,
-  "with_search": 273,
-  "with_search_fillable": 254,
+  "no_channel_remaining": 73,
+  "with_search": 282,
+  "with_search_fillable": 262,
   "search_unscanned": 37,
-  "fully_automatable": 128,
-  "search_tested": 234,
-  "search_results": 16,
-  "search_submitted": 86,
+  "fully_automatable": 134,
+  "search_tested": 240,
+  "search_results": 17,
+  "search_submitted": 88,
   "search_no_results": 66,
   "search_unfilled": 9,
-  "search_challenge": 46,
-  "search_result_count": 72,
+  "search_challenge": 47,
+  "search_result_count": 73,
   "search_empty": 66,
-  "search_page_results": 21,
+  "search_page_results": 22,
   "search_page_loader": 12,
   "search_page_form": 18,
-  "with_country": 652,
+  "with_country": 681,
   "with_region": 477,
   "with_locality": 359,
-  "with_removal_action": 134,
+  "with_removal_action": 138,
   "shared_removal": 60,
   "email_verification": 28,
   "id_document": 1,
-  "with_privacy": 577,
+  "with_privacy": 579,
   "with_terms": 398,
   "with_automation_clause": 81,
   "with_authorized_agent": 140,
-  "with_residency": 517,
+  "with_residency": 520,
   "sells_personal_information": 4,
   "does_not_sell": 64,
   "children_not_directed": 38,
@@ -44,14 +44,14 @@
   "with_mail_provider": 420,
   "with_cdn": 418,
   "with_tls_org": 36,
-  "removal_offsite": 88,
+  "removal_offsite": 90,
   "with_hsts": 273,
   "with_form_enctype": 215,
-  "with_field_detail": 343,
+  "with_field_detail": 352,
   "with_field_label": 228,
   "with_field_constraint": 64,
-  "with_submit_label": 247,
-  "with_hidden_names": 163,
+  "with_submit_label": 249,
+  "with_hidden_names": 165,
   "with_ipv6": 263,
   "with_spf": 516,
   "with_dmarc": 443,
@@ -65,17 +65,17 @@
   "with_http3": 264,
   "with_csp": 181,
   "with_hsts_preload": 119,
-  "removal_captcha": 249,
-  "removal_captcha_sitekey": 139,
+  "removal_captcha": 252,
+  "removal_captcha_sitekey": 141,
   "removal_captcha_checked": 349,
   "search_captcha_widget": 16,
   "search_captcha_sitekey": 6,
-  "search_captcha_checked": 250,
-  "captcha_blocks_form": 82,
-  "captcha_email_fallback": 27,
+  "search_captcha_checked": 259,
+  "captcha_blocks_form": 85,
+  "captcha_email_fallback": 28,
   "removal_captcha_checkbox": 78,
   "removal_captcha_invisible": 30,
-  "removal_captcha_score": 28,
+  "removal_captcha_score": 29,
   "removal_captcha_action": 25,
   "removal_captcha_theme": 35,
   "removal_captcha_enterprise": 25,
@@ -83,7 +83,7 @@
   "search_captcha_invisible": 0,
   "search_captcha_score": 0,
   "removal_blockers": {
-   "captcha_form": 55,
+   "captcha_form": 57,
    "generic_inbox": 52,
    "phone_postal": 25,
    "portal": 4,
@@ -94,12 +94,12 @@
    "opt_out_gone": 1,
    "robots": 23,
    "captcha_no_form": 24,
-   "no_channel": 74
+   "no_channel": 75
   },
-  "lookup_search": 208,
-  "lookup_search_fillable": 195,
+  "lookup_search": 217,
+  "lookup_search_fillable": 203,
   "liveness": {
-   "alive": 611,
+   "alive": 620,
    "blocked": 50,
    "dead": 6,
    "error": 20,
@@ -14678,15 +14678,19 @@
     }
    ],
    "location": {
-    "country": null,
+    "country": "US",
     "region": null,
     "locality": null,
     "postal_code": null,
     "street": null,
     "postal_address": null,
-    "coverage": [],
+    "coverage": [
+     "US"
+    ],
     "search_regions": [],
-    "sources": []
+    "sources": [
+     "manual"
+    ]
    },
    "network": {
     "checked": true,
@@ -35099,7 +35103,7 @@
     }
    ],
    "location": {
-    "country": null,
+    "country": "US",
     "region": null,
     "locality": null,
     "postal_code": null,
@@ -35111,7 +35115,9 @@
      "US"
     ],
     "search_regions": [],
-    "sources": []
+    "sources": [
+     "manual"
+    ]
    },
    "network": {
     "checked": true,
@@ -37963,15 +37969,19 @@
     }
    ],
    "location": {
-    "country": null,
+    "country": "US",
     "region": null,
     "locality": null,
     "postal_code": null,
     "street": null,
     "postal_address": null,
-    "coverage": [],
+    "coverage": [
+     "US"
+    ],
     "search_regions": [],
-    "sources": []
+    "sources": [
+     "manual"
+    ]
    },
    "network": {
     "checked": true,
@@ -46593,7 +46603,7 @@
     }
    ],
    "location": {
-    "country": null,
+    "country": "IL",
     "region": null,
     "locality": null,
     "postal_code": null,
@@ -46603,10 +46613,13 @@
      "US-CA",
      "US-VT",
      "US",
-     "EU"
+     "EU",
+     "IL"
     ],
     "search_regions": [],
-    "sources": []
+    "sources": [
+     "manual"
+    ]
    },
    "network": {
     "checked": true,
@@ -48911,7 +48924,7 @@
     }
    ],
    "location": {
-    "country": null,
+    "country": "IL",
     "region": null,
     "locality": null,
     "postal_code": null,
@@ -48919,10 +48932,13 @@
     "postal_address": null,
     "coverage": [
      "US-CA",
-     "EU"
+     "EU",
+     "IL"
     ],
     "search_regions": [],
-    "sources": []
+    "sources": [
+     "manual"
+    ]
    },
    "network": {
     "checked": true,
@@ -67734,15 +67750,19 @@
     }
    ],
    "location": {
-    "country": null,
+    "country": "FR",
     "region": null,
     "locality": null,
     "postal_code": null,
     "street": null,
     "postal_address": null,
-    "coverage": [],
+    "coverage": [
+     "FR"
+    ],
     "search_regions": [],
-    "sources": []
+    "sources": [
+     "manual"
+    ]
    },
    "network": {
     "checked": true,
@@ -123974,7 +123994,7 @@
     }
    ],
    "location": {
-    "country": null,
+    "country": "US",
     "region": null,
     "locality": null,
     "postal_code": null,
@@ -123986,7 +124006,9 @@
      "GB"
     ],
     "search_regions": [],
-    "sources": []
+    "sources": [
+     "manual"
+    ]
    },
    "network": {
     "checked": true,
@@ -139208,7 +139230,7 @@
     }
    ],
    "location": {
-    "country": null,
+    "country": "US",
     "region": null,
     "locality": null,
     "postal_code": null,
@@ -139222,7 +139244,8 @@
     ],
     "search_regions": [],
     "sources": [
-     "page"
+     "page",
+     "manual"
     ]
    },
    "network": {
@@ -250081,7 +250104,7 @@
     }
    ],
    "location": {
-    "country": null,
+    "country": "US",
     "region": null,
     "locality": null,
     "postal_code": null,
@@ -250095,7 +250118,9 @@
      "GB"
     ],
     "search_regions": [],
-    "sources": []
+    "sources": [
+     "manual"
+    ]
    },
    "network": {
     "checked": true,
@@ -251994,7 +252019,7 @@
     }
    ],
    "location": {
-    "country": null,
+    "country": "US",
     "region": null,
     "locality": null,
     "postal_code": null,
@@ -252007,7 +252032,9 @@
      "US"
     ],
     "search_regions": [],
-    "sources": []
+    "sources": [
+     "manual"
+    ]
    },
    "network": {
     "checked": true,
@@ -257313,7 +257340,7 @@
     }
    ],
    "location": {
-    "country": null,
+    "country": "US",
     "region": null,
     "locality": null,
     "postal_code": null,
@@ -257321,10 +257348,13 @@
     "postal_address": null,
     "coverage": [
      "EU",
-     "GB"
+     "GB",
+     "US"
     ],
     "search_regions": [],
-    "sources": []
+    "sources": [
+     "manual"
+    ]
    },
    "network": {
     "checked": true,
@@ -258659,7 +258689,7 @@
     }
    ],
    "location": {
-    "country": null,
+    "country": "FR",
     "region": null,
     "locality": null,
     "postal_code": null,
@@ -258667,10 +258697,13 @@
     "postal_address": null,
     "coverage": [
      "US-CA",
-     "EU"
+     "EU",
+     "FR"
     ],
     "search_regions": [],
-    "sources": []
+    "sources": [
+     "manual"
+    ]
    },
    "network": {
     "checked": true,
@@ -259861,7 +259894,7 @@
     }
    ],
    "location": {
-    "country": null,
+    "country": "IL",
     "region": null,
     "locality": null,
     "postal_code": null,
@@ -259869,10 +259902,13 @@
     "postal_address": null,
     "coverage": [
      "EU",
-     "GB"
+     "GB",
+     "IL"
     ],
     "search_regions": [],
-    "sources": []
+    "sources": [
+     "manual"
+    ]
    },
    "network": {
     "checked": true,
@@ -261357,7 +261393,7 @@
     }
    ],
    "location": {
-    "country": null,
+    "country": "US",
     "region": null,
     "locality": null,
     "postal_code": null,
@@ -261369,7 +261405,9 @@
      "GB"
     ],
     "search_regions": [],
-    "sources": []
+    "sources": [
+     "manual"
+    ]
    },
    "network": {
     "checked": true,
@@ -264934,15 +264972,19 @@
     }
    ],
    "location": {
-    "country": null,
+    "country": "TW",
     "region": null,
     "locality": null,
     "postal_code": null,
     "street": null,
     "postal_address": null,
-    "coverage": [],
+    "coverage": [
+     "TW"
+    ],
     "search_regions": [],
-    "sources": []
+    "sources": [
+     "manual"
+    ]
    },
    "network": {
     "checked": true,
@@ -269549,7 +269591,7 @@
     }
    ],
    "location": {
-    "country": null,
+    "country": "GB",
     "region": null,
     "locality": null,
     "postal_code": null,
@@ -269561,7 +269603,9 @@
      "GB"
     ],
     "search_regions": [],
-    "sources": []
+    "sources": [
+     "manual"
+    ]
    },
    "network": {
     "checked": true,
@@ -273794,15 +273838,19 @@
     }
    ],
    "location": {
-    "country": null,
+    "country": "IN",
     "region": null,
     "locality": null,
     "postal_code": null,
     "street": null,
     "postal_address": null,
-    "coverage": [],
+    "coverage": [
+     "IN"
+    ],
     "search_regions": [],
-    "sources": []
+    "sources": [
+     "manual"
+    ]
    },
    "network": {
     "checked": true,
@@ -275505,7 +275553,7 @@
     }
    ],
    "location": {
-    "country": null,
+    "country": "GB",
     "region": null,
     "locality": null,
     "postal_code": null,
@@ -275517,7 +275565,9 @@
      "GB"
     ],
     "search_regions": [],
-    "sources": []
+    "sources": [
+     "manual"
+    ]
    },
    "network": {
     "checked": true,
@@ -276765,7 +276815,7 @@
     }
    ],
    "location": {
-    "country": null,
+    "country": "IN",
     "region": null,
     "locality": null,
     "postal_code": null,
@@ -276773,10 +276823,13 @@
     "postal_address": null,
     "coverage": [
      "US-CA",
-     "EU"
+     "EU",
+     "IN"
     ],
     "search_regions": [],
-    "sources": []
+    "sources": [
+     "manual"
+    ]
    },
    "network": {
     "checked": true,
@@ -290960,15 +291013,19 @@
     }
    ],
    "location": {
-    "country": null,
+    "country": "US",
     "region": null,
     "locality": null,
     "postal_code": null,
     "street": null,
     "postal_address": null,
-    "coverage": [],
+    "coverage": [
+     "US"
+    ],
     "search_regions": [],
-    "sources": []
+    "sources": [
+     "manual"
+    ]
    },
    "network": {
     "checked": true,
@@ -312277,6 +312334,3528 @@
     "page_kind": null,
     "result_count": null,
     "checked_at": null
+   }
+  },
+  "companies-house-officers": {
+   "schema_version": "4.0.0",
+   "id": "companies-house-officers",
+   "name": "Companies House officer search",
+   "category": "public-records",
+   "domain": "find-and-update.company-information.service.gov.uk",
+   "checked_at": "2026-10-25T04:04:53+00:00",
+   "liveness": "alive",
+   "liveness_detail": "find-and-update.company-information.service.gov.uk answered HTTP 200 on 2026-10-24. A name search returned results and a made-up name returned none.",
+   "homepage": "https://find-and-update.company-information.service.gov.uk/",
+   "logo_url": "https://www.gov.uk/assets/frontend/govuk_publishing_components/govuk-logo-b8553f688131fad665e52a8c2df7633f9cd1c0fffb9f69703cc68c728e7b3b74.png",
+   "images": [
+    {
+     "url": "https://d2d06s9q6uqhm8.cloudfront.net/images/govuk-frontend/v5.11.0/rebrand/favicon.ico",
+     "kind": "icon",
+     "source_page": "https://find-and-update.company-information.service.gov.uk/"
+    },
+    {
+     "url": "https://d2d06s9q6uqhm8.cloudfront.net/images/govuk-frontend/v5.11.0/rebrand/favicon.svg",
+     "kind": "icon",
+     "source_page": "https://find-and-update.company-information.service.gov.uk/"
+    },
+    {
+     "url": "https://d2d06s9q6uqhm8.cloudfront.net/images/govuk-frontend/v5.11.0/rebrand/govuk-icon-mask.svg",
+     "kind": "icon",
+     "source_page": "https://find-and-update.company-information.service.gov.uk/"
+    },
+    {
+     "url": "https://d2d06s9q6uqhm8.cloudfront.net/images/govuk-frontend/v5.11.0/rebrand/govuk-icon-180.png",
+     "kind": "apple_touch_icon",
+     "source_page": "https://find-and-update.company-information.service.gov.uk/"
+    },
+    {
+     "url": "https://d2d06s9q6uqhm8.cloudfront.net/images/govuk-frontend/v5.11.0/rebrand/govuk-icon-192.png",
+     "kind": "icon",
+     "source_page": "https://find-and-update.company-information.service.gov.uk/"
+    },
+    {
+     "url": "https://d2d06s9q6uqhm8.cloudfront.net/images/govuk-frontend/v5.11.0/rebrand/govuk-icon-512.png",
+     "kind": "icon",
+     "source_page": "https://find-and-update.company-information.service.gov.uk/"
+    },
+    {
+     "url": "https://d2d06s9q6uqhm8.cloudfront.net/images/govuk-frontend/v5.11.0/rebrand/govuk-opengraph-image.png",
+     "kind": "og_image",
+     "source_page": "https://find-and-update.company-information.service.gov.uk/"
+    },
+    {
+     "url": "https://www.gov.uk/assets/frontend/favicon-24f9fbe064118d58937932e73edafd1d50cb60f7bd84f52308382a309bc2d655.ico",
+     "kind": "icon",
+     "source_page": "https://www.gov.uk/government/organisations/companies-house/about/personal-information-charter"
+    },
+    {
+     "url": "https://www.gov.uk/assets/frontend/favicon-d962d21b5bb443f546c097ea21b567cde639adef7370da45be5e349ba8d62d33.svg",
+     "kind": "icon",
+     "source_page": "https://www.gov.uk/government/organisations/companies-house/about/personal-information-charter"
+    },
+    {
+     "url": "https://www.gov.uk/assets/frontend/govuk-icon-mask-cdf4265165f8d7f9eec54aa2c1dfbb3d8b6d297c5d7919f0313e0836a5804bb6.svg",
+     "kind": "icon",
+     "source_page": "https://www.gov.uk/government/organisations/companies-house/about/personal-information-charter"
+    },
+    {
+     "url": "https://www.gov.uk/assets/frontend/govuk-icon-180-d45a306f0549414cfa5085f16e4a3816a77558b139e5bc226f23162d1d0decb0.png",
+     "kind": "apple_touch_icon",
+     "source_page": "https://www.gov.uk/government/organisations/companies-house/about/personal-information-charter"
+    },
+    {
+     "url": "https://www.gov.uk/assets/frontend/govuk-opengraph-image-4196a4d6333cf92aaf720047f56cfd91b3532d7635fc21ebcf0d5897df6b5f77.png",
+     "kind": "og_image",
+     "source_page": "https://www.gov.uk/government/organisations/companies-house/about/personal-information-charter"
+    },
+    {
+     "url": "https://www.gov.uk/assets/frontend/govuk_publishing_components/govuk-logo-b8553f688131fad665e52a8c2df7633f9cd1c0fffb9f69703cc68c728e7b3b74.png",
+     "kind": "json_ld",
+     "source_page": "https://www.gov.uk/government/organisations/companies-house/about/personal-information-charter"
+    }
+   ],
+   "theme_color": "#1d70b8",
+   "languages": [
+    "en"
+   ],
+   "legal_name": "GOV.UK",
+   "search": {
+    "available": true,
+    "method": "http_get",
+    "page_url": "https://find-and-update.company-information.service.gov.uk/search/officers",
+    "form_action": "https://find-and-update.company-information.service.gov.uk/search/officers",
+    "inputs": [
+     {
+      "name": "q",
+      "type": "text",
+      "canonical": "full_name",
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null,
+      "id": "site-search-text",
+      "label": null,
+      "inputmode": null,
+      "pattern": null,
+      "minlength": null,
+      "maxlength": null,
+      "min": null,
+      "max": null,
+      "step": null,
+      "accept": null,
+      "multiple": false,
+      "disabled": false,
+      "readonly": false,
+      "checked": false,
+      "value": null
+     }
+    ],
+    "url_pattern": "https://find-and-update.company-information.service.gov.uk/search/officers?q={q}",
+    "directory_prefixes": [],
+    "paywall": null,
+    "login_wall": null,
+    "form_meta": {
+     "id": "content",
+     "name": null,
+     "autocomplete": null,
+     "novalidate": null,
+     "submit_label": null,
+     "hidden_names": []
+    },
+    "captcha_provider": null,
+    "captcha_sitekey": null,
+    "captcha_detail": null,
+    "captcha_checked": true
+   },
+   "removal": {
+    "url": "https://www.gov.uk/government/organisations/companies-house/about/personal-information-charter",
+    "final_url": "https://www.gov.uk/government/organisations/companies-house/about/personal-information-charter",
+    "http_status": 200,
+    "kinds": [
+     "opt_out"
+    ],
+    "channels": [
+     "web_form",
+     "email"
+    ],
+    "emails": [
+     {
+      "email": "dpo@companieshouse.gov.uk",
+      "confidence": "related_domain",
+      "source_url": "https://www.gov.uk/government/organisations/companies-house/about/personal-information-charter"
+     },
+     {
+      "email": "dataprotectioncomplaints@companieshouse.gov.uk",
+      "confidence": "related_domain",
+      "source_url": "https://www.gov.uk/government/organisations/companies-house/about/personal-information-charter"
+     }
+    ],
+    "phones": [],
+    "postal_address": null,
+    "portal": null,
+    "form_fields": [
+     {
+      "name": "url",
+      "type": "hidden",
+      "canonical": "profile_url",
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null,
+      "id": null,
+      "label": null,
+      "inputmode": null,
+      "pattern": null,
+      "minlength": null,
+      "maxlength": null,
+      "min": null,
+      "max": null,
+      "step": null,
+      "accept": null,
+      "multiple": null,
+      "disabled": null,
+      "readonly": null,
+      "checked": null,
+      "value": null
+     },
+     {
+      "name": "giraffe",
+      "type": "text",
+      "canonical": null,
+      "required": false,
+      "autocomplete": "off",
+      "placeholder": null,
+      "id": null,
+      "label": null,
+      "inputmode": null,
+      "pattern": null,
+      "minlength": null,
+      "maxlength": null,
+      "min": null,
+      "max": null,
+      "step": null,
+      "accept": null,
+      "multiple": null,
+      "disabled": null,
+      "readonly": null,
+      "checked": null,
+      "value": null
+     },
+     {
+      "name": "what_doing",
+      "type": "text",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null,
+      "id": null,
+      "label": null,
+      "inputmode": null,
+      "pattern": null,
+      "minlength": null,
+      "maxlength": null,
+      "min": null,
+      "max": null,
+      "step": null,
+      "accept": null,
+      "multiple": null,
+      "disabled": null,
+      "readonly": null,
+      "checked": null,
+      "value": null
+     },
+     {
+      "name": "what_wrong",
+      "type": "text",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null,
+      "id": null,
+      "label": null,
+      "inputmode": null,
+      "pattern": null,
+      "minlength": null,
+      "maxlength": null,
+      "min": null,
+      "max": null,
+      "step": null,
+      "accept": null,
+      "multiple": null,
+      "disabled": null,
+      "readonly": null,
+      "checked": null,
+      "value": null
+     }
+    ],
+    "csrf_field_name": null,
+    "requires_profile_url": true,
+    "captcha": {
+     "provider": null,
+     "sitekey": null,
+     "pages": [],
+     "checked": null,
+     "checked_url": null,
+     "detail": null
+    },
+    "consent_vendor": null,
+    "success_text": null,
+    "suppression_not_deletion": null,
+    "processing_days": null,
+    "processing_text": null,
+    "form_action": "https://www.gov.uk/contact/govuk/problem_reports",
+    "form_method": "http_form_post",
+    "form_meta": {
+     "id": null,
+     "name": null,
+     "autocomplete": null,
+     "novalidate": null,
+     "submit_label": null,
+     "hidden_names": []
+    }
+   },
+   "bot_defense": {
+    "vendor": null,
+    "outcome": "none"
+   },
+   "legal": {
+    "privacy_policy_url": null,
+    "terms_url": null,
+    "automation_prohibited": null,
+    "automation_clause": null,
+    "residency": [
+     "EU",
+     "GB"
+    ],
+    "authorized_agent": null,
+    "data_categories": [
+     "identifiers",
+     "internet_activity"
+    ],
+    "sells_personal_information": null,
+    "sells_clause": null,
+    "children_not_directed": null
+   },
+   "pages": [
+    {
+     "url": "https://find-and-update.company-information.service.gov.uk/",
+     "final_url": "https://find-and-update.company-information.service.gov.uk/",
+     "status": 200,
+     "role": "home",
+     "title": "Search the register - Find and update company information - GOV.UKGOV.UK",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.find-and-update.company-information.service.gov.uk/",
+     "final_url": null,
+     "status": null,
+     "role": "home",
+     "title": "",
+     "liveness": "error"
+    },
+    {
+     "url": "https://www.gov.uk/government/organisations/companies-house/about/personal-information-charter",
+     "final_url": "https://www.gov.uk/government/organisations/companies-house/about/personal-information-charter",
+     "status": 200,
+     "role": "catalog",
+     "title": "Personal information charter - Companies House - GOV.UKGOV.UK",
+     "liveness": "alive"
+    }
+   ],
+   "location": {
+    "country": "GB",
+    "region": null,
+    "locality": null,
+    "postal_code": null,
+    "street": null,
+    "postal_address": null,
+    "coverage": [
+     "EU",
+     "GB"
+    ],
+    "search_regions": [],
+    "sources": [
+     "domain"
+    ]
+   },
+   "network": {
+    "checked": false,
+    "addresses": [],
+    "ipv6": [],
+    "cname": null,
+    "mx": [],
+    "mail_provider": null,
+    "spf": null,
+    "dmarc": null,
+    "dkim": [],
+    "nameservers": [],
+    "dns_provider": null,
+    "soa_primary": null,
+    "caa": [],
+    "dnssec": null,
+    "asn": null,
+    "asn_country": null,
+    "prefix": null,
+    "cdn": null,
+    "server": null,
+    "tls_org": null,
+    "tls_issuer": null,
+    "tls_names": [],
+    "tls_version": null,
+    "tls_not_before": null,
+    "tls_not_after": null,
+    "registrar": null,
+    "registered": null,
+    "registration_expires": null,
+    "domain_status": []
+   },
+   "request": {
+    "removal_host": "gov.uk",
+    "same_site": false,
+    "https": true,
+    "redirected": false,
+    "redirect_count": null,
+    "form_enctype": null,
+    "content_type": null,
+    "hsts": null,
+    "hsts_max_age": null,
+    "hsts_subdomains": null,
+    "hsts_preload": null,
+    "http_version": null,
+    "http3": null,
+    "frame_options": null,
+    "nosniff": null,
+    "referrer_policy": null,
+    "csp": null,
+    "powered_by": null,
+    "cookie_names": []
+   },
+   "automation": {
+    "search_scanned": true,
+    "search_fillable": true,
+    "search_captcha": false,
+    "search_fields": [
+     "full_name"
+    ],
+    "removal_form_fillable": true,
+    "removal_email_usable": true,
+    "removal_fields": [
+     "profile_url"
+    ],
+    "removal_path": "form",
+    "fully_automatable": true,
+    "usable_emails": [
+     "dpo@companieshouse.gov.uk",
+     "dataprotectioncomplaints@companieshouse.gov.uk"
+    ],
+    "search_required": [],
+    "removal_required": [],
+    "email_verification": null,
+    "id_document": null,
+    "shared_removal_ids": [],
+    "removal_captcha": false,
+    "captcha_blocks_form": false,
+    "captcha_email_fallback": false,
+    "removal_blocker": null
+   },
+   "search_test": {
+    "outcome": "results",
+    "http_status": 200,
+    "path_prefix": "search",
+    "fields_sent": [
+     "full_name"
+    ],
+    "missing": [],
+    "page_kind": "results",
+    "result_count": 104,
+    "checked_at": "2026-10-25T04:09:52+00:00"
+   }
+  },
+  "das-oertliche": {
+   "schema_version": "4.0.0",
+   "id": "das-oertliche",
+   "name": "Das Örtliche",
+   "category": "people-search",
+   "domain": "dasoertliche.de",
+   "checked_at": "2026-10-25T04:04:52+00:00",
+   "liveness": "alive",
+   "liveness_detail": "dasoertliche.de answered HTTP 200 on 2026-10-24. A name search returned results and a made-up name returned none.",
+   "homepage": "https://www.dasoertliche.de/",
+   "logo_url": "https://oe-static.de/img/lgo_oetb.gif",
+   "images": [
+    {
+     "url": "https://www.dasoertliche.de/img/favicon.ico",
+     "kind": "icon",
+     "source_page": "https://www.dasoertliche.de/"
+    },
+    {
+     "url": "https://www.dasoertliche.de/img/oetblogo_400x400.png",
+     "kind": "og_image",
+     "source_page": "https://www.dasoertliche.de/"
+    },
+    {
+     "url": "https://oe-static.de/img/lgo_oetb.gif",
+     "kind": "json_ld",
+     "source_page": "https://www.dasoertliche.de/"
+    }
+   ],
+   "theme_color": null,
+   "languages": [
+    "de"
+   ],
+   "legal_name": "Das Örtliche",
+   "search": {
+    "available": true,
+    "method": "http_get",
+    "page_url": "https://www.dasoertliche.de/",
+    "form_action": "https://www.dasoertliche.de/",
+    "inputs": [
+     {
+      "name": "kw",
+      "type": "text",
+      "canonical": "full_name",
+      "required": false,
+      "autocomplete": null,
+      "placeholder": "Name (oder Suchwort)",
+      "id": "std_suchwort",
+      "label": null,
+      "inputmode": null,
+      "pattern": null,
+      "minlength": null,
+      "maxlength": null,
+      "min": null,
+      "max": null,
+      "step": null,
+      "accept": null,
+      "multiple": false,
+      "disabled": false,
+      "readonly": false,
+      "checked": false,
+      "value": null
+     },
+     {
+      "name": "ci",
+      "type": "text",
+      "canonical": "city",
+      "required": false,
+      "autocomplete": null,
+      "placeholder": "Ort o. PLZ",
+      "id": "std_ort",
+      "label": null,
+      "inputmode": null,
+      "pattern": null,
+      "minlength": null,
+      "maxlength": null,
+      "min": null,
+      "max": null,
+      "step": null,
+      "accept": null,
+      "multiple": false,
+      "disabled": false,
+      "readonly": false,
+      "checked": false,
+      "value": null
+     },
+     {
+      "name": "form_name",
+      "type": "hidden",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null,
+      "id": null,
+      "label": null,
+      "inputmode": null,
+      "pattern": null,
+      "minlength": null,
+      "maxlength": null,
+      "min": null,
+      "max": null,
+      "step": null,
+      "accept": null,
+      "multiple": false,
+      "disabled": false,
+      "readonly": false,
+      "checked": false,
+      "value": "search_nat"
+     }
+    ],
+    "url_pattern": "https://www.dasoertliche.de/?kw={kw}&ci={ci}&form_name=search_nat",
+    "directory_prefixes": [],
+    "paywall": null,
+    "login_wall": null,
+    "form_meta": {
+     "id": null,
+     "name": "search_nat",
+     "autocomplete": null,
+     "novalidate": null,
+     "submit_label": "Finden",
+     "hidden_names": [
+      "form_name"
+     ]
+    },
+    "captcha_provider": null,
+    "captcha_sitekey": null,
+    "captcha_detail": null,
+    "captcha_checked": true
+   },
+   "removal": {
+    "url": "https://www.dasoertliche.de/datenschutz",
+    "final_url": "https://www.dasoertliche.de/datenschutz",
+    "http_status": 200,
+    "kinds": [
+     "opt_out"
+    ],
+    "channels": [
+     "web_form",
+     "email"
+    ],
+    "emails": [
+     {
+      "email": "service@dasoertliche.de",
+      "confidence": "uncertain",
+      "source_url": "https://www.dasoertliche.de/datenschutz"
+     },
+     {
+      "email": "datenschutz@dasoertliche-marketing.de",
+      "confidence": "related_domain",
+      "source_url": "https://www.dasoertliche.de/datenschutz"
+     },
+     {
+      "email": "datenschutz@agma-mmc.de",
+      "confidence": "related_domain",
+      "source_url": "https://www.dasoertliche.de/datenschutz"
+     }
+    ],
+    "phones": [],
+    "postal_address": null,
+    "portal": null,
+    "form_fields": [
+     {
+      "name": "kw",
+      "type": "text",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": "Name (oder Suchwort)",
+      "id": null,
+      "label": null,
+      "inputmode": null,
+      "pattern": null,
+      "minlength": null,
+      "maxlength": null,
+      "min": null,
+      "max": null,
+      "step": null,
+      "accept": null,
+      "multiple": null,
+      "disabled": null,
+      "readonly": null,
+      "checked": null,
+      "value": null
+     },
+     {
+      "name": "ci",
+      "type": "text",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": "Ort o. PLZ",
+      "id": null,
+      "label": null,
+      "inputmode": null,
+      "pattern": null,
+      "minlength": null,
+      "maxlength": null,
+      "min": null,
+      "max": null,
+      "step": null,
+      "accept": null,
+      "multiple": null,
+      "disabled": null,
+      "readonly": null,
+      "checked": null,
+      "value": null
+     }
+    ],
+    "csrf_field_name": null,
+    "requires_profile_url": null,
+    "captcha": {
+     "provider": null,
+     "sitekey": null,
+     "pages": [],
+     "checked": null,
+     "checked_url": null,
+     "detail": null
+    },
+    "consent_vendor": null,
+    "success_text": null,
+    "suppression_not_deletion": null,
+    "processing_days": null,
+    "processing_text": null,
+    "form_action": null,
+    "form_method": null,
+    "form_meta": {
+     "id": null,
+     "name": null,
+     "autocomplete": null,
+     "novalidate": null,
+     "submit_label": null,
+     "hidden_names": []
+    }
+   },
+   "bot_defense": {
+    "vendor": null,
+    "outcome": "none"
+   },
+   "legal": {
+    "privacy_policy_url": null,
+    "terms_url": null,
+    "automation_prohibited": null,
+    "automation_clause": null,
+    "residency": [],
+    "authorized_agent": null,
+    "data_categories": [
+     "identifiers"
+    ],
+    "sells_personal_information": null,
+    "sells_clause": null,
+    "children_not_directed": null
+   },
+   "pages": [
+    {
+     "url": "https://dasoertliche.de/",
+     "final_url": "https://www.dasoertliche.de/",
+     "status": 200,
+     "role": "home",
+     "title": "Das Örtliche Telefonbuch | Telefonnummern & Adressen finden!",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.dasoertliche.de/",
+     "final_url": "https://www.dasoertliche.de/",
+     "status": 200,
+     "role": "home",
+     "title": "Das Örtliche Telefonbuch | Telefonnummern & Adressen finden!",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.dasoertliche.de/datenschutz",
+     "final_url": "https://www.dasoertliche.de/datenschutz",
+     "status": 200,
+     "role": "catalog",
+     "title": "Das Örtliche Telefonbuch | Telefonnummern & Adressen finden!",
+     "liveness": "alive"
+    }
+   ],
+   "location": {
+    "country": "DE",
+    "region": null,
+    "locality": null,
+    "postal_code": null,
+    "street": null,
+    "postal_address": null,
+    "coverage": [
+     "DE"
+    ],
+    "search_regions": [],
+    "sources": [
+     "manual"
+    ]
+   },
+   "network": {
+    "checked": false,
+    "addresses": [],
+    "ipv6": [],
+    "cname": null,
+    "mx": [],
+    "mail_provider": null,
+    "spf": null,
+    "dmarc": null,
+    "dkim": [],
+    "nameservers": [],
+    "dns_provider": null,
+    "soa_primary": null,
+    "caa": [],
+    "dnssec": null,
+    "asn": null,
+    "asn_country": null,
+    "prefix": null,
+    "cdn": null,
+    "server": null,
+    "tls_org": null,
+    "tls_issuer": null,
+    "tls_names": [],
+    "tls_version": null,
+    "tls_not_before": null,
+    "tls_not_after": null,
+    "registrar": null,
+    "registered": null,
+    "registration_expires": null,
+    "domain_status": []
+   },
+   "request": {
+    "removal_host": "dasoertliche.de",
+    "same_site": true,
+    "https": true,
+    "redirected": false,
+    "redirect_count": null,
+    "form_enctype": null,
+    "content_type": null,
+    "hsts": null,
+    "hsts_max_age": null,
+    "hsts_subdomains": null,
+    "hsts_preload": null,
+    "http_version": null,
+    "http3": null,
+    "frame_options": null,
+    "nosniff": null,
+    "referrer_policy": null,
+    "csp": null,
+    "powered_by": null,
+    "cookie_names": []
+   },
+   "automation": {
+    "search_scanned": true,
+    "search_fillable": true,
+    "search_captcha": false,
+    "search_fields": [
+     "full_name",
+     "city"
+    ],
+    "removal_form_fillable": true,
+    "removal_email_usable": true,
+    "removal_fields": [],
+    "removal_path": "form",
+    "fully_automatable": true,
+    "usable_emails": [
+     "datenschutz@dasoertliche-marketing.de",
+     "datenschutz@agma-mmc.de"
+    ],
+    "search_required": [],
+    "removal_required": [],
+    "email_verification": null,
+    "id_document": null,
+    "shared_removal_ids": [],
+    "removal_captcha": false,
+    "captcha_blocks_form": false,
+    "captcha_email_fallback": false,
+    "removal_blocker": null
+   },
+   "search_test": {
+    "outcome": "http_error",
+    "http_status": 410,
+    "path_prefix": null,
+    "fields_sent": [
+     "full_name",
+     "city",
+     "form_name"
+    ],
+    "missing": [],
+    "page_kind": null,
+    "result_count": null,
+    "checked_at": "2026-10-25T04:10:08+00:00"
+   }
+  },
+  "das-telefonbuch": {
+   "schema_version": "4.0.0",
+   "id": "das-telefonbuch",
+   "name": "Das Telefonbuch",
+   "category": "people-search",
+   "domain": "dastelefonbuch.de",
+   "checked_at": "2026-10-25T04:04:51+00:00",
+   "liveness": "alive",
+   "liveness_detail": "dastelefonbuch.de answered HTTP 200 on 2026-10-24. A name search returned results and a made-up name returned none.",
+   "homepage": "https://www.dastelefonbuch.de/",
+   "logo_url": "https://medien.dastelefonbuch.de/tb-live/Public/4e13c70514195984af30d12be695c0194fe21bc5/img/tsg_icon_android_Logo_sw.svg",
+   "images": [
+    {
+     "url": "https://www.dastelefonbuch.de/assets/favicon-34b219b6a7580564b6c6247efbb11810.ico",
+     "kind": "icon",
+     "source_page": "https://www.dastelefonbuch.de/"
+    },
+    {
+     "url": "https://www.dastelefonbuch.de/assets/apple-touch-icon-180-b9c9a5d5ce9ce196546b253328e1d545.png",
+     "kind": "apple_touch_icon",
+     "source_page": "https://www.dastelefonbuch.de/"
+    },
+    {
+     "url": "https://www.dastelefonbuch.de/assets/favicon-32x32-adcdb52f616c8006bc95109d2f6bbfca.png",
+     "kind": "icon",
+     "source_page": "https://www.dastelefonbuch.de/"
+    },
+    {
+     "url": "https://www.dastelefonbuch.de/assets/favicon-16x16-ab181932b6afa85e40a7713b64a04715.png",
+     "kind": "icon",
+     "source_page": "https://www.dastelefonbuch.de/"
+    },
+    {
+     "url": "https://www.dastelefonbuch.de/assets/safari-pinned-tab-a102b742f7b3dd78a07c0b5abac8483a.svg",
+     "kind": "icon",
+     "source_page": "https://www.dastelefonbuch.de/"
+    },
+    {
+     "url": "https://bilder.dastelefonbuch.de/Das_Telefonbuch_Deutschland.svg",
+     "kind": "og_image",
+     "source_page": "https://www.dastelefonbuch.de/"
+    },
+    {
+     "url": "https://medien.dastelefonbuch.de/tb-live/Redakteur/DasTelefonbuch-Logo.svg",
+     "kind": "json_ld",
+     "source_page": "https://www.dastelefonbuch.de/"
+    },
+    {
+     "url": "https://medien.dastelefonbuch.de/tb-live/Public/4e13c70514195984af30d12be695c0194fe21bc5/img/tsg_icon_android_Logo_sw.svg",
+     "kind": "logo",
+     "source_page": "https://www.dastelefonbuch.de/"
+    },
+    {
+     "url": "https://medien.dastelefonbuch.de/tb-live/Public/4e13c70514195984af30d12be695c0194fe21bc5/img/tsg_icon_apple_Logo_sw.svg",
+     "kind": "logo",
+     "source_page": "https://www.dastelefonbuch.de/"
+    }
+   ],
+   "theme_color": "#c71418",
+   "languages": [
+    "de"
+   ],
+   "legal_name": "Das Telefonbuch",
+   "search": {
+    "available": true,
+    "method": "http_form_post",
+    "page_url": "https://www.dastelefonbuch.de/",
+    "form_action": "https://www.dastelefonbuch.de/Suche",
+    "inputs": [
+     {
+      "name": "kw",
+      "type": "text",
+      "canonical": "full_name",
+      "required": false,
+      "autocomplete": null,
+      "placeholder": "Wer/Was",
+      "id": "form_kw",
+      "label": null,
+      "inputmode": null,
+      "pattern": null,
+      "minlength": null,
+      "maxlength": null,
+      "min": null,
+      "max": null,
+      "step": null,
+      "accept": null,
+      "multiple": false,
+      "disabled": false,
+      "readonly": false,
+      "checked": false,
+      "value": null
+     },
+     {
+      "name": "ci",
+      "type": "text",
+      "canonical": "city",
+      "required": false,
+      "autocomplete": null,
+      "placeholder": "Wo",
+      "id": "form_ci",
+      "label": null,
+      "inputmode": null,
+      "pattern": null,
+      "minlength": null,
+      "maxlength": null,
+      "min": null,
+      "max": null,
+      "step": null,
+      "accept": null,
+      "multiple": false,
+      "disabled": false,
+      "readonly": false,
+      "checked": false,
+      "value": null
+     }
+    ],
+    "url_pattern": "https://www.dastelefonbuch.de/Personen/{kw}/{ci}",
+    "directory_prefixes": [],
+    "paywall": null,
+    "login_wall": null,
+    "form_meta": {
+     "id": null,
+     "name": null,
+     "autocomplete": null,
+     "novalidate": null,
+     "submit_label": null,
+     "hidden_names": []
+    },
+    "captcha_provider": null,
+    "captcha_sitekey": null,
+    "captcha_detail": null,
+    "captcha_checked": true
+   },
+   "removal": {
+    "url": "https://www.dastelefonbuch.de/Datenschutz",
+    "final_url": "https://www.dastelefonbuch.de/Datenschutz",
+    "http_status": 200,
+    "kinds": [
+     "opt_out"
+    ],
+    "channels": [
+     "web_form"
+    ],
+    "emails": [],
+    "phones": [],
+    "postal_address": null,
+    "portal": null,
+    "form_fields": [
+     {
+      "name": "kw",
+      "type": "text",
+      "canonical": null,
+      "required": false,
+      "autocomplete": "off",
+      "placeholder": "Wer/Was",
+      "id": null,
+      "label": null,
+      "inputmode": null,
+      "pattern": null,
+      "minlength": null,
+      "maxlength": null,
+      "min": null,
+      "max": null,
+      "step": null,
+      "accept": null,
+      "multiple": null,
+      "disabled": null,
+      "readonly": null,
+      "checked": null,
+      "value": null
+     },
+     {
+      "name": "ci",
+      "type": "text",
+      "canonical": null,
+      "required": false,
+      "autocomplete": "off",
+      "placeholder": "Ort/PLZ",
+      "id": null,
+      "label": null,
+      "inputmode": null,
+      "pattern": null,
+      "minlength": null,
+      "maxlength": null,
+      "min": null,
+      "max": null,
+      "step": null,
+      "accept": null,
+      "multiple": null,
+      "disabled": null,
+      "readonly": null,
+      "checked": null,
+      "value": null
+     }
+    ],
+    "csrf_field_name": null,
+    "requires_profile_url": null,
+    "captcha": {
+     "provider": null,
+     "sitekey": null,
+     "pages": [],
+     "checked": null,
+     "checked_url": null,
+     "detail": null
+    },
+    "consent_vendor": null,
+    "success_text": null,
+    "suppression_not_deletion": null,
+    "processing_days": null,
+    "processing_text": null,
+    "form_action": null,
+    "form_method": null,
+    "form_meta": {
+     "id": null,
+     "name": null,
+     "autocomplete": null,
+     "novalidate": null,
+     "submit_label": null,
+     "hidden_names": []
+    }
+   },
+   "bot_defense": {
+    "vendor": null,
+    "outcome": "none"
+   },
+   "legal": {
+    "privacy_policy_url": null,
+    "terms_url": null,
+    "automation_prohibited": null,
+    "automation_clause": null,
+    "residency": [],
+    "authorized_agent": null,
+    "data_categories": [
+     "identifiers"
+    ],
+    "sells_personal_information": null,
+    "sells_clause": null,
+    "children_not_directed": null
+   },
+   "pages": [
+    {
+     "url": "https://dastelefonbuch.de/",
+     "final_url": null,
+     "status": null,
+     "role": "home",
+     "title": "",
+     "liveness": "robots_disallowed"
+    },
+    {
+     "url": "https://www.dastelefonbuch.de/",
+     "final_url": "https://www.dastelefonbuch.de/",
+     "status": 200,
+     "role": "home",
+     "title": "Das Telefonbuch >> Mehr als Adressen und Telefonnummern!",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.dastelefonbuch.de/Datenschutz",
+     "final_url": "https://www.dastelefonbuch.de/Datenschutz",
+     "status": 200,
+     "role": "catalog",
+     "title": "Datenschutzhinweis bei Das Telefonbuch",
+     "liveness": "alive"
+    }
+   ],
+   "location": {
+    "country": "DE",
+    "region": null,
+    "locality": null,
+    "postal_code": null,
+    "street": null,
+    "postal_address": null,
+    "coverage": [
+     "DE"
+    ],
+    "search_regions": [],
+    "sources": [
+     "manual"
+    ]
+   },
+   "network": {
+    "checked": false,
+    "addresses": [],
+    "ipv6": [],
+    "cname": null,
+    "mx": [],
+    "mail_provider": null,
+    "spf": null,
+    "dmarc": null,
+    "dkim": [],
+    "nameservers": [],
+    "dns_provider": null,
+    "soa_primary": null,
+    "caa": [],
+    "dnssec": null,
+    "asn": null,
+    "asn_country": null,
+    "prefix": null,
+    "cdn": null,
+    "server": null,
+    "tls_org": null,
+    "tls_issuer": null,
+    "tls_names": [],
+    "tls_version": null,
+    "tls_not_before": null,
+    "tls_not_after": null,
+    "registrar": null,
+    "registered": null,
+    "registration_expires": null,
+    "domain_status": []
+   },
+   "request": {
+    "removal_host": "dastelefonbuch.de",
+    "same_site": true,
+    "https": true,
+    "redirected": false,
+    "redirect_count": null,
+    "form_enctype": null,
+    "content_type": null,
+    "hsts": null,
+    "hsts_max_age": null,
+    "hsts_subdomains": null,
+    "hsts_preload": null,
+    "http_version": null,
+    "http3": null,
+    "frame_options": null,
+    "nosniff": null,
+    "referrer_policy": null,
+    "csp": null,
+    "powered_by": null,
+    "cookie_names": []
+   },
+   "automation": {
+    "search_scanned": true,
+    "search_fillable": true,
+    "search_captcha": false,
+    "search_fields": [
+     "full_name",
+     "city"
+    ],
+    "removal_form_fillable": true,
+    "removal_email_usable": false,
+    "removal_fields": [],
+    "removal_path": "form",
+    "fully_automatable": true,
+    "usable_emails": [],
+    "search_required": [],
+    "removal_required": [],
+    "email_verification": null,
+    "id_document": null,
+    "shared_removal_ids": [],
+    "removal_captcha": false,
+    "captcha_blocks_form": false,
+    "captcha_email_fallback": false,
+    "removal_blocker": null
+   },
+   "search_test": {
+    "outcome": "http_error",
+    "http_status": 410,
+    "path_prefix": "Suche",
+    "fields_sent": [
+     "full_name",
+     "city"
+    ],
+    "missing": [],
+    "page_kind": null,
+    "result_count": null,
+    "checked_at": "2026-10-25T04:10:08+00:00"
+   }
+  },
+  "hitta-se": {
+   "schema_version": "4.0.0",
+   "id": "hitta-se",
+   "name": "Hitta.se",
+   "category": "people-search",
+   "domain": "hitta.se",
+   "checked_at": "2026-10-25T04:04:54+00:00",
+   "liveness": "alive",
+   "liveness_detail": "hitta.se answered HTTP 200 on 2026-10-24. A name search returned results and a made-up name returned none.",
+   "homepage": "https://www.hitta.se/",
+   "logo_url": "https://www.hitta.se/staticv4/header/hitta.svg",
+   "images": [
+    {
+     "url": "https://www.hitta.se/favicon.ico",
+     "kind": "icon",
+     "source_page": "https://www.hitta.se/"
+    },
+    {
+     "url": "https://www.hitta.se/favicon-32x32.png",
+     "kind": "icon",
+     "source_page": "https://www.hitta.se/"
+    },
+    {
+     "url": "https://www.hitta.se/android-chrome-192x192.png",
+     "kind": "icon",
+     "source_page": "https://www.hitta.se/"
+    },
+    {
+     "url": "https://www.hitta.se/favicon-96x96.png",
+     "kind": "icon",
+     "source_page": "https://www.hitta.se/"
+    },
+    {
+     "url": "https://www.hitta.se/favicon-16x16.png",
+     "kind": "icon",
+     "source_page": "https://www.hitta.se/"
+    },
+    {
+     "url": "https://www.hitta.se/apple-touch-icon-57x57.png",
+     "kind": "apple_touch_icon",
+     "source_page": "https://www.hitta.se/"
+    },
+    {
+     "url": "https://www.hitta.se/apple-touch-icon-60x60.png",
+     "kind": "apple_touch_icon",
+     "source_page": "https://www.hitta.se/"
+    },
+    {
+     "url": "https://www.hitta.se/apple-touch-icon-72x72.png",
+     "kind": "apple_touch_icon",
+     "source_page": "https://www.hitta.se/"
+    },
+    {
+     "url": "https://www.hitta.se/apple-touch-icon-76x76.png",
+     "kind": "apple_touch_icon",
+     "source_page": "https://www.hitta.se/"
+    },
+    {
+     "url": "https://www.hitta.se/apple-touch-icon-114x114.png",
+     "kind": "apple_touch_icon",
+     "source_page": "https://www.hitta.se/"
+    },
+    {
+     "url": "https://www.hitta.se/apple-touch-icon-120x120.png",
+     "kind": "apple_touch_icon",
+     "source_page": "https://www.hitta.se/"
+    },
+    {
+     "url": "https://www.hitta.se/apple-touch-icon-144x144.png",
+     "kind": "apple_touch_icon",
+     "source_page": "https://www.hitta.se/"
+    },
+    {
+     "url": "https://www.hitta.se/apple-touch-icon-152x152.png",
+     "kind": "apple_touch_icon",
+     "source_page": "https://www.hitta.se/"
+    },
+    {
+     "url": "https://www.hitta.se/apple-touch-icon-180x180.png",
+     "kind": "apple_touch_icon",
+     "source_page": "https://www.hitta.se/"
+    },
+    {
+     "url": "https://www.hitta.se/staticv4/img/logos/hitta.se-210x210.png",
+     "kind": "og_image",
+     "source_page": "https://www.hitta.se/"
+    },
+    {
+     "url": "https://www.hitta.se/staticv4/header/hitta.svg",
+     "kind": "json_ld",
+     "source_page": "https://www.hitta.se/"
+    }
+   ],
+   "theme_color": "#ffffff",
+   "languages": [
+    "sv"
+   ],
+   "legal_name": "Hitta.se",
+   "search": {
+    "available": true,
+    "method": "http_get",
+    "page_url": "https://www.hitta.se/",
+    "form_action": "https://www.hitta.se/s%C3%B6k",
+    "inputs": [
+     {
+      "name": "vad",
+      "type": "text",
+      "canonical": "full_name",
+      "required": false,
+      "autocomplete": null,
+      "placeholder": "Sök person eller telefon",
+      "id": "search-field",
+      "label": null,
+      "inputmode": null,
+      "pattern": null,
+      "minlength": null,
+      "maxlength": null,
+      "min": null,
+      "max": null,
+      "step": null,
+      "accept": null,
+      "multiple": false,
+      "disabled": false,
+      "readonly": false,
+      "checked": false,
+      "value": null
+     }
+    ],
+    "url_pattern": "https://www.hitta.se/s%C3%B6k?vad={vad}",
+    "directory_prefixes": [],
+    "paywall": null,
+    "login_wall": null,
+    "form_meta": {
+     "id": null,
+     "name": null,
+     "autocomplete": null,
+     "novalidate": null,
+     "submit_label": null,
+     "hidden_names": []
+    },
+    "captcha_provider": null,
+    "captcha_sitekey": null,
+    "captcha_detail": null,
+    "captcha_checked": true
+   },
+   "removal": {
+    "url": "https://www.hitta.se/din-integritet",
+    "final_url": "https://www.hitta.se/din-integritet",
+    "http_status": 200,
+    "kinds": [
+     "opt_out"
+    ],
+    "channels": [
+     "web_form"
+    ],
+    "emails": [],
+    "phones": [],
+    "postal_address": null,
+    "portal": null,
+    "form_fields": [
+     {
+      "name": "search-field",
+      "type": "text",
+      "canonical": null,
+      "required": false,
+      "autocomplete": "off",
+      "placeholder": "Sök person eller telefon",
+      "id": null,
+      "label": null,
+      "inputmode": null,
+      "pattern": null,
+      "minlength": null,
+      "maxlength": null,
+      "min": null,
+      "max": null,
+      "step": null,
+      "accept": null,
+      "multiple": null,
+      "disabled": null,
+      "readonly": null,
+      "checked": null,
+      "value": null
+     }
+    ],
+    "csrf_field_name": null,
+    "requires_profile_url": null,
+    "captcha": {
+     "provider": null,
+     "sitekey": null,
+     "pages": [],
+     "checked": null,
+     "checked_url": null,
+     "detail": null
+    },
+    "consent_vendor": null,
+    "success_text": null,
+    "suppression_not_deletion": null,
+    "processing_days": null,
+    "processing_text": null,
+    "form_action": null,
+    "form_method": null,
+    "form_meta": {
+     "id": null,
+     "name": null,
+     "autocomplete": null,
+     "novalidate": null,
+     "submit_label": null,
+     "hidden_names": []
+    }
+   },
+   "bot_defense": {
+    "vendor": null,
+    "outcome": "none"
+   },
+   "legal": {
+    "privacy_policy_url": null,
+    "terms_url": null,
+    "automation_prohibited": null,
+    "automation_clause": null,
+    "residency": [
+     "EU"
+    ],
+    "authorized_agent": null,
+    "data_categories": [
+     "internet_activity"
+    ],
+    "sells_personal_information": null,
+    "sells_clause": null,
+    "children_not_directed": null
+   },
+   "pages": [
+    {
+     "url": "https://hitta.se/",
+     "final_url": "https://www.hitta.se/",
+     "status": 200,
+     "role": "home",
+     "title": "Hitta.se | Privatpersoner och Företag i Sverige",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.hitta.se/",
+     "final_url": "https://www.hitta.se/",
+     "status": 200,
+     "role": "home",
+     "title": "Hitta.se | Privatpersoner och Företag i Sverige",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.hitta.se/din-integritet",
+     "final_url": "https://www.hitta.se/din-integritet",
+     "status": 200,
+     "role": "catalog",
+     "title": "Integritet | hitta.se",
+     "liveness": "alive"
+    }
+   ],
+   "location": {
+    "country": "SE",
+    "region": null,
+    "locality": null,
+    "postal_code": null,
+    "street": null,
+    "postal_address": null,
+    "coverage": [
+     "EU",
+     "SE"
+    ],
+    "search_regions": [],
+    "sources": [
+     "page",
+     "manual"
+    ]
+   },
+   "network": {
+    "checked": false,
+    "addresses": [],
+    "ipv6": [],
+    "cname": null,
+    "mx": [],
+    "mail_provider": null,
+    "spf": null,
+    "dmarc": null,
+    "dkim": [],
+    "nameservers": [],
+    "dns_provider": null,
+    "soa_primary": null,
+    "caa": [],
+    "dnssec": null,
+    "asn": null,
+    "asn_country": null,
+    "prefix": null,
+    "cdn": null,
+    "server": null,
+    "tls_org": null,
+    "tls_issuer": null,
+    "tls_names": [],
+    "tls_version": null,
+    "tls_not_before": null,
+    "tls_not_after": null,
+    "registrar": null,
+    "registered": null,
+    "registration_expires": null,
+    "domain_status": []
+   },
+   "request": {
+    "removal_host": "hitta.se",
+    "same_site": true,
+    "https": true,
+    "redirected": false,
+    "redirect_count": null,
+    "form_enctype": null,
+    "content_type": null,
+    "hsts": null,
+    "hsts_max_age": null,
+    "hsts_subdomains": null,
+    "hsts_preload": null,
+    "http_version": null,
+    "http3": null,
+    "frame_options": null,
+    "nosniff": null,
+    "referrer_policy": null,
+    "csp": null,
+    "powered_by": null,
+    "cookie_names": []
+   },
+   "automation": {
+    "search_scanned": true,
+    "search_fillable": true,
+    "search_captcha": false,
+    "search_fields": [
+     "full_name"
+    ],
+    "removal_form_fillable": true,
+    "removal_email_usable": false,
+    "removal_fields": [],
+    "removal_path": "form",
+    "fully_automatable": true,
+    "usable_emails": [],
+    "search_required": [],
+    "removal_required": [],
+    "email_verification": null,
+    "id_document": null,
+    "shared_removal_ids": [],
+    "removal_captcha": false,
+    "captcha_blocks_form": false,
+    "captcha_email_fallback": false,
+    "removal_blocker": null
+   },
+   "search_test": {
+    "outcome": "submitted",
+    "http_status": 200,
+    "path_prefix": "nolltraff",
+    "fields_sent": [
+     "full_name"
+    ],
+    "missing": [],
+    "page_kind": "other",
+    "result_count": null,
+    "checked_at": "2026-10-25T04:10:08+00:00"
+   }
+  },
+  "paginebianche": {
+   "schema_version": "4.0.0",
+   "id": "paginebianche",
+   "name": "PagineBianche",
+   "category": "people-search",
+   "domain": "paginebianche.it",
+   "checked_at": "2026-10-25T04:04:57+00:00",
+   "liveness": "alive",
+   "liveness_detail": "paginebianche.it answered HTTP 200 on 2026-10-24. A name search returned results and a made-up name returned none.",
+   "homepage": "https://www.paginebianche.it/",
+   "logo_url": "https://img.pbol.it/pbit2021/img/logo_pb_100.gif",
+   "images": [
+    {
+     "url": "https://www.paginebianche.it/favicon.ico",
+     "kind": "icon",
+     "source_page": "https://www.paginebianche.it/"
+    },
+    {
+     "url": "https://img.pbol.it/pbit/img/apple-icon-57x57.png",
+     "kind": "apple_touch_icon",
+     "source_page": "https://www.paginebianche.it/"
+    },
+    {
+     "url": "https://img.pbol.it/pbit/img/apple-icon-60x60.png",
+     "kind": "apple_touch_icon",
+     "source_page": "https://www.paginebianche.it/"
+    },
+    {
+     "url": "https://img.pbol.it/pbit/img/apple-icon-72x72.png",
+     "kind": "apple_touch_icon",
+     "source_page": "https://www.paginebianche.it/"
+    },
+    {
+     "url": "https://img.pbol.it/pbit/img/apple-icon-76x76.png",
+     "kind": "apple_touch_icon",
+     "source_page": "https://www.paginebianche.it/"
+    },
+    {
+     "url": "https://img.pbol.it/pbit/img/apple-icon-114x114.png",
+     "kind": "apple_touch_icon",
+     "source_page": "https://www.paginebianche.it/"
+    },
+    {
+     "url": "https://img.pbol.it/pbit/img/apple-icon-120x120.png",
+     "kind": "apple_touch_icon",
+     "source_page": "https://www.paginebianche.it/"
+    },
+    {
+     "url": "https://img.pbol.it/pbit/img/apple-icon-144x144.png",
+     "kind": "apple_touch_icon",
+     "source_page": "https://www.paginebianche.it/"
+    },
+    {
+     "url": "https://img.pbol.it/pbit/img/apple-icon-152x152.png",
+     "kind": "apple_touch_icon",
+     "source_page": "https://www.paginebianche.it/"
+    },
+    {
+     "url": "https://img.pbol.it/pbit/img/apple-icon-180x180.png",
+     "kind": "apple_touch_icon",
+     "source_page": "https://www.paginebianche.it/"
+    },
+    {
+     "url": "https://img.pbol.it/pbit/img/favicon-32x32.png",
+     "kind": "icon",
+     "source_page": "https://www.paginebianche.it/"
+    },
+    {
+     "url": "https://img.pbol.it/pbit/img/favicon-96x96.png",
+     "kind": "icon",
+     "source_page": "https://www.paginebianche.it/"
+    },
+    {
+     "url": "https://img.pbol.it/pbit/img/favicon-16x16.png",
+     "kind": "icon",
+     "source_page": "https://www.paginebianche.it/"
+    },
+    {
+     "url": "https://img.pbol.it/pbit/img/safari-pinned-tab.svg",
+     "kind": "icon",
+     "source_page": "https://www.paginebianche.it/"
+    },
+    {
+     "url": "https://img.pbol.it/pbit/img/PB_thumb_fb.png",
+     "kind": "og_image",
+     "source_page": "https://www.paginebianche.it/"
+    },
+    {
+     "url": "https://img.pbol.it/pbit2021/img/logo_pb_100.gif",
+     "kind": "logo",
+     "source_page": "https://www.paginebianche.it/"
+    }
+   ],
+   "theme_color": "#ffffff",
+   "languages": [
+    "it"
+   ],
+   "legal_name": "Pagine Bianche",
+   "search": {
+    "available": true,
+    "method": "http_get",
+    "page_url": "https://www.paginebianche.it/",
+    "form_action": "https://www.paginebianche.it/persone",
+    "inputs": [
+     {
+      "name": "qs",
+      "type": "text",
+      "canonical": "full_name",
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null,
+      "id": null,
+      "label": null,
+      "inputmode": null,
+      "pattern": null,
+      "minlength": null,
+      "maxlength": null,
+      "min": null,
+      "max": null,
+      "step": null,
+      "accept": null,
+      "multiple": false,
+      "disabled": false,
+      "readonly": false,
+      "checked": false,
+      "value": null
+     },
+     {
+      "name": "dv",
+      "type": "text",
+      "canonical": "city",
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null,
+      "id": null,
+      "label": null,
+      "inputmode": null,
+      "pattern": null,
+      "minlength": null,
+      "maxlength": null,
+      "min": null,
+      "max": null,
+      "step": null,
+      "accept": null,
+      "multiple": false,
+      "disabled": false,
+      "readonly": false,
+      "checked": false,
+      "value": null
+     }
+    ],
+    "url_pattern": "https://www.paginebianche.it/persone?qs={qs}&dv={dv}",
+    "directory_prefixes": [],
+    "paywall": null,
+    "login_wall": null,
+    "form_meta": {
+     "id": null,
+     "name": null,
+     "autocomplete": null,
+     "novalidate": null,
+     "submit_label": null,
+     "hidden_names": []
+    },
+    "captcha_provider": null,
+    "captcha_sitekey": null,
+    "captcha_detail": null,
+    "captcha_checked": true
+   },
+   "removal": {
+    "url": "https://www.paginebianche.it/termini-condizioni",
+    "final_url": "https://www.paginebianche.it/termini-condizioni",
+    "http_status": 200,
+    "kinds": [
+     "opt_out"
+    ],
+    "channels": [],
+    "emails": [],
+    "phones": [],
+    "postal_address": null,
+    "portal": null,
+    "form_fields": [],
+    "csrf_field_name": null,
+    "requires_profile_url": null,
+    "captcha": {
+     "provider": null,
+     "sitekey": null,
+     "pages": [],
+     "checked": null,
+     "checked_url": null,
+     "detail": null
+    },
+    "consent_vendor": null,
+    "success_text": null,
+    "suppression_not_deletion": null,
+    "processing_days": null,
+    "processing_text": null,
+    "form_action": null,
+    "form_method": null,
+    "form_meta": {
+     "id": null,
+     "name": null,
+     "autocomplete": null,
+     "novalidate": null,
+     "submit_label": null,
+     "hidden_names": []
+    }
+   },
+   "bot_defense": {
+    "vendor": null,
+    "outcome": "none"
+   },
+   "legal": {
+    "privacy_policy_url": null,
+    "terms_url": null,
+    "automation_prohibited": null,
+    "automation_clause": null,
+    "residency": [
+     "EU"
+    ],
+    "authorized_agent": null,
+    "data_categories": [],
+    "sells_personal_information": null,
+    "sells_clause": null,
+    "children_not_directed": null
+   },
+   "pages": [
+    {
+     "url": "https://paginebianche.it/",
+     "final_url": "https://www.paginebianche.it/",
+     "status": 200,
+     "role": "home",
+     "title": "PagineBianche: trova numeri di telefono, cellulari e indirizziPagineBianche",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.paginebianche.it/",
+     "final_url": "https://www.paginebianche.it/",
+     "status": 200,
+     "role": "home",
+     "title": "PagineBianche: trova numeri di telefono, cellulari e indirizziPagineBianche",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.paginebianche.it/termini-condizioni",
+     "final_url": "https://www.paginebianche.it/termini-condizioni",
+     "status": 200,
+     "role": "catalog",
+     "title": "Termini e condizioni d'Utilizzo",
+     "liveness": "alive"
+    }
+   ],
+   "location": {
+    "country": "IT",
+    "region": null,
+    "locality": null,
+    "postal_code": null,
+    "street": null,
+    "postal_address": null,
+    "coverage": [
+     "EU",
+     "IT"
+    ],
+    "search_regions": [],
+    "sources": [
+     "page",
+     "manual"
+    ]
+   },
+   "network": {
+    "checked": false,
+    "addresses": [],
+    "ipv6": [],
+    "cname": null,
+    "mx": [],
+    "mail_provider": null,
+    "spf": null,
+    "dmarc": null,
+    "dkim": [],
+    "nameservers": [],
+    "dns_provider": null,
+    "soa_primary": null,
+    "caa": [],
+    "dnssec": null,
+    "asn": null,
+    "asn_country": null,
+    "prefix": null,
+    "cdn": null,
+    "server": null,
+    "tls_org": null,
+    "tls_issuer": null,
+    "tls_names": [],
+    "tls_version": null,
+    "tls_not_before": null,
+    "tls_not_after": null,
+    "registrar": null,
+    "registered": null,
+    "registration_expires": null,
+    "domain_status": []
+   },
+   "request": {
+    "removal_host": "paginebianche.it",
+    "same_site": true,
+    "https": true,
+    "redirected": false,
+    "redirect_count": null,
+    "form_enctype": null,
+    "content_type": null,
+    "hsts": null,
+    "hsts_max_age": null,
+    "hsts_subdomains": null,
+    "hsts_preload": null,
+    "http_version": null,
+    "http3": null,
+    "frame_options": null,
+    "nosniff": null,
+    "referrer_policy": null,
+    "csp": null,
+    "powered_by": null,
+    "cookie_names": []
+   },
+   "automation": {
+    "search_scanned": true,
+    "search_fillable": true,
+    "search_captcha": false,
+    "search_fields": [
+     "full_name",
+     "city"
+    ],
+    "removal_form_fillable": false,
+    "removal_email_usable": false,
+    "removal_fields": [],
+    "removal_path": null,
+    "fully_automatable": false,
+    "usable_emails": [],
+    "search_required": [],
+    "removal_required": [],
+    "email_verification": null,
+    "id_document": null,
+    "shared_removal_ids": [],
+    "removal_captcha": false,
+    "captcha_blocks_form": false,
+    "captcha_email_fallback": false,
+    "removal_blocker": "no_channel"
+   },
+   "search_test": {
+    "outcome": null,
+    "http_status": null,
+    "path_prefix": null,
+    "fields_sent": [],
+    "missing": [],
+    "page_kind": null,
+    "result_count": null,
+    "checked_at": null
+   }
+  },
+  "libra-memoria": {
+   "schema_version": "4.0.0",
+   "id": "libra-memoria",
+   "name": "Libra Memoria",
+   "category": "people-search",
+   "domain": "libramemoria.com",
+   "checked_at": "2026-10-25T04:04:54+00:00",
+   "liveness": "alive",
+   "liveness_detail": "libramemoria.com answered HTTP 200 on 2026-10-24. A name search returned results and a made-up name returned none.",
+   "homepage": "https://www.libramemoria.com/",
+   "logo_url": "https://cdn-ext.prsmedia.fr/LIB/logo_libra_memoria-new.png",
+   "images": [
+    {
+     "url": "https://www.libramemoria.com/favicon.ico",
+     "kind": "icon",
+     "source_page": "https://www.libramemoria.com/"
+    },
+    {
+     "url": "https://www.libramemoria.com/apple-touch-icon.png",
+     "kind": "apple_touch_icon",
+     "source_page": "https://www.libramemoria.com/"
+    },
+    {
+     "url": "https://cdn-ext.prsmedia.fr/LIB/logo_libra_memoria-new.png",
+     "kind": "logo",
+     "source_page": "https://www.libramemoria.com/"
+    }
+   ],
+   "theme_color": null,
+   "languages": [
+    "fr"
+   ],
+   "legal_name": "Libra Memoria",
+   "search": {
+    "available": true,
+    "method": "http_get",
+    "page_url": "https://www.libramemoria.com/avis",
+    "form_action": "https://www.libramemoria.com/avis",
+    "inputs": [
+     {
+      "name": "nom",
+      "type": "text",
+      "canonical": "last_name",
+      "required": false,
+      "autocomplete": null,
+      "placeholder": "Nom du défunt",
+      "id": "recherchenom",
+      "label": null,
+      "inputmode": null,
+      "pattern": null,
+      "minlength": null,
+      "maxlength": null,
+      "min": null,
+      "max": null,
+      "step": null,
+      "accept": null,
+      "multiple": false,
+      "disabled": false,
+      "readonly": false,
+      "checked": false,
+      "value": null
+     },
+     {
+      "name": "prenom",
+      "type": "text",
+      "canonical": "first_name",
+      "required": false,
+      "autocomplete": null,
+      "placeholder": "Prénom du défunt",
+      "id": "rechercheprenom",
+      "label": null,
+      "inputmode": null,
+      "pattern": null,
+      "minlength": null,
+      "maxlength": null,
+      "min": null,
+      "max": null,
+      "step": null,
+      "accept": null,
+      "multiple": false,
+      "disabled": false,
+      "readonly": false,
+      "checked": false,
+      "value": null
+     }
+    ],
+    "url_pattern": "https://www.libramemoria.com/avis?nom={nom}",
+    "directory_prefixes": [],
+    "paywall": null,
+    "login_wall": null,
+    "form_meta": {
+     "id": "searchForm",
+     "name": null,
+     "autocomplete": null,
+     "novalidate": null,
+     "submit_label": null,
+     "hidden_names": []
+    },
+    "captcha_provider": null,
+    "captcha_sitekey": null,
+    "captcha_detail": null,
+    "captcha_checked": true
+   },
+   "removal": {
+    "url": "https://www.libramemoria.com/protection-des-donnees",
+    "final_url": "https://www.libramemoria.com/protection-des-donnees",
+    "http_status": 200,
+    "kinds": [
+     "opt_out"
+    ],
+    "channels": [
+     "web_form",
+     "email"
+    ],
+    "emails": [
+     {
+      "email": "contact@libramemoria.com",
+      "confidence": "uncertain",
+      "source_url": "https://www.libramemoria.com/"
+     },
+     {
+      "email": "dpo@ebra.fr",
+      "confidence": "related_domain",
+      "source_url": "https://www.libramemoria.com/"
+     },
+     {
+      "email": "prscontactlibra@libramemoria.com",
+      "confidence": "uncertain",
+      "source_url": "https://www.libramemoria.com/protection-des-donnees"
+     }
+    ],
+    "phones": [],
+    "postal_address": null,
+    "portal": null,
+    "form_fields": [
+     {
+      "name": "ctl00_txtLegalEntity_Siret",
+      "type": "text",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null,
+      "id": null,
+      "label": null,
+      "inputmode": null,
+      "pattern": null,
+      "minlength": null,
+      "maxlength": null,
+      "min": null,
+      "max": null,
+      "step": null,
+      "accept": null,
+      "multiple": null,
+      "disabled": null,
+      "readonly": null,
+      "checked": null,
+      "value": null
+     },
+     {
+      "name": "ctl00_txtNom",
+      "type": "text",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null,
+      "id": null,
+      "label": null,
+      "inputmode": null,
+      "pattern": null,
+      "minlength": null,
+      "maxlength": null,
+      "min": null,
+      "max": null,
+      "step": null,
+      "accept": null,
+      "multiple": null,
+      "disabled": null,
+      "readonly": null,
+      "checked": null,
+      "value": null
+     },
+     {
+      "name": "ctl00_txtPrenom",
+      "type": "text",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null,
+      "id": null,
+      "label": null,
+      "inputmode": null,
+      "pattern": null,
+      "minlength": null,
+      "maxlength": null,
+      "min": null,
+      "max": null,
+      "step": null,
+      "accept": null,
+      "multiple": null,
+      "disabled": null,
+      "readonly": null,
+      "checked": null,
+      "value": null
+     },
+     {
+      "name": "ctl00_txtEmail",
+      "type": "text",
+      "canonical": "email",
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null,
+      "id": null,
+      "label": null,
+      "inputmode": null,
+      "pattern": null,
+      "minlength": null,
+      "maxlength": null,
+      "min": null,
+      "max": null,
+      "step": null,
+      "accept": null,
+      "multiple": null,
+      "disabled": null,
+      "readonly": null,
+      "checked": null,
+      "value": null
+     },
+     {
+      "name": "ctl00_chkOS",
+      "type": "checkbox",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null,
+      "id": null,
+      "label": null,
+      "inputmode": null,
+      "pattern": null,
+      "minlength": null,
+      "maxlength": null,
+      "min": null,
+      "max": null,
+      "step": null,
+      "accept": null,
+      "multiple": null,
+      "disabled": null,
+      "readonly": null,
+      "checked": null,
+      "value": null
+     },
+     {
+      "name": "ctl00_chkOSP",
+      "type": "checkbox",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null,
+      "id": null,
+      "label": null,
+      "inputmode": null,
+      "pattern": null,
+      "minlength": null,
+      "maxlength": null,
+      "min": null,
+      "max": null,
+      "step": null,
+      "accept": null,
+      "multiple": null,
+      "disabled": null,
+      "readonly": null,
+      "checked": null,
+      "value": null
+     },
+     {
+      "name": "ctl00_chkCGU",
+      "type": "checkbox",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null,
+      "id": null,
+      "label": null,
+      "inputmode": null,
+      "pattern": null,
+      "minlength": null,
+      "maxlength": null,
+      "min": null,
+      "max": null,
+      "step": null,
+      "accept": null,
+      "multiple": null,
+      "disabled": null,
+      "readonly": null,
+      "checked": null,
+      "value": null
+     },
+     {
+      "name": "hpUsername",
+      "type": "text",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null,
+      "id": null,
+      "label": null,
+      "inputmode": null,
+      "pattern": null,
+      "minlength": null,
+      "maxlength": null,
+      "min": null,
+      "max": null,
+      "step": null,
+      "accept": null,
+      "multiple": null,
+      "disabled": null,
+      "readonly": null,
+      "checked": null,
+      "value": null
+     },
+     {
+      "name": "SendMail",
+      "type": "text",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null,
+      "id": null,
+      "label": null,
+      "inputmode": null,
+      "pattern": null,
+      "minlength": null,
+      "maxlength": null,
+      "min": null,
+      "max": null,
+      "step": null,
+      "accept": null,
+      "multiple": null,
+      "disabled": null,
+      "readonly": null,
+      "checked": null,
+      "value": null
+     }
+    ],
+    "csrf_field_name": null,
+    "requires_profile_url": null,
+    "captcha": {
+     "provider": "recaptcha_v2",
+     "sitekey": "6Lfx280UAAAAAFdTKAyfbnO1KnwiPQ0FneN0-leP",
+     "pages": [
+      "https://www.libramemoria.com/",
+      "https://www.libramemoria.com/protection-des-donnees"
+     ],
+     "checked": null,
+     "checked_url": null,
+     "detail": {
+      "mode": null,
+      "invisible": null,
+      "size": null,
+      "theme": null,
+      "action": null,
+      "badge": null,
+      "language": null,
+      "appearance": null,
+      "enterprise": false,
+      "api_domain": null,
+      "script_path": null,
+      "token_field": null,
+      "callback": null
+     }
+    },
+    "consent_vendor": null,
+    "success_text": null,
+    "suppression_not_deletion": null,
+    "processing_days": null,
+    "processing_text": null,
+    "form_action": null,
+    "form_method": null,
+    "form_meta": {
+     "id": null,
+     "name": null,
+     "autocomplete": null,
+     "novalidate": null,
+     "submit_label": null,
+     "hidden_names": []
+    }
+   },
+   "bot_defense": {
+    "vendor": null,
+    "outcome": "none"
+   },
+   "legal": {
+    "privacy_policy_url": null,
+    "terms_url": null,
+    "automation_prohibited": null,
+    "automation_clause": null,
+    "residency": [],
+    "authorized_agent": null,
+    "data_categories": [],
+    "sells_personal_information": null,
+    "sells_clause": null,
+    "children_not_directed": null
+   },
+   "pages": [
+    {
+     "url": "https://libramemoria.com/",
+     "final_url": "https://www.libramemoria.com/",
+     "status": 200,
+     "role": "home",
+     "title": "Libra Memoria : les avis de décès parus dans la presse française",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.libramemoria.com/",
+     "final_url": "https://www.libramemoria.com/",
+     "status": 200,
+     "role": "home",
+     "title": "Libra Memoria : les avis de décès parus dans la presse française",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.libramemoria.com/protection-des-donnees",
+     "final_url": "https://www.libramemoria.com/protection-des-donnees",
+     "status": 200,
+     "role": "catalog",
+     "title": "",
+     "liveness": "alive"
+    }
+   ],
+   "location": {
+    "country": "FR",
+    "region": null,
+    "locality": null,
+    "postal_code": null,
+    "street": null,
+    "postal_address": null,
+    "coverage": [
+     "FR"
+    ],
+    "search_regions": [],
+    "sources": [
+     "manual"
+    ]
+   },
+   "network": {
+    "checked": false,
+    "addresses": [],
+    "ipv6": [],
+    "cname": null,
+    "mx": [],
+    "mail_provider": null,
+    "spf": null,
+    "dmarc": null,
+    "dkim": [],
+    "nameservers": [],
+    "dns_provider": null,
+    "soa_primary": null,
+    "caa": [],
+    "dnssec": null,
+    "asn": null,
+    "asn_country": null,
+    "prefix": null,
+    "cdn": null,
+    "server": null,
+    "tls_org": null,
+    "tls_issuer": null,
+    "tls_names": [],
+    "tls_version": null,
+    "tls_not_before": null,
+    "tls_not_after": null,
+    "registrar": null,
+    "registered": null,
+    "registration_expires": null,
+    "domain_status": []
+   },
+   "request": {
+    "removal_host": "libramemoria.com",
+    "same_site": true,
+    "https": true,
+    "redirected": false,
+    "redirect_count": null,
+    "form_enctype": null,
+    "content_type": null,
+    "hsts": null,
+    "hsts_max_age": null,
+    "hsts_subdomains": null,
+    "hsts_preload": null,
+    "http_version": null,
+    "http3": null,
+    "frame_options": null,
+    "nosniff": null,
+    "referrer_policy": null,
+    "csp": null,
+    "powered_by": null,
+    "cookie_names": []
+   },
+   "automation": {
+    "search_scanned": true,
+    "search_fillable": true,
+    "search_captcha": false,
+    "search_fields": [
+     "last_name",
+     "first_name"
+    ],
+    "removal_form_fillable": false,
+    "removal_email_usable": true,
+    "removal_fields": [
+     "email"
+    ],
+    "removal_path": "email",
+    "fully_automatable": true,
+    "usable_emails": [
+     "dpo@ebra.fr"
+    ],
+    "search_required": [],
+    "removal_required": [],
+    "email_verification": null,
+    "id_document": null,
+    "shared_removal_ids": [],
+    "removal_captcha": true,
+    "captcha_blocks_form": true,
+    "captcha_email_fallback": true,
+    "removal_blocker": null
+   },
+   "search_test": {
+    "outcome": "submitted",
+    "http_status": 200,
+    "path_prefix": "avis",
+    "fields_sent": [
+     "last_name",
+     "first_name"
+    ],
+    "missing": [],
+    "page_kind": "other",
+    "result_count": null,
+    "checked_at": "2026-10-25T04:10:08+00:00"
+   }
+  },
+  "nz-companies-office-individuals": {
+   "schema_version": "4.0.0",
+   "id": "nz-companies-office-individuals",
+   "name": "NZ Companies Office director and shareholder search",
+   "category": "public-records",
+   "domain": "app.companiesoffice.govt.nz",
+   "checked_at": "2026-10-25T04:04:55+00:00",
+   "liveness": "alive",
+   "liveness_detail": "app.companiesoffice.govt.nz answered HTTP 200 on 2026-10-24. A name search returned results and a made-up name returned none.",
+   "homepage": "https://app.companiesoffice.govt.nz/",
+   "logo_url": "https://www.companiesoffice.govt.nz/_resources/themes/base/dist/img/logos/co-logo-tiny.png",
+   "images": [
+    {
+     "url": "https://www.companiesoffice.govt.nz/_resources/themes/base/dist/img/favicons/co/apple-touch-icon.png?v=A0Rqr8Y59x",
+     "kind": "apple_touch_icon",
+     "source_page": "https://www.companiesoffice.govt.nz/about-us/privacy/"
+    },
+    {
+     "url": "https://www.companiesoffice.govt.nz/_resources/themes/base/dist/img/favicons/co/favicon-32x32.png?v=A0Rqr8Y59x",
+     "kind": "icon",
+     "source_page": "https://www.companiesoffice.govt.nz/about-us/privacy/"
+    },
+    {
+     "url": "https://www.companiesoffice.govt.nz/_resources/themes/base/dist/img/favicons/co/favicon-16x16.png?v=A0Rqr8Y59x",
+     "kind": "icon",
+     "source_page": "https://www.companiesoffice.govt.nz/about-us/privacy/"
+    },
+    {
+     "url": "https://www.companiesoffice.govt.nz/_resources/themes/base/dist/img/favicons/co/safari-pinned-tab.svg?v=A0Rqr8Y59x",
+     "kind": "icon",
+     "source_page": "https://www.companiesoffice.govt.nz/about-us/privacy/"
+    },
+    {
+     "url": "https://www.companiesoffice.govt.nz/_resources/themes/base/dist/img/favicons/co/favicon.ico?v=A0Rqr8Y59x",
+     "kind": "icon",
+     "source_page": "https://www.companiesoffice.govt.nz/about-us/privacy/"
+    },
+    {
+     "url": "https://www.companiesoffice.govt.nz/assets/companies-office/social-media/Facebook/CO-open-graph.jpg",
+     "kind": "og_image",
+     "source_page": "https://www.companiesoffice.govt.nz/about-us/privacy/"
+    },
+    {
+     "url": "https://www.companiesoffice.govt.nz/_resources/themes/base/dist/img/logos/co-logo-black.png",
+     "kind": "json_ld",
+     "source_page": "https://www.companiesoffice.govt.nz/about-us/privacy/"
+    },
+    {
+     "url": "https://www.companiesoffice.govt.nz/_resources/themes/base/dist/img/logos/co-logo-tiny.png",
+     "kind": "logo",
+     "source_page": "https://www.companiesoffice.govt.nz/about-us/privacy/"
+    },
+    {
+     "url": "https://www.companiesoffice.govt.nz/_resources/themes/base/dist/img/logos/mbie-logo--white.svg",
+     "kind": "logo",
+     "source_page": "https://www.companiesoffice.govt.nz/about-us/privacy/"
+    },
+    {
+     "url": "https://www.companiesoffice.govt.nz/_resources/themes/base/dist/img/logos/mbie-logo--black.svg",
+     "kind": "logo",
+     "source_page": "https://www.companiesoffice.govt.nz/about-us/privacy/"
+    },
+    {
+     "url": "https://www.companiesoffice.govt.nz/_resources/themes/base/dist/img/logos/mbie-logo-print.png",
+     "kind": "logo",
+     "source_page": "https://www.companiesoffice.govt.nz/about-us/privacy/"
+    },
+    {
+     "url": "https://www.companiesoffice.govt.nz/_resources/themes/base/dist/img/logos/nz-govt-logo-bilingual--white.png",
+     "kind": "logo",
+     "source_page": "https://www.companiesoffice.govt.nz/about-us/privacy/"
+    }
+   ],
+   "theme_color": "#004b6b",
+   "languages": [
+    "en"
+   ],
+   "legal_name": "Companies Office",
+   "search": {
+    "available": true,
+    "method": "http_get",
+    "page_url": "https://app.companiesoffice.govt.nz/companies/app/ui/pages/individual/search",
+    "form_action": "https://app.companiesoffice.govt.nz/companies/app/ui/pages/individual/search",
+    "inputs": [
+     {
+      "name": "q",
+      "type": "text",
+      "canonical": "full_name",
+      "required": false,
+      "autocomplete": null,
+      "placeholder": "Enter name here...",
+      "id": "indQ",
+      "label": null,
+      "inputmode": null,
+      "pattern": null,
+      "minlength": null,
+      "maxlength": null,
+      "min": null,
+      "max": null,
+      "step": null,
+      "accept": null,
+      "multiple": false,
+      "disabled": false,
+      "readonly": false,
+      "checked": false,
+      "value": null
+     },
+     {
+      "name": "roleType",
+      "type": "hidden",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null,
+      "id": null,
+      "label": null,
+      "inputmode": null,
+      "pattern": null,
+      "minlength": null,
+      "maxlength": null,
+      "min": null,
+      "max": null,
+      "step": null,
+      "accept": null,
+      "multiple": false,
+      "disabled": false,
+      "readonly": false,
+      "checked": false,
+      "value": "ALL"
+     },
+     {
+      "name": "mode",
+      "type": "hidden",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null,
+      "id": null,
+      "label": null,
+      "inputmode": null,
+      "pattern": null,
+      "minlength": null,
+      "maxlength": null,
+      "min": null,
+      "max": null,
+      "step": null,
+      "accept": null,
+      "multiple": false,
+      "disabled": false,
+      "readonly": false,
+      "checked": false,
+      "value": "standard"
+     }
+    ],
+    "url_pattern": "https://app.companiesoffice.govt.nz/companies/app/ui/pages/individual/search?q={q}&roleType=ALL&mode=standard&advancedPanel=false",
+    "directory_prefixes": [],
+    "paywall": null,
+    "login_wall": null,
+    "form_meta": {
+     "id": "indSearchForm",
+     "name": null,
+     "autocomplete": null,
+     "novalidate": null,
+     "submit_label": null,
+     "hidden_names": [
+      "roleType",
+      "mode"
+     ]
+    },
+    "captcha_provider": null,
+    "captcha_sitekey": null,
+    "captcha_detail": null,
+    "captcha_checked": true
+   },
+   "removal": {
+    "url": "https://www.companiesoffice.govt.nz/about-us/privacy/",
+    "final_url": "https://www.companiesoffice.govt.nz/about-us/privacy/",
+    "http_status": 200,
+    "kinds": [
+     "opt_out"
+    ],
+    "channels": [
+     "web_form"
+    ],
+    "emails": [],
+    "phones": [],
+    "postal_address": null,
+    "portal": null,
+    "form_fields": [
+     {
+      "name": "EditableTextField_bdc2c",
+      "type": "email",
+      "canonical": "email",
+      "required": false,
+      "autocomplete": null,
+      "placeholder": "someone@example.com",
+      "id": null,
+      "label": null,
+      "inputmode": null,
+      "pattern": null,
+      "minlength": null,
+      "maxlength": null,
+      "min": null,
+      "max": null,
+      "step": null,
+      "accept": null,
+      "multiple": null,
+      "disabled": null,
+      "readonly": null,
+      "checked": null,
+      "value": null
+     },
+     {
+      "name": "EditableTextField_1280e",
+      "type": "text",
+      "canonical": null,
+      "required": false,
+      "autocomplete": "name",
+      "placeholder": null,
+      "id": null,
+      "label": null,
+      "inputmode": null,
+      "pattern": null,
+      "minlength": null,
+      "maxlength": null,
+      "min": null,
+      "max": null,
+      "step": null,
+      "accept": null,
+      "multiple": null,
+      "disabled": null,
+      "readonly": null,
+      "checked": null,
+      "value": null
+     },
+     {
+      "name": "EditableTextField_18253",
+      "type": "text",
+      "canonical": null,
+      "required": false,
+      "autocomplete": "off",
+      "placeholder": null,
+      "id": null,
+      "label": null,
+      "inputmode": null,
+      "pattern": null,
+      "minlength": null,
+      "maxlength": null,
+      "min": null,
+      "max": null,
+      "step": null,
+      "accept": null,
+      "multiple": null,
+      "disabled": null,
+      "readonly": null,
+      "checked": null,
+      "value": null
+     }
+    ],
+    "csrf_field_name": null,
+    "requires_profile_url": null,
+    "captcha": {
+     "provider": "recaptcha_v3",
+     "sitekey": "6Le06vgnAAAAAGAXl3vldBUsGMt-R-V7Uxjoqm0Z",
+     "pages": [
+      "https://www.companiesoffice.govt.nz/about-us/privacy/"
+     ],
+     "checked": null,
+     "checked_url": null,
+     "detail": {
+      "mode": "score",
+      "invisible": true,
+      "size": null,
+      "theme": null,
+      "action": null,
+      "badge": null,
+      "language": null,
+      "appearance": null,
+      "enterprise": false,
+      "api_domain": null,
+      "script_path": null,
+      "token_field": null,
+      "callback": null
+     }
+    },
+    "consent_vendor": null,
+    "success_text": null,
+    "suppression_not_deletion": null,
+    "processing_days": null,
+    "processing_text": null,
+    "form_action": "https://www.companiesoffice.govt.nz/about-us/privacy/EmailPage/",
+    "form_method": "http_form_post",
+    "form_meta": {
+     "id": null,
+     "name": null,
+     "autocomplete": null,
+     "novalidate": null,
+     "submit_label": null,
+     "hidden_names": []
+    }
+   },
+   "bot_defense": {
+    "vendor": null,
+    "outcome": "none"
+   },
+   "legal": {
+    "privacy_policy_url": null,
+    "terms_url": null,
+    "automation_prohibited": null,
+    "automation_clause": null,
+    "residency": [],
+    "authorized_agent": null,
+    "data_categories": [
+     "identifiers",
+     "employment"
+    ],
+    "sells_personal_information": null,
+    "sells_clause": null,
+    "children_not_directed": null
+   },
+   "pages": [
+    {
+     "url": "https://app.companiesoffice.govt.nz/",
+     "final_url": null,
+     "status": null,
+     "role": "home",
+     "title": "",
+     "liveness": "robots_disallowed"
+    },
+    {
+     "url": "https://www.app.companiesoffice.govt.nz/",
+     "final_url": null,
+     "status": null,
+     "role": "home",
+     "title": "",
+     "liveness": "error"
+    },
+    {
+     "url": "https://www.companiesoffice.govt.nz/about-us/privacy/",
+     "final_url": "https://www.companiesoffice.govt.nz/about-us/privacy/",
+     "status": 200,
+     "role": "catalog",
+     "title": "Privacy | Companies Office",
+     "liveness": "alive"
+    }
+   ],
+   "location": {
+    "country": "NZ",
+    "region": null,
+    "locality": null,
+    "postal_code": null,
+    "street": null,
+    "postal_address": null,
+    "coverage": [
+     "NZ"
+    ],
+    "search_regions": [],
+    "sources": [
+     "manual"
+    ]
+   },
+   "network": {
+    "checked": false,
+    "addresses": [],
+    "ipv6": [],
+    "cname": null,
+    "mx": [],
+    "mail_provider": null,
+    "spf": null,
+    "dmarc": null,
+    "dkim": [],
+    "nameservers": [],
+    "dns_provider": null,
+    "soa_primary": null,
+    "caa": [],
+    "dnssec": null,
+    "asn": null,
+    "asn_country": null,
+    "prefix": null,
+    "cdn": null,
+    "server": null,
+    "tls_org": null,
+    "tls_issuer": null,
+    "tls_names": [],
+    "tls_version": null,
+    "tls_not_before": null,
+    "tls_not_after": null,
+    "registrar": null,
+    "registered": null,
+    "registration_expires": null,
+    "domain_status": []
+   },
+   "request": {
+    "removal_host": "companiesoffice.govt.nz",
+    "same_site": false,
+    "https": true,
+    "redirected": false,
+    "redirect_count": null,
+    "form_enctype": null,
+    "content_type": null,
+    "hsts": null,
+    "hsts_max_age": null,
+    "hsts_subdomains": null,
+    "hsts_preload": null,
+    "http_version": null,
+    "http3": null,
+    "frame_options": null,
+    "nosniff": null,
+    "referrer_policy": null,
+    "csp": null,
+    "powered_by": null,
+    "cookie_names": []
+   },
+   "automation": {
+    "search_scanned": true,
+    "search_fillable": true,
+    "search_captcha": false,
+    "search_fields": [
+     "full_name"
+    ],
+    "removal_form_fillable": false,
+    "removal_email_usable": false,
+    "removal_fields": [
+     "email"
+    ],
+    "removal_path": null,
+    "fully_automatable": false,
+    "usable_emails": [],
+    "search_required": [],
+    "removal_required": [],
+    "email_verification": null,
+    "id_document": null,
+    "shared_removal_ids": [],
+    "removal_captcha": true,
+    "captcha_blocks_form": true,
+    "captcha_email_fallback": false,
+    "removal_blocker": "captcha_form"
+   },
+   "search_test": {
+    "outcome": null,
+    "http_status": null,
+    "path_prefix": null,
+    "fields_sent": [],
+    "missing": [],
+    "page_kind": null,
+    "result_count": null,
+    "checked_at": null
+   }
+  },
+  "abn-lookup": {
+   "schema_version": "4.0.0",
+   "id": "abn-lookup",
+   "name": "ABN Lookup",
+   "category": "public-records",
+   "domain": "abr.business.gov.au",
+   "checked_at": "2026-10-25T04:04:53+00:00",
+   "liveness": "alive",
+   "liveness_detail": "abr.business.gov.au answered HTTP 200 on 2026-10-24. A name search returned results and a made-up name returned none.",
+   "homepage": "https://abr.business.gov.au/",
+   "logo_url": "https://abr.business.gov.au/Images/logo-gov.png",
+   "images": [
+    {
+     "url": "https://abr.business.gov.au/favicon.ico",
+     "kind": "icon",
+     "source_page": "https://abr.business.gov.au/"
+    },
+    {
+     "url": "https://abr.business.gov.au/Images/logo-gov.png",
+     "kind": "logo",
+     "source_page": "https://abr.business.gov.au/"
+    },
+    {
+     "url": "https://abr.business.gov.au/Images/logo-abnl.png",
+     "kind": "logo",
+     "source_page": "https://abr.business.gov.au/"
+    }
+   ],
+   "theme_color": null,
+   "languages": [
+    "en"
+   ],
+   "legal_name": null,
+   "search": {
+    "available": true,
+    "method": "http_get",
+    "page_url": "https://abr.business.gov.au/",
+    "form_action": "https://abr.business.gov.au/Search/ResultsActive",
+    "inputs": [
+     {
+      "name": "SearchText",
+      "type": "text",
+      "canonical": "full_name",
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null,
+      "id": "SearchText",
+      "label": null,
+      "inputmode": null,
+      "pattern": null,
+      "minlength": null,
+      "maxlength": null,
+      "min": null,
+      "max": null,
+      "step": null,
+      "accept": null,
+      "multiple": false,
+      "disabled": false,
+      "readonly": false,
+      "checked": false,
+      "value": null
+     }
+    ],
+    "url_pattern": "https://abr.business.gov.au/Search/ResultsActive?SearchText={SearchText}",
+    "directory_prefixes": [],
+    "paywall": null,
+    "login_wall": null,
+    "form_meta": {
+     "id": null,
+     "name": null,
+     "autocomplete": null,
+     "novalidate": null,
+     "submit_label": "Search",
+     "hidden_names": []
+    },
+    "captcha_provider": null,
+    "captcha_sitekey": null,
+    "captcha_detail": null,
+    "captcha_checked": true
+   },
+   "removal": {
+    "url": "https://abr.business.gov.au/Home/PrivacyPolicies",
+    "final_url": "https://abr.business.gov.au/Home/PrivacyPolicies",
+    "http_status": 200,
+    "kinds": [
+     "opt_out"
+    ],
+    "channels": [
+     "web_form"
+    ],
+    "emails": [],
+    "phones": [],
+    "postal_address": null,
+    "portal": null,
+    "form_fields": [
+     {
+      "name": "SearchParameters.SearchText",
+      "type": "text",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": "Type an ABN, ACN or name",
+      "id": null,
+      "label": null,
+      "inputmode": null,
+      "pattern": null,
+      "minlength": null,
+      "maxlength": null,
+      "min": null,
+      "max": null,
+      "step": null,
+      "accept": null,
+      "multiple": null,
+      "disabled": null,
+      "readonly": null,
+      "checked": null,
+      "value": null
+     }
+    ],
+    "csrf_field_name": null,
+    "requires_profile_url": null,
+    "captcha": {
+     "provider": "recaptcha_v2",
+     "sitekey": null,
+     "pages": [
+      "https://abr.business.gov.au/",
+      "https://abr.business.gov.au/Home/PrivacyPolicies"
+     ],
+     "checked": null,
+     "checked_url": null,
+     "detail": {
+      "mode": null,
+      "invisible": null,
+      "size": null,
+      "theme": null,
+      "action": null,
+      "badge": null,
+      "language": null,
+      "appearance": null,
+      "enterprise": false,
+      "api_domain": null,
+      "script_path": null,
+      "token_field": null,
+      "callback": null
+     }
+    },
+    "consent_vendor": null,
+    "success_text": null,
+    "suppression_not_deletion": null,
+    "processing_days": null,
+    "processing_text": null,
+    "form_action": "https://abr.business.gov.au/Search/Run",
+    "form_method": "http_form_post",
+    "form_meta": {
+     "id": null,
+     "name": null,
+     "autocomplete": null,
+     "novalidate": null,
+     "submit_label": null,
+     "hidden_names": []
+    }
+   },
+   "bot_defense": {
+    "vendor": null,
+    "outcome": "none"
+   },
+   "legal": {
+    "privacy_policy_url": "https://abr.business.gov.au/Home/PrivacyPolicies",
+    "terms_url": null,
+    "automation_prohibited": null,
+    "automation_clause": null,
+    "residency": [],
+    "authorized_agent": null,
+    "data_categories": [
+     "identifiers"
+    ],
+    "sells_personal_information": null,
+    "sells_clause": null,
+    "children_not_directed": null
+   },
+   "pages": [
+    {
+     "url": "https://abr.business.gov.au/",
+     "final_url": "https://abr.business.gov.au/",
+     "status": 200,
+     "role": "home",
+     "title": "ABN LookupABN Lookup",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.abr.business.gov.au/",
+     "final_url": "https://abr.business.gov.au/",
+     "status": 200,
+     "role": "home",
+     "title": "ABN LookupABN Lookup",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://abr.business.gov.au/Home/PrivacyPolicies",
+     "final_url": "https://abr.business.gov.au/Home/PrivacyPolicies",
+     "status": 200,
+     "role": "catalog",
+     "title": "Privacy policies | ABN LookupPrivacy policies | ABN Lookup",
+     "liveness": "alive"
+    }
+   ],
+   "location": {
+    "country": "AU",
+    "region": null,
+    "locality": null,
+    "postal_code": null,
+    "street": null,
+    "postal_address": null,
+    "coverage": [
+     "AU"
+    ],
+    "search_regions": [],
+    "sources": [
+     "domain"
+    ]
+   },
+   "network": {
+    "checked": false,
+    "addresses": [],
+    "ipv6": [],
+    "cname": null,
+    "mx": [],
+    "mail_provider": null,
+    "spf": null,
+    "dmarc": null,
+    "dkim": [],
+    "nameservers": [],
+    "dns_provider": null,
+    "soa_primary": null,
+    "caa": [],
+    "dnssec": null,
+    "asn": null,
+    "asn_country": null,
+    "prefix": null,
+    "cdn": null,
+    "server": null,
+    "tls_org": null,
+    "tls_issuer": null,
+    "tls_names": [],
+    "tls_version": null,
+    "tls_not_before": null,
+    "tls_not_after": null,
+    "registrar": null,
+    "registered": null,
+    "registration_expires": null,
+    "domain_status": []
+   },
+   "request": {
+    "removal_host": "abr.business.gov.au",
+    "same_site": true,
+    "https": true,
+    "redirected": false,
+    "redirect_count": null,
+    "form_enctype": null,
+    "content_type": null,
+    "hsts": null,
+    "hsts_max_age": null,
+    "hsts_subdomains": null,
+    "hsts_preload": null,
+    "http_version": null,
+    "http3": null,
+    "frame_options": null,
+    "nosniff": null,
+    "referrer_policy": null,
+    "csp": null,
+    "powered_by": null,
+    "cookie_names": []
+   },
+   "automation": {
+    "search_scanned": true,
+    "search_fillable": false,
+    "search_captcha": true,
+    "search_fields": [
+     "full_name"
+    ],
+    "removal_form_fillable": false,
+    "removal_email_usable": false,
+    "removal_fields": [],
+    "removal_path": null,
+    "fully_automatable": false,
+    "usable_emails": [],
+    "search_required": [],
+    "removal_required": [],
+    "email_verification": null,
+    "id_document": null,
+    "shared_removal_ids": [],
+    "removal_captcha": true,
+    "captcha_blocks_form": true,
+    "captcha_email_fallback": false,
+    "removal_blocker": "captcha_form"
+   },
+   "search_test": {
+    "outcome": null,
+    "http_status": null,
+    "path_prefix": null,
+    "fields_sent": [],
+    "missing": [],
+    "page_kind": null,
+    "result_count": null,
+    "checked_at": null
+   }
+  },
+  "north-data": {
+   "schema_version": "4.0.0",
+   "id": "north-data",
+   "name": "North Data",
+   "category": "public-records",
+   "domain": "northdata.de",
+   "checked_at": "2026-10-25T04:04:53+00:00",
+   "liveness": "alive",
+   "liveness_detail": "northdata.de answered HTTP 200 on 2026-10-24. A name search returned results and a made-up name returned none.",
+   "homepage": "https://www.northdata.de/",
+   "logo_url": "https://www.northdata.de/ui/v1-515-11/favicon.png",
+   "images": [
+    {
+     "url": "https://www.northdata.de/ui/v1-515-11/favicon.png",
+     "kind": "icon",
+     "source_page": "https://www.northdata.de/"
+    },
+    {
+     "url": "https://www.northdata.de/ui/v1-515-11/img/northdata-logo-v-large.png",
+     "kind": "og_image",
+     "source_page": "https://www.northdata.de/"
+    }
+   ],
+   "theme_color": null,
+   "languages": [
+    "de"
+   ],
+   "legal_name": "North Data",
+   "search": {
+    "available": true,
+    "method": "http_get",
+    "page_url": "https://www.northdata.de/",
+    "form_action": "https://www.northdata.de/",
+    "inputs": [
+     {
+      "name": "query",
+      "type": "text",
+      "canonical": "full_name",
+      "required": false,
+      "autocomplete": null,
+      "placeholder": "Firma oder Person",
+      "id": null,
+      "label": null,
+      "inputmode": null,
+      "pattern": null,
+      "minlength": null,
+      "maxlength": null,
+      "min": null,
+      "max": null,
+      "step": null,
+      "accept": null,
+      "multiple": false,
+      "disabled": false,
+      "readonly": false,
+      "checked": false,
+      "value": null
+     }
+    ],
+    "url_pattern": "https://www.northdata.de/?query={query}",
+    "directory_prefixes": [],
+    "paywall": null,
+    "login_wall": null,
+    "form_meta": {
+     "id": null,
+     "name": null,
+     "autocomplete": null,
+     "novalidate": null,
+     "submit_label": null,
+     "hidden_names": []
+    },
+    "captcha_provider": null,
+    "captcha_sitekey": null,
+    "captcha_detail": null,
+    "captcha_checked": true
+   },
+   "removal": {
+    "url": "https://www.northdata.de/_privacy",
+    "final_url": "https://www.northdata.de/_privacy",
+    "http_status": 200,
+    "kinds": [
+     "opt_out"
+    ],
+    "channels": [
+     "web_form",
+     "email"
+    ],
+    "emails": [
+     {
+      "email": "info@northdata.de",
+      "confidence": "uncertain",
+      "source_url": "https://www.northdata.de/_privacy"
+     },
+     {
+      "email": "privacy@northdata.de",
+      "confidence": "extracted",
+      "source_url": "https://www.northdata.de/_privacy"
+     }
+    ],
+    "phones": [],
+    "postal_address": null,
+    "portal": null,
+    "form_fields": [
+     {
+      "name": "address",
+      "type": "text",
+      "canonical": "street_address",
+      "required": false,
+      "autocomplete": null,
+      "placeholder": "Ort oder Adresse",
+      "id": null,
+      "label": null,
+      "inputmode": null,
+      "pattern": null,
+      "minlength": null,
+      "maxlength": null,
+      "min": null,
+      "max": null,
+      "step": null,
+      "accept": null,
+      "multiple": null,
+      "disabled": null,
+      "readonly": null,
+      "checked": null,
+      "value": null
+     },
+     {
+      "name": "keywords",
+      "type": "text",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": "Stichwörter",
+      "id": null,
+      "label": null,
+      "inputmode": null,
+      "pattern": null,
+      "minlength": null,
+      "maxlength": null,
+      "min": null,
+      "max": null,
+      "step": null,
+      "accept": null,
+      "multiple": null,
+      "disabled": null,
+      "readonly": null,
+      "checked": null,
+      "value": null
+     }
+    ],
+    "csrf_field_name": null,
+    "requires_profile_url": null,
+    "captcha": {
+     "provider": null,
+     "sitekey": null,
+     "pages": [],
+     "checked": null,
+     "checked_url": null,
+     "detail": null
+    },
+    "consent_vendor": null,
+    "success_text": null,
+    "suppression_not_deletion": null,
+    "processing_days": null,
+    "processing_text": null,
+    "form_action": "https://www.northdata.de/_privacy",
+    "form_method": "http_get",
+    "form_meta": {
+     "id": null,
+     "name": null,
+     "autocomplete": null,
+     "novalidate": null,
+     "submit_label": null,
+     "hidden_names": []
+    }
+   },
+   "bot_defense": {
+    "vendor": null,
+    "outcome": "none"
+   },
+   "legal": {
+    "privacy_policy_url": "https://www.northdata.de/_privacy",
+    "terms_url": null,
+    "automation_prohibited": null,
+    "automation_clause": null,
+    "residency": [],
+    "authorized_agent": null,
+    "data_categories": [],
+    "sells_personal_information": null,
+    "sells_clause": null,
+    "children_not_directed": null
+   },
+   "pages": [
+    {
+     "url": "https://northdata.de/",
+     "final_url": "https://www.northdata.de/",
+     "status": 200,
+     "role": "home",
+     "title": "North Data Smarte Recherche",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.northdata.de/",
+     "final_url": "https://www.northdata.de/",
+     "status": 200,
+     "role": "home",
+     "title": "North Data Smarte Recherche",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.northdata.de/_privacy",
+     "final_url": "https://www.northdata.de/_privacy",
+     "status": 200,
+     "role": "catalog",
+     "title": "Datenschutz",
+     "liveness": "alive"
+    }
+   ],
+   "location": {
+    "country": "DE",
+    "region": null,
+    "locality": null,
+    "postal_code": null,
+    "street": null,
+    "postal_address": null,
+    "coverage": [
+     "DE"
+    ],
+    "search_regions": [],
+    "sources": [
+     "manual"
+    ]
+   },
+   "network": {
+    "checked": false,
+    "addresses": [],
+    "ipv6": [],
+    "cname": null,
+    "mx": [],
+    "mail_provider": null,
+    "spf": null,
+    "dmarc": null,
+    "dkim": [],
+    "nameservers": [],
+    "dns_provider": null,
+    "soa_primary": null,
+    "caa": [],
+    "dnssec": null,
+    "asn": null,
+    "asn_country": null,
+    "prefix": null,
+    "cdn": null,
+    "server": null,
+    "tls_org": null,
+    "tls_issuer": null,
+    "tls_names": [],
+    "tls_version": null,
+    "tls_not_before": null,
+    "tls_not_after": null,
+    "registrar": null,
+    "registered": null,
+    "registration_expires": null,
+    "domain_status": []
+   },
+   "request": {
+    "removal_host": "northdata.de",
+    "same_site": true,
+    "https": true,
+    "redirected": false,
+    "redirect_count": null,
+    "form_enctype": null,
+    "content_type": null,
+    "hsts": null,
+    "hsts_max_age": null,
+    "hsts_subdomains": null,
+    "hsts_preload": null,
+    "http_version": null,
+    "http3": null,
+    "frame_options": null,
+    "nosniff": null,
+    "referrer_policy": null,
+    "csp": null,
+    "powered_by": null,
+    "cookie_names": []
+   },
+   "automation": {
+    "search_scanned": true,
+    "search_fillable": true,
+    "search_captcha": false,
+    "search_fields": [
+     "full_name"
+    ],
+    "removal_form_fillable": true,
+    "removal_email_usable": true,
+    "removal_fields": [
+     "street_address"
+    ],
+    "removal_path": "form",
+    "fully_automatable": true,
+    "usable_emails": [
+     "privacy@northdata.de"
+    ],
+    "search_required": [],
+    "removal_required": [],
+    "email_verification": null,
+    "id_document": null,
+    "shared_removal_ids": [],
+    "removal_captcha": false,
+    "captcha_blocks_form": false,
+    "captcha_email_fallback": false,
+    "removal_blocker": null
+   },
+   "search_test": {
+    "outcome": "challenge",
+    "http_status": 403,
+    "path_prefix": null,
+    "fields_sent": [
+     "full_name"
+    ],
+    "missing": [],
+    "page_kind": null,
+    "result_count": null,
+    "checked_at": "2026-10-25T04:09:54+00:00"
    }
   }
  }

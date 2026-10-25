@@ -14,6 +14,7 @@ arrestwarrant-org,arrestwarrant.org,submitted,200,http_get,reg6,loader,,first_na
 attom-data,attomdata.com,submitted,200,http_get,,other,,full_name,,2026-10-13T19:31:02+00:00
 bc-assessment,bcassessment.ca,submitted,200,http_get,,other,,street_address,,2026-10-13T19:31:03+00:00
 becausal-inc,becausal.com,submitted,200,http_get,personal-information,other,,region;first_name;last_name;email;Opt-out-Type,,2026-10-13T19:31:04+00:00
+beenverified,beenverified.com,submitted,200,browser,lp,loader,,first_name;last_name,,2026-10-25T04:05:00+00:00
 bombora-inc,bombora.com,submitted,200,http_get,,other,,full_name,,2026-10-13T19:31:06+00:00
 california-criminal-records-search,californiacriminalrecords.org,http_error,404,http_get,search,,,first_name;last_name;region,,2026-10-25T03:02:30+00:00
 california-drop,privacy.ca.gov,results,200,http_get,serp,results,,full_name,,2026-10-13T19:43:24+00:00
@@ -26,6 +27,7 @@ callapp-software-ltd,callapp.com,results,200,http_get,search-result,results,,cod
 certn,certn.co,unfilled,,http_form_post,,,,full_name,widget,2026-10-13T20:03:53+00:00
 clearbit,clearbit.com,submitted,200,http_get,hc,form,,full_name,,2026-10-13T19:43:27+00:00
 coloradoresidentdirectory,coloradoresidentdirectory.com,results,200,http_form_post,name,results,,full_name;city,,2026-10-25T03:02:33+00:00
+companies-house-officers,find-and-update.company-information.service.gov.uk,results,200,http_get,search,results,104,full_name,,2026-10-25T04:09:52+00:00
 complete-medical-lists-inc,completemedicallists.com,results,200,http_form_post,mailing_lists_search_results.php,results,,full_name,,2026-10-13T19:43:28+00:00
 connecticut-arrests,ctarrests.org,no_results,200,http_get,results,empty,0,first_name;last_name;region;city;sex,,2026-10-13T19:43:29+00:00
 consumerbase-llc,exactdata.com,challenge,403,http_form_post,submissions,,,first_name;last_name;email;phone,,2026-10-13T19:08:53+00:00
@@ -35,6 +37,8 @@ criminal-com-truthfinder,criminal.com,challenge,403,http_get,search,,,first_name
 criminalrecords-com-intelius,criminalrecords.com,challenge,403,http_get,search,,,first_name;last_name;city;region,,2026-10-13T19:31:16+00:00
 criminalregistry-org,criminalregistry.org,challenge,403,http_get,,,,first_name;last_name;city;region,,2026-10-25T03:18:14+00:00
 cyberbackgroundchecks,cyberbackgroundchecks.com,challenge,403,http_get,people,,,first_name;last_name;region;city,,2026-10-25T03:33:55+00:00
+das-oertliche,dasoertliche.de,http_error,410,http_get,,,,full_name;city;form_name,,2026-10-25T04:10:08+00:00
+das-telefonbuch,dastelefonbuch.de,http_error,410,http_form_post,Suche,,,full_name;city,,2026-10-25T04:10:08+00:00
 data-axle-infousa,data-axle.com,submitted,200,http_get,search,other,,full_name,,2026-10-13T19:31:17+00:00
 datalead,data-lead.com,submitted,200,http_form_post,support,form,,full_name;email;phone;subject,,2026-10-13T19:43:30+00:00
 datamentors-llc,porchgroupmedia.com,submitted,200,http_form_post,submit2.action.php,other,,who;first_name;middle_name;last_name;street_address;city;region;postal_code;email;phone;last_name,,2026-10-13T19:31:23+00:00
@@ -57,12 +61,13 @@ first-american,firstam.com,submitted,200,http_get,,other,,first_name;last_name;e
 first-beat-media,phonelookup.com,submitted,200,http_form_post,search,form,,phone,,2026-10-25T03:02:36+00:00
 freebackgroundchecks-com,freebackgroundchecks.com,submitted,200,http_get,,form,,first_name;last_name;city;region,,2026-10-13T20:47:57+00:00
 freepeopledirectory-spokeo-data,freepeopledirectory.com,http_error,404,http_get,name,,,first_name;last_name;region;city,,2026-10-25T03:33:55+00:00
-freephonetracer-beenverified-form,freephonetracer.com,challenge,403,http_get,phone,,,phone,,2026-10-25T03:33:55+00:00
+freephonetracer-beenverified-form,freephonetracer.com,submitted,200,browser,search,other,,phone,,2026-10-25T04:05:00+00:00
 getprospect,getprospect.com,captcha,,http_get,,,,,,2026-10-25T03:02:36+00:00
 glad-i-know,gladiknow.com,submitted,200,http_get,,form,,first_name;last_name;city;region,,2026-10-13T20:48:04+00:00
 global-source-data-solutions-inc,gsdsi.com,submitted,200,http_get,search,other,,full_name,,2026-10-13T19:31:38+00:00
 governmentregistry-org,governmentregistry.org,submitted,200,http_get,,form,,first_name;last_name;city;region,,2026-10-13T20:48:08+00:00
 heartbeat-ai-inc,heartbeat.ai,submitted,200,http_get,,other,,full_name,,2026-10-13T19:31:42+00:00
+hitta-se,hitta.se,submitted,200,http_get,nolltraff,other,,full_name,,2026-10-25T04:10:08+00:00
 idaho-arrests,idahoarrests.org,submitted,200,http_get,loading,loader,,first_name;last_name;region;city,,2026-10-13T21:20:52+00:00
 idcrawl,idcrawl.com,submitted,202,http_get,,other,,first_name;last_name,,2026-10-25T03:02:37+00:00
 ileads-com-llc,ileads.com,submitted,200,http_get,submit-request,other,,first_name;last_name;street_address;city;region;postal_code;email;phone,,2026-10-13T19:31:46+00:00
@@ -82,6 +87,7 @@ kids-live-safe,kidslivesafe.com,submitted,200,http_get,,form,,full_name,,2026-10
 lead-enhance-llc,lead-enhance.com,unfilled,,http_get,,,,full_name;email;phone,company;message,2026-10-13T20:03:53+00:00
 lead411-corporation,lead411.com,submitted,200,http_get,,other,,full_name,,2026-10-13T19:32:02+00:00
 leadspace-inc,leadspace.com,submitted,200,http_get,hc,form,,full_name,,2026-10-13T19:44:03+00:00
+libra-memoria,libramemoria.com,submitted,200,http_get,avis,other,,last_name;first_name,,2026-10-25T04:10:08+00:00
 maine-arrests,mainearrests.org,no_results,200,http_get,results,empty,0,first_name;last_name;region;city;sex,,2026-10-13T19:44:04+00:00
 maryland-arrests,marylandarrests.org,no_results,200,http_get,Results,empty,0,first_name;last_name;region;city;sex,,2026-10-13T19:44:06+00:00
 melissa,melissa.com,challenge,403,http_form_post,submissions,,,first_name;last_name;phone;email;accounttype,,2026-10-13T19:08:56+00:00
@@ -96,6 +102,7 @@ nielsen,nielsen.com,submitted,200,http_get,,other,,full_name,,2026-10-13T19:32:0
 nocallername,nocallername.com,submitted,200,http_get,,results,75,phone,,2026-10-25T03:02:52+00:00
 north-carolina-arrests,ncarrests.org,no_results,200,http_get,Results,empty,0,first_name;last_name;region;city;sex,,2026-10-13T19:44:11+00:00
 north-dakota-arrests,ndarrests.org,no_results,200,http_get,results,empty,0,first_name;last_name;region;city;sex,,2026-10-13T19:44:13+00:00
+north-data,northdata.de,challenge,403,http_get,,,,full_name,,2026-10-25T04:09:54+00:00
 notariescalifornia-com-licensedata,notariescalifornia.com,challenge,403,http_get,licenses,,,full_name,,2026-10-25T03:18:22+00:00
 npir-org,npir.org,challenge,403,http_get,npi,,,full_name,,2026-10-25T03:33:58+00:00
 numberguru-beenverified-family,numberguru.com,submitted,200,http_get,,other,,phone,,2026-10-25T03:33:58+00:00
@@ -110,8 +117,9 @@ people-search-expert,peoplesearchexpert.com,submitted,200,http_get,search,result
 people-search-org,people-search.org,no_results,200,http_form_post,name,empty,0,full_name;city,,2026-10-25T03:02:54+00:00
 peoplefind-com-intelius,peoplefind.com,challenge,403,http_get,search,,,first_name;last_name;city;region,,2026-10-13T19:32:22+00:00
 peoplefinder-peopleconnect,peoplefinder.com,challenge,403,http_get,search,,,first_name;last_name;city;region,,2026-10-13T19:32:24+00:00
-peoplefinders-confi-chek,peoplefinders.com,challenge,403,http_get,people,,,first_name;last_name;region;city,,2026-10-25T03:34:01+00:00
+peoplefinders-confi-chek,peoplefinders.com,results,200,browser,people,results,100,first_name;last_name;city;region,,2026-10-25T04:05:00+00:00
 peoplefindersdaas,peoplefindersdaas.com,submitted,200,http_form_post,,other,,first_name;last_name;email;email,,2026-10-13T19:32:24+00:00
+peoplelooker-beenverified,peoplelooker.com,submitted,200,browser,lp,loader,,first_name;last_name,,2026-10-25T04:05:00+00:00
 peoplesearchnow,peoplesearchnow.com,challenge,403,http_form_post,person-search,,,full_name;city;region,,2026-10-25T03:34:02+00:00
 peoplesmart-beenverified,peoplesmart.com,submitted,200,http_get,lp,loader,,full_name;region,,2026-10-13T20:48:25+00:00
 peoplewhiz,peoplewhiz.com,captcha,,http_get,,,,,,2026-10-25T03:34:04+00:00
@@ -218,7 +226,7 @@ ufind-name,ufind.name,challenge,403,http_get,search,,,full_name,,2026-10-25T03:3
 uk-open-electoral-register,gov.uk,submitted,200,http_get,search,other,,full_name,,2026-10-13T19:35:53+00:00
 us-search-peopleconnect,ussearch.com,challenge,403,http_get,results,,,first_name;last_name;region,,2026-10-25T03:34:06+00:00
 usa-people-search,usa-people-search.com,challenge,403,http_get,name,,,first_name;last_name;city;region,,2026-10-25T03:34:06+00:00
-usatrace-peoplefinders,usatrace.com,challenge,403,http_form_post,people-search,,,first_name;middle_name;last_name;city;region,,2026-10-25T03:34:07+00:00
+usatrace-peoplefinders,usatrace.com,submitted,200,browser,people-search,other,,first_name;last_name;city;region,,2026-10-25T04:05:00+00:00
 utah-arrests,utaharrests.org,no_results,200,http_get,Results,empty,0,first_name;last_name;region;city;sex,,2026-10-13T20:03:00+00:00
 verifypublicrecords-cisnationwide,verifypublicrecords.com,submitted,200,http_get,,results,7,first_name;last_name;region,,2026-10-25T03:03:41+00:00
 verifyrecords-infopay,verifyrecords.com,submitted,200,http_get,reg7,loader,,first_name;last_name;region,,2026-10-25T03:03:55+00:00

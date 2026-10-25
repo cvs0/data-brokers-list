@@ -1845,6 +1845,8 @@
     "evidence": "A synthetic people search (John Smith, Denver CO) landed on services/pay.aspx, titled 'People Search John Smith in Denver, CO | Order on Searchbug', which charges $1.95 for the people search. No records are shown before payment."
   },
   "archives-com-ancestry": {
+    "country": "US",
+    "country_evidence": "Archives.com links the Ancestry privacy statement, which gives Ancestry.com Operations, L.P., 42 Future Way, Draper, UT 84020. Checked 2026-10-24.",
     "checked": "2026-10-18",
     "paywall": true,
     "kind": "register_or_purchase",
@@ -2032,12 +2034,16 @@
     "evidence": "The stored search form is a search of Skydeo's audience segments: a synthetic query lands on https://skydeo.com/segments/?q=John+Smith. It searches the site's pages, not records about a person."
   },
   "clearbit": {
+    "country": "US",
+    "country_evidence": "The privacy policy gives Clearbit, c/o HubSpot, Inc., 2 Canal Park, Cambridge, MA 02141. Checked 2026-10-24.",
     "checked": "2026-10-18",
     "not_a_person_search": true,
     "kind": "site_search",
     "evidence": "The stored search form is the Clearbit help centre search: a synthetic query lands on https://help.clearbit.com/hc/en-us/search?query=John+Smith. It searches the site's pages, not records about a person."
   },
   "gravy-analytics": {
+    "country": "US",
+    "country_evidence": "The privacy policy gives Unacast, 44679 Endicott Drive, Ashburn, VA 20147. Checked 2026-10-24.",
     "checked": "2026-10-18",
     "not_a_person_search": true,
     "kind": "site_search",
@@ -4904,5 +4910,433 @@
     "liveness": "alive",
     "liveness_detail": "irbsearch.com answered HTTP 200 on 2026-10-24, titled \"IRBsearch | Resources for Investigative Professionals\".",
     "evidence": "The stored form (posting to app.irbsearch.com/Rosa/apply) is \"Apply for IRBsearch ... to get started with your free trial\" with First Name, Last Name, Mobile, Email, Company Name and State. It is an account application, not a public person search. It was not submitted."
+  },
+  "companies-house-officers": {
+    "checked": "2026-10-24",
+    "country": "GB",
+    "liveness": "alive",
+    "liveness_detail": "find-and-update.company-information.service.gov.uk answered HTTP 200 on 2026-10-24. A name search returned results and a made-up name returned none.",
+    "evidence": "UK register of company officers (directors and secretaries) run by Companies House. The officer search lists each person's name, correspondence address, month and year of birth, and appointments. The personal information charter says the usual residential address and the day of birth are not put on the public register. Officer names stay public by law. Data protection contact: dpo@companieshouse.gov.uk. Government service; no clause against automated searching was found on the Crown copyright page. Nothing was submitted.",
+    "result_check": "GET https://find-and-update.company-information.service.gov.uk/search/officers?q={name}: q=Smith returned \"10,000 matches found\". q=Zzqxvbn Vanderwekken returned \"No results found\". (2026-10-24).",
+    "form": {
+      "method": "http_get",
+      "page_url": "https://find-and-update.company-information.service.gov.uk/search/officers",
+      "form_action": "https://find-and-update.company-information.service.gov.uk/search/officers",
+      "url_pattern": "https://find-and-update.company-information.service.gov.uk/search/officers?q={q}",
+      "form_id": "content",
+      "form_name": null,
+      "submit_label": null,
+      "hidden_names": [],
+      "inputs": [
+        {
+          "name": "q",
+          "type": "text",
+          "canonical": "full_name",
+          "required": false,
+          "id": "site-search-text",
+          "label": null,
+          "placeholder": null
+        }
+      ]
+    },
+    "captcha_widget": false
+  },
+  "das-oertliche": {
+    "checked": "2026-10-24",
+    "country": "DE",
+    "liveness": "alive",
+    "liveness_detail": "dasoertliche.de answered HTTP 200 on 2026-10-24. A name search returned results and a made-up name returned none.",
+    "evidence": "German telephone directory with private listings (name, street address, phone). The privacy page says a listing can be changed or deleted at https://www.dtme.de/ihr-eintrag/ihr-privater-eintrag/ or by email to datenschutz@dasoertliche-marketing.de. A person can also object to directory listing through their telephone provider. The terms (/nutzungsbedingungen) forbid reading out the data for other commercial use; they do not name automated searching. Nothing was submitted.",
+    "result_check": "GET https://www.dasoertliche.de/?kw={name}&ci={city}&form_name=search_nat: kw=Müller&ci=Berlin returned \"Treffer 1-25 von 1766\". kw=Zzqxvbn&ci=Berlin returned HTTP 410 with \"war leider nicht erfolgreich und wir konnten keinen Treffer finden\". (2026-10-24).",
+    "form": {
+      "method": "http_get",
+      "page_url": "https://www.dasoertliche.de/",
+      "form_action": "https://www.dasoertliche.de/",
+      "url_pattern": "https://www.dasoertliche.de/?kw={kw}&ci={ci}&form_name=search_nat",
+      "form_id": null,
+      "form_name": "search_nat",
+      "submit_label": "Finden",
+      "hidden_names": [
+        "form_name"
+      ],
+      "inputs": [
+        {
+          "name": "kw",
+          "type": "text",
+          "canonical": "full_name",
+          "required": false,
+          "id": "std_suchwort",
+          "label": null,
+          "placeholder": "Name (oder Suchwort)"
+        },
+        {
+          "name": "ci",
+          "type": "text",
+          "canonical": "city",
+          "required": false,
+          "id": "std_ort",
+          "label": null,
+          "placeholder": "Ort o. PLZ"
+        },
+        {
+          "name": "form_name",
+          "type": "hidden",
+          "canonical": null,
+          "required": false,
+          "id": null,
+          "label": null,
+          "placeholder": null,
+          "value": "search_nat"
+        }
+      ]
+    },
+    "captcha_widget": false
+  },
+  "das-telefonbuch": {
+    "checked": "2026-10-24",
+    "country": "DE",
+    "liveness": "alive",
+    "liveness_detail": "dastelefonbuch.de answered HTTP 200 on 2026-10-24. A name search returned results and a made-up name returned none.",
+    "evidence": "German telephone directory with private listings (name, street address, phone). The privacy page says a listing can be changed or deleted at https://www.dtme.de/ihr-eintrag/ihr-privater-eintrag/ or by email, and that a person can object to directory listing through their telephone provider. The terms forbid reading out the data for other commercial use; they do not name automated searching. Nothing was submitted.",
+    "result_check": "POST https://www.dastelefonbuch.de/Suche with kw and ci; the person results page is /Personen/{name}/{city}: kw=Müller, ci=Berlin returned \"Müller in Berlin (> 999 Treffer)\". kw=Zzqxvbn, ci=Berlin returned HTTP 410 with \"Zu Ihrer Eingabe wurde kein Treffer gefunden\". (2026-10-24).",
+    "form": {
+      "method": "http_form_post",
+      "page_url": "https://www.dastelefonbuch.de/",
+      "form_action": "https://www.dastelefonbuch.de/Suche",
+      "url_pattern": "https://www.dastelefonbuch.de/Personen/{kw}/{ci}",
+      "form_id": null,
+      "form_name": null,
+      "submit_label": null,
+      "hidden_names": [],
+      "inputs": [
+        {
+          "name": "kw",
+          "type": "text",
+          "canonical": "full_name",
+          "required": false,
+          "id": "form_kw",
+          "label": null,
+          "placeholder": "Wer/Was"
+        },
+        {
+          "name": "ci",
+          "type": "text",
+          "canonical": "city",
+          "required": false,
+          "id": "form_ci",
+          "label": null,
+          "placeholder": "Wo"
+        }
+      ]
+    },
+    "captcha_widget": false
+  },
+  "hitta-se": {
+    "checked": "2026-10-24",
+    "country": "SE",
+    "country_override": true,
+    "liveness": "alive",
+    "liveness_detail": "hitta.se answered HTTP 200 on 2026-10-24. A name search returned results and a made-up name returned none.",
+    "evidence": "Swedish directory of people, companies and places. Person results show name, age, address and phone. The privacy page says the search service runs under a publishing certificate (utgivningsbevis), so GDPR erasure does not apply to it, but hitta.se can by agreement hide some details from the search. The user terms (/anvandarvillkor) do not ban automated searching. Nothing was submitted.",
+    "result_check": "GET https://www.hitta.se/sök?vad={name}: vad=Andersson returned \"Personer 188,097\". vad=Zzqxvbn redirected to /nolltraff with \"gav tyvärr inga träffar\". (2026-10-24).",
+    "form": {
+      "method": "http_get",
+      "page_url": "https://www.hitta.se/",
+      "form_action": "https://www.hitta.se/s%C3%B6k",
+      "url_pattern": "https://www.hitta.se/s%C3%B6k?vad={vad}",
+      "form_id": null,
+      "form_name": null,
+      "submit_label": null,
+      "hidden_names": [],
+      "inputs": [
+        {
+          "name": "vad",
+          "type": "text",
+          "canonical": "full_name",
+          "required": false,
+          "id": "search-field",
+          "label": null,
+          "placeholder": "Sök person eller telefon"
+        }
+      ]
+    },
+    "captcha_widget": false
+  },
+  "paginebianche": {
+    "checked": "2026-10-24",
+    "country": "IT",
+    "country_override": true,
+    "liveness": "alive",
+    "liveness_detail": "paginebianche.it answered HTTP 200 on 2026-10-24. A name search returned results and a made-up name returned none.",
+    "evidence": "Italian white pages run by Italiaonline S.p.A. Listings of private subscribers (name, address, phone) come from the national subscriber database (DBU). The terms and privacy page say GDPR requests go to info@italiaonline.it, and that a change or permanent deletion of data that came from the DBU has to be asked of the person's telephone operator. The terms and privacy page do not ban automated searching. Nothing was submitted.",
+    "result_check": "GET https://www.paginebianche.it/persone?qs={name}&dv={city}: qs=Rossi&dv=Roma returned \"Rossi a Roma più di 200 risultati\". qs=Zzqxvbn&dv=Roma returned \"Spiacenti, non siamo riusciti a trovare Zzqxvbn a Roma\". (2026-10-24).",
+    "form": {
+      "method": "http_get",
+      "page_url": "https://www.paginebianche.it/",
+      "form_action": "https://www.paginebianche.it/persone",
+      "url_pattern": "https://www.paginebianche.it/persone?qs={qs}&dv={dv}",
+      "form_id": null,
+      "form_name": null,
+      "submit_label": null,
+      "hidden_names": [],
+      "inputs": [
+        {
+          "name": "qs",
+          "type": "text",
+          "canonical": "full_name",
+          "required": false,
+          "id": null,
+          "label": null,
+          "placeholder": null
+        },
+        {
+          "name": "dv",
+          "type": "text",
+          "canonical": "city",
+          "required": false,
+          "id": null,
+          "label": null,
+          "placeholder": null
+        }
+      ]
+    },
+    "captcha_widget": false
+  },
+  "libra-memoria": {
+    "checked": "2026-10-24",
+    "country": "FR",
+    "liveness": "alive",
+    "liveness_detail": "libramemoria.com answered HTTP 200 on 2026-10-24. A name search returned results and a made-up name returned none.",
+    "evidence": "French death notice site (EBRA group). Notices name the deceased, relatives, and funeral details. The data protection page says access, correction, erasure and objection requests go to contact@libramemoria.com, with the DPO (dpo@ebra.fr) copied. The site CGU (/espace-client/cgu) do not ban automated searching. Nothing was submitted.",
+    "result_check": "GET https://www.libramemoria.com/avis?nom={surname}: nom=Martin redirected to /avis/nom-martin with 60 notice links on the first page. nom=Zzqxvbn returned \"Aucun résultat trouvé\". (2026-10-24).",
+    "form": {
+      "method": "http_get",
+      "page_url": "https://www.libramemoria.com/avis",
+      "form_action": "https://www.libramemoria.com/avis",
+      "url_pattern": "https://www.libramemoria.com/avis?nom={nom}",
+      "form_id": "searchForm",
+      "form_name": null,
+      "submit_label": null,
+      "hidden_names": [],
+      "inputs": [
+        {
+          "name": "nom",
+          "type": "text",
+          "canonical": "last_name",
+          "required": false,
+          "id": "recherchenom",
+          "label": null,
+          "placeholder": "Nom du défunt"
+        },
+        {
+          "name": "prenom",
+          "type": "text",
+          "canonical": "first_name",
+          "required": false,
+          "id": "rechercheprenom",
+          "label": null,
+          "placeholder": "Prénom du défunt"
+        }
+      ]
+    },
+    "captcha_widget": false
+  },
+  "nz-companies-office-individuals": {
+    "checked": "2026-10-24",
+    "country": "NZ",
+    "liveness": "alive",
+    "liveness_detail": "app.companiesoffice.govt.nz answered HTTP 200 on 2026-10-24. A name search returned results and a made-up name returned none.",
+    "evidence": "New Zealand Companies Register search for individual directors and shareholders, with their roles and addresses. Director and shareholder details are public by law. The privacy page gives the Privacy Officer, Companies Office, Private Bag 92061, Victoria Street West, Auckland 1142. Government service; the copyright page has no clause against automated searching. Nothing was submitted.",
+    "result_check": "GET https://app.companiesoffice.govt.nz/companies/app/ui/pages/individual/search?q={name}&roleType=ALL&mode=standard&advancedPanel=false: q=Smith returned \"Displaying 1 - 25 of 30695 results\". q=Zzqxvbn Vanderwekken returned \"Your search returned no results\". (2026-10-24).",
+    "form": {
+      "method": "http_get",
+      "page_url": "https://app.companiesoffice.govt.nz/companies/app/ui/pages/individual/search",
+      "form_action": "https://app.companiesoffice.govt.nz/companies/app/ui/pages/individual/search",
+      "url_pattern": "https://app.companiesoffice.govt.nz/companies/app/ui/pages/individual/search?q={q}&roleType=ALL&mode=standard&advancedPanel=false",
+      "form_id": "indSearchForm",
+      "form_name": null,
+      "submit_label": null,
+      "hidden_names": [
+        "roleType",
+        "mode"
+      ],
+      "inputs": [
+        {
+          "name": "q",
+          "type": "text",
+          "canonical": "full_name",
+          "required": false,
+          "id": "indQ",
+          "label": null,
+          "placeholder": "Enter name here..."
+        },
+        {
+          "name": "roleType",
+          "type": "hidden",
+          "canonical": null,
+          "required": false,
+          "id": null,
+          "label": null,
+          "placeholder": null,
+          "value": "ALL"
+        },
+        {
+          "name": "mode",
+          "type": "hidden",
+          "canonical": null,
+          "required": false,
+          "id": null,
+          "label": null,
+          "placeholder": null,
+          "value": "standard"
+        }
+      ]
+    },
+    "captcha_widget": false
+  },
+  "abn-lookup": {
+    "checked": "2026-10-24",
+    "country": "AU",
+    "liveness": "alive",
+    "liveness_detail": "abr.business.gov.au answered HTTP 200 on 2026-10-24. A name search returned results and a made-up name returned none.",
+    "evidence": "Australian Business Register name search. Results include sole traders listed under their own names, with state and postcode. The privacy page points to the privacy policies of the Department of Industry, Science and Resources, the ATO, and ASIC. Listed details are updated through the ABR. Government service; the disclaimer page has no clause against automated searching. Nothing was submitted.",
+    "result_check": "GET https://abr.business.gov.au/Search/ResultsActive?SearchText={name}: SearchText=Smith returned 40 ABN results on the first page. SearchText=Zzqxvbn returned \"No matching names found\". (2026-10-24).",
+    "form": {
+      "method": "http_get",
+      "page_url": "https://abr.business.gov.au/",
+      "form_action": "https://abr.business.gov.au/Search/ResultsActive",
+      "url_pattern": "https://abr.business.gov.au/Search/ResultsActive?SearchText={SearchText}",
+      "form_id": null,
+      "form_name": null,
+      "submit_label": "Search",
+      "hidden_names": [],
+      "inputs": [
+        {
+          "name": "SearchText",
+          "type": "text",
+          "canonical": "full_name",
+          "required": false,
+          "id": "SearchText",
+          "label": null,
+          "placeholder": null
+        }
+      ]
+    },
+    "captcha_widget": false
+  },
+  "north-data": {
+    "checked": "2026-10-24",
+    "country": "DE",
+    "liveness": "alive",
+    "liveness_detail": "northdata.de answered HTTP 200 on 2026-10-24. A name search returned results and a made-up name returned none.",
+    "evidence": "German company data search built from European commercial registers. Search covers companies and the people named as officers or owners. The privacy page links an information sheet on register data, blocking and corrections; privacy contact privacy@northdata.de. The terms (/_terms) and AGB forbid credit ratings based on the data; they do not ban automated searching. Nothing was submitted.",
+    "result_check": "GET https://www.northdata.de/?query={name}: query=Müller returned \"15 Resultate von 1.000+ insgesamt\". The search for Zzqxvbn Qwfplkj returned \"Keine Resultate zu dieser Suchanfrage\". (2026-10-24).",
+    "form": {
+      "method": "http_get",
+      "page_url": "https://www.northdata.de/",
+      "form_action": "https://www.northdata.de/",
+      "url_pattern": "https://www.northdata.de/?query={query}",
+      "form_id": null,
+      "form_name": null,
+      "submit_label": null,
+      "hidden_names": [],
+      "inputs": [
+        {
+          "name": "query",
+          "type": "text",
+          "canonical": "full_name",
+          "required": false,
+          "id": null,
+          "label": null,
+          "placeholder": "Firma oder Person"
+        }
+      ]
+    },
+    "captcha_widget": false
+  },
+  "b-i-science-2009-ltd": {
+    "checked": "2026-10-24",
+    "country": "IL",
+    "evidence": "The homepage footer lists the Tel Aviv office (6 Hanechoshet St., Tel Aviv 6971070) of B.I. Science (2009) Ltd beside a New York sales office. Checked 2026-10-24."
+  },
+  "callapp-software-ltd": {
+    "checked": "2026-10-24",
+    "country": "IL",
+    "evidence": "The privacy policy (https://callapp.com/privacy) is governed by the laws of the State of Israel, with the courts of Tel Aviv having exclusive jurisdiction. Checked 2026-10-24."
+  },
+  "myheritage": {
+    "checked": "2026-10-24",
+    "country": "IL",
+    "evidence": "The privacy policy says MyHeritage is a direct-to-consumer company headquartered in Israel. Checked 2026-10-24."
+  },
+  "kaspr": {
+    "checked": "2026-10-24",
+    "country": "FR",
+    "evidence": "The privacy policy says KASPR SAS is registered in France, registered office 8 rue Dunois, 75013 Paris. Checked 2026-10-24."
+  },
+  "getemail-io": {
+    "checked": "2026-10-24",
+    "country": "FR",
+    "evidence": "The homepage footer names SAS PrestaLeads, incorporated in France. Checked 2026-10-24."
+  },
+  "whoscall": {
+    "checked": "2026-10-24",
+    "country": "TW",
+    "evidence": "The privacy policy (https://web.whoscall.com/en/privacy) says \"We are based in Taiwan\". Checked 2026-10-24."
+  },
+  "clodura-ai": {
+    "checked": "2026-10-24",
+    "country": "IN",
+    "evidence": "The privacy policy names the operator's office at Pashan, Pune, MH 411008, India. Checked 2026-10-24."
+  },
+  "allpeople-biz": {
+    "checked": "2026-10-24",
+    "country": "IN",
+    "evidence": "The homepage calls the site AllPeople India, a directory of business contacts in India. Checked 2026-10-24."
+  },
+  "anymail-finder": {
+    "checked": "2026-10-24",
+    "country": "GB",
+    "evidence": "The terms of service name AMF Internet Services Limited, a company registered in England and Wales. Checked 2026-10-24."
+  },
+  "audiencerate": {
+    "checked": "2026-10-24",
+    "country": "GB",
+    "evidence": "The privacy policy says the registered office is 7 Bell Yard, London WC2A 2JR, England. Checked 2026-10-24."
+  },
+  "spectrum-mailing-lists": {
+    "checked": "2026-10-24",
+    "country": "US",
+    "evidence": "The terms page gives Spectrum Mailing Lists, 1611 S Melrose Drive, Vista, CA 92081. Checked 2026-10-24."
+  },
+  "towerdata-inc": {
+    "checked": "2026-10-24",
+    "country": "US",
+    "evidence": "The privacy policy (atdata.com, TowerData's successor) gives AtData, 770 Legacy Place, Dedham, MA 02026. Checked 2026-10-24."
+  },
+  "oracle-data-cloud-bluekai": {
+    "checked": "2026-10-24",
+    "country": "US",
+    "evidence": "The Oracle privacy policy gives corporate headquarters at 2300 Oracle Way, Austin, TX 78741, USA. Checked 2026-10-24."
+  },
+  "experian-health-inc": {
+    "checked": "2026-10-24",
+    "country": "US",
+    "evidence": "The US consumer privacy policy gives Experian, 475 Anton Blvd., Costa Mesa, CA 92626. Checked 2026-10-24."
+  },
+  "safegraph": {
+    "checked": "2026-10-24",
+    "country": "US",
+    "evidence": "The privacy policy gives 1580 N Logan St, Denver, CO 80203. Checked 2026-10-24."
+  },
+  "ancestry": {
+    "checked": "2026-10-24",
+    "country": "US",
+    "evidence": "The privacy statement gives Ancestry.com Operations, L.P., 42 Future Way, Suite 400, Draper, UT 84020. Checked 2026-10-24."
+  },
+  "peoplebyname": {
+    "checked": "2026-10-24",
+    "country": "US",
+    "evidence": "The terms give PeopleByName.com, PO Box 670781, Coral Springs, FL 33067. Checked 2026-10-24."
   }
 }
