@@ -3,7 +3,7 @@
 
 Uses the stored public search form only. The query is a made-up person, not
 someone in the catalog. Removal forms are not submitted. CAPTCHAs are not
-solved. This test does not consult robots.txt. A page that prohibits automation is skipped
+solved. robots.txt does not block the test; --robots only notes a disallow. A page that prohibits automation is skipped
 unless --include-prohibited is set.
 
 The result log records the outcome, status, and path prefix. It does not
@@ -759,9 +759,9 @@ def submit(fetcher: MappingFetcher, record: dict, robots_check=None) -> dict:
         base["missing"] = ["widget"]
         return base
     rewritten = pattern_search_url(record, data) or direct_search_url(url, data)
-    if robots_check is not None and not robots_check((rewritten or (url, None))[0]):
-        base["outcome"] = "robots"
-        return base
+    if robots_check is not None:
+        # Note only: a robots.txt disallow is recorded but does not stop the search.
+        base["robots_disallowed"] = not robots_check((rewritten or (url, None))[0])
     if rewritten:
         url, data = rewritten
         method = "http_get"
@@ -925,7 +925,7 @@ def main() -> int:
     parser.add_argument("--deep", action="store_true", help="Follow loader pages and record a result count. Retries submitted and results rows.")
     parser.add_argument("--fix", action="store_true", help="Retry loaders, forms, and results pages that still have no count.")
     parser.add_argument("--searchable", action="store_true", help="Target every broker with a stored public search form, not only fully automatable ones. Use with --ids")
-    parser.add_argument("--robots", action="store_true", help="Consult robots.txt for the search URL first and record outcome robots when it disallows the client")
+    parser.add_argument("--robots", action="store_true", help="Note whether robots.txt disallows the search URL (robots_disallowed). The search still runs")
     args = parser.parse_args()
     if args.fresh and LOG_PATH.exists():
         LOG_PATH.unlink()

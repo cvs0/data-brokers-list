@@ -1,6 +1,6 @@
 {
   "information-com": {
-    "checked": "2026-10-19",
+    "checked": "2026-10-24",
     "evidence": "Homepage name form (firstName, lastName, city, state). Its script sends the search as a GET to /pf/<id>/searching, which forwards to /pf/nso1/res with the same parameters. The catalog stored no form (robots.txt had disallowed the scan). Re-checked 2026-10-19: /pf/nso1/res now shows the same screen for any name, \"We found 10+ results for <name> in <city>, <state>. Preparing to build report, please wait.\", also for a made-up name (Quillon Vanderwekken, Denver CO), followed by a paid report. Nothing on it can be read as a listing.",
     "result_check": "GET /pf/nso1/res?firstName=John&lastName=Smith&city=&state= returned a results page titled \"Results For: John Smith\". The nso1 path segment is the site's own results path and may change.",
     "form": {
@@ -53,7 +53,9 @@
     },
     "captcha_widget": false,
     "paywall": true,
-    "kind": "register_or_purchase"
+    "kind": "register_or_purchase",
+    "liveness": "blocked",
+    "liveness_detail": "The homepage information.com answered HTTP 403 in a browser on 2026-10-24, titled \"Just a moment... (Cloudflare challenge)\". The challenge was not solved."
   },
   "peoplesearch-whitepages": {
     "checked": "2026-10-18",
@@ -128,7 +130,7 @@
     "captcha_widget": false
   },
   "phonebooks-com": {
-    "checked": "2026-10-18",
+    "checked": "2026-10-24",
     "evidence": "Homepage Name Search box (data-testid search-bar, no name attribute; the page builds the URL in script). Submitting it opens /employee-results?name=<name>. The catalog had the form with nameless controls, which Frame drops. The rendered page had no CAPTCHA widget, so the stored Turnstile marker is cleared.",
     "result_check": "GET /employee-results?name=John+Smith returned \"We Have 247 Results for John Smith\" with ages and cities.",
     "form": {
@@ -152,10 +154,12 @@
         }
       ]
     },
-    "captcha_widget": false
+    "captcha_widget": false,
+    "liveness": "alive",
+    "liveness_detail": "phonebooks.com answered HTTP 200 in a browser on 2026-10-24, titled \"PhoneBooks: Free People & Business Lookups - PhoneBooks\". robots.txt disallows the research client, which no longer limits these reads."
   },
   "ufind-name": {
-    "checked": "2026-10-18",
+    "checked": "2026-10-24",
     "evidence": "Homepage form, GET to /search, q is required with placeholder \"Enter the name\". The catalog stored no form (robots.txt had disallowed the scan). Country US: the result page lists US cities and states.",
     "result_check": "GET /search?q=John+Smith redirected to /John+Smith, titled \"John Smith: 400 records - Addresses, Phone Numbers, Cars\".",
     "form": {
@@ -180,7 +184,9 @@
       ]
     },
     "captcha_widget": false,
-    "country": "US"
+    "country": "US",
+    "liveness": "blocked",
+    "liveness_detail": "The homepage ufind.name answered HTTP 403 in a browser on 2026-10-24, titled \"Just a moment... (Cloudflare challenge)\". The challenge was not solved."
   },
   "advancedbackgroundchecks": {
     "checked": "2026-10-18",
@@ -219,7 +225,7 @@
     "captcha_widget": false
   },
   "usa-people-search": {
-    "checked": "2026-10-18",
+    "checked": "2026-10-24",
     "evidence": "Homepage form PeopleForm (Name, Location \"City, State\") posts to /Results/Search, which redirects to /name/<first>-<last>/<city>-<st>. The stored recipe sent no location and landed on /name/-results (HTTP 400). url_pattern stores the result path; Frame fills path placeholders as lowercase slugs and stops before a segment it cannot fill.",
     "result_check": "Rendered 2026-10-18 through Frame's browser-fetch (US exit): /name/john-smith/denver-co → \"Found 100+ matches for John Smith in Denver, CO\" with listings; /name/quillon-vanderwekken/denver-co → \"Found 1 match\" listing a different person (a padded page; Frame reads it as not listed from frame PR #760).",
     "form": {
@@ -270,7 +276,9 @@
         }
       ]
     },
-    "country": "US"
+    "country": "US",
+    "liveness": "alive",
+    "liveness_detail": "usa-people-search.com answered HTTP 200 in a browser on 2026-10-24, titled \"People Search, Address and Phone Lookup - USA People Search\". robots.txt disallows the research client, which no longer limits these reads."
   },
   "searchpeoplefree": {
     "checked": "2026-10-18",
@@ -309,7 +317,7 @@
     "captcha_widget": false
   },
   "names-and-facts": {
-    "checked": "2026-10-19",
+    "checked": "2026-10-24",
     "country": "US",
     "evidence": "The homepage form's GET /search?search=… draws no results (the page keeps only the search box). The site's own name pages are /<letter>/<last>/<first>, for example /j/smith/john, reached from its directory (/name/j/john lists \"John Smith\" → /j/smith/john). The leading letter is not checked (/a/smith/john and /s/smith/john serve the same page). The state filter its results page links to is ?Addresses[0][state]=<code>. The data is US only: Ontario returned \"We couldn't find any matches for John Smith using the filters you specified: State: ON\". So the country is US. The pages sit behind Cloudflare, which a residential exit passes with no challenge widget.",
     "result_check": "Residential US exit, browser, 2026-10-19: /j/smith/john?Addresses[0][state]=CO returned \"We found 20 people named John Smith with State: Colorado\", with rows \"Lived in … Denver, CO …\". /q/vanderwekken/quillon returned \"Search name: Quillon Vanderwekken Oh no! We couldn't find the person you are looking for.\"",
@@ -352,10 +360,12 @@
         }
       ]
     },
-    "captcha_widget": false
+    "captcha_widget": false,
+    "liveness": "blocked",
+    "liveness_detail": "The homepage namesandfacts.com answered HTTP 403 in a browser on 2026-10-24, titled \"Just a moment... (Cloudflare challenge)\". The challenge was not solved."
   },
   "voteref": {
-    "checked": "2026-10-18",
+    "checked": "2026-10-24",
     "evidence": "Homepage form id search_form, GET to /. A states dropdown (first choice \"All States\", value empty) and a search box with placeholder \"Search Registered Voters by Name or Address…\". The catalog stored no form (robots.txt had disallowed the scan). Country US: the dropdown lists US states and the site publishes US voter rolls.",
     "result_check": "GET /?states_select=&search=John+Smith answered with a Cloudflare challenge the browser-fetch service did not clear. The form is right; the results page is walled.",
     "form": {
@@ -389,7 +399,9 @@
       ]
     },
     "captcha_widget": false,
-    "country": "US"
+    "country": "US",
+    "liveness": "blocked",
+    "liveness_detail": "The homepage voteref.com answered HTTP 403 in a browser on 2026-10-24, titled \"Just a moment... (Cloudflare challenge)\". The challenge was not solved."
   },
   "whitepages": {
     "checked": "2026-10-18",
@@ -465,7 +477,7 @@
     "country": "US"
   },
   "npir-org": {
-    "checked": "2026-10-18",
+    "checked": "2026-10-24",
     "evidence": "Homepage form, GET to /npi, one required search box with placeholder \"Search by name or NPI number\" (the NPI registry of US health care providers). The catalog stored no form (a Cloudflare challenge stopped the scan). Country US: NPI numbers are issued by the US Centers for Medicare & Medicaid Services.",
     "result_check": "GET /npi?search=John+Smith returned \"NPI Lookup - Search the NPI Registry\" listing John Smith providers.",
     "form": {
@@ -490,7 +502,9 @@
       ]
     },
     "captcha_widget": false,
-    "country": "US"
+    "country": "US",
+    "liveness": "blocked",
+    "liveness_detail": "The homepage npir.org answered HTTP 403 in a browser on 2026-10-24, titled \"Just a moment... (Cloudflare challenge)\". The challenge was not solved."
   },
   "background-hawk-truthfinder": {
     "checked": "2026-10-18",
@@ -500,7 +514,7 @@
     "kind": "affiliate_redirect"
   },
   "peoplefinders-confi-chek": {
-    "checked": "2026-10-18",
+    "checked": "2026-10-24",
     "evidence": "Homepage name form (unnamed First name, Last name, City (Optional), state select) is submitted by script to /people/<first>-<last>/<state>/<city>. The stored GET /?first_name=…&last_name=… only reloads the homepage, and it also tagged phone, email, and postal boxes from other tabs. Frame fills path placeholders as lowercase slugs and stops the path before the first segment it cannot fill, so a person with no city still gets the name (and state) page. The live homepage search form's state dropdown lists the US states (Alabama … Wyoming) and no Canadian province. The stored form kept no choices, so no country was derived.",
     "result_check": "Rendered 2026-10-18 (US exit): a scripted submit of John / Smith / Denver / Colorado landed on /people/john-smith/co/denver?landing=all (\"We found 100 results for John Smith in Denver, CO\"); /people/john-smith answered \"We found 100 results for John Smith in the United States\".",
     "form": {
@@ -551,12 +565,16 @@
         }
       ]
     },
-    "country": "US"
+    "country": "US",
+    "liveness": "alive",
+    "liveness_detail": "peoplefinders.com answered HTTP 200 in a browser on 2026-10-24, titled \"PeopleFinders - People Search & Reverse Phone Number Lookup\". robots.txt disallows the research client, which no longer limits these reads."
   },
   "peoplesearchnow": {
-    "checked": "2026-10-18",
+    "checked": "2026-10-24",
     "evidence": "The live homepage search form's state dropdown lists the US states (Alabama … Wyoming) and no Canadian province, and the page names the United States. The stored form kept no choices, so no country was derived.",
-    "country": "US"
+    "country": "US",
+    "liveness": "blocked",
+    "liveness_detail": "The homepage peoplesearchnow.com answered HTTP 403 in a browser on 2026-10-24, titled \"Attention Required! | Cloudflare\". The challenge was not solved."
   },
   "secretinfo": {
     "checked": "2026-10-18",
@@ -883,7 +901,7 @@
     }
   },
   "freepeopledirectory-spokeo-data": {
-    "checked": "2026-10-18",
+    "checked": "2026-10-24",
     "evidence": "Homepage form id form-submit (fname, lname, address_data \"City & State\") has no action: the page's script opens /name/<First>-<Last>/<ST>/<City>. The stored GET to the homepage only reloads it. The site answers the lowercase path with the same page. Frame fills path placeholders as lowercase slugs and stops the path before the first segment it cannot fill, so a person with no city still gets the name (and state) page.",
     "result_check": "Rendered 2026-10-18 (US exit): a scripted submit of John / Smith / \"Denver, CO\" landed on /name/John-Smith/CO/Denver (\"274 Reports for John Smith in Denver, CO\"). /name/john-smith/co/denver showed the same page, and /name/quillon-vanderwekken/co/denver answered \"No Result for \\\"Quillon Vanderwekken\\\"\".",
     "form": {
@@ -933,7 +951,9 @@
           "placeholder": null
         }
       ]
-    }
+    },
+    "liveness": "alive",
+    "liveness_detail": "freepeopledirectory.com answered HTTP 200 in a browser on 2026-10-24, titled \"Free People Directory | Lookup People, Phone & Address\". robots.txt disallows the research client, which no longer limits these reads."
   },
   "mylife": {
     "checked": "2026-10-18",
@@ -2042,7 +2062,7 @@
     "evidence": "The stored search form is the GOV.UK website search, not the electoral register: a synthetic query lands on https://www.gov.uk/search/all?keywords=John+Smith. It searches the site's pages, not records about a person."
   },
   "cyberbackgroundchecks": {
-    "checked": "2026-10-18",
+    "checked": "2026-10-24",
     "evidence": "Homepage name form (SearchCriteriaViewModel.FirstName / LastName / City) has no useful GET action: the page's script opens /people/<first>-<last>/<state>/<city>. The stored GET to the homepage only reloads it, so Frame never reached a results page. url_pattern stores the result path; the controls are the path's parts. Frame fills path placeholders as lowercase slugs and stops the path before the first segment it cannot fill, so a person with no city still gets the name (and state) page. Held back from catalog PR #19 because a made-up name showed unrelated \"expanded\" rows that Frame's classifier read as found; Frame PR #756 now handles those pages.",
     "result_check": "Rendered 2026-10-18 (US exit, catalog PR #19): /people/john-smith/co/denver reached a real results page for John Smith in Denver, CO. A made-up name also built a page with padded \"expanded\" rows under the searched name (classifier false-found before Frame #756).",
     "form": {
@@ -2093,7 +2113,9 @@
         }
       ]
     },
-    "country": "US"
+    "country": "US",
+    "liveness": "alive",
+    "liveness_detail": "cyberbackgroundchecks.com answered HTTP 200 in a browser on 2026-10-24, titled \"People Search & Phone Lookup - Cyber Background Checks\". robots.txt disallows the research client, which no longer limits these reads."
   },
   "fastbackgroundcheck": {
     "checked": "2026-10-18",
@@ -2240,7 +2262,7 @@
     "captcha_widget": false
   },
   "publicrecords-us": {
-    "checked": "2026-10-19",
+    "checked": "2026-10-24",
     "evidence": "The homepage's people pop-up (name + state) does not post a form: its script calls GET /api/client?query=tlo/teaser/summary&fullName=…&state=…&usePhoneticLastName=false and draws \"Your search returned N public records for … in …\" (or \"Your search returned no results\") from the answer, before the disclaimer, \"I Agree\" and plan pages. That call is the search the site itself runs and needs no cookie or account; nothing is agreed to, bought or registered to read it. The earlier \"numberOfRecords 250 even for an empty name\" came from the plan page's data, not from this search. The answer is a count for the name only (numberOfStateMatches and cities stay empty), so a hit is \"is this you?\", never a removal on its own.",
     "result_check": "GET https://www.publicrecords.us/api/client?query=tlo/teaser/summary&fullName=John%20Smith&state=co&usePhoneticLastName=false returned {\"numberOfRecords\":200,…,\"success\":true}; Quillon Vanderwekken returned \"numberOfRecords\":0; Jared Polis (CO) 1; Barack Obama 20 (2026-10-19).",
     "form": {
@@ -2273,10 +2295,12 @@
         }
       ]
     },
-    "captcha_widget": false
+    "captcha_widget": false,
+    "liveness": "alive",
+    "liveness_detail": "publicrecords.us answered HTTP 200 in a browser on 2026-10-24, titled \"People Search & Public Records by Name | PublicRecords.us\". robots.txt disallows the research client, which no longer limits these reads."
   },
   "courtrec-com": {
-    "checked": "2026-10-19",
+    "checked": "2026-10-24",
     "evidence": "The homepage's people pop-up (name + state) does not post a form: its script calls GET /api/client?query=tlo/teaser/summary&fullName=…&state=…&usePhoneticLastName=false and draws \"Your search returned N public records for … in …\" (or \"Your search returned no results\") from the answer, before the disclaimer, \"I Agree\" and plan pages. That call is the search the site itself runs and needs no cookie or account; nothing is agreed to, bought or registered to read it. The earlier \"numberOfRecords 250 even for an empty name\" came from the plan page's data, not from this search. The answer is a count for the name only (numberOfStateMatches and cities stay empty), so a hit is \"is this you?\", never a removal on its own.",
     "result_check": "GET https://www.courtrec.com/api/client?query=tlo/teaser/summary&fullName=John%20Smith&state=co&usePhoneticLastName=false returned {\"numberOfRecords\":200,…,\"success\":true}; Quillon Vanderwekken returned \"numberOfRecords\":0; Jared Polis (CO) 1; Barack Obama 20 (2026-10-19).",
     "form": {
@@ -2309,7 +2333,9 @@
         }
       ]
     },
-    "captcha_widget": false
+    "captcha_widget": false,
+    "liveness": "alive",
+    "liveness_detail": "courtrec.com answered HTTP 200 in a browser on 2026-10-24, titled \"Court Record Search by Name | CourtRec.com\". robots.txt disallows the research client, which no longer limits these reads."
   },
   "peoplewhizr": {
     "checked": "2026-10-18",
@@ -2324,13 +2350,15 @@
     "evidence": "Same operator and template as PeopleWhizr (\"67 Billion records\"). A form submit lands on /hflow/flow/search/<uuid> \"Searching in Denver, Colorado… 5%\", identical for John Smith and for a made-up name (Quillon Vanderwekken); no person is listed before checkout."
   },
   "peoplewhiz": {
-    "checked": "2026-10-18",
+    "checked": "2026-10-24",
     "paywall": true,
     "kind": "register_or_purchase",
-    "evidence": "Same funnel as PeopleWhizr and Truthed: the form opens an /hflow/searching animation that reads the same for John Smith (Denver CO) and a made-up name (Quillon Vanderwekken); no person is listed before checkout."
+    "evidence": "Same funnel as PeopleWhizr and Truthed: the form opens an /hflow/searching animation that reads the same for John Smith (Denver CO) and a made-up name (Quillon Vanderwekken); no person is listed before checkout.",
+    "liveness": "alive",
+    "liveness_detail": "peoplewhiz.com served its search page on 2026-10-24; the page carries a CAPTCHA widget. robots.txt disallows the research client, which no longer limits these reads."
   },
   "beenverified": {
-    "checked": "2026-10-19",
+    "checked": "2026-10-24",
     "evidence": "The homepage name form on beenverified.com hands the name to a \"searching\" page (/lp/a19763/2/loading) whose script loads GET /hk/teaser/?exporttype=jsonp&rc=100&fn=…&ln=…&state=…&city=… and draws the free preview from it (names, ages, cities) before any paywall. That JSONP is the search the site itself runs; nothing is bought or registered to read it. The results URL renders with no CAPTCHA widget (the stored widget belongs to the homepage form), so the stored CAPTCHA marker is cleared.",
     "result_check": "GET https://www.beenverified.com/hk/teaser/?exporttype=jsonp&rc=100&fn=John&ln=Smith&state=CO&city=Denver&callback=parseResults returned parseResults({\"response\":{…\"RecordCount\":100,\"Records\":[{\"Names\":[{\"First\":\"JOHN\",…\"Last\":\"SMITH\"}],\"Addresses\":[{…\"City\":\"DENVER\",\"State\":\"CO\"…; the same call for a made-up name (Quillon Vanderwekken) returned \"RecordCount\":0,\"Records\":[] (2026-10-19, rendered in a browser).",
     "form": {
@@ -2381,10 +2409,12 @@
         }
       ]
     },
-    "captcha_widget": false
+    "captcha_widget": false,
+    "liveness": "alive",
+    "liveness_detail": "beenverified.com answered HTTP 200 in a browser on 2026-10-24, titled \"Everyday Information - Check People, Phone Numbers, Vehicles & Properties | BeenVerified\". robots.txt disallows the research client, which no longer limits these reads."
   },
   "veripages": {
-    "checked": "2026-10-18",
+    "checked": "2026-10-24",
     "evidence": "Homepage form FindPersonForm (name \"First and Last Name\", city_state \"City, State\") GETs /srv/a.go_search, which answers only a JSON redirect to /inner/profile/search?fname=<first>&lname=<last>&state=<ST>&city=<city>. The stored recipe put the person's city alone in city_state and got \"Invalid location\". url_pattern stores the redirect target with separate fields.",
     "result_check": "Rendered 2026-10-18 through Frame's browser-fetch (US exit): John Smith, Denver CO → \"602 individuals named John Smith found in Denver, CO\" with listings; a made-up name (Quillon Vanderwekken) → \"No records found for Quillon Vanderwekken\".",
     "form": {
@@ -2435,7 +2465,9 @@
         }
       ]
     },
-    "country": "US"
+    "country": "US",
+    "liveness": "alive",
+    "liveness_detail": "The search test on 2026-10-24 got HTTP 200 from veripages.com. robots.txt disallows the research client, which no longer limits these reads."
   },
   "smartbackgroundchecks": {
     "checked": "2026-10-18",
@@ -2622,8 +2654,8 @@
     "evidence": "https://411locate.com/ redirects to forsale.godaddy.com/forsale/411locate.com (the domain is listed for sale; 2026-10-19). No people search runs there."
   },
   "bumper-beenverified-family": {
-    "checked": "2026-10-19",
-    "evidence": "The homepage name form on bumper.com hands the name to a \"searching\" page (its /lp/…/loading page) whose script loads GET /hk/teaser/?exporttype=jsonp&rc=100&fn=…&ln=…&state=…&city=… and draws the free preview from it (names, ages, cities) before any paywall. That JSONP is the search the site itself runs; nothing is bought or registered to read it. The results URL renders with no CAPTCHA widget (the stored widget belongs to the homepage form), so the stored CAPTCHA marker is cleared.",
+    "checked": "2026-10-24",
+    "evidence": "The homepage, read on 2026-10-24 in a browser, offers VIN and license plate lookups only and has no visible name field; the stored first and last name form is no longer on the page. Nothing was submitted.",
     "result_check": "GET https://www.bumper.com/hk/teaser/?exporttype=jsonp&rc=100&fn=John&ln=Smith&state=CO&city=Denver&callback=parseResults returned parseResults({\"response\":{…\"RecordCount\":100,\"Records\":[{\"Names\":[{\"First\":\"JOHN\",…\"Last\":\"SMITH\"}],\"Addresses\":[{…\"City\":\"DENVER\",\"State\":\"CO\"…; the same call for a made-up name (Quillon Vanderwekken) returned \"RecordCount\":0,\"Records\":[] (2026-10-19, rendered in a browser).",
     "form": {
       "method": "http_get",
@@ -2673,7 +2705,11 @@
         }
       ]
     },
-    "captcha_widget": false
+    "captcha_widget": false,
+    "not_a_person_search": true,
+    "kind": "site_search",
+    "liveness": "alive",
+    "liveness_detail": "bumper.com answered HTTP 200 on 2026-10-24, titled \"VIN, License Plate & Vehicle History Reports | Bumper\"."
   },
   "classmates-com": {
     "checked": "2026-10-19",
@@ -2797,7 +2833,7 @@
     "evidence": "Submitting the name form at https://www.mugshotlook.com/nameSearch/landingPage (John Smith, 2026-10-19, headless browser on a US datacenter address) moves to a \"Searching… Please Be Patient\" page whose script calls POST /api/content/peopleSearch/peopleSearch. That call answered HTTP 412 with {\"captcha\":{\"type\":\"creditCard.authorize\",…,\"creditCardData\":{\"price\":0.3}}}: the results are only released after a card authorization. The page never shows a count or names before that. The stored GET (?First-Name=…) only reloads the form."
   },
   "peoplelooker-beenverified": {
-    "checked": "2026-10-19",
+    "checked": "2026-10-24",
     "evidence": "The homepage name form on peoplelooker.com hands the name to a \"searching\" page (/lp/6b8dbc/2/loading) whose script loads GET /hk/teaser/?exporttype=jsonp&rc=100&fn=…&ln=…&state=…&city=… and draws the free preview from it (names, ages, cities) before any paywall. That JSONP is the search the site itself runs; nothing is bought or registered to read it. The results URL renders with no CAPTCHA widget (the stored widget belongs to the homepage form), so the stored CAPTCHA marker is cleared.",
     "result_check": "GET https://www.peoplelooker.com/hk/teaser/?exporttype=jsonp&rc=100&fn=John&ln=Smith&state=CO&city=Denver&callback=parseResults returned parseResults({\"response\":{…\"RecordCount\":100,\"Records\":[{\"Names\":[{\"First\":\"JOHN\",…\"Last\":\"SMITH\"}],\"Addresses\":[{…\"City\":\"DENVER\",\"State\":\"CO\"…; the same call for a made-up name (Quillon Vanderwekken) returned \"RecordCount\":0,\"Records\":[] (2026-10-19, rendered in a browser).",
     "form": {
@@ -2848,7 +2884,9 @@
         }
       ]
     },
-    "captcha_widget": false
+    "captcha_widget": false,
+    "liveness": "alive",
+    "liveness_detail": "peoplelooker.com answered HTTP 200 in a browser on 2026-10-24, titled \"People Search - Social Media Profiles - Find People, Friends, Relatives | PeopleLooker\". robots.txt disallows the research client, which no longer limits these reads."
   },
   "peoplesmart-beenverified": {
     "checked": "2026-10-19",
@@ -3613,9 +3651,11 @@
     "evidence": "The homepage form still posts to /Results, and form-redirect/script.js prevents that submit and sends the name to https://infotracer.net/loading/ (tid=illinoisarrests). GET /Results?fname=John&lname=Smith&stage=1&rType=Warrant returned HTTP 200 with an empty body. The request portal at /request-portal returned HTTP 200. The InfoTracer page was not opened and no request was submitted."
   },
   "wyty": {
-    "checked": "2026-10-19",
+    "checked": "2026-10-24",
     "country": "US",
-    "evidence": "The homepage name search (txtFirstName, txtLastName, txtCity, ddlStates) has a state dropdown of US states only (AK … WY) and no Canadian province, so the country is US. The search is guarded by an invisible Cloudflare Turnstile check. From a datacenter browser the submit came back \"We couldn't verify your browser. Please try your search again.\" Two residential US exits got \"403 - Forbidden: Access is denied\" on the homepage itself (2026-10-19). No search could be read. Frame's Cloudflare solver stays off."
+    "evidence": "The homepage name search (txtFirstName, txtLastName, txtCity, ddlStates) has a state dropdown of US states only (AK … WY) and no Canadian province, so the country is US. The search is guarded by an invisible Cloudflare Turnstile check. From a datacenter browser the submit came back \"We couldn't verify your browser. Please try your search again.\" Two residential US exits got \"403 - Forbidden: Access is denied\" on the homepage itself (2026-10-19). No search could be read. Frame's Cloudflare solver stays off.",
+    "liveness": "alive",
+    "liveness_detail": "wyty.com served its search page on 2026-10-24; the page carries a CAPTCHA widget. robots.txt disallows the research client, which no longer limits these reads."
   },
   "finalscout": {
     "checked": "2026-10-19",
@@ -4153,5 +4193,76 @@
     "not_a_person_search": true,
     "kind": "site_search",
     "evidence": "The stored search form on https://www.demandbase.com/ is the site's own page search (control s, GET to https://www.demandbase.com/). The page answered HTTP 200 on 2026-10-24, titled \"ABM Platform for B2B Sales & Marketing Success | Demandbase\". It searches the site's pages, not records about a person. It was not submitted."
+  },
+  "usatrace-peoplefinders": {
+    "checked": "2026-10-24",
+    "liveness": "alive",
+    "liveness_detail": "usatrace.com answered HTTP 200 in a browser on 2026-10-24, titled \"Real-Time Public Records Search, SSN Search & Background Checks\". robots.txt disallows the research client, which no longer limits these reads."
+  },
+  "freephonetracer-beenverified-form": {
+    "checked": "2026-10-24",
+    "liveness": "alive",
+    "liveness_detail": "freephonetracer.com answered HTTP 200 in a browser on 2026-10-24, titled \"Reverse Phone Lookup | FreePhoneTracer.com\". robots.txt disallows the research client, which no longer limits these reads."
+  },
+  "njpropertyrecords": {
+    "checked": "2026-10-24",
+    "liveness": "alive",
+    "liveness_detail": "njpropertyrecords.com answered HTTP 200 in a browser on 2026-10-24, titled \"Home | NJPropertyRecords\". robots.txt disallows the research client, which no longer limits these reads."
+  },
+  "numberguru-beenverified-family": {
+    "checked": "2026-10-24",
+    "liveness": "alive",
+    "liveness_detail": "The search test on 2026-10-24 got HTTP 200 from numberguru.com. robots.txt disallows the research client, which no longer limits these reads."
+  },
+  "neighborwho-beenverified-family": {
+    "checked": "2026-10-24",
+    "liveness": "alive",
+    "liveness_detail": "The search test on 2026-10-24 got HTTP 200 from neighborwho.com. robots.txt disallows the research client, which no longer limits these reads."
+  },
+  "ownerly-beenverified-family": {
+    "checked": "2026-10-24",
+    "liveness": "alive",
+    "liveness_detail": "The search test on 2026-10-24 got HTTP 200 from ownerly.com. robots.txt disallows the research client, which no longer limits these reads."
+  },
+  "checkpeople": {
+    "checked": "2026-10-24",
+    "liveness": "blocked",
+    "liveness_detail": "The homepage checkpeople.com answered HTTP 403 in a browser on 2026-10-24, titled \"Just a moment... (Cloudflare challenge)\". The challenge was not solved."
+  },
+  "freepeoplesearch-com": {
+    "checked": "2026-10-24",
+    "liveness": "blocked",
+    "liveness_detail": "The homepage freepeoplesearch.com answered HTTP 403 in a browser on 2026-10-24, titled \"Sorry, you have been blocked (Cloudflare)\". The challenge was not solved."
+  },
+  "infotracer-network": {
+    "checked": "2026-10-24",
+    "liveness": "blocked",
+    "liveness_detail": "The homepage clicksearch.us answered HTTP 403 in a browser on 2026-10-24, titled \"Attention Required! | Cloudflare\". The challenge was not solved."
+  },
+  "unmask": {
+    "checked": "2026-10-24",
+    "liveness": "blocked",
+    "liveness_detail": "The homepage unmask.com answered HTTP 403 in a browser on 2026-10-24, titled \"Sorry, you have been blocked (Cloudflare)\". The challenge was not solved."
+  },
+  "us-people-search": {
+    "checked": "2026-10-24",
+    "liveness": "blocked",
+    "liveness_detail": "The homepage uspeoplesearch.com answered HTTP 403 in a browser on 2026-10-24, titled \"Just a moment... (Cloudflare challenge)\". The challenge was not solved."
+  },
+  "melissa": {
+    "checked": "2026-10-24",
+    "not_a_person_search": true,
+    "kind": "contact",
+    "liveness": "alive",
+    "liveness_detail": "melissa.com/people-search answered HTTP 200 on 2026-10-24, titled \"People Search - Validate Contact Data | Melissa\".",
+    "evidence": "The stored form on https://www.melissa.com/people-search posts to forms.hsforms.com (a HubSpot lead form with first name, last name, phone and email). It is a sales contact form, not a person search. It was not submitted."
+  },
+  "irbsearch": {
+    "checked": "2026-10-24",
+    "not_a_person_search": true,
+    "kind": "contact",
+    "liveness": "alive",
+    "liveness_detail": "irbsearch.com answered HTTP 200 on 2026-10-24, titled \"IRBsearch | Resources for Investigative Professionals\".",
+    "evidence": "The stored form (posting to app.irbsearch.com/Rosa/apply) is \"Apply for IRBsearch ... to get started with your free trial\" with First Name, Last Name, Mobile, Email, Company Name and State. It is an account application, not a public person search. It was not submitted."
   }
 }
