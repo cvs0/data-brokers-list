@@ -1,6 +1,6 @@
 {
   "information-com": {
-    "checked": "2026-10-19",
+    "checked": "2026-10-24",
     "evidence": "Homepage name form (firstName, lastName, city, state). Its script sends the search as a GET to /pf/<id>/searching, which forwards to /pf/nso1/res with the same parameters. The catalog stored no form (robots.txt had disallowed the scan). Re-checked 2026-10-19: /pf/nso1/res now shows the same screen for any name, \"We found 10+ results for <name> in <city>, <state>. Preparing to build report, please wait.\", also for a made-up name (Quillon Vanderwekken, Denver CO), followed by a paid report. Nothing on it can be read as a listing.",
     "result_check": "GET /pf/nso1/res?firstName=John&lastName=Smith&city=&state= returned a results page titled \"Results For: John Smith\". The nso1 path segment is the site's own results path and may change.",
     "form": {
@@ -53,7 +53,9 @@
     },
     "captcha_widget": false,
     "paywall": true,
-    "kind": "register_or_purchase"
+    "kind": "register_or_purchase",
+    "liveness": "blocked",
+    "liveness_detail": "The homepage information.com answered HTTP 403 in a browser on 2026-10-24, titled \"Just a moment... (Cloudflare challenge)\". The challenge was not solved."
   },
   "peoplesearch-whitepages": {
     "checked": "2026-10-18",
@@ -128,7 +130,7 @@
     "captcha_widget": false
   },
   "phonebooks-com": {
-    "checked": "2026-10-18",
+    "checked": "2026-10-24",
     "evidence": "Homepage Name Search box (data-testid search-bar, no name attribute; the page builds the URL in script). Submitting it opens /employee-results?name=<name>. The catalog had the form with nameless controls, which Frame drops. The rendered page had no CAPTCHA widget, so the stored Turnstile marker is cleared.",
     "result_check": "GET /employee-results?name=John+Smith returned \"We Have 247 Results for John Smith\" with ages and cities.",
     "form": {
@@ -152,10 +154,12 @@
         }
       ]
     },
-    "captcha_widget": false
+    "captcha_widget": false,
+    "liveness": "alive",
+    "liveness_detail": "phonebooks.com answered HTTP 200 in a browser on 2026-10-24, titled \"PhoneBooks: Free People & Business Lookups - PhoneBooks\". robots.txt disallows the research client, which no longer limits these reads."
   },
   "ufind-name": {
-    "checked": "2026-10-18",
+    "checked": "2026-10-24",
     "evidence": "Homepage form, GET to /search, q is required with placeholder \"Enter the name\". The catalog stored no form (robots.txt had disallowed the scan). Country US: the result page lists US cities and states.",
     "result_check": "GET /search?q=John+Smith redirected to /John+Smith, titled \"John Smith: 400 records - Addresses, Phone Numbers, Cars\".",
     "form": {
@@ -180,7 +184,9 @@
       ]
     },
     "captcha_widget": false,
-    "country": "US"
+    "country": "US",
+    "liveness": "blocked",
+    "liveness_detail": "The homepage ufind.name answered HTTP 403 in a browser on 2026-10-24, titled \"Just a moment... (Cloudflare challenge)\". The challenge was not solved."
   },
   "advancedbackgroundchecks": {
     "checked": "2026-10-18",
@@ -219,7 +225,7 @@
     "captcha_widget": false
   },
   "usa-people-search": {
-    "checked": "2026-10-18",
+    "checked": "2026-10-24",
     "evidence": "Homepage form PeopleForm (Name, Location \"City, State\") posts to /Results/Search, which redirects to /name/<first>-<last>/<city>-<st>. The stored recipe sent no location and landed on /name/-results (HTTP 400). url_pattern stores the result path; Frame fills path placeholders as lowercase slugs and stops before a segment it cannot fill.",
     "result_check": "Rendered 2026-10-18 through Frame's browser-fetch (US exit): /name/john-smith/denver-co → \"Found 100+ matches for John Smith in Denver, CO\" with listings; /name/quillon-vanderwekken/denver-co → \"Found 1 match\" listing a different person (a padded page; Frame reads it as not listed from frame PR #760).",
     "form": {
@@ -270,7 +276,9 @@
         }
       ]
     },
-    "country": "US"
+    "country": "US",
+    "liveness": "alive",
+    "liveness_detail": "usa-people-search.com answered HTTP 200 in a browser on 2026-10-24, titled \"People Search, Address and Phone Lookup - USA People Search\". robots.txt disallows the research client, which no longer limits these reads."
   },
   "searchpeoplefree": {
     "checked": "2026-10-18",
@@ -309,7 +317,7 @@
     "captcha_widget": false
   },
   "names-and-facts": {
-    "checked": "2026-10-19",
+    "checked": "2026-10-24",
     "country": "US",
     "evidence": "The homepage form's GET /search?search=… draws no results (the page keeps only the search box). The site's own name pages are /<letter>/<last>/<first>, for example /j/smith/john, reached from its directory (/name/j/john lists \"John Smith\" → /j/smith/john). The leading letter is not checked (/a/smith/john and /s/smith/john serve the same page). The state filter its results page links to is ?Addresses[0][state]=<code>. The data is US only: Ontario returned \"We couldn't find any matches for John Smith using the filters you specified: State: ON\". So the country is US. The pages sit behind Cloudflare, which a residential exit passes with no challenge widget.",
     "result_check": "Residential US exit, browser, 2026-10-19: /j/smith/john?Addresses[0][state]=CO returned \"We found 20 people named John Smith with State: Colorado\", with rows \"Lived in … Denver, CO …\". /q/vanderwekken/quillon returned \"Search name: Quillon Vanderwekken Oh no! We couldn't find the person you are looking for.\"",
@@ -352,10 +360,12 @@
         }
       ]
     },
-    "captcha_widget": false
+    "captcha_widget": false,
+    "liveness": "blocked",
+    "liveness_detail": "The homepage namesandfacts.com answered HTTP 403 in a browser on 2026-10-24, titled \"Just a moment... (Cloudflare challenge)\". The challenge was not solved."
   },
   "voteref": {
-    "checked": "2026-10-18",
+    "checked": "2026-10-24",
     "evidence": "Homepage form id search_form, GET to /. A states dropdown (first choice \"All States\", value empty) and a search box with placeholder \"Search Registered Voters by Name or Address…\". The catalog stored no form (robots.txt had disallowed the scan). Country US: the dropdown lists US states and the site publishes US voter rolls.",
     "result_check": "GET /?states_select=&search=John+Smith answered with a Cloudflare challenge the browser-fetch service did not clear. The form is right; the results page is walled.",
     "form": {
@@ -389,7 +399,9 @@
       ]
     },
     "captcha_widget": false,
-    "country": "US"
+    "country": "US",
+    "liveness": "blocked",
+    "liveness_detail": "The homepage voteref.com answered HTTP 403 in a browser on 2026-10-24, titled \"Just a moment... (Cloudflare challenge)\". The challenge was not solved."
   },
   "whitepages": {
     "checked": "2026-10-18",
@@ -465,7 +477,7 @@
     "country": "US"
   },
   "npir-org": {
-    "checked": "2026-10-18",
+    "checked": "2026-10-24",
     "evidence": "Homepage form, GET to /npi, one required search box with placeholder \"Search by name or NPI number\" (the NPI registry of US health care providers). The catalog stored no form (a Cloudflare challenge stopped the scan). Country US: NPI numbers are issued by the US Centers for Medicare & Medicaid Services.",
     "result_check": "GET /npi?search=John+Smith returned \"NPI Lookup - Search the NPI Registry\" listing John Smith providers.",
     "form": {
@@ -490,7 +502,9 @@
       ]
     },
     "captcha_widget": false,
-    "country": "US"
+    "country": "US",
+    "liveness": "blocked",
+    "liveness_detail": "The homepage npir.org answered HTTP 403 in a browser on 2026-10-24, titled \"Just a moment... (Cloudflare challenge)\". The challenge was not solved."
   },
   "background-hawk-truthfinder": {
     "checked": "2026-10-18",
@@ -500,7 +514,7 @@
     "kind": "affiliate_redirect"
   },
   "peoplefinders-confi-chek": {
-    "checked": "2026-10-18",
+    "checked": "2026-10-24",
     "evidence": "Homepage name form (unnamed First name, Last name, City (Optional), state select) is submitted by script to /people/<first>-<last>/<state>/<city>. The stored GET /?first_name=…&last_name=… only reloads the homepage, and it also tagged phone, email, and postal boxes from other tabs. Frame fills path placeholders as lowercase slugs and stops the path before the first segment it cannot fill, so a person with no city still gets the name (and state) page. The live homepage search form's state dropdown lists the US states (Alabama … Wyoming) and no Canadian province. The stored form kept no choices, so no country was derived.",
     "result_check": "Rendered 2026-10-18 (US exit): a scripted submit of John / Smith / Denver / Colorado landed on /people/john-smith/co/denver?landing=all (\"We found 100 results for John Smith in Denver, CO\"); /people/john-smith answered \"We found 100 results for John Smith in the United States\".",
     "form": {
@@ -551,12 +565,16 @@
         }
       ]
     },
-    "country": "US"
+    "country": "US",
+    "liveness": "alive",
+    "liveness_detail": "peoplefinders.com answered HTTP 200 in a browser on 2026-10-24, titled \"PeopleFinders - People Search & Reverse Phone Number Lookup\". robots.txt disallows the research client, which no longer limits these reads."
   },
   "peoplesearchnow": {
-    "checked": "2026-10-18",
+    "checked": "2026-10-24",
     "evidence": "The live homepage search form's state dropdown lists the US states (Alabama … Wyoming) and no Canadian province, and the page names the United States. The stored form kept no choices, so no country was derived.",
-    "country": "US"
+    "country": "US",
+    "liveness": "blocked",
+    "liveness_detail": "The homepage peoplesearchnow.com answered HTTP 403 in a browser on 2026-10-24, titled \"Attention Required! | Cloudflare\". The challenge was not solved."
   },
   "secretinfo": {
     "checked": "2026-10-18",
@@ -571,8 +589,8 @@
     "kind": "affiliate_redirect"
   },
   "alumni-us": {
-    "checked": "2026-10-18",
-    "evidence": "The live homepage title is \"Alumni US | All the best American graduates in one site!\".",
+    "checked": "2026-10-24",
+    "evidence": "The homepage search (q, GET to /search) opens a Google Custom Search results panel over the site's alumni profile pages. A browser search for John Smith on 2026-10-24 showed \"About 353 results\" of alumnius.net profile pages. The results come from Google's index of the site, not a query of the site's own records.",
     "country": "US"
   },
   "claritas-llc": {
@@ -883,7 +901,7 @@
     }
   },
   "freepeopledirectory-spokeo-data": {
-    "checked": "2026-10-18",
+    "checked": "2026-10-24",
     "evidence": "Homepage form id form-submit (fname, lname, address_data \"City & State\") has no action: the page's script opens /name/<First>-<Last>/<ST>/<City>. The stored GET to the homepage only reloads it. The site answers the lowercase path with the same page. Frame fills path placeholders as lowercase slugs and stops the path before the first segment it cannot fill, so a person with no city still gets the name (and state) page.",
     "result_check": "Rendered 2026-10-18 (US exit): a scripted submit of John / Smith / \"Denver, CO\" landed on /name/John-Smith/CO/Denver (\"274 Reports for John Smith in Denver, CO\"). /name/john-smith/co/denver showed the same page, and /name/quillon-vanderwekken/co/denver answered \"No Result for \\\"Quillon Vanderwekken\\\"\".",
     "form": {
@@ -933,7 +951,9 @@
           "placeholder": null
         }
       ]
-    }
+    },
+    "liveness": "alive",
+    "liveness_detail": "freepeopledirectory.com answered HTTP 200 in a browser on 2026-10-24, titled \"Free People Directory | Lookup People, Phone & Address\". robots.txt disallows the research client, which no longer limits these reads."
   },
   "mylife": {
     "checked": "2026-10-18",
@@ -1163,46 +1183,60 @@
     }
   },
   "alaska-arrests": {
-    "checked": "2026-10-18",
-    "paywall": true,
-    "kind": "paid_report_link",
-    "evidence": "A synthetic search (John Smith, Denver CO) at https://www.alaskaarrests.org/Results?fname=John&lname=Smith&state=CO&city=Denver returned a results page with no records. Its only link to records is a paid InfoTracer report (infotracer.net/loading)."
+    "checked": "2026-10-24",
+    "not_a_person_search": true,
+    "kind": "affiliate_redirect",
+    "liveness": "alive",
+    "liveness_detail": "alaskaarrests.org answered HTTP 200 on 2026-10-24. The homepage search script sends the name to infotracer.net.",
+    "evidence": "The homepage form still posts to /Results, and form-redirect/script.js prevents that submit and sends the name to https://infotracer.net/loading/ (form_redirect.remote_url in the page, checked 2026-10-24). A synthetic GET of /Results on 2026-10-24 returned HTTP 200 with an empty results page. The site has no search of its own; the search is InfoTracer's (catalog entry infotracer). The InfoTracer page was not opened and no request was submitted."
   },
   "arkansas-arrests": {
-    "checked": "2026-10-18",
-    "paywall": true,
-    "kind": "paid_report_link",
-    "evidence": "A synthetic search (John Smith, Denver CO) at https://www.arkansasarrests.org/Results?fname=John&lname=Smith&state=CO&city=Denver returned a results page with no records. Its only link to records is a paid InfoTracer report (infotracer.net/loading)."
+    "checked": "2026-10-24",
+    "not_a_person_search": true,
+    "kind": "affiliate_redirect",
+    "liveness": "alive",
+    "liveness_detail": "arkansasarrests.org answered HTTP 200 on 2026-10-24. The homepage search script sends the name to infotracer.net.",
+    "evidence": "The homepage form still posts to /Results, and form-redirect/script.js prevents that submit and sends the name to https://infotracer.net/loading/ (form_redirect.remote_url in the page, checked 2026-10-24). A synthetic GET of /Results on 2026-10-24 returned HTTP 200 with an empty results page. The site has no search of its own; the search is InfoTracer's (catalog entry infotracer). The InfoTracer page was not opened and no request was submitted."
   },
   "california-arrests": {
-    "checked": "2026-10-18",
-    "paywall": true,
-    "kind": "paid_report_link",
-    "evidence": "A synthetic search (John Smith, Denver CO) at https://www.californiaarrests.org/Results?fname=John&lname=Smith&state=CO&city=Denver returned a results page with no records. Its only link to records is a paid InfoTracer report (infotracer.net/loading)."
+    "checked": "2026-10-24",
+    "not_a_person_search": true,
+    "kind": "affiliate_redirect",
+    "liveness": "alive",
+    "liveness_detail": "californiaarrests.org answered HTTP 200 on 2026-10-24. The homepage search script sends the name to infotracer.net.",
+    "evidence": "The homepage form still posts to /Results, and form-redirect/script.js prevents that submit and sends the name to https://infotracer.net/loading/ (form_redirect.remote_url in the page, checked 2026-10-24). A synthetic GET of /Results on 2026-10-24 returned HTTP 200 with an empty results page. The site has no search of its own; the search is InfoTracer's (catalog entry infotracer). The InfoTracer page was not opened and no request was submitted."
   },
   "colorado-arrests": {
-    "checked": "2026-10-18",
-    "paywall": true,
-    "kind": "paid_report_link",
-    "evidence": "A synthetic search (John Smith, Denver CO) at https://www.coloradoarrests.org/Results?fname=John&lname=Smith&state=CO&city=Denver returned a results page with no records. Its only link to records is a paid InfoTracer report (infotracer.net/loading)."
+    "checked": "2026-10-24",
+    "not_a_person_search": true,
+    "kind": "affiliate_redirect",
+    "liveness": "alive",
+    "liveness_detail": "coloradoarrests.org answered HTTP 200 on 2026-10-24. The homepage search script sends the name to infotracer.net.",
+    "evidence": "The homepage form still posts to /Results, and form-redirect/script.js prevents that submit and sends the name to https://infotracer.net/loading/ (form_redirect.remote_url in the page, checked 2026-10-24). A synthetic GET of /Results on 2026-10-24 returned HTTP 200 with an empty results page. The site has no search of its own; the search is InfoTracer's (catalog entry infotracer). The InfoTracer page was not opened and no request was submitted."
   },
   "florida-arrests": {
-    "checked": "2026-10-18",
-    "paywall": true,
-    "kind": "paid_report_link",
-    "evidence": "A synthetic search (John Smith, Denver CO) at https://www.flarrests.org/Results?fname=John&lname=Smith&state=CO&city=Denver returned a results page with no records. Its only link to records is a paid InfoTracer report (infotracer.net/loading)."
+    "checked": "2026-10-24",
+    "not_a_person_search": true,
+    "kind": "affiliate_redirect",
+    "liveness": "alive",
+    "liveness_detail": "flarrests.org answered HTTP 200 on 2026-10-24. The homepage search script sends the name to infotracer.net.",
+    "evidence": "The homepage form still posts to /Results, and form-redirect/script.js prevents that submit and sends the name to https://infotracer.net/loading/ (form_redirect.remote_url in the page, checked 2026-10-24). A synthetic GET of /Results on 2026-10-24 returned HTTP 200 with an empty results page. The site has no search of its own; the search is InfoTracer's (catalog entry infotracer). The InfoTracer page was not opened and no request was submitted. The homepage also loads a CAPTCHA widget."
   },
   "georgia-arrests": {
-    "checked": "2026-10-18",
-    "paywall": true,
-    "kind": "paid_report_link",
-    "evidence": "A synthetic search (John Smith, Denver CO) at https://www.georgiaarrests.org/Results?fname=John&lname=Smith&state=CO&city=Denver returned a results page with no records. Its only link to records is a paid InfoTracer report (infotracer.net/loading)."
+    "checked": "2026-10-24",
+    "not_a_person_search": true,
+    "kind": "affiliate_redirect",
+    "liveness": "alive",
+    "liveness_detail": "georgiaarrests.org answered HTTP 200 on 2026-10-24. The homepage search script sends the name to infotracer.net.",
+    "evidence": "The homepage form still posts to /Results, and form-redirect/script.js prevents that submit and sends the name to https://infotracer.net/loading/ (form_redirect.remote_url in the page, checked 2026-10-24). A synthetic GET of /Results on 2026-10-24 returned HTTP 200 with an empty results page. The site has no search of its own; the search is InfoTracer's (catalog entry infotracer). The InfoTracer page was not opened and no request was submitted. The homepage also loads a CAPTCHA widget."
   },
   "hawaii-arrests": {
-    "checked": "2026-10-18",
-    "paywall": true,
-    "kind": "paid_report_link",
-    "evidence": "A synthetic search (John Smith, Denver CO) at https://www.hawaiiarrests.org/Results?fname=John&lname=Smith&state=CO&city=Denver returned a results page with no records. Its only link to records is a paid InfoTracer report (infotracer.net/loading)."
+    "checked": "2026-10-24",
+    "not_a_person_search": true,
+    "kind": "affiliate_redirect",
+    "liveness": "alive",
+    "liveness_detail": "hawaiiarrests.org answered HTTP 200 on 2026-10-24. The homepage search script sends the name to infotracer.net.",
+    "evidence": "The homepage form still posts to /Results, and form-redirect/script.js prevents that submit and sends the name to https://infotracer.net/loading/ (form_redirect.remote_url in the page, checked 2026-10-24). A synthetic GET of /Results on 2026-10-24 returned HTTP 200 with an empty results page. The site has no search of its own; the search is InfoTracer's (catalog entry infotracer). The InfoTracer page was not opened and no request was submitted."
   },
   "idaho-arrests": {
     "checked": "2026-10-18",
@@ -1211,142 +1245,188 @@
     "evidence": "The search form on https://www.idahoarrests.org/ sends the name to infotracer.com/loading, InfoTracer's paid report flow. The site itself shows no arrest records."
   },
   "iowa-arrests": {
-    "checked": "2026-10-18",
-    "paywall": true,
-    "kind": "paid_report_link",
-    "evidence": "A synthetic search (John Smith, Denver CO) at https://www.iowaarrests.org/Results?fname=John&lname=Smith&state=CO&city=Denver returned a results page with no records. Its only link to records is a paid InfoTracer report (infotracer.net/loading)."
+    "checked": "2026-10-24",
+    "not_a_person_search": true,
+    "kind": "affiliate_redirect",
+    "liveness": "alive",
+    "liveness_detail": "iowaarrests.org answered HTTP 200 on 2026-10-24. The homepage search script sends the name to infotracer.net.",
+    "evidence": "The homepage form still posts to /Results, and form-redirect/script.js prevents that submit and sends the name to https://infotracer.net/loading/ (form_redirect.remote_url in the page, checked 2026-10-24). A synthetic GET of /Results on 2026-10-24 returned HTTP 200 with an empty results page. The site has no search of its own; the search is InfoTracer's (catalog entry infotracer). The InfoTracer page was not opened and no request was submitted."
   },
   "kentucky-arrests": {
-    "checked": "2026-10-18",
-    "paywall": true,
-    "kind": "paid_report_link",
-    "evidence": "A synthetic search (John Smith, Denver CO) at https://www.kentuckyarrests.org/Results?fname=John&lname=Smith&state=CO&city=Denver returned a results page with no records. Its only link to records is a paid InfoTracer report (infotracer.net/loading)."
+    "checked": "2026-10-24",
+    "not_a_person_search": true,
+    "kind": "affiliate_redirect",
+    "liveness": "alive",
+    "liveness_detail": "kentuckyarrests.org answered HTTP 200 on 2026-10-24. The homepage search script sends the name to infotracer.net.",
+    "evidence": "The homepage form still posts to /Results, and form-redirect/script.js prevents that submit and sends the name to https://infotracer.net/loading/ (form_redirect.remote_url in the page, checked 2026-10-24). A synthetic GET of /Results on 2026-10-24 returned HTTP 200 with an empty results page. The site has no search of its own; the search is InfoTracer's (catalog entry infotracer). The InfoTracer page was not opened and no request was submitted."
   },
   "louisiana-arrests": {
-    "checked": "2026-10-18",
-    "paywall": true,
-    "kind": "paid_report_link",
-    "evidence": "A synthetic search (John Smith, Denver CO) at https://www.louisianaarrests.org/Results?fname=John&lname=Smith&state=CO&city=Denver returned a 404 page with no records whose only link to records is a paid InfoTracer report (infotracer.net/loading)."
+    "checked": "2026-10-24",
+    "not_a_person_search": true,
+    "kind": "affiliate_redirect",
+    "liveness": "alive",
+    "liveness_detail": "louisianaarrests.org answered HTTP 200 on 2026-10-24. The on-site /Results URL returned HTTP 404. The homepage search script sends the name to infotracer.net.",
+    "evidence": "The homepage form still posts to /Results, and form-redirect/script.js prevents that submit and sends the name to https://infotracer.net/loading/ (tid=louisianaarrests). GET /Results?fname=John&lname=Smith&stage=1&rType=Warrant returned HTTP 404, titled 404 - Page not found. The request portal at /request-portal returned HTTP 200. The InfoTracer page was not opened and no request was submitted."
   },
   "massachusetts-arrests": {
-    "checked": "2026-10-18",
-    "paywall": true,
-    "kind": "paid_report_link",
-    "evidence": "A synthetic search (John Smith, Denver CO) at https://www.maarrests.org/Results?fname=John&lname=Smith&state=CO&city=Denver returned a results page with no records. Its only link to records is a paid InfoTracer report (infotracer.net/loading)."
+    "checked": "2026-10-24",
+    "not_a_person_search": true,
+    "kind": "affiliate_redirect",
+    "liveness": "alive",
+    "liveness_detail": "maarrests.org answered HTTP 200 on 2026-10-24. The homepage search script sends the name to infotracer.net.",
+    "evidence": "The homepage form still posts to /Results, and form-redirect/script.js prevents that submit and sends the name to https://infotracer.net/loading/ (form_redirect.remote_url in the page, checked 2026-10-24). A synthetic GET of /Results on 2026-10-24 returned HTTP 200 with an empty results page. The site has no search of its own; the search is InfoTracer's (catalog entry infotracer). The InfoTracer page was not opened and no request was submitted."
   },
   "michigan-arrests": {
-    "checked": "2026-10-18",
-    "paywall": true,
-    "kind": "paid_report_link",
-    "evidence": "A synthetic search (John Smith, Denver CO) at https://www.michiganarrests.org/Results?fname=John&lname=Smith&state=CO&city=Denver returned a results page with no records. Its only link to records is a paid InfoTracer report (infotracer.net/loading)."
+    "checked": "2026-10-24",
+    "not_a_person_search": true,
+    "kind": "affiliate_redirect",
+    "liveness": "alive",
+    "liveness_detail": "michiganarrests.org answered HTTP 200 on 2026-10-24. The homepage search script sends the name to infotracer.net.",
+    "evidence": "The homepage form still posts to /Results, and form-redirect/script.js prevents that submit and sends the name to https://infotracer.net/loading/ (form_redirect.remote_url in the page, checked 2026-10-24). A synthetic GET of /Results on 2026-10-24 returned HTTP 200 with an empty results page. The site has no search of its own; the search is InfoTracer's (catalog entry infotracer). The InfoTracer page was not opened and no request was submitted."
   },
   "minnesota-arrests": {
-    "checked": "2026-10-18",
-    "paywall": true,
-    "kind": "paid_report_link",
-    "evidence": "A synthetic search (John Smith, Denver CO) at https://www.minnesotaarrests.org/Results?fname=John&lname=Smith&state=CO&city=Denver returned a results page with no records. Its only link to records is a paid InfoTracer report (infotracer.net/loading)."
+    "checked": "2026-10-24",
+    "not_a_person_search": true,
+    "kind": "affiliate_redirect",
+    "liveness": "alive",
+    "liveness_detail": "minnesotaarrests.org answered HTTP 200 on 2026-10-24. The homepage search script sends the name to infotracer.net.",
+    "evidence": "The homepage form still posts to /Results, and form-redirect/script.js prevents that submit and sends the name to https://infotracer.net/loading/ (form_redirect.remote_url in the page, checked 2026-10-24). A synthetic GET of /Results on 2026-10-24 returned HTTP 200 with an empty results page. The site has no search of its own; the search is InfoTracer's (catalog entry infotracer). The InfoTracer page was not opened and no request was submitted. The homepage also loads a CAPTCHA widget."
   },
   "mississippi-arrests": {
-    "checked": "2026-10-18",
-    "paywall": true,
-    "kind": "paid_report_link",
-    "evidence": "A synthetic search (John Smith, Denver CO) at https://www.msarrests.org/Results?fname=John&lname=Smith&state=CO&city=Denver returned a results page with no records. Its only link to records is a paid InfoTracer report (infotracer.net/loading)."
+    "checked": "2026-10-24",
+    "not_a_person_search": true,
+    "kind": "affiliate_redirect",
+    "liveness": "alive",
+    "liveness_detail": "msarrests.org answered HTTP 200 on 2026-10-24. The homepage search script sends the name to infotracer.net.",
+    "evidence": "The homepage form still posts to /Results, and form-redirect/script.js prevents that submit and sends the name to https://infotracer.net/loading/ (form_redirect.remote_url in the page, checked 2026-10-24). A synthetic GET of /Results on 2026-10-24 returned HTTP 200 with an empty results page. The site has no search of its own; the search is InfoTracer's (catalog entry infotracer). The InfoTracer page was not opened and no request was submitted. The homepage also loads a CAPTCHA widget."
   },
   "missouri-arrests": {
-    "checked": "2026-10-18",
-    "paywall": true,
-    "kind": "paid_report_link",
-    "evidence": "A synthetic search (John Smith, Denver CO) at https://www.missouriarrests.org/Results?fname=John&lname=Smith&state=CO&city=Denver returned a results page with no records. Its only link to records is a paid InfoTracer report (infotracer.net/loading)."
+    "checked": "2026-10-24",
+    "not_a_person_search": true,
+    "kind": "affiliate_redirect",
+    "liveness": "alive",
+    "liveness_detail": "missouriarrests.org answered HTTP 200 on 2026-10-24. The homepage search script sends the name to infotracer.net.",
+    "evidence": "The homepage form still posts to /Results, and form-redirect/script.js prevents that submit and sends the name to https://infotracer.net/loading/ (form_redirect.remote_url in the page, checked 2026-10-24). A synthetic GET of /Results on 2026-10-24 returned HTTP 200 with an empty results page. The site has no search of its own; the search is InfoTracer's (catalog entry infotracer). The InfoTracer page was not opened and no request was submitted. The homepage also loads a CAPTCHA widget."
   },
   "montana-arrests": {
-    "checked": "2026-10-18",
-    "paywall": true,
-    "kind": "paid_report_link",
-    "evidence": "A synthetic search (John Smith, Denver CO) at https://www.montanaarrests.org/Results?fname=John&lname=Smith&state=CO&city=Denver returned a results page with no records. Its only link to records is a paid InfoTracer report (infotracer.net/loading)."
+    "checked": "2026-10-24",
+    "not_a_person_search": true,
+    "kind": "affiliate_redirect",
+    "liveness": "alive",
+    "liveness_detail": "montanaarrests.org answered HTTP 200 on 2026-10-24. The homepage search script sends the name to infotracer.net.",
+    "evidence": "The homepage form still posts to /Results, and form-redirect/script.js prevents that submit and sends the name to https://infotracer.net/loading/ (form_redirect.remote_url in the page, checked 2026-10-24). A synthetic GET of /Results on 2026-10-24 returned HTTP 200 with an empty results page. The site has no search of its own; the search is InfoTracer's (catalog entry infotracer). The InfoTracer page was not opened and no request was submitted."
   },
   "new-hampshire-arrests": {
-    "checked": "2026-10-18",
-    "paywall": true,
-    "kind": "paid_report_link",
-    "evidence": "A synthetic search (John Smith, Denver CO) at https://www.nharrests.org/Results?fname=John&lname=Smith&state=CO&city=Denver returned a results page with no records. Its only link to records is a paid InfoTracer report (infotracer.net/loading)."
+    "checked": "2026-10-24",
+    "not_a_person_search": true,
+    "kind": "affiliate_redirect",
+    "liveness": "alive",
+    "liveness_detail": "nharrests.org answered HTTP 200 on 2026-10-24. The homepage search script sends the name to infotracer.net.",
+    "evidence": "The homepage form still posts to /Results, and form-redirect/script.js prevents that submit and sends the name to https://infotracer.net/loading/ (form_redirect.remote_url in the page, checked 2026-10-24). A synthetic GET of /Results on 2026-10-24 returned HTTP 200 with an empty results page. The site has no search of its own; the search is InfoTracer's (catalog entry infotracer). The InfoTracer page was not opened and no request was submitted."
   },
   "new-mexico-arrests": {
-    "checked": "2026-10-18",
-    "paywall": true,
-    "kind": "paid_report_link",
-    "evidence": "A synthetic search (John Smith, Denver CO) at https://www.nmarrests.org/Results?fname=John&lname=Smith&state=CO&city=Denver returned a results page with no records. Its only link to records is a paid InfoTracer report (infotracer.net/loading)."
+    "checked": "2026-10-24",
+    "not_a_person_search": true,
+    "kind": "affiliate_redirect",
+    "liveness": "alive",
+    "liveness_detail": "nmarrests.org answered HTTP 200 on 2026-10-24. The homepage search script sends the name to infotracer.net.",
+    "evidence": "The homepage form still posts to /Results, and form-redirect/script.js prevents that submit and sends the name to https://infotracer.net/loading/ (form_redirect.remote_url in the page, checked 2026-10-24). A synthetic GET of /Results on 2026-10-24 returned HTTP 200 with an empty results page. The site has no search of its own; the search is InfoTracer's (catalog entry infotracer). The InfoTracer page was not opened and no request was submitted."
   },
   "new-york-arrests": {
-    "checked": "2026-10-18",
-    "paywall": true,
-    "kind": "paid_report_link",
-    "evidence": "A synthetic search (John Smith, Denver CO) at https://www.nyarrests.org/Results?fname=John&lname=Smith&state=CO&city=Denver returned a results page with no records. Its only link to records is a paid InfoTracer report (infotracer.net/loading)."
+    "checked": "2026-10-24",
+    "not_a_person_search": true,
+    "kind": "affiliate_redirect",
+    "liveness": "alive",
+    "liveness_detail": "nyarrests.org answered HTTP 200 on 2026-10-24. The homepage search script sends the name to infotracer.net.",
+    "evidence": "The homepage form still posts to /Results, and form-redirect/script.js prevents that submit and sends the name to https://infotracer.net/loading/ (form_redirect.remote_url in the page, checked 2026-10-24). A synthetic GET of /Results on 2026-10-24 returned HTTP 200 with an empty results page. The site has no search of its own; the search is InfoTracer's (catalog entry infotracer). The InfoTracer page was not opened and no request was submitted. The homepage also loads a CAPTCHA widget."
   },
   "ohio-arrests": {
-    "checked": "2026-10-18",
-    "paywall": true,
-    "kind": "paid_report_link",
-    "evidence": "A synthetic search (John Smith, Denver CO) at https://www.ohioarrests.org/Results?fname=John&lname=Smith&state=CO&city=Denver returned a results page with no records. Its only link to records is a paid InfoTracer report (infotracer.net/loading)."
+    "checked": "2026-10-24",
+    "not_a_person_search": true,
+    "kind": "affiliate_redirect",
+    "liveness": "alive",
+    "liveness_detail": "ohioarrests.org answered HTTP 200 on 2026-10-24. The homepage search script sends the name to infotracer.net.",
+    "evidence": "The homepage form still posts to /Results, and form-redirect/script.js prevents that submit and sends the name to https://infotracer.net/loading/ (form_redirect.remote_url in the page, checked 2026-10-24). A synthetic GET of /Results on 2026-10-24 returned HTTP 200 with an empty results page. The site has no search of its own; the search is InfoTracer's (catalog entry infotracer). The InfoTracer page was not opened and no request was submitted."
   },
   "oregon-arrests": {
-    "checked": "2026-10-18",
-    "paywall": true,
-    "kind": "paid_report_link",
-    "evidence": "A synthetic search (John Smith, Denver CO) at https://www.oregonarrest.org/Results?fname=John&lname=Smith&state=CO&city=Denver returned a results page with no records. Its only link to records is a paid InfoTracer report (infotracer.net/loading)."
+    "checked": "2026-10-24",
+    "not_a_person_search": true,
+    "kind": "affiliate_redirect",
+    "liveness": "alive",
+    "liveness_detail": "oregonarrest.org answered HTTP 200 on 2026-10-24. The homepage search script sends the name to infotracer.net.",
+    "evidence": "The homepage form still posts to /Results, and form-redirect/script.js prevents that submit and sends the name to https://infotracer.net/loading/ (form_redirect.remote_url in the page, checked 2026-10-24). A synthetic GET of /Results on 2026-10-24 returned HTTP 200 with an empty results page. The site has no search of its own; the search is InfoTracer's (catalog entry infotracer). The InfoTracer page was not opened and no request was submitted."
   },
   "pennsylvania-arrests": {
-    "checked": "2026-10-18",
-    "paywall": true,
-    "kind": "paid_report_link",
-    "evidence": "A synthetic search (John Smith, Denver CO) at https://www.pennsylvaniaarrests.org/Results?fname=John&lname=Smith&state=CO&city=Denver returned a results page with no records. Its only link to records is a paid InfoTracer report (infotracer.net/loading)."
+    "checked": "2026-10-24",
+    "not_a_person_search": true,
+    "kind": "affiliate_redirect",
+    "liveness": "alive",
+    "liveness_detail": "pennsylvaniaarrests.org answered HTTP 200 on 2026-10-24. The homepage search script sends the name to infotracer.net.",
+    "evidence": "The homepage form still posts to /Results, and form-redirect/script.js prevents that submit and sends the name to https://infotracer.net/loading/ (form_redirect.remote_url in the page, checked 2026-10-24). A synthetic GET of /Results on 2026-10-24 returned HTTP 200 with an empty results page. The site has no search of its own; the search is InfoTracer's (catalog entry infotracer). The InfoTracer page was not opened and no request was submitted. The homepage also loads a CAPTCHA widget."
   },
   "rhode-island-arrests": {
-    "checked": "2026-10-18",
-    "paywall": true,
-    "kind": "paid_report_link",
-    "evidence": "A synthetic search (John Smith, Denver CO) at https://www.riarrests.org/Results?fname=John&lname=Smith&state=CO&city=Denver returned a results page with no records. Its only link to records is a paid InfoTracer report (infotracer.net/loading)."
+    "checked": "2026-10-24",
+    "not_a_person_search": true,
+    "kind": "affiliate_redirect",
+    "liveness": "alive",
+    "liveness_detail": "riarrests.org answered HTTP 200 on 2026-10-24. The homepage search script sends the name to infotracer.net.",
+    "evidence": "The homepage form still posts to /Results, and form-redirect/script.js prevents that submit and sends the name to https://infotracer.net/loading/ (form_redirect.remote_url in the page, checked 2026-10-24). A synthetic GET of /Results on 2026-10-24 returned HTTP 200 with an empty results page. The site has no search of its own; the search is InfoTracer's (catalog entry infotracer). The InfoTracer page was not opened and no request was submitted."
   },
   "south-carolina-arrests": {
-    "checked": "2026-10-18",
-    "paywall": true,
-    "kind": "paid_report_link",
-    "evidence": "A synthetic search (John Smith, Denver CO) at https://www.scarrests.org/Results?fname=John&lname=Smith&state=CO&city=Denver returned a results page with no records. Its only link to records is a paid InfoTracer report (infotracer.net/loading)."
+    "checked": "2026-10-24",
+    "not_a_person_search": true,
+    "kind": "affiliate_redirect",
+    "liveness": "alive",
+    "liveness_detail": "scarrests.org answered HTTP 200 on 2026-10-24. The homepage search script sends the name to infotracer.net.",
+    "evidence": "The homepage form still posts to /Results, and form-redirect/script.js prevents that submit and sends the name to https://infotracer.net/loading/ (form_redirect.remote_url in the page, checked 2026-10-24). A synthetic GET of /Results on 2026-10-24 returned HTTP 200 with an empty results page. The site has no search of its own; the search is InfoTracer's (catalog entry infotracer). The InfoTracer page was not opened and no request was submitted."
   },
   "tennessee-arrests": {
-    "checked": "2026-10-18",
-    "paywall": true,
-    "kind": "paid_report_link",
-    "evidence": "A synthetic search (John Smith, Denver CO) at https://www.tennesseearrests.org/Results?fname=John&lname=Smith&state=CO&city=Denver returned a results page with no records. Its only link to records is a paid InfoTracer report (infotracer.net/loading)."
+    "checked": "2026-10-24",
+    "not_a_person_search": true,
+    "kind": "affiliate_redirect",
+    "liveness": "alive",
+    "liveness_detail": "tennesseearrests.org answered HTTP 200 on 2026-10-24. The homepage search script sends the name to infotracer.net.",
+    "evidence": "The homepage form still posts to /Results, and form-redirect/script.js prevents that submit and sends the name to https://infotracer.net/loading/ (form_redirect.remote_url in the page, checked 2026-10-24). A synthetic GET of /Results on 2026-10-24 returned HTTP 200 with an empty results page. The site has no search of its own; the search is InfoTracer's (catalog entry infotracer). The InfoTracer page was not opened and no request was submitted."
   },
   "virginia-arrests": {
-    "checked": "2026-10-18",
-    "paywall": true,
-    "kind": "paid_report_link",
-    "evidence": "A synthetic search (John Smith, Denver CO) at https://www.virginiaarrests.org/Results?fname=John&lname=Smith&state=CO&city=Denver returned a results page with no records. Its only link to records is a paid InfoTracer report (infotracer.net/loading)."
+    "checked": "2026-10-24",
+    "not_a_person_search": true,
+    "kind": "affiliate_redirect",
+    "liveness": "alive",
+    "liveness_detail": "virginiaarrests.org answered HTTP 200 on 2026-10-24. The homepage search script sends the name to infotracer.net.",
+    "evidence": "The homepage form still posts to /Results, and form-redirect/script.js prevents that submit and sends the name to https://infotracer.net/loading/ (form_redirect.remote_url in the page, checked 2026-10-24). A synthetic GET of /Results on 2026-10-24 returned HTTP 200 with an empty results page. The site has no search of its own; the search is InfoTracer's (catalog entry infotracer). The InfoTracer page was not opened and no request was submitted."
   },
   "washington-arrests": {
-    "checked": "2026-10-18",
-    "paywall": true,
-    "kind": "paid_report_link",
-    "evidence": "A synthetic search (John Smith, Denver CO) at https://www.washingtonarrests.org/Results?fname=John&lname=Smith&state=CO&city=Denver returned a results page with no records. Its only link to records is a paid InfoTracer report (infotracer.net/loading)."
+    "checked": "2026-10-24",
+    "not_a_person_search": true,
+    "kind": "affiliate_redirect",
+    "liveness": "alive",
+    "liveness_detail": "washingtonarrests.org answered HTTP 200 on 2026-10-24. The homepage search script sends the name to infotracer.net.",
+    "evidence": "The homepage form still posts to /Results, and form-redirect/script.js prevents that submit and sends the name to https://infotracer.net/loading/ (form_redirect.remote_url in the page, checked 2026-10-24). A synthetic GET of /Results on 2026-10-24 returned HTTP 200 with an empty results page. The site has no search of its own; the search is InfoTracer's (catalog entry infotracer). The InfoTracer page was not opened and no request was submitted."
   },
   "west-virginia-arrests": {
-    "checked": "2026-10-18",
-    "paywall": true,
-    "kind": "paid_report_link",
-    "evidence": "A synthetic search (John Smith, Denver CO) at https://www.wvarrests.org/Results?fname=John&lname=Smith&state=CO&city=Denver returned a results page with no records. Its only link to records is a paid InfoTracer report (infotracer.net/loading)."
+    "checked": "2026-10-24",
+    "not_a_person_search": true,
+    "kind": "affiliate_redirect",
+    "liveness": "alive",
+    "liveness_detail": "wvarrests.org answered HTTP 200 on 2026-10-24. The homepage search script sends the name to infotracer.net.",
+    "evidence": "The homepage form still posts to /Results, and form-redirect/script.js prevents that submit and sends the name to https://infotracer.net/loading/ (form_redirect.remote_url in the page, checked 2026-10-24). A synthetic GET of /Results on 2026-10-24 returned HTTP 200 with an empty results page. The site has no search of its own; the search is InfoTracer's (catalog entry infotracer). The InfoTracer page was not opened and no request was submitted."
   },
   "wisconsin-arrests": {
-    "checked": "2026-10-18",
-    "paywall": true,
-    "kind": "paid_report_link",
-    "evidence": "A synthetic search (John Smith, Denver CO) at https://www.wisconsinarrests.org/Results?fname=John&lname=Smith&state=CO&city=Denver returned a results page with no records. Its only link to records is a paid InfoTracer report (infotracer.net/loading)."
+    "checked": "2026-10-24",
+    "not_a_person_search": true,
+    "kind": "affiliate_redirect",
+    "liveness": "alive",
+    "liveness_detail": "wisconsinarrests.org answered HTTP 200 on 2026-10-24. The homepage search script sends the name to infotracer.net.",
+    "evidence": "The homepage form still posts to /Results, and form-redirect/script.js prevents that submit and sends the name to https://infotracer.net/loading/ (form_redirect.remote_url in the page, checked 2026-10-24). A synthetic GET of /Results on 2026-10-24 returned HTTP 200 with an empty results page. The site has no search of its own; the search is InfoTracer's (catalog entry infotracer). The InfoTracer page was not opened and no request was submitted."
   },
   "wyoming-arrests": {
-    "checked": "2026-10-18",
-    "paywall": true,
-    "kind": "paid_report_link",
-    "evidence": "A synthetic search (John Smith, Denver CO) at https://www.wyomingarrests.org/Results?fname=John&lname=Smith&state=CO&city=Denver returned a results page with no records. Its only link to records is a paid InfoTracer report (infotracer.net/loading)."
+    "checked": "2026-10-24",
+    "not_a_person_search": true,
+    "kind": "affiliate_redirect",
+    "liveness": "alive",
+    "liveness_detail": "wyomingarrests.org answered HTTP 200 on 2026-10-24. The homepage search script sends the name to infotracer.net.",
+    "evidence": "The homepage form still posts to /Results, and form-redirect/script.js prevents that submit and sends the name to https://infotracer.net/loading/ (form_redirect.remote_url in the page, checked 2026-10-24). A synthetic GET of /Results on 2026-10-24 returned HTTP 200 with an empty results page. The site has no search of its own; the search is InfoTracer's (catalog entry infotracer). The InfoTracer page was not opened and no request was submitted."
   },
   "nevada-arrests": {
     "checked": "2026-10-18",
@@ -1439,10 +1519,12 @@
     "evidence": "A synthetic search (John Smith, Denver CO) at https://www.vtarrests.org/Results?fname=John&lname=Smith&state=CO&city=Denver returned a results page with no records. Its only link to records is a paid InfoTracer report (infotracer.net/loading)."
   },
   "la-county-arrest-records": {
-    "checked": "2026-10-18",
-    "paywall": true,
-    "kind": "paid_report_link",
-    "evidence": "A synthetic search (John Smith) at https://www.lacountyarrestrecords.org/Results?fname=John&lname=Smith&state=CA returned a results page with no records, on the same template as the state arrests sites. Its only link to records is a paid InfoTracer report."
+    "checked": "2026-10-24",
+    "not_a_person_search": true,
+    "kind": "affiliate_redirect",
+    "liveness": "alive",
+    "liveness_detail": "lacountyarrestrecords.org answered HTTP 200 on 2026-10-24. The homepage search script sends the name to infotracer.net.",
+    "evidence": "The homepage form still posts to /Results, and form-redirect/script.js prevents that submit and sends the name to https://infotracer.net/loading/ (form_redirect.remote_url in the page, checked 2026-10-24). A synthetic GET of /Results on 2026-10-24 returned HTTP 200 with an empty results page. The site has no search of its own; the search is InfoTracer's (catalog entry infotracer). The InfoTracer page was not opened and no request was submitted."
   },
   "dewarrants-org-infotracer-form": {
     "checked": "2026-10-18",
@@ -1793,49 +1875,11 @@
     "evidence": "A synthetic search (John Smith, Denver CO) opened a beenverified.com affiliate page. The search is BeenVerified's own."
   },
   "searchusapeople-infotracer": {
-    "checked": "2026-10-19",
-    "evidence": "The name search hands off to InfoTracer's report flow, https://infotracer.com/loading/?…&firstname=…&lastname=…&state=… (searchusapeople.com's nameForm is a GET to infotracer.com/loading/). That page shows a bare \"I'm not a robot\" link (no widget, no terms), then about 45 seconds of a progress bar, then lands on /name/results/ (\"Found N Results in <state>\", every name masked as initials and stars, e.g. \"J*** S****\", with ages and cities) or, for a name it doesn't have, /name/nohit/. Reading that page is the search; nothing past it (selecting a result, the plan pages) is clicked. Frame renders it on its slow-render list and reads masked rows as \"is this you?\", never a confirmed match.",
-    "result_check": "In a browser, John Smith (CO) ended on https://infotracer.com/name/results/: \"Found 97 Results in Colorado\", rows such as \"J*** S**** Denver, CO Eagle, CO\"; Quillon Vanderwekken (CO) ended on /name/nohit/ (2026-10-19, about 47 s each, the robot link clicked).",
-    "form": {
-      "method": "http_get",
-      "page_url": "https://www.searchusapeople.com/",
-      "form_action": "https://infotracer.com/loading/",
-      "url_pattern": "https://infotracer.com/loading/?s=rw&source=somecotton&addPixel=yes&searchType=name&type=name&firstname={firstname}&lastname={lastname}&state={state}&city=",
-      "form_id": null,
-      "form_name": null,
-      "submit_label": null,
-      "hidden_names": [],
-      "inputs": [
-        {
-          "name": "firstname",
-          "type": "text",
-          "canonical": "first_name",
-          "required": false,
-          "id": null,
-          "label": null,
-          "placeholder": null
-        },
-        {
-          "name": "lastname",
-          "type": "text",
-          "canonical": "last_name",
-          "required": false,
-          "id": null,
-          "label": null,
-          "placeholder": null
-        },
-        {
-          "name": "state",
-          "type": "text",
-          "canonical": "region",
-          "required": false,
-          "id": null,
-          "label": null,
-          "placeholder": null
-        }
-      ]
-    },
-    "captcha_widget": false
+    "checked": "2026-10-24",
+    "not_a_person_search": true,
+    "kind": "affiliate_redirect",
+    "evidence": "The homepage name form (firstname, lastname, state; HTTP 200 on 2026-10-24) is a GET straight to https://infotracer.com/loading/ with source and pixel parameters. The site has no search of its own; the search is InfoTracer's (catalog entry infotracer). The InfoTracer page was not opened.",
+    "result_check": "In a browser, John Smith (CO) ended on https://infotracer.com/name/results/: \"Found 97 Results in Colorado\", rows such as \"J*** S**** Denver, CO Eagle, CO\"; Quillon Vanderwekken (CO) ended on /name/nohit/ (2026-10-19, about 47 s each, the robot link clicked)."
   },
   "dobsearch": {
     "checked": "2026-10-18",
@@ -2018,7 +2062,7 @@
     "evidence": "The stored search form is the GOV.UK website search, not the electoral register: a synthetic query lands on https://www.gov.uk/search/all?keywords=John+Smith. It searches the site's pages, not records about a person."
   },
   "cyberbackgroundchecks": {
-    "checked": "2026-10-18",
+    "checked": "2026-10-24",
     "evidence": "Homepage name form (SearchCriteriaViewModel.FirstName / LastName / City) has no useful GET action: the page's script opens /people/<first>-<last>/<state>/<city>. The stored GET to the homepage only reloads it, so Frame never reached a results page. url_pattern stores the result path; the controls are the path's parts. Frame fills path placeholders as lowercase slugs and stops the path before the first segment it cannot fill, so a person with no city still gets the name (and state) page. Held back from catalog PR #19 because a made-up name showed unrelated \"expanded\" rows that Frame's classifier read as found; Frame PR #756 now handles those pages.",
     "result_check": "Rendered 2026-10-18 (US exit, catalog PR #19): /people/john-smith/co/denver reached a real results page for John Smith in Denver, CO. A made-up name also built a page with padded \"expanded\" rows under the searched name (classifier false-found before Frame #756).",
     "form": {
@@ -2069,7 +2113,9 @@
         }
       ]
     },
-    "country": "US"
+    "country": "US",
+    "liveness": "alive",
+    "liveness_detail": "cyberbackgroundchecks.com answered HTTP 200 in a browser on 2026-10-24, titled \"People Search & Phone Lookup - Cyber Background Checks\". robots.txt disallows the research client, which no longer limits these reads."
   },
   "fastbackgroundcheck": {
     "checked": "2026-10-18",
@@ -2216,7 +2262,7 @@
     "captcha_widget": false
   },
   "publicrecords-us": {
-    "checked": "2026-10-19",
+    "checked": "2026-10-24",
     "evidence": "The homepage's people pop-up (name + state) does not post a form: its script calls GET /api/client?query=tlo/teaser/summary&fullName=…&state=…&usePhoneticLastName=false and draws \"Your search returned N public records for … in …\" (or \"Your search returned no results\") from the answer, before the disclaimer, \"I Agree\" and plan pages. That call is the search the site itself runs and needs no cookie or account; nothing is agreed to, bought or registered to read it. The earlier \"numberOfRecords 250 even for an empty name\" came from the plan page's data, not from this search. The answer is a count for the name only (numberOfStateMatches and cities stay empty), so a hit is \"is this you?\", never a removal on its own.",
     "result_check": "GET https://www.publicrecords.us/api/client?query=tlo/teaser/summary&fullName=John%20Smith&state=co&usePhoneticLastName=false returned {\"numberOfRecords\":200,…,\"success\":true}; Quillon Vanderwekken returned \"numberOfRecords\":0; Jared Polis (CO) 1; Barack Obama 20 (2026-10-19).",
     "form": {
@@ -2249,10 +2295,12 @@
         }
       ]
     },
-    "captcha_widget": false
+    "captcha_widget": false,
+    "liveness": "alive",
+    "liveness_detail": "publicrecords.us answered HTTP 200 in a browser on 2026-10-24, titled \"People Search & Public Records by Name | PublicRecords.us\". robots.txt disallows the research client, which no longer limits these reads."
   },
   "courtrec-com": {
-    "checked": "2026-10-19",
+    "checked": "2026-10-24",
     "evidence": "The homepage's people pop-up (name + state) does not post a form: its script calls GET /api/client?query=tlo/teaser/summary&fullName=…&state=…&usePhoneticLastName=false and draws \"Your search returned N public records for … in …\" (or \"Your search returned no results\") from the answer, before the disclaimer, \"I Agree\" and plan pages. That call is the search the site itself runs and needs no cookie or account; nothing is agreed to, bought or registered to read it. The earlier \"numberOfRecords 250 even for an empty name\" came from the plan page's data, not from this search. The answer is a count for the name only (numberOfStateMatches and cities stay empty), so a hit is \"is this you?\", never a removal on its own.",
     "result_check": "GET https://www.courtrec.com/api/client?query=tlo/teaser/summary&fullName=John%20Smith&state=co&usePhoneticLastName=false returned {\"numberOfRecords\":200,…,\"success\":true}; Quillon Vanderwekken returned \"numberOfRecords\":0; Jared Polis (CO) 1; Barack Obama 20 (2026-10-19).",
     "form": {
@@ -2285,7 +2333,9 @@
         }
       ]
     },
-    "captcha_widget": false
+    "captcha_widget": false,
+    "liveness": "alive",
+    "liveness_detail": "courtrec.com answered HTTP 200 in a browser on 2026-10-24, titled \"Court Record Search by Name | CourtRec.com\". robots.txt disallows the research client, which no longer limits these reads."
   },
   "peoplewhizr": {
     "checked": "2026-10-18",
@@ -2300,13 +2350,15 @@
     "evidence": "Same operator and template as PeopleWhizr (\"67 Billion records\"). A form submit lands on /hflow/flow/search/<uuid> \"Searching in Denver, Colorado… 5%\", identical for John Smith and for a made-up name (Quillon Vanderwekken); no person is listed before checkout."
   },
   "peoplewhiz": {
-    "checked": "2026-10-18",
+    "checked": "2026-10-24",
     "paywall": true,
     "kind": "register_or_purchase",
-    "evidence": "Same funnel as PeopleWhizr and Truthed: the form opens an /hflow/searching animation that reads the same for John Smith (Denver CO) and a made-up name (Quillon Vanderwekken); no person is listed before checkout."
+    "evidence": "Same funnel as PeopleWhizr and Truthed: the form opens an /hflow/searching animation that reads the same for John Smith (Denver CO) and a made-up name (Quillon Vanderwekken); no person is listed before checkout.",
+    "liveness": "alive",
+    "liveness_detail": "peoplewhiz.com served its search page on 2026-10-24; the page carries a CAPTCHA widget. robots.txt disallows the research client, which no longer limits these reads."
   },
   "beenverified": {
-    "checked": "2026-10-19",
+    "checked": "2026-10-24",
     "evidence": "The homepage name form on beenverified.com hands the name to a \"searching\" page (/lp/a19763/2/loading) whose script loads GET /hk/teaser/?exporttype=jsonp&rc=100&fn=…&ln=…&state=…&city=… and draws the free preview from it (names, ages, cities) before any paywall. That JSONP is the search the site itself runs; nothing is bought or registered to read it. The results URL renders with no CAPTCHA widget (the stored widget belongs to the homepage form), so the stored CAPTCHA marker is cleared.",
     "result_check": "GET https://www.beenverified.com/hk/teaser/?exporttype=jsonp&rc=100&fn=John&ln=Smith&state=CO&city=Denver&callback=parseResults returned parseResults({\"response\":{…\"RecordCount\":100,\"Records\":[{\"Names\":[{\"First\":\"JOHN\",…\"Last\":\"SMITH\"}],\"Addresses\":[{…\"City\":\"DENVER\",\"State\":\"CO\"…; the same call for a made-up name (Quillon Vanderwekken) returned \"RecordCount\":0,\"Records\":[] (2026-10-19, rendered in a browser).",
     "form": {
@@ -2357,10 +2409,12 @@
         }
       ]
     },
-    "captcha_widget": false
+    "captcha_widget": false,
+    "liveness": "alive",
+    "liveness_detail": "beenverified.com answered HTTP 200 in a browser on 2026-10-24, titled \"Everyday Information - Check People, Phone Numbers, Vehicles & Properties | BeenVerified\". robots.txt disallows the research client, which no longer limits these reads."
   },
   "veripages": {
-    "checked": "2026-10-18",
+    "checked": "2026-10-24",
     "evidence": "Homepage form FindPersonForm (name \"First and Last Name\", city_state \"City, State\") GETs /srv/a.go_search, which answers only a JSON redirect to /inner/profile/search?fname=<first>&lname=<last>&state=<ST>&city=<city>. The stored recipe put the person's city alone in city_state and got \"Invalid location\". url_pattern stores the redirect target with separate fields.",
     "result_check": "Rendered 2026-10-18 through Frame's browser-fetch (US exit): John Smith, Denver CO → \"602 individuals named John Smith found in Denver, CO\" with listings; a made-up name (Quillon Vanderwekken) → \"No records found for Quillon Vanderwekken\".",
     "form": {
@@ -2411,7 +2465,9 @@
         }
       ]
     },
-    "country": "US"
+    "country": "US",
+    "liveness": "alive",
+    "liveness_detail": "The search test on 2026-10-24 got HTTP 200 from veripages.com. robots.txt disallows the research client, which no longer limits these reads."
   },
   "smartbackgroundchecks": {
     "checked": "2026-10-18",
@@ -2598,8 +2654,8 @@
     "evidence": "https://411locate.com/ redirects to forsale.godaddy.com/forsale/411locate.com (the domain is listed for sale; 2026-10-19). No people search runs there."
   },
   "bumper-beenverified-family": {
-    "checked": "2026-10-19",
-    "evidence": "The homepage name form on bumper.com hands the name to a \"searching\" page (its /lp/…/loading page) whose script loads GET /hk/teaser/?exporttype=jsonp&rc=100&fn=…&ln=…&state=…&city=… and draws the free preview from it (names, ages, cities) before any paywall. That JSONP is the search the site itself runs; nothing is bought or registered to read it. The results URL renders with no CAPTCHA widget (the stored widget belongs to the homepage form), so the stored CAPTCHA marker is cleared.",
+    "checked": "2026-10-24",
+    "evidence": "The homepage, read on 2026-10-24 in a browser, offers VIN and license plate lookups only and has no visible name field; the stored first and last name form is no longer on the page. Nothing was submitted.",
     "result_check": "GET https://www.bumper.com/hk/teaser/?exporttype=jsonp&rc=100&fn=John&ln=Smith&state=CO&city=Denver&callback=parseResults returned parseResults({\"response\":{…\"RecordCount\":100,\"Records\":[{\"Names\":[{\"First\":\"JOHN\",…\"Last\":\"SMITH\"}],\"Addresses\":[{…\"City\":\"DENVER\",\"State\":\"CO\"…; the same call for a made-up name (Quillon Vanderwekken) returned \"RecordCount\":0,\"Records\":[] (2026-10-19, rendered in a browser).",
     "form": {
       "method": "http_get",
@@ -2649,7 +2705,11 @@
         }
       ]
     },
-    "captcha_widget": false
+    "captcha_widget": false,
+    "not_a_person_search": true,
+    "kind": "site_search",
+    "liveness": "alive",
+    "liveness_detail": "bumper.com answered HTTP 200 on 2026-10-24, titled \"VIN, License Plate & Vehicle History Reports | Bumper\"."
   },
   "classmates-com": {
     "checked": "2026-10-19",
@@ -2773,7 +2833,7 @@
     "evidence": "Submitting the name form at https://www.mugshotlook.com/nameSearch/landingPage (John Smith, 2026-10-19, headless browser on a US datacenter address) moves to a \"Searching… Please Be Patient\" page whose script calls POST /api/content/peopleSearch/peopleSearch. That call answered HTTP 412 with {\"captcha\":{\"type\":\"creditCard.authorize\",…,\"creditCardData\":{\"price\":0.3}}}: the results are only released after a card authorization. The page never shows a count or names before that. The stored GET (?First-Name=…) only reloads the form."
   },
   "peoplelooker-beenverified": {
-    "checked": "2026-10-19",
+    "checked": "2026-10-24",
     "evidence": "The homepage name form on peoplelooker.com hands the name to a \"searching\" page (/lp/6b8dbc/2/loading) whose script loads GET /hk/teaser/?exporttype=jsonp&rc=100&fn=…&ln=…&state=…&city=… and draws the free preview from it (names, ages, cities) before any paywall. That JSONP is the search the site itself runs; nothing is bought or registered to read it. The results URL renders with no CAPTCHA widget (the stored widget belongs to the homepage form), so the stored CAPTCHA marker is cleared.",
     "result_check": "GET https://www.peoplelooker.com/hk/teaser/?exporttype=jsonp&rc=100&fn=John&ln=Smith&state=CO&city=Denver&callback=parseResults returned parseResults({\"response\":{…\"RecordCount\":100,\"Records\":[{\"Names\":[{\"First\":\"JOHN\",…\"Last\":\"SMITH\"}],\"Addresses\":[{…\"City\":\"DENVER\",\"State\":\"CO\"…; the same call for a made-up name (Quillon Vanderwekken) returned \"RecordCount\":0,\"Records\":[] (2026-10-19, rendered in a browser).",
     "form": {
@@ -2824,7 +2884,9 @@
         }
       ]
     },
-    "captcha_widget": false
+    "captcha_widget": false,
+    "liveness": "alive",
+    "liveness_detail": "peoplelooker.com answered HTTP 200 in a browser on 2026-10-24, titled \"People Search - Social Media Profiles - Find People, Friends, Relatives | PeopleLooker\". robots.txt disallows the research client, which no longer limits these reads."
   },
   "peoplesmart-beenverified": {
     "checked": "2026-10-19",
@@ -3581,15 +3643,19 @@
     "evidence": "heartbeat.ai is a B2B healthcare-recruiting contact database (powered by Swordfish.ai): its homepage search takes a role and location (\"Cardiologists in Tampa, FL\") and returns clinician counts only; profiles and contacts need an account (plans from $1,999/month, or a sales call for a 25-contact test). There is no free lookup of a person by name. The homepage also answers bots with a \"Checking for any bots …\" page (2026-10-19)."
   },
   "illinois-arrests": {
-    "checked": "2026-10-19",
-    "paywall": true,
-    "kind": "paid_report_link",
-    "evidence": "The search form on https://www.illinoisarrests.org/ does not search the site: its script (form-redirect plugin) sends the name to https://infotracer.net/loading/?ltid=criminal&…&firstname=…&lastname=…&state=…&city=…&tid=illinoisarrests, InfoTracer's paid report flow (catalog entry infotracer); the stored GET /Results answers an empty 200 page. Same as the other <state>arrests.org sites."
+    "checked": "2026-10-24",
+    "not_a_person_search": true,
+    "kind": "affiliate_redirect",
+    "liveness": "alive",
+    "liveness_detail": "illinoisarrests.org answered HTTP 200 on 2026-10-24. The on-site /Results URL returned an empty body. The homepage search script sends the name to infotracer.net.",
+    "evidence": "The homepage form still posts to /Results, and form-redirect/script.js prevents that submit and sends the name to https://infotracer.net/loading/ (tid=illinoisarrests). GET /Results?fname=John&lname=Smith&stage=1&rType=Warrant returned HTTP 200 with an empty body. The request portal at /request-portal returned HTTP 200. The InfoTracer page was not opened and no request was submitted."
   },
   "wyty": {
-    "checked": "2026-10-19",
+    "checked": "2026-10-24",
     "country": "US",
-    "evidence": "The homepage name search (txtFirstName, txtLastName, txtCity, ddlStates) has a state dropdown of US states only (AK … WY) and no Canadian province, so the country is US. The search is guarded by an invisible Cloudflare Turnstile check. From a datacenter browser the submit came back \"We couldn't verify your browser. Please try your search again.\" Two residential US exits got \"403 - Forbidden: Access is denied\" on the homepage itself (2026-10-19). No search could be read. Frame's Cloudflare solver stays off."
+    "evidence": "The homepage name search (txtFirstName, txtLastName, txtCity, ddlStates) has a state dropdown of US states only (AK … WY) and no Canadian province, so the country is US. The search is guarded by an invisible Cloudflare Turnstile check. From a datacenter browser the submit came back \"We couldn't verify your browser. Please try your search again.\" Two residential US exits got \"403 - Forbidden: Access is denied\" on the homepage itself (2026-10-19). No search could be read. Frame's Cloudflare solver stays off.",
+    "liveness": "alive",
+    "liveness_detail": "wyty.com served its search page on 2026-10-24; the page carries a CAPTCHA widget. robots.txt disallows the research client, which no longer limits these reads."
   },
   "finalscout": {
     "checked": "2026-10-19",
@@ -3648,7 +3714,9 @@
     "not_a_person_search": true,
     "country": null,
     "country_override": true,
-    "also_covers": ["US"],
+    "also_covers": [
+      "US"
+    ],
     "evidence": "The homepage form posts tel to /meta_data_search.php. That URL returned HTTP 404 on 2026-10-24, both with the page's hidden field (the field name changes between reads; it was 10202624 on this check and 10202612 in the stored form) and without it. The page says a search returns the carrier and the city and state of the area code and prefix, not a named person. The stored country CA came from the words Quebec and British Columbia in an area-code list that also says \"Contains USA and Canada.\" It is not a Canada-only directory. Nothing was submitted except the placeholder (555) 555-5555."
   },
   "equifax-canada": {
@@ -3887,22 +3955,6 @@
     "liveness": "alive",
     "liveness_detail": "https://bathroom-remodel-today.com/privacy/ redirects to https://signin.leadgenesis.info/login (HTTP 200, titled Sign in · NEXUS) on 2026-10-24. It is not a public request page. No request was submitted.",
     "evidence": "GET of the catalog privacy URL followed the redirect to the LeadGenesis sign-in. The catalog URL was left in place. No account was created and no request was submitted. The stored search form on https://www.lead-enhance.com/ is the lead-buyer contact form (Name, Email, Company, Phone, and \"How can we help your business?\", all required), not a person search. The homepage, re-read on 2026-10-24, sells home-services leads and has no public name search. The form was not submitted."
-  },
-  "illinois-arrests": {
-    "checked": "2026-10-24",
-    "not_a_person_search": true,
-    "kind": "affiliate_redirect",
-    "liveness": "alive",
-    "liveness_detail": "illinoisarrests.org answered HTTP 200 on 2026-10-24. The on-site /Results URL returned an empty body. The homepage search script sends the name to infotracer.net.",
-    "evidence": "The homepage form still posts to /Results, and form-redirect/script.js prevents that submit and sends the name to https://infotracer.net/loading/ (tid=illinoisarrests). GET /Results?fname=John&lname=Smith&stage=1&rType=Warrant returned HTTP 200 with an empty body. The request portal at /request-portal returned HTTP 200. The InfoTracer page was not opened and no request was submitted."
-  },
-  "louisiana-arrests": {
-    "checked": "2026-10-24",
-    "not_a_person_search": true,
-    "kind": "affiliate_redirect",
-    "liveness": "alive",
-    "liveness_detail": "louisianaarrests.org answered HTTP 200 on 2026-10-24. The on-site /Results URL returned HTTP 404. The homepage search script sends the name to infotracer.net.",
-    "evidence": "The homepage form still posts to /Results, and form-redirect/script.js prevents that submit and sends the name to https://infotracer.net/loading/ (tid=louisianaarrests). GET /Results?fname=John&lname=Smith&stage=1&rType=Warrant returned HTTP 404, titled 404 - Page not found. The request portal at /request-portal returned HTTP 200. The InfoTracer page was not opened and no request was submitted."
   },
   "california-criminal-records-search": {
     "checked": "2026-10-24",
@@ -4555,5 +4607,302 @@
       ]
     },
     "captcha_widget": false
+  },
+  "lexisnexis": {
+    "checked": "2026-10-24",
+    "not_a_person_search": true,
+    "kind": "optout",
+    "evidence": "The stored search form on https://consumer.risk.lexisnexis.com/optrequest is the broker's own opt-out, privacy-request, or unsubscribe form, not a search for a person. The page answered HTTP 200 on 2026-10-24, titled \"Opt Out Request - LexisNexis Risk Solutions Consumer Disclosure\". Form action https://consumer.risk.lexisnexis.com/optSubmit, submit button \"Submit Request\", controls This request is for Myself .; This request is for Someone Else (I am authorized to act on their behalf).; I am submitting this request on behalf of a minor child (under the age of 16); I am submitting this request on behalf of a Protected Consumer (incapacitated an; I am not submitting this request on behalf of a protected consumer or a minor ch; First Name; Middle Name; Last Name; Suffix Suffix Jr Sr II III IV; Street Address. It was not submitted."
+  },
+  "a-direct-marketing-inc": {
+    "checked": "2026-10-24",
+    "not_a_person_search": true,
+    "kind": "optout",
+    "evidence": "The stored search form on https://optout.bookyourdata.com/ is the broker's own opt-out, privacy-request, or unsubscribe form, not a search for a person. The page answered HTTP 200 on 2026-10-24, titled \"Do Not Sell or Share My Personal Information | Bookyourdata\". Form action https://optout.bookyourdata.com/, submit button \"Submit my request\", controls Email address *; Full name; State / region; Do not sell or share my personal information We add you to our do-not-sell / do-; Delete my personal information We remove your information from our systems, per ; website. It was not submitted."
+  },
+  "astoria-company-marketing-llc": {
+    "checked": "2026-10-24",
+    "not_a_person_search": true,
+    "kind": "optout",
+    "evidence": "The stored search form on https://astoriacompany.com/washington-health-data-request is the broker's own opt-out, privacy-request, or unsubscribe form, not a search for a person. The page answered HTTP 200 on 2026-10-24, titled \"Washington Consumer Health Data Request · Astoria Company\". Form action https://astoriacompany.com/washington-health-data-request, submit button \"Submit Request\", controls Company website; Confirm whether Astoria collects, shares, or sells my Washington consumer health; Access my Washington consumer health data; Request deletion of my Washington consumer health data; Withdraw consent for future collection; Withdraw consent for future sharing; Request list of third parties/affiliates with whom my consumer health data was s; Appeal a prior decision; Other; Consumer first name *. It was not submitted."
+  },
+  "site-impact-inc": {
+    "checked": "2026-10-24",
+    "not_a_person_search": true,
+    "kind": "optout",
+    "evidence": "The stored search form on https://siteimpact.com/compliance-page is the broker's own opt-out, privacy-request, or unsubscribe form, not a search for a person. The page answered HTTP 200 on 2026-10-24, titled \"Compliance Page\". Form action https://siteimpact.com/compliance-page, submit button \"Submit\", controls First name*; Last name*; Date of birth; Phone*; Email*; Confirm email address*; Address*; Address 2; City*; Zipcode*. It was not submitted."
+  },
+  "upcell-llc": {
+    "checked": "2026-10-24",
+    "not_a_person_search": true,
+    "kind": "optout",
+    "evidence": "The stored search form on https://www.upcell.io/data-claim is the broker's own opt-out, privacy-request, or unsubscribe form, not a search for a person. The page answered HTTP 200 on 2026-10-24, titled \"Data Rights & Removal Request | upcell\". Form action https://www.upcell.io/data-claim, submit button \"Submit\", controls First Name; Last Name; Business Email; Phone Number; Request Type Select… Opt-Out / Delete My Information Data Access Other Privacy R; website; company; message; subject; title. It was not submitted."
+  },
+  "awl-holdings-llc-privacyportal-eu-onetrust-com": {
+    "checked": "2026-10-24",
+    "not_a_person_search": true,
+    "kind": "optout",
+    "evidence": "The stored search form on https://dnc.allwebleads.com/Unsubscribe is the broker's own opt-out, privacy-request, or unsubscribe form, not a search for a person. The page answered HTTP 200 on 2026-10-24, titled \"Unsubscribe | AWL\". Form action https://dnc.allwebleads.com/Unsubscribe, controls Email; Phone. It was not submitted."
+  },
+  "pipl-inc": {
+    "checked": "2026-10-24",
+    "not_a_person_search": true,
+    "kind": "optout",
+    "evidence": "The stored search form on https://pipl.com/personal-information-removal-request is the broker's own opt-out, privacy-request, or unsubscribe form, not a search for a person. The page answered HTTP 200 on 2026-10-24, titled \"Request Removal of Your Personal Information\". Form action https://webto.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8, submit button \"Submit\", controls name; Email Address *; 00NUc000000TNu5; 00N4U000009AIoj; Type *; Message *; Solve this math problem to continue *; g-recaptcha-response. It was not submitted."
+  },
+  "bh-marketing-group-llc": {
+    "checked": "2026-10-24",
+    "not_a_person_search": true,
+    "kind": "contact",
+    "evidence": "The stored search form on https://usmarketinggrp.com/ is a sales, demo, chat, or contact form, not a search for a person. The page answered HTTP 200 on 2026-10-24, titled \"Home - US MARKETING GROUP\". Form action https://usmarketinggrp.com/, submit button \"Submit\", controls First; Last; Phone; Email; Company; Message; I consent to receive non-marketing messages from BH Marketing Group, LLC dba US ; I consent to receive marketing text messages from BH Marketing Group, LLC dba US. Frame would have typed the person's name into a sales or contact form. It was not submitted."
+  },
+  "decisionlinks": {
+    "checked": "2026-10-24",
+    "not_a_person_search": true,
+    "kind": "contact",
+    "evidence": "The stored search form on https://www.decisionlinks.com/get-in-touch is a sales, demo, chat, or contact form, not a search for a person. The page answered HTTP 200 on 2026-10-24, titled \"Get in touch with our data experts\". Form action https://www.decisionlinks.com/get-in-touch, submit button \"Submit\", controls Contact-First-Name; Contact-Last-Name; Email *; Phone Number *; Company Name *; Website; Contact-Message; Tell me more. Sign up for marketing communications from DecisionLinks.; I would like a like consultation/walkthrough.. Frame would have typed the person's name into a sales or contact form. It was not submitted."
+  },
+  "eprodirect-llc": {
+    "checked": "2026-10-24",
+    "not_a_person_search": true,
+    "kind": "contact",
+    "evidence": "The stored search form on https://www.eprodirect.com/ is a sales, demo, chat, or contact form, not a search for a person. The page answered HTTP 200 on 2026-10-24, titled \"Meeting Planner List - Over 80,000 Subscribers | EproDirect\". Form action https://www.eprodirect.com/, submit button \"wpforms-submit\", controls First; Last; Company *; Job Title; Email *; Phone; Comments; Website. Frame would have typed the person's name into a sales or contact form. It was not submitted."
+  },
+  "key-marketing-advantage": {
+    "checked": "2026-10-24",
+    "not_a_person_search": true,
+    "kind": "contact",
+    "evidence": "The stored search form on https://keymarketingadvantage.com/request_information is a sales, demo, chat, or contact form, not a search for a person. The page answered HTTP 200 on 2026-10-24, titled \"KMA - Key Marketing Advantage\". Form action https://keymarketingadvantage.com/controllers/request_information, submit button \"Send\", controls (* Required) Your Name; (* Required) Your Email; Phone; Job Title; Company Name; (* Required) Comments. Frame would have typed the person's name into a sales or contact form. It was not submitted."
+  },
+  "milestone-marketing-solutions": {
+    "checked": "2026-10-24",
+    "not_a_person_search": true,
+    "kind": "contact",
+    "evidence": "The stored search form on https://www.milestonemarketingsolutions.com/ is a sales, demo, chat, or contact form, not a search for a person. The page answered HTTP 200 on 2026-10-24, titled \"Milestone Marketing Solutions | Direct Mail Marketing and Data Solutions\". Form action https://www.milestonemarketingsolutions.com/, submit button \"Submit\", controls First Name; Last Name; Company; Phone; Email; Subject; Type your message here.... Frame would have typed the person's name into a sales or contact form. It was not submitted."
+  },
+  "exact-opco-llc-exactcustomer-com": {
+    "checked": "2026-10-24",
+    "not_a_person_search": true,
+    "kind": "contact",
+    "evidence": "The stored search form on https://exactcustomer.com/ is a sales, demo, chat, or contact form, not a search for a person. The page answered HTTP 200 on 2026-10-24, titled \"Exact Customer\". Form action https://exactcustomer.com/, submit button \"Send\", controls Name; E-mail; +1 (234)-567-8900. Frame would have typed the person's name into a sales or contact form. It was not submitted."
+  },
+  "smarte-inc": {
+    "checked": "2026-10-24",
+    "not_a_person_search": true,
+    "kind": "contact",
+    "evidence": "The stored search form on https://www.smarte.pro/ is a sales, demo, chat, or contact form, not a search for a person. The page answered HTTP 200 on 2026-10-24, titled \"SMARTe | B2B Sales Intelligence with Global Data Coverage\". Form action https://www.smarte.pro/, submit button \"Submit\", controls Type your message*; First name*; Business Email*; page-url; utm_id; utm_source; utm_medium; utm_campaign; utm_term; utm_content. Frame would have typed the person's name into a sales or contact form. It was not submitted."
+  },
+  "veraset": {
+    "checked": "2026-10-24",
+    "not_a_person_search": true,
+    "kind": "contact",
+    "evidence": "The stored search form on https://www.veraset.com/ is a sales, demo, chat, or contact form, not a search for a person. The page answered HTTP 200 on 2026-10-24, titled \"Veraset\". Form action https://www.veraset.com/, submit button \"Submit\", controls Name; Email; Company; Industry; Use-of-Data; Learn-About-Veraset; I accept the Terms. Frame would have typed the person's name into a sales or contact form. It was not submitted."
+  },
+  "catalist-llc": {
+    "checked": "2026-10-24",
+    "not_a_person_search": true,
+    "kind": "site_search",
+    "evidence": "The stored search form on https://catalist.us/ is the site's own page search (control s, GET to https://catalist.us/). The page answered HTTP 200 on 2026-10-24, titled \"Comprehensive Voter Database | Catalist\". It searches the site's articles and pages, not records about a person. It was not submitted."
+  },
+  "next-wave-marketing-strategies-inc": {
+    "checked": "2026-10-24",
+    "not_a_person_search": true,
+    "kind": "site_search",
+    "evidence": "The stored search form on https://agedleadstore.com/ is the site's own page search (control s, GET to https://agedleadstore.com/). The page answered HTTP 200 on 2026-10-24, titled \"Aged Lead Store - Aged Insurance, Mortgage, and Solar Leads\". It searches the site's articles and pages, not records about a person. It was not submitted."
+  },
+  "alliant": {
+    "checked": "2026-10-24",
+    "not_a_person_search": true,
+    "kind": "site_search",
+    "evidence": "The stored search form on https://alliantinsight.com/contact/ is the site's own page search (control s, GET to https://alliantinsight.com/). The page answered HTTP 200 on 2026-10-24, titled \"Contact Us - Alliant\". It searches the site's articles and pages, not records about a person. It was not submitted."
+  },
+  "aristotle-international-inc": {
+    "checked": "2026-10-24",
+    "not_a_person_search": true,
+    "kind": "site_search",
+    "evidence": "The stored search form on https://www.aristotle.com/ufaqs/if-i-live-in-a-state-other-than-california-can-i-request-a-privacy-disclosure-opt-out-of-having-aristotle-sell-my-non-public-data-or-have-aristotle-delete-my-personal-information/ is the site's own page search (control s, GET to https://www.aristotle.com/). The page answered HTTP 200 on 2026-10-24, titled \"If I live in a state other than California, can I request a privacy disclosure, opt out of having Aristotle sell my non-\". It searches the site's articles and pages, not records about a person. It was not submitted."
+  },
+  "bdex-llc": {
+    "checked": "2026-10-24",
+    "not_a_person_search": true,
+    "kind": "site_search",
+    "evidence": "The stored search form on https://www.bdex.com/ is the site's own page search (control s, GET to https://www.bdex.com). The page answered HTTP 200 on 2026-10-24, titled \"BDEX | Identity Resolution Platform\". It searches the site's articles and pages, not records about a person. It was not submitted."
+  },
+  "dataman-group-inc": {
+    "checked": "2026-10-24",
+    "not_a_person_search": true,
+    "kind": "site_search",
+    "evidence": "The stored search form on https://www.datamangroup.com/ is the site's own page search (control s, GET to https://www.datamangroup.com/). The page answered HTTP 200 on 2026-10-24, titled \"Dataman Group - Accurate Marketing Lists\". It searches the site's articles and pages, not records about a person. It was not submitted."
+  },
+  "randall-reilly-llc": {
+    "checked": "2026-10-24",
+    "not_a_person_search": true,
+    "kind": "site_search",
+    "evidence": "The stored search form on https://fusable.com/ is the site's own page search (control s, GET to https://fusable.com). The page answered HTTP 200 on 2026-10-24, titled \"Home - Fusable\". It searches the site's articles and pages, not records about a person. It was not submitted."
+  },
+  "clarity-services": {
+    "checked": "2026-10-24",
+    "not_a_person_search": true,
+    "kind": "site_search",
+    "evidence": "The stored search form on https://www.clarityservices.com/ is the site's own page search (control s, GET to https://www.clarityservices.com/). The page answered HTTP 200 on 2026-10-24, titled \"Clarity Services, Inc. - A part of Experian\". It searches the site's articles and pages, not records about a person. It was not submitted."
+  },
+  "dynata": {
+    "checked": "2026-10-24",
+    "not_a_person_search": true,
+    "kind": "site_search",
+    "evidence": "The stored search form on https://www.dynata.com/ is the site's own page search (control s, GET to https://www.dynata.com/). The page answered HTTP 200 on 2026-10-24, titled \"World’s Largest First Party Data Platform | Dynata - World’s Largest First Party Data Platform\". It searches the site's articles and pages, not records about a person. It was not submitted."
+  },
+  "sharethis": {
+    "checked": "2026-10-24",
+    "not_a_person_search": true,
+    "kind": "site_search",
+    "evidence": "The stored search form on https://sharethis.com/ is the site's own page search (control s, GET to https://sharethis.com/). The page answered HTTP 200 on 2026-10-24, titled \"ShareThis | Share Buttons | Website Tools | Behavioral Intelligence\". It searches the site's articles and pages, not records about a person. It was not submitted."
+  },
+  "equifax": {
+    "checked": "2026-10-24",
+    "not_a_person_search": true,
+    "kind": "site_search",
+    "evidence": "The stored search form on https://www.equifax.com/ is the site's own page search (control efxNavSiteSearchQuery, GET to https://www.equifax.com/personal/search). The page answered HTTP 200 on 2026-10-24, titled \"Equifax | Credit Bureau | Check Your Credit\". It searches the site's articles and pages, not records about a person. It was not submitted."
+  },
+  "microbilt": {
+    "checked": "2026-10-24",
+    "not_a_person_search": true,
+    "kind": "site_search",
+    "evidence": "The stored search form on https://www.microbilt.com/ is the site's own page search (control key, GET to https://www.microbilt.com/search). The page answered HTTP 200 on 2026-10-24, titled \"MicroBilt alternative credit data risk management\". It searches the site's articles and pages, not records about a person. It was not submitted."
+  },
+  "aeroleads": {
+    "checked": "2026-10-24",
+    "not_a_person_search": true,
+    "kind": "site_search",
+    "evidence": "The stored search form on https://help.aeroleads.com/en/article/can-i-delete-my-account-1m7kolk/ is the site's own page search (control search_query, GET to https://help.aeroleads.com/en/includes/search/). The page answered HTTP 200 on 2026-10-24, titled \"Can I delete my account? | AeroLeads Helpdesk\". It searches the site's articles and pages, not records about a person. It was not submitted."
+  },
+  "buzzfile": {
+    "checked": "2026-10-24",
+    "not_a_person_search": true,
+    "kind": "site_search",
+    "evidence": "The stored form on https://www.buzzfile.com/Company/Remove (page titled \"Remove Company Profile\", HTTP 200 on 2026-10-24) is the header company search (searchTerm, searchTerm2, POST to /Search/Company/NavQuickSearch). Buzzfile lists businesses; the search finds companies, not people. It was not submitted."
+  },
+  "locatefamily": {
+    "checked": "2026-10-24",
+    "not_a_person_search": true,
+    "kind": "site_search",
+    "evidence": "The homepage form (HTTP 200 on 2026-10-24) sends q with the hidden controls cx and ie to https://www.google.com: a Google Custom Search box, not a search the site runs. Its listings are browsed by surname pages. It was not submitted."
+  },
+  "people-search-expert": {
+    "checked": "2026-10-24",
+    "evidence": "Homepage form, GET to /search with q[full_name] (required) and q[location]. A synthetic search (Alder Northwind) on 2026-10-24 returned the results page with 0 records.",
+    "result_check": "Browser search for John Smith with no location on 2026-10-24 landed on /search?q[full_name]=John+Smith and showed \"924 records found - Page 1\"."
+  },
+  "people-search-org": {
+    "checked": "2026-10-24",
+    "evidence": "Homepage form posts q[query] and q[location] to /search, which redirects to /name/<first>-<last>. A synthetic search (Alder Northwind) on 2026-10-24 returned a no-match page.",
+    "result_check": "Browser search for John Smith on 2026-10-24 landed on /name/john-smith titled \"John Smith - 3,628 People Found | Address, Phone & More\"."
+  },
+  "aggknowledge-inc": {
+    "checked": "2026-10-24",
+    "not_a_person_search": true,
+    "kind": "contact",
+    "evidence": "The stored search form on https://www.aggknowledge.ai/ is a sales, lead, or contact form, not a search for a person. The page answered HTTP 200 on 2026-10-24, titled \"Home | AggKnowledge\". Submit button \"Submit\", controls First Name*; Email*; Last Name*; Phone; Company*; Message. Frame would have typed the person's name into a sales or contact form. It was not submitted."
+  },
+  "new-mexico-data-insights": {
+    "checked": "2026-10-24",
+    "not_a_person_search": true,
+    "kind": "contact",
+    "evidence": "The stored search form on https://www.newmexicodatainsights.com/ is a sales, lead, or contact form, not a search for a person. The page answered HTTP 200 on 2026-10-24, titled \"New Mexico Data Insights | Professional Property Research Services\". Submit button \"Submit Request\", controls Full Name *; Company Name; Email Address *; Describe Your Research Needs *. Frame would have typed the person's name into a sales or contact form. It was not submitted."
+  },
+  "solar-connect-llc": {
+    "checked": "2026-10-24",
+    "not_a_person_search": true,
+    "kind": "contact",
+    "evidence": "The stored search form on https://www.bluefireleads.com/ is a sales, lead, or contact form, not a search for a person. The page answered HTTP 200 on 2026-10-24, titled \"Qualified Homeowner Leads Partner | Blue Fire Leads\". Submit button \"Submit\", controls firstName; lastName; email; phone; company; referralSource. Frame would have typed the person's name into a sales or contact form. It was not submitted."
+  },
+  "intentgine": {
+    "checked": "2026-10-24",
+    "not_a_person_search": true,
+    "kind": "contact",
+    "evidence": "The stored search form on https://intentgine.com/ is a sales, lead, or contact form, not a search for a person. The page answered HTTP 200 on 2026-10-24, titled \"Intentgine - B2B Intent Engine\". Submit button \"SUBMIT\", controls Name; Email; Number; Company; Job Title; Message. Frame would have typed the person's name into a sales or contact form. It was not submitted."
+  },
+  "consumerbase-llc": {
+    "checked": "2026-10-24",
+    "not_a_person_search": true,
+    "kind": "contact",
+    "evidence": "The stored search form on https://www.exactdata.com/ is a sales, lead, or contact form, not a search for a person. The page answered HTTP 200 on 2026-10-24, titled \"Exact Data: Mailing Lists and Leads\". Submit button \"Submit\", controls First name*; Last name*; Email*; Phone number*. Frame would have typed the person's name into a sales or contact form. It was not submitted."
+  },
+  "demandbase-inc": {
+    "checked": "2026-10-24",
+    "not_a_person_search": true,
+    "kind": "site_search",
+    "evidence": "The stored search form on https://www.demandbase.com/ is the site's own page search (control s, GET to https://www.demandbase.com/). The page answered HTTP 200 on 2026-10-24, titled \"ABM Platform for B2B Sales & Marketing Success | Demandbase\". It searches the site's pages, not records about a person. It was not submitted."
+  },
+  "usatrace-peoplefinders": {
+    "checked": "2026-10-24",
+    "liveness": "alive",
+    "liveness_detail": "usatrace.com answered HTTP 200 in a browser on 2026-10-24, titled \"Real-Time Public Records Search, SSN Search & Background Checks\". robots.txt disallows the research client, which no longer limits these reads."
+  },
+  "freephonetracer-beenverified-form": {
+    "checked": "2026-10-24",
+    "liveness": "alive",
+    "liveness_detail": "freephonetracer.com answered HTTP 200 in a browser on 2026-10-24, titled \"Reverse Phone Lookup | FreePhoneTracer.com\". robots.txt disallows the research client, which no longer limits these reads."
+  },
+  "njpropertyrecords": {
+    "checked": "2026-10-24",
+    "liveness": "alive",
+    "liveness_detail": "njpropertyrecords.com answered HTTP 200 in a browser on 2026-10-24, titled \"Home | NJPropertyRecords\". robots.txt disallows the research client, which no longer limits these reads."
+  },
+  "numberguru-beenverified-family": {
+    "checked": "2026-10-24",
+    "liveness": "alive",
+    "liveness_detail": "The search test on 2026-10-24 got HTTP 200 from numberguru.com. robots.txt disallows the research client, which no longer limits these reads."
+  },
+  "neighborwho-beenverified-family": {
+    "checked": "2026-10-24",
+    "liveness": "alive",
+    "liveness_detail": "The search test on 2026-10-24 got HTTP 200 from neighborwho.com. robots.txt disallows the research client, which no longer limits these reads."
+  },
+  "ownerly-beenverified-family": {
+    "checked": "2026-10-24",
+    "liveness": "alive",
+    "liveness_detail": "The search test on 2026-10-24 got HTTP 200 from ownerly.com. robots.txt disallows the research client, which no longer limits these reads."
+  },
+  "checkpeople": {
+    "checked": "2026-10-24",
+    "liveness": "blocked",
+    "liveness_detail": "The homepage checkpeople.com answered HTTP 403 in a browser on 2026-10-24, titled \"Just a moment... (Cloudflare challenge)\". The challenge was not solved."
+  },
+  "freepeoplesearch-com": {
+    "checked": "2026-10-24",
+    "liveness": "blocked",
+    "liveness_detail": "The homepage freepeoplesearch.com answered HTTP 403 in a browser on 2026-10-24, titled \"Sorry, you have been blocked (Cloudflare)\". The challenge was not solved."
+  },
+  "infotracer-network": {
+    "checked": "2026-10-24",
+    "liveness": "blocked",
+    "liveness_detail": "The homepage clicksearch.us answered HTTP 403 in a browser on 2026-10-24, titled \"Attention Required! | Cloudflare\". The challenge was not solved."
+  },
+  "unmask": {
+    "checked": "2026-10-24",
+    "liveness": "blocked",
+    "liveness_detail": "The homepage unmask.com answered HTTP 403 in a browser on 2026-10-24, titled \"Sorry, you have been blocked (Cloudflare)\". The challenge was not solved."
+  },
+  "us-people-search": {
+    "checked": "2026-10-24",
+    "liveness": "blocked",
+    "liveness_detail": "The homepage uspeoplesearch.com answered HTTP 403 in a browser on 2026-10-24, titled \"Just a moment... (Cloudflare challenge)\". The challenge was not solved."
+  },
+  "melissa": {
+    "checked": "2026-10-24",
+    "not_a_person_search": true,
+    "kind": "contact",
+    "liveness": "alive",
+    "liveness_detail": "melissa.com/people-search answered HTTP 200 on 2026-10-24, titled \"People Search - Validate Contact Data | Melissa\".",
+    "evidence": "The stored form on https://www.melissa.com/people-search posts to forms.hsforms.com (a HubSpot lead form with first name, last name, phone and email). It is a sales contact form, not a person search. It was not submitted."
+  },
+  "irbsearch": {
+    "checked": "2026-10-24",
+    "not_a_person_search": true,
+    "kind": "contact",
+    "liveness": "alive",
+    "liveness_detail": "irbsearch.com answered HTTP 200 on 2026-10-24, titled \"IRBsearch | Resources for Investigative Professionals\".",
+    "evidence": "The stored form (posting to app.irbsearch.com/Rosa/apply) is \"Apply for IRBsearch ... to get started with your free trial\" with First Name, Last Name, Mobile, Email, Company Name and State. It is an account application, not a public person search. It was not submitted."
   }
 }

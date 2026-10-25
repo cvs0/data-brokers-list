@@ -2767,7 +2767,7 @@ def crawl_legal(limit: int) -> None:
 
 SEARCH_TEST_OUTCOMES = {
     "results", "submitted", "no_results", "unfilled", "challenge",
-    "captcha", "http_error", "robots", "error",
+    "captcha", "http_error", "error",
 }
 
 
@@ -2971,7 +2971,7 @@ def compile_report(records: dict[str, dict], raw: dict[str, dict] | None = None)
             "A captcha pass re-reads the removal URL and the search page for a widget. A browser reads the page when the static HTML has no widget and the page has a removal form, a stored CAPTCHA, or a public search form. "
             "A later pass reads the public widget settings, including whether it is a checkbox, an invisible check, or a score. "
             "A form pass re-reads stored search and removal forms for labels, limits, autocomplete, the submit button, and hidden field names. A browser opens when the static HTML does not contain the stored fields. Nothing is submitted. "
-            "A search test then submits one synthetic query on each broker whose search and removal are both fillable. It does not consult robots.txt. Removal forms are not submitted and CAPTCHAs are not solved. "
+            "A search test then submits one synthetic query on each broker whose search and removal are both fillable, or with --searchable on each broker with a public search. A robots.txt disallow does not stop the test or count against a search; when --robots is set the log only notes it as robots_disallowed. Brokers whose homepage robots.txt disallowed the research client were later opened in a browser, and their liveness is the result of that read. Removal forms are not submitted and CAPTCHAs are not solved. "
             "search_test is on every broker. It stores the outcome, status, field names, the first path segment, the page kind, and a result count when the page states one. A loader page is followed to the count endpoint. The response body, record text, and listing URLs are not stored."
         ),
         "broker_count": len(records),

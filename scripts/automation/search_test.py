@@ -3,7 +3,7 @@
 
 Uses the stored public search form only. The query is a made-up person, not
 someone in the catalog. Removal forms are not submitted. CAPTCHAs are not
-solved. This test does not consult robots.txt. A page that prohibits automation is skipped
+solved. robots.txt does not block the test; --robots only notes a disallow. A page that prohibits automation is skipped
 unless --include-prohibited is set.
 
 The result log records the outcome, status, and path prefix. It does not
@@ -167,11 +167,15 @@ def latest_rows(rows: list[dict]) -> list[dict]:
     return list(by_id.values())
 
 
-def targets(include_prohibited: bool, only: set[str] | None) -> list[dict]:
+def targets(include_prohibited: bool, only: set[str] | None, searchable: bool = False) -> list[dict]:
     payload = json.loads(V4_PATH.read_text(encoding="utf-8"))
     rows = []
     for item in payload["brokers"].values():
-        if not item["automation"].get("fully_automatable"):
+        automation = item["automation"]
+        if searchable:
+            if not (item.get("search") or {}).get("available"):
+                continue
+        elif not automation.get("fully_automatable"):
             continue
         if only and item["id"] not in only:
             continue
@@ -377,6 +381,39 @@ def path_prefix(url: str | None) -> str | None:
     if PROFILE_PREFIX.match(prefix):
         return prefix
     return prefix
+
+
+PATH_SLOT = re.compile(r"\{([a-z_]+)\}")
+
+
+def pattern_search_url(record: dict, data: dict[str, str]) -> tuple[str, dict[str, str]] | None:
+    """A results URL the page builds in script, with canonical names in the path.
+
+    `url_pattern` such as https://site/find/{first_name}-{last_name} comes from the rendered page
+    (research/manual/v4-search-forms.json). Query-string patterns are already the form's own GET.
+    """
+    pattern = (record.get("search") or {}).get("url_pattern") or ""
+    path = urlparse(pattern).path
+    slots = PATH_SLOT.findall(path)
+    if not slots:
+        return None
+    values: dict[str, str] = {}
+    for field in record["search"].get("inputs") or []:
+        canon = field_canon(field)
+        name = (field.get("name") or "").strip()
+        if canon and name in data:
+            values[canon] = data[name]
+            values[name] = data[name]
+    filled = path
+    for slot in slots:
+        value = values.get(slot) or VALUES.get(slot) or ""
+        if not value and slot in {"city", "region"}:
+            value = VALUES[slot]
+        if not value:
+            return None
+        filled = filled.replace("{" + slot + "}", re.sub(r"[^A-Za-z0-9]+", "-", value).strip("-"))
+    parsed = urlparse(pattern)
+    return f"{parsed.scheme}://{parsed.netloc}{filled}", {}
 
 
 def direct_search_url(url: str, data: dict[str, str]) -> tuple[str, dict[str, str]] | None:
@@ -684,7 +721,7 @@ def browser_facts(page_url: str, data: dict[str, str]) -> tuple[int | None, str 
                 browser.close()
 
 
-def submit(fetcher: MappingFetcher, record: dict) -> dict:
+def submit(fetcher: MappingFetcher, record: dict, robots_check=None) -> dict:
     search = record["search"]
     base = {
         "id": record["id"],
@@ -721,7 +758,10 @@ def submit(fetcher: MappingFetcher, record: dict) -> dict:
         base["outcome"] = "unfilled"
         base["missing"] = ["widget"]
         return base
-    rewritten = direct_search_url(url, data)
+    rewritten = pattern_search_url(record, data) or direct_search_url(url, data)
+    if robots_check is not None:
+        # Note only: a robots.txt disallow is recorded but does not stop the search.
+        base["robots_disallowed"] = not robots_check((rewritten or (url, None))[0])
     if rewritten:
         url, data = rewritten
         method = "http_get"
@@ -884,11 +924,13 @@ def main() -> int:
     parser.add_argument("--fresh", action="store_true", help="Delete this test log before running. Does not touch v4 brokers.")
     parser.add_argument("--deep", action="store_true", help="Follow loader pages and record a result count. Retries submitted and results rows.")
     parser.add_argument("--fix", action="store_true", help="Retry loaders, forms, and results pages that still have no count.")
+    parser.add_argument("--searchable", action="store_true", help="Target every broker with a stored public search form, not only fully automatable ones. Use with --ids")
+    parser.add_argument("--robots", action="store_true", help="Note whether robots.txt disallows the search URL (robots_disallowed). The search still runs")
     args = parser.parse_args()
     if args.fresh and LOG_PATH.exists():
         LOG_PATH.unlink()
     only = {item.strip() for item in args.ids.split(",") if item.strip()} or None
-    rows = targets(args.include_prohibited, only)
+    rows = targets(args.include_prohibited, only, args.searchable)
     done = load_done(LOG_PATH)
     retry = set(RETRY)
     if args.deep:
@@ -939,7 +981,7 @@ def main() -> int:
     LOG_PATH.parent.mkdir(parents=True, exist_ok=True)
 
     def one(record: dict) -> dict:
-        result = submit(fetcher, record)
+        result = submit(fetcher, record, fetcher.allowed if args.robots else None)
         with lock:
             with LOG_PATH.open("a", encoding="utf-8") as handle:
                 handle.write(json.dumps(result, ensure_ascii=False) + "\n")
