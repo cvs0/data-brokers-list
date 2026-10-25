@@ -4365,5 +4365,195 @@
       ]
     },
     "captcha_widget": false
+  },
+  "dignity-memorial": {
+    "checked": "2026-10-24",
+    "country": null,
+    "country_override": true,
+    "also_covers": [
+      "US",
+      "CA"
+    ],
+    "liveness": "alive",
+    "liveness_detail": "dignitymemorial.com answered HTTP 200 on 2026-10-24. A name search returned records.",
+    "evidence": "Obituary search of the Dignity Memorial funeral home network (Service Corporation International), with Canadian homes on the /en-ca pages. The search box (id SearchTextBox) builds a GET to /en-ca/obituaries with keyword; the results render in the page. No CAPTCHA widget on those result pages. robots.txt disallows /en-ca/obituaries?keyword=*; the page was read anyway at the owner's direction. The privacy policy is linked at https://www.sci-corp.com/privacy-policy, which sits behind a Cloudflare check and was not read; the URL is the Canadian contact page. Nothing was submitted.",
+    "result_check": "Browser-rendered GET /en-ca/obituaries?keyword=Tremblay: \"SHOWING 50 OF MORE THAN 2239 OBITUARIES\" (including Chicoutimi, QC). keyword=Smith: more than 51810. keyword=Zzqxvbn: \"We're sorry, but we didn't find an obituary for zzqxvbn.\". (2026-10-24).",
+    "form": {
+      "method": "http_get",
+      "page_url": "https://www.dignitymemorial.com/en-ca/obituaries",
+      "form_action": "https://www.dignitymemorial.com/en-ca/obituaries",
+      "url_pattern": "https://www.dignitymemorial.com/en-ca/obituaries?keyword={keyword}",
+      "form_id": null,
+      "form_name": null,
+      "submit_label": null,
+      "hidden_names": [],
+      "inputs": [
+        {
+          "name": "keyword",
+          "type": "text",
+          "canonical": "full_name",
+          "required": false,
+          "id": null,
+          "label": null,
+          "placeholder": null
+        }
+      ]
+    },
+    "captcha_widget": false
+  },
+  "interment-net": {
+    "checked": "2026-10-24",
+    "country": null,
+    "country_override": true,
+    "also_covers": [
+      "US",
+      "CA"
+    ],
+    "liveness": "alive",
+    "liveness_detail": "interment.net answered HTTP 200 on 2026-10-24. A name search returned records.",
+    "evidence": "Cemetery burial-record transcriptions (name, dates, cemetery) for the US, Canada, and other countries. Free search is a GET to /search.php with surname; location=Canada&location_slug=canada limits it to Canadian cemeteries. No CAPTCHA widget on those result pages. The URL is the contact page. Nothing was submitted.",
+    "result_check": "GET /search.php?surname=Tremblay&location=Canada&location_slug=canada: \"110 total records found\" (British Columbia and Quebec cemeteries). surname=Smith with the same filter: \"3,393 total records found\". surname=Zzqxvbn: \"No records found matching your criteria.\". (2026-10-24).",
+    "form": {
+      "method": "http_get",
+      "page_url": "https://www.interment.net/search.php",
+      "form_action": "https://www.interment.net/search.php",
+      "url_pattern": "https://www.interment.net/search.php?surname={surname}&location=Canada&location_slug=canada",
+      "form_id": null,
+      "form_name": null,
+      "submit_label": null,
+      "hidden_names": [],
+      "inputs": [
+        {
+          "name": "surname",
+          "type": "text",
+          "canonical": "last_name",
+          "required": false,
+          "id": null,
+          "label": null,
+          "placeholder": null
+        }
+      ]
+    },
+    "captcha_widget": false
+  },
+  "mount-pleasant-group": {
+    "checked": "2026-10-24",
+    "country": "CA",
+    "liveness": "alive",
+    "liveness_detail": "mountpleasantgroup.com answered HTTP 200 on 2026-10-24. A name search returned records.",
+    "evidence": "Toronto-area cemetery and funeral group (Mount Pleasant, York, Pine Hills, Elgin Mills and other sites). Its obituaries page lists notices by name. The page form posts and redirects to a GET on /obituaries-services with searchText, which also works directly. No CAPTCHA widget on those result pages. The privacy policy is at https://www.mountpleasantgroup.com/privacy. Nothing was submitted.",
+    "result_check": "GET /obituaries-services?searchText=Smith: 28 \"View ... Obituary\" links on page 1 and a Next link. searchText=Zzqxvbn: \"No memorials found.\". (2026-10-24).",
+    "form": {
+      "method": "http_get",
+      "page_url": "https://www.mountpleasantgroup.com/obituaries-services",
+      "form_action": "https://www.mountpleasantgroup.com/obituaries-services",
+      "url_pattern": "https://www.mountpleasantgroup.com/obituaries-services?searchText={searchText}",
+      "form_id": null,
+      "form_name": null,
+      "submit_label": "Search",
+      "hidden_names": [],
+      "inputs": [
+        {
+          "name": "searchText",
+          "type": "text",
+          "canonical": "full_name",
+          "required": false,
+          "id": null,
+          "label": null,
+          "placeholder": null
+        }
+      ]
+    },
+    "captcha_widget": false
+  },
+  "kearney-funeral-services": {
+    "checked": "2026-10-24",
+    "country": "CA",
+    "liveness": "alive",
+    "liveness_detail": "kearneyfs.com answered HTTP 200 on 2026-10-24. A name search returned records.",
+    "evidence": "Vancouver, British Columbia funeral home group. Its obituaries page (\"Local obituaries for Vancouver, British Columbia\") filters notices with a GET query parameter; the results render in the page. The page script loads reCAPTCHA for its forms; the search page showed no challenge. The privacy policy is at https://www.kearneyfs.com/privacy-policy. Nothing was submitted.",
+    "result_check": "Browser-rendered GET /obituaries?query=Smith: 10 \"Visit Obituary\" links. query=Zzqxvbn: none. (2026-10-24).",
+    "form": {
+      "method": "http_get",
+      "page_url": "https://www.kearneyfs.com/obituaries",
+      "form_action": "https://www.kearneyfs.com/obituaries",
+      "url_pattern": "https://www.kearneyfs.com/obituaries?query={query}",
+      "form_id": null,
+      "form_name": null,
+      "submit_label": null,
+      "hidden_names": [],
+      "inputs": [
+        {
+          "name": "query",
+          "type": "text",
+          "canonical": "full_name",
+          "required": false,
+          "id": null,
+          "label": null,
+          "placeholder": null
+        }
+      ]
+    },
+    "captcha_widget": false
+  },
+  "basic-funerals": {
+    "checked": "2026-10-24",
+    "country": "CA",
+    "liveness": "alive",
+    "liveness_detail": "basicfunerals.ca answered HTTP 200 on 2026-10-24. A name search returned records.",
+    "evidence": "Ontario funeral and cremation provider with staff in Mississauga, Ottawa, and other offices (southern, central, and eastern Ontario). Its obituaries page filters notices with a GET query parameter; the results render in the page. The page script loads reCAPTCHA for its forms; the search page showed no challenge. The privacy policy is at https://www.basicfunerals.ca/privacy-policy. Nothing was submitted.",
+    "result_check": "Browser-rendered GET /obituaries?query=Smith: 10 \"Visit Obituary\" links. query=Zzqxvbn: none. (2026-10-24).",
+    "form": {
+      "method": "http_get",
+      "page_url": "https://www.basicfunerals.ca/obituaries",
+      "form_action": "https://www.basicfunerals.ca/obituaries",
+      "url_pattern": "https://www.basicfunerals.ca/obituaries?query={query}",
+      "form_id": null,
+      "form_name": null,
+      "submit_label": null,
+      "hidden_names": [],
+      "inputs": [
+        {
+          "name": "query",
+          "type": "text",
+          "canonical": "full_name",
+          "required": false,
+          "id": null,
+          "label": null,
+          "placeholder": null
+        }
+      ]
+    },
+    "captcha_widget": false
+  },
+  "le-necrologue": {
+    "checked": "2026-10-24",
+    "country": "CA",
+    "liveness": "alive",
+    "liveness_detail": "lenecrologue.com answered HTTP 200 on 2026-10-24. A name search returned records.",
+    "evidence": "Canadian death-notice aggregator that republishes notices from funeral homes, in French and English (/necrologie/recherche/ is the French search). Free search is a GET to /obituary/search/ with s. The page loads reCAPTCHA and Cloudflare challenge scripts; the search pages showed no challenge. The privacy policy is at https://www.lenecrologue.com/privacy-policy/. Nothing was submitted.",
+    "result_check": "GET /obituary/search/?s=Tremblay: \"334 avis\" with 12 notice links on page 1. s=Smith: 12 notice links (some match on the funeral home name). s=Zzqxvbn redirects to /obituary/nodata/: \"No obituaries to show\". (2026-10-24).",
+    "form": {
+      "method": "http_get",
+      "page_url": "https://www.lenecrologue.com/obituary/search/",
+      "form_action": "https://www.lenecrologue.com/obituary/search/",
+      "url_pattern": "https://www.lenecrologue.com/obituary/search/?s={s}",
+      "form_id": null,
+      "form_name": null,
+      "submit_label": null,
+      "hidden_names": [],
+      "inputs": [
+        {
+          "name": "s",
+          "type": "text",
+          "canonical": "full_name",
+          "required": false,
+          "id": null,
+          "label": null,
+          "placeholder": null
+        }
+      ]
+    },
+    "captcha_widget": false
   }
 }

@@ -228,6 +228,7 @@ americaphonebook,AmericaPhoneBook,americaphonebook.com,people-search,alive,no_ch
 ancestry,Ancestry,ancestry.com,people-search,alive,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,false,,,,
 archives-com-ancestry,Archives.com (Ancestry),archives.com,people-search,error,phone,The only published channel is a phone number,recaptcha_v2,6LdowFQiAAAAAHzl-2ZUXBdU4BuMx1gIN76GUj78,checkbox,true,recaptcha_v2,,,phone
 background-hawk-truthfinder,Background Hawk (TruthFinder),backgroundhawk.com,people-search,alive,captcha_no_form,A CAPTCHA widget is on the removal page and no form fields or usable email were stored,recaptcha_enterprise,6LdFxVQtAAAAAK6XNodX8W6CM56PH1xTrPGVZSqh,invisible,true,,,,
+basic-funerals,Basic Funerals,basicfunerals.ca,people-search,alive,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,,,,,
 bumper-beenverified-family,Bumper (BeenVerified family),bumper.com,people-search,robots_disallowed,phone_postal,Phone and a mailing address are the only channels,recaptcha_v2,,,false,,,,postal_mail;phone
 callercenter,CallerCenter,callercenter.com,people-search,blocked,bot_wall,The opt-out URL returned a bot wall and a browser retry did not reveal a removal channel,,,,false,,,,
 canada-pages,Canada Pages,canadapages.com,people-search,alive,captcha_form,Removal form is behind a CAPTCHA widget and no usable removal email was found,recaptcha_v2,6LdsTDwUAAAAAJ-EC9YOGnZHYAWSOS5IHoW7GQu7,,,,true,,web_form;postal_mail
@@ -250,6 +251,7 @@ cooperative-funeraire-matawinie-montcalm,Coopérative funéraire Matawinie-Montc
 courtrec-com,CourtRec.com,courtrec.com,people-search,robots_disallowed,generic_inbox,"Only a generic inbox was found, and the page does not say to use it for removal",,,,false,,,support@courtrec.com,email;phone
 cyberbackgroundchecks,CyberBackgroundChecks,cyberbackgroundchecks.com,people-search,robots_disallowed,generic_inbox,"Only a generic inbox was found, and the page does not say to use it for removal",,,,false,,,support@cyberbackgroundchecks.com,email
 dewarrants-org-infotracer-form,dewarrants.org (InfoTracer form),dewarrants.org,people-search,blocked,phone,The only published channel is a phone number,,,,false,,,,phone
+dignity-memorial,Dignity Memorial,dignitymemorial.com,people-search,alive,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,,,,,
 domaine-funeraire,Domaine funéraire (Corporation des thanatologues du Québec),domainefuneraire.com,people-search,alive,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,,,,,
 echovita,Echovita,echovita.com,people-search,alive,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,,,,,
 electronic-voice-services-inc-telephonelists-biz,"Electronic Voice Services, Inc. (telephonelists.biz)",telephonelists.biz,people-search,alive,phone,The only published channel is a phone number,,,,false,,,,phone
@@ -275,8 +277,12 @@ inmemoriam,InMemoriam,inmemoriam.ca,people-search,alive,no_channel,"The page loa
 instantcheckmate-peopleconnect,InstantCheckmate (PeopleConnect),instantcheckmate.com,people-search,alive,phone,The only published channel is a phone number,,,,false,,,,phone
 instantcheckspy-truthfinder,InstantCheckSpy (TruthFinder),instantcheckspy.com,people-search,alive,phone,The only published channel is a phone number,recaptcha_enterprise,6LdFxVQtAAAAAK6XNodX8W6CM56PH1xTrPGVZSqh,invisible,true,,,,phone
 intelius-peopleconnect,Intelius (PeopleConnect),intelius.com,people-search,alive,phone,The only published channel is a phone number,,,,false,,,,phone
+interment-net,Interment.net,interment.net,people-search,alive,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,,,,,
+kearney-funeral-services,Kearney Funeral Services,kearneyfs.com,people-search,alive,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,,,,,
+le-necrologue,Le Nécrologue,lenecrologue.com,people-search,alive,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,,,,,
 locatefamily,LocateFamily,locatefamily.com,people-search,alive,captcha_no_form,A CAPTCHA widget is on the removal page and no form fields or usable email were stored,recaptcha_v2,6LcZ1XsUAAAAACe-4vEKFDHwD0gRVBU7L6_BVPEP,,false,recaptcha_v2,,,
 locatesmarter,LocateSmarter,locatesmarter.com,people-search,alive,captcha_form,Removal form is behind a CAPTCHA widget and no usable removal email was found,recaptcha_v2,6LcRRtQtAAAAAFPgIlBRmX7fNqcujXUGmEoAw07i,checkbox,true,,true,,web_form;phone
+mount-pleasant-group,Mount Pleasant Group,mountpleasantgroup.com,people-search,alive,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,,,,,
 mylife,MyLife,mylife.com,people-search,blocked,portal,An official privacy portal is linked and its fields were not stored,,,,false,,,,official_portal
 national-public-data,National Public Data,nationalpublicdata.com,people-search,blocked,generic_inbox,"Only a generic inbox was found, and the page does not say to use it for removal",,,,false,,,support@nationalpublicdata.com,email
 neighborwho-beenverified-family,NeighborWho (BeenVerified family),neighborwho.com,people-search,robots_disallowed,phone_postal,Phone and a mailing address are the only channels,turnstile,,,false,,,,postal_mail;phone
