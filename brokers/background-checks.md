@@ -2,7 +2,7 @@
 
 Background-check brands and arrest-record portals. A removal here does not erase the government record underneath it.
 
-69 entries. Link responses were checked on 2026-10-01 unless a note says otherwise.
+68 entries. Link responses were checked on 2026-10-01 unless a note says otherwise.
 
 | Broker | Opt-out / privacy URL | Notes |
 | --- | --- | --- |
@@ -58,7 +58,6 @@ Background-check brands and arrest-record portals. A removal here does not erase
 | Pennsylvania Arrests | https://www.pennsylvaniaarrests.org/request-portal | Arrests.org request portal for this state site. The portal URL was responding on 2026-10-01. |
 | PeopleWhizr | https://www.peoplewhizr.com/optout | Opt-out or consumer privacy-request page. |
 | Rhode Island Arrests | https://www.riarrests.org/request-portal | Arrests.org request portal for this state site. The portal URL was responding on 2026-10-01. |
-| Skopenow | https://www.skopenow.com/skopenow-privacy-preferences | Privacy-preferences page for Skopenow investigative search. |
 | South Carolina Arrests | https://www.scarrests.org/request-portal | Arrests.org request portal for this state site. The portal URL was responding on 2026-10-01. |
 | South Dakota Arrests | https://infotracer.com/do-not-sell-share-my-personal-information/ | Name search on this site has no CAPTCHA. Removal is the InfoTracer opt-out. Email: privacy@infotracer.com. Checked 2026-10-13. No search was submitted. |
 | Sterling Data Company LLC | https://sterling.ai/privacy-policy/ | Privacy notice or privacy-policy page. Use the state-rights, do-not-sell, or request section. Automated check on 2026-10-01 got HTTP 403. Open the link in a browser. |

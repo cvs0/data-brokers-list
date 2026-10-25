@@ -47,8 +47,8 @@ A row can list more than one source, for example `persprotect;markup`.
 
 | Category | File | Entries |
 | --- | --- | ---: |
-| `people-search` | [brokers/people-search.md](brokers/people-search.md) | 169 |
-| `background-checks` | [brokers/background-checks.md](brokers/background-checks.md) | 69 |
+| `people-search` | [brokers/people-search.md](brokers/people-search.md) | 170 |
+| `background-checks` | [brokers/background-checks.md](brokers/background-checks.md) | 68 |
 | `marketing` | [brokers/marketing.md](brokers/marketing.md) | 122 |
 | `credit-financial` | [brokers/credit-financial.md](brokers/credit-financial.md) | 18 |
 | `public-records` | [brokers/public-records.md](brokers/public-records.md) | 86 |

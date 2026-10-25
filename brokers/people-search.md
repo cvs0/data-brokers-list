@@ -2,7 +2,7 @@
 
 People-search sites that publish names, phone numbers, relatives, or address history. Many ask for a profile URL and an email confirmation.
 
-169 entries. Link responses were checked on 2026-10-01 unless a note says otherwise.
+170 entries. Link responses were checked on 2026-10-01 unless a note says otherwise.
 
 | Broker | Opt-out / privacy URL | Notes |
 | --- | --- | --- |
@@ -140,6 +140,7 @@ People-search sites that publish names, phone numbers, relatives, or address his
 | SearchPeopleFree.net | https://searchpeoplefree.net/resource/remove-my-info | Per-record web form (Google/Gmail login required). Email: support@searchpeoplefree.net. Open-dataset difficulty: moderate. Automated check on 2026-10-01 got HTTP 403. Open the link in a browser. |
 | SearchQuarry | https://members.searchquarry.com/opt-out | Web form. Open-dataset difficulty: easy. |
 | SearchUSAPeople (InfoTracer) | https://www.searchusapeople.com/data-removal-request/ | Online data-removal form + email verification (InfoTracer network). Open-dataset difficulty: easy. |
+| Skopenow | https://www.skopenow.com/skopenow-privacy-preferences | Privacy-preferences page for Skopenow investigative search. |
 | SmartBackgroundChecks | https://www.smartbackgroundchecks.com/optout | Opt-out form for SmartBackgroundChecks. Automated check on 2026-10-01 got HTTP 403. Open the link in a browser. |
 | Snoopstation (Intelius) | https://www.intelius.com/privacy-center | Opt-out or consumer privacy-request page. Email: support@mailer.intelius.com. Automated check on 2026-10-01 got HTTP 403. Open the link in a browser. |
 | Social Catfish | https://socialcatfish.com/opt-out/ | Opt-out page for profile URLs, emails, phones, and addresses. Email confirmation. |
