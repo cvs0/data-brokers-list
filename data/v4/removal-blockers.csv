@@ -222,6 +222,7 @@ zlookup,Zlookup,zlookup.com,other,alive,captcha_form,Removal form is behind a CA
 411locate,411Locate,411locate.com,people-search,dead,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,false,,,,
 absolute-people-search,Absolute People Search,absolutepeoplesearch.com,people-search,opt_out_missing,phone_postal,Phone and a mailing address are the only channels,recaptcha_v2,6Lcs1CUjAAAAAGboweLdAjYCmgw9I1ofpf6TR32i,,false,recaptcha_v2,,,postal_mail;phone
 advancedbackgroundchecks,AdvancedBackgroundChecks,advancedbackgroundchecks.com,people-search,alive,captcha_form,Removal form is behind a CAPTCHA widget and no usable removal email was found,recaptcha_v2,6LdYzessAAAAACnQqZugXee4rNpMsD-6X1paSkS8,invisible,true,,true,,web_form;phone
+alliance-funeraire-du-royaume,Alliance funéraire du Royaume,afdr.coop,people-search,alive,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,,,,,
 alumni-us,Alumni US,alumnius.net,people-search,alive,captcha_form,Removal form is behind a CAPTCHA widget and no usable removal email was found,recaptcha_v2,6LeJZx8UAAAAAG1Pz-HImpKLjGd-bKLV7BLw7mVf,checkbox,true,,true,,web_form
 americaphonebook,AmericaPhoneBook,americaphonebook.com,people-search,alive,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,false,,,,
 ancestry,Ancestry,ancestry.com,people-search,alive,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,false,,,,
@@ -231,14 +232,25 @@ bumper-beenverified-family,Bumper (BeenVerified family),bumper.com,people-search
 callercenter,CallerCenter,callercenter.com,people-search,blocked,bot_wall,The opt-out URL returned a bot wall and a browser retry did not reveal a removal channel,,,,false,,,,
 canada-pages,Canada Pages,canadapages.com,people-search,alive,captcha_form,Removal form is behind a CAPTCHA widget and no usable removal email was found,recaptcha_v2,6LdsTDwUAAAAAJ-EC9YOGnZHYAWSOS5IHoW7GQu7,,,,true,,web_form;postal_mail
 canada411,Canada411,canada411.ca,people-search,alive,phone,The only published channel is a phone number,,,,false,,,,phone
+canadian-obituaries,Canadian Obituaries,canadianobituaries.com,people-search,alive,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,,,,,
 checkpeople,CheckPeople,checkpeople.com,people-search,robots_disallowed,robots,robots.txt disallows the client. A later read still found no removal channel,,,,false,,,,
 classmates-com,Classmates.com,classmates.com,people-search,blocked,bot_wall,The opt-out URL returned a bot wall and a browser retry did not reveal a removal channel,,,,false,,,,
 cocofinder,CocoFinder,cocofinder.com,people-search,error,fetch_error,The opt-out URL failed before a page was read,,,,false,,,,
 cocofinder-net,CocoFinder.net,cocofinder.net,people-search,error,fetch_error,The opt-out URL failed before a page was read,,,,false,,,,
 confidentialphonelookup,ConfidentialPhoneLookup,confidentialphonelookup.com,people-search,alive,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,false,,,,
+cooperative-funeraire-brunet,Coopérative funéraire Brunet,coopfbrunet.com,people-search,alive,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,,,,,
+cooperative-funeraire-de-l-abitibi,Coopérative funéraire de l'Abitibi,cfa.coop,people-search,alive,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,,,,,
+cooperative-funeraire-de-l-estrie,Coopérative funéraire de l'Estrie,coopfuneraireestrie.com,people-search,alive,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,,,,,
+cooperative-funeraire-de-l-outaouais,Coopérative funéraire de l'Outaouais,cfo.coop,people-search,alive,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,,,,,
+cooperative-funeraire-des-deux-rives,Coopérative funéraire des Deux Rives,coopfuneraire2rives.com,people-search,alive,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,,,,,
+cooperative-funeraire-des-laurentides,Coopérative funéraire des Laurentides,coopfunerairelaurentides.org,people-search,alive,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,,,,,
+cooperative-funeraire-du-grand-montreal,Coopérative funéraire du Grand Montréal,cfgrandmontreal.com,people-search,alive,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,,,,,
+cooperative-funeraire-haute-cote-nord-manicouagan,Coopérative funéraire Haute-Côte-Nord - Manicouagan,cfhcn.ca,people-search,alive,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,,,,,
+cooperative-funeraire-matawinie-montcalm,Coopérative funéraire Matawinie-Montcalm,cfmm.coop,people-search,alive,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,,,,,
 courtrec-com,CourtRec.com,courtrec.com,people-search,robots_disallowed,generic_inbox,"Only a generic inbox was found, and the page does not say to use it for removal",,,,false,,,support@courtrec.com,email;phone
 cyberbackgroundchecks,CyberBackgroundChecks,cyberbackgroundchecks.com,people-search,robots_disallowed,generic_inbox,"Only a generic inbox was found, and the page does not say to use it for removal",,,,false,,,support@cyberbackgroundchecks.com,email
 dewarrants-org-infotracer-form,dewarrants.org (InfoTracer form),dewarrants.org,people-search,blocked,phone,The only published channel is a phone number,,,,false,,,,phone
+domaine-funeraire,Domaine funéraire (Corporation des thanatologues du Québec),domainefuneraire.com,people-search,alive,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,,,,,
 echovita,Echovita,echovita.com,people-search,alive,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,,,,,
 electronic-voice-services-inc-telephonelists-biz,"Electronic Voice Services, Inc. (telephonelists.biz)",telephonelists.biz,people-search,alive,phone,The only published channel is a phone number,,,,false,,,,phone
 facecheck,FaceCheck,facecheck.id,people-search,alive,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,false,,,,
@@ -247,6 +259,7 @@ fastpeoplesearch,FastPeopleSearch,fastpeoplesearch.com,people-search,alive,captc
 fastpeoplesearch-io,FastPeopleSearch.io,fastpeoplesearch.io,people-search,error,fetch_error,The opt-out URL failed before a page was read,,,,false,,,,
 findpeoplefast-net,FindPeopleFast.net,findpeoplefast.net,people-search,robots_disallowed,robots,robots.txt disallows the client. A later read still found no removal channel,,,,false,,,,
 findpeoplesearch,FindPeopleSearch,findpeoplesearch.com,people-search,dead,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,false,,,,
+fqsg-avis-de-deces,FQSG Avis de décès,federationgenealogie.qc.ca,people-search,alive,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,,,,,
 freepeopledirectory-spokeo-data,FreePeopleDirectory (Spokeo data),freepeopledirectory.com,people-search,robots_disallowed,captcha_form,Removal form is behind a CAPTCHA widget and no usable removal email was found,recaptcha_v2,6LdwCOUsAAAAACok53xn1N9qQYsxPqzi1h3fMPqL,,false,,true,,web_form
 freepeoplesearch-com,FreePeopleSearch.com,freepeoplesearch.com,people-search,robots_disallowed,robots,robots.txt disallows the client. A later read still found no removal channel,,,,false,,,,
 freephonetracer-beenverified-form,FreePhoneTracer (BeenVerified form),freephonetracer.com,people-search,robots_disallowed,phone,The only published channel is a phone number,,,,false,,,,phone
@@ -296,6 +309,8 @@ reunion-com-mylife,Reunion.com (MyLife),reunion.com,people-search,blocked,bot_wa
 revealphoneowner,RevealPhoneOwner,revealphoneowner.com,people-search,alive,phone,The only published channel is a phone number,,,,false,,,,phone
 reversephone-whitepages-affiliated,ReversePhone (Whitepages-affiliated),reversephone.com,people-search,blocked,phone_postal,Phone and a mailing address are the only channels,recaptcha_v2,,,false,,,,postal_mail;phone
 reversephonelookup-intelius-peopleconnect,ReversePhoneLookup (Intelius/PeopleConnect),reversephonelookup.com,people-search,opt_out_missing,phone,The only published channel is a phone number,,,,false,,,,phone
+residence-funeraire-lac-st-jean,Résidence funéraire Lac St-Jean,residencefunerairelacstjean.com,people-search,alive,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,,,,,
+residence-funeraire-maska,Résidence Funéraire Maska,rfmaska.coop,people-search,alive,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,,,,,
 searchpeoplefree,SearchPeopleFree,searchpeoplefree.com,people-search,alive,captcha_form,Removal form is behind a CAPTCHA widget and no usable removal email was found,turnstile,0x4AAAAAAC0RR2lieIy55Ucx,checkbox,true,,true,,web_form;phone
 searchpeoplefree-net,SearchPeopleFree.net,searchpeoplefree.net,people-search,robots_disallowed,robots,robots.txt disallows the client. A later read still found no removal channel,,,,false,,,,
 searchquarry,SearchQuarry,searchquarry.com,people-search,robots_disallowed,phone,The only published channel is a phone number,,,,false,,,,phone
