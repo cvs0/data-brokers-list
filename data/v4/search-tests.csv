@@ -1,4 +1,6 @@
 id,domain,outcome,status,method,path_prefix,page_kind,result_count,fields_sent,missing,checked_at
+118000-fr,118000.fr,http_error,404,http_get,search,,,full_name;city,,2026-10-26T10:40:16+00:00
+1881-no,1881.no,submitted,200,http_get,sjoetransport-og-shipping,results,12,full_name,,2026-10-26T10:40:16+00:00
 address-scoop,addressscoop.com,captcha,,http_form_post,,,,,,2026-10-25T03:02:26+00:00
 advancedbackgroundchecks,advancedbackgroundchecks.com,challenge,403,http_get,find,,,first_name;last_name,,2026-10-25T03:18:08+00:00
 affluense-ai,affluense.ai,unfilled,,http_get,,,,full_name;email;phone;domain,Message,2026-10-13T20:03:53+00:00
@@ -28,6 +30,8 @@ californiapharmacists-org-licensedata,californiapharmacists.org,challenge,403,ht
 callapp-software-ltd,callapp.com,results,200,http_get,search-result,results,,code;phone,,2026-10-13T19:43:25+00:00
 campaignmoney-com,campaignmoney.com,submitted,200,http_get,advanced.asp,results,35,last_name;first_name,,2026-10-26T07:59:30+00:00
 canada-pages,canadapages.com,submitted,200,http_get,wp,form,,last_name;city,,2026-10-26T08:01:55+00:00
+canadasunshinelist-ca,canadasunshinelist.ca,submitted,200,http_get,ontario,other,,full_name,,2026-10-26T10:40:16+00:00
+castanet-obituaries,castanet.net,http_error,404,http_get,obituaries,,,full_name,,2026-10-26T10:40:16+00:00
 certn,certn.co,unfilled,,http_form_post,,,,full_name,widget,2026-10-13T20:03:53+00:00
 clearbit,clearbit.com,submitted,200,http_get,hc,form,,full_name,,2026-10-13T19:43:27+00:00
 coloradoresidentdirectory,coloradoresidentdirectory.com,results,200,http_form_post,name,results,,full_name;city,,2026-10-25T03:02:33+00:00
@@ -36,6 +40,7 @@ complete-medical-lists-inc,completemedicallists.com,results,200,http_form_post,m
 connecticut-arrests,ctarrests.org,no_results,200,http_get,results,empty,0,first_name;last_name;region;city;sex,,2026-10-13T19:43:29+00:00
 consumerbase-llc,exactdata.com,challenge,403,http_form_post,submissions,,,first_name;last_name;email;phone,,2026-10-13T19:08:53+00:00
 contractorscalifornia-org-licensedata,contractorscalifornia.org,challenge,403,http_get,licenses,,,full_name,,2026-10-25T03:18:13+00:00
+cooperative-funeraire-des-eaux-vives,eauxvives.ca,submitted,200,http_get,avis-de-deces,form,,full_name,,2026-10-26T10:40:17+00:00
 cooperative-funeraire-du-temiscamingue,cftemiscamingue.com,results,200,http_get,website,results,,full_name,,2026-10-26T08:01:55+00:00
 courtcasefinder,courtcasefinder.com,no_results,200,http_form_post,search,empty,0,first_name;last_name;city;region,,2026-10-13T19:31:14+00:00
 criminal-com-truthfinder,criminal.com,challenge,403,http_get,search,,,first_name;last_name;city;region,,2026-10-13T19:02:04+00:00
@@ -94,6 +99,7 @@ kids-live-safe,kidslivesafe.com,submitted,200,http_get,,form,,full_name,,2026-10
 lead-enhance-llc,lead-enhance.com,unfilled,,http_get,,,,full_name;email;phone,company;message,2026-10-13T20:03:53+00:00
 lead411-corporation,lead411.com,submitted,200,http_get,,other,,full_name,,2026-10-13T19:32:02+00:00
 leadspace-inc,leadspace.com,submitted,200,http_get,hc,form,,full_name,,2026-10-13T19:44:03+00:00
+legacy-com,legacy.com,challenge,403,http_get,obituaries,,,full_name,,2026-10-26T10:40:23+00:00
 libra-memoria,libramemoria.com,submitted,200,http_get,avis,other,,last_name;first_name,,2026-10-25T04:10:08+00:00
 maine-arrests,mainearrests.org,no_results,200,http_get,results,empty,0,first_name;last_name;region;city;sex,,2026-10-13T19:44:04+00:00
 maryland-arrests,marylandarrests.org,no_results,200,http_get,Results,empty,0,first_name;last_name;region;city;sex,,2026-10-13T19:44:06+00:00
@@ -149,13 +155,16 @@ publicinfoservices,publicinfoservices.com,challenge,,browser,people,,,first_name
 publicrecordcom-llc,publicrecord.com,challenge,,browser,,,,first_name;last_name,,2026-10-25T03:05:00+00:00
 publicrecordreports,publicrecordreports.com,challenge,,browser,people,,,full_name,,2026-10-25T03:05:00+00:00
 publicrecords-info,publicrecords.info,submitted,200,http_get,,form,,full_name;region,,2026-10-13T20:48:37+00:00
+publicsalaries-com,publicsalaries.com,submitted,200,http_get,search,form,,full_name,,2026-10-26T10:40:24+00:00
 publicsearcher,publicsearcher.com,results,200,http_get,nameSearch,results,,first_name;last_name;region,,2026-10-13T19:44:23+00:00
 quickpublicrecords,quickpublicrecords.com,challenge,,browser,people,,,full_name,,2026-10-25T03:05:00+00:00
 recentlybooked,recentlybooked.com,submitted,200,http_get,search,form,,region;last_name,,2026-10-26T06:19:59+00:00
 recordsfinder,recordsfinder.com,submitted,200,http_form_post,search,loader,,first_name;last_name;city;region,,2026-10-13T20:48:42+00:00
+remembering-ca,remembering.ca,challenge,403,http_get,obituaries,,,full_name,,2026-10-26T10:40:24+00:00
 revealphoneowner,revealphoneowner.com,submitted,200,http_form_post,search,other,,phone,,2026-10-25T03:03:11+00:00
 sba-loan-data,sbaloandata.org,unfilled,,http_get,,,,,,2026-10-13T20:03:53+00:00
 sealedrecords,sealedrecords.net,results,200,http_get,name,results,,first_name;last_name,,2026-10-13T19:44:24+00:00
+search-ch-tel,search.ch,http_error,404,http_get,tel,,,full_name,,2026-10-26T10:40:28+00:00
 search-systems-directory-of-links,searchsystems.net,submitted,200,http_get,,other,,first_name;last_name;region,,2026-10-13T19:32:46+00:00
 searchbug-inc,searchbug.com,submitted,200,http_get,,form,,full_name;street_address;phone,,2026-10-13T20:48:44+00:00
 searchpeoplefree,searchpeoplefree.com,challenge,403,http_get,find,,,first_name;last_name,,2026-10-25T03:18:23+00:00
@@ -165,6 +174,7 @@ smartbackgroundchecks,smartbackgroundchecks.com,challenge,403,http_get,people,,,
 snoopstation-intelius,snoopstation.com,challenge,403,http_get,search,,,first_name;last_name;city;region,,2026-10-13T19:32:54+00:00
 social-catfish,socialcatfish.com,captcha,,http_get,,,,,,2026-10-25T03:03:27+00:00
 solar-connect-llc,bluefireleads.com,unfilled,,http_form_post,,,,first_name;last_name;email;phone,company;referralSource,2026-10-13T20:03:53+00:00
+sootoday-obituaries,sootoday.com,results,200,http_get,search,results,,full_name,,2026-10-26T10:40:28+00:00
 south-dakota-arrests,sdarrests.org,no_results,200,http_get,results,empty,0,first_name;last_name;region;city;sex,,2026-10-13T19:44:30+00:00
 spectrum-mailing-lists,spectrummailinglists.com,results,200,http_form_post,,results,,full_name;email;phone;email,,2026-10-13T19:44:32+00:00
 spokeo,spokeo.com,no_results,404,http_get,lookup,empty,0,full_name,,2026-10-13T19:32:57+00:00

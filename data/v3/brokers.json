@@ -1,23 +1,23 @@
 {
  "schema_version": "3.0.0",
- "checked_at": "2026-10-26T07:57:59+00:00",
+ "checked_at": "2026-10-26T10:38:53+00:00",
  "method": "Public pages only: homepage, catalog URL, and mapped privacy, contact, and legal links. robots.txt honored. No form submitted, no login, no CAPTCHA solved. A browser opened lookup homepages the static fetch never read, and catalog URLs that were blocked or failed, when robots.txt allowed the URL. Image fields are URLs, not copied files. People-search listing URLs are not stored. Null means the fetched page did not establish that fact. Every catalog id has a record.",
- "broker_count": 764,
+ "broker_count": 774,
  "counts": {
   "liveness": {
-   "alive": 579,
-   "blocked": 39,
+   "alive": 588,
+   "blocked": 40,
    "error": 24,
    "not_checked": 32,
    "opt_out_missing": 5,
    "robots_disallowed": 85
   },
-  "with_logo": 624,
-  "with_image": 624,
-  "with_search": 375,
-  "with_email": 364,
-  "with_captcha": 329,
-  "with_form": 138
+  "with_logo": 633,
+  "with_image": 633,
+  "with_search": 382,
+  "with_email": 368,
+  "with_captcha": 330,
+  "with_form": 141
  },
  "brokers": {
   "alaska-arrests": {
@@ -59314,7 +59314,7 @@
    "name": "Samba TV, Inc.",
    "category": "other",
    "domain": "samba.com",
-   "checked_at": "2026-10-26T07:57:25+00:00",
+   "checked_at": "2026-10-26T10:38:23+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -117432,7 +117432,7 @@
    "name": "Live Data Technologies, Inc.",
    "category": "other",
    "domain": "livedatatech.com",
-   "checked_at": "2026-10-26T07:57:47+00:00",
+   "checked_at": "2026-10-26T10:38:40+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -154295,7 +154295,7 @@
    "name": "Data Axle Canada",
    "category": "marketing",
    "domain": "dataaxlecanada.ca",
-   "checked_at": "2026-10-26T07:57:58+00:00",
+   "checked_at": "2026-10-26T10:38:51+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -154362,7 +154362,7 @@
    "name": "Prospects Influential",
    "category": "marketing",
    "domain": "prospectsinfluential.com",
-   "checked_at": "2026-10-26T07:57:58+00:00",
+   "checked_at": "2026-10-26T10:38:51+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -154429,7 +154429,7 @@
    "name": "Openroom",
    "category": "background-checks",
    "domain": "openroom.ca",
-   "checked_at": "2026-10-26T07:57:58+00:00",
+   "checked_at": "2026-10-26T10:38:51+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -154496,7 +154496,7 @@
    "name": "Landlord Credit Bureau",
    "category": "credit-financial",
    "domain": "landlordcreditbureau.ca",
-   "checked_at": "2026-10-26T07:57:58+00:00",
+   "checked_at": "2026-10-26T10:38:51+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -154563,7 +154563,7 @@
    "name": "FrontLobby",
    "category": "credit-financial",
    "domain": "frontlobby.com",
-   "checked_at": "2026-10-26T07:57:58+00:00",
+   "checked_at": "2026-10-26T10:38:51+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -154630,7 +154630,7 @@
    "name": "Echovita",
    "category": "people-search",
    "domain": "echovita.com",
-   "checked_at": "2026-10-26T07:57:58+00:00",
+   "checked_at": "2026-10-26T10:38:51+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -154697,7 +154697,7 @@
    "name": "InMemoriam",
    "category": "people-search",
    "domain": "inmemoriam.ca",
-   "checked_at": "2026-10-26T07:57:58+00:00",
+   "checked_at": "2026-10-26T10:38:51+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -154764,7 +154764,7 @@
    "name": "Nécrologie.ca",
    "category": "people-search",
    "domain": "necrologie.ca",
-   "checked_at": "2026-10-26T07:57:58+00:00",
+   "checked_at": "2026-10-26T10:38:51+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -154831,7 +154831,7 @@
    "name": "Geni",
    "category": "people-search",
    "domain": "geni.com",
-   "checked_at": "2026-10-26T07:57:58+00:00",
+   "checked_at": "2026-10-26T10:38:51+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -154898,7 +154898,7 @@
    "name": "FQSG Avis de décès",
    "category": "people-search",
    "domain": "federationgenealogie.qc.ca",
-   "checked_at": "2026-10-26T07:57:58+00:00",
+   "checked_at": "2026-10-26T10:38:51+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -154965,7 +154965,7 @@
    "name": "Domaine funéraire (Corporation des thanatologues du Québec)",
    "category": "people-search",
    "domain": "domainefuneraire.com",
-   "checked_at": "2026-10-26T07:57:58+00:00",
+   "checked_at": "2026-10-26T10:38:51+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -155032,7 +155032,7 @@
    "name": "Canadian Obituaries",
    "category": "people-search",
    "domain": "canadianobituaries.com",
-   "checked_at": "2026-10-26T07:57:58+00:00",
+   "checked_at": "2026-10-26T10:38:51+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -155099,7 +155099,7 @@
    "name": "Coopérative funéraire du Grand Montréal",
    "category": "people-search",
    "domain": "cfgrandmontreal.com",
-   "checked_at": "2026-10-26T07:57:58+00:00",
+   "checked_at": "2026-10-26T10:38:51+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -155166,7 +155166,7 @@
    "name": "Coopérative funéraire des Deux Rives",
    "category": "people-search",
    "domain": "coopfuneraire2rives.com",
-   "checked_at": "2026-10-26T07:57:58+00:00",
+   "checked_at": "2026-10-26T10:38:51+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -155233,7 +155233,7 @@
    "name": "Alliance funéraire du Royaume",
    "category": "people-search",
    "domain": "afdr.coop",
-   "checked_at": "2026-10-26T07:57:58+00:00",
+   "checked_at": "2026-10-26T10:38:51+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -155300,7 +155300,7 @@
    "name": "Coopérative funéraire de l'Abitibi",
    "category": "people-search",
    "domain": "cfa.coop",
-   "checked_at": "2026-10-26T07:57:58+00:00",
+   "checked_at": "2026-10-26T10:38:51+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -155367,7 +155367,7 @@
    "name": "Coopérative funéraire Haute-Côte-Nord - Manicouagan",
    "category": "people-search",
    "domain": "cfhcn.ca",
-   "checked_at": "2026-10-26T07:57:58+00:00",
+   "checked_at": "2026-10-26T10:38:51+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -155434,7 +155434,7 @@
    "name": "Coopérative funéraire de l'Outaouais",
    "category": "people-search",
    "domain": "cfo.coop",
-   "checked_at": "2026-10-26T07:57:58+00:00",
+   "checked_at": "2026-10-26T10:38:51+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -155501,7 +155501,7 @@
    "name": "Coopérative funéraire de l'Estrie",
    "category": "people-search",
    "domain": "coopfuneraireestrie.com",
-   "checked_at": "2026-10-26T07:57:58+00:00",
+   "checked_at": "2026-10-26T10:38:51+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -155568,7 +155568,7 @@
    "name": "Résidence funéraire Lac St-Jean",
    "category": "people-search",
    "domain": "residencefunerairelacstjean.com",
-   "checked_at": "2026-10-26T07:57:58+00:00",
+   "checked_at": "2026-10-26T10:38:51+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -155635,7 +155635,7 @@
    "name": "Coopérative funéraire Brunet",
    "category": "people-search",
    "domain": "coopfbrunet.com",
-   "checked_at": "2026-10-26T07:57:58+00:00",
+   "checked_at": "2026-10-26T10:38:51+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -155702,7 +155702,7 @@
    "name": "Coopérative funéraire Matawinie-Montcalm",
    "category": "people-search",
    "domain": "cfmm.coop",
-   "checked_at": "2026-10-26T07:57:58+00:00",
+   "checked_at": "2026-10-26T10:38:51+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -155769,7 +155769,7 @@
    "name": "Coopérative funéraire des Laurentides",
    "category": "people-search",
    "domain": "coopfunerairelaurentides.org",
-   "checked_at": "2026-10-26T07:57:58+00:00",
+   "checked_at": "2026-10-26T10:38:51+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -155836,7 +155836,7 @@
    "name": "Résidence Funéraire Maska",
    "category": "people-search",
    "domain": "rfmaska.coop",
-   "checked_at": "2026-10-26T07:57:58+00:00",
+   "checked_at": "2026-10-26T10:38:51+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -155903,7 +155903,7 @@
    "name": "Dignity Memorial",
    "category": "people-search",
    "domain": "dignitymemorial.com",
-   "checked_at": "2026-10-26T07:57:58+00:00",
+   "checked_at": "2026-10-26T10:38:51+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -155970,7 +155970,7 @@
    "name": "Interment.net",
    "category": "people-search",
    "domain": "interment.net",
-   "checked_at": "2026-10-26T07:57:58+00:00",
+   "checked_at": "2026-10-26T10:38:51+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -156037,7 +156037,7 @@
    "name": "Mount Pleasant Group",
    "category": "people-search",
    "domain": "mountpleasantgroup.com",
-   "checked_at": "2026-10-26T07:57:58+00:00",
+   "checked_at": "2026-10-26T10:38:51+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -156104,7 +156104,7 @@
    "name": "Kearney Funeral Services",
    "category": "people-search",
    "domain": "kearneyfs.com",
-   "checked_at": "2026-10-26T07:57:58+00:00",
+   "checked_at": "2026-10-26T10:38:51+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -156171,7 +156171,7 @@
    "name": "Basic Funerals",
    "category": "people-search",
    "domain": "basicfunerals.ca",
-   "checked_at": "2026-10-26T07:57:58+00:00",
+   "checked_at": "2026-10-26T10:38:51+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -156238,7 +156238,7 @@
    "name": "Le Nécrologue",
    "category": "people-search",
    "domain": "lenecrologue.com",
-   "checked_at": "2026-10-26T07:57:58+00:00",
+   "checked_at": "2026-10-26T10:38:51+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -160019,6 +160019,1589 @@
      "role": "catalog",
      "title": "",
      "liveness": "robots_disallowed"
+    }
+   ]
+  },
+  "cooperative-funeraire-des-eaux-vives": {
+   "schema_version": "3.0.0",
+   "id": "cooperative-funeraire-des-eaux-vives",
+   "name": "Coopérative funéraire des Eaux Vives",
+   "category": "people-search",
+   "domain": "eauxvives.ca",
+   "checked_at": "2026-10-26T10:37:49+00:00",
+   "liveness": "alive",
+   "liveness_detail": "catalog URL loaded",
+   "homepage": "https://eauxvives.ca/",
+   "logo_url": "https://eauxvives.ca/web/image/website/1/logo/Coop%C3%A9rative%20fun%C3%A9raire%20des%20Eaux%20Vives?unique=47535a3",
+   "images": [
+    {
+     "url": "https://eauxvives.ca/web/image/website/1/favicon?unique=47535a3",
+     "kind": "apple_touch_icon",
+     "source_page": "https://eauxvives.ca/"
+    },
+    {
+     "url": "https://eauxvives.ca/web/image/website/1/logo",
+     "kind": "og_image",
+     "source_page": "https://eauxvives.ca/"
+    },
+    {
+     "url": "https://eauxvives.ca/web/image/website/1/logo/Coop%C3%A9rative%20fun%C3%A9raire%20des%20Eaux%20Vives?unique=47535a3",
+     "kind": "logo",
+     "source_page": "https://eauxvives.ca/"
+    },
+    {
+     "url": "https://eauxvives.ca/web/image/website/1/logo?unique=47535a3",
+     "kind": "og_image",
+     "source_page": "https://eauxvives.ca/nous-joindre"
+    },
+    {
+     "url": "https://eauxvives.ca/web/image/website/1/logo/300x300?unique=47535a3",
+     "kind": "twitter_image",
+     "source_page": "https://eauxvives.ca/nous-joindre"
+    }
+   ],
+   "theme_color": null,
+   "languages": [
+    "fr"
+   ],
+   "legal_name": null,
+   "search": {
+    "available": true,
+    "method": "http_get",
+    "page_url": "https://eauxvives.ca/",
+    "form_action": "https://eauxvives.ca/website/search",
+    "inputs": [
+     {
+      "name": "search",
+      "type": "search",
+      "canonical": "full_name",
+      "required": false,
+      "autocomplete": null,
+      "placeholder": "Rechercher…"
+     },
+     {
+      "name": "order",
+      "type": "hidden",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     }
+    ],
+    "url_pattern": "https://eauxvives.ca/website/search?search={search}",
+    "directory_prefixes": [],
+    "paywall": null,
+    "login_wall": null
+   },
+   "removal": {
+    "url": "https://eauxvives.ca/nous-joindre",
+    "final_url": "https://eauxvives.ca/nous-joindre",
+    "http_status": 200,
+    "kinds": [
+     "opt_out"
+    ],
+    "channels": [
+     "phone"
+    ],
+    "emails": [],
+    "phones": [
+     "418 862-2751"
+    ],
+    "postal_address": null,
+    "portal": null,
+    "form_fields": [],
+    "csrf_field_name": null,
+    "requires_profile_url": null,
+    "captcha": {
+     "provider": null,
+     "sitekey": null,
+     "pages": []
+    },
+    "consent_vendor": null,
+    "success_text": null,
+    "suppression_not_deletion": null,
+    "processing_days": null,
+    "processing_text": null
+   },
+   "bot_defense": {
+    "vendor": null,
+    "outcome": "none"
+   },
+   "legal": {
+    "privacy_policy_url": null,
+    "terms_url": null,
+    "automation_prohibited": null,
+    "automation_clause": null,
+    "residency": [
+     "CA-QC"
+    ],
+    "authorized_agent": null,
+    "data_categories": []
+   },
+   "pages": [
+    {
+     "url": "https://eauxvives.ca/",
+     "final_url": "https://eauxvives.ca/",
+     "status": 200,
+     "role": "home",
+     "title": "Accueil | Coopérative funéraire des Eaux Vives",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.eauxvives.ca/",
+     "final_url": "https://eauxvives.ca/",
+     "status": 200,
+     "role": "home",
+     "title": "Accueil | Coopérative funéraire des Eaux Vives",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://eauxvives.ca/nous-joindre",
+     "final_url": "https://eauxvives.ca/nous-joindre",
+     "status": 200,
+     "role": "catalog",
+     "title": "Contact Us | Coopérative funéraire des Eaux Vives",
+     "liveness": "alive"
+    }
+   ]
+  },
+  "castanet-obituaries": {
+   "schema_version": "3.0.0",
+   "id": "castanet-obituaries",
+   "name": "Castanet Obituaries",
+   "category": "people-search",
+   "domain": "castanet.net",
+   "checked_at": "2026-10-26T10:37:51+00:00",
+   "liveness": "alive",
+   "liveness_detail": "catalog URL loaded",
+   "homepage": "https://www.castanet.net/",
+   "logo_url": "https://www.castanet.net/img/mh/castanet-canada3.png",
+   "images": [
+    {
+     "url": "https://www.castanet.net/main_images/logos/KelownaLogos/Castanet-Logo.png",
+     "kind": "og_image",
+     "source_page": "https://www.castanet.net/"
+    },
+    {
+     "url": "https://www.castanet.net/img/mh/castanet-canada3.png",
+     "kind": "logo",
+     "source_page": "https://www.castanet.net/"
+    },
+    {
+     "url": "https://www.castanet.net/img/mh/logo.e0bd1e4c.svg",
+     "kind": "logo",
+     "source_page": "https://www.castanet.net/"
+    },
+    {
+     "url": "https://www.castanet.net/img/mh/castanet-logo.svg",
+     "kind": "logo",
+     "source_page": "https://www.castanet.net/"
+    },
+    {
+     "url": "https://www.castanet.net/images/contactus/cu1.jpg",
+     "kind": "logo",
+     "source_page": "https://www.castanet.net/contactus/"
+    },
+    {
+     "url": "https://www.castanet.net/images/okanagan-edge-logo3.png",
+     "kind": "logo",
+     "source_page": "https://www.castanet.net/contactus/"
+    },
+    {
+     "url": "https://www.castanet.net/images/contactus/cu3.jpg",
+     "kind": "logo",
+     "source_page": "https://www.castanet.net/contactus/"
+    },
+    {
+     "url": "https://www.castanet.net/images/contactus/google.jpg",
+     "kind": "logo",
+     "source_page": "https://www.castanet.net/contactus/"
+    },
+    {
+     "url": "https://www.castanet.net/images/contactus/logo.jpg",
+     "kind": "logo",
+     "source_page": "https://www.castanet.net/contactus/"
+    },
+    {
+     "url": "https://www.castanet.net/images/contactus/community.jpg",
+     "kind": "logo",
+     "source_page": "https://www.castanet.net/contactus/"
+    },
+    {
+     "url": "https://www.castanet.net/images/contactus/standards.jpg",
+     "kind": "logo",
+     "source_page": "https://www.castanet.net/contactus/"
+    },
+    {
+     "url": "https://www.castanet.net/img/canada-logo-for-pgc.jpg",
+     "kind": "logo",
+     "source_page": "https://www.castanet.net/contactus/"
+    }
+   ],
+   "theme_color": null,
+   "languages": [
+    "en"
+   ],
+   "legal_name": null,
+   "search": {
+    "available": true,
+    "method": "http_get",
+    "page_url": "https://www.castanet.net/",
+    "form_action": "https://www.google.com/search",
+    "inputs": [
+     {
+      "name": "q",
+      "type": "text",
+      "canonical": "full_name",
+      "required": false,
+      "autocomplete": "off",
+      "placeholder": "Google"
+     }
+    ],
+    "url_pattern": "https://www.google.com/search?q={q}",
+    "directory_prefixes": [],
+    "paywall": null,
+    "login_wall": null
+   },
+   "removal": {
+    "url": "https://www.castanet.net/contactus/",
+    "final_url": "https://www.castanet.net/contactus/",
+    "http_status": 200,
+    "kinds": [
+     "opt_out"
+    ],
+    "channels": [
+     "web_form",
+     "email",
+     "phone"
+    ],
+    "emails": [
+     {
+      "email": "news@castanet.net",
+      "confidence": "uncertain",
+      "source_url": "https://www.castanet.net/"
+     },
+     {
+      "email": "classifieds@castanet.net",
+      "confidence": "uncertain",
+      "source_url": "https://www.castanet.net/contactus/"
+     },
+     {
+      "email": "forums@castanet.net",
+      "confidence": "uncertain",
+      "source_url": "https://www.castanet.net/contactus/"
+     },
+     {
+      "email": "letters@castanet.net",
+      "confidence": "uncertain",
+      "source_url": "https://www.castanet.net/contactus/"
+     },
+     {
+      "email": "sales@castanet.net",
+      "confidence": "uncertain",
+      "source_url": "https://www.castanet.net/contactus/"
+     }
+    ],
+    "phones": [
+     "250-860-5050"
+    ],
+    "postal_address": null,
+    "portal": null,
+    "form_fields": [
+     {
+      "name": "name",
+      "type": "text",
+      "canonical": "full_name",
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "email",
+      "type": "text",
+      "canonical": "email",
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "username",
+      "type": "text",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "phone",
+      "type": "text",
+      "canonical": "phone",
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "department",
+      "type": "select",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null,
+      "options": [
+       "Select Department",
+       "classifieds@castanet.net",
+       "news@castanet.net",
+       "news2@castanet.net",
+       "news1@castanet.net",
+       "forums@castanet.net",
+       "sales@castanet.net",
+       "management@castanet.net",
+       "support@castanet.net",
+       "heather@castanet.net"
+      ]
+     },
+     {
+      "name": "subject",
+      "type": "text",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "message",
+      "type": "text",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     }
+    ],
+    "csrf_field_name": null,
+    "requires_profile_url": null,
+    "captcha": {
+     "provider": "turnstile",
+     "sitekey": "0x4AAAAAAADpU7JZMPJXot_O",
+     "pages": [
+      "https://www.castanet.net/contactus/"
+     ]
+    },
+    "consent_vendor": null,
+    "success_text": null,
+    "suppression_not_deletion": null,
+    "processing_days": null,
+    "processing_text": null
+   },
+   "bot_defense": {
+    "vendor": null,
+    "outcome": "none"
+   },
+   "legal": {
+    "privacy_policy_url": null,
+    "terms_url": null,
+    "automation_prohibited": null,
+    "automation_clause": null,
+    "residency": [
+     "US",
+     "CA-BC"
+    ],
+    "authorized_agent": null,
+    "data_categories": [
+     "identifiers",
+     "employment"
+    ]
+   },
+   "pages": [
+    {
+     "url": "https://castanet.net/",
+     "final_url": "https://www.castanet.net/",
+     "status": 200,
+     "role": "home",
+     "title": "Castanet.net - Kelowna's Homepage",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.castanet.net/",
+     "final_url": "https://www.castanet.net/",
+     "status": 200,
+     "role": "home",
+     "title": "Castanet.net - Kelowna's Homepage",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.castanet.net/contactus/",
+     "final_url": "https://www.castanet.net/contactus/",
+     "status": 200,
+     "role": "catalog",
+     "title": "About Castanet",
+     "liveness": "alive"
+    }
+   ]
+  },
+  "remembering-ca": {
+   "schema_version": "3.0.0",
+   "id": "remembering-ca",
+   "name": "Remembering.ca (Postmedia Obituaries)",
+   "category": "people-search",
+   "domain": "remembering.ca",
+   "checked_at": "2026-10-26T10:37:50+00:00",
+   "liveness": "blocked",
+   "liveness_detail": "catalog URL returned a bot wall or HTTP 401/403/429/503",
+   "homepage": "https://www.remembering.ca/",
+   "logo_url": null,
+   "images": [],
+   "theme_color": null,
+   "languages": [],
+   "legal_name": null,
+   "search": {
+    "available": null,
+    "method": "unknown",
+    "page_url": null,
+    "form_action": null,
+    "inputs": [],
+    "url_pattern": null,
+    "directory_prefixes": [],
+    "paywall": null,
+    "login_wall": null
+   },
+   "removal": {
+    "url": "https://www.remembering.ca/static/support",
+    "final_url": "https://www.remembering.ca/static/support",
+    "http_status": 403,
+    "kinds": [
+     "opt_out"
+    ],
+    "channels": [],
+    "emails": [],
+    "phones": [],
+    "postal_address": null,
+    "portal": null,
+    "form_fields": [],
+    "csrf_field_name": null,
+    "requires_profile_url": null,
+    "captcha": {
+     "provider": null,
+     "sitekey": null,
+     "pages": []
+    },
+    "consent_vendor": null,
+    "success_text": null,
+    "suppression_not_deletion": null,
+    "processing_days": null,
+    "processing_text": null
+   },
+   "bot_defense": {
+    "vendor": "cloudflare",
+    "outcome": "hard_block"
+   },
+   "legal": {
+    "privacy_policy_url": null,
+    "terms_url": null,
+    "automation_prohibited": null,
+    "automation_clause": null,
+    "residency": [],
+    "authorized_agent": null,
+    "data_categories": []
+   },
+   "pages": [
+    {
+     "url": "https://remembering.ca/",
+     "final_url": "https://www.remembering.ca/",
+     "status": 403,
+     "role": "home",
+     "title": "Just a moment...",
+     "liveness": "blocked"
+    },
+    {
+     "url": "https://www.remembering.ca/",
+     "final_url": "https://www.remembering.ca/",
+     "status": 403,
+     "role": "home",
+     "title": "Just a moment...",
+     "liveness": "blocked"
+    },
+    {
+     "url": "https://www.remembering.ca/static/support",
+     "final_url": "https://www.remembering.ca/static/support",
+     "status": 403,
+     "role": "catalog",
+     "title": "Just a moment...",
+     "liveness": "blocked"
+    }
+   ]
+  },
+  "sootoday-obituaries": {
+   "schema_version": "3.0.0",
+   "id": "sootoday-obituaries",
+   "name": "SooToday Obituaries (Village Media)",
+   "category": "people-search",
+   "domain": "sootoday.com",
+   "checked_at": "2026-10-26T10:37:57+00:00",
+   "liveness": "alive",
+   "liveness_detail": "catalog URL loaded",
+   "homepage": "https://www.sootoday.com/",
+   "logo_url": "https://www.vmcdn.ca/files/sootoday/layout/sootoday_white.svg",
+   "images": [
+    {
+     "url": "https://www.vmcdn.ca/files/ui/icons/fav/sudbury/at.png",
+     "kind": "apple_touch_icon",
+     "source_page": "https://www.sootoday.com/"
+    },
+    {
+     "url": "https://www.vmcdn.ca/files/ui/icons/fav/sudbury/96.png",
+     "kind": "icon",
+     "source_page": "https://www.sootoday.com/"
+    },
+    {
+     "url": "https://www.vmcdn.ca/files/ui/icons/fav/sudbury/favicon.svg",
+     "kind": "icon",
+     "source_page": "https://www.sootoday.com/"
+    },
+    {
+     "url": "https://www.vmcdn.ca/files/ui/icons/fav/sudbury/favicon.ico",
+     "kind": "icon",
+     "source_page": "https://www.sootoday.com/"
+    },
+    {
+     "url": "https://www.vmcdn.ca/f/files/sootoday/images/st_1200x628.png",
+     "kind": "og_image",
+     "source_page": "https://www.sootoday.com/"
+    },
+    {
+     "url": "https://www.vmcdn.ca/files/sootoday/layout/sootoday_white.svg",
+     "kind": "logo",
+     "source_page": "https://www.sootoday.com/"
+    },
+    {
+     "url": "https://www.vmcdn.ca/f/files/shared/corporate-logos/medicine_shoppe.png;w=300;h=300;bgcolor=f5f5f5",
+     "kind": "logo",
+     "source_page": "https://www.sootoday.com/"
+    },
+    {
+     "url": "https://www.vmcdn.ca/f/files/shared/daily/local-newsletter/logo/soo.png;w=200",
+     "kind": "logo",
+     "source_page": "https://www.sootoday.com/"
+    },
+    {
+     "url": "https://www.vmcdn.ca/files/sootoday/layout/sootoday_white.png",
+     "kind": "og_image",
+     "source_page": "https://www.sootoday.com/privacy-policy"
+    }
+   ],
+   "theme_color": "#ffffff",
+   "languages": [
+    "en"
+   ],
+   "legal_name": null,
+   "search": {
+    "available": true,
+    "method": "http_get",
+    "page_url": "https://www.sootoday.com/",
+    "form_action": "https://www.sootoday.com/search",
+    "inputs": [
+     {
+      "name": "search",
+      "type": "radio",
+      "canonical": "full_name",
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "search",
+      "type": "radio",
+      "canonical": "full_name",
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "search",
+      "type": "radio",
+      "canonical": "full_name",
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "search",
+      "type": "radio",
+      "canonical": "full_name",
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "q",
+      "type": "search",
+      "canonical": "full_name",
+      "required": false,
+      "autocomplete": null,
+      "placeholder": "search site"
+     }
+    ],
+    "url_pattern": "https://www.sootoday.com/search?search={search}&search={search}&search={search}&search={search}&q={q}",
+    "directory_prefixes": [],
+    "paywall": null,
+    "login_wall": null
+   },
+   "removal": {
+    "url": "https://www.sootoday.com/privacy-policy",
+    "final_url": "https://www.sootoday.com/privacy-policy",
+    "http_status": 200,
+    "kinds": [
+     "opt_out"
+    ],
+    "channels": [],
+    "emails": [],
+    "phones": [],
+    "postal_address": null,
+    "portal": null,
+    "form_fields": [],
+    "csrf_field_name": null,
+    "requires_profile_url": null,
+    "captcha": {
+     "provider": null,
+     "sitekey": null,
+     "pages": []
+    },
+    "consent_vendor": null,
+    "success_text": null,
+    "suppression_not_deletion": null,
+    "processing_days": null,
+    "processing_text": null
+   },
+   "bot_defense": {
+    "vendor": null,
+    "outcome": "none"
+   },
+   "legal": {
+    "privacy_policy_url": "https://www.sootoday.com/privacy-policy",
+    "terms_url": null,
+    "automation_prohibited": null,
+    "automation_clause": null,
+    "residency": [],
+    "authorized_agent": null,
+    "data_categories": [
+     "identifiers"
+    ]
+   },
+   "pages": [
+    {
+     "url": "https://sootoday.com/",
+     "final_url": "https://www.sootoday.com/",
+     "status": 200,
+     "role": "home",
+     "title": "Sault Ste. Marie's Local News - Sault Ste. Marie News",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.sootoday.com/",
+     "final_url": "https://www.sootoday.com/",
+     "status": 200,
+     "role": "home",
+     "title": "Sault Ste. Marie's Local News - Sault Ste. Marie News",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.sootoday.com/privacy-policy",
+     "final_url": "https://www.sootoday.com/privacy-policy",
+     "status": 200,
+     "role": "catalog",
+     "title": "Privacy Policy for SooToday.com - Sault Ste. Marie News",
+     "liveness": "alive"
+    }
+   ]
+  },
+  "publicsalaries-com": {
+   "schema_version": "3.0.0",
+   "id": "publicsalaries-com",
+   "name": "PublicSalaries.com",
+   "category": "public-records",
+   "domain": "publicsalaries.com",
+   "checked_at": "2026-10-26T10:37:49+00:00",
+   "liveness": "alive",
+   "liveness_detail": "catalog URL loaded",
+   "homepage": "https://publicsalaries.com/",
+   "logo_url": "https://publicsalaries.com/logo.png",
+   "images": [
+    {
+     "url": "https://publicsalaries.com/favicon.png",
+     "kind": "icon",
+     "source_page": "https://publicsalaries.com/"
+    },
+    {
+     "url": "https://publicsalaries.com/apple-touch-icon.png",
+     "kind": "apple_touch_icon",
+     "source_page": "https://publicsalaries.com/"
+    },
+    {
+     "url": "https://publicsalaries.com/og.png",
+     "kind": "og_image",
+     "source_page": "https://publicsalaries.com/"
+    },
+    {
+     "url": "https://publicsalaries.com/logo.png",
+     "kind": "logo",
+     "source_page": "https://publicsalaries.com/"
+    }
+   ],
+   "theme_color": "#15191b",
+   "languages": [
+    "en"
+   ],
+   "legal_name": "PublicSalaries",
+   "search": {
+    "available": true,
+    "method": "http_get",
+    "page_url": "https://publicsalaries.com/",
+    "form_action": "https://publicsalaries.com/search/",
+    "inputs": [
+     {
+      "name": "q",
+      "type": "search",
+      "canonical": "full_name",
+      "required": false,
+      "autocomplete": "off",
+      "placeholder": "Name, employer or job"
+     }
+    ],
+    "url_pattern": "https://publicsalaries.com/search/?q={q}",
+    "directory_prefixes": [],
+    "paywall": null,
+    "login_wall": null
+   },
+   "removal": {
+    "url": "https://publicsalaries.com/privacy/",
+    "final_url": "https://publicsalaries.com/privacy/",
+    "http_status": 200,
+    "kinds": [
+     "opt_out"
+    ],
+    "channels": [
+     "email"
+    ],
+    "emails": [
+     {
+      "email": "corrections@publicsalaries.com",
+      "confidence": "uncertain",
+      "source_url": "https://publicsalaries.com/privacy/"
+     }
+    ],
+    "phones": [],
+    "postal_address": null,
+    "portal": null,
+    "form_fields": [],
+    "csrf_field_name": null,
+    "requires_profile_url": null,
+    "captcha": {
+     "provider": null,
+     "sitekey": null,
+     "pages": []
+    },
+    "consent_vendor": null,
+    "success_text": null,
+    "suppression_not_deletion": null,
+    "processing_days": null,
+    "processing_text": null
+   },
+   "bot_defense": {
+    "vendor": null,
+    "outcome": "none"
+   },
+   "legal": {
+    "privacy_policy_url": "https://publicsalaries.com/privacy/",
+    "terms_url": null,
+    "automation_prohibited": null,
+    "automation_clause": null,
+    "residency": [
+     "CA-BC"
+    ],
+    "authorized_agent": null,
+    "data_categories": [
+     "identifiers",
+     "employment"
+    ]
+   },
+   "pages": [
+    {
+     "url": "https://publicsalaries.com/",
+     "final_url": "https://publicsalaries.com/",
+     "status": 200,
+     "role": "home",
+     "title": "Canada’s Sunshine Lists: search 553,677 public sector salaries | PublicSalaries",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.publicsalaries.com/",
+     "final_url": "https://publicsalaries.com/",
+     "status": 200,
+     "role": "home",
+     "title": "Canada’s Sunshine Lists: search 553,677 public sector salaries | PublicSalaries",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://publicsalaries.com/privacy/",
+     "final_url": "https://publicsalaries.com/privacy/",
+     "status": 200,
+     "role": "catalog",
+     "title": "Privacy and corrections | PublicSalaries",
+     "liveness": "alive"
+    }
+   ]
+  },
+  "canadasunshinelist-ca": {
+   "schema_version": "3.0.0",
+   "id": "canadasunshinelist-ca",
+   "name": "Canada Sunshine List (canadasunshinelist.ca)",
+   "category": "public-records",
+   "domain": "canadasunshinelist.ca",
+   "checked_at": "2026-10-26T10:37:55+00:00",
+   "liveness": "alive",
+   "liveness_detail": "catalog URL loaded",
+   "homepage": "https://www.canadasunshinelist.ca/",
+   "logo_url": "https://www.canadasunshinelist.ca/app-icon-512.png",
+   "images": [
+    {
+     "url": "https://www.canadasunshinelist.ca/logo.svg",
+     "kind": "icon",
+     "source_page": "https://www.canadasunshinelist.ca/"
+    },
+    {
+     "url": "https://www.canadasunshinelist.ca/favicon-32.png",
+     "kind": "icon",
+     "source_page": "https://www.canadasunshinelist.ca/"
+    },
+    {
+     "url": "https://www.canadasunshinelist.ca/favicon-192.png",
+     "kind": "icon",
+     "source_page": "https://www.canadasunshinelist.ca/"
+    },
+    {
+     "url": "https://www.canadasunshinelist.ca/app-icon-512.png",
+     "kind": "apple_touch_icon",
+     "source_page": "https://www.canadasunshinelist.ca/"
+    },
+    {
+     "url": "https://www.canadasunshinelist.ca/social-default.png",
+     "kind": "og_image",
+     "source_page": "https://www.canadasunshinelist.ca/"
+    }
+   ],
+   "theme_color": "#e7ebf2",
+   "languages": [
+    "en"
+   ],
+   "legal_name": "Canada Sunshine List",
+   "search": {
+    "available": false,
+    "method": "none",
+    "page_url": null,
+    "form_action": null,
+    "inputs": [],
+    "url_pattern": null,
+    "directory_prefixes": [],
+    "paywall": null,
+    "login_wall": null
+   },
+   "removal": {
+    "url": "https://www.canadasunshinelist.ca/removal",
+    "final_url": "https://www.canadasunshinelist.ca/removal",
+    "http_status": 200,
+    "kinds": [
+     "opt_out"
+    ],
+    "channels": [
+     "web_form"
+    ],
+    "emails": [],
+    "phones": [],
+    "postal_address": null,
+    "portal": null,
+    "form_fields": [
+     {
+      "name": "nl-email",
+      "type": "email",
+      "canonical": "email",
+      "required": true,
+      "autocomplete": "email",
+      "placeholder": "your@email.com"
+     },
+     {
+      "name": "website",
+      "type": "text",
+      "canonical": null,
+      "required": false,
+      "autocomplete": "off",
+      "placeholder": null
+     }
+    ],
+    "csrf_field_name": null,
+    "requires_profile_url": null,
+    "captcha": {
+     "provider": null,
+     "sitekey": null,
+     "pages": []
+    },
+    "consent_vendor": null,
+    "success_text": null,
+    "suppression_not_deletion": null,
+    "processing_days": null,
+    "processing_text": null
+   },
+   "bot_defense": {
+    "vendor": null,
+    "outcome": "none"
+   },
+   "legal": {
+    "privacy_policy_url": null,
+    "terms_url": null,
+    "automation_prohibited": null,
+    "automation_clause": null,
+    "residency": [
+     "CA-BC"
+    ],
+    "authorized_agent": null,
+    "data_categories": [
+     "identifiers",
+     "employment"
+    ]
+   },
+   "pages": [
+    {
+     "url": "https://canadasunshinelist.ca/",
+     "final_url": "https://www.canadasunshinelist.ca/",
+     "status": 200,
+     "role": "home",
+     "title": "Canada Sunshine List 2026 — Search Public Salaries",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.canadasunshinelist.ca/",
+     "final_url": "https://www.canadasunshinelist.ca/",
+     "status": 200,
+     "role": "home",
+     "title": "Canada Sunshine List 2026 — Search Public Salaries",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.canadasunshinelist.ca/removal",
+     "final_url": "https://www.canadasunshinelist.ca/removal",
+     "status": 200,
+     "role": "catalog",
+     "title": "Remove Your Name — Canada Sunshine List",
+     "liveness": "alive"
+    }
+   ]
+  },
+  "legacy-com": {
+   "schema_version": "3.0.0",
+   "id": "legacy-com",
+   "name": "Legacy.com",
+   "category": "people-search",
+   "domain": "legacy.com",
+   "checked_at": "2026-10-26T10:37:50+00:00",
+   "liveness": "alive",
+   "liveness_detail": "catalog URL redirected and the final page loaded",
+   "homepage": "https://www.legacy.com/",
+   "logo_url": "https://cdn.legacy.com/next-builds/1792691011672/legacy_logo.png",
+   "images": [
+    {
+     "url": "https://framerusercontent.com/images/NMciAS271tXLLOBkPkWEmC41Og.svg",
+     "kind": "icon",
+     "source_page": "https://www.legacy.com/"
+    },
+    {
+     "url": "https://framerusercontent.com/images/AeZjDu2uF1ph4FQIcbVhuHKNv0.jpg",
+     "kind": "og_image",
+     "source_page": "https://www.legacy.com/"
+    },
+    {
+     "url": "https://www.legacy.com/media/legacy-icon.svg",
+     "kind": "json_ld",
+     "source_page": "https://www.legacy.com/"
+    },
+    {
+     "url": "https://cdn.legacy.com/next-builds/1792691011672/favicon.ico",
+     "kind": "icon",
+     "source_page": "https://www.legacy.com/privacy-policy"
+    },
+    {
+     "url": "https://cdn.legacy.com/next-builds/1792691011672/legacy_logo.png",
+     "kind": "logo",
+     "source_page": "https://www.legacy.com/privacy-policy"
+    },
+    {
+     "url": "https://cdn.legacy.com/next-builds/1792691011672/legacy_logo_white.png",
+     "kind": "logo",
+     "source_page": "https://www.legacy.com/privacy-policy"
+    }
+   ],
+   "theme_color": null,
+   "languages": [
+    "en"
+   ],
+   "legal_name": "Legacy",
+   "search": {
+    "available": false,
+    "method": "none",
+    "page_url": null,
+    "form_action": null,
+    "inputs": [],
+    "url_pattern": null,
+    "directory_prefixes": [],
+    "paywall": null,
+    "login_wall": null
+   },
+   "removal": {
+    "url": "https://www.legacy.com/about/privacy-policy",
+    "final_url": "https://www.legacy.com/privacy-policy",
+    "http_status": 200,
+    "kinds": [
+     "opt_out"
+    ],
+    "channels": [
+     "phone"
+    ],
+    "emails": [],
+    "phones": [
+     "888-397-9494"
+    ],
+    "postal_address": null,
+    "portal": null,
+    "form_fields": [],
+    "csrf_field_name": null,
+    "requires_profile_url": null,
+    "captcha": {
+     "provider": null,
+     "sitekey": null,
+     "pages": []
+    },
+    "consent_vendor": null,
+    "success_text": null,
+    "suppression_not_deletion": null,
+    "processing_days": null,
+    "processing_text": null
+   },
+   "bot_defense": {
+    "vendor": null,
+    "outcome": "none"
+   },
+   "legal": {
+    "privacy_policy_url": "https://www.legacy.com/privacy-policy",
+    "terms_url": null,
+    "automation_prohibited": null,
+    "automation_clause": null,
+    "residency": [
+     "US-CA",
+     "US-VA",
+     "US",
+     "EU",
+     "GB"
+    ],
+    "authorized_agent": null,
+    "data_categories": [
+     "identifiers",
+     "internet_activity"
+    ]
+   },
+   "pages": [
+    {
+     "url": "https://legacy.com/",
+     "final_url": "https://www.legacy.com/",
+     "status": 200,
+     "role": "home",
+     "title": "Legacy | Obituary Search and Publishing",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.legacy.com/",
+     "final_url": "https://www.legacy.com/",
+     "status": 200,
+     "role": "home",
+     "title": "Legacy | Obituary Search and Publishing",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.legacy.com/about/privacy-policy",
+     "final_url": "https://www.legacy.com/privacy-policy",
+     "status": 200,
+     "role": "catalog",
+     "title": "Privacy Policy - Legacy.com",
+     "liveness": "alive"
+    }
+   ]
+  },
+  "search-ch-tel": {
+   "schema_version": "3.0.0",
+   "id": "search-ch-tel",
+   "name": "search.ch Telefonbuch",
+   "category": "people-search",
+   "domain": "search.ch",
+   "checked_at": "2026-10-26T10:37:52+00:00",
+   "liveness": "alive",
+   "liveness_detail": "catalog URL loaded",
+   "homepage": "https://search.ch/",
+   "logo_url": "https://search.ch/lib/images/search-logo-print.svg?c=ae4bf65605",
+   "images": [
+    {
+     "url": "https://search.ch/lib/favicon.ico?c=3",
+     "kind": "icon",
+     "source_page": "https://search.ch/"
+    },
+    {
+     "url": "https://search.ch/lib/images/touch/www.png",
+     "kind": "apple_touch_icon",
+     "source_page": "https://search.ch/"
+    },
+    {
+     "url": "https://search.ch/lib/images/search-logo-print.svg?c=ae4bf65605",
+     "kind": "logo",
+     "source_page": "https://search.ch/"
+    }
+   ],
+   "theme_color": "#000",
+   "languages": [
+    "en"
+   ],
+   "legal_name": null,
+   "search": {
+    "available": true,
+    "method": "http_get",
+    "page_url": "https://search.ch/",
+    "form_action": "https://search.ch/tel/",
+    "inputs": [
+     {
+      "name": "all",
+      "type": "text",
+      "canonical": "phone",
+      "required": false,
+      "autocomplete": "off",
+      "placeholder": "Who/what/where/phone number"
+     }
+    ],
+    "url_pattern": "https://search.ch/tel/?all={all}",
+    "directory_prefixes": [],
+    "paywall": null,
+    "login_wall": null
+   },
+   "removal": {
+    "url": "https://search.ch/privacy",
+    "final_url": "https://search.ch/privacy",
+    "http_status": 200,
+    "kinds": [
+     "opt_out"
+    ],
+    "channels": [
+     "web_form",
+     "email",
+     "official_portal"
+    ],
+    "emails": [
+     {
+      "email": "dataprivacy@localsearch.ch",
+      "confidence": "uncertain",
+      "source_url": "https://search.ch/privacy"
+     }
+    ],
+    "phones": [],
+    "postal_address": null,
+    "portal": {
+     "vendor": "onetrust",
+     "url": "https://privacyportal-eu-cdn.onetrust.com/dsarwebform/b9865779-0248-4bd3-86ae-adcc74e59b6c/03029c5e-bf5a-4477-b315-b9b11d80d9ee.html"
+    },
+    "form_fields": [
+     {
+      "name": "LoginName",
+      "type": "text",
+      "canonical": null,
+      "required": false,
+      "autocomplete": "username",
+      "placeholder": "Username"
+     }
+    ],
+    "csrf_field_name": "Token",
+    "requires_profile_url": null,
+    "captcha": {
+     "provider": null,
+     "sitekey": null,
+     "pages": []
+    },
+    "consent_vendor": null,
+    "success_text": null,
+    "suppression_not_deletion": null,
+    "processing_days": null,
+    "processing_text": null
+   },
+   "bot_defense": {
+    "vendor": null,
+    "outcome": "none"
+   },
+   "legal": {
+    "privacy_policy_url": "https://search.ch/privacy",
+    "terms_url": null,
+    "automation_prohibited": null,
+    "automation_clause": null,
+    "residency": [],
+    "authorized_agent": null,
+    "data_categories": [
+     "identifiers",
+     "internet_activity"
+    ]
+   },
+   "pages": [
+    {
+     "url": "https://search.ch/",
+     "final_url": "https://search.ch/",
+     "status": 200,
+     "role": "home",
+     "title": "The Swiss Search Engine - search.ch",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.search.ch/",
+     "final_url": "https://search.ch/",
+     "status": 200,
+     "role": "home",
+     "title": "The Swiss Search Engine - search.ch",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://search.ch/privacy",
+     "final_url": "https://search.ch/privacy",
+     "status": 200,
+     "role": "catalog",
+     "title": "search.ch",
+     "liveness": "alive"
+    }
+   ]
+  },
+  "118000-fr": {
+   "schema_version": "3.0.0",
+   "id": "118000-fr",
+   "name": "118 000 (118000.fr)",
+   "category": "people-search",
+   "domain": "118000.fr",
+   "checked_at": "2026-10-26T10:37:51+00:00",
+   "liveness": "alive",
+   "liveness_detail": "catalog URL loaded",
+   "homepage": "https://www.118000.fr/",
+   "logo_url": "https://www.118000.fr/images/logo-groupep.png",
+   "images": [
+    {
+     "url": "https://www.118000.fr/favicon.ico",
+     "kind": "icon",
+     "source_page": "https://www.118000.fr/"
+    },
+    {
+     "url": "https://www.118000.fr/favicon.svg",
+     "kind": "icon",
+     "source_page": "https://www.118000.fr/"
+    },
+    {
+     "url": "https://www.118000.fr/favicon-32x32.png",
+     "kind": "icon",
+     "source_page": "https://www.118000.fr/"
+    },
+    {
+     "url": "https://www.118000.fr/favicon-48x48.png",
+     "kind": "icon",
+     "source_page": "https://www.118000.fr/"
+    },
+    {
+     "url": "https://www.118000.fr/favicon-96x96.png",
+     "kind": "icon",
+     "source_page": "https://www.118000.fr/"
+    },
+    {
+     "url": "https://www.118000.fr/favicon-192x192.png",
+     "kind": "icon",
+     "source_page": "https://www.118000.fr/"
+    },
+    {
+     "url": "https://www.118000.fr/apple-touch-icon.png",
+     "kind": "apple_touch_icon",
+     "source_page": "https://www.118000.fr/"
+    },
+    {
+     "url": "https://www.118000.fr/images/og-118000.png",
+     "kind": "og_image",
+     "source_page": "https://www.118000.fr/"
+    },
+    {
+     "url": "https://www.118000.fr/images/logo-groupep.png",
+     "kind": "logo",
+     "source_page": "https://www.118000.fr/"
+    }
+   ],
+   "theme_color": "#7E00DB",
+   "languages": [
+    "fr"
+   ],
+   "legal_name": null,
+   "search": {
+    "available": true,
+    "method": "http_get",
+    "page_url": "https://www.118000.fr/",
+    "form_action": "https://www.118000.fr/search",
+    "inputs": [
+     {
+      "name": "who",
+      "type": "text",
+      "canonical": null,
+      "required": false,
+      "autocomplete": "off",
+      "placeholder": "Plombier, médecin, restaurant, 01 23 45 67 89..."
+     },
+     {
+      "name": "where",
+      "type": "text",
+      "canonical": null,
+      "required": false,
+      "autocomplete": "off",
+      "placeholder": "Paris, Lyon, 75001..."
+     }
+    ],
+    "url_pattern": "https://www.118000.fr/search?who={who}&where={where}",
+    "directory_prefixes": [],
+    "paywall": null,
+    "login_wall": null
+   },
+   "removal": {
+    "url": "https://www.118000.fr/contact.html",
+    "final_url": "https://www.118000.fr/contact.html",
+    "http_status": 200,
+    "kinds": [
+     "opt_out"
+    ],
+    "channels": [],
+    "emails": [],
+    "phones": [],
+    "postal_address": null,
+    "portal": null,
+    "form_fields": [],
+    "csrf_field_name": null,
+    "requires_profile_url": null,
+    "captcha": {
+     "provider": null,
+     "sitekey": null,
+     "pages": []
+    },
+    "consent_vendor": null,
+    "success_text": null,
+    "suppression_not_deletion": null,
+    "processing_days": null,
+    "processing_text": null
+   },
+   "bot_defense": {
+    "vendor": null,
+    "outcome": "none"
+   },
+   "legal": {
+    "privacy_policy_url": null,
+    "terms_url": null,
+    "automation_prohibited": null,
+    "automation_clause": null,
+    "residency": [],
+    "authorized_agent": null,
+    "data_categories": []
+   },
+   "pages": [
+    {
+     "url": "https://118000.fr/",
+     "final_url": "https://www.118000.fr/",
+     "status": 200,
+     "role": "home",
+     "title": "Annuaire telephonique entreprise et professionnel 118000.fr",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.118000.fr/",
+     "final_url": "https://www.118000.fr/",
+     "status": 200,
+     "role": "home",
+     "title": "Annuaire telephonique entreprise et professionnel 118000.fr",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.118000.fr/contact.html",
+     "final_url": "https://www.118000.fr/contact.html",
+     "status": 200,
+     "role": "catalog",
+     "title": "Nous contacter - 118000.fr",
+     "liveness": "alive"
+    }
+   ]
+  },
+  "1881-no": {
+   "schema_version": "3.0.0",
+   "id": "1881-no",
+   "name": "1881.no",
+   "category": "people-search",
+   "domain": "1881.no",
+   "checked_at": "2026-10-26T10:37:54+00:00",
+   "liveness": "alive",
+   "liveness_detail": "catalog URL loaded",
+   "homepage": "https://www.1881.no/",
+   "logo_url": "https://min.1881.no/Content/images/logo-1881-alt.svg",
+   "images": [
+    {
+     "url": "https://www.1881.no/Content/favicons/apple-touch-icon.png",
+     "kind": "apple_touch_icon",
+     "source_page": "https://www.1881.no/"
+    },
+    {
+     "url": "https://www.1881.no/Content/favicons/favicon-32x32.png",
+     "kind": "icon",
+     "source_page": "https://www.1881.no/"
+    },
+    {
+     "url": "https://www.1881.no/Content/favicons/favicon-16x16.png",
+     "kind": "icon",
+     "source_page": "https://www.1881.no/"
+    },
+    {
+     "url": "https://www.1881.no/Content/favicons/safari-pinned-tab.svg",
+     "kind": "icon",
+     "source_page": "https://www.1881.no/"
+    },
+    {
+     "url": "https://www.1881.no/Content/favicons/favicon.ico",
+     "kind": "icon",
+     "source_page": "https://www.1881.no/"
+    },
+    {
+     "url": "https://www.1881.no/Content/Images/opplysningen-1881.png",
+     "kind": "og_image",
+     "source_page": "https://www.1881.no/"
+    },
+    {
+     "url": "https://min.1881.no/Content/favicons/apple-touch-icon.png",
+     "kind": "apple_touch_icon",
+     "source_page": "https://min.1881.no/vilkaar-personvern/personvernerklaring"
+    },
+    {
+     "url": "https://min.1881.no/Content/favicons/favicon-32x32.png",
+     "kind": "icon",
+     "source_page": "https://min.1881.no/vilkaar-personvern/personvernerklaring"
+    },
+    {
+     "url": "https://min.1881.no/Content/favicons/favicon-16x16.png",
+     "kind": "icon",
+     "source_page": "https://min.1881.no/vilkaar-personvern/personvernerklaring"
+    },
+    {
+     "url": "https://min.1881.no/Content/favicons/safari-pinned-tab.svg",
+     "kind": "icon",
+     "source_page": "https://min.1881.no/vilkaar-personvern/personvernerklaring"
+    },
+    {
+     "url": "https://min.1881.no/Content/favicons/favicon.ico",
+     "kind": "icon",
+     "source_page": "https://min.1881.no/vilkaar-personvern/personvernerklaring"
+    },
+    {
+     "url": "https://min.1881.no/Content/images/logo-1881-alt.svg",
+     "kind": "logo",
+     "source_page": "https://min.1881.no/vilkaar-personvern/personvernerklaring"
+    }
+   ],
+   "theme_color": "#ffffff",
+   "languages": [
+    "no"
+   ],
+   "legal_name": "1881",
+   "search": {
+    "available": true,
+    "method": "http_get",
+    "page_url": "https://www.1881.no/",
+    "form_action": "https://www.1881.no/",
+    "inputs": [
+     {
+      "name": "query",
+      "type": "search",
+      "canonical": "full_name",
+      "required": true,
+      "autocomplete": "off",
+      "placeholder": null
+     }
+    ],
+    "url_pattern": "https://www.1881.no/?query={query}",
+    "directory_prefixes": [],
+    "paywall": null,
+    "login_wall": null
+   },
+   "removal": {
+    "url": "https://min.1881.no/vilkaar-personvern/personvernerklaring",
+    "final_url": "https://min.1881.no/vilkaar-personvern/personvernerklaring",
+    "http_status": 200,
+    "kinds": [
+     "opt_out"
+    ],
+    "channels": [
+     "email"
+    ],
+    "emails": [
+     {
+      "email": "personvern@1881.no",
+      "confidence": "uncertain",
+      "source_url": "https://min.1881.no/vilkaar-personvern/personvernerklaring"
+     }
+    ],
+    "phones": [],
+    "postal_address": null,
+    "portal": null,
+    "form_fields": [],
+    "csrf_field_name": null,
+    "requires_profile_url": null,
+    "captcha": {
+     "provider": null,
+     "sitekey": null,
+     "pages": []
+    },
+    "consent_vendor": null,
+    "success_text": null,
+    "suppression_not_deletion": null,
+    "processing_days": null,
+    "processing_text": null
+   },
+   "bot_defense": {
+    "vendor": null,
+    "outcome": "none"
+   },
+   "legal": {
+    "privacy_policy_url": null,
+    "terms_url": null,
+    "automation_prohibited": null,
+    "automation_clause": null,
+    "residency": [],
+    "authorized_agent": null,
+    "data_categories": []
+   },
+   "pages": [
+    {
+     "url": "https://1881.no/",
+     "final_url": "https://www.1881.no/",
+     "status": 200,
+     "role": "home",
+     "title": "Opplysningen 1881® - telefonkatalogen og nummeropplysningOpplysningen 1881 logoOpplysningen 1881 logoOpplysningen 1881 logo",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.1881.no/",
+     "final_url": "https://www.1881.no/",
+     "status": 200,
+     "role": "home",
+     "title": "Opplysningen 1881® - telefonkatalogen og nummeropplysningOpplysningen 1881 logoOpplysningen 1881 logoOpplysningen 1881 logo",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://min.1881.no/vilkaar-personvern/personvernerklaring",
+     "final_url": "https://min.1881.no/vilkaar-personvern/personvernerklaring",
+     "status": 200,
+     "role": "catalog",
+     "title": "Personvernerklæring – 1881.no",
+     "liveness": "alive"
     }
    ]
   }
