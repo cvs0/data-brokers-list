@@ -1,23 +1,23 @@
 {
  "schema_version": "3.0.0",
- "checked_at": "2026-10-26T06:17:49+00:00",
+ "checked_at": "2026-10-26T07:57:59+00:00",
  "method": "Public pages only: homepage, catalog URL, and mapped privacy, contact, and legal links. robots.txt honored. No form submitted, no login, no CAPTCHA solved. A browser opened lookup homepages the static fetch never read, and catalog URLs that were blocked or failed, when robots.txt allowed the URL. Image fields are URLs, not copied files. People-search listing URLs are not stored. Null means the fetched page did not establish that fact. Every catalog id has a record.",
- "broker_count": 756,
+ "broker_count": 764,
  "counts": {
   "liveness": {
-   "alive": 572,
+   "alive": 579,
    "blocked": 39,
    "error": 24,
    "not_checked": 32,
    "opt_out_missing": 5,
-   "robots_disallowed": 84
+   "robots_disallowed": 85
   },
-  "with_logo": 617,
-  "with_image": 617,
-  "with_search": 370,
+  "with_logo": 624,
+  "with_image": 624,
+  "with_search": 375,
   "with_email": 364,
   "with_captcha": 329,
-  "with_form": 134
+  "with_form": 138
  },
  "brokers": {
   "alaska-arrests": {
@@ -59314,7 +59314,7 @@
    "name": "Samba TV, Inc.",
    "category": "other",
    "domain": "samba.com",
-   "checked_at": "2026-10-26T06:17:18+00:00",
+   "checked_at": "2026-10-26T07:57:25+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -117432,7 +117432,7 @@
    "name": "Live Data Technologies, Inc.",
    "category": "other",
    "domain": "livedatatech.com",
-   "checked_at": "2026-10-26T06:17:36+00:00",
+   "checked_at": "2026-10-26T07:57:47+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -154295,7 +154295,7 @@
    "name": "Data Axle Canada",
    "category": "marketing",
    "domain": "dataaxlecanada.ca",
-   "checked_at": "2026-10-26T06:17:48+00:00",
+   "checked_at": "2026-10-26T07:57:58+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -154362,7 +154362,7 @@
    "name": "Prospects Influential",
    "category": "marketing",
    "domain": "prospectsinfluential.com",
-   "checked_at": "2026-10-26T06:17:48+00:00",
+   "checked_at": "2026-10-26T07:57:58+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -154429,7 +154429,7 @@
    "name": "Openroom",
    "category": "background-checks",
    "domain": "openroom.ca",
-   "checked_at": "2026-10-26T06:17:48+00:00",
+   "checked_at": "2026-10-26T07:57:58+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -154496,7 +154496,7 @@
    "name": "Landlord Credit Bureau",
    "category": "credit-financial",
    "domain": "landlordcreditbureau.ca",
-   "checked_at": "2026-10-26T06:17:48+00:00",
+   "checked_at": "2026-10-26T07:57:58+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -154563,7 +154563,7 @@
    "name": "FrontLobby",
    "category": "credit-financial",
    "domain": "frontlobby.com",
-   "checked_at": "2026-10-26T06:17:48+00:00",
+   "checked_at": "2026-10-26T07:57:58+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -154630,7 +154630,7 @@
    "name": "Echovita",
    "category": "people-search",
    "domain": "echovita.com",
-   "checked_at": "2026-10-26T06:17:48+00:00",
+   "checked_at": "2026-10-26T07:57:58+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -154697,7 +154697,7 @@
    "name": "InMemoriam",
    "category": "people-search",
    "domain": "inmemoriam.ca",
-   "checked_at": "2026-10-26T06:17:48+00:00",
+   "checked_at": "2026-10-26T07:57:58+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -154764,7 +154764,7 @@
    "name": "Nécrologie.ca",
    "category": "people-search",
    "domain": "necrologie.ca",
-   "checked_at": "2026-10-26T06:17:48+00:00",
+   "checked_at": "2026-10-26T07:57:58+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -154831,7 +154831,7 @@
    "name": "Geni",
    "category": "people-search",
    "domain": "geni.com",
-   "checked_at": "2026-10-26T06:17:48+00:00",
+   "checked_at": "2026-10-26T07:57:58+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -154898,7 +154898,7 @@
    "name": "FQSG Avis de décès",
    "category": "people-search",
    "domain": "federationgenealogie.qc.ca",
-   "checked_at": "2026-10-26T06:17:48+00:00",
+   "checked_at": "2026-10-26T07:57:58+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -154965,7 +154965,7 @@
    "name": "Domaine funéraire (Corporation des thanatologues du Québec)",
    "category": "people-search",
    "domain": "domainefuneraire.com",
-   "checked_at": "2026-10-26T06:17:48+00:00",
+   "checked_at": "2026-10-26T07:57:58+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -155032,7 +155032,7 @@
    "name": "Canadian Obituaries",
    "category": "people-search",
    "domain": "canadianobituaries.com",
-   "checked_at": "2026-10-26T06:17:48+00:00",
+   "checked_at": "2026-10-26T07:57:58+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -155099,7 +155099,7 @@
    "name": "Coopérative funéraire du Grand Montréal",
    "category": "people-search",
    "domain": "cfgrandmontreal.com",
-   "checked_at": "2026-10-26T06:17:48+00:00",
+   "checked_at": "2026-10-26T07:57:58+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -155166,7 +155166,7 @@
    "name": "Coopérative funéraire des Deux Rives",
    "category": "people-search",
    "domain": "coopfuneraire2rives.com",
-   "checked_at": "2026-10-26T06:17:48+00:00",
+   "checked_at": "2026-10-26T07:57:58+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -155233,7 +155233,7 @@
    "name": "Alliance funéraire du Royaume",
    "category": "people-search",
    "domain": "afdr.coop",
-   "checked_at": "2026-10-26T06:17:48+00:00",
+   "checked_at": "2026-10-26T07:57:58+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -155300,7 +155300,7 @@
    "name": "Coopérative funéraire de l'Abitibi",
    "category": "people-search",
    "domain": "cfa.coop",
-   "checked_at": "2026-10-26T06:17:48+00:00",
+   "checked_at": "2026-10-26T07:57:58+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -155367,7 +155367,7 @@
    "name": "Coopérative funéraire Haute-Côte-Nord - Manicouagan",
    "category": "people-search",
    "domain": "cfhcn.ca",
-   "checked_at": "2026-10-26T06:17:48+00:00",
+   "checked_at": "2026-10-26T07:57:58+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -155434,7 +155434,7 @@
    "name": "Coopérative funéraire de l'Outaouais",
    "category": "people-search",
    "domain": "cfo.coop",
-   "checked_at": "2026-10-26T06:17:48+00:00",
+   "checked_at": "2026-10-26T07:57:58+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -155501,7 +155501,7 @@
    "name": "Coopérative funéraire de l'Estrie",
    "category": "people-search",
    "domain": "coopfuneraireestrie.com",
-   "checked_at": "2026-10-26T06:17:48+00:00",
+   "checked_at": "2026-10-26T07:57:58+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -155568,7 +155568,7 @@
    "name": "Résidence funéraire Lac St-Jean",
    "category": "people-search",
    "domain": "residencefunerairelacstjean.com",
-   "checked_at": "2026-10-26T06:17:48+00:00",
+   "checked_at": "2026-10-26T07:57:58+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -155635,7 +155635,7 @@
    "name": "Coopérative funéraire Brunet",
    "category": "people-search",
    "domain": "coopfbrunet.com",
-   "checked_at": "2026-10-26T06:17:48+00:00",
+   "checked_at": "2026-10-26T07:57:58+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -155702,7 +155702,7 @@
    "name": "Coopérative funéraire Matawinie-Montcalm",
    "category": "people-search",
    "domain": "cfmm.coop",
-   "checked_at": "2026-10-26T06:17:48+00:00",
+   "checked_at": "2026-10-26T07:57:58+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -155769,7 +155769,7 @@
    "name": "Coopérative funéraire des Laurentides",
    "category": "people-search",
    "domain": "coopfunerairelaurentides.org",
-   "checked_at": "2026-10-26T06:17:48+00:00",
+   "checked_at": "2026-10-26T07:57:58+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -155836,7 +155836,7 @@
    "name": "Résidence Funéraire Maska",
    "category": "people-search",
    "domain": "rfmaska.coop",
-   "checked_at": "2026-10-26T06:17:48+00:00",
+   "checked_at": "2026-10-26T07:57:58+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -155903,7 +155903,7 @@
    "name": "Dignity Memorial",
    "category": "people-search",
    "domain": "dignitymemorial.com",
-   "checked_at": "2026-10-26T06:17:48+00:00",
+   "checked_at": "2026-10-26T07:57:58+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -155970,7 +155970,7 @@
    "name": "Interment.net",
    "category": "people-search",
    "domain": "interment.net",
-   "checked_at": "2026-10-26T06:17:48+00:00",
+   "checked_at": "2026-10-26T07:57:58+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -156037,7 +156037,7 @@
    "name": "Mount Pleasant Group",
    "category": "people-search",
    "domain": "mountpleasantgroup.com",
-   "checked_at": "2026-10-26T06:17:48+00:00",
+   "checked_at": "2026-10-26T07:57:58+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -156104,7 +156104,7 @@
    "name": "Kearney Funeral Services",
    "category": "people-search",
    "domain": "kearneyfs.com",
-   "checked_at": "2026-10-26T06:17:48+00:00",
+   "checked_at": "2026-10-26T07:57:58+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -156171,7 +156171,7 @@
    "name": "Basic Funerals",
    "category": "people-search",
    "domain": "basicfunerals.ca",
-   "checked_at": "2026-10-26T06:17:48+00:00",
+   "checked_at": "2026-10-26T07:57:58+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -156238,7 +156238,7 @@
    "name": "Le Nécrologue",
    "category": "people-search",
    "domain": "lenecrologue.com",
-   "checked_at": "2026-10-26T06:17:48+00:00",
+   "checked_at": "2026-10-26T07:57:58+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -158837,6 +158837,1183 @@
     },
     {
      "url": "https://www.npinumberlookup.org/contact.php",
+     "final_url": null,
+     "status": null,
+     "role": "catalog",
+     "title": "",
+     "liveness": "robots_disallowed"
+    }
+   ]
+  },
+  "sunshinelist-ca": {
+   "schema_version": "3.0.0",
+   "id": "sunshinelist-ca",
+   "name": "SunshineList.ca",
+   "category": "public-records",
+   "domain": "sunshinelist.ca",
+   "checked_at": "2026-10-26T07:56:44+00:00",
+   "liveness": "alive",
+   "liveness_detail": "catalog URL loaded",
+   "homepage": "https://www.sunshinelist.ca/",
+   "logo_url": "https://cantangroup.com/apple-touch-icon.png",
+   "images": [
+    {
+     "url": "https://cantangroup.com/favicon.svg",
+     "kind": "icon",
+     "source_page": "https://cantangroup.com/contact/"
+    },
+    {
+     "url": "https://cantangroup.com/favicon.ico",
+     "kind": "icon",
+     "source_page": "https://cantangroup.com/contact/"
+    },
+    {
+     "url": "https://cantangroup.com/apple-touch-icon.png",
+     "kind": "apple_touch_icon",
+     "source_page": "https://cantangroup.com/contact/"
+    },
+    {
+     "url": "https://cantangroup.com/og-card.png",
+     "kind": "og_image",
+     "source_page": "https://cantangroup.com/contact/"
+    }
+   ],
+   "theme_color": "#FFFFFF",
+   "languages": [
+    "en"
+   ],
+   "legal_name": null,
+   "search": {
+    "available": false,
+    "method": "none",
+    "page_url": null,
+    "form_action": null,
+    "inputs": [],
+    "url_pattern": null,
+    "directory_prefixes": [],
+    "paywall": null,
+    "login_wall": null
+   },
+   "removal": {
+    "url": "https://cantangroup.com/contact/",
+    "final_url": "https://cantangroup.com/contact/",
+    "http_status": 200,
+    "kinds": [
+     "opt_out"
+    ],
+    "channels": [
+     "web_form"
+    ],
+    "emails": [],
+    "phones": [],
+    "postal_address": null,
+    "portal": null,
+    "form_fields": [
+     {
+      "name": "website",
+      "type": "text",
+      "canonical": null,
+      "required": false,
+      "autocomplete": "off",
+      "placeholder": null
+     },
+     {
+      "name": "name",
+      "type": "text",
+      "canonical": "full_name",
+      "required": true,
+      "autocomplete": "name",
+      "placeholder": null
+     },
+     {
+      "name": "email",
+      "type": "email",
+      "canonical": "email",
+      "required": true,
+      "autocomplete": "email",
+      "placeholder": null
+     },
+     {
+      "name": "organization",
+      "type": "text",
+      "canonical": null,
+      "required": false,
+      "autocomplete": "organization",
+      "placeholder": null
+     },
+     {
+      "name": "message",
+      "type": "text",
+      "canonical": null,
+      "required": true,
+      "autocomplete": null,
+      "placeholder": null
+     }
+    ],
+    "csrf_field_name": null,
+    "requires_profile_url": null,
+    "captcha": {
+     "provider": null,
+     "sitekey": null,
+     "pages": []
+    },
+    "consent_vendor": null,
+    "success_text": null,
+    "suppression_not_deletion": null,
+    "processing_days": null,
+    "processing_text": null
+   },
+   "bot_defense": {
+    "vendor": null,
+    "outcome": "none"
+   },
+   "legal": {
+    "privacy_policy_url": null,
+    "terms_url": null,
+    "automation_prohibited": null,
+    "automation_clause": null,
+    "residency": [],
+    "authorized_agent": null,
+    "data_categories": [
+     "identifiers"
+    ]
+   },
+   "pages": [
+    {
+     "url": "https://sunshinelist.ca/",
+     "final_url": null,
+     "status": null,
+     "role": "home",
+     "title": "",
+     "liveness": "error"
+    },
+    {
+     "url": "https://www.sunshinelist.ca/",
+     "final_url": "https://www.sunshinelist.ca/",
+     "status": 200,
+     "role": "home",
+     "title": "2025 Sunshine List - Comparative Public Sector Salary Disclosure Data | Ontario",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://cantangroup.com/contact/",
+     "final_url": "https://cantangroup.com/contact/",
+     "status": 200,
+     "role": "catalog",
+     "title": "Start a conversation · Cantan Group",
+     "liveness": "alive"
+    }
+   ]
+  },
+  "npi-lookup-org": {
+   "schema_version": "3.0.0",
+   "id": "npi-lookup-org",
+   "name": "NPI Lookup (npi-lookup.org)",
+   "category": "public-records",
+   "domain": "npi-lookup.org",
+   "checked_at": "2026-10-26T07:56:46+00:00",
+   "liveness": "alive",
+   "liveness_detail": "catalog URL loaded",
+   "homepage": "https://npi-lookup.org/",
+   "logo_url": "https://npi-lookup.org/assets/logo-7cc1aac832661e3f2ad5c83b3cc2cff5da68391752e4793af36e5cf6eae73159.png",
+   "images": [
+    {
+     "url": "https://npi-lookup.org/assets/logo-7cc1aac832661e3f2ad5c83b3cc2cff5da68391752e4793af36e5cf6eae73159.png",
+     "kind": "logo",
+     "source_page": "https://npi-lookup.org/"
+    }
+   ],
+   "theme_color": null,
+   "languages": [],
+   "legal_name": null,
+   "search": {
+    "available": true,
+    "method": "http_get",
+    "page_url": "https://npi-lookup.org/",
+    "form_action": "https://npi-lookup.org/npi_entity/index",
+    "inputs": [
+     {
+      "name": "npi_search_form[mixed]",
+      "type": "text",
+      "canonical": "last_name",
+      "required": false,
+      "autocomplete": null,
+      "placeholder": "Last Name, Entity or NPI"
+     },
+     {
+      "name": "npi_search_form[first_name]",
+      "type": "text",
+      "canonical": "first_name",
+      "required": false,
+      "autocomplete": null,
+      "placeholder": "First Name"
+     },
+     {
+      "name": "npi_search_form[state]",
+      "type": "select",
+      "canonical": "region",
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null,
+      "options": [
+       "All",
+       "AL",
+       "AK",
+       "AZ",
+       "AR",
+       "CA",
+       "CO",
+       "CT",
+       "DE",
+       "DC",
+       "FL",
+       "GA",
+       "HI",
+       "ID",
+       "IL",
+       "IN",
+       "IA",
+       "KS",
+       "KY",
+       "LA",
+       "ME",
+       "MD",
+       "MA",
+       "MI",
+       "MN",
+       "MS",
+       "MO",
+       "MT",
+       "NE",
+       "NV",
+       "NH",
+       "NJ",
+       "NM",
+       "NY",
+       "NC",
+       "ND",
+       "OH",
+       "OK",
+       "OR",
+       "PA",
+       "PR",
+       "RI",
+       "SC",
+       "SD",
+       "TN",
+       "TX",
+       "UT",
+       "VT",
+       "VA",
+       "WA",
+       "WV",
+       "WI",
+       "WY"
+      ]
+     }
+    ],
+    "url_pattern": "https://npi-lookup.org/npi_entity/index?npi_search_form[mixed]={npi_search_form[mixed]}&npi_search_form[first_name]={npi_search_form[first_name]}&npi_search_form[state]={npi_search_form[state]}",
+    "directory_prefixes": [],
+    "paywall": null,
+    "login_wall": null
+   },
+   "removal": {
+    "url": "https://npi-lookup.org/privacy_policy",
+    "final_url": "https://npi-lookup.org/privacy_policy",
+    "http_status": 200,
+    "kinds": [
+     "do_not_sell"
+    ],
+    "channels": [],
+    "emails": [],
+    "phones": [],
+    "postal_address": null,
+    "portal": null,
+    "form_fields": [],
+    "csrf_field_name": null,
+    "requires_profile_url": null,
+    "captcha": {
+     "provider": null,
+     "sitekey": null,
+     "pages": []
+    },
+    "consent_vendor": null,
+    "success_text": null,
+    "suppression_not_deletion": null,
+    "processing_days": null,
+    "processing_text": null
+   },
+   "bot_defense": {
+    "vendor": "cloudflare",
+    "outcome": "none"
+   },
+   "legal": {
+    "privacy_policy_url": "https://npi-lookup.org/privacy_policy",
+    "terms_url": null,
+    "automation_prohibited": null,
+    "automation_clause": null,
+    "residency": [],
+    "authorized_agent": null,
+    "data_categories": [
+     "identifiers"
+    ]
+   },
+   "pages": [
+    {
+     "url": "https://npi-lookup.org/",
+     "final_url": "https://npi-lookup.org/",
+     "status": 200,
+     "role": "home",
+     "title": "NPI Lookup – Search & Find NPI Number",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.npi-lookup.org/",
+     "final_url": "https://npi-lookup.org/",
+     "status": 200,
+     "role": "home",
+     "title": "NPI Lookup – Search & Find NPI Number",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://npi-lookup.org/privacy_policy",
+     "final_url": "https://npi-lookup.org/privacy_policy",
+     "status": 200,
+     "role": "catalog",
+     "title": "Privacy Policy",
+     "liveness": "alive"
+    }
+   ]
+  },
+  "campaignmoney-com": {
+   "schema_version": "3.0.0",
+   "id": "campaignmoney-com",
+   "name": "CampaignMoney.com",
+   "category": "public-records",
+   "domain": "campaignmoney.com",
+   "checked_at": "2026-10-26T07:56:44+00:00",
+   "liveness": "alive",
+   "liveness_detail": "catalog URL loaded",
+   "homepage": "https://www.campaignmoney.com/",
+   "logo_url": "https://www.campaignmoney.com/images/campaignmoney-logo.png",
+   "images": [
+    {
+     "url": "https://www.campaignmoney.com/images/campaignmoney-logo.png",
+     "kind": "logo",
+     "source_page": "https://www.campaignmoney.com/"
+    }
+   ],
+   "theme_color": null,
+   "languages": [
+    "en"
+   ],
+   "legal_name": null,
+   "search": {
+    "available": true,
+    "method": "http_get",
+    "page_url": "https://www.campaignmoney.com/",
+    "form_action": "https://www.campaignmoney.com/searching.asp",
+    "inputs": [
+     {
+      "name": "criteria",
+      "type": "text",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "type",
+      "type": "hidden",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "cycle",
+      "type": "hidden",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     }
+    ],
+    "url_pattern": "https://www.campaignmoney.com/searching.asp?criteria={criteria}",
+    "directory_prefixes": [],
+    "paywall": null,
+    "login_wall": null
+   },
+   "removal": {
+    "url": "https://www.campaignmoney.com/contact.asp",
+    "final_url": "https://www.campaignmoney.com/contact.asp",
+    "http_status": 200,
+    "kinds": [
+     "opt_out"
+    ],
+    "channels": [
+     "web_form"
+    ],
+    "emails": [],
+    "phones": [],
+    "postal_address": null,
+    "portal": null,
+    "form_fields": [
+     {
+      "name": "criteria",
+      "type": "text",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     }
+    ],
+    "csrf_field_name": null,
+    "requires_profile_url": null,
+    "captcha": {
+     "provider": null,
+     "sitekey": null,
+     "pages": []
+    },
+    "consent_vendor": null,
+    "success_text": null,
+    "suppression_not_deletion": null,
+    "processing_days": null,
+    "processing_text": null
+   },
+   "bot_defense": {
+    "vendor": null,
+    "outcome": "none"
+   },
+   "legal": {
+    "privacy_policy_url": null,
+    "terms_url": null,
+    "automation_prohibited": null,
+    "automation_clause": null,
+    "residency": [],
+    "authorized_agent": null,
+    "data_categories": [
+     "identifiers"
+    ]
+   },
+   "pages": [
+    {
+     "url": "https://campaignmoney.com/",
+     "final_url": "https://www.campaignmoney.com/",
+     "status": 200,
+     "role": "home",
+     "title": "Campaign Finance - Money, Political Finance, Campaign Contributions",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.campaignmoney.com/",
+     "final_url": "https://www.campaignmoney.com/",
+     "status": 200,
+     "role": "home",
+     "title": "Campaign Finance - Money, Political Finance, Campaign Contributions",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.campaignmoney.com/contact.asp",
+     "final_url": "https://www.campaignmoney.com/contact.asp",
+     "status": 200,
+     "role": "catalog",
+     "title": "Campaign Finance - Money, Political Finance, Campaign Contributions",
+     "liveness": "alive"
+    }
+   ]
+  },
+  "aircraftone-com": {
+   "schema_version": "3.0.0",
+   "id": "aircraftone-com",
+   "name": "AircraftOne",
+   "category": "public-records",
+   "domain": "aircraftone.com",
+   "checked_at": "2026-10-26T07:56:44+00:00",
+   "liveness": "alive",
+   "liveness_detail": "catalog URL loaded",
+   "homepage": "https://www.aircraftone.com/",
+   "logo_url": "https://www.aircraftone.com/images/aircraftone1-logo.png?x=1",
+   "images": [
+    {
+     "url": "https://www.aircraftone.com/images/icon.png",
+     "kind": "icon",
+     "source_page": "https://www.aircraftone.com/"
+    },
+    {
+     "url": "https://www.aircraftone.com/images/aircraftone1-logo.png?x=1",
+     "kind": "logo",
+     "source_page": "https://www.aircraftone.com/"
+    }
+   ],
+   "theme_color": null,
+   "languages": [
+    "en"
+   ],
+   "legal_name": null,
+   "search": {
+    "available": false,
+    "method": "none",
+    "page_url": null,
+    "form_action": null,
+    "inputs": [],
+    "url_pattern": null,
+    "directory_prefixes": [],
+    "paywall": null,
+    "login_wall": null
+   },
+   "removal": {
+    "url": "https://www.aircraftone.com/contact.asp",
+    "final_url": "https://www.aircraftone.com/contact.asp",
+    "http_status": 200,
+    "kinds": [
+     "opt_out"
+    ],
+    "channels": [
+     "web_form"
+    ],
+    "emails": [],
+    "phones": [],
+    "postal_address": null,
+    "portal": null,
+    "form_fields": [
+     {
+      "name": "hn",
+      "type": "text",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": "N Number Lookup"
+     }
+    ],
+    "csrf_field_name": null,
+    "requires_profile_url": null,
+    "captcha": {
+     "provider": null,
+     "sitekey": null,
+     "pages": []
+    },
+    "consent_vendor": null,
+    "success_text": null,
+    "suppression_not_deletion": null,
+    "processing_days": null,
+    "processing_text": null
+   },
+   "bot_defense": {
+    "vendor": null,
+    "outcome": "none"
+   },
+   "legal": {
+    "privacy_policy_url": null,
+    "terms_url": null,
+    "automation_prohibited": null,
+    "automation_clause": null,
+    "residency": [],
+    "authorized_agent": null,
+    "data_categories": [
+     "identifiers"
+    ]
+   },
+   "pages": [
+    {
+     "url": "https://aircraftone.com/",
+     "final_url": "https://www.aircraftone.com/",
+     "status": 200,
+     "role": "home",
+     "title": "Aircraft Registrations, N Number Lookup, Aircraft Database - AircraftOne.com",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.aircraftone.com/",
+     "final_url": "https://www.aircraftone.com/",
+     "status": 200,
+     "role": "home",
+     "title": "Aircraft Registrations, N Number Lookup, Aircraft Database - AircraftOne.com",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.aircraftone.com/contact.asp",
+     "final_url": "https://www.aircraftone.com/contact.asp",
+     "status": 200,
+     "role": "catalog",
+     "title": "Aircraft Registrations, N Number Lookup, Aircraft Database - AircraftOne.com",
+     "liveness": "alive"
+    }
+   ]
+  },
+  "cooperative-funeraire-du-temiscamingue": {
+   "schema_version": "3.0.0",
+   "id": "cooperative-funeraire-du-temiscamingue",
+   "name": "Coopérative funéraire du Témiscamingue",
+   "category": "people-search",
+   "domain": "cftemiscamingue.com",
+   "checked_at": "2026-10-26T07:56:42+00:00",
+   "liveness": "alive",
+   "liveness_detail": "catalog URL loaded",
+   "homepage": "https://cftemiscamingue.com/",
+   "logo_url": "https://cftemiscamingue.com/web/image/website/1/logo/Coop%C3%A9rative%20fun%C3%A9raire%20du%20T%C3%A9miscamingue?unique=4b0a3c9",
+   "images": [
+    {
+     "url": "https://cftemiscamingue.com/web/image/website/1/favicon?unique=4b0a3c9",
+     "kind": "apple_touch_icon",
+     "source_page": "https://cftemiscamingue.com/"
+    },
+    {
+     "url": "https://cftemiscamingue.com/web/image/website/1/logo?unique=4b0a3c9",
+     "kind": "og_image",
+     "source_page": "https://cftemiscamingue.com/"
+    },
+    {
+     "url": "https://cftemiscamingue.com/web/image/website/1/logo/300x300?unique=4b0a3c9",
+     "kind": "twitter_image",
+     "source_page": "https://cftemiscamingue.com/"
+    },
+    {
+     "url": "https://cftemiscamingue.com/web/image/website/1/logo/Coop%C3%A9rative%20fun%C3%A9raire%20du%20T%C3%A9miscamingue?unique=4b0a3c9",
+     "kind": "logo",
+     "source_page": "https://cftemiscamingue.com/"
+    }
+   ],
+   "theme_color": null,
+   "languages": [
+    "fr"
+   ],
+   "legal_name": null,
+   "search": {
+    "available": true,
+    "method": "http_get",
+    "page_url": "https://cftemiscamingue.com/",
+    "form_action": "https://cftemiscamingue.com/website/search",
+    "inputs": [
+     {
+      "name": "search",
+      "type": "search",
+      "canonical": "full_name",
+      "required": false,
+      "autocomplete": null,
+      "placeholder": "Rechercher…"
+     },
+     {
+      "name": "order",
+      "type": "hidden",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     }
+    ],
+    "url_pattern": "https://cftemiscamingue.com/website/search?search={search}",
+    "directory_prefixes": [],
+    "paywall": null,
+    "login_wall": null
+   },
+   "removal": {
+    "url": "https://cftemiscamingue.com/politique-de-confidentialite",
+    "final_url": "https://cftemiscamingue.com/politique-de-confidentialite",
+    "http_status": 200,
+    "kinds": [
+     "opt_out"
+    ],
+    "channels": [],
+    "emails": [],
+    "phones": [],
+    "postal_address": null,
+    "portal": null,
+    "form_fields": [],
+    "csrf_field_name": null,
+    "requires_profile_url": null,
+    "captcha": {
+     "provider": null,
+     "sitekey": null,
+     "pages": []
+    },
+    "consent_vendor": null,
+    "success_text": null,
+    "suppression_not_deletion": null,
+    "processing_days": null,
+    "processing_text": null
+   },
+   "bot_defense": {
+    "vendor": null,
+    "outcome": "none"
+   },
+   "legal": {
+    "privacy_policy_url": null,
+    "terms_url": null,
+    "automation_prohibited": null,
+    "automation_clause": null,
+    "residency": [
+     "CA-QC"
+    ],
+    "authorized_agent": null,
+    "data_categories": []
+   },
+   "pages": [
+    {
+     "url": "https://cftemiscamingue.com/",
+     "final_url": "https://cftemiscamingue.com/",
+     "status": 200,
+     "role": "home",
+     "title": "Accueil | Coopérative funéraire du Témiscamingue",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.cftemiscamingue.com/",
+     "final_url": "https://cftemiscamingue.com/",
+     "status": 200,
+     "role": "home",
+     "title": "Accueil | Coopérative funéraire du Témiscamingue",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://cftemiscamingue.com/politique-de-confidentialite",
+     "final_url": "https://cftemiscamingue.com/politique-de-confidentialite",
+     "status": 200,
+     "role": "catalog",
+     "title": "politique-de-confidentialite | Coopérative funéraire du Témiscamingue",
+     "liveness": "alive"
+    }
+   ]
+  },
+  "funeral-co-operative-of-ottawa": {
+   "schema_version": "3.0.0",
+   "id": "funeral-co-operative-of-ottawa",
+   "name": "Funeral Co-operative of Ottawa",
+   "category": "people-search",
+   "domain": "fco-cfo.coop",
+   "checked_at": "2026-10-26T07:56:42+00:00",
+   "liveness": "alive",
+   "liveness_detail": "catalog URL loaded",
+   "homepage": "https://fco-cfo.coop/",
+   "logo_url": "https://fco-cfo.coop/web/image/website/1/logo/Funeral%20Home%20Ottawa?unique=34be2e2",
+   "images": [
+    {
+     "url": "https://fco-cfo.coop/web/image/website/1/favicon?unique=34be2e2",
+     "kind": "apple_touch_icon",
+     "source_page": "https://fco-cfo.coop/"
+    },
+    {
+     "url": "https://fco-cfo.coop/web/image/8227-b0e00476/Funeral%20Home%20Ottawa.png",
+     "kind": "og_image",
+     "source_page": "https://fco-cfo.coop/"
+    },
+    {
+     "url": "https://fco-cfo.coop/web/image/website/1/logo/Funeral%20Home%20Ottawa?unique=34be2e2",
+     "kind": "logo",
+     "source_page": "https://fco-cfo.coop/"
+    },
+    {
+     "url": "https://fco-cfo.coop/web/image/6877-be1dafb1/logo_ang2.webp",
+     "kind": "logo",
+     "source_page": "https://fco-cfo.coop/"
+    },
+    {
+     "url": "https://fco-cfo.coop/web/image/website/1/logo?unique=34be2e2",
+     "kind": "og_image",
+     "source_page": "https://fco-cfo.coop/politique-confidentialite"
+    },
+    {
+     "url": "https://fco-cfo.coop/web/image/website/1/logo/300x300?unique=34be2e2",
+     "kind": "twitter_image",
+     "source_page": "https://fco-cfo.coop/politique-confidentialite"
+    }
+   ],
+   "theme_color": null,
+   "languages": [
+    "en"
+   ],
+   "legal_name": null,
+   "search": {
+    "available": true,
+    "method": "http_get",
+    "page_url": "https://fco-cfo.coop/",
+    "form_action": "https://fco-cfo.coop/website/search",
+    "inputs": [
+     {
+      "name": "search",
+      "type": "search",
+      "canonical": "full_name",
+      "required": false,
+      "autocomplete": null,
+      "placeholder": "Search..."
+     },
+     {
+      "name": "order",
+      "type": "hidden",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     }
+    ],
+    "url_pattern": "https://fco-cfo.coop/website/search?search={search}",
+    "directory_prefixes": [],
+    "paywall": null,
+    "login_wall": null
+   },
+   "removal": {
+    "url": "https://fco-cfo.coop/politique-confidentialite",
+    "final_url": "https://fco-cfo.coop/politique-confidentialite",
+    "http_status": 200,
+    "kinds": [
+     "do_not_sell",
+     "unsubscribe"
+    ],
+    "channels": [],
+    "emails": [],
+    "phones": [],
+    "postal_address": null,
+    "portal": null,
+    "form_fields": [],
+    "csrf_field_name": null,
+    "requires_profile_url": null,
+    "captcha": {
+     "provider": null,
+     "sitekey": null,
+     "pages": []
+    },
+    "consent_vendor": null,
+    "success_text": null,
+    "suppression_not_deletion": null,
+    "processing_days": null,
+    "processing_text": null
+   },
+   "bot_defense": {
+    "vendor": null,
+    "outcome": "none"
+   },
+   "legal": {
+    "privacy_policy_url": null,
+    "terms_url": null,
+    "automation_prohibited": null,
+    "automation_clause": null,
+    "residency": [
+     "CA-QC"
+    ],
+    "authorized_agent": null,
+    "data_categories": [
+     "identifiers",
+     "internet_activity"
+    ]
+   },
+   "pages": [
+    {
+     "url": "https://fco-cfo.coop/",
+     "final_url": "https://fco-cfo.coop/",
+     "status": 200,
+     "role": "home",
+     "title": "Funeral Home Ottawa | Funeral Co-operative of Ottawa",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.fco-cfo.coop/",
+     "final_url": "https://fco-cfo.coop/",
+     "status": 200,
+     "role": "home",
+     "title": "Funeral Home Ottawa | Funeral Co-operative of Ottawa",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://fco-cfo.coop/politique-confidentialite",
+     "final_url": "https://fco-cfo.coop/politique-confidentialite",
+     "status": 200,
+     "role": "catalog",
+     "title": "politique-confidentialite | Funeral Home Ottawa",
+     "liveness": "alive"
+    }
+   ]
+  },
+  "timiskaming-funeral-cooperative": {
+   "schema_version": "3.0.0",
+   "id": "timiskaming-funeral-cooperative",
+   "name": "Timiskaming Funeral Cooperative",
+   "category": "people-search",
+   "domain": "timiskamingfc.com",
+   "checked_at": "2026-10-26T07:56:42+00:00",
+   "liveness": "alive",
+   "liveness_detail": "catalog URL loaded",
+   "homepage": "https://timiskamingfc.com/",
+   "logo_url": "https://timiskamingfc.com/web/image/website/1/logo/Timiskaming%20Funeral%20Cooperative?unique=601317b",
+   "images": [
+    {
+     "url": "https://timiskamingfc.com/web/image/website/1/favicon?unique=601317b",
+     "kind": "apple_touch_icon",
+     "source_page": "https://timiskamingfc.com/"
+    },
+    {
+     "url": "https://timiskamingfc.com/web/image/website/1/logo?unique=601317b",
+     "kind": "og_image",
+     "source_page": "https://timiskamingfc.com/"
+    },
+    {
+     "url": "https://timiskamingfc.com/web/image/website/1/logo/300x300?unique=601317b",
+     "kind": "twitter_image",
+     "source_page": "https://timiskamingfc.com/"
+    },
+    {
+     "url": "https://timiskamingfc.com/web/image/website/1/logo/Timiskaming%20Funeral%20Cooperative?unique=601317b",
+     "kind": "logo",
+     "source_page": "https://timiskamingfc.com/"
+    }
+   ],
+   "theme_color": null,
+   "languages": [
+    "en"
+   ],
+   "legal_name": null,
+   "search": {
+    "available": true,
+    "method": "http_get",
+    "page_url": "https://timiskamingfc.com/",
+    "form_action": "https://timiskamingfc.com/website/search",
+    "inputs": [
+     {
+      "name": "search",
+      "type": "search",
+      "canonical": "full_name",
+      "required": false,
+      "autocomplete": null,
+      "placeholder": "Search..."
+     },
+     {
+      "name": "order",
+      "type": "hidden",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     }
+    ],
+    "url_pattern": "https://timiskamingfc.com/website/search?search={search}",
+    "directory_prefixes": [],
+    "paywall": null,
+    "login_wall": null
+   },
+   "removal": {
+    "url": "https://timiskamingfc.com/contactus",
+    "final_url": "https://timiskamingfc.com/contactus",
+    "http_status": 200,
+    "kinds": [
+     "unsubscribe"
+    ],
+    "channels": [
+     "web_form",
+     "phone"
+    ],
+    "emails": [],
+    "phones": [
+     "(705) 567-3565"
+    ],
+    "postal_address": null,
+    "portal": null,
+    "form_fields": [
+     {
+      "name": "name",
+      "type": "text",
+      "canonical": "full_name",
+      "required": true,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "phone",
+      "type": "tel",
+      "canonical": "phone",
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "email_from",
+      "type": "email",
+      "canonical": "email",
+      "required": true,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "company",
+      "type": "text",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "subject",
+      "type": "text",
+      "canonical": null,
+      "required": true,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "description",
+      "type": "text",
+      "canonical": null,
+      "required": true,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "email_to",
+      "type": "hidden",
+      "canonical": "email",
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "website_form_signature",
+      "type": "hidden",
+      "canonical": "signature",
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     }
+    ],
+    "csrf_field_name": null,
+    "requires_profile_url": null,
+    "captcha": {
+     "provider": null,
+     "sitekey": null,
+     "pages": []
+    },
+    "consent_vendor": null,
+    "success_text": null,
+    "suppression_not_deletion": null,
+    "processing_days": null,
+    "processing_text": null
+   },
+   "bot_defense": {
+    "vendor": null,
+    "outcome": "none"
+   },
+   "legal": {
+    "privacy_policy_url": null,
+    "terms_url": null,
+    "automation_prohibited": null,
+    "automation_clause": null,
+    "residency": [
+     "CA-QC"
+    ],
+    "authorized_agent": null,
+    "data_categories": [
+     "identifiers",
+     "internet_activity"
+    ]
+   },
+   "pages": [
+    {
+     "url": "https://timiskamingfc.com/",
+     "final_url": "https://timiskamingfc.com/",
+     "status": 200,
+     "role": "home",
+     "title": "Accueil | Timiskaming Funeral Cooperative",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.timiskamingfc.com/",
+     "final_url": "https://timiskamingfc.com/",
+     "status": 200,
+     "role": "home",
+     "title": "Accueil | Timiskaming Funeral Cooperative",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://timiskamingfc.com/contactus",
+     "final_url": "https://timiskamingfc.com/contactus",
+     "status": 200,
+     "role": "catalog",
+     "title": "Contact Us | Timiskaming Funeral Cooperative",
+     "liveness": "alive"
+    }
+   ]
+  },
+  "passage-funeral-co-operative": {
+   "schema_version": "3.0.0",
+   "id": "passage-funeral-co-operative",
+   "name": "Passage Funeral Co-operative",
+   "category": "people-search",
+   "domain": "funerairepassagefuneral.ca",
+   "checked_at": "2026-10-26T07:56:41+00:00",
+   "liveness": "robots_disallowed",
+   "liveness_detail": "robots.txt disallows this client",
+   "homepage": "https://funerairepassagefuneral.ca/",
+   "logo_url": null,
+   "images": [],
+   "theme_color": null,
+   "languages": [],
+   "legal_name": null,
+   "search": {
+    "available": null,
+    "method": "unknown",
+    "page_url": null,
+    "form_action": null,
+    "inputs": [],
+    "url_pattern": null,
+    "directory_prefixes": [],
+    "paywall": null,
+    "login_wall": null
+   },
+   "removal": {
+    "url": "https://funerairepassagefuneral.ca/en/",
+    "final_url": null,
+    "http_status": null,
+    "kinds": [
+     "opt_out"
+    ],
+    "channels": [],
+    "emails": [],
+    "phones": [],
+    "postal_address": null,
+    "portal": null,
+    "form_fields": [],
+    "csrf_field_name": null,
+    "requires_profile_url": null,
+    "captcha": {
+     "provider": null,
+     "sitekey": null,
+     "pages": []
+    },
+    "consent_vendor": null,
+    "success_text": null,
+    "suppression_not_deletion": null,
+    "processing_days": null,
+    "processing_text": null
+   },
+   "bot_defense": {
+    "vendor": null,
+    "outcome": "none"
+   },
+   "legal": {
+    "privacy_policy_url": null,
+    "terms_url": null,
+    "automation_prohibited": null,
+    "automation_clause": null,
+    "residency": [],
+    "authorized_agent": null,
+    "data_categories": []
+   },
+   "pages": [
+    {
+     "url": "https://funerairepassagefuneral.ca/",
+     "final_url": null,
+     "status": null,
+     "role": "home",
+     "title": "",
+     "liveness": "robots_disallowed"
+    },
+    {
+     "url": "https://www.funerairepassagefuneral.ca/",
+     "final_url": null,
+     "status": null,
+     "role": "home",
+     "title": "",
+     "liveness": "robots_disallowed"
+    },
+    {
+     "url": "https://funerairepassagefuneral.ca/en/",
      "final_url": null,
      "status": null,
      "role": "catalog",

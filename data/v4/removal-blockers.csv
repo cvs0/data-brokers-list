@@ -248,6 +248,7 @@ cooperative-funeraire-de-l-outaouais,Coopérative funéraire de l'Outaouais,cfo.
 cooperative-funeraire-des-deux-rives,Coopérative funéraire des Deux Rives,coopfuneraire2rives.com,people-search,alive,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,,,,,
 cooperative-funeraire-des-laurentides,Coopérative funéraire des Laurentides,coopfunerairelaurentides.org,people-search,alive,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,,,,,
 cooperative-funeraire-du-grand-montreal,Coopérative funéraire du Grand Montréal,cfgrandmontreal.com,people-search,alive,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,,,,,
+cooperative-funeraire-du-temiscamingue,Coopérative funéraire du Témiscamingue,cftemiscamingue.com,people-search,alive,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,,,,,
 cooperative-funeraire-haute-cote-nord-manicouagan,Coopérative funéraire Haute-Côte-Nord - Manicouagan,cfhcn.ca,people-search,alive,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,,,,,
 cooperative-funeraire-matawinie-montcalm,Coopérative funéraire Matawinie-Montcalm,cfmm.coop,people-search,alive,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,,,,,
 courtrec-com,CourtRec.com,courtrec.com,people-search,alive,generic_inbox,"Only a generic inbox was found, and the page does not say to use it for removal",,,,false,,,support@courtrec.com,email;phone
@@ -267,6 +268,7 @@ fqsg-avis-de-deces,FQSG Avis de décès,federationgenealogie.qc.ca,people-search
 freepeopledirectory-spokeo-data,FreePeopleDirectory (Spokeo data),freepeopledirectory.com,people-search,alive,captcha_form,Removal form is behind a CAPTCHA widget and no usable removal email was found,recaptcha_v2,6LdwCOUsAAAAACok53xn1N9qQYsxPqzi1h3fMPqL,,false,,true,,web_form
 freepeoplesearch-com,FreePeopleSearch.com,freepeoplesearch.com,people-search,blocked,bot_wall,The opt-out URL returned a bot wall and a browser retry did not reveal a removal channel,,,,false,,,,
 freephonetracer-beenverified-form,FreePhoneTracer (BeenVerified form),freephonetracer.com,people-search,alive,phone,The only published channel is a phone number,,,,false,,,,phone
+funeral-co-operative-of-ottawa,Funeral Co-operative of Ottawa,fco-cfo.coop,people-search,alive,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,,,,,
 geni,Geni,geni.com,people-search,alive,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,,,,,
 getcontact,GetContact,getcontact.com,people-search,alive,generic_inbox,"Only a generic inbox was found, and the page does not say to use it for removal",,,,false,,,support@getcontact.com,email
 govwarrantsearch-org-infotracer-form,govwarrantsearch.org (InfoTracer form),govwarrantsearch.org,people-search,blocked,bot_wall,The opt-out URL returned a bot wall and a browser retry did not reveal a removal channel,,,,false,,,,
@@ -295,6 +297,7 @@ necrologie-ca,Nécrologie.ca,necrologie.ca,people-search,alive,no_channel,"The p
 openpeoplesearch,OpenPeopleSearch,openpeoplesearch.com,people-search,alive,generic_inbox,"Only a generic inbox was found, and the page does not say to use it for removal",,,,true,,,info@openpeoplesearch.com,email;postal_mail
 ownerly-beenverified-family,Ownerly (BeenVerified family),ownerly.com,people-search,alive,phone_postal,Phone and a mailing address are the only channels,turnstile,,,false,,,,postal_mail;phone
 paginebianche,PagineBianche,paginebianche.it,people-search,alive,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,,,,,
+passage-funeral-co-operative,Passage Funeral Co-operative,funerairepassagefuneral.ca,people-search,alive,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,,,,,
 people-search-expert,People Search Expert,peoplesearchexpert.com,people-search,alive,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,false,,,,
 people-search-org,People-Search.org,people-search.org,people-search,alive,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,false,,,,
 peoplebyname,PeopleByName,peoplebyname.com,people-search,blocked,phone_postal,Phone and a mailing address are the only channels,turnstile,0x4AAAAAAByeW7XuI0R40grS,,false,,,,postal_mail;phone
@@ -353,6 +356,7 @@ brady-list,Brady List,giglio-bradylist.com,public-records,robots_disallowed,robo
 courtlistener,CourtListener,courtlistener.com,public-records,alive,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,false,,,,
 florida-voter-directory,Florida Voter Directory,floridavoterdirectory.com,public-records,blocked,bot_wall,The opt-out URL returned a bot wall and a browser retry did not reveal a removal channel,,,,false,,,,
 njpropertyrecords,NJPropertyRecords,njpropertyrecords.com,public-records,alive,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,false,,,,
+npi-lookup-org,NPI Lookup (npi-lookup.org),npi-lookup.org,public-records,alive,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,,,,,
 npi-number-lookup,NPI Number Lookup,npinumberlookup.org,public-records,alive,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,,,,,
 npino,NPINo,npino.com,public-records,alive,generic_inbox,"Only a generic inbox was found, and the page does not say to use it for removal",,,,,,,info@npino.com,email
 nz-companies-office-individuals,NZ Companies Office director and shareholder search,app.companiesoffice.govt.nz,public-records,alive,captcha_form,Removal form is behind a CAPTCHA widget and no usable removal email was found,recaptcha_v3,6Le06vgnAAAAAGAXl3vldBUsGMt-R-V7Uxjoqm0Z,score,,,true,,web_form
