@@ -35,7 +35,7 @@ CATEGORIES = {
 }
 
 
-EXPECTED_CATALOG_ROWS = 756
+EXPECTED_CATALOG_ROWS = 764
 PINNED_IDS_PATH = ROOT / "data" / "v1" / "catalog-ids.csv"
 
 

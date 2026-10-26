@@ -3677,12 +3677,12 @@
     "evidence": "The name search (/name/landing?firstName=…&lastName=…&state=…) opens a notice that the visitor must certify by selecting \"I Agree\" to the Privacy Policy and Terms of Use (and that PrivateRecords is not a consumer reporting agency under the FCRA) before anything is searched. No person is listed before that agreement, which Frame does not click (residential browser, John Smith and Quillon Vanderwekken, 2026-10-19). This is the same template as WeInform and PeopleSearcher."
   },
   "canada-pages": {
-    "checked": "2026-10-24",
+    "checked": "2026-10-26",
     "country": "CA",
     "liveness": "alive",
-    "liveness_detail": "People search returned listings on 2026-10-24. The search URL is sometimes a Cloudflare challenge from a datacenter address and sometimes the listings page; a successful read showed the listings.",
+    "liveness_detail": "People search returned listings on 2026-10-26. Requests from a datacenter address sometimes get a Cloudflare challenge or 522; a successful read showed the listings.",
     "evidence": "People search on https://www.canadapages.com/ (GET form action https://www.canadapages.com/wp/search.php). txtwhat is one box, placeholder \"First or Last Name\"; txtwhere is the city. The search matches a surname in a city, not a full name. Live checks 2026-10-24: txtwhat=Smith&txtwhere=Toronto returned \"Total 1965 Listings for Smith in Toronto\". txtwhat=John+Smith&txtwhere=Toronto and txtwhat=Vanderwekken&txtwhere=Toronto both returned \"No record found.\" The removal form at /remove-info.php still asks for the phone number on the listing and says removal is attempted within 3 business days. That form was not submitted. An earlier pass had dropped this row because the homepage looked like a publisher site.",
-    "result_check": "GET /wp/search.php?txtwhat=Smith&txtwhere=Toronto: \"Total 1965 Listings for Smith in Toronto\". GET the same URL with txtwhat=John+Smith, and with txtwhat=Vanderwekken: \"No record found.\" (2026-10-24).",
+    "result_check": "GET /wp/search.php?txtwhat=Smith&txtwhere=Toronto: \"Total 1965 Listings for Smith in Toronto\". txtwhat=Northwind&txtwhere=Toronto: \"No record found\". (2026-10-26, 01:33 and 01:55 CST). Earlier: the same Smith/Toronto count on 2026-10-24.",
     "form": {
       "method": "http_get",
       "page_url": "https://www.canadapages.com/",
@@ -5616,5 +5616,278 @@
       ]
     },
     "captcha_widget": false
+  },
+  "sunshinelist-ca": {
+    "checked": "2026-10-26",
+    "country": "CA",
+    "liveness": "alive",
+    "liveness_detail": "sunshinelist.ca answered HTTP 200 on 2026-10-26. A name search returned salary records.",
+    "evidence": "Ontario public sector salary disclosure search run by CanTan Group (Toronto). Its records name each employee paid $100,000 or more with employer, position, and pay. The search page loads a DataTables JSON GET to /ajax/disclosures; the name goes in sSearch_3, the full_name column. The endpoint answers HTTP 500 unless every column parameter is sent, so form_action keeps the fixed DataTables parameters and sSearch_3 is added. No terms page was found; the About page says the data may be used with citation. Corrections: https://cantangroup.com/contact/. Nothing was submitted.",
+    "result_check": "GET /ajax/disclosures?…&sSearch_3=John Smith: \"iTotalDisplayRecords\": 243 with full_name rows such as John Smith. sSearch_3=Alder Northwind: \"iTotalDisplayRecords\": 0, \"aaData\": []. (2026-10-26, 01:38 and 01:57 CST).",
+    "form": {
+      "method": "http_get",
+      "page_url": "https://www.sunshinelist.ca/",
+      "form_action": "https://www.sunshinelist.ca/ajax/disclosures?sEcho=1&iColumns=10&sColumns=%2C%2C%2C%2C%2C%2C%2C%2C%2C&iDisplayStart=0&iDisplayLength=100&mDataProp_0=year&sSearch_0=&bRegex_0=false&bSearchable_0=true&bSortable_0=true&mDataProp_1=employer&sSearch_1=&bRegex_1=false&bSearchable_1=true&bSortable_1=true&mDataProp_2=sector&sSearch_2=&bRegex_2=false&bSearchable_2=true&bSortable_2=true&mDataProp_3=full_name&bRegex_3=false&bSearchable_3=true&bSortable_3=true&mDataProp_4=position&sSearch_4=&bRegex_4=false&bSearchable_4=true&bSortable_4=true&mDataProp_5=salary_paid&sSearch_5=&bRegex_5=false&bSearchable_5=true&bSortable_5=true&mDataProp_6=taxable_benefits&sSearch_6=&bRegex_6=false&bSearchable_6=true&bSortable_6=true&mDataProp_7=total&sSearch_7=&bRegex_7=false&bSearchable_7=true&bSortable_7=true&mDataProp_8=change&sSearch_8=&bRegex_8=false&bSearchable_8=true&bSortable_8=true&mDataProp_9=change_percentage&sSearch_9=&bRegex_9=false&bSearchable_9=true&bSortable_9=true&sSearch=&bRegex=false&iSortCol_0=0&sSortDir_0=desc&iSortingCols=1",
+      "url_pattern": "https://www.sunshinelist.ca/ajax/disclosures?sEcho=1&iColumns=10&sColumns=%2C%2C%2C%2C%2C%2C%2C%2C%2C&iDisplayStart=0&iDisplayLength=100&mDataProp_0=year&sSearch_0=&bRegex_0=false&bSearchable_0=true&bSortable_0=true&mDataProp_1=employer&sSearch_1=&bRegex_1=false&bSearchable_1=true&bSortable_1=true&mDataProp_2=sector&sSearch_2=&bRegex_2=false&bSearchable_2=true&bSortable_2=true&mDataProp_3=full_name&sSearch_3={sSearch_3}&bRegex_3=false&bSearchable_3=true&bSortable_3=true&mDataProp_4=position&sSearch_4=&bRegex_4=false&bSearchable_4=true&bSortable_4=true&mDataProp_5=salary_paid&sSearch_5=&bRegex_5=false&bSearchable_5=true&bSortable_5=true&mDataProp_6=taxable_benefits&sSearch_6=&bRegex_6=false&bSearchable_6=true&bSortable_6=true&mDataProp_7=total&sSearch_7=&bRegex_7=false&bSearchable_7=true&bSortable_7=true&mDataProp_8=change&sSearch_8=&bRegex_8=false&bSearchable_8=true&bSortable_8=true&mDataProp_9=change_percentage&sSearch_9=&bRegex_9=false&bSearchable_9=true&bSortable_9=true&sSearch=&bRegex=false&iSortCol_0=0&sSortDir_0=desc&iSortingCols=1",
+      "form_id": null,
+      "form_name": null,
+      "submit_label": null,
+      "hidden_names": [],
+      "inputs": [
+        {
+          "name": "sSearch_3",
+          "type": "text",
+          "canonical": "full_name",
+          "required": false,
+          "id": null,
+          "label": "Name",
+          "placeholder": null
+        }
+      ]
+    },
+    "captcha_widget": false
+  },
+  "npi-lookup-org": {
+    "checked": "2026-10-26",
+    "country": "US",
+    "liveness": "alive",
+    "liveness_detail": "npi-lookup.org answered HTTP 200 on 2026-10-26. A name search returned provider listings.",
+    "evidence": "US NPI provider directory built from NPPES. Free search is a GET to /npi_entity/index with npi_search_form[mixed] (last name), npi_search_form[first_name] and npi_search_form[state]. The privacy policy is at https://npi-lookup.org/privacy_policy; /terms has no rule against automated access, and there is no removal channel. Providers correct their data at NPPES. Nothing was submitted.",
+    "result_check": "GET /npi_entity/index?npi_search_form[mixed]=Smith&npi_search_form[first_name]=John: rows JOHN A SMITH, JOHN GERARD SMITH and more, with pagination. Northwind/Alder: \"No results available. Please review your search.\" (2026-10-26, 01:39 and 01:57 CST).",
+    "form": {
+      "method": "http_get",
+      "page_url": "https://npi-lookup.org/",
+      "form_action": "https://npi-lookup.org/npi_entity/index",
+      "url_pattern": "https://npi-lookup.org/npi_entity/index?npi_search_form%5Bmixed%5D={npi_search_form[mixed]}&npi_search_form%5Bfirst_name%5D={npi_search_form[first_name]}&npi_search_form%5Bstate%5D=&commit=Search",
+      "form_id": null,
+      "form_name": null,
+      "submit_label": "Search",
+      "hidden_names": [],
+      "inputs": [
+        {
+          "name": "npi_search_form[mixed]",
+          "type": "text",
+          "canonical": "last_name",
+          "required": true,
+          "id": null,
+          "label": "Last Name / Organization",
+          "placeholder": null
+        },
+        {
+          "name": "npi_search_form[first_name]",
+          "type": "text",
+          "canonical": "first_name",
+          "required": false,
+          "id": null,
+          "label": "First Name",
+          "placeholder": null
+        }
+      ]
+    },
+    "captcha_widget": false
+  },
+  "campaignmoney-com": {
+    "checked": "2026-10-26",
+    "country": "US",
+    "liveness": "alive",
+    "liveness_detail": "campaignmoney.com answered HTTP 200 on 2026-10-26. A contributor name search returned FEC donor records.",
+    "evidence": "FEC campaign contribution search. Contributor rows show name, occupation/employer, city, state, ZIP, amount and recipient. Free search is a GET to /advanced.asp?searchtype=contributors with lname, fname and cycle1. The disclaimer (/d.asp) has no rule against automated access. No removal channel is published. Nothing was submitted.",
+    "result_check": "GET /advanced.asp?searchtype=contributors&cycle1=20&lname=Smith&fname=John: \"Record Count 1,718\", rows like \"SMITH IV, JOHN J … HOBE SOUND FL\". lname=Northwind&fname=Alder: \"NO RECORDS FOUND\". (2026-10-26, 01:46 and 01:57 CST).",
+    "form": {
+      "method": "http_get",
+      "page_url": "https://www.campaignmoney.com/advanced.asp",
+      "form_action": "https://www.campaignmoney.com/advanced.asp",
+      "url_pattern": "https://www.campaignmoney.com/advanced.asp?searchtype=contributors&cycle1=20&lname={lname}&fname={fname}",
+      "form_id": null,
+      "form_name": null,
+      "submit_label": null,
+      "hidden_names": [],
+      "inputs": [
+        {
+          "name": "lname",
+          "type": "text",
+          "canonical": "last_name",
+          "required": true,
+          "id": null,
+          "label": "Last Name",
+          "placeholder": null
+        },
+        {
+          "name": "fname",
+          "type": "text",
+          "canonical": "first_name",
+          "required": false,
+          "id": null,
+          "label": "First Name",
+          "placeholder": null
+        }
+      ]
+    },
+    "captcha_widget": false
+  },
+  "aircraftone-com": {
+    "checked": "2026-10-26",
+    "country": "US",
+    "liveness": "alive",
+    "liveness_detail": "aircraftone.com answered HTTP 200 on 2026-10-26. An owner name search returned aircraft registrations.",
+    "evidence": "FAA aircraft registry search. Owner name rows show the registrant name, N-number, make/model and dates; addresses need a membership. Free search is a GET to /search.asp?type=ln with Criteria (last name) and fname. The disclaimer (/d.asp) has no rule against automated access. No removal channel; the records come from the FAA registry. Nothing was submitted.",
+    "result_check": "GET /search.asp?type=ln&Criteria=Smith&fname=John: rows \"N54390 Smith John A Jr\", \"N1624V Smith John C\", 3 result pages. Criteria=Northwind&fname=Alder: \"NO RECORDS FOUND\". (2026-10-26, 01:47 and 01:57 CST).",
+    "form": {
+      "method": "http_get",
+      "page_url": "https://www.aircraftone.com/search.asp?type=ln",
+      "form_action": "https://www.aircraftone.com/search.asp",
+      "url_pattern": "https://www.aircraftone.com/search.asp?type=ln&Criteria={Criteria}&fname={fname}",
+      "form_id": null,
+      "form_name": null,
+      "submit_label": null,
+      "hidden_names": [],
+      "inputs": [
+        {
+          "name": "Criteria",
+          "type": "text",
+          "canonical": "last_name",
+          "required": true,
+          "id": null,
+          "label": "Person's Last Name",
+          "placeholder": "Enter a Last Name"
+        },
+        {
+          "name": "fname",
+          "type": "text",
+          "canonical": "first_name",
+          "required": false,
+          "id": null,
+          "label": "First Name",
+          "placeholder": null
+        }
+      ]
+    },
+    "captcha_widget": false
+  },
+  "cooperative-funeraire-du-temiscamingue": {
+    "checked": "2026-10-26",
+    "country": "CA",
+    "liveness": "alive",
+    "liveness_detail": "cftemiscamingue.com answered HTTP 200 on 2026-10-26. A name search returned death notices.",
+    "evidence": "Quebec funeral cooperative in Témiscamingue (FCFQ member). Its site publishes death notices that name the deceased and family. Free search is a GET with search. The privacy policy is at https://cftemiscamingue.com/politique-de-confidentialite and has no rule against automated access. Nothing was submitted.",
+    "result_check": "search=Tremblay: \"(4 trouvés)\". search=Smith: \"(2 trouvés)\". search=Alder Northwind and search=John Smith: \"(0 trouvés)\". (2026-10-26, 01:38 and 01:57 CST).",
+    "form": {
+      "method": "http_get",
+      "page_url": "https://cftemiscamingue.com/avis-de-deces",
+      "form_action": "https://cftemiscamingue.com/avis-de-deces",
+      "url_pattern": "https://cftemiscamingue.com/avis-de-deces?search={search}",
+      "form_id": null,
+      "form_name": null,
+      "submit_label": null,
+      "hidden_names": [],
+      "inputs": [
+        {
+          "name": "search",
+          "type": "text",
+          "canonical": "full_name",
+          "required": false,
+          "id": null,
+          "label": null,
+          "placeholder": "Rechercher un nom ou une ville"
+        }
+      ]
+    },
+    "captcha_widget": false
+  },
+  "funeral-co-operative-of-ottawa": {
+    "checked": "2026-10-26",
+    "country": "CA",
+    "liveness": "alive",
+    "liveness_detail": "fco-cfo.coop answered HTTP 200 on 2026-10-26. A name search returned death notices.",
+    "evidence": "Ottawa funeral cooperative (419 St-Laurent Boulevard; FCFQ member). Its site publishes death notices that name the deceased and family. Free search is a GET with search. The privacy policy is at https://fco-cfo.coop/politique-confidentialite and has no rule against automated access. Contact: info@fco-cfo.coop. Nothing was submitted.",
+    "result_check": "search=Smith: \"(3 found)\". search=Tremblay: \"(3 found)\". search=Alder Northwind and search=John Smith: \"(0 found)\". /avis-de-deces redirects to /death-notices. (2026-10-26, 01:38 and 01:57 CST).",
+    "form": {
+      "method": "http_get",
+      "page_url": "https://fco-cfo.coop/death-notices",
+      "form_action": "https://fco-cfo.coop/death-notices",
+      "url_pattern": "https://fco-cfo.coop/death-notices?search={search}",
+      "form_id": null,
+      "form_name": null,
+      "submit_label": null,
+      "hidden_names": [],
+      "inputs": [
+        {
+          "name": "search",
+          "type": "text",
+          "canonical": "full_name",
+          "required": false,
+          "id": null,
+          "label": null,
+          "placeholder": "Search for a name or city"
+        }
+      ]
+    },
+    "captcha_widget": false
+  },
+  "timiskaming-funeral-cooperative": {
+    "checked": "2026-10-26",
+    "country": "CA",
+    "liveness": "alive",
+    "liveness_detail": "timiskamingfc.com answered HTTP 200 on 2026-10-26. A name search returned death notices.",
+    "evidence": "Northern Ontario funeral cooperative in Kirkland Lake (FCFQ member). Its site publishes death notices that name the deceased and family. Free search is a GET with search. No privacy page was found; the URL is the contact page. Contact: info@timiskamingfc.com. The terms at /terms have no rule against automated access. Nothing was submitted.",
+    "result_check": "search=John Smith: \"(2 found)\". search=Smith: \"(52 found)\". search=Alder Northwind: \"(0 found)\". (2026-10-26, 01:38 and 01:57 CST).",
+    "form": {
+      "method": "http_get",
+      "page_url": "https://timiskamingfc.com/death-notices",
+      "form_action": "https://timiskamingfc.com/death-notices",
+      "url_pattern": "https://timiskamingfc.com/death-notices?search={search}",
+      "form_id": null,
+      "form_name": null,
+      "submit_label": null,
+      "hidden_names": [],
+      "inputs": [
+        {
+          "name": "search",
+          "type": "text",
+          "canonical": "full_name",
+          "required": false,
+          "id": null,
+          "label": null,
+          "placeholder": "Search for a name or city"
+        }
+      ]
+    },
+    "captcha_widget": false
+  },
+  "passage-funeral-co-operative": {
+    "checked": "2026-10-26",
+    "country": "CA",
+    "liveness": "alive",
+    "liveness_detail": "funerairepassagefuneral.ca answered HTTP 200 on 2026-10-26. A name search returned death notices.",
+    "evidence": "New Brunswick funeral cooperative with homes in Shediac Bridge, Moncton, Dieppe, and Bouctouche (FCFQ member). Its site publishes death notices that name the deceased and family. Free search is a GET with s. No privacy or terms page was found; the URL is the home page, which lists info@passagefc.ca. Nothing was submitted. The site returns HTTP 403 to user agents that name a research project or a GitHub URL (the dataset search test got 403 on 2026-10-26 at 02:03 CST); a browser user agent and the FrameScanWorker user agent both get HTTP 200 with results.",
+    "result_check": "s=John Smith: \"We found 41 results\". s=Alder Northwind: \"Sorry, but nothing matched your search terms.\" (2026-10-26, 01:38 and 01:57 CST).",
+    "form": {
+      "method": "http_get",
+      "page_url": "https://funerairepassagefuneral.ca/en/",
+      "form_action": "https://funerairepassagefuneral.ca/en/",
+      "url_pattern": "https://funerairepassagefuneral.ca/en/?s={s}",
+      "form_id": null,
+      "form_name": null,
+      "submit_label": null,
+      "hidden_names": [],
+      "inputs": [
+        {
+          "name": "s",
+          "type": "text",
+          "canonical": "full_name",
+          "required": false,
+          "id": null,
+          "label": null,
+          "placeholder": "Name, Date.."
+        }
+      ]
+    },
+    "captcha_widget": false
+  },
+  "freebackgroundcheck-org": {
+    "checked": "2026-10-26",
+    "offline": true,
+    "country": "US",
+    "evidence": "freebackgroundcheck.org and www.freebackgroundcheck.org closed the connection on every request on 2026-10-26: curl over https (TLS EOF) and http (timeout) between 01:04 and 01:22 CST and again at 01:51 CST, a headless browser (ERR_CONNECTION_CLOSED), and a direct request to the resolved address 158.51.209.211. A fetch from a second network returned HTTP 504 at 01:22 and 01:53 CST. The catalog row stays."
   }
 }

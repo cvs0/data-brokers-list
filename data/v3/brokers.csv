@@ -755,3 +755,11 @@ obitsarchive,ObitsArchive,obitsarchive.com,alive,https://www.obitsarchive.com/si
 recentlybooked,RecentlyBooked,recentlybooked.com,alive,https://recentlybooked.com/images/logo-full.svg,none,,https://recentlybooked.com/mugshot-removal-policy,email,info@recentlybooked.com,,
 npino,NPINo,npino.com,alive,https://npino.com/images/favicon.png,none,,https://npino.com/pages/contact-us/,email,info@npino.com,,
 npi-number-lookup,NPI Number Lookup,npinumberlookup.org,robots_disallowed,,unknown,,https://www.npinumberlookup.org/contact.php,,,,
+sunshinelist-ca,SunshineList.ca,sunshinelist.ca,alive,https://cantangroup.com/apple-touch-icon.png,none,,https://cantangroup.com/contact/,web_form,,,
+npi-lookup-org,NPI Lookup (npi-lookup.org),npi-lookup.org,alive,https://npi-lookup.org/assets/logo-7cc1aac832661e3f2ad5c83b3cc2cff5da68391752e4793af36e5cf6eae73159.png,http_get,https://npi-lookup.org/,https://npi-lookup.org/privacy_policy,,,,cloudflare
+campaignmoney-com,CampaignMoney.com,campaignmoney.com,alive,https://www.campaignmoney.com/images/campaignmoney-logo.png,http_get,https://www.campaignmoney.com/,https://www.campaignmoney.com/contact.asp,web_form,,,
+aircraftone-com,AircraftOne,aircraftone.com,alive,https://www.aircraftone.com/images/aircraftone1-logo.png?x=1,none,,https://www.aircraftone.com/contact.asp,web_form,,,
+cooperative-funeraire-du-temiscamingue,Coopérative funéraire du Témiscamingue,cftemiscamingue.com,alive,https://cftemiscamingue.com/web/image/website/1/logo/Coop%C3%A9rative%20fun%C3%A9raire%20du%20T%C3%A9miscamingue?unique=4b0a3c9,http_get,https://cftemiscamingue.com/,https://cftemiscamingue.com/politique-de-confidentialite,,,,
+funeral-co-operative-of-ottawa,Funeral Co-operative of Ottawa,fco-cfo.coop,alive,https://fco-cfo.coop/web/image/website/1/logo/Funeral%20Home%20Ottawa?unique=34be2e2,http_get,https://fco-cfo.coop/,https://fco-cfo.coop/politique-confidentialite,,,,
+timiskaming-funeral-cooperative,Timiskaming Funeral Cooperative,timiskamingfc.com,alive,https://timiskamingfc.com/web/image/website/1/logo/Timiskaming%20Funeral%20Cooperative?unique=601317b,http_get,https://timiskamingfc.com/,https://timiskamingfc.com/contactus,web_form;phone,,,
+passage-funeral-co-operative,Passage Funeral Co-operative,funerairepassagefuneral.ca,robots_disallowed,,unknown,,https://funerairepassagefuneral.ca/en/,,,,

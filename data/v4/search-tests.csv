@@ -6,6 +6,7 @@ affordable-background-checks,affordablebackgroundchecks.com,no_results,200,http_
 aggknowledge-inc,aggknowledge.ai,unfilled,,http_get,,,,first_name;email;last_name;phone,company*,2026-10-13T20:03:53+00:00
 agr-marketing-solutions-llc,agrmarketingsolutions.com,results,200,http_get,,results,,full_name,,2026-10-13T19:43:21+00:00
 aidentified-inc,aidentified.com,results,200,http_get,kb-search-results,results,,full_name,,2026-10-13T19:43:21+00:00
+aircraftone-com,aircraftone.com,submitted,200,http_get,,results,40,last_name;first_name,,2026-10-26T07:59:30+00:00
 alabama-arrests,alabamaarrests.org,no_results,200,http_get,results,empty,0,first_name;last_name;region;city;sex,,2026-10-13T19:43:21+00:00
 alarmscalifornia-licensedata,alarmscalifornia.org,challenge,403,http_get,licenses,,,full_name,,2026-10-25T03:18:09+00:00
 alumni-us,alumnius.net,submitted,200,http_get,search,results,3,full_name,,2026-10-25T03:02:26+00:00
@@ -25,6 +26,8 @@ californialicensing-org-licensedata,californialicensing.org,challenge,403,http_g
 californianursing-org-licensedata,californianursing.org,challenge,403,http_get,licenses,,,full_name,,2026-10-13T19:02:02+00:00
 californiapharmacists-org-licensedata,californiapharmacists.org,challenge,403,http_get,licenses,,,full_name,,2026-10-25T03:18:12+00:00
 callapp-software-ltd,callapp.com,results,200,http_get,search-result,results,,code;phone,,2026-10-13T19:43:25+00:00
+campaignmoney-com,campaignmoney.com,submitted,200,http_get,advanced.asp,results,35,last_name;first_name,,2026-10-26T07:59:30+00:00
+canada-pages,canadapages.com,submitted,200,http_get,wp,form,,last_name;city,,2026-10-26T08:01:55+00:00
 certn,certn.co,unfilled,,http_form_post,,,,full_name,widget,2026-10-13T20:03:53+00:00
 clearbit,clearbit.com,submitted,200,http_get,hc,form,,full_name,,2026-10-13T19:43:27+00:00
 coloradoresidentdirectory,coloradoresidentdirectory.com,results,200,http_form_post,name,results,,full_name;city,,2026-10-25T03:02:33+00:00
@@ -33,6 +36,7 @@ complete-medical-lists-inc,completemedicallists.com,results,200,http_form_post,m
 connecticut-arrests,ctarrests.org,no_results,200,http_get,results,empty,0,first_name;last_name;region;city;sex,,2026-10-13T19:43:29+00:00
 consumerbase-llc,exactdata.com,challenge,403,http_form_post,submissions,,,first_name;last_name;email;phone,,2026-10-13T19:08:53+00:00
 contractorscalifornia-org-licensedata,contractorscalifornia.org,challenge,403,http_get,licenses,,,full_name,,2026-10-25T03:18:13+00:00
+cooperative-funeraire-du-temiscamingue,cftemiscamingue.com,results,200,http_get,website,results,,full_name,,2026-10-26T08:01:55+00:00
 courtcasefinder,courtcasefinder.com,no_results,200,http_form_post,search,empty,0,first_name;last_name;city;region,,2026-10-13T19:31:14+00:00
 criminal-com-truthfinder,criminal.com,challenge,403,http_get,search,,,first_name;last_name;city;region,,2026-10-13T19:02:04+00:00
 criminalrecords-com-intelius,criminalrecords.com,challenge,403,http_get,search,,,first_name;last_name;city;region,,2026-10-13T19:31:16+00:00
@@ -63,6 +67,7 @@ first-beat-media,phonelookup.com,submitted,200,http_form_post,search,form,,phone
 freebackgroundchecks-com,freebackgroundchecks.com,submitted,200,http_get,,form,,first_name;last_name;city;region,,2026-10-13T20:47:57+00:00
 freepeopledirectory-spokeo-data,freepeopledirectory.com,http_error,404,http_get,name,,,first_name;last_name;region;city,,2026-10-25T03:33:55+00:00
 freephonetracer-beenverified-form,freephonetracer.com,submitted,200,browser,search,other,,phone,,2026-10-25T04:05:00+00:00
+funeral-co-operative-of-ottawa,fco-cfo.coop,results,200,http_get,website,results,,full_name,,2026-10-26T08:01:55+00:00
 getprospect,getprospect.com,captcha,,http_get,,,,,,2026-10-25T03:02:36+00:00
 glad-i-know,gladiknow.com,submitted,200,http_get,,form,,first_name;last_name;city;region,,2026-10-13T20:48:04+00:00
 global-source-data-solutions-inc,gsdsi.com,submitted,200,http_get,search,other,,full_name,,2026-10-13T19:31:38+00:00
@@ -107,6 +112,7 @@ north-carolina-arrests,ncarrests.org,no_results,200,http_get,Results,empty,0,fir
 north-dakota-arrests,ndarrests.org,no_results,200,http_get,results,empty,0,first_name;last_name;region;city;sex,,2026-10-13T19:44:13+00:00
 north-data,northdata.de,challenge,403,http_get,,,,full_name,,2026-10-25T04:09:54+00:00
 notariescalifornia-com-licensedata,notariescalifornia.com,challenge,403,http_get,licenses,,,full_name,,2026-10-25T03:18:22+00:00
+npi-lookup-org,npi-lookup.org,submitted,200,http_get,npi_entity,form,,last_name;first_name,,2026-10-26T08:01:55+00:00
 npi-number-lookup,npinumberlookup.org,challenge,403,http_form_post,getResults.php,,,last_name;first_name;region,,2026-10-26T06:19:31+00:00
 npino,npino.com,submitted,200,http_form_post,,results,56,full_name,,2026-10-26T06:19:59+00:00
 npir-org,npir.org,challenge,403,http_get,npi,,,full_name,,2026-10-25T03:33:58+00:00
@@ -119,6 +125,7 @@ opensend-inc,opensend.com,results,200,http_get,kb-search-results,results,,full_n
 outward-media-inc,outwardmedia.com,submitted,200,http_form_post,,other,,full_name;email,,2026-10-13T19:32:17+00:00
 owmn-ltd,thebridgecorp.com,submitted,200,http_get,,other,,first_name;last_name;email;phone,,2026-10-13T19:32:19+00:00
 ownerly-beenverified-family,ownerly.com,submitted,200,http_get,lp,other,,street_address,,2026-10-25T03:34:00+00:00
+passage-funeral-co-operative,funerairepassagefuneral.ca,challenge,403,http_get,en,,,full_name,,2026-10-26T08:03:28+00:00
 people-search-expert,peoplesearchexpert.com,submitted,200,http_get,search,results,0,full_name;city,,2026-10-25T03:02:53+00:00
 people-search-org,people-search.org,no_results,200,http_form_post,name,empty,0,full_name;city,,2026-10-25T03:02:54+00:00
 peoplefind-com-intelius,peoplefind.com,challenge,403,http_get,search,,,first_name;last_name;city;region,,2026-10-13T19:32:22+00:00
@@ -216,6 +223,7 @@ staterecords-org-network-washingtoncourtrecords-us,washingtoncourtrecords.us,no_
 staterecords-org-network-westvirginiacourtrecords-us,westvirginiacourtrecords.us,no_results,200,http_form_post,results,empty,0,first_name;last_name;city;state,,2026-10-13T21:14:09+00:00
 staterecords-org-network-wisconsincourtrecords-us,wisconsincourtrecords.us,no_results,200,http_form_post,results,empty,0,first_name;last_name;city;state,,2026-10-13T21:14:13+00:00
 staterecords-org-network-wyomingcourtrecords-us,wyomingcourtrecords.us,no_results,200,http_form_post,results,empty,0,first_name;last_name;city;state,,2026-10-13T21:14:17+00:00
+sunshinelist-ca,sunshinelist.ca,submitted,200,http_get,,results,40,full_name,,2026-10-26T08:02:23+00:00
 sync-me,sync.me,results,200,http_get,search,results,,phone,,2026-10-13T21:14:22+00:00
 tennhelp,tennhelp.com,submitted,200,http_form_post,,other,,last_name;first_name;city;region;email;phone,,2026-10-13T19:35:45+00:00
 texas-arrest-warrants-search,texasarrestwarrants.org,http_error,404,http_get,search,,,first_name;last_name;region,,2026-10-25T03:03:36+00:00
@@ -225,6 +233,7 @@ the-alesco-group-llc,mydataprivacy.com,submitted,200,http_get,,other,,first_name
 the-segerdahl-llc,sg360.com,submitted,200,http_form_post,,other,,phone;email;phone,,2026-10-13T19:35:48+00:00
 thepublicindex,thepublicindex.org,submitted,200,http_get,,form,,first_name;last_name;city;region,,2026-10-13T20:48:56+00:00
 thisnumber,thisnumber.com,submitted,200,http_get,us,other,,phone,,2026-10-13T20:49:04+00:00
+timiskaming-funeral-cooperative,timiskamingfc.com,results,200,http_get,website,results,,full_name,,2026-10-26T07:59:30+00:00
 transparent-nevada,transparentnevada.com,submitted,200,http_get,,other,,full_name;email;postal_code,,2026-10-13T19:35:51+00:00
 truthfinder-peopleconnect,truthfinder.com,challenge,403,http_get,results,,,first_name;last_name;region,,2026-10-25T03:34:05+00:00
 truthrecord-we-inform-llc,truthrecord.org,results,200,http_get,name_search,results,,first_name;last_name;region,,2026-10-13T20:03:00+00:00
