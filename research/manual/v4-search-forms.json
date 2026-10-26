@@ -3963,16 +3963,16 @@
     "evidence": "GET of the catalog privacy URL followed the redirect to the LeadGenesis sign-in. The catalog URL was left in place. No account was created and no request was submitted. The stored search form on https://www.lead-enhance.com/ is the lead-buyer contact form (Name, Email, Company, Phone, and \"How can we help your business?\", all required), not a person search. The homepage, re-read on 2026-10-24, sells home-services leads and has no public name search. The form was not submitted."
   },
   "california-criminal-records-search": {
-    "checked": "2026-10-24",
-    "liveness": "alive",
-    "liveness_detail": "californiacriminalrecords.org answered HTTP 200 on 2026-10-24. Its name-results URL returned HTTP 404.",
-    "evidence": "The homepage form is a GET to /search/name/results.php. That URL with fname=John and lname=Smith returned HTTP 404, titled 404 Not Found, including after a homepage visit set a CSRF cookie. The contact page returned HTTP 200. No form was submitted."
+    "checked": "2026-10-26",
+    "offline": true,
+    "country": "US",
+    "evidence": "californiacriminalrecords.org is no longer a working search. The homepage still answers HTTP 200 and its only form is a GET to /search/name/results.php (fname, lname, state), but that URL returned HTTP 404, titled 404 Not Found, for John Smith on 2026-10-24 and again on 2026-10-26, after a homepage visit set its cookies. No results page loads for any name, so the site shows no listings. No request was submitted."
   },
   "texas-arrest-warrants-search": {
-    "checked": "2026-10-24",
-    "liveness": "alive",
-    "liveness_detail": "texasarrestwarrants.org answered HTTP 200 on 2026-10-24. Its name-results URL returned HTTP 404.",
-    "evidence": "The homepage form is a GET to /search/name/results.php. That URL with fname=John and lname=Smith returned HTTP 404, titled Not Found (#404). The privacy policy returned HTTP 200. No form was submitted."
+    "checked": "2026-10-26",
+    "offline": true,
+    "country": "US",
+    "evidence": "texasarrestwarrants.org is no longer a working search. The homepage still answers HTTP 200 and its only form is a GET to /search/name/results.php (fname, lname, state), but that URL returned HTTP 404, titled Not Found (#404), for John Smith on 2026-10-24 and again on 2026-10-26, after a homepage visit set its cookies. No results page loads for any name, so the site shows no listings. No request was submitted."
   },
   "fqsg-avis-de-deces": {
     "checked": "2026-10-24",
@@ -5398,5 +5398,35 @@
       ]
     },
     "captcha_widget": false
+  },
+  "numlooker": {
+    "checked": "2026-10-26",
+    "offline": true,
+    "country": "US",
+    "evidence": "numlooker.com did not load on 2026-10-25 or 2026-10-26. Its name servers still answer (Cloudflare addresses from dns.google), but every request to https://numlooker.com/ and /remove-my-info from a US host returned Cloudflare error 522 (\"Connection timed out\": Cloudflare could not reach the site's own server) or timed out, in four checks over about an hour, and a second network also timed out. The catalog crawl on 2026-10-12 had already timed out on it. No page, search or removal form loads, so nothing about the person is shown. No request was submitted."
+  },
+  "cocofinder": {
+    "checked": "2026-10-26",
+    "offline": true,
+    "country": "US",
+    "evidence": "cocofinder.com did not load on 2026-10-25 or 2026-10-26. Its name servers still answer (Cloudflare addresses from dns.google), but every request to https://cocofinder.com/ and /remove-my-info from a US host returned Cloudflare error 522 (\"Connection timed out\": Cloudflare could not reach the site's own server) or timed out, in four checks over about an hour, and a second network also timed out. The catalog crawl on 2026-10-12 had already timed out on it. No page, search or removal form loads, so nothing about the person is shown. No request was submitted."
+  },
+  "cocofinder-net": {
+    "checked": "2026-10-26",
+    "offline": true,
+    "country": "US",
+    "evidence": "cocofinder.net did not load on 2026-10-25 or 2026-10-26. Its name servers still answer (Cloudflare addresses from dns.google), but every request to https://cocofinder.net/ and /remove-my-info from a US host returned Cloudflare error 522 (\"Connection timed out\": Cloudflare could not reach the site's own server) or timed out, in four checks over about an hour, and a second network also timed out. The catalog crawl on 2026-10-12 had already timed out on it. No page, search or removal form loads, so nothing about the person is shown. No request was submitted."
+  },
+  "fastpeoplesearch-io": {
+    "checked": "2026-10-26",
+    "offline": true,
+    "country": "US",
+    "evidence": "fastpeoplesearch.io did not load on 2026-10-25 or 2026-10-26. Its name servers still answer (Cloudflare addresses from dns.google), but every request to https://fastpeoplesearch.io/ and /remove-my-info from a US host returned Cloudflare error 522 (\"Connection timed out\": Cloudflare could not reach the site's own server) or timed out, in four checks over about an hour, and a second network also timed out. The catalog crawl on 2026-10-12 had already timed out on it. No page, search or removal form loads, so nothing about the person is shown. No request was submitted."
+  },
+  "truepeoplesearch-net": {
+    "checked": "2026-10-26",
+    "offline": true,
+    "country": "US",
+    "evidence": "truepeoplesearch.net did not load on 2026-10-25 or 2026-10-26. Its name servers still answer (Cloudflare addresses from dns.google), but every request to https://truepeoplesearch.net/ and /remove-my-info from a US host returned Cloudflare error 522 (\"Connection timed out\": Cloudflare could not reach the site's own server) or timed out, in four checks over about an hour, and a second network also timed out. The catalog crawl on 2026-10-12 had already timed out on it. No page, search or removal form loads, so nothing about the person is shown. No request was submitted."
   }
 }
