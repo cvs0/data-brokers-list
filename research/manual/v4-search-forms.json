@@ -5889,5 +5889,318 @@
     "offline": true,
     "country": "US",
     "evidence": "freebackgroundcheck.org and www.freebackgroundcheck.org closed the connection on every request on 2026-10-26: curl over https (TLS EOF) and http (timeout) between 01:04 and 01:22 CST and again at 01:51 CST, a headless browser (ERR_CONNECTION_CLOSED), and a direct request to the resolved address 158.51.209.211. A fetch from a second network returned HTTP 504 at 01:22 and 01:53 CST. The catalog row stays."
+  },
+  "cooperative-funeraire-des-eaux-vives": {
+    "checked": "2026-10-26",
+    "country": "CA",
+    "liveness": "alive",
+    "liveness_detail": "eauxvives.ca answered HTTP 200 on 2026-10-26. A name search returned death notices.",
+    "evidence": "Quebec funeral cooperative (Rivière-du-Loup; FCFQ member). Its site publishes death notices that name the deceased and family. Free search is a GET to /avis-de-deces with search. Contact form: https://eauxvives.ca/nous-joindre; email info@eauxvives.ca. Nothing was submitted.",
+    "result_check": "GET /avis-de-deces?search=Tremblay: \"(4 trouvés)\". search=Quillon Vanderwekken and search=Alder Northwind: \"(0 trouvés)\". (2026-10-26, CST).",
+    "form": {
+      "method": "http_get",
+      "page_url": "https://eauxvives.ca/avis-de-deces",
+      "form_action": "https://eauxvives.ca/avis-de-deces",
+      "url_pattern": "https://eauxvives.ca/avis-de-deces?search={search}",
+      "form_id": null,
+      "form_name": null,
+      "submit_label": null,
+      "hidden_names": [],
+      "inputs": [
+        {
+          "name": "search",
+          "type": "text",
+          "canonical": "full_name",
+          "required": false,
+          "id": null,
+          "label": null,
+          "placeholder": "Rechercher un nom ou une ville"
+        }
+      ]
+    },
+    "captcha_widget": false
+  },
+  "castanet-obituaries": {
+    "checked": "2026-10-26",
+    "country": "CA",
+    "liveness": "alive",
+    "liveness_detail": "castanet.net answered HTTP 200 on 2026-10-26. A name search returned obituaries.",
+    "evidence": "Castanet.net (Kelowna, BC) obituaries. Notices name the deceased, age, town and family. Free search is the obitsearch form, a GET to /obituaries/search.php with Name. Contact form: https://www.castanet.net/contactus/; email management@castanet.net. Nothing was submitted.",
+    "result_check": "GET /obituaries/search.php?Name=John Smith: HTTP 200 with notices such as \"SMITH, Edward John … of Kamloops, BC\" and \"SMITH, Frederick John\". Name=Quillon Vanderwekken: HTTP 404 with no notices. (2026-10-26, CST).",
+    "form": {
+      "method": "http_get",
+      "page_url": "https://www.castanet.net/obituaries/",
+      "form_action": "https://www.castanet.net/obituaries/search.php",
+      "url_pattern": "https://www.castanet.net/obituaries/search.php?Name={Name}",
+      "form_id": "obitsearch",
+      "form_name": null,
+      "submit_label": null,
+      "hidden_names": [],
+      "inputs": [
+        {
+          "name": "Name",
+          "type": "text",
+          "canonical": "full_name",
+          "required": false,
+          "id": null,
+          "label": "Name",
+          "placeholder": null
+        }
+      ]
+    },
+    "captcha_widget": false
+  },
+  "remembering-ca": {
+    "checked": "2026-10-26",
+    "country": "CA",
+    "liveness": "alive",
+    "liveness_detail": "remembering.ca loaded in a browser on 2026-10-26 and a name search returned obituaries. Plain HTTP clients get a Cloudflare challenge.",
+    "evidence": "Postmedia national obituary site (AdPerfect platform). Notices name the deceased and family. Free search is a GET to /obituaries/all-categories/search?search_type=advanced with ap_search_keyword (a full-text keyword). Plain HTTP clients get a Cloudflare challenge; a browser loads the results. Support form: https://www.remembering.ca/static/support. Privacy policy: https://www.adperfect.com/privacy-policy/. Nothing was submitted.",
+    "result_check": "Browser GET /obituaries/all-categories/search?search_type=advanced&ap_search_keyword=Smith: \"Displaying 75804 stories\". ap_search_keyword=Quillon Vanderwekken: \"Displaying 0 stories There are no notices that match your search.\" (2026-10-26, CST).",
+    "form": {
+      "method": "http_get",
+      "page_url": "https://www.remembering.ca/obituaries/all-categories/search",
+      "form_action": "https://www.remembering.ca/obituaries/all-categories/search",
+      "url_pattern": "https://www.remembering.ca/obituaries/all-categories/search?search_type=advanced&ap_search_keyword={ap_search_keyword}",
+      "form_id": null,
+      "form_name": null,
+      "submit_label": null,
+      "hidden_names": [],
+      "inputs": [
+        {
+          "name": "ap_search_keyword",
+          "type": "text",
+          "canonical": "full_name",
+          "required": false,
+          "id": null,
+          "label": "Keyword",
+          "placeholder": null
+        }
+      ]
+    },
+    "captcha_widget": false
+  },
+  "sootoday-obituaries": {
+    "checked": "2026-10-26",
+    "country": "CA",
+    "liveness": "alive",
+    "liveness_detail": "sootoday.com answered HTTP 200 on 2026-10-26. A name search returned obituaries.",
+    "evidence": "SooToday.com (Village Media) obituaries. Notices name the deceased and family. Free search is a GET to /search with q and tag=2355 (obituaries only). Privacy policy: https://www.sootoday.com/privacy-policy; email info@sootoday.com. Nothing was submitted.",
+    "result_check": "GET /search?q=Smith&tag=2355: notices such as \"SMITH, Laurence Walter\". q=Quillon Vanderwekken&tag=2355: \"There are no results for that search.\" (2026-10-26, CST).",
+    "form": {
+      "method": "http_get",
+      "page_url": "https://www.sootoday.com/search",
+      "form_action": "https://www.sootoday.com/search",
+      "url_pattern": "https://www.sootoday.com/search?q={q}&tag=2355",
+      "form_id": null,
+      "form_name": null,
+      "submit_label": null,
+      "hidden_names": [],
+      "inputs": [
+        {
+          "name": "q",
+          "type": "text",
+          "canonical": "full_name",
+          "required": false,
+          "id": null,
+          "label": "Search Term",
+          "placeholder": null
+        }
+      ]
+    },
+    "captcha_widget": false
+  },
+  "publicsalaries-com": {
+    "checked": "2026-10-26",
+    "country": "CA",
+    "liveness": "alive",
+    "liveness_detail": "publicsalaries.com answered HTTP 200 on 2026-10-26. A name search in a browser returned salary records.",
+    "evidence": "Unofficial Canadian public sector salary search (ON, MB, BC, AB, NL, SK, NS disclosures). Free search is a GET to /search/ with q; results are drawn in script. Removal: email corrections@publicsalaries.com with the page address, per https://publicsalaries.com/privacy/. Nothing was submitted.",
+    "result_check": "Browser GET /search/?q=John Smith: people named John Smith with employer and salary. q=Quillon Vanderwekken: \"No matches.\" (2026-10-26, CST).",
+    "form": {
+      "method": "http_get",
+      "page_url": "https://publicsalaries.com/",
+      "form_action": "https://publicsalaries.com/search/",
+      "url_pattern": "https://publicsalaries.com/search/?q={q}",
+      "form_id": null,
+      "form_name": null,
+      "submit_label": null,
+      "hidden_names": [],
+      "inputs": [
+        {
+          "name": "q",
+          "type": "text",
+          "canonical": "full_name",
+          "required": false,
+          "id": null,
+          "label": "Search",
+          "placeholder": null
+        }
+      ]
+    },
+    "captcha_widget": false
+  },
+  "canadasunshinelist-ca": {
+    "checked": "2026-10-26",
+    "country": "CA",
+    "liveness": "alive",
+    "liveness_detail": "canadasunshinelist.ca answered HTTP 200 on 2026-10-26. A name search in a browser returned salary records.",
+    "evidence": "Unofficial all-province Canadian public sector salary ledger. Search is per province, a GET to /<province>/people with q (stored for Ontario); results are drawn in script. Removal form: https://www.canadasunshinelist.ca/removal (province-specific); email privacy@canadasunshinelist.ca. Nothing was submitted.",
+    "result_check": "Browser GET /ontario/people?q=John Smith: \"24 results\". q=Quillon Vanderwekken: \"0 results … No results found\". (2026-10-26, CST).",
+    "form": {
+      "method": "http_get",
+      "page_url": "https://www.canadasunshinelist.ca/ontario/people",
+      "form_action": "https://www.canadasunshinelist.ca/ontario/people",
+      "url_pattern": "https://www.canadasunshinelist.ca/ontario/people?q={q}",
+      "form_id": null,
+      "form_name": null,
+      "submit_label": null,
+      "hidden_names": [],
+      "inputs": [
+        {
+          "name": "q",
+          "type": "text",
+          "canonical": "full_name",
+          "required": false,
+          "id": null,
+          "label": "Search",
+          "placeholder": null
+        }
+      ]
+    },
+    "captcha_widget": false
+  },
+  "legacy-com": {
+    "checked": "2026-10-26",
+    "country": null,
+    "liveness": "alive",
+    "liveness_detail": "legacy.com loaded in a browser on 2026-10-26 and a name search returned obituaries. Plain HTTP clients get a Cloudflare 403.",
+    "evidence": "Legacy.com obituary search (US, Canada and more). Free search is a GET to /obituaries/search with query. Plain HTTP clients get a Cloudflare 403; a browser loads the results. Privacy requests: privacy@legacy.com, 888-397-9494, or mail to 230 West Monroe Suite 400, Chicago IL 60606 (https://www.legacy.com/about/privacy-policy). Nothing was submitted.",
+    "result_check": "Browser GET /obituaries/search?query=John Smith: \"7,234 exact matches for 'John Smith'\". query=Alder Northwind: \"No results found\". countryId=2&query=John Smith also listed Canadian notices. (2026-10-26, CST).",
+    "form": {
+      "method": "http_get",
+      "page_url": "https://www.legacy.com/obituaries/search",
+      "form_action": "https://www.legacy.com/obituaries/search",
+      "url_pattern": "https://www.legacy.com/obituaries/search?query={query}",
+      "form_id": null,
+      "form_name": null,
+      "submit_label": null,
+      "hidden_names": [],
+      "inputs": [
+        {
+          "name": "query",
+          "type": "text",
+          "canonical": "full_name",
+          "required": false,
+          "id": null,
+          "label": "Name",
+          "placeholder": null
+        }
+      ]
+    },
+    "captcha_widget": false,
+    "also_covers": [
+      "US",
+      "CA"
+    ]
+  },
+  "search-ch-tel": {
+    "checked": "2026-10-26",
+    "country": "CH",
+    "liveness": "alive",
+    "liveness_detail": "search.ch answered HTTP 200 on 2026-10-26. A name search returned phone listings.",
+    "evidence": "Swiss phone directory (Swisscom Directories AG / localsearch). Listings show name, address and phone. Free search is a GET to /tel/ with all. Privacy: dataprivacy@localsearch.ch, Förrlibuckstrasse 62, 8005 Zürich (https://search.ch/privacy). Nothing was submitted.",
+    "result_check": "GET /tel/?all=John Smith: \"4 entries\". all=Alder Northwind: HTTP 404, \"0 entries\". (2026-10-26, CST).",
+    "form": {
+      "method": "http_get",
+      "page_url": "https://search.ch/tel/",
+      "form_action": "https://search.ch/tel/",
+      "url_pattern": "https://search.ch/tel/?all={all}",
+      "form_id": null,
+      "form_name": null,
+      "submit_label": null,
+      "hidden_names": [],
+      "inputs": [
+        {
+          "name": "all",
+          "type": "text",
+          "canonical": "full_name",
+          "required": false,
+          "id": null,
+          "label": "Name, number, address",
+          "placeholder": null
+        }
+      ]
+    },
+    "captcha_widget": false
+  },
+  "118000-fr": {
+    "checked": "2026-10-26",
+    "country": "FR",
+    "liveness": "alive",
+    "liveness_detail": "118000.fr answered HTTP 200 on 2026-10-26. A name search returned phone listings.",
+    "evidence": "French phone directory (Pratique Media & Services). Listings show name, town and phone. Free search is a GET to /search with who and where. Removal: the chatbot on https://www.118000.fr/contact.html, privacy@groupe-pratique.com or service.client@le118000.fr. Nothing was submitted.",
+    "result_check": "GET /search?who=John Smith: \"27 résultats\". A made-up name: HTTP 404, \"Aucun résultat\". (2026-10-26, CST).",
+    "form": {
+      "method": "http_get",
+      "page_url": "https://www.118000.fr/",
+      "form_action": "https://www.118000.fr/search",
+      "url_pattern": "https://www.118000.fr/search?who={who}&where={where}",
+      "form_id": null,
+      "form_name": null,
+      "submit_label": null,
+      "hidden_names": [],
+      "inputs": [
+        {
+          "name": "who",
+          "type": "text",
+          "canonical": "full_name",
+          "required": true,
+          "id": null,
+          "label": "Qui",
+          "placeholder": null
+        },
+        {
+          "name": "where",
+          "type": "text",
+          "canonical": "city",
+          "required": false,
+          "id": null,
+          "label": "Où",
+          "placeholder": null
+        }
+      ]
+    },
+    "captcha_widget": false
+  },
+  "1881-no": {
+    "checked": "2026-10-26",
+    "country": "NO",
+    "liveness": "alive",
+    "liveness_detail": "1881.no answered HTTP 200 on 2026-10-26. A name search returned phone listings.",
+    "evidence": "Norwegian phone directory (Opplysningen 1881). Person pages show name, address and phone. Free search is a GET to / with query. Removal: the Min Side account at https://min.1881.no, the telephone operator, or https://abonnement.1881.no/kundeservice/privat. Nothing was submitted.",
+    "result_check": "GET /?query=Ola Hansen: \"Person (67)\" with /person/ listings. query=Quillon Vanderwekken: \"Ingen treff\". (2026-10-26, CST).",
+    "form": {
+      "method": "http_get",
+      "page_url": "https://www.1881.no/",
+      "form_action": "https://www.1881.no/",
+      "url_pattern": "https://www.1881.no/?query={query}",
+      "form_id": null,
+      "form_name": null,
+      "submit_label": null,
+      "hidden_names": [],
+      "inputs": [
+        {
+          "name": "query",
+          "type": "text",
+          "canonical": "full_name",
+          "required": false,
+          "id": null,
+          "label": "Søk",
+          "placeholder": null
+        }
+      ]
+    },
+    "captcha_widget": false
   }
 }

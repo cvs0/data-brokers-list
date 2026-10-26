@@ -219,6 +219,8 @@ winr-data-b-v,WINR Data B.V.,winrdata.com,other,robots_disallowed,robots,robots.
 wiza-inc,"Wiza, Inc.",wiza.com,other,alive,captcha_no_form,A CAPTCHA widget is on the removal page and no form fields or usable email were stored,recaptcha_v2,,,true,,,,
 xcelerated-data-llc,Xcelerated Data LLC,xcelerated.com,other,alive,phone,The only published channel is a phone number,recaptcha_v2,0x4AAAAAACu_mqTud8UJy2TT,,false,,,,phone
 zlookup,Zlookup,zlookup.com,other,alive,captcha_form,Removal form is behind a CAPTCHA widget and no usable removal email was found,recaptcha_v2,6LcS1mgUAAAAAHFeBtKKYh-pSFiZ79VadXfpSL_W,checkbox,true,recaptcha_v2,true,hello@zlookup.com,web_form;email
+118000-fr,118 000 (118000.fr),118000.fr,people-search,alive,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,,,,,
+1881-no,1881.no,1881.no,people-search,alive,generic_inbox,"Only a generic inbox was found, and the page does not say to use it for removal",,,,,,,personvern@1881.no,email
 192-com,192.com,192.com,people-search,blocked,generic_inbox,"Only a generic inbox was found, and the page does not say to use it for removal",turnstile,,,false,,,feedback@192.com,email
 411-reverse-lookup-canada,411 Reverse Lookup Canada,411reverselookup.ca,people-search,alive,captcha_form,Removal form is behind a CAPTCHA widget and no usable removal email was found,recaptcha_v2,,checkbox,true,,true,,web_form;postal_mail;phone
 411locate,411Locate,411locate.com,people-search,dead,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,false,,,,
@@ -236,6 +238,7 @@ callercenter,CallerCenter,callercenter.com,people-search,blocked,bot_wall,The op
 canada-pages,Canada Pages,canadapages.com,people-search,alive,captcha_form,Removal form is behind a CAPTCHA widget and no usable removal email was found,recaptcha_v2,6LdsTDwUAAAAAJ-EC9YOGnZHYAWSOS5IHoW7GQu7,,,,true,,web_form;postal_mail
 canada411,Canada411,canada411.ca,people-search,alive,phone,The only published channel is a phone number,,,,false,,,,phone
 canadian-obituaries,Canadian Obituaries,canadianobituaries.com,people-search,alive,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,,,,,
+castanet-obituaries,Castanet Obituaries,castanet.net,people-search,alive,captcha_form,Removal form is behind a CAPTCHA widget and no usable removal email was found,turnstile,0x4AAAAAAADpU7JZMPJXot_O,,,,true,news@castanet.net;classifieds@castanet.net;forums@castanet.net;letters@castanet.net;sales@castanet.net,web_form;email;phone
 checkpeople,CheckPeople,checkpeople.com,people-search,blocked,bot_wall,The opt-out URL returned a bot wall and a browser retry did not reveal a removal channel,,,,false,,,,
 classmates-com,Classmates.com,classmates.com,people-search,blocked,bot_wall,The opt-out URL returned a bot wall and a browser retry did not reveal a removal channel,,,,false,,,,
 cocofinder,CocoFinder,cocofinder.com,people-search,dead,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,false,,,,
@@ -246,6 +249,7 @@ cooperative-funeraire-de-l-abitibi,Coopérative funéraire de l'Abitibi,cfa.coop
 cooperative-funeraire-de-l-estrie,Coopérative funéraire de l'Estrie,coopfuneraireestrie.com,people-search,alive,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,,,,,
 cooperative-funeraire-de-l-outaouais,Coopérative funéraire de l'Outaouais,cfo.coop,people-search,alive,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,,,,,
 cooperative-funeraire-des-deux-rives,Coopérative funéraire des Deux Rives,coopfuneraire2rives.com,people-search,alive,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,,,,,
+cooperative-funeraire-des-eaux-vives,Coopérative funéraire des Eaux Vives,eauxvives.ca,people-search,alive,phone,The only published channel is a phone number,,,,,,,,phone
 cooperative-funeraire-des-laurentides,Coopérative funéraire des Laurentides,coopfunerairelaurentides.org,people-search,alive,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,,,,,
 cooperative-funeraire-du-grand-montreal,Coopérative funéraire du Grand Montréal,cfgrandmontreal.com,people-search,alive,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,,,,,
 cooperative-funeraire-du-temiscamingue,Coopérative funéraire du Témiscamingue,cftemiscamingue.com,people-search,alive,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,,,,,
@@ -284,6 +288,7 @@ intelius-peopleconnect,Intelius (PeopleConnect),intelius.com,people-search,alive
 interment-net,Interment.net,interment.net,people-search,alive,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,,,,,
 kearney-funeral-services,Kearney Funeral Services,kearneyfs.com,people-search,alive,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,,,,,
 le-necrologue,Le Nécrologue,lenecrologue.com,people-search,alive,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,,,,,
+legacy-com,Legacy.com,legacy.com,people-search,alive,phone,The only published channel is a phone number,,,,,,,,phone
 locatefamily,LocateFamily,locatefamily.com,people-search,alive,captcha_no_form,A CAPTCHA widget is on the removal page and no form fields or usable email were stored,recaptcha_v2,6LcZ1XsUAAAAACe-4vEKFDHwD0gRVBU7L6_BVPEP,,false,,,,
 locatesmarter,LocateSmarter,locatesmarter.com,people-search,alive,captcha_form,Removal form is behind a CAPTCHA widget and no usable removal email was found,recaptcha_v2,6LcRRtQtAAAAAFPgIlBRmX7fNqcujXUGmEoAw07i,checkbox,true,,true,,web_form;phone
 mount-pleasant-group,Mount Pleasant Group,mountpleasantgroup.com,people-search,alive,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,,,,,
@@ -317,6 +322,7 @@ publicrecordsnow-confi-chek,PublicRecordsNow (Confi-Chek),publicrecordsnow.com,p
 realpeoplesearch,RealPeopleSearch,realpeoplesearch.com,people-search,robots_disallowed,robots,robots.txt disallows the client. A later read still found no removal channel,,,,false,,,,
 recordspage-truthfinder,RecordsPage (TruthFinder),recordspage.org,people-search,alive,phone,The only published channel is a phone number,recaptcha_enterprise,6LdFxVQtAAAAAK6XNodX8W6CM56PH1xTrPGVZSqh,invisible,true,,,,phone
 recordsquarry-truthfinder,RecordsQuarry (TruthFinder),recordsquarry.com,people-search,alive,captcha_no_form,A CAPTCHA widget is on the removal page and no form fields or usable email were stored,recaptcha_enterprise,6LdFxVQtAAAAAK6XNodX8W6CM56PH1xTrPGVZSqh,invisible,true,,,,
+remembering-ca,Remembering.ca (Postmedia Obituaries),remembering.ca,people-search,alive,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,,,,,
 reunion-com-mylife,Reunion.com (MyLife),reunion.com,people-search,blocked,bot_wall,The opt-out URL returned a bot wall and a browser retry did not reveal a removal channel,,,,false,,,,
 revealphoneowner,RevealPhoneOwner,revealphoneowner.com,people-search,alive,phone,The only published channel is a phone number,,,,false,,,,phone
 reversephone-whitepages-affiliated,ReversePhone (Whitepages-affiliated),reversephone.com,people-search,blocked,phone_postal,Phone and a mailing address are the only channels,recaptcha_v2,,,false,,,,postal_mail;phone
@@ -329,6 +335,7 @@ searchquarry,SearchQuarry,searchquarry.com,people-search,robots_disallowed,phone
 searchusapeople-infotracer,SearchUSAPeople (InfoTracer),searchusapeople.com,people-search,alive,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,false,,,,
 smartbackgroundchecks,SmartBackgroundChecks,smartbackgroundchecks.com,people-search,alive,captcha_form,Removal form is behind a CAPTCHA widget and no usable removal email was found,recaptcha_v2,6LfrTZYeAAAAAIHiEeAsmSQCjVNoI81kuyTLrbgi,checkbox,true,,true,,web_form;phone
 social-catfish,Social Catfish,socialcatfish.com,people-search,alive,captcha_form,Removal form is behind a CAPTCHA widget and no usable removal email was found,turnstile,0x4AAAAAABBx2maaNn3YHtY1,checkbox,true,turnstile,true,,web_form;phone
+sootoday-obituaries,SooToday Obituaries (Village Media),sootoday.com,people-search,alive,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,,,,,
 spyfly,SpyFly,spyfly.com,people-search,robots_disallowed,robots,robots.txt disallows the client. A later read still found no removal channel,,,,false,,,,
 thatsthem,ThatsThem,thatsthem.com,people-search,blocked,captcha_form,Removal form is behind a CAPTCHA widget and no usable removal email was found,turnstile,,,false,,true,,web_form;phone
 truecaller,Truecaller,truecaller.com,people-search,alive,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,true,,,,
@@ -371,6 +378,7 @@ publicrecordreports,PublicRecordReports,publicrecordreports.com,public-records,a
 publicrecords-us,PublicRecords.us,publicrecords.us,public-records,alive,generic_inbox,"Only a generic inbox was found, and the page does not say to use it for removal",,,,false,,,support@publicrecords.us,email;phone
 publicrecordscenter,PublicRecordsCenter,publicrecordscenter.org,public-records,alive,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,false,,,,
 publicrecordssearcher,PublicRecordsSearcher,publicrecordssearcher.com,public-records,alive,phone,The only published channel is a phone number,,,,false,,,,phone
+publicsalaries-com,PublicSalaries.com,publicsalaries.com,public-records,alive,generic_inbox,"Only a generic inbox was found, and the page does not say to use it for removal",,,,,,,corrections@publicsalaries.com,email
 quickpublicrecords,QuickPublicRecords,quickpublicrecords.com,public-records,alive,captcha_form,Removal form is behind a CAPTCHA widget and no usable removal email was found,turnstile,0x4AAAAAAAgFHkiRuynTw4bF,checkbox,true,,true,,web_form;phone
 searchpublicrecords,SearchPublicRecords,searchpublicrecords.com,public-records,alive,captcha_form,Removal form is behind a CAPTCHA widget and no usable removal email was found,turnstile,0x4AAAAAAAgFHkiRuynTw4bF,checkbox,true,,true,,web_form;phone
 usrecords-infotracer,USRecords (InfoTracer),usrecords.net,public-records,alive,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,true,,,,
