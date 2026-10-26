@@ -9,6 +9,7 @@ aggknowledge-inc,aggknowledge.ai,unfilled,,http_get,,,,first_name;email;last_nam
 agr-marketing-solutions-llc,agrmarketingsolutions.com,results,200,http_get,,results,,full_name,,2026-10-13T19:43:21+00:00
 aidentified-inc,aidentified.com,results,200,http_get,kb-search-results,results,,full_name,,2026-10-13T19:43:21+00:00
 aircraftone-com,aircraftone.com,submitted,200,http_get,,results,40,last_name;first_name,,2026-10-26T07:59:30+00:00
+airdrietoday-obituaries,airdrietoday.com,results,200,http_get,search,results,,full_name,,2026-10-26T13:08:02+00:00
 alabama-arrests,alabamaarrests.org,no_results,200,http_get,results,empty,0,first_name;last_name;region;city;sex,,2026-10-13T19:43:21+00:00
 alarmscalifornia-licensedata,alarmscalifornia.org,challenge,403,http_get,licenses,,,full_name,,2026-10-25T03:18:09+00:00
 alumni-us,alumnius.net,submitted,200,http_get,search,results,3,full_name,,2026-10-25T03:02:26+00:00
@@ -23,6 +24,7 @@ beenverified,beenverified.com,submitted,200,browser,lp,loader,,first_name;last_n
 blockshopper,blockshopper.com,submitted,200,http_get,search,other,,full_name,,2026-10-26T06:19:59+00:00
 bombora-inc,bombora.com,submitted,200,http_get,,other,,full_name,,2026-10-13T19:31:06+00:00
 bradfordtoday-obituaries,bradfordtoday.ca,challenge,403,http_get,search,,,full_name,,2026-10-26T12:20:12+00:00
+burlingtontoday-obituaries,burlingtontoday.com,challenge,403,http_get,search,,,full_name,,2026-10-26T13:08:02+00:00
 california-criminal-records-search,californiacriminalrecords.org,http_error,404,http_get,search,,,first_name;last_name;region,,2026-10-25T03:02:30+00:00
 california-drop,privacy.ca.gov,results,200,http_get,serp,results,,full_name,,2026-10-13T19:43:24+00:00
 californiabrokers-org-licensedata,californiabrokers.org,challenge,403,http_get,licenses,,,full_name,,2026-10-25T03:18:10+00:00
@@ -39,6 +41,7 @@ canadasunshinelist-ca,canadasunshinelist.ca,submitted,200,http_get,ontario,other
 castanet-obituaries,castanet.net,http_error,404,http_get,obituaries,,,full_name,,2026-10-26T10:40:16+00:00
 certn,certn.co,unfilled,,http_form_post,,,,full_name,widget,2026-10-13T20:03:53+00:00
 clearbit,clearbit.com,submitted,200,http_get,hc,form,,full_name,,2026-10-13T19:43:27+00:00
+cochranetoday-obituaries,cochranetoday.ca,results,200,http_get,search,results,,full_name,,2026-10-26T13:08:02+00:00
 collingwoodtoday-obituaries,collingwoodtoday.ca,challenge,403,http_get,search,,,full_name,,2026-10-26T12:20:12+00:00
 coloradoresidentdirectory,coloradoresidentdirectory.com,results,200,http_form_post,name,results,,full_name;city,,2026-10-25T03:02:33+00:00
 companies-house-officers,find-and-update.company-information.service.gov.uk,results,200,http_get,search,results,104,full_name,,2026-10-25T04:09:52+00:00
@@ -65,6 +68,7 @@ dobsearch,dobsearch.com,submitted,200,http_get,,other,,first_name;last_name,,202
 dstillery-inc,dstillery.com,submitted,200,http_get,,other,,full_name,,2026-10-13T19:31:26+00:00
 easybackgroundchecks-intelius,easybackgroundchecks.com,challenge,403,http_get,search,,,first_name;last_name;city;region,,2026-10-13T19:31:28+00:00
 elliotlaketoday-obituaries,elliotlaketoday.com,results,200,http_get,search,results,,full_name,,2026-10-26T12:20:12+00:00
+eniro-se,eniro.se,challenge,403,http_get,lookup,,,full_name,,2026-10-26T13:08:02+00:00
 equifax-canada,equifax.ca,submitted,200,http_form_post,personal,other,,full_name,,2026-10-13T19:31:29+00:00
 equilar,equilar.com,submitted,200,http_get,,other,,full_name,,2026-10-13T19:31:32+00:00
 experian,experian.com,submitted,200,http_get,,other,,full_name,,2026-10-13T19:31:32+00:00
@@ -85,6 +89,7 @@ glad-i-know,gladiknow.com,submitted,200,http_get,,form,,first_name;last_name;cit
 global-source-data-solutions-inc,gsdsi.com,submitted,200,http_get,search,other,,full_name,,2026-10-13T19:31:38+00:00
 governmentregistry-org,governmentregistry.org,submitted,200,http_get,,form,,first_name;last_name;city;region,,2026-10-13T20:48:08+00:00
 guelphtoday-obituaries,guelphtoday.com,results,200,http_get,search,results,,full_name,,2026-10-26T12:20:12+00:00
+gulesider-no,gulesider.no,challenge,403,http_get,lookup,,,full_name,,2026-10-26T13:08:02+00:00
 heartbeat-ai-inc,heartbeat.ai,submitted,200,http_get,,other,,full_name,,2026-10-13T19:31:42+00:00
 herold-at-telefonbuch,herold.at,http_error,404,http_get,telefonbuch,,,full_name,,2026-10-26T12:20:38+00:00
 hitta-se,hitta.se,submitted,200,http_get,nolltraff,other,,full_name,,2026-10-25T04:10:08+00:00
@@ -106,6 +111,8 @@ jmr-media-consulting-inc,jmr-media.com,submitted,200,http_form_post,,other,,firs
 judyrecords,judyrecords.com,results,200,browser,getSearchResults,results,2071433,full_name,,2026-10-25T04:20:47+00:00
 kansas-arrests,kansasarrests.org,no_results,200,http_get,results,empty,0,first_name;last_name;region;city;sex,,2026-10-13T19:44:01+00:00
 kids-live-safe,kidslivesafe.com,submitted,200,http_get,,form,,full_name,,2026-10-25T03:02:44+00:00
+krak-dk,krak.dk,challenge,403,http_get,lookup,,,full_name,,2026-10-26T13:08:02+00:00
+lakelandtoday-obituaries,lakelandtoday.ca,results,200,http_get,search,results,,full_name,,2026-10-26T13:08:03+00:00
 lead-enhance-llc,lead-enhance.com,unfilled,,http_get,,,,full_name;email;phone,company;message,2026-10-13T20:03:53+00:00
 lead411-corporation,lead411.com,submitted,200,http_get,,other,,full_name,,2026-10-13T19:32:02+00:00
 leadspace-inc,leadspace.com,submitted,200,http_get,hc,form,,full_name,,2026-10-13T19:44:03+00:00
@@ -117,7 +124,10 @@ maryland-arrests,marylandarrests.org,no_results,200,http_get,Results,empty,0,fir
 melissa,melissa.com,challenge,403,http_form_post,submissions,,,first_name;last_name;phone;email;accounttype,,2026-10-13T19:08:56+00:00
 merinfo-se,merinfo.se,submitted,200,http_get,search,form,,full_name,,2026-10-26T12:20:38+00:00
 midlandtoday-obituaries,midlandtoday.ca,challenge,403,http_get,search,,,full_name,,2026-10-26T12:20:22+00:00
+miltontoday-obituaries,miltontoday.ca,challenge,403,http_get,search,,,full_name,,2026-10-26T13:08:03+00:00
 mineralholders,mineralholders.com,submitted,200,http_get,search,results,1,full_name,,2026-10-25T03:33:57+00:00
+moosejawtoday-obituaries,moosejawtoday.com,challenge,403,http_get,search,,,full_name,,2026-10-26T13:08:03+00:00
+mountainviewtoday-obituaries,mountainviewtoday.ca,results,200,http_get,search,results,,full_name,,2026-10-26T13:08:03+00:00
 mugshotlook,mugshotlook.com,results,200,http_get,nameSearch,results,,first_name;last_name;region,,2026-10-13T19:44:08+00:00
 mugshots-com,mugshots.com,results,200,browser,search.html,results,28843,full_name,,2026-10-25T04:20:47+00:00
 names-and-facts,namesandfacts.com,challenge,403,http_get,p,,,first_name;last_name;region,,2026-10-25T03:33:57+00:00
@@ -140,6 +150,7 @@ numberguru-beenverified-family,numberguru.com,submitted,200,http_get,,other,,pho
 numlookup,numlookup.com,http_error,404,http_form_post,,,,phone,,2026-10-25T03:33:59+00:00
 obitsarchive,obitsarchive.com,submitted,200,http_get,obituaries,form,,last_name;first_name,,2026-10-26T06:19:59+00:00
 ohio-resident-database,ohioresidentdatabase.com,no_results,404,http_get,name,empty,0,full_name;city,,2026-10-13T19:32:14+00:00
+okotokstoday-obituaries,okotokstoday.ca,results,200,http_get,search,results,,full_name,,2026-10-26T13:08:03+00:00
 onlinesearches-intelius-peopleconnect,onlinesearches.com,submitted,200,http_get,,form,,full_name;city,,2026-10-13T20:48:20+00:00
 opencompensation-org,opencompensation.org,submitted,200,http_get,search,other,,full_name,,2026-10-26T12:20:38+00:00
 opensend-inc,opensend.com,results,200,http_get,kb-search-results,results,,full_name,,2026-10-13T19:44:14+00:00
@@ -175,10 +186,13 @@ publicrecords-info,publicrecords.info,submitted,200,http_get,,form,,full_name;re
 publicsalaries-com,publicsalaries.com,submitted,200,http_get,search,form,,full_name,,2026-10-26T10:40:24+00:00
 publicsearcher,publicsearcher.com,results,200,http_get,nameSearch,results,,first_name;last_name;region,,2026-10-13T19:44:23+00:00
 quickpublicrecords,quickpublicrecords.com,challenge,,browser,people,,,full_name,,2026-10-25T03:05:00+00:00
+ratsit-se,ratsit.se,submitted,200,http_get,sok,form,,full_name,,2026-10-26T13:08:03+00:00
 recentlybooked,recentlybooked.com,submitted,200,http_get,search,form,,region;last_name,,2026-10-26T06:19:59+00:00
 recordsfinder,recordsfinder.com,submitted,200,http_form_post,search,loader,,first_name;last_name;city;region,,2026-10-13T20:48:42+00:00
 remembering-ca,remembering.ca,challenge,403,http_get,obituaries,,,full_name,,2026-10-26T10:40:24+00:00
 revealphoneowner,revealphoneowner.com,submitted,200,http_form_post,search,other,,phone,,2026-10-25T03:03:11+00:00
+rmoutlook-obituaries,rmoutlook.com,results,200,http_get,search,results,,full_name,,2026-10-26T13:08:03+00:00
+sasktoday-obituaries,sasktoday.ca,results,200,http_get,search,results,,full_name,,2026-10-26T13:08:04+00:00
 sba-loan-data,sbaloandata.org,unfilled,,http_get,,,,,,2026-10-13T20:03:53+00:00
 sealedrecords,sealedrecords.net,results,200,http_get,name,results,,first_name;last_name,,2026-10-13T19:44:24+00:00
 search-ch-tel,search.ch,http_error,404,http_get,tel,,,full_name,,2026-10-26T10:40:28+00:00
@@ -254,6 +268,7 @@ staterecords-org-network-wyomingcourtrecords-us,wyomingcourtrecords.us,no_result
 sudbury-com-obituaries,sudbury.com,results,200,http_get,search,results,,full_name,,2026-10-26T12:20:25+00:00
 sunshinelist-ca,sunshinelist.ca,submitted,200,http_get,,results,40,full_name,,2026-10-26T08:02:23+00:00
 sync-me,sync.me,results,200,http_get,search,results,,phone,,2026-10-13T21:14:22+00:00
+tbnewswatch-obituaries,tbnewswatch.com,challenge,403,http_get,search,,,full_name,,2026-10-26T13:08:04+00:00
 tennhelp,tennhelp.com,submitted,200,http_form_post,,other,,last_name;first_name;city;region;email;phone,,2026-10-13T19:35:45+00:00
 texas-arrest-warrants-search,texasarrestwarrants.org,http_error,404,http_get,search,,,first_name;last_name;region,,2026-10-25T03:03:36+00:00
 texas-arrests,texasarrests.org,no_results,200,http_get,results,empty,0,first_name;last_name;region;city;sex,,2026-10-13T20:02:24+00:00
@@ -262,8 +277,10 @@ the-alesco-group-llc,mydataprivacy.com,submitted,200,http_get,,other,,first_name
 the-segerdahl-llc,sg360.com,submitted,200,http_form_post,,other,,phone;email;phone,,2026-10-13T19:35:48+00:00
 thepublicindex,thepublicindex.org,submitted,200,http_get,,form,,first_name;last_name;city;region,,2026-10-13T20:48:56+00:00
 thisnumber,thisnumber.com,submitted,200,http_get,us,other,,phone,,2026-10-13T20:49:04+00:00
+thoroldtoday-obituaries,thoroldtoday.ca,challenge,403,http_get,search,,,full_name,,2026-10-26T13:08:05+00:00
 timiskaming-funeral-cooperative,timiskamingfc.com,results,200,http_get,website,results,,full_name,,2026-10-26T07:59:30+00:00
 timminstoday-obituaries,timminstoday.com,challenge,403,http_get,search,,,full_name,,2026-10-26T12:20:25+00:00
+townandcountrytoday-obituaries,townandcountrytoday.com,results,200,http_get,search,results,,full_name,,2026-10-26T13:08:05+00:00
 transparent-nevada,transparentnevada.com,submitted,200,http_get,,other,,full_name;email;postal_code,,2026-10-13T19:35:51+00:00
 truthfinder-peopleconnect,truthfinder.com,challenge,403,http_get,results,,,first_name;last_name;region,,2026-10-25T03:34:05+00:00
 truthrecord-we-inform-llc,truthrecord.org,results,200,http_get,name_search,results,,first_name;last_name;region,,2026-10-13T20:03:00+00:00

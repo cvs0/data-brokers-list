@@ -6802,5 +6802,515 @@
       ]
     },
     "captcha_widget": false
+  },
+  "airdrietoday-obituaries": {
+    "checked": "2026-10-26",
+    "country": "CA",
+    "liveness": "alive",
+    "liveness_detail": "airdrietoday.com loaded in a browser on 2026-10-26 and a name search returned obituaries. Plain HTTP clients get a Cloudflare challenge.",
+    "evidence": "airdrietoday.com (Airdrie, Alberta) obituaries on the Village Media platform. Notices name the deceased and family. Free search is a GET to /search with q and tag=141807 (obituaries only). Plain HTTP clients get a Cloudflare challenge; a browser loads the results. Privacy policy: https://www.airdrietoday.com/other/privacy-policy; contact page https://www.airdrietoday.com/other/contact-us. Nothing was submitted.",
+    "result_check": "Browser GET /search?q=John Smith&tag=141807: notices such as \"Smith, Gary\". q=Quillon Vanderwekken&tag=141807: \"There are no results for that search.\" (2026-10-26, CST).",
+    "form": {
+      "method": "http_get",
+      "page_url": "https://www.airdrietoday.com/obituaries",
+      "form_action": "https://www.airdrietoday.com/search",
+      "url_pattern": "https://www.airdrietoday.com/search?q={q}&tag=141807",
+      "form_id": null,
+      "form_name": null,
+      "submit_label": null,
+      "hidden_names": [],
+      "inputs": [
+        {
+          "name": "q",
+          "type": "text",
+          "canonical": "full_name",
+          "required": false,
+          "id": null,
+          "label": "Search Term",
+          "placeholder": null
+        }
+      ]
+    },
+    "captcha_widget": false
+  },
+  "cochranetoday-obituaries": {
+    "checked": "2026-10-26",
+    "country": "CA",
+    "liveness": "alive",
+    "liveness_detail": "cochranetoday.ca loaded in a browser on 2026-10-26 and a name search returned obituaries. Plain HTTP clients get a Cloudflare challenge.",
+    "evidence": "cochranetoday.ca (Cochrane, Alberta) obituaries on the Village Media platform. Notices name the deceased and family. Free search is a GET to /search with q and tag=149069 (obituaries only). Plain HTTP clients get a Cloudflare challenge; a browser loads the results. Privacy policy: https://www.cochranetoday.ca/other/privacy-policy; contact page https://www.cochranetoday.ca/other/contact-us. Nothing was submitted.",
+    "result_check": "Browser GET /search?q=John Smith&tag=149069: notices such as \"Gary Robert Smith\" and \"RASBERRY, Margaret Helen (nee Smith)\". q=Quillon Vanderwekken&tag=149069: \"There are no results for that search.\" (2026-10-26, CST).",
+    "form": {
+      "method": "http_get",
+      "page_url": "https://www.cochranetoday.ca/obituaries",
+      "form_action": "https://www.cochranetoday.ca/search",
+      "url_pattern": "https://www.cochranetoday.ca/search?q={q}&tag=149069",
+      "form_id": null,
+      "form_name": null,
+      "submit_label": null,
+      "hidden_names": [],
+      "inputs": [
+        {
+          "name": "q",
+          "type": "text",
+          "canonical": "full_name",
+          "required": false,
+          "id": null,
+          "label": "Search Term",
+          "placeholder": null
+        }
+      ]
+    },
+    "captcha_widget": false
+  },
+  "okotokstoday-obituaries": {
+    "checked": "2026-10-26",
+    "country": "CA",
+    "liveness": "alive",
+    "liveness_detail": "okotokstoday.ca loaded in a browser on 2026-10-26 and a name search returned obituaries. Plain HTTP clients get a Cloudflare challenge.",
+    "evidence": "okotokstoday.ca (Okotoks, Alberta) obituaries on the Village Media platform. Notices name the deceased and family. Free search is a GET to /search with q and tag=153482 (obituaries only). Plain HTTP clients get a Cloudflare challenge; a browser loads the results. Privacy policy: https://www.okotokstoday.ca/other/privacy-policy; contact page https://www.okotokstoday.ca/other/contact-us. Nothing was submitted.",
+    "result_check": "Browser GET /search?q=John Smith&tag=153482: notices such as \"John William Smith\". q=Quillon Vanderwekken&tag=153482: \"There are no results for that search.\" (2026-10-26, CST).",
+    "form": {
+      "method": "http_get",
+      "page_url": "https://www.okotokstoday.ca/obituaries",
+      "form_action": "https://www.okotokstoday.ca/search",
+      "url_pattern": "https://www.okotokstoday.ca/search?q={q}&tag=153482",
+      "form_id": null,
+      "form_name": null,
+      "submit_label": null,
+      "hidden_names": [],
+      "inputs": [
+        {
+          "name": "q",
+          "type": "text",
+          "canonical": "full_name",
+          "required": false,
+          "id": null,
+          "label": "Search Term",
+          "placeholder": null
+        }
+      ]
+    },
+    "captcha_widget": false
+  },
+  "rmoutlook-obituaries": {
+    "checked": "2026-10-26",
+    "country": "CA",
+    "liveness": "alive",
+    "liveness_detail": "rmoutlook.com loaded in a browser on 2026-10-26 and a name search returned obituaries. Plain HTTP clients get a Cloudflare challenge.",
+    "evidence": "rmoutlook.com (Bow Valley (Canmore and Banff), Alberta) obituaries on the Village Media platform. Notices name the deceased and family. Free search is a GET to /search with q and tag=162715 (obituaries only). Plain HTTP clients get a Cloudflare challenge; a browser loads the results. Privacy policy: https://www.rmoutlook.com/other/privacy-policy; contact page https://www.rmoutlook.com/other/contact-us. Nothing was submitted.",
+    "result_check": "Browser GET /search?q=John Smith&tag=162715: notices such as \"Ruth Marion Smith\" and \"Robert Neville (Bob) Smith\". q=Quillon Vanderwekken&tag=162715: \"There are no results for that search.\" (2026-10-26, CST).",
+    "form": {
+      "method": "http_get",
+      "page_url": "https://www.rmoutlook.com/obituaries",
+      "form_action": "https://www.rmoutlook.com/search",
+      "url_pattern": "https://www.rmoutlook.com/search?q={q}&tag=162715",
+      "form_id": null,
+      "form_name": null,
+      "submit_label": null,
+      "hidden_names": [],
+      "inputs": [
+        {
+          "name": "q",
+          "type": "text",
+          "canonical": "full_name",
+          "required": false,
+          "id": null,
+          "label": "Search Term",
+          "placeholder": null
+        }
+      ]
+    },
+    "captcha_widget": false
+  },
+  "lakelandtoday-obituaries": {
+    "checked": "2026-10-26",
+    "country": "CA",
+    "liveness": "alive",
+    "liveness_detail": "lakelandtoday.ca loaded in a browser on 2026-10-26 and a name search returned obituaries. Plain HTTP clients get a Cloudflare challenge.",
+    "evidence": "lakelandtoday.ca (Lakeland region (Bonnyville, Cold Lake, St. Paul), Alberta) obituaries on the Village Media platform. Notices name the deceased and family. Free search is a GET to /search with q and tag=214599 (obituaries only). Plain HTTP clients get a Cloudflare challenge; a browser loads the results. Privacy policy: https://www.lakelandtoday.ca/other/privacy-policy; contact page https://www.lakelandtoday.ca/other/contact-us. Nothing was submitted.",
+    "result_check": "Browser GET /search?q=John Smith&tag=214599: notices such as \"SMITH, Jo-Anne Louise\". q=Quillon Vanderwekken&tag=214599: \"There are no results for that search.\" (2026-10-26, CST).",
+    "form": {
+      "method": "http_get",
+      "page_url": "https://www.lakelandtoday.ca/obituaries",
+      "form_action": "https://www.lakelandtoday.ca/search",
+      "url_pattern": "https://www.lakelandtoday.ca/search?q={q}&tag=214599",
+      "form_id": null,
+      "form_name": null,
+      "submit_label": null,
+      "hidden_names": [],
+      "inputs": [
+        {
+          "name": "q",
+          "type": "text",
+          "canonical": "full_name",
+          "required": false,
+          "id": null,
+          "label": "Search Term",
+          "placeholder": null
+        }
+      ]
+    },
+    "captcha_widget": false
+  },
+  "townandcountrytoday-obituaries": {
+    "checked": "2026-10-26",
+    "country": "CA",
+    "liveness": "alive",
+    "liveness_detail": "townandcountrytoday.com loaded in a browser on 2026-10-26 and a name search returned obituaries. Plain HTTP clients get a Cloudflare challenge.",
+    "evidence": "townandcountrytoday.com (Athabasca, Barrhead and Westlock area, Alberta) obituaries on the Village Media platform. Notices name the deceased and family. Free search is a GET to /search with q and tag=210040 (obituaries only). Plain HTTP clients get a Cloudflare challenge; a browser loads the results. Privacy policy: https://www.townandcountrytoday.com/other/privacy-policy; contact page https://www.townandcountrytoday.com/other/contact-us. Nothing was submitted.",
+    "result_check": "Browser GET /search?q=John Smith&tag=210040: notices such as \"SMITH, Richard John\". q=Quillon Vanderwekken&tag=210040: \"There are no results for that search.\" (2026-10-26, CST).",
+    "form": {
+      "method": "http_get",
+      "page_url": "https://www.townandcountrytoday.com/obituaries",
+      "form_action": "https://www.townandcountrytoday.com/search",
+      "url_pattern": "https://www.townandcountrytoday.com/search?q={q}&tag=210040",
+      "form_id": null,
+      "form_name": null,
+      "submit_label": null,
+      "hidden_names": [],
+      "inputs": [
+        {
+          "name": "q",
+          "type": "text",
+          "canonical": "full_name",
+          "required": false,
+          "id": null,
+          "label": "Search Term",
+          "placeholder": null
+        }
+      ]
+    },
+    "captcha_widget": false
+  },
+  "mountainviewtoday-obituaries": {
+    "checked": "2026-10-26",
+    "country": "CA",
+    "liveness": "alive",
+    "liveness_detail": "mountainviewtoday.ca loaded in a browser on 2026-10-26 and a name search returned obituaries. Plain HTTP clients get a Cloudflare challenge.",
+    "evidence": "mountainviewtoday.ca (Mountain View County (Olds, Didsbury, Sundre), Alberta) obituaries on the Village Media platform. Notices name the deceased and family. Free search is a GET to /search with q and tag=181956 (obituaries only). Plain HTTP clients get a Cloudflare challenge; a browser loads the results. Privacy policy: https://www.mountainviewtoday.ca/other/privacy-policy; contact page https://www.mountainviewtoday.ca/other/contact-us. Nothing was submitted.",
+    "result_check": "Browser GET /search?q=John Smith&tag=181956: notices such as \"SMITH, John William\". q=Quillon Vanderwekken&tag=181956: \"There are no results for that search.\" (2026-10-26, CST).",
+    "form": {
+      "method": "http_get",
+      "page_url": "https://www.mountainviewtoday.ca/obituaries",
+      "form_action": "https://www.mountainviewtoday.ca/search",
+      "url_pattern": "https://www.mountainviewtoday.ca/search?q={q}&tag=181956",
+      "form_id": null,
+      "form_name": null,
+      "submit_label": null,
+      "hidden_names": [],
+      "inputs": [
+        {
+          "name": "q",
+          "type": "text",
+          "canonical": "full_name",
+          "required": false,
+          "id": null,
+          "label": "Search Term",
+          "placeholder": null
+        }
+      ]
+    },
+    "captcha_widget": false
+  },
+  "sasktoday-obituaries": {
+    "checked": "2026-10-26",
+    "country": "CA",
+    "liveness": "alive",
+    "liveness_detail": "sasktoday.ca loaded in a browser on 2026-10-26 and a name search returned obituaries. Plain HTTP clients get a Cloudflare challenge.",
+    "evidence": "sasktoday.ca (Saskatchewan (province-wide)) obituaries on the Village Media platform. Notices name the deceased and family. Free search is a GET to /search with q and tag=627272 (obituaries only). Plain HTTP clients get a Cloudflare challenge; a browser loads the results. Privacy policy: https://www.sasktoday.ca/other/privacy-policy; contact page https://www.sasktoday.ca/other/contact-us. Nothing was submitted.",
+    "result_check": "Browser GET /search?q=John Smith&tag=627272: notices such as \"SMITH, Earl john\". q=Quillon Vanderwekken&tag=627272: \"There are no results for that search.\" (2026-10-26, CST).",
+    "form": {
+      "method": "http_get",
+      "page_url": "https://www.sasktoday.ca/obituaries",
+      "form_action": "https://www.sasktoday.ca/search",
+      "url_pattern": "https://www.sasktoday.ca/search?q={q}&tag=627272",
+      "form_id": null,
+      "form_name": null,
+      "submit_label": null,
+      "hidden_names": [],
+      "inputs": [
+        {
+          "name": "q",
+          "type": "text",
+          "canonical": "full_name",
+          "required": false,
+          "id": null,
+          "label": "Search Term",
+          "placeholder": null
+        }
+      ]
+    },
+    "captcha_widget": false
+  },
+  "moosejawtoday-obituaries": {
+    "checked": "2026-10-26",
+    "country": "CA",
+    "liveness": "alive",
+    "liveness_detail": "moosejawtoday.com loaded in a browser on 2026-10-26 and a name search returned obituaries. Plain HTTP clients get a Cloudflare challenge.",
+    "evidence": "moosejawtoday.com (Moose Jaw, Saskatchewan) obituaries on the Village Media platform. Notices name the deceased and family. Free search is a GET to /search with q and tag=119501 (obituaries only). Plain HTTP clients get a Cloudflare challenge; a browser loads the results. Privacy policy: https://www.moosejawtoday.com/other/privacy-policy; contact page https://www.moosejawtoday.com/other/contact-us. Nothing was submitted.",
+    "result_check": "Browser GET /search?q=John Smith&tag=119501: notices such as \"Smith, Clara\" and \"Smith, Iver\". q=Quillon Vanderwekken&tag=119501: \"There are no results for that search.\" (2026-10-26, CST).",
+    "form": {
+      "method": "http_get",
+      "page_url": "https://www.moosejawtoday.com/obituaries",
+      "form_action": "https://www.moosejawtoday.com/search",
+      "url_pattern": "https://www.moosejawtoday.com/search?q={q}&tag=119501",
+      "form_id": null,
+      "form_name": null,
+      "submit_label": null,
+      "hidden_names": [],
+      "inputs": [
+        {
+          "name": "q",
+          "type": "text",
+          "canonical": "full_name",
+          "required": false,
+          "id": null,
+          "label": "Search Term",
+          "placeholder": null
+        }
+      ]
+    },
+    "captcha_widget": false
+  },
+  "tbnewswatch-obituaries": {
+    "checked": "2026-10-26",
+    "country": "CA",
+    "liveness": "alive",
+    "liveness_detail": "tbnewswatch.com loaded in a browser on 2026-10-26 and a name search returned obituaries. Plain HTTP clients get a Cloudflare challenge.",
+    "evidence": "tbnewswatch.com (Thunder Bay, Ontario) obituaries on the Village Media platform. Notices name the deceased and family. Free search is a GET to /search with q and tag=15895 (obituaries only). Plain HTTP clients get a Cloudflare challenge; a browser loads the results. Privacy policy: https://www.tbnewswatch.com/privacy-policy; contact page https://www.tbnewswatch.com/contact-us. Nothing was submitted.",
+    "result_check": "Browser GET /search?q=John Smith&tag=15895: notices such as \"Gerald John Smith\" and \"Jean and John “Jack” Smith\". q=Quillon Vanderwekken&tag=15895: \"There are no results for that search.\" (2026-10-26, CST).",
+    "form": {
+      "method": "http_get",
+      "page_url": "https://www.tbnewswatch.com/obituaries",
+      "form_action": "https://www.tbnewswatch.com/search",
+      "url_pattern": "https://www.tbnewswatch.com/search?q={q}&tag=15895",
+      "form_id": null,
+      "form_name": null,
+      "submit_label": null,
+      "hidden_names": [],
+      "inputs": [
+        {
+          "name": "q",
+          "type": "text",
+          "canonical": "full_name",
+          "required": false,
+          "id": null,
+          "label": "Search Term",
+          "placeholder": null
+        }
+      ]
+    },
+    "captcha_widget": false
+  },
+  "burlingtontoday-obituaries": {
+    "checked": "2026-10-26",
+    "country": "CA",
+    "liveness": "alive",
+    "liveness_detail": "burlingtontoday.com loaded in a browser on 2026-10-26 and a name search returned obituaries. Plain HTTP clients get a Cloudflare challenge.",
+    "evidence": "burlingtontoday.com (Burlington, Ontario) obituaries on the Village Media platform. Notices name the deceased and family. Free search is a GET to /search with q and tag=453770 (obituaries only). Plain HTTP clients get a Cloudflare challenge; a browser loads the results. Privacy policy: https://www.burlingtontoday.com/other/privacy-policy; contact page https://www.burlingtontoday.com/other/contact-us. Nothing was submitted.",
+    "result_check": "Browser GET /search?q=John Smith&tag=453770: notices such as \"SMITH, Allen John\". q=Quillon Vanderwekken&tag=453770: \"There are no results for that search.\" (2026-10-26, CST).",
+    "form": {
+      "method": "http_get",
+      "page_url": "https://www.burlingtontoday.com/obituaries",
+      "form_action": "https://www.burlingtontoday.com/search",
+      "url_pattern": "https://www.burlingtontoday.com/search?q={q}&tag=453770",
+      "form_id": null,
+      "form_name": null,
+      "submit_label": null,
+      "hidden_names": [],
+      "inputs": [
+        {
+          "name": "q",
+          "type": "text",
+          "canonical": "full_name",
+          "required": false,
+          "id": null,
+          "label": "Search Term",
+          "placeholder": null
+        }
+      ]
+    },
+    "captcha_widget": false
+  },
+  "miltontoday-obituaries": {
+    "checked": "2026-10-26",
+    "country": "CA",
+    "liveness": "alive",
+    "liveness_detail": "miltontoday.ca loaded in a browser on 2026-10-26 and a name search returned obituaries. Plain HTTP clients get a Cloudflare challenge.",
+    "evidence": "miltontoday.ca (Milton, Ontario) obituaries on the Village Media platform. Notices name the deceased and family. Free search is a GET to /search with q and tag=583256 (obituaries only). Plain HTTP clients get a Cloudflare challenge; a browser loads the results. Privacy policy: https://www.miltontoday.ca/other/privacy-policy; contact page https://www.miltontoday.ca/other/contact-us. Nothing was submitted.",
+    "result_check": "Browser GET /search?q=John Smith&tag=583256: notices such as \"SMITH, Donald “Jim” Sylvester\". q=Quillon Vanderwekken&tag=583256: \"There are no results for that search.\" (2026-10-26, CST).",
+    "form": {
+      "method": "http_get",
+      "page_url": "https://www.miltontoday.ca/obituaries",
+      "form_action": "https://www.miltontoday.ca/search",
+      "url_pattern": "https://www.miltontoday.ca/search?q={q}&tag=583256",
+      "form_id": null,
+      "form_name": null,
+      "submit_label": null,
+      "hidden_names": [],
+      "inputs": [
+        {
+          "name": "q",
+          "type": "text",
+          "canonical": "full_name",
+          "required": false,
+          "id": null,
+          "label": "Search Term",
+          "placeholder": null
+        }
+      ]
+    },
+    "captcha_widget": false
+  },
+  "thoroldtoday-obituaries": {
+    "checked": "2026-10-26",
+    "country": "CA",
+    "liveness": "alive",
+    "liveness_detail": "thoroldtoday.ca loaded in a browser on 2026-10-26 and a name search returned obituaries. Plain HTTP clients get a Cloudflare challenge.",
+    "evidence": "thoroldtoday.ca (Thorold, Ontario) obituaries on the Village Media platform. Notices name the deceased and family. Free search is a GET to /search with q and tag=119924 (obituaries only). Plain HTTP clients get a Cloudflare challenge; a browser loads the results. Privacy policy: https://www.thoroldtoday.ca/other/privacy-policy; contact page https://www.thoroldtoday.ca/other/contact-us. Nothing was submitted.",
+    "result_check": "Browser GET /search?q=John Smith&tag=119924: notices such as \"McGINNIS, Bonnie Geraldine (nee Smith)\" and \"KOERNER, John Harry\". q=Quillon Vanderwekken&tag=119924: \"There are no results for that search.\" (2026-10-26, CST).",
+    "form": {
+      "method": "http_get",
+      "page_url": "https://www.thoroldtoday.ca/obituaries",
+      "form_action": "https://www.thoroldtoday.ca/search",
+      "url_pattern": "https://www.thoroldtoday.ca/search?q={q}&tag=119924",
+      "form_id": null,
+      "form_name": null,
+      "submit_label": null,
+      "hidden_names": [],
+      "inputs": [
+        {
+          "name": "q",
+          "type": "text",
+          "canonical": "full_name",
+          "required": false,
+          "id": null,
+          "label": "Search Term",
+          "placeholder": null
+        }
+      ]
+    },
+    "captcha_widget": false
+  },
+  "eniro-se": {
+    "checked": "2026-10-26",
+    "country": "SE",
+    "liveness": "alive",
+    "liveness_detail": "eniro.se loaded in a browser on 2026-10-26 and a name search returned person listings.",
+    "evidence": "Swedish directory (Eniro Sverige AB). Listings show name, address and phone. Free search is a GET to /<query>/personer. Privacy: dataprotectionoffice@eniro.com (https://www.eniro.se/hjalp/villkor/integritetspolicy). Nothing was submitted.",
+    "result_check": "Browser GET /John Smith/personer: \"john smith gav 46 personer inom detta område\". /Quillon Vanderwekken/personer: \"Inga resultat på eniro.se.\" (2026-10-26, CST).",
+    "form": {
+      "method": "http_get",
+      "page_url": "https://www.eniro.se/",
+      "form_action": "https://www.eniro.se/{q}/personer",
+      "url_pattern": "https://www.eniro.se/{q}/personer",
+      "form_id": null,
+      "form_name": null,
+      "submit_label": null,
+      "hidden_names": [],
+      "inputs": [
+        {
+          "name": "q",
+          "type": "text",
+          "canonical": "full_name",
+          "required": false,
+          "id": null,
+          "label": "Sök",
+          "placeholder": null
+        }
+      ]
+    },
+    "captcha_widget": false
+  },
+  "gulesider-no": {
+    "checked": "2026-10-26",
+    "country": "NO",
+    "liveness": "alive",
+    "liveness_detail": "gulesider.no loaded in a browser on 2026-10-26 and a name search returned person listings.",
+    "evidence": "Norwegian directory (Eniro Norge AS). Listings show name, address and phone. Free search is a GET to /<query>/personer. Privacy: dataprotectionoffice@gulesider.no (https://www.gulesider.no/hjelp/vilkar/personvernerklaering). Nothing was submitted.",
+    "result_check": "Browser GET /John Smith/personer: \"john smith treff 25 personer i dette området\". /Quillon Vanderwekken/personer: \"Ingen resultater på gulesider.no.\" (2026-10-26, CST).",
+    "form": {
+      "method": "http_get",
+      "page_url": "https://www.gulesider.no/",
+      "form_action": "https://www.gulesider.no/{q}/personer",
+      "url_pattern": "https://www.gulesider.no/{q}/personer",
+      "form_id": null,
+      "form_name": null,
+      "submit_label": null,
+      "hidden_names": [],
+      "inputs": [
+        {
+          "name": "q",
+          "type": "text",
+          "canonical": "full_name",
+          "required": false,
+          "id": null,
+          "label": "Sök",
+          "placeholder": null
+        }
+      ]
+    },
+    "captcha_widget": false
+  },
+  "krak-dk": {
+    "checked": "2026-10-26",
+    "country": "DK",
+    "liveness": "alive",
+    "liveness_detail": "krak.dk loaded in a browser on 2026-10-26 and a name search returned person listings.",
+    "evidence": "Danish directory (Krak A/S). Listings show name, address and phone. Free search is a GET to /<query>/personer. Privacy: dataprotectionoffice@krak.dk (https://www.krak.dk/hjaelp/vilkaar/privatlivspolitik). Nothing was submitted.",
+    "result_check": "Browser GET /John Smith/personer: \"john smith gav 68 personer i dette område\". /Quillon Vanderwekken/personer: \"Ingen resultater på krak.dk.\" (2026-10-26, CST).",
+    "form": {
+      "method": "http_get",
+      "page_url": "https://www.krak.dk/",
+      "form_action": "https://www.krak.dk/{q}/personer",
+      "url_pattern": "https://www.krak.dk/{q}/personer",
+      "form_id": null,
+      "form_name": null,
+      "submit_label": null,
+      "hidden_names": [],
+      "inputs": [
+        {
+          "name": "q",
+          "type": "text",
+          "canonical": "full_name",
+          "required": false,
+          "id": null,
+          "label": "Sök",
+          "placeholder": null
+        }
+      ]
+    },
+    "captcha_widget": false
+  },
+  "ratsit-se": {
+    "checked": "2026-10-26",
+    "country": "SE",
+    "liveness": "alive",
+    "liveness_detail": "ratsit.se answered HTTP 200 on 2026-10-26. A name search returned person listings.",
+    "evidence": "Swedish people lookup (Ratsit AB). Rows show name, age and address. Free search is a GET to /sok/person with vem. Privacy: gdpr@ratsit.se (https://www.ratsit.se/info/personuppgiftspolicy). Nothing was submitted.",
+    "result_check": "Browser GET /sok/person?vem=John Smith: \"Personer: 60 st\". vem=Quillon Vanderwekken: \"Din sökning på person gav inga träffar.\" (2026-10-26, CST).",
+    "form": {
+      "method": "http_get",
+      "page_url": "https://www.ratsit.se/",
+      "form_action": "https://www.ratsit.se/sok/person",
+      "url_pattern": "https://www.ratsit.se/sok/person?vem={vem}",
+      "form_id": null,
+      "form_name": null,
+      "submit_label": null,
+      "hidden_names": [],
+      "inputs": [
+        {
+          "name": "vem",
+          "type": "text",
+          "canonical": "full_name",
+          "required": false,
+          "id": null,
+          "label": "Sök person",
+          "placeholder": null
+        }
+      ]
+    },
+    "captcha_widget": false
   }
 }

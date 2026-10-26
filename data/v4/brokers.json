@@ -1,54 +1,54 @@
 {
  "schema_version": "4.0.0",
- "checked_at": "2026-10-26T12:22:16+00:00",
+ "checked_at": "2026-10-26T13:09:36+00:00",
  "method": "v3 records, with privacy and removal mailboxes on another domain kept as related_domain. Brokers whose loaded pages published no removal channel were crawled again for unfetched same-site opt-out and privacy URLs, then the catalog URL and homepage were opened once in a browser when those pages still showed no form. That recrawl honors robots.txt. A later pass reads the catalog URL and homepage of brokers whose robots.txt had disallowed the research client. A search pass reads homepages whose public search form was missing, including pages robots.txt had disallowed, and stores a name, phone, or address form. Those passes submit no form, no login, and no CAPTCHA. A legal pass re-reads stored privacy and terms text and fetches an unread privacy or terms page when robots.txt allows it. A network pass looks up public DNS and the site certificate, and reads response headers for the removal URL when robots.txt allows it. A later pass adds IPv6, SPF, DMARC, DKIM selectors, CAA, DNSSEC, the address block, certificate dates, RDAP registration, and the removal response's security headers. A captcha pass re-reads the removal URL and the search page for a widget. A browser reads the page when the static HTML has no widget and the page has a removal form, a stored CAPTCHA, or a public search form. A later pass reads the public widget settings, including whether it is a checkbox, an invisible check, or a score. A form pass re-reads stored search and removal forms for labels, limits, autocomplete, the submit button, and hidden field names. A browser opens when the static HTML does not contain the stored fields. Nothing is submitted. A search test then submits one synthetic query on each broker whose search and removal are both fillable, or with --searchable on each broker with a public search. A robots.txt disallow does not stop the test or count against a search; when --robots is set the log only notes it as robots_disallowed. Brokers whose homepage robots.txt disallowed the research client were later opened in a browser, and their liveness is the result of that read. Removal forms are not submitted and CAPTCHAs are not solved. search_test is on every broker. It stores the outcome, status, field names, the first path segment, the page kind, and a result count when the page states one. A loader page is followed to the count endpoint. The response body, record text, and listing URLs are not stored.",
- "broker_count": 794,
+ "broker_count": 811,
  "counts": {
   "with_related_email": 131,
   "with_form": 175,
   "with_email": 422,
   "with_extracted_email": 201,
   "with_stated_email": 12,
-  "no_channel_remaining": 99,
-  "with_search": 327,
-  "with_search_fillable": 306,
+  "no_channel_remaining": 115,
+  "with_search": 344,
+  "with_search_fillable": 322,
   "search_unscanned": 37,
   "fully_automatable": 145,
-  "search_tested": 286,
-  "search_results": 28,
-  "search_submitted": 104,
+  "search_tested": 303,
+  "search_results": 36,
+  "search_submitted": 105,
   "search_no_results": 67,
   "search_unfilled": 9,
-  "search_challenge": 61,
+  "search_challenge": 69,
   "search_result_count": 82,
   "search_empty": 67,
-  "search_page_results": 38,
+  "search_page_results": 46,
   "search_page_loader": 12,
-  "search_page_form": 25,
-  "with_country": 730,
+  "search_page_form": 26,
+  "with_country": 747,
   "with_region": 479,
   "with_locality": 361,
   "with_removal_action": 141,
   "shared_removal": 60,
   "email_verification": 28,
   "id_document": 1,
-  "with_privacy": 595,
+  "with_privacy": 603,
   "with_terms": 398,
   "with_automation_clause": 81,
   "with_authorized_agent": 140,
   "with_residency": 536,
   "sells_personal_information": 4,
-  "does_not_sell": 74,
+  "does_not_sell": 75,
   "children_not_directed": 39,
   "with_mx": 576,
   "with_mail_provider": 420,
   "with_cdn": 418,
   "with_tls_org": 36,
-  "removal_offsite": 92,
+  "removal_offsite": 96,
   "with_hsts": 273,
   "with_form_enctype": 215,
-  "with_field_detail": 397,
-  "with_field_label": 262,
+  "with_field_detail": 414,
+  "with_field_label": 279,
   "with_field_constraint": 64,
   "with_submit_label": 253,
   "with_hidden_names": 166,
@@ -65,12 +65,12 @@
   "with_http3": 264,
   "with_csp": 181,
   "with_hsts_preload": 119,
-  "removal_captcha": 255,
+  "removal_captcha": 256,
   "removal_captcha_sitekey": 143,
   "removal_captcha_checked": 349,
   "search_captcha_widget": 16,
   "search_captcha_sitekey": 6,
-  "search_captcha_checked": 304,
+  "search_captcha_checked": 321,
   "captcha_blocks_form": 87,
   "captcha_email_fallback": 29,
   "removal_captcha_checkbox": 78,
@@ -93,13 +93,13 @@
    "fetch_error": 13,
    "opt_out_gone": 1,
    "robots": 23,
-   "captcha_no_form": 25,
-   "no_channel": 106
+   "captcha_no_form": 26,
+   "no_channel": 122
   },
-  "lookup_search": 262,
-  "lookup_search_fillable": 247,
+  "lookup_search": 279,
+  "lookup_search_fillable": 263,
   "liveness": {
-   "alive": 662,
+   "alive": 679,
    "blocked": 50,
    "dead": 14,
    "error": 15,
@@ -101482,7 +101482,7 @@
    "name": "Samba TV, Inc.",
    "category": "other",
    "domain": "samba.com",
-   "checked_at": "2026-10-26T12:18:00+00:00",
+   "checked_at": "2026-10-26T13:05:57+00:00",
    "liveness": "alive",
    "liveness_detail": "https://samba.com/privacy-center/privacy-policy answered HTTP 200 on 2026-10-24. The old samba.tv/users/privacy-policy path redirected here. No request was submitted.",
    "homepage": null,
@@ -227833,7 +227833,7 @@
    "name": "Live Data Technologies, Inc.",
    "category": "other",
    "domain": "livedatatech.com",
-   "checked_at": "2026-10-26T12:18:18+00:00",
+   "checked_at": "2026-10-26T13:06:15+00:00",
    "liveness": "alive",
    "liveness_detail": "https://www.livedatatech.com/opt-out answered HTTP 200 on 2026-10-24, titled Optout — Live Data Technologies. The old livedatatechnologies.com/opt-out path redirects here. The page loads a reCAPTCHA badge. No request was submitted.",
    "homepage": null,
@@ -305897,7 +305897,7 @@
    "name": "Data Axle Canada",
    "category": "marketing",
    "domain": "dataaxlecanada.ca",
-   "checked_at": "2026-10-26T12:18:30+00:00",
+   "checked_at": "2026-10-26T13:06:26+00:00",
    "liveness": "alive",
    "liveness_detail": "dataaxlecanada.ca answered HTTP 200 on 2026-10-24. infocanada.ca redirects there. There is no public name search.",
    "homepage": null,
@@ -306091,7 +306091,7 @@
    "name": "Prospects Influential",
    "category": "marketing",
    "domain": "prospectsinfluential.com",
-   "checked_at": "2026-10-26T12:18:30+00:00",
+   "checked_at": "2026-10-26T13:06:26+00:00",
    "liveness": "alive",
    "liveness_detail": "prospectsinfluential.com answered HTTP 200 on 2026-10-24. The site sells consumer mailing lists and has no public name search.",
    "homepage": null,
@@ -306285,7 +306285,7 @@
    "name": "Openroom",
    "category": "background-checks",
    "domain": "openroom.ca",
-   "checked_at": "2026-10-26T12:18:30+00:00",
+   "checked_at": "2026-10-26T13:06:26+00:00",
    "liveness": "alive",
    "liveness_detail": "openroom.ca answered HTTP 200 on 2026-10-24. The tenant-screening search requires an account.",
    "homepage": null,
@@ -306478,7 +306478,7 @@
    "name": "Landlord Credit Bureau",
    "category": "credit-financial",
    "domain": "landlordcreditbureau.ca",
-   "checked_at": "2026-10-26T12:18:30+00:00",
+   "checked_at": "2026-10-26T13:06:26+00:00",
    "liveness": "alive",
    "liveness_detail": "landlordcreditbureau.ca answered HTTP 200 on 2026-10-24. There is no public name search. The Privacy Policy link goes to a 404 page.",
    "homepage": null,
@@ -306671,7 +306671,7 @@
    "name": "FrontLobby",
    "category": "credit-financial",
    "domain": "frontlobby.com",
-   "checked_at": "2026-10-26T12:18:30+00:00",
+   "checked_at": "2026-10-26T13:06:26+00:00",
    "liveness": "alive",
    "liveness_detail": "frontlobby.com answered HTTP 200 on 2026-10-24. The LTB order search sends visitors to an account signup.",
    "homepage": null,
@@ -306864,7 +306864,7 @@
    "name": "Echovita",
    "category": "people-search",
    "domain": "echovita.com",
-   "checked_at": "2026-10-26T12:18:30+00:00",
+   "checked_at": "2026-10-26T13:06:26+00:00",
    "liveness": "alive",
    "liveness_detail": "echovita.com/ca answered HTTP 200 on 2026-10-24. A surname search returned obituary counts.",
    "homepage": null,
@@ -307083,7 +307083,7 @@
    "name": "InMemoriam",
    "category": "people-search",
    "domain": "inmemoriam.ca",
-   "checked_at": "2026-10-26T12:18:30+00:00",
+   "checked_at": "2026-10-26T13:06:26+00:00",
    "liveness": "alive",
    "liveness_detail": "inmemoriam.ca answered HTTP 200 on 2026-10-24. A surname search returned notice counts.",
    "homepage": null,
@@ -307326,7 +307326,7 @@
    "name": "Nécrologie.ca",
    "category": "people-search",
    "domain": "necrologie.ca",
-   "checked_at": "2026-10-26T12:18:30+00:00",
+   "checked_at": "2026-10-26T13:06:26+00:00",
    "liveness": "alive",
    "liveness_detail": "necrologie.ca answered HTTP 200 on 2026-10-24. The search API returned obituary counts.",
    "homepage": null,
@@ -307545,7 +307545,7 @@
    "name": "Geni",
    "category": "people-search",
    "domain": "geni.com",
-   "checked_at": "2026-10-26T12:18:30+00:00",
+   "checked_at": "2026-10-26T13:06:26+00:00",
    "liveness": "alive",
    "liveness_detail": "geni.com answered HTTP 200 on 2026-10-24. A public people search returned a result count.",
    "homepage": null,
@@ -307764,7 +307764,7 @@
    "name": "FQSG Avis de décès",
    "category": "people-search",
    "domain": "federationgenealogie.qc.ca",
-   "checked_at": "2026-10-26T12:18:30+00:00",
+   "checked_at": "2026-10-26T13:06:26+00:00",
    "liveness": "alive",
    "liveness_detail": "federationgenealogie.qc.ca answered HTTP 200 on 2026-10-24. A name search returned death notices.",
    "homepage": null,
@@ -307983,7 +307983,7 @@
    "name": "Domaine funéraire (Corporation des thanatologues du Québec)",
    "category": "people-search",
    "domain": "domainefuneraire.com",
-   "checked_at": "2026-10-26T12:18:30+00:00",
+   "checked_at": "2026-10-26T13:06:26+00:00",
    "liveness": "alive",
    "liveness_detail": "domainefuneraire.com answered HTTP 200 on 2026-10-24. A name search returned death notices.",
    "homepage": null,
@@ -308202,7 +308202,7 @@
    "name": "Canadian Obituaries",
    "category": "people-search",
    "domain": "canadianobituaries.com",
-   "checked_at": "2026-10-26T12:18:30+00:00",
+   "checked_at": "2026-10-26T13:06:26+00:00",
    "liveness": "alive",
    "liveness_detail": "canadianobituaries.com answered HTTP 200 on 2026-10-24. A name search returned death notices.",
    "homepage": null,
@@ -308421,7 +308421,7 @@
    "name": "Coopérative funéraire du Grand Montréal",
    "category": "people-search",
    "domain": "cfgrandmontreal.com",
-   "checked_at": "2026-10-26T12:18:30+00:00",
+   "checked_at": "2026-10-26T13:06:26+00:00",
    "liveness": "alive",
    "liveness_detail": "cfgrandmontreal.com answered HTTP 200 on 2026-10-24. A name search returned death notices.",
    "homepage": null,
@@ -308640,7 +308640,7 @@
    "name": "Coopérative funéraire des Deux Rives",
    "category": "people-search",
    "domain": "coopfuneraire2rives.com",
-   "checked_at": "2026-10-26T12:18:30+00:00",
+   "checked_at": "2026-10-26T13:06:26+00:00",
    "liveness": "alive",
    "liveness_detail": "coopfuneraire2rives.com answered HTTP 200 on 2026-10-24. A name search returned death notices.",
    "homepage": null,
@@ -308859,7 +308859,7 @@
    "name": "Alliance funéraire du Royaume",
    "category": "people-search",
    "domain": "afdr.coop",
-   "checked_at": "2026-10-26T12:18:30+00:00",
+   "checked_at": "2026-10-26T13:06:26+00:00",
    "liveness": "alive",
    "liveness_detail": "afdr.coop answered HTTP 200 on 2026-10-24. A name search returned death notices.",
    "homepage": null,
@@ -309078,7 +309078,7 @@
    "name": "Coopérative funéraire de l'Abitibi",
    "category": "people-search",
    "domain": "cfa.coop",
-   "checked_at": "2026-10-26T12:18:30+00:00",
+   "checked_at": "2026-10-26T13:06:26+00:00",
    "liveness": "alive",
    "liveness_detail": "cfa.coop answered HTTP 200 on 2026-10-24. A name search returned death notices.",
    "homepage": null,
@@ -309297,7 +309297,7 @@
    "name": "Coopérative funéraire Haute-Côte-Nord - Manicouagan",
    "category": "people-search",
    "domain": "cfhcn.ca",
-   "checked_at": "2026-10-26T12:18:30+00:00",
+   "checked_at": "2026-10-26T13:06:26+00:00",
    "liveness": "alive",
    "liveness_detail": "cfhcn.ca answered HTTP 200 on 2026-10-24. A name search returned death notices.",
    "homepage": null,
@@ -309516,7 +309516,7 @@
    "name": "Coopérative funéraire de l'Outaouais",
    "category": "people-search",
    "domain": "cfo.coop",
-   "checked_at": "2026-10-26T12:18:30+00:00",
+   "checked_at": "2026-10-26T13:06:26+00:00",
    "liveness": "alive",
    "liveness_detail": "cfo.coop answered HTTP 200 on 2026-10-24. A name search returned death notices.",
    "homepage": null,
@@ -309735,7 +309735,7 @@
    "name": "Coopérative funéraire de l'Estrie",
    "category": "people-search",
    "domain": "coopfuneraireestrie.com",
-   "checked_at": "2026-10-26T12:18:30+00:00",
+   "checked_at": "2026-10-26T13:06:26+00:00",
    "liveness": "alive",
    "liveness_detail": "coopfuneraireestrie.com answered HTTP 200 on 2026-10-24. A name search returned death notices.",
    "homepage": null,
@@ -309954,7 +309954,7 @@
    "name": "Résidence funéraire Lac St-Jean",
    "category": "people-search",
    "domain": "residencefunerairelacstjean.com",
-   "checked_at": "2026-10-26T12:18:30+00:00",
+   "checked_at": "2026-10-26T13:06:26+00:00",
    "liveness": "alive",
    "liveness_detail": "residencefunerairelacstjean.com answered HTTP 200 on 2026-10-24. A name search returned death notices.",
    "homepage": null,
@@ -310173,7 +310173,7 @@
    "name": "Coopérative funéraire Brunet",
    "category": "people-search",
    "domain": "coopfbrunet.com",
-   "checked_at": "2026-10-26T12:18:30+00:00",
+   "checked_at": "2026-10-26T13:06:26+00:00",
    "liveness": "alive",
    "liveness_detail": "coopfbrunet.com answered HTTP 200 on 2026-10-24. A name search returned death notices.",
    "homepage": null,
@@ -310392,7 +310392,7 @@
    "name": "Coopérative funéraire Matawinie-Montcalm",
    "category": "people-search",
    "domain": "cfmm.coop",
-   "checked_at": "2026-10-26T12:18:30+00:00",
+   "checked_at": "2026-10-26T13:06:26+00:00",
    "liveness": "alive",
    "liveness_detail": "cfmm.coop answered HTTP 200 on 2026-10-24. A name search returned death notices.",
    "homepage": null,
@@ -310611,7 +310611,7 @@
    "name": "Coopérative funéraire des Laurentides",
    "category": "people-search",
    "domain": "coopfunerairelaurentides.org",
-   "checked_at": "2026-10-26T12:18:30+00:00",
+   "checked_at": "2026-10-26T13:06:26+00:00",
    "liveness": "alive",
    "liveness_detail": "coopfunerairelaurentides.org answered HTTP 200 on 2026-10-24. A name search returned death notices.",
    "homepage": null,
@@ -310830,7 +310830,7 @@
    "name": "Résidence Funéraire Maska",
    "category": "people-search",
    "domain": "rfmaska.coop",
-   "checked_at": "2026-10-26T12:18:30+00:00",
+   "checked_at": "2026-10-26T13:06:26+00:00",
    "liveness": "alive",
    "liveness_detail": "rfmaska.coop answered HTTP 200 on 2026-10-24. A name search returned death notices.",
    "homepage": null,
@@ -311049,7 +311049,7 @@
    "name": "Dignity Memorial",
    "category": "people-search",
    "domain": "dignitymemorial.com",
-   "checked_at": "2026-10-26T12:18:30+00:00",
+   "checked_at": "2026-10-26T13:06:26+00:00",
    "liveness": "alive",
    "liveness_detail": "dignitymemorial.com answered HTTP 200 on 2026-10-24. A name search returned records.",
    "homepage": null,
@@ -311269,7 +311269,7 @@
    "name": "Interment.net",
    "category": "people-search",
    "domain": "interment.net",
-   "checked_at": "2026-10-26T12:18:30+00:00",
+   "checked_at": "2026-10-26T13:06:26+00:00",
    "liveness": "alive",
    "liveness_detail": "interment.net answered HTTP 200 on 2026-10-24. A name search returned records.",
    "homepage": null,
@@ -311489,7 +311489,7 @@
    "name": "Mount Pleasant Group",
    "category": "people-search",
    "domain": "mountpleasantgroup.com",
-   "checked_at": "2026-10-26T12:18:30+00:00",
+   "checked_at": "2026-10-26T13:06:26+00:00",
    "liveness": "alive",
    "liveness_detail": "mountpleasantgroup.com answered HTTP 200 on 2026-10-24. A name search returned records.",
    "homepage": null,
@@ -311708,7 +311708,7 @@
    "name": "Kearney Funeral Services",
    "category": "people-search",
    "domain": "kearneyfs.com",
-   "checked_at": "2026-10-26T12:18:30+00:00",
+   "checked_at": "2026-10-26T13:06:26+00:00",
    "liveness": "alive",
    "liveness_detail": "kearneyfs.com answered HTTP 200 on 2026-10-24. A name search returned records.",
    "homepage": null,
@@ -311927,7 +311927,7 @@
    "name": "Basic Funerals",
    "category": "people-search",
    "domain": "basicfunerals.ca",
-   "checked_at": "2026-10-26T12:18:30+00:00",
+   "checked_at": "2026-10-26T13:06:26+00:00",
    "liveness": "alive",
    "liveness_detail": "basicfunerals.ca answered HTTP 200 on 2026-10-24. A name search returned records.",
    "homepage": null,
@@ -312146,7 +312146,7 @@
    "name": "Le Nécrologue",
    "category": "people-search",
    "domain": "lenecrologue.com",
-   "checked_at": "2026-10-26T12:18:30+00:00",
+   "checked_at": "2026-10-26T13:06:26+00:00",
    "liveness": "alive",
    "liveness_detail": "lenecrologue.com answered HTTP 200 on 2026-10-24. A name search returned records.",
    "homepage": null,
@@ -329710,6 +329710,4602 @@
     "page_kind": "form",
     "result_count": null,
     "checked_at": "2026-10-26T12:20:38+00:00"
+   }
+  },
+  "airdrietoday-obituaries": {
+   "schema_version": "4.0.0",
+   "id": "airdrietoday-obituaries",
+   "name": "AirdrieToday Obituaries",
+   "category": "people-search",
+   "domain": "airdrietoday.com",
+   "checked_at": "2026-10-26T13:05:28+00:00",
+   "liveness": "alive",
+   "liveness_detail": "airdrietoday.com loaded in a browser on 2026-10-26 and a name search returned obituaries. Plain HTTP clients get a Cloudflare challenge.",
+   "homepage": "https://www.airdriecityview.com/",
+   "logo_url": "https://www.vmcdn.ca/files/airdrietoday/images/airdrie-city-view/acv-rvw-web-logo4.svg",
+   "images": [
+    {
+     "url": "https://www.vmcdn.ca/f/files/greatwest/files/ui/at-blue.png",
+     "kind": "apple_touch_icon",
+     "source_page": "https://www.airdriecityview.com/"
+    },
+    {
+     "url": "https://www.vmcdn.ca/files/ui/greatwest/32.png",
+     "kind": "icon",
+     "source_page": "https://www.airdriecityview.com/"
+    },
+    {
+     "url": "https://www.vmcdn.ca/files/ui/greatwest/16.png",
+     "kind": "icon",
+     "source_page": "https://www.airdriecityview.com/"
+    },
+    {
+     "url": "https://www.vmcdn.ca/files/ui/greatwest/spt.svg",
+     "kind": "icon",
+     "source_page": "https://www.airdriecityview.com/"
+    },
+    {
+     "url": "https://www.vmcdn.ca/files/ui/greatwest/favicon.ico",
+     "kind": "icon",
+     "source_page": "https://www.airdriecityview.com/"
+    },
+    {
+     "url": "https://www.vmcdn.ca/f/files/airdrietoday/images/social-images/acv-village-facebook-images.jpg",
+     "kind": "og_image",
+     "source_page": "https://www.airdriecityview.com/"
+    },
+    {
+     "url": "https://www.vmcdn.ca/files/airdrietoday/images/airdrie-city-view/acv-rvw-web-logo4.svg",
+     "kind": "logo",
+     "source_page": "https://www.airdriecityview.com/"
+    },
+    {
+     "url": "https://www.vmcdn.ca/f/files/airdrietoday/rvs-new-logo.jpeg;w=300;h=200;mode=crop",
+     "kind": "logo",
+     "source_page": "https://www.airdriecityview.com/"
+    }
+   ],
+   "theme_color": "#ffffff",
+   "languages": [
+    "en"
+   ],
+   "legal_name": null,
+   "search": {
+    "available": true,
+    "method": "http_get",
+    "page_url": "https://www.airdrietoday.com/obituaries",
+    "form_action": "https://www.airdrietoday.com/search",
+    "inputs": [
+     {
+      "name": "q",
+      "type": "text",
+      "canonical": "full_name",
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null,
+      "id": null,
+      "label": "Search Term",
+      "inputmode": null,
+      "pattern": null,
+      "minlength": null,
+      "maxlength": null,
+      "min": null,
+      "max": null,
+      "step": null,
+      "accept": null,
+      "multiple": false,
+      "disabled": false,
+      "readonly": false,
+      "checked": false,
+      "value": null
+     }
+    ],
+    "url_pattern": "https://www.airdrietoday.com/search?q={q}&tag=141807",
+    "directory_prefixes": [],
+    "paywall": null,
+    "login_wall": null,
+    "form_meta": {
+     "id": null,
+     "name": null,
+     "autocomplete": null,
+     "novalidate": null,
+     "submit_label": null,
+     "hidden_names": []
+    },
+    "captcha_provider": null,
+    "captcha_sitekey": null,
+    "captcha_detail": null,
+    "captcha_checked": true
+   },
+   "removal": {
+    "url": "https://www.airdrietoday.com/other/privacy-policy",
+    "final_url": "https://www.airdriecityview.com/other/privacy-policy",
+    "http_status": 200,
+    "kinds": [
+     "opt_out"
+    ],
+    "channels": [],
+    "emails": [],
+    "phones": [],
+    "postal_address": null,
+    "portal": null,
+    "form_fields": [],
+    "csrf_field_name": "__RequestVerificationToken",
+    "requires_profile_url": null,
+    "captcha": {
+     "provider": null,
+     "sitekey": null,
+     "pages": [],
+     "checked": null,
+     "checked_url": null,
+     "detail": null
+    },
+    "consent_vendor": null,
+    "success_text": null,
+    "suppression_not_deletion": null,
+    "processing_days": null,
+    "processing_text": null,
+    "form_action": null,
+    "form_method": null,
+    "form_meta": {
+     "id": null,
+     "name": null,
+     "autocomplete": null,
+     "novalidate": null,
+     "submit_label": null,
+     "hidden_names": []
+    }
+   },
+   "bot_defense": {
+    "vendor": null,
+    "outcome": "none"
+   },
+   "legal": {
+    "privacy_policy_url": "https://www.airdriecityview.com/other/privacy-policy",
+    "terms_url": null,
+    "automation_prohibited": null,
+    "automation_clause": null,
+    "residency": [],
+    "authorized_agent": null,
+    "data_categories": [],
+    "sells_personal_information": null,
+    "sells_clause": null,
+    "children_not_directed": null
+   },
+   "pages": [
+    {
+     "url": "https://airdrietoday.com/",
+     "final_url": "https://www.airdriecityview.com/",
+     "status": 200,
+     "role": "home",
+     "title": "Airdrie Local News  - Airdrie News",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.airdrietoday.com/",
+     "final_url": "https://www.airdriecityview.com/",
+     "status": 200,
+     "role": "home",
+     "title": "Airdrie Local News  - Airdrie News",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.airdrietoday.com/other/privacy-policy",
+     "final_url": "https://www.airdriecityview.com/other/privacy-policy",
+     "status": 200,
+     "role": "catalog",
+     "title": "AirdrieCityView.com - Privacy Policy  - Airdrie News",
+     "liveness": "alive"
+    }
+   ],
+   "location": {
+    "country": "CA",
+    "region": null,
+    "locality": null,
+    "postal_code": null,
+    "street": null,
+    "postal_address": null,
+    "coverage": [
+     "CA"
+    ],
+    "search_regions": [],
+    "sources": [
+     "manual"
+    ]
+   },
+   "network": {
+    "checked": false,
+    "addresses": [],
+    "ipv6": [],
+    "cname": null,
+    "mx": [],
+    "mail_provider": null,
+    "spf": null,
+    "dmarc": null,
+    "dkim": [],
+    "nameservers": [],
+    "dns_provider": null,
+    "soa_primary": null,
+    "caa": [],
+    "dnssec": null,
+    "asn": null,
+    "asn_country": null,
+    "prefix": null,
+    "cdn": null,
+    "server": null,
+    "tls_org": null,
+    "tls_issuer": null,
+    "tls_names": [],
+    "tls_version": null,
+    "tls_not_before": null,
+    "tls_not_after": null,
+    "registrar": null,
+    "registered": null,
+    "registration_expires": null,
+    "domain_status": []
+   },
+   "request": {
+    "removal_host": "airdriecityview.com",
+    "same_site": false,
+    "https": true,
+    "redirected": true,
+    "redirect_count": null,
+    "form_enctype": null,
+    "content_type": null,
+    "hsts": null,
+    "hsts_max_age": null,
+    "hsts_subdomains": null,
+    "hsts_preload": null,
+    "http_version": null,
+    "http3": null,
+    "frame_options": null,
+    "nosniff": null,
+    "referrer_policy": null,
+    "csp": null,
+    "powered_by": null,
+    "cookie_names": []
+   },
+   "automation": {
+    "search_scanned": true,
+    "search_fillable": true,
+    "search_captcha": false,
+    "search_fields": [
+     "full_name"
+    ],
+    "removal_form_fillable": false,
+    "removal_email_usable": false,
+    "removal_fields": [],
+    "removal_path": null,
+    "fully_automatable": false,
+    "usable_emails": [],
+    "search_required": [],
+    "removal_required": [],
+    "email_verification": null,
+    "id_document": null,
+    "shared_removal_ids": [],
+    "removal_captcha": false,
+    "captcha_blocks_form": false,
+    "captcha_email_fallback": false,
+    "removal_blocker": "no_channel"
+   },
+   "search_test": {
+    "outcome": "results",
+    "http_status": 200,
+    "path_prefix": "search",
+    "fields_sent": [
+     "full_name"
+    ],
+    "missing": [],
+    "page_kind": "results",
+    "result_count": null,
+    "checked_at": "2026-10-26T13:08:02+00:00"
+   }
+  },
+  "cochranetoday-obituaries": {
+   "schema_version": "4.0.0",
+   "id": "cochranetoday-obituaries",
+   "name": "CochraneToday Obituaries",
+   "category": "people-search",
+   "domain": "cochranetoday.ca",
+   "checked_at": "2026-10-26T13:05:28+00:00",
+   "liveness": "alive",
+   "liveness_detail": "cochranetoday.ca loaded in a browser on 2026-10-26 and a name search returned obituaries. Plain HTTP clients get a Cloudflare challenge.",
+   "homepage": "https://www.cochraneeagle.ca/",
+   "logo_url": "https://www.vmcdn.ca/files/cochranetoday/images/cochrane-eagle-brand/cochraneeaglelogo3web.svg",
+   "images": [
+    {
+     "url": "https://www.vmcdn.ca/f/files/greatwest/files/ui/at-blue.png",
+     "kind": "apple_touch_icon",
+     "source_page": "https://www.cochraneeagle.ca/"
+    },
+    {
+     "url": "https://www.vmcdn.ca/files/ui/greatwest/32.png",
+     "kind": "icon",
+     "source_page": "https://www.cochraneeagle.ca/"
+    },
+    {
+     "url": "https://www.vmcdn.ca/files/ui/greatwest/16.png",
+     "kind": "icon",
+     "source_page": "https://www.cochraneeagle.ca/"
+    },
+    {
+     "url": "https://www.vmcdn.ca/files/ui/greatwest/spt.svg",
+     "kind": "icon",
+     "source_page": "https://www.cochraneeagle.ca/"
+    },
+    {
+     "url": "https://www.vmcdn.ca/files/ui/greatwest/favicon.ico",
+     "kind": "icon",
+     "source_page": "https://www.cochraneeagle.ca/"
+    },
+    {
+     "url": "https://www.vmcdn.ca/f/files/cochranetoday/images/cochrane-eagle-brand/cochraneeagledefaultimage-site.jpg",
+     "kind": "og_image",
+     "source_page": "https://www.cochraneeagle.ca/"
+    },
+    {
+     "url": "https://www.vmcdn.ca/files/cochranetoday/images/cochrane-eagle-brand/cochraneeaglelogo3web.svg",
+     "kind": "logo",
+     "source_page": "https://www.cochraneeagle.ca/"
+    },
+    {
+     "url": "https://www.vmcdn.ca/f/files/cochranetoday/images/cochrane-eagle-brand/cochraneeaglelogo3coloursmall.png",
+     "kind": "og_image",
+     "source_page": "https://www.cochraneeagle.ca/other/privacy-policy"
+    }
+   ],
+   "theme_color": "#ffffff",
+   "languages": [
+    "en"
+   ],
+   "legal_name": null,
+   "search": {
+    "available": true,
+    "method": "http_get",
+    "page_url": "https://www.cochranetoday.ca/obituaries",
+    "form_action": "https://www.cochranetoday.ca/search",
+    "inputs": [
+     {
+      "name": "q",
+      "type": "text",
+      "canonical": "full_name",
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null,
+      "id": null,
+      "label": "Search Term",
+      "inputmode": null,
+      "pattern": null,
+      "minlength": null,
+      "maxlength": null,
+      "min": null,
+      "max": null,
+      "step": null,
+      "accept": null,
+      "multiple": false,
+      "disabled": false,
+      "readonly": false,
+      "checked": false,
+      "value": null
+     }
+    ],
+    "url_pattern": "https://www.cochranetoday.ca/search?q={q}&tag=149069",
+    "directory_prefixes": [],
+    "paywall": null,
+    "login_wall": null,
+    "form_meta": {
+     "id": null,
+     "name": null,
+     "autocomplete": null,
+     "novalidate": null,
+     "submit_label": null,
+     "hidden_names": []
+    },
+    "captcha_provider": null,
+    "captcha_sitekey": null,
+    "captcha_detail": null,
+    "captcha_checked": true
+   },
+   "removal": {
+    "url": "https://www.cochranetoday.ca/other/privacy-policy",
+    "final_url": "https://www.cochraneeagle.ca/other/privacy-policy",
+    "http_status": 200,
+    "kinds": [
+     "opt_out"
+    ],
+    "channels": [],
+    "emails": [],
+    "phones": [],
+    "postal_address": null,
+    "portal": null,
+    "form_fields": [],
+    "csrf_field_name": "__RequestVerificationToken",
+    "requires_profile_url": null,
+    "captcha": {
+     "provider": null,
+     "sitekey": null,
+     "pages": [],
+     "checked": null,
+     "checked_url": null,
+     "detail": null
+    },
+    "consent_vendor": null,
+    "success_text": null,
+    "suppression_not_deletion": null,
+    "processing_days": null,
+    "processing_text": null,
+    "form_action": null,
+    "form_method": null,
+    "form_meta": {
+     "id": null,
+     "name": null,
+     "autocomplete": null,
+     "novalidate": null,
+     "submit_label": null,
+     "hidden_names": []
+    }
+   },
+   "bot_defense": {
+    "vendor": null,
+    "outcome": "none"
+   },
+   "legal": {
+    "privacy_policy_url": "https://www.cochraneeagle.ca/other/privacy-policy",
+    "terms_url": null,
+    "automation_prohibited": null,
+    "automation_clause": null,
+    "residency": [],
+    "authorized_agent": null,
+    "data_categories": [
+     "employment"
+    ],
+    "sells_personal_information": null,
+    "sells_clause": null,
+    "children_not_directed": null
+   },
+   "pages": [
+    {
+     "url": "https://cochranetoday.ca/",
+     "final_url": "https://www.cochraneeagle.ca/",
+     "status": 200,
+     "role": "home",
+     "title": "Cochrane News - Daily Local News for Cochrane, Alberta  - Cochrane News",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.cochranetoday.ca/",
+     "final_url": "https://www.cochraneeagle.ca/",
+     "status": 200,
+     "role": "home",
+     "title": "Cochrane News - Daily Local News for Cochrane, Alberta  - Cochrane News",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.cochranetoday.ca/other/privacy-policy",
+     "final_url": "https://www.cochraneeagle.ca/other/privacy-policy",
+     "status": 200,
+     "role": "catalog",
+     "title": "CochraneEagle.ca - Privacy Policy  - Cochrane News",
+     "liveness": "alive"
+    }
+   ],
+   "location": {
+    "country": "CA",
+    "region": null,
+    "locality": null,
+    "postal_code": null,
+    "street": null,
+    "postal_address": null,
+    "coverage": [
+     "CA"
+    ],
+    "search_regions": [],
+    "sources": [
+     "domain"
+    ]
+   },
+   "network": {
+    "checked": false,
+    "addresses": [],
+    "ipv6": [],
+    "cname": null,
+    "mx": [],
+    "mail_provider": null,
+    "spf": null,
+    "dmarc": null,
+    "dkim": [],
+    "nameservers": [],
+    "dns_provider": null,
+    "soa_primary": null,
+    "caa": [],
+    "dnssec": null,
+    "asn": null,
+    "asn_country": null,
+    "prefix": null,
+    "cdn": null,
+    "server": null,
+    "tls_org": null,
+    "tls_issuer": null,
+    "tls_names": [],
+    "tls_version": null,
+    "tls_not_before": null,
+    "tls_not_after": null,
+    "registrar": null,
+    "registered": null,
+    "registration_expires": null,
+    "domain_status": []
+   },
+   "request": {
+    "removal_host": "cochraneeagle.ca",
+    "same_site": false,
+    "https": true,
+    "redirected": true,
+    "redirect_count": null,
+    "form_enctype": null,
+    "content_type": null,
+    "hsts": null,
+    "hsts_max_age": null,
+    "hsts_subdomains": null,
+    "hsts_preload": null,
+    "http_version": null,
+    "http3": null,
+    "frame_options": null,
+    "nosniff": null,
+    "referrer_policy": null,
+    "csp": null,
+    "powered_by": null,
+    "cookie_names": []
+   },
+   "automation": {
+    "search_scanned": true,
+    "search_fillable": true,
+    "search_captcha": false,
+    "search_fields": [
+     "full_name"
+    ],
+    "removal_form_fillable": false,
+    "removal_email_usable": false,
+    "removal_fields": [],
+    "removal_path": null,
+    "fully_automatable": false,
+    "usable_emails": [],
+    "search_required": [],
+    "removal_required": [],
+    "email_verification": null,
+    "id_document": null,
+    "shared_removal_ids": [],
+    "removal_captcha": false,
+    "captcha_blocks_form": false,
+    "captcha_email_fallback": false,
+    "removal_blocker": "no_channel"
+   },
+   "search_test": {
+    "outcome": "results",
+    "http_status": 200,
+    "path_prefix": "search",
+    "fields_sent": [
+     "full_name"
+    ],
+    "missing": [],
+    "page_kind": "results",
+    "result_count": null,
+    "checked_at": "2026-10-26T13:08:02+00:00"
+   }
+  },
+  "okotokstoday-obituaries": {
+   "schema_version": "4.0.0",
+   "id": "okotokstoday-obituaries",
+   "name": "OkotoksToday Obituaries",
+   "category": "people-search",
+   "domain": "okotokstoday.ca",
+   "checked_at": "2026-10-26T13:05:29+00:00",
+   "liveness": "alive",
+   "liveness_detail": "okotokstoday.ca loaded in a browser on 2026-10-26 and a name search returned obituaries. Plain HTTP clients get a Cloudflare challenge.",
+   "homepage": "https://www.westernwheel.ca/",
+   "logo_url": "https://www.vmcdn.ca/f/files/okotokstoday/2023-images/230510/23-02-02-diamondvalley-logo-horizontal-onwhite-rgb.png;w=300;h=200;mode=crop",
+   "images": [
+    {
+     "url": "https://www.vmcdn.ca/f/files/greatwest/files/ui/at-blue.png",
+     "kind": "apple_touch_icon",
+     "source_page": "https://www.westernwheel.ca/"
+    },
+    {
+     "url": "https://www.vmcdn.ca/files/ui/greatwest/32.png",
+     "kind": "icon",
+     "source_page": "https://www.westernwheel.ca/"
+    },
+    {
+     "url": "https://www.vmcdn.ca/files/ui/greatwest/16.png",
+     "kind": "icon",
+     "source_page": "https://www.westernwheel.ca/"
+    },
+    {
+     "url": "https://www.vmcdn.ca/files/ui/greatwest/spt.svg",
+     "kind": "icon",
+     "source_page": "https://www.westernwheel.ca/"
+    },
+    {
+     "url": "https://www.vmcdn.ca/files/ui/greatwest/favicon.ico",
+     "kind": "icon",
+     "source_page": "https://www.westernwheel.ca/"
+    },
+    {
+     "url": "https://www.vmcdn.ca/f/files/okotokstoday/images/western-wheel/branding/new-default-landing-image.jpg",
+     "kind": "og_image",
+     "source_page": "https://www.westernwheel.ca/"
+    },
+    {
+     "url": "https://www.vmcdn.ca/f/files/okotokstoday/2023-images/230510/23-02-02-diamondvalley-logo-horizontal-onwhite-rgb.png;w=300;h=200;mode=crop",
+     "kind": "logo",
+     "source_page": "https://www.westernwheel.ca/"
+    }
+   ],
+   "theme_color": "#ffffff",
+   "languages": [
+    "en"
+   ],
+   "legal_name": null,
+   "search": {
+    "available": true,
+    "method": "http_get",
+    "page_url": "https://www.okotokstoday.ca/obituaries",
+    "form_action": "https://www.okotokstoday.ca/search",
+    "inputs": [
+     {
+      "name": "q",
+      "type": "text",
+      "canonical": "full_name",
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null,
+      "id": null,
+      "label": "Search Term",
+      "inputmode": null,
+      "pattern": null,
+      "minlength": null,
+      "maxlength": null,
+      "min": null,
+      "max": null,
+      "step": null,
+      "accept": null,
+      "multiple": false,
+      "disabled": false,
+      "readonly": false,
+      "checked": false,
+      "value": null
+     }
+    ],
+    "url_pattern": "https://www.okotokstoday.ca/search?q={q}&tag=153482",
+    "directory_prefixes": [],
+    "paywall": null,
+    "login_wall": null,
+    "form_meta": {
+     "id": null,
+     "name": null,
+     "autocomplete": null,
+     "novalidate": null,
+     "submit_label": null,
+     "hidden_names": []
+    },
+    "captcha_provider": null,
+    "captcha_sitekey": null,
+    "captcha_detail": null,
+    "captcha_checked": true
+   },
+   "removal": {
+    "url": "https://www.okotokstoday.ca/other/privacy-policy",
+    "final_url": "https://www.westernwheel.ca/other/privacy-policy",
+    "http_status": 200,
+    "kinds": [
+     "opt_out"
+    ],
+    "channels": [],
+    "emails": [],
+    "phones": [],
+    "postal_address": null,
+    "portal": null,
+    "form_fields": [],
+    "csrf_field_name": null,
+    "requires_profile_url": null,
+    "captcha": {
+     "provider": null,
+     "sitekey": null,
+     "pages": [],
+     "checked": null,
+     "checked_url": null,
+     "detail": null
+    },
+    "consent_vendor": null,
+    "success_text": null,
+    "suppression_not_deletion": null,
+    "processing_days": null,
+    "processing_text": null,
+    "form_action": null,
+    "form_method": null,
+    "form_meta": {
+     "id": null,
+     "name": null,
+     "autocomplete": null,
+     "novalidate": null,
+     "submit_label": null,
+     "hidden_names": []
+    }
+   },
+   "bot_defense": {
+    "vendor": null,
+    "outcome": "none"
+   },
+   "legal": {
+    "privacy_policy_url": "https://www.westernwheel.ca/other/privacy-policy",
+    "terms_url": null,
+    "automation_prohibited": null,
+    "automation_clause": null,
+    "residency": [],
+    "authorized_agent": null,
+    "data_categories": [],
+    "sells_personal_information": null,
+    "sells_clause": null,
+    "children_not_directed": null
+   },
+   "pages": [
+    {
+     "url": "https://okotokstoday.ca/",
+     "final_url": "https://www.westernwheel.ca/",
+     "status": 200,
+     "role": "home",
+     "title": "Okotoks Local News  - Okotoks & Foothills News",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.okotokstoday.ca/",
+     "final_url": "https://www.westernwheel.ca/",
+     "status": 200,
+     "role": "home",
+     "title": "Okotoks Local News  - Okotoks & Foothills News",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.okotokstoday.ca/other/privacy-policy",
+     "final_url": "https://www.westernwheel.ca/other/privacy-policy",
+     "status": 200,
+     "role": "catalog",
+     "title": "WesternWheel.ca - Privacy Policy  - Okotoks & Foothills News",
+     "liveness": "alive"
+    }
+   ],
+   "location": {
+    "country": "CA",
+    "region": null,
+    "locality": null,
+    "postal_code": null,
+    "street": null,
+    "postal_address": null,
+    "coverage": [
+     "CA"
+    ],
+    "search_regions": [],
+    "sources": [
+     "domain"
+    ]
+   },
+   "network": {
+    "checked": false,
+    "addresses": [],
+    "ipv6": [],
+    "cname": null,
+    "mx": [],
+    "mail_provider": null,
+    "spf": null,
+    "dmarc": null,
+    "dkim": [],
+    "nameservers": [],
+    "dns_provider": null,
+    "soa_primary": null,
+    "caa": [],
+    "dnssec": null,
+    "asn": null,
+    "asn_country": null,
+    "prefix": null,
+    "cdn": null,
+    "server": null,
+    "tls_org": null,
+    "tls_issuer": null,
+    "tls_names": [],
+    "tls_version": null,
+    "tls_not_before": null,
+    "tls_not_after": null,
+    "registrar": null,
+    "registered": null,
+    "registration_expires": null,
+    "domain_status": []
+   },
+   "request": {
+    "removal_host": "westernwheel.ca",
+    "same_site": false,
+    "https": true,
+    "redirected": true,
+    "redirect_count": null,
+    "form_enctype": null,
+    "content_type": null,
+    "hsts": null,
+    "hsts_max_age": null,
+    "hsts_subdomains": null,
+    "hsts_preload": null,
+    "http_version": null,
+    "http3": null,
+    "frame_options": null,
+    "nosniff": null,
+    "referrer_policy": null,
+    "csp": null,
+    "powered_by": null,
+    "cookie_names": []
+   },
+   "automation": {
+    "search_scanned": true,
+    "search_fillable": true,
+    "search_captcha": false,
+    "search_fields": [
+     "full_name"
+    ],
+    "removal_form_fillable": false,
+    "removal_email_usable": false,
+    "removal_fields": [],
+    "removal_path": null,
+    "fully_automatable": false,
+    "usable_emails": [],
+    "search_required": [],
+    "removal_required": [],
+    "email_verification": null,
+    "id_document": null,
+    "shared_removal_ids": [],
+    "removal_captcha": false,
+    "captcha_blocks_form": false,
+    "captcha_email_fallback": false,
+    "removal_blocker": "no_channel"
+   },
+   "search_test": {
+    "outcome": "results",
+    "http_status": 200,
+    "path_prefix": "search",
+    "fields_sent": [
+     "full_name"
+    ],
+    "missing": [],
+    "page_kind": "results",
+    "result_count": null,
+    "checked_at": "2026-10-26T13:08:03+00:00"
+   }
+  },
+  "rmoutlook-obituaries": {
+   "schema_version": "4.0.0",
+   "id": "rmoutlook-obituaries",
+   "name": "Rocky Mountain Outlook Obituaries",
+   "category": "people-search",
+   "domain": "rmoutlook.com",
+   "checked_at": "2026-10-26T13:05:32+00:00",
+   "liveness": "alive",
+   "liveness_detail": "rmoutlook.com loaded in a browser on 2026-10-26 and a name search returned obituaries. Plain HTTP clients get a Cloudflare challenge.",
+   "homepage": "https://www.rmoutlook.com/",
+   "logo_url": "https://www.vmcdn.ca/f/files/rmotoday/images/rmo-today/rocky-mountain-outlook/25outlook-logo.png",
+   "images": [
+    {
+     "url": "https://www.vmcdn.ca/f/files/greatwest/files/ui/at-red.png",
+     "kind": "apple_touch_icon",
+     "source_page": "https://www.rmoutlook.com/"
+    },
+    {
+     "url": "https://www.vmcdn.ca/files/ui/greatwest/rmotoday/32.png",
+     "kind": "icon",
+     "source_page": "https://www.rmoutlook.com/"
+    },
+    {
+     "url": "https://www.vmcdn.ca/files/ui/greatwest/rmotoday/16.png",
+     "kind": "icon",
+     "source_page": "https://www.rmoutlook.com/"
+    },
+    {
+     "url": "https://www.vmcdn.ca/files/ui/greatwest/rmotoday/spt.svg",
+     "kind": "icon",
+     "source_page": "https://www.rmoutlook.com/"
+    },
+    {
+     "url": "https://www.vmcdn.ca/files/ui/greatwest/rmotoday/favicon.ico",
+     "kind": "icon",
+     "source_page": "https://www.rmoutlook.com/"
+    },
+    {
+     "url": "https://www.vmcdn.ca/f/files/rmotoday/images/rmo-today/rocky-mountain-outlook/rmo-endcard_1920x1080.png",
+     "kind": "og_image",
+     "source_page": "https://www.rmoutlook.com/"
+    },
+    {
+     "url": "https://www.vmcdn.ca/f/files/rmotoday/images/rmo-today/rocky-mountain-outlook/25outlook-logo.png",
+     "kind": "logo",
+     "source_page": "https://www.rmoutlook.com/"
+    }
+   ],
+   "theme_color": "#ffffff",
+   "languages": [
+    "en"
+   ],
+   "legal_name": null,
+   "search": {
+    "available": true,
+    "method": "http_get",
+    "page_url": "https://www.rmoutlook.com/obituaries",
+    "form_action": "https://www.rmoutlook.com/search",
+    "inputs": [
+     {
+      "name": "q",
+      "type": "text",
+      "canonical": "full_name",
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null,
+      "id": null,
+      "label": "Search Term",
+      "inputmode": null,
+      "pattern": null,
+      "minlength": null,
+      "maxlength": null,
+      "min": null,
+      "max": null,
+      "step": null,
+      "accept": null,
+      "multiple": false,
+      "disabled": false,
+      "readonly": false,
+      "checked": false,
+      "value": null
+     }
+    ],
+    "url_pattern": "https://www.rmoutlook.com/search?q={q}&tag=162715",
+    "directory_prefixes": [],
+    "paywall": null,
+    "login_wall": null,
+    "form_meta": {
+     "id": null,
+     "name": null,
+     "autocomplete": null,
+     "novalidate": null,
+     "submit_label": null,
+     "hidden_names": []
+    },
+    "captcha_provider": null,
+    "captcha_sitekey": null,
+    "captcha_detail": null,
+    "captcha_checked": true
+   },
+   "removal": {
+    "url": "https://www.rmoutlook.com/other/privacy-policy",
+    "final_url": "https://www.rmoutlook.com/other/privacy-policy",
+    "http_status": 200,
+    "kinds": [
+     "opt_out"
+    ],
+    "channels": [],
+    "emails": [],
+    "phones": [],
+    "postal_address": null,
+    "portal": null,
+    "form_fields": [],
+    "csrf_field_name": "__RequestVerificationToken",
+    "requires_profile_url": null,
+    "captcha": {
+     "provider": null,
+     "sitekey": null,
+     "pages": [],
+     "checked": null,
+     "checked_url": null,
+     "detail": null
+    },
+    "consent_vendor": null,
+    "success_text": null,
+    "suppression_not_deletion": null,
+    "processing_days": null,
+    "processing_text": null,
+    "form_action": null,
+    "form_method": null,
+    "form_meta": {
+     "id": null,
+     "name": null,
+     "autocomplete": null,
+     "novalidate": null,
+     "submit_label": null,
+     "hidden_names": []
+    }
+   },
+   "bot_defense": {
+    "vendor": null,
+    "outcome": "none"
+   },
+   "legal": {
+    "privacy_policy_url": "https://www.rmoutlook.com/other/privacy-policy",
+    "terms_url": null,
+    "automation_prohibited": null,
+    "automation_clause": null,
+    "residency": [],
+    "authorized_agent": null,
+    "data_categories": [
+     "employment"
+    ],
+    "sells_personal_information": null,
+    "sells_clause": null,
+    "children_not_directed": null
+   },
+   "pages": [
+    {
+     "url": "https://rmoutlook.com/",
+     "final_url": "https://www.rmoutlook.com/",
+     "status": 200,
+     "role": "home",
+     "title": "Bow Valley News - Powered by Rocky Mountain Outlook - Rocky Mountain News",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.rmoutlook.com/",
+     "final_url": "https://www.rmoutlook.com/",
+     "status": 200,
+     "role": "home",
+     "title": "Bow Valley News - Powered by Rocky Mountain Outlook - Rocky Mountain News",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.rmoutlook.com/other/privacy-policy",
+     "final_url": "https://www.rmoutlook.com/other/privacy-policy",
+     "status": 200,
+     "role": "catalog",
+     "title": "RMOutlook.com - Privacy Policy - Rocky Mountain News",
+     "liveness": "alive"
+    }
+   ],
+   "location": {
+    "country": "CA",
+    "region": null,
+    "locality": null,
+    "postal_code": null,
+    "street": null,
+    "postal_address": null,
+    "coverage": [
+     "CA"
+    ],
+    "search_regions": [],
+    "sources": [
+     "manual"
+    ]
+   },
+   "network": {
+    "checked": false,
+    "addresses": [],
+    "ipv6": [],
+    "cname": null,
+    "mx": [],
+    "mail_provider": null,
+    "spf": null,
+    "dmarc": null,
+    "dkim": [],
+    "nameservers": [],
+    "dns_provider": null,
+    "soa_primary": null,
+    "caa": [],
+    "dnssec": null,
+    "asn": null,
+    "asn_country": null,
+    "prefix": null,
+    "cdn": null,
+    "server": null,
+    "tls_org": null,
+    "tls_issuer": null,
+    "tls_names": [],
+    "tls_version": null,
+    "tls_not_before": null,
+    "tls_not_after": null,
+    "registrar": null,
+    "registered": null,
+    "registration_expires": null,
+    "domain_status": []
+   },
+   "request": {
+    "removal_host": "rmoutlook.com",
+    "same_site": true,
+    "https": true,
+    "redirected": false,
+    "redirect_count": null,
+    "form_enctype": null,
+    "content_type": null,
+    "hsts": null,
+    "hsts_max_age": null,
+    "hsts_subdomains": null,
+    "hsts_preload": null,
+    "http_version": null,
+    "http3": null,
+    "frame_options": null,
+    "nosniff": null,
+    "referrer_policy": null,
+    "csp": null,
+    "powered_by": null,
+    "cookie_names": []
+   },
+   "automation": {
+    "search_scanned": true,
+    "search_fillable": true,
+    "search_captcha": false,
+    "search_fields": [
+     "full_name"
+    ],
+    "removal_form_fillable": false,
+    "removal_email_usable": false,
+    "removal_fields": [],
+    "removal_path": null,
+    "fully_automatable": false,
+    "usable_emails": [],
+    "search_required": [],
+    "removal_required": [],
+    "email_verification": null,
+    "id_document": null,
+    "shared_removal_ids": [],
+    "removal_captcha": false,
+    "captcha_blocks_form": false,
+    "captcha_email_fallback": false,
+    "removal_blocker": "no_channel"
+   },
+   "search_test": {
+    "outcome": "results",
+    "http_status": 200,
+    "path_prefix": "search",
+    "fields_sent": [
+     "full_name"
+    ],
+    "missing": [],
+    "page_kind": "results",
+    "result_count": null,
+    "checked_at": "2026-10-26T13:08:03+00:00"
+   }
+  },
+  "lakelandtoday-obituaries": {
+   "schema_version": "4.0.0",
+   "id": "lakelandtoday-obituaries",
+   "name": "LakelandToday Obituaries",
+   "category": "people-search",
+   "domain": "lakelandtoday.ca",
+   "checked_at": "2026-10-26T13:05:28+00:00",
+   "liveness": "alive",
+   "liveness_detail": "lakelandtoday.ca loaded in a browser on 2026-10-26 and a name search returned obituaries. Plain HTTP clients get a Cloudflare challenge.",
+   "homepage": "https://www.lakelandtoday.ca/",
+   "logo_url": "https://www.vmcdn.ca/files/lakelandtoday/images/lakelandtoday/lakelandtoday_pos_rgb_outline.svg",
+   "images": [
+    {
+     "url": "https://www.vmcdn.ca/f/files/greatwest/files/ui/at-blue.png",
+     "kind": "apple_touch_icon",
+     "source_page": "https://www.lakelandtoday.ca/"
+    },
+    {
+     "url": "https://www.vmcdn.ca/files/ui/greatwest/32.png",
+     "kind": "icon",
+     "source_page": "https://www.lakelandtoday.ca/"
+    },
+    {
+     "url": "https://www.vmcdn.ca/files/ui/greatwest/16.png",
+     "kind": "icon",
+     "source_page": "https://www.lakelandtoday.ca/"
+    },
+    {
+     "url": "https://www.vmcdn.ca/files/ui/greatwest/spt.svg",
+     "kind": "icon",
+     "source_page": "https://www.lakelandtoday.ca/"
+    },
+    {
+     "url": "https://www.vmcdn.ca/files/ui/greatwest/favicon.ico",
+     "kind": "icon",
+     "source_page": "https://www.lakelandtoday.ca/"
+    },
+    {
+     "url": "https://www.vmcdn.ca/f/files/lakelandtoday/images/lakelandtoday/lakeland-daily-newsletter/llt-newsletterdefaultimage1200.jpg",
+     "kind": "og_image",
+     "source_page": "https://www.lakelandtoday.ca/"
+    },
+    {
+     "url": "https://www.vmcdn.ca/files/lakelandtoday/images/lakelandtoday/lakelandtoday_pos_rgb_outline.svg",
+     "kind": "logo",
+     "source_page": "https://www.lakelandtoday.ca/"
+    },
+    {
+     "url": "https://www.vmcdn.ca/f/files/lakelandtoday/plamondon-curling-club-logo.jpg;w=300;h=200;mode=crop",
+     "kind": "logo",
+     "source_page": "https://www.lakelandtoday.ca/"
+    },
+    {
+     "url": "https://www.vmcdn.ca/files/lakelandtoday/images/lakelandtoday/lakelandtoday_pos_rgb_outline.png",
+     "kind": "og_image",
+     "source_page": "https://www.lakelandtoday.ca/other/privacy-policy"
+    }
+   ],
+   "theme_color": "#ffffff",
+   "languages": [
+    "en"
+   ],
+   "legal_name": null,
+   "search": {
+    "available": true,
+    "method": "http_get",
+    "page_url": "https://www.lakelandtoday.ca/obituaries",
+    "form_action": "https://www.lakelandtoday.ca/search",
+    "inputs": [
+     {
+      "name": "q",
+      "type": "text",
+      "canonical": "full_name",
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null,
+      "id": null,
+      "label": "Search Term",
+      "inputmode": null,
+      "pattern": null,
+      "minlength": null,
+      "maxlength": null,
+      "min": null,
+      "max": null,
+      "step": null,
+      "accept": null,
+      "multiple": false,
+      "disabled": false,
+      "readonly": false,
+      "checked": false,
+      "value": null
+     }
+    ],
+    "url_pattern": "https://www.lakelandtoday.ca/search?q={q}&tag=214599",
+    "directory_prefixes": [],
+    "paywall": null,
+    "login_wall": null,
+    "form_meta": {
+     "id": null,
+     "name": null,
+     "autocomplete": null,
+     "novalidate": null,
+     "submit_label": null,
+     "hidden_names": []
+    },
+    "captcha_provider": null,
+    "captcha_sitekey": null,
+    "captcha_detail": null,
+    "captcha_checked": true
+   },
+   "removal": {
+    "url": "https://www.lakelandtoday.ca/other/privacy-policy",
+    "final_url": "https://www.lakelandtoday.ca/other/privacy-policy",
+    "http_status": 200,
+    "kinds": [
+     "opt_out"
+    ],
+    "channels": [],
+    "emails": [],
+    "phones": [],
+    "postal_address": null,
+    "portal": null,
+    "form_fields": [],
+    "csrf_field_name": "__RequestVerificationToken",
+    "requires_profile_url": null,
+    "captcha": {
+     "provider": null,
+     "sitekey": null,
+     "pages": [],
+     "checked": null,
+     "checked_url": null,
+     "detail": null
+    },
+    "consent_vendor": null,
+    "success_text": null,
+    "suppression_not_deletion": null,
+    "processing_days": null,
+    "processing_text": null,
+    "form_action": null,
+    "form_method": null,
+    "form_meta": {
+     "id": null,
+     "name": null,
+     "autocomplete": null,
+     "novalidate": null,
+     "submit_label": null,
+     "hidden_names": []
+    }
+   },
+   "bot_defense": {
+    "vendor": null,
+    "outcome": "none"
+   },
+   "legal": {
+    "privacy_policy_url": "https://www.lakelandtoday.ca/other/privacy-policy",
+    "terms_url": null,
+    "automation_prohibited": null,
+    "automation_clause": null,
+    "residency": [],
+    "authorized_agent": null,
+    "data_categories": [
+     "identifiers"
+    ],
+    "sells_personal_information": null,
+    "sells_clause": null,
+    "children_not_directed": null
+   },
+   "pages": [
+    {
+     "url": "https://lakelandtoday.ca/",
+     "final_url": "https://www.lakelandtoday.ca/",
+     "status": 200,
+     "role": "home",
+     "title": "Bonnyville, Cold Lake, Elk Point, Lac La Biche, St. Paul Local News - Lakeland News",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.lakelandtoday.ca/",
+     "final_url": "https://www.lakelandtoday.ca/",
+     "status": 200,
+     "role": "home",
+     "title": "Bonnyville, Cold Lake, Elk Point, Lac La Biche, St. Paul Local News - Lakeland News",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.lakelandtoday.ca/other/privacy-policy",
+     "final_url": "https://www.lakelandtoday.ca/other/privacy-policy",
+     "status": 200,
+     "role": "catalog",
+     "title": "LakelandToday.ca - Privacy Policy - Lakeland News",
+     "liveness": "alive"
+    }
+   ],
+   "location": {
+    "country": "CA",
+    "region": null,
+    "locality": null,
+    "postal_code": null,
+    "street": null,
+    "postal_address": null,
+    "coverage": [
+     "CA"
+    ],
+    "search_regions": [],
+    "sources": [
+     "domain"
+    ]
+   },
+   "network": {
+    "checked": false,
+    "addresses": [],
+    "ipv6": [],
+    "cname": null,
+    "mx": [],
+    "mail_provider": null,
+    "spf": null,
+    "dmarc": null,
+    "dkim": [],
+    "nameservers": [],
+    "dns_provider": null,
+    "soa_primary": null,
+    "caa": [],
+    "dnssec": null,
+    "asn": null,
+    "asn_country": null,
+    "prefix": null,
+    "cdn": null,
+    "server": null,
+    "tls_org": null,
+    "tls_issuer": null,
+    "tls_names": [],
+    "tls_version": null,
+    "tls_not_before": null,
+    "tls_not_after": null,
+    "registrar": null,
+    "registered": null,
+    "registration_expires": null,
+    "domain_status": []
+   },
+   "request": {
+    "removal_host": "lakelandtoday.ca",
+    "same_site": true,
+    "https": true,
+    "redirected": false,
+    "redirect_count": null,
+    "form_enctype": null,
+    "content_type": null,
+    "hsts": null,
+    "hsts_max_age": null,
+    "hsts_subdomains": null,
+    "hsts_preload": null,
+    "http_version": null,
+    "http3": null,
+    "frame_options": null,
+    "nosniff": null,
+    "referrer_policy": null,
+    "csp": null,
+    "powered_by": null,
+    "cookie_names": []
+   },
+   "automation": {
+    "search_scanned": true,
+    "search_fillable": true,
+    "search_captcha": false,
+    "search_fields": [
+     "full_name"
+    ],
+    "removal_form_fillable": false,
+    "removal_email_usable": false,
+    "removal_fields": [],
+    "removal_path": null,
+    "fully_automatable": false,
+    "usable_emails": [],
+    "search_required": [],
+    "removal_required": [],
+    "email_verification": null,
+    "id_document": null,
+    "shared_removal_ids": [],
+    "removal_captcha": false,
+    "captcha_blocks_form": false,
+    "captcha_email_fallback": false,
+    "removal_blocker": "no_channel"
+   },
+   "search_test": {
+    "outcome": "results",
+    "http_status": 200,
+    "path_prefix": "search",
+    "fields_sent": [
+     "full_name"
+    ],
+    "missing": [],
+    "page_kind": "results",
+    "result_count": null,
+    "checked_at": "2026-10-26T13:08:03+00:00"
+   }
+  },
+  "townandcountrytoday-obituaries": {
+   "schema_version": "4.0.0",
+   "id": "townandcountrytoday-obituaries",
+   "name": "Town & Country Today Obituaries",
+   "category": "people-search",
+   "domain": "townandcountrytoday.com",
+   "checked_at": "2026-10-26T13:05:32+00:00",
+   "liveness": "alive",
+   "liveness_detail": "townandcountrytoday.com loaded in a browser on 2026-10-26 and a name search returned obituaries. Plain HTTP clients get a Cloudflare challenge.",
+   "homepage": "https://www.townandcountrytoday.com/",
+   "logo_url": "https://www.vmcdn.ca/files/townandcountrytoday/images/townandcountrytoday/tandctoday_pos_rgb.svg",
+   "images": [
+    {
+     "url": "https://www.vmcdn.ca/f/files/greatwest/files/ui/at-blue.png",
+     "kind": "apple_touch_icon",
+     "source_page": "https://www.townandcountrytoday.com/"
+    },
+    {
+     "url": "https://www.vmcdn.ca/files/ui/greatwest/32.png",
+     "kind": "icon",
+     "source_page": "https://www.townandcountrytoday.com/"
+    },
+    {
+     "url": "https://www.vmcdn.ca/files/ui/greatwest/16.png",
+     "kind": "icon",
+     "source_page": "https://www.townandcountrytoday.com/"
+    },
+    {
+     "url": "https://www.vmcdn.ca/files/ui/greatwest/spt.svg",
+     "kind": "icon",
+     "source_page": "https://www.townandcountrytoday.com/"
+    },
+    {
+     "url": "https://www.vmcdn.ca/files/ui/greatwest/favicon.ico",
+     "kind": "icon",
+     "source_page": "https://www.townandcountrytoday.com/"
+    },
+    {
+     "url": "https://www.vmcdn.ca/f/files/townandcountrytoday/images/townandcountrytoday/towncountry-daily-newsletter/tc-newsletterdefaultimage1200.jpg",
+     "kind": "og_image",
+     "source_page": "https://www.townandcountrytoday.com/"
+    },
+    {
+     "url": "https://www.vmcdn.ca/files/townandcountrytoday/images/townandcountrytoday/tandctoday_pos_rgb.svg",
+     "kind": "logo",
+     "source_page": "https://www.townandcountrytoday.com/"
+    },
+    {
+     "url": "https://www.vmcdn.ca/files/townandcountrytoday/images/townandcountrytoday/tandctoday_pos_rgb.png",
+     "kind": "og_image",
+     "source_page": "https://www.townandcountrytoday.com/other/privacy-policy"
+    }
+   ],
+   "theme_color": "#ffffff",
+   "languages": [
+    "en"
+   ],
+   "legal_name": null,
+   "search": {
+    "available": true,
+    "method": "http_get",
+    "page_url": "https://www.townandcountrytoday.com/obituaries",
+    "form_action": "https://www.townandcountrytoday.com/search",
+    "inputs": [
+     {
+      "name": "q",
+      "type": "text",
+      "canonical": "full_name",
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null,
+      "id": null,
+      "label": "Search Term",
+      "inputmode": null,
+      "pattern": null,
+      "minlength": null,
+      "maxlength": null,
+      "min": null,
+      "max": null,
+      "step": null,
+      "accept": null,
+      "multiple": false,
+      "disabled": false,
+      "readonly": false,
+      "checked": false,
+      "value": null
+     }
+    ],
+    "url_pattern": "https://www.townandcountrytoday.com/search?q={q}&tag=210040",
+    "directory_prefixes": [],
+    "paywall": null,
+    "login_wall": null,
+    "form_meta": {
+     "id": null,
+     "name": null,
+     "autocomplete": null,
+     "novalidate": null,
+     "submit_label": null,
+     "hidden_names": []
+    },
+    "captcha_provider": null,
+    "captcha_sitekey": null,
+    "captcha_detail": null,
+    "captcha_checked": true
+   },
+   "removal": {
+    "url": "https://www.townandcountrytoday.com/other/privacy-policy",
+    "final_url": "https://www.townandcountrytoday.com/other/privacy-policy",
+    "http_status": 200,
+    "kinds": [
+     "opt_out"
+    ],
+    "channels": [],
+    "emails": [],
+    "phones": [],
+    "postal_address": null,
+    "portal": null,
+    "form_fields": [],
+    "csrf_field_name": "__RequestVerificationToken",
+    "requires_profile_url": null,
+    "captcha": {
+     "provider": null,
+     "sitekey": null,
+     "pages": [],
+     "checked": null,
+     "checked_url": null,
+     "detail": null
+    },
+    "consent_vendor": null,
+    "success_text": null,
+    "suppression_not_deletion": null,
+    "processing_days": null,
+    "processing_text": null,
+    "form_action": null,
+    "form_method": null,
+    "form_meta": {
+     "id": null,
+     "name": null,
+     "autocomplete": null,
+     "novalidate": null,
+     "submit_label": null,
+     "hidden_names": []
+    }
+   },
+   "bot_defense": {
+    "vendor": null,
+    "outcome": "none"
+   },
+   "legal": {
+    "privacy_policy_url": "https://www.townandcountrytoday.com/other/privacy-policy",
+    "terms_url": null,
+    "automation_prohibited": null,
+    "automation_clause": null,
+    "residency": [],
+    "authorized_agent": null,
+    "data_categories": [
+     "employment"
+    ],
+    "sells_personal_information": null,
+    "sells_clause": null,
+    "children_not_directed": null
+   },
+   "pages": [
+    {
+     "url": "https://townandcountrytoday.com/",
+     "final_url": "https://www.townandcountrytoday.com/",
+     "status": 200,
+     "role": "home",
+     "title": "Local News - Athabasca, Barrhead and Westlock - Athabasca, Barrhead & Westlock News",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.townandcountrytoday.com/",
+     "final_url": "https://www.townandcountrytoday.com/",
+     "status": 200,
+     "role": "home",
+     "title": "Local News - Athabasca, Barrhead and Westlock - Athabasca, Barrhead & Westlock News",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.townandcountrytoday.com/other/privacy-policy",
+     "final_url": "https://www.townandcountrytoday.com/other/privacy-policy",
+     "status": 200,
+     "role": "catalog",
+     "title": "TownAndCountryToday.com - Privacy Policy - Athabasca, Barrhead & Westlock News",
+     "liveness": "alive"
+    }
+   ],
+   "location": {
+    "country": "CA",
+    "region": null,
+    "locality": null,
+    "postal_code": null,
+    "street": null,
+    "postal_address": null,
+    "coverage": [
+     "CA"
+    ],
+    "search_regions": [],
+    "sources": [
+     "manual"
+    ]
+   },
+   "network": {
+    "checked": false,
+    "addresses": [],
+    "ipv6": [],
+    "cname": null,
+    "mx": [],
+    "mail_provider": null,
+    "spf": null,
+    "dmarc": null,
+    "dkim": [],
+    "nameservers": [],
+    "dns_provider": null,
+    "soa_primary": null,
+    "caa": [],
+    "dnssec": null,
+    "asn": null,
+    "asn_country": null,
+    "prefix": null,
+    "cdn": null,
+    "server": null,
+    "tls_org": null,
+    "tls_issuer": null,
+    "tls_names": [],
+    "tls_version": null,
+    "tls_not_before": null,
+    "tls_not_after": null,
+    "registrar": null,
+    "registered": null,
+    "registration_expires": null,
+    "domain_status": []
+   },
+   "request": {
+    "removal_host": "townandcountrytoday.com",
+    "same_site": true,
+    "https": true,
+    "redirected": false,
+    "redirect_count": null,
+    "form_enctype": null,
+    "content_type": null,
+    "hsts": null,
+    "hsts_max_age": null,
+    "hsts_subdomains": null,
+    "hsts_preload": null,
+    "http_version": null,
+    "http3": null,
+    "frame_options": null,
+    "nosniff": null,
+    "referrer_policy": null,
+    "csp": null,
+    "powered_by": null,
+    "cookie_names": []
+   },
+   "automation": {
+    "search_scanned": true,
+    "search_fillable": true,
+    "search_captcha": false,
+    "search_fields": [
+     "full_name"
+    ],
+    "removal_form_fillable": false,
+    "removal_email_usable": false,
+    "removal_fields": [],
+    "removal_path": null,
+    "fully_automatable": false,
+    "usable_emails": [],
+    "search_required": [],
+    "removal_required": [],
+    "email_verification": null,
+    "id_document": null,
+    "shared_removal_ids": [],
+    "removal_captcha": false,
+    "captcha_blocks_form": false,
+    "captcha_email_fallback": false,
+    "removal_blocker": "no_channel"
+   },
+   "search_test": {
+    "outcome": "results",
+    "http_status": 200,
+    "path_prefix": "search",
+    "fields_sent": [
+     "full_name"
+    ],
+    "missing": [],
+    "page_kind": "results",
+    "result_count": null,
+    "checked_at": "2026-10-26T13:08:05+00:00"
+   }
+  },
+  "mountainviewtoday-obituaries": {
+   "schema_version": "4.0.0",
+   "id": "mountainviewtoday-obituaries",
+   "name": "MountainViewToday Obituaries",
+   "category": "people-search",
+   "domain": "mountainviewtoday.ca",
+   "checked_at": "2026-10-26T13:05:29+00:00",
+   "liveness": "alive",
+   "liveness_detail": "mountainviewtoday.ca loaded in a browser on 2026-10-26 and a name search returned obituaries. Plain HTTP clients get a Cloudflare challenge.",
+   "homepage": "https://www.thealbertan.com/",
+   "logo_url": "https://www.vmcdn.ca/files/mountainviewtoday/images/the-albertan/branding/thealbertanrgblogonew.svg",
+   "images": [
+    {
+     "url": "https://www.vmcdn.ca/f/files/greatwest/files/ui/at-blue.png",
+     "kind": "apple_touch_icon",
+     "source_page": "https://www.thealbertan.com/"
+    },
+    {
+     "url": "https://www.vmcdn.ca/files/ui/greatwest/32.png",
+     "kind": "icon",
+     "source_page": "https://www.thealbertan.com/"
+    },
+    {
+     "url": "https://www.vmcdn.ca/files/ui/greatwest/16.png",
+     "kind": "icon",
+     "source_page": "https://www.thealbertan.com/"
+    },
+    {
+     "url": "https://www.vmcdn.ca/files/ui/greatwest/spt.svg",
+     "kind": "icon",
+     "source_page": "https://www.thealbertan.com/"
+    },
+    {
+     "url": "https://www.vmcdn.ca/files/ui/greatwest/favicon.ico",
+     "kind": "icon",
+     "source_page": "https://www.thealbertan.com/"
+    },
+    {
+     "url": "https://www.vmcdn.ca/f/files/mountainviewtoday/images/mountainviewtodayca/mountain-view-daily-newsletter/mvt-newsletterdefaultimage1200.jpg",
+     "kind": "og_image",
+     "source_page": "https://www.thealbertan.com/"
+    },
+    {
+     "url": "https://www.vmcdn.ca/files/mountainviewtoday/images/the-albertan/branding/thealbertanrgblogonew.svg",
+     "kind": "logo",
+     "source_page": "https://www.thealbertan.com/"
+    },
+    {
+     "url": "https://www.vmcdn.ca/f/files/mountainviewtoday/images/the-albertan/branding/thealbertan400.png",
+     "kind": "og_image",
+     "source_page": "https://www.thealbertan.com/other/privacy-policy"
+    }
+   ],
+   "theme_color": "#ffffff",
+   "languages": [
+    "en"
+   ],
+   "legal_name": null,
+   "search": {
+    "available": true,
+    "method": "http_get",
+    "page_url": "https://www.mountainviewtoday.ca/obituaries",
+    "form_action": "https://www.mountainviewtoday.ca/search",
+    "inputs": [
+     {
+      "name": "q",
+      "type": "text",
+      "canonical": "full_name",
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null,
+      "id": null,
+      "label": "Search Term",
+      "inputmode": null,
+      "pattern": null,
+      "minlength": null,
+      "maxlength": null,
+      "min": null,
+      "max": null,
+      "step": null,
+      "accept": null,
+      "multiple": false,
+      "disabled": false,
+      "readonly": false,
+      "checked": false,
+      "value": null
+     }
+    ],
+    "url_pattern": "https://www.mountainviewtoday.ca/search?q={q}&tag=181956",
+    "directory_prefixes": [],
+    "paywall": null,
+    "login_wall": null,
+    "form_meta": {
+     "id": null,
+     "name": null,
+     "autocomplete": null,
+     "novalidate": null,
+     "submit_label": null,
+     "hidden_names": []
+    },
+    "captcha_provider": null,
+    "captcha_sitekey": null,
+    "captcha_detail": null,
+    "captcha_checked": true
+   },
+   "removal": {
+    "url": "https://www.mountainviewtoday.ca/other/privacy-policy",
+    "final_url": "https://www.thealbertan.com/other/privacy-policy",
+    "http_status": 200,
+    "kinds": [
+     "opt_out"
+    ],
+    "channels": [],
+    "emails": [],
+    "phones": [],
+    "postal_address": null,
+    "portal": null,
+    "form_fields": [],
+    "csrf_field_name": "__RequestVerificationToken",
+    "requires_profile_url": null,
+    "captcha": {
+     "provider": null,
+     "sitekey": null,
+     "pages": [],
+     "checked": null,
+     "checked_url": null,
+     "detail": null
+    },
+    "consent_vendor": null,
+    "success_text": null,
+    "suppression_not_deletion": null,
+    "processing_days": null,
+    "processing_text": null,
+    "form_action": null,
+    "form_method": null,
+    "form_meta": {
+     "id": null,
+     "name": null,
+     "autocomplete": null,
+     "novalidate": null,
+     "submit_label": null,
+     "hidden_names": []
+    }
+   },
+   "bot_defense": {
+    "vendor": null,
+    "outcome": "none"
+   },
+   "legal": {
+    "privacy_policy_url": "https://www.thealbertan.com/other/privacy-policy",
+    "terms_url": null,
+    "automation_prohibited": null,
+    "automation_clause": null,
+    "residency": [],
+    "authorized_agent": null,
+    "data_categories": [],
+    "sells_personal_information": null,
+    "sells_clause": null,
+    "children_not_directed": null
+   },
+   "pages": [
+    {
+     "url": "https://mountainviewtoday.ca/",
+     "final_url": "https://www.thealbertan.com/",
+     "status": 200,
+     "role": "home",
+     "title": "Central Alberta News - The Albertan News",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.mountainviewtoday.ca/",
+     "final_url": "https://www.thealbertan.com/",
+     "status": 200,
+     "role": "home",
+     "title": "Central Alberta News - The Albertan News",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.mountainviewtoday.ca/other/privacy-policy",
+     "final_url": "https://www.thealbertan.com/other/privacy-policy",
+     "status": 200,
+     "role": "catalog",
+     "title": "TheAlbertan.com - Privacy Policy - The Albertan News",
+     "liveness": "alive"
+    }
+   ],
+   "location": {
+    "country": "CA",
+    "region": null,
+    "locality": null,
+    "postal_code": null,
+    "street": null,
+    "postal_address": null,
+    "coverage": [
+     "CA"
+    ],
+    "search_regions": [],
+    "sources": [
+     "domain"
+    ]
+   },
+   "network": {
+    "checked": false,
+    "addresses": [],
+    "ipv6": [],
+    "cname": null,
+    "mx": [],
+    "mail_provider": null,
+    "spf": null,
+    "dmarc": null,
+    "dkim": [],
+    "nameservers": [],
+    "dns_provider": null,
+    "soa_primary": null,
+    "caa": [],
+    "dnssec": null,
+    "asn": null,
+    "asn_country": null,
+    "prefix": null,
+    "cdn": null,
+    "server": null,
+    "tls_org": null,
+    "tls_issuer": null,
+    "tls_names": [],
+    "tls_version": null,
+    "tls_not_before": null,
+    "tls_not_after": null,
+    "registrar": null,
+    "registered": null,
+    "registration_expires": null,
+    "domain_status": []
+   },
+   "request": {
+    "removal_host": "thealbertan.com",
+    "same_site": false,
+    "https": true,
+    "redirected": true,
+    "redirect_count": null,
+    "form_enctype": null,
+    "content_type": null,
+    "hsts": null,
+    "hsts_max_age": null,
+    "hsts_subdomains": null,
+    "hsts_preload": null,
+    "http_version": null,
+    "http3": null,
+    "frame_options": null,
+    "nosniff": null,
+    "referrer_policy": null,
+    "csp": null,
+    "powered_by": null,
+    "cookie_names": []
+   },
+   "automation": {
+    "search_scanned": true,
+    "search_fillable": true,
+    "search_captcha": false,
+    "search_fields": [
+     "full_name"
+    ],
+    "removal_form_fillable": false,
+    "removal_email_usable": false,
+    "removal_fields": [],
+    "removal_path": null,
+    "fully_automatable": false,
+    "usable_emails": [],
+    "search_required": [],
+    "removal_required": [],
+    "email_verification": null,
+    "id_document": null,
+    "shared_removal_ids": [],
+    "removal_captcha": false,
+    "captcha_blocks_form": false,
+    "captcha_email_fallback": false,
+    "removal_blocker": "no_channel"
+   },
+   "search_test": {
+    "outcome": "results",
+    "http_status": 200,
+    "path_prefix": "search",
+    "fields_sent": [
+     "full_name"
+    ],
+    "missing": [],
+    "page_kind": "results",
+    "result_count": null,
+    "checked_at": "2026-10-26T13:08:03+00:00"
+   }
+  },
+  "sasktoday-obituaries": {
+   "schema_version": "4.0.0",
+   "id": "sasktoday-obituaries",
+   "name": "SaskToday Obituaries",
+   "category": "people-search",
+   "domain": "sasktoday.ca",
+   "checked_at": "2026-10-26T13:05:32+00:00",
+   "liveness": "alive",
+   "liveness_detail": "sasktoday.ca loaded in a browser on 2026-10-26 and a name search returned obituaries. Plain HTTP clients get a Cloudflare challenge.",
+   "homepage": "https://www.sasktoday.ca/",
+   "logo_url": "https://www.vmcdn.ca/files/sasktoday/images/sasktoday/sasktoday-green-logo.svg",
+   "images": [
+    {
+     "url": "https://www.vmcdn.ca/files/ui/glacier/sk/favicon.ico",
+     "kind": "icon",
+     "source_page": "https://www.sasktoday.ca/"
+    },
+    {
+     "url": "https://www.vmcdn.ca/files/ui/glacier/sk/at.png",
+     "kind": "apple_touch_icon",
+     "source_page": "https://www.sasktoday.ca/"
+    },
+    {
+     "url": "https://www.vmcdn.ca/files/ui/glacier/sk/32.png",
+     "kind": "icon",
+     "source_page": "https://www.sasktoday.ca/"
+    },
+    {
+     "url": "https://www.vmcdn.ca/files/ui/glacier/sk/16.png",
+     "kind": "icon",
+     "source_page": "https://www.sasktoday.ca/"
+    },
+    {
+     "url": "https://www.vmcdn.ca/files/ui/glacier/sk/spt.svg",
+     "kind": "icon",
+     "source_page": "https://www.sasktoday.ca/"
+    },
+    {
+     "url": "https://www.vmcdn.ca/files/sasktoday/images/sasktoday/sasktoday-green-logo.jpg",
+     "kind": "og_image",
+     "source_page": "https://www.sasktoday.ca/"
+    },
+    {
+     "url": "https://www.vmcdn.ca/files/sasktoday/images/sasktoday/sasktoday-green-logo.svg",
+     "kind": "logo",
+     "source_page": "https://www.sasktoday.ca/"
+    },
+    {
+     "url": "https://www.vmcdn.ca/files/sasktoday/images/sasktoday/sas-logo-192x192.png",
+     "kind": "logo",
+     "source_page": "https://www.sasktoday.ca/"
+    }
+   ],
+   "theme_color": "#ffffff",
+   "languages": [
+    "en"
+   ],
+   "legal_name": null,
+   "search": {
+    "available": true,
+    "method": "http_get",
+    "page_url": "https://www.sasktoday.ca/obituaries",
+    "form_action": "https://www.sasktoday.ca/search",
+    "inputs": [
+     {
+      "name": "q",
+      "type": "text",
+      "canonical": "full_name",
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null,
+      "id": null,
+      "label": "Search Term",
+      "inputmode": null,
+      "pattern": null,
+      "minlength": null,
+      "maxlength": null,
+      "min": null,
+      "max": null,
+      "step": null,
+      "accept": null,
+      "multiple": false,
+      "disabled": false,
+      "readonly": false,
+      "checked": false,
+      "value": null
+     }
+    ],
+    "url_pattern": "https://www.sasktoday.ca/search?q={q}&tag=627272",
+    "directory_prefixes": [],
+    "paywall": null,
+    "login_wall": null,
+    "form_meta": {
+     "id": null,
+     "name": null,
+     "autocomplete": null,
+     "novalidate": null,
+     "submit_label": null,
+     "hidden_names": []
+    },
+    "captcha_provider": null,
+    "captcha_sitekey": null,
+    "captcha_detail": null,
+    "captcha_checked": true
+   },
+   "removal": {
+    "url": "https://www.sasktoday.ca/other/privacy-policy",
+    "final_url": "https://www.sasktoday.ca/other/privacy-policy",
+    "http_status": 200,
+    "kinds": [
+     "opt_out"
+    ],
+    "channels": [],
+    "emails": [],
+    "phones": [],
+    "postal_address": null,
+    "portal": null,
+    "form_fields": [],
+    "csrf_field_name": null,
+    "requires_profile_url": null,
+    "captcha": {
+     "provider": null,
+     "sitekey": null,
+     "pages": [],
+     "checked": null,
+     "checked_url": null,
+     "detail": null
+    },
+    "consent_vendor": null,
+    "success_text": null,
+    "suppression_not_deletion": null,
+    "processing_days": null,
+    "processing_text": null,
+    "form_action": null,
+    "form_method": null,
+    "form_meta": {
+     "id": null,
+     "name": null,
+     "autocomplete": null,
+     "novalidate": null,
+     "submit_label": null,
+     "hidden_names": []
+    }
+   },
+   "bot_defense": {
+    "vendor": null,
+    "outcome": "none"
+   },
+   "legal": {
+    "privacy_policy_url": "https://www.sasktoday.ca/other/privacy-policy",
+    "terms_url": null,
+    "automation_prohibited": null,
+    "automation_clause": null,
+    "residency": [],
+    "authorized_agent": null,
+    "data_categories": [
+     "identifiers"
+    ],
+    "sells_personal_information": false,
+    "sells_clause": "does not sell your Personal Information",
+    "children_not_directed": null
+   },
+   "pages": [
+    {
+     "url": "https://sasktoday.ca/",
+     "final_url": "https://www.sasktoday.ca/",
+     "status": 200,
+     "role": "home",
+     "title": "Saskatchewan News  - SaskToday.ca",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.sasktoday.ca/",
+     "final_url": "https://www.sasktoday.ca/",
+     "status": 200,
+     "role": "home",
+     "title": "Saskatchewan News  - SaskToday.ca",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.sasktoday.ca/other/privacy-policy",
+     "final_url": "https://www.sasktoday.ca/other/privacy-policy",
+     "status": 200,
+     "role": "catalog",
+     "title": "SaskatchewanToday.net - Privacy Policy  - SaskToday.ca",
+     "liveness": "alive"
+    }
+   ],
+   "location": {
+    "country": "CA",
+    "region": null,
+    "locality": null,
+    "postal_code": null,
+    "street": null,
+    "postal_address": null,
+    "coverage": [
+     "CA"
+    ],
+    "search_regions": [],
+    "sources": [
+     "domain"
+    ]
+   },
+   "network": {
+    "checked": false,
+    "addresses": [],
+    "ipv6": [],
+    "cname": null,
+    "mx": [],
+    "mail_provider": null,
+    "spf": null,
+    "dmarc": null,
+    "dkim": [],
+    "nameservers": [],
+    "dns_provider": null,
+    "soa_primary": null,
+    "caa": [],
+    "dnssec": null,
+    "asn": null,
+    "asn_country": null,
+    "prefix": null,
+    "cdn": null,
+    "server": null,
+    "tls_org": null,
+    "tls_issuer": null,
+    "tls_names": [],
+    "tls_version": null,
+    "tls_not_before": null,
+    "tls_not_after": null,
+    "registrar": null,
+    "registered": null,
+    "registration_expires": null,
+    "domain_status": []
+   },
+   "request": {
+    "removal_host": "sasktoday.ca",
+    "same_site": true,
+    "https": true,
+    "redirected": false,
+    "redirect_count": null,
+    "form_enctype": null,
+    "content_type": null,
+    "hsts": null,
+    "hsts_max_age": null,
+    "hsts_subdomains": null,
+    "hsts_preload": null,
+    "http_version": null,
+    "http3": null,
+    "frame_options": null,
+    "nosniff": null,
+    "referrer_policy": null,
+    "csp": null,
+    "powered_by": null,
+    "cookie_names": []
+   },
+   "automation": {
+    "search_scanned": true,
+    "search_fillable": true,
+    "search_captcha": false,
+    "search_fields": [
+     "full_name"
+    ],
+    "removal_form_fillable": false,
+    "removal_email_usable": false,
+    "removal_fields": [],
+    "removal_path": null,
+    "fully_automatable": false,
+    "usable_emails": [],
+    "search_required": [],
+    "removal_required": [],
+    "email_verification": null,
+    "id_document": null,
+    "shared_removal_ids": [],
+    "removal_captcha": false,
+    "captcha_blocks_form": false,
+    "captcha_email_fallback": false,
+    "removal_blocker": "no_channel"
+   },
+   "search_test": {
+    "outcome": "results",
+    "http_status": 200,
+    "path_prefix": "search",
+    "fields_sent": [
+     "full_name"
+    ],
+    "missing": [],
+    "page_kind": "results",
+    "result_count": null,
+    "checked_at": "2026-10-26T13:08:04+00:00"
+   }
+  },
+  "moosejawtoday-obituaries": {
+   "schema_version": "4.0.0",
+   "id": "moosejawtoday-obituaries",
+   "name": "MooseJawToday Obituaries",
+   "category": "people-search",
+   "domain": "moosejawtoday.com",
+   "checked_at": "2026-10-26T13:05:28+00:00",
+   "liveness": "alive",
+   "liveness_detail": "moosejawtoday.com loaded in a browser on 2026-10-26 and a name search returned obituaries. Plain HTTP clients get a Cloudflare challenge.",
+   "homepage": "https://moosejawtoday.com/",
+   "logo_url": null,
+   "images": [],
+   "theme_color": null,
+   "languages": [],
+   "legal_name": null,
+   "search": {
+    "available": true,
+    "method": "http_get",
+    "page_url": "https://www.moosejawtoday.com/obituaries",
+    "form_action": "https://www.moosejawtoday.com/search",
+    "inputs": [
+     {
+      "name": "q",
+      "type": "text",
+      "canonical": "full_name",
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null,
+      "id": null,
+      "label": "Search Term",
+      "inputmode": null,
+      "pattern": null,
+      "minlength": null,
+      "maxlength": null,
+      "min": null,
+      "max": null,
+      "step": null,
+      "accept": null,
+      "multiple": false,
+      "disabled": false,
+      "readonly": false,
+      "checked": false,
+      "value": null
+     }
+    ],
+    "url_pattern": "https://www.moosejawtoday.com/search?q={q}&tag=119501",
+    "directory_prefixes": [],
+    "paywall": null,
+    "login_wall": null,
+    "form_meta": {
+     "id": null,
+     "name": null,
+     "autocomplete": null,
+     "novalidate": null,
+     "submit_label": null,
+     "hidden_names": []
+    },
+    "captcha_provider": null,
+    "captcha_sitekey": null,
+    "captcha_detail": null,
+    "captcha_checked": true
+   },
+   "removal": {
+    "url": "https://www.moosejawtoday.com/other/privacy-policy",
+    "final_url": "https://www.moosejawtoday.com/other/privacy-policy",
+    "http_status": 403,
+    "kinds": [
+     "opt_out"
+    ],
+    "channels": [],
+    "emails": [],
+    "phones": [],
+    "postal_address": null,
+    "portal": null,
+    "form_fields": [],
+    "csrf_field_name": null,
+    "requires_profile_url": null,
+    "captcha": {
+     "provider": null,
+     "sitekey": null,
+     "pages": [],
+     "checked": null,
+     "checked_url": null,
+     "detail": null
+    },
+    "consent_vendor": null,
+    "success_text": null,
+    "suppression_not_deletion": null,
+    "processing_days": null,
+    "processing_text": null,
+    "form_action": null,
+    "form_method": null,
+    "form_meta": {
+     "id": null,
+     "name": null,
+     "autocomplete": null,
+     "novalidate": null,
+     "submit_label": null,
+     "hidden_names": []
+    }
+   },
+   "bot_defense": {
+    "vendor": "cloudflare",
+    "outcome": "hard_block"
+   },
+   "legal": {
+    "privacy_policy_url": null,
+    "terms_url": null,
+    "automation_prohibited": null,
+    "automation_clause": null,
+    "residency": [],
+    "authorized_agent": null,
+    "data_categories": [],
+    "sells_personal_information": null,
+    "sells_clause": null,
+    "children_not_directed": null
+   },
+   "pages": [
+    {
+     "url": "https://moosejawtoday.com/",
+     "final_url": "https://moosejawtoday.com/",
+     "status": 403,
+     "role": "home",
+     "title": "Just a moment...",
+     "liveness": "blocked"
+    },
+    {
+     "url": "https://www.moosejawtoday.com/",
+     "final_url": "https://www.moosejawtoday.com/",
+     "status": 403,
+     "role": "home",
+     "title": "Just a moment...",
+     "liveness": "blocked"
+    },
+    {
+     "url": "https://www.moosejawtoday.com/other/privacy-policy",
+     "final_url": "https://www.moosejawtoday.com/other/privacy-policy",
+     "status": 403,
+     "role": "catalog",
+     "title": "Just a moment...",
+     "liveness": "blocked"
+    }
+   ],
+   "location": {
+    "country": "CA",
+    "region": null,
+    "locality": null,
+    "postal_code": null,
+    "street": null,
+    "postal_address": null,
+    "coverage": [
+     "CA"
+    ],
+    "search_regions": [],
+    "sources": [
+     "manual"
+    ]
+   },
+   "network": {
+    "checked": false,
+    "addresses": [],
+    "ipv6": [],
+    "cname": null,
+    "mx": [],
+    "mail_provider": null,
+    "spf": null,
+    "dmarc": null,
+    "dkim": [],
+    "nameservers": [],
+    "dns_provider": null,
+    "soa_primary": null,
+    "caa": [],
+    "dnssec": null,
+    "asn": null,
+    "asn_country": null,
+    "prefix": null,
+    "cdn": null,
+    "server": null,
+    "tls_org": null,
+    "tls_issuer": null,
+    "tls_names": [],
+    "tls_version": null,
+    "tls_not_before": null,
+    "tls_not_after": null,
+    "registrar": null,
+    "registered": null,
+    "registration_expires": null,
+    "domain_status": []
+   },
+   "request": {
+    "removal_host": "moosejawtoday.com",
+    "same_site": true,
+    "https": true,
+    "redirected": false,
+    "redirect_count": null,
+    "form_enctype": null,
+    "content_type": null,
+    "hsts": null,
+    "hsts_max_age": null,
+    "hsts_subdomains": null,
+    "hsts_preload": null,
+    "http_version": null,
+    "http3": null,
+    "frame_options": null,
+    "nosniff": null,
+    "referrer_policy": null,
+    "csp": null,
+    "powered_by": null,
+    "cookie_names": []
+   },
+   "automation": {
+    "search_scanned": true,
+    "search_fillable": true,
+    "search_captcha": false,
+    "search_fields": [
+     "full_name"
+    ],
+    "removal_form_fillable": false,
+    "removal_email_usable": false,
+    "removal_fields": [],
+    "removal_path": null,
+    "fully_automatable": false,
+    "usable_emails": [],
+    "search_required": [],
+    "removal_required": [],
+    "email_verification": null,
+    "id_document": null,
+    "shared_removal_ids": [],
+    "removal_captcha": false,
+    "captcha_blocks_form": false,
+    "captcha_email_fallback": false,
+    "removal_blocker": "no_channel"
+   },
+   "search_test": {
+    "outcome": "challenge",
+    "http_status": 403,
+    "path_prefix": "search",
+    "fields_sent": [
+     "full_name"
+    ],
+    "missing": [],
+    "page_kind": null,
+    "result_count": null,
+    "checked_at": "2026-10-26T13:08:03+00:00"
+   }
+  },
+  "tbnewswatch-obituaries": {
+   "schema_version": "4.0.0",
+   "id": "tbnewswatch-obituaries",
+   "name": "TBNewsWatch Obituaries",
+   "category": "people-search",
+   "domain": "tbnewswatch.com",
+   "checked_at": "2026-10-26T13:05:32+00:00",
+   "liveness": "alive",
+   "liveness_detail": "tbnewswatch.com loaded in a browser on 2026-10-26 and a name search returned obituaries. Plain HTTP clients get a Cloudflare challenge.",
+   "homepage": "https://tbnewswatch.com/",
+   "logo_url": null,
+   "images": [],
+   "theme_color": null,
+   "languages": [],
+   "legal_name": null,
+   "search": {
+    "available": true,
+    "method": "http_get",
+    "page_url": "https://www.tbnewswatch.com/obituaries",
+    "form_action": "https://www.tbnewswatch.com/search",
+    "inputs": [
+     {
+      "name": "q",
+      "type": "text",
+      "canonical": "full_name",
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null,
+      "id": null,
+      "label": "Search Term",
+      "inputmode": null,
+      "pattern": null,
+      "minlength": null,
+      "maxlength": null,
+      "min": null,
+      "max": null,
+      "step": null,
+      "accept": null,
+      "multiple": false,
+      "disabled": false,
+      "readonly": false,
+      "checked": false,
+      "value": null
+     }
+    ],
+    "url_pattern": "https://www.tbnewswatch.com/search?q={q}&tag=15895",
+    "directory_prefixes": [],
+    "paywall": null,
+    "login_wall": null,
+    "form_meta": {
+     "id": null,
+     "name": null,
+     "autocomplete": null,
+     "novalidate": null,
+     "submit_label": null,
+     "hidden_names": []
+    },
+    "captcha_provider": null,
+    "captcha_sitekey": null,
+    "captcha_detail": null,
+    "captcha_checked": true
+   },
+   "removal": {
+    "url": "https://www.tbnewswatch.com/privacy-policy",
+    "final_url": "https://www.tbnewswatch.com/privacy-policy",
+    "http_status": 403,
+    "kinds": [
+     "opt_out"
+    ],
+    "channels": [],
+    "emails": [],
+    "phones": [],
+    "postal_address": null,
+    "portal": null,
+    "form_fields": [],
+    "csrf_field_name": null,
+    "requires_profile_url": null,
+    "captcha": {
+     "provider": null,
+     "sitekey": null,
+     "pages": [],
+     "checked": null,
+     "checked_url": null,
+     "detail": null
+    },
+    "consent_vendor": null,
+    "success_text": null,
+    "suppression_not_deletion": null,
+    "processing_days": null,
+    "processing_text": null,
+    "form_action": null,
+    "form_method": null,
+    "form_meta": {
+     "id": null,
+     "name": null,
+     "autocomplete": null,
+     "novalidate": null,
+     "submit_label": null,
+     "hidden_names": []
+    }
+   },
+   "bot_defense": {
+    "vendor": "cloudflare",
+    "outcome": "hard_block"
+   },
+   "legal": {
+    "privacy_policy_url": null,
+    "terms_url": null,
+    "automation_prohibited": null,
+    "automation_clause": null,
+    "residency": [],
+    "authorized_agent": null,
+    "data_categories": [],
+    "sells_personal_information": null,
+    "sells_clause": null,
+    "children_not_directed": null
+   },
+   "pages": [
+    {
+     "url": "https://tbnewswatch.com/",
+     "final_url": "https://tbnewswatch.com/",
+     "status": 403,
+     "role": "home",
+     "title": "Just a moment...",
+     "liveness": "blocked"
+    },
+    {
+     "url": "https://www.tbnewswatch.com/",
+     "final_url": "https://www.tbnewswatch.com/",
+     "status": 403,
+     "role": "home",
+     "title": "Just a moment...",
+     "liveness": "blocked"
+    },
+    {
+     "url": "https://www.tbnewswatch.com/privacy-policy",
+     "final_url": "https://www.tbnewswatch.com/privacy-policy",
+     "status": 403,
+     "role": "catalog",
+     "title": "Just a moment...",
+     "liveness": "blocked"
+    }
+   ],
+   "location": {
+    "country": "CA",
+    "region": null,
+    "locality": null,
+    "postal_code": null,
+    "street": null,
+    "postal_address": null,
+    "coverage": [
+     "CA"
+    ],
+    "search_regions": [],
+    "sources": [
+     "manual"
+    ]
+   },
+   "network": {
+    "checked": false,
+    "addresses": [],
+    "ipv6": [],
+    "cname": null,
+    "mx": [],
+    "mail_provider": null,
+    "spf": null,
+    "dmarc": null,
+    "dkim": [],
+    "nameservers": [],
+    "dns_provider": null,
+    "soa_primary": null,
+    "caa": [],
+    "dnssec": null,
+    "asn": null,
+    "asn_country": null,
+    "prefix": null,
+    "cdn": null,
+    "server": null,
+    "tls_org": null,
+    "tls_issuer": null,
+    "tls_names": [],
+    "tls_version": null,
+    "tls_not_before": null,
+    "tls_not_after": null,
+    "registrar": null,
+    "registered": null,
+    "registration_expires": null,
+    "domain_status": []
+   },
+   "request": {
+    "removal_host": "tbnewswatch.com",
+    "same_site": true,
+    "https": true,
+    "redirected": false,
+    "redirect_count": null,
+    "form_enctype": null,
+    "content_type": null,
+    "hsts": null,
+    "hsts_max_age": null,
+    "hsts_subdomains": null,
+    "hsts_preload": null,
+    "http_version": null,
+    "http3": null,
+    "frame_options": null,
+    "nosniff": null,
+    "referrer_policy": null,
+    "csp": null,
+    "powered_by": null,
+    "cookie_names": []
+   },
+   "automation": {
+    "search_scanned": true,
+    "search_fillable": true,
+    "search_captcha": false,
+    "search_fields": [
+     "full_name"
+    ],
+    "removal_form_fillable": false,
+    "removal_email_usable": false,
+    "removal_fields": [],
+    "removal_path": null,
+    "fully_automatable": false,
+    "usable_emails": [],
+    "search_required": [],
+    "removal_required": [],
+    "email_verification": null,
+    "id_document": null,
+    "shared_removal_ids": [],
+    "removal_captcha": false,
+    "captcha_blocks_form": false,
+    "captcha_email_fallback": false,
+    "removal_blocker": "no_channel"
+   },
+   "search_test": {
+    "outcome": "challenge",
+    "http_status": 403,
+    "path_prefix": "search",
+    "fields_sent": [
+     "full_name"
+    ],
+    "missing": [],
+    "page_kind": null,
+    "result_count": null,
+    "checked_at": "2026-10-26T13:08:04+00:00"
+   }
+  },
+  "burlingtontoday-obituaries": {
+   "schema_version": "4.0.0",
+   "id": "burlingtontoday-obituaries",
+   "name": "BurlingtonToday Obituaries",
+   "category": "people-search",
+   "domain": "burlingtontoday.com",
+   "checked_at": "2026-10-26T13:05:28+00:00",
+   "liveness": "alive",
+   "liveness_detail": "burlingtontoday.com loaded in a browser on 2026-10-26 and a name search returned obituaries. Plain HTTP clients get a Cloudflare challenge.",
+   "homepage": "https://burlingtontoday.com/",
+   "logo_url": null,
+   "images": [],
+   "theme_color": null,
+   "languages": [],
+   "legal_name": null,
+   "search": {
+    "available": true,
+    "method": "http_get",
+    "page_url": "https://www.burlingtontoday.com/obituaries",
+    "form_action": "https://www.burlingtontoday.com/search",
+    "inputs": [
+     {
+      "name": "q",
+      "type": "text",
+      "canonical": "full_name",
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null,
+      "id": null,
+      "label": "Search Term",
+      "inputmode": null,
+      "pattern": null,
+      "minlength": null,
+      "maxlength": null,
+      "min": null,
+      "max": null,
+      "step": null,
+      "accept": null,
+      "multiple": false,
+      "disabled": false,
+      "readonly": false,
+      "checked": false,
+      "value": null
+     }
+    ],
+    "url_pattern": "https://www.burlingtontoday.com/search?q={q}&tag=453770",
+    "directory_prefixes": [],
+    "paywall": null,
+    "login_wall": null,
+    "form_meta": {
+     "id": null,
+     "name": null,
+     "autocomplete": null,
+     "novalidate": null,
+     "submit_label": null,
+     "hidden_names": []
+    },
+    "captcha_provider": null,
+    "captcha_sitekey": null,
+    "captcha_detail": null,
+    "captcha_checked": true
+   },
+   "removal": {
+    "url": "https://www.burlingtontoday.com/other/privacy-policy",
+    "final_url": "https://www.burlingtontoday.com/other/privacy-policy",
+    "http_status": 403,
+    "kinds": [
+     "opt_out"
+    ],
+    "channels": [],
+    "emails": [],
+    "phones": [],
+    "postal_address": null,
+    "portal": null,
+    "form_fields": [],
+    "csrf_field_name": null,
+    "requires_profile_url": null,
+    "captcha": {
+     "provider": null,
+     "sitekey": null,
+     "pages": [],
+     "checked": null,
+     "checked_url": null,
+     "detail": null
+    },
+    "consent_vendor": null,
+    "success_text": null,
+    "suppression_not_deletion": null,
+    "processing_days": null,
+    "processing_text": null,
+    "form_action": null,
+    "form_method": null,
+    "form_meta": {
+     "id": null,
+     "name": null,
+     "autocomplete": null,
+     "novalidate": null,
+     "submit_label": null,
+     "hidden_names": []
+    }
+   },
+   "bot_defense": {
+    "vendor": "cloudflare",
+    "outcome": "hard_block"
+   },
+   "legal": {
+    "privacy_policy_url": null,
+    "terms_url": null,
+    "automation_prohibited": null,
+    "automation_clause": null,
+    "residency": [],
+    "authorized_agent": null,
+    "data_categories": [],
+    "sells_personal_information": null,
+    "sells_clause": null,
+    "children_not_directed": null
+   },
+   "pages": [
+    {
+     "url": "https://burlingtontoday.com/",
+     "final_url": "https://burlingtontoday.com/",
+     "status": 403,
+     "role": "home",
+     "title": "Just a moment...",
+     "liveness": "blocked"
+    },
+    {
+     "url": "https://www.burlingtontoday.com/",
+     "final_url": "https://www.burlingtontoday.com/",
+     "status": 403,
+     "role": "home",
+     "title": "Just a moment...",
+     "liveness": "blocked"
+    },
+    {
+     "url": "https://www.burlingtontoday.com/other/privacy-policy",
+     "final_url": "https://www.burlingtontoday.com/other/privacy-policy",
+     "status": 403,
+     "role": "catalog",
+     "title": "Just a moment...",
+     "liveness": "blocked"
+    }
+   ],
+   "location": {
+    "country": "CA",
+    "region": null,
+    "locality": null,
+    "postal_code": null,
+    "street": null,
+    "postal_address": null,
+    "coverage": [
+     "CA"
+    ],
+    "search_regions": [],
+    "sources": [
+     "manual"
+    ]
+   },
+   "network": {
+    "checked": false,
+    "addresses": [],
+    "ipv6": [],
+    "cname": null,
+    "mx": [],
+    "mail_provider": null,
+    "spf": null,
+    "dmarc": null,
+    "dkim": [],
+    "nameservers": [],
+    "dns_provider": null,
+    "soa_primary": null,
+    "caa": [],
+    "dnssec": null,
+    "asn": null,
+    "asn_country": null,
+    "prefix": null,
+    "cdn": null,
+    "server": null,
+    "tls_org": null,
+    "tls_issuer": null,
+    "tls_names": [],
+    "tls_version": null,
+    "tls_not_before": null,
+    "tls_not_after": null,
+    "registrar": null,
+    "registered": null,
+    "registration_expires": null,
+    "domain_status": []
+   },
+   "request": {
+    "removal_host": "burlingtontoday.com",
+    "same_site": true,
+    "https": true,
+    "redirected": false,
+    "redirect_count": null,
+    "form_enctype": null,
+    "content_type": null,
+    "hsts": null,
+    "hsts_max_age": null,
+    "hsts_subdomains": null,
+    "hsts_preload": null,
+    "http_version": null,
+    "http3": null,
+    "frame_options": null,
+    "nosniff": null,
+    "referrer_policy": null,
+    "csp": null,
+    "powered_by": null,
+    "cookie_names": []
+   },
+   "automation": {
+    "search_scanned": true,
+    "search_fillable": true,
+    "search_captcha": false,
+    "search_fields": [
+     "full_name"
+    ],
+    "removal_form_fillable": false,
+    "removal_email_usable": false,
+    "removal_fields": [],
+    "removal_path": null,
+    "fully_automatable": false,
+    "usable_emails": [],
+    "search_required": [],
+    "removal_required": [],
+    "email_verification": null,
+    "id_document": null,
+    "shared_removal_ids": [],
+    "removal_captcha": false,
+    "captcha_blocks_form": false,
+    "captcha_email_fallback": false,
+    "removal_blocker": "no_channel"
+   },
+   "search_test": {
+    "outcome": "challenge",
+    "http_status": 403,
+    "path_prefix": "search",
+    "fields_sent": [
+     "full_name"
+    ],
+    "missing": [],
+    "page_kind": null,
+    "result_count": null,
+    "checked_at": "2026-10-26T13:08:02+00:00"
+   }
+  },
+  "miltontoday-obituaries": {
+   "schema_version": "4.0.0",
+   "id": "miltontoday-obituaries",
+   "name": "MiltonToday Obituaries",
+   "category": "people-search",
+   "domain": "miltontoday.ca",
+   "checked_at": "2026-10-26T13:05:28+00:00",
+   "liveness": "alive",
+   "liveness_detail": "miltontoday.ca loaded in a browser on 2026-10-26 and a name search returned obituaries. Plain HTTP clients get a Cloudflare challenge.",
+   "homepage": "https://miltontoday.ca/",
+   "logo_url": null,
+   "images": [],
+   "theme_color": null,
+   "languages": [],
+   "legal_name": null,
+   "search": {
+    "available": true,
+    "method": "http_get",
+    "page_url": "https://www.miltontoday.ca/obituaries",
+    "form_action": "https://www.miltontoday.ca/search",
+    "inputs": [
+     {
+      "name": "q",
+      "type": "text",
+      "canonical": "full_name",
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null,
+      "id": null,
+      "label": "Search Term",
+      "inputmode": null,
+      "pattern": null,
+      "minlength": null,
+      "maxlength": null,
+      "min": null,
+      "max": null,
+      "step": null,
+      "accept": null,
+      "multiple": false,
+      "disabled": false,
+      "readonly": false,
+      "checked": false,
+      "value": null
+     }
+    ],
+    "url_pattern": "https://www.miltontoday.ca/search?q={q}&tag=583256",
+    "directory_prefixes": [],
+    "paywall": null,
+    "login_wall": null,
+    "form_meta": {
+     "id": null,
+     "name": null,
+     "autocomplete": null,
+     "novalidate": null,
+     "submit_label": null,
+     "hidden_names": []
+    },
+    "captcha_provider": null,
+    "captcha_sitekey": null,
+    "captcha_detail": null,
+    "captcha_checked": true
+   },
+   "removal": {
+    "url": "https://www.miltontoday.ca/other/privacy-policy",
+    "final_url": "https://www.miltontoday.ca/other/privacy-policy",
+    "http_status": 403,
+    "kinds": [
+     "opt_out"
+    ],
+    "channels": [],
+    "emails": [],
+    "phones": [],
+    "postal_address": null,
+    "portal": null,
+    "form_fields": [],
+    "csrf_field_name": null,
+    "requires_profile_url": null,
+    "captcha": {
+     "provider": null,
+     "sitekey": null,
+     "pages": [],
+     "checked": null,
+     "checked_url": null,
+     "detail": null
+    },
+    "consent_vendor": null,
+    "success_text": null,
+    "suppression_not_deletion": null,
+    "processing_days": null,
+    "processing_text": null,
+    "form_action": null,
+    "form_method": null,
+    "form_meta": {
+     "id": null,
+     "name": null,
+     "autocomplete": null,
+     "novalidate": null,
+     "submit_label": null,
+     "hidden_names": []
+    }
+   },
+   "bot_defense": {
+    "vendor": "cloudflare",
+    "outcome": "hard_block"
+   },
+   "legal": {
+    "privacy_policy_url": null,
+    "terms_url": null,
+    "automation_prohibited": null,
+    "automation_clause": null,
+    "residency": [],
+    "authorized_agent": null,
+    "data_categories": [],
+    "sells_personal_information": null,
+    "sells_clause": null,
+    "children_not_directed": null
+   },
+   "pages": [
+    {
+     "url": "https://miltontoday.ca/",
+     "final_url": "https://miltontoday.ca/",
+     "status": 403,
+     "role": "home",
+     "title": "Just a moment...",
+     "liveness": "blocked"
+    },
+    {
+     "url": "https://www.miltontoday.ca/",
+     "final_url": "https://www.miltontoday.ca/",
+     "status": 403,
+     "role": "home",
+     "title": "Just a moment...",
+     "liveness": "blocked"
+    },
+    {
+     "url": "https://www.miltontoday.ca/other/privacy-policy",
+     "final_url": "https://www.miltontoday.ca/other/privacy-policy",
+     "status": 403,
+     "role": "catalog",
+     "title": "Just a moment...",
+     "liveness": "blocked"
+    }
+   ],
+   "location": {
+    "country": "CA",
+    "region": null,
+    "locality": null,
+    "postal_code": null,
+    "street": null,
+    "postal_address": null,
+    "coverage": [
+     "CA"
+    ],
+    "search_regions": [],
+    "sources": [
+     "domain"
+    ]
+   },
+   "network": {
+    "checked": false,
+    "addresses": [],
+    "ipv6": [],
+    "cname": null,
+    "mx": [],
+    "mail_provider": null,
+    "spf": null,
+    "dmarc": null,
+    "dkim": [],
+    "nameservers": [],
+    "dns_provider": null,
+    "soa_primary": null,
+    "caa": [],
+    "dnssec": null,
+    "asn": null,
+    "asn_country": null,
+    "prefix": null,
+    "cdn": null,
+    "server": null,
+    "tls_org": null,
+    "tls_issuer": null,
+    "tls_names": [],
+    "tls_version": null,
+    "tls_not_before": null,
+    "tls_not_after": null,
+    "registrar": null,
+    "registered": null,
+    "registration_expires": null,
+    "domain_status": []
+   },
+   "request": {
+    "removal_host": "miltontoday.ca",
+    "same_site": true,
+    "https": true,
+    "redirected": false,
+    "redirect_count": null,
+    "form_enctype": null,
+    "content_type": null,
+    "hsts": null,
+    "hsts_max_age": null,
+    "hsts_subdomains": null,
+    "hsts_preload": null,
+    "http_version": null,
+    "http3": null,
+    "frame_options": null,
+    "nosniff": null,
+    "referrer_policy": null,
+    "csp": null,
+    "powered_by": null,
+    "cookie_names": []
+   },
+   "automation": {
+    "search_scanned": true,
+    "search_fillable": true,
+    "search_captcha": false,
+    "search_fields": [
+     "full_name"
+    ],
+    "removal_form_fillable": false,
+    "removal_email_usable": false,
+    "removal_fields": [],
+    "removal_path": null,
+    "fully_automatable": false,
+    "usable_emails": [],
+    "search_required": [],
+    "removal_required": [],
+    "email_verification": null,
+    "id_document": null,
+    "shared_removal_ids": [],
+    "removal_captcha": false,
+    "captcha_blocks_form": false,
+    "captcha_email_fallback": false,
+    "removal_blocker": "no_channel"
+   },
+   "search_test": {
+    "outcome": "challenge",
+    "http_status": 403,
+    "path_prefix": "search",
+    "fields_sent": [
+     "full_name"
+    ],
+    "missing": [],
+    "page_kind": null,
+    "result_count": null,
+    "checked_at": "2026-10-26T13:08:03+00:00"
+   }
+  },
+  "thoroldtoday-obituaries": {
+   "schema_version": "4.0.0",
+   "id": "thoroldtoday-obituaries",
+   "name": "ThoroldToday Obituaries",
+   "category": "people-search",
+   "domain": "thoroldtoday.ca",
+   "checked_at": "2026-10-26T13:05:32+00:00",
+   "liveness": "alive",
+   "liveness_detail": "thoroldtoday.ca loaded in a browser on 2026-10-26 and a name search returned obituaries. Plain HTTP clients get a Cloudflare challenge.",
+   "homepage": "https://thoroldtoday.ca/",
+   "logo_url": null,
+   "images": [],
+   "theme_color": null,
+   "languages": [],
+   "legal_name": null,
+   "search": {
+    "available": true,
+    "method": "http_get",
+    "page_url": "https://www.thoroldtoday.ca/obituaries",
+    "form_action": "https://www.thoroldtoday.ca/search",
+    "inputs": [
+     {
+      "name": "q",
+      "type": "text",
+      "canonical": "full_name",
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null,
+      "id": null,
+      "label": "Search Term",
+      "inputmode": null,
+      "pattern": null,
+      "minlength": null,
+      "maxlength": null,
+      "min": null,
+      "max": null,
+      "step": null,
+      "accept": null,
+      "multiple": false,
+      "disabled": false,
+      "readonly": false,
+      "checked": false,
+      "value": null
+     }
+    ],
+    "url_pattern": "https://www.thoroldtoday.ca/search?q={q}&tag=119924",
+    "directory_prefixes": [],
+    "paywall": null,
+    "login_wall": null,
+    "form_meta": {
+     "id": null,
+     "name": null,
+     "autocomplete": null,
+     "novalidate": null,
+     "submit_label": null,
+     "hidden_names": []
+    },
+    "captcha_provider": null,
+    "captcha_sitekey": null,
+    "captcha_detail": null,
+    "captcha_checked": true
+   },
+   "removal": {
+    "url": "https://www.thoroldtoday.ca/other/privacy-policy",
+    "final_url": "https://www.thoroldtoday.ca/other/privacy-policy",
+    "http_status": 403,
+    "kinds": [
+     "opt_out"
+    ],
+    "channels": [],
+    "emails": [],
+    "phones": [],
+    "postal_address": null,
+    "portal": null,
+    "form_fields": [],
+    "csrf_field_name": null,
+    "requires_profile_url": null,
+    "captcha": {
+     "provider": null,
+     "sitekey": null,
+     "pages": [],
+     "checked": null,
+     "checked_url": null,
+     "detail": null
+    },
+    "consent_vendor": null,
+    "success_text": null,
+    "suppression_not_deletion": null,
+    "processing_days": null,
+    "processing_text": null,
+    "form_action": null,
+    "form_method": null,
+    "form_meta": {
+     "id": null,
+     "name": null,
+     "autocomplete": null,
+     "novalidate": null,
+     "submit_label": null,
+     "hidden_names": []
+    }
+   },
+   "bot_defense": {
+    "vendor": "cloudflare",
+    "outcome": "hard_block"
+   },
+   "legal": {
+    "privacy_policy_url": null,
+    "terms_url": null,
+    "automation_prohibited": null,
+    "automation_clause": null,
+    "residency": [],
+    "authorized_agent": null,
+    "data_categories": [],
+    "sells_personal_information": null,
+    "sells_clause": null,
+    "children_not_directed": null
+   },
+   "pages": [
+    {
+     "url": "https://thoroldtoday.ca/",
+     "final_url": "https://thoroldtoday.ca/",
+     "status": 403,
+     "role": "home",
+     "title": "Just a moment...",
+     "liveness": "blocked"
+    },
+    {
+     "url": "https://www.thoroldtoday.ca/",
+     "final_url": "https://www.thoroldtoday.ca/",
+     "status": 403,
+     "role": "home",
+     "title": "Just a moment...",
+     "liveness": "blocked"
+    },
+    {
+     "url": "https://www.thoroldtoday.ca/other/privacy-policy",
+     "final_url": "https://www.thoroldtoday.ca/other/privacy-policy",
+     "status": 403,
+     "role": "catalog",
+     "title": "Just a moment...",
+     "liveness": "blocked"
+    }
+   ],
+   "location": {
+    "country": "CA",
+    "region": null,
+    "locality": null,
+    "postal_code": null,
+    "street": null,
+    "postal_address": null,
+    "coverage": [
+     "CA"
+    ],
+    "search_regions": [],
+    "sources": [
+     "domain"
+    ]
+   },
+   "network": {
+    "checked": false,
+    "addresses": [],
+    "ipv6": [],
+    "cname": null,
+    "mx": [],
+    "mail_provider": null,
+    "spf": null,
+    "dmarc": null,
+    "dkim": [],
+    "nameservers": [],
+    "dns_provider": null,
+    "soa_primary": null,
+    "caa": [],
+    "dnssec": null,
+    "asn": null,
+    "asn_country": null,
+    "prefix": null,
+    "cdn": null,
+    "server": null,
+    "tls_org": null,
+    "tls_issuer": null,
+    "tls_names": [],
+    "tls_version": null,
+    "tls_not_before": null,
+    "tls_not_after": null,
+    "registrar": null,
+    "registered": null,
+    "registration_expires": null,
+    "domain_status": []
+   },
+   "request": {
+    "removal_host": "thoroldtoday.ca",
+    "same_site": true,
+    "https": true,
+    "redirected": false,
+    "redirect_count": null,
+    "form_enctype": null,
+    "content_type": null,
+    "hsts": null,
+    "hsts_max_age": null,
+    "hsts_subdomains": null,
+    "hsts_preload": null,
+    "http_version": null,
+    "http3": null,
+    "frame_options": null,
+    "nosniff": null,
+    "referrer_policy": null,
+    "csp": null,
+    "powered_by": null,
+    "cookie_names": []
+   },
+   "automation": {
+    "search_scanned": true,
+    "search_fillable": true,
+    "search_captcha": false,
+    "search_fields": [
+     "full_name"
+    ],
+    "removal_form_fillable": false,
+    "removal_email_usable": false,
+    "removal_fields": [],
+    "removal_path": null,
+    "fully_automatable": false,
+    "usable_emails": [],
+    "search_required": [],
+    "removal_required": [],
+    "email_verification": null,
+    "id_document": null,
+    "shared_removal_ids": [],
+    "removal_captcha": false,
+    "captcha_blocks_form": false,
+    "captcha_email_fallback": false,
+    "removal_blocker": "no_channel"
+   },
+   "search_test": {
+    "outcome": "challenge",
+    "http_status": 403,
+    "path_prefix": "search",
+    "fields_sent": [
+     "full_name"
+    ],
+    "missing": [],
+    "page_kind": null,
+    "result_count": null,
+    "checked_at": "2026-10-26T13:08:05+00:00"
+   }
+  },
+  "eniro-se": {
+   "schema_version": "4.0.0",
+   "id": "eniro-se",
+   "name": "Eniro.se (personer)",
+   "category": "people-search",
+   "domain": "eniro.se",
+   "checked_at": "2026-10-26T13:05:24+00:00",
+   "liveness": "alive",
+   "liveness_detail": "eniro.se loaded in a browser on 2026-10-26 and a name search returned person listings.",
+   "homepage": "https://eniro.se/",
+   "logo_url": null,
+   "images": [],
+   "theme_color": null,
+   "languages": [],
+   "legal_name": null,
+   "search": {
+    "available": true,
+    "method": "http_get",
+    "page_url": "https://www.eniro.se/",
+    "form_action": "https://www.eniro.se/{q}/personer",
+    "inputs": [
+     {
+      "name": "q",
+      "type": "text",
+      "canonical": "full_name",
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null,
+      "id": null,
+      "label": "Sök",
+      "inputmode": null,
+      "pattern": null,
+      "minlength": null,
+      "maxlength": null,
+      "min": null,
+      "max": null,
+      "step": null,
+      "accept": null,
+      "multiple": false,
+      "disabled": false,
+      "readonly": false,
+      "checked": false,
+      "value": null
+     }
+    ],
+    "url_pattern": "https://www.eniro.se/{q}/personer",
+    "directory_prefixes": [],
+    "paywall": null,
+    "login_wall": null,
+    "form_meta": {
+     "id": null,
+     "name": null,
+     "autocomplete": null,
+     "novalidate": null,
+     "submit_label": null,
+     "hidden_names": []
+    },
+    "captcha_provider": null,
+    "captcha_sitekey": null,
+    "captcha_detail": null,
+    "captcha_checked": true
+   },
+   "removal": {
+    "url": "https://www.eniro.se/hjalp/villkor/integritetspolicy",
+    "final_url": null,
+    "http_status": null,
+    "kinds": [
+     "opt_out"
+    ],
+    "channels": [],
+    "emails": [],
+    "phones": [],
+    "postal_address": null,
+    "portal": null,
+    "form_fields": [],
+    "csrf_field_name": null,
+    "requires_profile_url": null,
+    "captcha": {
+     "provider": null,
+     "sitekey": null,
+     "pages": [],
+     "checked": null,
+     "checked_url": null,
+     "detail": null
+    },
+    "consent_vendor": null,
+    "success_text": null,
+    "suppression_not_deletion": null,
+    "processing_days": null,
+    "processing_text": null,
+    "form_action": null,
+    "form_method": null,
+    "form_meta": {
+     "id": null,
+     "name": null,
+     "autocomplete": null,
+     "novalidate": null,
+     "submit_label": null,
+     "hidden_names": []
+    }
+   },
+   "bot_defense": {
+    "vendor": null,
+    "outcome": "none"
+   },
+   "legal": {
+    "privacy_policy_url": null,
+    "terms_url": null,
+    "automation_prohibited": null,
+    "automation_clause": null,
+    "residency": [],
+    "authorized_agent": null,
+    "data_categories": [],
+    "sells_personal_information": null,
+    "sells_clause": null,
+    "children_not_directed": null
+   },
+   "pages": [
+    {
+     "url": "https://eniro.se/",
+     "final_url": null,
+     "status": null,
+     "role": "home",
+     "title": "",
+     "liveness": "robots_disallowed"
+    },
+    {
+     "url": "https://www.eniro.se/",
+     "final_url": null,
+     "status": null,
+     "role": "home",
+     "title": "",
+     "liveness": "robots_disallowed"
+    },
+    {
+     "url": "https://www.eniro.se/hjalp/villkor/integritetspolicy",
+     "final_url": null,
+     "status": null,
+     "role": "catalog",
+     "title": "",
+     "liveness": "robots_disallowed"
+    }
+   ],
+   "location": {
+    "country": "SE",
+    "region": null,
+    "locality": null,
+    "postal_code": null,
+    "street": null,
+    "postal_address": null,
+    "coverage": [
+     "SE"
+    ],
+    "search_regions": [],
+    "sources": [
+     "manual"
+    ]
+   },
+   "network": {
+    "checked": false,
+    "addresses": [],
+    "ipv6": [],
+    "cname": null,
+    "mx": [],
+    "mail_provider": null,
+    "spf": null,
+    "dmarc": null,
+    "dkim": [],
+    "nameservers": [],
+    "dns_provider": null,
+    "soa_primary": null,
+    "caa": [],
+    "dnssec": null,
+    "asn": null,
+    "asn_country": null,
+    "prefix": null,
+    "cdn": null,
+    "server": null,
+    "tls_org": null,
+    "tls_issuer": null,
+    "tls_names": [],
+    "tls_version": null,
+    "tls_not_before": null,
+    "tls_not_after": null,
+    "registrar": null,
+    "registered": null,
+    "registration_expires": null,
+    "domain_status": []
+   },
+   "request": {
+    "removal_host": "eniro.se",
+    "same_site": true,
+    "https": true,
+    "redirected": null,
+    "redirect_count": null,
+    "form_enctype": null,
+    "content_type": null,
+    "hsts": null,
+    "hsts_max_age": null,
+    "hsts_subdomains": null,
+    "hsts_preload": null,
+    "http_version": null,
+    "http3": null,
+    "frame_options": null,
+    "nosniff": null,
+    "referrer_policy": null,
+    "csp": null,
+    "powered_by": null,
+    "cookie_names": []
+   },
+   "automation": {
+    "search_scanned": true,
+    "search_fillable": true,
+    "search_captcha": false,
+    "search_fields": [
+     "full_name"
+    ],
+    "removal_form_fillable": false,
+    "removal_email_usable": false,
+    "removal_fields": [],
+    "removal_path": null,
+    "fully_automatable": false,
+    "usable_emails": [],
+    "search_required": [],
+    "removal_required": [],
+    "email_verification": null,
+    "id_document": null,
+    "shared_removal_ids": [],
+    "removal_captcha": false,
+    "captcha_blocks_form": false,
+    "captcha_email_fallback": false,
+    "removal_blocker": "no_channel"
+   },
+   "search_test": {
+    "outcome": "challenge",
+    "http_status": 403,
+    "path_prefix": "lookup",
+    "fields_sent": [
+     "full_name"
+    ],
+    "missing": [],
+    "page_kind": null,
+    "result_count": null,
+    "checked_at": "2026-10-26T13:08:02+00:00"
+   }
+  },
+  "gulesider-no": {
+   "schema_version": "4.0.0",
+   "id": "gulesider-no",
+   "name": "Gule Sider (gulesider.no, personer)",
+   "category": "people-search",
+   "domain": "gulesider.no",
+   "checked_at": "2026-10-26T13:05:24+00:00",
+   "liveness": "alive",
+   "liveness_detail": "gulesider.no loaded in a browser on 2026-10-26 and a name search returned person listings.",
+   "homepage": "https://gulesider.no/",
+   "logo_url": null,
+   "images": [],
+   "theme_color": null,
+   "languages": [],
+   "legal_name": null,
+   "search": {
+    "available": true,
+    "method": "http_get",
+    "page_url": "https://www.gulesider.no/",
+    "form_action": "https://www.gulesider.no/{q}/personer",
+    "inputs": [
+     {
+      "name": "q",
+      "type": "text",
+      "canonical": "full_name",
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null,
+      "id": null,
+      "label": "Sök",
+      "inputmode": null,
+      "pattern": null,
+      "minlength": null,
+      "maxlength": null,
+      "min": null,
+      "max": null,
+      "step": null,
+      "accept": null,
+      "multiple": false,
+      "disabled": false,
+      "readonly": false,
+      "checked": false,
+      "value": null
+     }
+    ],
+    "url_pattern": "https://www.gulesider.no/{q}/personer",
+    "directory_prefixes": [],
+    "paywall": null,
+    "login_wall": null,
+    "form_meta": {
+     "id": null,
+     "name": null,
+     "autocomplete": null,
+     "novalidate": null,
+     "submit_label": null,
+     "hidden_names": []
+    },
+    "captcha_provider": null,
+    "captcha_sitekey": null,
+    "captcha_detail": null,
+    "captcha_checked": true
+   },
+   "removal": {
+    "url": "https://www.gulesider.no/hjelp/vilkar/personvernerklaering",
+    "final_url": null,
+    "http_status": null,
+    "kinds": [
+     "opt_out"
+    ],
+    "channels": [],
+    "emails": [],
+    "phones": [],
+    "postal_address": null,
+    "portal": null,
+    "form_fields": [],
+    "csrf_field_name": null,
+    "requires_profile_url": null,
+    "captcha": {
+     "provider": null,
+     "sitekey": null,
+     "pages": [],
+     "checked": null,
+     "checked_url": null,
+     "detail": null
+    },
+    "consent_vendor": null,
+    "success_text": null,
+    "suppression_not_deletion": null,
+    "processing_days": null,
+    "processing_text": null,
+    "form_action": null,
+    "form_method": null,
+    "form_meta": {
+     "id": null,
+     "name": null,
+     "autocomplete": null,
+     "novalidate": null,
+     "submit_label": null,
+     "hidden_names": []
+    }
+   },
+   "bot_defense": {
+    "vendor": null,
+    "outcome": "none"
+   },
+   "legal": {
+    "privacy_policy_url": null,
+    "terms_url": null,
+    "automation_prohibited": null,
+    "automation_clause": null,
+    "residency": [],
+    "authorized_agent": null,
+    "data_categories": [],
+    "sells_personal_information": null,
+    "sells_clause": null,
+    "children_not_directed": null
+   },
+   "pages": [
+    {
+     "url": "https://gulesider.no/",
+     "final_url": null,
+     "status": null,
+     "role": "home",
+     "title": "",
+     "liveness": "robots_disallowed"
+    },
+    {
+     "url": "https://www.gulesider.no/",
+     "final_url": null,
+     "status": null,
+     "role": "home",
+     "title": "",
+     "liveness": "robots_disallowed"
+    },
+    {
+     "url": "https://www.gulesider.no/hjelp/vilkar/personvernerklaering",
+     "final_url": null,
+     "status": null,
+     "role": "catalog",
+     "title": "",
+     "liveness": "robots_disallowed"
+    }
+   ],
+   "location": {
+    "country": "NO",
+    "region": null,
+    "locality": null,
+    "postal_code": null,
+    "street": null,
+    "postal_address": null,
+    "coverage": [
+     "NO"
+    ],
+    "search_regions": [],
+    "sources": [
+     "manual"
+    ]
+   },
+   "network": {
+    "checked": false,
+    "addresses": [],
+    "ipv6": [],
+    "cname": null,
+    "mx": [],
+    "mail_provider": null,
+    "spf": null,
+    "dmarc": null,
+    "dkim": [],
+    "nameservers": [],
+    "dns_provider": null,
+    "soa_primary": null,
+    "caa": [],
+    "dnssec": null,
+    "asn": null,
+    "asn_country": null,
+    "prefix": null,
+    "cdn": null,
+    "server": null,
+    "tls_org": null,
+    "tls_issuer": null,
+    "tls_names": [],
+    "tls_version": null,
+    "tls_not_before": null,
+    "tls_not_after": null,
+    "registrar": null,
+    "registered": null,
+    "registration_expires": null,
+    "domain_status": []
+   },
+   "request": {
+    "removal_host": "gulesider.no",
+    "same_site": true,
+    "https": true,
+    "redirected": null,
+    "redirect_count": null,
+    "form_enctype": null,
+    "content_type": null,
+    "hsts": null,
+    "hsts_max_age": null,
+    "hsts_subdomains": null,
+    "hsts_preload": null,
+    "http_version": null,
+    "http3": null,
+    "frame_options": null,
+    "nosniff": null,
+    "referrer_policy": null,
+    "csp": null,
+    "powered_by": null,
+    "cookie_names": []
+   },
+   "automation": {
+    "search_scanned": true,
+    "search_fillable": true,
+    "search_captcha": false,
+    "search_fields": [
+     "full_name"
+    ],
+    "removal_form_fillable": false,
+    "removal_email_usable": false,
+    "removal_fields": [],
+    "removal_path": null,
+    "fully_automatable": false,
+    "usable_emails": [],
+    "search_required": [],
+    "removal_required": [],
+    "email_verification": null,
+    "id_document": null,
+    "shared_removal_ids": [],
+    "removal_captcha": false,
+    "captcha_blocks_form": false,
+    "captcha_email_fallback": false,
+    "removal_blocker": "no_channel"
+   },
+   "search_test": {
+    "outcome": "challenge",
+    "http_status": 403,
+    "path_prefix": "lookup",
+    "fields_sent": [
+     "full_name"
+    ],
+    "missing": [],
+    "page_kind": null,
+    "result_count": null,
+    "checked_at": "2026-10-26T13:08:02+00:00"
+   }
+  },
+  "krak-dk": {
+   "schema_version": "4.0.0",
+   "id": "krak-dk",
+   "name": "Krak (krak.dk, personer)",
+   "category": "people-search",
+   "domain": "krak.dk",
+   "checked_at": "2026-10-26T13:05:25+00:00",
+   "liveness": "alive",
+   "liveness_detail": "krak.dk loaded in a browser on 2026-10-26 and a name search returned person listings.",
+   "homepage": "https://krak.dk/",
+   "logo_url": null,
+   "images": [],
+   "theme_color": null,
+   "languages": [],
+   "legal_name": null,
+   "search": {
+    "available": true,
+    "method": "http_get",
+    "page_url": "https://www.krak.dk/",
+    "form_action": "https://www.krak.dk/{q}/personer",
+    "inputs": [
+     {
+      "name": "q",
+      "type": "text",
+      "canonical": "full_name",
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null,
+      "id": null,
+      "label": "Sök",
+      "inputmode": null,
+      "pattern": null,
+      "minlength": null,
+      "maxlength": null,
+      "min": null,
+      "max": null,
+      "step": null,
+      "accept": null,
+      "multiple": false,
+      "disabled": false,
+      "readonly": false,
+      "checked": false,
+      "value": null
+     }
+    ],
+    "url_pattern": "https://www.krak.dk/{q}/personer",
+    "directory_prefixes": [],
+    "paywall": null,
+    "login_wall": null,
+    "form_meta": {
+     "id": null,
+     "name": null,
+     "autocomplete": null,
+     "novalidate": null,
+     "submit_label": null,
+     "hidden_names": []
+    },
+    "captcha_provider": null,
+    "captcha_sitekey": null,
+    "captcha_detail": null,
+    "captcha_checked": true
+   },
+   "removal": {
+    "url": "https://www.krak.dk/hjaelp/vilkaar/privatlivspolitik",
+    "final_url": null,
+    "http_status": null,
+    "kinds": [
+     "opt_out"
+    ],
+    "channels": [],
+    "emails": [],
+    "phones": [],
+    "postal_address": null,
+    "portal": null,
+    "form_fields": [],
+    "csrf_field_name": null,
+    "requires_profile_url": null,
+    "captcha": {
+     "provider": null,
+     "sitekey": null,
+     "pages": [],
+     "checked": null,
+     "checked_url": null,
+     "detail": null
+    },
+    "consent_vendor": null,
+    "success_text": null,
+    "suppression_not_deletion": null,
+    "processing_days": null,
+    "processing_text": null,
+    "form_action": null,
+    "form_method": null,
+    "form_meta": {
+     "id": null,
+     "name": null,
+     "autocomplete": null,
+     "novalidate": null,
+     "submit_label": null,
+     "hidden_names": []
+    }
+   },
+   "bot_defense": {
+    "vendor": null,
+    "outcome": "none"
+   },
+   "legal": {
+    "privacy_policy_url": null,
+    "terms_url": null,
+    "automation_prohibited": null,
+    "automation_clause": null,
+    "residency": [],
+    "authorized_agent": null,
+    "data_categories": [],
+    "sells_personal_information": null,
+    "sells_clause": null,
+    "children_not_directed": null
+   },
+   "pages": [
+    {
+     "url": "https://krak.dk/",
+     "final_url": null,
+     "status": null,
+     "role": "home",
+     "title": "",
+     "liveness": "robots_disallowed"
+    },
+    {
+     "url": "https://www.krak.dk/",
+     "final_url": null,
+     "status": null,
+     "role": "home",
+     "title": "",
+     "liveness": "robots_disallowed"
+    },
+    {
+     "url": "https://www.krak.dk/hjaelp/vilkaar/privatlivspolitik",
+     "final_url": null,
+     "status": null,
+     "role": "catalog",
+     "title": "",
+     "liveness": "robots_disallowed"
+    }
+   ],
+   "location": {
+    "country": "DK",
+    "region": null,
+    "locality": null,
+    "postal_code": null,
+    "street": null,
+    "postal_address": null,
+    "coverage": [
+     "DK"
+    ],
+    "search_regions": [],
+    "sources": [
+     "manual"
+    ]
+   },
+   "network": {
+    "checked": false,
+    "addresses": [],
+    "ipv6": [],
+    "cname": null,
+    "mx": [],
+    "mail_provider": null,
+    "spf": null,
+    "dmarc": null,
+    "dkim": [],
+    "nameservers": [],
+    "dns_provider": null,
+    "soa_primary": null,
+    "caa": [],
+    "dnssec": null,
+    "asn": null,
+    "asn_country": null,
+    "prefix": null,
+    "cdn": null,
+    "server": null,
+    "tls_org": null,
+    "tls_issuer": null,
+    "tls_names": [],
+    "tls_version": null,
+    "tls_not_before": null,
+    "tls_not_after": null,
+    "registrar": null,
+    "registered": null,
+    "registration_expires": null,
+    "domain_status": []
+   },
+   "request": {
+    "removal_host": "krak.dk",
+    "same_site": true,
+    "https": true,
+    "redirected": null,
+    "redirect_count": null,
+    "form_enctype": null,
+    "content_type": null,
+    "hsts": null,
+    "hsts_max_age": null,
+    "hsts_subdomains": null,
+    "hsts_preload": null,
+    "http_version": null,
+    "http3": null,
+    "frame_options": null,
+    "nosniff": null,
+    "referrer_policy": null,
+    "csp": null,
+    "powered_by": null,
+    "cookie_names": []
+   },
+   "automation": {
+    "search_scanned": true,
+    "search_fillable": true,
+    "search_captcha": false,
+    "search_fields": [
+     "full_name"
+    ],
+    "removal_form_fillable": false,
+    "removal_email_usable": false,
+    "removal_fields": [],
+    "removal_path": null,
+    "fully_automatable": false,
+    "usable_emails": [],
+    "search_required": [],
+    "removal_required": [],
+    "email_verification": null,
+    "id_document": null,
+    "shared_removal_ids": [],
+    "removal_captcha": false,
+    "captcha_blocks_form": false,
+    "captcha_email_fallback": false,
+    "removal_blocker": "no_channel"
+   },
+   "search_test": {
+    "outcome": "challenge",
+    "http_status": 403,
+    "path_prefix": "lookup",
+    "fields_sent": [
+     "full_name"
+    ],
+    "missing": [],
+    "page_kind": null,
+    "result_count": null,
+    "checked_at": "2026-10-26T13:08:02+00:00"
+   }
+  },
+  "ratsit-se": {
+   "schema_version": "4.0.0",
+   "id": "ratsit-se",
+   "name": "Ratsit (ratsit.se)",
+   "category": "people-search",
+   "domain": "ratsit.se",
+   "checked_at": "2026-10-26T13:05:32+00:00",
+   "liveness": "alive",
+   "liveness_detail": "ratsit.se answered HTTP 200 on 2026-10-26. A name search returned person listings.",
+   "homepage": "https://www.ratsit.se/",
+   "logo_url": "https://www.ratsit.se/dist/assets/images/ratsit-logo-purple-small.svg",
+   "images": [
+    {
+     "url": "https://www.ratsit.se/favicon.ico",
+     "kind": "icon",
+     "source_page": "https://www.ratsit.se/"
+    },
+    {
+     "url": "https://www.ratsit.se/apple-touch-icon.png",
+     "kind": "apple_touch_icon",
+     "source_page": "https://www.ratsit.se/"
+    },
+    {
+     "url": "https://www.ratsit.se/favicon-32x32.png",
+     "kind": "icon",
+     "source_page": "https://www.ratsit.se/"
+    },
+    {
+     "url": "https://www.ratsit.se/favicon-16x16.png",
+     "kind": "icon",
+     "source_page": "https://www.ratsit.se/"
+    },
+    {
+     "url": "https://www.ratsit.se/safari-pinned-tab.svg",
+     "kind": "icon",
+     "source_page": "https://www.ratsit.se/"
+    },
+    {
+     "url": "https://www.ratsit.se/images/socialmedia/og-ratsit.png?v=PzD9KkIyLdwMwvDKqn6eDAFwOJ0aqyhwOJGBkcoOFA4",
+     "kind": "og_image",
+     "source_page": "https://www.ratsit.se/"
+    },
+    {
+     "url": "https://www.ratsit.se/dist/assets/images/ratsit-logo-purple-small.svg",
+     "kind": "logo",
+     "source_page": "https://www.ratsit.se/"
+    },
+    {
+     "url": "https://www.ratsit.se/dist/assets/images/footer-logo/bolt_white.svg",
+     "kind": "logo",
+     "source_page": "https://www.ratsit.se/"
+    },
+    {
+     "url": "https://www.ratsit.se/dist/assets/images/footer-logo/togetherwithknowitcocreate.svg",
+     "kind": "logo",
+     "source_page": "https://www.ratsit.se/"
+    }
+   ],
+   "theme_color": "#ffffff",
+   "languages": [
+    "sv"
+   ],
+   "legal_name": null,
+   "search": {
+    "available": true,
+    "method": "http_get",
+    "page_url": "https://www.ratsit.se/",
+    "form_action": "https://www.ratsit.se/sok/person",
+    "inputs": [
+     {
+      "name": "vem",
+      "type": "text",
+      "canonical": "full_name",
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null,
+      "id": null,
+      "label": "Sök person",
+      "inputmode": null,
+      "pattern": null,
+      "minlength": null,
+      "maxlength": null,
+      "min": null,
+      "max": null,
+      "step": null,
+      "accept": null,
+      "multiple": false,
+      "disabled": false,
+      "readonly": false,
+      "checked": false,
+      "value": null
+     }
+    ],
+    "url_pattern": "https://www.ratsit.se/sok/person?vem={vem}",
+    "directory_prefixes": [],
+    "paywall": null,
+    "login_wall": null,
+    "form_meta": {
+     "id": null,
+     "name": null,
+     "autocomplete": null,
+     "novalidate": null,
+     "submit_label": null,
+     "hidden_names": []
+    },
+    "captcha_provider": null,
+    "captcha_sitekey": null,
+    "captcha_detail": null,
+    "captcha_checked": true
+   },
+   "removal": {
+    "url": "https://www.ratsit.se/info/personuppgiftspolicy",
+    "final_url": "https://www.ratsit.se/info/personuppgiftspolicy",
+    "http_status": 200,
+    "kinds": [
+     "opt_out"
+    ],
+    "channels": [],
+    "emails": [],
+    "phones": [],
+    "postal_address": null,
+    "portal": null,
+    "form_fields": [],
+    "csrf_field_name": null,
+    "requires_profile_url": null,
+    "captcha": {
+     "provider": "turnstile",
+     "sitekey": null,
+     "pages": [
+      "https://www.ratsit.se/",
+      "https://www.ratsit.se/info/personuppgiftspolicy"
+     ],
+     "checked": null,
+     "checked_url": null,
+     "detail": {
+      "mode": null,
+      "invisible": null,
+      "size": null,
+      "theme": null,
+      "action": null,
+      "badge": null,
+      "language": null,
+      "appearance": null,
+      "enterprise": null,
+      "api_domain": null,
+      "script_path": null,
+      "token_field": null,
+      "callback": null
+     }
+    },
+    "consent_vendor": "cookiebot",
+    "success_text": null,
+    "suppression_not_deletion": null,
+    "processing_days": null,
+    "processing_text": null,
+    "form_action": null,
+    "form_method": null,
+    "form_meta": {
+     "id": null,
+     "name": null,
+     "autocomplete": null,
+     "novalidate": null,
+     "submit_label": null,
+     "hidden_names": []
+    }
+   },
+   "bot_defense": {
+    "vendor": null,
+    "outcome": "none"
+   },
+   "legal": {
+    "privacy_policy_url": null,
+    "terms_url": null,
+    "automation_prohibited": null,
+    "automation_clause": null,
+    "residency": [],
+    "authorized_agent": null,
+    "data_categories": [],
+    "sells_personal_information": null,
+    "sells_clause": null,
+    "children_not_directed": null
+   },
+   "pages": [
+    {
+     "url": "https://ratsit.se/",
+     "final_url": "https://www.ratsit.se/",
+     "status": 200,
+     "role": "home",
+     "title": "Ratsit - Offentlig information till alla",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.ratsit.se/",
+     "final_url": "https://www.ratsit.se/",
+     "status": 200,
+     "role": "home",
+     "title": "Ratsit - Offentlig information till alla",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.ratsit.se/info/personuppgiftspolicy",
+     "final_url": "https://www.ratsit.se/info/personuppgiftspolicy",
+     "status": 200,
+     "role": "catalog",
+     "title": "Personuppgiftspolicy - Ratsit AB",
+     "liveness": "alive"
+    }
+   ],
+   "location": {
+    "country": "SE",
+    "region": null,
+    "locality": null,
+    "postal_code": null,
+    "street": null,
+    "postal_address": null,
+    "coverage": [
+     "SE"
+    ],
+    "search_regions": [],
+    "sources": [
+     "manual"
+    ]
+   },
+   "network": {
+    "checked": false,
+    "addresses": [],
+    "ipv6": [],
+    "cname": null,
+    "mx": [],
+    "mail_provider": null,
+    "spf": null,
+    "dmarc": null,
+    "dkim": [],
+    "nameservers": [],
+    "dns_provider": null,
+    "soa_primary": null,
+    "caa": [],
+    "dnssec": null,
+    "asn": null,
+    "asn_country": null,
+    "prefix": null,
+    "cdn": null,
+    "server": null,
+    "tls_org": null,
+    "tls_issuer": null,
+    "tls_names": [],
+    "tls_version": null,
+    "tls_not_before": null,
+    "tls_not_after": null,
+    "registrar": null,
+    "registered": null,
+    "registration_expires": null,
+    "domain_status": []
+   },
+   "request": {
+    "removal_host": "ratsit.se",
+    "same_site": true,
+    "https": true,
+    "redirected": false,
+    "redirect_count": null,
+    "form_enctype": null,
+    "content_type": null,
+    "hsts": null,
+    "hsts_max_age": null,
+    "hsts_subdomains": null,
+    "hsts_preload": null,
+    "http_version": null,
+    "http3": null,
+    "frame_options": null,
+    "nosniff": null,
+    "referrer_policy": null,
+    "csp": null,
+    "powered_by": null,
+    "cookie_names": []
+   },
+   "automation": {
+    "search_scanned": true,
+    "search_fillable": false,
+    "search_captcha": true,
+    "search_fields": [
+     "full_name"
+    ],
+    "removal_form_fillable": false,
+    "removal_email_usable": false,
+    "removal_fields": [],
+    "removal_path": null,
+    "fully_automatable": false,
+    "usable_emails": [],
+    "search_required": [],
+    "removal_required": [],
+    "email_verification": null,
+    "id_document": null,
+    "shared_removal_ids": [],
+    "removal_captcha": true,
+    "captcha_blocks_form": false,
+    "captcha_email_fallback": false,
+    "removal_blocker": "captcha_no_form"
+   },
+   "search_test": {
+    "outcome": "submitted",
+    "http_status": 200,
+    "path_prefix": "sok",
+    "fields_sent": [
+     "full_name"
+    ],
+    "missing": [],
+    "page_kind": "form",
+    "result_count": null,
+    "checked_at": "2026-10-26T13:08:03+00:00"
    }
   }
  }
