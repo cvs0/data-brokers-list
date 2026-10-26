@@ -1,44 +1,44 @@
 {
  "schema_version": "4.0.0",
- "checked_at": "2026-10-25T07:28:55+00:00",
+ "checked_at": "2026-10-26T06:21:40+00:00",
  "method": "v3 records, with privacy and removal mailboxes on another domain kept as related_domain. Brokers whose loaded pages published no removal channel were crawled again for unfetched same-site opt-out and privacy URLs, then the catalog URL and homepage were opened once in a browser when those pages still showed no form. That recrawl honors robots.txt. A later pass reads the catalog URL and homepage of brokers whose robots.txt had disallowed the research client. A search pass reads homepages whose public search form was missing, including pages robots.txt had disallowed, and stores a name, phone, or address form. Those passes submit no form, no login, and no CAPTCHA. A legal pass re-reads stored privacy and terms text and fetches an unread privacy or terms page when robots.txt allows it. A network pass looks up public DNS and the site certificate, and reads response headers for the removal URL when robots.txt allows it. A later pass adds IPv6, SPF, DMARC, DKIM selectors, CAA, DNSSEC, the address block, certificate dates, RDAP registration, and the removal response's security headers. A captcha pass re-reads the removal URL and the search page for a widget. A browser reads the page when the static HTML has no widget and the page has a removal form, a stored CAPTCHA, or a public search form. A later pass reads the public widget settings, including whether it is a checkbox, an invisible check, or a score. A form pass re-reads stored search and removal forms for labels, limits, autocomplete, the submit button, and hidden field names. A browser opens when the static HTML does not contain the stored fields. Nothing is submitted. A search test then submits one synthetic query on each broker whose search and removal are both fillable, or with --searchable on each broker with a public search. A robots.txt disallow does not stop the test or count against a search; when --robots is set the log only notes it as robots_disallowed. Brokers whose homepage robots.txt disallowed the research client were later opened in a browser, and their liveness is the result of that read. Removal forms are not submitted and CAPTCHAs are not solved. search_test is on every broker. It stores the outcome, status, field names, the first path segment, the page kind, and a result count when the page states one. A loader page is followed to the count endpoint. The response body, record text, and listing URLs are not stored.",
- "broker_count": 751,
+ "broker_count": 756,
  "counts": {
   "with_related_email": 129,
   "with_form": 166,
-  "with_email": 412,
-  "with_extracted_email": 198,
+  "with_email": 415,
+  "with_extracted_email": 199,
   "with_stated_email": 12,
-  "no_channel_remaining": 74,
-  "with_search": 284,
-  "with_search_fillable": 264,
+  "no_channel_remaining": 76,
+  "with_search": 289,
+  "with_search_fillable": 269,
   "search_unscanned": 37,
-  "fully_automatable": 135,
-  "search_tested": 242,
+  "fully_automatable": 136,
+  "search_tested": 247,
   "search_results": 19,
-  "search_submitted": 88,
+  "search_submitted": 92,
   "search_no_results": 66,
   "search_unfilled": 9,
-  "search_challenge": 47,
-  "search_result_count": 75,
+  "search_challenge": 48,
+  "search_result_count": 76,
   "search_empty": 66,
-  "search_page_results": 24,
+  "search_page_results": 25,
   "search_page_loader": 12,
-  "search_page_form": 18,
-  "with_country": 683,
-  "with_region": 477,
-  "with_locality": 359,
+  "search_page_form": 20,
+  "with_country": 693,
+  "with_region": 478,
+  "with_locality": 360,
   "with_removal_action": 138,
   "shared_removal": 60,
   "email_verification": 28,
   "id_document": 1,
-  "with_privacy": 579,
+  "with_privacy": 581,
   "with_terms": 398,
   "with_automation_clause": 81,
   "with_authorized_agent": 140,
-  "with_residency": 522,
+  "with_residency": 524,
   "sells_personal_information": 4,
-  "does_not_sell": 64,
+  "does_not_sell": 65,
   "children_not_directed": 38,
   "with_mx": 576,
   "with_mail_provider": 420,
@@ -47,11 +47,11 @@
   "removal_offsite": 90,
   "with_hsts": 273,
   "with_form_enctype": 215,
-  "with_field_detail": 354,
-  "with_field_label": 228,
+  "with_field_detail": 359,
+  "with_field_label": 229,
   "with_field_constraint": 64,
-  "with_submit_label": 251,
-  "with_hidden_names": 165,
+  "with_submit_label": 252,
+  "with_hidden_names": 166,
   "with_ipv6": 263,
   "with_spf": 516,
   "with_dmarc": 443,
@@ -70,7 +70,7 @@
   "removal_captcha_checked": 349,
   "search_captcha_widget": 16,
   "search_captcha_sitekey": 6,
-  "search_captcha_checked": 261,
+  "search_captcha_checked": 266,
   "captcha_blocks_form": 85,
   "captcha_email_fallback": 28,
   "removal_captcha_checkbox": 78,
@@ -84,25 +84,25 @@
   "search_captcha_score": 0,
   "removal_blockers": {
    "captcha_form": 57,
-   "generic_inbox": 52,
+   "generic_inbox": 54,
    "phone_postal": 25,
    "portal": 4,
    "phone": 59,
    "postal": 6,
    "bot_wall": 25,
-   "fetch_error": 18,
+   "fetch_error": 13,
    "opt_out_gone": 1,
    "robots": 23,
    "captcha_no_form": 24,
-   "no_channel": 76
+   "no_channel": 83
   },
-  "lookup_search": 219,
-  "lookup_search_fillable": 205,
+  "lookup_search": 224,
+  "lookup_search_fillable": 210,
   "liveness": {
-   "alive": 622,
+   "alive": 625,
    "blocked": 50,
-   "dead": 6,
-   "error": 20,
+   "dead": 13,
+   "error": 15,
    "opt_out_missing": 5,
    "robots_disallowed": 48
   }
@@ -89139,8 +89139,8 @@
    "category": "other",
    "domain": "numlooker.com",
    "checked_at": "2026-10-12T23:23:21+00:00",
-   "liveness": "error",
-   "liveness_detail": "ReadTimeout: HTTPSConnectionPool(host='numlooker.com', port=443): Read timed out. (read timeout=18)",
+   "liveness": "dead",
+   "liveness_detail": "site offline (checked 2026-10-26): numlooker.com did not load on 2026-10-25 or 2026-10-26. Its name servers still answer (Cloudflare addresses from dns.google), but every request to https://numlooker.com/ and /remove-my-info from a US host returned Cloudflare error 522 (\"Connection timed out\": Cloudflare could not reach the site's own server) or timed out, in four checks over about an hour, and a second network also timed out. The catalog crawl on 2026-10-12 had already timed out on it. No page, search or removal form loads, so nothing about the person is shown. No request was submitted.",
    "homepage": "https://numlooker.com/",
    "logo_url": null,
    "images": [],
@@ -89252,15 +89252,19 @@
     }
    ],
    "location": {
-    "country": null,
+    "country": "US",
     "region": null,
     "locality": null,
     "postal_code": null,
     "street": null,
     "postal_address": null,
-    "coverage": [],
+    "coverage": [
+     "US"
+    ],
     "search_regions": [],
-    "sources": []
+    "sources": [
+     "manual"
+    ]
    },
    "network": {
     "checked": true,
@@ -89352,7 +89356,7 @@
     "removal_captcha": false,
     "captcha_blocks_form": false,
     "captcha_email_fallback": false,
-    "removal_blocker": "fetch_error"
+    "removal_blocker": "no_channel"
    },
    "search_test": {
     "outcome": null,
@@ -101478,7 +101482,7 @@
    "name": "Samba TV, Inc.",
    "category": "other",
    "domain": "samba.com",
-   "checked_at": "2026-10-25T07:27:07+00:00",
+   "checked_at": "2026-10-26T06:17:18+00:00",
    "liveness": "alive",
    "liveness_detail": "https://samba.com/privacy-center/privacy-policy answered HTTP 200 on 2026-10-24. The old samba.tv/users/privacy-policy path redirected here. No request was submitted.",
    "homepage": null,
@@ -125802,8 +125806,8 @@
    "category": "people-search",
    "domain": "cocofinder.com",
    "checked_at": "2026-10-12T23:15:24+00:00",
-   "liveness": "error",
-   "liveness_detail": "ReadTimeout: HTTPSConnectionPool(host='cocofinder.com', port=443): Read timed out. (read timeout=18)",
+   "liveness": "dead",
+   "liveness_detail": "site offline (checked 2026-10-26): cocofinder.com did not load on 2026-10-25 or 2026-10-26. Its name servers still answer (Cloudflare addresses from dns.google), but every request to https://cocofinder.com/ and /remove-my-info from a US host returned Cloudflare error 522 (\"Connection timed out\": Cloudflare could not reach the site's own server) or timed out, in four checks over about an hour, and a second network also timed out. The catalog crawl on 2026-10-12 had already timed out on it. No page, search or removal form loads, so nothing about the person is shown. No request was submitted.",
    "homepage": "https://cocofinder.com/",
    "logo_url": null,
    "images": [],
@@ -125915,15 +125919,19 @@
     }
    ],
    "location": {
-    "country": null,
+    "country": "US",
     "region": null,
     "locality": null,
     "postal_code": null,
     "street": null,
     "postal_address": null,
-    "coverage": [],
+    "coverage": [
+     "US"
+    ],
     "search_regions": [],
-    "sources": []
+    "sources": [
+     "manual"
+    ]
    },
    "network": {
     "checked": true,
@@ -126020,7 +126028,7 @@
     "removal_captcha": false,
     "captcha_blocks_form": false,
     "captcha_email_fallback": false,
-    "removal_blocker": "fetch_error"
+    "removal_blocker": "no_channel"
    },
    "search_test": {
     "outcome": null,
@@ -126040,8 +126048,8 @@
    "category": "people-search",
    "domain": "cocofinder.net",
    "checked_at": "2026-10-12T23:15:05+00:00",
-   "liveness": "error",
-   "liveness_detail": "ReadTimeout: HTTPSConnectionPool(host='cocofinder.com', port=443): Read timed out. (read timeout=18)",
+   "liveness": "dead",
+   "liveness_detail": "site offline (checked 2026-10-26): cocofinder.net did not load on 2026-10-25 or 2026-10-26. Its name servers still answer (Cloudflare addresses from dns.google), but every request to https://cocofinder.net/ and /remove-my-info from a US host returned Cloudflare error 522 (\"Connection timed out\": Cloudflare could not reach the site's own server) or timed out, in four checks over about an hour, and a second network also timed out. The catalog crawl on 2026-10-12 had already timed out on it. No page, search or removal form loads, so nothing about the person is shown. No request was submitted.",
    "homepage": "https://cocofinder.net/",
    "logo_url": null,
    "images": [],
@@ -126153,15 +126161,19 @@
     }
    ],
    "location": {
-    "country": null,
+    "country": "US",
     "region": null,
     "locality": null,
     "postal_code": null,
     "street": null,
     "postal_address": null,
-    "coverage": [],
+    "coverage": [
+     "US"
+    ],
     "search_regions": [],
-    "sources": []
+    "sources": [
+     "manual"
+    ]
    },
    "network": {
     "checked": true,
@@ -126256,7 +126268,7 @@
     "removal_captcha": false,
     "captcha_blocks_form": false,
     "captcha_email_fallback": false,
-    "removal_blocker": "fetch_error"
+    "removal_blocker": "no_channel"
    },
    "search_test": {
     "outcome": null,
@@ -129500,8 +129512,8 @@
    "category": "people-search",
    "domain": "fastpeoplesearch.io",
    "checked_at": "2026-10-12T23:17:58+00:00",
-   "liveness": "error",
-   "liveness_detail": "ReadTimeout: HTTPSConnectionPool(host='fastpeoplesearch.io', port=443): Read timed out. (read timeout=18)",
+   "liveness": "dead",
+   "liveness_detail": "site offline (checked 2026-10-26): fastpeoplesearch.io did not load on 2026-10-25 or 2026-10-26. Its name servers still answer (Cloudflare addresses from dns.google), but every request to https://fastpeoplesearch.io/ and /remove-my-info from a US host returned Cloudflare error 522 (\"Connection timed out\": Cloudflare could not reach the site's own server) or timed out, in four checks over about an hour, and a second network also timed out. The catalog crawl on 2026-10-12 had already timed out on it. No page, search or removal form loads, so nothing about the person is shown. No request was submitted.",
    "homepage": "https://fastpeoplesearch.io/",
    "logo_url": null,
    "images": [],
@@ -129613,15 +129625,19 @@
     }
    ],
    "location": {
-    "country": null,
+    "country": "US",
     "region": null,
     "locality": null,
     "postal_code": null,
     "street": null,
     "postal_address": null,
-    "coverage": [],
+    "coverage": [
+     "US"
+    ],
     "search_regions": [],
-    "sources": []
+    "sources": [
+     "manual"
+    ]
    },
    "network": {
     "checked": true,
@@ -129710,7 +129726,7 @@
     "removal_captcha": false,
     "captcha_blocks_form": false,
     "captcha_email_fallback": false,
-    "removal_blocker": "fetch_error"
+    "removal_blocker": "no_channel"
    },
    "search_test": {
     "outcome": null,
@@ -156276,8 +156292,8 @@
    "category": "people-search",
    "domain": "truepeoplesearch.net",
    "checked_at": "2026-10-12T23:29:00+00:00",
-   "liveness": "error",
-   "liveness_detail": "ReadTimeout: HTTPSConnectionPool(host='truepeoplesearch.net', port=443): Read timed out. (read timeout=18)",
+   "liveness": "dead",
+   "liveness_detail": "site offline (checked 2026-10-26): truepeoplesearch.net did not load on 2026-10-25 or 2026-10-26. Its name servers still answer (Cloudflare addresses from dns.google), but every request to https://truepeoplesearch.net/ and /remove-my-info from a US host returned Cloudflare error 522 (\"Connection timed out\": Cloudflare could not reach the site's own server) or timed out, in four checks over about an hour, and a second network also timed out. The catalog crawl on 2026-10-12 had already timed out on it. No page, search or removal form loads, so nothing about the person is shown. No request was submitted.",
    "homepage": "https://truepeoplesearch.net/",
    "logo_url": null,
    "images": [],
@@ -156389,15 +156405,19 @@
     }
    ],
    "location": {
-    "country": null,
+    "country": "US",
     "region": null,
     "locality": null,
     "postal_code": null,
     "street": null,
     "postal_address": null,
-    "coverage": [],
+    "coverage": [
+     "US"
+    ],
     "search_regions": [],
-    "sources": []
+    "sources": [
+     "manual"
+    ]
    },
    "network": {
     "checked": true,
@@ -156489,7 +156509,7 @@
     "removal_captcha": false,
     "captcha_blocks_form": false,
     "captcha_email_fallback": false,
-    "removal_blocker": "fetch_error"
+    "removal_blocker": "no_channel"
    },
    "search_test": {
     "outcome": null,
@@ -204892,8 +204912,8 @@
    "category": "background-checks",
    "domain": "californiacriminalrecords.org",
    "checked_at": "2026-10-12T23:12:40+00:00",
-   "liveness": "alive",
-   "liveness_detail": "californiacriminalrecords.org answered HTTP 200 on 2026-10-24. Its name-results URL returned HTTP 404.",
+   "liveness": "dead",
+   "liveness_detail": "site offline (checked 2026-10-26): californiacriminalrecords.org is no longer a working search. The homepage still answers HTTP 200 and its only form is a GET to /search/name/results.php (fname, lname, state), but that URL returned HTTP 404, titled 404 Not Found, for John Smith on 2026-10-24 and again on 2026-10-26, after a homepage visit set its cookies. No results page loads for any name, so the site shows no listings. No request was submitted.",
    "homepage": "https://californiacriminalrecords.org/",
    "logo_url": "https://californiacriminalrecords.org/img/logo.png",
    "images": [
@@ -227813,7 +227833,7 @@
    "name": "Live Data Technologies, Inc.",
    "category": "other",
    "domain": "livedatatech.com",
-   "checked_at": "2026-10-25T07:27:25+00:00",
+   "checked_at": "2026-10-26T06:17:36+00:00",
    "liveness": "alive",
    "liveness_detail": "https://www.livedatatech.com/opt-out answered HTTP 200 on 2026-10-24, titled Optout — Live Data Technologies. The old livedatatechnologies.com/opt-out path redirects here. The page loads a reCAPTCHA badge. No request was submitted.",
    "homepage": null,
@@ -291573,8 +291593,8 @@
    "category": "background-checks",
    "domain": "texasarrestwarrants.org",
    "checked_at": "2026-10-12T23:26:54+00:00",
-   "liveness": "alive",
-   "liveness_detail": "texasarrestwarrants.org answered HTTP 200 on 2026-10-24. Its name-results URL returned HTTP 404.",
+   "liveness": "dead",
+   "liveness_detail": "site offline (checked 2026-10-26): texasarrestwarrants.org is no longer a working search. The homepage still answers HTTP 200 and its only form is a GET to /search/name/results.php (fname, lname, state), but that URL returned HTTP 404, titled Not Found (#404), for John Smith on 2026-10-24 and again on 2026-10-26, after a homepage visit set its cookies. No results page loads for any name, so the site shows no listings. No request was submitted.",
    "homepage": "https://texasarrestwarrants.org/",
    "logo_url": "https://texasarrestwarrants.org/img/logo.png",
    "images": [
@@ -305874,7 +305894,7 @@
    "name": "Data Axle Canada",
    "category": "marketing",
    "domain": "dataaxlecanada.ca",
-   "checked_at": "2026-10-25T07:27:36+00:00",
+   "checked_at": "2026-10-26T06:17:48+00:00",
    "liveness": "alive",
    "liveness_detail": "dataaxlecanada.ca answered HTTP 200 on 2026-10-24. infocanada.ca redirects there. There is no public name search.",
    "homepage": null,
@@ -306068,7 +306088,7 @@
    "name": "Prospects Influential",
    "category": "marketing",
    "domain": "prospectsinfluential.com",
-   "checked_at": "2026-10-25T07:27:36+00:00",
+   "checked_at": "2026-10-26T06:17:48+00:00",
    "liveness": "alive",
    "liveness_detail": "prospectsinfluential.com answered HTTP 200 on 2026-10-24. The site sells consumer mailing lists and has no public name search.",
    "homepage": null,
@@ -306262,7 +306282,7 @@
    "name": "Openroom",
    "category": "background-checks",
    "domain": "openroom.ca",
-   "checked_at": "2026-10-25T07:27:36+00:00",
+   "checked_at": "2026-10-26T06:17:48+00:00",
    "liveness": "alive",
    "liveness_detail": "openroom.ca answered HTTP 200 on 2026-10-24. The tenant-screening search requires an account.",
    "homepage": null,
@@ -306455,7 +306475,7 @@
    "name": "Landlord Credit Bureau",
    "category": "credit-financial",
    "domain": "landlordcreditbureau.ca",
-   "checked_at": "2026-10-25T07:27:36+00:00",
+   "checked_at": "2026-10-26T06:17:48+00:00",
    "liveness": "alive",
    "liveness_detail": "landlordcreditbureau.ca answered HTTP 200 on 2026-10-24. There is no public name search. The Privacy Policy link goes to a 404 page.",
    "homepage": null,
@@ -306648,7 +306668,7 @@
    "name": "FrontLobby",
    "category": "credit-financial",
    "domain": "frontlobby.com",
-   "checked_at": "2026-10-25T07:27:36+00:00",
+   "checked_at": "2026-10-26T06:17:48+00:00",
    "liveness": "alive",
    "liveness_detail": "frontlobby.com answered HTTP 200 on 2026-10-24. The LTB order search sends visitors to an account signup.",
    "homepage": null,
@@ -306841,7 +306861,7 @@
    "name": "Echovita",
    "category": "people-search",
    "domain": "echovita.com",
-   "checked_at": "2026-10-25T07:27:36+00:00",
+   "checked_at": "2026-10-26T06:17:48+00:00",
    "liveness": "alive",
    "liveness_detail": "echovita.com/ca answered HTTP 200 on 2026-10-24. A surname search returned obituary counts.",
    "homepage": null,
@@ -307060,7 +307080,7 @@
    "name": "InMemoriam",
    "category": "people-search",
    "domain": "inmemoriam.ca",
-   "checked_at": "2026-10-25T07:27:36+00:00",
+   "checked_at": "2026-10-26T06:17:48+00:00",
    "liveness": "alive",
    "liveness_detail": "inmemoriam.ca answered HTTP 200 on 2026-10-24. A surname search returned notice counts.",
    "homepage": null,
@@ -307303,7 +307323,7 @@
    "name": "Nécrologie.ca",
    "category": "people-search",
    "domain": "necrologie.ca",
-   "checked_at": "2026-10-25T07:27:36+00:00",
+   "checked_at": "2026-10-26T06:17:48+00:00",
    "liveness": "alive",
    "liveness_detail": "necrologie.ca answered HTTP 200 on 2026-10-24. The search API returned obituary counts.",
    "homepage": null,
@@ -307522,7 +307542,7 @@
    "name": "Geni",
    "category": "people-search",
    "domain": "geni.com",
-   "checked_at": "2026-10-25T07:27:36+00:00",
+   "checked_at": "2026-10-26T06:17:48+00:00",
    "liveness": "alive",
    "liveness_detail": "geni.com answered HTTP 200 on 2026-10-24. A public people search returned a result count.",
    "homepage": null,
@@ -307741,7 +307761,7 @@
    "name": "FQSG Avis de décès",
    "category": "people-search",
    "domain": "federationgenealogie.qc.ca",
-   "checked_at": "2026-10-25T07:27:36+00:00",
+   "checked_at": "2026-10-26T06:17:48+00:00",
    "liveness": "alive",
    "liveness_detail": "federationgenealogie.qc.ca answered HTTP 200 on 2026-10-24. A name search returned death notices.",
    "homepage": null,
@@ -307960,7 +307980,7 @@
    "name": "Domaine funéraire (Corporation des thanatologues du Québec)",
    "category": "people-search",
    "domain": "domainefuneraire.com",
-   "checked_at": "2026-10-25T07:27:36+00:00",
+   "checked_at": "2026-10-26T06:17:48+00:00",
    "liveness": "alive",
    "liveness_detail": "domainefuneraire.com answered HTTP 200 on 2026-10-24. A name search returned death notices.",
    "homepage": null,
@@ -308179,7 +308199,7 @@
    "name": "Canadian Obituaries",
    "category": "people-search",
    "domain": "canadianobituaries.com",
-   "checked_at": "2026-10-25T07:27:36+00:00",
+   "checked_at": "2026-10-26T06:17:48+00:00",
    "liveness": "alive",
    "liveness_detail": "canadianobituaries.com answered HTTP 200 on 2026-10-24. A name search returned death notices.",
    "homepage": null,
@@ -308398,7 +308418,7 @@
    "name": "Coopérative funéraire du Grand Montréal",
    "category": "people-search",
    "domain": "cfgrandmontreal.com",
-   "checked_at": "2026-10-25T07:27:36+00:00",
+   "checked_at": "2026-10-26T06:17:48+00:00",
    "liveness": "alive",
    "liveness_detail": "cfgrandmontreal.com answered HTTP 200 on 2026-10-24. A name search returned death notices.",
    "homepage": null,
@@ -308617,7 +308637,7 @@
    "name": "Coopérative funéraire des Deux Rives",
    "category": "people-search",
    "domain": "coopfuneraire2rives.com",
-   "checked_at": "2026-10-25T07:27:36+00:00",
+   "checked_at": "2026-10-26T06:17:48+00:00",
    "liveness": "alive",
    "liveness_detail": "coopfuneraire2rives.com answered HTTP 200 on 2026-10-24. A name search returned death notices.",
    "homepage": null,
@@ -308836,7 +308856,7 @@
    "name": "Alliance funéraire du Royaume",
    "category": "people-search",
    "domain": "afdr.coop",
-   "checked_at": "2026-10-25T07:27:36+00:00",
+   "checked_at": "2026-10-26T06:17:48+00:00",
    "liveness": "alive",
    "liveness_detail": "afdr.coop answered HTTP 200 on 2026-10-24. A name search returned death notices.",
    "homepage": null,
@@ -309055,7 +309075,7 @@
    "name": "Coopérative funéraire de l'Abitibi",
    "category": "people-search",
    "domain": "cfa.coop",
-   "checked_at": "2026-10-25T07:27:36+00:00",
+   "checked_at": "2026-10-26T06:17:48+00:00",
    "liveness": "alive",
    "liveness_detail": "cfa.coop answered HTTP 200 on 2026-10-24. A name search returned death notices.",
    "homepage": null,
@@ -309274,7 +309294,7 @@
    "name": "Coopérative funéraire Haute-Côte-Nord - Manicouagan",
    "category": "people-search",
    "domain": "cfhcn.ca",
-   "checked_at": "2026-10-25T07:27:36+00:00",
+   "checked_at": "2026-10-26T06:17:48+00:00",
    "liveness": "alive",
    "liveness_detail": "cfhcn.ca answered HTTP 200 on 2026-10-24. A name search returned death notices.",
    "homepage": null,
@@ -309493,7 +309513,7 @@
    "name": "Coopérative funéraire de l'Outaouais",
    "category": "people-search",
    "domain": "cfo.coop",
-   "checked_at": "2026-10-25T07:27:36+00:00",
+   "checked_at": "2026-10-26T06:17:48+00:00",
    "liveness": "alive",
    "liveness_detail": "cfo.coop answered HTTP 200 on 2026-10-24. A name search returned death notices.",
    "homepage": null,
@@ -309712,7 +309732,7 @@
    "name": "Coopérative funéraire de l'Estrie",
    "category": "people-search",
    "domain": "coopfuneraireestrie.com",
-   "checked_at": "2026-10-25T07:27:36+00:00",
+   "checked_at": "2026-10-26T06:17:48+00:00",
    "liveness": "alive",
    "liveness_detail": "coopfuneraireestrie.com answered HTTP 200 on 2026-10-24. A name search returned death notices.",
    "homepage": null,
@@ -309931,7 +309951,7 @@
    "name": "Résidence funéraire Lac St-Jean",
    "category": "people-search",
    "domain": "residencefunerairelacstjean.com",
-   "checked_at": "2026-10-25T07:27:36+00:00",
+   "checked_at": "2026-10-26T06:17:48+00:00",
    "liveness": "alive",
    "liveness_detail": "residencefunerairelacstjean.com answered HTTP 200 on 2026-10-24. A name search returned death notices.",
    "homepage": null,
@@ -310150,7 +310170,7 @@
    "name": "Coopérative funéraire Brunet",
    "category": "people-search",
    "domain": "coopfbrunet.com",
-   "checked_at": "2026-10-25T07:27:36+00:00",
+   "checked_at": "2026-10-26T06:17:48+00:00",
    "liveness": "alive",
    "liveness_detail": "coopfbrunet.com answered HTTP 200 on 2026-10-24. A name search returned death notices.",
    "homepage": null,
@@ -310369,7 +310389,7 @@
    "name": "Coopérative funéraire Matawinie-Montcalm",
    "category": "people-search",
    "domain": "cfmm.coop",
-   "checked_at": "2026-10-25T07:27:36+00:00",
+   "checked_at": "2026-10-26T06:17:48+00:00",
    "liveness": "alive",
    "liveness_detail": "cfmm.coop answered HTTP 200 on 2026-10-24. A name search returned death notices.",
    "homepage": null,
@@ -310588,7 +310608,7 @@
    "name": "Coopérative funéraire des Laurentides",
    "category": "people-search",
    "domain": "coopfunerairelaurentides.org",
-   "checked_at": "2026-10-25T07:27:36+00:00",
+   "checked_at": "2026-10-26T06:17:48+00:00",
    "liveness": "alive",
    "liveness_detail": "coopfunerairelaurentides.org answered HTTP 200 on 2026-10-24. A name search returned death notices.",
    "homepage": null,
@@ -310807,7 +310827,7 @@
    "name": "Résidence Funéraire Maska",
    "category": "people-search",
    "domain": "rfmaska.coop",
-   "checked_at": "2026-10-25T07:27:36+00:00",
+   "checked_at": "2026-10-26T06:17:48+00:00",
    "liveness": "alive",
    "liveness_detail": "rfmaska.coop answered HTTP 200 on 2026-10-24. A name search returned death notices.",
    "homepage": null,
@@ -311026,7 +311046,7 @@
    "name": "Dignity Memorial",
    "category": "people-search",
    "domain": "dignitymemorial.com",
-   "checked_at": "2026-10-25T07:27:36+00:00",
+   "checked_at": "2026-10-26T06:17:48+00:00",
    "liveness": "alive",
    "liveness_detail": "dignitymemorial.com answered HTTP 200 on 2026-10-24. A name search returned records.",
    "homepage": null,
@@ -311246,7 +311266,7 @@
    "name": "Interment.net",
    "category": "people-search",
    "domain": "interment.net",
-   "checked_at": "2026-10-25T07:27:36+00:00",
+   "checked_at": "2026-10-26T06:17:48+00:00",
    "liveness": "alive",
    "liveness_detail": "interment.net answered HTTP 200 on 2026-10-24. A name search returned records.",
    "homepage": null,
@@ -311466,7 +311486,7 @@
    "name": "Mount Pleasant Group",
    "category": "people-search",
    "domain": "mountpleasantgroup.com",
-   "checked_at": "2026-10-25T07:27:36+00:00",
+   "checked_at": "2026-10-26T06:17:48+00:00",
    "liveness": "alive",
    "liveness_detail": "mountpleasantgroup.com answered HTTP 200 on 2026-10-24. A name search returned records.",
    "homepage": null,
@@ -311685,7 +311705,7 @@
    "name": "Kearney Funeral Services",
    "category": "people-search",
    "domain": "kearneyfs.com",
-   "checked_at": "2026-10-25T07:27:36+00:00",
+   "checked_at": "2026-10-26T06:17:48+00:00",
    "liveness": "alive",
    "liveness_detail": "kearneyfs.com answered HTTP 200 on 2026-10-24. A name search returned records.",
    "homepage": null,
@@ -311904,7 +311924,7 @@
    "name": "Basic Funerals",
    "category": "people-search",
    "domain": "basicfunerals.ca",
-   "checked_at": "2026-10-25T07:27:36+00:00",
+   "checked_at": "2026-10-26T06:17:48+00:00",
    "liveness": "alive",
    "liveness_detail": "basicfunerals.ca answered HTTP 200 on 2026-10-24. A name search returned records.",
    "homepage": null,
@@ -312123,7 +312143,7 @@
    "name": "Le Nécrologue",
    "category": "people-search",
    "domain": "lenecrologue.com",
-   "checked_at": "2026-10-25T07:27:36+00:00",
+   "checked_at": "2026-10-26T06:17:48+00:00",
    "liveness": "alive",
    "liveness_detail": "lenecrologue.com answered HTTP 200 on 2026-10-24. A name search returned records.",
    "homepage": null,
@@ -316414,6 +316434,1503 @@
     "page_kind": "results",
     "result_count": 28843,
     "checked_at": "2026-10-25T04:20:47+00:00"
+   }
+  },
+  "blockshopper": {
+   "schema_version": "4.0.0",
+   "id": "blockshopper",
+   "name": "BlockShopper",
+   "category": "public-records",
+   "domain": "blockshopper.com",
+   "checked_at": "2026-10-26T06:16:53+00:00",
+   "liveness": "alive",
+   "liveness_detail": "blockshopper.com answered HTTP 200 on 2026-10-26. A homeowner name search returned matches by state.",
+   "homepage": "https://blockshopper.com/",
+   "logo_url": "https://cdn.blockshopper.com/assets/blockshopper-green-logo-4c8ca2c4ae653f179c1414767a4fb72fefcb639a953b0a253ccef3cdb999641f.png",
+   "images": [
+    {
+     "url": "https://cdn.blockshopper.com/assets/favicon-b033b1e533a75d05ff4f06221bcd1b4c525d23c4beba992409d5a417bfecc1ce.png",
+     "kind": "icon",
+     "source_page": "https://blockshopper.com/"
+    },
+    {
+     "url": "https://cdn.blockshopper.com/assets/blockshopper-green-logo-4c8ca2c4ae653f179c1414767a4fb72fefcb639a953b0a253ccef3cdb999641f.png",
+     "kind": "logo",
+     "source_page": "https://blockshopper.com/"
+    }
+   ],
+   "theme_color": null,
+   "languages": [],
+   "legal_name": null,
+   "search": {
+    "available": true,
+    "method": "http_get",
+    "page_url": "https://blockshopper.com/",
+    "form_action": "https://blockshopper.com/search",
+    "inputs": [
+     {
+      "name": "q",
+      "type": "text",
+      "canonical": "full_name",
+      "required": false,
+      "autocomplete": null,
+      "placeholder": "Search for Homeowners",
+      "id": "q",
+      "label": null,
+      "inputmode": null,
+      "pattern": null,
+      "minlength": null,
+      "maxlength": null,
+      "min": null,
+      "max": null,
+      "step": null,
+      "accept": null,
+      "multiple": false,
+      "disabled": false,
+      "readonly": false,
+      "checked": false,
+      "value": null
+     }
+    ],
+    "url_pattern": "https://blockshopper.com/search?q={q}&type=names",
+    "directory_prefixes": [],
+    "paywall": null,
+    "login_wall": null,
+    "form_meta": {
+     "id": null,
+     "name": null,
+     "autocomplete": null,
+     "novalidate": null,
+     "submit_label": null,
+     "hidden_names": []
+    },
+    "captcha_provider": null,
+    "captcha_sitekey": null,
+    "captcha_detail": null,
+    "captcha_checked": true
+   },
+   "removal": {
+    "url": "https://blockshopper.com/privacy-policy",
+    "final_url": "https://blockshopper.com/privacy-policy",
+    "http_status": 200,
+    "kinds": [
+     "opt_out"
+    ],
+    "channels": [],
+    "emails": [],
+    "phones": [],
+    "postal_address": null,
+    "portal": null,
+    "form_fields": [],
+    "csrf_field_name": null,
+    "requires_profile_url": null,
+    "captcha": {
+     "provider": null,
+     "sitekey": null,
+     "pages": [],
+     "checked": null,
+     "checked_url": null,
+     "detail": null
+    },
+    "consent_vendor": null,
+    "success_text": null,
+    "suppression_not_deletion": null,
+    "processing_days": null,
+    "processing_text": null,
+    "form_action": null,
+    "form_method": null,
+    "form_meta": {
+     "id": null,
+     "name": null,
+     "autocomplete": null,
+     "novalidate": null,
+     "submit_label": null,
+     "hidden_names": []
+    }
+   },
+   "bot_defense": {
+    "vendor": null,
+    "outcome": "none"
+   },
+   "legal": {
+    "privacy_policy_url": "https://blockshopper.com/privacy-policy",
+    "terms_url": null,
+    "automation_prohibited": null,
+    "automation_clause": null,
+    "residency": [
+     "US-CA",
+     "US"
+    ],
+    "authorized_agent": null,
+    "data_categories": [
+     "identifiers",
+     "internet_activity"
+    ],
+    "sells_personal_information": false,
+    "sells_clause": "We do not sell",
+    "children_not_directed": null
+   },
+   "pages": [
+    {
+     "url": "https://blockshopper.com/",
+     "final_url": "https://blockshopper.com/",
+     "status": 200,
+     "role": "home",
+     "title": "Real Estate Market Perspective | BlockShopper",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.blockshopper.com/",
+     "final_url": "https://blockshopper.com/",
+     "status": 200,
+     "role": "home",
+     "title": "Real Estate Market Perspective | BlockShopper",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://blockshopper.com/privacy-policy",
+     "final_url": "https://blockshopper.com/privacy-policy",
+     "status": 200,
+     "role": "catalog",
+     "title": "Privacy Policy | BlockShopper",
+     "liveness": "alive"
+    }
+   ],
+   "location": {
+    "country": "US",
+    "region": null,
+    "locality": null,
+    "postal_code": null,
+    "street": null,
+    "postal_address": null,
+    "coverage": [
+     "US-CA",
+     "US"
+    ],
+    "search_regions": [],
+    "sources": [
+     "page"
+    ]
+   },
+   "network": {
+    "checked": false,
+    "addresses": [],
+    "ipv6": [],
+    "cname": null,
+    "mx": [],
+    "mail_provider": null,
+    "spf": null,
+    "dmarc": null,
+    "dkim": [],
+    "nameservers": [],
+    "dns_provider": null,
+    "soa_primary": null,
+    "caa": [],
+    "dnssec": null,
+    "asn": null,
+    "asn_country": null,
+    "prefix": null,
+    "cdn": null,
+    "server": null,
+    "tls_org": null,
+    "tls_issuer": null,
+    "tls_names": [],
+    "tls_version": null,
+    "tls_not_before": null,
+    "tls_not_after": null,
+    "registrar": null,
+    "registered": null,
+    "registration_expires": null,
+    "domain_status": []
+   },
+   "request": {
+    "removal_host": "blockshopper.com",
+    "same_site": true,
+    "https": true,
+    "redirected": false,
+    "redirect_count": null,
+    "form_enctype": null,
+    "content_type": null,
+    "hsts": null,
+    "hsts_max_age": null,
+    "hsts_subdomains": null,
+    "hsts_preload": null,
+    "http_version": null,
+    "http3": null,
+    "frame_options": null,
+    "nosniff": null,
+    "referrer_policy": null,
+    "csp": null,
+    "powered_by": null,
+    "cookie_names": []
+   },
+   "automation": {
+    "search_scanned": true,
+    "search_fillable": true,
+    "search_captcha": false,
+    "search_fields": [
+     "full_name"
+    ],
+    "removal_form_fillable": false,
+    "removal_email_usable": false,
+    "removal_fields": [],
+    "removal_path": null,
+    "fully_automatable": false,
+    "usable_emails": [],
+    "search_required": [],
+    "removal_required": [],
+    "email_verification": null,
+    "id_document": null,
+    "shared_removal_ids": [],
+    "removal_captcha": false,
+    "captcha_blocks_form": false,
+    "captcha_email_fallback": false,
+    "removal_blocker": "no_channel"
+   },
+   "search_test": {
+    "outcome": "submitted",
+    "http_status": 200,
+    "path_prefix": "search",
+    "fields_sent": [
+     "full_name"
+    ],
+    "missing": [],
+    "page_kind": "other",
+    "result_count": null,
+    "checked_at": "2026-10-26T06:19:59+00:00"
+   }
+  },
+  "obitsarchive": {
+   "schema_version": "4.0.0",
+   "id": "obitsarchive",
+   "name": "ObitsArchive",
+   "category": "people-search",
+   "domain": "obitsarchive.com",
+   "checked_at": "2026-10-26T06:16:55+00:00",
+   "liveness": "alive",
+   "liveness_detail": "obitsarchive.com answered HTTP 200 on 2026-10-26. A name search returned obituaries.",
+   "homepage": "https://www.obitsarchive.com/",
+   "logo_url": "https://www.obitsarchive.com/sites/default/files/Obits-logo-original.png",
+   "images": [
+    {
+     "url": "https://www.obitsarchive.com/favicons/favicon.ico",
+     "kind": "icon",
+     "source_page": "https://www.obitsarchive.com/"
+    },
+    {
+     "url": "https://www.obitsarchive.com/favicons/apple-touch-icon.png",
+     "kind": "apple_touch_icon",
+     "source_page": "https://www.obitsarchive.com/"
+    },
+    {
+     "url": "https://www.obitsarchive.com/favicons/apple-touch-icon-57x57.png",
+     "kind": "apple_touch_icon",
+     "source_page": "https://www.obitsarchive.com/"
+    },
+    {
+     "url": "https://www.obitsarchive.com/favicons/apple-touch-icon-72x72.png",
+     "kind": "apple_touch_icon",
+     "source_page": "https://www.obitsarchive.com/"
+    },
+    {
+     "url": "https://www.obitsarchive.com/favicons/apple-touch-icon-76x76.png",
+     "kind": "apple_touch_icon",
+     "source_page": "https://www.obitsarchive.com/"
+    },
+    {
+     "url": "https://www.obitsarchive.com/favicons/apple-touch-icon-114x114.png",
+     "kind": "apple_touch_icon",
+     "source_page": "https://www.obitsarchive.com/"
+    },
+    {
+     "url": "https://www.obitsarchive.com/favicons/apple-touch-icon-120x120.png",
+     "kind": "apple_touch_icon",
+     "source_page": "https://www.obitsarchive.com/"
+    },
+    {
+     "url": "https://www.obitsarchive.com/favicons/apple-touch-icon-144x144.png",
+     "kind": "apple_touch_icon",
+     "source_page": "https://www.obitsarchive.com/"
+    },
+    {
+     "url": "https://www.obitsarchive.com/favicons/apple-touch-icon-152x152.png",
+     "kind": "apple_touch_icon",
+     "source_page": "https://www.obitsarchive.com/"
+    },
+    {
+     "url": "https://www.obitsarchive.com/favicons/apple-touch-icon-180x180.png",
+     "kind": "apple_touch_icon",
+     "source_page": "https://www.obitsarchive.com/"
+    },
+    {
+     "url": "https://www.obitsarchive.com/sites/default/files/Obits-OG-logo.png",
+     "kind": "og_image",
+     "source_page": "https://www.obitsarchive.com/"
+    },
+    {
+     "url": "https://www.obitsarchive.com/sites/default/files/Obits-logo-original.png",
+     "kind": "logo",
+     "source_page": "https://www.obitsarchive.com/"
+    },
+    {
+     "url": "https://www.obitsarchive.com/sites/all/themes/obits_bootstrap/css/images/obits-archive-logo-white.png",
+     "kind": "logo",
+     "source_page": "https://www.obitsarchive.com/"
+    }
+   ],
+   "theme_color": null,
+   "languages": [
+    "en"
+   ],
+   "legal_name": null,
+   "search": {
+    "available": true,
+    "method": "http_get",
+    "page_url": "https://www.obitsarchive.com/obituaries",
+    "form_action": "https://www.obitsarchive.com/obituaries",
+    "inputs": [
+     {
+      "name": "lname",
+      "type": "text",
+      "canonical": "last_name",
+      "required": false,
+      "autocomplete": null,
+      "placeholder": "Last Name",
+      "id": "edit-lname",
+      "label": "Last Name",
+      "inputmode": null,
+      "pattern": null,
+      "minlength": null,
+      "maxlength": null,
+      "min": null,
+      "max": null,
+      "step": null,
+      "accept": null,
+      "multiple": false,
+      "disabled": false,
+      "readonly": false,
+      "checked": false,
+      "value": null
+     },
+     {
+      "name": "fname",
+      "type": "text",
+      "canonical": "first_name",
+      "required": false,
+      "autocomplete": null,
+      "placeholder": "First Name",
+      "id": "edit-fname",
+      "label": "First Name",
+      "inputmode": null,
+      "pattern": null,
+      "minlength": null,
+      "maxlength": null,
+      "min": null,
+      "max": null,
+      "step": null,
+      "accept": null,
+      "multiple": false,
+      "disabled": false,
+      "readonly": false,
+      "checked": false,
+      "value": null
+     }
+    ],
+    "url_pattern": "https://www.obitsarchive.com/obituaries?lname={lname}&fname={fname}",
+    "directory_prefixes": [],
+    "paywall": null,
+    "login_wall": null,
+    "form_meta": {
+     "id": "oa-search-results-form",
+     "name": null,
+     "autocomplete": null,
+     "novalidate": null,
+     "submit_label": null,
+     "hidden_names": [
+      "sort"
+     ]
+    },
+    "captcha_provider": null,
+    "captcha_sitekey": null,
+    "captcha_detail": null,
+    "captcha_checked": true
+   },
+   "removal": {
+    "url": "https://www.obitsarchive.com/privacy-policy",
+    "final_url": "https://www.obitsarchive.com/privacy-policy",
+    "http_status": 200,
+    "kinds": [
+     "opt_out"
+    ],
+    "channels": [
+     "email",
+     "phone"
+    ],
+    "emails": [
+     {
+      "email": "privacypolicy@obitsarchive.com",
+      "confidence": "extracted",
+      "source_url": "https://www.obitsarchive.com/privacy-policy"
+     }
+    ],
+    "phones": [
+     "(800) 896-5587",
+     "1.800.762.8182"
+    ],
+    "postal_address": null,
+    "portal": null,
+    "form_fields": [],
+    "csrf_field_name": null,
+    "requires_profile_url": null,
+    "captcha": {
+     "provider": null,
+     "sitekey": null,
+     "pages": [],
+     "checked": null,
+     "checked_url": null,
+     "detail": null
+    },
+    "consent_vendor": null,
+    "success_text": null,
+    "suppression_not_deletion": null,
+    "processing_days": null,
+    "processing_text": null,
+    "form_action": null,
+    "form_method": null,
+    "form_meta": {
+     "id": null,
+     "name": null,
+     "autocomplete": null,
+     "novalidate": null,
+     "submit_label": null,
+     "hidden_names": []
+    }
+   },
+   "bot_defense": {
+    "vendor": null,
+    "outcome": "none"
+   },
+   "legal": {
+    "privacy_policy_url": "https://www.obitsarchive.com/privacy-policy",
+    "terms_url": null,
+    "automation_prohibited": null,
+    "automation_clause": null,
+    "residency": [],
+    "authorized_agent": null,
+    "data_categories": [
+     "identifiers",
+     "sensitive"
+    ],
+    "sells_personal_information": null,
+    "sells_clause": null,
+    "children_not_directed": null
+   },
+   "pages": [
+    {
+     "url": "https://obitsarchive.com/",
+     "final_url": "https://www.obitsarchive.com/",
+     "status": 200,
+     "role": "home",
+     "title": "Obituary Archives - Find Your Ancestors' Story",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.obitsarchive.com/",
+     "final_url": "https://www.obitsarchive.com/",
+     "status": 200,
+     "role": "home",
+     "title": "Obituary Archives - Find Your Ancestors' Story",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.obitsarchive.com/privacy-policy",
+     "final_url": "https://www.obitsarchive.com/privacy-policy",
+     "status": 200,
+     "role": "catalog",
+     "title": "Privacy Policy | ObitsArchive",
+     "liveness": "alive"
+    }
+   ],
+   "location": {
+    "country": "US",
+    "region": "FL",
+    "locality": "Naples",
+    "postal_code": "34108",
+    "street": null,
+    "postal_address": "Naples, FL, 34108, US",
+    "coverage": [
+     "US"
+    ],
+    "search_regions": [],
+    "sources": [
+     "page"
+    ]
+   },
+   "network": {
+    "checked": false,
+    "addresses": [],
+    "ipv6": [],
+    "cname": null,
+    "mx": [],
+    "mail_provider": null,
+    "spf": null,
+    "dmarc": null,
+    "dkim": [],
+    "nameservers": [],
+    "dns_provider": null,
+    "soa_primary": null,
+    "caa": [],
+    "dnssec": null,
+    "asn": null,
+    "asn_country": null,
+    "prefix": null,
+    "cdn": null,
+    "server": null,
+    "tls_org": null,
+    "tls_issuer": null,
+    "tls_names": [],
+    "tls_version": null,
+    "tls_not_before": null,
+    "tls_not_after": null,
+    "registrar": null,
+    "registered": null,
+    "registration_expires": null,
+    "domain_status": []
+   },
+   "request": {
+    "removal_host": "obitsarchive.com",
+    "same_site": true,
+    "https": true,
+    "redirected": false,
+    "redirect_count": null,
+    "form_enctype": null,
+    "content_type": null,
+    "hsts": null,
+    "hsts_max_age": null,
+    "hsts_subdomains": null,
+    "hsts_preload": null,
+    "http_version": null,
+    "http3": null,
+    "frame_options": null,
+    "nosniff": null,
+    "referrer_policy": null,
+    "csp": null,
+    "powered_by": null,
+    "cookie_names": []
+   },
+   "automation": {
+    "search_scanned": true,
+    "search_fillable": true,
+    "search_captcha": false,
+    "search_fields": [
+     "last_name",
+     "first_name"
+    ],
+    "removal_form_fillable": false,
+    "removal_email_usable": true,
+    "removal_fields": [],
+    "removal_path": "email",
+    "fully_automatable": true,
+    "usable_emails": [
+     "privacypolicy@obitsarchive.com"
+    ],
+    "search_required": [],
+    "removal_required": [],
+    "email_verification": null,
+    "id_document": null,
+    "shared_removal_ids": [],
+    "removal_captcha": false,
+    "captcha_blocks_form": false,
+    "captcha_email_fallback": false,
+    "removal_blocker": null
+   },
+   "search_test": {
+    "outcome": "submitted",
+    "http_status": 200,
+    "path_prefix": "obituaries",
+    "fields_sent": [
+     "last_name",
+     "first_name"
+    ],
+    "missing": [],
+    "page_kind": "form",
+    "result_count": null,
+    "checked_at": "2026-10-26T06:19:59+00:00"
+   }
+  },
+  "recentlybooked": {
+   "schema_version": "4.0.0",
+   "id": "recentlybooked",
+   "name": "RecentlyBooked",
+   "category": "background-checks",
+   "domain": "recentlybooked.com",
+   "checked_at": "2026-10-26T06:16:54+00:00",
+   "liveness": "alive",
+   "liveness_detail": "recentlybooked.com answered HTTP 200 on 2026-10-26. A name search returned booking records.",
+   "homepage": "https://recentlybooked.com/",
+   "logo_url": "https://recentlybooked.com/images/logo-full.svg",
+   "images": [
+    {
+     "url": "https://recentlybooked.com/favicon.ico",
+     "kind": "icon",
+     "source_page": "https://recentlybooked.com/"
+    },
+    {
+     "url": "https://recentlybooked.com/favicon-48.png",
+     "kind": "icon",
+     "source_page": "https://recentlybooked.com/"
+    },
+    {
+     "url": "https://recentlybooked.com/favicon-96.png",
+     "kind": "icon",
+     "source_page": "https://recentlybooked.com/"
+    },
+    {
+     "url": "https://recentlybooked.com/favicon-192.png",
+     "kind": "icon",
+     "source_page": "https://recentlybooked.com/"
+    },
+    {
+     "url": "https://recentlybooked.com/apple-touch-icon.png",
+     "kind": "apple_touch_icon",
+     "source_page": "https://recentlybooked.com/"
+    },
+    {
+     "url": "https://recentlybooked.com/images/logo-full.svg",
+     "kind": "json_ld",
+     "source_page": "https://recentlybooked.com/"
+    }
+   ],
+   "theme_color": null,
+   "languages": [
+    "en"
+   ],
+   "legal_name": "RecentlyBooked.com",
+   "search": {
+    "available": true,
+    "method": "http_get",
+    "page_url": "https://recentlybooked.com/search",
+    "form_action": "https://recentlybooked.com/search",
+    "inputs": [
+     {
+      "name": "StateCode",
+      "type": "select",
+      "canonical": "region",
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null,
+      "id": "stateSelect",
+      "label": null,
+      "inputmode": null,
+      "pattern": null,
+      "minlength": null,
+      "maxlength": null,
+      "min": null,
+      "max": null,
+      "step": null,
+      "accept": null,
+      "multiple": false,
+      "disabled": false,
+      "readonly": false,
+      "checked": false,
+      "value": null
+     },
+     {
+      "name": "Name",
+      "type": "text",
+      "canonical": "last_name",
+      "required": false,
+      "autocomplete": null,
+      "placeholder": "First or last name",
+      "id": null,
+      "label": null,
+      "inputmode": null,
+      "pattern": null,
+      "minlength": null,
+      "maxlength": null,
+      "min": null,
+      "max": null,
+      "step": null,
+      "accept": null,
+      "multiple": false,
+      "disabled": false,
+      "readonly": false,
+      "checked": false,
+      "value": null
+     }
+    ],
+    "url_pattern": "https://recentlybooked.com/search?StateCode={StateCode}&Name={Name}",
+    "directory_prefixes": [],
+    "paywall": null,
+    "login_wall": null,
+    "form_meta": {
+     "id": null,
+     "name": null,
+     "autocomplete": null,
+     "novalidate": null,
+     "submit_label": null,
+     "hidden_names": []
+    },
+    "captcha_provider": null,
+    "captcha_sitekey": null,
+    "captcha_detail": null,
+    "captcha_checked": true
+   },
+   "removal": {
+    "url": "https://recentlybooked.com/mugshot-removal-policy",
+    "final_url": "https://recentlybooked.com/mugshot-removal-policy",
+    "http_status": 200,
+    "kinds": [
+     "opt_out",
+     "do_not_sell"
+    ],
+    "channels": [
+     "email"
+    ],
+    "emails": [
+     {
+      "email": "info@recentlybooked.com",
+      "confidence": "uncertain",
+      "source_url": "https://recentlybooked.com/mugshot-removal-policy"
+     }
+    ],
+    "phones": [],
+    "postal_address": null,
+    "portal": null,
+    "form_fields": [],
+    "csrf_field_name": null,
+    "requires_profile_url": null,
+    "captcha": {
+     "provider": null,
+     "sitekey": null,
+     "pages": [],
+     "checked": null,
+     "checked_url": null,
+     "detail": null
+    },
+    "consent_vendor": null,
+    "success_text": null,
+    "suppression_not_deletion": null,
+    "processing_days": null,
+    "processing_text": null,
+    "form_action": null,
+    "form_method": null,
+    "form_meta": {
+     "id": null,
+     "name": null,
+     "autocomplete": null,
+     "novalidate": null,
+     "submit_label": null,
+     "hidden_names": []
+    }
+   },
+   "bot_defense": {
+    "vendor": null,
+    "outcome": "none"
+   },
+   "legal": {
+    "privacy_policy_url": null,
+    "terms_url": null,
+    "automation_prohibited": null,
+    "automation_clause": null,
+    "residency": [
+     "US"
+    ],
+    "authorized_agent": null,
+    "data_categories": [
+     "identifiers"
+    ],
+    "sells_personal_information": null,
+    "sells_clause": null,
+    "children_not_directed": null
+   },
+   "pages": [
+    {
+     "url": "https://recentlybooked.com/",
+     "final_url": "https://recentlybooked.com/",
+     "status": 200,
+     "role": "home",
+     "title": "Recently Booked Arrests & Mugshots by State and County",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.recentlybooked.com/",
+     "final_url": "https://recentlybooked.com/",
+     "status": 200,
+     "role": "home",
+     "title": "Recently Booked Arrests & Mugshots by State and County",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://recentlybooked.com/mugshot-removal-policy",
+     "final_url": "https://recentlybooked.com/mugshot-removal-policy",
+     "status": 200,
+     "role": "catalog",
+     "title": "Mugshot Removal Policy | RecentlyBooked.com",
+     "liveness": "alive"
+    }
+   ],
+   "location": {
+    "country": "US",
+    "region": null,
+    "locality": null,
+    "postal_code": null,
+    "street": null,
+    "postal_address": null,
+    "coverage": [
+     "US"
+    ],
+    "search_regions": [],
+    "sources": [
+     "page"
+    ]
+   },
+   "network": {
+    "checked": false,
+    "addresses": [],
+    "ipv6": [],
+    "cname": null,
+    "mx": [],
+    "mail_provider": null,
+    "spf": null,
+    "dmarc": null,
+    "dkim": [],
+    "nameservers": [],
+    "dns_provider": null,
+    "soa_primary": null,
+    "caa": [],
+    "dnssec": null,
+    "asn": null,
+    "asn_country": null,
+    "prefix": null,
+    "cdn": null,
+    "server": null,
+    "tls_org": null,
+    "tls_issuer": null,
+    "tls_names": [],
+    "tls_version": null,
+    "tls_not_before": null,
+    "tls_not_after": null,
+    "registrar": null,
+    "registered": null,
+    "registration_expires": null,
+    "domain_status": []
+   },
+   "request": {
+    "removal_host": "recentlybooked.com",
+    "same_site": true,
+    "https": true,
+    "redirected": false,
+    "redirect_count": null,
+    "form_enctype": null,
+    "content_type": null,
+    "hsts": null,
+    "hsts_max_age": null,
+    "hsts_subdomains": null,
+    "hsts_preload": null,
+    "http_version": null,
+    "http3": null,
+    "frame_options": null,
+    "nosniff": null,
+    "referrer_policy": null,
+    "csp": null,
+    "powered_by": null,
+    "cookie_names": []
+   },
+   "automation": {
+    "search_scanned": true,
+    "search_fillable": true,
+    "search_captcha": false,
+    "search_fields": [
+     "region",
+     "last_name"
+    ],
+    "removal_form_fillable": false,
+    "removal_email_usable": false,
+    "removal_fields": [],
+    "removal_path": null,
+    "fully_automatable": false,
+    "usable_emails": [],
+    "search_required": [],
+    "removal_required": [],
+    "email_verification": null,
+    "id_document": null,
+    "shared_removal_ids": [],
+    "removal_captcha": false,
+    "captcha_blocks_form": false,
+    "captcha_email_fallback": false,
+    "removal_blocker": "generic_inbox"
+   },
+   "search_test": {
+    "outcome": "submitted",
+    "http_status": 200,
+    "path_prefix": "search",
+    "fields_sent": [
+     "region",
+     "last_name"
+    ],
+    "missing": [],
+    "page_kind": "form",
+    "result_count": null,
+    "checked_at": "2026-10-26T06:19:59+00:00"
+   }
+  },
+  "npino": {
+   "schema_version": "4.0.0",
+   "id": "npino",
+   "name": "NPINo",
+   "category": "public-records",
+   "domain": "npino.com",
+   "checked_at": "2026-10-26T06:16:54+00:00",
+   "liveness": "alive",
+   "liveness_detail": "npino.com answered HTTP 200 on 2026-10-26. A name search returned provider listings.",
+   "homepage": "https://npino.com/",
+   "logo_url": "https://npino.com/images/favicon.png",
+   "images": [
+    {
+     "url": "https://npino.com/images/favicon.png",
+     "kind": "icon",
+     "source_page": "https://npino.com/"
+    }
+   ],
+   "theme_color": null,
+   "languages": [
+    "en"
+   ],
+   "legal_name": "NPI No.",
+   "search": {
+    "available": true,
+    "method": "http_form_post",
+    "page_url": "https://npino.com/",
+    "form_action": "https://npino.com/",
+    "inputs": [
+     {
+      "name": "searchterm",
+      "type": "text",
+      "canonical": "full_name",
+      "required": false,
+      "autocomplete": null,
+      "placeholder": "NPI Number or Healthcare Provider Name",
+      "id": null,
+      "label": null,
+      "inputmode": null,
+      "pattern": null,
+      "minlength": null,
+      "maxlength": null,
+      "min": null,
+      "max": null,
+      "step": null,
+      "accept": null,
+      "multiple": false,
+      "disabled": false,
+      "readonly": false,
+      "checked": false,
+      "value": null
+     }
+    ],
+    "url_pattern": "https://npino.com/",
+    "directory_prefixes": [],
+    "paywall": null,
+    "login_wall": null,
+    "form_meta": {
+     "id": null,
+     "name": "form1",
+     "autocomplete": null,
+     "novalidate": null,
+     "submit_label": null,
+     "hidden_names": []
+    },
+    "captcha_provider": null,
+    "captcha_sitekey": null,
+    "captcha_detail": null,
+    "captcha_checked": true
+   },
+   "removal": {
+    "url": "https://npino.com/pages/contact-us/",
+    "final_url": "https://npino.com/pages/contact-us/",
+    "http_status": 200,
+    "kinds": [
+     "opt_out"
+    ],
+    "channels": [
+     "email"
+    ],
+    "emails": [
+     {
+      "email": "info@npino.com",
+      "confidence": "uncertain",
+      "source_url": "https://npino.com/pages/contact-us/"
+     }
+    ],
+    "phones": [],
+    "postal_address": null,
+    "portal": null,
+    "form_fields": [],
+    "csrf_field_name": null,
+    "requires_profile_url": null,
+    "captcha": {
+     "provider": null,
+     "sitekey": null,
+     "pages": [],
+     "checked": null,
+     "checked_url": null,
+     "detail": null
+    },
+    "consent_vendor": null,
+    "success_text": null,
+    "suppression_not_deletion": null,
+    "processing_days": null,
+    "processing_text": null,
+    "form_action": null,
+    "form_method": null,
+    "form_meta": {
+     "id": null,
+     "name": null,
+     "autocomplete": null,
+     "novalidate": null,
+     "submit_label": null,
+     "hidden_names": []
+    }
+   },
+   "bot_defense": {
+    "vendor": null,
+    "outcome": "none"
+   },
+   "legal": {
+    "privacy_policy_url": null,
+    "terms_url": null,
+    "automation_prohibited": null,
+    "automation_clause": null,
+    "residency": [],
+    "authorized_agent": null,
+    "data_categories": [],
+    "sells_personal_information": null,
+    "sells_clause": null,
+    "children_not_directed": null
+   },
+   "pages": [
+    {
+     "url": "https://npino.com/",
+     "final_url": "https://npino.com/",
+     "status": 200,
+     "role": "home",
+     "title": "NPI Number Lookup for Doctors & Physicians in USA | NPI No.",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.npino.com/",
+     "final_url": "https://npino.com/",
+     "status": 200,
+     "role": "home",
+     "title": "NPI Number Lookup for Doctors & Physicians in USA | NPI No.",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://npino.com/pages/contact-us/",
+     "final_url": "https://npino.com/pages/contact-us/",
+     "status": 200,
+     "role": "catalog",
+     "title": "Contact Us | NPI No.",
+     "liveness": "alive"
+    }
+   ],
+   "location": {
+    "country": "US",
+    "region": null,
+    "locality": null,
+    "postal_code": null,
+    "street": null,
+    "postal_address": null,
+    "coverage": [
+     "US"
+    ],
+    "search_regions": [],
+    "sources": [
+     "manual"
+    ]
+   },
+   "network": {
+    "checked": false,
+    "addresses": [],
+    "ipv6": [],
+    "cname": null,
+    "mx": [],
+    "mail_provider": null,
+    "spf": null,
+    "dmarc": null,
+    "dkim": [],
+    "nameservers": [],
+    "dns_provider": null,
+    "soa_primary": null,
+    "caa": [],
+    "dnssec": null,
+    "asn": null,
+    "asn_country": null,
+    "prefix": null,
+    "cdn": null,
+    "server": null,
+    "tls_org": null,
+    "tls_issuer": null,
+    "tls_names": [],
+    "tls_version": null,
+    "tls_not_before": null,
+    "tls_not_after": null,
+    "registrar": null,
+    "registered": null,
+    "registration_expires": null,
+    "domain_status": []
+   },
+   "request": {
+    "removal_host": "npino.com",
+    "same_site": true,
+    "https": true,
+    "redirected": false,
+    "redirect_count": null,
+    "form_enctype": null,
+    "content_type": null,
+    "hsts": null,
+    "hsts_max_age": null,
+    "hsts_subdomains": null,
+    "hsts_preload": null,
+    "http_version": null,
+    "http3": null,
+    "frame_options": null,
+    "nosniff": null,
+    "referrer_policy": null,
+    "csp": null,
+    "powered_by": null,
+    "cookie_names": []
+   },
+   "automation": {
+    "search_scanned": true,
+    "search_fillable": true,
+    "search_captcha": false,
+    "search_fields": [
+     "full_name"
+    ],
+    "removal_form_fillable": false,
+    "removal_email_usable": false,
+    "removal_fields": [],
+    "removal_path": null,
+    "fully_automatable": false,
+    "usable_emails": [],
+    "search_required": [],
+    "removal_required": [],
+    "email_verification": null,
+    "id_document": null,
+    "shared_removal_ids": [],
+    "removal_captcha": false,
+    "captcha_blocks_form": false,
+    "captcha_email_fallback": false,
+    "removal_blocker": "generic_inbox"
+   },
+   "search_test": {
+    "outcome": "submitted",
+    "http_status": 200,
+    "path_prefix": null,
+    "fields_sent": [
+     "full_name"
+    ],
+    "missing": [],
+    "page_kind": "results",
+    "result_count": 56,
+    "checked_at": "2026-10-26T06:19:59+00:00"
+   }
+  },
+  "npi-number-lookup": {
+   "schema_version": "4.0.0",
+   "id": "npi-number-lookup",
+   "name": "NPI Number Lookup",
+   "category": "public-records",
+   "domain": "npinumberlookup.org",
+   "checked_at": "2026-10-26T06:16:52+00:00",
+   "liveness": "alive",
+   "liveness_detail": "npinumberlookup.org answered HTTP 200 on 2026-10-26. A name search returned providers.",
+   "homepage": "https://npinumberlookup.org/",
+   "logo_url": null,
+   "images": [],
+   "theme_color": null,
+   "languages": [],
+   "legal_name": null,
+   "search": {
+    "available": true,
+    "method": "http_form_post",
+    "page_url": "https://www.npinumberlookup.org/",
+    "form_action": "https://www.npinumberlookup.org/getResults.php",
+    "inputs": [
+     {
+      "name": "last",
+      "type": "text",
+      "canonical": "last_name",
+      "required": false,
+      "autocomplete": null,
+      "placeholder": "Last Name or Entity",
+      "id": "last",
+      "label": null,
+      "inputmode": null,
+      "pattern": null,
+      "minlength": null,
+      "maxlength": null,
+      "min": null,
+      "max": null,
+      "step": null,
+      "accept": null,
+      "multiple": false,
+      "disabled": false,
+      "readonly": false,
+      "checked": false,
+      "value": null
+     },
+     {
+      "name": "first",
+      "type": "text",
+      "canonical": "first_name",
+      "required": false,
+      "autocomplete": null,
+      "placeholder": "First Name",
+      "id": "first",
+      "label": null,
+      "inputmode": null,
+      "pattern": null,
+      "minlength": null,
+      "maxlength": null,
+      "min": null,
+      "max": null,
+      "step": null,
+      "accept": null,
+      "multiple": false,
+      "disabled": false,
+      "readonly": false,
+      "checked": false,
+      "value": null
+     },
+     {
+      "name": "pracstate",
+      "type": "select",
+      "canonical": "region",
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null,
+      "id": "pracstate",
+      "label": null,
+      "inputmode": null,
+      "pattern": null,
+      "minlength": null,
+      "maxlength": null,
+      "min": null,
+      "max": null,
+      "step": null,
+      "accept": null,
+      "multiple": false,
+      "disabled": false,
+      "readonly": false,
+      "checked": false,
+      "value": null
+     }
+    ],
+    "url_pattern": "https://www.npinumberlookup.org/getResults.php",
+    "directory_prefixes": [],
+    "paywall": null,
+    "login_wall": null,
+    "form_meta": {
+     "id": null,
+     "name": null,
+     "autocomplete": null,
+     "novalidate": null,
+     "submit_label": "Search",
+     "hidden_names": []
+    },
+    "captcha_provider": null,
+    "captcha_sitekey": null,
+    "captcha_detail": null,
+    "captcha_checked": true
+   },
+   "removal": {
+    "url": "https://www.npinumberlookup.org/contact.php",
+    "final_url": null,
+    "http_status": null,
+    "kinds": [
+     "opt_out"
+    ],
+    "channels": [],
+    "emails": [],
+    "phones": [],
+    "postal_address": null,
+    "portal": null,
+    "form_fields": [],
+    "csrf_field_name": null,
+    "requires_profile_url": null,
+    "captcha": {
+     "provider": null,
+     "sitekey": null,
+     "pages": [],
+     "checked": null,
+     "checked_url": null,
+     "detail": null
+    },
+    "consent_vendor": null,
+    "success_text": null,
+    "suppression_not_deletion": null,
+    "processing_days": null,
+    "processing_text": null,
+    "form_action": null,
+    "form_method": null,
+    "form_meta": {
+     "id": null,
+     "name": null,
+     "autocomplete": null,
+     "novalidate": null,
+     "submit_label": null,
+     "hidden_names": []
+    }
+   },
+   "bot_defense": {
+    "vendor": null,
+    "outcome": "none"
+   },
+   "legal": {
+    "privacy_policy_url": null,
+    "terms_url": null,
+    "automation_prohibited": null,
+    "automation_clause": null,
+    "residency": [],
+    "authorized_agent": null,
+    "data_categories": [],
+    "sells_personal_information": null,
+    "sells_clause": null,
+    "children_not_directed": null
+   },
+   "pages": [
+    {
+     "url": "https://npinumberlookup.org/",
+     "final_url": null,
+     "status": null,
+     "role": "home",
+     "title": "",
+     "liveness": "robots_disallowed"
+    },
+    {
+     "url": "https://www.npinumberlookup.org/",
+     "final_url": null,
+     "status": null,
+     "role": "home",
+     "title": "",
+     "liveness": "robots_disallowed"
+    },
+    {
+     "url": "https://www.npinumberlookup.org/contact.php",
+     "final_url": null,
+     "status": null,
+     "role": "catalog",
+     "title": "",
+     "liveness": "robots_disallowed"
+    }
+   ],
+   "location": {
+    "country": "US",
+    "region": null,
+    "locality": null,
+    "postal_code": null,
+    "street": null,
+    "postal_address": null,
+    "coverage": [
+     "US"
+    ],
+    "search_regions": [],
+    "sources": [
+     "manual"
+    ]
+   },
+   "network": {
+    "checked": false,
+    "addresses": [],
+    "ipv6": [],
+    "cname": null,
+    "mx": [],
+    "mail_provider": null,
+    "spf": null,
+    "dmarc": null,
+    "dkim": [],
+    "nameservers": [],
+    "dns_provider": null,
+    "soa_primary": null,
+    "caa": [],
+    "dnssec": null,
+    "asn": null,
+    "asn_country": null,
+    "prefix": null,
+    "cdn": null,
+    "server": null,
+    "tls_org": null,
+    "tls_issuer": null,
+    "tls_names": [],
+    "tls_version": null,
+    "tls_not_before": null,
+    "tls_not_after": null,
+    "registrar": null,
+    "registered": null,
+    "registration_expires": null,
+    "domain_status": []
+   },
+   "request": {
+    "removal_host": "npinumberlookup.org",
+    "same_site": true,
+    "https": true,
+    "redirected": null,
+    "redirect_count": null,
+    "form_enctype": null,
+    "content_type": null,
+    "hsts": null,
+    "hsts_max_age": null,
+    "hsts_subdomains": null,
+    "hsts_preload": null,
+    "http_version": null,
+    "http3": null,
+    "frame_options": null,
+    "nosniff": null,
+    "referrer_policy": null,
+    "csp": null,
+    "powered_by": null,
+    "cookie_names": []
+   },
+   "automation": {
+    "search_scanned": true,
+    "search_fillable": true,
+    "search_captcha": false,
+    "search_fields": [
+     "last_name",
+     "first_name",
+     "region"
+    ],
+    "removal_form_fillable": false,
+    "removal_email_usable": false,
+    "removal_fields": [],
+    "removal_path": null,
+    "fully_automatable": false,
+    "usable_emails": [],
+    "search_required": [],
+    "removal_required": [],
+    "email_verification": null,
+    "id_document": null,
+    "shared_removal_ids": [],
+    "removal_captcha": false,
+    "captcha_blocks_form": false,
+    "captcha_email_fallback": false,
+    "removal_blocker": "no_channel"
+   },
+   "search_test": {
+    "outcome": "challenge",
+    "http_status": 403,
+    "path_prefix": "getResults.php",
+    "fields_sent": [
+     "last_name",
+     "first_name",
+     "region"
+    ],
+    "missing": [],
+    "page_kind": null,
+    "result_count": null,
+    "checked_at": "2026-10-26T06:19:31+00:00"
    }
   }
  }

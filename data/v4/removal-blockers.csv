@@ -4,7 +4,7 @@ arkansas-arrests,Arkansas Arrests,arkansasarrests.org,background-checks,alive,no
 arrestwarrant-org,ArrestWarrant.org,arrestwarrant.org,background-checks,alive,phone_postal,Phone and a mailing address are the only channels,,,,false,,,,postal_mail;phone
 backgroundcheckers,BackgroundCheckers,backgroundcheckers.net,background-checks,error,fetch_error,The opt-out URL failed before a page was read,,,,false,,,,
 california-arrests,California Arrests,californiaarrests.org,background-checks,alive,captcha_no_form,A CAPTCHA widget is on the removal page and no form fields or usable email were stored,turnstile,0x4AAAAAADqylUfmKvDmKAZs,checkbox,true,,,,
-california-criminal-records-search,California Criminal Records Search,californiacriminalrecords.org,background-checks,alive,captcha_form,Removal form is behind a CAPTCHA widget and no usable removal email was found,recaptcha_v2,6LeXqgcTAAAAAAwtW3KGCoLqVPlY9qfgCPzxYp5Y,checkbox,true,,true,,web_form
+california-criminal-records-search,California Criminal Records Search,californiacriminalrecords.org,background-checks,dead,captcha_form,Removal form is behind a CAPTCHA widget and no usable removal email was found,recaptcha_v2,6LeXqgcTAAAAAAwtW3KGCoLqVPlY9qfgCPzxYp5Y,checkbox,true,,true,,web_form
 colorado-arrests,Colorado Arrests,coloradoarrests.org,background-checks,alive,captcha_no_form,A CAPTCHA widget is on the removal page and no form fields or usable email were stored,turnstile,0x4AAAAAADyMaIapcmFWs60T,checkbox,true,,,,
 fastbackgroundcheck,FastBackgroundCheck,fastbackgroundcheck.com,background-checks,blocked,bot_wall,The opt-out URL returned a bot wall and a browser retry did not reveal a removal channel,recaptcha_v2,,,false,,,,
 findmugshots,FindMugshots,findmugshots.com,background-checks,opt_out_missing,opt_out_gone,The catalog opt-out URL returned 404 or 410,,,,false,,,,
@@ -33,10 +33,11 @@ openroom,Openroom,openroom.ca,background-checks,alive,no_channel,"The page loade
 oregon-arrests,Oregon Arrests,oregonarrest.org,background-checks,alive,postal,The only published channel is a mailing address,,,,true,,,,postal_mail
 pennsylvania-arrests,Pennsylvania Arrests,pennsylvaniaarrests.org,background-checks,alive,captcha_no_form,A CAPTCHA widget is on the removal page and no form fields or usable email were stored,turnstile,0x4AAAAAADyp56n_92FSO5ZN,checkbox,true,,,,
 peoplewhizr,PeopleWhizr,peoplewhizr.com,background-checks,alive,generic_inbox,"Only a generic inbox was found, and the page does not say to use it for removal",,,,false,,,info@peoplewhizr.com,email;phone
+recentlybooked,RecentlyBooked,recentlybooked.com,background-checks,alive,generic_inbox,"Only a generic inbox was found, and the page does not say to use it for removal",,,,,,,info@recentlybooked.com,email
 rhode-island-arrests,Rhode Island Arrests,riarrests.org,background-checks,alive,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,true,,,,
 south-carolina-arrests,South Carolina Arrests,scarrests.org,background-checks,alive,phone,The only published channel is a phone number,,,,true,,,,phone
 tennessee-arrests,Tennessee Arrests,tennesseearrests.org,background-checks,alive,phone,The only published channel is a phone number,,,,true,,,,phone
-texas-arrest-warrants-search,Texas Arrest Warrants Search,texasarrestwarrants.org,background-checks,alive,postal,The only published channel is a mailing address,,,,true,,,,postal_mail
+texas-arrest-warrants-search,Texas Arrest Warrants Search,texasarrestwarrants.org,background-checks,dead,postal,The only published channel is a mailing address,,,,true,,,,postal_mail
 texaswarrantroundup-org,TexasWarrantRoundup.org,texaswarrantroundup.org,background-checks,alive,phone_postal,Phone and a mailing address are the only channels,,,,false,,,,postal_mail;phone
 tracers,Tracers,tracers.com,background-checks,robots_disallowed,generic_inbox,"Only a generic inbox was found, and the page does not say to use it for removal",,,,false,,,custserv@tracers.com,email;phone
 virginia-arrests,Virginia Arrests,virginiaarrests.org,background-checks,alive,postal,The only published channel is a mailing address,,,,true,,,,postal_mail
@@ -183,7 +184,7 @@ national-do-not-call-registry,National Do Not Call Registry,donotcall.gov,other,
 nc-resident-database,NC Resident Database,northcarolinaresidentdatabase.com,other,blocked,bot_wall,The opt-out URL returned a bot wall and a browser retry did not reveal a removal channel,,,,false,,,,
 new-gold-ventures-llc,New Gold Ventures LLC,thinkdatagroup.com,other,alive,generic_inbox,"Only a generic inbox was found, and the page does not say to use it for removal",,,,true,,,barry.gold@thinkdatagroup.com;info@thinkdatagroup.com;sales@thinkdatagroup.com,email;postal_mail;phone
 npir-org,NPIR.org,npir.org,other,blocked,bot_wall,The opt-out URL returned a bot wall and a browser retry did not reveal a removal channel,,,,false,,,,
-numlooker,NumLooker,numlooker.com,other,error,fetch_error,The opt-out URL failed before a page was read,,,,false,,,,
+numlooker,NumLooker,numlooker.com,other,dead,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,false,,,,
 numlookup,NumLookup,numlookup.com,other,alive,captcha_form,Removal form is behind a CAPTCHA widget and no usable removal email was found,recaptcha_v2,6LeriasfAAAAAJYHRn9fTomLucvhG5qJnX-4LRcX,checkbox,true,,true,hello@numlookup.com,web_form;email;phone
 ocean-global-inc,Ocean Global Inc,ocean.io,other,alive,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,false,,,,
 onpoint-data-strategy,OnPoint Data Strategy,onpointdatastrategy.com,other,alive,captcha_form,Removal form is behind a CAPTCHA widget and no usable removal email was found,recaptcha_v3,6LcO2DAsAAAAAKHQGDFm6uy9___cr1ptf9wnQq-e,score,true,,true,,web_form;phone
@@ -237,8 +238,8 @@ canada411,Canada411,canada411.ca,people-search,alive,phone,The only published ch
 canadian-obituaries,Canadian Obituaries,canadianobituaries.com,people-search,alive,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,,,,,
 checkpeople,CheckPeople,checkpeople.com,people-search,blocked,bot_wall,The opt-out URL returned a bot wall and a browser retry did not reveal a removal channel,,,,false,,,,
 classmates-com,Classmates.com,classmates.com,people-search,blocked,bot_wall,The opt-out URL returned a bot wall and a browser retry did not reveal a removal channel,,,,false,,,,
-cocofinder,CocoFinder,cocofinder.com,people-search,error,fetch_error,The opt-out URL failed before a page was read,,,,false,,,,
-cocofinder-net,CocoFinder.net,cocofinder.net,people-search,error,fetch_error,The opt-out URL failed before a page was read,,,,false,,,,
+cocofinder,CocoFinder,cocofinder.com,people-search,dead,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,false,,,,
+cocofinder-net,CocoFinder.net,cocofinder.net,people-search,dead,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,false,,,,
 confidentialphonelookup,ConfidentialPhoneLookup,confidentialphonelookup.com,people-search,alive,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,false,,,,
 cooperative-funeraire-brunet,Coopérative funéraire Brunet,coopfbrunet.com,people-search,alive,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,,,,,
 cooperative-funeraire-de-l-abitibi,Coopérative funéraire de l'Abitibi,cfa.coop,people-search,alive,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,,,,,
@@ -259,7 +260,7 @@ electronic-voice-services-inc-telephonelists-biz,"Electronic Voice Services, Inc
 facecheck,FaceCheck,facecheck.id,people-search,alive,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,false,,,,
 familytreenow,FamilyTreeNow,familytreenow.com,people-search,blocked,phone,The only published channel is a phone number,,,,false,,,,phone
 fastpeoplesearch,FastPeopleSearch,fastpeoplesearch.com,people-search,alive,captcha_form,Removal form is behind a CAPTCHA widget and no usable removal email was found,turnstile,0x4AAAAAADn4BqJf9JYrv4hs,checkbox,true,,true,,web_form;phone
-fastpeoplesearch-io,FastPeopleSearch.io,fastpeoplesearch.io,people-search,error,fetch_error,The opt-out URL failed before a page was read,,,,false,,,,
+fastpeoplesearch-io,FastPeopleSearch.io,fastpeoplesearch.io,people-search,dead,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,false,,,,
 findpeoplefast-net,FindPeopleFast.net,findpeoplefast.net,people-search,robots_disallowed,robots,robots.txt disallows the client. A later read still found no removal channel,,,,false,,,,
 findpeoplesearch,FindPeopleSearch,findpeoplesearch.com,people-search,dead,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,false,,,,
 fqsg-avis-de-deces,FQSG Avis de décès,federationgenealogie.qc.ca,people-search,alive,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,,,,,
@@ -329,7 +330,7 @@ spyfly,SpyFly,spyfly.com,people-search,robots_disallowed,robots,robots.txt disal
 thatsthem,ThatsThem,thatsthem.com,people-search,blocked,captcha_form,Removal form is behind a CAPTCHA widget and no usable removal email was found,turnstile,,,false,,true,,web_form;phone
 truecaller,Truecaller,truecaller.com,people-search,alive,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,true,,,,
 truepeoplesearch,TruePeopleSearch,truepeoplesearch.com,people-search,blocked,generic_inbox,"Only a generic inbox was found, and the page does not say to use it for removal",,,,false,,,support@truepeoplesearch.com,email
-truepeoplesearch-net,TruePeopleSearch.net,truepeoplesearch.net,people-search,error,fetch_error,The opt-out URL failed before a page was read,,,,false,,,,
+truepeoplesearch-net,TruePeopleSearch.net,truepeoplesearch.net,people-search,dead,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,false,,,,
 truthfinder-peopleconnect,TruthFinder (PeopleConnect),truthfinder.com,people-search,alive,phone,The only published channel is a phone number,recaptcha_v2,6LdFxVQtAAAAAK6XNodX8W6CM56PH1xTrPGVZSqh,,false,,,,phone
 ufind-name,uFind.name,ufind.name,people-search,blocked,bot_wall,The opt-out URL returned a bot wall and a browser retry did not reveal a removal channel,,,,false,,,,
 unitedstatesphonebook-usphonebook,UnitedStatesPhonebook (USPhoneBook),unitedstatesphonebook.com,people-search,blocked,captcha_form,Removal form is behind a CAPTCHA widget and no usable removal email was found,recaptcha_v2,6LcmiZYeAAAAACEbY_tBlLChTU8LZQbQ10M0o_pk,checkbox,false,,true,,web_form
@@ -347,10 +348,13 @@ veripages,Veripages,veripages.com,people-search,alive,phone,The only published c
 white-pages-canada,White Pages Canada,whitepagescanada.ca,people-search,alive,captcha_form,Removal form is behind a CAPTCHA widget and no usable removal email was found,recaptcha_v2,6LdsTDwUAAAAAJ-EC9YOGnZHYAWSOS5IHoW7GQu7,checkbox,true,,true,,web_form
 yellowpages-people-intelius-data,YellowPages People (Intelius data),people.yellowpages.com,people-search,alive,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,false,,,,
 abn-lookup,ABN Lookup,abr.business.gov.au,public-records,alive,captcha_form,Removal form is behind a CAPTCHA widget and no usable removal email was found,recaptcha_v2,,,,,true,,web_form
+blockshopper,BlockShopper,blockshopper.com,public-records,alive,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,,,,,
 brady-list,Brady List,giglio-bradylist.com,public-records,robots_disallowed,robots,robots.txt disallows the client. A later read still found no removal channel,,,,false,,,,
 courtlistener,CourtListener,courtlistener.com,public-records,alive,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,false,,,,
 florida-voter-directory,Florida Voter Directory,floridavoterdirectory.com,public-records,blocked,bot_wall,The opt-out URL returned a bot wall and a browser retry did not reveal a removal channel,,,,false,,,,
 njpropertyrecords,NJPropertyRecords,njpropertyrecords.com,public-records,alive,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,false,,,,
+npi-number-lookup,NPI Number Lookup,npinumberlookup.org,public-records,alive,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,,,,,
+npino,NPINo,npino.com,public-records,alive,generic_inbox,"Only a generic inbox was found, and the page does not say to use it for removal",,,,,,,info@npino.com,email
 nz-companies-office-individuals,NZ Companies Office director and shareholder search,app.companiesoffice.govt.nz,public-records,alive,captcha_form,Removal form is behind a CAPTCHA widget and no usable removal email was found,recaptcha_v3,6Le06vgnAAAAAGAXl3vldBUsGMt-R-V7Uxjoqm0Z,score,,,true,,web_form
 propertyradar-inc,"PropertyRadar, Inc.",propertyradar.com,public-records,alive,generic_inbox,"Only a generic inbox was found, and the page does not say to use it for removal",,,,false,,,support@propertyradar.com,email;postal_mail;phone;official_portal
 propertyrec-network,PropertyRec network,propertyrec.com,public-records,robots_disallowed,generic_inbox,"Only a generic inbox was found, and the page does not say to use it for removal",,,,false,,,support@propertyrec.com,email;phone

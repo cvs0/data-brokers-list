@@ -3963,16 +3963,16 @@
     "evidence": "GET of the catalog privacy URL followed the redirect to the LeadGenesis sign-in. The catalog URL was left in place. No account was created and no request was submitted. The stored search form on https://www.lead-enhance.com/ is the lead-buyer contact form (Name, Email, Company, Phone, and \"How can we help your business?\", all required), not a person search. The homepage, re-read on 2026-10-24, sells home-services leads and has no public name search. The form was not submitted."
   },
   "california-criminal-records-search": {
-    "checked": "2026-10-24",
-    "liveness": "alive",
-    "liveness_detail": "californiacriminalrecords.org answered HTTP 200 on 2026-10-24. Its name-results URL returned HTTP 404.",
-    "evidence": "The homepage form is a GET to /search/name/results.php. That URL with fname=John and lname=Smith returned HTTP 404, titled 404 Not Found, including after a homepage visit set a CSRF cookie. The contact page returned HTTP 200. No form was submitted."
+    "checked": "2026-10-26",
+    "offline": true,
+    "country": "US",
+    "evidence": "californiacriminalrecords.org is no longer a working search. The homepage still answers HTTP 200 and its only form is a GET to /search/name/results.php (fname, lname, state), but that URL returned HTTP 404, titled 404 Not Found, for John Smith on 2026-10-24 and again on 2026-10-26, after a homepage visit set its cookies. No results page loads for any name, so the site shows no listings. No request was submitted."
   },
   "texas-arrest-warrants-search": {
-    "checked": "2026-10-24",
-    "liveness": "alive",
-    "liveness_detail": "texasarrestwarrants.org answered HTTP 200 on 2026-10-24. Its name-results URL returned HTTP 404.",
-    "evidence": "The homepage form is a GET to /search/name/results.php. That URL with fname=John and lname=Smith returned HTTP 404, titled Not Found (#404). The privacy policy returned HTTP 200. No form was submitted."
+    "checked": "2026-10-26",
+    "offline": true,
+    "country": "US",
+    "evidence": "texasarrestwarrants.org is no longer a working search. The homepage still answers HTTP 200 and its only form is a GET to /search/name/results.php (fname, lname, state), but that URL returned HTTP 404, titled Not Found (#404), for John Smith on 2026-10-24 and again on 2026-10-26, after a homepage visit set its cookies. No results page loads for any name, so the site shows no listings. No request was submitted."
   },
   "fqsg-avis-de-deces": {
     "checked": "2026-10-24",
@@ -5392,6 +5392,224 @@
           "canonical": "full_name",
           "required": true,
           "id": null,
+          "label": null,
+          "placeholder": null
+        }
+      ]
+    },
+    "captcha_widget": false
+  },
+  "numlooker": {
+    "checked": "2026-10-26",
+    "offline": true,
+    "country": "US",
+    "evidence": "numlooker.com did not load on 2026-10-25 or 2026-10-26. Its name servers still answer (Cloudflare addresses from dns.google), but every request to https://numlooker.com/ and /remove-my-info from a US host returned Cloudflare error 522 (\"Connection timed out\": Cloudflare could not reach the site's own server) or timed out, in four checks over about an hour, and a second network also timed out. The catalog crawl on 2026-10-12 had already timed out on it. No page, search or removal form loads, so nothing about the person is shown. No request was submitted."
+  },
+  "cocofinder": {
+    "checked": "2026-10-26",
+    "offline": true,
+    "country": "US",
+    "evidence": "cocofinder.com did not load on 2026-10-25 or 2026-10-26. Its name servers still answer (Cloudflare addresses from dns.google), but every request to https://cocofinder.com/ and /remove-my-info from a US host returned Cloudflare error 522 (\"Connection timed out\": Cloudflare could not reach the site's own server) or timed out, in four checks over about an hour, and a second network also timed out. The catalog crawl on 2026-10-12 had already timed out on it. No page, search or removal form loads, so nothing about the person is shown. No request was submitted."
+  },
+  "cocofinder-net": {
+    "checked": "2026-10-26",
+    "offline": true,
+    "country": "US",
+    "evidence": "cocofinder.net did not load on 2026-10-25 or 2026-10-26. Its name servers still answer (Cloudflare addresses from dns.google), but every request to https://cocofinder.net/ and /remove-my-info from a US host returned Cloudflare error 522 (\"Connection timed out\": Cloudflare could not reach the site's own server) or timed out, in four checks over about an hour, and a second network also timed out. The catalog crawl on 2026-10-12 had already timed out on it. No page, search or removal form loads, so nothing about the person is shown. No request was submitted."
+  },
+  "fastpeoplesearch-io": {
+    "checked": "2026-10-26",
+    "offline": true,
+    "country": "US",
+    "evidence": "fastpeoplesearch.io did not load on 2026-10-25 or 2026-10-26. Its name servers still answer (Cloudflare addresses from dns.google), but every request to https://fastpeoplesearch.io/ and /remove-my-info from a US host returned Cloudflare error 522 (\"Connection timed out\": Cloudflare could not reach the site's own server) or timed out, in four checks over about an hour, and a second network also timed out. The catalog crawl on 2026-10-12 had already timed out on it. No page, search or removal form loads, so nothing about the person is shown. No request was submitted."
+  },
+  "truepeoplesearch-net": {
+    "checked": "2026-10-26",
+    "offline": true,
+    "country": "US",
+    "evidence": "truepeoplesearch.net did not load on 2026-10-25 or 2026-10-26. Its name servers still answer (Cloudflare addresses from dns.google), but every request to https://truepeoplesearch.net/ and /remove-my-info from a US host returned Cloudflare error 522 (\"Connection timed out\": Cloudflare could not reach the site's own server) or timed out, in four checks over about an hour, and a second network also timed out. The catalog crawl on 2026-10-12 had already timed out on it. No page, search or removal form loads, so nothing about the person is shown. No request was submitted."
+  },
+  "blockshopper": {
+    "checked": "2026-10-26",
+    "country": "US",
+    "liveness": "alive",
+    "liveness_detail": "blockshopper.com answered HTTP 200 on 2026-10-26. A homeowner name search returned matches by state.",
+    "evidence": "US property-records site that publishes homeowner names with their addresses, sale prices, and deeds. Part of the Mifeed Community News Network. The search form is a GET to /search with q and a type radio (locations or names). type=names searches homeowners by name. The privacy policy says to contact BlockShopper to request removal and lists contact@blockshopper.com and info@blockshopper.com, and a Chicago mailing address. No CAPTCHA was on the search page. Nothing was submitted.",
+    "result_check": "GET /search?q=John Smith&type=names: 'Homeowners: \"John Smith\"' with counts by state: California (26), Colorado (6), Connecticut (1), and more. q=Alder Northwind: \"Sorry, we couldn't find any matches for \\\"Alder Northwind\\\".\" (2026-10-26).",
+    "form": {
+      "method": "http_get",
+      "page_url": "https://blockshopper.com/",
+      "form_action": "https://blockshopper.com/search",
+      "url_pattern": "https://blockshopper.com/search?q={q}&type=names",
+      "form_id": null,
+      "form_name": null,
+      "submit_label": null,
+      "hidden_names": [],
+      "inputs": [
+        {
+          "name": "q",
+          "type": "text",
+          "canonical": "full_name",
+          "required": false,
+          "id": "q",
+          "label": null,
+          "placeholder": "Search for Homeowners"
+        }
+      ]
+    },
+    "captcha_widget": false
+  },
+  "obitsarchive": {
+    "checked": "2026-10-26",
+    "country": "US",
+    "liveness": "alive",
+    "liveness_detail": "obitsarchive.com answered HTTP 200 on 2026-10-26. A name search returned obituaries.",
+    "evidence": "NewsBank's US obituary archive (NewsBank, inc., Naples, Florida), which republishes newspaper death notices that name the deceased and their relatives. The search form oa-search-results-form is a GET to /obituaries with lname, fname, formDate, kwinc, and a hidden sort. The privacy policy gives privacypolicy@obitsarchive.com for privacy requests. The terms of use give obitsarchive@newsbank.com. No CAPTCHA was on the search page. Nothing was submitted.",
+    "result_check": "GET /obituaries?lname=Smith&fname=John: \"Showing Results 1-10 of 33,094\". lname=Northwind, fname=Alder: \"Sorry. There are no articles that contain all the keywords you entered.\" (2026-10-26).",
+    "form": {
+      "method": "http_get",
+      "page_url": "https://www.obitsarchive.com/obituaries",
+      "form_action": "https://www.obitsarchive.com/obituaries",
+      "url_pattern": "https://www.obitsarchive.com/obituaries?lname={lname}&fname={fname}",
+      "form_id": "oa-search-results-form",
+      "form_name": null,
+      "submit_label": null,
+      "hidden_names": [
+        "sort"
+      ],
+      "inputs": [
+        {
+          "name": "lname",
+          "type": "text",
+          "canonical": "last_name",
+          "required": false,
+          "id": "edit-lname",
+          "label": "Last Name",
+          "placeholder": "Last Name"
+        },
+        {
+          "name": "fname",
+          "type": "text",
+          "canonical": "first_name",
+          "required": false,
+          "id": "edit-fname",
+          "label": "First Name",
+          "placeholder": "First Name"
+        }
+      ]
+    },
+    "captcha_widget": false
+  },
+  "recentlybooked": {
+    "checked": "2026-10-26",
+    "country": "US",
+    "liveness": "alive",
+    "liveness_detail": "recentlybooked.com answered HTTP 200 on 2026-10-26. A name search returned booking records.",
+    "evidence": "US arrest and booking-record site that publishes jail bookings with the person's name, county, booking date, and charges. The search page form is a GET to /search with StateCode, CountySlug, Gender, Name, Charge, FromDate, ToDate, SortBy, and SortDirection. Name takes one first or last name; a full name returned no results. The mugshot removal policy says it does not charge to remove a record. It removes or updates records for dismissals, expungements, and similar outcomes, sent to info@recentlybooked.com with the record URL, name, arrest date, state and county, reason, and documents. No CAPTCHA was on the search page. Nothing was submitted.",
+    "result_check": "GET /search?StateCode=&Name=Smith: \"Showing 1–16 of 500 search results … Showing up to a maximum of 500 matching records.\" Name=Northwind: \"No results found. Try adjusting your filters.\" (2026-10-26).",
+    "form": {
+      "method": "http_get",
+      "page_url": "https://recentlybooked.com/search",
+      "form_action": "https://recentlybooked.com/search",
+      "url_pattern": "https://recentlybooked.com/search?StateCode={StateCode}&Name={Name}",
+      "form_id": null,
+      "form_name": null,
+      "submit_label": null,
+      "hidden_names": [],
+      "inputs": [
+        {
+          "name": "StateCode",
+          "type": "select",
+          "canonical": "region",
+          "required": false,
+          "id": "stateSelect",
+          "label": null,
+          "placeholder": null
+        },
+        {
+          "name": "Name",
+          "type": "text",
+          "canonical": "last_name",
+          "required": false,
+          "id": null,
+          "label": null,
+          "placeholder": "First or last name"
+        }
+      ]
+    },
+    "captcha_widget": false
+  },
+  "npino": {
+    "checked": "2026-10-26",
+    "country": "US",
+    "liveness": "alive",
+    "liveness_detail": "npino.com answered HTTP 200 on 2026-10-26. A name search returned provider listings.",
+    "evidence": "US directory of health-care providers built from the federal NPPES NPI registry. Provider pages name the person with their NPI, practice address, and phone. The homepage form form1 is a POST to the same page with searchterm (an NPI number or a provider name). The contact page says NPPES data for providers with active NPIs cannot be opted out or suppressed, to correct it at NPPES, and to email info@npino.com if the site is still wrong a week later. The privacy policy is at https://npino.com/pages/privacy-policy/. No CAPTCHA was on the page. Nothing was submitted.",
+    "result_check": "POST / searchterm=John Smith: \"Search Results for: John Smith\" with 20 provider listings, each with an NPI number, address, and phone. searchterm=Alder Northwind: \"No result found.\" (2026-10-26).",
+    "form": {
+      "method": "http_form_post",
+      "page_url": "https://npino.com/",
+      "form_action": "https://npino.com/",
+      "url_pattern": "https://npino.com/",
+      "form_id": null,
+      "form_name": "form1",
+      "submit_label": null,
+      "hidden_names": [],
+      "inputs": [
+        {
+          "name": "searchterm",
+          "type": "text",
+          "canonical": "full_name",
+          "required": false,
+          "id": null,
+          "label": null,
+          "placeholder": "NPI Number or Healthcare Provider Name"
+        }
+      ]
+    },
+    "captcha_widget": false
+  },
+  "npi-number-lookup": {
+    "checked": "2026-10-26",
+    "country": "US",
+    "liveness": "alive",
+    "liveness_detail": "npinumberlookup.org answered HTTP 200 on 2026-10-26. A name search returned providers.",
+    "evidence": "US lookup of health-care providers from the federal NPPES NPI registry, listing each provider's name, NPI, state, and ZIP. The homepage form is a POST to getResults.php with last (max 40), first (max 20), the state select pracstate, and npi. The contact page says to request changes from NPPES, which sends the site weekly updates, and offers a contact form; no removal channel is published. The privacy policy is at https://www.npinumberlookup.org/privacy.html. No CAPTCHA was on the page. Nothing was submitted.",
+    "result_check": "POST /getResults.php last=Smith, first=John: a results table of about 200 providers, beginning \"1124079900 Smith John L NE 68198\". last=Northwind, first=Alder: the table had no rows (2026-10-26).",
+    "form": {
+      "method": "http_form_post",
+      "page_url": "https://www.npinumberlookup.org/",
+      "form_action": "https://www.npinumberlookup.org/getResults.php",
+      "url_pattern": "https://www.npinumberlookup.org/getResults.php",
+      "form_id": null,
+      "form_name": null,
+      "submit_label": "Search",
+      "hidden_names": [],
+      "inputs": [
+        {
+          "name": "last",
+          "type": "text",
+          "canonical": "last_name",
+          "required": false,
+          "id": "last",
+          "label": null,
+          "placeholder": "Last Name or Entity"
+        },
+        {
+          "name": "first",
+          "type": "text",
+          "canonical": "first_name",
+          "required": false,
+          "id": "first",
+          "label": null,
+          "placeholder": "First Name"
+        },
+        {
+          "name": "pracstate",
+          "type": "select",
+          "canonical": "region",
+          "required": false,
+          "id": "pracstate",
           "label": null,
           "placeholder": null
         }

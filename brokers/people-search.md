@@ -2,7 +2,7 @@
 
 People-search sites that publish names, phone numbers, relatives, or address history. Many ask for a profile URL and an email confirmation.
 
-170 entries. Link responses were checked on 2026-10-01 unless a note says otherwise.
+171 entries. Link responses were checked on 2026-10-01 unless a note says otherwise.
 
 | Broker | Opt-out / privacy URL | Notes |
 | --- | --- | --- |
@@ -96,6 +96,7 @@ People-search sites that publish names, phone numbers, relatives, or address his
 | NoCallerName | https://nocallername.com/privacy | Privacy notice or privacy-policy page. Use the state-rights, do-not-sell, or request section. |
 | NorthCarolinaPublicRecords.org (TruthFinder) | https://www.truthfinder.com/opt-out/v2/submit/ | Opt-out or consumer privacy-request page. Automated check on 2026-10-01 got HTTP 403. Open the link in a browser. |
 | NumberGuru (BeenVerified family) | https://www.beenverified.com/app/optout/search | Web form. Email: privacy@beenverified.com. Open-dataset difficulty: easy. Automated check on 2026-10-01 got HTTP 403. Open the link in a browser. |
+| ObitsArchive | https://www.obitsarchive.com/privacy-policy | NewsBank's US obituary archive, which republishes newspaper death notices that name the deceased and their relatives. Free search is a GET to /obituaries with lname and fname. Checked 2026-10-26: lname=Smith, fname=John: "Showing Results 1-10 of 33,094". Alder Northwind: "Sorry. There are no articles that contain all the keywords you entered." The privacy policy gives privacypolicy@obitsarchive.com for privacy requests. The terms of use give obitsarchive@newsbank.com. No request was submitted. |
 | OnlineSearches (Intelius/PeopleConnect) | https://suppression.peopleconnect.us/ | Online suppression form (email-verified). Open-dataset difficulty: moderate. |
 | OpenPeopleSearch | https://openpeoplesearch.com/Consumer | Web form + identity verification. Email: info@openpeoplesearch.com. Open-dataset difficulty: moderate. |
 | Ownerly (BeenVerified family) | https://www.beenverified.com/app/optout/search | Web form + email confirmation. Email: privacy@beenverified.com. Open-dataset difficulty: easy. Automated check on 2026-10-01 got HTTP 403. Open the link in a browser. |

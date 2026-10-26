@@ -2,7 +2,7 @@
 
 Background-check brands and arrest-record portals. A removal here does not erase the government record underneath it.
 
-68 entries. Link responses were checked on 2026-10-01 unless a note says otherwise.
+69 entries. Link responses were checked on 2026-10-01 unless a note says otherwise.
 
 | Broker | Opt-out / privacy URL | Notes |
 | --- | --- | --- |
@@ -57,6 +57,7 @@ Background-check brands and arrest-record portals. A removal here does not erase
 | Oregon Arrests | https://www.oregonarrest.org/request-portal | Arrests.org request portal for this state site. The portal URL was responding on 2026-10-01. |
 | Pennsylvania Arrests | https://www.pennsylvaniaarrests.org/request-portal | Arrests.org request portal for this state site. The portal URL was responding on 2026-10-01. |
 | PeopleWhizr | https://www.peoplewhizr.com/optout | Opt-out or consumer privacy-request page. |
+| RecentlyBooked | https://recentlybooked.com/mugshot-removal-policy | US arrest and booking-record site that publishes jail bookings with the person's name, county, booking date, and charges. Free search is a GET to /search with Name (a first or last name) and an optional StateCode. Checked 2026-10-26: Name=Smith: "Showing 1–16 of 500 search results" (it shows up to 500). Name=Northwind: "No results found." A full name returned no results. The mugshot removal policy says it does not charge to remove a record. It removes or updates records for dismissals, expungements, and similar outcomes, sent to info@recentlybooked.com with the record URL, name, arrest date, state and county, reason, and documents. No request was submitted. |
 | Rhode Island Arrests | https://www.riarrests.org/request-portal | Arrests.org request portal for this state site. The portal URL was responding on 2026-10-01. |
 | South Carolina Arrests | https://www.scarrests.org/request-portal | Arrests.org request portal for this state site. The portal URL was responding on 2026-10-01. |
 | South Dakota Arrests | https://infotracer.com/do-not-sell-share-my-personal-information/ | Name search on this site has no CAPTCHA. Removal is the InfoTracer opt-out. Email: privacy@infotracer.com. Checked 2026-10-13. No search was submitted. |
