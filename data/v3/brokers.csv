@@ -793,3 +793,20 @@ local-ch,local.ch,local.ch,alive,https://www.local.ch/img/local_logo_48x48.svg,n
 herold-at-telefonbuch,HEROLD Telefonbuch (herold.at),herold.at,alive,https://www.herold.at/icons/apple-touch-icon.png,http_form_post,https://www.herold.at,https://www.herold.at/datenschutzerklaerung/,web_form;email,datenschutz@herold.at,,
 pagesblanches-fr,PagesBlanches (pagesjaunes.fr),pagesjaunes.fr,blocked,,unknown,,https://assistance.pagesjaunes.fr/hc/fr/articles/360017929780-Je-suis-un-particulier-et-je-souhaite-effacer-l-ensemble-de-mes-donn%C3%A9es-sur-PagesBlanches,,,,cloudflare
 merinfo-se,Merinfo.se,merinfo.se,alive,https://www.merinfo.se/build/assets/logo-default-qVd5sviQ.svg,http_get,https://www.merinfo.se/,https://www.merinfo.se/ta-bort-mina-uppgifter,,,turnstile,
+airdrietoday-obituaries,AirdrieToday Obituaries,airdrietoday.com,alive,https://www.vmcdn.ca/files/airdrietoday/images/airdrie-city-view/acv-rvw-web-logo4.svg,none,,https://www.airdriecityview.com/other/privacy-policy,,,,
+cochranetoday-obituaries,CochraneToday Obituaries,cochranetoday.ca,alive,https://www.vmcdn.ca/files/cochranetoday/images/cochrane-eagle-brand/cochraneeaglelogo3web.svg,none,,https://www.cochraneeagle.ca/other/privacy-policy,,,,
+okotokstoday-obituaries,OkotoksToday Obituaries,okotokstoday.ca,alive,https://www.vmcdn.ca/f/files/okotokstoday/2023-images/230510/23-02-02-diamondvalley-logo-horizontal-onwhite-rgb.png;w=300;h=200;mode=crop,none,,https://www.westernwheel.ca/other/privacy-policy,,,,
+rmoutlook-obituaries,Rocky Mountain Outlook Obituaries,rmoutlook.com,alive,https://www.vmcdn.ca/f/files/rmotoday/images/rmo-today/rocky-mountain-outlook/25outlook-logo.png,http_get,https://www.rmoutlook.com/,https://www.rmoutlook.com/other/privacy-policy,,,,
+lakelandtoday-obituaries,LakelandToday Obituaries,lakelandtoday.ca,alive,https://www.vmcdn.ca/files/lakelandtoday/images/lakelandtoday/lakelandtoday_pos_rgb_outline.svg,http_get,https://www.lakelandtoday.ca/,https://www.lakelandtoday.ca/other/privacy-policy,,,,
+townandcountrytoday-obituaries,Town & Country Today Obituaries,townandcountrytoday.com,alive,https://www.vmcdn.ca/files/townandcountrytoday/images/townandcountrytoday/tandctoday_pos_rgb.svg,http_get,https://www.townandcountrytoday.com/,https://www.townandcountrytoday.com/other/privacy-policy,,,,
+mountainviewtoday-obituaries,MountainViewToday Obituaries,mountainviewtoday.ca,alive,https://www.vmcdn.ca/files/mountainviewtoday/images/the-albertan/branding/thealbertanrgblogonew.svg,none,,https://www.thealbertan.com/other/privacy-policy,,,,
+sasktoday-obituaries,SaskToday Obituaries,sasktoday.ca,alive,https://www.vmcdn.ca/files/sasktoday/images/sasktoday/sasktoday-green-logo.svg,http_get,https://www.sasktoday.ca/,https://www.sasktoday.ca/other/privacy-policy,,,,
+moosejawtoday-obituaries,MooseJawToday Obituaries,moosejawtoday.com,blocked,,unknown,,https://www.moosejawtoday.com/other/privacy-policy,,,,cloudflare
+tbnewswatch-obituaries,TBNewsWatch Obituaries,tbnewswatch.com,blocked,,unknown,,https://www.tbnewswatch.com/privacy-policy,,,,cloudflare
+burlingtontoday-obituaries,BurlingtonToday Obituaries,burlingtontoday.com,blocked,,unknown,,https://www.burlingtontoday.com/other/privacy-policy,,,,cloudflare
+miltontoday-obituaries,MiltonToday Obituaries,miltontoday.ca,blocked,,unknown,,https://www.miltontoday.ca/other/privacy-policy,,,,cloudflare
+thoroldtoday-obituaries,ThoroldToday Obituaries,thoroldtoday.ca,blocked,,unknown,,https://www.thoroldtoday.ca/other/privacy-policy,,,,cloudflare
+eniro-se,Eniro.se (personer),eniro.se,robots_disallowed,,unknown,,https://www.eniro.se/hjalp/villkor/integritetspolicy,,,,
+gulesider-no,"Gule Sider (gulesider.no, personer)",gulesider.no,robots_disallowed,,unknown,,https://www.gulesider.no/hjelp/vilkar/personvernerklaering,,,,
+krak-dk,"Krak (krak.dk, personer)",krak.dk,robots_disallowed,,unknown,,https://www.krak.dk/hjaelp/vilkaar/privatlivspolitik,,,,
+ratsit-se,Ratsit (ratsit.se),ratsit.se,alive,https://www.ratsit.se/dist/assets/images/ratsit-logo-purple-small.svg,http_get,https://www.ratsit.se/,https://www.ratsit.se/info/personuppgiftspolicy,,,turnstile,
