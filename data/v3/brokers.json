@@ -1,21 +1,21 @@
 {
  "schema_version": "3.0.0",
- "checked_at": "2026-10-25T07:27:37+00:00",
+ "checked_at": "2026-10-26T06:17:49+00:00",
  "method": "Public pages only: homepage, catalog URL, and mapped privacy, contact, and legal links. robots.txt honored. No form submitted, no login, no CAPTCHA solved. A browser opened lookup homepages the static fetch never read, and catalog URLs that were blocked or failed, when robots.txt allowed the URL. Image fields are URLs, not copied files. People-search listing URLs are not stored. Null means the fetched page did not establish that fact. Every catalog id has a record.",
- "broker_count": 751,
+ "broker_count": 756,
  "counts": {
   "liveness": {
-   "alive": 568,
+   "alive": 572,
    "blocked": 39,
    "error": 24,
    "not_checked": 32,
    "opt_out_missing": 5,
-   "robots_disallowed": 83
+   "robots_disallowed": 84
   },
-  "with_logo": 613,
-  "with_image": 613,
-  "with_search": 368,
-  "with_email": 361,
+  "with_logo": 617,
+  "with_image": 617,
+  "with_search": 370,
+  "with_email": 364,
   "with_captcha": 329,
   "with_form": 134
  },
@@ -59314,7 +59314,7 @@
    "name": "Samba TV, Inc.",
    "category": "other",
    "domain": "samba.com",
-   "checked_at": "2026-10-25T07:27:07+00:00",
+   "checked_at": "2026-10-26T06:17:18+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -117432,7 +117432,7 @@
    "name": "Live Data Technologies, Inc.",
    "category": "other",
    "domain": "livedatatech.com",
-   "checked_at": "2026-10-25T07:27:25+00:00",
+   "checked_at": "2026-10-26T06:17:36+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -154295,7 +154295,7 @@
    "name": "Data Axle Canada",
    "category": "marketing",
    "domain": "dataaxlecanada.ca",
-   "checked_at": "2026-10-25T07:27:36+00:00",
+   "checked_at": "2026-10-26T06:17:48+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -154362,7 +154362,7 @@
    "name": "Prospects Influential",
    "category": "marketing",
    "domain": "prospectsinfluential.com",
-   "checked_at": "2026-10-25T07:27:36+00:00",
+   "checked_at": "2026-10-26T06:17:48+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -154429,7 +154429,7 @@
    "name": "Openroom",
    "category": "background-checks",
    "domain": "openroom.ca",
-   "checked_at": "2026-10-25T07:27:36+00:00",
+   "checked_at": "2026-10-26T06:17:48+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -154496,7 +154496,7 @@
    "name": "Landlord Credit Bureau",
    "category": "credit-financial",
    "domain": "landlordcreditbureau.ca",
-   "checked_at": "2026-10-25T07:27:36+00:00",
+   "checked_at": "2026-10-26T06:17:48+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -154563,7 +154563,7 @@
    "name": "FrontLobby",
    "category": "credit-financial",
    "domain": "frontlobby.com",
-   "checked_at": "2026-10-25T07:27:36+00:00",
+   "checked_at": "2026-10-26T06:17:48+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -154630,7 +154630,7 @@
    "name": "Echovita",
    "category": "people-search",
    "domain": "echovita.com",
-   "checked_at": "2026-10-25T07:27:36+00:00",
+   "checked_at": "2026-10-26T06:17:48+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -154697,7 +154697,7 @@
    "name": "InMemoriam",
    "category": "people-search",
    "domain": "inmemoriam.ca",
-   "checked_at": "2026-10-25T07:27:36+00:00",
+   "checked_at": "2026-10-26T06:17:48+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -154764,7 +154764,7 @@
    "name": "Nécrologie.ca",
    "category": "people-search",
    "domain": "necrologie.ca",
-   "checked_at": "2026-10-25T07:27:36+00:00",
+   "checked_at": "2026-10-26T06:17:48+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -154831,7 +154831,7 @@
    "name": "Geni",
    "category": "people-search",
    "domain": "geni.com",
-   "checked_at": "2026-10-25T07:27:36+00:00",
+   "checked_at": "2026-10-26T06:17:48+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -154898,7 +154898,7 @@
    "name": "FQSG Avis de décès",
    "category": "people-search",
    "domain": "federationgenealogie.qc.ca",
-   "checked_at": "2026-10-25T07:27:36+00:00",
+   "checked_at": "2026-10-26T06:17:48+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -154965,7 +154965,7 @@
    "name": "Domaine funéraire (Corporation des thanatologues du Québec)",
    "category": "people-search",
    "domain": "domainefuneraire.com",
-   "checked_at": "2026-10-25T07:27:36+00:00",
+   "checked_at": "2026-10-26T06:17:48+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -155032,7 +155032,7 @@
    "name": "Canadian Obituaries",
    "category": "people-search",
    "domain": "canadianobituaries.com",
-   "checked_at": "2026-10-25T07:27:36+00:00",
+   "checked_at": "2026-10-26T06:17:48+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -155099,7 +155099,7 @@
    "name": "Coopérative funéraire du Grand Montréal",
    "category": "people-search",
    "domain": "cfgrandmontreal.com",
-   "checked_at": "2026-10-25T07:27:36+00:00",
+   "checked_at": "2026-10-26T06:17:48+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -155166,7 +155166,7 @@
    "name": "Coopérative funéraire des Deux Rives",
    "category": "people-search",
    "domain": "coopfuneraire2rives.com",
-   "checked_at": "2026-10-25T07:27:36+00:00",
+   "checked_at": "2026-10-26T06:17:48+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -155233,7 +155233,7 @@
    "name": "Alliance funéraire du Royaume",
    "category": "people-search",
    "domain": "afdr.coop",
-   "checked_at": "2026-10-25T07:27:36+00:00",
+   "checked_at": "2026-10-26T06:17:48+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -155300,7 +155300,7 @@
    "name": "Coopérative funéraire de l'Abitibi",
    "category": "people-search",
    "domain": "cfa.coop",
-   "checked_at": "2026-10-25T07:27:36+00:00",
+   "checked_at": "2026-10-26T06:17:48+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -155367,7 +155367,7 @@
    "name": "Coopérative funéraire Haute-Côte-Nord - Manicouagan",
    "category": "people-search",
    "domain": "cfhcn.ca",
-   "checked_at": "2026-10-25T07:27:36+00:00",
+   "checked_at": "2026-10-26T06:17:48+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -155434,7 +155434,7 @@
    "name": "Coopérative funéraire de l'Outaouais",
    "category": "people-search",
    "domain": "cfo.coop",
-   "checked_at": "2026-10-25T07:27:36+00:00",
+   "checked_at": "2026-10-26T06:17:48+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -155501,7 +155501,7 @@
    "name": "Coopérative funéraire de l'Estrie",
    "category": "people-search",
    "domain": "coopfuneraireestrie.com",
-   "checked_at": "2026-10-25T07:27:36+00:00",
+   "checked_at": "2026-10-26T06:17:48+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -155568,7 +155568,7 @@
    "name": "Résidence funéraire Lac St-Jean",
    "category": "people-search",
    "domain": "residencefunerairelacstjean.com",
-   "checked_at": "2026-10-25T07:27:36+00:00",
+   "checked_at": "2026-10-26T06:17:48+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -155635,7 +155635,7 @@
    "name": "Coopérative funéraire Brunet",
    "category": "people-search",
    "domain": "coopfbrunet.com",
-   "checked_at": "2026-10-25T07:27:36+00:00",
+   "checked_at": "2026-10-26T06:17:48+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -155702,7 +155702,7 @@
    "name": "Coopérative funéraire Matawinie-Montcalm",
    "category": "people-search",
    "domain": "cfmm.coop",
-   "checked_at": "2026-10-25T07:27:36+00:00",
+   "checked_at": "2026-10-26T06:17:48+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -155769,7 +155769,7 @@
    "name": "Coopérative funéraire des Laurentides",
    "category": "people-search",
    "domain": "coopfunerairelaurentides.org",
-   "checked_at": "2026-10-25T07:27:36+00:00",
+   "checked_at": "2026-10-26T06:17:48+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -155836,7 +155836,7 @@
    "name": "Résidence Funéraire Maska",
    "category": "people-search",
    "domain": "rfmaska.coop",
-   "checked_at": "2026-10-25T07:27:36+00:00",
+   "checked_at": "2026-10-26T06:17:48+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -155903,7 +155903,7 @@
    "name": "Dignity Memorial",
    "category": "people-search",
    "domain": "dignitymemorial.com",
-   "checked_at": "2026-10-25T07:27:36+00:00",
+   "checked_at": "2026-10-26T06:17:48+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -155970,7 +155970,7 @@
    "name": "Interment.net",
    "category": "people-search",
    "domain": "interment.net",
-   "checked_at": "2026-10-25T07:27:36+00:00",
+   "checked_at": "2026-10-26T06:17:48+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -156037,7 +156037,7 @@
    "name": "Mount Pleasant Group",
    "category": "people-search",
    "domain": "mountpleasantgroup.com",
-   "checked_at": "2026-10-25T07:27:36+00:00",
+   "checked_at": "2026-10-26T06:17:48+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -156104,7 +156104,7 @@
    "name": "Kearney Funeral Services",
    "category": "people-search",
    "domain": "kearneyfs.com",
-   "checked_at": "2026-10-25T07:27:36+00:00",
+   "checked_at": "2026-10-26T06:17:48+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -156171,7 +156171,7 @@
    "name": "Basic Funerals",
    "category": "people-search",
    "domain": "basicfunerals.ca",
-   "checked_at": "2026-10-25T07:27:36+00:00",
+   "checked_at": "2026-10-26T06:17:48+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -156238,7 +156238,7 @@
    "name": "Le Nécrologue",
    "category": "people-search",
    "domain": "lenecrologue.com",
-   "checked_at": "2026-10-25T07:27:36+00:00",
+   "checked_at": "2026-10-26T06:17:48+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -158154,6 +158154,694 @@
      "role": "catalog",
      "title": "Best search engine for True crime stories | Mugshots.com",
      "liveness": "alive"
+    }
+   ]
+  },
+  "blockshopper": {
+   "schema_version": "3.0.0",
+   "id": "blockshopper",
+   "name": "BlockShopper",
+   "category": "public-records",
+   "domain": "blockshopper.com",
+   "checked_at": "2026-10-26T06:16:53+00:00",
+   "liveness": "alive",
+   "liveness_detail": "catalog URL loaded",
+   "homepage": "https://blockshopper.com/",
+   "logo_url": "https://cdn.blockshopper.com/assets/blockshopper-green-logo-4c8ca2c4ae653f179c1414767a4fb72fefcb639a953b0a253ccef3cdb999641f.png",
+   "images": [
+    {
+     "url": "https://cdn.blockshopper.com/assets/favicon-b033b1e533a75d05ff4f06221bcd1b4c525d23c4beba992409d5a417bfecc1ce.png",
+     "kind": "icon",
+     "source_page": "https://blockshopper.com/"
+    },
+    {
+     "url": "https://cdn.blockshopper.com/assets/blockshopper-green-logo-4c8ca2c4ae653f179c1414767a4fb72fefcb639a953b0a253ccef3cdb999641f.png",
+     "kind": "logo",
+     "source_page": "https://blockshopper.com/"
+    }
+   ],
+   "theme_color": null,
+   "languages": [],
+   "legal_name": null,
+   "search": {
+    "available": true,
+    "method": "http_get",
+    "page_url": "https://blockshopper.com/",
+    "form_action": "https://blockshopper.com/search",
+    "inputs": [
+     {
+      "name": "type",
+      "type": "radio",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "type",
+      "type": "radio",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "q",
+      "type": "text",
+      "canonical": "full_name",
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     }
+    ],
+    "url_pattern": "https://blockshopper.com/search?type={type}&type={type}&q={q}",
+    "directory_prefixes": [],
+    "paywall": null,
+    "login_wall": null
+   },
+   "removal": {
+    "url": "https://blockshopper.com/privacy-policy",
+    "final_url": "https://blockshopper.com/privacy-policy",
+    "http_status": 200,
+    "kinds": [
+     "opt_out"
+    ],
+    "channels": [],
+    "emails": [],
+    "phones": [],
+    "postal_address": null,
+    "portal": null,
+    "form_fields": [],
+    "csrf_field_name": null,
+    "requires_profile_url": null,
+    "captcha": {
+     "provider": null,
+     "sitekey": null,
+     "pages": []
+    },
+    "consent_vendor": null,
+    "success_text": null,
+    "suppression_not_deletion": null,
+    "processing_days": null,
+    "processing_text": null
+   },
+   "bot_defense": {
+    "vendor": null,
+    "outcome": "none"
+   },
+   "legal": {
+    "privacy_policy_url": "https://blockshopper.com/privacy-policy",
+    "terms_url": null,
+    "automation_prohibited": null,
+    "automation_clause": null,
+    "residency": [
+     "US-CA",
+     "US"
+    ],
+    "authorized_agent": null,
+    "data_categories": [
+     "identifiers",
+     "internet_activity"
+    ]
+   },
+   "pages": [
+    {
+     "url": "https://blockshopper.com/",
+     "final_url": "https://blockshopper.com/",
+     "status": 200,
+     "role": "home",
+     "title": "Real Estate Market Perspective | BlockShopper",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.blockshopper.com/",
+     "final_url": "https://blockshopper.com/",
+     "status": 200,
+     "role": "home",
+     "title": "Real Estate Market Perspective | BlockShopper",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://blockshopper.com/privacy-policy",
+     "final_url": "https://blockshopper.com/privacy-policy",
+     "status": 200,
+     "role": "catalog",
+     "title": "Privacy Policy | BlockShopper",
+     "liveness": "alive"
+    }
+   ]
+  },
+  "obitsarchive": {
+   "schema_version": "3.0.0",
+   "id": "obitsarchive",
+   "name": "ObitsArchive",
+   "category": "people-search",
+   "domain": "obitsarchive.com",
+   "checked_at": "2026-10-26T06:16:55+00:00",
+   "liveness": "alive",
+   "liveness_detail": "catalog URL loaded",
+   "homepage": "https://www.obitsarchive.com/",
+   "logo_url": "https://www.obitsarchive.com/sites/default/files/Obits-logo-original.png",
+   "images": [
+    {
+     "url": "https://www.obitsarchive.com/favicons/favicon.ico",
+     "kind": "icon",
+     "source_page": "https://www.obitsarchive.com/"
+    },
+    {
+     "url": "https://www.obitsarchive.com/favicons/apple-touch-icon.png",
+     "kind": "apple_touch_icon",
+     "source_page": "https://www.obitsarchive.com/"
+    },
+    {
+     "url": "https://www.obitsarchive.com/favicons/apple-touch-icon-57x57.png",
+     "kind": "apple_touch_icon",
+     "source_page": "https://www.obitsarchive.com/"
+    },
+    {
+     "url": "https://www.obitsarchive.com/favicons/apple-touch-icon-72x72.png",
+     "kind": "apple_touch_icon",
+     "source_page": "https://www.obitsarchive.com/"
+    },
+    {
+     "url": "https://www.obitsarchive.com/favicons/apple-touch-icon-76x76.png",
+     "kind": "apple_touch_icon",
+     "source_page": "https://www.obitsarchive.com/"
+    },
+    {
+     "url": "https://www.obitsarchive.com/favicons/apple-touch-icon-114x114.png",
+     "kind": "apple_touch_icon",
+     "source_page": "https://www.obitsarchive.com/"
+    },
+    {
+     "url": "https://www.obitsarchive.com/favicons/apple-touch-icon-120x120.png",
+     "kind": "apple_touch_icon",
+     "source_page": "https://www.obitsarchive.com/"
+    },
+    {
+     "url": "https://www.obitsarchive.com/favicons/apple-touch-icon-144x144.png",
+     "kind": "apple_touch_icon",
+     "source_page": "https://www.obitsarchive.com/"
+    },
+    {
+     "url": "https://www.obitsarchive.com/favicons/apple-touch-icon-152x152.png",
+     "kind": "apple_touch_icon",
+     "source_page": "https://www.obitsarchive.com/"
+    },
+    {
+     "url": "https://www.obitsarchive.com/favicons/apple-touch-icon-180x180.png",
+     "kind": "apple_touch_icon",
+     "source_page": "https://www.obitsarchive.com/"
+    },
+    {
+     "url": "https://www.obitsarchive.com/sites/default/files/Obits-OG-logo.png",
+     "kind": "og_image",
+     "source_page": "https://www.obitsarchive.com/"
+    },
+    {
+     "url": "https://www.obitsarchive.com/sites/default/files/Obits-logo-original.png",
+     "kind": "logo",
+     "source_page": "https://www.obitsarchive.com/"
+    },
+    {
+     "url": "https://www.obitsarchive.com/sites/all/themes/obits_bootstrap/css/images/obits-archive-logo-white.png",
+     "kind": "logo",
+     "source_page": "https://www.obitsarchive.com/"
+    }
+   ],
+   "theme_color": null,
+   "languages": [
+    "en"
+   ],
+   "legal_name": null,
+   "search": {
+    "available": true,
+    "method": "http_get",
+    "page_url": "https://www.obitsarchive.com/",
+    "form_action": "https://www.obitsarchive.com/obituaries",
+    "inputs": [
+     {
+      "name": "lname",
+      "type": "text",
+      "canonical": "last_name",
+      "required": false,
+      "autocomplete": null,
+      "placeholder": "Last Name"
+     },
+     {
+      "name": "fname",
+      "type": "text",
+      "canonical": "first_name",
+      "required": false,
+      "autocomplete": null,
+      "placeholder": "First Name"
+     },
+     {
+      "name": "formDate",
+      "type": "text",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": "Event Date"
+     },
+     {
+      "name": "kwinc",
+      "type": "text",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": "Keyword"
+     },
+     {
+      "name": "sort",
+      "type": "hidden",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     }
+    ],
+    "url_pattern": "https://www.obitsarchive.com/obituaries?lname={lname}&fname={fname}&formDate={formDate}&kwinc={kwinc}",
+    "directory_prefixes": [],
+    "paywall": null,
+    "login_wall": null
+   },
+   "removal": {
+    "url": "https://www.obitsarchive.com/privacy-policy",
+    "final_url": "https://www.obitsarchive.com/privacy-policy",
+    "http_status": 200,
+    "kinds": [
+     "opt_out"
+    ],
+    "channels": [
+     "email",
+     "phone"
+    ],
+    "emails": [
+     {
+      "email": "privacypolicy@obitsarchive.com",
+      "confidence": "extracted",
+      "source_url": "https://www.obitsarchive.com/privacy-policy"
+     }
+    ],
+    "phones": [
+     "(800) 896-5587",
+     "1.800.762.8182"
+    ],
+    "postal_address": null,
+    "portal": null,
+    "form_fields": [],
+    "csrf_field_name": null,
+    "requires_profile_url": null,
+    "captcha": {
+     "provider": null,
+     "sitekey": null,
+     "pages": []
+    },
+    "consent_vendor": null,
+    "success_text": null,
+    "suppression_not_deletion": null,
+    "processing_days": null,
+    "processing_text": null
+   },
+   "bot_defense": {
+    "vendor": null,
+    "outcome": "none"
+   },
+   "legal": {
+    "privacy_policy_url": "https://www.obitsarchive.com/privacy-policy",
+    "terms_url": null,
+    "automation_prohibited": null,
+    "automation_clause": null,
+    "residency": [],
+    "authorized_agent": null,
+    "data_categories": [
+     "identifiers",
+     "sensitive"
+    ]
+   },
+   "pages": [
+    {
+     "url": "https://obitsarchive.com/",
+     "final_url": "https://www.obitsarchive.com/",
+     "status": 200,
+     "role": "home",
+     "title": "Obituary Archives - Find Your Ancestors' Story",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.obitsarchive.com/",
+     "final_url": "https://www.obitsarchive.com/",
+     "status": 200,
+     "role": "home",
+     "title": "Obituary Archives - Find Your Ancestors' Story",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.obitsarchive.com/privacy-policy",
+     "final_url": "https://www.obitsarchive.com/privacy-policy",
+     "status": 200,
+     "role": "catalog",
+     "title": "Privacy Policy | ObitsArchive",
+     "liveness": "alive"
+    }
+   ]
+  },
+  "recentlybooked": {
+   "schema_version": "3.0.0",
+   "id": "recentlybooked",
+   "name": "RecentlyBooked",
+   "category": "background-checks",
+   "domain": "recentlybooked.com",
+   "checked_at": "2026-10-26T06:16:54+00:00",
+   "liveness": "alive",
+   "liveness_detail": "catalog URL loaded",
+   "homepage": "https://recentlybooked.com/",
+   "logo_url": "https://recentlybooked.com/images/logo-full.svg",
+   "images": [
+    {
+     "url": "https://recentlybooked.com/favicon.ico",
+     "kind": "icon",
+     "source_page": "https://recentlybooked.com/"
+    },
+    {
+     "url": "https://recentlybooked.com/favicon-48.png",
+     "kind": "icon",
+     "source_page": "https://recentlybooked.com/"
+    },
+    {
+     "url": "https://recentlybooked.com/favicon-96.png",
+     "kind": "icon",
+     "source_page": "https://recentlybooked.com/"
+    },
+    {
+     "url": "https://recentlybooked.com/favicon-192.png",
+     "kind": "icon",
+     "source_page": "https://recentlybooked.com/"
+    },
+    {
+     "url": "https://recentlybooked.com/apple-touch-icon.png",
+     "kind": "apple_touch_icon",
+     "source_page": "https://recentlybooked.com/"
+    },
+    {
+     "url": "https://recentlybooked.com/images/logo-full.svg",
+     "kind": "json_ld",
+     "source_page": "https://recentlybooked.com/"
+    }
+   ],
+   "theme_color": null,
+   "languages": [
+    "en"
+   ],
+   "legal_name": "RecentlyBooked.com",
+   "search": {
+    "available": false,
+    "method": "none",
+    "page_url": null,
+    "form_action": null,
+    "inputs": [],
+    "url_pattern": null,
+    "directory_prefixes": [],
+    "paywall": null,
+    "login_wall": null
+   },
+   "removal": {
+    "url": "https://recentlybooked.com/mugshot-removal-policy",
+    "final_url": "https://recentlybooked.com/mugshot-removal-policy",
+    "http_status": 200,
+    "kinds": [
+     "opt_out",
+     "do_not_sell"
+    ],
+    "channels": [
+     "email"
+    ],
+    "emails": [
+     {
+      "email": "info@recentlybooked.com",
+      "confidence": "uncertain",
+      "source_url": "https://recentlybooked.com/mugshot-removal-policy"
+     }
+    ],
+    "phones": [],
+    "postal_address": null,
+    "portal": null,
+    "form_fields": [],
+    "csrf_field_name": null,
+    "requires_profile_url": null,
+    "captcha": {
+     "provider": null,
+     "sitekey": null,
+     "pages": []
+    },
+    "consent_vendor": null,
+    "success_text": null,
+    "suppression_not_deletion": null,
+    "processing_days": null,
+    "processing_text": null
+   },
+   "bot_defense": {
+    "vendor": null,
+    "outcome": "none"
+   },
+   "legal": {
+    "privacy_policy_url": null,
+    "terms_url": null,
+    "automation_prohibited": null,
+    "automation_clause": null,
+    "residency": [
+     "US"
+    ],
+    "authorized_agent": null,
+    "data_categories": [
+     "identifiers"
+    ]
+   },
+   "pages": [
+    {
+     "url": "https://recentlybooked.com/",
+     "final_url": "https://recentlybooked.com/",
+     "status": 200,
+     "role": "home",
+     "title": "Recently Booked Arrests & Mugshots by State and County",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.recentlybooked.com/",
+     "final_url": "https://recentlybooked.com/",
+     "status": 200,
+     "role": "home",
+     "title": "Recently Booked Arrests & Mugshots by State and County",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://recentlybooked.com/mugshot-removal-policy",
+     "final_url": "https://recentlybooked.com/mugshot-removal-policy",
+     "status": 200,
+     "role": "catalog",
+     "title": "Mugshot Removal Policy | RecentlyBooked.com",
+     "liveness": "alive"
+    }
+   ]
+  },
+  "npino": {
+   "schema_version": "3.0.0",
+   "id": "npino",
+   "name": "NPINo",
+   "category": "public-records",
+   "domain": "npino.com",
+   "checked_at": "2026-10-26T06:16:54+00:00",
+   "liveness": "alive",
+   "liveness_detail": "catalog URL loaded",
+   "homepage": "https://npino.com/",
+   "logo_url": "https://npino.com/images/favicon.png",
+   "images": [
+    {
+     "url": "https://npino.com/images/favicon.png",
+     "kind": "icon",
+     "source_page": "https://npino.com/"
+    }
+   ],
+   "theme_color": null,
+   "languages": [
+    "en"
+   ],
+   "legal_name": "NPI No.",
+   "search": {
+    "available": false,
+    "method": "none",
+    "page_url": null,
+    "form_action": null,
+    "inputs": [],
+    "url_pattern": null,
+    "directory_prefixes": [],
+    "paywall": null,
+    "login_wall": null
+   },
+   "removal": {
+    "url": "https://npino.com/pages/contact-us/",
+    "final_url": "https://npino.com/pages/contact-us/",
+    "http_status": 200,
+    "kinds": [
+     "opt_out"
+    ],
+    "channels": [
+     "email"
+    ],
+    "emails": [
+     {
+      "email": "info@npino.com",
+      "confidence": "uncertain",
+      "source_url": "https://npino.com/pages/contact-us/"
+     }
+    ],
+    "phones": [],
+    "postal_address": null,
+    "portal": null,
+    "form_fields": [],
+    "csrf_field_name": null,
+    "requires_profile_url": null,
+    "captcha": {
+     "provider": null,
+     "sitekey": null,
+     "pages": []
+    },
+    "consent_vendor": null,
+    "success_text": null,
+    "suppression_not_deletion": null,
+    "processing_days": null,
+    "processing_text": null
+   },
+   "bot_defense": {
+    "vendor": null,
+    "outcome": "none"
+   },
+   "legal": {
+    "privacy_policy_url": null,
+    "terms_url": null,
+    "automation_prohibited": null,
+    "automation_clause": null,
+    "residency": [],
+    "authorized_agent": null,
+    "data_categories": []
+   },
+   "pages": [
+    {
+     "url": "https://npino.com/",
+     "final_url": "https://npino.com/",
+     "status": 200,
+     "role": "home",
+     "title": "NPI Number Lookup for Doctors & Physicians in USA | NPI No.",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.npino.com/",
+     "final_url": "https://npino.com/",
+     "status": 200,
+     "role": "home",
+     "title": "NPI Number Lookup for Doctors & Physicians in USA | NPI No.",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://npino.com/pages/contact-us/",
+     "final_url": "https://npino.com/pages/contact-us/",
+     "status": 200,
+     "role": "catalog",
+     "title": "Contact Us | NPI No.",
+     "liveness": "alive"
+    }
+   ]
+  },
+  "npi-number-lookup": {
+   "schema_version": "3.0.0",
+   "id": "npi-number-lookup",
+   "name": "NPI Number Lookup",
+   "category": "public-records",
+   "domain": "npinumberlookup.org",
+   "checked_at": "2026-10-26T06:16:52+00:00",
+   "liveness": "robots_disallowed",
+   "liveness_detail": "robots.txt disallows this client",
+   "homepage": "https://npinumberlookup.org/",
+   "logo_url": null,
+   "images": [],
+   "theme_color": null,
+   "languages": [],
+   "legal_name": null,
+   "search": {
+    "available": null,
+    "method": "unknown",
+    "page_url": null,
+    "form_action": null,
+    "inputs": [],
+    "url_pattern": null,
+    "directory_prefixes": [],
+    "paywall": null,
+    "login_wall": null
+   },
+   "removal": {
+    "url": "https://www.npinumberlookup.org/contact.php",
+    "final_url": null,
+    "http_status": null,
+    "kinds": [
+     "opt_out"
+    ],
+    "channels": [],
+    "emails": [],
+    "phones": [],
+    "postal_address": null,
+    "portal": null,
+    "form_fields": [],
+    "csrf_field_name": null,
+    "requires_profile_url": null,
+    "captcha": {
+     "provider": null,
+     "sitekey": null,
+     "pages": []
+    },
+    "consent_vendor": null,
+    "success_text": null,
+    "suppression_not_deletion": null,
+    "processing_days": null,
+    "processing_text": null
+   },
+   "bot_defense": {
+    "vendor": null,
+    "outcome": "none"
+   },
+   "legal": {
+    "privacy_policy_url": null,
+    "terms_url": null,
+    "automation_prohibited": null,
+    "automation_clause": null,
+    "residency": [],
+    "authorized_agent": null,
+    "data_categories": []
+   },
+   "pages": [
+    {
+     "url": "https://npinumberlookup.org/",
+     "final_url": null,
+     "status": null,
+     "role": "home",
+     "title": "",
+     "liveness": "robots_disallowed"
+    },
+    {
+     "url": "https://www.npinumberlookup.org/",
+     "final_url": null,
+     "status": null,
+     "role": "home",
+     "title": "",
+     "liveness": "robots_disallowed"
+    },
+    {
+     "url": "https://www.npinumberlookup.org/contact.php",
+     "final_url": null,
+     "status": null,
+     "role": "catalog",
+     "title": "",
+     "liveness": "robots_disallowed"
     }
    ]
   }

@@ -750,3 +750,8 @@ abn-lookup,ABN Lookup,abr.business.gov.au,alive,https://abr.business.gov.au/Imag
 north-data,North Data,northdata.de,alive,https://www.northdata.de/ui/v1-515-11/favicon.png,http_get,https://www.northdata.de/,https://www.northdata.de/_privacy,web_form;email,info@northdata.de,,
 judyrecords,judyrecords,judyrecords.com,alive,https://www.judyrecords.com/apple-touch-icon.png,http_get,https://www.judyrecords.com/,https://www.judyrecords.com/info,email,suppression@judyrecords.com,,
 mugshots-com,Mugshots.com,mugshots.com,alive,https://mugshots.com/favicon.png,http_get,https://mugshots.com/,https://mugshots.com/record-maintenance,,,,
+blockshopper,BlockShopper,blockshopper.com,alive,https://cdn.blockshopper.com/assets/blockshopper-green-logo-4c8ca2c4ae653f179c1414767a4fb72fefcb639a953b0a253ccef3cdb999641f.png,http_get,https://blockshopper.com/,https://blockshopper.com/privacy-policy,,,,
+obitsarchive,ObitsArchive,obitsarchive.com,alive,https://www.obitsarchive.com/sites/default/files/Obits-logo-original.png,http_get,https://www.obitsarchive.com/,https://www.obitsarchive.com/privacy-policy,email;phone,privacypolicy@obitsarchive.com,,
+recentlybooked,RecentlyBooked,recentlybooked.com,alive,https://recentlybooked.com/images/logo-full.svg,none,,https://recentlybooked.com/mugshot-removal-policy,email,info@recentlybooked.com,,
+npino,NPINo,npino.com,alive,https://npino.com/images/favicon.png,none,,https://npino.com/pages/contact-us/,email,info@npino.com,,
+npi-number-lookup,NPI Number Lookup,npinumberlookup.org,robots_disallowed,,unknown,,https://www.npinumberlookup.org/contact.php,,,,
