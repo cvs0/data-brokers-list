@@ -7580,5 +7580,17 @@
     },
     "captcha_widget": false,
     "country_override": true
+  },
+  "openpeoplesearch": {
+    "checked": "2026-10-28",
+    "offline": true,
+    "country": "US",
+    "evidence": "openpeoplesearch.com no longer runs a people search. The homepage answered HTTP 200 on 2026-10-28 (00:40 and again at 01:31, CST) and its only content is the notice \"Sorry, this service has been discontinued. Thanks for stopping by!\" above the footer (\"The Open Data People, Inc.\"). No search form is shown and no listings load. No request was submitted."
+  },
+  "northcarolinapublicrecords-org-truthfinder": {
+    "checked": "2026-10-28",
+    "offline": true,
+    "country": "US",
+    "evidence": "northcarolinapublicrecords.org no longer resolves. DNS-over-HTTPS lookups returned NXDOMAIN (status 3, no address) from dns.google and from cloudflare-dns.com on 2026-10-28, in two checks about an hour apart (CST); example.com resolved from the same host. The site shows no listings. The catalog opt-out page is TruthFinder's (truthfinder.com/opt-out/v2/submit/), which TruthFinder's own entry keeps."
   }
 }
