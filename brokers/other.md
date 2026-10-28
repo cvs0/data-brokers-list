@@ -125,7 +125,7 @@ Registered data brokers and privacy-request pages that do not fit the categories
 | GrayHair Software LLC | https://grayhairsoftware.com/privacy-policy/ | Privacy notice or privacy-policy page. Use the state-rights, do-not-sell, or request section. |
 | Great Lakes List, Inc. | https://www.greatlakeslists.com/privacy-policy | Privacy notice or privacy-policy page. Use the state-rights, do-not-sell, or request section. |
 | Guidestar Direct, Corp. | https://www.carneydirect.com/privacy-policy/ | Privacy notice or privacy-policy page. Use the state-rights, do-not-sell, or request section. |
-| H1 Insights, Inc. | https://www.h1.co | Published privacy-request URL is the site root. Confirm a request form is on the page before sending information. Automated check on 2026-10-01 got HTTP 403. Open the link in a browser. |
+| H1 Insights, Inc. | https://h1.com/privacy-policy/ | Privacy policy. h1.co now redirects to h1.com. The policy says to opt out of sharing with customers by emailing the address it gives. Checked 2026-10-28. No request was submitted. |
 | HealthLink Dimensions, LLC | https://healthlinkdimensions.com/consumerprivacyrights | Opt-out or consumer privacy-request page. |
 | HealthWise Data | https://healthwisedata.com/privacy-policy/ | Privacy notice or privacy-policy page. Use the state-rights, do-not-sell, or request section. |
 | Heartbeat.AI Inc | https://heartbeat.ai/policy-ccpa | Opt-out or consumer privacy-request page. |
@@ -140,7 +140,7 @@ Registered data brokers and privacy-request pages that do not fit the categories
 | Infomatics LLC network (privatereports.com) | https://www.privatereports.com/optOut/name/landingPage | Opt-out or consumer privacy-request page. Email: support@privatereports.com. |
 | InfoPay, Inc | https://www.infopay.com/privacy | Opt-out or consumer privacy-request page. |
 | Information.com | https://information.com/opt-out | Opt-out or consumer privacy-request page. Email: support@information.com. The Markup and CalMatters (2025) found page code that hid this URL from search engines. Automated check on 2026-10-01 got HTTP 403. Open the link in a browser. |
-| Inmar-OIQ, LLC | https://www.inmar.com/about/privacy-policy | Privacy notice or privacy-policy page. Use the state-rights, do-not-sell, or request section. |
+| Inmar-OIQ, LLC | https://www.inmar.com/about/privacy-policy/owneriq/consumer-rights-requests | ownerIQ consumer rights requests page on inmar.com (Inmar acquired ownerIQ; owneriq.com no longer resolves). The ownerIQ privacy notice at https://www.inmar.com/about/privacy-policy/owneriq links it and offers email and phone ad opt-outs. The page answered HTTP 200 on 2026-10-28. No request was submitted. |
 | InMarket Media, LLC | https://inmarket.com/privacy/ | Opt-out or consumer privacy-request page. Automated check on 2026-10-01 got HTTP 403. Open the link in a browser. |
 | Innovation Brands Corp | https://www.proxima.ai | Published privacy-request URL is the site root. Confirm a request form is on the page before sending information. Email: privacy@proxima.ai. Privacy-rights page submitted to the California Data Broker Registry. |
 | Innovative Database Solutions, Inc. | https://idatabasesolutions.com/ccpa/ | Opt-out or consumer privacy-request page. |
@@ -206,7 +206,7 @@ Registered data brokers and privacy-request pages that do not fit the categories
 | Plunge, LLC | https://www.plungedigital.com/privacy-policy/ | Privacy notice or privacy-policy page. Use the state-rights, do-not-sell, or request section. |
 | Predactiv | https://predactiv.com/privacy-policy/ | Privacy notice or privacy-policy page. Use the state-rights, do-not-sell, or request section. |
 | Predictive Pop, Inc. | https://audigent.com/privacy-center/ | Opt-out or consumer privacy-request page. |
-| PrivateNumberChecker | https://www.privatenumberchecker.com/removal-request | Opt-out or consumer privacy-request page. Automated check on 2026-10-01 got HTTP 403. Open the link in a browser. |
+| PrivateNumberChecker | https://www.privatenumberchecker.com/removalrequest/ | Removal request page ("Remove your data from our directory"), linked from the homepage. The old path /removal-request returned HTTP 404 on 2026-10-28. This page loads in a browser; automated checks may get HTTP 403. No request was submitted. |
 | PropertyChecker.com | https://propertychecker.com/optout | Opt-out or consumer privacy-request page. Email: privacy@propertychecker.com. |
 | PropertyIQ | https://www.propertyiq.com/opt-out/address-search | Online form. Email: support@propertyiq.com. Open-dataset difficulty: easy. |
 | PropertyReach | https://www.propertyreach.com/privacy-rights | Opt-out or consumer privacy-request page. Email: compliance@propertyreach.com. Automated check on 2026-10-01 got HTTP 403. Open the link in a browser. |
@@ -286,7 +286,7 @@ Registered data brokers and privacy-request pages that do not fit the categories
 | Webbula, LLC | https://webbula.com/privacy-center/ | Opt-out or consumer privacy-request page. |
 | WeInform (We Inform LLC) | https://www.weinform.org/optOut/name/landing | Opt-out or consumer privacy-request page. |
 | Windfall Data, Inc. | https://www.windfall.com/your-privacy-choices | Opt-out or consumer privacy-request page. The Markup and CalMatters (2025) found page code that hid this URL from search engines. |
-| WINR Data B.V. | https://www.winrdata.com/privacy-policy-us/ | Privacy notice or privacy-policy page. Use the state-rights, do-not-sell, or request section. |
+| WINR Data B.V. | https://www.winrdata.com/privacy-policy/ | Privacy page with a Your Rights section. The old path /privacy-policy-us/ returned HTTP 404 on 2026-10-28 and this page answered HTTP 200. No request was submitted. |
 | Wiza, Inc. | https://www.wiza.co | Published privacy-request URL is the site root. Confirm a request form is on the page before sending information. Privacy-rights page submitted to the California Data Broker Registry. |
 | Wunderkind Corporation | https://www.wunderkind.co/privacy/ | Opt-out or consumer privacy-request page. |
 | Wyty | https://www.wyty.com/remove/ | Opt-out or consumer privacy-request page. Email: support@wyty.com. Automated check on 2026-10-01 got HTTP 403. Open the link in a browser. |

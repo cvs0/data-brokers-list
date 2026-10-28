@@ -7,7 +7,7 @@ california-arrests,California Arrests,californiaarrests.org,background-checks,al
 california-criminal-records-search,California Criminal Records Search,californiacriminalrecords.org,background-checks,dead,captcha_form,Removal form is behind a CAPTCHA widget and no usable removal email was found,recaptcha_v2,6LeXqgcTAAAAAAwtW3KGCoLqVPlY9qfgCPzxYp5Y,checkbox,true,,true,,web_form
 colorado-arrests,Colorado Arrests,coloradoarrests.org,background-checks,alive,captcha_no_form,A CAPTCHA widget is on the removal page and no form fields or usable email were stored,turnstile,0x4AAAAAADyMaIapcmFWs60T,checkbox,true,,,,
 fastbackgroundcheck,FastBackgroundCheck,fastbackgroundcheck.com,background-checks,blocked,bot_wall,The opt-out URL returned a bot wall and a browser retry did not reveal a removal channel,recaptcha_v2,,,false,,,,
-findmugshots,FindMugshots,findmugshots.com,background-checks,opt_out_missing,opt_out_gone,The catalog opt-out URL returned 404 or 410,,,,false,,,,
+findmugshots,FindMugshots,findmugshots.com,background-checks,alive,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,false,,,,
 florida-arrests,Florida Arrests,flarrests.org,background-checks,alive,phone,The only published channel is a phone number,turnstile,0x4AAAAAADygSvvxAXTPrN4p,checkbox,true,,,,phone
 georgia-arrests,Georgia Arrests,georgiaarrests.org,background-checks,alive,captcha_no_form,A CAPTCHA widget is on the removal page and no form fields or usable email were stored,turnstile,0x4AAAAAADyoKqSew9ft7KXv,checkbox,true,,,,
 hawaii-arrests,Hawaii Arrests,hawaiiarrests.org,background-checks,alive,phone,The only published channel is a phone number,,,,true,,,,phone
@@ -189,7 +189,7 @@ numlookup,NumLookup,numlookup.com,other,alive,captcha_form,Removal form is behin
 ocean-global-inc,Ocean Global Inc,ocean.io,other,alive,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,false,,,,
 onpoint-data-strategy,OnPoint Data Strategy,onpointdatastrategy.com,other,alive,captcha_form,Removal form is behind a CAPTCHA widget and no usable removal email was found,recaptcha_v3,6LcO2DAsAAAAAKHQGDFm6uy9___cr1ptf9wnQq-e,score,true,,true,,web_form;phone
 path2response-llc,Path2Response LLC,privacyportal-cdn.onetrust.com,other,alive,captcha_no_form,A CAPTCHA widget is on the removal page and no form fields or usable email were stored,recaptcha_v2,6LfiqCUUAAAAAGzo0BG2sKBIF-oZVi1_rXgUm5xn,checkbox,true,,,,
-privatenumberchecker,PrivateNumberChecker,privatenumberchecker.com,other,opt_out_missing,phone,The only published channel is a phone number,,,,false,,,,phone
+privatenumberchecker,PrivateNumberChecker,privatenumberchecker.com,other,blocked,phone,The only published channel is a phone number,,,,false,,,,phone
 propertyreach,PropertyReach,propertyreach.com,other,blocked,phone,The only published channel is a phone number,,,,false,,,,phone
 publicinfoservices,PublicInfoServices,publicinfoservices.com,other,alive,phone,The only published channel is a phone number,,,,true,,,,phone
 rampedup-llc,"RampedUp, LLC.",basic.rampedup.io,other,alive,captcha_form,Removal form is behind a CAPTCHA widget and no usable removal email was found,recaptcha_v2,6Lc2_aQpAAAAAJHC8EmkNJrxjlcVGl9ZxlHu-FyR,checkbox,true,,true,contact@rampedup.io,web_form;email;phone
@@ -224,7 +224,7 @@ zlookup,Zlookup,zlookup.com,other,alive,captcha_form,Removal form is behind a CA
 192-com,192.com,192.com,people-search,blocked,generic_inbox,"Only a generic inbox was found, and the page does not say to use it for removal",turnstile,,,false,,,feedback@192.com,email
 411-reverse-lookup-canada,411 Reverse Lookup Canada,411reverselookup.ca,people-search,alive,captcha_form,Removal form is behind a CAPTCHA widget and no usable removal email was found,recaptcha_v2,,checkbox,true,,true,,web_form;postal_mail;phone
 411locate,411Locate,411locate.com,people-search,dead,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,false,,,,
-absolute-people-search,Absolute People Search,absolutepeoplesearch.com,people-search,opt_out_missing,phone_postal,Phone and a mailing address are the only channels,recaptcha_v2,6Lcs1CUjAAAAAGboweLdAjYCmgw9I1ofpf6TR32i,,false,recaptcha_v2,,,postal_mail;phone
+absolute-people-search,Absolute People Search,absolutepeoplesearch.com,people-search,alive,captcha_form,Removal form is behind a CAPTCHA widget and no usable removal email was found,recaptcha_v2,6Lcs1CUjAAAAAGboweLdAjYCmgw9I1ofpf6TR32i,,false,recaptcha_v2,true,,web_form;postal_mail;phone
 advancedbackgroundchecks,AdvancedBackgroundChecks,advancedbackgroundchecks.com,people-search,alive,captcha_form,Removal form is behind a CAPTCHA widget and no usable removal email was found,recaptcha_v2,6LdYzessAAAAACnQqZugXee4rNpMsD-6X1paSkS8,invisible,true,,true,,web_form;phone
 airdrietoday-obituaries,AirdrieToday Obituaries,airdrietoday.com,people-search,alive,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,,,,,
 alliance-funeraire-du-royaume,Alliance funéraire du Royaume,afdr.coop,people-search,alive,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,,,,,
@@ -352,7 +352,7 @@ remembering-ca,Remembering.ca (Postmedia Obituaries),remembering.ca,people-searc
 reunion-com-mylife,Reunion.com (MyLife),reunion.com,people-search,blocked,bot_wall,The opt-out URL returned a bot wall and a browser retry did not reveal a removal channel,,,,false,,,,
 revealphoneowner,RevealPhoneOwner,revealphoneowner.com,people-search,alive,phone,The only published channel is a phone number,,,,false,,,,phone
 reversephone-whitepages-affiliated,ReversePhone (Whitepages-affiliated),reversephone.com,people-search,blocked,phone_postal,Phone and a mailing address are the only channels,recaptcha_v2,,,false,,,,postal_mail;phone
-reversephonelookup-intelius-peopleconnect,ReversePhoneLookup (Intelius/PeopleConnect),reversephonelookup.com,people-search,opt_out_missing,phone,The only published channel is a phone number,,,,false,,,,phone
+reversephonelookup-intelius-peopleconnect,ReversePhoneLookup (Intelius/PeopleConnect),reversephonelookup.com,people-search,alive,phone,The only published channel is a phone number,,,,false,,,,phone
 rmoutlook-obituaries,Rocky Mountain Outlook Obituaries,rmoutlook.com,people-search,alive,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,,,,,
 residence-funeraire-lac-st-jean,Résidence funéraire Lac St-Jean,residencefunerairelacstjean.com,people-search,alive,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,,,,,
 residence-funeraire-maska,Résidence Funéraire Maska,rfmaska.coop,people-search,alive,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,,,,,
