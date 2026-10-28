@@ -7592,5 +7592,22 @@
     "offline": true,
     "country": "US",
     "evidence": "northcarolinapublicrecords.org no longer resolves. DNS-over-HTTPS lookups returned NXDOMAIN (status 3, no address) from dns.google and from cloudflare-dns.com on 2026-10-28, in two checks about an hour apart (CST); example.com resolved from the same host. The site shows no listings. The catalog opt-out page is TruthFinder's (truthfinder.com/opt-out/v2/submit/), which TruthFinder's own entry keeps."
+  },
+  "national-cellular-directory": {
+    "checked": "2026-10-28",
+    "country": "US",
+    "paywall": true,
+    "kind": "register_or_purchase",
+    "evidence": "Homepage name form (first name, last name, city) is an ASP.NET postback to / . The site says it offers \"free searches one hour a day\" and asks visitors to sign up or log in. A plain HTTP postback with the page's hidden fields, for John Smith and for a made-up name (Quillon Vanderwekken), returned the same homepage with no listings for either name, so no record can be read without an account. The opt-out page /optout/ has its own removal form. Nothing was submitted there.",
+    "result_check": "POST / with txtFirstName=John, txtLastName=Smith and with Quillon Vanderwekken (2026-10-28, CST): HTTP 200, the homepage again, no result rows."
+  },
+  "ukphonebook-com-simunix": {
+    "checked": "2026-10-28",
+    "country": "GB",
+    "country_override": true,
+    "paywall": true,
+    "kind": "register_or_purchase",
+    "evidence": "UK residential telephone directory run by the Simunix group. The search is a GET to /residential-telephone-directory/search with name and location, guarded by a reCAPTCHA (hidden captcha_key). The page says \"Cost: 5 free a day\" and then charges credits; \"Four credits will unlock a full record.\" A plain GET for John Smith in London and for a made-up name returned \"Please submit the form again. Your reCAPTCHA session has expired.\" and no listings. The Record Removal Request Form is at /remove-me. Nothing was submitted.",
+    "result_check": "GET /residential-telephone-directory/search?name=John Smith&location=London and name=Quillon Vanderwekken (2026-10-28, CST): reCAPTCHA expired notice, no result rows."
   }
 }
