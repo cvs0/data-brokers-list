@@ -1,23 +1,23 @@
 {
  "schema_version": "3.0.0",
- "checked_at": "2026-10-28T07:44:16+00:00",
+ "checked_at": "2026-10-28T07:52:05+00:00",
  "method": "Public pages only: homepage, catalog URL, and mapped privacy, contact, and legal links. robots.txt honored. No form submitted, no login, no CAPTCHA solved. A browser opened lookup homepages the static fetch never read, and catalog URLs that were blocked or failed, when robots.txt allowed the URL. Image fields are URLs, not copied files. People-search listing URLs are not stored. Null means the fetched page did not establish that fact. Every catalog id has a record.",
- "broker_count": 819,
+ "broker_count": 822,
  "counts": {
   "liveness": {
-   "alive": 618,
+   "alive": 621,
    "blocked": 55,
    "error": 24,
    "not_checked": 32,
    "opt_out_missing": 1,
    "robots_disallowed": 89
   },
-  "with_logo": 662,
-  "with_image": 662,
-  "with_search": 403,
-  "with_email": 371,
-  "with_captcha": 334,
-  "with_form": 146
+  "with_logo": 665,
+  "with_image": 665,
+  "with_search": 405,
+  "with_email": 372,
+  "with_captcha": 336,
+  "with_form": 148
  },
  "brokers": {
   "alaska-arrests": {
@@ -59284,7 +59284,7 @@
    "name": "Samba TV, Inc.",
    "category": "other",
    "domain": "samba.com",
-   "checked_at": "2026-10-28T07:43:40+00:00",
+   "checked_at": "2026-10-28T07:51:28+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -117458,7 +117458,7 @@
    "name": "Live Data Technologies, Inc.",
    "category": "other",
    "domain": "livedatatech.com",
-   "checked_at": "2026-10-28T07:44:00+00:00",
+   "checked_at": "2026-10-28T07:51:49+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -154321,7 +154321,7 @@
    "name": "Data Axle Canada",
    "category": "marketing",
    "domain": "dataaxlecanada.ca",
-   "checked_at": "2026-10-28T07:44:13+00:00",
+   "checked_at": "2026-10-28T07:52:02+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -154388,7 +154388,7 @@
    "name": "Prospects Influential",
    "category": "marketing",
    "domain": "prospectsinfluential.com",
-   "checked_at": "2026-10-28T07:44:13+00:00",
+   "checked_at": "2026-10-28T07:52:02+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -154455,7 +154455,7 @@
    "name": "Openroom",
    "category": "background-checks",
    "domain": "openroom.ca",
-   "checked_at": "2026-10-28T07:44:13+00:00",
+   "checked_at": "2026-10-28T07:52:02+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -154522,7 +154522,7 @@
    "name": "Landlord Credit Bureau",
    "category": "credit-financial",
    "domain": "landlordcreditbureau.ca",
-   "checked_at": "2026-10-28T07:44:13+00:00",
+   "checked_at": "2026-10-28T07:52:02+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -154589,7 +154589,7 @@
    "name": "FrontLobby",
    "category": "credit-financial",
    "domain": "frontlobby.com",
-   "checked_at": "2026-10-28T07:44:13+00:00",
+   "checked_at": "2026-10-28T07:52:02+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -154656,7 +154656,7 @@
    "name": "Echovita",
    "category": "people-search",
    "domain": "echovita.com",
-   "checked_at": "2026-10-28T07:44:13+00:00",
+   "checked_at": "2026-10-28T07:52:02+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -154723,7 +154723,7 @@
    "name": "InMemoriam",
    "category": "people-search",
    "domain": "inmemoriam.ca",
-   "checked_at": "2026-10-28T07:44:13+00:00",
+   "checked_at": "2026-10-28T07:52:02+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -154790,7 +154790,7 @@
    "name": "Nécrologie.ca",
    "category": "people-search",
    "domain": "necrologie.ca",
-   "checked_at": "2026-10-28T07:44:13+00:00",
+   "checked_at": "2026-10-28T07:52:02+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -154857,7 +154857,7 @@
    "name": "Geni",
    "category": "people-search",
    "domain": "geni.com",
-   "checked_at": "2026-10-28T07:44:13+00:00",
+   "checked_at": "2026-10-28T07:52:02+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -154924,7 +154924,7 @@
    "name": "FQSG Avis de décès",
    "category": "people-search",
    "domain": "federationgenealogie.qc.ca",
-   "checked_at": "2026-10-28T07:44:13+00:00",
+   "checked_at": "2026-10-28T07:52:02+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -154991,7 +154991,7 @@
    "name": "Domaine funéraire (Corporation des thanatologues du Québec)",
    "category": "people-search",
    "domain": "domainefuneraire.com",
-   "checked_at": "2026-10-28T07:44:13+00:00",
+   "checked_at": "2026-10-28T07:52:02+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -155058,7 +155058,7 @@
    "name": "Canadian Obituaries",
    "category": "people-search",
    "domain": "canadianobituaries.com",
-   "checked_at": "2026-10-28T07:44:13+00:00",
+   "checked_at": "2026-10-28T07:52:02+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -155125,7 +155125,7 @@
    "name": "Coopérative funéraire du Grand Montréal",
    "category": "people-search",
    "domain": "cfgrandmontreal.com",
-   "checked_at": "2026-10-28T07:44:13+00:00",
+   "checked_at": "2026-10-28T07:52:02+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -155192,7 +155192,7 @@
    "name": "Coopérative funéraire des Deux Rives",
    "category": "people-search",
    "domain": "coopfuneraire2rives.com",
-   "checked_at": "2026-10-28T07:44:13+00:00",
+   "checked_at": "2026-10-28T07:52:02+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -155259,7 +155259,7 @@
    "name": "Alliance funéraire du Royaume",
    "category": "people-search",
    "domain": "afdr.coop",
-   "checked_at": "2026-10-28T07:44:13+00:00",
+   "checked_at": "2026-10-28T07:52:02+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -155326,7 +155326,7 @@
    "name": "Coopérative funéraire de l'Abitibi",
    "category": "people-search",
    "domain": "cfa.coop",
-   "checked_at": "2026-10-28T07:44:13+00:00",
+   "checked_at": "2026-10-28T07:52:02+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -155393,7 +155393,7 @@
    "name": "Coopérative funéraire Haute-Côte-Nord - Manicouagan",
    "category": "people-search",
    "domain": "cfhcn.ca",
-   "checked_at": "2026-10-28T07:44:13+00:00",
+   "checked_at": "2026-10-28T07:52:02+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -155460,7 +155460,7 @@
    "name": "Coopérative funéraire de l'Outaouais",
    "category": "people-search",
    "domain": "cfo.coop",
-   "checked_at": "2026-10-28T07:44:13+00:00",
+   "checked_at": "2026-10-28T07:52:02+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -155527,7 +155527,7 @@
    "name": "Coopérative funéraire de l'Estrie",
    "category": "people-search",
    "domain": "coopfuneraireestrie.com",
-   "checked_at": "2026-10-28T07:44:13+00:00",
+   "checked_at": "2026-10-28T07:52:02+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -155594,7 +155594,7 @@
    "name": "Résidence funéraire Lac St-Jean",
    "category": "people-search",
    "domain": "residencefunerairelacstjean.com",
-   "checked_at": "2026-10-28T07:44:13+00:00",
+   "checked_at": "2026-10-28T07:52:02+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -155661,7 +155661,7 @@
    "name": "Coopérative funéraire Brunet",
    "category": "people-search",
    "domain": "coopfbrunet.com",
-   "checked_at": "2026-10-28T07:44:13+00:00",
+   "checked_at": "2026-10-28T07:52:02+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -155728,7 +155728,7 @@
    "name": "Coopérative funéraire Matawinie-Montcalm",
    "category": "people-search",
    "domain": "cfmm.coop",
-   "checked_at": "2026-10-28T07:44:13+00:00",
+   "checked_at": "2026-10-28T07:52:02+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -155795,7 +155795,7 @@
    "name": "Coopérative funéraire des Laurentides",
    "category": "people-search",
    "domain": "coopfunerairelaurentides.org",
-   "checked_at": "2026-10-28T07:44:13+00:00",
+   "checked_at": "2026-10-28T07:52:02+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -155862,7 +155862,7 @@
    "name": "Résidence Funéraire Maska",
    "category": "people-search",
    "domain": "rfmaska.coop",
-   "checked_at": "2026-10-28T07:44:13+00:00",
+   "checked_at": "2026-10-28T07:52:02+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -155929,7 +155929,7 @@
    "name": "Dignity Memorial",
    "category": "people-search",
    "domain": "dignitymemorial.com",
-   "checked_at": "2026-10-28T07:44:13+00:00",
+   "checked_at": "2026-10-28T07:52:02+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -155996,7 +155996,7 @@
    "name": "Interment.net",
    "category": "people-search",
    "domain": "interment.net",
-   "checked_at": "2026-10-28T07:44:13+00:00",
+   "checked_at": "2026-10-28T07:52:02+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -156063,7 +156063,7 @@
    "name": "Mount Pleasant Group",
    "category": "people-search",
    "domain": "mountpleasantgroup.com",
-   "checked_at": "2026-10-28T07:44:13+00:00",
+   "checked_at": "2026-10-28T07:52:02+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -156130,7 +156130,7 @@
    "name": "Kearney Funeral Services",
    "category": "people-search",
    "domain": "kearneyfs.com",
-   "checked_at": "2026-10-28T07:44:13+00:00",
+   "checked_at": "2026-10-28T07:52:02+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -156197,7 +156197,7 @@
    "name": "Basic Funerals",
    "category": "people-search",
    "domain": "basicfunerals.ca",
-   "checked_at": "2026-10-28T07:44:13+00:00",
+   "checked_at": "2026-10-28T07:52:02+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -156264,7 +156264,7 @@
    "name": "Le Nécrologue",
    "category": "people-search",
    "domain": "lenecrologue.com",
-   "checked_at": "2026-10-28T07:44:13+00:00",
+   "checked_at": "2026-10-28T07:52:02+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -168142,6 +168142,750 @@
      "status": 200,
      "role": "catalog",
      "title": "Public records privacy policy – OpenCorporates",
+     "liveness": "alive"
+    }
+   ]
+  },
+  "national-cellular-directory": {
+   "schema_version": "3.0.0",
+   "id": "national-cellular-directory",
+   "name": "National Cellular Directory",
+   "category": "people-search",
+   "domain": "nationalcellulardirectory.com",
+   "checked_at": "2026-10-28T07:47:47+00:00",
+   "liveness": "alive",
+   "liveness_detail": "catalog URL loaded",
+   "homepage": "https://www.nationalcellulardirectory.com/",
+   "logo_url": "https://www.nationalcellulardirectory.com/img/Logo2x.jpg",
+   "images": [
+    {
+     "url": "https://www.nationalcellulardirectory.com/favicon.ico",
+     "kind": "icon",
+     "source_page": "https://www.nationalcellulardirectory.com/"
+    },
+    {
+     "url": "https://www.nationalcellulardirectory.com/img/Logo2x.jpg",
+     "kind": "logo",
+     "source_page": "https://www.nationalcellulardirectory.com/"
+    }
+   ],
+   "theme_color": null,
+   "languages": [
+    "en"
+   ],
+   "legal_name": null,
+   "search": {
+    "available": true,
+    "method": "http_form_post",
+    "page_url": "https://www.nationalcellulardirectory.com/",
+    "form_action": "https://www.nationalcellulardirectory.com/",
+    "inputs": [
+     {
+      "name": "__VIEWSTATE",
+      "type": "hidden",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "__VIEWSTATEGENERATOR",
+      "type": "hidden",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "ctl00$MainContent$txtFirstName",
+      "type": "text",
+      "canonical": "first_name",
+      "required": false,
+      "autocomplete": null,
+      "placeholder": "First Name"
+     },
+     {
+      "name": "ctl00$MainContent$txtLastName",
+      "type": "text",
+      "canonical": "last_name",
+      "required": false,
+      "autocomplete": null,
+      "placeholder": "Last Name"
+     },
+     {
+      "name": "ctl00$MainContent$txtCity",
+      "type": "text",
+      "canonical": "city",
+      "required": false,
+      "autocomplete": null,
+      "placeholder": "City"
+     },
+     {
+      "name": "ctl00$MainContent$ddlStates",
+      "type": "select",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null,
+      "options": [
+       "State",
+       "AK",
+       "AL",
+       "AR",
+       "AZ",
+       "CO",
+       "CT",
+       "DC",
+       "DE",
+       "FL",
+       "GA",
+       "HI",
+       "IA",
+       "ID",
+       "IL",
+       "IN",
+       "KS",
+       "KY",
+       "LA",
+       "MA",
+       "MD",
+       "ME",
+       "MI",
+       "MN",
+       "MO",
+       "MS",
+       "MT",
+       "NC",
+       "ND",
+       "NE",
+       "NH",
+       "NM",
+       "NV",
+       "NY",
+       "OH",
+       "OK",
+       "OR",
+       "PA",
+       "RI",
+       "SC",
+       "SD",
+       "TN",
+       "TX",
+       "UT",
+       "VA",
+       "VT",
+       "WA",
+       "WI",
+       "WV",
+       "WY"
+      ]
+     }
+    ],
+    "url_pattern": "https://www.nationalcellulardirectory.com/",
+    "directory_prefixes": [],
+    "paywall": null,
+    "login_wall": null
+   },
+   "removal": {
+    "url": "https://www.nationalcellulardirectory.com/optout/",
+    "final_url": "https://www.nationalcellulardirectory.com/optout/",
+    "http_status": 200,
+    "kinds": [
+     "opt_out",
+     "do_not_sell"
+    ],
+    "channels": [
+     "web_form",
+     "email",
+     "phone"
+    ],
+    "emails": [
+     {
+      "email": "privacy@nationalcellulardirectory.com",
+      "confidence": "extracted",
+      "source_url": "https://www.nationalcellulardirectory.com/optout/"
+     }
+    ],
+    "phones": [
+     "(888) 346-9978"
+    ],
+    "postal_address": null,
+    "portal": null,
+    "form_fields": [
+     {
+      "name": "ctl00$MainContent$txtEmailAddress",
+      "type": "text",
+      "canonical": "email",
+      "required": false,
+      "autocomplete": null,
+      "placeholder": "Email Address"
+     },
+     {
+      "name": "ctl00$MainContent$txtFirstName",
+      "type": "text",
+      "canonical": "first_name",
+      "required": false,
+      "autocomplete": null,
+      "placeholder": "First Name"
+     },
+     {
+      "name": "ctl00$MainContent$txtLastName",
+      "type": "text",
+      "canonical": "last_name",
+      "required": false,
+      "autocomplete": null,
+      "placeholder": "Last Name"
+     },
+     {
+      "name": "ctl00$MainContent$txtMiddleName",
+      "type": "text",
+      "canonical": "middle_name",
+      "required": false,
+      "autocomplete": null,
+      "placeholder": "Middle Name"
+     },
+     {
+      "name": "ctl00$MainContent$txtAddress",
+      "type": "text",
+      "canonical": "street_address",
+      "required": false,
+      "autocomplete": null,
+      "placeholder": "Address"
+     },
+     {
+      "name": "ctl00$MainContent$txtCity",
+      "type": "text",
+      "canonical": "city",
+      "required": false,
+      "autocomplete": null,
+      "placeholder": "City"
+     },
+     {
+      "name": "ctl00$MainContent$ddlStates",
+      "type": "select",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null,
+      "options": [
+       "-",
+       "AK",
+       "AL",
+       "AR",
+       "AZ",
+       "CA",
+       "CO",
+       "CT",
+       "DC",
+       "DE",
+       "FL",
+       "GA",
+       "HI",
+       "IA",
+       "ID",
+       "IL",
+       "IN",
+       "KS",
+       "KY",
+       "LA",
+       "MA",
+       "MD",
+       "ME",
+       "MI",
+       "MN",
+       "MO",
+       "MS",
+       "MT",
+       "NC",
+       "ND",
+       "NE",
+       "NH",
+       "NJ",
+       "NM",
+       "NV",
+       "NY",
+       "OH",
+       "OK",
+       "OR",
+       "PA",
+       "RI",
+       "SC",
+       "SD",
+       "TN",
+       "TX",
+       "UT",
+       "VA",
+       "VT",
+       "WA",
+       "WI",
+       "WV",
+       "WY"
+      ]
+     },
+     {
+      "name": "ctl00$MainContent$txtPhoneNumber",
+      "type": "text",
+      "canonical": "phone",
+      "required": false,
+      "autocomplete": null,
+      "placeholder": "999-999-9999"
+     },
+     {
+      "name": "ctl00$MainContent$txtCaptchaValidate",
+      "type": "text",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     }
+    ],
+    "csrf_field_name": null,
+    "requires_profile_url": null,
+    "captcha": {
+     "provider": "recaptcha_v2",
+     "sitekey": "6Lfu75QUAAAAAKvIfGP_W9QDGmS0li0Mn8CrNFdH",
+     "pages": [
+      "https://www.nationalcellulardirectory.com/optout/"
+     ]
+    },
+    "consent_vendor": null,
+    "success_text": null,
+    "suppression_not_deletion": null,
+    "processing_days": null,
+    "processing_text": null
+   },
+   "bot_defense": {
+    "vendor": null,
+    "outcome": "none"
+   },
+   "legal": {
+    "privacy_policy_url": null,
+    "terms_url": null,
+    "automation_prohibited": null,
+    "automation_clause": null,
+    "residency": [
+     "US-CA",
+     "US"
+    ],
+    "authorized_agent": null,
+    "data_categories": [
+     "identifiers",
+     "employment"
+    ]
+   },
+   "pages": [
+    {
+     "url": "https://nationalcellulardirectory.com/",
+     "final_url": "https://www.nationalcellulardirectory.com/",
+     "status": 200,
+     "role": "home",
+     "title": "Cell Phone Number Lookup - Reverse Phone Lookup | National Cellular Directory",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.nationalcellulardirectory.com/",
+     "final_url": "https://www.nationalcellulardirectory.com/",
+     "status": 200,
+     "role": "home",
+     "title": "Cell Phone Number Lookup - Reverse Phone Lookup | National Cellular Directory",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.nationalcellulardirectory.com/optout/",
+     "final_url": "https://www.nationalcellulardirectory.com/optout/",
+     "status": 200,
+     "role": "catalog",
+     "title": "Opt Out | National Cellular Directory",
+     "liveness": "alive"
+    }
+   ]
+  },
+  "ukphonebook-com-simunix": {
+   "schema_version": "3.0.0",
+   "id": "ukphonebook-com-simunix",
+   "name": "ukphonebook.com (Simunix)",
+   "category": "people-search",
+   "domain": "ukphonebook.com",
+   "checked_at": "2026-10-28T07:47:53+00:00",
+   "liveness": "alive",
+   "liveness_detail": "catalog URL loaded",
+   "homepage": "https://www.ukphonebook.com/",
+   "logo_url": "https://assets.ukphonebook.com/assets/uk10_new/img/ukpblogo.png",
+   "images": [
+    {
+     "url": "https://assets.ukphonebook.com/assets/uk10_new/favicon.ico",
+     "kind": "icon",
+     "source_page": "https://www.ukphonebook.com/"
+    },
+    {
+     "url": "https://assets.ukphonebook.com/assets/uk10_new/img/touch-icon-iphone.png",
+     "kind": "apple_touch_icon",
+     "source_page": "https://www.ukphonebook.com/"
+    },
+    {
+     "url": "https://assets.ukphonebook.com/assets/uk10_new/img/touch-icon-ipad.png",
+     "kind": "apple_touch_icon",
+     "source_page": "https://www.ukphonebook.com/"
+    },
+    {
+     "url": "https://assets.ukphonebook.com/assets/uk10_new/img/touch-icon-iphone-retina.png",
+     "kind": "apple_touch_icon",
+     "source_page": "https://www.ukphonebook.com/"
+    },
+    {
+     "url": "https://assets.ukphonebook.com/assets/uk10_new/img/touch-icon-ipad-retina.png",
+     "kind": "apple_touch_icon",
+     "source_page": "https://www.ukphonebook.com/"
+    },
+    {
+     "url": "http://www.ukphonebook.com/assets/images/og-default.png",
+     "kind": "og_image",
+     "source_page": "https://www.ukphonebook.com/"
+    },
+    {
+     "url": "https://assets.ukphonebook.com/assets/uk10_new/img/ukpblogo.png",
+     "kind": "logo",
+     "source_page": "https://www.ukphonebook.com/"
+    },
+    {
+     "url": "https://assets.ukphonebook.com/assets/uk10_new/img/ukpblogo-desktop.png",
+     "kind": "logo",
+     "source_page": "https://www.ukphonebook.com/"
+    },
+    {
+     "url": "https://assets.ukphonebook.com/assets/uk10_new/img/simx.png",
+     "kind": "logo",
+     "source_page": "https://www.ukphonebook.com/"
+    },
+    {
+     "url": "https://assets.ukphonebook.com/assets/uk10_new/img/t2acup.png",
+     "kind": "logo",
+     "source_page": "https://www.ukphonebook.com/"
+    },
+    {
+     "url": "https://assets.ukphonebook.com/assets/uk10_new/img/365.png",
+     "kind": "logo",
+     "source_page": "https://www.ukphonebook.com/"
+    }
+   ],
+   "theme_color": "#171c47",
+   "languages": [
+    "en"
+   ],
+   "legal_name": null,
+   "search": {
+    "available": true,
+    "method": "http_get",
+    "page_url": "https://www.ukphonebook.com/",
+    "form_action": "https://www.ukphonebook.com/residential-telephone-directory/search",
+    "inputs": [
+     {
+      "name": "captcha_key",
+      "type": "hidden",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "form",
+      "type": "hidden",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "type",
+      "type": "hidden",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "name",
+      "type": "text",
+      "canonical": "full_name",
+      "required": false,
+      "autocomplete": "off",
+      "placeholder": "e.g. John Smith"
+     },
+     {
+      "name": "location",
+      "type": "text",
+      "canonical": null,
+      "required": false,
+      "autocomplete": "off",
+      "placeholder": "e.g. York or YO1"
+     }
+    ],
+    "url_pattern": "https://www.ukphonebook.com/residential-telephone-directory/search?name={name}&location={location}",
+    "directory_prefixes": [],
+    "paywall": null,
+    "login_wall": null
+   },
+   "removal": {
+    "url": "https://www.ukphonebook.com/remove-me",
+    "final_url": "https://www.ukphonebook.com/remove-me",
+    "http_status": 200,
+    "kinds": [
+     "opt_out"
+    ],
+    "channels": [
+     "web_form"
+    ],
+    "emails": [],
+    "phones": [],
+    "postal_address": null,
+    "portal": null,
+    "form_fields": [
+     {
+      "name": "forename",
+      "type": "text",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": "Enter your forename"
+     },
+     {
+      "name": "surname",
+      "type": "text",
+      "canonical": "last_name",
+      "required": false,
+      "autocomplete": null,
+      "placeholder": "Enter your surname"
+     },
+     {
+      "name": "address_line1",
+      "type": "text",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "address_line2",
+      "type": "text",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "address_line3",
+      "type": "text",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "town",
+      "type": "text",
+      "canonical": "city",
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "postcode",
+      "type": "text",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": "Enter your postcode"
+     },
+     {
+      "name": "email",
+      "type": "email",
+      "canonical": "email",
+      "required": false,
+      "autocomplete": null,
+      "placeholder": "Enter your email"
+     },
+     {
+      "name": "telephone",
+      "type": "text",
+      "canonical": "phone",
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     }
+    ],
+    "csrf_field_name": null,
+    "requires_profile_url": null,
+    "captcha": {
+     "provider": null,
+     "sitekey": null,
+     "pages": []
+    },
+    "consent_vendor": null,
+    "success_text": null,
+    "suppression_not_deletion": null,
+    "processing_days": null,
+    "processing_text": null
+   },
+   "bot_defense": {
+    "vendor": null,
+    "outcome": "none"
+   },
+   "legal": {
+    "privacy_policy_url": null,
+    "terms_url": null,
+    "automation_prohibited": null,
+    "automation_clause": null,
+    "residency": [
+     "EU"
+    ],
+    "authorized_agent": null,
+    "data_categories": [
+     "identifiers"
+    ]
+   },
+   "pages": [
+    {
+     "url": "https://ukphonebook.com/",
+     "final_url": "https://www.ukphonebook.com/",
+     "status": 200,
+     "role": "home",
+     "title": "UK Telephone Directory, Person Search & Company Information | ukphonebook.com",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.ukphonebook.com/",
+     "final_url": "https://www.ukphonebook.com/",
+     "status": 200,
+     "role": "home",
+     "title": "UK Telephone Directory, Person Search & Company Information | ukphonebook.com",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.ukphonebook.com/remove-me",
+     "final_url": "https://www.ukphonebook.com/remove-me",
+     "status": 200,
+     "role": "catalog",
+     "title": "ukphonebook.com | Remove my details",
+     "liveness": "alive"
+    }
+   ]
+  },
+  "emailsherlock": {
+   "schema_version": "3.0.0",
+   "id": "emailsherlock",
+   "name": "EmailSherlock",
+   "category": "people-search",
+   "domain": "emailsherlock.com",
+   "checked_at": "2026-10-28T07:47:48+00:00",
+   "liveness": "alive",
+   "liveness_detail": "catalog URL redirected and the final page loaded",
+   "homepage": "https://www.emailsherlock.com/",
+   "logo_url": "https://www.emailsherlock.com/assets/images/logo.png?v=e2073780abb3bf09",
+   "images": [
+    {
+     "url": "https://www.emailsherlock.com/assets/favicons/apple-icon-180x180.png?v=f71d275b118864d1",
+     "kind": "apple_touch_icon",
+     "source_page": "https://www.emailsherlock.com/"
+    },
+    {
+     "url": "https://www.emailsherlock.com/assets/favicons/favicon-32x32.png?v=3a9026c6dd7e85df",
+     "kind": "icon",
+     "source_page": "https://www.emailsherlock.com/"
+    },
+    {
+     "url": "https://www.emailsherlock.com/assets/favicons/favicon-16x16.png?v=7f6b84cab9695435",
+     "kind": "icon",
+     "source_page": "https://www.emailsherlock.com/"
+    },
+    {
+     "url": "https://www.emailsherlock.com/assets/images/logo.png?v=e2073780abb3bf09",
+     "kind": "logo",
+     "source_page": "https://www.emailsherlock.com/"
+    }
+   ],
+   "theme_color": "#ffffff",
+   "languages": [
+    "en"
+   ],
+   "legal_name": "EmailSherlock",
+   "search": {
+    "available": false,
+    "method": "none",
+    "page_url": null,
+    "form_action": null,
+    "inputs": [],
+    "url_pattern": null,
+    "directory_prefixes": [],
+    "paywall": true,
+    "login_wall": null
+   },
+   "removal": {
+    "url": "https://www.emailsherlock.com/optout",
+    "final_url": "https://www.emailsherlock.com/captcha-challenge",
+    "http_status": 200,
+    "kinds": [
+     "opt_out"
+    ],
+    "channels": [],
+    "emails": [],
+    "phones": [],
+    "postal_address": null,
+    "portal": null,
+    "form_fields": [],
+    "csrf_field_name": null,
+    "requires_profile_url": null,
+    "captcha": {
+     "provider": "recaptcha_v2",
+     "sitekey": "6Lc_EdEcAAAAAL6lUqxQQIFhpsndl3StPE1Ep3wO",
+     "pages": [
+      "https://www.emailsherlock.com/captcha-challenge"
+     ]
+    },
+    "consent_vendor": null,
+    "success_text": null,
+    "suppression_not_deletion": null,
+    "processing_days": null,
+    "processing_text": null
+   },
+   "bot_defense": {
+    "vendor": null,
+    "outcome": "none"
+   },
+   "legal": {
+    "privacy_policy_url": null,
+    "terms_url": null,
+    "automation_prohibited": null,
+    "automation_clause": null,
+    "residency": [],
+    "authorized_agent": null,
+    "data_categories": [
+     "identifiers",
+     "internet_activity"
+    ]
+   },
+   "pages": [
+    {
+     "url": "https://emailsherlock.com/",
+     "final_url": "https://www.emailsherlock.com/",
+     "status": 200,
+     "role": "home",
+     "title": "Free Email Lookup. Find the Person Behind Any Email Address | EmailSherlock",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.emailsherlock.com/",
+     "final_url": "https://www.emailsherlock.com/",
+     "status": 200,
+     "role": "home",
+     "title": "Free Email Lookup. Find the Person Behind Any Email Address | EmailSherlock",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.emailsherlock.com/optout",
+     "final_url": "https://www.emailsherlock.com/captcha-challenge",
+     "status": 200,
+     "role": "catalog",
+     "title": "Security check · EmailSherlock",
      "liveness": "alive"
     }
    ]
