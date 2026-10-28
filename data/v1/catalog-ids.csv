@@ -4,7 +4,7 @@ arkansas-arrests,"Arkansas Arrests",background-checks,arkansasarrests.org,"https
 backgroundcheckers,"BackgroundCheckers",background-checks,backgroundcheckers.net,"https://www.backgroundcheckers.net/optOut/name/landing"
 california-arrests,"California Arrests",background-checks,californiaarrests.org,"https://www.californiaarrests.org/request-portal"
 colorado-arrests,"Colorado Arrests",background-checks,coloradoarrests.org,"https://www.coloradoarrests.org/request-portal"
-findmugshots,"FindMugshots",background-checks,findmugshots.com,"https://www.findmugshots.com/google_remove.php"
+findmugshots,"FindMugshots",background-checks,findmugshots.com,"https://www.findmugshots.com/optout"
 first-advantage-corporation,"First Advantage Corporation",background-checks,fadv.com,"https://fadv.com/privacy-center/"
 florida-arrests,"Florida Arrests",background-checks,flarrests.org,"https://www.flarrests.org/request-portal"
 freebackgroundchecks-com,"FreeBackgroundChecks.com",background-checks,freebackgroundchecks.com,"https://freebackgroundchecks.com/optout/"
@@ -308,7 +308,7 @@ infomatics-llc-network-privatereports-com,"Infomatics LLC network (privatereport
 infopay-inc,"InfoPay, Inc",other,infopay.com,"https://www.infopay.com/privacy"
 informa-usa-inc,"Informa USA Inc.",other,informa.com,"https://privacy.informa.com/policies/en/"
 information-com,"Information.com",other,information.com,"https://information.com/opt-out"
-inmar-oiq-llc,"Inmar-OIQ, LLC",other,owneriq.com,"https://www.inmar.com/about/privacy-policy"
+inmar-oiq-llc,"Inmar-OIQ, LLC",other,owneriq.com,"https://www.inmar.com/about/privacy-policy/owneriq/consumer-rights-requests"
 inmarket-media-llc,"InMarket Media, LLC",other,inmarket.com,"https://inmarket.com/privacy/"
 innovative-database-solutions-inc,"Innovative Database Solutions, Inc.",other,idatabasesolutions.com,"https://idatabasesolutions.com/ccpa/"
 intalytics-inc,"Intalytics, Inc.",other,kalibrate.com,"https://kalibrate.com/data-subject-access-request-form/"
@@ -402,7 +402,7 @@ precisely-software-incorporated,"Precisely Software Incorporated",other,precisel
 predactiv,"Predactiv",other,predactiv.com,"https://predactiv.com/privacy-policy/"
 predictive-pop-inc,"Predictive Pop, Inc.",other,audigent.com,"https://audigent.com/privacy-center/"
 preqin-limited,"Preqin Limited",other,preqin.com,"https://www.preqin.com/policies/privacy-policy"
-privatenumberchecker,"PrivateNumberChecker",other,privatenumberchecker.com,"https://www.privatenumberchecker.com/removal-request"
+privatenumberchecker,"PrivateNumberChecker",other,privatenumberchecker.com,"https://www.privatenumberchecker.com/removalrequest/"
 privco-media-llc,"PrivCo Media LLC",other,privco.com,"https://www.privco.com/privacy-policy"
 prodpro-inc,"ProdPro Inc",other,app.prodpro.com,"https://app.prodpro.com/privacy-policy"
 project-affinity-inc,"Project Affinity, Inc",other,affinity.co,"https://www.affinity.co/legal/privacy-policy"
@@ -517,7 +517,7 @@ webbula-llc,"Webbula, LLC",other,webbula.com,"https://webbula.com/privacy-center
 webmd-health-corp,"WebMD Health Corp.",other,webmd.com,"https://www.webmd.com/about-webmd-policies/about-ccpa-do-not-sell"
 weinform-we-inform-llc,"WeInform (We Inform LLC)",other,weinform.org,"https://www.weinform.org/optOut/name/landing"
 windfall-data-inc,"Windfall Data, Inc.",other,windfall.com,"https://www.windfall.com/your-privacy-choices"
-winr-data-b-v,"WINR Data B.V.",other,winrdata.com,"https://www.winrdata.com/privacy-policy-us/"
+winr-data-b-v,"WINR Data B.V.",other,winrdata.com,"https://www.winrdata.com/privacy-policy/"
 wunderkind-corporation,"Wunderkind Corporation",other,wunderkind.co,"https://www.wunderkind.co/privacy/"
 wyty,"Wyty",other,wyty.com,"https://www.wyty.com/remove/"
 xad-inc,"xAd, Inc.",other,groundtruth.com,"https://www.groundtruth.com/privacy-policy/"
@@ -526,7 +526,7 @@ ziprecruiter-inc,"ZipRecruiter, Inc.",other,ziprecruiter.com,"https://www.ziprec
 zipstorm-inc,"ZipStorm, Inc.",other,seekout.com,"https://www.seekout.com/privacy"
 zlookup,"Zlookup",other,zlookup.com,"https://www.zlookup.com/opt_out"
 zs-associates-inc,"ZS Associates, Inc.",other,zs.com,"https://www.zs.com/data-request"
-absolute-people-search,"Absolute People Search",people-search,absolutepeoplesearch.com,"https://absolutepeoplesearch.com/optout"
+absolute-people-search,"Absolute People Search",people-search,absolutepeoplesearch.com,"https://absolutepeoplesearch.com/public.php?funct=optout"
 advancedbackgroundchecks,"AdvancedBackgroundChecks",people-search,advancedbackgroundchecks.com,"https://www.advancedbackgroundchecks.com/opt-out"
 anywho-intelius-peopleconnect,"AnyWho (Intelius/PeopleConnect)",people-search,anywho.com,"https://suppression.peopleconnect.us/"
 archives-com-ancestry,"Archives.com (Ancestry)",people-search,archives.com,"https://www.archives.com/?_act=Optout"
@@ -602,7 +602,7 @@ recordspage-truthfinder,"RecordsPage (TruthFinder)",people-search,recordspage.or
 recordsquarry-truthfinder,"RecordsQuarry (TruthFinder)",people-search,recordsquarry.com,"https://www.truthfinder.com/opt-out/v2/submit/"
 reunion-com-mylife,"Reunion.com (MyLife)",people-search,reunion.com,"https://www.mylife.com/ccpa/index.pubview"
 reversephone-whitepages-affiliated,"ReversePhone (Whitepages-affiliated)",people-search,reversephone.com,"https://www.reversephone.com/svc/optout/search/optouts"
-reversephonelookup-intelius-peopleconnect,"ReversePhoneLookup (Intelius/PeopleConnect)",people-search,reversephonelookup.com,"https://www.reversephonelookup.com/remove.php"
+reversephonelookup-intelius-peopleconnect,"ReversePhoneLookup (Intelius/PeopleConnect)",people-search,reversephonelookup.com,"https://suppression.peopleconnect.us/"
 searchpeoplefree,"SearchPeopleFree",people-search,searchpeoplefree.com,"https://www.searchpeoplefree.com/opt-out"
 searchpeoplefree-net,"SearchPeopleFree.net",people-search,searchpeoplefree.net,"https://searchpeoplefree.net/resource/remove-my-info"
 searchquarry,"SearchQuarry",people-search,searchquarry.com,"https://members.searchquarry.com/opt-out"
@@ -797,7 +797,7 @@ fog-data-science-llc,"Fog Data science LLC",other,fogdatascience.com,"https://ww
 gigabite-inc,"Gigabite Inc",other,boam.ai,"https://boam.ai/"
 global-source-data-solutions-inc,"Global Source Data Solutions Inc",other,gsdsi.com,"https://gsdsi.com/privacy"
 golookup,"GoLookUp",other,golookup.com,"https://golookup.com/support/optout"
-h1-insights-inc,"H1 Insights, Inc.",other,h1.co,"https://www.h1.co"
+h1-insights-inc,"H1 Insights, Inc.",other,h1.co,"https://h1.com/privacy-policy/"
 health-union-llc,"Health Union, LLC",other,health-union.com,"https://privacyportal.onetrust.com/webform/c402d2db-7536-4212-a23d-ed4a33c1b3b2/e3aec736-7c0a-4313-a3e7-132ff601397a"
 hudwayglass-homemetry-property-directory,"HudwayGlass / Homemetry (property directory)",other,hudwayglass.com,"https://hudwayglass.com/page/privacy"
 huge-legal-technology-company-inc,"Huge Legal Technology Company, Inc",other,trustandwill.com,"https://trustandwill.com/security/privacy-policy"
@@ -1205,13 +1205,13 @@ local-ch,local.ch,people-search,local.ch,https://www.localsearch.ch/en/privacy-s
 herold-at-telefonbuch,HEROLD Telefonbuch (herold.at),people-search,herold.at,https://www.herold.at/datenschutzerklaerung/
 pagesblanches-fr,PagesBlanches (pagesjaunes.fr),people-search,pagesjaunes.fr,https://assistance.pagesjaunes.fr/hc/fr/articles/360017929780-Je-suis-un-particulier-et-je-souhaite-effacer-l-ensemble-de-mes-donn%C3%A9es-sur-PagesBlanches
 merinfo-se,Merinfo.se,people-search,merinfo.se,https://www.merinfo.se/ta-bort-mina-uppgifter
-airdrietoday-obituaries,AirdrieToday Obituaries,people-search,airdrietoday.com,https://www.airdrietoday.com/other/privacy-policy
-cochranetoday-obituaries,CochraneToday Obituaries,people-search,cochranetoday.ca,https://www.cochranetoday.ca/other/privacy-policy
-okotokstoday-obituaries,OkotoksToday Obituaries,people-search,okotokstoday.ca,https://www.okotokstoday.ca/other/privacy-policy
+airdrietoday-obituaries,AirdrieToday Obituaries,people-search,airdrietoday.com,https://www.airdriecityview.com/other/privacy-policy
+cochranetoday-obituaries,CochraneToday Obituaries,people-search,cochranetoday.ca,https://www.cochraneeagle.ca/other/privacy-policy
+okotokstoday-obituaries,OkotoksToday Obituaries,people-search,okotokstoday.ca,https://www.westernwheel.ca/other/privacy-policy
 rmoutlook-obituaries,Rocky Mountain Outlook Obituaries,people-search,rmoutlook.com,https://www.rmoutlook.com/other/privacy-policy
 lakelandtoday-obituaries,LakelandToday Obituaries,people-search,lakelandtoday.ca,https://www.lakelandtoday.ca/other/privacy-policy
 townandcountrytoday-obituaries,Town & Country Today Obituaries,people-search,townandcountrytoday.com,https://www.townandcountrytoday.com/other/privacy-policy
-mountainviewtoday-obituaries,MountainViewToday Obituaries,people-search,mountainviewtoday.ca,https://www.mountainviewtoday.ca/other/privacy-policy
+mountainviewtoday-obituaries,MountainViewToday Obituaries,people-search,mountainviewtoday.ca,https://www.thealbertan.com/other/privacy-policy
 sasktoday-obituaries,SaskToday Obituaries,people-search,sasktoday.ca,https://www.sasktoday.ca/other/privacy-policy
 moosejawtoday-obituaries,MooseJawToday Obituaries,people-search,moosejawtoday.com,https://www.moosejawtoday.com/other/privacy-policy
 tbnewswatch-obituaries,TBNewsWatch Obituaries,people-search,tbnewswatch.com,https://www.tbnewswatch.com/privacy-policy

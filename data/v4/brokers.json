@@ -1,15 +1,15 @@
 {
  "schema_version": "4.0.0",
- "checked_at": "2026-10-28T07:35:30+00:00",
+ "checked_at": "2026-10-28T07:45:46+00:00",
  "method": "v3 records, with privacy and removal mailboxes on another domain kept as related_domain. Brokers whose loaded pages published no removal channel were crawled again for unfetched same-site opt-out and privacy URLs, then the catalog URL and homepage were opened once in a browser when those pages still showed no form. That recrawl honors robots.txt. A later pass reads the catalog URL and homepage of brokers whose robots.txt had disallowed the research client. A search pass reads homepages whose public search form was missing, including pages robots.txt had disallowed, and stores a name, phone, or address form. Those passes submit no form, no login, and no CAPTCHA. A legal pass re-reads stored privacy and terms text and fetches an unread privacy or terms page when robots.txt allows it. A network pass looks up public DNS and the site certificate, and reads response headers for the removal URL when robots.txt allows it. A later pass adds IPv6, SPF, DMARC, DKIM selectors, CAA, DNSSEC, the address block, certificate dates, RDAP registration, and the removal response's security headers. A captcha pass re-reads the removal URL and the search page for a widget. A browser reads the page when the static HTML has no widget and the page has a removal form, a stored CAPTCHA, or a public search form. A later pass reads the public widget settings, including whether it is a checkbox, an invisible check, or a score. A form pass re-reads stored search and removal forms for labels, limits, autocomplete, the submit button, and hidden field names. A browser opens when the static HTML does not contain the stored fields. Nothing is submitted. A search test then submits one synthetic query on each broker whose search and removal are both fillable, or with --searchable on each broker with a public search. A robots.txt disallow does not stop the test or count against a search; when --robots is set the log only notes it as robots_disallowed. Brokers whose homepage robots.txt disallowed the research client were later opened in a browser, and their liveness is the result of that read. Removal forms are not submitted and CAPTCHAs are not solved. search_test is on every broker. It stores the outcome, status, field names, the first path segment, the page kind, and a result count when the page states one. A loader page is followed to the count endpoint. The response body, record text, and listing URLs are not stored.",
  "broker_count": 819,
  "counts": {
   "with_related_email": 131,
-  "with_form": 177,
+  "with_form": 178,
   "with_email": 422,
   "with_extracted_email": 201,
   "with_stated_email": 12,
-  "no_channel_remaining": 119,
+  "no_channel_remaining": 120,
   "with_search": 352,
   "with_search_fillable": 330,
   "search_unscanned": 37,
@@ -29,10 +29,10 @@
   "with_region": 481,
   "with_locality": 361,
   "with_removal_action": 141,
-  "shared_removal": 60,
+  "shared_removal": 61,
   "email_verification": 28,
   "id_document": 1,
-  "with_privacy": 607,
+  "with_privacy": 608,
   "with_terms": 398,
   "with_automation_clause": 81,
   "with_authorized_agent": 140,
@@ -44,7 +44,7 @@
   "with_mail_provider": 420,
   "with_cdn": 418,
   "with_tls_org": 36,
-  "removal_offsite": 96,
+  "removal_offsite": 97,
   "with_hsts": 273,
   "with_form_enctype": 215,
   "with_field_detail": 422,
@@ -71,7 +71,7 @@
   "search_captcha_widget": 16,
   "search_captcha_sitekey": 6,
   "search_captcha_checked": 329,
-  "captcha_blocks_form": 88,
+  "captcha_blocks_form": 89,
   "captcha_email_fallback": 29,
   "removal_captcha_checkbox": 78,
   "removal_captcha_invisible": 30,
@@ -83,27 +83,27 @@
   "search_captcha_invisible": 0,
   "search_captcha_score": 0,
   "removal_blockers": {
-   "captcha_form": 59,
+   "captcha_form": 60,
    "generic_inbox": 56,
-   "phone_postal": 25,
+   "phone_postal": 24,
    "portal": 4,
    "phone": 63,
    "postal": 6,
    "bot_wall": 25,
    "fetch_error": 13,
-   "opt_out_gone": 1,
+   "opt_out_gone": 0,
    "robots": 23,
    "captcha_no_form": 26,
-   "no_channel": 126
+   "no_channel": 127
   },
   "lookup_search": 287,
   "lookup_search_fillable": 271,
   "liveness": {
-   "alive": 685,
-   "blocked": 50,
+   "alive": 688,
+   "blocked": 51,
    "dead": 16,
    "error": 15,
-   "opt_out_missing": 5,
+   "opt_out_missing": 1,
    "robots_disallowed": 48
   }
  },
@@ -1825,9 +1825,9 @@
    "name": "FindMugshots",
    "category": "background-checks",
    "domain": "findmugshots.com",
-   "checked_at": "2026-10-12T23:16:42+00:00",
-   "liveness": "opt_out_missing",
-   "liveness_detail": "catalog URL returned 404 or 410; the site itself still responded",
+   "checked_at": "2026-10-28T07:40:10+00:00",
+   "liveness": "alive",
+   "liveness_detail": "catalog URL loaded",
    "homepage": "https://www.findmugshots.com/",
    "logo_url": "https://www.findmugshots.com/_next/static/media/fm_logo.0520696b.svg",
    "images": [
@@ -1891,11 +1891,12 @@
     "captcha_checked": null
    },
    "removal": {
-    "url": "https://www.findmugshots.com/google_remove.php",
-    "final_url": "https://www.findmugshots.com/google_remove.php",
-    "http_status": 404,
+    "url": "https://www.findmugshots.com/optout",
+    "final_url": "https://www.findmugshots.com/optout",
+    "http_status": 200,
     "kinds": [
-     "opt_out"
+     "opt_out",
+     "do_not_sell"
     ],
     "channels": [],
     "emails": [],
@@ -1969,18 +1970,10 @@
      "liveness": "alive"
     },
     {
-     "url": "https://www.findmugshots.com/google_remove.php",
-     "final_url": "https://www.findmugshots.com/google_remove.php",
-     "status": 404,
-     "role": "catalog",
-     "title": "",
-     "liveness": "dead"
-    },
-    {
      "url": "https://www.findmugshots.com/optout",
      "final_url": "https://www.findmugshots.com/optout",
      "status": 200,
-     "role": "opt_out",
+     "role": "catalog",
      "title": "Free Mugshots Search - Find Mgushots - Opt Out",
      "liveness": "alive"
     },
@@ -2006,14 +1999,6 @@
      "status": 200,
      "role": "legal",
      "title": "US Nationwide FindMugshots Terms of Use",
-     "liveness": "alive"
-    },
-    {
-     "url": "https://www.findmugshots.com/",
-     "final_url": "https://www.findmugshots.com/",
-     "status": 200,
-     "role": "home",
-     "title": "Free Mugshot Search Online | Find Mugshots - Instant Mug Shot Lookup",
      "liveness": "alive"
     }
    ],
@@ -2118,7 +2103,7 @@
     "removal_captcha": false,
     "captcha_blocks_form": false,
     "captcha_email_fallback": false,
-    "removal_blocker": "opt_out_gone"
+    "removal_blocker": "no_channel"
    },
    "search_test": {
     "outcome": null,
@@ -75298,7 +75283,7 @@
    "name": "Inmar-OIQ, LLC",
    "category": "other",
    "domain": "owneriq.com",
-   "checked_at": "2026-10-12T23:22:30+00:00",
+   "checked_at": "2026-10-28T07:40:15+00:00",
    "liveness": "alive",
    "liveness_detail": "catalog URL loaded",
    "homepage": "https://owneriq.com/",
@@ -75307,32 +75292,32 @@
     {
      "url": "https://www.inmar.com/themes/custom/inmar/favicon.ico",
      "kind": "icon",
-     "source_page": "https://www.inmar.com/about/privacy-policy"
+     "source_page": "https://www.inmar.com/about/privacy-policy/owneriq/consumer-rights-requests"
     },
     {
      "url": "https://www.inmar.com/themes/custom/inmar/favicon/apple-touch-icon.png",
      "kind": "apple_touch_icon",
-     "source_page": "https://www.inmar.com/about/privacy-policy"
+     "source_page": "https://www.inmar.com/about/privacy-policy/owneriq/consumer-rights-requests"
     },
     {
      "url": "https://www.inmar.com/themes/custom/inmar/favicon/favicon-32x32.png",
      "kind": "icon",
-     "source_page": "https://www.inmar.com/about/privacy-policy"
+     "source_page": "https://www.inmar.com/about/privacy-policy/owneriq/consumer-rights-requests"
     },
     {
      "url": "https://www.inmar.com/themes/custom/inmar/favicon/favicon-16x16.png",
      "kind": "icon",
-     "source_page": "https://www.inmar.com/about/privacy-policy"
+     "source_page": "https://www.inmar.com/about/privacy-policy/owneriq/consumer-rights-requests"
     },
     {
      "url": "https://www.inmar.com/themes/custom/inmar/favicon/safari-pinned-tab.svg",
      "kind": "icon",
-     "source_page": "https://www.inmar.com/about/privacy-policy"
+     "source_page": "https://www.inmar.com/about/privacy-policy/owneriq/consumer-rights-requests"
     },
     {
      "url": "https://www.inmar.com/themes/custom/inmar/logo.png",
      "kind": "logo",
-     "source_page": "https://www.inmar.com/about/privacy-policy"
+     "source_page": "https://www.inmar.com/about/privacy-policy/owneriq/consumer-rights-requests"
     }
    ],
    "theme_color": "#ffffff",
@@ -75364,32 +75349,29 @@
     "captcha_detail": null
    },
    "removal": {
-    "url": "https://www.inmar.com/about/privacy-policy",
-    "final_url": "https://www.inmar.com/about/privacy-policy",
+    "url": "https://www.inmar.com/about/privacy-policy/owneriq/consumer-rights-requests",
+    "final_url": "https://www.inmar.com/about/privacy-policy/owneriq/consumer-rights-requests",
     "http_status": 200,
     "kinds": [
-     "opt_out"
+     "opt_out",
+     "do_not_sell"
     ],
     "channels": [
      "email",
-     "phone",
-     "official_portal"
+     "phone"
     ],
     "emails": [
      {
-      "email": "privacy@inmar.com",
+      "email": "privacy_office@inmar.com",
       "confidence": "related_domain",
       "source_url": "https://www.inmar.com/about/privacy-policy"
      }
     ],
     "phones": [
-     "844-392-1073"
+     "1-844-392-1073"
     ],
     "postal_address": null,
-    "portal": {
-     "vendor": "onetrust",
-     "url": "https://privacyportal.onetrust.com/webform/fa9f2f77-33ff-473b-ae55-579e2e693a91/b9c860bc-cc13-4db1-b995-395c9fcbe3c7"
-    },
+    "portal": null,
     "form_fields": [],
     "csrf_field_name": null,
     "requires_profile_url": null,
@@ -75432,10 +75414,7 @@
     "authorized_agent": null,
     "data_categories": [
      "identifiers",
-     "commercial",
      "internet_activity",
-     "employment",
-     "inferences",
      "sensitive"
     ],
     "sells_personal_information": null,
@@ -75449,7 +75428,7 @@
      "status": null,
      "role": "home",
      "title": "",
-     "liveness": "dead"
+     "liveness": "error"
     },
     {
      "url": "https://www.owneriq.com/",
@@ -75457,13 +75436,21 @@
      "status": null,
      "role": "home",
      "title": "",
-     "liveness": "dead"
+     "liveness": "error"
+    },
+    {
+     "url": "https://www.inmar.com/about/privacy-policy/owneriq/consumer-rights-requests",
+     "final_url": "https://www.inmar.com/about/privacy-policy/owneriq/consumer-rights-requests",
+     "status": 200,
+     "role": "catalog",
+     "title": "ownerIQ Consumer Rights Requests | Inmar Inc.",
+     "liveness": "alive"
     },
     {
      "url": "https://www.inmar.com/about/privacy-policy",
      "final_url": "https://www.inmar.com/about/privacy-policy",
      "status": 200,
-     "role": "catalog",
+     "role": "about",
      "title": "Privacy Policy | Inmar Inc.",
      "liveness": "alive"
     }
@@ -75562,7 +75549,7 @@
     "removal_path": "email",
     "fully_automatable": false,
     "usable_emails": [
-     "privacy@inmar.com"
+     "privacy_office@inmar.com"
     ],
     "search_required": [],
     "removal_required": [],
@@ -94983,9 +94970,9 @@
    "name": "PrivateNumberChecker",
    "category": "other",
    "domain": "privatenumberchecker.com",
-   "checked_at": "2026-10-12T23:23:36+00:00",
-   "liveness": "opt_out_missing",
-   "liveness_detail": "catalog URL returned 404 or 410; the site itself still responded",
+   "checked_at": "2026-10-28T07:40:24+00:00",
+   "liveness": "blocked",
+   "liveness_detail": "catalog URL returned a bot wall or HTTP 401/403/429/503",
    "homepage": "https://www.privatenumberchecker.com/",
    "logo_url": "https://www.privatenumberchecker.com/pub/images/logo.png",
    "images": [
@@ -95073,9 +95060,9 @@
     "captcha_detail": null
    },
    "removal": {
-    "url": "https://www.privatenumberchecker.com/removal-request",
-    "final_url": "https://www.privatenumberchecker.com/removal-request",
-    "http_status": 404,
+    "url": "https://www.privatenumberchecker.com/removalrequest/",
+    "final_url": "https://www.privatenumberchecker.com/removalrequest/",
+    "http_status": 403,
     "kinds": [
      "opt_out"
     ],
@@ -95084,9 +95071,9 @@
     ],
     "emails": [],
     "phones": [
-     "(405) 615-4091",
-     "(302) 236-8076",
-     "(215) 342-1522"
+     "(949) 309-1791",
+     "(407) 927-0460",
+     "(678) 579-3211"
     ],
     "postal_address": null,
     "portal": null,
@@ -95118,8 +95105,8 @@
     }
    },
    "bot_defense": {
-    "vendor": null,
-    "outcome": "none"
+    "vendor": "cloudflare",
+    "outcome": "hard_block"
    },
    "legal": {
     "privacy_policy_url": null,
@@ -95155,12 +95142,12 @@
      "liveness": "alive"
     },
     {
-     "url": "https://www.privatenumberchecker.com/removal-request",
-     "final_url": "https://www.privatenumberchecker.com/removal-request",
-     "status": 404,
+     "url": "https://www.privatenumberchecker.com/removalrequest/",
+     "final_url": "https://www.privatenumberchecker.com/removalrequest/",
+     "status": 403,
      "role": "catalog",
-     "title": "www.privatenumberchecker.com",
-     "liveness": "dead"
+     "title": "Just a moment...",
+     "liveness": "blocked"
     },
     {
      "url": "https://www.privatenumberchecker.com/contact-us",
@@ -101482,7 +101469,7 @@
    "name": "Samba TV, Inc.",
    "category": "other",
    "domain": "samba.com",
-   "checked_at": "2026-10-28T07:33:29+00:00",
+   "checked_at": "2026-10-28T07:43:40+00:00",
    "liveness": "alive",
    "liveness_detail": "https://samba.com/privacy-center/privacy-policy answered HTTP 200 on 2026-10-24. The old samba.tv/users/privacy-policy path redirected here. No request was submitted.",
    "homepage": null,
@@ -119550,7 +119537,7 @@
    "name": "WINR Data B.V.",
    "category": "other",
    "domain": "winrdata.com",
-   "checked_at": "2026-10-12T23:28:50+00:00",
+   "checked_at": "2026-10-28T07:40:17+00:00",
    "liveness": "robots_disallowed",
    "liveness_detail": "robots.txt disallows this client",
    "homepage": "https://winrdata.com/",
@@ -119583,7 +119570,7 @@
     "captcha_detail": null
    },
    "removal": {
-    "url": "https://www.winrdata.com/privacy-policy-us/",
+    "url": "https://www.winrdata.com/privacy-policy/",
     "final_url": null,
     "http_status": null,
     "kinds": [
@@ -119671,7 +119658,7 @@
      "liveness": "robots_disallowed"
     },
     {
-     "url": "https://www.winrdata.com/privacy-policy-us/",
+     "url": "https://www.winrdata.com/privacy-policy/",
      "final_url": null,
      "status": null,
      "role": "catalog",
@@ -121639,9 +121626,9 @@
    "name": "Absolute People Search",
    "category": "people-search",
    "domain": "absolutepeoplesearch.com",
-   "checked_at": "2026-10-12T23:10:18+00:00",
-   "liveness": "opt_out_missing",
-   "liveness_detail": "catalog URL returned 404 or 410; the site itself still responded",
+   "checked_at": "2026-10-28T07:40:05+00:00",
+   "liveness": "alive",
+   "liveness_detail": "catalog URL loaded",
    "homepage": "https://absolutepeoplesearch.com/",
    "logo_url": "https://absolutepeoplesearch.com/templates/regan_tech/images/Absolute_People_Search_logo.png",
    "images": [
@@ -122080,13 +122067,14 @@
     "captcha_checked": true
    },
    "removal": {
-    "url": "https://absolutepeoplesearch.com/optout",
-    "final_url": "https://absolutepeoplesearch.com/optout",
-    "http_status": 404,
+    "url": "https://absolutepeoplesearch.com/public.php?funct=optout",
+    "final_url": "https://absolutepeoplesearch.com/public.php?funct=optout",
+    "http_status": 200,
     "kinds": [
      "opt_out"
     ],
     "channels": [
+     "web_form",
      "postal_mail",
      "phone"
     ],
@@ -122097,7 +122085,54 @@
     ],
     "postal_address": "P.O. Box 460931, Aurora, Colorado 80014-0931 Copyright © 2026",
     "portal": null,
-    "form_fields": [],
+    "form_fields": [
+     {
+      "name": "username",
+      "type": "text",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": "Username",
+      "id": null,
+      "label": null,
+      "inputmode": null,
+      "pattern": null,
+      "minlength": null,
+      "maxlength": null,
+      "min": null,
+      "max": null,
+      "step": null,
+      "accept": null,
+      "multiple": null,
+      "disabled": null,
+      "readonly": null,
+      "checked": null,
+      "value": null
+     },
+     {
+      "name": "remember",
+      "type": "checkbox",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null,
+      "id": null,
+      "label": null,
+      "inputmode": null,
+      "pattern": null,
+      "minlength": null,
+      "maxlength": null,
+      "min": null,
+      "max": null,
+      "step": null,
+      "accept": null,
+      "multiple": null,
+      "disabled": null,
+      "readonly": null,
+      "checked": null,
+      "value": null
+     }
+    ],
     "csrf_field_name": null,
     "requires_profile_url": null,
     "captcha": {
@@ -122181,18 +122216,10 @@
      "liveness": "alive"
     },
     {
-     "url": "https://absolutepeoplesearch.com/optout",
-     "final_url": "https://absolutepeoplesearch.com/optout",
-     "status": 404,
-     "role": "catalog",
-     "title": "404 - Article not found",
-     "liveness": "dead"
-    },
-    {
      "url": "https://absolutepeoplesearch.com/public.php?funct=optout",
      "final_url": "https://absolutepeoplesearch.com/public.php?funct=optout",
      "status": 200,
-     "role": "other",
+     "role": "catalog",
      "title": "Absolute People Search",
      "liveness": "alive"
     },
@@ -122344,9 +122371,9 @@
     "id_document": null,
     "shared_removal_ids": [],
     "removal_captcha": true,
-    "captcha_blocks_form": false,
+    "captcha_blocks_form": true,
     "captcha_email_fallback": false,
-    "removal_blocker": "phone_postal"
+    "removal_blocker": "captcha_form"
    },
    "search_test": {
     "outcome": null,
@@ -123420,6 +123447,7 @@
      "intelius-peopleconnect",
      "intelius-peopleconnect-addresses-com",
      "onlinesearches-intelius-peopleconnect",
+     "reversephonelookup-intelius-peopleconnect",
      "us-search-peopleconnect",
      "yellowpages-people-intelius-data",
      "zabasearch-peopleconnect-intelius"
@@ -134165,6 +134193,7 @@
      "intelius-peopleconnect",
      "intelius-peopleconnect-addresses-com",
      "onlinesearches-intelius-peopleconnect",
+     "reversephonelookup-intelius-peopleconnect",
      "us-search-peopleconnect",
      "yellowpages-people-intelius-data",
      "zabasearch-peopleconnect-intelius"
@@ -135165,6 +135194,7 @@
      "instantcheckmate-peopleconnect",
      "intelius-peopleconnect-addresses-com",
      "onlinesearches-intelius-peopleconnect",
+     "reversephonelookup-intelius-peopleconnect",
      "us-search-peopleconnect",
      "yellowpages-people-intelius-data",
      "zabasearch-peopleconnect-intelius"
@@ -135596,6 +135626,7 @@
      "instantcheckmate-peopleconnect",
      "intelius-peopleconnect",
      "onlinesearches-intelius-peopleconnect",
+     "reversephonelookup-intelius-peopleconnect",
      "us-search-peopleconnect",
      "yellowpages-people-intelius-data",
      "zabasearch-peopleconnect-intelius"
@@ -138314,6 +138345,7 @@
      "instantcheckmate-peopleconnect",
      "intelius-peopleconnect",
      "intelius-peopleconnect-addresses-com",
+     "reversephonelookup-intelius-peopleconnect",
      "us-search-peopleconnect",
      "yellowpages-people-intelius-data",
      "zabasearch-peopleconnect-intelius"
@@ -149089,9 +149121,9 @@
    "name": "ReversePhoneLookup (Intelius/PeopleConnect)",
    "category": "people-search",
    "domain": "reversephonelookup.com",
-   "checked_at": "2026-10-12T23:24:46+00:00",
-   "liveness": "opt_out_missing",
-   "liveness_detail": "catalog URL returned 404 or 410; the site itself still responded",
+   "checked_at": "2026-10-28T07:40:16+00:00",
+   "liveness": "alive",
+   "liveness_detail": "catalog URL loaded",
    "homepage": "https://www.reversephonelookup.com/",
    "logo_url": "https://www.reversephonelookup.com/_/images/rpllogo.svg",
    "images": [
@@ -149109,6 +149141,11 @@
      "url": "https://www.reversephonelookup.com/_/images/rpllogo.svg",
      "kind": "logo",
      "source_page": "https://www.reversephonelookup.com/"
+    },
+    {
+     "url": "https://suppression.peopleconnect.us/376141ce04c0ebdaff07.png",
+     "kind": "icon",
+     "source_page": "https://suppression.peopleconnect.us/"
     }
    ],
    "theme_color": null,
@@ -149164,9 +149201,9 @@
     "captcha_detail": null
    },
    "removal": {
-    "url": "https://www.reversephonelookup.com/remove.php",
-    "final_url": "https://www.reversephonelookup.com/remove.php",
-    "http_status": 404,
+    "url": "https://suppression.peopleconnect.us/",
+    "final_url": "https://suppression.peopleconnect.us/",
+    "http_status": 200,
     "kinds": [
      "opt_out"
     ],
@@ -149175,9 +149212,9 @@
     ],
     "emails": [],
     "phones": [
-     "(315) 620-5279",
-     "(201) 462-3963",
-     "(512) 543-1782"
+     "(475) 263-7167",
+     "(352) 263-9509",
+     "(229) 740-3843"
     ],
     "postal_address": null,
     "portal": null,
@@ -149246,12 +149283,12 @@
      "liveness": "alive"
     },
     {
-     "url": "https://www.reversephonelookup.com/remove.php",
-     "final_url": "https://www.reversephonelookup.com/remove.php",
-     "status": 404,
+     "url": "https://suppression.peopleconnect.us/",
+     "final_url": "https://suppression.peopleconnect.us/",
+     "status": 200,
      "role": "catalog",
-     "title": "404 Error",
-     "liveness": "dead"
+     "title": "PeopleConnect - Suppression Center",
+     "liveness": "alive"
     },
     {
      "url": "https://www.reversephonelookup.com/contact.php",
@@ -149323,8 +149360,8 @@
     ]
    },
    "request": {
-    "removal_host": "reversephonelookup.com",
-    "same_site": true,
+    "removal_host": "suppression.peopleconnect.us",
+    "same_site": false,
     "https": true,
     "redirected": false,
     "redirect_count": 0,
@@ -149360,7 +149397,16 @@
     "removal_required": [],
     "email_verification": null,
     "id_document": null,
-    "shared_removal_ids": [],
+    "shared_removal_ids": [
+     "anywho-intelius-peopleconnect",
+     "instantcheckmate-peopleconnect",
+     "intelius-peopleconnect",
+     "intelius-peopleconnect-addresses-com",
+     "onlinesearches-intelius-peopleconnect",
+     "us-search-peopleconnect",
+     "yellowpages-people-intelius-data",
+     "zabasearch-peopleconnect-intelius"
+    ],
     "removal_captcha": false,
     "captcha_blocks_form": false,
     "captcha_email_fallback": false,
@@ -158796,6 +158842,7 @@
      "intelius-peopleconnect",
      "intelius-peopleconnect-addresses-com",
      "onlinesearches-intelius-peopleconnect",
+     "reversephonelookup-intelius-peopleconnect",
      "yellowpages-people-intelius-data",
      "zabasearch-peopleconnect-intelius"
     ],
@@ -162277,6 +162324,7 @@
      "intelius-peopleconnect",
      "intelius-peopleconnect-addresses-com",
      "onlinesearches-intelius-peopleconnect",
+     "reversephonelookup-intelius-peopleconnect",
      "us-search-peopleconnect",
      "zabasearch-peopleconnect-intelius"
     ],
@@ -162749,6 +162797,7 @@
      "intelius-peopleconnect",
      "intelius-peopleconnect-addresses-com",
      "onlinesearches-intelius-peopleconnect",
+     "reversephonelookup-intelius-peopleconnect",
      "us-search-peopleconnect",
      "yellowpages-people-intelius-data"
     ],
@@ -224224,9 +224273,9 @@
    "name": "H1 Insights, Inc.",
    "category": "other",
    "domain": "h1.co",
-   "checked_at": "2026-10-12T23:17:45+00:00",
+   "checked_at": "2026-10-28T07:40:08+00:00",
    "liveness": "alive",
-   "liveness_detail": "catalog URL redirected and the final page loaded",
+   "liveness_detail": "catalog URL loaded",
    "homepage": "https://h1.com/",
    "logo_url": "https://h1.com/wp-content/uploads/2026/09/CMS-Press-Release.png",
    "images": [
@@ -224309,6 +224358,16 @@
      "url": "https://h1.com/wp-content/uploads/2025/01/Firefly-Health-White.svg",
      "kind": "logo",
      "source_page": "https://h1.com/"
+    },
+    {
+     "url": "https://h1.com/privacy-policy/h",
+     "kind": "og_image",
+     "source_page": "https://h1.com/privacy-policy/"
+    },
+    {
+     "url": "https://h1.com/wp-content/themes/h1/images/logo-h1-reverse.svg",
+     "kind": "logo",
+     "source_page": "https://h1.com/privacy-policy/"
     }
    ],
    "theme_color": null,
@@ -224340,8 +224399,8 @@
     "captcha_detail": null
    },
    "removal": {
-    "url": "https://www.h1.co",
-    "final_url": "https://h1.com/",
+    "url": "https://h1.com/privacy-policy/",
+    "final_url": "https://h1.com/privacy-policy/",
     "http_status": 200,
     "kinds": [
      "opt_out"
@@ -224383,14 +224442,15 @@
     "outcome": "none"
    },
    "legal": {
-    "privacy_policy_url": null,
+    "privacy_policy_url": "https://h1.com/privacy-policy/",
     "terms_url": null,
     "automation_prohibited": null,
     "automation_clause": null,
     "residency": [],
     "authorized_agent": null,
     "data_categories": [
-     "identifiers"
+     "identifiers",
+     "employment"
     ],
     "sells_personal_information": null,
     "sells_clause": null,
@@ -224411,6 +224471,14 @@
      "status": 200,
      "role": "home",
      "title": "Creating a Healthier Future | H1",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://h1.com/privacy-policy/",
+     "final_url": "https://h1.com/privacy-policy/",
+     "status": 200,
+     "role": "catalog",
+     "title": "Privacy Policy | H1",
      "liveness": "alive"
     },
     {
@@ -224487,7 +224555,7 @@
     "removal_host": "h1.com",
     "same_site": false,
     "https": true,
-    "redirected": true,
+    "redirected": false,
     "redirect_count": 0,
     "form_enctype": null,
     "content_type": "text/html",
@@ -227833,7 +227901,7 @@
    "name": "Live Data Technologies, Inc.",
    "category": "other",
    "domain": "livedatatech.com",
-   "checked_at": "2026-10-28T07:33:49+00:00",
+   "checked_at": "2026-10-28T07:44:00+00:00",
    "liveness": "alive",
    "liveness_detail": "https://www.livedatatech.com/opt-out answered HTTP 200 on 2026-10-24, titled Optout — Live Data Technologies. The old livedatatechnologies.com/opt-out path redirects here. The page loads a reCAPTCHA badge. No request was submitted.",
    "homepage": null,
@@ -305897,7 +305965,7 @@
    "name": "Data Axle Canada",
    "category": "marketing",
    "domain": "dataaxlecanada.ca",
-   "checked_at": "2026-10-28T07:34:01+00:00",
+   "checked_at": "2026-10-28T07:44:13+00:00",
    "liveness": "alive",
    "liveness_detail": "dataaxlecanada.ca answered HTTP 200 on 2026-10-24. infocanada.ca redirects there. There is no public name search.",
    "homepage": null,
@@ -306091,7 +306159,7 @@
    "name": "Prospects Influential",
    "category": "marketing",
    "domain": "prospectsinfluential.com",
-   "checked_at": "2026-10-28T07:34:01+00:00",
+   "checked_at": "2026-10-28T07:44:13+00:00",
    "liveness": "alive",
    "liveness_detail": "prospectsinfluential.com answered HTTP 200 on 2026-10-24. The site sells consumer mailing lists and has no public name search.",
    "homepage": null,
@@ -306285,7 +306353,7 @@
    "name": "Openroom",
    "category": "background-checks",
    "domain": "openroom.ca",
-   "checked_at": "2026-10-28T07:34:01+00:00",
+   "checked_at": "2026-10-28T07:44:13+00:00",
    "liveness": "alive",
    "liveness_detail": "openroom.ca answered HTTP 200 on 2026-10-24. The tenant-screening search requires an account.",
    "homepage": null,
@@ -306478,7 +306546,7 @@
    "name": "Landlord Credit Bureau",
    "category": "credit-financial",
    "domain": "landlordcreditbureau.ca",
-   "checked_at": "2026-10-28T07:34:01+00:00",
+   "checked_at": "2026-10-28T07:44:13+00:00",
    "liveness": "alive",
    "liveness_detail": "landlordcreditbureau.ca answered HTTP 200 on 2026-10-24. There is no public name search. The Privacy Policy link goes to a 404 page.",
    "homepage": null,
@@ -306671,7 +306739,7 @@
    "name": "FrontLobby",
    "category": "credit-financial",
    "domain": "frontlobby.com",
-   "checked_at": "2026-10-28T07:34:01+00:00",
+   "checked_at": "2026-10-28T07:44:13+00:00",
    "liveness": "alive",
    "liveness_detail": "frontlobby.com answered HTTP 200 on 2026-10-24. The LTB order search sends visitors to an account signup.",
    "homepage": null,
@@ -306864,7 +306932,7 @@
    "name": "Echovita",
    "category": "people-search",
    "domain": "echovita.com",
-   "checked_at": "2026-10-28T07:34:01+00:00",
+   "checked_at": "2026-10-28T07:44:13+00:00",
    "liveness": "alive",
    "liveness_detail": "echovita.com/ca answered HTTP 200 on 2026-10-24. A surname search returned obituary counts.",
    "homepage": null,
@@ -307083,7 +307151,7 @@
    "name": "InMemoriam",
    "category": "people-search",
    "domain": "inmemoriam.ca",
-   "checked_at": "2026-10-28T07:34:01+00:00",
+   "checked_at": "2026-10-28T07:44:13+00:00",
    "liveness": "alive",
    "liveness_detail": "inmemoriam.ca answered HTTP 200 on 2026-10-24. A surname search returned notice counts.",
    "homepage": null,
@@ -307326,7 +307394,7 @@
    "name": "Nécrologie.ca",
    "category": "people-search",
    "domain": "necrologie.ca",
-   "checked_at": "2026-10-28T07:34:01+00:00",
+   "checked_at": "2026-10-28T07:44:13+00:00",
    "liveness": "alive",
    "liveness_detail": "necrologie.ca answered HTTP 200 on 2026-10-24. The search API returned obituary counts.",
    "homepage": null,
@@ -307545,7 +307613,7 @@
    "name": "Geni",
    "category": "people-search",
    "domain": "geni.com",
-   "checked_at": "2026-10-28T07:34:01+00:00",
+   "checked_at": "2026-10-28T07:44:13+00:00",
    "liveness": "alive",
    "liveness_detail": "geni.com answered HTTP 200 on 2026-10-24. A public people search returned a result count.",
    "homepage": null,
@@ -307764,7 +307832,7 @@
    "name": "FQSG Avis de décès",
    "category": "people-search",
    "domain": "federationgenealogie.qc.ca",
-   "checked_at": "2026-10-28T07:34:01+00:00",
+   "checked_at": "2026-10-28T07:44:13+00:00",
    "liveness": "alive",
    "liveness_detail": "federationgenealogie.qc.ca answered HTTP 200 on 2026-10-24. A name search returned death notices.",
    "homepage": null,
@@ -307983,7 +308051,7 @@
    "name": "Domaine funéraire (Corporation des thanatologues du Québec)",
    "category": "people-search",
    "domain": "domainefuneraire.com",
-   "checked_at": "2026-10-28T07:34:01+00:00",
+   "checked_at": "2026-10-28T07:44:13+00:00",
    "liveness": "alive",
    "liveness_detail": "domainefuneraire.com answered HTTP 200 on 2026-10-24. A name search returned death notices.",
    "homepage": null,
@@ -308202,7 +308270,7 @@
    "name": "Canadian Obituaries",
    "category": "people-search",
    "domain": "canadianobituaries.com",
-   "checked_at": "2026-10-28T07:34:01+00:00",
+   "checked_at": "2026-10-28T07:44:13+00:00",
    "liveness": "alive",
    "liveness_detail": "canadianobituaries.com answered HTTP 200 on 2026-10-24. A name search returned death notices.",
    "homepage": null,
@@ -308421,7 +308489,7 @@
    "name": "Coopérative funéraire du Grand Montréal",
    "category": "people-search",
    "domain": "cfgrandmontreal.com",
-   "checked_at": "2026-10-28T07:34:01+00:00",
+   "checked_at": "2026-10-28T07:44:13+00:00",
    "liveness": "alive",
    "liveness_detail": "cfgrandmontreal.com answered HTTP 200 on 2026-10-24. A name search returned death notices.",
    "homepage": null,
@@ -308640,7 +308708,7 @@
    "name": "Coopérative funéraire des Deux Rives",
    "category": "people-search",
    "domain": "coopfuneraire2rives.com",
-   "checked_at": "2026-10-28T07:34:01+00:00",
+   "checked_at": "2026-10-28T07:44:13+00:00",
    "liveness": "alive",
    "liveness_detail": "coopfuneraire2rives.com answered HTTP 200 on 2026-10-24. A name search returned death notices.",
    "homepage": null,
@@ -308859,7 +308927,7 @@
    "name": "Alliance funéraire du Royaume",
    "category": "people-search",
    "domain": "afdr.coop",
-   "checked_at": "2026-10-28T07:34:01+00:00",
+   "checked_at": "2026-10-28T07:44:13+00:00",
    "liveness": "alive",
    "liveness_detail": "afdr.coop answered HTTP 200 on 2026-10-24. A name search returned death notices.",
    "homepage": null,
@@ -309078,7 +309146,7 @@
    "name": "Coopérative funéraire de l'Abitibi",
    "category": "people-search",
    "domain": "cfa.coop",
-   "checked_at": "2026-10-28T07:34:01+00:00",
+   "checked_at": "2026-10-28T07:44:13+00:00",
    "liveness": "alive",
    "liveness_detail": "cfa.coop answered HTTP 200 on 2026-10-24. A name search returned death notices.",
    "homepage": null,
@@ -309297,7 +309365,7 @@
    "name": "Coopérative funéraire Haute-Côte-Nord - Manicouagan",
    "category": "people-search",
    "domain": "cfhcn.ca",
-   "checked_at": "2026-10-28T07:34:01+00:00",
+   "checked_at": "2026-10-28T07:44:13+00:00",
    "liveness": "alive",
    "liveness_detail": "cfhcn.ca answered HTTP 200 on 2026-10-24. A name search returned death notices.",
    "homepage": null,
@@ -309516,7 +309584,7 @@
    "name": "Coopérative funéraire de l'Outaouais",
    "category": "people-search",
    "domain": "cfo.coop",
-   "checked_at": "2026-10-28T07:34:01+00:00",
+   "checked_at": "2026-10-28T07:44:13+00:00",
    "liveness": "alive",
    "liveness_detail": "cfo.coop answered HTTP 200 on 2026-10-24. A name search returned death notices.",
    "homepage": null,
@@ -309735,7 +309803,7 @@
    "name": "Coopérative funéraire de l'Estrie",
    "category": "people-search",
    "domain": "coopfuneraireestrie.com",
-   "checked_at": "2026-10-28T07:34:01+00:00",
+   "checked_at": "2026-10-28T07:44:13+00:00",
    "liveness": "alive",
    "liveness_detail": "coopfuneraireestrie.com answered HTTP 200 on 2026-10-24. A name search returned death notices.",
    "homepage": null,
@@ -309954,7 +310022,7 @@
    "name": "Résidence funéraire Lac St-Jean",
    "category": "people-search",
    "domain": "residencefunerairelacstjean.com",
-   "checked_at": "2026-10-28T07:34:01+00:00",
+   "checked_at": "2026-10-28T07:44:13+00:00",
    "liveness": "alive",
    "liveness_detail": "residencefunerairelacstjean.com answered HTTP 200 on 2026-10-24. A name search returned death notices.",
    "homepage": null,
@@ -310173,7 +310241,7 @@
    "name": "Coopérative funéraire Brunet",
    "category": "people-search",
    "domain": "coopfbrunet.com",
-   "checked_at": "2026-10-28T07:34:01+00:00",
+   "checked_at": "2026-10-28T07:44:13+00:00",
    "liveness": "alive",
    "liveness_detail": "coopfbrunet.com answered HTTP 200 on 2026-10-24. A name search returned death notices.",
    "homepage": null,
@@ -310392,7 +310460,7 @@
    "name": "Coopérative funéraire Matawinie-Montcalm",
    "category": "people-search",
    "domain": "cfmm.coop",
-   "checked_at": "2026-10-28T07:34:01+00:00",
+   "checked_at": "2026-10-28T07:44:13+00:00",
    "liveness": "alive",
    "liveness_detail": "cfmm.coop answered HTTP 200 on 2026-10-24. A name search returned death notices.",
    "homepage": null,
@@ -310611,7 +310679,7 @@
    "name": "Coopérative funéraire des Laurentides",
    "category": "people-search",
    "domain": "coopfunerairelaurentides.org",
-   "checked_at": "2026-10-28T07:34:01+00:00",
+   "checked_at": "2026-10-28T07:44:13+00:00",
    "liveness": "alive",
    "liveness_detail": "coopfunerairelaurentides.org answered HTTP 200 on 2026-10-24. A name search returned death notices.",
    "homepage": null,
@@ -310830,7 +310898,7 @@
    "name": "Résidence Funéraire Maska",
    "category": "people-search",
    "domain": "rfmaska.coop",
-   "checked_at": "2026-10-28T07:34:01+00:00",
+   "checked_at": "2026-10-28T07:44:13+00:00",
    "liveness": "alive",
    "liveness_detail": "rfmaska.coop answered HTTP 200 on 2026-10-24. A name search returned death notices.",
    "homepage": null,
@@ -311049,7 +311117,7 @@
    "name": "Dignity Memorial",
    "category": "people-search",
    "domain": "dignitymemorial.com",
-   "checked_at": "2026-10-28T07:34:01+00:00",
+   "checked_at": "2026-10-28T07:44:13+00:00",
    "liveness": "alive",
    "liveness_detail": "dignitymemorial.com answered HTTP 200 on 2026-10-24. A name search returned records.",
    "homepage": null,
@@ -311269,7 +311337,7 @@
    "name": "Interment.net",
    "category": "people-search",
    "domain": "interment.net",
-   "checked_at": "2026-10-28T07:34:01+00:00",
+   "checked_at": "2026-10-28T07:44:13+00:00",
    "liveness": "alive",
    "liveness_detail": "interment.net answered HTTP 200 on 2026-10-24. A name search returned records.",
    "homepage": null,
@@ -311489,7 +311557,7 @@
    "name": "Mount Pleasant Group",
    "category": "people-search",
    "domain": "mountpleasantgroup.com",
-   "checked_at": "2026-10-28T07:34:01+00:00",
+   "checked_at": "2026-10-28T07:44:13+00:00",
    "liveness": "alive",
    "liveness_detail": "mountpleasantgroup.com answered HTTP 200 on 2026-10-24. A name search returned records.",
    "homepage": null,
@@ -311708,7 +311776,7 @@
    "name": "Kearney Funeral Services",
    "category": "people-search",
    "domain": "kearneyfs.com",
-   "checked_at": "2026-10-28T07:34:01+00:00",
+   "checked_at": "2026-10-28T07:44:13+00:00",
    "liveness": "alive",
    "liveness_detail": "kearneyfs.com answered HTTP 200 on 2026-10-24. A name search returned records.",
    "homepage": null,
@@ -311927,7 +311995,7 @@
    "name": "Basic Funerals",
    "category": "people-search",
    "domain": "basicfunerals.ca",
-   "checked_at": "2026-10-28T07:34:01+00:00",
+   "checked_at": "2026-10-28T07:44:13+00:00",
    "liveness": "alive",
    "liveness_detail": "basicfunerals.ca answered HTTP 200 on 2026-10-24. A name search returned records.",
    "homepage": null,
@@ -312146,7 +312214,7 @@
    "name": "Le Nécrologue",
    "category": "people-search",
    "domain": "lenecrologue.com",
-   "checked_at": "2026-10-28T07:34:01+00:00",
+   "checked_at": "2026-10-28T07:44:13+00:00",
    "liveness": "alive",
    "liveness_detail": "lenecrologue.com answered HTTP 200 on 2026-10-24. A name search returned records.",
    "homepage": null,
@@ -329718,9 +329786,9 @@
    "name": "AirdrieToday Obituaries",
    "category": "people-search",
    "domain": "airdrietoday.com",
-   "checked_at": "2026-10-26T13:05:28+00:00",
+   "checked_at": "2026-10-28T07:40:03+00:00",
    "liveness": "alive",
-   "liveness_detail": "airdrietoday.com loaded in a browser on 2026-10-26 and a name search returned obituaries. Plain HTTP clients get a Cloudflare challenge.",
+   "liveness_detail": "airdrietoday.com now redirects to airdriecityview.com, the same paper under its new name. On 2026-10-28 the name search there (/search?q=John Smith&tag=141807) returned obituary rows and a made-up name returned \"There are no results for that search.\"",
    "homepage": "https://www.airdriecityview.com/",
    "logo_url": "https://www.vmcdn.ca/files/airdrietoday/images/airdrie-city-view/acv-rvw-web-logo4.svg",
    "images": [
@@ -329773,8 +329841,8 @@
    "search": {
     "available": true,
     "method": "http_get",
-    "page_url": "https://www.airdrietoday.com/obituaries",
-    "form_action": "https://www.airdrietoday.com/search",
+    "page_url": "https://www.airdriecityview.com/obituaries",
+    "form_action": "https://www.airdriecityview.com/search",
     "inputs": [
      {
       "name": "q",
@@ -329800,7 +329868,7 @@
       "value": null
      }
     ],
-    "url_pattern": "https://www.airdrietoday.com/search?q={q}&tag=141807",
+    "url_pattern": "https://www.airdriecityview.com/search?q={q}&tag=141807",
     "directory_prefixes": [],
     "paywall": null,
     "login_wall": null,
@@ -329818,7 +329886,7 @@
     "captcha_checked": true
    },
    "removal": {
-    "url": "https://www.airdrietoday.com/other/privacy-policy",
+    "url": "https://www.airdriecityview.com/other/privacy-policy",
     "final_url": "https://www.airdriecityview.com/other/privacy-policy",
     "http_status": 200,
     "kinds": [
@@ -329890,7 +329958,7 @@
      "liveness": "alive"
     },
     {
-     "url": "https://www.airdrietoday.com/other/privacy-policy",
+     "url": "https://www.airdriecityview.com/other/privacy-policy",
      "final_url": "https://www.airdriecityview.com/other/privacy-policy",
      "status": 200,
      "role": "catalog",
@@ -329948,7 +330016,7 @@
     "removal_host": "airdriecityview.com",
     "same_site": false,
     "https": true,
-    "redirected": true,
+    "redirected": false,
     "redirect_count": null,
     "form_enctype": null,
     "content_type": null,
@@ -330007,9 +330075,9 @@
    "name": "CochraneToday Obituaries",
    "category": "people-search",
    "domain": "cochranetoday.ca",
-   "checked_at": "2026-10-26T13:05:28+00:00",
+   "checked_at": "2026-10-28T07:40:02+00:00",
    "liveness": "alive",
-   "liveness_detail": "cochranetoday.ca loaded in a browser on 2026-10-26 and a name search returned obituaries. Plain HTTP clients get a Cloudflare challenge.",
+   "liveness_detail": "cochranetoday.ca now redirects to cochraneeagle.ca, the same paper under its new name. On 2026-10-28 the name search there (/search?q=John Smith&tag=149069) returned obituary rows and a made-up name returned \"There are no results for that search.\"",
    "homepage": "https://www.cochraneeagle.ca/",
    "logo_url": "https://www.vmcdn.ca/files/cochranetoday/images/cochrane-eagle-brand/cochraneeaglelogo3web.svg",
    "images": [
@@ -330049,6 +330117,11 @@
      "source_page": "https://www.cochraneeagle.ca/"
     },
     {
+     "url": "https://www.vmcdn.ca/f/files/airdrietoday/rvs-new-logo.jpeg;w=300;h=200;mode=crop",
+     "kind": "logo",
+     "source_page": "https://www.cochraneeagle.ca/"
+    },
+    {
      "url": "https://www.vmcdn.ca/f/files/cochranetoday/images/cochrane-eagle-brand/cochraneeaglelogo3coloursmall.png",
      "kind": "og_image",
      "source_page": "https://www.cochraneeagle.ca/other/privacy-policy"
@@ -330062,8 +330135,8 @@
    "search": {
     "available": true,
     "method": "http_get",
-    "page_url": "https://www.cochranetoday.ca/obituaries",
-    "form_action": "https://www.cochranetoday.ca/search",
+    "page_url": "https://www.cochraneeagle.ca/obituaries",
+    "form_action": "https://www.cochraneeagle.ca/search",
     "inputs": [
      {
       "name": "q",
@@ -330089,7 +330162,7 @@
       "value": null
      }
     ],
-    "url_pattern": "https://www.cochranetoday.ca/search?q={q}&tag=149069",
+    "url_pattern": "https://www.cochraneeagle.ca/search?q={q}&tag=149069",
     "directory_prefixes": [],
     "paywall": null,
     "login_wall": null,
@@ -330107,7 +330180,7 @@
     "captcha_checked": true
    },
    "removal": {
-    "url": "https://www.cochranetoday.ca/other/privacy-policy",
+    "url": "https://www.cochraneeagle.ca/other/privacy-policy",
     "final_url": "https://www.cochraneeagle.ca/other/privacy-policy",
     "http_status": 200,
     "kinds": [
@@ -330181,7 +330254,7 @@
      "liveness": "alive"
     },
     {
-     "url": "https://www.cochranetoday.ca/other/privacy-policy",
+     "url": "https://www.cochraneeagle.ca/other/privacy-policy",
      "final_url": "https://www.cochraneeagle.ca/other/privacy-policy",
      "status": 200,
      "role": "catalog",
@@ -330239,7 +330312,7 @@
     "removal_host": "cochraneeagle.ca",
     "same_site": false,
     "https": true,
-    "redirected": true,
+    "redirected": false,
     "redirect_count": null,
     "form_enctype": null,
     "content_type": null,
@@ -330298,9 +330371,9 @@
    "name": "OkotoksToday Obituaries",
    "category": "people-search",
    "domain": "okotokstoday.ca",
-   "checked_at": "2026-10-26T13:05:29+00:00",
+   "checked_at": "2026-10-28T07:40:12+00:00",
    "liveness": "alive",
-   "liveness_detail": "okotokstoday.ca loaded in a browser on 2026-10-26 and a name search returned obituaries. Plain HTTP clients get a Cloudflare challenge.",
+   "liveness_detail": "okotokstoday.ca now redirects to westernwheel.ca, the same paper under its new name. On 2026-10-28 the name search there (/search?q=John Smith&tag=153482) returned obituary rows and a made-up name returned \"There are no results for that search.\"",
    "homepage": "https://www.westernwheel.ca/",
    "logo_url": "https://www.vmcdn.ca/f/files/okotokstoday/2023-images/230510/23-02-02-diamondvalley-logo-horizontal-onwhite-rgb.png;w=300;h=200;mode=crop",
    "images": [
@@ -330348,8 +330421,8 @@
    "search": {
     "available": true,
     "method": "http_get",
-    "page_url": "https://www.okotokstoday.ca/obituaries",
-    "form_action": "https://www.okotokstoday.ca/search",
+    "page_url": "https://www.westernwheel.ca/obituaries",
+    "form_action": "https://www.westernwheel.ca/search",
     "inputs": [
      {
       "name": "q",
@@ -330375,7 +330448,7 @@
       "value": null
      }
     ],
-    "url_pattern": "https://www.okotokstoday.ca/search?q={q}&tag=153482",
+    "url_pattern": "https://www.westernwheel.ca/search?q={q}&tag=153482",
     "directory_prefixes": [],
     "paywall": null,
     "login_wall": null,
@@ -330393,7 +330466,7 @@
     "captcha_checked": true
    },
    "removal": {
-    "url": "https://www.okotokstoday.ca/other/privacy-policy",
+    "url": "https://www.westernwheel.ca/other/privacy-policy",
     "final_url": "https://www.westernwheel.ca/other/privacy-policy",
     "http_status": 200,
     "kinds": [
@@ -330465,7 +330538,7 @@
      "liveness": "alive"
     },
     {
-     "url": "https://www.okotokstoday.ca/other/privacy-policy",
+     "url": "https://www.westernwheel.ca/other/privacy-policy",
      "final_url": "https://www.westernwheel.ca/other/privacy-policy",
      "status": 200,
      "role": "catalog",
@@ -330523,7 +330596,7 @@
     "removal_host": "westernwheel.ca",
     "same_site": false,
     "https": true,
-    "redirected": true,
+    "redirected": false,
     "redirect_count": null,
     "form_enctype": null,
     "content_type": null,
@@ -331455,9 +331528,9 @@
    "name": "MountainViewToday Obituaries",
    "category": "people-search",
    "domain": "mountainviewtoday.ca",
-   "checked_at": "2026-10-26T13:05:29+00:00",
+   "checked_at": "2026-10-28T07:40:10+00:00",
    "liveness": "alive",
-   "liveness_detail": "mountainviewtoday.ca loaded in a browser on 2026-10-26 and a name search returned obituaries. Plain HTTP clients get a Cloudflare challenge.",
+   "liveness_detail": "mountainviewtoday.ca now redirects to thealbertan.com, the same paper under its new name. On 2026-10-28 the name search there (/search?q=John Smith&tag=181956) returned obituary rows and a made-up name returned \"There are no results for that search.\"",
    "homepage": "https://www.thealbertan.com/",
    "logo_url": "https://www.vmcdn.ca/files/mountainviewtoday/images/the-albertan/branding/thealbertanrgblogonew.svg",
    "images": [
@@ -331510,8 +331583,8 @@
    "search": {
     "available": true,
     "method": "http_get",
-    "page_url": "https://www.mountainviewtoday.ca/obituaries",
-    "form_action": "https://www.mountainviewtoday.ca/search",
+    "page_url": "https://www.thealbertan.com/obituaries",
+    "form_action": "https://www.thealbertan.com/search",
     "inputs": [
      {
       "name": "q",
@@ -331537,7 +331610,7 @@
       "value": null
      }
     ],
-    "url_pattern": "https://www.mountainviewtoday.ca/search?q={q}&tag=181956",
+    "url_pattern": "https://www.thealbertan.com/search?q={q}&tag=181956",
     "directory_prefixes": [],
     "paywall": null,
     "login_wall": null,
@@ -331555,7 +331628,7 @@
     "captcha_checked": true
    },
    "removal": {
-    "url": "https://www.mountainviewtoday.ca/other/privacy-policy",
+    "url": "https://www.thealbertan.com/other/privacy-policy",
     "final_url": "https://www.thealbertan.com/other/privacy-policy",
     "http_status": 200,
     "kinds": [
@@ -331627,7 +331700,7 @@
      "liveness": "alive"
     },
     {
-     "url": "https://www.mountainviewtoday.ca/other/privacy-policy",
+     "url": "https://www.thealbertan.com/other/privacy-policy",
      "final_url": "https://www.thealbertan.com/other/privacy-policy",
      "status": 200,
      "role": "catalog",
@@ -331685,7 +331758,7 @@
     "removal_host": "thealbertan.com",
     "same_site": false,
     "https": true,
-    "redirected": true,
+    "redirected": false,
     "redirect_count": null,
     "form_enctype": null,
     "content_type": null,
