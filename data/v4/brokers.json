@@ -1,42 +1,42 @@
 {
  "schema_version": "4.0.0",
- "checked_at": "2026-10-26T13:09:36+00:00",
+ "checked_at": "2026-10-26T21:40:09+00:00",
  "method": "v3 records, with privacy and removal mailboxes on another domain kept as related_domain. Brokers whose loaded pages published no removal channel were crawled again for unfetched same-site opt-out and privacy URLs, then the catalog URL and homepage were opened once in a browser when those pages still showed no form. That recrawl honors robots.txt. A later pass reads the catalog URL and homepage of brokers whose robots.txt had disallowed the research client. A search pass reads homepages whose public search form was missing, including pages robots.txt had disallowed, and stores a name, phone, or address form. Those passes submit no form, no login, and no CAPTCHA. A legal pass re-reads stored privacy and terms text and fetches an unread privacy or terms page when robots.txt allows it. A network pass looks up public DNS and the site certificate, and reads response headers for the removal URL when robots.txt allows it. A later pass adds IPv6, SPF, DMARC, DKIM selectors, CAA, DNSSEC, the address block, certificate dates, RDAP registration, and the removal response's security headers. A captcha pass re-reads the removal URL and the search page for a widget. A browser reads the page when the static HTML has no widget and the page has a removal form, a stored CAPTCHA, or a public search form. A later pass reads the public widget settings, including whether it is a checkbox, an invisible check, or a score. A form pass re-reads stored search and removal forms for labels, limits, autocomplete, the submit button, and hidden field names. A browser opens when the static HTML does not contain the stored fields. Nothing is submitted. A search test then submits one synthetic query on each broker whose search and removal are both fillable, or with --searchable on each broker with a public search. A robots.txt disallow does not stop the test or count against a search; when --robots is set the log only notes it as robots_disallowed. Brokers whose homepage robots.txt disallowed the research client were later opened in a browser, and their liveness is the result of that read. Removal forms are not submitted and CAPTCHAs are not solved. search_test is on every broker. It stores the outcome, status, field names, the first path segment, the page kind, and a result count when the page states one. A loader page is followed to the count endpoint. The response body, record text, and listing URLs are not stored.",
- "broker_count": 811,
+ "broker_count": 819,
  "counts": {
   "with_related_email": 131,
-  "with_form": 175,
+  "with_form": 177,
   "with_email": 422,
   "with_extracted_email": 201,
   "with_stated_email": 12,
-  "no_channel_remaining": 115,
-  "with_search": 344,
-  "with_search_fillable": 322,
+  "no_channel_remaining": 119,
+  "with_search": 352,
+  "with_search_fillable": 330,
   "search_unscanned": 37,
-  "fully_automatable": 145,
-  "search_tested": 303,
-  "search_results": 36,
-  "search_submitted": 105,
+  "fully_automatable": 146,
+  "search_tested": 311,
+  "search_results": 37,
+  "search_submitted": 111,
   "search_no_results": 67,
   "search_unfilled": 9,
-  "search_challenge": 69,
-  "search_result_count": 82,
+  "search_challenge": 70,
+  "search_result_count": 86,
   "search_empty": 67,
-  "search_page_results": 46,
+  "search_page_results": 51,
   "search_page_loader": 12,
-  "search_page_form": 26,
-  "with_country": 747,
-  "with_region": 479,
+  "search_page_form": 27,
+  "with_country": 755,
+  "with_region": 481,
   "with_locality": 361,
   "with_removal_action": 141,
   "shared_removal": 60,
   "email_verification": 28,
   "id_document": 1,
-  "with_privacy": 603,
+  "with_privacy": 607,
   "with_terms": 398,
   "with_automation_clause": 81,
   "with_authorized_agent": 140,
-  "with_residency": 536,
+  "with_residency": 539,
   "sells_personal_information": 4,
   "does_not_sell": 75,
   "children_not_directed": 39,
@@ -47,8 +47,8 @@
   "removal_offsite": 96,
   "with_hsts": 273,
   "with_form_enctype": 215,
-  "with_field_detail": 414,
-  "with_field_label": 279,
+  "with_field_detail": 422,
+  "with_field_label": 287,
   "with_field_constraint": 64,
   "with_submit_label": 253,
   "with_hidden_names": 166,
@@ -65,17 +65,17 @@
   "with_http3": 264,
   "with_csp": 181,
   "with_hsts_preload": 119,
-  "removal_captcha": 256,
-  "removal_captcha_sitekey": 143,
+  "removal_captcha": 257,
+  "removal_captcha_sitekey": 144,
   "removal_captcha_checked": 349,
   "search_captcha_widget": 16,
   "search_captcha_sitekey": 6,
-  "search_captcha_checked": 321,
-  "captcha_blocks_form": 87,
+  "search_captcha_checked": 329,
+  "captcha_blocks_form": 88,
   "captcha_email_fallback": 29,
   "removal_captcha_checkbox": 78,
   "removal_captcha_invisible": 30,
-  "removal_captcha_score": 29,
+  "removal_captcha_score": 30,
   "removal_captcha_action": 25,
   "removal_captcha_theme": 35,
   "removal_captcha_enterprise": 25,
@@ -83,23 +83,23 @@
   "search_captcha_invisible": 0,
   "search_captcha_score": 0,
   "removal_blockers": {
-   "captcha_form": 58,
+   "captcha_form": 59,
    "generic_inbox": 56,
    "phone_postal": 25,
    "portal": 4,
-   "phone": 61,
+   "phone": 63,
    "postal": 6,
    "bot_wall": 25,
    "fetch_error": 13,
    "opt_out_gone": 1,
    "robots": 23,
    "captcha_no_form": 26,
-   "no_channel": 122
+   "no_channel": 126
   },
-  "lookup_search": 279,
-  "lookup_search_fillable": 263,
+  "lookup_search": 287,
+  "lookup_search_fillable": 271,
   "liveness": {
-   "alive": 679,
+   "alive": 687,
    "blocked": 50,
    "dead": 14,
    "error": 15,
@@ -101482,7 +101482,7 @@
    "name": "Samba TV, Inc.",
    "category": "other",
    "domain": "samba.com",
-   "checked_at": "2026-10-26T13:05:57+00:00",
+   "checked_at": "2026-10-26T21:31:29+00:00",
    "liveness": "alive",
    "liveness_detail": "https://samba.com/privacy-center/privacy-policy answered HTTP 200 on 2026-10-24. The old samba.tv/users/privacy-policy path redirected here. No request was submitted.",
    "homepage": null,
@@ -227833,7 +227833,7 @@
    "name": "Live Data Technologies, Inc.",
    "category": "other",
    "domain": "livedatatech.com",
-   "checked_at": "2026-10-26T13:06:15+00:00",
+   "checked_at": "2026-10-26T21:31:46+00:00",
    "liveness": "alive",
    "liveness_detail": "https://www.livedatatech.com/opt-out answered HTTP 200 on 2026-10-24, titled Optout — Live Data Technologies. The old livedatatechnologies.com/opt-out path redirects here. The page loads a reCAPTCHA badge. No request was submitted.",
    "homepage": null,
@@ -305897,7 +305897,7 @@
    "name": "Data Axle Canada",
    "category": "marketing",
    "domain": "dataaxlecanada.ca",
-   "checked_at": "2026-10-26T13:06:26+00:00",
+   "checked_at": "2026-10-26T21:31:57+00:00",
    "liveness": "alive",
    "liveness_detail": "dataaxlecanada.ca answered HTTP 200 on 2026-10-24. infocanada.ca redirects there. There is no public name search.",
    "homepage": null,
@@ -306091,7 +306091,7 @@
    "name": "Prospects Influential",
    "category": "marketing",
    "domain": "prospectsinfluential.com",
-   "checked_at": "2026-10-26T13:06:26+00:00",
+   "checked_at": "2026-10-26T21:31:57+00:00",
    "liveness": "alive",
    "liveness_detail": "prospectsinfluential.com answered HTTP 200 on 2026-10-24. The site sells consumer mailing lists and has no public name search.",
    "homepage": null,
@@ -306285,7 +306285,7 @@
    "name": "Openroom",
    "category": "background-checks",
    "domain": "openroom.ca",
-   "checked_at": "2026-10-26T13:06:26+00:00",
+   "checked_at": "2026-10-26T21:31:57+00:00",
    "liveness": "alive",
    "liveness_detail": "openroom.ca answered HTTP 200 on 2026-10-24. The tenant-screening search requires an account.",
    "homepage": null,
@@ -306478,7 +306478,7 @@
    "name": "Landlord Credit Bureau",
    "category": "credit-financial",
    "domain": "landlordcreditbureau.ca",
-   "checked_at": "2026-10-26T13:06:26+00:00",
+   "checked_at": "2026-10-26T21:31:57+00:00",
    "liveness": "alive",
    "liveness_detail": "landlordcreditbureau.ca answered HTTP 200 on 2026-10-24. There is no public name search. The Privacy Policy link goes to a 404 page.",
    "homepage": null,
@@ -306671,7 +306671,7 @@
    "name": "FrontLobby",
    "category": "credit-financial",
    "domain": "frontlobby.com",
-   "checked_at": "2026-10-26T13:06:26+00:00",
+   "checked_at": "2026-10-26T21:31:57+00:00",
    "liveness": "alive",
    "liveness_detail": "frontlobby.com answered HTTP 200 on 2026-10-24. The LTB order search sends visitors to an account signup.",
    "homepage": null,
@@ -306864,7 +306864,7 @@
    "name": "Echovita",
    "category": "people-search",
    "domain": "echovita.com",
-   "checked_at": "2026-10-26T13:06:26+00:00",
+   "checked_at": "2026-10-26T21:31:57+00:00",
    "liveness": "alive",
    "liveness_detail": "echovita.com/ca answered HTTP 200 on 2026-10-24. A surname search returned obituary counts.",
    "homepage": null,
@@ -307083,7 +307083,7 @@
    "name": "InMemoriam",
    "category": "people-search",
    "domain": "inmemoriam.ca",
-   "checked_at": "2026-10-26T13:06:26+00:00",
+   "checked_at": "2026-10-26T21:31:57+00:00",
    "liveness": "alive",
    "liveness_detail": "inmemoriam.ca answered HTTP 200 on 2026-10-24. A surname search returned notice counts.",
    "homepage": null,
@@ -307326,7 +307326,7 @@
    "name": "Nécrologie.ca",
    "category": "people-search",
    "domain": "necrologie.ca",
-   "checked_at": "2026-10-26T13:06:26+00:00",
+   "checked_at": "2026-10-26T21:31:57+00:00",
    "liveness": "alive",
    "liveness_detail": "necrologie.ca answered HTTP 200 on 2026-10-24. The search API returned obituary counts.",
    "homepage": null,
@@ -307545,7 +307545,7 @@
    "name": "Geni",
    "category": "people-search",
    "domain": "geni.com",
-   "checked_at": "2026-10-26T13:06:26+00:00",
+   "checked_at": "2026-10-26T21:31:57+00:00",
    "liveness": "alive",
    "liveness_detail": "geni.com answered HTTP 200 on 2026-10-24. A public people search returned a result count.",
    "homepage": null,
@@ -307764,7 +307764,7 @@
    "name": "FQSG Avis de décès",
    "category": "people-search",
    "domain": "federationgenealogie.qc.ca",
-   "checked_at": "2026-10-26T13:06:26+00:00",
+   "checked_at": "2026-10-26T21:31:57+00:00",
    "liveness": "alive",
    "liveness_detail": "federationgenealogie.qc.ca answered HTTP 200 on 2026-10-24. A name search returned death notices.",
    "homepage": null,
@@ -307983,7 +307983,7 @@
    "name": "Domaine funéraire (Corporation des thanatologues du Québec)",
    "category": "people-search",
    "domain": "domainefuneraire.com",
-   "checked_at": "2026-10-26T13:06:26+00:00",
+   "checked_at": "2026-10-26T21:31:57+00:00",
    "liveness": "alive",
    "liveness_detail": "domainefuneraire.com answered HTTP 200 on 2026-10-24. A name search returned death notices.",
    "homepage": null,
@@ -308202,7 +308202,7 @@
    "name": "Canadian Obituaries",
    "category": "people-search",
    "domain": "canadianobituaries.com",
-   "checked_at": "2026-10-26T13:06:26+00:00",
+   "checked_at": "2026-10-26T21:31:57+00:00",
    "liveness": "alive",
    "liveness_detail": "canadianobituaries.com answered HTTP 200 on 2026-10-24. A name search returned death notices.",
    "homepage": null,
@@ -308421,7 +308421,7 @@
    "name": "Coopérative funéraire du Grand Montréal",
    "category": "people-search",
    "domain": "cfgrandmontreal.com",
-   "checked_at": "2026-10-26T13:06:26+00:00",
+   "checked_at": "2026-10-26T21:31:57+00:00",
    "liveness": "alive",
    "liveness_detail": "cfgrandmontreal.com answered HTTP 200 on 2026-10-24. A name search returned death notices.",
    "homepage": null,
@@ -308640,7 +308640,7 @@
    "name": "Coopérative funéraire des Deux Rives",
    "category": "people-search",
    "domain": "coopfuneraire2rives.com",
-   "checked_at": "2026-10-26T13:06:26+00:00",
+   "checked_at": "2026-10-26T21:31:57+00:00",
    "liveness": "alive",
    "liveness_detail": "coopfuneraire2rives.com answered HTTP 200 on 2026-10-24. A name search returned death notices.",
    "homepage": null,
@@ -308859,7 +308859,7 @@
    "name": "Alliance funéraire du Royaume",
    "category": "people-search",
    "domain": "afdr.coop",
-   "checked_at": "2026-10-26T13:06:26+00:00",
+   "checked_at": "2026-10-26T21:31:57+00:00",
    "liveness": "alive",
    "liveness_detail": "afdr.coop answered HTTP 200 on 2026-10-24. A name search returned death notices.",
    "homepage": null,
@@ -309078,7 +309078,7 @@
    "name": "Coopérative funéraire de l'Abitibi",
    "category": "people-search",
    "domain": "cfa.coop",
-   "checked_at": "2026-10-26T13:06:26+00:00",
+   "checked_at": "2026-10-26T21:31:57+00:00",
    "liveness": "alive",
    "liveness_detail": "cfa.coop answered HTTP 200 on 2026-10-24. A name search returned death notices.",
    "homepage": null,
@@ -309297,7 +309297,7 @@
    "name": "Coopérative funéraire Haute-Côte-Nord - Manicouagan",
    "category": "people-search",
    "domain": "cfhcn.ca",
-   "checked_at": "2026-10-26T13:06:26+00:00",
+   "checked_at": "2026-10-26T21:31:57+00:00",
    "liveness": "alive",
    "liveness_detail": "cfhcn.ca answered HTTP 200 on 2026-10-24. A name search returned death notices.",
    "homepage": null,
@@ -309516,7 +309516,7 @@
    "name": "Coopérative funéraire de l'Outaouais",
    "category": "people-search",
    "domain": "cfo.coop",
-   "checked_at": "2026-10-26T13:06:26+00:00",
+   "checked_at": "2026-10-26T21:31:57+00:00",
    "liveness": "alive",
    "liveness_detail": "cfo.coop answered HTTP 200 on 2026-10-24. A name search returned death notices.",
    "homepage": null,
@@ -309735,7 +309735,7 @@
    "name": "Coopérative funéraire de l'Estrie",
    "category": "people-search",
    "domain": "coopfuneraireestrie.com",
-   "checked_at": "2026-10-26T13:06:26+00:00",
+   "checked_at": "2026-10-26T21:31:57+00:00",
    "liveness": "alive",
    "liveness_detail": "coopfuneraireestrie.com answered HTTP 200 on 2026-10-24. A name search returned death notices.",
    "homepage": null,
@@ -309954,7 +309954,7 @@
    "name": "Résidence funéraire Lac St-Jean",
    "category": "people-search",
    "domain": "residencefunerairelacstjean.com",
-   "checked_at": "2026-10-26T13:06:26+00:00",
+   "checked_at": "2026-10-26T21:31:57+00:00",
    "liveness": "alive",
    "liveness_detail": "residencefunerairelacstjean.com answered HTTP 200 on 2026-10-24. A name search returned death notices.",
    "homepage": null,
@@ -310173,7 +310173,7 @@
    "name": "Coopérative funéraire Brunet",
    "category": "people-search",
    "domain": "coopfbrunet.com",
-   "checked_at": "2026-10-26T13:06:26+00:00",
+   "checked_at": "2026-10-26T21:31:57+00:00",
    "liveness": "alive",
    "liveness_detail": "coopfbrunet.com answered HTTP 200 on 2026-10-24. A name search returned death notices.",
    "homepage": null,
@@ -310392,7 +310392,7 @@
    "name": "Coopérative funéraire Matawinie-Montcalm",
    "category": "people-search",
    "domain": "cfmm.coop",
-   "checked_at": "2026-10-26T13:06:26+00:00",
+   "checked_at": "2026-10-26T21:31:57+00:00",
    "liveness": "alive",
    "liveness_detail": "cfmm.coop answered HTTP 200 on 2026-10-24. A name search returned death notices.",
    "homepage": null,
@@ -310611,7 +310611,7 @@
    "name": "Coopérative funéraire des Laurentides",
    "category": "people-search",
    "domain": "coopfunerairelaurentides.org",
-   "checked_at": "2026-10-26T13:06:26+00:00",
+   "checked_at": "2026-10-26T21:31:57+00:00",
    "liveness": "alive",
    "liveness_detail": "coopfunerairelaurentides.org answered HTTP 200 on 2026-10-24. A name search returned death notices.",
    "homepage": null,
@@ -310830,7 +310830,7 @@
    "name": "Résidence Funéraire Maska",
    "category": "people-search",
    "domain": "rfmaska.coop",
-   "checked_at": "2026-10-26T13:06:26+00:00",
+   "checked_at": "2026-10-26T21:31:57+00:00",
    "liveness": "alive",
    "liveness_detail": "rfmaska.coop answered HTTP 200 on 2026-10-24. A name search returned death notices.",
    "homepage": null,
@@ -311049,7 +311049,7 @@
    "name": "Dignity Memorial",
    "category": "people-search",
    "domain": "dignitymemorial.com",
-   "checked_at": "2026-10-26T13:06:26+00:00",
+   "checked_at": "2026-10-26T21:31:57+00:00",
    "liveness": "alive",
    "liveness_detail": "dignitymemorial.com answered HTTP 200 on 2026-10-24. A name search returned records.",
    "homepage": null,
@@ -311269,7 +311269,7 @@
    "name": "Interment.net",
    "category": "people-search",
    "domain": "interment.net",
-   "checked_at": "2026-10-26T13:06:26+00:00",
+   "checked_at": "2026-10-26T21:31:57+00:00",
    "liveness": "alive",
    "liveness_detail": "interment.net answered HTTP 200 on 2026-10-24. A name search returned records.",
    "homepage": null,
@@ -311489,7 +311489,7 @@
    "name": "Mount Pleasant Group",
    "category": "people-search",
    "domain": "mountpleasantgroup.com",
-   "checked_at": "2026-10-26T13:06:26+00:00",
+   "checked_at": "2026-10-26T21:31:57+00:00",
    "liveness": "alive",
    "liveness_detail": "mountpleasantgroup.com answered HTTP 200 on 2026-10-24. A name search returned records.",
    "homepage": null,
@@ -311708,7 +311708,7 @@
    "name": "Kearney Funeral Services",
    "category": "people-search",
    "domain": "kearneyfs.com",
-   "checked_at": "2026-10-26T13:06:26+00:00",
+   "checked_at": "2026-10-26T21:31:57+00:00",
    "liveness": "alive",
    "liveness_detail": "kearneyfs.com answered HTTP 200 on 2026-10-24. A name search returned records.",
    "homepage": null,
@@ -311927,7 +311927,7 @@
    "name": "Basic Funerals",
    "category": "people-search",
    "domain": "basicfunerals.ca",
-   "checked_at": "2026-10-26T13:06:26+00:00",
+   "checked_at": "2026-10-26T21:31:57+00:00",
    "liveness": "alive",
    "liveness_detail": "basicfunerals.ca answered HTTP 200 on 2026-10-24. A name search returned records.",
    "homepage": null,
@@ -312146,7 +312146,7 @@
    "name": "Le Nécrologue",
    "category": "people-search",
    "domain": "lenecrologue.com",
-   "checked_at": "2026-10-26T13:06:26+00:00",
+   "checked_at": "2026-10-26T21:31:57+00:00",
    "liveness": "alive",
    "liveness_detail": "lenecrologue.com answered HTTP 200 on 2026-10-24. A name search returned records.",
    "homepage": null,
@@ -334306,6 +334306,2361 @@
     "page_kind": "form",
     "result_count": null,
     "checked_at": "2026-10-26T13:08:03+00:00"
+   }
+  },
+  "federalcorporation-ca": {
+   "schema_version": "4.0.0",
+   "id": "federalcorporation-ca",
+   "name": "Federal Corporation Directors (federalcorporation.ca)",
+   "category": "public-records",
+   "domain": "federalcorporation.ca",
+   "checked_at": "2026-10-26T21:31:03+00:00",
+   "liveness": "alive",
+   "liveness_detail": "federalcorporation.ca answered HTTP 200 on 2026-10-26 (one 503 before a retry). A director-name search returned director rows with addresses.",
+   "homepage": "https://federalcorporation.ca/",
+   "logo_url": null,
+   "images": [],
+   "theme_color": null,
+   "languages": [
+    "en"
+   ],
+   "legal_name": null,
+   "search": {
+    "available": true,
+    "method": "http_get",
+    "page_url": "https://federalcorporation.ca/",
+    "form_action": "https://federalcorporation.ca/director",
+    "inputs": [
+     {
+      "name": "q",
+      "type": "text",
+      "canonical": "full_name",
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null,
+      "id": null,
+      "label": "Search",
+      "inputmode": null,
+      "pattern": null,
+      "minlength": null,
+      "maxlength": null,
+      "min": null,
+      "max": null,
+      "step": null,
+      "accept": null,
+      "multiple": false,
+      "disabled": false,
+      "readonly": false,
+      "checked": false,
+      "value": null
+     }
+    ],
+    "url_pattern": "https://federalcorporation.ca/director?q={q}",
+    "directory_prefixes": [],
+    "paywall": null,
+    "login_wall": null,
+    "form_meta": {
+     "id": null,
+     "name": null,
+     "autocomplete": null,
+     "novalidate": null,
+     "submit_label": null,
+     "hidden_names": []
+    },
+    "captcha_provider": null,
+    "captcha_sitekey": null,
+    "captcha_detail": null,
+    "captcha_checked": true
+   },
+   "removal": {
+    "url": "https://federalcorporation.ca/",
+    "final_url": "https://federalcorporation.ca/",
+    "http_status": 200,
+    "kinds": [
+     "opt_out"
+    ],
+    "channels": [],
+    "emails": [],
+    "phones": [],
+    "postal_address": null,
+    "portal": null,
+    "form_fields": [],
+    "csrf_field_name": null,
+    "requires_profile_url": null,
+    "captcha": {
+     "provider": null,
+     "sitekey": null,
+     "pages": [],
+     "checked": null,
+     "checked_url": null,
+     "detail": null
+    },
+    "consent_vendor": null,
+    "success_text": null,
+    "suppression_not_deletion": null,
+    "processing_days": null,
+    "processing_text": null,
+    "form_action": null,
+    "form_method": null,
+    "form_meta": {
+     "id": null,
+     "name": null,
+     "autocomplete": null,
+     "novalidate": null,
+     "submit_label": null,
+     "hidden_names": []
+    }
+   },
+   "bot_defense": {
+    "vendor": null,
+    "outcome": "none"
+   },
+   "legal": {
+    "privacy_policy_url": null,
+    "terms_url": null,
+    "automation_prohibited": null,
+    "automation_clause": null,
+    "residency": [
+     "CA-QC",
+     "CA-BC"
+    ],
+    "authorized_agent": null,
+    "data_categories": [
+     "identifiers"
+    ],
+    "sells_personal_information": null,
+    "sells_clause": null,
+    "children_not_directed": null
+   },
+   "pages": [
+    {
+     "url": "https://federalcorporation.ca/",
+     "final_url": "https://federalcorporation.ca/",
+     "status": 200,
+     "role": "home",
+     "title": "FederalCorporation: Find federal corporations in Canada",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.federalcorporation.ca/",
+     "final_url": "https://www.federalcorporation.ca/",
+     "status": 200,
+     "role": "home",
+     "title": "FederalCorporation: Find federal corporations in Canada",
+     "liveness": "alive"
+    }
+   ],
+   "location": {
+    "country": "CA",
+    "region": null,
+    "locality": null,
+    "postal_code": null,
+    "street": null,
+    "postal_address": null,
+    "coverage": [
+     "CA-QC",
+     "CA-BC",
+     "CA"
+    ],
+    "search_regions": [],
+    "sources": [
+     "domain"
+    ]
+   },
+   "network": {
+    "checked": false,
+    "addresses": [],
+    "ipv6": [],
+    "cname": null,
+    "mx": [],
+    "mail_provider": null,
+    "spf": null,
+    "dmarc": null,
+    "dkim": [],
+    "nameservers": [],
+    "dns_provider": null,
+    "soa_primary": null,
+    "caa": [],
+    "dnssec": null,
+    "asn": null,
+    "asn_country": null,
+    "prefix": null,
+    "cdn": null,
+    "server": null,
+    "tls_org": null,
+    "tls_issuer": null,
+    "tls_names": [],
+    "tls_version": null,
+    "tls_not_before": null,
+    "tls_not_after": null,
+    "registrar": null,
+    "registered": null,
+    "registration_expires": null,
+    "domain_status": []
+   },
+   "request": {
+    "removal_host": "federalcorporation.ca",
+    "same_site": true,
+    "https": true,
+    "redirected": false,
+    "redirect_count": null,
+    "form_enctype": null,
+    "content_type": null,
+    "hsts": null,
+    "hsts_max_age": null,
+    "hsts_subdomains": null,
+    "hsts_preload": null,
+    "http_version": null,
+    "http3": null,
+    "frame_options": null,
+    "nosniff": null,
+    "referrer_policy": null,
+    "csp": null,
+    "powered_by": null,
+    "cookie_names": []
+   },
+   "automation": {
+    "search_scanned": true,
+    "search_fillable": true,
+    "search_captcha": false,
+    "search_fields": [
+     "full_name"
+    ],
+    "removal_form_fillable": false,
+    "removal_email_usable": false,
+    "removal_fields": [],
+    "removal_path": null,
+    "fully_automatable": false,
+    "usable_emails": [],
+    "search_required": [],
+    "removal_required": [],
+    "email_verification": null,
+    "id_document": null,
+    "shared_removal_ids": [],
+    "removal_captcha": false,
+    "captcha_blocks_form": false,
+    "captcha_email_fallback": false,
+    "removal_blocker": "no_channel"
+   },
+   "search_test": {
+    "outcome": "submitted",
+    "http_status": 200,
+    "path_prefix": "director",
+    "fields_sent": [
+     "full_name"
+    ],
+    "missing": [],
+    "page_kind": "results",
+    "result_count": 105,
+    "checked_at": "2026-10-26T21:33:51+00:00"
+   }
+  },
+  "companiesofcanada-com": {
+   "schema_version": "4.0.0",
+   "id": "companiesofcanada-com",
+   "name": "Companies of Canada (companiesofcanada.com)",
+   "category": "public-records",
+   "domain": "companiesofcanada.com",
+   "checked_at": "2026-10-26T21:31:03+00:00",
+   "liveness": "alive",
+   "liveness_detail": "companiesofcanada.com answered HTTP 200 on 2026-10-26. An officer-name search returned officers with addresses.",
+   "homepage": "https://www.companiesofcanada.com/",
+   "logo_url": "https://www.companiesofcanada.com/sites/default/files/checkcompanyiconnew.png",
+   "images": [
+    {
+     "url": "https://www.companiesofcanada.com/sites/default/files/checkcompanyiconnew.png",
+     "kind": "icon",
+     "source_page": "https://www.companiesofcanada.com/"
+    }
+   ],
+   "theme_color": null,
+   "languages": [
+    "en"
+   ],
+   "legal_name": null,
+   "search": {
+    "available": true,
+    "method": "http_get",
+    "page_url": "https://www.companiesofcanada.com/",
+    "form_action": "https://www.companiesofcanada.com/searchofficers",
+    "inputs": [
+     {
+      "name": "name",
+      "type": "text",
+      "canonical": "full_name",
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null,
+      "id": null,
+      "label": "Officer name",
+      "inputmode": null,
+      "pattern": null,
+      "minlength": null,
+      "maxlength": null,
+      "min": null,
+      "max": null,
+      "step": null,
+      "accept": null,
+      "multiple": false,
+      "disabled": false,
+      "readonly": false,
+      "checked": false,
+      "value": null
+     }
+    ],
+    "url_pattern": "https://www.companiesofcanada.com/searchofficers?name={name}&town=&country=",
+    "directory_prefixes": [],
+    "paywall": null,
+    "login_wall": null,
+    "form_meta": {
+     "id": null,
+     "name": null,
+     "autocomplete": null,
+     "novalidate": null,
+     "submit_label": null,
+     "hidden_names": []
+    },
+    "captcha_provider": null,
+    "captcha_sitekey": null,
+    "captcha_detail": null,
+    "captcha_checked": true
+   },
+   "removal": {
+    "url": "https://www.companiesofcanada.com/privacy-policy",
+    "final_url": "https://www.companiesofcanada.com/privacy-policy",
+    "http_status": 200,
+    "kinds": [
+     "opt_out"
+    ],
+    "channels": [
+     "web_form",
+     "postal_mail"
+    ],
+    "emails": [],
+    "phones": [],
+    "postal_address": "P O BOX 569 OHSWEKEN ON, N0A 1M0 Canada Active PRODUCTIONS À L'AUBE INC",
+    "portal": null,
+    "form_fields": [
+     {
+      "name": "bothnames",
+      "type": "text",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": "SEARCH NAME",
+      "id": null,
+      "label": null,
+      "inputmode": null,
+      "pattern": null,
+      "minlength": null,
+      "maxlength": null,
+      "min": null,
+      "max": null,
+      "step": null,
+      "accept": null,
+      "multiple": null,
+      "disabled": null,
+      "readonly": null,
+      "checked": null,
+      "value": null
+     },
+     {
+      "name": "companiesorofficers",
+      "type": "select",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null,
+      "options": [
+       "companies",
+       "officers",
+       "google"
+      ],
+      "id": null,
+      "label": null,
+      "inputmode": null,
+      "pattern": null,
+      "minlength": null,
+      "maxlength": null,
+      "min": null,
+      "max": null,
+      "step": null,
+      "accept": null,
+      "multiple": null,
+      "disabled": null,
+      "readonly": null,
+      "checked": null,
+      "value": null
+     }
+    ],
+    "csrf_field_name": null,
+    "requires_profile_url": null,
+    "captcha": {
+     "provider": null,
+     "sitekey": null,
+     "pages": [],
+     "checked": null,
+     "checked_url": null,
+     "detail": null
+    },
+    "consent_vendor": null,
+    "success_text": null,
+    "suppression_not_deletion": null,
+    "processing_days": null,
+    "processing_text": null,
+    "form_action": null,
+    "form_method": null,
+    "form_meta": {
+     "id": null,
+     "name": null,
+     "autocomplete": null,
+     "novalidate": null,
+     "submit_label": null,
+     "hidden_names": []
+    }
+   },
+   "bot_defense": {
+    "vendor": null,
+    "outcome": "none"
+   },
+   "legal": {
+    "privacy_policy_url": "https://www.companiesofcanada.com/privacy-policy",
+    "terms_url": null,
+    "automation_prohibited": null,
+    "automation_clause": null,
+    "residency": [
+     "US",
+     "EU",
+     "CA-QC"
+    ],
+    "authorized_agent": null,
+    "data_categories": [
+     "identifiers",
+     "internet_activity"
+    ],
+    "sells_personal_information": null,
+    "sells_clause": null,
+    "children_not_directed": null
+   },
+   "pages": [
+    {
+     "url": "https://companiesofcanada.com/",
+     "final_url": "https://www.companiesofcanada.com/",
+     "status": 200,
+     "role": "home",
+     "title": "Companies of Canada - Information on Businesses in Canada",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.companiesofcanada.com/",
+     "final_url": "https://www.companiesofcanada.com/",
+     "status": 200,
+     "role": "home",
+     "title": "Companies of Canada - Information on Businesses in Canada",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.companiesofcanada.com/privacy-policy",
+     "final_url": "https://www.companiesofcanada.com/privacy-policy",
+     "status": 200,
+     "role": "catalog",
+     "title": "Privacy Policy",
+     "liveness": "alive"
+    }
+   ],
+   "location": {
+    "country": "CA",
+    "region": null,
+    "locality": null,
+    "postal_code": null,
+    "street": null,
+    "postal_address": "P O BOX 569 OHSWEKEN ON, N0A 1M0 Canada Active PRODUCTIONS À L'AUBE INC",
+    "coverage": [
+     "US",
+     "EU",
+     "CA-QC",
+     "CA"
+    ],
+    "search_regions": [],
+    "sources": [
+     "site_name",
+     "page"
+    ]
+   },
+   "network": {
+    "checked": false,
+    "addresses": [],
+    "ipv6": [],
+    "cname": null,
+    "mx": [],
+    "mail_provider": null,
+    "spf": null,
+    "dmarc": null,
+    "dkim": [],
+    "nameservers": [],
+    "dns_provider": null,
+    "soa_primary": null,
+    "caa": [],
+    "dnssec": null,
+    "asn": null,
+    "asn_country": null,
+    "prefix": null,
+    "cdn": null,
+    "server": null,
+    "tls_org": null,
+    "tls_issuer": null,
+    "tls_names": [],
+    "tls_version": null,
+    "tls_not_before": null,
+    "tls_not_after": null,
+    "registrar": null,
+    "registered": null,
+    "registration_expires": null,
+    "domain_status": []
+   },
+   "request": {
+    "removal_host": "companiesofcanada.com",
+    "same_site": true,
+    "https": true,
+    "redirected": false,
+    "redirect_count": null,
+    "form_enctype": null,
+    "content_type": null,
+    "hsts": null,
+    "hsts_max_age": null,
+    "hsts_subdomains": null,
+    "hsts_preload": null,
+    "http_version": null,
+    "http3": null,
+    "frame_options": null,
+    "nosniff": null,
+    "referrer_policy": null,
+    "csp": null,
+    "powered_by": null,
+    "cookie_names": []
+   },
+   "automation": {
+    "search_scanned": true,
+    "search_fillable": true,
+    "search_captcha": false,
+    "search_fields": [
+     "full_name"
+    ],
+    "removal_form_fillable": true,
+    "removal_email_usable": false,
+    "removal_fields": [],
+    "removal_path": "form",
+    "fully_automatable": true,
+    "usable_emails": [],
+    "search_required": [],
+    "removal_required": [],
+    "email_verification": null,
+    "id_document": null,
+    "shared_removal_ids": [],
+    "removal_captcha": false,
+    "captcha_blocks_form": false,
+    "captcha_email_fallback": false,
+    "removal_blocker": null
+   },
+   "search_test": {
+    "outcome": "submitted",
+    "http_status": 200,
+    "path_prefix": "searchofficers",
+    "fields_sent": [
+     "full_name"
+    ],
+    "missing": [],
+    "page_kind": "results",
+    "result_count": 2,
+    "checked_at": "2026-10-26T21:33:51+00:00"
+   }
+  },
+  "mysask411": {
+   "schema_version": "4.0.0",
+   "id": "mysask411",
+   "name": "Mysask411 (DirectWest Saskatchewan white pages)",
+   "category": "people-search",
+   "domain": "mysask411.com",
+   "checked_at": "2026-10-26T21:31:04+00:00",
+   "liveness": "alive",
+   "liveness_detail": "mysask411.com loaded in a browser on 2026-10-26. A name search in a Saskatchewan city returned residential listings.",
+   "homepage": "https://mysask411.com/",
+   "logo_url": "https://mysask411.com/build/images/favicon/apple-touch-icon-57x57.bce73ff8.png",
+   "images": [
+    {
+     "url": "https://mysask411.com/build/images/favicon/apple-touch-icon-57x57.bce73ff8.png",
+     "kind": "apple_touch_icon",
+     "source_page": "https://mysask411.com/"
+    },
+    {
+     "url": "https://mysask411.com/build/images/favicon/apple-touch-icon-114x114.b89185f8.png",
+     "kind": "apple_touch_icon",
+     "source_page": "https://mysask411.com/"
+    },
+    {
+     "url": "https://mysask411.com/build/images/favicon/apple-touch-icon-72x72.7ce577ae.png",
+     "kind": "apple_touch_icon",
+     "source_page": "https://mysask411.com/"
+    },
+    {
+     "url": "https://mysask411.com/build/images/favicon/apple-touch-icon-144x144.9c9c6a18.png",
+     "kind": "apple_touch_icon",
+     "source_page": "https://mysask411.com/"
+    },
+    {
+     "url": "https://mysask411.com/build/images/favicon/apple-touch-icon-60x60.11df232a.png",
+     "kind": "apple_touch_icon",
+     "source_page": "https://mysask411.com/"
+    },
+    {
+     "url": "https://mysask411.com/build/images/favicon/apple-touch-icon-120x120.2e30ff29.png",
+     "kind": "apple_touch_icon",
+     "source_page": "https://mysask411.com/"
+    },
+    {
+     "url": "https://mysask411.com/build/images/favicon/apple-touch-icon-76x76.d5aa127c.png",
+     "kind": "apple_touch_icon",
+     "source_page": "https://mysask411.com/"
+    },
+    {
+     "url": "https://mysask411.com/build/images/favicon/apple-touch-icon-152x152.b98b2183.png",
+     "kind": "apple_touch_icon",
+     "source_page": "https://mysask411.com/"
+    },
+    {
+     "url": "https://mysask411.com/build/images/favicon/favicon-196x196.f55b1311.png",
+     "kind": "icon",
+     "source_page": "https://mysask411.com/"
+    },
+    {
+     "url": "https://mysask411.com/build/images/favicon/favicon-96x96.b28b1b4b.png",
+     "kind": "icon",
+     "source_page": "https://mysask411.com/"
+    },
+    {
+     "url": "https://mysask411.com/build/images/favicon/favicon-32x32.be6ec8a3.png",
+     "kind": "icon",
+     "source_page": "https://mysask411.com/"
+    },
+    {
+     "url": "https://mysask411.com/build/images/favicon/favicon-16x16.0e228829.png",
+     "kind": "icon",
+     "source_page": "https://mysask411.com/"
+    },
+    {
+     "url": "https://mysask411.com/build/images/favicon/favicon-128.5ba47984.png",
+     "kind": "icon",
+     "source_page": "https://mysask411.com/"
+    },
+    {
+     "url": "https://mysask411.com/build/images/favicon/safari-pinned-tab.871956d3.svg",
+     "kind": "icon",
+     "source_page": "https://mysask411.com/"
+    },
+    {
+     "url": "https://media.mysask411.ca/Images/mysask411-logo-2.jpg",
+     "kind": "og_image",
+     "source_page": "https://mysask411.com/"
+    }
+   ],
+   "theme_color": "#ffffff",
+   "languages": [
+    "en"
+   ],
+   "legal_name": "Mysask411",
+   "search": {
+    "available": true,
+    "method": "http_get",
+    "page_url": "https://mysask411.com/",
+    "form_action": "https://mysask411.com/search",
+    "inputs": [
+     {
+      "name": "first",
+      "type": "text",
+      "canonical": "first_name",
+      "required": true,
+      "autocomplete": null,
+      "placeholder": null,
+      "id": null,
+      "label": "First name",
+      "inputmode": null,
+      "pattern": null,
+      "minlength": null,
+      "maxlength": null,
+      "min": null,
+      "max": null,
+      "step": null,
+      "accept": null,
+      "multiple": false,
+      "disabled": false,
+      "readonly": false,
+      "checked": false,
+      "value": null
+     },
+     {
+      "name": "last",
+      "type": "text",
+      "canonical": "last_name",
+      "required": true,
+      "autocomplete": null,
+      "placeholder": null,
+      "id": null,
+      "label": "Last name",
+      "inputmode": null,
+      "pattern": null,
+      "minlength": null,
+      "maxlength": null,
+      "min": null,
+      "max": null,
+      "step": null,
+      "accept": null,
+      "multiple": false,
+      "disabled": false,
+      "readonly": false,
+      "checked": false,
+      "value": null
+     },
+     {
+      "name": "where",
+      "type": "text",
+      "canonical": "city",
+      "required": true,
+      "autocomplete": null,
+      "placeholder": null,
+      "id": null,
+      "label": "City",
+      "inputmode": null,
+      "pattern": null,
+      "minlength": null,
+      "maxlength": null,
+      "min": null,
+      "max": null,
+      "step": null,
+      "accept": null,
+      "multiple": false,
+      "disabled": false,
+      "readonly": false,
+      "checked": false,
+      "value": null
+     }
+    ],
+    "url_pattern": "https://mysask411.com/search/people/{where}/{first}%20{last}",
+    "directory_prefixes": [],
+    "paywall": null,
+    "login_wall": null,
+    "form_meta": {
+     "id": null,
+     "name": null,
+     "autocomplete": null,
+     "novalidate": null,
+     "submit_label": null,
+     "hidden_names": []
+    },
+    "captcha_provider": null,
+    "captcha_sitekey": null,
+    "captcha_detail": null,
+    "captcha_checked": true
+   },
+   "removal": {
+    "url": "https://mysask411.com/privacy",
+    "final_url": "https://mysask411.com/privacy",
+    "http_status": 200,
+    "kinds": [
+     "opt_out"
+    ],
+    "channels": [
+     "phone"
+    ],
+    "emails": [],
+    "phones": [
+     "1-800-667-8201"
+    ],
+    "postal_address": null,
+    "portal": null,
+    "form_fields": [],
+    "csrf_field_name": null,
+    "requires_profile_url": null,
+    "captcha": {
+     "provider": null,
+     "sitekey": null,
+     "pages": [],
+     "checked": null,
+     "checked_url": null,
+     "detail": null
+    },
+    "consent_vendor": null,
+    "success_text": null,
+    "suppression_not_deletion": null,
+    "processing_days": null,
+    "processing_text": null,
+    "form_action": null,
+    "form_method": null,
+    "form_meta": {
+     "id": null,
+     "name": null,
+     "autocomplete": null,
+     "novalidate": null,
+     "submit_label": null,
+     "hidden_names": []
+    }
+   },
+   "bot_defense": {
+    "vendor": null,
+    "outcome": "none"
+   },
+   "legal": {
+    "privacy_policy_url": "https://mysask411.com/privacy",
+    "terms_url": null,
+    "automation_prohibited": null,
+    "automation_clause": null,
+    "residency": [],
+    "authorized_agent": null,
+    "data_categories": [
+     "identifiers",
+     "commercial",
+     "employment"
+    ],
+    "sells_personal_information": null,
+    "sells_clause": null,
+    "children_not_directed": null
+   },
+   "pages": [
+    {
+     "url": "https://mysask411.com/",
+     "final_url": "https://mysask411.com/",
+     "status": 200,
+     "role": "home",
+     "title": "Mysask411: Saskatchewan-based Businesses, People, Flights, Movies, Reverse Lookup & More",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.mysask411.com/",
+     "final_url": "https://mysask411.com/",
+     "status": 200,
+     "role": "home",
+     "title": "Mysask411: Saskatchewan-based Businesses, People, Flights, Movies, Reverse Lookup & More",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://mysask411.com/privacy",
+     "final_url": "https://mysask411.com/privacy",
+     "status": 200,
+     "role": "catalog",
+     "title": "Privacy Policy - Mysask411",
+     "liveness": "alive"
+    }
+   ],
+   "location": {
+    "country": "CA",
+    "region": null,
+    "locality": null,
+    "postal_code": null,
+    "street": null,
+    "postal_address": null,
+    "coverage": [
+     "CA"
+    ],
+    "search_regions": [],
+    "sources": [
+     "manual"
+    ]
+   },
+   "network": {
+    "checked": false,
+    "addresses": [],
+    "ipv6": [],
+    "cname": null,
+    "mx": [],
+    "mail_provider": null,
+    "spf": null,
+    "dmarc": null,
+    "dkim": [],
+    "nameservers": [],
+    "dns_provider": null,
+    "soa_primary": null,
+    "caa": [],
+    "dnssec": null,
+    "asn": null,
+    "asn_country": null,
+    "prefix": null,
+    "cdn": null,
+    "server": null,
+    "tls_org": null,
+    "tls_issuer": null,
+    "tls_names": [],
+    "tls_version": null,
+    "tls_not_before": null,
+    "tls_not_after": null,
+    "registrar": null,
+    "registered": null,
+    "registration_expires": null,
+    "domain_status": []
+   },
+   "request": {
+    "removal_host": "mysask411.com",
+    "same_site": true,
+    "https": true,
+    "redirected": false,
+    "redirect_count": null,
+    "form_enctype": null,
+    "content_type": null,
+    "hsts": null,
+    "hsts_max_age": null,
+    "hsts_subdomains": null,
+    "hsts_preload": null,
+    "http_version": null,
+    "http3": null,
+    "frame_options": null,
+    "nosniff": null,
+    "referrer_policy": null,
+    "csp": null,
+    "powered_by": null,
+    "cookie_names": []
+   },
+   "automation": {
+    "search_scanned": true,
+    "search_fillable": true,
+    "search_captcha": false,
+    "search_fields": [
+     "first_name",
+     "last_name",
+     "city"
+    ],
+    "removal_form_fillable": false,
+    "removal_email_usable": false,
+    "removal_fields": [],
+    "removal_path": null,
+    "fully_automatable": false,
+    "usable_emails": [],
+    "search_required": [
+     "first_name",
+     "last_name",
+     "city"
+    ],
+    "removal_required": [],
+    "email_verification": null,
+    "id_document": null,
+    "shared_removal_ids": [],
+    "removal_captcha": false,
+    "captcha_blocks_form": false,
+    "captcha_email_fallback": false,
+    "removal_blocker": "phone"
+   },
+   "search_test": {
+    "outcome": "submitted",
+    "http_status": 200,
+    "path_prefix": "search",
+    "fields_sent": [
+     "first_name",
+     "last_name",
+     "city"
+    ],
+    "missing": [],
+    "page_kind": "form",
+    "result_count": null,
+    "checked_at": "2026-10-26T21:38:34+00:00"
+   }
+  },
+  "albertasunshinelist-ca": {
+   "schema_version": "4.0.0",
+   "id": "albertasunshinelist-ca",
+   "name": "Alberta Sunshine List (albertasunshinelist.ca)",
+   "category": "public-records",
+   "domain": "albertasunshinelist.ca",
+   "checked_at": "2026-10-26T21:30:59+00:00",
+   "liveness": "alive",
+   "liveness_detail": "albertasunshinelist.ca loaded in a browser on 2026-10-26. A name search returned salary rows. Plain HTTP clients get a Cloudflare challenge.",
+   "homepage": "https://albertasunshinelist.ca/",
+   "logo_url": null,
+   "images": [],
+   "theme_color": null,
+   "languages": [],
+   "legal_name": null,
+   "search": {
+    "available": true,
+    "method": "http_get",
+    "page_url": "https://albertasunshinelist.ca/",
+    "form_action": "https://albertasunshinelist.ca/search-results/",
+    "inputs": [
+     {
+      "name": "query",
+      "type": "text",
+      "canonical": "full_name",
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null,
+      "id": null,
+      "label": "Search",
+      "inputmode": null,
+      "pattern": null,
+      "minlength": null,
+      "maxlength": null,
+      "min": null,
+      "max": null,
+      "step": null,
+      "accept": null,
+      "multiple": false,
+      "disabled": false,
+      "readonly": false,
+      "checked": false,
+      "value": null
+     }
+    ],
+    "url_pattern": "https://albertasunshinelist.ca/search-results/?query={query}",
+    "directory_prefixes": [],
+    "paywall": null,
+    "login_wall": null,
+    "form_meta": {
+     "id": null,
+     "name": null,
+     "autocomplete": null,
+     "novalidate": null,
+     "submit_label": null,
+     "hidden_names": []
+    },
+    "captcha_provider": null,
+    "captcha_sitekey": null,
+    "captcha_detail": null,
+    "captcha_checked": true
+   },
+   "removal": {
+    "url": "https://albertasunshinelist.ca/privacy-policy/",
+    "final_url": null,
+    "http_status": null,
+    "kinds": [
+     "opt_out"
+    ],
+    "channels": [],
+    "emails": [],
+    "phones": [],
+    "postal_address": null,
+    "portal": null,
+    "form_fields": [],
+    "csrf_field_name": null,
+    "requires_profile_url": null,
+    "captcha": {
+     "provider": null,
+     "sitekey": null,
+     "pages": [],
+     "checked": null,
+     "checked_url": null,
+     "detail": null
+    },
+    "consent_vendor": null,
+    "success_text": null,
+    "suppression_not_deletion": null,
+    "processing_days": null,
+    "processing_text": null,
+    "form_action": null,
+    "form_method": null,
+    "form_meta": {
+     "id": null,
+     "name": null,
+     "autocomplete": null,
+     "novalidate": null,
+     "submit_label": null,
+     "hidden_names": []
+    }
+   },
+   "bot_defense": {
+    "vendor": null,
+    "outcome": "none"
+   },
+   "legal": {
+    "privacy_policy_url": null,
+    "terms_url": null,
+    "automation_prohibited": null,
+    "automation_clause": null,
+    "residency": [],
+    "authorized_agent": null,
+    "data_categories": [],
+    "sells_personal_information": null,
+    "sells_clause": null,
+    "children_not_directed": null
+   },
+   "pages": [
+    {
+     "url": "https://albertasunshinelist.ca/",
+     "final_url": null,
+     "status": null,
+     "role": "home",
+     "title": "",
+     "liveness": "robots_disallowed"
+    },
+    {
+     "url": "https://www.albertasunshinelist.ca/",
+     "final_url": null,
+     "status": null,
+     "role": "home",
+     "title": "",
+     "liveness": "robots_disallowed"
+    },
+    {
+     "url": "https://albertasunshinelist.ca/privacy-policy/",
+     "final_url": null,
+     "status": null,
+     "role": "catalog",
+     "title": "",
+     "liveness": "robots_disallowed"
+    }
+   ],
+   "location": {
+    "country": "CA",
+    "region": "AB",
+    "locality": null,
+    "postal_code": null,
+    "street": null,
+    "postal_address": null,
+    "coverage": [
+     "CA",
+     "CA-AB"
+    ],
+    "search_regions": [],
+    "sources": [
+     "domain",
+     "site_name"
+    ]
+   },
+   "network": {
+    "checked": false,
+    "addresses": [],
+    "ipv6": [],
+    "cname": null,
+    "mx": [],
+    "mail_provider": null,
+    "spf": null,
+    "dmarc": null,
+    "dkim": [],
+    "nameservers": [],
+    "dns_provider": null,
+    "soa_primary": null,
+    "caa": [],
+    "dnssec": null,
+    "asn": null,
+    "asn_country": null,
+    "prefix": null,
+    "cdn": null,
+    "server": null,
+    "tls_org": null,
+    "tls_issuer": null,
+    "tls_names": [],
+    "tls_version": null,
+    "tls_not_before": null,
+    "tls_not_after": null,
+    "registrar": null,
+    "registered": null,
+    "registration_expires": null,
+    "domain_status": []
+   },
+   "request": {
+    "removal_host": "albertasunshinelist.ca",
+    "same_site": true,
+    "https": true,
+    "redirected": null,
+    "redirect_count": null,
+    "form_enctype": null,
+    "content_type": null,
+    "hsts": null,
+    "hsts_max_age": null,
+    "hsts_subdomains": null,
+    "hsts_preload": null,
+    "http_version": null,
+    "http3": null,
+    "frame_options": null,
+    "nosniff": null,
+    "referrer_policy": null,
+    "csp": null,
+    "powered_by": null,
+    "cookie_names": []
+   },
+   "automation": {
+    "search_scanned": true,
+    "search_fillable": true,
+    "search_captcha": false,
+    "search_fields": [
+     "full_name"
+    ],
+    "removal_form_fillable": false,
+    "removal_email_usable": false,
+    "removal_fields": [],
+    "removal_path": null,
+    "fully_automatable": false,
+    "usable_emails": [],
+    "search_required": [],
+    "removal_required": [],
+    "email_verification": null,
+    "id_document": null,
+    "shared_removal_ids": [],
+    "removal_captcha": false,
+    "captcha_blocks_form": false,
+    "captcha_email_fallback": false,
+    "removal_blocker": "no_channel"
+   },
+   "search_test": {
+    "outcome": "challenge",
+    "http_status": 403,
+    "path_prefix": "search-results",
+    "fields_sent": [
+     "full_name"
+    ],
+    "missing": [],
+    "page_kind": null,
+    "result_count": null,
+    "checked_at": "2026-10-26T21:33:51+00:00"
+   }
+  },
+  "thesunshinelist-ca": {
+   "schema_version": "4.0.0",
+   "id": "thesunshinelist-ca",
+   "name": "The Sunshine List (thesunshinelist.ca)",
+   "category": "public-records",
+   "domain": "thesunshinelist.ca",
+   "checked_at": "2026-10-26T21:31:06+00:00",
+   "liveness": "alive",
+   "liveness_detail": "thesunshinelist.ca loaded in a browser on 2026-10-26. A name search returned salary records.",
+   "homepage": "https://thesunshinelist.ca/",
+   "logo_url": "https://thesunshinelist.ca/tsl_logo.svg",
+   "images": [
+    {
+     "url": "https://thesunshinelist.ca/tsl_logo.svg",
+     "kind": "icon",
+     "source_page": "https://thesunshinelist.ca/"
+    },
+    {
+     "url": "https://thesunshinelist.ca/og-default.png",
+     "kind": "og_image",
+     "source_page": "https://thesunshinelist.ca/"
+    }
+   ],
+   "theme_color": "#0f172a",
+   "languages": [
+    "en"
+   ],
+   "legal_name": null,
+   "search": {
+    "available": true,
+    "method": "http_get",
+    "page_url": "https://thesunshinelist.ca/",
+    "form_action": "https://thesunshinelist.ca/search",
+    "inputs": [
+     {
+      "name": "q",
+      "type": "text",
+      "canonical": "full_name",
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null,
+      "id": null,
+      "label": "Search",
+      "inputmode": null,
+      "pattern": null,
+      "minlength": null,
+      "maxlength": null,
+      "min": null,
+      "max": null,
+      "step": null,
+      "accept": null,
+      "multiple": false,
+      "disabled": false,
+      "readonly": false,
+      "checked": false,
+      "value": null
+     }
+    ],
+    "url_pattern": "https://thesunshinelist.ca/search?q={q}",
+    "directory_prefixes": [],
+    "paywall": null,
+    "login_wall": null,
+    "form_meta": {
+     "id": null,
+     "name": null,
+     "autocomplete": null,
+     "novalidate": null,
+     "submit_label": null,
+     "hidden_names": []
+    },
+    "captcha_provider": null,
+    "captcha_sitekey": null,
+    "captcha_detail": null,
+    "captcha_checked": true
+   },
+   "removal": {
+    "url": "https://thesunshinelist.ca/privacy",
+    "final_url": "https://thesunshinelist.ca/privacy",
+    "http_status": 200,
+    "kinds": [
+     "opt_out"
+    ],
+    "channels": [],
+    "emails": [],
+    "phones": [],
+    "postal_address": null,
+    "portal": null,
+    "form_fields": [],
+    "csrf_field_name": null,
+    "requires_profile_url": null,
+    "captcha": {
+     "provider": null,
+     "sitekey": null,
+     "pages": [],
+     "checked": null,
+     "checked_url": null,
+     "detail": null
+    },
+    "consent_vendor": null,
+    "success_text": null,
+    "suppression_not_deletion": null,
+    "processing_days": null,
+    "processing_text": null,
+    "form_action": null,
+    "form_method": null,
+    "form_meta": {
+     "id": null,
+     "name": null,
+     "autocomplete": null,
+     "novalidate": null,
+     "submit_label": null,
+     "hidden_names": []
+    }
+   },
+   "bot_defense": {
+    "vendor": null,
+    "outcome": "none"
+   },
+   "legal": {
+    "privacy_policy_url": "https://thesunshinelist.ca/privacy",
+    "terms_url": null,
+    "automation_prohibited": null,
+    "automation_clause": null,
+    "residency": [],
+    "authorized_agent": null,
+    "data_categories": [],
+    "sells_personal_information": null,
+    "sells_clause": null,
+    "children_not_directed": null
+   },
+   "pages": [
+    {
+     "url": "https://thesunshinelist.ca/",
+     "final_url": "https://thesunshinelist.ca/",
+     "status": 200,
+     "role": "home",
+     "title": "Ontario Sunshine List - Search Public Sector Salaries 2016-2025",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.thesunshinelist.ca/",
+     "final_url": "https://thesunshinelist.ca/",
+     "status": 200,
+     "role": "home",
+     "title": "Ontario Sunshine List - Search Public Sector Salaries 2016-2025",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://thesunshinelist.ca/privacy",
+     "final_url": "https://thesunshinelist.ca/privacy",
+     "status": 200,
+     "role": "catalog",
+     "title": "Privacy Policy | The Sunshine List",
+     "liveness": "alive"
+    }
+   ],
+   "location": {
+    "country": "CA",
+    "region": null,
+    "locality": null,
+    "postal_code": null,
+    "street": null,
+    "postal_address": null,
+    "coverage": [
+     "CA"
+    ],
+    "search_regions": [],
+    "sources": [
+     "domain"
+    ]
+   },
+   "network": {
+    "checked": false,
+    "addresses": [],
+    "ipv6": [],
+    "cname": null,
+    "mx": [],
+    "mail_provider": null,
+    "spf": null,
+    "dmarc": null,
+    "dkim": [],
+    "nameservers": [],
+    "dns_provider": null,
+    "soa_primary": null,
+    "caa": [],
+    "dnssec": null,
+    "asn": null,
+    "asn_country": null,
+    "prefix": null,
+    "cdn": null,
+    "server": null,
+    "tls_org": null,
+    "tls_issuer": null,
+    "tls_names": [],
+    "tls_version": null,
+    "tls_not_before": null,
+    "tls_not_after": null,
+    "registrar": null,
+    "registered": null,
+    "registration_expires": null,
+    "domain_status": []
+   },
+   "request": {
+    "removal_host": "thesunshinelist.ca",
+    "same_site": true,
+    "https": true,
+    "redirected": false,
+    "redirect_count": null,
+    "form_enctype": null,
+    "content_type": null,
+    "hsts": null,
+    "hsts_max_age": null,
+    "hsts_subdomains": null,
+    "hsts_preload": null,
+    "http_version": null,
+    "http3": null,
+    "frame_options": null,
+    "nosniff": null,
+    "referrer_policy": null,
+    "csp": null,
+    "powered_by": null,
+    "cookie_names": []
+   },
+   "automation": {
+    "search_scanned": true,
+    "search_fillable": true,
+    "search_captcha": false,
+    "search_fields": [
+     "full_name"
+    ],
+    "removal_form_fillable": false,
+    "removal_email_usable": false,
+    "removal_fields": [],
+    "removal_path": null,
+    "fully_automatable": false,
+    "usable_emails": [],
+    "search_required": [],
+    "removal_required": [],
+    "email_verification": null,
+    "id_document": null,
+    "shared_removal_ids": [],
+    "removal_captcha": false,
+    "captcha_blocks_form": false,
+    "captcha_email_fallback": false,
+    "removal_blocker": "no_channel"
+   },
+   "search_test": {
+    "outcome": "submitted",
+    "http_status": 200,
+    "path_prefix": null,
+    "fields_sent": [
+     "full_name"
+    ],
+    "missing": [],
+    "page_kind": "results",
+    "result_count": 20,
+    "checked_at": "2026-10-26T21:38:34+00:00"
+   }
+  },
+  "ontariosunshinelist-ca": {
+   "schema_version": "4.0.0",
+   "id": "ontariosunshinelist-ca",
+   "name": "Ontario Sunshine List (ontariosunshinelist.ca)",
+   "category": "public-records",
+   "domain": "ontariosunshinelist.ca",
+   "checked_at": "2026-10-26T21:31:07+00:00",
+   "liveness": "alive",
+   "liveness_detail": "ontariosunshinelist.ca answered HTTP 200 on 2026-10-26. A name search returned salary rows.",
+   "homepage": "https://www.ontariosunshinelist.ca",
+   "logo_url": "https://www.ontariosunshinelist.ca/img/favicon.ico",
+   "images": [
+    {
+     "url": "https://www.ontariosunshinelist.ca/img/favicon.ico",
+     "kind": "icon",
+     "source_page": "https://www.ontariosunshinelist.ca"
+    },
+    {
+     "url": "https://www.ontariosunshinelist.ca/img/logo_oslist.webp",
+     "kind": "og_image",
+     "source_page": "https://www.ontariosunshinelist.ca"
+    }
+   ],
+   "theme_color": null,
+   "languages": [
+    "en"
+   ],
+   "legal_name": "Ontario Sunshine List",
+   "search": {
+    "available": true,
+    "method": "http_get",
+    "page_url": "https://www.ontariosunshinelist.ca/",
+    "form_action": "https://www.ontariosunshinelist.ca/search",
+    "inputs": [
+     {
+      "name": "skeyword",
+      "type": "text",
+      "canonical": "full_name",
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null,
+      "id": null,
+      "label": "Search",
+      "inputmode": null,
+      "pattern": null,
+      "minlength": null,
+      "maxlength": null,
+      "min": null,
+      "max": null,
+      "step": null,
+      "accept": null,
+      "multiple": false,
+      "disabled": false,
+      "readonly": false,
+      "checked": false,
+      "value": null
+     }
+    ],
+    "url_pattern": "https://www.ontariosunshinelist.ca/search?search-type=employees&skeyword={skeyword}",
+    "directory_prefixes": [],
+    "paywall": null,
+    "login_wall": null,
+    "form_meta": {
+     "id": null,
+     "name": null,
+     "autocomplete": null,
+     "novalidate": null,
+     "submit_label": null,
+     "hidden_names": []
+    },
+    "captcha_provider": null,
+    "captcha_sitekey": null,
+    "captcha_detail": null,
+    "captcha_checked": true
+   },
+   "removal": {
+    "url": "https://www.ontariosunshinelist.ca/pag/contact",
+    "final_url": "https://www.ontariosunshinelist.ca/pag/contact",
+    "http_status": 200,
+    "kinds": [
+     "opt_out"
+    ],
+    "channels": [
+     "web_form"
+    ],
+    "emails": [],
+    "phones": [],
+    "postal_address": null,
+    "portal": null,
+    "form_fields": [
+     {
+      "name": "search-type",
+      "type": "select",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null,
+      "options": [
+       "employees",
+       "employers",
+       "jobs"
+      ],
+      "id": null,
+      "label": null,
+      "inputmode": null,
+      "pattern": null,
+      "minlength": null,
+      "maxlength": null,
+      "min": null,
+      "max": null,
+      "step": null,
+      "accept": null,
+      "multiple": null,
+      "disabled": null,
+      "readonly": null,
+      "checked": null,
+      "value": null
+     },
+     {
+      "name": "skeyword",
+      "type": "text",
+      "canonical": null,
+      "required": false,
+      "autocomplete": "off",
+      "placeholder": "Enter employee name to search",
+      "id": null,
+      "label": null,
+      "inputmode": null,
+      "pattern": null,
+      "minlength": null,
+      "maxlength": null,
+      "min": null,
+      "max": null,
+      "step": null,
+      "accept": null,
+      "multiple": null,
+      "disabled": null,
+      "readonly": null,
+      "checked": null,
+      "value": null
+     }
+    ],
+    "csrf_field_name": null,
+    "requires_profile_url": null,
+    "captcha": {
+     "provider": "recaptcha_v3",
+     "sitekey": "6LdJuPokAAAAAJw5WJw-vGR8eXjxILcQC39fpDiV",
+     "pages": [
+      "https://www.ontariosunshinelist.ca/pag/contact"
+     ],
+     "checked": null,
+     "checked_url": null,
+     "detail": {
+      "mode": "score",
+      "invisible": true,
+      "size": null,
+      "theme": null,
+      "action": null,
+      "badge": null,
+      "language": null,
+      "appearance": null,
+      "enterprise": false,
+      "api_domain": null,
+      "script_path": null,
+      "token_field": null,
+      "callback": null
+     }
+    },
+    "consent_vendor": null,
+    "success_text": null,
+    "suppression_not_deletion": null,
+    "processing_days": null,
+    "processing_text": null,
+    "form_action": null,
+    "form_method": null,
+    "form_meta": {
+     "id": null,
+     "name": null,
+     "autocomplete": null,
+     "novalidate": null,
+     "submit_label": null,
+     "hidden_names": []
+    }
+   },
+   "bot_defense": {
+    "vendor": null,
+    "outcome": "none"
+   },
+   "legal": {
+    "privacy_policy_url": null,
+    "terms_url": null,
+    "automation_prohibited": null,
+    "automation_clause": null,
+    "residency": [],
+    "authorized_agent": null,
+    "data_categories": [
+     "identifiers"
+    ],
+    "sells_personal_information": null,
+    "sells_clause": null,
+    "children_not_directed": null
+   },
+   "pages": [
+    {
+     "url": "https://ontariosunshinelist.ca/",
+     "final_url": "https://www.ontariosunshinelist.ca",
+     "status": 200,
+     "role": "home",
+     "title": "Ontario Sunshine List 2025 | Public Sector Employee Salary Disclosure",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.ontariosunshinelist.ca/",
+     "final_url": "https://www.ontariosunshinelist.ca/",
+     "status": 200,
+     "role": "home",
+     "title": "Ontario Sunshine List 2025 | Public Sector Employee Salary Disclosure",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.ontariosunshinelist.ca/pag/contact",
+     "final_url": "https://www.ontariosunshinelist.ca/pag/contact",
+     "status": 200,
+     "role": "catalog",
+     "title": "Contact Us | Ontario Sunshine List",
+     "liveness": "alive"
+    }
+   ],
+   "location": {
+    "country": "CA",
+    "region": "ON",
+    "locality": null,
+    "postal_code": null,
+    "street": null,
+    "postal_address": null,
+    "coverage": [
+     "CA",
+     "CA-ON"
+    ],
+    "search_regions": [],
+    "sources": [
+     "domain",
+     "site_name"
+    ]
+   },
+   "network": {
+    "checked": false,
+    "addresses": [],
+    "ipv6": [],
+    "cname": null,
+    "mx": [],
+    "mail_provider": null,
+    "spf": null,
+    "dmarc": null,
+    "dkim": [],
+    "nameservers": [],
+    "dns_provider": null,
+    "soa_primary": null,
+    "caa": [],
+    "dnssec": null,
+    "asn": null,
+    "asn_country": null,
+    "prefix": null,
+    "cdn": null,
+    "server": null,
+    "tls_org": null,
+    "tls_issuer": null,
+    "tls_names": [],
+    "tls_version": null,
+    "tls_not_before": null,
+    "tls_not_after": null,
+    "registrar": null,
+    "registered": null,
+    "registration_expires": null,
+    "domain_status": []
+   },
+   "request": {
+    "removal_host": "ontariosunshinelist.ca",
+    "same_site": true,
+    "https": true,
+    "redirected": false,
+    "redirect_count": null,
+    "form_enctype": null,
+    "content_type": null,
+    "hsts": null,
+    "hsts_max_age": null,
+    "hsts_subdomains": null,
+    "hsts_preload": null,
+    "http_version": null,
+    "http3": null,
+    "frame_options": null,
+    "nosniff": null,
+    "referrer_policy": null,
+    "csp": null,
+    "powered_by": null,
+    "cookie_names": []
+   },
+   "automation": {
+    "search_scanned": true,
+    "search_fillable": true,
+    "search_captcha": false,
+    "search_fields": [
+     "full_name"
+    ],
+    "removal_form_fillable": false,
+    "removal_email_usable": false,
+    "removal_fields": [],
+    "removal_path": null,
+    "fully_automatable": false,
+    "usable_emails": [],
+    "search_required": [],
+    "removal_required": [],
+    "email_verification": null,
+    "id_document": null,
+    "shared_removal_ids": [],
+    "removal_captcha": true,
+    "captcha_blocks_form": true,
+    "captcha_email_fallback": false,
+    "removal_blocker": "captcha_form"
+   },
+   "search_test": {
+    "outcome": "submitted",
+    "http_status": 200,
+    "path_prefix": "application",
+    "fields_sent": [
+     "full_name"
+    ],
+    "missing": [],
+    "page_kind": "results",
+    "result_count": 61,
+    "checked_at": "2026-10-26T21:33:53+00:00"
+   }
+  },
+  "charitydata-ca": {
+   "schema_version": "4.0.0",
+   "id": "charitydata-ca",
+   "name": "CharityData.ca director search",
+   "category": "public-records",
+   "domain": "charitydata.ca",
+   "checked_at": "2026-10-26T21:31:03+00:00",
+   "liveness": "alive",
+   "liveness_detail": "charitydata.ca loaded in a browser on 2026-10-26. A director-name search returned charity directors.",
+   "homepage": "https://www.charitydata.ca/",
+   "logo_url": null,
+   "images": [],
+   "theme_color": null,
+   "languages": [
+    "en"
+   ],
+   "legal_name": null,
+   "search": {
+    "available": true,
+    "method": "http_get",
+    "page_url": "https://www.charitydata.ca/",
+    "form_action": "https://www.charitydata.ca/search/director/",
+    "inputs": [
+     {
+      "name": "firstName",
+      "type": "text",
+      "canonical": "first_name",
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null,
+      "id": null,
+      "label": "First name",
+      "inputmode": null,
+      "pattern": null,
+      "minlength": null,
+      "maxlength": null,
+      "min": null,
+      "max": null,
+      "step": null,
+      "accept": null,
+      "multiple": false,
+      "disabled": false,
+      "readonly": false,
+      "checked": false,
+      "value": null
+     },
+     {
+      "name": "lastName",
+      "type": "text",
+      "canonical": "last_name",
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null,
+      "id": null,
+      "label": "Last name",
+      "inputmode": null,
+      "pattern": null,
+      "minlength": null,
+      "maxlength": null,
+      "min": null,
+      "max": null,
+      "step": null,
+      "accept": null,
+      "multiple": false,
+      "disabled": false,
+      "readonly": false,
+      "checked": false,
+      "value": null
+     }
+    ],
+    "url_pattern": "https://www.charitydata.ca/search/director/?firstName={firstName}&lastName={lastName}",
+    "directory_prefixes": [],
+    "paywall": null,
+    "login_wall": null,
+    "form_meta": {
+     "id": null,
+     "name": null,
+     "autocomplete": null,
+     "novalidate": null,
+     "submit_label": null,
+     "hidden_names": []
+    },
+    "captcha_provider": null,
+    "captcha_sitekey": null,
+    "captcha_detail": null,
+    "captcha_checked": true
+   },
+   "removal": {
+    "url": "https://www.charitydata.ca/faq",
+    "final_url": "https://www.charitydata.ca/faq",
+    "http_status": 200,
+    "kinds": [
+     "opt_out"
+    ],
+    "channels": [],
+    "emails": [],
+    "phones": [],
+    "postal_address": null,
+    "portal": null,
+    "form_fields": [],
+    "csrf_field_name": null,
+    "requires_profile_url": null,
+    "captcha": {
+     "provider": null,
+     "sitekey": null,
+     "pages": [],
+     "checked": null,
+     "checked_url": null,
+     "detail": null
+    },
+    "consent_vendor": null,
+    "success_text": null,
+    "suppression_not_deletion": null,
+    "processing_days": null,
+    "processing_text": null,
+    "form_action": null,
+    "form_method": null,
+    "form_meta": {
+     "id": null,
+     "name": null,
+     "autocomplete": null,
+     "novalidate": null,
+     "submit_label": null,
+     "hidden_names": []
+    }
+   },
+   "bot_defense": {
+    "vendor": "cloudflare",
+    "outcome": "none"
+   },
+   "legal": {
+    "privacy_policy_url": null,
+    "terms_url": null,
+    "automation_prohibited": null,
+    "automation_clause": null,
+    "residency": [],
+    "authorized_agent": null,
+    "data_categories": [],
+    "sells_personal_information": null,
+    "sells_clause": null,
+    "children_not_directed": null
+   },
+   "pages": [
+    {
+     "url": "https://charitydata.ca/",
+     "final_url": "https://www.charitydata.ca/",
+     "status": 200,
+     "role": "home",
+     "title": "Charity Data - the largest free charity data research tool",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.charitydata.ca/",
+     "final_url": "https://www.charitydata.ca/",
+     "status": 200,
+     "role": "home",
+     "title": "Charity Data - the largest free charity data research tool",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.charitydata.ca/faq",
+     "final_url": "https://www.charitydata.ca/faq",
+     "status": 200,
+     "role": "catalog",
+     "title": "Frequently Asked Questions — Charity Data",
+     "liveness": "alive"
+    }
+   ],
+   "location": {
+    "country": "CA",
+    "region": null,
+    "locality": null,
+    "postal_code": null,
+    "street": null,
+    "postal_address": null,
+    "coverage": [
+     "CA"
+    ],
+    "search_regions": [],
+    "sources": [
+     "domain"
+    ]
+   },
+   "network": {
+    "checked": false,
+    "addresses": [],
+    "ipv6": [],
+    "cname": null,
+    "mx": [],
+    "mail_provider": null,
+    "spf": null,
+    "dmarc": null,
+    "dkim": [],
+    "nameservers": [],
+    "dns_provider": null,
+    "soa_primary": null,
+    "caa": [],
+    "dnssec": null,
+    "asn": null,
+    "asn_country": null,
+    "prefix": null,
+    "cdn": null,
+    "server": null,
+    "tls_org": null,
+    "tls_issuer": null,
+    "tls_names": [],
+    "tls_version": null,
+    "tls_not_before": null,
+    "tls_not_after": null,
+    "registrar": null,
+    "registered": null,
+    "registration_expires": null,
+    "domain_status": []
+   },
+   "request": {
+    "removal_host": "charitydata.ca",
+    "same_site": true,
+    "https": true,
+    "redirected": false,
+    "redirect_count": null,
+    "form_enctype": null,
+    "content_type": null,
+    "hsts": null,
+    "hsts_max_age": null,
+    "hsts_subdomains": null,
+    "hsts_preload": null,
+    "http_version": null,
+    "http3": null,
+    "frame_options": null,
+    "nosniff": null,
+    "referrer_policy": null,
+    "csp": null,
+    "powered_by": null,
+    "cookie_names": []
+   },
+   "automation": {
+    "search_scanned": true,
+    "search_fillable": true,
+    "search_captcha": false,
+    "search_fields": [
+     "first_name",
+     "last_name"
+    ],
+    "removal_form_fillable": false,
+    "removal_email_usable": false,
+    "removal_fields": [],
+    "removal_path": null,
+    "fully_automatable": false,
+    "usable_emails": [],
+    "search_required": [],
+    "removal_required": [],
+    "email_verification": null,
+    "id_document": null,
+    "shared_removal_ids": [],
+    "removal_captcha": false,
+    "captcha_blocks_form": false,
+    "captcha_email_fallback": false,
+    "removal_blocker": "no_channel"
+   },
+   "search_test": {
+    "outcome": "results",
+    "http_status": 200,
+    "path_prefix": "search",
+    "fields_sent": [
+     "first_name",
+     "last_name"
+    ],
+    "missing": [],
+    "page_kind": "results",
+    "result_count": null,
+    "checked_at": "2026-10-26T21:38:34+00:00"
+   }
+  },
+  "opencorporates-canada-officers": {
+   "schema_version": "4.0.0",
+   "id": "opencorporates-canada-officers",
+   "name": "OpenCorporates officers, Canada (opencorporates.com)",
+   "category": "public-records",
+   "domain": "opencorporates.com",
+   "checked_at": "2026-10-26T21:31:06+00:00",
+   "liveness": "alive",
+   "liveness_detail": "opencorporates.com loaded in a browser on 2026-10-26. A Canada officer-name search returned officers. Plain HTTP clients get a \"Checking your browser\" page.",
+   "homepage": "https://opencorporates.com/",
+   "logo_url": "https://opencorporates.com/wp-content/uploads/2023/05/opencorporates-logo1.svg",
+   "images": [
+    {
+     "url": "https://opencorporates.com/wp-content/uploads/2023/03/opencorporates-favicon-150x150.png",
+     "kind": "icon",
+     "source_page": "https://opencorporates.com/"
+    },
+    {
+     "url": "https://opencorporates.com/wp-content/uploads/2023/03/opencorporates-favicon-300x300.png",
+     "kind": "icon",
+     "source_page": "https://opencorporates.com/"
+    },
+    {
+     "url": "https://opencorporates.com/wp-content/uploads/2023/05/opencorporates-logo1.svg",
+     "kind": "logo",
+     "source_page": "https://opencorporates.com/"
+    },
+    {
+     "url": "https://opencorporates.com/wp-content/uploads/2023/03/logo-512.png",
+     "kind": "logo",
+     "source_page": "https://opencorporates.com/"
+    },
+    {
+     "url": "https://opencorporates.com/wp-content/uploads/bcorp-logo-no-border-gray.png",
+     "kind": "logo",
+     "source_page": "https://opencorporates.com/"
+    }
+   ],
+   "theme_color": null,
+   "languages": [],
+   "legal_name": null,
+   "search": {
+    "available": true,
+    "method": "http_get",
+    "page_url": "https://opencorporates.com/",
+    "form_action": "https://opencorporates.com/officers/ca",
+    "inputs": [
+     {
+      "name": "q",
+      "type": "text",
+      "canonical": "full_name",
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null,
+      "id": null,
+      "label": "Search officers",
+      "inputmode": null,
+      "pattern": null,
+      "minlength": null,
+      "maxlength": null,
+      "min": null,
+      "max": null,
+      "step": null,
+      "accept": null,
+      "multiple": false,
+      "disabled": false,
+      "readonly": false,
+      "checked": false,
+      "value": null
+     }
+    ],
+    "url_pattern": "https://opencorporates.com/officers/ca?q={q}",
+    "directory_prefixes": [],
+    "paywall": null,
+    "login_wall": null,
+    "form_meta": {
+     "id": null,
+     "name": null,
+     "autocomplete": null,
+     "novalidate": null,
+     "submit_label": null,
+     "hidden_names": []
+    },
+    "captcha_provider": null,
+    "captcha_sitekey": null,
+    "captcha_detail": null,
+    "captcha_checked": true
+   },
+   "removal": {
+    "url": "https://opencorporates.com/public-records-privacy-policy/",
+    "final_url": "https://opencorporates.com/public-records-privacy-policy/",
+    "http_status": 200,
+    "kinds": [
+     "opt_out"
+    ],
+    "channels": [
+     "phone"
+    ],
+    "emails": [],
+    "phones": [
+     "303 123 1113"
+    ],
+    "postal_address": null,
+    "portal": null,
+    "form_fields": [],
+    "csrf_field_name": null,
+    "requires_profile_url": null,
+    "captcha": {
+     "provider": null,
+     "sitekey": null,
+     "pages": [],
+     "checked": null,
+     "checked_url": null,
+     "detail": null
+    },
+    "consent_vendor": null,
+    "success_text": null,
+    "suppression_not_deletion": null,
+    "processing_days": null,
+    "processing_text": null,
+    "form_action": null,
+    "form_method": null,
+    "form_meta": {
+     "id": null,
+     "name": null,
+     "autocomplete": null,
+     "novalidate": null,
+     "submit_label": null,
+     "hidden_names": []
+    }
+   },
+   "bot_defense": {
+    "vendor": null,
+    "outcome": "none"
+   },
+   "legal": {
+    "privacy_policy_url": "https://opencorporates.com/public-records-privacy-policy/",
+    "terms_url": null,
+    "automation_prohibited": null,
+    "automation_clause": null,
+    "residency": [
+     "US",
+     "EU",
+     "GB",
+     "CA-QC",
+     "CA-BC"
+    ],
+    "authorized_agent": null,
+    "data_categories": [
+     "identifiers"
+    ],
+    "sells_personal_information": null,
+    "sells_clause": null,
+    "children_not_directed": null
+   },
+   "pages": [
+    {
+     "url": "https://opencorporates.com/",
+     "final_url": "https://opencorporates.com/",
+     "status": 200,
+     "role": "home",
+     "title": "OpenCorporates",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.opencorporates.com/",
+     "final_url": "https://opencorporates.com/",
+     "status": 200,
+     "role": "home",
+     "title": "OpenCorporates",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://opencorporates.com/public-records-privacy-policy/",
+     "final_url": "https://opencorporates.com/public-records-privacy-policy/",
+     "status": 200,
+     "role": "catalog",
+     "title": "Public records privacy policy – OpenCorporates",
+     "liveness": "alive"
+    }
+   ],
+   "location": {
+    "country": "CA",
+    "region": null,
+    "locality": null,
+    "postal_code": null,
+    "street": null,
+    "postal_address": null,
+    "coverage": [
+     "US",
+     "EU",
+     "GB",
+     "CA-QC",
+     "CA-BC",
+     "CA"
+    ],
+    "search_regions": [],
+    "sources": [
+     "manual"
+    ]
+   },
+   "network": {
+    "checked": false,
+    "addresses": [],
+    "ipv6": [],
+    "cname": null,
+    "mx": [],
+    "mail_provider": null,
+    "spf": null,
+    "dmarc": null,
+    "dkim": [],
+    "nameservers": [],
+    "dns_provider": null,
+    "soa_primary": null,
+    "caa": [],
+    "dnssec": null,
+    "asn": null,
+    "asn_country": null,
+    "prefix": null,
+    "cdn": null,
+    "server": null,
+    "tls_org": null,
+    "tls_issuer": null,
+    "tls_names": [],
+    "tls_version": null,
+    "tls_not_before": null,
+    "tls_not_after": null,
+    "registrar": null,
+    "registered": null,
+    "registration_expires": null,
+    "domain_status": []
+   },
+   "request": {
+    "removal_host": "opencorporates.com",
+    "same_site": true,
+    "https": true,
+    "redirected": false,
+    "redirect_count": null,
+    "form_enctype": null,
+    "content_type": null,
+    "hsts": null,
+    "hsts_max_age": null,
+    "hsts_subdomains": null,
+    "hsts_preload": null,
+    "http_version": null,
+    "http3": null,
+    "frame_options": null,
+    "nosniff": null,
+    "referrer_policy": null,
+    "csp": null,
+    "powered_by": null,
+    "cookie_names": []
+   },
+   "automation": {
+    "search_scanned": true,
+    "search_fillable": true,
+    "search_captcha": false,
+    "search_fields": [
+     "full_name"
+    ],
+    "removal_form_fillable": false,
+    "removal_email_usable": false,
+    "removal_fields": [],
+    "removal_path": null,
+    "fully_automatable": false,
+    "usable_emails": [],
+    "search_required": [],
+    "removal_required": [],
+    "email_verification": null,
+    "id_document": null,
+    "shared_removal_ids": [],
+    "removal_captcha": false,
+    "captcha_blocks_form": false,
+    "captcha_email_fallback": false,
+    "removal_blocker": "phone"
+   },
+   "search_test": {
+    "outcome": "submitted",
+    "http_status": 200,
+    "path_prefix": "companies",
+    "fields_sent": [
+     "full_name"
+    ],
+    "missing": [],
+    "page_kind": "other",
+    "result_count": null,
+    "checked_at": "2026-10-26T21:38:34+00:00"
    }
   }
  }

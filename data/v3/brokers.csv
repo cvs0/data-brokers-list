@@ -810,3 +810,11 @@ eniro-se,Eniro.se (personer),eniro.se,robots_disallowed,,unknown,,https://www.en
 gulesider-no,"Gule Sider (gulesider.no, personer)",gulesider.no,robots_disallowed,,unknown,,https://www.gulesider.no/hjelp/vilkar/personvernerklaering,,,,
 krak-dk,"Krak (krak.dk, personer)",krak.dk,robots_disallowed,,unknown,,https://www.krak.dk/hjaelp/vilkaar/privatlivspolitik,,,,
 ratsit-se,Ratsit (ratsit.se),ratsit.se,alive,https://www.ratsit.se/dist/assets/images/ratsit-logo-purple-small.svg,http_get,https://www.ratsit.se/,https://www.ratsit.se/info/personuppgiftspolicy,,,turnstile,
+federalcorporation-ca,Federal Corporation Directors (federalcorporation.ca),federalcorporation.ca,alive,,http_get,https://federalcorporation.ca/,https://federalcorporation.ca/,,,,
+companiesofcanada-com,Companies of Canada (companiesofcanada.com),companiesofcanada.com,alive,https://www.companiesofcanada.com/sites/default/files/checkcompanyiconnew.png,none,,https://www.companiesofcanada.com/privacy-policy,web_form;postal_mail,,,
+mysask411,Mysask411 (DirectWest Saskatchewan white pages),mysask411.com,alive,https://mysask411.com/build/images/favicon/apple-touch-icon-57x57.bce73ff8.png,http_form_post,https://mysask411.com/,https://mysask411.com/privacy,phone,,,
+albertasunshinelist-ca,Alberta Sunshine List (albertasunshinelist.ca),albertasunshinelist.ca,robots_disallowed,,unknown,,https://albertasunshinelist.ca/privacy-policy/,,,,
+thesunshinelist-ca,The Sunshine List (thesunshinelist.ca),thesunshinelist.ca,alive,https://thesunshinelist.ca/tsl_logo.svg,none,,https://thesunshinelist.ca/privacy,,,,
+ontariosunshinelist-ca,Ontario Sunshine List (ontariosunshinelist.ca),ontariosunshinelist.ca,alive,https://www.ontariosunshinelist.ca/img/favicon.ico,http_get,https://www.ontariosunshinelist.ca,https://www.ontariosunshinelist.ca/pag/contact,web_form,,recaptcha_v3,
+charitydata-ca,CharityData.ca director search,charitydata.ca,alive,,none,,https://www.charitydata.ca/faq,,,,cloudflare
+opencorporates-canada-officers,"OpenCorporates officers, Canada (opencorporates.com)",opencorporates.com,alive,https://opencorporates.com/wp-content/uploads/2023/05/opencorporates-logo1.svg,http_get,https://opencorporates.com/,https://opencorporates.com/public-records-privacy-policy/,phone,,,

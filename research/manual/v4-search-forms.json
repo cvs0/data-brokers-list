@@ -7312,5 +7312,273 @@
       ]
     },
     "captcha_widget": false
+  },
+  "federalcorporation-ca": {
+    "checked": "2026-10-26",
+    "country": "CA",
+    "liveness": "alive",
+    "liveness_detail": "federalcorporation.ca answered HTTP 200 on 2026-10-26 (one 503 before a retry). A director-name search returned director rows with addresses.",
+    "evidence": "Republished Corporations Canada director records (name, address, corporation). Free search is a GET to /director with q. No privacy page; contact federalcorporation.ca@gmail.com (footer). Nothing was submitted.",
+    "result_check": "GET /director?q=John Smith: 100 director rows, 38 for a John Smith. q=Quillon Vanderwekken: no row for that name. (2026-10-26, CST).",
+    "form": {
+      "method": "http_get",
+      "page_url": "https://federalcorporation.ca/",
+      "form_action": "https://federalcorporation.ca/director",
+      "url_pattern": "https://federalcorporation.ca/director?q={q}",
+      "form_id": null,
+      "form_name": null,
+      "submit_label": null,
+      "hidden_names": [],
+      "inputs": [
+        {
+          "name": "q",
+          "type": "text",
+          "canonical": "full_name",
+          "required": false,
+          "id": null,
+          "label": "Search",
+          "placeholder": null
+        }
+      ]
+    },
+    "captcha_widget": false
+  },
+  "companiesofcanada-com": {
+    "checked": "2026-10-26",
+    "country": "CA",
+    "liveness": "alive",
+    "liveness_detail": "companiesofcanada.com answered HTTP 200 on 2026-10-26. An officer-name search returned officers with addresses.",
+    "evidence": "Canadian company officer directory (name, street address, town, province). Free search is a GET to /searchofficers with name. Privacy: https://www.companiesofcanada.com/privacy-policy; contact page https://www.companiesofcanada.com/contact. Nothing was submitted.",
+    "result_check": "GET /searchofficers?name=John Smith: 28 officer rows, 25 for a John Smith. name=Quillon Vanderwekken: \"We did not find any people matching your search.\" (2026-10-26, CST).",
+    "form": {
+      "method": "http_get",
+      "page_url": "https://www.companiesofcanada.com/",
+      "form_action": "https://www.companiesofcanada.com/searchofficers",
+      "url_pattern": "https://www.companiesofcanada.com/searchofficers?name={name}&town=&country=",
+      "form_id": null,
+      "form_name": null,
+      "submit_label": null,
+      "hidden_names": [],
+      "inputs": [
+        {
+          "name": "name",
+          "type": "text",
+          "canonical": "full_name",
+          "required": false,
+          "id": null,
+          "label": "Officer name",
+          "placeholder": null
+        }
+      ]
+    },
+    "captcha_widget": false
+  },
+  "mysask411": {
+    "checked": "2026-10-26",
+    "country": "CA",
+    "liveness": "alive",
+    "liveness_detail": "mysask411.com loaded in a browser on 2026-10-26. A name search in a Saskatchewan city returned residential listings.",
+    "evidence": "Saskatchewan white pages (DirectWest). Listings show name, phone and street address. Free search is a GET to /search/people/<city>/<first>%20<last>; a browser loads the results. Privacy: https://mysask411.com/privacy; Chief Privacy Officer, dw@directwest.com. Nothing was submitted.",
+    "result_check": "Browser GET /search/people/regina/ron%20smith: \"12 results\" (\"Smith, Ron … Regina SK\"). /search/people/regina/quillon%20vanderwekken: \"0 results\". (2026-10-26, CST).",
+    "form": {
+      "method": "http_get",
+      "page_url": "https://mysask411.com/",
+      "form_action": "https://mysask411.com/search",
+      "url_pattern": "https://mysask411.com/search/people/{where}/{first}%20{last}",
+      "form_id": null,
+      "form_name": null,
+      "submit_label": null,
+      "hidden_names": [],
+      "inputs": [
+        {
+          "name": "first",
+          "type": "text",
+          "canonical": "first_name",
+          "required": true,
+          "id": null,
+          "label": "First name",
+          "placeholder": null
+        },
+        {
+          "name": "last",
+          "type": "text",
+          "canonical": "last_name",
+          "required": true,
+          "id": null,
+          "label": "Last name",
+          "placeholder": null
+        },
+        {
+          "name": "where",
+          "type": "text",
+          "canonical": "city",
+          "required": true,
+          "id": null,
+          "label": "City",
+          "placeholder": null
+        }
+      ]
+    },
+    "captcha_widget": false
+  },
+  "albertasunshinelist-ca": {
+    "checked": "2026-10-26",
+    "country": "CA",
+    "liveness": "alive",
+    "liveness_detail": "albertasunshinelist.ca loaded in a browser on 2026-10-26. A name search returned salary rows. Plain HTTP clients get a Cloudflare challenge.",
+    "evidence": "Alberta public sector salary search (name, employer, position, salary). Free search is a GET to /search-results/ with query; a browser loads it. Privacy: https://albertasunshinelist.ca/privacy-policy/; contact https://albertasunshinelist.ca/contact/. Nothing was submitted.",
+    "result_check": "Browser GET /search-results/?query=Robert Smith: \"Smith,Robert … University of Alberta\". query=Quillon Vanderwekken: \"No data available in table\". (2026-10-26, CST).",
+    "form": {
+      "method": "http_get",
+      "page_url": "https://albertasunshinelist.ca/",
+      "form_action": "https://albertasunshinelist.ca/search-results/",
+      "url_pattern": "https://albertasunshinelist.ca/search-results/?query={query}",
+      "form_id": null,
+      "form_name": null,
+      "submit_label": null,
+      "hidden_names": [],
+      "inputs": [
+        {
+          "name": "query",
+          "type": "text",
+          "canonical": "full_name",
+          "required": false,
+          "id": null,
+          "label": "Search",
+          "placeholder": null
+        }
+      ]
+    },
+    "captcha_widget": false
+  },
+  "thesunshinelist-ca": {
+    "checked": "2026-10-26",
+    "country": "CA",
+    "liveness": "alive",
+    "liveness_detail": "thesunshinelist.ca loaded in a browser on 2026-10-26. A name search returned salary records.",
+    "evidence": "Ontario Sunshine List search (name, employer, title, salary). Free search is a GET to /search with q; drawn in script. Privacy: https://thesunshinelist.ca/privacy (salary rows are not deleted); contact https://thesunshinelist.ca/contact. Nothing was submitted.",
+    "result_check": "Browser GET /search?q=John Smith: \"People (50)\", two for a John Smith. q=Quillon Vanderwekken: 7 people, none by that name. (2026-10-26, CST).",
+    "form": {
+      "method": "http_get",
+      "page_url": "https://thesunshinelist.ca/",
+      "form_action": "https://thesunshinelist.ca/search",
+      "url_pattern": "https://thesunshinelist.ca/search?q={q}",
+      "form_id": null,
+      "form_name": null,
+      "submit_label": null,
+      "hidden_names": [],
+      "inputs": [
+        {
+          "name": "q",
+          "type": "text",
+          "canonical": "full_name",
+          "required": false,
+          "id": null,
+          "label": "Search",
+          "placeholder": null
+        }
+      ]
+    },
+    "captcha_widget": false
+  },
+  "ontariosunshinelist-ca": {
+    "checked": "2026-10-26",
+    "country": "CA",
+    "liveness": "alive",
+    "liveness_detail": "ontariosunshinelist.ca answered HTTP 200 on 2026-10-26. A name search returned salary rows.",
+    "evidence": "Ontario Sunshine List search (name, year, job title, employer). Free search is a GET to /search with search-type=employees and skeyword. No privacy page; contact form https://www.ontariosunshinelist.ca/pag/contact. Nothing was submitted.",
+    "result_check": "GET /search?search-type=employees&skeyword=John Smith: \"We have found 24 records.\" skeyword=Quillon Vanderwekken: \"We have found 0 record.\" (2026-10-26, CST).",
+    "form": {
+      "method": "http_get",
+      "page_url": "https://www.ontariosunshinelist.ca/",
+      "form_action": "https://www.ontariosunshinelist.ca/search",
+      "url_pattern": "https://www.ontariosunshinelist.ca/search?search-type=employees&skeyword={skeyword}",
+      "form_id": null,
+      "form_name": null,
+      "submit_label": null,
+      "hidden_names": [],
+      "inputs": [
+        {
+          "name": "skeyword",
+          "type": "text",
+          "canonical": "full_name",
+          "required": false,
+          "id": null,
+          "label": "Search",
+          "placeholder": null
+        }
+      ]
+    },
+    "captcha_widget": false
+  },
+  "charitydata-ca": {
+    "checked": "2026-10-26",
+    "country": "CA",
+    "liveness": "alive",
+    "liveness_detail": "charitydata.ca loaded in a browser on 2026-10-26. A director-name search returned charity directors.",
+    "evidence": "Registered-charity directors from CRA T3010 returns (name, charity, town). Free search is a GET to /search/director/ with firstName and lastName; drawn in script. No privacy page; FAQ https://www.charitydata.ca/faq. Nothing was submitted.",
+    "result_check": "Browser GET /search/director/?firstName=John&lastName=Smith: 10 director rows. firstName=Quillon&lastName=Vanderwekken: \"No matches found.\" (2026-10-26, CST).",
+    "form": {
+      "method": "http_get",
+      "page_url": "https://www.charitydata.ca/",
+      "form_action": "https://www.charitydata.ca/search/director/",
+      "url_pattern": "https://www.charitydata.ca/search/director/?firstName={firstName}&lastName={lastName}",
+      "form_id": null,
+      "form_name": null,
+      "submit_label": null,
+      "hidden_names": [],
+      "inputs": [
+        {
+          "name": "firstName",
+          "type": "text",
+          "canonical": "first_name",
+          "required": false,
+          "id": null,
+          "label": "First name",
+          "placeholder": null
+        },
+        {
+          "name": "lastName",
+          "type": "text",
+          "canonical": "last_name",
+          "required": false,
+          "id": null,
+          "label": "Last name",
+          "placeholder": null
+        }
+      ]
+    },
+    "captcha_widget": false
+  },
+  "opencorporates-canada-officers": {
+    "checked": "2026-10-26",
+    "country": "CA",
+    "liveness": "alive",
+    "liveness_detail": "opencorporates.com loaded in a browser on 2026-10-26. A Canada officer-name search returned officers. Plain HTTP clients get a \"Checking your browser\" page.",
+    "evidence": "OpenCorporates officer search for Canadian corporations (name, company, dates). Free search is a GET to /officers/ca with q; a browser loads it. Privacy: https://opencorporates.com/public-records-privacy-policy/; contact https://opencorporates.com/info/contact-us/. Nothing was submitted.",
+    "result_check": "Browser GET /officers/ca?q=John Smith: \"Found 106 officers\". q=Quillon Vanderwekken: \"did not match any officers\". (2026-10-26, CST).",
+    "form": {
+      "method": "http_get",
+      "page_url": "https://opencorporates.com/",
+      "form_action": "https://opencorporates.com/officers/ca",
+      "url_pattern": "https://opencorporates.com/officers/ca?q={q}",
+      "form_id": null,
+      "form_name": null,
+      "submit_label": null,
+      "hidden_names": [],
+      "inputs": [
+        {
+          "name": "q",
+          "type": "text",
+          "canonical": "full_name",
+          "required": false,
+          "id": null,
+          "label": "Search officers",
+          "placeholder": null
+        }
+      ]
+    },
+    "captcha_widget": false,
+    "country_override": true
   }
 }
