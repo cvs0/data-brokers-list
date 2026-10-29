@@ -660,10 +660,11 @@
     "evidence": "The stored search form on https://www.plungedigital.com/ is a sales, demo, newsletter, or contact form, not a search for a person: submit button \"Send\", controls First name; Last name; Company *; Email *; Phone; Street Address; Address Line 2; City. Frame planned it as a name search and would have typed the person's name into a sales lead or contact form."
   },
   "rhetorik-limited": {
-    "checked": "2026-10-18",
+    "checked": "2026-10-29",
     "not_a_person_search": true,
     "kind": "contact",
-    "evidence": "The stored search form on https://rhetorik.com/request-a-demo/ is a sales, demo, newsletter, or contact form, not a search for a person: submit button \"Submit Form\", controls Updates; First Name; Last Name; Phone; Email; Message. Frame planned it as a name search and would have typed the person's name into a sales lead or contact form."
+    "evidence": "rhetorik.com no longer serves its site. On 2026-10-29 (about 14:40 CST) the homepage, www.rhetorik.com and the catalog opt-out URL /do-not-sell-my-info/ all redirected to /cgi-sys/suspendedpage.cgi, a hosting page titled \"Site indisponible\" that says \"Ce site est présentement indisponible.\" No listings or forms load. No request was submitted. Earlier note (2026-10-18): The stored search form on https://rhetorik.com/request-a-demo/ is a sales, demo, newsletter, or contact form, not a search for a person: submit button \"Submit Form\", controls Updates; First Name; Last Name; Phone; Email; Message. Frame planned it as a name search and would have typed the person's name into a sales lead or contact form.",
+    "offline": true
   },
   "ventiveiq-llc": {
     "checked": "2026-10-18",
@@ -7609,5 +7610,10 @@
     "kind": "register_or_purchase",
     "evidence": "UK residential telephone directory run by the Simunix group. The search is a GET to /residential-telephone-directory/search with name and location, guarded by a reCAPTCHA (hidden captcha_key). The page says \"Cost: 5 free a day\" and then charges credits; \"Four credits will unlock a full record.\" A plain GET for John Smith in London and for a made-up name returned \"Please submit the form again. Your reCAPTCHA session has expired.\" and no listings. The Record Removal Request Form is at /remove-me. Nothing was submitted.",
     "result_check": "GET /residential-telephone-directory/search?name=John Smith&location=London and name=Quillon Vanderwekken (2026-10-28, CST): reCAPTCHA expired notice, no result rows."
+  },
+  "kiwi-searches": {
+    "checked": "2026-10-29",
+    "offline": true,
+    "evidence": "kiwisearches.com no longer runs a people search. On 2026-10-29 (about 14:40 CST) the homepage and the catalog privacy URL /privacy both answered HTTP 200 with an Italian casino ranking page titled \"Top Nuovi Casino Non AAMS - Classifica 2026\". No search form, listings, or privacy notice for the old service is shown. No request was submitted."
   }
 }
