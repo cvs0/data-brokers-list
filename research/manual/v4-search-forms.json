@@ -7615,5 +7615,13 @@
     "checked": "2026-10-29",
     "offline": true,
     "evidence": "kiwisearches.com no longer runs a people search. On 2026-10-29 (about 14:40 CST) the homepage and the catalog privacy URL /privacy both answered HTTP 200 with an Italian casino ranking page titled \"Top Nuovi Casino Non AAMS - Classifica 2026\". No search form, listings, or privacy notice for the old service is shown. No request was submitted."
+  },
+  "teranet-geowarehouse": {
+    "checked": "2026-10-29",
+    "country": "CA",
+    "paywall": true,
+    "kind": "register_or_purchase",
+    "evidence": "GeoWarehouse (www2.geowarehouse.ca) is sold as an annual subscription (\"Login\", \"Subscribe\", \"Contact Sales to Secure Your Subscription\"). The homepage says the Client Property Report \"includes private data such as legal description, owner names, market information and comparable sales data.\" There is no public name or address search on geowarehouse.ca or teranet.ca, so no record can be read without an account. Teranet's privacy policy names PrivacyOfficer@teranet.ca. Nothing was submitted.",
+    "result_check": "GET https://www2.geowarehouse.ca/ and https://www.teranet.ca/privacy/ (2026-10-29, CST): HTTP 200, no search form without login."
   }
 }
