@@ -119,6 +119,9 @@ awl-holdings-llc-privacyportal-eu-onetrust-com,"AWL Holdings, LLC (privacyportal
 bachmanity-inc,"Bachmanity, Inc.",aviato.co,other,alive,generic_inbox,"Only a generic inbox was found, and the page does not say to use it for removal",,,,false,,,support@aviato.co;contact@aviato.co,email
 bb-direct-inc,BB Direct Inc,bbdirect.com,other,alive,phone_postal,Phone and a mailing address are the only channels,recaptcha_enterprise,6LeRIBAsAAAAAB92AcgONiXTbaGUjV4ZngSxgM0j,invisible,true,,,,postal_mail;phone
 bdex-llc,"BDEX, LLC",bdex.com,other,alive,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,true,,,,
+californiaengineering-org-licensedata,CaliforniaEngineering.org (LicenseData),californiaengineering.org,other,alive,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,false,,,,
+californialicensing-org-licensedata,CaliforniaLicensing.org (LicenseData),californialicensing.org,other,alive,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,false,,,,
+californianursing-org-licensedata,CaliforniaNursing.org (LicenseData),californianursing.org,other,alive,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,false,,,,
 californiapharmacists-org-licensedata,CaliforniaPharmacists.org (LicenseData),californiapharmacists.org,other,alive,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,false,,,,
 callersmart,CallerSmart,callersmart.com,other,blocked,phone,The only published channel is a phone number,recaptcha_v2,6Lc2sPQSAAAAAJP_kRsCsbiYkR4gb2fkk9XUGz2k,,false,,,,phone
 canada-national-do-not-call-list,Canada National Do Not Call List,lnnte-dncl.gc.ca,other,alive,generic_inbox,"Only a generic inbox was found, and the page does not say to use it for removal",,,,true,,,support@lnnte-dncl.gc.ca,email;phone
@@ -132,7 +135,6 @@ costar-group,CoStar Group,costar.com,other,robots_disallowed,robots,robots.txt d
 data-decisions-group-llc,"Data Decisions Group, LLC",datadecisionsgroup.com,other,blocked,bot_wall,The opt-out URL returned a bot wall and a browser retry did not reveal a removal channel,,,,false,,,,
 data-partners-inc,Data Partners Inc.,datapartners.com,other,alive,generic_inbox,"Only a generic inbox was found, and the page does not say to use it for removal",,,,false,,,cpc@datapartners.com,email;phone
 data-trust,Data Trust,thedatatrust.com,other,alive,captcha_form,Removal form is behind a CAPTCHA widget and no usable removal email was found,recaptcha_enterprise,6Lc0uM4tAAAAAFFEy0tF8Z0YQN1dAZwmwIzZbuwd,invisible,true,,true,,web_form;phone
-dataman-group-inc,Dataman Group Inc,datamangroup.com,other,alive,phone_postal,Phone and a mailing address are the only channels,recaptcha_v3,6Lf4Rk8rAAAAAAQ1jXmLuyA0IWBfELenNtr97Mni,score,true,,,,postal_mail;phone
 dataskip,Dataskip,dataskip.io,other,alive,generic_inbox,"Only a generic inbox was found, and the page does not say to use it for removal",,,,false,,,support@dataskip.io,email
 decisionlinks,DecisionLinks,decisionlinks.com,other,alive,generic_inbox,"Only a generic inbox was found, and the page does not say to use it for removal",recaptcha_v2,6Lc8K9sqAAAAAN3pdN_6-4WJrtAu5CZ9QG_uSH3q,checkbox,true,,,support@decisionlinks.com,email;phone
 delivr-ai-inc,Delivr.ai Inc,dsrp.pii.ai,other,robots_disallowed,robots,robots.txt disallows the client. A later read still found no removal channel,,,,false,,,,
@@ -144,7 +146,7 @@ eprodirect-llc,EproDirect LLC,eprodirect.com,other,alive,captcha_form,Removal fo
 exact-opco-llc-exactcustomer-com,"Exact Opco, LLC (exactcustomer.com)",exactcustomer.com,other,alive,captcha_form,Removal form is behind a CAPTCHA widget and no usable removal email was found,turnstile,0x4AAAAAAEABYvIgNN3tGj_J,checkbox,true,,true,info@exactcustomer.com,web_form;email
 explorium-inc,Explorium Inc.,explorium.ai,other,alive,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,false,,,,
 fideo-intelligence-inc,"Fideo Intelligence, Inc.",app.fideo.ai,other,alive,captcha_no_form,A CAPTCHA widget is on the removal page and no form fields or usable email were stored,recaptcha_v2,,,true,,,,
-findem-inc,"Findem, Inc.",findem.ai,other,alive,captcha_form,Removal form is behind a CAPTCHA widget and no usable removal email was found,recaptcha_v2,6Lf-99ctAAAAAJm6G6oddQB48BbUvCkSnVNSrhxg,checkbox,true,,true,trust@findem.ai,web_form;email
+findem-inc,"Findem, Inc.",findem.ai,other,alive,captcha_form,Removal form is behind a CAPTCHA widget and no usable removal email was found,recaptcha_v2,6Lf-99ctAAAAAJm6G6oddQB48BbUvCkSnVNSrhxg,checkbox,true,,true,trust@findem.ai;marketing@findem.ai,web_form;email;phone
 first-beat-media,First Beat Media,phonelookup.com,other,alive,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,false,,,,
 floridaparcels-com,FloridaParcels.com,floridaparcels.com,other,alive,captcha_form,Removal form is behind a CAPTCHA widget and no usable removal email was found,recaptcha_v2,,checkbox,true,,true,,web_form
 floridaresidentsdirectory,FloridaResidentsDirectory,floridaresidentsdirectory.com,other,blocked,bot_wall,The opt-out URL returned a bot wall and a browser retry did not reveal a removal channel,,,,false,,,,
@@ -198,7 +200,7 @@ redi-data-inc,Redi-Data Inc.,redidata.com,other,alive,captcha_form,Removal form 
 revenue-roll-inc,Revenue Roll Inc.,meettie.com,other,alive,generic_inbox,"Only a generic inbox was found, and the page does not say to use it for removal",,,,false,,,info@meettie.com;legal@meettie.com,email
 salutary-data-llc,Salutary Data LLC.,salutarydata.com,other,robots_disallowed,generic_inbox,"Only a generic inbox was found, and the page does not say to use it for removal",recaptcha_v2,,,false,,,info@salutarydata.com,email;phone
 samba-tv-inc,"Samba TV, Inc.",samba.com,other,alive,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,,,,,
-spy-dialer,Spy Dialer,spydialer.com,other,alive,generic_inbox,"Only a generic inbox was found, and the page does not say to use it for removal",recaptcha_v2,6Lfo9tIrAAAAAPHnHsd2C1VRdHun9vmWMmiik8Fb,,false,,,support@spydialer.com,email;phone
+spy-dialer,Spy Dialer,spydialer.com,other,alive,phone,The only published channel is a phone number,recaptcha_v2,6Lfo9tIrAAAAAPHnHsd2C1VRdHun9vmWMmiik8Fb,,false,,,,phone
 swordfish-ai-inc,Swordfish AI Inc.,swordfish.ai,other,alive,captcha_no_form,A CAPTCHA widget is on the removal page and no form fields or usable email were stored,turnstile,0x4AAAAAAAcmowv2mNm8IvFa,checkbox,true,,,,
 targetsmart-communications-llc,TargetSmart Communications LLC,privacy.targetsmart.com,other,robots_disallowed,robots,robots.txt disallows the client. A later read still found no removal channel,,,,false,,,,
 task-genie-inc,"Task Genie, Inc.",datalane.com,other,alive,phone,The only published channel is a phone number,,,,true,,,,phone
@@ -231,7 +233,7 @@ alliance-funeraire-du-royaume,Alliance funéraire du Royaume,afdr.coop,people-se
 alumni-us,Alumni US,alumnius.net,people-search,alive,captcha_form,Removal form is behind a CAPTCHA widget and no usable removal email was found,recaptcha_v2,6LeJZx8UAAAAAG1Pz-HImpKLjGd-bKLV7BLw7mVf,checkbox,true,,true,,web_form
 americaphonebook,AmericaPhoneBook,americaphonebook.com,people-search,alive,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,false,,,,
 ancestry,Ancestry,ancestry.com,people-search,alive,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,false,,,,
-archives-com-ancestry,Archives.com (Ancestry),archives.com,people-search,error,phone,The only published channel is a phone number,recaptcha_v2,6LdowFQiAAAAAHzl-2ZUXBdU4BuMx1gIN76GUj78,checkbox,true,recaptcha_v2,,,phone
+archives-com-ancestry,Archives.com (Ancestry),archives.com,people-search,alive,captcha_form,Removal form is behind a CAPTCHA widget and no usable removal email was found,recaptcha_v2,6LdowFQiAAAAAHzl-2ZUXBdU4BuMx1gIN76GUj78,checkbox,true,recaptcha_v2,true,,web_form;phone
 background-hawk-truthfinder,Background Hawk (TruthFinder),backgroundhawk.com,people-search,alive,captcha_no_form,A CAPTCHA widget is on the removal page and no form fields or usable email were stored,recaptcha_enterprise,6LdFxVQtAAAAAK6XNodX8W6CM56PH1xTrPGVZSqh,invisible,true,,,,
 barrietoday-obituaries,BarrieToday Obituaries,barrietoday.com,people-search,alive,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,,,,,
 basic-funerals,Basic Funerals,basicfunerals.ca,people-search,alive,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,,,,,
@@ -344,7 +346,7 @@ phonenumbers-org,PhoneNumbers.org,phonenumbers.org,people-search,alive,generic_i
 privaterecords-net,PrivateRecords.net,privaterecords.net,people-search,error,fetch_error,The opt-out URL failed before a page was read,,,,false,,,,
 publicdatacheck,PublicDataCheck,publicdatacheck.com,people-search,alive,captcha_form,Removal form is behind a CAPTCHA widget and no usable removal email was found,turnstile,0x4AAAAAAAgFHkiRuynTw4bF,checkbox,true,,true,,web_form;phone
 publicrecords-com-peopleconnect,PublicRecords.com (PeopleConnect),publicrecords.com,people-search,alive,phone_postal,Phone and a mailing address are the only channels,,,,false,,,,postal_mail;phone
-publicrecordsnow-confi-chek,PublicRecordsNow (Confi-Chek),publicrecordsnow.com,people-search,error,fetch_error,The opt-out URL failed before a page was read,,,,false,,,,
+publicrecordsnow-confi-chek,PublicRecordsNow (Confi-Chek),publicrecordsnow.com,people-search,alive,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,false,,,,
 ratsit-se,Ratsit (ratsit.se),ratsit.se,people-search,alive,captcha_no_form,A CAPTCHA widget is on the removal page and no form fields or usable email were stored,turnstile,,,,,,,
 realpeoplesearch,RealPeopleSearch,realpeoplesearch.com,people-search,robots_disallowed,robots,robots.txt disallows the client. A later read still found no removal channel,,,,false,,,,
 recordspage-truthfinder,RecordsPage (TruthFinder),recordspage.org,people-search,alive,phone,The only published channel is a phone number,recaptcha_enterprise,6LdFxVQtAAAAAK6XNodX8W6CM56PH1xTrPGVZSqh,invisible,true,,,,phone
@@ -370,6 +372,7 @@ st-albert-gazette-obituaries,St. Albert Gazette Obituaries,stalbertgazette.com,p
 sudbury-com-obituaries,Sudbury.com Obituaries,sudbury.com,people-search,alive,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,,,,,
 tbnewswatch-obituaries,TBNewsWatch Obituaries,tbnewswatch.com,people-search,alive,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,,,,,
 thatsthem,ThatsThem,thatsthem.com,people-search,blocked,captcha_form,Removal form is behind a CAPTCHA widget and no usable removal email was found,turnstile,,,false,,true,,web_form;phone
+thisnumber,ThisNumber,thisnumber.com,people-search,alive,captcha_no_form,A CAPTCHA widget is on the removal page and no form fields or usable email were stored,turnstile,0x4AAAAAAFbWKqU1yeMKK-cf,,false,,,,
 thoroldtoday-obituaries,ThoroldToday Obituaries,thoroldtoday.ca,people-search,alive,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,,,,,
 timminstoday-obituaries,TimminsToday Obituaries,timminstoday.com,people-search,alive,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,,,,,
 townandcountrytoday-obituaries,Town & Country Today Obituaries,townandcountrytoday.com,people-search,alive,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,,,,,
@@ -382,8 +385,8 @@ unitedstatesphonebook-usphonebook,UnitedStatesPhonebook (USPhoneBook),unitedstat
 unmask,UnMask,unmask.com,people-search,blocked,bot_wall,The opt-out URL returned a bot wall and a browser retry did not reveal a removal channel,,,,false,,,,
 us-people-search,US People Search,uspeoplesearch.com,people-search,blocked,bot_wall,The opt-out URL returned a bot wall and a browser retry did not reveal a removal channel,,,,false,,,,
 us-search-peopleconnect,US Search (PeopleConnect),ussearch.com,people-search,alive,phone,The only published channel is a phone number,,,,false,,,,phone
-usa-people-search,USA-People-Search,usa-people-search.com,people-search,alive,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,false,,,,
-usapeopledata-intelius,USAPeopleData (Intelius),usapeopledata.com,people-search,alive,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,false,,,,
+usa-people-search,USA-People-Search,usa-people-search.com,people-search,alive,captcha_form,Removal form is behind a CAPTCHA widget and no usable removal email was found,recaptcha_v2,6Lcoh5YeAAAAACoHRaRcgiuTlDQCn8ig8yatC7d3,,false,,true,,web_form
+usapeopledata-intelius,USAPeopleData (Intelius),usapeopledata.com,people-search,robots_disallowed,robots,robots.txt disallows the client. A later read still found no removal channel,,,,false,,,,
 usaphonesbook,USAPhonesBook,usaphonesbook.com,people-search,alive,phone,The only published channel is a phone number,,,,false,,,,phone
 usatrace-peoplefinders,USATrace (PeopleFinders),usatrace.com,people-search,alive,captcha_form,Removal form is behind a CAPTCHA widget and no usable removal email was found,recaptcha_v2,6Le3bhAqAAAAAAhpDNQYU__4nh6NwQbrF3VDliFx,,false,,true,research@usatrace.com,web_form;email;phone
 usphonebook,USPhoneBook,usphonebook.com,people-search,blocked,captcha_form,Removal form is behind a CAPTCHA widget and no usable removal email was found,recaptcha_v2,6LcmiZYeAAAAACEbY_tBlLChTU8LZQbQ10M0o_pk,checkbox,false,,true,customercare@usphonebook.com,web_form;email;postal_mail;phone

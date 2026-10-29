@@ -1,13 +1,13 @@
 {
  "schema_version": "3.0.0",
- "checked_at": "2026-10-28T07:52:05+00:00",
+ "checked_at": "2026-10-29T20:39:55+00:00",
  "method": "Public pages only: homepage, catalog URL, and mapped privacy, contact, and legal links. robots.txt honored. No form submitted, no login, no CAPTCHA solved. A browser opened lookup homepages the static fetch never read, and catalog URLs that were blocked or failed, when robots.txt allowed the URL. Image fields are URLs, not copied files. People-search listing URLs are not stored. Null means the fetched page did not establish that fact. Every catalog id has a record.",
  "broker_count": 822,
  "counts": {
   "liveness": {
-   "alive": 621,
-   "blocked": 55,
-   "error": 24,
+   "alive": 627,
+   "blocked": 51,
+   "error": 22,
    "not_checked": 32,
    "opt_out_missing": 1,
    "robots_disallowed": 89
@@ -15,9 +15,9 @@
   "with_logo": 665,
   "with_image": 665,
   "with_search": 405,
-  "with_email": 372,
-  "with_captcha": 336,
-  "with_form": 148
+  "with_email": 368,
+  "with_captcha": 334,
+  "with_form": 150
  },
  "brokers": {
   "alaska-arrests": {
@@ -15022,9 +15022,9 @@
    "name": "Blue Hill Marketing Solutions, Inc",
    "category": "marketing",
    "domain": "liftbasedata.com",
-   "checked_at": "2026-10-12T23:19:51+00:00",
+   "checked_at": "2026-10-29T20:38:01+00:00",
    "liveness": "alive",
-   "liveness_detail": "catalog URL redirected and the final page loaded",
+   "liveness_detail": "catalog URL loaded",
    "homepage": "https://www.liftbasedata.com/",
    "logo_url": "https://s3.amazonaws.com/media.liftengine/Media/Logo/Color/LE-Logo-Color.svg",
    "images": [
@@ -15066,7 +15066,7 @@
     "login_wall": null
    },
    "removal": {
-    "url": "https://www.liftbasedata.com/request-to-know/",
+    "url": "https://www.liftbasedata.com/your-privacy-choices/",
     "final_url": "https://www.liftbasedata.com/your-privacy-choices/",
     "http_status": 200,
     "kinds": [
@@ -15316,7 +15316,36 @@
        "Mississippi",
        "Missouri",
        "Montana",
-       "Nebraska"
+       "Nebraska",
+       "Nevada",
+       "New Hampshire",
+       "New Jersey",
+       "New Mexico",
+       "New York",
+       "North Carolina",
+       "North Dakota",
+       "Northern Mariana Islands",
+       "Ohio",
+       "Oklahoma",
+       "Oregon",
+       "Pennsylvania",
+       "Puerto Rico",
+       "Rhode Island",
+       "South Carolina",
+       "South Dakota",
+       "Tennessee",
+       "Texas",
+       "Utah",
+       "U.S. Virgin Islands",
+       "Vermont",
+       "Virginia",
+       "Washington",
+       "West Virginia",
+       "Wisconsin",
+       "Wyoming",
+       "Armed Forces Americas",
+       "Armed Forces Europe",
+       "Armed Forces Pacific"
       ]
      },
      {
@@ -15354,7 +15383,8 @@
       "https://www.liftbasedata.com/your-privacy-choices/",
       "https://www.liftbasedata.com/your-privacy-choices/authorized-agency-application/",
       "https://www.liftbasedata.com/privacy-policy/",
-      "https://www.liftbasedata.com/privacy-policy/california/"
+      "https://www.liftbasedata.com/privacy-policy/california/",
+      "https://www.liftbasedata.com/privacy-policy/colorado-privacy-act/"
      ]
     },
     "consent_vendor": null,
@@ -15374,6 +15404,7 @@
     "automation_clause": null,
     "residency": [
      "US-CA",
+     "US-CO",
      "US-TX",
      "US"
     ],
@@ -15406,18 +15437,10 @@
      "liveness": "alive"
     },
     {
-     "url": "https://www.liftbasedata.com/request-to-know/",
-     "final_url": "https://www.liftbasedata.com/your-privacy-choices/",
-     "status": 200,
-     "role": "catalog",
-     "title": "Your Privacy Choices - About LiftBase Data",
-     "liveness": "alive"
-    },
-    {
      "url": "https://www.liftbasedata.com/your-privacy-choices/",
      "final_url": "https://www.liftbasedata.com/your-privacy-choices/",
      "status": 200,
-     "role": "privacy",
+     "role": "catalog",
      "title": "Your Privacy Choices - About LiftBase Data",
      "liveness": "alive"
     },
@@ -15451,6 +15474,14 @@
      "status": 200,
      "role": "privacy",
      "title": "California Consumer Privacy Act Rights - About LiftBase Data",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.liftbasedata.com/privacy-policy/colorado-privacy-act/",
+     "final_url": "https://www.liftbasedata.com/privacy-policy/colorado-privacy-act/",
+     "status": 200,
+     "role": "privacy",
+     "title": "Colorado Privacy Act - About LiftBase Data",
      "liveness": "alive"
     }
    ]
@@ -17909,9 +17940,9 @@
    "name": "Data Axle (InfoUSA)",
    "category": "marketing",
    "domain": "data-axle.com",
-   "checked_at": "2026-10-12T23:14:35+00:00",
+   "checked_at": "2026-10-29T20:37:47+00:00",
    "liveness": "alive",
-   "liveness_detail": "catalog URL redirected and the final page loaded",
+   "liveness_detail": "catalog URL loaded",
    "homepage": "https://www.data-axle.com",
    "logo_url": "https://www.data-axle.com/wp-content/uploads/2026/09/marriott-white.png",
    "images": [
@@ -18010,11 +18041,11 @@
     "login_wall": null
    },
    "removal": {
-    "url": "https://www.data-axle.com/do-not-sell-my-data/",
+    "url": "https://www.data-axle.com/privacy-rights-request/",
     "final_url": "https://www.data-axle.com/privacy-rights-request/",
     "http_status": 200,
     "kinds": [
-     "do_not_sell"
+     "opt_out"
     ],
     "channels": [
      "web_form",
@@ -18028,6 +18059,14 @@
     "postal_address": null,
     "portal": null,
     "form_fields": [
+     {
+      "name": "ak_hp_textarea",
+      "type": "text",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
      {
       "name": "input_16",
       "type": "text",
@@ -18084,6 +18123,7 @@
       "autocomplete": null,
       "placeholder": null,
       "options": [
+       "State *",
        "Alabama",
        "Alaska",
        "American Samoa",
@@ -18113,7 +18153,36 @@
        "Mississippi",
        "Missouri",
        "Montana",
-       "Nebraska"
+       "Nebraska",
+       "Nevada",
+       "New Hampshire",
+       "New Jersey",
+       "New Mexico",
+       "New York",
+       "North Carolina",
+       "North Dakota",
+       "Northern Mariana Islands",
+       "Ohio",
+       "Oklahoma",
+       "Oregon",
+       "Pennsylvania",
+       "Puerto Rico",
+       "Rhode Island",
+       "South Carolina",
+       "South Dakota",
+       "Tennessee",
+       "Texas",
+       "Utah",
+       "U.S. Virgin Islands",
+       "Vermont",
+       "Virginia",
+       "Washington",
+       "West Virginia",
+       "Wisconsin",
+       "Wyoming",
+       "Armed Forces Americas",
+       "Armed Forces Europe",
+       "Armed Forces Pacific"
       ]
      },
      {
@@ -18148,6 +18217,7 @@
       "autocomplete": null,
       "placeholder": null,
       "options": [
+       "Privacy Choice *",
        "Opt-Out",
        "Correct-Inaccuracies",
        "Delete",
@@ -18175,7 +18245,7 @@
     "csrf_field_name": null,
     "requires_profile_url": null,
     "captcha": {
-     "provider": "recaptcha_v2",
+     "provider": "recaptcha_enterprise",
      "sitekey": null,
      "pages": [
       "https://www.data-axle.com/contact-us/"
@@ -18193,7 +18263,7 @@
    },
    "legal": {
     "privacy_policy_url": "https://www.data-axle.com/privacy-rights-request/",
-    "terms_url": null,
+    "terms_url": "https://www.data-axle.com/terms-and-conditions/",
     "automation_prohibited": null,
     "automation_clause": null,
     "residency": [],
@@ -18222,18 +18292,10 @@
      "liveness": "alive"
     },
     {
-     "url": "https://www.data-axle.com/do-not-sell-my-data/",
-     "final_url": "https://www.data-axle.com/privacy-rights-request/",
-     "status": 200,
-     "role": "catalog",
-     "title": "Consumer Privacy Rights Request | Data Axle",
-     "liveness": "alive"
-    },
-    {
      "url": "https://www.data-axle.com/privacy-rights-request/",
      "final_url": "https://www.data-axle.com/privacy-rights-request/",
      "status": 200,
-     "role": "privacy",
+     "role": "catalog",
      "title": "Consumer Privacy Rights Request | Data Axle",
      "liveness": "alive"
     },
@@ -18267,6 +18329,14 @@
      "status": 200,
      "role": "contact",
      "title": "Contact Us - Data Axle - Providing Powerful Data & Solutions for 50 Years",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.data-axle.com/terms-and-conditions/",
+     "final_url": "https://www.data-axle.com/terms-and-conditions/",
+     "status": 200,
+     "role": "legal",
+     "title": "Terms and Conditions - Data Axle",
      "liveness": "alive"
     }
    ]
@@ -24781,9 +24851,9 @@
    "name": "Versium Analytics Inc.",
    "category": "marketing",
    "domain": "versium.com",
-   "checked_at": "2026-10-12T23:28:21+00:00",
-   "liveness": "blocked",
-   "liveness_detail": "catalog URL returned a bot wall or HTTP 401/403/429/503",
+   "checked_at": "2026-10-29T20:38:15+00:00",
+   "liveness": "alive",
+   "liveness_detail": "catalog URL loaded",
    "homepage": "https://versium.com/",
    "logo_url": "https://versium.com/wp-content/uploads/2025/08/versium-site-logo_white.svg",
    "images": [
@@ -24803,24 +24873,34 @@
      "source_page": "https://versium.com/"
     },
     {
-     "url": "https://i0.wp.com/versium.com/wp-content/uploads/2026/03/Versium-2.0-Website-Image-.webp",
-     "kind": "og_image",
-     "source_page": "https://versium.com/"
-    },
-    {
      "url": "https://versium.com/wp-content/uploads/2025/08/versium-site-logo_white-350-x-100-px-1.svg",
      "kind": "og_image",
      "source_page": "https://versium.com/"
     },
     {
-     "url": "https://versium.com/wp-content/uploads/2025/08/Group-427320415.webp",
-     "kind": "json_ld",
+     "url": "https://i0.wp.com/versium.com/wp-content/uploads/2026/03/Versium-2.0-Website-Image-.webp?fit=1200%2C628&ssl=1",
+     "kind": "og_image",
+     "source_page": "https://versium.com/"
+    },
+    {
+     "url": "https://i0.wp.com/versium.com/wp-content/uploads/2026/03/Versium-2.0-Website-Image-.webp?fit=1200%2C628&ssl=1&w=640",
+     "kind": "twitter_image",
      "source_page": "https://versium.com/"
     },
     {
      "url": "https://versium.com/wp-content/uploads/2025/08/versium-site-logo_white.svg",
      "kind": "logo",
      "source_page": "https://versium.com/"
+    },
+    {
+     "url": "https://s0.wp.com/_si/?t=eyJpbWciOiJodHRwczpcL1wvaTAud3AuY29tXC92ZXJzaXVtLmNvbVwvd3AtY29udGVudFwvdXBsb2Fkc1wvMjAyNVwvMDhcL2Nyb3BwZWQtY3JvcHBlZC1jcm9wcGVkLWNyb3BwZWQtVmVyc2l1bV9Mb2dvXzI1Ni5wbmc_Zml0PTUxMiUyQzUxMiZzc2w9MSIsInR4dCI6IlZlcnNpdW0iLCJ0ZW1wbGF0ZSI6ImVkZ2UiLCJmb250IjoiIiwiYmxvZ19pZCI6MjE2NDk2OTM4fQ.iqmDisDW1PV1yxb3WtkA70eZfU-O8_9hPyIBKCykROQMQ",
+     "kind": "og_image",
+     "source_page": "https://versium.com/california-privacy-policy/"
+    },
+    {
+     "url": "https://i0.wp.com/versium.com/wp-content/uploads/2025/08/cropped-cropped-cropped-cropped-Versium_Logo_256.png?fit=240%2C240&ssl=1",
+     "kind": "twitter_image",
+     "source_page": "https://versium.com/california-privacy-policy/"
     }
    ],
    "theme_color": null,
@@ -24840,9 +24920,9 @@
     "login_wall": null
    },
    "removal": {
-    "url": "https://versium.com/ccpa-privacy-policy",
+    "url": "https://versium.com/california-privacy-policy/",
     "final_url": "https://versium.com/california-privacy-policy/",
-    "http_status": 403,
+    "http_status": 200,
     "kinds": [
      "opt_out"
     ],
@@ -24852,18 +24932,18 @@
     ],
     "emails": [
      {
+      "email": "privacy@versium.com",
+      "confidence": "extracted",
+      "source_url": "https://versium.com/california-privacy-policy/"
+     },
+     {
       "email": "optout@versium.com",
       "confidence": "extracted",
-      "source_url": "https://versium.com/ccpa-opt-out/"
+      "source_url": "https://versium.com/california-privacy-policy/"
      },
      {
       "email": "support@versium.com",
       "confidence": "uncertain",
-      "source_url": "https://versium.com/privacy-policy/"
-     },
-     {
-      "email": "privacy@versium.com",
-      "confidence": "extracted",
       "source_url": "https://versium.com/privacy-policy/"
      }
     ],
@@ -24888,10 +24968,10 @@
    },
    "bot_defense": {
     "vendor": null,
-    "outcome": "hard_block"
+    "outcome": "none"
    },
    "legal": {
-    "privacy_policy_url": "https://versium.com/privacy-policy/",
+    "privacy_policy_url": "https://versium.com/california-privacy-policy/",
     "terms_url": null,
     "automation_prohibited": null,
     "automation_clause": null,
@@ -24907,7 +24987,10 @@
     "authorized_agent": null,
     "data_categories": [
      "identifiers",
-     "employment"
+     "commercial",
+     "internet_activity",
+     "employment",
+     "inferences"
     ]
    },
    "pages": [
@@ -24928,12 +25011,12 @@
      "liveness": "alive"
     },
     {
-     "url": "https://versium.com/ccpa-privacy-policy",
+     "url": "https://versium.com/california-privacy-policy/",
      "final_url": "https://versium.com/california-privacy-policy/",
-     "status": 403,
+     "status": 200,
      "role": "catalog",
      "title": "California Privacy Policy | Versium",
-     "liveness": "blocked"
+     "liveness": "alive"
     },
     {
      "url": "https://versium.com/ccpa-opt-out/",
@@ -24969,11 +25052,11 @@
     },
     {
      "url": "https://versium.com/california-privacy-policy",
-     "final_url": "https://versium.com/california-privacy-policy",
-     "status": 429,
+     "final_url": "https://versium.com/california-privacy-policy/",
+     "status": 200,
      "role": "privacy",
-     "title": "429 Too Many Requests",
-     "liveness": "blocked"
+     "title": "California Privacy Policy | Versium",
+     "liveness": "alive"
     }
    ]
   },
@@ -26828,9 +26911,9 @@
    "name": "Above Data, Inc.",
    "category": "other",
    "domain": "abovedata.io",
-   "checked_at": "2026-10-12T23:10:20+00:00",
+   "checked_at": "2026-10-29T20:37:43+00:00",
    "liveness": "alive",
-   "liveness_detail": "catalog URL redirected and the final page loaded",
+   "liveness_detail": "catalog URL loaded",
    "homepage": "https://www.abovedata.io/",
    "logo_url": "https://www.abovedata.io/apple-touch-icon.png",
    "images": [
@@ -26867,7 +26950,7 @@
     "login_wall": null
    },
    "removal": {
-    "url": "https://www.abovedata.io/privacy-policy/",
+    "url": "https://www.abovedata.io/privacy",
     "final_url": "https://www.abovedata.io/privacy",
     "http_status": 200,
     "kinds": [
@@ -26902,11 +26985,10 @@
     "csrf_field_name": null,
     "requires_profile_url": null,
     "captcha": {
-     "provider": "recaptcha_v2",
-     "sitekey": null,
+     "provider": "recaptcha_enterprise",
+     "sitekey": "6LcTv-gsAAAAANjErH9pEegTo46s_Nvwp8X2OKO_",
      "pages": [
       "https://www.abovedata.io/",
-      "https://www.abovedata.io/privacy",
       "https://www.abovedata.io/opt-out"
      ]
     },
@@ -26959,18 +27041,10 @@
      "liveness": "alive"
     },
     {
-     "url": "https://www.abovedata.io/privacy-policy/",
-     "final_url": "https://www.abovedata.io/privacy",
-     "status": 200,
-     "role": "catalog",
-     "title": "Privacy Policy — Above Data",
-     "liveness": "alive"
-    },
-    {
      "url": "https://www.abovedata.io/privacy",
      "final_url": "https://www.abovedata.io/privacy",
      "status": 200,
-     "role": "privacy",
+     "role": "catalog",
      "title": "Privacy Policy — Above Data",
      "liveness": "alive"
     },
@@ -27004,6 +27078,14 @@
      "status": 200,
      "role": "privacy",
      "title": "Privacy Policy — Above Data",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.abovedata.io/opt-out/",
+     "final_url": "https://www.abovedata.io/opt-out",
+     "status": 200,
+     "role": "opt_out",
+     "title": "Opt Out of Targeted Advertising — Above Data",
      "liveness": "alive"
     }
    ]
@@ -32477,91 +32559,46 @@
    "name": "Choreograph LLP",
    "category": "other",
    "domain": "choreograph.com",
-   "checked_at": "2026-10-12T23:13:18+00:00",
+   "checked_at": "2026-10-29T20:37:47+00:00",
    "liveness": "alive",
    "liveness_detail": "catalog URL loaded",
    "homepage": "https://www.choreograph.com/",
-   "logo_url": "https://cdn.prod.website-files.com/677674a78ffcc0be89d38272/6777cfc2e362039fd363ff51_Logos.svg",
+   "logo_url": "https://www.datocms-assets.com/197664/1783697185-choreograph-p0148-t0190-thumbnail-images-for-about-us-drop-down-375x600px-3.jpg?ar64=NTo4&auto=format&crop=focalpoint&fit=crop&fm=webp",
    "images": [
     {
-     "url": "https://cdn.prod.website-files.com/677674a78ffcc0be89d38272/677cfadac08f827cb40a76a4_Favicon.jpg",
-     "kind": "icon",
-     "source_page": "https://www.choreograph.com/"
-    },
-    {
-     "url": "https://cdn.prod.website-files.com/677674a78ffcc0be89d38272/677cfade29d3f40089bbe285_Webclip.jpg",
+     "url": "https://www.choreograph.com/choreograph/apple-touch-icon.png",
      "kind": "apple_touch_icon",
      "source_page": "https://www.choreograph.com/"
     },
     {
-     "url": "https://cdn.prod.website-files.com/677674a78ffcc0be89d38272/67a244ee8740ec6df41383ee_homepage-choreograph.webp",
+     "url": "https://www.choreograph.com/choreograph/favicon1.ico",
+     "kind": "icon",
+     "source_page": "https://www.choreograph.com/"
+    },
+    {
+     "url": "https://www.choreograph.com/choreograph/safari-pinned-tab.svg",
+     "kind": "icon",
+     "source_page": "https://www.choreograph.com/"
+    },
+    {
+     "url": "https://www.datocms-assets.com/197664/1788189752-homepage.png",
      "kind": "og_image",
      "source_page": "https://www.choreograph.com/"
     },
     {
-     "url": "https://cdn.prod.website-files.com/677674a78ffcc0be89d38272/6777cfc2e362039fd363ff51_Logos.svg",
+     "url": "https://www.datocms-assets.com/197664/1783697185-choreograph-p0148-t0190-thumbnail-images-for-about-us-drop-down-375x600px-3.jpg?ar64=NTo4&auto=format&crop=focalpoint&fit=crop&fm=webp",
      "kind": "logo",
      "source_page": "https://www.choreograph.com/"
     },
     {
-     "url": "https://cdn.prod.website-files.com/677674a78ffcc0be89d38272/6777cfc2d8077933001d06d6_Logos-2.svg",
+     "url": "https://www.datocms-assets.com/197664/1785153002-choreograph-p0148-t0205-gmp-licensing.jpg?ar64=NTo4&auto=format&crop=focalpoint&fit=crop&fm=webp",
      "kind": "logo",
      "source_page": "https://www.choreograph.com/"
     },
     {
-     "url": "https://cdn.prod.website-files.com/677674a78ffcc0be89d38272/6777cfc2a5177713a4ca3c59_Logos-3.svg",
-     "kind": "logo",
-     "source_page": "https://www.choreograph.com/"
-    },
-    {
-     "url": "https://cdn.prod.website-files.com/677674a78ffcc0be89d38272/6777cfc225b369109fcba23f_Logos-4.svg",
-     "kind": "logo",
-     "source_page": "https://www.choreograph.com/"
-    },
-    {
-     "url": "https://cdn.prod.website-files.com/677674a78ffcc0be89d38272/6777cfc281eb251e607bc575_Logos-1.svg",
-     "kind": "logo",
-     "source_page": "https://www.choreograph.com/"
-    },
-    {
-     "url": "https://cdn.prod.website-files.com/677674a78ffcc0be89d38272/6777cfc24e55fc5a91cbf7ed_Logos-5.svg",
-     "kind": "logo",
-     "source_page": "https://www.choreograph.com/"
-    },
-    {
-     "url": "https://cdn.prod.website-files.com/677674a78ffcc0be89d38272/6777cfc2a523da318b16865d_Logos-6.svg",
-     "kind": "logo",
-     "source_page": "https://www.choreograph.com/"
-    },
-    {
-     "url": "https://cdn.prod.website-files.com/677674a78ffcc0be89d38272/67869e612a7d77fa022cc7c4_Partner%20logos.avif",
-     "kind": "logo",
-     "source_page": "https://www.choreograph.com/"
-    },
-    {
-     "url": "https://cdn.prod.website-files.com/677674a78ffcc0be89d38272/67869e600c3b3886436025ab_Partner%20logos-2.avif",
-     "kind": "logo",
-     "source_page": "https://www.choreograph.com/"
-    },
-    {
-     "url": "https://cdn.prod.website-files.com/677674a78ffcc0be89d38272/67869e60a4697b20787c3555_Partner%20logos-5.avif",
-     "kind": "logo",
-     "source_page": "https://www.choreograph.com/"
-    },
-    {
-     "url": "https://cdn.prod.website-files.com/677674a78ffcc0be89d38272/67869e60a6bb6ed9f38d3599_Partner%20logos-1.avif",
-     "kind": "logo",
-     "source_page": "https://www.choreograph.com/"
-    },
-    {
-     "url": "https://cdn.prod.website-files.com/677674a78ffcc0be89d38272/67869e60586ca6b2e58a067e_Partner%20logos-3.avif",
-     "kind": "logo",
-     "source_page": "https://www.choreograph.com/"
-    },
-    {
-     "url": "https://cdn.prod.website-files.com/677674a78ffcc0be89d38272/67869e601971c24c678ff88b_Partner%20logos-4.avif",
-     "kind": "logo",
-     "source_page": "https://www.choreograph.com/"
+     "url": "https://www.choreograph.com/choreograph/assets/fallback-logo.png",
+     "kind": "og_image",
+     "source_page": "https://www.choreograph.com/pages/ccpa"
     },
     {
      "url": "https://www.choreograph.com/wp-content/uploads/fbrfg/favicon.ico",
@@ -32574,11 +32611,11 @@
      "source_page": "https://amer-cpp.choreograph.com/manage-your-data/do-not-sell"
     }
    ],
-   "theme_color": "#b1624d",
+   "theme_color": "#ffffff",
    "languages": [
     "en"
    ],
-   "legal_name": "Choreograph.com",
+   "legal_name": null,
    "search": {
     "available": false,
     "method": "none",
@@ -32591,8 +32628,8 @@
     "login_wall": null
    },
    "removal": {
-    "url": "https://www.choreograph.com/ccpa",
-    "final_url": "https://www.choreograph.com/ccpa",
+    "url": "https://www.choreograph.com/pages/ccpa",
+    "final_url": "https://www.choreograph.com/pages/ccpa",
     "http_status": 200,
     "kinds": [
      "opt_out"
@@ -32605,17 +32642,17 @@
      {
       "email": "donotmail@choreograph.com",
       "confidence": "uncertain",
-      "source_url": "https://www.choreograph.com/ccpa"
+      "source_url": "https://www.choreograph.com/pages/ccpa"
      },
      {
       "email": "privacy@choreograph.com",
       "confidence": "extracted",
-      "source_url": "https://www.choreograph.com/ccpa"
+      "source_url": "https://www.choreograph.com/pages/ccpa"
      },
      {
       "email": "dpo@choreograph.com",
       "confidence": "extracted",
-      "source_url": "https://www.choreograph.com/global-privacy-policy/global-privacy-policy-english"
+      "source_url": "https://www.choreograph.com/pages/global-privacy-policy"
      }
     ],
     "phones": [
@@ -32628,16 +32665,11 @@
     "csrf_field_name": null,
     "requires_profile_url": null,
     "captcha": {
-     "provider": "recaptcha_v2",
+     "provider": null,
      "sitekey": null,
-     "pages": [
-      "https://www.choreograph.com/",
-      "https://www.choreograph.com/ccpa",
-      "https://www.choreograph.com/global-privacy-policy/global-privacy-policy-english",
-      "https://www.choreograph.com/talent-privacy-policy"
-     ]
+     "pages": []
     },
-    "consent_vendor": null,
+    "consent_vendor": "onetrust",
     "success_text": null,
     "suppression_not_deletion": null,
     "processing_days": null,
@@ -32648,13 +32680,12 @@
     "outcome": "none"
    },
    "legal": {
-    "privacy_policy_url": "https://www.choreograph.com/global-privacy-policy/global-privacy-policy-english",
+    "privacy_policy_url": "https://www.choreograph.com/pages/global-privacy-policy",
     "terms_url": null,
     "automation_prohibited": null,
     "automation_clause": null,
     "residency": [
      "US-CA",
-     "US",
      "EU"
     ],
     "authorized_agent": null,
@@ -32673,7 +32704,7 @@
      "final_url": "https://www.choreograph.com/",
      "status": 200,
      "role": "home",
-     "title": "Welcome To Choreograph.com, WPP’s global data company",
+     "title": "Choreograph Consulting | Data, Tech & Google Solutions",
      "liveness": "alive"
     },
     {
@@ -32681,15 +32712,23 @@
      "final_url": "https://www.choreograph.com/",
      "status": 200,
      "role": "home",
-     "title": "Welcome To Choreograph.com, WPP’s global data company",
+     "title": "Choreograph Consulting | Data, Tech & Google Solutions",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.choreograph.com/pages/ccpa",
+     "final_url": "https://www.choreograph.com/pages/ccpa",
+     "status": 200,
+     "role": "catalog",
+     "title": "CCPA",
      "liveness": "alive"
     },
     {
      "url": "https://www.choreograph.com/ccpa",
-     "final_url": "https://www.choreograph.com/ccpa",
+     "final_url": "https://www.choreograph.com/pages/ccpa",
      "status": 200,
-     "role": "catalog",
-     "title": "CCPA | Choreograph",
+     "role": "legal",
+     "title": "CCPA",
      "liveness": "alive"
     },
     {
@@ -32718,18 +32757,10 @@
     },
     {
      "url": "https://www.choreograph.com/global-privacy-policy/global-privacy-policy-english",
-     "final_url": "https://www.choreograph.com/global-privacy-policy/global-privacy-policy-english",
+     "final_url": "https://www.choreograph.com/pages/global-privacy-policy",
      "status": 200,
      "role": "privacy",
-     "title": "Global Privacy Policy (English) | Choreograph",
-     "liveness": "alive"
-    },
-    {
-     "url": "https://www.choreograph.com/talent-privacy-policy",
-     "final_url": "https://www.choreograph.com/talent-privacy-policy",
-     "status": 200,
-     "role": "privacy",
-     "title": "Talent Privacy Policy | Choreograph",
+     "title": "Global Privacy Policy",
      "liveness": "alive"
     }
    ]
@@ -38527,9 +38558,9 @@
    "name": "Enigma Technologies, Inc.",
    "category": "other",
    "domain": "enigma.com",
-   "checked_at": "2026-10-12T23:15:53+00:00",
+   "checked_at": "2026-10-29T20:37:51+00:00",
    "liveness": "alive",
-   "liveness_detail": "catalog URL redirected and the final page loaded",
+   "liveness_detail": "catalog URL loaded",
    "homepage": "https://www.enigma.com/",
    "logo_url": "https://www.enigma.com/images/home/logo-enigma.svg",
    "images": [
@@ -38627,6 +38658,16 @@
      "url": "https://www.enigma.com/og/quiet--terms-of-service.png",
      "kind": "og_image",
      "source_page": "https://www.enigma.com/legal/terms-of-service"
+    },
+    {
+     "url": "https://www.enigma.com/og/quiet--security.png",
+     "kind": "og_image",
+     "source_page": "https://www.enigma.com/legal/security"
+    },
+    {
+     "url": "https://www.enigma.com/images/aicpa-soc-logo.svg",
+     "kind": "logo",
+     "source_page": "https://www.enigma.com/legal/security"
     }
    ],
    "theme_color": null,
@@ -38646,7 +38687,7 @@
     "login_wall": null
    },
    "removal": {
-    "url": "https://www.enigma.com/company/privacy-policy",
+    "url": "https://www.enigma.com/legal/privacy-policy",
     "final_url": "https://www.enigma.com/legal/privacy-policy",
     "http_status": 200,
     "kinds": [
@@ -38670,6 +38711,11 @@
       "email": "legal@enigma.com",
       "confidence": "uncertain",
       "source_url": "https://www.enigma.com/legal/terms-of-service"
+     },
+     {
+      "email": "security@enigma.com",
+      "confidence": "uncertain",
+      "source_url": "https://www.enigma.com/legal/security"
      }
     ],
     "phones": [],
@@ -38712,7 +38758,7 @@
      "final_url": "https://www.enigma.com/",
      "status": 200,
      "role": "home",
-     "title": "Enigma: Trusted business data",
+     "title": "Enigma: Authoritative answers for your agents and workflows",
      "liveness": "alive"
     },
     {
@@ -38720,22 +38766,14 @@
      "final_url": "https://www.enigma.com/",
      "status": 200,
      "role": "home",
-     "title": "Enigma: Trusted business data",
-     "liveness": "alive"
-    },
-    {
-     "url": "https://www.enigma.com/company/privacy-policy",
-     "final_url": "https://www.enigma.com/legal/privacy-policy",
-     "status": 200,
-     "role": "catalog",
-     "title": "Privacy Policy | Enigma",
+     "title": "Enigma: Authoritative answers for your agents and workflows",
      "liveness": "alive"
     },
     {
      "url": "https://www.enigma.com/legal/privacy-policy",
      "final_url": "https://www.enigma.com/legal/privacy-policy",
      "status": 200,
-     "role": "legal",
+     "role": "catalog",
      "title": "Privacy Policy | Enigma",
      "liveness": "alive"
     },
@@ -38769,6 +38807,14 @@
      "status": 200,
      "role": "legal",
      "title": "Terms of Service | Enigma",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.enigma.com/legal/security",
+     "final_url": "https://www.enigma.com/legal/security",
+     "status": 200,
+     "role": "legal",
+     "title": "Security | Enigma",
      "liveness": "alive"
     }
    ]
@@ -39577,9 +39623,9 @@
    "name": "Explorium Inc.",
    "category": "other",
    "domain": "explorium.ai",
-   "checked_at": "2026-10-12T23:16:21+00:00",
+   "checked_at": "2026-10-29T20:37:51+00:00",
    "liveness": "alive",
-   "liveness_detail": "catalog URL redirected and the final page loaded",
+   "liveness_detail": "catalog URL loaded",
    "homepage": "https://www.explorium.ai/",
    "logo_url": "https://www.explorium.ai/wp-content/themes/moveo-theme/assets/icon/explorium-logo-2026.svg",
    "images": [
@@ -39594,7 +39640,7 @@
      "source_page": "https://www.explorium.ai/"
     },
     {
-     "url": "https://ec2-54-166-201-58.compute-1.amazonaws.com/wp-content/uploads/2026/09/Homepage-og.png",
+     "url": "https://www.explorium.ai/wp-content/uploads/2026/09/Homepage-og.png",
      "kind": "og_image",
      "source_page": "https://www.explorium.ai/"
     },
@@ -39652,11 +39698,6 @@
      "url": "https://www.explorium.ai/wp-content/uploads/2025/08/InBug-White.png",
      "kind": "logo",
      "source_page": "https://www.explorium.ai/"
-    },
-    {
-     "url": "https://www.explorium.ai/wp-content/uploads/2026/09/Homepage-og.png",
-     "kind": "og_image",
-     "source_page": "https://www.explorium.ai/privacy-policy/"
     }
    ],
    "theme_color": null,
@@ -39676,7 +39717,7 @@
     "login_wall": null
    },
    "removal": {
-    "url": "https://www.explorium.ai/platform-privacy-policy/",
+    "url": "https://www.explorium.ai/privacy-policy/",
     "final_url": "https://www.explorium.ai/privacy-policy/",
     "http_status": 200,
     "kinds": [
@@ -39702,8 +39743,8 @@
     "processing_text": null
    },
    "bot_defense": {
-    "vendor": "cloudflare",
-    "outcome": "challenge_page"
+    "vendor": null,
+    "outcome": "none"
    },
    "legal": {
     "privacy_policy_url": "https://www.explorium.ai/privacy-policy/",
@@ -39712,6 +39753,7 @@
     "automation_clause": null,
     "residency": [
      "US-CA",
+     "US",
      "EU",
      "GB"
     ],
@@ -39740,7 +39782,7 @@
      "liveness": "alive"
     },
     {
-     "url": "https://www.explorium.ai/platform-privacy-policy/",
+     "url": "https://www.explorium.ai/privacy-policy/",
      "final_url": "https://www.explorium.ai/privacy-policy/",
      "status": 200,
      "role": "catalog",
@@ -39748,20 +39790,12 @@
      "liveness": "alive"
     },
     {
-     "url": "https://www.explorium.ai/privacy-policy/",
-     "final_url": "https://www.explorium.ai/privacy-policy/",
-     "status": 200,
-     "role": "privacy",
-     "title": "Explorium Privacy Policy - Explorium",
-     "liveness": "alive"
-    },
-    {
      "url": "https://www.explorium.ai/do-not-sell-my-personal-info/",
      "final_url": "https://www.explorium.ai/do-not-sell-my-personal-info/",
-     "status": 429,
+     "status": 200,
      "role": "opt_out",
-     "title": "Access denied | www.explorium.ai used Cloudflare to restrict access | www.explorium.ai | Cloudflare",
-     "liveness": "blocked"
+     "title": "DO NOT SELL OR SHARE MY PERSONAL INFORMATION - Explorium",
+     "liveness": "alive"
     },
     {
      "url": "https://www.explorium.ai/privacy-policy-06-28-26/",
@@ -39785,6 +39819,14 @@
      "status": 200,
      "role": "privacy",
      "title": "Website Privacy Policy - Archived August 1, 2023 - Explorium",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.explorium.ai/platform-privacy-policy-2/",
+     "final_url": "https://www.explorium.ai/platform-privacy-policy-2/",
+     "status": 200,
+     "role": "privacy",
+     "title": "Platform Privacy Policy - Explorium",
      "liveness": "alive"
     }
    ]
@@ -39906,59 +39948,54 @@
    "name": "Findem, Inc.",
    "category": "other",
    "domain": "findem.ai",
-   "checked_at": "2026-10-12T23:16:38+00:00",
+   "checked_at": "2026-10-29T20:37:51+00:00",
    "liveness": "alive",
-   "liveness_detail": "catalog URL redirected and the final page loaded",
+   "liveness_detail": "catalog URL loaded",
    "homepage": "https://www.findem.ai/",
-   "logo_url": "https://cdn.prod.website-files.com/69690c6c0d33efcd931de2a4/697fbdc7f1a4ca548a846a9c_Group%20633481%20(1).svg",
+   "logo_url": "https://www.findem.ai/_ploy_static/webflow/69690c6c0d33efcd931de2a4/6a67c349b7b314e719d598bf_image.avif",
    "images": [
     {
-     "url": "https://cdn.prod.website-files.com/69690c6c0d33efcd931de2a4/69c1824923e5d1ca226b4029_Findem%20-%20Favicon.avif",
+     "url": "https://www.findem.ai/_ploy_static/favicon-ea1f814f42da2b67d36e3e27c481879535ea4a15a4f4be26be3cdfa7c3894e4d.png",
      "kind": "icon",
      "source_page": "https://www.findem.ai/"
     },
     {
-     "url": "https://cdn.prod.website-files.com/69690c6c0d33efcd931de2a4/69b7f9e573f45cf0866dd81a_Findem%20Webclip.png",
-     "kind": "apple_touch_icon",
-     "source_page": "https://www.findem.ai/"
-    },
-    {
-     "url": "https://cdn.prod.website-files.com/612e74601a05775eedf4592d/65d8b63ec1483b602455b1f0_Findem%20Google%20Icon.png",
-     "kind": "icon",
-     "source_page": "https://www.findem.ai/"
-    },
-    {
-     "url": "https://cdn.prod.website-files.com/69690c6c0d33efcd931de2a4/69b319a8c53119a7fb5a4836_Home%20-%20OG.avif",
+     "url": "https://www.findem.ai/_ploy_static/webflow/69690c6c0d33efcd931de2a4/69b319a8c53119a7fb5a4836_Home---OG.avif",
      "kind": "og_image",
      "source_page": "https://www.findem.ai/"
     },
     {
-     "url": "https://cdn.prod.website-files.com/69690c6c0d33efcd931de2a4/696e4904a650b053f9de6603_Logo%5B1%5D.svg",
+     "url": "https://cdn.ploy.ai/6b6bb914-a578-4dfa-aefb-ba937ed4abcf/user/9879c9d6-findem-logo-wordmark.svg",
      "kind": "json_ld",
      "source_page": "https://www.findem.ai/"
     },
     {
-     "url": "https://cdn.prod.website-files.com/69690c6c0d33efcd931de2a4/697fbdc7f1a4ca548a846a9c_Group%20633481%20(1).svg",
+     "url": "https://www.findem.ai/_ploy_static/webflow/69690c6c0d33efcd931de2a4/6a67c349b7b314e719d598bf_image.avif",
      "kind": "logo",
      "source_page": "https://www.findem.ai/"
     },
     {
-     "url": "https://cdn.prod.website-files.com/69690c6c0d33efcd931de2a4/69b802e716dc76d5179677c7_Do%20Not%20Sell%20-%20OG.png",
+     "url": "https://www.findem.ai/_ploy_static/webflow/69690c6c0d33efcd931de2a4/69b803fbffe6fd20830382f9_Data-Processing-Addendum---OG.avif",
+     "kind": "logo",
+     "source_page": "https://www.findem.ai/"
+    },
+    {
+     "url": "https://www.findem.ai/_ploy_static/webflow/69690c6c0d33efcd931de2a4/69b802e716dc76d5179677c7_Do-Not-Sell---OG.png",
      "kind": "og_image",
      "source_page": "https://www.findem.ai/privacy-rights"
     },
     {
-     "url": "https://cdn.prod.website-files.com/697b9f62844c4d2c0d43b0b3/69c1c19a366380b49c523b55_Privacy%2C%20Security%2C%20and%20Compliance%20-%20Blog.avif",
+     "url": "https://www.findem.ai/_ploy_static/webflow/697b9f62844c4d2c0d43b0b3/69c1c19a366380b49c523b55_Privacy-Security-and-Compliance---Blog.avif",
      "kind": "og_image",
      "source_page": "https://www.findem.ai/blog/privacy-practices-clarified"
     },
     {
-     "url": "https://cdn.prod.website-files.com/69690c6c0d33efcd931de2a4/697bc41194be9289e5e56d6e_Group%20633481.svg",
+     "url": "https://storage.googleapis.com/ployai/6b6bb914-a578-4dfa-aefb-ba937ed4abcf/user/13be1841-697bc41194be9289e5e56d6e-group-20633481.svg",
      "kind": "json_ld",
      "source_page": "https://www.findem.ai/blog/privacy-practices-clarified"
     },
     {
-     "url": "https://cdn.prod.website-files.com/697b9f62844c4d2c0d43b0b3/69b8645570f81d68f5696d23_Findem%20-%20Blog%20Logo.webp",
+     "url": "https://www.findem.ai/_ploy_static/webflow/697b9f62844c4d2c0d43b0b3/69b8645570f81d68f5696d23_Findem---Blog-Logo.webp",
      "kind": "logo",
      "source_page": "https://www.findem.ai/blog/privacy-practices-clarified"
     },
@@ -39973,7 +40010,7 @@
      "source_page": "https://trust.findem.ai/resources?s=n7l858orxkidow6l1kxp9&name=privacy-policy"
     },
     {
-     "url": "https://cdn.prod.website-files.com/69690c6c0d33efcd931de2a4/69b7b477d0e8070d169f6920_Contact%20Us%20-%20OG.png",
+     "url": "https://www.findem.ai/_ploy_static/webflow/69690c6c0d33efcd931de2a4/69b7b477d0e8070d169f6920_Contact-Us---OG.png",
      "kind": "og_image",
      "source_page": "https://www.findem.ai/contact-us"
     }
@@ -39995,24 +40032,32 @@
     "login_wall": null
    },
    "removal": {
-    "url": "https://www.findem.ai/do-not-sell-or-share-my-personal-information",
+    "url": "https://www.findem.ai/privacy-rights",
     "final_url": "https://www.findem.ai/privacy-rights",
     "http_status": 200,
     "kinds": [
-     "do_not_sell"
+     "opt_out"
     ],
     "channels": [
      "web_form",
-     "email"
+     "email",
+     "phone"
     ],
     "emails": [
      {
       "email": "trust@findem.ai",
       "confidence": "uncertain",
       "source_url": "https://www.findem.ai/blog/privacy-practices-clarified"
+     },
+     {
+      "email": "marketing@findem.ai",
+      "confidence": "uncertain",
+      "source_url": "https://www.findem.ai/contact-us"
      }
     ],
-    "phones": [],
+    "phones": [
+     "650-399-3628"
+    ],
     "postal_address": null,
     "portal": null,
     "form_fields": [
@@ -40041,12 +40086,19 @@
       "placeholder": null
      },
      {
-      "name": "company-website",
-      "type": "text",
+      "name": "Request-type",
+      "type": "select",
       "canonical": null,
-      "required": false,
-      "autocomplete": "off",
-      "placeholder": null
+      "required": true,
+      "autocomplete": null,
+      "placeholder": null,
+      "options": [
+       "Please select",
+       "Data Deletion",
+       "Data Access",
+       "Data Info",
+       "Combination of above"
+      ]
      },
      {
       "name": "Other-comments",
@@ -40055,19 +40107,22 @@
       "required": false,
       "autocomplete": null,
       "placeholder": null
+     },
+     {
+      "name": "company-website",
+      "type": "text",
+      "canonical": null,
+      "required": false,
+      "autocomplete": "off",
+      "placeholder": null
      }
     ],
     "csrf_field_name": null,
     "requires_profile_url": null,
     "captcha": {
-     "provider": "recaptcha_v2",
-     "sitekey": "6Lf-99ctAAAAAJm6G6oddQB48BbUvCkSnVNSrhxg",
-     "pages": [
-      "https://www.findem.ai/",
-      "https://www.findem.ai/privacy-rights",
-      "https://www.findem.ai/blog/privacy-practices-clarified",
-      "https://www.findem.ai/contact-us"
-     ]
+     "provider": null,
+     "sitekey": null,
+     "pages": []
     },
     "consent_vendor": null,
     "success_text": null,
@@ -40112,19 +40167,11 @@
      "liveness": "alive"
     },
     {
-     "url": "https://www.findem.ai/do-not-sell-or-share-my-personal-information",
-     "final_url": "https://www.findem.ai/privacy-rights",
-     "status": 200,
-     "role": "catalog",
-     "title": "Privacy Rights | Findem",
-     "liveness": "alive"
-    },
-    {
      "url": "https://www.findem.ai/privacy-rights",
      "final_url": "https://www.findem.ai/privacy-rights",
      "status": 200,
-     "role": "privacy",
-     "title": "Privacy Rights | Findem",
+     "role": "catalog",
+     "title": "Privacy Rights and Data Requests | Findem",
      "liveness": "alive"
     },
     {
@@ -40132,7 +40179,7 @@
      "final_url": "https://www.findem.ai/blog/privacy-practices-clarified",
      "status": 200,
      "role": "privacy",
-     "title": "Upholding Our Commitment to Privacy, Security, and Compliance | Findem",
+     "title": "Our Commitment to Privacy, Security and Compliance | Findem",
      "liveness": "alive"
     },
     {
@@ -40832,88 +40879,103 @@
    "name": "Forager.ai, LLC",
    "category": "other",
    "domain": "forager.ai",
-   "checked_at": "2026-10-12T23:17:02+00:00",
+   "checked_at": "2026-10-29T20:37:56+00:00",
    "liveness": "alive",
-   "liveness_detail": "catalog URL redirected and the final page loaded",
+   "liveness_detail": "catalog URL loaded",
    "homepage": "https://www.forager.ai/",
-   "logo_url": "https://cdn.prod.website-files.com/5f3ce7d38b0a42cbcba07bf6/5f3cf834a3374f7acc475e92_Logo.svg",
+   "logo_url": "https://www.forager.ai/_astro/logo-hubspot-1.DZv-mpH1.svg",
    "images": [
     {
-     "url": "https://cdn.prod.website-files.com/5f3ce7d38b0a42cbcba07bf6/5f3d459bcfd92f3651681195_favicon-32x32.png",
+     "url": "https://www.forager.ai/_astro/group_18_3r6_icon.CNoNh4PH.ico",
      "kind": "icon",
      "source_page": "https://www.forager.ai/"
     },
     {
-     "url": "https://cdn.prod.website-files.com/5f3ce7d38b0a42cbcba07bf6/5f3d457505fe1a9af919018c_group_18_3r6_icon.ico",
-     "kind": "apple_touch_icon",
+     "url": "https://www.forager.ai/_astro/favicon-32x32.Bl1ejrRK.png",
+     "kind": "icon",
      "source_page": "https://www.forager.ai/"
     },
     {
-     "url": "https://cdn.prod.website-files.com/5f3ce7d38b0a42cbcba07bf6/6915e629c7bd52840885ea40_opengraph%20(1).jpg",
+     "url": "https://www.forager.ai/_astro/opengraph-1.DARhRHDb.jpg",
      "kind": "og_image",
      "source_page": "https://www.forager.ai/"
     },
     {
-     "url": "https://cdn.prod.website-files.com/5f3ce7d38b0a42cbcba07bf6/5f3cf834a3374f7acc475e92_Logo.svg",
+     "url": "https://www.forager.ai/_astro/Logo.CTDP2qaU.svg",
+     "kind": "json_ld",
+     "source_page": "https://www.forager.ai/"
+    },
+    {
+     "url": "https://www.forager.ai/_astro/logo-hubspot-1.DZv-mpH1.svg",
      "kind": "logo",
      "source_page": "https://www.forager.ai/"
     },
     {
-     "url": "https://cdn.prod.website-files.com/5f3ce7d38b0a42cbcba07bf6/6931822a2dd6e82b4ab5f4e5_logo-hubspot%20(1).svg",
+     "url": "https://www.forager.ai/_astro/clay.BI7ENeuY_Z2vDQcf.webp",
      "kind": "logo",
      "source_page": "https://www.forager.ai/"
     },
     {
-     "url": "https://cdn.prod.website-files.com/5f3ce7d38b0a42cbcba07bf6/694968e603ca60f44842f1de_clay.png",
+     "url": "https://www.forager.ai/_astro/nooks.Ds5SE83J_Z1ew5IR.webp",
      "kind": "logo",
      "source_page": "https://www.forager.ai/"
     },
     {
-     "url": "https://cdn.prod.website-files.com/5f3ce7d38b0a42cbcba07bf6/6949693d557dc571dd441275_nooks.png",
+     "url": "https://www.forager.ai/_astro/logo-andela-1.ernHU-ao.svg",
      "kind": "logo",
      "source_page": "https://www.forager.ai/"
     },
     {
-     "url": "https://cdn.prod.website-files.com/5f3ce7d38b0a42cbcba07bf6/693182354c178653ac25b4b4_logo-andela%20(1).svg",
+     "url": "https://www.forager.ai/_astro/logo-amplemarket-1.CKye5uUL.svg",
      "kind": "logo",
      "source_page": "https://www.forager.ai/"
     },
     {
-     "url": "https://cdn.prod.website-files.com/5f3ce7d38b0a42cbcba07bf6/69318237025f28c8d712e956_logo-amplemarket%20(1).svg",
+     "url": "https://www.forager.ai/_astro/Clay-logo.u-HDIZIU_1OdhE7.webp",
      "kind": "logo",
      "source_page": "https://www.forager.ai/"
     },
     {
-     "url": "https://cdn.prod.website-files.com/5f3ce7d38b0a42cbcba07bf6/691eeb857a4c5a978cebc6c5_Clay-logo.png",
+     "url": "https://www.forager.ai/_astro/better-contact.BJ6QX2vP_ZV1c4o.webp",
      "kind": "logo",
      "source_page": "https://www.forager.ai/"
     },
     {
-     "url": "https://cdn.prod.website-files.com/5f3ce7d38b0a42cbcba07bf6/694e913cd671fe91fd20d20b_better%20contact.png",
+     "url": "https://www.forager.ai/_astro/adnela-logo.8SV4LVKw.svg",
      "kind": "logo",
      "source_page": "https://www.forager.ai/"
     },
     {
-     "url": "https://cdn.prod.website-files.com/5f3ce7d38b0a42cbcba07bf6/691eeb858d2ea581d3873855_adnela-logo.svg",
+     "url": "https://www.forager.ai/_astro/orbital-logo-full.sINkx5CX_Z1bpOhc.webp",
      "kind": "logo",
      "source_page": "https://www.forager.ai/"
     },
     {
-     "url": "https://cdn.prod.website-files.com/5f3ce7d38b0a42cbcba07bf6/6a356e521cc38736b17b1e97_orbital%20logo%20full.png",
-     "kind": "logo",
-     "source_page": "https://www.forager.ai/"
+     "url": "https://www.forager.ai/og/privacy.png",
+     "kind": "og_image",
+     "source_page": "https://www.forager.ai/privacy"
     },
     {
      "url": "https://app.forager.ai/logo.svg",
      "kind": "icon",
      "source_page": "https://app.forager.ai/privacy/data-removal"
+    },
+    {
+     "url": "https://www.forager.ai/og/contact-us.png",
+     "kind": "og_image",
+     "source_page": "https://www.forager.ai/contact-us"
+    },
+    {
+     "url": "https://www.forager.ai/og/consumer-rights-form.png",
+     "kind": "og_image",
+     "source_page": "https://www.forager.ai/consumer-rights-form"
     }
    ],
    "theme_color": null,
    "languages": [
     "en"
    ],
-   "legal_name": null,
+   "legal_name": "Forager",
    "search": {
     "available": false,
     "method": "none",
@@ -40926,7 +40988,7 @@
     "login_wall": null
    },
    "removal": {
-    "url": "https://www.forager.ai/privacy-policy",
+    "url": "https://www.forager.ai/privacy",
     "final_url": "https://www.forager.ai/privacy",
     "http_status": 200,
     "kinds": [
@@ -40962,20 +41024,16 @@
       "type": "text",
       "canonical": "email",
       "required": true,
-      "autocomplete": null,
+      "autocomplete": "username",
       "placeholder": "Email Address or Username"
      }
     ],
     "csrf_field_name": null,
     "requires_profile_url": null,
     "captcha": {
-     "provider": "turnstile",
+     "provider": null,
      "sitekey": null,
-     "pages": [
-      "https://www.forager.ai/",
-      "https://www.forager.ai/privacy",
-      "https://www.forager.ai/contact-us"
-     ]
+     "pages": []
     },
     "consent_vendor": null,
     "success_text": null,
@@ -41009,7 +41067,7 @@
      "final_url": "https://www.forager.ai/",
      "status": 200,
      "role": "home",
-     "title": "Forager | 200M+ Verified Mobile Numbers & Contact Data",
+     "title": "Forager.ai | B2B Contact Data API & Verified Mobile Numbers",
      "liveness": "alive"
     },
     {
@@ -41017,23 +41075,15 @@
      "final_url": "https://www.forager.ai/",
      "status": 200,
      "role": "home",
-     "title": "Forager | 200M+ Verified Mobile Numbers & Contact Data",
-     "liveness": "alive"
-    },
-    {
-     "url": "https://www.forager.ai/privacy-policy",
-     "final_url": "https://www.forager.ai/privacy",
-     "status": 200,
-     "role": "catalog",
-     "title": "Privacy policy",
+     "title": "Forager.ai | B2B Contact Data API & Verified Mobile Numbers",
      "liveness": "alive"
     },
     {
      "url": "https://www.forager.ai/privacy",
      "final_url": "https://www.forager.ai/privacy",
      "status": 200,
-     "role": "privacy",
-     "title": "Privacy policy",
+     "role": "catalog",
+     "title": "Privacy Policy | Forager",
      "liveness": "alive"
     },
     {
@@ -41065,7 +41115,15 @@
      "final_url": "https://www.forager.ai/contact-us",
      "status": 200,
      "role": "contact",
-     "title": "Contact us",
+     "title": "Contact Forager.ai | Sales and Support",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.forager.ai/consumer-rights-form",
+     "final_url": "https://www.forager.ai/consumer-rights-form",
+     "status": 200,
+     "role": "legal",
+     "title": "Consumer Rights Request Form | Forager",
      "liveness": "alive"
     }
    ]
@@ -43610,9 +43668,9 @@
    "name": "ID5 Technology Ltd",
    "category": "other",
    "domain": "id5.io",
-   "checked_at": "2026-10-12T23:18:14+00:00",
+   "checked_at": "2026-10-29T20:37:58+00:00",
    "liveness": "alive",
-   "liveness_detail": "catalog URL redirected and the final page loaded",
+   "liveness_detail": "catalog URL loaded",
    "homepage": "https://id5.io/",
    "logo_url": "https://id5.io/apple-touch-icon.png",
    "images": [
@@ -43654,7 +43712,7 @@
     "login_wall": null
    },
    "removal": {
-    "url": "https://id5.io/platform-privacy-policy/",
+    "url": "https://id5.io/trust/platform-privacy-policy",
     "final_url": "https://id5.io/trust/platform-privacy-policy",
     "http_status": 200,
     "kinds": [
@@ -43732,18 +43790,10 @@
      "liveness": "alive"
     },
     {
-     "url": "https://id5.io/platform-privacy-policy/",
-     "final_url": "https://id5.io/trust/platform-privacy-policy",
-     "status": 200,
-     "role": "catalog",
-     "title": "ID5 Platform Privacy Policy - ID5",
-     "liveness": "alive"
-    },
-    {
      "url": "https://id5.io/trust/platform-privacy-policy",
      "final_url": "https://id5.io/trust/platform-privacy-policy",
      "status": 200,
-     "role": "privacy",
+     "role": "catalog",
      "title": "ID5 Platform Privacy Policy - ID5",
      "liveness": "alive"
     },
@@ -43758,10 +43808,10 @@
     {
      "url": "https://id5.io/legal/agreements/v4.3%20ID5%20Platform%20Privacy%20Policy.pdf",
      "final_url": "https://id5.io/legal/agreements/v4.3%20ID5%20Platform%20Privacy%20Policy.pdf",
-     "status": 200,
+     "status": 404,
      "role": "legal",
-     "title": "",
-     "liveness": "alive"
+     "title": "Page Not Found - ID5",
+     "liveness": "dead"
     },
     {
      "url": "https://id5.io/contact",
@@ -43778,6 +43828,14 @@
      "role": "legal",
      "title": "Terms of Use - ID5",
      "liveness": "alive"
+    },
+    {
+     "url": "https://id5.io/legal/trust/ID5%20Website%20and%20Wiki%20Terms%20of%20Use%2020260127.pdf",
+     "final_url": "https://id5.io/legal/trust/ID5%20Website%20and%20Wiki%20Terms%20of%20Use%2020260127.pdf",
+     "status": 200,
+     "role": "legal",
+     "title": "",
+     "liveness": "alive"
     }
    ]
   },
@@ -43787,12 +43845,17 @@
    "name": "iLeads.com, LLC",
    "category": "other",
    "domain": "ileads.com",
-   "checked_at": "2026-10-12T23:18:22+00:00",
+   "checked_at": "2026-10-29T20:37:55+00:00",
    "liveness": "alive",
-   "liveness_detail": "catalog URL redirected and the final page loaded",
+   "liveness_detail": "catalog URL loaded",
    "homepage": "https://ileads.com/",
    "logo_url": "https://ileads.com/logos/ileads.png",
    "images": [
+    {
+     "url": "https://ileads.com/favicon.ico?favicon.1-j64p1wq3lem.ico",
+     "kind": "icon",
+     "source_page": "https://ileads.com/"
+    },
     {
      "url": "https://ileads.com/icon.svg?icon.3-xaa40almtrq.svg",
      "kind": "icon",
@@ -43892,6 +43955,7 @@
       "autocomplete": "address-level1",
       "placeholder": null,
       "options": [
+       "State",
        "AL",
        "AK",
        "AZ",
@@ -43921,7 +43985,27 @@
        "NE",
        "NV",
        "NH",
-       "NJ"
+       "NJ",
+       "NM",
+       "NY",
+       "NC",
+       "ND",
+       "OH",
+       "OK",
+       "OR",
+       "PA",
+       "RI",
+       "SC",
+       "SD",
+       "TN",
+       "TX",
+       "UT",
+       "VT",
+       "VA",
+       "WA",
+       "WV",
+       "WI",
+       "WY"
       ]
      },
      {
@@ -43963,8 +44047,8 @@
     "login_wall": null
    },
    "removal": {
-    "url": "https://ileads.com/company/privacy-policy/#9",
-    "final_url": "https://ileads.com/privacy#9",
+    "url": "https://ileads.com/privacy",
+    "final_url": "https://ileads.com/privacy",
     "http_status": 200,
     "kinds": [
      "opt_out"
@@ -43982,7 +44066,7 @@
      {
       "email": "dnc@ileads.com",
       "confidence": "uncertain",
-      "source_url": "https://ileads.com/privacy#9"
+      "source_url": "https://ileads.com/privacy"
      }
     ],
     "phones": [
@@ -43996,11 +44080,9 @@
     "csrf_field_name": null,
     "requires_profile_url": null,
     "captcha": {
-     "provider": "turnstile",
+     "provider": null,
      "sitekey": null,
-     "pages": [
-      "https://ileads.com/privacy#9"
-     ]
+     "pages": []
     },
     "consent_vendor": null,
     "success_text": null,
@@ -44013,7 +44095,7 @@
     "outcome": "none"
    },
    "legal": {
-    "privacy_policy_url": "https://ileads.com/privacy#9",
+    "privacy_policy_url": "https://ileads.com/privacy",
     "terms_url": "https://ileads.com/terms",
     "automation_prohibited": null,
     "automation_clause": null,
@@ -44039,25 +44121,17 @@
     },
     {
      "url": "https://www.ileads.com/",
-     "final_url": "https://ileads.com",
+     "final_url": "https://ileads.com/",
      "status": 200,
      "role": "home",
      "title": "iLeads — Find the opportunities hiding in your data",
      "liveness": "alive"
     },
     {
-     "url": "https://ileads.com/company/privacy-policy/#9",
-     "final_url": "https://ileads.com/privacy#9",
+     "url": "https://ileads.com/privacy",
+     "final_url": "https://ileads.com/privacy",
      "status": 200,
      "role": "catalog",
-     "title": "Privacy Policy | iLeads",
-     "liveness": "alive"
-    },
-    {
-     "url": "https://ileads.com/privacy#9",
-     "final_url": "https://ileads.com/privacy#9",
-     "status": 200,
-     "role": "privacy",
      "title": "Privacy Policy | iLeads",
      "liveness": "alive"
     },
@@ -59284,7 +59358,7 @@
    "name": "Samba TV, Inc.",
    "category": "other",
    "domain": "samba.com",
-   "checked_at": "2026-10-28T07:51:28+00:00",
+   "checked_at": "2026-10-29T20:39:23+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -60608,9 +60682,9 @@
    "name": "Semcasting, Inc.",
    "category": "other",
    "domain": "semcasting.com",
-   "checked_at": "2026-10-12T23:25:37+00:00",
+   "checked_at": "2026-10-29T20:38:06+00:00",
    "liveness": "alive",
-   "liveness_detail": "catalog URL redirected and the final page loaded",
+   "liveness_detail": "catalog URL loaded",
    "homepage": "https://www.semcasting.com/",
    "logo_url": "https://www.semcasting.com/hubfs/static/brand/logo-white.svg",
    "images": [
@@ -60667,7 +60741,7 @@
     "login_wall": null
    },
    "removal": {
-    "url": "https://www.semcasting.com/privacy-choice",
+    "url": "https://www.semcasting.com/privacy_choice",
     "final_url": "https://www.semcasting.com/privacy_choice",
     "http_status": 200,
     "kinds": [
@@ -60782,18 +60856,10 @@
      "liveness": "alive"
     },
     {
-     "url": "https://www.semcasting.com/privacy-choice",
-     "final_url": "https://www.semcasting.com/privacy_choice",
-     "status": 200,
-     "role": "catalog",
-     "title": "Privacy Policy Overview | Data Collection and Usage | Semcasting",
-     "liveness": "alive"
-    },
-    {
      "url": "https://www.semcasting.com/privacy_choice",
      "final_url": "https://www.semcasting.com/privacy_choice",
      "status": 200,
-     "role": "privacy",
+     "role": "catalog",
      "title": "Privacy Policy Overview | Data Collection and Usage | Semcasting",
      "liveness": "alive"
     },
@@ -60828,6 +60894,14 @@
      "role": "privacy",
      "title": "Privacy Policy Overview | Data Collection and Usage | Semcasting",
      "liveness": "alive"
+    },
+    {
+     "url": "https://www.semcasting.com/contact_us?hsLang=en",
+     "final_url": "https://www.semcasting.com/contactus?hsLang=en",
+     "status": 200,
+     "role": "contact",
+     "title": "Contact Us | Talk About Campaign Goals and Challenges | Semcasting",
+     "liveness": "alive"
     }
    ]
   },
@@ -60837,9 +60911,9 @@
    "name": "Site Impact, Inc",
    "category": "other",
    "domain": "siteimpact.com",
-   "checked_at": "2026-10-12T23:25:47+00:00",
+   "checked_at": "2026-10-29T20:38:05+00:00",
    "liveness": "alive",
-   "liveness_detail": "catalog URL redirected and the final page loaded",
+   "liveness_detail": "catalog URL loaded",
    "homepage": "https://siteimpact.com/",
    "logo_url": "https://cdn.prod.website-files.com/69de69f9f87b522550dc6def/6a0ad2618d3c94d59d68196e_Copy%20of%20si-logo-1920%203.svg",
    "images": [
@@ -61097,7 +61171,7 @@
     "login_wall": null
    },
    "removal": {
-    "url": "https://www.siteimpact.com/privacypolicy.php",
+    "url": "https://siteimpact.com/privacy-policy",
     "final_url": "https://siteimpact.com/privacy-policy",
     "http_status": 200,
     "kinds": [
@@ -61202,18 +61276,10 @@
      "liveness": "alive"
     },
     {
-     "url": "https://www.siteimpact.com/privacypolicy.php",
-     "final_url": "https://siteimpact.com/privacy-policy",
-     "status": 200,
-     "role": "catalog",
-     "title": "Privacy Policy | Site Impact",
-     "liveness": "alive"
-    },
-    {
      "url": "https://siteimpact.com/privacy-policy",
      "final_url": "https://siteimpact.com/privacy-policy",
      "status": 200,
-     "role": "privacy",
+     "role": "catalog",
      "title": "Privacy Policy | Site Impact",
      "liveness": "alive"
     },
@@ -62061,65 +62127,25 @@
    "name": "Spy Dialer",
    "category": "other",
    "domain": "spydialer.com",
-   "checked_at": "2026-10-12T23:26:20+00:00",
+   "checked_at": "2026-10-29T20:38:33+00:00",
    "liveness": "alive",
-   "liveness_detail": "catalog URL redirected and the final page loaded",
-   "homepage": "https://spydialer.com/",
-   "logo_url": "https://spydialer.com/Images/Spy-Dialer-Reverse-Phone-Lookup-Logo.png",
+   "liveness_detail": "catalog URL loaded",
+   "homepage": "https://www.spydialer.com/",
+   "logo_url": "https://www.spydialer.com/Images/64px-Fox_News_Channel_logo.svg.png",
    "images": [
     {
-     "url": "https://spydialer.com/favicon.ico",
+     "url": "https://www.spydialer.com/favicon.ico",
      "kind": "icon",
-     "source_page": "https://spydialer.com/"
+     "source_page": "https://www.spydialer.com/"
     },
     {
      "url": "https://spydialer.com/images/spy-dialer-icon-200x200.jpg",
      "kind": "og_image",
-     "source_page": "https://spydialer.com/"
+     "source_page": "https://www.spydialer.com/"
     },
     {
      "url": "https://www.spydialer.com/Images/Spy-Dialer-Reverse-Phone-Lookup-Logo.png",
      "kind": "json_ld",
-     "source_page": "https://spydialer.com/"
-    },
-    {
-     "url": "https://spydialer.com/Images/Spy-Dialer-Reverse-Phone-Lookup-Logo.png",
-     "kind": "logo",
-     "source_page": "https://spydialer.com/"
-    },
-    {
-     "url": "https://spydialer.com/Images/64px-Fox_News_Channel_logo.svg.png",
-     "kind": "logo",
-     "source_page": "https://spydialer.com/"
-    },
-    {
-     "url": "https://spydialer.com/Images/search-quarry-logo.png",
-     "kind": "logo",
-     "source_page": "https://spydialer.com/"
-    },
-    {
-     "url": "https://spydialer.com/Images/mens-journal-logo-64px.png",
-     "kind": "logo",
-     "source_page": "https://spydialer.com/"
-    },
-    {
-     "url": "https://spydialer.com/Images/wikihow-logo-64px.png",
-     "kind": "logo",
-     "source_page": "https://spydialer.com/"
-    },
-    {
-     "url": "https://spydialer.com/Images/techjunkie-logo-64px.png",
-     "kind": "logo",
-     "source_page": "https://spydialer.com/"
-    },
-    {
-     "url": "https://spydialer.com/Images/dominion-post-logo.png",
-     "kind": "logo",
-     "source_page": "https://spydialer.com/"
-    },
-    {
-     "url": "https://www.spydialer.com/favicon.ico",
-     "kind": "icon",
      "source_page": "https://www.spydialer.com/"
     },
     {
@@ -62156,11 +62182,6 @@
      "url": "https://www.spydialer.com/images/Spy-Dialer-Reverse-Phone-Lookup-Small-Logo.png",
      "kind": "logo",
      "source_page": "https://www.spydialer.com/consumers/"
-    },
-    {
-     "url": "https://spydialer.com/images/Spy-Dialer-Reverse-Phone-Lookup-Small-Logo.png",
-     "kind": "logo",
-     "source_page": "https://spydialer.com/do-not-sell"
     }
    ],
    "theme_color": null,
@@ -62171,8 +62192,8 @@
    "search": {
     "available": true,
     "method": "http_form_post",
-    "page_url": "https://spydialer.com/",
-    "form_action": "https://spydialer.com/",
+    "page_url": "https://www.spydialer.com/",
+    "form_action": "https://www.spydialer.com/",
     "inputs": [
      {
       "name": "__LASTFOCUS",
@@ -62318,6 +62339,7 @@
       "autocomplete": null,
       "placeholder": null,
       "options": [
+       "STATE",
        "ALL",
        "AL",
        "AK",
@@ -62347,7 +62369,29 @@
        "MO",
        "MT",
        "NE",
-       "NV"
+       "NV",
+       "NH",
+       "NJ",
+       "NM",
+       "NY",
+       "NC",
+       "ND",
+       "OH",
+       "OK",
+       "OR",
+       "PA",
+       "RI",
+       "SC",
+       "SD",
+       "TN",
+       "TX",
+       "UT",
+       "VT",
+       "VA",
+       "WA",
+       "WV",
+       "WI",
+       "WY"
       ]
      },
      {
@@ -62382,6 +62426,7 @@
       "autocomplete": null,
       "placeholder": null,
       "options": [
+       "State",
        "AL",
        "AK",
        "AZ",
@@ -62411,17 +62456,38 @@
        "MT",
        "NE",
        "NV",
-       "NH"
+       "NH",
+       "NJ",
+       "NM",
+       "NY",
+       "NC",
+       "ND",
+       "OH",
+       "OK",
+       "OR",
+       "PA",
+       "RI",
+       "SC",
+       "SD",
+       "TN",
+       "TX",
+       "UT",
+       "VT",
+       "VA",
+       "WA",
+       "WV",
+       "WI",
+       "WY"
       ]
      }
     ],
-    "url_pattern": "https://spydialer.com/",
+    "url_pattern": "https://www.spydialer.com/",
     "directory_prefixes": [],
     "paywall": null,
     "login_wall": null
    },
    "removal": {
-    "url": "https://www.spydialer.com/optout.aspx",
+    "url": "https://www.spydialer.com/consumers/",
     "final_url": "https://www.spydialer.com/consumers/",
     "http_status": 200,
     "kinds": [
@@ -62429,16 +62495,9 @@
      "do_not_sell"
     ],
     "channels": [
-     "email",
      "phone"
     ],
-    "emails": [
-     {
-      "email": "support@spydialer.com",
-      "confidence": "uncertain",
-      "source_url": "https://spydialer.com/privacy"
-     }
-    ],
+    "emails": [],
     "phones": [
      "(866) 834-2579"
     ],
@@ -62452,7 +62511,7 @@
      "sitekey": "6Lfo9tIrAAAAAPHnHsd2C1VRdHun9vmWMmiik8Fb",
      "pages": [
       "https://www.spydialer.com/consumers/business.aspx",
-      "https://spydialer.com/contact.aspx"
+      "https://www.spydialer.com/contact.aspx"
      ]
     },
     "consent_vendor": null,
@@ -62466,7 +62525,7 @@
     "outcome": "none"
    },
    "legal": {
-    "privacy_policy_url": "https://spydialer.com/privacy",
+    "privacy_policy_url": "https://www.spydialer.com/privacy",
     "terms_url": null,
     "automation_prohibited": null,
     "automation_clause": null,
@@ -62488,7 +62547,7 @@
    "pages": [
     {
      "url": "https://spydialer.com/",
-     "final_url": "https://spydialer.com/",
+     "final_url": "https://www.spydialer.com/",
      "status": 200,
      "role": "home",
      "title": "Free Phone Number Lookup | SpyDialer",
@@ -62503,7 +62562,7 @@
      "liveness": "alive"
     },
     {
-     "url": "https://www.spydialer.com/optout.aspx",
+     "url": "https://www.spydialer.com/consumers/",
      "final_url": "https://www.spydialer.com/consumers/",
      "status": 200,
      "role": "catalog",
@@ -62511,16 +62570,8 @@
      "liveness": "alive"
     },
     {
-     "url": "https://www.spydialer.com/consumers/",
-     "final_url": "https://www.spydialer.com/consumers/",
-     "status": 200,
-     "role": "other",
-     "title": "Remove My Info | Spy Dialer",
-     "liveness": "alive"
-    },
-    {
      "url": "https://spydialer.com/do-not-sell",
-     "final_url": "https://spydialer.com/do-not-sell",
+     "final_url": "https://www.spydialer.com/do-not-sell",
      "status": 200,
      "role": "opt_out",
      "title": "Do Not Sell or Share My Personal Information | Spy Dialer",
@@ -62536,7 +62587,7 @@
     },
     {
      "url": "https://spydialer.com/privacy",
-     "final_url": "https://spydialer.com/privacy",
+     "final_url": "https://www.spydialer.com/privacy",
      "status": 200,
      "role": "privacy",
      "title": "Privacy Notice | Spy Dialer",
@@ -62544,10 +62595,18 @@
     },
     {
      "url": "https://spydialer.com/contact.aspx",
-     "final_url": "https://spydialer.com/contact.aspx",
+     "final_url": "https://www.spydialer.com/contact.aspx",
      "status": 200,
      "role": "other",
      "title": "Contact Us | Spy Dialer",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://spydialer.com/terms.aspx",
+     "final_url": "https://www.spydialer.com/terms.aspx",
+     "status": 200,
+     "role": "other",
+     "title": "Terms & Conditions | Spy Dialer",
      "liveness": "alive"
     }
    ]
@@ -63620,9 +63679,9 @@
    "name": "TennHelp",
    "category": "other",
    "domain": "tennhelp.com",
-   "checked_at": "2026-10-12T23:26:57+00:00",
+   "checked_at": "2026-10-29T20:38:09+00:00",
    "liveness": "alive",
-   "liveness_detail": "catalog URL redirected and the final page loaded",
+   "liveness_detail": "catalog URL loaded",
    "homepage": "https://tennhelp.com/",
    "logo_url": "https://www.tennhelp.com/images/white-pages.png",
    "images": [
@@ -63780,7 +63839,7 @@
     "login_wall": null
    },
    "removal": {
-    "url": "https://www.tennhelp.com/public-resources/change-listing.html",
+    "url": "https://www.tennhelp.com/public-resources/change-listing",
     "final_url": "https://www.tennhelp.com/public-resources/change-listing",
     "http_status": 200,
     "kinds": [
@@ -63844,7 +63903,7 @@
      "liveness": "alive"
     },
     {
-     "url": "https://www.tennhelp.com/public-resources/change-listing.html",
+     "url": "https://www.tennhelp.com/public-resources/change-listing",
      "final_url": "https://www.tennhelp.com/public-resources/change-listing",
      "status": 200,
      "role": "catalog",
@@ -64258,9 +64317,9 @@
    "name": "The Data Group",
    "category": "other",
    "domain": "thedatagroup.com",
-   "checked_at": "2026-10-12T23:27:06+00:00",
+   "checked_at": "2026-10-29T20:38:08+00:00",
    "liveness": "alive",
-   "liveness_detail": "catalog URL redirected and the final page loaded",
+   "liveness_detail": "catalog URL loaded",
    "homepage": "https://thedatagroup.com/",
    "logo_url": "https://thedatagroup.com/wp-content/uploads/logo-primary.svg",
    "images": [
@@ -64342,7 +64401,7 @@
     "login_wall": null
    },
    "removal": {
-    "url": "https://thedatagroup.com/california-consumer-privacy-act/",
+    "url": "https://thedatagroup.com/privacy/california-consumer-privacy-act/",
     "final_url": "https://thedatagroup.com/privacy/california-consumer-privacy-act/",
     "http_status": 200,
     "kinds": [
@@ -64385,13 +64444,11 @@
     "csrf_field_name": null,
     "requires_profile_url": null,
     "captcha": {
-     "provider": "hcaptcha",
+     "provider": "recaptcha_v2",
      "sitekey": null,
      "pages": [
       "https://thedatagroup.com/privacy/california-consumer-privacy-act/",
       "https://thedatagroup.com/privacy/consumer-optout-request-form/",
-      "https://thedatagroup.com/privacy/california-consumer-privacy-act-faq/",
-      "https://thedatagroup.com/privacy/",
       "https://thedatagroup.com/contact-us/"
      ]
     },
@@ -64407,7 +64464,7 @@
    },
    "legal": {
     "privacy_policy_url": "https://thedatagroup.com/privacy/california-consumer-privacy-act/",
-    "terms_url": null,
+    "terms_url": "https://thedatagroup.com/terms-condition/",
     "automation_prohibited": null,
     "automation_clause": null,
     "residency": [
@@ -64423,7 +64480,8 @@
     "authorized_agent": null,
     "data_categories": [
      "identifiers",
-     "internet_activity"
+     "internet_activity",
+     "employment"
     ]
    },
    "pages": [
@@ -64444,18 +64502,10 @@
      "liveness": "alive"
     },
     {
-     "url": "https://thedatagroup.com/california-consumer-privacy-act/",
-     "final_url": "https://thedatagroup.com/privacy/california-consumer-privacy-act/",
-     "status": 200,
-     "role": "catalog",
-     "title": "California Consumer Privacy Act - The Data Group",
-     "liveness": "alive"
-    },
-    {
      "url": "https://thedatagroup.com/privacy/california-consumer-privacy-act/",
      "final_url": "https://thedatagroup.com/privacy/california-consumer-privacy-act/",
      "status": 200,
-     "role": "privacy",
+     "role": "catalog",
      "title": "California Consumer Privacy Act - The Data Group",
      "liveness": "alive"
     },
@@ -64489,6 +64539,14 @@
      "status": 200,
      "role": "contact",
      "title": "Contact Us - The Data Group",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://thedatagroup.com/terms-condition/",
+     "final_url": "https://thedatagroup.com/terms-condition/",
+     "status": 200,
+     "role": "legal",
+     "title": "Terms and Conditions of Use | The Data Group",
      "liveness": "alive"
     }
    ]
@@ -64720,7 +64778,7 @@
    "name": "Trestle Solutions, Inc.",
    "category": "other",
    "domain": "trestleiq.com",
-   "checked_at": "2026-10-12T23:27:21+00:00",
+   "checked_at": "2026-10-29T20:38:02+00:00",
    "liveness": "robots_disallowed",
    "liveness_detail": "robots.txt disallows this client",
    "homepage": "https://trestleiq.com/",
@@ -64741,7 +64799,7 @@
     "login_wall": null
    },
    "removal": {
-    "url": "https://trestleiq.com/privacy-policy-2022/",
+    "url": "https://trestleiq.com/privacy-policy/",
     "final_url": null,
     "http_status": null,
     "kinds": [
@@ -64797,7 +64855,7 @@
      "liveness": "robots_disallowed"
     },
     {
-     "url": "https://trestleiq.com/privacy-policy-2022/",
+     "url": "https://trestleiq.com/privacy-policy/",
      "final_url": null,
      "status": null,
      "role": "catalog",
@@ -70107,9 +70165,9 @@
    "name": "Archives.com (Ancestry)",
    "category": "people-search",
    "domain": "archives.com",
-   "checked_at": "2026-10-12T23:11:33+00:00",
-   "liveness": "error",
-   "liveness_detail": "catalog URL was not fetched",
+   "checked_at": "2026-10-29T20:37:43+00:00",
+   "liveness": "alive",
+   "liveness_detail": "catalog URL loaded",
    "homepage": "https://www.archives.com/",
    "logo_url": "https://www.ancestrycdn.com/ui-static/i/logo/ancestry.svg",
    "images": [
@@ -70236,6 +70294,7 @@
       "autocomplete": null,
       "placeholder": null,
       "options": [
+       "All States",
        "Alabama",
        "Alaska",
        "Arizona",
@@ -70265,7 +70324,28 @@
        "Montana",
        "Nebraska",
        "Nevada",
-       "New Hampshire"
+       "New Hampshire",
+       "New Jersey",
+       "New Mexico",
+       "New York",
+       "North Carolina",
+       "North Dakota",
+       "Ohio",
+       "Oklahoma",
+       "Oregon",
+       "Pennsylvania",
+       "Rhode Island",
+       "South Carolina",
+       "South Dakota",
+       "Tennessee",
+       "Texas",
+       "Utah",
+       "Vermont",
+       "Virginia",
+       "Washington",
+       "West Virginia",
+       "Wisconsin",
+       "Wyoming"
       ]
      },
      {
@@ -70282,7 +70362,14 @@
       "canonical": "birth_year",
       "required": false,
       "autocomplete": null,
-      "placeholder": null
+      "placeholder": null,
+      "options": [
+       "0",
+       "1",
+       "2",
+       "5",
+       "10"
+      ]
      },
      {
       "name": "DeathYear",
@@ -70298,7 +70385,14 @@
       "canonical": null,
       "required": false,
       "autocomplete": null,
-      "placeholder": null
+      "placeholder": null,
+      "options": [
+       "0",
+       "1",
+       "2",
+       "5",
+       "10"
+      ]
      }
     ],
     "url_pattern": "https://www.archives.com/",
@@ -70309,13 +70403,14 @@
     "login_wall": null
    },
    "removal": {
-    "url": "https://www.archives.com/?_act=Optout",
-    "final_url": null,
-    "http_status": null,
+    "url": "https://www.archives.com/optout",
+    "final_url": "https://www.archives.com/optout",
+    "http_status": 200,
     "kinds": [
      "opt_out"
     ],
     "channels": [
+     "web_form",
      "phone"
     ],
     "emails": [],
@@ -70324,11 +70419,148 @@
     ],
     "postal_address": null,
     "portal": null,
-    "form_fields": [],
-    "csrf_field_name": null,
+    "form_fields": [
+     {
+      "name": "OptoutFirstName",
+      "type": "text",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "OptoutMiddleName",
+      "type": "text",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "OptoutLastName",
+      "type": "text",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "OptoutAddress1Display",
+      "type": "text",
+      "canonical": "street_address",
+      "required": false,
+      "autocomplete": "off",
+      "placeholder": "e.g. 1600 Pennsylvania Ave NW, Washington, DC"
+     },
+     {
+      "name": "OptoutAddress1",
+      "type": "text",
+      "canonical": "street_address",
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "OptoutAddress2Display",
+      "type": "text",
+      "canonical": null,
+      "required": false,
+      "autocomplete": "off",
+      "placeholder": "e.g. 1600 Pennsylvania Ave NW, Washington, DC"
+     },
+     {
+      "name": "OptoutAddress3Display",
+      "type": "text",
+      "canonical": null,
+      "required": false,
+      "autocomplete": "off",
+      "placeholder": "e.g. 1600 Pennsylvania Ave NW, Washington, DC"
+     },
+     {
+      "name": "OptoutRegion",
+      "type": "select",
+      "canonical": "region",
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "OptoutPhoneNumber",
+      "type": "text",
+      "canonical": "phone",
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "OptoutEmail",
+      "type": "text",
+      "canonical": "email",
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "CopyValues",
+      "type": "checkbox",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "FirstName",
+      "type": "text",
+      "canonical": "first_name",
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "LastName",
+      "type": "text",
+      "canonical": "last_name",
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "Email",
+      "type": "text",
+      "canonical": "email",
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "EmailConfirm",
+      "type": "text",
+      "canonical": "email",
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "Reason",
+      "type": "text",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "AgreeToOptoutPolicy",
+      "type": "checkbox",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     }
+    ],
+    "csrf_field_name": "__RequestVerificationToken",
     "requires_profile_url": null,
     "captcha": {
-     "provider": "recaptcha_v3",
+     "provider": "recaptcha_v2",
      "sitekey": null,
      "pages": [
       "https://www.archives.com/",
@@ -70340,8 +70572,8 @@
     "consent_vendor": null,
     "success_text": null,
     "suppression_not_deletion": null,
-    "processing_days": null,
-    "processing_text": null
+    "processing_days": 30,
+    "processing_text": "Your request will be processed within 30 days"
    },
    "bot_defense": {
     "vendor": null,
@@ -70384,7 +70616,7 @@
      "url": "https://www.archives.com/optout",
      "final_url": "https://www.archives.com/optout",
      "status": 200,
-     "role": "opt_out",
+     "role": "catalog",
      "title": "Opt-Out Policy - Archives",
      "liveness": "alive"
     },
@@ -79196,9 +79428,9 @@
    "name": "Persopo",
    "category": "people-search",
    "domain": "persopo.com",
-   "checked_at": "2026-10-12T23:23:03+00:00",
+   "checked_at": "2026-10-29T20:37:58+00:00",
    "liveness": "alive",
-   "liveness_detail": "catalog URL redirected and the final page loaded",
+   "liveness_detail": "catalog URL loaded",
    "homepage": "https://persopo.com/",
    "logo_url": "https://persopo.com/public/icons/apple-touch-icon.png",
    "images": [
@@ -79292,7 +79524,29 @@
        "MO",
        "MT",
        "NE",
-       "NV"
+       "NV",
+       "NH",
+       "NJ",
+       "NM",
+       "NY",
+       "NC",
+       "ND",
+       "OH",
+       "OK",
+       "OR",
+       "PA",
+       "RI",
+       "SC",
+       "SD",
+       "TN",
+       "TX",
+       "UT",
+       "VT",
+       "VA",
+       "WA",
+       "WV",
+       "WI",
+       "WY"
       ]
      }
     ],
@@ -79302,7 +79556,7 @@
     "login_wall": null
    },
    "removal": {
-    "url": "http://info.persopo.com/opt-out.html",
+    "url": "https://persopo.com/opt-out.html",
     "final_url": "https://persopo.com/opt-out.html",
     "http_status": 200,
     "kinds": [
@@ -79368,18 +79622,10 @@
      "liveness": "error"
     },
     {
-     "url": "http://info.persopo.com/opt-out.html",
-     "final_url": "https://persopo.com/opt-out.html",
-     "status": 200,
-     "role": "catalog",
-     "title": "Opt Out - Persopo People Search",
-     "liveness": "alive"
-    },
-    {
      "url": "https://persopo.com/opt-out.html",
      "final_url": "https://persopo.com/opt-out.html",
      "status": 200,
-     "role": "opt_out",
+     "role": "catalog",
      "title": "Opt Out - Persopo People Search",
      "liveness": "alive"
     },
@@ -79415,9 +79661,9 @@
    "name": "Pipl, Inc.",
    "category": "people-search",
    "domain": "pipl.com",
-   "checked_at": "2026-10-12T23:23:08+00:00",
+   "checked_at": "2026-10-29T20:38:01+00:00",
    "liveness": "alive",
-   "liveness_detail": "catalog URL redirected and the final page loaded",
+   "liveness_detail": "catalog URL loaded",
    "homepage": "https://pipl.com/",
    "logo_url": "https://pipl.com/hubfs/pipl-logo-white%20copy.svg",
    "images": [
@@ -79586,6 +79832,7 @@
       "autocomplete": null,
       "placeholder": null,
       "options": [
+       "Please Select",
        "Deletion",
        "Disclosure",
        "Disclosure + Deletion"
@@ -79632,7 +79879,7 @@
     "login_wall": null
    },
    "removal": {
-    "url": "https://pipl.com/resources/privacy-documents/privacy-policy",
+    "url": "https://pipl.com/privacy-center",
     "final_url": "https://pipl.com/privacy-center",
     "http_status": 200,
     "kinds": [
@@ -79647,6 +79894,16 @@
       "email": "privacy@pipl.com",
       "confidence": "extracted",
       "source_url": "https://pipl.com/privacy-center"
+     },
+     {
+      "email": "support@pipl.com",
+      "confidence": "uncertain",
+      "source_url": "https://pipl.com/product-tos"
+     },
+     {
+      "email": "legal@pipl.com",
+      "confidence": "uncertain",
+      "source_url": "https://pipl.com/product-tos"
      }
     ],
     "phones": [
@@ -79681,6 +79938,7 @@
     "automation_clause": null,
     "residency": [
      "US-CA",
+     "US",
      "EU"
     ],
     "authorized_agent": null,
@@ -79707,18 +79965,10 @@
      "liveness": "alive"
     },
     {
-     "url": "https://pipl.com/resources/privacy-documents/privacy-policy",
-     "final_url": "https://pipl.com/privacy-center",
-     "status": 200,
-     "role": "catalog",
-     "title": "Pipl | Privacy Center",
-     "liveness": "alive"
-    },
-    {
      "url": "https://pipl.com/privacy-center",
      "final_url": "https://pipl.com/privacy-center",
      "status": 200,
-     "role": "privacy",
+     "role": "catalog",
      "title": "Pipl | Privacy Center",
      "liveness": "alive"
     },
@@ -79753,6 +80003,14 @@
      "role": "other",
      "title": "Pipl | Website Terms of Service",
      "liveness": "alive"
+    },
+    {
+     "url": "https://pipl.com/product-tos",
+     "final_url": "https://pipl.com/product-tos",
+     "status": 200,
+     "role": "other",
+     "title": "Pipl | Search Terms of Service",
+     "liveness": "alive"
     }
    ]
   },
@@ -79762,9 +80020,9 @@
    "name": "PrivateEye (Confi-Chek)",
    "category": "people-search",
    "domain": "privateeye.com",
-   "checked_at": "2026-10-12T23:23:34+00:00",
+   "checked_at": "2026-10-29T20:37:59+00:00",
    "liveness": "alive",
-   "liveness_detail": "catalog URL redirected and the final page loaded",
+   "liveness_detail": "catalog URL loaded",
    "homepage": "https://privateeye.com/",
    "logo_url": "https://privateeye.com/assets/PrivateEye_logo_blue_detective_eye_276577b5-CIePyr6q.png",
    "images": [
@@ -79834,7 +80092,7 @@
     "login_wall": null
    },
    "removal": {
-    "url": "https://www.privateeye.com/static/view/optout/",
+    "url": "https://privateeye.com/removal",
     "final_url": "https://privateeye.com/removal",
     "http_status": 200,
     "kinds": [
@@ -79930,18 +80188,10 @@
      "liveness": "alive"
     },
     {
-     "url": "https://www.privateeye.com/static/view/optout/",
-     "final_url": "https://privateeye.com/removal",
-     "status": 200,
-     "role": "catalog",
-     "title": "PrivateEye.com - Find People Free | People Search by Name, Phone & Email",
-     "liveness": "alive"
-    },
-    {
      "url": "https://privateeye.com/removal",
      "final_url": "https://privateeye.com/removal",
      "status": 200,
-     "role": "opt_out",
+     "role": "catalog",
      "title": "PrivateEye.com - Find People Free | People Search by Name, Phone & Email",
      "liveness": "alive"
     },
@@ -80567,9 +80817,9 @@
    "name": "PublicRecordsNow (Confi-Chek)",
    "category": "people-search",
    "domain": "publicrecordsnow.com",
-   "checked_at": "2026-10-12T23:23:58+00:00",
-   "liveness": "error",
-   "liveness_detail": "TooManyRedirects: Exceeded 30 redirects.",
+   "checked_at": "2026-10-29T20:37:59+00:00",
+   "liveness": "alive",
+   "liveness_detail": "catalog URL loaded",
    "homepage": "https://publicrecordsnow.com/",
    "logo_url": "https://publicrecordsnow.com/og-image.jpg",
    "images": [
@@ -80585,29 +80835,20 @@
    ],
    "legal_name": "PublicRecordsNow",
    "search": {
-    "available": true,
-    "method": "http_get",
-    "page_url": "https://publicrecordsnow.com/",
-    "form_action": "https://publicrecordsnow.com/",
-    "inputs": [
-     {
-      "name": "",
-      "type": "text",
-      "canonical": "full_name",
-      "required": false,
-      "autocomplete": null,
-      "placeholder": "Enter first and last name (e.g., John Smith)"
-     }
-    ],
+    "available": false,
+    "method": "none",
+    "page_url": null,
+    "form_action": null,
+    "inputs": [],
     "url_pattern": null,
     "directory_prefixes": [],
     "paywall": null,
     "login_wall": null
    },
    "removal": {
-    "url": "https://www.publicrecordsnow.com/static/view/optout/",
-    "final_url": null,
-    "http_status": null,
+    "url": "https://publicrecordsnow.com/removal",
+    "final_url": "https://publicrecordsnow.com/removal",
+    "http_status": 200,
     "kinds": [
      "opt_out"
     ],
@@ -80665,12 +80906,12 @@
      "liveness": "alive"
     },
     {
-     "url": "https://www.publicrecordsnow.com/static/view/optout/",
-     "final_url": null,
-     "status": null,
+     "url": "https://publicrecordsnow.com/removal",
+     "final_url": "https://publicrecordsnow.com/removal",
+     "status": 200,
      "role": "catalog",
-     "title": "",
-     "liveness": "error"
+     "title": "PublicRecordsNow - People Search, Background Checks & Public Records",
+     "liveness": "alive"
     },
     {
      "url": "https://publicrecordsnow.com/people-search",
@@ -80678,14 +80919,6 @@
      "status": 200,
      "role": "other",
      "title": "People Search - Find Anyone Online | PublicRecordsNow",
-     "liveness": "alive"
-    },
-    {
-     "url": "https://publicrecordsnow.com/",
-     "final_url": "https://publicrecordsnow.com/",
-     "status": 200,
-     "role": "home",
-     "title": "PublicRecordsNow - People Search, Background Checks & Public Records",
      "liveness": "alive"
     }
    ]
@@ -82672,9 +82905,9 @@
    "name": "SmartBackgroundChecks",
    "category": "people-search",
    "domain": "smartbackgroundchecks.com",
-   "checked_at": "2026-10-12T23:25:57+00:00",
+   "checked_at": "2026-10-29T20:38:08+00:00",
    "liveness": "alive",
-   "liveness_detail": "catalog URL redirected and the final page loaded",
+   "liveness_detail": "catalog URL loaded",
    "homepage": "https://www.smartbackgroundchecks.com/",
    "logo_url": "https://www.smartbackgroundchecks.com/images/sbc_logo_trans_white.png",
    "images": [
@@ -82819,7 +83052,7 @@
     "login_wall": null
    },
    "removal": {
-    "url": "https://www.smartbackgroundchecks.com/optout",
+    "url": "https://www.smartbackgroundchecks.com/remove",
     "final_url": "https://www.smartbackgroundchecks.com/remove",
     "http_status": 200,
     "kinds": [
@@ -82982,18 +83215,10 @@
      "liveness": "alive"
     },
     {
-     "url": "https://www.smartbackgroundchecks.com/optout",
-     "final_url": "https://www.smartbackgroundchecks.com/remove",
-     "status": 200,
-     "role": "catalog",
-     "title": "Opt Out Process - SmartBackgroundChecks",
-     "liveness": "alive"
-    },
-    {
      "url": "https://www.smartbackgroundchecks.com/remove",
      "final_url": "https://www.smartbackgroundchecks.com/remove",
      "status": 200,
-     "role": "other",
+     "role": "catalog",
      "title": "Opt Out Process - SmartBackgroundChecks",
      "liveness": "alive"
     },
@@ -83027,6 +83252,14 @@
      "status": 200,
      "role": "legal",
      "title": "Terms of Use for the SmartBackgroundChecks site",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.smartbackgroundchecks.com/es/do-not-sell",
+     "final_url": "https://www.smartbackgroundchecks.com/es/do-not-sell",
+     "status": 200,
+     "role": "opt_out",
+     "title": "Do Not Sell or Share My Personal Information",
      "liveness": "alive"
     }
    ]
@@ -86381,48 +86614,200 @@
    "name": "USA-People-Search",
    "category": "people-search",
    "domain": "usa-people-search.com",
-   "checked_at": "2026-10-12T23:27:42+00:00",
-   "liveness": "robots_disallowed",
-   "liveness_detail": "robots.txt disallows this client",
-   "homepage": "https://usa-people-search.com/",
-   "logo_url": null,
-   "images": [],
-   "theme_color": null,
-   "languages": [],
-   "legal_name": null,
+   "checked_at": "2026-10-29T20:38:05+00:00",
+   "liveness": "alive",
+   "liveness_detail": "catalog URL loaded",
+   "homepage": "https://www.usa-people-search.com/",
+   "logo_url": "https://www.usa-people-search.com/images/USAPeopleSearch/sherpa-logo.png",
+   "images": [
+    {
+     "url": "https://www.usa-people-search.com/apple-touch-icon.png",
+     "kind": "apple_touch_icon",
+     "source_page": "https://www.usa-people-search.com/"
+    },
+    {
+     "url": "https://www.usa-people-search.com/favicon-32x32.png",
+     "kind": "icon",
+     "source_page": "https://www.usa-people-search.com/"
+    },
+    {
+     "url": "https://www.usa-people-search.com/favicon-16x16.png",
+     "kind": "icon",
+     "source_page": "https://www.usa-people-search.com/"
+    },
+    {
+     "url": "https://www.usa-people-search.com/safari-pinned-tab.svg",
+     "kind": "icon",
+     "source_page": "https://www.usa-people-search.com/"
+    },
+    {
+     "url": "https://www.usa-people-search.com/images/USAPeopleSearch/logo_1.gif",
+     "kind": "og_image",
+     "source_page": "https://www.usa-people-search.com/"
+    },
+    {
+     "url": "https://www.usa-people-search.com/Content/images/vector/usa-logo-vector-compr.svg",
+     "kind": "json_ld",
+     "source_page": "https://www.usa-people-search.com/"
+    },
+    {
+     "url": "https://www.usa-people-search.com/images/USAPeopleSearch/sherpa-logo.png",
+     "kind": "logo",
+     "source_page": "https://www.usa-people-search.com/"
+    }
+   ],
+   "theme_color": "#ffffff",
+   "languages": [
+    "en"
+   ],
+   "legal_name": "USA People Search",
    "search": {
-    "available": null,
-    "method": "unknown",
-    "page_url": null,
-    "form_action": null,
-    "inputs": [],
-    "url_pattern": null,
+    "available": true,
+    "method": "http_form_post",
+    "page_url": "https://www.usa-people-search.com/",
+    "form_action": "https://www.usa-people-search.com/Results/Search",
+    "inputs": [
+     {
+      "name": "_token",
+      "type": "hidden",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "IsOptOut",
+      "type": "hidden",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "Name",
+      "type": "text",
+      "canonical": "full_name",
+      "required": false,
+      "autocomplete": null,
+      "placeholder": "Full Name"
+     },
+     {
+      "name": "Location",
+      "type": "text",
+      "canonical": "city",
+      "required": false,
+      "autocomplete": null,
+      "placeholder": "City, State"
+     }
+    ],
+    "url_pattern": "https://www.usa-people-search.com/Results/Search",
     "directory_prefixes": [],
     "paywall": null,
     "login_wall": null
    },
    "removal": {
-    "url": "https://www.usa-people-search.com/manage",
-    "final_url": null,
-    "http_status": null,
+    "url": "https://www.usa-people-search.com/removal",
+    "final_url": "https://www.usa-people-search.com/removal",
+    "http_status": 200,
     "kinds": [
      "opt_out"
     ],
-    "channels": [],
+    "channels": [
+     "web_form"
+    ],
     "emails": [],
     "phones": [],
     "postal_address": null,
     "portal": null,
-    "form_fields": [],
-    "csrf_field_name": null,
+    "form_fields": [
+     {
+      "name": "user-type",
+      "type": "select",
+      "canonical": null,
+      "required": true,
+      "autocomplete": null,
+      "placeholder": null,
+      "options": [
+       "subject",
+       "agent"
+      ]
+     },
+     {
+      "name": "subject-firstname",
+      "type": "text",
+      "canonical": "first_name",
+      "required": true,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "subject-middlename",
+      "type": "text",
+      "canonical": "middle_name",
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "subject-lastname",
+      "type": "text",
+      "canonical": "last_name",
+      "required": true,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "subject-email",
+      "type": "email",
+      "canonical": "email",
+      "required": true,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "agent-firstname",
+      "type": "text",
+      "canonical": "first_name",
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "agent-lastname",
+      "type": "text",
+      "canonical": "last_name",
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "agent-email",
+      "type": "email",
+      "canonical": "email",
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "agreement",
+      "type": "checkbox",
+      "canonical": null,
+      "required": true,
+      "autocomplete": null,
+      "placeholder": null
+     }
+    ],
+    "csrf_field_name": "_token",
     "requires_profile_url": null,
     "captcha": {
-     "provider": null,
-     "sitekey": null,
-     "pages": []
+     "provider": "recaptcha_v2",
+     "sitekey": "6Lcoh5YeAAAAACoHRaRcgiuTlDQCn8ig8yatC7d3",
+     "pages": [
+      "https://www.usa-people-search.com/removal"
+     ]
     },
     "consent_vendor": null,
-    "success_text": null,
+    "success_text": "ut. You will be taken to a confirmation page verifying that we have received your request and it is being processed. You will also receive a confirmation email. Please a",
     "suppression_not_deletion": null,
     "processing_days": null,
     "processing_text": null
@@ -86436,34 +86821,40 @@
     "terms_url": null,
     "automation_prohibited": null,
     "automation_clause": null,
-    "residency": [],
-    "authorized_agent": null,
-    "data_categories": []
+    "residency": [
+     "US"
+    ],
+    "authorized_agent": true,
+    "data_categories": [
+     "identifiers",
+     "internet_activity",
+     "employment"
+    ]
    },
    "pages": [
     {
      "url": "https://usa-people-search.com/",
-     "final_url": null,
-     "status": null,
+     "final_url": "https://www.usa-people-search.com/",
+     "status": 200,
      "role": "home",
-     "title": "",
-     "liveness": "robots_disallowed"
+     "title": "People Search, Address and Phone Lookup - USA People SearchError 500",
+     "liveness": "alive"
     },
     {
      "url": "https://www.usa-people-search.com/",
-     "final_url": null,
-     "status": null,
+     "final_url": "https://www.usa-people-search.com/",
+     "status": 200,
      "role": "home",
-     "title": "",
-     "liveness": "robots_disallowed"
+     "title": "People Search, Address and Phone Lookup - USA People Search",
+     "liveness": "alive"
     },
     {
-     "url": "https://www.usa-people-search.com/manage",
-     "final_url": null,
-     "status": null,
+     "url": "https://www.usa-people-search.com/removal",
+     "final_url": "https://www.usa-people-search.com/removal",
+     "status": 200,
      "role": "catalog",
-     "title": "",
-     "liveness": "robots_disallowed"
+     "title": "USA People Search - Opt out process - Initial form",
+     "liveness": "alive"
     }
    ]
   },
@@ -109681,9 +110072,9 @@
    "name": "AlarmsCalifornia (LicenseData)",
    "category": "other",
    "domain": "alarmscalifornia.org",
-   "checked_at": "2026-10-12T23:10:48+00:00",
+   "checked_at": "2026-10-29T20:37:37+00:00",
    "liveness": "alive",
-   "liveness_detail": "catalog URL redirected and the final page loaded",
+   "liveness_detail": "catalog URL loaded",
    "homepage": "https://alarmscalifornia.org/",
    "logo_url": "https://alarmscalifornia.org/assets/favicon-79a3c4f2a9a1b2f17f74bd86bd2dd22ea1eccaa3e1757c2b6aaa2e4bef851eb7.png",
    "images": [
@@ -109724,7 +110115,7 @@
     "login_wall": null
    },
    "removal": {
-    "url": "http://www.alarmscalifornia.org/about",
+    "url": "https://www.alarmscalifornia.org/about",
     "final_url": "https://www.alarmscalifornia.org/about",
     "http_status": 200,
     "kinds": [
@@ -109780,7 +110171,7 @@
      "liveness": "alive"
     },
     {
-     "url": "http://www.alarmscalifornia.org/about",
+     "url": "https://www.alarmscalifornia.org/about",
      "final_url": "https://www.alarmscalifornia.org/about",
      "status": 200,
      "role": "catalog",
@@ -111431,9 +111822,9 @@
    "name": "CaliforniaBrokers.org (LicenseData)",
    "category": "other",
    "domain": "californiabrokers.org",
-   "checked_at": "2026-10-12T23:12:40+00:00",
+   "checked_at": "2026-10-29T20:37:37+00:00",
    "liveness": "alive",
-   "liveness_detail": "catalog URL redirected and the final page loaded",
+   "liveness_detail": "catalog URL loaded",
    "homepage": "https://californiabrokers.org/",
    "logo_url": "https://californiabrokers.org/assets/favicon-79a3c4f2a9a1b2f17f74bd86bd2dd22ea1eccaa3e1757c2b6aaa2e4bef851eb7.png",
    "images": [
@@ -111474,7 +111865,7 @@
     "login_wall": null
    },
    "removal": {
-    "url": "http://www.californiabrokers.org/about#contact",
+    "url": "https://www.californiabrokers.org/about#contact",
     "final_url": "https://www.californiabrokers.org/about#contact",
     "http_status": 200,
     "kinds": [
@@ -111530,18 +111921,10 @@
      "liveness": "alive"
     },
     {
-     "url": "http://www.californiabrokers.org/about#contact",
-     "final_url": "https://www.californiabrokers.org/about#contact",
-     "status": 200,
-     "role": "catalog",
-     "title": "California Brokers",
-     "liveness": "alive"
-    },
-    {
      "url": "https://www.californiabrokers.org/about#contact",
      "final_url": "https://www.californiabrokers.org/about#contact",
      "status": 200,
-     "role": "about",
+     "role": "catalog",
      "title": "California Brokers",
      "liveness": "alive"
     }
@@ -111553,9 +111936,9 @@
    "name": "CaliforniaEngineering.org (LicenseData)",
    "category": "other",
    "domain": "californiaengineering.org",
-   "checked_at": "2026-10-12T23:12:41+00:00",
-   "liveness": "blocked",
-   "liveness_detail": "catalog URL returned a bot wall or HTTP 401/403/429/503",
+   "checked_at": "2026-10-29T20:37:37+00:00",
+   "liveness": "alive",
+   "liveness_detail": "catalog URL loaded",
    "homepage": "https://californiaengineering.org/",
    "logo_url": "https://californiaengineering.org/assets/favicon-79a3c4f2a9a1b2f17f74bd86bd2dd22ea1eccaa3e1757c2b6aaa2e4bef851eb7.png",
    "images": [
@@ -111596,22 +111979,14 @@
     "login_wall": null
    },
    "removal": {
-    "url": "http://www.californiaengineering.org/about#contact",
+    "url": "https://www.californiaengineering.org/about#contact",
     "final_url": "https://www.californiaengineering.org/about#contact",
     "http_status": 200,
     "kinds": [
      "opt_out"
     ],
-    "channels": [
-     "email"
-    ],
-    "emails": [
-     {
-      "email": "removals@licensedata.org",
-      "confidence": "uncertain",
-      "source_url": "https://www.californiaengineering.org/about#contact"
-     }
-    ],
+    "channels": [],
+    "emails": [],
     "phones": [],
     "postal_address": null,
     "portal": null,
@@ -111630,8 +112005,8 @@
     "processing_text": null
    },
    "bot_defense": {
-    "vendor": "cloudflare",
-    "outcome": "challenge_page"
+    "vendor": null,
+    "outcome": "none"
    },
    "legal": {
     "privacy_policy_url": null,
@@ -111660,20 +112035,12 @@
      "liveness": "alive"
     },
     {
-     "url": "http://www.californiaengineering.org/about#contact",
+     "url": "https://www.californiaengineering.org/about#contact",
      "final_url": "https://www.californiaengineering.org/about#contact",
      "status": 200,
      "role": "catalog",
      "title": "California Engineering",
-     "liveness": "blocked"
-    },
-    {
-     "url": "https://www.californiaengineering.org/about#contact",
-     "final_url": "https://www.californiaengineering.org/about#contact",
-     "status": 503,
-     "role": "about",
-     "title": "We're sorry, but something went wrong (500)",
-     "liveness": "blocked"
+     "liveness": "alive"
     }
    ]
   },
@@ -111683,9 +112050,9 @@
    "name": "CaliforniaLicensing.org (LicenseData)",
    "category": "other",
    "domain": "californialicensing.org",
-   "checked_at": "2026-10-12T23:12:40+00:00",
-   "liveness": "blocked",
-   "liveness_detail": "catalog URL returned a bot wall or HTTP 401/403/429/503",
+   "checked_at": "2026-10-29T20:37:37+00:00",
+   "liveness": "alive",
+   "liveness_detail": "catalog URL loaded",
    "homepage": "https://californialicensing.org/",
    "logo_url": "https://californialicensing.org/assets/favicon-79a3c4f2a9a1b2f17f74bd86bd2dd22ea1eccaa3e1757c2b6aaa2e4bef851eb7.png",
    "images": [
@@ -111726,22 +112093,14 @@
     "login_wall": null
    },
    "removal": {
-    "url": "http://www.californialicensing.org/about#contact",
+    "url": "https://www.californialicensing.org/about#contact",
     "final_url": "https://www.californialicensing.org/about#contact",
     "http_status": 200,
     "kinds": [
      "opt_out"
     ],
-    "channels": [
-     "email"
-    ],
-    "emails": [
-     {
-      "email": "removals@licensedata.org",
-      "confidence": "uncertain",
-      "source_url": "https://www.californialicensing.org/about#contact"
-     }
-    ],
+    "channels": [],
+    "emails": [],
     "phones": [],
     "postal_address": null,
     "portal": null,
@@ -111761,7 +112120,7 @@
    },
    "bot_defense": {
     "vendor": "cloudflare",
-    "outcome": "challenge_page"
+    "outcome": "none"
    },
    "legal": {
     "privacy_policy_url": null,
@@ -111790,12 +112149,12 @@
      "liveness": "alive"
     },
     {
-     "url": "http://www.californialicensing.org/about#contact",
+     "url": "https://www.californialicensing.org/about#contact",
      "final_url": "https://www.californialicensing.org/about#contact",
      "status": 200,
      "role": "catalog",
      "title": "California Licensing",
-     "liveness": "blocked"
+     "liveness": "alive"
     }
    ]
   },
@@ -111805,9 +112164,9 @@
    "name": "CaliforniaNursing.org (LicenseData)",
    "category": "other",
    "domain": "californianursing.org",
-   "checked_at": "2026-10-12T23:12:42+00:00",
-   "liveness": "blocked",
-   "liveness_detail": "catalog URL returned a bot wall or HTTP 401/403/429/503",
+   "checked_at": "2026-10-29T20:37:37+00:00",
+   "liveness": "alive",
+   "liveness_detail": "catalog URL loaded",
    "homepage": "https://californianursing.org/",
    "logo_url": "https://californianursing.org/assets/favicon-79a3c4f2a9a1b2f17f74bd86bd2dd22ea1eccaa3e1757c2b6aaa2e4bef851eb7.png",
    "images": [
@@ -111848,22 +112207,14 @@
     "login_wall": null
    },
    "removal": {
-    "url": "http://www.californianursing.org/about#contact",
+    "url": "https://www.californianursing.org/about#contact",
     "final_url": "https://www.californianursing.org/about#contact",
     "http_status": 200,
     "kinds": [
      "opt_out"
     ],
-    "channels": [
-     "email"
-    ],
-    "emails": [
-     {
-      "email": "removals@licensedata.org",
-      "confidence": "uncertain",
-      "source_url": "https://www.californianursing.org/about#contact"
-     }
-    ],
+    "channels": [],
+    "emails": [],
     "phones": [],
     "postal_address": null,
     "portal": null,
@@ -111882,8 +112233,8 @@
     "processing_text": null
    },
    "bot_defense": {
-    "vendor": "cloudflare",
-    "outcome": "challenge_page"
+    "vendor": null,
+    "outcome": "none"
    },
    "legal": {
     "privacy_policy_url": null,
@@ -111912,18 +112263,10 @@
      "liveness": "alive"
     },
     {
-     "url": "http://www.californianursing.org/about#contact",
-     "final_url": "https://www.californianursing.org/about#contact",
-     "status": 200,
-     "role": "catalog",
-     "title": "California Nursing",
-     "liveness": "blocked"
-    },
-    {
      "url": "https://www.californianursing.org/about#contact",
      "final_url": "https://www.californianursing.org/about#contact",
      "status": 200,
-     "role": "about",
+     "role": "catalog",
      "title": "California Nursing",
      "liveness": "alive"
     }
@@ -111935,9 +112278,9 @@
    "name": "CaliforniaPharmacists.org (LicenseData)",
    "category": "other",
    "domain": "californiapharmacists.org",
-   "checked_at": "2026-10-12T23:12:45+00:00",
+   "checked_at": "2026-10-29T20:37:37+00:00",
    "liveness": "alive",
-   "liveness_detail": "catalog URL redirected and the final page loaded",
+   "liveness_detail": "catalog URL loaded",
    "homepage": "https://californiapharmacists.org/",
    "logo_url": "https://californiapharmacists.org/assets/favicon-79a3c4f2a9a1b2f17f74bd86bd2dd22ea1eccaa3e1757c2b6aaa2e4bef851eb7.png",
    "images": [
@@ -111949,7 +112292,7 @@
     {
      "url": "https://www.californiapharmacists.org/assets/favicon-79a3c4f2a9a1b2f17f74bd86bd2dd22ea1eccaa3e1757c2b6aaa2e4bef851eb7.png",
      "kind": "icon",
-     "source_page": "https://www.californiapharmacists.org/about#contact"
+     "source_page": "https://www.californiapharmacists.org/"
     }
    ],
    "theme_color": null,
@@ -111978,7 +112321,7 @@
     "login_wall": null
    },
    "removal": {
-    "url": "http://www.californiapharmacists.org/about#contact",
+    "url": "https://www.californiapharmacists.org/about#contact",
     "final_url": "https://www.californiapharmacists.org/about#contact",
     "http_status": 200,
     "kinds": [
@@ -112005,7 +112348,7 @@
    },
    "bot_defense": {
     "vendor": "cloudflare",
-    "outcome": "challenge_page"
+    "outcome": "none"
    },
    "legal": {
     "privacy_policy_url": null,
@@ -112028,16 +112371,8 @@
     {
      "url": "https://www.californiapharmacists.org/",
      "final_url": "https://www.californiapharmacists.org/",
-     "status": 503,
-     "role": "home",
-     "title": "We're sorry, but something went wrong (500)",
-     "liveness": "blocked"
-    },
-    {
-     "url": "http://www.californiapharmacists.org/about#contact",
-     "final_url": "https://www.californiapharmacists.org/about#contact",
      "status": 200,
-     "role": "catalog",
+     "role": "home",
      "title": "California Pharmacists",
      "liveness": "alive"
     },
@@ -112045,7 +112380,7 @@
      "url": "https://www.californiapharmacists.org/about#contact",
      "final_url": "https://www.californiapharmacists.org/about#contact",
      "status": 200,
-     "role": "about",
+     "role": "catalog",
      "title": "California Pharmacists",
      "liveness": "alive"
     }
@@ -112871,9 +113206,9 @@
    "name": "ContractorsCalifornia.org (LicenseData)",
    "category": "other",
    "domain": "contractorscalifornia.org",
-   "checked_at": "2026-10-12T23:14:07+00:00",
+   "checked_at": "2026-10-29T20:37:41+00:00",
    "liveness": "alive",
-   "liveness_detail": "catalog URL redirected and the final page loaded",
+   "liveness_detail": "catalog URL loaded",
    "homepage": "https://contractorscalifornia.org/",
    "logo_url": "https://contractorscalifornia.org/assets/favicon-79a3c4f2a9a1b2f17f74bd86bd2dd22ea1eccaa3e1757c2b6aaa2e4bef851eb7.png",
    "images": [
@@ -112914,7 +113249,7 @@
     "login_wall": null
    },
    "removal": {
-    "url": "http://www.contractorscalifornia.org/about#contact",
+    "url": "https://www.contractorscalifornia.org/about#contact",
     "final_url": "https://www.contractorscalifornia.org/about#contact",
     "http_status": 200,
     "kinds": [
@@ -112940,7 +113275,7 @@
     "processing_text": null
    },
    "bot_defense": {
-    "vendor": "cloudflare",
+    "vendor": null,
     "outcome": "none"
    },
    "legal": {
@@ -112970,18 +113305,10 @@
      "liveness": "alive"
     },
     {
-     "url": "http://www.contractorscalifornia.org/about#contact",
-     "final_url": "https://www.contractorscalifornia.org/about#contact",
-     "status": 200,
-     "role": "catalog",
-     "title": "California Contractors",
-     "liveness": "alive"
-    },
-    {
      "url": "https://www.contractorscalifornia.org/about#contact",
      "final_url": "https://www.contractorscalifornia.org/about#contact",
      "status": 200,
-     "role": "about",
+     "role": "catalog",
      "title": "California Contractors",
      "liveness": "alive"
     }
@@ -113087,9 +113414,9 @@
    "name": "Dataman Group Inc",
    "category": "other",
    "domain": "datamangroup.com",
-   "checked_at": "2026-10-12T23:14:45+00:00",
+   "checked_at": "2026-10-29T20:37:47+00:00",
    "liveness": "alive",
-   "liveness_detail": "catalog URL redirected and the final page loaded",
+   "liveness_detail": "catalog URL loaded",
    "homepage": "https://www.datamangroup.com/",
    "logo_url": "https://www.datamangroup.com/wp-content/uploads/2025/03/BBB-logo.png",
    "images": [
@@ -113142,6 +113469,11 @@
      "url": "https://www.datamangroup.com/wp-content/uploads/2025/12/DatamanGroup-Logo.png",
      "kind": "og_image",
      "source_page": "https://www.datamangroup.com/contact-us/"
+    },
+    {
+     "url": "https://www.datamangroup.com/wp-content/uploads/2023/10/workplace-1245776_1280.jpg",
+     "kind": "og_image",
+     "source_page": "https://www.datamangroup.com/list-rental-terms-and-conditions/"
     }
    ],
    "theme_color": null,
@@ -113170,17 +113502,44 @@
     "login_wall": null
    },
    "removal": {
-    "url": "https://www.datamangroup.com/california-consumer-privacy-act-ccpa/",
+    "url": "https://www.datamangroup.com/california-privacy-notice/",
     "final_url": "https://www.datamangroup.com/california-privacy-notice/",
     "http_status": 200,
     "kinds": [
      "opt_out"
     ],
     "channels": [
+     "email",
      "postal_mail",
      "phone"
     ],
-    "emails": [],
+    "emails": [
+     {
+      "email": "privacy@datamangroup.com",
+      "confidence": "extracted",
+      "source_url": "https://www.datamangroup.com/california-privacy-notice/"
+     },
+     {
+      "email": "dale@datamangroup.com",
+      "confidence": "uncertain",
+      "source_url": "https://www.datamangroup.com/contact-us/"
+     },
+     {
+      "email": "scott@datamangroup.com",
+      "confidence": "uncertain",
+      "source_url": "https://www.datamangroup.com/contact-us/"
+     },
+     {
+      "email": "davet@datamangroup.com",
+      "confidence": "uncertain",
+      "source_url": "https://www.datamangroup.com/contact-us/"
+     },
+     {
+      "email": "edf@datamangroup.com",
+      "confidence": "uncertain",
+      "source_url": "https://www.datamangroup.com/contact-us/"
+     }
+    ],
     "phones": [
      "(800) 771-3282",
      "800-771-3282",
@@ -113246,18 +113605,10 @@
      "liveness": "alive"
     },
     {
-     "url": "https://www.datamangroup.com/california-consumer-privacy-act-ccpa/",
-     "final_url": "https://www.datamangroup.com/california-privacy-notice/",
-     "status": 200,
-     "role": "catalog",
-     "title": "California Privacy Notice",
-     "liveness": "alive"
-    },
-    {
      "url": "https://www.datamangroup.com/california-privacy-notice/",
      "final_url": "https://www.datamangroup.com/california-privacy-notice/",
      "status": 200,
-     "role": "privacy",
+     "role": "catalog",
      "title": "California Privacy Notice",
      "liveness": "alive"
     },
@@ -113291,6 +113642,14 @@
      "status": 200,
      "role": "contact",
      "title": "CONTACT US – WE WANT TO WORK WITH YOU",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.datamangroup.com/list-rental-terms-and-conditions/",
+     "final_url": "https://www.datamangroup.com/list-rental-terms-and-conditions/",
+     "status": 200,
+     "role": "other",
+     "title": "List Rental Terms and Conditions",
      "liveness": "alive"
     }
    ]
@@ -113761,9 +114120,9 @@
    "name": "DentistsCalifornia.org (LicenseData)",
    "category": "other",
    "domain": "dentistscalifornia.org",
-   "checked_at": "2026-10-12T23:15:12+00:00",
+   "checked_at": "2026-10-29T20:37:41+00:00",
    "liveness": "alive",
-   "liveness_detail": "catalog URL redirected and the final page loaded",
+   "liveness_detail": "catalog URL loaded",
    "homepage": "https://dentistscalifornia.org/",
    "logo_url": "https://dentistscalifornia.org/assets/favicon-79a3c4f2a9a1b2f17f74bd86bd2dd22ea1eccaa3e1757c2b6aaa2e4bef851eb7.png",
    "images": [
@@ -113804,7 +114163,7 @@
     "login_wall": null
    },
    "removal": {
-    "url": "http://www.dentistscalifornia.org/about#contact",
+    "url": "https://www.dentistscalifornia.org/about#contact",
     "final_url": "https://www.dentistscalifornia.org/about#contact",
     "http_status": 200,
     "kinds": [
@@ -113860,18 +114219,10 @@
      "liveness": "alive"
     },
     {
-     "url": "http://www.dentistscalifornia.org/about#contact",
-     "final_url": "https://www.dentistscalifornia.org/about#contact",
-     "status": 200,
-     "role": "catalog",
-     "title": "California Dentists",
-     "liveness": "alive"
-    },
-    {
      "url": "https://www.dentistscalifornia.org/about#contact",
      "final_url": "https://www.dentistscalifornia.org/about#contact",
      "status": 200,
-     "role": "about",
+     "role": "catalog",
      "title": "California Dentists",
      "liveness": "alive"
     }
@@ -114047,9 +114398,9 @@
    "name": "DonorBureau LLC",
    "category": "other",
    "domain": "donorbureau.com",
-   "checked_at": "2026-10-12T23:15:30+00:00",
+   "checked_at": "2026-10-29T20:37:46+00:00",
    "liveness": "alive",
-   "liveness_detail": "catalog URL redirected and the final page loaded",
+   "liveness_detail": "catalog URL loaded",
    "homepage": "https://donorbureau.com/",
    "logo_url": "https://donorbureau.com/__l5e/assets-v1/37900146-85c3-4a2a-986c-4843e2d258f5/DB.png",
    "images": [
@@ -114059,7 +114410,7 @@
      "source_page": "https://donorbureau.com/"
     },
     {
-     "url": "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/lovp_44xkpe38m59a9bb0qz05wj0n37/ed2f2ad84c54f8ba1ed7515950cfabdc_1790704313820.png",
+     "url": "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/lovp_44xkpe38m59a9bb0qz05wj0n37/3a503e29a34bccea4353a1104ea8e07c_1792852236737.png",
      "kind": "og_image",
      "source_page": "https://donorbureau.com/"
     },
@@ -114086,7 +114437,7 @@
     "login_wall": null
    },
    "removal": {
-    "url": "https://donorbureau.com/california-privacy-rights-for-california-residents-only/",
+    "url": "https://donorbureau.com/california-privacy-rights",
     "final_url": "https://donorbureau.com/california-privacy-rights",
     "http_status": 200,
     "kinds": [
@@ -114105,11 +114456,6 @@
      },
      {
       "email": "ccpa@donorbureau.com",
-      "confidence": "extracted",
-      "source_url": "https://donorbureau.com/privacy-policy"
-     },
-     {
-      "email": "optout@donorbureau.com",
       "confidence": "extracted",
       "source_url": "https://donorbureau.com/privacy-policy"
      },
@@ -114179,18 +114525,10 @@
      "liveness": "alive"
     },
     {
-     "url": "https://donorbureau.com/california-privacy-rights-for-california-residents-only/",
-     "final_url": "https://donorbureau.com/california-privacy-rights",
-     "status": 200,
-     "role": "catalog",
-     "title": "California Privacy Rights for Residents | Donor Bureau",
-     "liveness": "alive"
-    },
-    {
      "url": "https://donorbureau.com/california-privacy-rights",
      "final_url": "https://donorbureau.com/california-privacy-rights",
      "status": 200,
-     "role": "privacy",
+     "role": "catalog",
      "title": "California Privacy Rights for Residents | Donor Bureau",
      "liveness": "alive"
     },
@@ -115047,9 +115385,9 @@
    "name": "FireArmsCalifornia.org (LicenseData)",
    "category": "other",
    "domain": "firearmscalifornia.org",
-   "checked_at": "2026-10-12T23:16:42+00:00",
+   "checked_at": "2026-10-29T20:37:47+00:00",
    "liveness": "alive",
-   "liveness_detail": "catalog URL redirected and the final page loaded",
+   "liveness_detail": "catalog URL loaded",
    "homepage": "https://firearmscalifornia.org/",
    "logo_url": "https://firearmscalifornia.org/assets/favicon-79a3c4f2a9a1b2f17f74bd86bd2dd22ea1eccaa3e1757c2b6aaa2e4bef851eb7.png",
    "images": [
@@ -115090,7 +115428,7 @@
     "login_wall": null
    },
    "removal": {
-    "url": "http://www.firearmscalifornia.org/about#contact",
+    "url": "https://www.firearmscalifornia.org/about#contact",
     "final_url": "https://www.firearmscalifornia.org/about#contact",
     "http_status": 200,
     "kinds": [
@@ -115146,18 +115484,10 @@
      "liveness": "alive"
     },
     {
-     "url": "http://www.firearmscalifornia.org/about#contact",
-     "final_url": "https://www.firearmscalifornia.org/about#contact",
-     "status": 200,
-     "role": "catalog",
-     "title": "California Firearms Permits",
-     "liveness": "alive"
-    },
-    {
      "url": "https://www.firearmscalifornia.org/about#contact",
      "final_url": "https://www.firearmscalifornia.org/about#contact",
      "status": 200,
-     "role": "about",
+     "role": "catalog",
      "title": "California Firearms Permits",
      "liveness": "alive"
     }
@@ -115335,9 +115665,9 @@
    "name": "Global Source Data Solutions Inc",
    "category": "other",
    "domain": "gsdsi.com",
-   "checked_at": "2026-10-12T23:17:49+00:00",
+   "checked_at": "2026-10-29T20:37:57+00:00",
    "liveness": "alive",
-   "liveness_detail": "catalog URL redirected and the final page loaded",
+   "liveness_detail": "catalog URL loaded",
    "homepage": "https://www.gsdsi.com/",
    "logo_url": "https://www.gsdsi.com/assets/GSDSI_LOGO-160-C5sTyGW6.png",
    "images": [
@@ -115415,6 +115745,11 @@
      "url": "https://www.gsdsi.com/og/contact.png",
      "kind": "og_image",
      "source_page": "https://www.gsdsi.com/contact"
+    },
+    {
+     "url": "https://www.gsdsi.com/og/resources__international-b2b-data-coverage-what-to-ask.png",
+     "kind": "og_image",
+     "source_page": "https://www.gsdsi.com/resources/international-b2b-data-coverage-what-to-ask"
     }
    ],
    "theme_color": "#0c1320",
@@ -115445,7 +115780,7 @@
     "login_wall": null
    },
    "removal": {
-    "url": "https://gsdsi.com/privacy",
+    "url": "https://www.gsdsi.com/privacy-policy",
     "final_url": "https://www.gsdsi.com/privacy-policy",
     "http_status": 200,
     "kinds": [
@@ -115514,7 +115849,6 @@
     "data_categories": [
      "identifiers",
      "precise_location",
-     "commercial",
      "employment",
      "inferences",
      "sensitive"
@@ -115538,18 +115872,10 @@
      "liveness": "alive"
     },
     {
-     "url": "https://gsdsi.com/privacy",
-     "final_url": "https://www.gsdsi.com/privacy-policy",
-     "status": 200,
-     "role": "catalog",
-     "title": "Privacy Policy: CCPA, CPRA, and GDPR Compliance | GSDSI",
-     "liveness": "alive"
-    },
-    {
      "url": "https://www.gsdsi.com/privacy-policy",
      "final_url": "https://www.gsdsi.com/privacy-policy",
      "status": 200,
-     "role": "privacy",
+     "role": "catalog",
      "title": "Privacy Policy: CCPA, CPRA, and GDPR Compliance | GSDSI",
      "liveness": "alive"
     },
@@ -115583,6 +115909,14 @@
      "status": 200,
      "role": "contact",
      "title": "Contact Sales: Data Quotes, Samples and Demos | GSDSI",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.gsdsi.com/resources/international-b2b-data-coverage-what-to-ask",
+     "final_url": "https://www.gsdsi.com/resources/international-b2b-data-coverage-what-to-ask",
+     "status": 200,
+     "role": "other",
+     "title": "International B2B Coverage: What to Ask | GSDSI",
      "liveness": "alive"
     }
    ]
@@ -117458,7 +117792,7 @@
    "name": "Live Data Technologies, Inc.",
    "category": "other",
    "domain": "livedatatech.com",
-   "checked_at": "2026-10-28T07:51:49+00:00",
+   "checked_at": "2026-10-29T20:39:40+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -118287,9 +118621,9 @@
    "name": "NotariesCalifornia.com (LicenseData)",
    "category": "other",
    "domain": "notariescalifornia.com",
-   "checked_at": "2026-10-12T23:21:50+00:00",
+   "checked_at": "2026-10-29T20:37:55+00:00",
    "liveness": "alive",
-   "liveness_detail": "catalog URL redirected and the final page loaded",
+   "liveness_detail": "catalog URL loaded",
    "homepage": "https://notariescalifornia.com/",
    "logo_url": "https://notariescalifornia.com/assets/favicon-79a3c4f2a9a1b2f17f74bd86bd2dd22ea1eccaa3e1757c2b6aaa2e4bef851eb7.png",
    "images": [
@@ -118330,7 +118664,7 @@
     "login_wall": null
    },
    "removal": {
-    "url": "http://www.notariescalifornia.com/about",
+    "url": "https://www.notariescalifornia.com/about",
     "final_url": "https://www.notariescalifornia.com/about",
     "http_status": 200,
     "kinds": [
@@ -118356,7 +118690,7 @@
     "processing_text": null
    },
    "bot_defense": {
-    "vendor": "cloudflare",
+    "vendor": null,
     "outcome": "none"
    },
    "legal": {
@@ -118386,7 +118720,7 @@
      "liveness": "alive"
     },
     {
-     "url": "http://www.notariescalifornia.com/about",
+     "url": "https://www.notariescalifornia.com/about",
      "final_url": "https://www.notariescalifornia.com/about",
      "status": 200,
      "role": "catalog",
@@ -126567,28 +126901,15 @@
    "name": "USAPeopleData (Intelius)",
    "category": "people-search",
    "domain": "usapeopledata.com",
-   "checked_at": "2026-10-12T23:27:50+00:00",
-   "liveness": "alive",
-   "liveness_detail": "catalog URL loaded",
-   "homepage": "https://www.intelius.com/access/?utm_source=120A&traffic[source]=120A&utm_medium=affiliate&traffic[medium]=affiliate&utm_campaign=USAPEOPLEDATA&traffic[campaign]=:USAPEOPLEDATA&utm_term=&traffic[term]=&utm_content=&traffic[content]=&s1=USAPEOPLEDATA&s2=&s3=&s4=&s5=&traffic[funnel]=bg&traffic[sub_id]=USAPEOPLEDATA&traffic[s2]=&traffic[placement]=&ck_rsid=4160533831",
-   "logo_url": "https://assets.intelius.com/funnel/assets/themes/clean/img/_partials/footer/intelius-branding-white.png",
-   "images": [
-    {
-     "url": "https://assets.intelius.com/favicon.ico",
-     "kind": "icon",
-     "source_page": "https://www.intelius.com/access/?utm_source=120A&traffic[source]=120A&utm_medium=affiliate&traffic[medium]=affiliate&utm_campaign=USAPEOPLEDATA&traffic[campaign]=:USAPEOPLEDATA&utm_term=&traffic[term]=&utm_content=&traffic[content]=&s1=USAPEOPLEDATA&s2=&s3=&s4=&s5=&traffic[funnel]=bg&traffic[sub_id]=USAPEOPLEDATA&traffic[s2]=&traffic[placement]=&ck_rsid=4160533831"
-    },
-    {
-     "url": "https://assets.intelius.com/funnel/assets/themes/clean/img/_partials/footer/intelius-branding-white.png",
-     "kind": "json_ld",
-     "source_page": "https://www.intelius.com/access/?utm_source=120A&traffic[source]=120A&utm_medium=affiliate&traffic[medium]=affiliate&utm_campaign=USAPEOPLEDATA&traffic[campaign]=:USAPEOPLEDATA&utm_term=&traffic[term]=&utm_content=&traffic[content]=&s1=USAPEOPLEDATA&s2=&s3=&s4=&s5=&traffic[funnel]=bg&traffic[sub_id]=USAPEOPLEDATA&traffic[s2]=&traffic[placement]=&ck_rsid=4160533831"
-    }
-   ],
+   "checked_at": "2026-10-29T20:38:06+00:00",
+   "liveness": "robots_disallowed",
+   "liveness_detail": "robots.txt disallows this client",
+   "homepage": "https://www.usapeopledata.com/",
+   "logo_url": null,
+   "images": [],
    "theme_color": null,
-   "languages": [
-    "en"
-   ],
-   "legal_name": "Intelius",
+   "languages": [],
+   "legal_name": null,
    "search": {
     "available": false,
     "method": "none",
@@ -126601,9 +126922,9 @@
     "login_wall": null
    },
    "removal": {
-    "url": "http://www.usapeopledata.com/",
-    "final_url": "http://www.usapeopledata.com/",
-    "http_status": 200,
+    "url": "https://www.usapeopledata.com/",
+    "final_url": null,
+    "http_status": null,
     "kinds": [
      "opt_out"
     ],
@@ -126635,23 +126956,18 @@
     "terms_url": null,
     "automation_prohibited": null,
     "automation_clause": null,
-    "residency": [
-     "US"
-    ],
+    "residency": [],
     "authorized_agent": null,
-    "data_categories": [
-     "identifiers",
-     "employment"
-    ]
+    "data_categories": []
    },
    "pages": [
     {
      "url": "https://usapeopledata.com/",
-     "final_url": "https://www.intelius.com/access/?utm_source=120A&traffic[source]=120A&utm_medium=affiliate&traffic[medium]=affiliate&utm_campaign=USAPEOPLEDATA&traffic[campaign]=:USAPEOPLEDATA&utm_term=&traffic[term]=&utm_content=&traffic[content]=&s1=USAPEOPLEDATA&s2=&s3=&s4=&s5=&traffic[funnel]=bg&traffic[sub_id]=USAPEOPLEDATA&traffic[s2]=&traffic[placement]=&ck_rsid=4160533831",
-     "status": 200,
+     "final_url": null,
+     "status": null,
      "role": "home",
-     "title": "Intelius Access - People Search ServiceUser ImageHandcuff ImageCheck ImagePhone ImageHome ImageHeart ImageShield IconAnonymous Iconbulb",
-     "liveness": "alive"
+     "title": "",
+     "liveness": "robots_disallowed"
     },
     {
      "url": "https://www.usapeopledata.com/",
@@ -126664,10 +126980,10 @@
     {
      "url": "http://www.usapeopledata.com/",
      "final_url": "http://www.usapeopledata.com/",
-     "status": 200,
-     "role": "catalog",
+     "status": 500,
+     "role": "other",
      "title": "",
-     "liveness": "alive"
+     "liveness": "error"
     }
    ]
   },
@@ -135836,9 +136152,9 @@
    "name": "YourAdChoices Canada",
    "category": "marketing",
    "domain": "youradchoices.ca",
-   "checked_at": "2026-10-12T23:29:18+00:00",
+   "checked_at": "2026-10-29T20:38:14+00:00",
    "liveness": "alive",
-   "liveness_detail": "catalog URL redirected and the final page loaded",
+   "liveness_detail": "catalog URL loaded",
    "homepage": "https://youradchoices.ca/",
    "logo_url": "https://images.squarespace-cdn.com/content/v1/5c055f98620b858a898bfcae/1555339561273-XUGF4NHUVPYO6L8G0ZQW/PenLogo.png",
    "images": [
@@ -135896,7 +136212,7 @@
     "login_wall": null
    },
    "removal": {
-    "url": "https://www.youradchoices.ca/choices",
+    "url": "https://youradchoices.ca/en/tools",
     "final_url": "https://youradchoices.ca/en/tools",
     "http_status": 200,
     "kinds": [
@@ -135913,8 +136229,8 @@
     "csrf_field_name": null,
     "requires_profile_url": null,
     "captcha": {
-     "provider": "recaptcha_v2",
-     "sitekey": null,
+     "provider": "custom",
+     "sitekey": "6LehCgYfAAAAAF9vS8viDIaBm8ch5JdRYmW44MPp",
      "pages": [
       "https://youradchoices.ca/",
       "https://youradchoices.ca/en/tools",
@@ -135967,18 +136283,10 @@
      "liveness": "alive"
     },
     {
-     "url": "https://www.youradchoices.ca/choices",
-     "final_url": "https://youradchoices.ca/en/tools",
-     "status": 200,
-     "role": "catalog",
-     "title": "Opt-Out Tools — AdChoices in Canada",
-     "liveness": "alive"
-    },
-    {
      "url": "https://youradchoices.ca/en/tools",
      "final_url": "https://youradchoices.ca/en/tools",
      "status": 200,
-     "role": "other",
+     "role": "catalog",
      "title": "Opt-Out Tools — AdChoices in Canada",
      "liveness": "alive"
     },
@@ -154187,7 +154495,7 @@
    "name": "ThisNumber",
    "category": "people-search",
    "domain": "thisnumber.com",
-   "checked_at": "2026-10-13T08:54:39+00:00",
+   "checked_at": "2026-10-29T20:39:05+00:00",
    "liveness": "alive",
    "liveness_detail": "catalog URL loaded",
    "homepage": "https://www.thisnumber.com/",
@@ -154235,23 +154543,15 @@
     "login_wall": null
    },
    "removal": {
-    "url": "https://www.thisnumber.com/do-not-sell",
-    "final_url": "https://www.thisnumber.com/do-not-sell",
+    "url": "https://www.thisnumber.com/opt-out",
+    "final_url": "https://www.thisnumber.com/opt-out",
     "http_status": 200,
     "kinds": [
      "opt_out",
      "do_not_sell"
     ],
-    "channels": [
-     "email"
-    ],
-    "emails": [
-     {
-      "email": "thisnumber.com@gmail.com",
-      "confidence": "uncertain",
-      "source_url": "https://www.thisnumber.com/do-not-sell"
-     }
-    ],
+    "channels": [],
+    "emails": [],
     "phones": [],
     "postal_address": null,
     "portal": null,
@@ -154259,9 +154559,11 @@
     "csrf_field_name": null,
     "requires_profile_url": null,
     "captcha": {
-     "provider": null,
-     "sitekey": null,
-     "pages": []
+     "provider": "turnstile",
+     "sitekey": "0x4AAAAAAFbWKqU1yeMKK-cf",
+     "pages": [
+      "https://www.thisnumber.com/opt-out"
+     ]
     },
     "consent_vendor": null,
     "success_text": null,
@@ -154279,8 +154581,8 @@
     "automation_prohibited": null,
     "automation_clause": null,
     "residency": [
-     "US-CA",
-     "US"
+     "US",
+     "GB"
     ],
     "authorized_agent": null,
     "data_categories": [
@@ -154294,7 +154596,7 @@
      "final_url": "https://www.thisnumber.com/",
      "status": 200,
      "role": "home",
-     "title": "International Phone Number Lookup by ThisNumber, Formerly Numberway",
+     "title": "International Phone Number Lookup - ThisNumber, Formerly Numberway",
      "liveness": "alive"
     },
     {
@@ -154302,12 +154604,12 @@
      "final_url": "https://www.thisnumber.com/",
      "status": 200,
      "role": "home",
-     "title": "International Phone Number Lookup by ThisNumber, Formerly Numberway",
+     "title": "International Phone Number Lookup - ThisNumber, Formerly Numberway",
      "liveness": "alive"
     },
     {
-     "url": "https://www.thisnumber.com/do-not-sell",
-     "final_url": "https://www.thisnumber.com/do-not-sell",
+     "url": "https://www.thisnumber.com/opt-out",
+     "final_url": "https://www.thisnumber.com/opt-out",
      "status": 200,
      "role": "catalog",
      "title": "Do Not Sell My Personal Information | ThisNumber",
@@ -154321,7 +154623,7 @@
    "name": "Data Axle Canada",
    "category": "marketing",
    "domain": "dataaxlecanada.ca",
-   "checked_at": "2026-10-28T07:52:02+00:00",
+   "checked_at": "2026-10-29T20:39:52+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -154388,7 +154690,7 @@
    "name": "Prospects Influential",
    "category": "marketing",
    "domain": "prospectsinfluential.com",
-   "checked_at": "2026-10-28T07:52:02+00:00",
+   "checked_at": "2026-10-29T20:39:52+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -154455,7 +154757,7 @@
    "name": "Openroom",
    "category": "background-checks",
    "domain": "openroom.ca",
-   "checked_at": "2026-10-28T07:52:02+00:00",
+   "checked_at": "2026-10-29T20:39:52+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -154522,7 +154824,7 @@
    "name": "Landlord Credit Bureau",
    "category": "credit-financial",
    "domain": "landlordcreditbureau.ca",
-   "checked_at": "2026-10-28T07:52:02+00:00",
+   "checked_at": "2026-10-29T20:39:52+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -154589,7 +154891,7 @@
    "name": "FrontLobby",
    "category": "credit-financial",
    "domain": "frontlobby.com",
-   "checked_at": "2026-10-28T07:52:02+00:00",
+   "checked_at": "2026-10-29T20:39:52+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -154656,7 +154958,7 @@
    "name": "Echovita",
    "category": "people-search",
    "domain": "echovita.com",
-   "checked_at": "2026-10-28T07:52:02+00:00",
+   "checked_at": "2026-10-29T20:39:52+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -154723,7 +155025,7 @@
    "name": "InMemoriam",
    "category": "people-search",
    "domain": "inmemoriam.ca",
-   "checked_at": "2026-10-28T07:52:02+00:00",
+   "checked_at": "2026-10-29T20:39:52+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -154790,7 +155092,7 @@
    "name": "Nécrologie.ca",
    "category": "people-search",
    "domain": "necrologie.ca",
-   "checked_at": "2026-10-28T07:52:02+00:00",
+   "checked_at": "2026-10-29T20:39:52+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -154857,7 +155159,7 @@
    "name": "Geni",
    "category": "people-search",
    "domain": "geni.com",
-   "checked_at": "2026-10-28T07:52:02+00:00",
+   "checked_at": "2026-10-29T20:39:52+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -154924,7 +155226,7 @@
    "name": "FQSG Avis de décès",
    "category": "people-search",
    "domain": "federationgenealogie.qc.ca",
-   "checked_at": "2026-10-28T07:52:02+00:00",
+   "checked_at": "2026-10-29T20:39:52+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -154991,7 +155293,7 @@
    "name": "Domaine funéraire (Corporation des thanatologues du Québec)",
    "category": "people-search",
    "domain": "domainefuneraire.com",
-   "checked_at": "2026-10-28T07:52:02+00:00",
+   "checked_at": "2026-10-29T20:39:52+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -155058,7 +155360,7 @@
    "name": "Canadian Obituaries",
    "category": "people-search",
    "domain": "canadianobituaries.com",
-   "checked_at": "2026-10-28T07:52:02+00:00",
+   "checked_at": "2026-10-29T20:39:52+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -155125,7 +155427,7 @@
    "name": "Coopérative funéraire du Grand Montréal",
    "category": "people-search",
    "domain": "cfgrandmontreal.com",
-   "checked_at": "2026-10-28T07:52:02+00:00",
+   "checked_at": "2026-10-29T20:39:52+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -155192,7 +155494,7 @@
    "name": "Coopérative funéraire des Deux Rives",
    "category": "people-search",
    "domain": "coopfuneraire2rives.com",
-   "checked_at": "2026-10-28T07:52:02+00:00",
+   "checked_at": "2026-10-29T20:39:52+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -155259,7 +155561,7 @@
    "name": "Alliance funéraire du Royaume",
    "category": "people-search",
    "domain": "afdr.coop",
-   "checked_at": "2026-10-28T07:52:02+00:00",
+   "checked_at": "2026-10-29T20:39:52+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -155326,7 +155628,7 @@
    "name": "Coopérative funéraire de l'Abitibi",
    "category": "people-search",
    "domain": "cfa.coop",
-   "checked_at": "2026-10-28T07:52:02+00:00",
+   "checked_at": "2026-10-29T20:39:52+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -155393,7 +155695,7 @@
    "name": "Coopérative funéraire Haute-Côte-Nord - Manicouagan",
    "category": "people-search",
    "domain": "cfhcn.ca",
-   "checked_at": "2026-10-28T07:52:02+00:00",
+   "checked_at": "2026-10-29T20:39:52+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -155460,7 +155762,7 @@
    "name": "Coopérative funéraire de l'Outaouais",
    "category": "people-search",
    "domain": "cfo.coop",
-   "checked_at": "2026-10-28T07:52:02+00:00",
+   "checked_at": "2026-10-29T20:39:52+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -155527,7 +155829,7 @@
    "name": "Coopérative funéraire de l'Estrie",
    "category": "people-search",
    "domain": "coopfuneraireestrie.com",
-   "checked_at": "2026-10-28T07:52:02+00:00",
+   "checked_at": "2026-10-29T20:39:52+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -155594,7 +155896,7 @@
    "name": "Résidence funéraire Lac St-Jean",
    "category": "people-search",
    "domain": "residencefunerairelacstjean.com",
-   "checked_at": "2026-10-28T07:52:02+00:00",
+   "checked_at": "2026-10-29T20:39:52+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -155661,7 +155963,7 @@
    "name": "Coopérative funéraire Brunet",
    "category": "people-search",
    "domain": "coopfbrunet.com",
-   "checked_at": "2026-10-28T07:52:02+00:00",
+   "checked_at": "2026-10-29T20:39:52+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -155728,7 +156030,7 @@
    "name": "Coopérative funéraire Matawinie-Montcalm",
    "category": "people-search",
    "domain": "cfmm.coop",
-   "checked_at": "2026-10-28T07:52:02+00:00",
+   "checked_at": "2026-10-29T20:39:52+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -155795,7 +156097,7 @@
    "name": "Coopérative funéraire des Laurentides",
    "category": "people-search",
    "domain": "coopfunerairelaurentides.org",
-   "checked_at": "2026-10-28T07:52:02+00:00",
+   "checked_at": "2026-10-29T20:39:52+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -155862,7 +156164,7 @@
    "name": "Résidence Funéraire Maska",
    "category": "people-search",
    "domain": "rfmaska.coop",
-   "checked_at": "2026-10-28T07:52:02+00:00",
+   "checked_at": "2026-10-29T20:39:52+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -155929,7 +156231,7 @@
    "name": "Dignity Memorial",
    "category": "people-search",
    "domain": "dignitymemorial.com",
-   "checked_at": "2026-10-28T07:52:02+00:00",
+   "checked_at": "2026-10-29T20:39:52+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -155996,7 +156298,7 @@
    "name": "Interment.net",
    "category": "people-search",
    "domain": "interment.net",
-   "checked_at": "2026-10-28T07:52:02+00:00",
+   "checked_at": "2026-10-29T20:39:52+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -156063,7 +156365,7 @@
    "name": "Mount Pleasant Group",
    "category": "people-search",
    "domain": "mountpleasantgroup.com",
-   "checked_at": "2026-10-28T07:52:02+00:00",
+   "checked_at": "2026-10-29T20:39:52+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -156130,7 +156432,7 @@
    "name": "Kearney Funeral Services",
    "category": "people-search",
    "domain": "kearneyfs.com",
-   "checked_at": "2026-10-28T07:52:02+00:00",
+   "checked_at": "2026-10-29T20:39:52+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -156197,7 +156499,7 @@
    "name": "Basic Funerals",
    "category": "people-search",
    "domain": "basicfunerals.ca",
-   "checked_at": "2026-10-28T07:52:02+00:00",
+   "checked_at": "2026-10-29T20:39:52+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -156264,7 +156566,7 @@
    "name": "Le Nécrologue",
    "category": "people-search",
    "domain": "lenecrologue.com",
-   "checked_at": "2026-10-28T07:52:02+00:00",
+   "checked_at": "2026-10-29T20:39:52+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -161026,11 +161328,11 @@
    "name": "Legacy.com",
    "category": "people-search",
    "domain": "legacy.com",
-   "checked_at": "2026-10-26T10:37:50+00:00",
+   "checked_at": "2026-10-29T20:37:51+00:00",
    "liveness": "alive",
-   "liveness_detail": "catalog URL redirected and the final page loaded",
+   "liveness_detail": "catalog URL loaded",
    "homepage": "https://www.legacy.com/",
-   "logo_url": "https://cdn.legacy.com/next-builds/1792691011672/legacy_logo.png",
+   "logo_url": "https://cdn.legacy.com/next-builds/1793128791051/legacy_logo.png",
    "images": [
     {
      "url": "https://framerusercontent.com/images/NMciAS271tXLLOBkPkWEmC41Og.svg",
@@ -161048,17 +161350,17 @@
      "source_page": "https://www.legacy.com/"
     },
     {
-     "url": "https://cdn.legacy.com/next-builds/1792691011672/favicon.ico",
+     "url": "https://cdn.legacy.com/next-builds/1793128791051/favicon.ico",
      "kind": "icon",
      "source_page": "https://www.legacy.com/privacy-policy"
     },
     {
-     "url": "https://cdn.legacy.com/next-builds/1792691011672/legacy_logo.png",
+     "url": "https://cdn.legacy.com/next-builds/1793128791051/legacy_logo.png",
      "kind": "logo",
      "source_page": "https://www.legacy.com/privacy-policy"
     },
     {
-     "url": "https://cdn.legacy.com/next-builds/1792691011672/legacy_logo_white.png",
+     "url": "https://cdn.legacy.com/next-builds/1793128791051/legacy_logo_white.png",
      "kind": "logo",
      "source_page": "https://www.legacy.com/privacy-policy"
     }
@@ -161080,7 +161382,7 @@
     "login_wall": null
    },
    "removal": {
-    "url": "https://www.legacy.com/about/privacy-policy",
+    "url": "https://www.legacy.com/privacy-policy",
     "final_url": "https://www.legacy.com/privacy-policy",
     "http_status": 200,
     "kinds": [
@@ -161149,7 +161451,7 @@
      "liveness": "alive"
     },
     {
-     "url": "https://www.legacy.com/about/privacy-policy",
+     "url": "https://www.legacy.com/privacy-policy",
      "final_url": "https://www.legacy.com/privacy-policy",
      "status": 200,
      "role": "catalog",
