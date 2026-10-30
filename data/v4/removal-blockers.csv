@@ -164,7 +164,7 @@ iqvia-digital-inc,IQVIA Digital Inc.,iqvia.com,other,alive,captcha_no_form,A CAP
 iqvia-digital-inc-privacyportal-onetrust-com,IQVIA Digital Inc. (privacyportal.onetrust.com),iqviadigital.com,other,alive,portal,An official privacy portal is linked and its fields were not stored,recaptcha_v2,6LfiqCUUAAAAAGzo0BG2sKBIF-oZVi1_rXgUm5xn,checkbox,true,,,,official_portal
 kids-live-safe,Kids Live Safe,kidslivesafe.com,other,alive,captcha_form,Removal form is behind a CAPTCHA widget and no usable removal email was found,turnstile,0x4AAAAAAAgFHkiRuynTw4bF,checkbox,true,,true,,web_form;phone
 kind-skiptracing-inc,"Kind Skiptracing, Inc",kindskiptracing.com,other,alive,generic_inbox,"Only a generic inbox was found, and the page does not say to use it for removal",,,,false,,,info@kindskiptracing.com,email
-kiwi-searches,Kiwi Searches,kiwisearches.com,other,robots_disallowed,robots,robots.txt disallows the client. A later read still found no removal channel,,,,false,,,,
+kiwi-searches,Kiwi Searches,kiwisearches.com,other,dead,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,false,,,,
 knower-tech-usa-llc,"Knower Tech USA, LLC",rbarrel.com,other,alive,generic_inbox,"Only a generic inbox was found, and the page does not say to use it for removal",recaptcha_v2,,,true,,,info@rbarrel.com,email
 labels-and-lists-inc,"Labels & Lists, Inc",l2-data.com,other,robots_disallowed,robots,robots.txt disallows the client. A later read still found no removal channel,,,,false,,,,
 lead-intelligence-inc,Lead Intelligence Inc.,infutor.com,other,alive,portal,An official privacy portal is linked and its fields were not stored,,,,false,,,,phone;official_portal
