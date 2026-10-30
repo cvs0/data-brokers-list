@@ -21,7 +21,7 @@ If you only do one sitting, use these. URLs are copied from [`opt-outs.csv`](opt
 | TruePeopleSearch | https://www.truepeoplesearch.com/removal |
 | FastPeopleSearch | https://www.fastpeoplesearch.com/optout |
 | PeopleFinders (Confi-Chek) | https://www.peoplefinders.com/opt-out |
-| SmartBackgroundChecks | https://www.smartbackgroundchecks.com/optout |
+| SmartBackgroundChecks | https://www.smartbackgroundchecks.com/remove |
 | FamilyTreeNow | https://www.familytreenow.com/optout |
 | USPhoneBook | https://www.usphonebook.com/opt-out |
 | Acxiom | https://www.acxiom.com/optout/ |
@@ -48,7 +48,7 @@ If you only do one sitting, use these. URLs are copied from [`opt-outs.csv`](opt
 | DMAChoice | https://www.dmachoice.org/ |
 | Digital Advertising Alliance opt-out | https://optout.aboutads.info/ |
 | YourOnlineChoices (EDAA) | https://www.youronlinechoices.com/uk/your-ad-choices |
-| YourAdChoices Canada | https://www.youradchoices.ca/choices |
+| YourAdChoices Canada | https://youradchoices.ca/en/tools |
 | California DROP | https://privacy.ca.gov/drop/ |
 
 Search the CSV before you send extra personal details. Notes say when a page returned HTTP 403 or 429 to an automated check, when email is part of the flow, and when an account may be required.

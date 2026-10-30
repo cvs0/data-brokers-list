@@ -9600,10 +9600,10 @@
       "catalog": {
         "name": "Blue Hill Marketing Solutions, Inc",
         "category": "marketing",
-        "url": "https://www.liftbasedata.com/request-to-know/",
-        "notes": "Opt-out or consumer privacy-request page. The Markup and CalMatters (2025) found page code that hid this URL from search engines. Automated check on 2026-10-01 got HTTP 403. Open the link in a browser.",
+        "url": "https://www.liftbasedata.com/your-privacy-choices/",
+        "notes": "Opt-out or consumer privacy-request page. The Markup and CalMatters (2025) found page code that hid this URL from search engines. Automated check on 2026-10-01 got HTTP 403. Open the link in a browser. On 2026-10-29 the old URL (https://www.liftbasedata.com/request-to-know/) redirected here, and this page answered HTTP 200. No request was submitted.",
         "domain": "liftbasedata.com",
-        "http_status": "403",
+        "http_status": "200",
         "sources": [
           "markup"
         ]
@@ -11092,10 +11092,10 @@
       "catalog": {
         "name": "Data Axle (InfoUSA)",
         "category": "marketing",
-        "url": "https://www.data-axle.com/do-not-sell-my-data/",
-        "notes": "Web privacy rights form. Email: privacyteam@data-axle.com. Open-dataset difficulty: easy. Automated check on 2026-10-01 got HTTP 403. Open the link in a browser.",
+        "url": "https://www.data-axle.com/privacy-rights-request/",
+        "notes": "Web privacy rights form. Email: privacyteam@data-axle.com. Open-dataset difficulty: easy. Automated check on 2026-10-01 got HTTP 403. Open the link in a browser. On 2026-10-29 the old URL (https://www.data-axle.com/do-not-sell-my-data/) redirected here, and this page answered HTTP 200. No request was submitted.",
         "domain": "data-axle.com",
-        "http_status": "403",
+        "http_status": "200",
         "sources": [
           "persprotect",
           "markup"
@@ -17097,10 +17097,10 @@
       "catalog": {
         "name": "Versium Analytics Inc.",
         "category": "marketing",
-        "url": "https://versium.com/ccpa-privacy-policy",
-        "notes": "Privacy notice or privacy-policy page. Use the state-rights, do-not-sell, or request section. Automated check on 2026-10-01 got HTTP 429. Open the link in a browser.",
+        "url": "https://versium.com/california-privacy-policy/",
+        "notes": "Privacy notice or privacy-policy page. Use the state-rights, do-not-sell, or request section. Automated check on 2026-10-01 got HTTP 429. Open the link in a browser. On 2026-10-29 the old URL (https://versium.com/ccpa-privacy-policy) redirected here, and this page answered HTTP 200. No request was submitted.",
         "domain": "versium.com",
-        "http_status": "429",
+        "http_status": "200",
         "sources": [
           "markup"
         ]
@@ -18563,8 +18563,8 @@
       "catalog": {
         "name": "Above Data, Inc.",
         "category": "other",
-        "url": "https://www.abovedata.io/privacy-policy/",
-        "notes": "Privacy notice or privacy-policy page. Use the state-rights, do-not-sell, or request section.",
+        "url": "https://www.abovedata.io/privacy",
+        "notes": "Privacy notice or privacy-policy page. Use the state-rights, do-not-sell, or request section. On 2026-10-29 the old URL (https://www.abovedata.io/privacy-policy/) redirected here, and this page answered HTTP 200. No request was submitted.",
         "domain": "abovedata.io",
         "http_status": "200",
         "sources": [
@@ -25762,8 +25762,8 @@
       "catalog": {
         "name": "Choreograph LLP",
         "category": "other",
-        "url": "https://www.choreograph.com/ccpa",
-        "notes": "Opt-out or consumer privacy-request page.",
+        "url": "https://www.choreograph.com/pages/ccpa",
+        "notes": "Opt-out or consumer privacy-request page. On 2026-10-29 the old URL (https://www.choreograph.com/ccpa) redirected here, and this page answered HTTP 200. No request was submitted.",
         "domain": "choreograph.com",
         "http_status": "200",
         "sources": [
@@ -35906,8 +35906,8 @@
       "catalog": {
         "name": "Enigma Technologies, Inc.",
         "category": "other",
-        "url": "https://www.enigma.com/company/privacy-policy",
-        "notes": "Privacy notice or privacy-policy page. Use the state-rights, do-not-sell, or request section.",
+        "url": "https://www.enigma.com/legal/privacy-policy",
+        "notes": "Privacy notice or privacy-policy page. Use the state-rights, do-not-sell, or request section. On 2026-10-29 the old URL (https://www.enigma.com/company/privacy-policy) redirected here, and this page answered HTTP 200. No request was submitted.",
         "domain": "enigma.com",
         "http_status": "200",
         "sources": [
@@ -36668,8 +36668,8 @@
       "catalog": {
         "name": "Explorium Inc.",
         "category": "other",
-        "url": "https://www.explorium.ai/platform-privacy-policy/",
-        "notes": "Privacy notice or privacy-policy page. Use the state-rights, do-not-sell, or request section.",
+        "url": "https://www.explorium.ai/privacy-policy/",
+        "notes": "Privacy notice or privacy-policy page. Use the state-rights, do-not-sell, or request section. On 2026-10-29 the old URL (https://www.explorium.ai/platform-privacy-policy/) redirected here, and this page answered HTTP 200. No request was submitted.",
         "domain": "explorium.ai",
         "http_status": "200",
         "sources": [
@@ -37687,8 +37687,8 @@
       "catalog": {
         "name": "Findem, Inc.",
         "category": "other",
-        "url": "https://www.findem.ai/do-not-sell-or-share-my-personal-information",
-        "notes": "Opt-out or consumer privacy-request page. The Markup and CalMatters (2025) found page code that hid this URL from search engines.",
+        "url": "https://www.findem.ai/privacy-rights",
+        "notes": "Opt-out or consumer privacy-request page. The Markup and CalMatters (2025) found page code that hid this URL from search engines. On 2026-10-29 the old URL (https://www.findem.ai/do-not-sell-or-share-my-personal-information) redirected here, and this page answered HTTP 200. No request was submitted.",
         "domain": "findem.ai",
         "http_status": "200",
         "sources": [
@@ -38862,8 +38862,8 @@
       "catalog": {
         "name": "Forager.ai, LLC",
         "category": "other",
-        "url": "https://www.forager.ai/privacy-policy",
-        "notes": "Privacy notice or privacy-policy page. Use the state-rights, do-not-sell, or request section.",
+        "url": "https://www.forager.ai/privacy",
+        "notes": "Privacy notice or privacy-policy page. Use the state-rights, do-not-sell, or request section. On 2026-10-29 the old URL (https://www.forager.ai/privacy-policy) redirected here, and this page answered HTTP 200. No request was submitted.",
         "domain": "forager.ai",
         "http_status": "200",
         "sources": [
@@ -43886,8 +43886,8 @@
       "catalog": {
         "name": "ID5 Technology Ltd",
         "category": "other",
-        "url": "https://id5.io/platform-privacy-policy/",
-        "notes": "Privacy notice or privacy-policy page. Use the state-rights, do-not-sell, or request section.",
+        "url": "https://id5.io/trust/platform-privacy-policy",
+        "notes": "Privacy notice or privacy-policy page. Use the state-rights, do-not-sell, or request section. On 2026-10-29 the old URL (https://id5.io/platform-privacy-policy/) redirected here, and this page answered HTTP 200. No request was submitted.",
         "domain": "id5.io",
         "http_status": "200",
         "sources": [
@@ -44471,8 +44471,8 @@
       "catalog": {
         "name": "iLeads.com, LLC",
         "category": "other",
-        "url": "https://ileads.com/company/privacy-policy/#9",
-        "notes": "Privacy notice or privacy-policy page. Use the state-rights, do-not-sell, or request section.",
+        "url": "https://ileads.com/privacy",
+        "notes": "Privacy notice or privacy-policy page. Use the state-rights, do-not-sell, or request section. On 2026-10-29 the old URL (https://ileads.com/company/privacy-policy/#9) redirected here, and this page answered HTTP 200. No request was submitted.",
         "domain": "ileads.com",
         "http_status": "200",
         "sources": [
@@ -66505,8 +66505,8 @@
       "catalog": {
         "name": "Semcasting, Inc.",
         "category": "other",
-        "url": "https://www.semcasting.com/privacy-choice",
-        "notes": "Opt-out or consumer privacy-request page.",
+        "url": "https://www.semcasting.com/privacy_choice",
+        "notes": "Opt-out or consumer privacy-request page. On 2026-10-29 the old URL (https://www.semcasting.com/privacy-choice) redirected here, and this page answered HTTP 200. No request was submitted.",
         "domain": "semcasting.com",
         "http_status": "200",
         "sources": [
@@ -67377,8 +67377,8 @@
       "catalog": {
         "name": "Site Impact, Inc",
         "category": "other",
-        "url": "https://www.siteimpact.com/privacypolicy.php",
-        "notes": "Privacy notice or privacy-policy page. Use the state-rights, do-not-sell, or request section.",
+        "url": "https://siteimpact.com/privacy-policy",
+        "notes": "Privacy notice or privacy-policy page. Use the state-rights, do-not-sell, or request section. On 2026-10-29 the old URL (https://www.siteimpact.com/privacypolicy.php) redirected here, and this page answered HTTP 200. No request was submitted.",
         "domain": "siteimpact.com",
         "http_status": "200",
         "sources": [
@@ -67996,8 +67996,8 @@
       "catalog": {
         "name": "Spy Dialer",
         "category": "other",
-        "url": "https://www.spydialer.com/optout.aspx",
-        "notes": "Web form. Open-dataset difficulty: easy.",
+        "url": "https://www.spydialer.com/consumers/",
+        "notes": "Web form. Open-dataset difficulty: easy. On 2026-10-29 the old URL (https://www.spydialer.com/optout.aspx) redirected here, and this page answered HTTP 200. No request was submitted.",
         "domain": "spydialer.com",
         "http_status": "200",
         "sources": [
@@ -70500,8 +70500,8 @@
       "catalog": {
         "name": "TennHelp",
         "category": "other",
-        "url": "https://www.tennhelp.com/public-resources/change-listing.html",
-        "notes": "Opt-out or consumer privacy-request page.",
+        "url": "https://www.tennhelp.com/public-resources/change-listing",
+        "notes": "Opt-out or consumer privacy-request page. On 2026-10-29 the old URL (https://www.tennhelp.com/public-resources/change-listing.html) redirected here, and this page answered HTTP 200. No request was submitted.",
         "domain": "tennhelp.com",
         "http_status": "200",
         "sources": [
@@ -71120,8 +71120,8 @@
       "catalog": {
         "name": "The Data Group",
         "category": "other",
-        "url": "https://thedatagroup.com/california-consumer-privacy-act/",
-        "notes": "Opt-out or consumer privacy-request page.",
+        "url": "https://thedatagroup.com/privacy/california-consumer-privacy-act/",
+        "notes": "Opt-out or consumer privacy-request page. On 2026-10-29 the old URL (https://thedatagroup.com/california-consumer-privacy-act/) redirected here, and this page answered HTTP 200. No request was submitted.",
         "domain": "thedatagroup.com",
         "http_status": "200",
         "sources": [
@@ -71711,10 +71711,10 @@
       "catalog": {
         "name": "Trestle Solutions, Inc.",
         "category": "other",
-        "url": "https://trestleiq.com/privacy-policy-2022/",
-        "notes": "Privacy notice or privacy-policy page. Use the state-rights, do-not-sell, or request section.",
+        "url": "https://trestleiq.com/privacy-policy/",
+        "notes": "Privacy notice or privacy-policy page. Use the state-rights, do-not-sell, or request section. On 2026-10-29 the old URL (https://trestleiq.com/privacy-policy-2022/) redirected here, and this page answered HTTP 200. No request was submitted.",
         "domain": "trestleiq.com",
-        "http_status": "202",
+        "http_status": "200",
         "sources": [
           "markup"
         ]
@@ -78522,8 +78522,8 @@
       "catalog": {
         "name": "Archives.com (Ancestry)",
         "category": "people-search",
-        "url": "https://www.archives.com/?_act=Optout",
-        "notes": "Opt-out form. Open-dataset difficulty: easy.",
+        "url": "https://www.archives.com/optout",
+        "notes": "Opt-out form. Open-dataset difficulty: easy. On 2026-10-29 the old URL (https://www.archives.com/?_act=Optout) answered HTTP 500, and this page answered HTTP 200. No request was submitted.",
         "domain": "archives.com",
         "http_status": "200",
         "sources": [
@@ -88406,8 +88406,8 @@
       "catalog": {
         "name": "Persopo",
         "category": "people-search",
-        "url": "http://info.persopo.com/opt-out.html",
-        "notes": "Web form. Email: support@persopo.com. Open-dataset difficulty: easy.",
+        "url": "https://persopo.com/opt-out.html",
+        "notes": "Web form. Email: support@persopo.com. Open-dataset difficulty: easy. On 2026-10-29 the old URL (http://info.persopo.com/opt-out.html) answered HTTP 500 over plain HTTP, and this page answered HTTP 200. No request was submitted.",
         "domain": "persopo.com",
         "http_status": "200",
         "sources": [
@@ -88561,8 +88561,8 @@
       "catalog": {
         "name": "Pipl, Inc.",
         "category": "people-search",
-        "url": "https://pipl.com/resources/privacy-documents/privacy-policy",
-        "notes": "Privacy notice or privacy-policy page. Use the state-rights, do-not-sell, or request section.",
+        "url": "https://pipl.com/privacy-center",
+        "notes": "Privacy notice or privacy-policy page. Use the state-rights, do-not-sell, or request section. On 2026-10-29 the old URL (https://pipl.com/resources/privacy-documents/privacy-policy) redirected here, and this page answered HTTP 200. No request was submitted.",
         "domain": "pipl.com",
         "http_status": "200",
         "sources": [
@@ -88712,10 +88712,10 @@
       "catalog": {
         "name": "PrivateEye (Confi-Chek)",
         "category": "people-search",
-        "url": "https://www.privateeye.com/static/view/optout/",
-        "notes": "Web form. Open-dataset difficulty: easy. Automated check on 2026-10-01 got HTTP 403. Open the link in a browser.",
+        "url": "https://privateeye.com/removal",
+        "notes": "Web form. Open-dataset difficulty: easy. Automated check on 2026-10-01 got HTTP 403. Open the link in a browser. On 2026-10-29 the old URL (https://www.privateeye.com/static/view/optout/) redirected here, and this page answered HTTP 200. No request was submitted.",
         "domain": "privateeye.com",
-        "http_status": "403",
+        "http_status": "200",
         "sources": [
           "persprotect"
         ]
@@ -89514,10 +89514,10 @@
       "catalog": {
         "name": "PublicRecordsNow (Confi-Chek)",
         "category": "people-search",
-        "url": "https://www.publicrecordsnow.com/static/view/optout/",
-        "notes": "Web form. Open-dataset difficulty: easy. Automated check on 2026-10-01 got HTTP 403. Open the link in a browser.",
+        "url": "https://publicrecordsnow.com/removal",
+        "notes": "Web form. Open-dataset difficulty: easy. Automated check on 2026-10-01 got HTTP 403. Open the link in a browser. On 2026-10-29 the old URL (https://www.publicrecordsnow.com/static/view/optout/) looped on redirects, and this page answered HTTP 200. No request was submitted.",
         "domain": "publicrecordsnow.com",
-        "http_status": "403",
+        "http_status": "200",
         "sources": [
           "persprotect"
         ]
@@ -91392,10 +91392,10 @@
       "catalog": {
         "name": "SmartBackgroundChecks",
         "category": "people-search",
-        "url": "https://www.smartbackgroundchecks.com/optout",
-        "notes": "Opt-out form for SmartBackgroundChecks. Automated check on 2026-10-01 got HTTP 403. Open the link in a browser.",
+        "url": "https://www.smartbackgroundchecks.com/remove",
+        "notes": "Opt-out form for SmartBackgroundChecks. Automated check on 2026-10-01 got HTTP 403. Open the link in a browser. On 2026-10-29 the old URL (https://www.smartbackgroundchecks.com/optout) redirected here, and this page answered HTTP 200. No request was submitted.",
         "domain": "smartbackgroundchecks.com",
-        "http_status": "403",
+        "http_status": "200",
         "sources": [
           "persprotect"
         ]
@@ -94534,8 +94534,8 @@
       "catalog": {
         "name": "USA-People-Search",
         "category": "people-search",
-        "url": "https://www.usa-people-search.com/manage",
-        "notes": "Web form (manage/optout). Open-dataset difficulty: easy.",
+        "url": "https://www.usa-people-search.com/removal",
+        "notes": "Web form (manage/optout). Open-dataset difficulty: easy. On 2026-10-29 the old URL (https://www.usa-people-search.com/manage) redirected here, and this page answered HTTP 200. No request was submitted.",
         "domain": "usa-people-search.com",
         "http_status": "200",
         "sources": [
@@ -110112,10 +110112,10 @@
       "catalog": {
         "name": "AlarmsCalifornia (LicenseData)",
         "category": "other",
-        "url": "http://www.alarmscalifornia.org/about",
-        "notes": "Privacy notice or privacy-policy page. Use the state-rights, do-not-sell, or request section. Email: contact@licensedata.org. Automated check on 2026-10-01 got HTTP 403. Open the link in a browser.",
+        "url": "https://www.alarmscalifornia.org/about",
+        "notes": "Privacy notice or privacy-policy page. Use the state-rights, do-not-sell, or request section. Email: contact@licensedata.org. Automated check on 2026-10-01 got HTTP 403. Open the link in a browser. On 2026-10-29 the old URL (http://www.alarmscalifornia.org/about) answered HTTP 500 over plain HTTP, and this page answered HTTP 200. No request was submitted.",
         "domain": "alarmscalifornia.org",
-        "http_status": "403",
+        "http_status": "200",
         "sources": [
           "persprotect"
         ]
@@ -112641,10 +112641,10 @@
       "catalog": {
         "name": "CaliforniaBrokers.org (LicenseData)",
         "category": "other",
-        "url": "http://www.californiabrokers.org/about#contact",
-        "notes": "Privacy notice or privacy-policy page. Use the state-rights, do-not-sell, or request section. Email: contact@licensedata.org. Automated check on 2026-10-01 got HTTP 403. Open the link in a browser.",
+        "url": "https://www.californiabrokers.org/about#contact",
+        "notes": "Privacy notice or privacy-policy page. Use the state-rights, do-not-sell, or request section. Email: contact@licensedata.org. Automated check on 2026-10-01 got HTTP 403. Open the link in a browser. On 2026-10-29 the old URL (http://www.californiabrokers.org/about#contact) answered HTTP 500 over plain HTTP, and this page answered HTTP 200. No request was submitted.",
         "domain": "californiabrokers.org",
-        "http_status": "403",
+        "http_status": "200",
         "sources": [
           "persprotect"
         ]
@@ -112791,10 +112791,10 @@
       "catalog": {
         "name": "CaliforniaEngineering.org (LicenseData)",
         "category": "other",
-        "url": "http://www.californiaengineering.org/about#contact",
-        "notes": "Privacy notice or privacy-policy page. Use the state-rights, do-not-sell, or request section. Email: contact@licensedata.org. Automated check on 2026-10-01 got HTTP 403. Open the link in a browser.",
+        "url": "https://www.californiaengineering.org/about#contact",
+        "notes": "Privacy notice or privacy-policy page. Use the state-rights, do-not-sell, or request section. Email: contact@licensedata.org. Automated check on 2026-10-01 got HTTP 403. Open the link in a browser. On 2026-10-29 the old URL (http://www.californiaengineering.org/about#contact) answered HTTP 500 over plain HTTP, and this page answered HTTP 200. No request was submitted.",
         "domain": "californiaengineering.org",
-        "http_status": "403",
+        "http_status": "200",
         "sources": [
           "persprotect"
         ]
@@ -112941,10 +112941,10 @@
       "catalog": {
         "name": "CaliforniaLicensing.org (LicenseData)",
         "category": "other",
-        "url": "http://www.californialicensing.org/about#contact",
-        "notes": "Privacy notice or privacy-policy page. Use the state-rights, do-not-sell, or request section. Email: contact@licensedata.org. Automated check on 2026-10-01 got HTTP 403. Open the link in a browser.",
+        "url": "https://www.californialicensing.org/about#contact",
+        "notes": "Privacy notice or privacy-policy page. Use the state-rights, do-not-sell, or request section. Email: contact@licensedata.org. Automated check on 2026-10-01 got HTTP 403. Open the link in a browser. On 2026-10-29 the old URL (http://www.californialicensing.org/about#contact) answered HTTP 500 over plain HTTP, and this page answered HTTP 200. No request was submitted.",
         "domain": "californialicensing.org",
-        "http_status": "403",
+        "http_status": "200",
         "sources": [
           "persprotect"
         ]
@@ -113091,10 +113091,10 @@
       "catalog": {
         "name": "CaliforniaNursing.org (LicenseData)",
         "category": "other",
-        "url": "http://www.californianursing.org/about#contact",
-        "notes": "Privacy notice or privacy-policy page. Use the state-rights, do-not-sell, or request section. Email: contact@licensedata.org. Automated check on 2026-10-01 got HTTP 403. Open the link in a browser.",
+        "url": "https://www.californianursing.org/about#contact",
+        "notes": "Privacy notice or privacy-policy page. Use the state-rights, do-not-sell, or request section. Email: contact@licensedata.org. Automated check on 2026-10-01 got HTTP 403. Open the link in a browser. On 2026-10-29 the old URL (http://www.californianursing.org/about#contact) answered HTTP 500 over plain HTTP, and this page answered HTTP 200. No request was submitted.",
         "domain": "californianursing.org",
-        "http_status": "403",
+        "http_status": "200",
         "sources": [
           "persprotect"
         ]
@@ -113241,10 +113241,10 @@
       "catalog": {
         "name": "CaliforniaPharmacists.org (LicenseData)",
         "category": "other",
-        "url": "http://www.californiapharmacists.org/about#contact",
-        "notes": "Privacy notice or privacy-policy page. Use the state-rights, do-not-sell, or request section. Email: contact@licensedata.org. Automated check on 2026-10-01 got HTTP 403. Open the link in a browser.",
+        "url": "https://www.californiapharmacists.org/about#contact",
+        "notes": "Privacy notice or privacy-policy page. Use the state-rights, do-not-sell, or request section. Email: contact@licensedata.org. Automated check on 2026-10-01 got HTTP 403. Open the link in a browser. On 2026-10-29 the old URL (http://www.californiapharmacists.org/about#contact) answered HTTP 500 over plain HTTP, and this page answered HTTP 200. No request was submitted.",
         "domain": "californiapharmacists.org",
-        "http_status": "403",
+        "http_status": "200",
         "sources": [
           "persprotect"
         ]
@@ -115414,10 +115414,10 @@
       "catalog": {
         "name": "ContractorsCalifornia.org (LicenseData)",
         "category": "other",
-        "url": "http://www.contractorscalifornia.org/about#contact",
-        "notes": "Privacy notice or privacy-policy page. Use the state-rights, do-not-sell, or request section. Email: contact@licensedata.org. Automated check on 2026-10-01 got HTTP 403. Open the link in a browser.",
+        "url": "https://www.contractorscalifornia.org/about#contact",
+        "notes": "Privacy notice or privacy-policy page. Use the state-rights, do-not-sell, or request section. Email: contact@licensedata.org. Automated check on 2026-10-01 got HTTP 403. Open the link in a browser. On 2026-10-29 the old URL (http://www.contractorscalifornia.org/about#contact) answered HTTP 500 over plain HTTP, and this page answered HTTP 200. No request was submitted.",
         "domain": "contractorscalifornia.org",
-        "http_status": "403",
+        "http_status": "200",
         "sources": [
           "persprotect"
         ]
@@ -116263,10 +116263,10 @@
       "catalog": {
         "name": "Dataman Group Inc",
         "category": "other",
-        "url": "https://www.datamangroup.com/california-consumer-privacy-act-ccpa/",
-        "notes": "Privacy notice or privacy-policy page. Use the state-rights, do-not-sell, or request section. Automated check on 2026-10-01 got HTTP 403. Open the link in a browser.",
+        "url": "https://www.datamangroup.com/california-privacy-notice/",
+        "notes": "Privacy notice or privacy-policy page. Use the state-rights, do-not-sell, or request section. Automated check on 2026-10-01 got HTTP 403. Open the link in a browser. On 2026-10-29 the old URL (https://www.datamangroup.com/california-consumer-privacy-act-ccpa/) redirected here, and this page answered HTTP 200. No request was submitted.",
         "domain": "datamangroup.com",
-        "http_status": "403",
+        "http_status": "200",
         "sources": [
           "cppa"
         ]
@@ -116697,10 +116697,10 @@
       "catalog": {
         "name": "DentistsCalifornia.org (LicenseData)",
         "category": "other",
-        "url": "http://www.dentistscalifornia.org/about#contact",
-        "notes": "Privacy notice or privacy-policy page. Use the state-rights, do-not-sell, or request section. Email: contact@licensedata.org. Automated check on 2026-10-01 got HTTP 403. Open the link in a browser.",
+        "url": "https://www.dentistscalifornia.org/about#contact",
+        "notes": "Privacy notice or privacy-policy page. Use the state-rights, do-not-sell, or request section. Email: contact@licensedata.org. Automated check on 2026-10-01 got HTTP 403. Open the link in a browser. On 2026-10-29 the old URL (http://www.dentistscalifornia.org/about#contact) answered HTTP 500 over plain HTTP, and this page answered HTTP 200. No request was submitted.",
         "domain": "dentistscalifornia.org",
-        "http_status": "403",
+        "http_status": "200",
         "sources": [
           "persprotect"
         ]
@@ -116994,8 +116994,8 @@
       "catalog": {
         "name": "DonorBureau LLC",
         "category": "other",
-        "url": "https://donorbureau.com/california-privacy-rights-for-california-residents-only/",
-        "notes": "Privacy notice or privacy-policy page. Use the state-rights, do-not-sell, or request section. Privacy-rights page submitted to the California Data Broker Registry.",
+        "url": "https://donorbureau.com/california-privacy-rights",
+        "notes": "Privacy notice or privacy-policy page. Use the state-rights, do-not-sell, or request section. Privacy-rights page submitted to the California Data Broker Registry. On 2026-10-29 the old URL (https://donorbureau.com/california-privacy-rights-for-california-residents-only/) redirected here, and this page answered HTTP 200. No request was submitted.",
         "domain": "donorbureau.com",
         "http_status": "200",
         "sources": [
@@ -119075,10 +119075,10 @@
       "catalog": {
         "name": "FireArmsCalifornia.org (LicenseData)",
         "category": "other",
-        "url": "http://www.firearmscalifornia.org/about#contact",
-        "notes": "Privacy notice or privacy-policy page. Use the state-rights, do-not-sell, or request section. Email: contact@licensedata.org. Automated check on 2026-10-01 got HTTP 403. Open the link in a browser.",
+        "url": "https://www.firearmscalifornia.org/about#contact",
+        "notes": "Privacy notice or privacy-policy page. Use the state-rights, do-not-sell, or request section. Email: contact@licensedata.org. Automated check on 2026-10-01 got HTTP 403. Open the link in a browser. On 2026-10-29 the old URL (http://www.firearmscalifornia.org/about#contact) answered HTTP 500 over plain HTTP, and this page answered HTTP 200. No request was submitted.",
         "domain": "firearmscalifornia.org",
-        "http_status": "403",
+        "http_status": "200",
         "sources": [
           "persprotect"
         ]
@@ -119647,8 +119647,8 @@
       "catalog": {
         "name": "Global Source Data Solutions Inc",
         "category": "other",
-        "url": "https://gsdsi.com/privacy",
-        "notes": "Privacy notice or privacy-policy page. Use the state-rights, do-not-sell, or request section. Email: privacy@gsdsi.com. Privacy-rights page submitted to the California Data Broker Registry.",
+        "url": "https://www.gsdsi.com/privacy-policy",
+        "notes": "Privacy notice or privacy-policy page. Use the state-rights, do-not-sell, or request section. Email: privacy@gsdsi.com. Privacy-rights page submitted to the California Data Broker Registry. On 2026-10-29 the old URL (https://gsdsi.com/privacy) redirected here, and this page answered HTTP 200. No request was submitted.",
         "domain": "gsdsi.com",
         "http_status": "200",
         "sources": [
@@ -124609,10 +124609,10 @@
       "catalog": {
         "name": "NotariesCalifornia.com (LicenseData)",
         "category": "other",
-        "url": "http://www.notariescalifornia.com/about",
-        "notes": "Privacy notice or privacy-policy page. Use the state-rights, do-not-sell, or request section. Email: contact@licensedata.org. Automated check on 2026-10-01 got HTTP 403. Open the link in a browser.",
+        "url": "https://www.notariescalifornia.com/about",
+        "notes": "Privacy notice or privacy-policy page. Use the state-rights, do-not-sell, or request section. Email: contact@licensedata.org. Automated check on 2026-10-01 got HTTP 403. Open the link in a browser. On 2026-10-29 the old URL (http://www.notariescalifornia.com/about) answered HTTP 500 over plain HTTP, and this page answered HTTP 200. No request was submitted.",
         "domain": "notariescalifornia.com",
-        "http_status": "403",
+        "http_status": "200",
         "sources": [
           "persprotect"
         ]
@@ -136125,8 +136125,8 @@
       "catalog": {
         "name": "USAPeopleData (Intelius)",
         "category": "people-search",
-        "url": "http://www.usapeopledata.com/",
-        "notes": "Published privacy-request URL is the site root. Confirm a request form is on the page before sending information.",
+        "url": "https://www.usapeopledata.com/",
+        "notes": "Published privacy-request URL is the site root. Confirm a request form is on the page before sending information. On 2026-10-29 the old URL (http://www.usapeopledata.com/) answered HTTP 500 over plain HTTP, and this page answered HTTP 200. No request was submitted.",
         "domain": "usapeopledata.com",
         "http_status": "200",
         "sources": [
@@ -144356,8 +144356,8 @@
       "catalog": {
         "name": "YourAdChoices Canada",
         "category": "marketing",
-        "url": "https://www.youradchoices.ca/choices",
-        "notes": "Digital Advertising Alliance of Canada choices for interest-based advertising.",
+        "url": "https://youradchoices.ca/en/tools",
+        "notes": "Digital Advertising Alliance of Canada choices for interest-based advertising. On 2026-10-29 the old URL (https://www.youradchoices.ca/choices) answered HTTP 500, and this page answered HTTP 200. No request was submitted.",
         "domain": "youradchoices.ca",
         "http_status": "200",
         "sources": [
