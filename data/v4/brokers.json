@@ -1,15 +1,15 @@
 {
  "schema_version": "4.0.0",
- "checked_at": "2026-11-02T10:29:06+00:00",
+ "checked_at": "2026-11-02T19:37:12+00:00",
  "method": "v3 records, with privacy and removal mailboxes on another domain kept as related_domain. Brokers whose loaded pages published no removal channel were crawled again for unfetched same-site opt-out and privacy URLs, then the catalog URL and homepage were opened once in a browser when those pages still showed no form. That recrawl honors robots.txt. A later pass reads the catalog URL and homepage of brokers whose robots.txt had disallowed the research client. A search pass reads homepages whose public search form was missing, including pages robots.txt had disallowed, and stores a name, phone, or address form. Those passes submit no form, no login, and no CAPTCHA. A legal pass re-reads stored privacy and terms text and fetches an unread privacy or terms page when robots.txt allows it. A network pass looks up public DNS and the site certificate, and reads response headers for the removal URL when robots.txt allows it. A later pass adds IPv6, SPF, DMARC, DKIM selectors, CAA, DNSSEC, the address block, certificate dates, RDAP registration, and the removal response's security headers. A captcha pass re-reads the removal URL and the search page for a widget. A browser reads the page when the static HTML has no widget and the page has a removal form, a stored CAPTCHA, or a public search form. A later pass reads the public widget settings, including whether it is a checkbox, an invisible check, or a score. A form pass re-reads stored search and removal forms for labels, limits, autocomplete, the submit button, and hidden field names. A browser opens when the static HTML does not contain the stored fields. Nothing is submitted. A search test then submits one synthetic query on each broker whose search and removal are both fillable, or with --searchable on each broker with a public search. A robots.txt disallow does not stop the test or count against a search; when --robots is set the log only notes it as robots_disallowed. Brokers whose homepage robots.txt disallowed the research client were later opened in a browser, and their liveness is the result of that read. Removal forms are not submitted and CAPTCHAs are not solved. search_test is on every broker. It stores the outcome, status, field names, the first path segment, the page kind, and a result count when the page states one. A loader page is followed to the count endpoint. The response body, record text, and listing URLs are not stored.",
- "broker_count": 845,
+ "broker_count": 847,
  "counts": {
   "with_related_email": 131,
-  "with_form": 196,
-  "with_email": 437,
+  "with_form": 197,
+  "with_email": 438,
   "with_extracted_email": 210,
   "with_stated_email": 11,
-  "no_channel_remaining": 106,
+  "no_channel_remaining": 107,
   "with_search": 342,
   "with_search_fillable": 319,
   "search_unscanned": 35,
@@ -25,18 +25,18 @@
   "search_page_results": 54,
   "search_page_loader": 12,
   "search_page_form": 27,
-  "with_country": 779,
-  "with_region": 485,
-  "with_locality": 365,
-  "with_removal_action": 151,
+  "with_country": 781,
+  "with_region": 486,
+  "with_locality": 366,
+  "with_removal_action": 152,
   "shared_removal": 61,
   "email_verification": 28,
   "id_document": 1,
-  "with_privacy": 636,
+  "with_privacy": 639,
   "with_terms": 399,
   "with_automation_clause": 81,
   "with_authorized_agent": 143,
-  "with_residency": 579,
+  "with_residency": 580,
   "sells_personal_information": 4,
   "does_not_sell": 78,
   "children_not_directed": 39,
@@ -66,7 +66,7 @@
   "with_csp": 181,
   "with_hsts_preload": 119,
   "removal_captcha": 271,
-  "removal_captcha_sitekey": 155,
+  "removal_captcha_sitekey": 156,
   "removal_captcha_checked": 349,
   "search_captcha_widget": 16,
   "search_captcha_sitekey": 6,
@@ -94,13 +94,13 @@
    "opt_out_gone": 0,
    "robots": 23,
    "captcha_no_form": 28,
-   "no_channel": 114
+   "no_channel": 115
   },
   "lookup_search": 285,
   "lookup_search_fillable": 268,
   "liveness": {
-   "alive": 718,
-   "blocked": 47,
+   "alive": 721,
+   "blocked": 46,
    "dead": 18,
    "error": 13,
    "opt_out_missing": 1,
@@ -116873,21 +116873,97 @@
    "name": "VisitIQ.io",
    "category": "other",
    "domain": "visitiq.io",
-   "checked_at": "2026-10-12T23:28:24+00:00",
-   "liveness": "blocked",
-   "liveness_detail": "catalog URL returned a bot wall or HTTP 401/403/429/503",
+   "checked_at": "2026-11-02T19:29:46+00:00",
+   "liveness": "alive",
+   "liveness_detail": "catalog URL loaded",
    "homepage": "https://visitiq.io/",
-   "logo_url": null,
-   "images": [],
+   "logo_url": "https://visitiq.io/wp-content/uploads/2025/03/VisitIQ_Brand_Logo.png",
+   "images": [
+    {
+     "url": "https://i0.wp.com/visitiq.io/wp-content/uploads/2025/03/cropped-VisitIQ_Brand_Logo.png?fit=32%2C32&ssl=1",
+     "kind": "icon",
+     "source_page": "https://visitiq.io/"
+    },
+    {
+     "url": "https://i0.wp.com/visitiq.io/wp-content/uploads/2025/03/cropped-VisitIQ_Brand_Logo.png?fit=192%2C192&ssl=1",
+     "kind": "icon",
+     "source_page": "https://visitiq.io/"
+    },
+    {
+     "url": "https://i0.wp.com/visitiq.io/wp-content/uploads/2025/03/cropped-VisitIQ_Brand_Logo.png?fit=180%2C180&ssl=1",
+     "kind": "apple_touch_icon",
+     "source_page": "https://visitiq.io/"
+    },
+    {
+     "url": "https://i0.wp.com/visitiq.io/wp-content/uploads/2025/04/VisitIQ-Logo-2025-1200-x-630-px.png",
+     "kind": "og_image",
+     "source_page": "https://visitiq.io/"
+    },
+    {
+     "url": "https://visitiq.io/wp-content/uploads/2025/04/VisitIQ-Logo-Isolated-2025-1350-x-1350-px.png",
+     "kind": "json_ld",
+     "source_page": "https://visitiq.io/"
+    },
+    {
+     "url": "https://visitiq.io/wp-content/uploads/2025/03/VisitIQ_Brand_Logo.png",
+     "kind": "logo",
+     "source_page": "https://visitiq.io/"
+    },
+    {
+     "url": "https://i0.wp.com/visitiq.io/wp-content/uploads/2025/03/carousel_logo_03.png?fit=198%2C53&ssl=1",
+     "kind": "logo",
+     "source_page": "https://visitiq.io/"
+    },
+    {
+     "url": "https://i0.wp.com/visitiq.io/wp-content/uploads/2025/03/carousel_logo_04.png?fit=198%2C53&ssl=1",
+     "kind": "logo",
+     "source_page": "https://visitiq.io/"
+    },
+    {
+     "url": "https://i0.wp.com/visitiq.io/wp-content/uploads/2025/03/carousel_logo_07.png?fit=198%2C53&ssl=1",
+     "kind": "logo",
+     "source_page": "https://visitiq.io/"
+    },
+    {
+     "url": "https://i0.wp.com/visitiq.io/wp-content/uploads/2025/03/carousel_logo_06.png?fit=198%2C53&ssl=1",
+     "kind": "logo",
+     "source_page": "https://visitiq.io/"
+    },
+    {
+     "url": "https://i0.wp.com/visitiq.io/wp-content/uploads/2025/03/carousel_logo_01.png?fit=198%2C53&ssl=1",
+     "kind": "logo",
+     "source_page": "https://visitiq.io/"
+    },
+    {
+     "url": "https://i0.wp.com/visitiq.io/wp-content/uploads/2025/03/carousel_logo_02.png?fit=198%2C53&ssl=1",
+     "kind": "logo",
+     "source_page": "https://visitiq.io/"
+    },
+    {
+     "url": "https://i0.wp.com/visitiq.io/wp-content/uploads/2025/03/carousel_logo_08.png?fit=198%2C53&ssl=1",
+     "kind": "logo",
+     "source_page": "https://visitiq.io/"
+    },
+    {
+     "url": "https://i0.wp.com/visitiq.io/wp-content/uploads/2025/03/carousel_logo_05.png?fit=198%2C53&ssl=1",
+     "kind": "logo",
+     "source_page": "https://visitiq.io/"
+    },
+    {
+     "url": "https://i0.wp.com/visitiq.io/wp-content/uploads/2025/12/Screenshot-2025-12-17-at-3.11.26-PM.png",
+     "kind": "og_image",
+     "source_page": "https://visitiq.io/privacy-policy/"
+    }
+   ],
    "theme_color": null,
    "languages": [
     "en"
    ],
-   "legal_name": null,
+   "legal_name": "VisitIQ",
    "search": {
     "available": false,
     "method": "none",
-    "page_url": "https://visitiq.io/",
+    "page_url": null,
     "form_action": null,
     "inputs": [],
     "url_pattern": null,
@@ -116904,54 +116980,34 @@
     },
     "captcha_provider": null,
     "captcha_sitekey": null,
-    "captcha_checked": null,
-    "captcha_detail": null
+    "captcha_detail": null,
+    "captcha_checked": null
    },
    "removal": {
-    "url": "https://visitiq.io/opt-out/",
-    "final_url": "https://visitiq.io/opt-out/",
-    "http_status": 403,
+    "url": "https://visitiq.io/privacy-policy/",
+    "final_url": "https://visitiq.io/privacy-policy/",
+    "http_status": 200,
     "kinds": [
      "opt_out"
     ],
     "channels": [
-     "web_form"
+     "web_form",
+     "phone"
     ],
     "emails": [],
-    "phones": [],
+    "phones": [
+     "1-866-207-1399"
+    ],
     "postal_address": null,
     "portal": null,
     "form_fields": [
      {
-      "name": "ak_hp_textarea",
-      "type": "textarea",
-      "canonical": null,
-      "required": false,
-      "autocomplete": null,
-      "placeholder": "Δ",
-      "id": null,
-      "label": null,
-      "inputmode": null,
-      "pattern": null,
-      "minlength": null,
-      "maxlength": null,
-      "min": null,
-      "max": null,
-      "step": null,
-      "accept": null,
-      "multiple": null,
-      "disabled": null,
-      "readonly": null,
-      "checked": null,
-      "value": null
-     },
-     {
-      "name": "names[first_name]",
+      "name": "input_8.3",
       "type": "text",
       "canonical": "first_name",
       "required": false,
       "autocomplete": null,
-      "placeholder": "First Name",
+      "placeholder": "First Name (required)*",
       "id": null,
       "label": null,
       "inputmode": null,
@@ -116969,12 +117025,12 @@
       "value": null
      },
      {
-      "name": "names_1[last_name]",
+      "name": "input_8.6",
       "type": "text",
       "canonical": "last_name",
       "required": false,
       "autocomplete": null,
-      "placeholder": "Last Name",
+      "placeholder": "Last Name (required)*",
       "id": null,
       "label": null,
       "inputmode": null,
@@ -116992,12 +117048,12 @@
       "value": null
      },
      {
-      "name": "email",
+      "name": "input_9",
       "type": "email",
       "canonical": "email",
       "required": false,
       "autocomplete": null,
-      "placeholder": "Email",
+      "placeholder": "Enter your email (required)*",
       "id": null,
       "label": null,
       "inputmode": null,
@@ -117015,12 +117071,58 @@
       "value": null
      },
      {
-      "name": "checkbox[]",
-      "type": "checkbox",
+      "name": "input_13",
+      "type": "tel",
+      "canonical": "phone",
+      "required": false,
+      "autocomplete": null,
+      "placeholder": "Enter your phone number",
+      "id": null,
+      "label": null,
+      "inputmode": null,
+      "pattern": null,
+      "minlength": null,
+      "maxlength": null,
+      "min": null,
+      "max": null,
+      "step": null,
+      "accept": null,
+      "multiple": null,
+      "disabled": null,
+      "readonly": null,
+      "checked": null,
+      "value": null
+     },
+     {
+      "name": "input_6",
+      "type": "text",
       "canonical": null,
       "required": false,
       "autocomplete": null,
-      "placeholder": "I confirm the name and email address I have submitted are my own or submitted on",
+      "placeholder": "Enter your company name",
+      "id": null,
+      "label": null,
+      "inputmode": null,
+      "pattern": null,
+      "minlength": null,
+      "maxlength": null,
+      "min": null,
+      "max": null,
+      "step": null,
+      "accept": null,
+      "multiple": null,
+      "disabled": null,
+      "readonly": null,
+      "checked": null,
+      "value": null
+     },
+     {
+      "name": "ak_hp_textarea",
+      "type": "text",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null,
       "id": null,
       "label": null,
       "inputmode": null,
@@ -117042,9 +117144,10 @@
     "requires_profile_url": null,
     "captcha": {
      "provider": "hcaptcha",
-     "sitekey": null,
+     "sitekey": "0x4AAAAAABf_HxTDBjipvNr-",
      "pages": [
-      "https://visitiq.io/opt-out/"
+      "https://visitiq.io/",
+      "https://visitiq.io/privacy-policy/"
      ],
      "checked": false,
      "checked_url": null,
@@ -117064,12 +117167,12 @@
       "callback": null
      }
     },
-    "consent_vendor": null,
+    "consent_vendor": "cookiebot",
     "success_text": null,
     "suppression_not_deletion": null,
     "processing_days": null,
     "processing_text": null,
-    "form_action": "https://visitiq.io/opt-out/",
+    "form_action": "https://visitiq.io/privacy-policy/",
     "form_method": "http_form_post",
     "form_meta": {
      "id": null,
@@ -117082,10 +117185,10 @@
    },
    "bot_defense": {
     "vendor": null,
-    "outcome": "hard_block"
+    "outcome": "none"
    },
    "legal": {
-    "privacy_policy_url": null,
+    "privacy_policy_url": "https://visitiq.io/privacy-policy/",
     "terms_url": null,
     "automation_prohibited": null,
     "automation_clause": null,
@@ -117094,7 +117197,8 @@
     ],
     "authorized_agent": null,
     "data_categories": [
-     "identifiers"
+     "identifiers",
+     "employment"
     ],
     "sells_personal_information": null,
     "sells_clause": null,
@@ -117104,26 +117208,26 @@
     {
      "url": "https://visitiq.io/",
      "final_url": "https://visitiq.io/",
-     "status": 429,
+     "status": 200,
      "role": "home",
-     "title": "429 Too Many Requests",
-     "liveness": "blocked"
+     "title": "VisitIQ | Identity Intelligence and Activation for Marketers",
+     "liveness": "alive"
     },
     {
      "url": "https://www.visitiq.io/",
      "final_url": "https://visitiq.io/",
-     "status": 429,
+     "status": 200,
      "role": "home",
-     "title": "429 Too Many Requests",
-     "liveness": "blocked"
+     "title": "VisitIQ | Identity Intelligence and Activation for Marketers",
+     "liveness": "alive"
     },
     {
-     "url": "https://visitiq.io/opt-out/",
-     "final_url": "https://visitiq.io/opt-out/",
-     "status": 403,
+     "url": "https://visitiq.io/privacy-policy/",
+     "final_url": "https://visitiq.io/privacy-policy/",
+     "status": 200,
      "role": "catalog",
-     "title": "| VisitIQ",
-     "liveness": "blocked"
+     "title": "VisitIQ™ Data Services and Website Privacy Policy | VisitIQ",
+     "liveness": "alive"
     }
    ],
    "location": {
@@ -117219,7 +117323,8 @@
     "removal_fields": [
      "first_name",
      "last_name",
-     "email"
+     "email",
+     "phone"
     ],
     "removal_path": null,
     "fully_automatable": false,
@@ -346135,6 +346240,884 @@
     "captcha_blocks_form": true,
     "captcha_email_fallback": true,
     "removal_blocker": null
+   },
+   "search_test": {
+    "outcome": null,
+    "http_status": null,
+    "path_prefix": null,
+    "fields_sent": [],
+    "missing": [],
+    "page_kind": null,
+    "result_count": null,
+    "checked_at": null
+   }
+  },
+  "mobilemonkey-inc-customers-ai": {
+   "schema_version": "4.0.0",
+   "id": "mobilemonkey-inc-customers-ai",
+   "name": "MobileMonkey, Inc (Customers.ai)",
+   "category": "marketing",
+   "domain": "customers.ai",
+   "checked_at": "2026-11-02T19:29:40+00:00",
+   "liveness": "alive",
+   "liveness_detail": "catalog URL loaded",
+   "homepage": "https://customers.ai/",
+   "logo_url": "https://customers.ai/wp-content/uploads/2025/12/logo-customers-ai-orange.svg",
+   "images": [
+    {
+     "url": "https://customers.ai/wp-content/uploads/2026/06/apple-touch-icon.png",
+     "kind": "icon",
+     "source_page": "https://customers.ai/"
+    },
+    {
+     "url": "https://customers.ai/wp-content/uploads/2026/03/customersai-logo.jpg",
+     "kind": "og_image",
+     "source_page": "https://customers.ai/"
+    },
+    {
+     "url": "https://customers.ai/wp-content/uploads/2024/04/Blue-logo.svg",
+     "kind": "json_ld",
+     "source_page": "https://customers.ai/"
+    },
+    {
+     "url": "https://customers.ai/wp-content/uploads/2025/12/logo-customers-ai-orange.svg",
+     "kind": "logo",
+     "source_page": "https://customers.ai/"
+    },
+    {
+     "url": "https://customers.ai/wp-content/uploads/2025/11/logo-elevar.svg",
+     "kind": "logo",
+     "source_page": "https://customers.ai/"
+    },
+    {
+     "url": "https://customers.ai/wp-content/uploads/2025/03/blotout-logo-1024x260.webp",
+     "kind": "logo",
+     "source_page": "https://customers.ai/"
+    },
+    {
+     "url": "https://customers.ai/wp-content/uploads/2025/11/good_good_golf_logo.png",
+     "kind": "logo",
+     "source_page": "https://customers.ai/"
+    },
+    {
+     "url": "https://customers.ai/wp-content/uploads/2025/11/Shop_LC_Logo.png",
+     "kind": "logo",
+     "source_page": "https://customers.ai/"
+    },
+    {
+     "url": "https://customers.ai/wp-content/uploads/2025/11/fifteen_twenty_logo.webp",
+     "kind": "logo",
+     "source_page": "https://customers.ai/"
+    },
+    {
+     "url": "https://customers.ai/wp-content/uploads/2025/11/zogics_logo.png",
+     "kind": "logo",
+     "source_page": "https://customers.ai/"
+    },
+    {
+     "url": "https://customers.ai/wp-content/uploads/2025/11/bloomist_logo.png",
+     "kind": "logo",
+     "source_page": "https://customers.ai/"
+    },
+    {
+     "url": "https://customers.ai/wp-content/uploads/2025/11/cbdmd-logo.png",
+     "kind": "logo",
+     "source_page": "https://customers.ai/"
+    },
+    {
+     "url": "https://customers.ai/wp-content/uploads/2025/11/logo-shopify-partner.png",
+     "kind": "logo",
+     "source_page": "https://customers.ai/"
+    },
+    {
+     "url": "https://customers.ai/wp-content/uploads/2025/11/logo-klaviyo-partner.png",
+     "kind": "logo",
+     "source_page": "https://customers.ai/"
+    },
+    {
+     "url": "https://customers.ai/wp-content/uploads/2025/11/logo-meta-business-partner.png",
+     "kind": "logo",
+     "source_page": "https://customers.ai/"
+    }
+   ],
+   "theme_color": null,
+   "languages": [
+    "en"
+   ],
+   "legal_name": "Customers.ai",
+   "search": {
+    "available": false,
+    "method": "none",
+    "page_url": null,
+    "form_action": null,
+    "inputs": [],
+    "url_pattern": null,
+    "directory_prefixes": [],
+    "paywall": null,
+    "login_wall": null,
+    "form_meta": {
+     "id": null,
+     "name": null,
+     "autocomplete": null,
+     "novalidate": null,
+     "submit_label": null,
+     "hidden_names": []
+    },
+    "captcha_provider": null,
+    "captcha_sitekey": null,
+    "captcha_detail": null,
+    "captcha_checked": null
+   },
+   "removal": {
+    "url": "https://customers.ai/privacy-policy",
+    "final_url": "https://customers.ai/privacy-policy",
+    "http_status": 200,
+    "kinds": [
+     "opt_out"
+    ],
+    "channels": [
+     "web_form",
+     "email"
+    ],
+    "emails": [
+     {
+      "email": "info@customers.ai",
+      "confidence": "uncertain",
+      "source_url": "https://customers.ai/privacy-policy"
+     }
+    ],
+    "phones": [],
+    "postal_address": null,
+    "portal": null,
+    "form_fields": [
+     {
+      "name": "wpforms[fields][1][first]",
+      "type": "text",
+      "canonical": "first_name",
+      "required": true,
+      "autocomplete": null,
+      "placeholder": "First Name",
+      "id": null,
+      "label": null,
+      "inputmode": null,
+      "pattern": null,
+      "minlength": null,
+      "maxlength": null,
+      "min": null,
+      "max": null,
+      "step": null,
+      "accept": null,
+      "multiple": null,
+      "disabled": null,
+      "readonly": null,
+      "checked": null,
+      "value": null
+     },
+     {
+      "name": "wpforms[fields][1][last]",
+      "type": "text",
+      "canonical": "last_name",
+      "required": true,
+      "autocomplete": null,
+      "placeholder": "Last Name",
+      "id": null,
+      "label": null,
+      "inputmode": null,
+      "pattern": null,
+      "minlength": null,
+      "maxlength": null,
+      "min": null,
+      "max": null,
+      "step": null,
+      "accept": null,
+      "multiple": null,
+      "disabled": null,
+      "readonly": null,
+      "checked": null,
+      "value": null
+     },
+     {
+      "name": "wpforms[fields][42]",
+      "type": "url",
+      "canonical": "profile_url",
+      "required": true,
+      "autocomplete": null,
+      "placeholder": "Website",
+      "id": null,
+      "label": null,
+      "inputmode": null,
+      "pattern": null,
+      "minlength": null,
+      "maxlength": null,
+      "min": null,
+      "max": null,
+      "step": null,
+      "accept": null,
+      "multiple": null,
+      "disabled": null,
+      "readonly": null,
+      "checked": null,
+      "value": null
+     },
+     {
+      "name": "wpforms[fields][2]",
+      "type": "email",
+      "canonical": "email",
+      "required": true,
+      "autocomplete": null,
+      "placeholder": "Work Email",
+      "id": null,
+      "label": null,
+      "inputmode": null,
+      "pattern": null,
+      "minlength": null,
+      "maxlength": null,
+      "min": null,
+      "max": null,
+      "step": null,
+      "accept": null,
+      "multiple": null,
+      "disabled": null,
+      "readonly": null,
+      "checked": null,
+      "value": null
+     },
+     {
+      "name": "wpforms[fields][55]",
+      "type": "tel",
+      "canonical": "phone",
+      "required": false,
+      "autocomplete": null,
+      "placeholder": "Phone Number (ex. +1 415 5552671)",
+      "id": null,
+      "label": null,
+      "inputmode": null,
+      "pattern": null,
+      "minlength": null,
+      "maxlength": null,
+      "min": null,
+      "max": null,
+      "step": null,
+      "accept": null,
+      "multiple": null,
+      "disabled": null,
+      "readonly": null,
+      "checked": null,
+      "value": null
+     },
+     {
+      "name": "wpforms[fields][11]",
+      "type": "text",
+      "canonical": null,
+      "required": true,
+      "autocomplete": null,
+      "placeholder": "Company Name",
+      "id": null,
+      "label": null,
+      "inputmode": null,
+      "pattern": null,
+      "minlength": null,
+      "maxlength": null,
+      "min": null,
+      "max": null,
+      "step": null,
+      "accept": null,
+      "multiple": null,
+      "disabled": null,
+      "readonly": null,
+      "checked": null,
+      "value": null
+     },
+     {
+      "name": "wpforms[fields][8]",
+      "type": "select",
+      "canonical": null,
+      "required": true,
+      "autocomplete": null,
+      "placeholder": null,
+      "options": [
+       "Business Type",
+       "Direct to Consumer",
+       "Marketing Agency",
+       "Business to Business"
+      ],
+      "id": null,
+      "label": null,
+      "inputmode": null,
+      "pattern": null,
+      "minlength": null,
+      "maxlength": null,
+      "min": null,
+      "max": null,
+      "step": null,
+      "accept": null,
+      "multiple": null,
+      "disabled": null,
+      "readonly": null,
+      "checked": null,
+      "value": null
+     },
+     {
+      "name": "wpforms[fields][60]",
+      "type": "select",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null,
+      "options": [
+       "Have you used a visitor ID tool?",
+       "I have used website visitor ID tools",
+       "I have not used website visitor ID tools"
+      ],
+      "id": null,
+      "label": null,
+      "inputmode": null,
+      "pattern": null,
+      "minlength": null,
+      "maxlength": null,
+      "min": null,
+      "max": null,
+      "step": null,
+      "accept": null,
+      "multiple": null,
+      "disabled": null,
+      "readonly": null,
+      "checked": null,
+      "value": null
+     },
+     {
+      "name": "wpforms[fields][67]",
+      "type": "select",
+      "canonical": null,
+      "required": true,
+      "autocomplete": null,
+      "placeholder": null,
+      "options": [
+       "Yes",
+       "No"
+      ],
+      "id": null,
+      "label": null,
+      "inputmode": null,
+      "pattern": null,
+      "minlength": null,
+      "maxlength": null,
+      "min": null,
+      "max": null,
+      "step": null,
+      "accept": null,
+      "multiple": null,
+      "disabled": null,
+      "readonly": null,
+      "checked": null,
+      "value": null
+     },
+     {
+      "name": "wpforms[fields][68]",
+      "type": "select",
+      "canonical": null,
+      "required": true,
+      "autocomplete": null,
+      "placeholder": null,
+      "options": [
+       "0-20k",
+       "21k-50k",
+       "51k-100k",
+       "100k+"
+      ],
+      "id": null,
+      "label": null,
+      "inputmode": null,
+      "pattern": null,
+      "minlength": null,
+      "maxlength": null,
+      "min": null,
+      "max": null,
+      "step": null,
+      "accept": null,
+      "multiple": null,
+      "disabled": null,
+      "readonly": null,
+      "checked": null,
+      "value": null
+     },
+     {
+      "name": "wpforms[fields][69]",
+      "type": "select",
+      "canonical": null,
+      "required": true,
+      "autocomplete": null,
+      "placeholder": null,
+      "options": [
+       "I refer my clients",
+       "I whitelabel solutions to my clients via HighLevel",
+       "I whitelabel solutions to my clients via another platform"
+      ],
+      "id": null,
+      "label": null,
+      "inputmode": null,
+      "pattern": null,
+      "minlength": null,
+      "maxlength": null,
+      "min": null,
+      "max": null,
+      "step": null,
+      "accept": null,
+      "multiple": null,
+      "disabled": null,
+      "readonly": null,
+      "checked": null,
+      "value": null
+     },
+     {
+      "name": "wpforms[fields][70]",
+      "type": "select",
+      "canonical": null,
+      "required": true,
+      "autocomplete": null,
+      "placeholder": null,
+      "options": [
+       "Email Marketing",
+       "Meta Ads",
+       "Both Email and Meta Ads",
+       "We don’t offer Email or Meta Ads"
+      ],
+      "id": null,
+      "label": null,
+      "inputmode": null,
+      "pattern": null,
+      "minlength": null,
+      "maxlength": null,
+      "min": null,
+      "max": null,
+      "step": null,
+      "accept": null,
+      "multiple": null,
+      "disabled": null,
+      "readonly": null,
+      "checked": null,
+      "value": null
+     }
+    ],
+    "csrf_field_name": "wpforms[time_token]",
+    "requires_profile_url": true,
+    "captcha": {
+     "provider": null,
+     "sitekey": null,
+     "pages": [],
+     "checked": null,
+     "checked_url": null,
+     "detail": null
+    },
+    "consent_vendor": null,
+    "success_text": null,
+    "suppression_not_deletion": null,
+    "processing_days": null,
+    "processing_text": null,
+    "form_action": "https://customers.ai/privacy-policy",
+    "form_method": "http_form_post",
+    "form_meta": {
+     "id": null,
+     "name": null,
+     "autocomplete": null,
+     "novalidate": null,
+     "submit_label": null,
+     "hidden_names": []
+    }
+   },
+   "bot_defense": {
+    "vendor": null,
+    "outcome": "none"
+   },
+   "legal": {
+    "privacy_policy_url": "https://customers.ai/privacy-policy",
+    "terms_url": null,
+    "automation_prohibited": null,
+    "automation_clause": null,
+    "residency": [
+     "US-CA"
+    ],
+    "authorized_agent": null,
+    "data_categories": [
+     "identifiers",
+     "precise_location",
+     "internet_activity",
+     "employment",
+     "sensitive"
+    ],
+    "sells_personal_information": null,
+    "sells_clause": null,
+    "children_not_directed": null
+   },
+   "pages": [
+    {
+     "url": "https://customers.ai/",
+     "final_url": "https://customers.ai/",
+     "status": 200,
+     "role": "home",
+     "title": "CustomersAI Visitor & Shopper Identification for Ecommerce",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.customers.ai/",
+     "final_url": "https://customers.ai/",
+     "status": 200,
+     "role": "home",
+     "title": "CustomersAI Visitor & Shopper Identification for Ecommerce",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://customers.ai/privacy-policy",
+     "final_url": "https://customers.ai/privacy-policy",
+     "status": 200,
+     "role": "catalog",
+     "title": "Customers.ai Privacy Policy",
+     "liveness": "alive"
+    }
+   ],
+   "location": {
+    "country": "US",
+    "region": null,
+    "locality": null,
+    "postal_code": null,
+    "street": null,
+    "postal_address": null,
+    "coverage": [
+     "US-CA",
+     "US"
+    ],
+    "search_regions": [],
+    "sources": [
+     "page"
+    ]
+   },
+   "network": {
+    "checked": false,
+    "addresses": [],
+    "ipv6": [],
+    "cname": null,
+    "mx": [],
+    "mail_provider": null,
+    "spf": null,
+    "dmarc": null,
+    "dkim": [],
+    "nameservers": [],
+    "dns_provider": null,
+    "soa_primary": null,
+    "caa": [],
+    "dnssec": null,
+    "asn": null,
+    "asn_country": null,
+    "prefix": null,
+    "cdn": null,
+    "server": null,
+    "tls_org": null,
+    "tls_issuer": null,
+    "tls_names": [],
+    "tls_version": null,
+    "tls_not_before": null,
+    "tls_not_after": null,
+    "registrar": null,
+    "registered": null,
+    "registration_expires": null,
+    "domain_status": []
+   },
+   "request": {
+    "removal_host": "customers.ai",
+    "same_site": true,
+    "https": true,
+    "redirected": false,
+    "redirect_count": null,
+    "form_enctype": null,
+    "content_type": null,
+    "hsts": null,
+    "hsts_max_age": null,
+    "hsts_subdomains": null,
+    "hsts_preload": null,
+    "http_version": null,
+    "http3": null,
+    "frame_options": null,
+    "nosniff": null,
+    "referrer_policy": null,
+    "csp": null,
+    "powered_by": null,
+    "cookie_names": []
+   },
+   "automation": {
+    "search_scanned": true,
+    "search_fillable": false,
+    "search_captcha": false,
+    "search_fields": [],
+    "removal_form_fillable": true,
+    "removal_email_usable": false,
+    "removal_fields": [
+     "first_name",
+     "last_name",
+     "profile_url",
+     "email",
+     "phone"
+    ],
+    "removal_path": "form",
+    "fully_automatable": false,
+    "usable_emails": [],
+    "search_required": [],
+    "removal_required": [
+     "first_name",
+     "last_name",
+     "profile_url",
+     "email"
+    ],
+    "email_verification": null,
+    "id_document": null,
+    "shared_removal_ids": [],
+    "removal_captcha": false,
+    "captcha_blocks_form": false,
+    "captcha_email_fallback": false,
+    "removal_blocker": null
+   },
+   "search_test": {
+    "outcome": null,
+    "http_status": null,
+    "path_prefix": null,
+    "fields_sent": [],
+    "missing": [],
+    "page_kind": null,
+    "result_count": null,
+    "checked_at": null
+   }
+  },
+  "bmg-services-llc-bulldog-media-group": {
+   "schema_version": "4.0.0",
+   "id": "bmg-services-llc-bulldog-media-group",
+   "name": "BMG Services, LLC (Bulldog Media Group)",
+   "category": "marketing",
+   "domain": "bulldogmediagroup.com",
+   "checked_at": "2026-11-02T19:32:36+00:00",
+   "liveness": "alive",
+   "liveness_detail": "catalog URL loaded",
+   "homepage": "https://www.bulldogmediagroup.com/",
+   "logo_url": "https://cdn.bmgfiles.com/bmg/img/favicons/apple-touch-icon.png",
+   "images": [
+    {
+     "url": "https://cdn.bmgfiles.com/bmg/img/favicons/apple-touch-icon.png",
+     "kind": "apple_touch_icon",
+     "source_page": "https://www.bulldogmediagroup.com/"
+    },
+    {
+     "url": "https://cdn.bmgfiles.com/bmg/img/favicons/bmg-32x32.png",
+     "kind": "icon",
+     "source_page": "https://www.bulldogmediagroup.com/"
+    },
+    {
+     "url": "https://cdn.bmgfiles.com/bmg/img/favicons/bmg-16x16.png",
+     "kind": "icon",
+     "source_page": "https://www.bulldogmediagroup.com/"
+    },
+    {
+     "url": "https://cdn.bmgfiles.com/bmg/img/favicons/safari-pinned-tab.svg",
+     "kind": "icon",
+     "source_page": "https://www.bulldogmediagroup.com/"
+    }
+   ],
+   "theme_color": "#18445F",
+   "languages": [
+    "en"
+   ],
+   "legal_name": null,
+   "search": {
+    "available": false,
+    "method": "none",
+    "page_url": null,
+    "form_action": null,
+    "inputs": [],
+    "url_pattern": null,
+    "directory_prefixes": [],
+    "paywall": null,
+    "login_wall": null,
+    "form_meta": {
+     "id": null,
+     "name": null,
+     "autocomplete": null,
+     "novalidate": null,
+     "submit_label": null,
+     "hidden_names": []
+    },
+    "captcha_provider": null,
+    "captcha_sitekey": null,
+    "captcha_detail": null,
+    "captcha_checked": null
+   },
+   "removal": {
+    "url": "https://www.bulldogmediagroup.com/privacy-policy.aspx",
+    "final_url": "https://www.bulldogmediagroup.com/privacy-policy.aspx",
+    "http_status": 200,
+    "kinds": [
+     "opt_out",
+     "unsubscribe"
+    ],
+    "channels": [],
+    "emails": [],
+    "phones": [],
+    "postal_address": null,
+    "portal": null,
+    "form_fields": [],
+    "csrf_field_name": null,
+    "requires_profile_url": null,
+    "captcha": {
+     "provider": null,
+     "sitekey": null,
+     "pages": [],
+     "checked": null,
+     "checked_url": null,
+     "detail": null
+    },
+    "consent_vendor": "osano",
+    "success_text": null,
+    "suppression_not_deletion": null,
+    "processing_days": null,
+    "processing_text": null,
+    "form_action": null,
+    "form_method": null,
+    "form_meta": {
+     "id": null,
+     "name": null,
+     "autocomplete": null,
+     "novalidate": null,
+     "submit_label": null,
+     "hidden_names": []
+    }
+   },
+   "bot_defense": {
+    "vendor": null,
+    "outcome": "none"
+   },
+   "legal": {
+    "privacy_policy_url": "https://www.bulldogmediagroup.com/privacy-policy.aspx",
+    "terms_url": null,
+    "automation_prohibited": null,
+    "automation_clause": null,
+    "residency": [],
+    "authorized_agent": null,
+    "data_categories": [
+     "identifiers"
+    ],
+    "sells_personal_information": null,
+    "sells_clause": null,
+    "children_not_directed": null
+   },
+   "pages": [
+    {
+     "url": "https://bulldogmediagroup.com/",
+     "final_url": "https://www.bulldogmediagroup.com/",
+     "status": 200,
+     "role": "home",
+     "title": "Bulldog Media Group",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.bulldogmediagroup.com/",
+     "final_url": "https://www.bulldogmediagroup.com/",
+     "status": 200,
+     "role": "home",
+     "title": "Bulldog Media Group",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.bulldogmediagroup.com/privacy-policy.aspx",
+     "final_url": "https://www.bulldogmediagroup.com/privacy-policy.aspx",
+     "status": 200,
+     "role": "catalog",
+     "title": "Privacy Policy | BulldogMediaGroup.com",
+     "liveness": "alive"
+    }
+   ],
+   "location": {
+    "country": "US",
+    "region": "SD",
+    "locality": "Egan Avenue Madison",
+    "postal_code": "57042",
+    "street": null,
+    "postal_address": "Egan Avenue Madison, SD, 57042, US",
+    "coverage": [
+     "US"
+    ],
+    "search_regions": [],
+    "sources": [
+     "page"
+    ]
+   },
+   "network": {
+    "checked": false,
+    "addresses": [],
+    "ipv6": [],
+    "cname": null,
+    "mx": [],
+    "mail_provider": null,
+    "spf": null,
+    "dmarc": null,
+    "dkim": [],
+    "nameservers": [],
+    "dns_provider": null,
+    "soa_primary": null,
+    "caa": [],
+    "dnssec": null,
+    "asn": null,
+    "asn_country": null,
+    "prefix": null,
+    "cdn": null,
+    "server": null,
+    "tls_org": null,
+    "tls_issuer": null,
+    "tls_names": [],
+    "tls_version": null,
+    "tls_not_before": null,
+    "tls_not_after": null,
+    "registrar": null,
+    "registered": null,
+    "registration_expires": null,
+    "domain_status": []
+   },
+   "request": {
+    "removal_host": "bulldogmediagroup.com",
+    "same_site": true,
+    "https": true,
+    "redirected": false,
+    "redirect_count": null,
+    "form_enctype": null,
+    "content_type": null,
+    "hsts": null,
+    "hsts_max_age": null,
+    "hsts_subdomains": null,
+    "hsts_preload": null,
+    "http_version": null,
+    "http3": null,
+    "frame_options": null,
+    "nosniff": null,
+    "referrer_policy": null,
+    "csp": null,
+    "powered_by": null,
+    "cookie_names": []
+   },
+   "automation": {
+    "search_scanned": true,
+    "search_fillable": false,
+    "search_captcha": false,
+    "search_fields": [],
+    "removal_form_fillable": false,
+    "removal_email_usable": false,
+    "removal_fields": [],
+    "removal_path": null,
+    "fully_automatable": false,
+    "usable_emails": [],
+    "search_required": [],
+    "removal_required": [],
+    "email_verification": null,
+    "id_document": null,
+    "shared_removal_ids": [],
+    "removal_captcha": false,
+    "captcha_blocks_form": false,
+    "captcha_email_fallback": false,
+    "removal_blocker": "no_channel"
    },
    "search_test": {
     "outcome": null,
