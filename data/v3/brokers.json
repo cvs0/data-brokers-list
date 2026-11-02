@@ -1,23 +1,23 @@
 {
  "schema_version": "3.0.0",
- "checked_at": "2026-11-02T01:19:09+00:00",
+ "checked_at": "2026-11-02T01:28:39+00:00",
  "method": "Public pages only: homepage, catalog URL, and mapped privacy, contact, and legal links. robots.txt honored. No form submitted, no login, no CAPTCHA solved. A browser opened lookup homepages the static fetch never read, and catalog URLs that were blocked or failed, when robots.txt allowed the URL. Image fields are URLs, not copied files. People-search listing URLs are not stored. Null means the fetched page did not establish that fact. Every catalog id has a record.",
- "broker_count": 823,
+ "broker_count": 835,
  "counts": {
   "liveness": {
-   "alive": 628,
+   "alive": 640,
    "blocked": 51,
    "error": 22,
    "not_checked": 32,
    "opt_out_missing": 1,
    "robots_disallowed": 89
   },
-  "with_logo": 666,
-  "with_image": 666,
-  "with_search": 406,
-  "with_email": 369,
-  "with_captcha": 334,
-  "with_form": 150
+  "with_logo": 678,
+  "with_image": 678,
+  "with_search": 409,
+  "with_email": 375,
+  "with_captcha": 338,
+  "with_form": 151
  },
  "brokers": {
   "alaska-arrests": {
@@ -59713,7 +59713,7 @@
    "name": "Samba TV, Inc.",
    "category": "other",
    "domain": "samba.com",
-   "checked_at": "2026-11-02T01:18:40+00:00",
+   "checked_at": "2026-11-02T01:28:08+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -118095,7 +118095,7 @@
    "name": "Live Data Technologies, Inc.",
    "category": "other",
    "domain": "livedatatech.com",
-   "checked_at": "2026-11-02T01:18:56+00:00",
+   "checked_at": "2026-11-02T01:28:25+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -154918,7 +154918,7 @@
    "name": "Data Axle Canada",
    "category": "marketing",
    "domain": "dataaxlecanada.ca",
-   "checked_at": "2026-11-02T01:19:06+00:00",
+   "checked_at": "2026-11-02T01:28:35+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -154985,7 +154985,7 @@
    "name": "Prospects Influential",
    "category": "marketing",
    "domain": "prospectsinfluential.com",
-   "checked_at": "2026-11-02T01:19:06+00:00",
+   "checked_at": "2026-11-02T01:28:35+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -155052,7 +155052,7 @@
    "name": "Openroom",
    "category": "background-checks",
    "domain": "openroom.ca",
-   "checked_at": "2026-11-02T01:19:06+00:00",
+   "checked_at": "2026-11-02T01:28:35+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -155119,7 +155119,7 @@
    "name": "Landlord Credit Bureau",
    "category": "credit-financial",
    "domain": "landlordcreditbureau.ca",
-   "checked_at": "2026-11-02T01:19:06+00:00",
+   "checked_at": "2026-11-02T01:28:35+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -155186,7 +155186,7 @@
    "name": "FrontLobby",
    "category": "credit-financial",
    "domain": "frontlobby.com",
-   "checked_at": "2026-11-02T01:19:06+00:00",
+   "checked_at": "2026-11-02T01:28:35+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -155253,7 +155253,7 @@
    "name": "Echovita",
    "category": "people-search",
    "domain": "echovita.com",
-   "checked_at": "2026-11-02T01:19:06+00:00",
+   "checked_at": "2026-11-02T01:28:35+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -155320,7 +155320,7 @@
    "name": "InMemoriam",
    "category": "people-search",
    "domain": "inmemoriam.ca",
-   "checked_at": "2026-11-02T01:19:06+00:00",
+   "checked_at": "2026-11-02T01:28:35+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -155387,7 +155387,7 @@
    "name": "Nécrologie.ca",
    "category": "people-search",
    "domain": "necrologie.ca",
-   "checked_at": "2026-11-02T01:19:06+00:00",
+   "checked_at": "2026-11-02T01:28:35+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -155454,7 +155454,7 @@
    "name": "Geni",
    "category": "people-search",
    "domain": "geni.com",
-   "checked_at": "2026-11-02T01:19:06+00:00",
+   "checked_at": "2026-11-02T01:28:35+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -155521,7 +155521,7 @@
    "name": "FQSG Avis de décès",
    "category": "people-search",
    "domain": "federationgenealogie.qc.ca",
-   "checked_at": "2026-11-02T01:19:06+00:00",
+   "checked_at": "2026-11-02T01:28:35+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -155588,7 +155588,7 @@
    "name": "Domaine funéraire (Corporation des thanatologues du Québec)",
    "category": "people-search",
    "domain": "domainefuneraire.com",
-   "checked_at": "2026-11-02T01:19:06+00:00",
+   "checked_at": "2026-11-02T01:28:35+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -155655,7 +155655,7 @@
    "name": "Canadian Obituaries",
    "category": "people-search",
    "domain": "canadianobituaries.com",
-   "checked_at": "2026-11-02T01:19:06+00:00",
+   "checked_at": "2026-11-02T01:28:35+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -155722,7 +155722,7 @@
    "name": "Coopérative funéraire du Grand Montréal",
    "category": "people-search",
    "domain": "cfgrandmontreal.com",
-   "checked_at": "2026-11-02T01:19:06+00:00",
+   "checked_at": "2026-11-02T01:28:35+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -155789,7 +155789,7 @@
    "name": "Coopérative funéraire des Deux Rives",
    "category": "people-search",
    "domain": "coopfuneraire2rives.com",
-   "checked_at": "2026-11-02T01:19:06+00:00",
+   "checked_at": "2026-11-02T01:28:35+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -155856,7 +155856,7 @@
    "name": "Alliance funéraire du Royaume",
    "category": "people-search",
    "domain": "afdr.coop",
-   "checked_at": "2026-11-02T01:19:06+00:00",
+   "checked_at": "2026-11-02T01:28:35+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -155923,7 +155923,7 @@
    "name": "Coopérative funéraire de l'Abitibi",
    "category": "people-search",
    "domain": "cfa.coop",
-   "checked_at": "2026-11-02T01:19:06+00:00",
+   "checked_at": "2026-11-02T01:28:35+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -155990,7 +155990,7 @@
    "name": "Coopérative funéraire Haute-Côte-Nord - Manicouagan",
    "category": "people-search",
    "domain": "cfhcn.ca",
-   "checked_at": "2026-11-02T01:19:06+00:00",
+   "checked_at": "2026-11-02T01:28:35+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -156057,7 +156057,7 @@
    "name": "Coopérative funéraire de l'Outaouais",
    "category": "people-search",
    "domain": "cfo.coop",
-   "checked_at": "2026-11-02T01:19:06+00:00",
+   "checked_at": "2026-11-02T01:28:35+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -156124,7 +156124,7 @@
    "name": "Coopérative funéraire de l'Estrie",
    "category": "people-search",
    "domain": "coopfuneraireestrie.com",
-   "checked_at": "2026-11-02T01:19:06+00:00",
+   "checked_at": "2026-11-02T01:28:35+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -156191,7 +156191,7 @@
    "name": "Résidence funéraire Lac St-Jean",
    "category": "people-search",
    "domain": "residencefunerairelacstjean.com",
-   "checked_at": "2026-11-02T01:19:06+00:00",
+   "checked_at": "2026-11-02T01:28:35+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -156258,7 +156258,7 @@
    "name": "Coopérative funéraire Brunet",
    "category": "people-search",
    "domain": "coopfbrunet.com",
-   "checked_at": "2026-11-02T01:19:06+00:00",
+   "checked_at": "2026-11-02T01:28:35+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -156325,7 +156325,7 @@
    "name": "Coopérative funéraire Matawinie-Montcalm",
    "category": "people-search",
    "domain": "cfmm.coop",
-   "checked_at": "2026-11-02T01:19:06+00:00",
+   "checked_at": "2026-11-02T01:28:35+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -156392,7 +156392,7 @@
    "name": "Coopérative funéraire des Laurentides",
    "category": "people-search",
    "domain": "coopfunerairelaurentides.org",
-   "checked_at": "2026-11-02T01:19:06+00:00",
+   "checked_at": "2026-11-02T01:28:35+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -156459,7 +156459,7 @@
    "name": "Résidence Funéraire Maska",
    "category": "people-search",
    "domain": "rfmaska.coop",
-   "checked_at": "2026-11-02T01:19:06+00:00",
+   "checked_at": "2026-11-02T01:28:35+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -156526,7 +156526,7 @@
    "name": "Dignity Memorial",
    "category": "people-search",
    "domain": "dignitymemorial.com",
-   "checked_at": "2026-11-02T01:19:06+00:00",
+   "checked_at": "2026-11-02T01:28:35+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -156593,7 +156593,7 @@
    "name": "Interment.net",
    "category": "people-search",
    "domain": "interment.net",
-   "checked_at": "2026-11-02T01:19:06+00:00",
+   "checked_at": "2026-11-02T01:28:35+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -156660,7 +156660,7 @@
    "name": "Mount Pleasant Group",
    "category": "people-search",
    "domain": "mountpleasantgroup.com",
-   "checked_at": "2026-11-02T01:19:06+00:00",
+   "checked_at": "2026-11-02T01:28:35+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -156727,7 +156727,7 @@
    "name": "Kearney Funeral Services",
    "category": "people-search",
    "domain": "kearneyfs.com",
-   "checked_at": "2026-11-02T01:19:06+00:00",
+   "checked_at": "2026-11-02T01:28:35+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -156794,7 +156794,7 @@
    "name": "Basic Funerals",
    "category": "people-search",
    "domain": "basicfunerals.ca",
-   "checked_at": "2026-11-02T01:19:06+00:00",
+   "checked_at": "2026-11-02T01:28:35+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -156861,7 +156861,7 @@
    "name": "Le Nécrologue",
    "category": "people-search",
    "domain": "lenecrologue.com",
-   "checked_at": "2026-11-02T01:19:06+00:00",
+   "checked_at": "2026-11-02T01:28:35+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -169616,6 +169616,1902 @@
      "status": 200,
      "role": "catalog",
      "title": "Teranet: Privacy",
+     "liveness": "alive"
+    }
+   ]
+  },
+  "scott-s-directories": {
+   "schema_version": "3.0.0",
+   "id": "scott-s-directories",
+   "name": "Scott's Directories",
+   "category": "marketing",
+   "domain": "scottsdirectories.com",
+   "checked_at": "2026-11-02T01:27:27+00:00",
+   "liveness": "alive",
+   "liveness_detail": "catalog URL loaded",
+   "homepage": "https://www.scottsdirectories.com/",
+   "logo_url": "https://www.scottsdirectories.com/wp-content/themes/scottsdirectories/assets/scotts-logo-blue.png",
+   "images": [
+    {
+     "url": "https://www.scottsdirectories.com/wp-content/uploads/2021/09/favicon-150x150.ico",
+     "kind": "icon",
+     "source_page": "https://www.scottsdirectories.com/"
+    },
+    {
+     "url": "https://www.scottsdirectories.com/wp-content/uploads/2021/09/favicon.ico",
+     "kind": "icon",
+     "source_page": "https://www.scottsdirectories.com/"
+    },
+    {
+     "url": "https://www.scottsdirectories.com/wp-content/uploads/2026/09/scotts-directories-og-2026.png",
+     "kind": "og_image",
+     "source_page": "https://www.scottsdirectories.com/"
+    },
+    {
+     "url": "https://www.scottsdirectories.com/wp-content/themes/scottsdirectories/assets/scotts-logo-blue.png",
+     "kind": "logo",
+     "source_page": "https://www.scottsdirectories.com/"
+    },
+    {
+     "url": "https://www.scottsdirectories.com/wp-content/themes/scottsdirectories/assets/img/g2.png",
+     "kind": "logo",
+     "source_page": "https://www.scottsdirectories.com/"
+    },
+    {
+     "url": "https://www.scottsdirectories.com/wp-content/uploads/2024/06/telus-logo-white.png",
+     "kind": "logo",
+     "source_page": "https://www.scottsdirectories.com/"
+    },
+    {
+     "url": "https://www.scottsdirectories.com/wp-content/uploads/2024/06/logo42-white.png",
+     "kind": "logo",
+     "source_page": "https://www.scottsdirectories.com/"
+    },
+    {
+     "url": "https://www.scottsdirectories.com/wp-content/uploads/2024/06/co-ope-white-2.png",
+     "kind": "logo",
+     "source_page": "https://www.scottsdirectories.com/"
+    },
+    {
+     "url": "https://www.scottsdirectories.com/wp-content/uploads/2024/06/l4.png",
+     "kind": "logo",
+     "source_page": "https://www.scottsdirectories.com/"
+    },
+    {
+     "url": "https://www.scottsdirectories.com/wp-content/uploads/2024/06/del-white.png",
+     "kind": "logo",
+     "source_page": "https://www.scottsdirectories.com/"
+    },
+    {
+     "url": "https://www.scottsdirectories.com/wp-content/uploads/2024/06/web-white.png",
+     "kind": "logo",
+     "source_page": "https://www.scottsdirectories.com/"
+    },
+    {
+     "url": "https://www.scottsdirectories.com/wp-content/uploads/2024/06/logo41-white.png",
+     "kind": "logo",
+     "source_page": "https://www.scottsdirectories.com/"
+    },
+    {
+     "url": "https://www.scottsdirectories.com/wp-content/uploads/2021/12/habitat-logo-new.jpg",
+     "kind": "logo",
+     "source_page": "https://www.scottsdirectories.com/"
+    }
+   ],
+   "theme_color": null,
+   "languages": [
+    "en"
+   ],
+   "legal_name": "Scott's Directories",
+   "search": {
+    "available": true,
+    "method": "http_form_post",
+    "page_url": "https://www.scottsdirectories.com/",
+    "form_action": "https://www.scottsdirectories.com/",
+    "inputs": [
+     {
+      "name": "_wpcf7",
+      "type": "hidden",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "_wpcf7_version",
+      "type": "hidden",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "_wpcf7_locale",
+      "type": "hidden",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "_wpcf7_unit_tag",
+      "type": "hidden",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "_wpcf7_container_post",
+      "type": "hidden",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "_wpcf7_posted_data_hash",
+      "type": "hidden",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "_wpcf7_recaptcha_response",
+      "type": "hidden",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "firstname",
+      "type": "text",
+      "canonical": "first_name",
+      "required": false,
+      "autocomplete": null,
+      "placeholder": "First Name *"
+     },
+     {
+      "name": "lastname",
+      "type": "text",
+      "canonical": "last_name",
+      "required": false,
+      "autocomplete": null,
+      "placeholder": "Last Name *"
+     },
+     {
+      "name": "phone",
+      "type": "tel",
+      "canonical": "phone",
+      "required": false,
+      "autocomplete": null,
+      "placeholder": "Phone Number *"
+     },
+     {
+      "name": "email",
+      "type": "email",
+      "canonical": "email",
+      "required": false,
+      "autocomplete": null,
+      "placeholder": "Company Email *"
+     },
+     {
+      "name": "company",
+      "type": "text",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": "Company Name"
+     }
+    ],
+    "url_pattern": "https://www.scottsdirectories.com/",
+    "directory_prefixes": [],
+    "paywall": null,
+    "login_wall": null
+   },
+   "removal": {
+    "url": "https://www.scottsdirectories.com/privacy-policy/",
+    "final_url": "https://www.scottsdirectories.com/privacy-policy/",
+    "http_status": 200,
+    "kinds": [
+     "opt_out"
+    ],
+    "channels": [
+     "email",
+     "phone"
+    ],
+    "emails": [
+     {
+      "email": "sales@scottsdirectories.com",
+      "confidence": "uncertain",
+      "source_url": "https://www.scottsdirectories.com/"
+     },
+     {
+      "email": "privacyofficer@macraes.com",
+      "confidence": "uncertain",
+      "source_url": "https://www.scottsdirectories.com/privacy-policy/"
+     }
+    ],
+    "phones": [
+     "1-844-402-2076"
+    ],
+    "postal_address": null,
+    "portal": null,
+    "form_fields": [],
+    "csrf_field_name": null,
+    "requires_profile_url": null,
+    "captcha": {
+     "provider": "recaptcha_v3",
+     "sitekey": "6Lem3K4rAAAAAKcOmXawmFCNjEkReqAIX4Y1GXeX",
+     "pages": [
+      "https://www.scottsdirectories.com/",
+      "https://www.scottsdirectories.com/privacy-policy/"
+     ]
+    },
+    "consent_vendor": null,
+    "success_text": null,
+    "suppression_not_deletion": null,
+    "processing_days": null,
+    "processing_text": null
+   },
+   "bot_defense": {
+    "vendor": null,
+    "outcome": "none"
+   },
+   "legal": {
+    "privacy_policy_url": "https://www.scottsdirectories.com/privacy-policy/",
+    "terms_url": null,
+    "automation_prohibited": null,
+    "automation_clause": null,
+    "residency": [
+     "CA"
+    ],
+    "authorized_agent": null,
+    "data_categories": [
+     "identifiers",
+     "employment"
+    ]
+   },
+   "pages": [
+    {
+     "url": "https://scottsdirectories.com/",
+     "final_url": "https://www.scottsdirectories.com/",
+     "status": 200,
+     "role": "home",
+     "title": "Canada's Business Directory & Company Database | Scott's",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.scottsdirectories.com/",
+     "final_url": "https://www.scottsdirectories.com/",
+     "status": 200,
+     "role": "home",
+     "title": "Canada's Business Directory & Company Database | Scott's",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.scottsdirectories.com/privacy-policy/",
+     "final_url": "https://www.scottsdirectories.com/privacy-policy/",
+     "status": 200,
+     "role": "catalog",
+     "title": "Privacy Policy - Scott's Directories",
+     "liveness": "alive"
+    }
+   ]
+  },
+  "haines-and-company-criss-cross": {
+   "schema_version": "3.0.0",
+   "id": "haines-and-company-criss-cross",
+   "name": "Haines & Company (Criss+Cross)",
+   "category": "marketing",
+   "domain": "haines.com",
+   "checked_at": "2026-11-02T01:27:26+00:00",
+   "liveness": "alive",
+   "liveness_detail": "catalog URL loaded",
+   "homepage": "https://haines.com/",
+   "logo_url": "https://haines.com/wp-content/uploads/2021/12/Haines-1.png",
+   "images": [
+    {
+     "url": "https://haines.com/wp-content/uploads/2021/12/Haines-Favicon.png",
+     "kind": "icon",
+     "source_page": "https://haines.com/"
+    },
+    {
+     "url": "https://haines.com/wp-content/uploads/2022/08/Haines-logo-PC-CC.webp",
+     "kind": "og_image",
+     "source_page": "https://haines.com/"
+    },
+    {
+     "url": "https://haines.com/wp-content/uploads/2021/12/Haines-1.png",
+     "kind": "logo",
+     "source_page": "https://haines.com/"
+    },
+    {
+     "url": "https://haines.com/wp-content/uploads/2021/11/main-logo.png",
+     "kind": "logo",
+     "source_page": "https://haines.com/"
+    },
+    {
+     "url": "https://haines.com/wp-content/uploads/2021/11/mobile-main-logo.png",
+     "kind": "logo",
+     "source_page": "https://haines.com/"
+    }
+   ],
+   "theme_color": null,
+   "languages": [
+    "en"
+   ],
+   "legal_name": "Haines &amp; Company Inc",
+   "search": {
+    "available": false,
+    "method": "none",
+    "page_url": null,
+    "form_action": null,
+    "inputs": [],
+    "url_pattern": null,
+    "directory_prefixes": [],
+    "paywall": null,
+    "login_wall": null
+   },
+   "removal": {
+    "url": "https://haines.com/privacy-policy/",
+    "final_url": "https://haines.com/privacy-policy/",
+    "http_status": 200,
+    "kinds": [
+     "opt_out"
+    ],
+    "channels": [
+     "postal_mail"
+    ],
+    "emails": [],
+    "phones": [],
+    "postal_address": "PO Box 900820, Sandy, UT 84090 • (330) 494-9111 • Find Us on Google Privacy Policy × Our Spri",
+    "portal": null,
+    "form_fields": [],
+    "csrf_field_name": null,
+    "requires_profile_url": null,
+    "captcha": {
+     "provider": null,
+     "sitekey": null,
+     "pages": []
+    },
+    "consent_vendor": null,
+    "success_text": null,
+    "suppression_not_deletion": null,
+    "processing_days": null,
+    "processing_text": null
+   },
+   "bot_defense": {
+    "vendor": null,
+    "outcome": "none"
+   },
+   "legal": {
+    "privacy_policy_url": "https://haines.com/privacy-policy/",
+    "terms_url": null,
+    "automation_prohibited": null,
+    "automation_clause": null,
+    "residency": [],
+    "authorized_agent": null,
+    "data_categories": [
+     "identifiers",
+     "internet_activity"
+    ]
+   },
+   "pages": [
+    {
+     "url": "https://haines.com/",
+     "final_url": "https://haines.com/",
+     "status": 200,
+     "role": "home",
+     "title": "Lead Generation Software - Haines & Company Inc",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.haines.com/",
+     "final_url": "https://haines.com/",
+     "status": 200,
+     "role": "home",
+     "title": "Lead Generation Software - Haines & Company Inc",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://haines.com/privacy-policy/",
+     "final_url": "https://haines.com/privacy-policy/",
+     "status": 200,
+     "role": "catalog",
+     "title": "Privacy Policy - Online Property Database | HAINES",
+     "liveness": "alive"
+    }
+   ]
+  },
+  "logictree-inc-data247-ezcnam": {
+   "schema_version": "3.0.0",
+   "id": "logictree-inc-data247-ezcnam",
+   "name": "LogicTree, Inc. (Data247, EZCNAM)",
+   "category": "other",
+   "domain": "data247.com",
+   "checked_at": "2026-11-02T01:27:25+00:00",
+   "liveness": "alive",
+   "liveness_detail": "catalog URL loaded",
+   "homepage": "https://www.data247.com/",
+   "logo_url": "https://www.data247.com/img/png/logo.png",
+   "images": [
+    {
+     "url": "https://www.data247.com/img/favicon.ico",
+     "kind": "icon",
+     "source_page": "https://www.data247.com/"
+    },
+    {
+     "url": "https://www.data247.com/img/png/logo.png",
+     "kind": "logo",
+     "source_page": "https://www.data247.com/"
+    },
+    {
+     "url": "https://www.data247.com/img/grayscale/appypie_logo.png",
+     "kind": "logo",
+     "source_page": "https://www.data247.com/"
+    },
+    {
+     "url": "https://www.data247.com/img/grayscale/asterisk_logo.png",
+     "kind": "logo",
+     "source_page": "https://www.data247.com/"
+    },
+    {
+     "url": "https://www.data247.com/img/grayscale/integromat_logo.png",
+     "kind": "logo",
+     "source_page": "https://www.data247.com/"
+    },
+    {
+     "url": "https://www.data247.com/img/grayscale/iqdial_logo.png",
+     "kind": "logo",
+     "source_page": "https://www.data247.com/"
+    },
+    {
+     "url": "https://www.data247.com/img/grayscale/notepage_logo.png",
+     "kind": "logo",
+     "source_page": "https://www.data247.com/"
+    },
+    {
+     "url": "https://www.data247.com/img/grayscale/salesforce_logo.png",
+     "kind": "logo",
+     "source_page": "https://www.data247.com/"
+    },
+    {
+     "url": "https://www.data247.com/img/grayscale/swagger_logo.png",
+     "kind": "logo",
+     "source_page": "https://www.data247.com/"
+    },
+    {
+     "url": "https://www.data247.com/img/grayscale/vicidial_logo.png",
+     "kind": "logo",
+     "source_page": "https://www.data247.com/"
+    },
+    {
+     "url": "https://www.data247.com/img/grayscale/workato_logo.png",
+     "kind": "logo",
+     "source_page": "https://www.data247.com/"
+    },
+    {
+     "url": "https://www.data247.com/img/grayscale/zapier_logo.png",
+     "kind": "logo",
+     "source_page": "https://www.data247.com/"
+    }
+   ],
+   "theme_color": null,
+   "languages": [],
+   "legal_name": null,
+   "search": {
+    "available": false,
+    "method": "none",
+    "page_url": null,
+    "form_action": null,
+    "inputs": [],
+    "url_pattern": null,
+    "directory_prefixes": [],
+    "paywall": null,
+    "login_wall": null
+   },
+   "removal": {
+    "url": "https://www.data247.com/privacy",
+    "final_url": "https://www.data247.com/privacy",
+    "http_status": 200,
+    "kinds": [
+     "opt_out"
+    ],
+    "channels": [],
+    "emails": [],
+    "phones": [],
+    "postal_address": null,
+    "portal": null,
+    "form_fields": [],
+    "csrf_field_name": "_token",
+    "requires_profile_url": null,
+    "captcha": {
+     "provider": null,
+     "sitekey": null,
+     "pages": []
+    },
+    "consent_vendor": null,
+    "success_text": null,
+    "suppression_not_deletion": null,
+    "processing_days": null,
+    "processing_text": null
+   },
+   "bot_defense": {
+    "vendor": null,
+    "outcome": "none"
+   },
+   "legal": {
+    "privacy_policy_url": "https://www.data247.com/privacy",
+    "terms_url": null,
+    "automation_prohibited": null,
+    "automation_clause": null,
+    "residency": [
+     "US"
+    ],
+    "authorized_agent": null,
+    "data_categories": [
+     "identifiers",
+     "commercial",
+     "inferences"
+    ]
+   },
+   "pages": [
+    {
+     "url": "https://data247.com/",
+     "final_url": "https://www.data247.com/",
+     "status": 200,
+     "role": "home",
+     "title": "Data247 - #1 Data Management Platform",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.data247.com/",
+     "final_url": "https://www.data247.com/",
+     "status": 200,
+     "role": "home",
+     "title": "Data247 - #1 Data Management Platform",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.data247.com/privacy",
+     "final_url": "https://www.data247.com/privacy",
+     "status": 200,
+     "role": "catalog",
+     "title": "Read our Privacy Policy",
+     "liveness": "alive"
+    }
+   ]
+  },
+  "tracerfy-llc": {
+   "schema_version": "3.0.0",
+   "id": "tracerfy-llc",
+   "name": "Tracerfy LLC",
+   "category": "other",
+   "domain": "tracerfy.com",
+   "checked_at": "2026-11-02T01:27:29+00:00",
+   "liveness": "alive",
+   "liveness_detail": "catalog URL loaded",
+   "homepage": "https://www.tracerfy.com/",
+   "logo_url": "https://www.tracerfy.com/static/landing/images/logo-nav.webp",
+   "images": [
+    {
+     "url": "https://www.tracerfy.com/static/landing/images/favicon.ico",
+     "kind": "icon",
+     "source_page": "https://www.tracerfy.com/"
+    },
+    {
+     "url": "https://www.tracerfy.com/static/landing/images/logo.png",
+     "kind": "og_image",
+     "source_page": "https://www.tracerfy.com/"
+    },
+    {
+     "url": "https://www.tracerfy.com/static/landing/images/logo-nav.webp",
+     "kind": "logo",
+     "source_page": "https://www.tracerfy.com/"
+    },
+    {
+     "url": "https://www.tracerfy.com/static/landing/images/full_logo.png",
+     "kind": "logo",
+     "source_page": "https://www.tracerfy.com/"
+    }
+   ],
+   "theme_color": "#2f55d4",
+   "languages": [
+    "en"
+   ],
+   "legal_name": "Tracerfy",
+   "search": {
+    "available": false,
+    "method": "none",
+    "page_url": null,
+    "form_action": null,
+    "inputs": [],
+    "url_pattern": null,
+    "directory_prefixes": [],
+    "paywall": null,
+    "login_wall": null
+   },
+   "removal": {
+    "url": "https://www.tracerfy.com/privacy-choices",
+    "final_url": "https://www.tracerfy.com/privacy-choices",
+    "http_status": 200,
+    "kinds": [
+     "opt_out",
+     "do_not_sell",
+     "dsar"
+    ],
+    "channels": [
+     "web_form",
+     "phone"
+    ],
+    "emails": [],
+    "phones": [
+     "(602) 555-0148",
+     "1-888-891-8053"
+    ],
+    "postal_address": null,
+    "portal": null,
+    "form_fields": [
+     {
+      "name": "optout-first_name",
+      "type": "text",
+      "canonical": "first_name",
+      "required": true,
+      "autocomplete": null,
+      "placeholder": "First name"
+     },
+     {
+      "name": "optout-last_name",
+      "type": "text",
+      "canonical": "last_name",
+      "required": true,
+      "autocomplete": null,
+      "placeholder": "Last name"
+     },
+     {
+      "name": "optout-address",
+      "type": "text",
+      "canonical": "street_address",
+      "required": true,
+      "autocomplete": null,
+      "placeholder": "Street address"
+     },
+     {
+      "name": "optout-city",
+      "type": "text",
+      "canonical": "city",
+      "required": true,
+      "autocomplete": null,
+      "placeholder": "City"
+     },
+     {
+      "name": "optout-state",
+      "type": "select",
+      "canonical": "region",
+      "required": true,
+      "autocomplete": null,
+      "placeholder": null,
+      "options": [
+       "AL",
+       "AK",
+       "AZ",
+       "AR",
+       "CA",
+       "CO",
+       "CT",
+       "DE",
+       "DC",
+       "FL",
+       "GA",
+       "HI",
+       "ID",
+       "IL",
+       "IN",
+       "IA",
+       "KS",
+       "KY",
+       "LA",
+       "ME",
+       "MD",
+       "MA",
+       "MI",
+       "MN",
+       "MS",
+       "MO",
+       "MT",
+       "NE",
+       "NV",
+       "NH",
+       "NJ",
+       "NM",
+       "NY",
+       "NC",
+       "ND",
+       "OH",
+       "OK",
+       "OR",
+       "PA",
+       "RI",
+       "SC",
+       "SD",
+       "TN",
+       "TX",
+       "UT",
+       "VT",
+       "VA",
+       "WA",
+       "WV",
+       "WI",
+       "WY"
+      ]
+     },
+     {
+      "name": "optout-zip_code",
+      "type": "text",
+      "canonical": "postal_code",
+      "required": false,
+      "autocomplete": null,
+      "placeholder": "ZIP code"
+     },
+     {
+      "name": "optout-phone",
+      "type": "tel",
+      "canonical": "phone",
+      "required": false,
+      "autocomplete": null,
+      "placeholder": "(555) 123-4567"
+     },
+     {
+      "name": "optout-email",
+      "type": "email",
+      "canonical": "email",
+      "required": false,
+      "autocomplete": null,
+      "placeholder": "you@example.com"
+     }
+    ],
+    "csrf_field_name": "csrfmiddlewaretoken",
+    "requires_profile_url": null,
+    "captcha": {
+     "provider": "turnstile",
+     "sitekey": "0x4AAAAAAA7p86cypi0A8CUB",
+     "pages": [
+      "https://www.tracerfy.com/privacy-choices"
+     ]
+    },
+    "consent_vendor": null,
+    "success_text": null,
+    "suppression_not_deletion": null,
+    "processing_days": 45,
+    "processing_text": "When we'll respond We respond within 45 days"
+   },
+   "bot_defense": {
+    "vendor": null,
+    "outcome": "none"
+   },
+   "legal": {
+    "privacy_policy_url": "https://www.tracerfy.com/privacy-choices",
+    "terms_url": null,
+    "automation_prohibited": null,
+    "automation_clause": null,
+    "residency": [
+     "US-TX"
+    ],
+    "authorized_agent": true,
+    "data_categories": [
+     "identifiers"
+    ]
+   },
+   "pages": [
+    {
+     "url": "https://tracerfy.com/",
+     "final_url": "https://www.tracerfy.com/",
+     "status": 200,
+     "role": "home",
+     "title": "Real Estate Data & Skip Tracing, Pay-Per-Hit | Tracerfy",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.tracerfy.com/",
+     "final_url": "https://www.tracerfy.com/",
+     "status": 200,
+     "role": "home",
+     "title": "Real Estate Data & Skip Tracing, Pay-Per-Hit | Tracerfy",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.tracerfy.com/privacy-choices",
+     "final_url": "https://www.tracerfy.com/privacy-choices",
+     "status": 200,
+     "role": "catalog",
+     "title": "Your Privacy Choices | Tracerfy",
+     "liveness": "alive"
+    }
+   ]
+  },
+  "senioroi-llc": {
+   "schema_version": "3.0.0",
+   "id": "senioroi-llc",
+   "name": "SenioROI, LLC",
+   "category": "marketing",
+   "domain": "senioroi.com",
+   "checked_at": "2026-11-02T01:27:27+00:00",
+   "liveness": "alive",
+   "liveness_detail": "catalog URL loaded",
+   "homepage": "https://senioroi.com/",
+   "logo_url": "https://senioroi.com/wp-content/uploads/2026/10/aicpa-soc-for-service-organizations-logo.png",
+   "images": [
+    {
+     "url": "https://senioroi.com/wp-content/uploads/2026/08/cropped-Senioroi_Favicon-192x192.png",
+     "kind": "icon",
+     "source_page": "https://senioroi.com/"
+    },
+    {
+     "url": "https://senioroi.com/wp-content/uploads/2026/08/SenioROI-og-share-1200x630-2026-08-07.png",
+     "kind": "og_image",
+     "source_page": "https://senioroi.com/"
+    },
+    {
+     "url": "https://senioroi.com/wp-content/uploads/2026/08/SenioROI-2C-hdr-2026-08-07.png",
+     "kind": "json_ld",
+     "source_page": "https://senioroi.com/"
+    },
+    {
+     "url": "https://senioroi.com/wp-content/uploads/2026/10/aicpa-soc-for-service-organizations-logo.png",
+     "kind": "logo",
+     "source_page": "https://senioroi.com/"
+    }
+   ],
+   "theme_color": null,
+   "languages": [
+    "en"
+   ],
+   "legal_name": "SenioROI",
+   "search": {
+    "available": false,
+    "method": "none",
+    "page_url": null,
+    "form_action": null,
+    "inputs": [],
+    "url_pattern": null,
+    "directory_prefixes": [],
+    "paywall": null,
+    "login_wall": null
+   },
+   "removal": {
+    "url": "https://senioroi.com/privacy-request/",
+    "final_url": "https://senioroi.com/privacy-request/",
+    "http_status": 200,
+    "kinds": [
+     "opt_out",
+     "do_not_sell"
+    ],
+    "channels": [
+     "email",
+     "phone"
+    ],
+    "emails": [
+     {
+      "email": "seniorsales@senioroi.com",
+      "confidence": "uncertain",
+      "source_url": "https://senioroi.com/"
+     },
+     {
+      "email": "privacy@senioroi.com",
+      "confidence": "extracted",
+      "source_url": "https://senioroi.com/privacy-request/"
+     }
+    ],
+    "phones": [
+     "844.841.3268",
+     "(844) 841-3268"
+    ],
+    "postal_address": null,
+    "portal": null,
+    "form_fields": [],
+    "csrf_field_name": null,
+    "requires_profile_url": null,
+    "captcha": {
+     "provider": "recaptcha_v3",
+     "sitekey": "6LedTc4gAAAAAOKv0qsSKK37RtikETJXQ2_IUjqi",
+     "pages": [
+      "https://senioroi.com/",
+      "https://senioroi.com/privacy-request/"
+     ]
+    },
+    "consent_vendor": null,
+    "success_text": null,
+    "suppression_not_deletion": null,
+    "processing_days": 14,
+    "processing_text": "listed in our Privacy Policy What happens next We will acknowledge your request within 10 business days"
+   },
+   "bot_defense": {
+    "vendor": null,
+    "outcome": "none"
+   },
+   "legal": {
+    "privacy_policy_url": "https://senioroi.com/privacy-request/",
+    "terms_url": null,
+    "automation_prohibited": null,
+    "automation_clause": null,
+    "residency": [
+     "US-CA"
+    ],
+    "authorized_agent": null,
+    "data_categories": [
+     "identifiers"
+    ]
+   },
+   "pages": [
+    {
+     "url": "https://senioroi.com/",
+     "final_url": "https://senioroi.com/",
+     "status": 200,
+     "role": "home",
+     "title": "Senior Living Marketing Agency | Financially Qualified Leads",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.senioroi.com/",
+     "final_url": "https://senioroi.com/",
+     "status": 200,
+     "role": "home",
+     "title": "Senior Living Marketing Agency | Financially Qualified Leads",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://senioroi.com/privacy-request/",
+     "final_url": "https://senioroi.com/privacy-request/",
+     "status": 200,
+     "role": "catalog",
+     "title": "Submit a Privacy Rights Request | SenioROI",
+     "liveness": "alive"
+    }
+   ]
+  },
+  "alpine-digital-group-inc": {
+   "schema_version": "3.0.0",
+   "id": "alpine-digital-group-inc",
+   "name": "Alpine Digital Group, Inc.",
+   "category": "marketing",
+   "domain": "alpinedigitalgroup.com",
+   "checked_at": "2026-11-02T01:27:24+00:00",
+   "liveness": "alive",
+   "liveness_detail": "catalog URL loaded",
+   "homepage": "https://alpinedigitalgroup.com/",
+   "logo_url": "https://alpinedigitalgroup.com/images/logoSmall.png",
+   "images": [
+    {
+     "url": "https://alpinedigitalgroup.com/images/logoSmall.png",
+     "kind": "logo",
+     "source_page": "https://alpinedigitalgroup.com/"
+    },
+    {
+     "url": "https://alpinedigitalgroup.com/images/logo.png",
+     "kind": "logo",
+     "source_page": "https://alpinedigitalgroup.com/"
+    }
+   ],
+   "theme_color": null,
+   "languages": [
+    "en"
+   ],
+   "legal_name": null,
+   "search": {
+    "available": false,
+    "method": "none",
+    "page_url": null,
+    "form_action": null,
+    "inputs": [],
+    "url_pattern": null,
+    "directory_prefixes": [],
+    "paywall": null,
+    "login_wall": null
+   },
+   "removal": {
+    "url": "https://alpinedigitalgroup.com/privacy-rights",
+    "final_url": "https://alpinedigitalgroup.com/privacy-rights",
+    "http_status": 200,
+    "kinds": [
+     "opt_out"
+    ],
+    "channels": [
+     "email"
+    ],
+    "emails": [
+     {
+      "email": "contact@alpinedigitalgroup.com",
+      "confidence": "uncertain",
+      "source_url": "https://alpinedigitalgroup.com/"
+     },
+     {
+      "email": "compliance@alpinedigitalgroup.com",
+      "confidence": "uncertain",
+      "source_url": "https://alpinedigitalgroup.com/privacy-rights"
+     }
+    ],
+    "phones": [],
+    "postal_address": null,
+    "portal": null,
+    "form_fields": [],
+    "csrf_field_name": null,
+    "requires_profile_url": null,
+    "captcha": {
+     "provider": null,
+     "sitekey": null,
+     "pages": []
+    },
+    "consent_vendor": null,
+    "success_text": null,
+    "suppression_not_deletion": null,
+    "processing_days": null,
+    "processing_text": null
+   },
+   "bot_defense": {
+    "vendor": null,
+    "outcome": "none"
+   },
+   "legal": {
+    "privacy_policy_url": "https://alpinedigitalgroup.com/privacy-rights",
+    "terms_url": null,
+    "automation_prohibited": null,
+    "automation_clause": null,
+    "residency": [],
+    "authorized_agent": null,
+    "data_categories": []
+   },
+   "pages": [
+    {
+     "url": "https://alpinedigitalgroup.com/",
+     "final_url": "https://alpinedigitalgroup.com/",
+     "status": 200,
+     "role": "home",
+     "title": "Alpine Digital Group",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.alpinedigitalgroup.com/",
+     "final_url": "https://alpinedigitalgroup.com/",
+     "status": 200,
+     "role": "home",
+     "title": "Alpine Digital Group",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://alpinedigitalgroup.com/privacy-rights",
+     "final_url": "https://alpinedigitalgroup.com/privacy-rights",
+     "status": 200,
+     "role": "catalog",
+     "title": "Privacy Rights | Alpine Digital Group",
+     "liveness": "alive"
+    }
+   ]
+  },
+  "mms-inc-medical-marketing-service": {
+   "schema_version": "3.0.0",
+   "id": "mms-inc-medical-marketing-service",
+   "name": "MMS Inc (Medical Marketing Service)",
+   "category": "marketing",
+   "domain": "mmslists.com",
+   "checked_at": "2026-11-02T01:27:25+00:00",
+   "liveness": "alive",
+   "liveness_detail": "catalog URL loaded",
+   "homepage": "https://www.mmslists.com/",
+   "logo_url": "https://images.squarespace-cdn.com/content/v1/58c9b895414fb537a75ee36b/1750693774218-KED0Z4T6EFX8VK2Z3RQK/AMA_logo.png",
+   "images": [
+    {
+     "url": "https://images.squarespace-cdn.com/content/v1/58c9b895414fb537a75ee36b/1490032090842-W6ZBOZX2FPRKZMRI6BGW/favicon.ico?format=100w",
+     "kind": "icon",
+     "source_page": "https://www.mmslists.com/"
+    },
+    {
+     "url": "http://static1.squarespace.com/static/58c9b895414fb537a75ee36b/t/5f1df1bd85a63622a2f124b7/1595797952717/opengraph.png?format=1500w",
+     "kind": "og_image",
+     "source_page": "https://www.mmslists.com/"
+    },
+    {
+     "url": "https://images.squarespace-cdn.com/content/v1/58c9b895414fb537a75ee36b/38c30065-dca3-43b2-90a4-fb27ddced5d4/mms-logo-reg.png",
+     "kind": "json_ld",
+     "source_page": "https://www.mmslists.com/"
+    },
+    {
+     "url": "https://images.squarespace-cdn.com/content/v1/58c9b895414fb537a75ee36b/1750693774218-KED0Z4T6EFX8VK2Z3RQK/AMA_logo.png",
+     "kind": "logo",
+     "source_page": "https://www.mmslists.com/"
+    },
+    {
+     "url": "https://images.squarespace-cdn.com/content/v1/58c9b895414fb537a75ee36b/1750693776337-XSG81H4G8SYECYT8ZMXX/AOA-logo.png",
+     "kind": "logo",
+     "source_page": "https://www.mmslists.com/"
+    },
+    {
+     "url": "https://images.squarespace-cdn.com/content/v1/58c9b895414fb537a75ee36b/1750693780247-5Z4YF9HHOXWHRTND2U10/AAPA_logomark_PA_rgb-jpg.png",
+     "kind": "logo",
+     "source_page": "https://www.mmslists.com/"
+    }
+   ],
+   "theme_color": null,
+   "languages": [
+    "en"
+   ],
+   "legal_name": "MMS Inc. (Medical Marketing Service, Inc.)",
+   "search": {
+    "available": true,
+    "method": "http_get",
+    "page_url": "https://www.mmslists.com/",
+    "form_action": "https://www.mmslists.com/search",
+    "inputs": [
+     {
+      "name": "q",
+      "type": "text",
+      "canonical": "full_name",
+      "required": false,
+      "autocomplete": "off",
+      "placeholder": "Search"
+     }
+    ],
+    "url_pattern": "https://www.mmslists.com/search?q={q}",
+    "directory_prefixes": [],
+    "paywall": null,
+    "login_wall": null
+   },
+   "removal": {
+    "url": "https://www.mmslists.com/privacy-policy",
+    "final_url": "https://www.mmslists.com/privacy-policy",
+    "http_status": 200,
+    "kinds": [
+     "opt_out"
+    ],
+    "channels": [
+     "email",
+     "phone"
+    ],
+    "emails": [
+     {
+      "email": "sales@mmslists.com",
+      "confidence": "uncertain",
+      "source_url": "https://www.mmslists.com/"
+     },
+     {
+      "email": "privacy@mmslists.com",
+      "confidence": "extracted",
+      "source_url": "https://www.mmslists.com/privacy-policy"
+     }
+    ],
+    "phones": [
+     "630.350.1717",
+     "(800) 633-5478"
+    ],
+    "postal_address": null,
+    "portal": null,
+    "form_fields": [],
+    "csrf_field_name": null,
+    "requires_profile_url": null,
+    "captcha": {
+     "provider": "custom",
+     "sitekey": "6LeDfeYZAAAAAKp2-HguI1bpoLGCGv94YszVvudm",
+     "pages": [
+      "https://www.mmslists.com/",
+      "https://www.mmslists.com/privacy-policy"
+     ]
+    },
+    "consent_vendor": null,
+    "success_text": null,
+    "suppression_not_deletion": null,
+    "processing_days": null,
+    "processing_text": null
+   },
+   "bot_defense": {
+    "vendor": null,
+    "outcome": "none"
+   },
+   "legal": {
+    "privacy_policy_url": "https://www.mmslists.com/privacy-policy",
+    "terms_url": null,
+    "automation_prohibited": null,
+    "automation_clause": null,
+    "residency": [
+     "US"
+    ],
+    "authorized_agent": null,
+    "data_categories": [
+     "identifiers",
+     "internet_activity"
+    ]
+   },
+   "pages": [
+    {
+     "url": "https://mmslists.com/",
+     "final_url": "https://www.mmslists.com/",
+     "status": 200,
+     "role": "home",
+     "title": "Medical Marketing Service, Inc. | MMS",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.mmslists.com/",
+     "final_url": "https://www.mmslists.com/",
+     "status": 200,
+     "role": "home",
+     "title": "Medical Marketing Service, Inc. | MMS",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.mmslists.com/privacy-policy",
+     "final_url": "https://www.mmslists.com/privacy-policy",
+     "status": 200,
+     "role": "catalog",
+     "title": "Privacy Policy",
+     "liveness": "alive"
+    }
+   ]
+  },
+  "adswapper-inc-toptop-leads": {
+   "schema_version": "3.0.0",
+   "id": "adswapper-inc-toptop-leads",
+   "name": "AdSwapper Inc (TopTop Leads)",
+   "category": "marketing",
+   "domain": "toptopleads.com",
+   "checked_at": "2026-11-02T01:27:28+00:00",
+   "liveness": "alive",
+   "liveness_detail": "catalog URL loaded",
+   "homepage": "https://www.toptopleads.com/",
+   "logo_url": "https://www.toptopleads.com/logo.png",
+   "images": [
+    {
+     "url": "https://www.toptopleads.com/favicon.svg",
+     "kind": "icon",
+     "source_page": "https://www.toptopleads.com/"
+    },
+    {
+     "url": "https://toptopleads.com/og-image.png",
+     "kind": "og_image",
+     "source_page": "https://www.toptopleads.com/"
+    },
+    {
+     "url": "https://toptopleads.com/logo.png",
+     "kind": "json_ld",
+     "source_page": "https://www.toptopleads.com/"
+    },
+    {
+     "url": "https://www.toptopleads.com/logo.png",
+     "kind": "logo",
+     "source_page": "https://www.toptopleads.com/"
+    },
+    {
+     "url": "https://www.toptopleads.com/logo-symbol.png",
+     "kind": "logo",
+     "source_page": "https://www.toptopleads.com/"
+    }
+   ],
+   "theme_color": null,
+   "languages": [
+    "en"
+   ],
+   "legal_name": "TopTop Leads",
+   "search": {
+    "available": false,
+    "method": "none",
+    "page_url": null,
+    "form_action": null,
+    "inputs": [],
+    "url_pattern": null,
+    "directory_prefixes": [],
+    "paywall": null,
+    "login_wall": null
+   },
+   "removal": {
+    "url": "https://www.toptopleads.com/privacy-policy",
+    "final_url": "https://www.toptopleads.com/privacy-policy",
+    "http_status": 200,
+    "kinds": [
+     "opt_out",
+     "do_not_sell"
+    ],
+    "channels": [
+     "email"
+    ],
+    "emails": [
+     {
+      "email": "info@toptopleads.com",
+      "confidence": "uncertain",
+      "source_url": "https://www.toptopleads.com/"
+     }
+    ],
+    "phones": [],
+    "postal_address": null,
+    "portal": null,
+    "form_fields": [],
+    "csrf_field_name": null,
+    "requires_profile_url": null,
+    "captcha": {
+     "provider": null,
+     "sitekey": null,
+     "pages": []
+    },
+    "consent_vendor": null,
+    "success_text": null,
+    "suppression_not_deletion": null,
+    "processing_days": null,
+    "processing_text": null
+   },
+   "bot_defense": {
+    "vendor": null,
+    "outcome": "none"
+   },
+   "legal": {
+    "privacy_policy_url": "https://www.toptopleads.com/privacy-policy",
+    "terms_url": null,
+    "automation_prohibited": null,
+    "automation_clause": null,
+    "residency": [],
+    "authorized_agent": null,
+    "data_categories": [
+     "identifiers",
+     "precise_location",
+     "sensitive"
+    ]
+   },
+   "pages": [
+    {
+     "url": "https://toptopleads.com/",
+     "final_url": "https://www.toptopleads.com/",
+     "status": 200,
+     "role": "home",
+     "title": "TopTop Leads — Buy Auto Insurance & Home Services Leads",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.toptopleads.com/",
+     "final_url": "https://www.toptopleads.com/",
+     "status": 200,
+     "role": "home",
+     "title": "TopTop Leads — Buy Auto Insurance & Home Services Leads",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.toptopleads.com/privacy-policy",
+     "final_url": "https://www.toptopleads.com/privacy-policy",
+     "status": 200,
+     "role": "catalog",
+     "title": "Privacy Policy | TopTop Leads",
+     "liveness": "alive"
+    }
+   ]
+  },
+  "common-room-inc": {
+   "schema_version": "3.0.0",
+   "id": "common-room-inc",
+   "name": "Common Room, Inc.",
+   "category": "marketing",
+   "domain": "commonroom.io",
+   "checked_at": "2026-11-02T01:27:25+00:00",
+   "liveness": "alive",
+   "liveness_detail": "catalog URL loaded",
+   "homepage": "https://www.commonroom.io/",
+   "logo_url": "https://www.commonroom.io/static/img/logos/common-room-logo-color.png",
+   "images": [
+    {
+     "url": "https://www.commonroom.io/static/meta/favicon.svg",
+     "kind": "icon",
+     "source_page": "https://www.commonroom.io/"
+    },
+    {
+     "url": "https://www.commonroom.io/static/meta/favicon.png",
+     "kind": "icon",
+     "source_page": "https://www.commonroom.io/"
+    },
+    {
+     "url": "https://www.commonroom.io/static/meta/apple-touch-icon.png",
+     "kind": "apple_touch_icon",
+     "source_page": "https://www.commonroom.io/"
+    },
+    {
+     "url": "https://cdn.sanity.io/images/vt347z5x/production/123593f41676c49b2a4733e23b27982d0aeef140-2400x1260.png?w=1536&q=80",
+     "kind": "og_image",
+     "source_page": "https://www.commonroom.io/"
+    },
+    {
+     "url": "https://www.commonroom.io/static/img/logos/common-room-logo-color.png",
+     "kind": "logo",
+     "source_page": "https://www.commonroom.io/"
+    },
+    {
+     "url": "https://cdn.sanity.io/images/vt347z5x/production/1e701726ff6a587a95180261f9d833b148e178b6-362x200.png?w=362&q=100&auto=format",
+     "kind": "logo",
+     "source_page": "https://www.commonroom.io/"
+    },
+    {
+     "url": "https://cdn.sanity.io/images/vt347z5x/production/6297bd75598729a2dc39ac9e63a9f6157f93911f-316x200.png?w=316&q=100&auto=format",
+     "kind": "logo",
+     "source_page": "https://www.commonroom.io/"
+    },
+    {
+     "url": "https://cdn.sanity.io/images/vt347z5x/production/950c8bc810a249c8c44045744c2f1718911050cc-350x200.png?w=350&q=100&auto=format",
+     "kind": "logo",
+     "source_page": "https://www.commonroom.io/"
+    },
+    {
+     "url": "https://cdn.sanity.io/images/vt347z5x/production/9b203ee437bc58a44c955910fdfe58a10052f948-156x100.svg?w=156&q=100&auto=format",
+     "kind": "logo",
+     "source_page": "https://www.commonroom.io/"
+    },
+    {
+     "url": "https://cdn.sanity.io/images/vt347z5x/production/13f9b038ffaf8f76f828f03aefcb4b549a6589f1-158x100.svg?w=158&q=100&auto=format",
+     "kind": "logo",
+     "source_page": "https://www.commonroom.io/"
+    },
+    {
+     "url": "https://cdn.sanity.io/images/vt347z5x/production/f8eeee6c0b0f6fff1e48b3e8e356864f2415d843-133x100.svg?w=133&q=100&auto=format",
+     "kind": "logo",
+     "source_page": "https://www.commonroom.io/"
+    },
+    {
+     "url": "https://cdn.sanity.io/images/vt347z5x/production/257ca2101dc4eef53df69abffb1257e35adfd066-195x100.svg?w=195&q=100&auto=format",
+     "kind": "logo",
+     "source_page": "https://www.commonroom.io/"
+    },
+    {
+     "url": "https://cdn.sanity.io/images/vt347z5x/production/d2df6de7c9e7af2e825c301a0c009c0488925265-147x100.svg?w=147&q=100&auto=format",
+     "kind": "logo",
+     "source_page": "https://www.commonroom.io/"
+    },
+    {
+     "url": "https://cdn.sanity.io/images/vt347z5x/production/892c2218c2cb7c0c1166ef8e51901ee7e726b4b8-178x100.svg?w=178&q=100&auto=format",
+     "kind": "logo",
+     "source_page": "https://www.commonroom.io/"
+    },
+    {
+     "url": "https://cdn.sanity.io/images/vt347z5x/production/c08053809dc14eba160c6ba49aee41df798c8321-84x100.svg?w=84&q=100&auto=format",
+     "kind": "logo",
+     "source_page": "https://www.commonroom.io/"
+    },
+    {
+     "url": "https://cdn.sanity.io/images/vt347z5x/production/c984587ed08a9be6bde25861bbfec3829fdf7262-180x100.svg?w=180&q=100&auto=format",
+     "kind": "logo",
+     "source_page": "https://www.commonroom.io/"
+    },
+    {
+     "url": "https://app.commonroom.io/commit/e8907cd13ca5d2b64966a512bfba74f5809ee354/favicon.app.commonroom.io.svg",
+     "kind": "icon",
+     "source_page": "https://app.commonroom.io/remove-my-info"
+    }
+   ],
+   "theme_color": null,
+   "languages": [
+    "en"
+   ],
+   "legal_name": "Common Room",
+   "search": {
+    "available": false,
+    "method": "none",
+    "page_url": null,
+    "form_action": null,
+    "inputs": [],
+    "url_pattern": null,
+    "directory_prefixes": [],
+    "paywall": null,
+    "login_wall": null
+   },
+   "removal": {
+    "url": "https://app.commonroom.io/remove-my-info",
+    "final_url": "https://app.commonroom.io/remove-my-info",
+    "http_status": 200,
+    "kinds": [
+     "opt_out"
+    ],
+    "channels": [],
+    "emails": [],
+    "phones": [],
+    "postal_address": null,
+    "portal": null,
+    "form_fields": [],
+    "csrf_field_name": null,
+    "requires_profile_url": null,
+    "captcha": {
+     "provider": null,
+     "sitekey": null,
+     "pages": []
+    },
+    "consent_vendor": null,
+    "success_text": null,
+    "suppression_not_deletion": null,
+    "processing_days": null,
+    "processing_text": null
+   },
+   "bot_defense": {
+    "vendor": null,
+    "outcome": "none"
+   },
+   "legal": {
+    "privacy_policy_url": null,
+    "terms_url": null,
+    "automation_prohibited": null,
+    "automation_clause": null,
+    "residency": [],
+    "authorized_agent": null,
+    "data_categories": [
+     "identifiers"
+    ]
+   },
+   "pages": [
+    {
+     "url": "https://commonroom.io/",
+     "final_url": "https://www.commonroom.io/",
+     "status": 200,
+     "role": "home",
+     "title": "Complete Buyer Intelligence That Turns Intent Into Pipeline",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.commonroom.io/",
+     "final_url": "https://www.commonroom.io/",
+     "status": 200,
+     "role": "home",
+     "title": "Complete Buyer Intelligence That Turns Intent Into Pipeline",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://app.commonroom.io/remove-my-info",
+     "final_url": "https://app.commonroom.io/remove-my-info",
+     "status": 200,
+     "role": "catalog",
+     "title": "Common Room",
+     "liveness": "alive"
+    }
+   ]
+  },
+  "yasni": {
+   "schema_version": "3.0.0",
+   "id": "yasni",
+   "name": "Yasni",
+   "category": "people-search",
+   "domain": "yasni.de",
+   "checked_at": "2026-11-02T01:27:29+00:00",
+   "liveness": "alive",
+   "liveness_detail": "catalog URL loaded",
+   "homepage": "https://www.yasni.de/",
+   "logo_url": "https://www.yasni.de/design/relaunch/yasni_logo.gif",
+   "images": [
+    {
+     "url": "https://www.yasni.de/favicon16.ico",
+     "kind": "icon",
+     "source_page": "https://www.yasni.de/"
+    },
+    {
+     "url": "https://www.yasni.de/design/relaunch/yasni_logo.gif",
+     "kind": "logo",
+     "source_page": "https://www.yasni.de/datenschutz"
+    }
+   ],
+   "theme_color": null,
+   "languages": [
+    "en"
+   ],
+   "legal_name": null,
+   "search": {
+    "available": false,
+    "method": "none",
+    "page_url": null,
+    "form_action": null,
+    "inputs": [],
+    "url_pattern": null,
+    "directory_prefixes": [],
+    "paywall": null,
+    "login_wall": null
+   },
+   "removal": {
+    "url": "https://www.yasni.de/datenschutz",
+    "final_url": "https://www.yasni.de/datenschutz",
+    "http_status": 200,
+    "kinds": [
+     "opt_out"
+    ],
+    "channels": [
+     "email"
+    ],
+    "emails": [
+     {
+      "email": "datenschutz@yasni.de",
+      "confidence": "extracted",
+      "source_url": "https://www.yasni.de/datenschutz"
+     }
+    ],
+    "phones": [],
+    "postal_address": null,
+    "portal": null,
+    "form_fields": [],
+    "csrf_field_name": null,
+    "requires_profile_url": null,
+    "captcha": {
+     "provider": null,
+     "sitekey": null,
+     "pages": []
+    },
+    "consent_vendor": null,
+    "success_text": null,
+    "suppression_not_deletion": null,
+    "processing_days": null,
+    "processing_text": null
+   },
+   "bot_defense": {
+    "vendor": null,
+    "outcome": "none"
+   },
+   "legal": {
+    "privacy_policy_url": null,
+    "terms_url": null,
+    "automation_prohibited": null,
+    "automation_clause": null,
+    "residency": [],
+    "authorized_agent": null,
+    "data_categories": [
+     "identifiers",
+     "internet_activity"
+    ]
+   },
+   "pages": [
+    {
+     "url": "https://yasni.de/",
+     "final_url": "http://www.yasni.de/",
+     "status": 500,
+     "role": "home",
+     "title": "",
+     "liveness": "error"
+    },
+    {
+     "url": "https://www.yasni.de/",
+     "final_url": "https://www.yasni.de/",
+     "status": 200,
+     "role": "home",
+     "title": "No.1 Free People Search - Yasni.de",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.yasni.de/datenschutz",
+     "final_url": "https://www.yasni.de/datenschutz",
+     "status": 200,
+     "role": "catalog",
+     "title": "No.1 Free People Search - Yasni.de",
+     "liveness": "alive"
+    }
+   ]
+  },
+  "fonecta": {
+   "schema_version": "3.0.0",
+   "id": "fonecta",
+   "name": "Fonecta",
+   "category": "people-search",
+   "domain": "fonecta.fi",
+   "checked_at": "2026-11-02T01:27:25+00:00",
+   "liveness": "alive",
+   "liveness_detail": "catalog URL loaded",
+   "homepage": "https://www.fonecta.fi:443/",
+   "logo_url": "https://ucarecdn.com/a45d781d-3524-48e1-be86-9971179f321f/",
+   "images": [
+    {
+     "url": "https://ucarecdn.com/73d6e702-5602-4925-ae86-29bc9a495d21/-/quality/smart/-/format/auto/",
+     "kind": "og_image",
+     "source_page": "https://www.fonecta.fi:443/"
+    },
+    {
+     "url": "https://ucarecdn.com/a45d781d-3524-48e1-be86-9971179f321f/",
+     "kind": "logo",
+     "source_page": "https://www.fonecta.fi:443/"
+    },
+    {
+     "url": "https://ucarecdn.com/8d1e4d8c-3dc3-4c9c-91f9-8f2d7c29f59a/",
+     "kind": "logo",
+     "source_page": "https://www.fonecta.fi:443/"
+    },
+    {
+     "url": "https://tuki.fonecta.com/hs-fs/hubfs/Fonecta_logo_80px.png?width=191&height=50&name=Fonecta_logo_80px.png",
+     "kind": "logo",
+     "source_page": "https://tuki.fonecta.com/tietosuojaseloste"
+    }
+   ],
+   "theme_color": null,
+   "languages": [
+    "fi"
+   ],
+   "legal_name": null,
+   "search": {
+    "available": false,
+    "method": "none",
+    "page_url": null,
+    "form_action": null,
+    "inputs": [],
+    "url_pattern": null,
+    "directory_prefixes": [],
+    "paywall": null,
+    "login_wall": null
+   },
+   "removal": {
+    "url": "https://tuki.fonecta.com/tietosuojaseloste",
+    "final_url": "https://tuki.fonecta.com/tietosuojaseloste",
+    "http_status": 200,
+    "kinds": [
+     "opt_out"
+    ],
+    "channels": [],
+    "emails": [],
+    "phones": [],
+    "postal_address": null,
+    "portal": null,
+    "form_fields": [],
+    "csrf_field_name": null,
+    "requires_profile_url": null,
+    "captcha": {
+     "provider": null,
+     "sitekey": null,
+     "pages": []
+    },
+    "consent_vendor": null,
+    "success_text": null,
+    "suppression_not_deletion": null,
+    "processing_days": null,
+    "processing_text": null
+   },
+   "bot_defense": {
+    "vendor": null,
+    "outcome": "none"
+   },
+   "legal": {
+    "privacy_policy_url": null,
+    "terms_url": null,
+    "automation_prohibited": null,
+    "automation_clause": null,
+    "residency": [],
+    "authorized_agent": null,
+    "data_categories": []
+   },
+   "pages": [
+    {
+     "url": "https://fonecta.fi/",
+     "final_url": "https://www.fonecta.fi:443/",
+     "status": 200,
+     "role": "home",
+     "title": "Haku, henkilöhaku, numerohaku, yrityshaku | Fonecta Caller",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.fonecta.fi/",
+     "final_url": "https://www.fonecta.fi/",
+     "status": 200,
+     "role": "home",
+     "title": "Haku, henkilöhaku, numerohaku, yrityshaku | Fonecta Caller",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://tuki.fonecta.com/tietosuojaseloste",
+     "final_url": "https://tuki.fonecta.com/tietosuojaseloste",
+     "status": 200,
+     "role": "catalog",
+     "title": "Tietosuojaseloste",
+     "liveness": "alive"
+    }
+   ]
+  },
+  "biluppgifter-se": {
+   "schema_version": "3.0.0",
+   "id": "biluppgifter-se",
+   "name": "Biluppgifter.se",
+   "category": "public-records",
+   "domain": "biluppgifter.se",
+   "checked_at": "2026-11-02T01:27:24+00:00",
+   "liveness": "alive",
+   "liveness_detail": "catalog URL loaded",
+   "homepage": "https://biluppgifter.se/",
+   "logo_url": "https://biluppgifter.se/favicon/apple-touch-icon.png",
+   "images": [
+    {
+     "url": "https://biluppgifter.se/favicon/favicon.ico",
+     "kind": "icon",
+     "source_page": "https://biluppgifter.se/"
+    },
+    {
+     "url": "https://biluppgifter.se/favicon/apple-touch-icon.png",
+     "kind": "apple_touch_icon",
+     "source_page": "https://biluppgifter.se/"
+    },
+    {
+     "url": "https://biluppgifter.se/favicon/favicon-96x96.png",
+     "kind": "icon",
+     "source_page": "https://biluppgifter.se/"
+    }
+   ],
+   "theme_color": null,
+   "languages": [
+    "sv"
+   ],
+   "legal_name": null,
+   "search": {
+    "available": true,
+    "method": "http_form_post",
+    "page_url": "https://biluppgifter.se/",
+    "form_action": "https://biluppgifter.se/fordon/",
+    "inputs": [
+     {
+      "name": "query",
+      "type": "text",
+      "canonical": "full_name",
+      "required": false,
+      "autocomplete": "off",
+      "placeholder": "Registreringsnummer / VIN"
+     }
+    ],
+    "url_pattern": "https://biluppgifter.se/fordon/",
+    "directory_prefixes": [],
+    "paywall": null,
+    "login_wall": null
+   },
+   "removal": {
+    "url": "https://biluppgifter.se/integritetspolicy/",
+    "final_url": "https://biluppgifter.se/integritetspolicy/",
+    "http_status": 200,
+    "kinds": [
+     "opt_out"
+    ],
+    "channels": [],
+    "emails": [],
+    "phones": [],
+    "postal_address": null,
+    "portal": null,
+    "form_fields": [],
+    "csrf_field_name": null,
+    "requires_profile_url": null,
+    "captcha": {
+     "provider": null,
+     "sitekey": null,
+     "pages": []
+    },
+    "consent_vendor": null,
+    "success_text": null,
+    "suppression_not_deletion": null,
+    "processing_days": null,
+    "processing_text": null
+   },
+   "bot_defense": {
+    "vendor": null,
+    "outcome": "none"
+   },
+   "legal": {
+    "privacy_policy_url": null,
+    "terms_url": null,
+    "automation_prohibited": null,
+    "automation_clause": null,
+    "residency": [
+     "EU"
+    ],
+    "authorized_agent": null,
+    "data_categories": []
+   },
+   "pages": [
+    {
+     "url": "https://biluppgifter.se/",
+     "final_url": "https://biluppgifter.se/",
+     "status": 200,
+     "role": "home",
+     "title": "Sök Registreringsnummer, Bilars Regnr och Ägare i Bilregistret samt Gratis Bilvärdering på Biluppgifter.se",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.biluppgifter.se/",
+     "final_url": "https://biluppgifter.se/",
+     "status": 200,
+     "role": "home",
+     "title": "Sök Registreringsnummer, Bilars Regnr och Ägare i Bilregistret samt Gratis Bilvärdering på Biluppgifter.se",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://biluppgifter.se/integritetspolicy/",
+     "final_url": "https://biluppgifter.se/integritetspolicy/",
+     "status": 200,
+     "role": "catalog",
+     "title": "Integritetspolicy - Biluppgifter.se",
      "liveness": "alive"
     }
    ]

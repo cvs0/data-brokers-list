@@ -2,7 +2,7 @@
 
 Registered data brokers and privacy-request pages that do not fit the categories above.
 
-287 entries. Link responses were checked on 2026-10-01 unless a note says otherwise.
+289 entries. Link responses were checked on 2026-10-01 unless a note says otherwise.
 
 | Broker | Opt-out / privacy URL | Notes |
 | --- | --- | --- |
@@ -170,6 +170,7 @@ Registered data brokers and privacy-request pages that do not fit the categories
 | LightBox Parent, L.P. | https://www.lightboxre.com/lightbox-individual-data-rights-request/ | Opt-out or consumer privacy-request page. Automated check on 2026-10-01 got HTTP 403. Open the link in a browser. |
 | ListsOnline.com, Inc. | https://www.everleads.com/privacy | Privacy notice or privacy-policy page. Use the state-rights, do-not-sell, or request section. Email: privacy@everleads.com. Privacy-rights page submitted to the California Data Broker Registry. |
 | Live Data Technologies, Inc. | https://www.livedatatech.com/opt-out | Opt-out page on livedatatech.com. The old livedatatechnologies.com/opt-out path redirects here. Email: remove@livedatatechnologies.com. The page loads a reCAPTCHA badge. No request was submitted. Checked 2026-10-24. |
+| LogicTree, Inc. (Data247, EZCNAM) | https://www.data247.com/privacy | Phone and identity data provider (Data247 data append, carrier lookup and caller name, and the EZCNAM caller-ID service). The privacy policy lists names, current and prior postal addresses, phone and carrier data, and inferred household, wealth and credit scores among the data it sells, and says a request to either service reaches both. Requests go by email to support@data247.com with "Privacy Request" in the subject, or by mail to LogicTree, Inc., Attn: Privacy Requests, 15 Main Street, Suite 12A, Franklin, MA 02038. Registered with the California data broker registry. Checked 2026-11-01: the page answered HTTP 200. No request was submitted. |
 | Lookify | https://lookify.io/opt-out | Opt-out or consumer privacy-request page. |
 | M1 Data & Analytics, LLC | https://m1-data.com/disclosures/ | Opt-out or consumer privacy-request page. |
 | Malvern Media Inc. | https://privacyportal.privacypillar.com/dsar/form?orgid=369c8ff9-8ffb-4308-8362-f01691e77db8&propid=64c8904f-8bac-4dd9-8e6c-d052be1918a2&formid=6e6ff4b8-2296-4589-ae7f-563fa743ec2d&status=publish | Opt-out or consumer privacy-request page. |
@@ -262,6 +263,7 @@ Registered data brokers and privacy-request pages that do not fit the categories
 | THE LINEA 1 MKT SL | https://Www.tl1mkt.com | Published privacy-request URL is the site root. Confirm a request form is on the page before sending information. Privacy-rights page submitted to the California Data Broker Registry. |
 | The Segerdahl LLC | https://sg360.com/do-not-sell-my-info/ | Opt-out or consumer privacy-request page. Privacy-rights page submitted to the California Data Broker Registry. |
 | Thomson Reuters (CLEAR) | https://privacyportal.onetrust.com/webform/dbf5ae8a-0a6a-4f4b-b527-7f94d0de6bbc/170d8ef9-9f1c-45f6-b338-9f3fb30c801e | Opt-out or consumer privacy-request page. Email: privacy.issues@thomsonreuters.com. |
+| Tracerfy LLC | https://www.tracerfy.com/privacy-choices | US real estate data and pay-per-hit skip tracing service (owner phone numbers, emails, relatives and reverse lookups) sold to investors, agents and call centers. The Your Privacy Choices page has a Do Not Sell or Share form (name, street address, city, state, ZIP and a phone or email; no account needed) and a second form for access, deletion, correction or appeal. Email: compliance@tracerfy.com. Registered with the California data broker registry. Checked 2026-11-01: the page answered HTTP 200. No request was submitted. |
 | Trestle Solutions, Inc. | https://trestleiq.com/privacy-policy/ | Privacy notice or privacy-policy page. Use the state-rights, do-not-sell, or request section. On 2026-10-29 the old URL (https://trestleiq.com/privacy-policy-2022/) redirected here, and this page answered HTTP 200. No request was submitted. |
 | Truthed, Inc | https://www.truthed.com/optout | Opt-out or consumer privacy-request page. Automated check on 2026-10-01 got HTTP 403. Open the link in a browser. |
 | TruthRecord (We Inform LLC) | https://www.truthrecord.org/name_search/landing_page | Web form. Open-dataset difficulty: easy. |

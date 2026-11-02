@@ -1,15 +1,15 @@
 {
  "schema_version": "4.0.0",
- "checked_at": "2026-11-02T01:20:20+00:00",
+ "checked_at": "2026-11-02T01:29:50+00:00",
  "method": "v3 records, with privacy and removal mailboxes on another domain kept as related_domain. Brokers whose loaded pages published no removal channel were crawled again for unfetched same-site opt-out and privacy URLs, then the catalog URL and homepage were opened once in a browser when those pages still showed no form. That recrawl honors robots.txt. A later pass reads the catalog URL and homepage of brokers whose robots.txt had disallowed the research client. A search pass reads homepages whose public search form was missing, including pages robots.txt had disallowed, and stores a name, phone, or address form. Those passes submit no form, no login, and no CAPTCHA. A legal pass re-reads stored privacy and terms text and fetches an unread privacy or terms page when robots.txt allows it. A network pass looks up public DNS and the site certificate, and reads response headers for the removal URL when robots.txt allows it. A later pass adds IPv6, SPF, DMARC, DKIM selectors, CAA, DNSSEC, the address block, certificate dates, RDAP registration, and the removal response's security headers. A captcha pass re-reads the removal URL and the search page for a widget. A browser reads the page when the static HTML has no widget and the page has a removal form, a stored CAPTCHA, or a public search form. A later pass reads the public widget settings, including whether it is a checkbox, an invisible check, or a score. A form pass re-reads stored search and removal forms for labels, limits, autocomplete, the submit button, and hidden field names. A browser opens when the static HTML does not contain the stored fields. Nothing is submitted. A search test then submits one synthetic query on each broker whose search and removal are both fillable, or with --searchable on each broker with a public search. A robots.txt disallow does not stop the test or count against a search; when --robots is set the log only notes it as robots_disallowed. Brokers whose homepage robots.txt disallowed the research client were later opened in a browser, and their liveness is the result of that read. Removal forms are not submitted and CAPTCHAs are not solved. search_test is on every broker. It stores the outcome, status, field names, the first path segment, the page kind, and a result count when the page states one. A loader page is followed to the count endpoint. The response body, record text, and listing URLs are not stored.",
- "broker_count": 823,
+ "broker_count": 835,
  "counts": {
-  "with_related_email": 128,
-  "with_form": 182,
-  "with_email": 420,
-  "with_extracted_email": 203,
+  "with_related_email": 129,
+  "with_form": 183,
+  "with_email": 426,
+  "with_extracted_email": 206,
   "with_stated_email": 11,
-  "no_channel_remaining": 121,
+  "no_channel_remaining": 125,
   "with_search": 354,
   "with_search_fillable": 332,
   "search_unscanned": 37,
@@ -25,26 +25,26 @@
   "search_page_results": 51,
   "search_page_loader": 12,
   "search_page_form": 27,
-  "with_country": 757,
-  "with_region": 481,
-  "with_locality": 361,
-  "with_removal_action": 145,
+  "with_country": 769,
+  "with_region": 484,
+  "with_locality": 364,
+  "with_removal_action": 146,
   "shared_removal": 61,
   "email_verification": 28,
   "id_document": 1,
-  "with_privacy": 609,
+  "with_privacy": 617,
   "with_terms": 398,
   "with_automation_clause": 81,
-  "with_authorized_agent": 141,
-  "with_residency": 541,
+  "with_authorized_agent": 142,
+  "with_residency": 547,
   "sells_personal_information": 4,
-  "does_not_sell": 76,
+  "does_not_sell": 77,
   "children_not_directed": 39,
   "with_mx": 576,
   "with_mail_provider": 420,
   "with_cdn": 418,
   "with_tls_org": 36,
-  "removal_offsite": 98,
+  "removal_offsite": 99,
   "with_hsts": 273,
   "with_form_enctype": 215,
   "with_field_detail": 421,
@@ -65,17 +65,17 @@
   "with_http3": 264,
   "with_csp": 181,
   "with_hsts_preload": 119,
-  "removal_captcha": 261,
-  "removal_captcha_sitekey": 148,
+  "removal_captcha": 265,
+  "removal_captcha_sitekey": 152,
   "removal_captcha_checked": 349,
   "search_captcha_widget": 16,
   "search_captcha_sitekey": 6,
   "search_captcha_checked": 328,
-  "captcha_blocks_form": 92,
+  "captcha_blocks_form": 93,
   "captcha_email_fallback": 30,
   "removal_captcha_checkbox": 78,
   "removal_captcha_invisible": 30,
-  "removal_captcha_score": 30,
+  "removal_captcha_score": 32,
   "removal_captcha_action": 25,
   "removal_captcha_theme": 35,
   "removal_captcha_enterprise": 25,
@@ -83,23 +83,23 @@
   "search_captcha_invisible": 0,
   "search_captcha_score": 0,
   "removal_blockers": {
-   "captcha_form": 62,
-   "generic_inbox": 56,
+   "captcha_form": 63,
+   "generic_inbox": 58,
    "phone_postal": 23,
    "portal": 4,
    "phone": 63,
-   "postal": 6,
+   "postal": 7,
    "bot_wall": 25,
    "fetch_error": 12,
    "opt_out_gone": 0,
    "robots": 23,
    "captcha_no_form": 28,
-   "no_channel": 129
+   "no_channel": 133
   },
   "lookup_search": 288,
   "lookup_search_fillable": 272,
   "liveness": {
-   "alive": 696,
+   "alive": 708,
    "blocked": 47,
    "dead": 18,
    "error": 13,
@@ -102034,7 +102034,7 @@
    "name": "Samba TV, Inc.",
    "category": "other",
    "domain": "samba.com",
-   "checked_at": "2026-11-02T01:18:40+00:00",
+   "checked_at": "2026-11-02T01:28:08+00:00",
    "liveness": "alive",
    "liveness_detail": "https://samba.com/privacy-center/privacy-policy answered HTTP 200 on 2026-10-24. The old samba.tv/users/privacy-policy path redirected here. No request was submitted.",
    "homepage": null,
@@ -228843,7 +228843,7 @@
    "name": "Live Data Technologies, Inc.",
    "category": "other",
    "domain": "livedatatech.com",
-   "checked_at": "2026-11-02T01:18:56+00:00",
+   "checked_at": "2026-11-02T01:28:25+00:00",
    "liveness": "alive",
    "liveness_detail": "https://www.livedatatech.com/opt-out answered HTTP 200 on 2026-10-24, titled Optout — Live Data Technologies. The old livedatatechnologies.com/opt-out path redirects here. The page loads a reCAPTCHA badge. No request was submitted.",
    "homepage": null,
@@ -306875,7 +306875,7 @@
    "name": "Data Axle Canada",
    "category": "marketing",
    "domain": "dataaxlecanada.ca",
-   "checked_at": "2026-11-02T01:19:06+00:00",
+   "checked_at": "2026-11-02T01:28:35+00:00",
    "liveness": "alive",
    "liveness_detail": "dataaxlecanada.ca answered HTTP 200 on 2026-10-24. infocanada.ca redirects there. There is no public name search.",
    "homepage": null,
@@ -307069,7 +307069,7 @@
    "name": "Prospects Influential",
    "category": "marketing",
    "domain": "prospectsinfluential.com",
-   "checked_at": "2026-11-02T01:19:06+00:00",
+   "checked_at": "2026-11-02T01:28:35+00:00",
    "liveness": "alive",
    "liveness_detail": "prospectsinfluential.com answered HTTP 200 on 2026-10-24. The site sells consumer mailing lists and has no public name search.",
    "homepage": null,
@@ -307263,7 +307263,7 @@
    "name": "Openroom",
    "category": "background-checks",
    "domain": "openroom.ca",
-   "checked_at": "2026-11-02T01:19:06+00:00",
+   "checked_at": "2026-11-02T01:28:35+00:00",
    "liveness": "alive",
    "liveness_detail": "openroom.ca answered HTTP 200 on 2026-10-24. The tenant-screening search requires an account.",
    "homepage": null,
@@ -307456,7 +307456,7 @@
    "name": "Landlord Credit Bureau",
    "category": "credit-financial",
    "domain": "landlordcreditbureau.ca",
-   "checked_at": "2026-11-02T01:19:06+00:00",
+   "checked_at": "2026-11-02T01:28:35+00:00",
    "liveness": "alive",
    "liveness_detail": "landlordcreditbureau.ca answered HTTP 200 on 2026-10-24. There is no public name search. The Privacy Policy link goes to a 404 page.",
    "homepage": null,
@@ -307649,7 +307649,7 @@
    "name": "FrontLobby",
    "category": "credit-financial",
    "domain": "frontlobby.com",
-   "checked_at": "2026-11-02T01:19:06+00:00",
+   "checked_at": "2026-11-02T01:28:35+00:00",
    "liveness": "alive",
    "liveness_detail": "frontlobby.com answered HTTP 200 on 2026-10-24. The LTB order search sends visitors to an account signup.",
    "homepage": null,
@@ -307842,7 +307842,7 @@
    "name": "Echovita",
    "category": "people-search",
    "domain": "echovita.com",
-   "checked_at": "2026-11-02T01:19:06+00:00",
+   "checked_at": "2026-11-02T01:28:35+00:00",
    "liveness": "alive",
    "liveness_detail": "echovita.com/ca answered HTTP 200 on 2026-10-24. A surname search returned obituary counts.",
    "homepage": null,
@@ -308061,7 +308061,7 @@
    "name": "InMemoriam",
    "category": "people-search",
    "domain": "inmemoriam.ca",
-   "checked_at": "2026-11-02T01:19:06+00:00",
+   "checked_at": "2026-11-02T01:28:35+00:00",
    "liveness": "alive",
    "liveness_detail": "inmemoriam.ca answered HTTP 200 on 2026-10-24. A surname search returned notice counts.",
    "homepage": null,
@@ -308304,7 +308304,7 @@
    "name": "Nécrologie.ca",
    "category": "people-search",
    "domain": "necrologie.ca",
-   "checked_at": "2026-11-02T01:19:06+00:00",
+   "checked_at": "2026-11-02T01:28:35+00:00",
    "liveness": "alive",
    "liveness_detail": "necrologie.ca answered HTTP 200 on 2026-10-24. The search API returned obituary counts.",
    "homepage": null,
@@ -308523,7 +308523,7 @@
    "name": "Geni",
    "category": "people-search",
    "domain": "geni.com",
-   "checked_at": "2026-11-02T01:19:06+00:00",
+   "checked_at": "2026-11-02T01:28:35+00:00",
    "liveness": "alive",
    "liveness_detail": "geni.com answered HTTP 200 on 2026-10-24. A public people search returned a result count.",
    "homepage": null,
@@ -308742,7 +308742,7 @@
    "name": "FQSG Avis de décès",
    "category": "people-search",
    "domain": "federationgenealogie.qc.ca",
-   "checked_at": "2026-11-02T01:19:06+00:00",
+   "checked_at": "2026-11-02T01:28:35+00:00",
    "liveness": "alive",
    "liveness_detail": "federationgenealogie.qc.ca answered HTTP 200 on 2026-10-24. A name search returned death notices.",
    "homepage": null,
@@ -308961,7 +308961,7 @@
    "name": "Domaine funéraire (Corporation des thanatologues du Québec)",
    "category": "people-search",
    "domain": "domainefuneraire.com",
-   "checked_at": "2026-11-02T01:19:06+00:00",
+   "checked_at": "2026-11-02T01:28:35+00:00",
    "liveness": "alive",
    "liveness_detail": "domainefuneraire.com answered HTTP 200 on 2026-10-24. A name search returned death notices.",
    "homepage": null,
@@ -309180,7 +309180,7 @@
    "name": "Canadian Obituaries",
    "category": "people-search",
    "domain": "canadianobituaries.com",
-   "checked_at": "2026-11-02T01:19:06+00:00",
+   "checked_at": "2026-11-02T01:28:35+00:00",
    "liveness": "alive",
    "liveness_detail": "canadianobituaries.com answered HTTP 200 on 2026-10-24. A name search returned death notices.",
    "homepage": null,
@@ -309399,7 +309399,7 @@
    "name": "Coopérative funéraire du Grand Montréal",
    "category": "people-search",
    "domain": "cfgrandmontreal.com",
-   "checked_at": "2026-11-02T01:19:06+00:00",
+   "checked_at": "2026-11-02T01:28:35+00:00",
    "liveness": "alive",
    "liveness_detail": "cfgrandmontreal.com answered HTTP 200 on 2026-10-24. A name search returned death notices.",
    "homepage": null,
@@ -309618,7 +309618,7 @@
    "name": "Coopérative funéraire des Deux Rives",
    "category": "people-search",
    "domain": "coopfuneraire2rives.com",
-   "checked_at": "2026-11-02T01:19:06+00:00",
+   "checked_at": "2026-11-02T01:28:35+00:00",
    "liveness": "alive",
    "liveness_detail": "coopfuneraire2rives.com answered HTTP 200 on 2026-10-24. A name search returned death notices.",
    "homepage": null,
@@ -309837,7 +309837,7 @@
    "name": "Alliance funéraire du Royaume",
    "category": "people-search",
    "domain": "afdr.coop",
-   "checked_at": "2026-11-02T01:19:06+00:00",
+   "checked_at": "2026-11-02T01:28:35+00:00",
    "liveness": "alive",
    "liveness_detail": "afdr.coop answered HTTP 200 on 2026-10-24. A name search returned death notices.",
    "homepage": null,
@@ -310056,7 +310056,7 @@
    "name": "Coopérative funéraire de l'Abitibi",
    "category": "people-search",
    "domain": "cfa.coop",
-   "checked_at": "2026-11-02T01:19:06+00:00",
+   "checked_at": "2026-11-02T01:28:35+00:00",
    "liveness": "alive",
    "liveness_detail": "cfa.coop answered HTTP 200 on 2026-10-24. A name search returned death notices.",
    "homepage": null,
@@ -310275,7 +310275,7 @@
    "name": "Coopérative funéraire Haute-Côte-Nord - Manicouagan",
    "category": "people-search",
    "domain": "cfhcn.ca",
-   "checked_at": "2026-11-02T01:19:06+00:00",
+   "checked_at": "2026-11-02T01:28:35+00:00",
    "liveness": "alive",
    "liveness_detail": "cfhcn.ca answered HTTP 200 on 2026-10-24. A name search returned death notices.",
    "homepage": null,
@@ -310494,7 +310494,7 @@
    "name": "Coopérative funéraire de l'Outaouais",
    "category": "people-search",
    "domain": "cfo.coop",
-   "checked_at": "2026-11-02T01:19:06+00:00",
+   "checked_at": "2026-11-02T01:28:35+00:00",
    "liveness": "alive",
    "liveness_detail": "cfo.coop answered HTTP 200 on 2026-10-24. A name search returned death notices.",
    "homepage": null,
@@ -310713,7 +310713,7 @@
    "name": "Coopérative funéraire de l'Estrie",
    "category": "people-search",
    "domain": "coopfuneraireestrie.com",
-   "checked_at": "2026-11-02T01:19:06+00:00",
+   "checked_at": "2026-11-02T01:28:35+00:00",
    "liveness": "alive",
    "liveness_detail": "coopfuneraireestrie.com answered HTTP 200 on 2026-10-24. A name search returned death notices.",
    "homepage": null,
@@ -310932,7 +310932,7 @@
    "name": "Résidence funéraire Lac St-Jean",
    "category": "people-search",
    "domain": "residencefunerairelacstjean.com",
-   "checked_at": "2026-11-02T01:19:06+00:00",
+   "checked_at": "2026-11-02T01:28:35+00:00",
    "liveness": "alive",
    "liveness_detail": "residencefunerairelacstjean.com answered HTTP 200 on 2026-10-24. A name search returned death notices.",
    "homepage": null,
@@ -311151,7 +311151,7 @@
    "name": "Coopérative funéraire Brunet",
    "category": "people-search",
    "domain": "coopfbrunet.com",
-   "checked_at": "2026-11-02T01:19:06+00:00",
+   "checked_at": "2026-11-02T01:28:35+00:00",
    "liveness": "alive",
    "liveness_detail": "coopfbrunet.com answered HTTP 200 on 2026-10-24. A name search returned death notices.",
    "homepage": null,
@@ -311370,7 +311370,7 @@
    "name": "Coopérative funéraire Matawinie-Montcalm",
    "category": "people-search",
    "domain": "cfmm.coop",
-   "checked_at": "2026-11-02T01:19:06+00:00",
+   "checked_at": "2026-11-02T01:28:35+00:00",
    "liveness": "alive",
    "liveness_detail": "cfmm.coop answered HTTP 200 on 2026-10-24. A name search returned death notices.",
    "homepage": null,
@@ -311589,7 +311589,7 @@
    "name": "Coopérative funéraire des Laurentides",
    "category": "people-search",
    "domain": "coopfunerairelaurentides.org",
-   "checked_at": "2026-11-02T01:19:06+00:00",
+   "checked_at": "2026-11-02T01:28:35+00:00",
    "liveness": "alive",
    "liveness_detail": "coopfunerairelaurentides.org answered HTTP 200 on 2026-10-24. A name search returned death notices.",
    "homepage": null,
@@ -311808,7 +311808,7 @@
    "name": "Résidence Funéraire Maska",
    "category": "people-search",
    "domain": "rfmaska.coop",
-   "checked_at": "2026-11-02T01:19:06+00:00",
+   "checked_at": "2026-11-02T01:28:35+00:00",
    "liveness": "alive",
    "liveness_detail": "rfmaska.coop answered HTTP 200 on 2026-10-24. A name search returned death notices.",
    "homepage": null,
@@ -312027,7 +312027,7 @@
    "name": "Dignity Memorial",
    "category": "people-search",
    "domain": "dignitymemorial.com",
-   "checked_at": "2026-11-02T01:19:06+00:00",
+   "checked_at": "2026-11-02T01:28:35+00:00",
    "liveness": "alive",
    "liveness_detail": "dignitymemorial.com answered HTTP 200 on 2026-10-24. A name search returned records.",
    "homepage": null,
@@ -312247,7 +312247,7 @@
    "name": "Interment.net",
    "category": "people-search",
    "domain": "interment.net",
-   "checked_at": "2026-11-02T01:19:06+00:00",
+   "checked_at": "2026-11-02T01:28:35+00:00",
    "liveness": "alive",
    "liveness_detail": "interment.net answered HTTP 200 on 2026-10-24. A name search returned records.",
    "homepage": null,
@@ -312467,7 +312467,7 @@
    "name": "Mount Pleasant Group",
    "category": "people-search",
    "domain": "mountpleasantgroup.com",
-   "checked_at": "2026-11-02T01:19:06+00:00",
+   "checked_at": "2026-11-02T01:28:35+00:00",
    "liveness": "alive",
    "liveness_detail": "mountpleasantgroup.com answered HTTP 200 on 2026-10-24. A name search returned records.",
    "homepage": null,
@@ -312686,7 +312686,7 @@
    "name": "Kearney Funeral Services",
    "category": "people-search",
    "domain": "kearneyfs.com",
-   "checked_at": "2026-11-02T01:19:06+00:00",
+   "checked_at": "2026-11-02T01:28:35+00:00",
    "liveness": "alive",
    "liveness_detail": "kearneyfs.com answered HTTP 200 on 2026-10-24. A name search returned records.",
    "homepage": null,
@@ -312905,7 +312905,7 @@
    "name": "Basic Funerals",
    "category": "people-search",
    "domain": "basicfunerals.ca",
-   "checked_at": "2026-11-02T01:19:06+00:00",
+   "checked_at": "2026-11-02T01:28:35+00:00",
    "liveness": "alive",
    "liveness_detail": "basicfunerals.ca answered HTTP 200 on 2026-10-24. A name search returned records.",
    "homepage": null,
@@ -313124,7 +313124,7 @@
    "name": "Le Nécrologue",
    "category": "people-search",
    "domain": "lenecrologue.com",
-   "checked_at": "2026-11-02T01:19:06+00:00",
+   "checked_at": "2026-11-02T01:28:35+00:00",
    "liveness": "alive",
    "liveness_detail": "lenecrologue.com answered HTTP 200 on 2026-10-24. A name search returned records.",
    "homepage": null,
@@ -339500,6 +339500,3500 @@
     "captcha_blocks_form": false,
     "captcha_email_fallback": false,
     "removal_blocker": null
+   },
+   "search_test": {
+    "outcome": null,
+    "http_status": null,
+    "path_prefix": null,
+    "fields_sent": [],
+    "missing": [],
+    "page_kind": null,
+    "result_count": null,
+    "checked_at": null
+   }
+  },
+  "scott-s-directories": {
+   "schema_version": "4.0.0",
+   "id": "scott-s-directories",
+   "name": "Scott's Directories",
+   "category": "marketing",
+   "domain": "scottsdirectories.com",
+   "checked_at": "2026-11-02T01:27:27+00:00",
+   "liveness": "alive",
+   "liveness_detail": "catalog URL loaded",
+   "homepage": "https://www.scottsdirectories.com/",
+   "logo_url": "https://www.scottsdirectories.com/wp-content/themes/scottsdirectories/assets/scotts-logo-blue.png",
+   "images": [
+    {
+     "url": "https://www.scottsdirectories.com/wp-content/uploads/2021/09/favicon-150x150.ico",
+     "kind": "icon",
+     "source_page": "https://www.scottsdirectories.com/"
+    },
+    {
+     "url": "https://www.scottsdirectories.com/wp-content/uploads/2021/09/favicon.ico",
+     "kind": "icon",
+     "source_page": "https://www.scottsdirectories.com/"
+    },
+    {
+     "url": "https://www.scottsdirectories.com/wp-content/uploads/2026/09/scotts-directories-og-2026.png",
+     "kind": "og_image",
+     "source_page": "https://www.scottsdirectories.com/"
+    },
+    {
+     "url": "https://www.scottsdirectories.com/wp-content/themes/scottsdirectories/assets/scotts-logo-blue.png",
+     "kind": "logo",
+     "source_page": "https://www.scottsdirectories.com/"
+    },
+    {
+     "url": "https://www.scottsdirectories.com/wp-content/themes/scottsdirectories/assets/img/g2.png",
+     "kind": "logo",
+     "source_page": "https://www.scottsdirectories.com/"
+    },
+    {
+     "url": "https://www.scottsdirectories.com/wp-content/uploads/2024/06/telus-logo-white.png",
+     "kind": "logo",
+     "source_page": "https://www.scottsdirectories.com/"
+    },
+    {
+     "url": "https://www.scottsdirectories.com/wp-content/uploads/2024/06/logo42-white.png",
+     "kind": "logo",
+     "source_page": "https://www.scottsdirectories.com/"
+    },
+    {
+     "url": "https://www.scottsdirectories.com/wp-content/uploads/2024/06/co-ope-white-2.png",
+     "kind": "logo",
+     "source_page": "https://www.scottsdirectories.com/"
+    },
+    {
+     "url": "https://www.scottsdirectories.com/wp-content/uploads/2024/06/l4.png",
+     "kind": "logo",
+     "source_page": "https://www.scottsdirectories.com/"
+    },
+    {
+     "url": "https://www.scottsdirectories.com/wp-content/uploads/2024/06/del-white.png",
+     "kind": "logo",
+     "source_page": "https://www.scottsdirectories.com/"
+    },
+    {
+     "url": "https://www.scottsdirectories.com/wp-content/uploads/2024/06/web-white.png",
+     "kind": "logo",
+     "source_page": "https://www.scottsdirectories.com/"
+    },
+    {
+     "url": "https://www.scottsdirectories.com/wp-content/uploads/2024/06/logo41-white.png",
+     "kind": "logo",
+     "source_page": "https://www.scottsdirectories.com/"
+    },
+    {
+     "url": "https://www.scottsdirectories.com/wp-content/uploads/2021/12/habitat-logo-new.jpg",
+     "kind": "logo",
+     "source_page": "https://www.scottsdirectories.com/"
+    }
+   ],
+   "theme_color": null,
+   "languages": [
+    "en"
+   ],
+   "legal_name": "Scott's Directories",
+   "search": {
+    "available": false,
+    "method": "none",
+    "page_url": null,
+    "form_action": null,
+    "inputs": [],
+    "url_pattern": null,
+    "directory_prefixes": [],
+    "paywall": null,
+    "login_wall": null,
+    "form_meta": {
+     "id": null,
+     "name": null,
+     "autocomplete": null,
+     "novalidate": null,
+     "submit_label": null,
+     "hidden_names": []
+    },
+    "captcha_provider": null,
+    "captcha_sitekey": null,
+    "captcha_detail": null,
+    "captcha_checked": null
+   },
+   "removal": {
+    "url": "https://www.scottsdirectories.com/privacy-policy/",
+    "final_url": "https://www.scottsdirectories.com/privacy-policy/",
+    "http_status": 200,
+    "kinds": [
+     "opt_out"
+    ],
+    "channels": [
+     "email",
+     "phone"
+    ],
+    "emails": [
+     {
+      "email": "sales@scottsdirectories.com",
+      "confidence": "uncertain",
+      "source_url": "https://www.scottsdirectories.com/"
+     },
+     {
+      "email": "privacyofficer@macraes.com",
+      "confidence": "related_domain",
+      "source_url": "https://www.scottsdirectories.com/privacy-policy/"
+     }
+    ],
+    "phones": [
+     "1-844-402-2076"
+    ],
+    "postal_address": null,
+    "portal": null,
+    "form_fields": [],
+    "csrf_field_name": null,
+    "requires_profile_url": null,
+    "captcha": {
+     "provider": "recaptcha_v3",
+     "sitekey": "6Lem3K4rAAAAAKcOmXawmFCNjEkReqAIX4Y1GXeX",
+     "pages": [
+      "https://www.scottsdirectories.com/",
+      "https://www.scottsdirectories.com/privacy-policy/"
+     ],
+     "checked": null,
+     "checked_url": null,
+     "detail": {
+      "mode": "score",
+      "invisible": true,
+      "size": null,
+      "theme": null,
+      "action": null,
+      "badge": null,
+      "language": null,
+      "appearance": null,
+      "enterprise": false,
+      "api_domain": null,
+      "script_path": null,
+      "token_field": null,
+      "callback": null
+     }
+    },
+    "consent_vendor": null,
+    "success_text": null,
+    "suppression_not_deletion": null,
+    "processing_days": null,
+    "processing_text": null,
+    "form_action": null,
+    "form_method": null,
+    "form_meta": {
+     "id": null,
+     "name": null,
+     "autocomplete": null,
+     "novalidate": null,
+     "submit_label": null,
+     "hidden_names": []
+    }
+   },
+   "bot_defense": {
+    "vendor": null,
+    "outcome": "none"
+   },
+   "legal": {
+    "privacy_policy_url": "https://www.scottsdirectories.com/privacy-policy/",
+    "terms_url": null,
+    "automation_prohibited": null,
+    "automation_clause": null,
+    "residency": [
+     "CA"
+    ],
+    "authorized_agent": null,
+    "data_categories": [
+     "identifiers",
+     "employment"
+    ],
+    "sells_personal_information": null,
+    "sells_clause": null,
+    "children_not_directed": null
+   },
+   "pages": [
+    {
+     "url": "https://scottsdirectories.com/",
+     "final_url": "https://www.scottsdirectories.com/",
+     "status": 200,
+     "role": "home",
+     "title": "Canada's Business Directory & Company Database | Scott's",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.scottsdirectories.com/",
+     "final_url": "https://www.scottsdirectories.com/",
+     "status": 200,
+     "role": "home",
+     "title": "Canada's Business Directory & Company Database | Scott's",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.scottsdirectories.com/privacy-policy/",
+     "final_url": "https://www.scottsdirectories.com/privacy-policy/",
+     "status": 200,
+     "role": "catalog",
+     "title": "Privacy Policy - Scott's Directories",
+     "liveness": "alive"
+    }
+   ],
+   "location": {
+    "country": "CA",
+    "region": null,
+    "locality": null,
+    "postal_code": null,
+    "street": null,
+    "postal_address": null,
+    "coverage": [
+     "CA"
+    ],
+    "search_regions": [],
+    "sources": [
+     "page"
+    ]
+   },
+   "network": {
+    "checked": false,
+    "addresses": [],
+    "ipv6": [],
+    "cname": null,
+    "mx": [],
+    "mail_provider": null,
+    "spf": null,
+    "dmarc": null,
+    "dkim": [],
+    "nameservers": [],
+    "dns_provider": null,
+    "soa_primary": null,
+    "caa": [],
+    "dnssec": null,
+    "asn": null,
+    "asn_country": null,
+    "prefix": null,
+    "cdn": null,
+    "server": null,
+    "tls_org": null,
+    "tls_issuer": null,
+    "tls_names": [],
+    "tls_version": null,
+    "tls_not_before": null,
+    "tls_not_after": null,
+    "registrar": null,
+    "registered": null,
+    "registration_expires": null,
+    "domain_status": []
+   },
+   "request": {
+    "removal_host": "scottsdirectories.com",
+    "same_site": true,
+    "https": true,
+    "redirected": false,
+    "redirect_count": null,
+    "form_enctype": null,
+    "content_type": null,
+    "hsts": null,
+    "hsts_max_age": null,
+    "hsts_subdomains": null,
+    "hsts_preload": null,
+    "http_version": null,
+    "http3": null,
+    "frame_options": null,
+    "nosniff": null,
+    "referrer_policy": null,
+    "csp": null,
+    "powered_by": null,
+    "cookie_names": []
+   },
+   "automation": {
+    "search_scanned": true,
+    "search_fillable": false,
+    "search_captcha": false,
+    "search_fields": [],
+    "removal_form_fillable": false,
+    "removal_email_usable": true,
+    "removal_fields": [],
+    "removal_path": "email",
+    "fully_automatable": false,
+    "usable_emails": [
+     "privacyofficer@macraes.com"
+    ],
+    "search_required": [],
+    "removal_required": [],
+    "email_verification": null,
+    "id_document": null,
+    "shared_removal_ids": [],
+    "removal_captcha": true,
+    "captcha_blocks_form": false,
+    "captcha_email_fallback": false,
+    "removal_blocker": null
+   },
+   "search_test": {
+    "outcome": null,
+    "http_status": null,
+    "path_prefix": null,
+    "fields_sent": [],
+    "missing": [],
+    "page_kind": null,
+    "result_count": null,
+    "checked_at": null
+   }
+  },
+  "haines-and-company-criss-cross": {
+   "schema_version": "4.0.0",
+   "id": "haines-and-company-criss-cross",
+   "name": "Haines & Company (Criss+Cross)",
+   "category": "marketing",
+   "domain": "haines.com",
+   "checked_at": "2026-11-02T01:27:26+00:00",
+   "liveness": "alive",
+   "liveness_detail": "catalog URL loaded",
+   "homepage": "https://haines.com/",
+   "logo_url": "https://haines.com/wp-content/uploads/2021/12/Haines-1.png",
+   "images": [
+    {
+     "url": "https://haines.com/wp-content/uploads/2021/12/Haines-Favicon.png",
+     "kind": "icon",
+     "source_page": "https://haines.com/"
+    },
+    {
+     "url": "https://haines.com/wp-content/uploads/2022/08/Haines-logo-PC-CC.webp",
+     "kind": "og_image",
+     "source_page": "https://haines.com/"
+    },
+    {
+     "url": "https://haines.com/wp-content/uploads/2021/12/Haines-1.png",
+     "kind": "logo",
+     "source_page": "https://haines.com/"
+    },
+    {
+     "url": "https://haines.com/wp-content/uploads/2021/11/main-logo.png",
+     "kind": "logo",
+     "source_page": "https://haines.com/"
+    },
+    {
+     "url": "https://haines.com/wp-content/uploads/2021/11/mobile-main-logo.png",
+     "kind": "logo",
+     "source_page": "https://haines.com/"
+    }
+   ],
+   "theme_color": null,
+   "languages": [
+    "en"
+   ],
+   "legal_name": "Haines &amp; Company Inc",
+   "search": {
+    "available": false,
+    "method": "none",
+    "page_url": null,
+    "form_action": null,
+    "inputs": [],
+    "url_pattern": null,
+    "directory_prefixes": [],
+    "paywall": null,
+    "login_wall": null,
+    "form_meta": {
+     "id": null,
+     "name": null,
+     "autocomplete": null,
+     "novalidate": null,
+     "submit_label": null,
+     "hidden_names": []
+    },
+    "captcha_provider": null,
+    "captcha_sitekey": null,
+    "captcha_detail": null,
+    "captcha_checked": null
+   },
+   "removal": {
+    "url": "https://haines.com/privacy-policy/",
+    "final_url": "https://haines.com/privacy-policy/",
+    "http_status": 200,
+    "kinds": [
+     "opt_out"
+    ],
+    "channels": [
+     "postal_mail"
+    ],
+    "emails": [],
+    "phones": [],
+    "postal_address": "PO Box 900820, Sandy, UT 84090 • (330) 494-9111 • Find Us on Google Privacy Policy × Our Spri",
+    "portal": null,
+    "form_fields": [],
+    "csrf_field_name": null,
+    "requires_profile_url": null,
+    "captcha": {
+     "provider": null,
+     "sitekey": null,
+     "pages": [],
+     "checked": null,
+     "checked_url": null,
+     "detail": null
+    },
+    "consent_vendor": null,
+    "success_text": null,
+    "suppression_not_deletion": null,
+    "processing_days": null,
+    "processing_text": null,
+    "form_action": null,
+    "form_method": null,
+    "form_meta": {
+     "id": null,
+     "name": null,
+     "autocomplete": null,
+     "novalidate": null,
+     "submit_label": null,
+     "hidden_names": []
+    }
+   },
+   "bot_defense": {
+    "vendor": null,
+    "outcome": "none"
+   },
+   "legal": {
+    "privacy_policy_url": "https://haines.com/privacy-policy/",
+    "terms_url": null,
+    "automation_prohibited": null,
+    "automation_clause": null,
+    "residency": [],
+    "authorized_agent": null,
+    "data_categories": [
+     "identifiers",
+     "internet_activity"
+    ],
+    "sells_personal_information": null,
+    "sells_clause": null,
+    "children_not_directed": null
+   },
+   "pages": [
+    {
+     "url": "https://haines.com/",
+     "final_url": "https://haines.com/",
+     "status": 200,
+     "role": "home",
+     "title": "Lead Generation Software - Haines & Company Inc",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.haines.com/",
+     "final_url": "https://haines.com/",
+     "status": 200,
+     "role": "home",
+     "title": "Lead Generation Software - Haines & Company Inc",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://haines.com/privacy-policy/",
+     "final_url": "https://haines.com/privacy-policy/",
+     "status": 200,
+     "role": "catalog",
+     "title": "Privacy Policy - Online Property Database | HAINES",
+     "liveness": "alive"
+    }
+   ],
+   "location": {
+    "country": "US",
+    "region": "UT",
+    "locality": "Sandy",
+    "postal_code": "84090",
+    "street": null,
+    "postal_address": "Sandy, UT, 84090, US",
+    "coverage": [
+     "US"
+    ],
+    "search_regions": [],
+    "sources": [
+     "page"
+    ]
+   },
+   "network": {
+    "checked": false,
+    "addresses": [],
+    "ipv6": [],
+    "cname": null,
+    "mx": [],
+    "mail_provider": null,
+    "spf": null,
+    "dmarc": null,
+    "dkim": [],
+    "nameservers": [],
+    "dns_provider": null,
+    "soa_primary": null,
+    "caa": [],
+    "dnssec": null,
+    "asn": null,
+    "asn_country": null,
+    "prefix": null,
+    "cdn": null,
+    "server": null,
+    "tls_org": null,
+    "tls_issuer": null,
+    "tls_names": [],
+    "tls_version": null,
+    "tls_not_before": null,
+    "tls_not_after": null,
+    "registrar": null,
+    "registered": null,
+    "registration_expires": null,
+    "domain_status": []
+   },
+   "request": {
+    "removal_host": "haines.com",
+    "same_site": true,
+    "https": true,
+    "redirected": false,
+    "redirect_count": null,
+    "form_enctype": null,
+    "content_type": null,
+    "hsts": null,
+    "hsts_max_age": null,
+    "hsts_subdomains": null,
+    "hsts_preload": null,
+    "http_version": null,
+    "http3": null,
+    "frame_options": null,
+    "nosniff": null,
+    "referrer_policy": null,
+    "csp": null,
+    "powered_by": null,
+    "cookie_names": []
+   },
+   "automation": {
+    "search_scanned": true,
+    "search_fillable": false,
+    "search_captcha": false,
+    "search_fields": [],
+    "removal_form_fillable": false,
+    "removal_email_usable": false,
+    "removal_fields": [],
+    "removal_path": null,
+    "fully_automatable": false,
+    "usable_emails": [],
+    "search_required": [],
+    "removal_required": [],
+    "email_verification": null,
+    "id_document": null,
+    "shared_removal_ids": [],
+    "removal_captcha": false,
+    "captcha_blocks_form": false,
+    "captcha_email_fallback": false,
+    "removal_blocker": "postal"
+   },
+   "search_test": {
+    "outcome": null,
+    "http_status": null,
+    "path_prefix": null,
+    "fields_sent": [],
+    "missing": [],
+    "page_kind": null,
+    "result_count": null,
+    "checked_at": null
+   }
+  },
+  "logictree-inc-data247-ezcnam": {
+   "schema_version": "4.0.0",
+   "id": "logictree-inc-data247-ezcnam",
+   "name": "LogicTree, Inc. (Data247, EZCNAM)",
+   "category": "other",
+   "domain": "data247.com",
+   "checked_at": "2026-11-02T01:27:25+00:00",
+   "liveness": "alive",
+   "liveness_detail": "catalog URL loaded",
+   "homepage": "https://www.data247.com/",
+   "logo_url": "https://www.data247.com/img/png/logo.png",
+   "images": [
+    {
+     "url": "https://www.data247.com/img/favicon.ico",
+     "kind": "icon",
+     "source_page": "https://www.data247.com/"
+    },
+    {
+     "url": "https://www.data247.com/img/png/logo.png",
+     "kind": "logo",
+     "source_page": "https://www.data247.com/"
+    },
+    {
+     "url": "https://www.data247.com/img/grayscale/appypie_logo.png",
+     "kind": "logo",
+     "source_page": "https://www.data247.com/"
+    },
+    {
+     "url": "https://www.data247.com/img/grayscale/asterisk_logo.png",
+     "kind": "logo",
+     "source_page": "https://www.data247.com/"
+    },
+    {
+     "url": "https://www.data247.com/img/grayscale/integromat_logo.png",
+     "kind": "logo",
+     "source_page": "https://www.data247.com/"
+    },
+    {
+     "url": "https://www.data247.com/img/grayscale/iqdial_logo.png",
+     "kind": "logo",
+     "source_page": "https://www.data247.com/"
+    },
+    {
+     "url": "https://www.data247.com/img/grayscale/notepage_logo.png",
+     "kind": "logo",
+     "source_page": "https://www.data247.com/"
+    },
+    {
+     "url": "https://www.data247.com/img/grayscale/salesforce_logo.png",
+     "kind": "logo",
+     "source_page": "https://www.data247.com/"
+    },
+    {
+     "url": "https://www.data247.com/img/grayscale/swagger_logo.png",
+     "kind": "logo",
+     "source_page": "https://www.data247.com/"
+    },
+    {
+     "url": "https://www.data247.com/img/grayscale/vicidial_logo.png",
+     "kind": "logo",
+     "source_page": "https://www.data247.com/"
+    },
+    {
+     "url": "https://www.data247.com/img/grayscale/workato_logo.png",
+     "kind": "logo",
+     "source_page": "https://www.data247.com/"
+    },
+    {
+     "url": "https://www.data247.com/img/grayscale/zapier_logo.png",
+     "kind": "logo",
+     "source_page": "https://www.data247.com/"
+    }
+   ],
+   "theme_color": null,
+   "languages": [],
+   "legal_name": null,
+   "search": {
+    "available": false,
+    "method": "none",
+    "page_url": null,
+    "form_action": null,
+    "inputs": [],
+    "url_pattern": null,
+    "directory_prefixes": [],
+    "paywall": null,
+    "login_wall": null,
+    "form_meta": {
+     "id": null,
+     "name": null,
+     "autocomplete": null,
+     "novalidate": null,
+     "submit_label": null,
+     "hidden_names": []
+    },
+    "captcha_provider": null,
+    "captcha_sitekey": null,
+    "captcha_detail": null,
+    "captcha_checked": null
+   },
+   "removal": {
+    "url": "https://www.data247.com/privacy",
+    "final_url": "https://www.data247.com/privacy",
+    "http_status": 200,
+    "kinds": [
+     "opt_out"
+    ],
+    "channels": [],
+    "emails": [],
+    "phones": [],
+    "postal_address": null,
+    "portal": null,
+    "form_fields": [],
+    "csrf_field_name": "_token",
+    "requires_profile_url": null,
+    "captcha": {
+     "provider": null,
+     "sitekey": null,
+     "pages": [],
+     "checked": null,
+     "checked_url": null,
+     "detail": null
+    },
+    "consent_vendor": null,
+    "success_text": null,
+    "suppression_not_deletion": null,
+    "processing_days": null,
+    "processing_text": null,
+    "form_action": null,
+    "form_method": null,
+    "form_meta": {
+     "id": null,
+     "name": null,
+     "autocomplete": null,
+     "novalidate": null,
+     "submit_label": null,
+     "hidden_names": []
+    }
+   },
+   "bot_defense": {
+    "vendor": null,
+    "outcome": "none"
+   },
+   "legal": {
+    "privacy_policy_url": "https://www.data247.com/privacy",
+    "terms_url": null,
+    "automation_prohibited": null,
+    "automation_clause": null,
+    "residency": [
+     "US"
+    ],
+    "authorized_agent": null,
+    "data_categories": [
+     "identifiers",
+     "commercial",
+     "inferences"
+    ],
+    "sells_personal_information": null,
+    "sells_clause": null,
+    "children_not_directed": null
+   },
+   "pages": [
+    {
+     "url": "https://data247.com/",
+     "final_url": "https://www.data247.com/",
+     "status": 200,
+     "role": "home",
+     "title": "Data247 - #1 Data Management Platform",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.data247.com/",
+     "final_url": "https://www.data247.com/",
+     "status": 200,
+     "role": "home",
+     "title": "Data247 - #1 Data Management Platform",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.data247.com/privacy",
+     "final_url": "https://www.data247.com/privacy",
+     "status": 200,
+     "role": "catalog",
+     "title": "Read our Privacy Policy",
+     "liveness": "alive"
+    }
+   ],
+   "location": {
+    "country": "US",
+    "region": null,
+    "locality": null,
+    "postal_code": null,
+    "street": null,
+    "postal_address": null,
+    "coverage": [
+     "US"
+    ],
+    "search_regions": [],
+    "sources": [
+     "page"
+    ]
+   },
+   "network": {
+    "checked": false,
+    "addresses": [],
+    "ipv6": [],
+    "cname": null,
+    "mx": [],
+    "mail_provider": null,
+    "spf": null,
+    "dmarc": null,
+    "dkim": [],
+    "nameservers": [],
+    "dns_provider": null,
+    "soa_primary": null,
+    "caa": [],
+    "dnssec": null,
+    "asn": null,
+    "asn_country": null,
+    "prefix": null,
+    "cdn": null,
+    "server": null,
+    "tls_org": null,
+    "tls_issuer": null,
+    "tls_names": [],
+    "tls_version": null,
+    "tls_not_before": null,
+    "tls_not_after": null,
+    "registrar": null,
+    "registered": null,
+    "registration_expires": null,
+    "domain_status": []
+   },
+   "request": {
+    "removal_host": "data247.com",
+    "same_site": true,
+    "https": true,
+    "redirected": false,
+    "redirect_count": null,
+    "form_enctype": null,
+    "content_type": null,
+    "hsts": null,
+    "hsts_max_age": null,
+    "hsts_subdomains": null,
+    "hsts_preload": null,
+    "http_version": null,
+    "http3": null,
+    "frame_options": null,
+    "nosniff": null,
+    "referrer_policy": null,
+    "csp": null,
+    "powered_by": null,
+    "cookie_names": []
+   },
+   "automation": {
+    "search_scanned": true,
+    "search_fillable": false,
+    "search_captcha": false,
+    "search_fields": [],
+    "removal_form_fillable": false,
+    "removal_email_usable": false,
+    "removal_fields": [],
+    "removal_path": null,
+    "fully_automatable": false,
+    "usable_emails": [],
+    "search_required": [],
+    "removal_required": [],
+    "email_verification": null,
+    "id_document": null,
+    "shared_removal_ids": [],
+    "removal_captcha": false,
+    "captcha_blocks_form": false,
+    "captcha_email_fallback": false,
+    "removal_blocker": "no_channel"
+   },
+   "search_test": {
+    "outcome": null,
+    "http_status": null,
+    "path_prefix": null,
+    "fields_sent": [],
+    "missing": [],
+    "page_kind": null,
+    "result_count": null,
+    "checked_at": null
+   }
+  },
+  "tracerfy-llc": {
+   "schema_version": "4.0.0",
+   "id": "tracerfy-llc",
+   "name": "Tracerfy LLC",
+   "category": "other",
+   "domain": "tracerfy.com",
+   "checked_at": "2026-11-02T01:27:29+00:00",
+   "liveness": "alive",
+   "liveness_detail": "catalog URL loaded",
+   "homepage": "https://www.tracerfy.com/",
+   "logo_url": "https://www.tracerfy.com/static/landing/images/logo-nav.webp",
+   "images": [
+    {
+     "url": "https://www.tracerfy.com/static/landing/images/favicon.ico",
+     "kind": "icon",
+     "source_page": "https://www.tracerfy.com/"
+    },
+    {
+     "url": "https://www.tracerfy.com/static/landing/images/logo.png",
+     "kind": "og_image",
+     "source_page": "https://www.tracerfy.com/"
+    },
+    {
+     "url": "https://www.tracerfy.com/static/landing/images/logo-nav.webp",
+     "kind": "logo",
+     "source_page": "https://www.tracerfy.com/"
+    },
+    {
+     "url": "https://www.tracerfy.com/static/landing/images/full_logo.png",
+     "kind": "logo",
+     "source_page": "https://www.tracerfy.com/"
+    }
+   ],
+   "theme_color": "#2f55d4",
+   "languages": [
+    "en"
+   ],
+   "legal_name": "Tracerfy",
+   "search": {
+    "available": false,
+    "method": "none",
+    "page_url": null,
+    "form_action": null,
+    "inputs": [],
+    "url_pattern": null,
+    "directory_prefixes": [],
+    "paywall": null,
+    "login_wall": null,
+    "form_meta": {
+     "id": null,
+     "name": null,
+     "autocomplete": null,
+     "novalidate": null,
+     "submit_label": null,
+     "hidden_names": []
+    },
+    "captcha_provider": null,
+    "captcha_sitekey": null,
+    "captcha_detail": null,
+    "captcha_checked": null
+   },
+   "removal": {
+    "url": "https://www.tracerfy.com/privacy-choices",
+    "final_url": "https://www.tracerfy.com/privacy-choices",
+    "http_status": 200,
+    "kinds": [
+     "opt_out",
+     "do_not_sell",
+     "dsar"
+    ],
+    "channels": [
+     "web_form",
+     "phone"
+    ],
+    "emails": [],
+    "phones": [
+     "(602) 555-0148",
+     "1-888-891-8053"
+    ],
+    "postal_address": null,
+    "portal": null,
+    "form_fields": [
+     {
+      "name": "optout-first_name",
+      "type": "text",
+      "canonical": "first_name",
+      "required": true,
+      "autocomplete": null,
+      "placeholder": "First name",
+      "id": null,
+      "label": null,
+      "inputmode": null,
+      "pattern": null,
+      "minlength": null,
+      "maxlength": null,
+      "min": null,
+      "max": null,
+      "step": null,
+      "accept": null,
+      "multiple": null,
+      "disabled": null,
+      "readonly": null,
+      "checked": null,
+      "value": null
+     },
+     {
+      "name": "optout-last_name",
+      "type": "text",
+      "canonical": "last_name",
+      "required": true,
+      "autocomplete": null,
+      "placeholder": "Last name",
+      "id": null,
+      "label": null,
+      "inputmode": null,
+      "pattern": null,
+      "minlength": null,
+      "maxlength": null,
+      "min": null,
+      "max": null,
+      "step": null,
+      "accept": null,
+      "multiple": null,
+      "disabled": null,
+      "readonly": null,
+      "checked": null,
+      "value": null
+     },
+     {
+      "name": "optout-address",
+      "type": "text",
+      "canonical": "street_address",
+      "required": true,
+      "autocomplete": null,
+      "placeholder": "Street address",
+      "id": null,
+      "label": null,
+      "inputmode": null,
+      "pattern": null,
+      "minlength": null,
+      "maxlength": null,
+      "min": null,
+      "max": null,
+      "step": null,
+      "accept": null,
+      "multiple": null,
+      "disabled": null,
+      "readonly": null,
+      "checked": null,
+      "value": null
+     },
+     {
+      "name": "optout-city",
+      "type": "text",
+      "canonical": "city",
+      "required": true,
+      "autocomplete": null,
+      "placeholder": "City",
+      "id": null,
+      "label": null,
+      "inputmode": null,
+      "pattern": null,
+      "minlength": null,
+      "maxlength": null,
+      "min": null,
+      "max": null,
+      "step": null,
+      "accept": null,
+      "multiple": null,
+      "disabled": null,
+      "readonly": null,
+      "checked": null,
+      "value": null
+     },
+     {
+      "name": "optout-state",
+      "type": "select",
+      "canonical": "region",
+      "required": true,
+      "autocomplete": null,
+      "placeholder": null,
+      "options": [
+       "AL",
+       "AK",
+       "AZ",
+       "AR",
+       "CA",
+       "CO",
+       "CT",
+       "DE",
+       "DC",
+       "FL",
+       "GA",
+       "HI",
+       "ID",
+       "IL",
+       "IN",
+       "IA",
+       "KS",
+       "KY",
+       "LA",
+       "ME",
+       "MD",
+       "MA",
+       "MI",
+       "MN",
+       "MS",
+       "MO",
+       "MT",
+       "NE",
+       "NV",
+       "NH",
+       "NJ",
+       "NM",
+       "NY",
+       "NC",
+       "ND",
+       "OH",
+       "OK",
+       "OR",
+       "PA",
+       "RI",
+       "SC",
+       "SD",
+       "TN",
+       "TX",
+       "UT",
+       "VT",
+       "VA",
+       "WA",
+       "WV",
+       "WI",
+       "WY"
+      ],
+      "id": null,
+      "label": null,
+      "inputmode": null,
+      "pattern": null,
+      "minlength": null,
+      "maxlength": null,
+      "min": null,
+      "max": null,
+      "step": null,
+      "accept": null,
+      "multiple": null,
+      "disabled": null,
+      "readonly": null,
+      "checked": null,
+      "value": null
+     },
+     {
+      "name": "optout-zip_code",
+      "type": "text",
+      "canonical": "postal_code",
+      "required": false,
+      "autocomplete": null,
+      "placeholder": "ZIP code",
+      "id": null,
+      "label": null,
+      "inputmode": null,
+      "pattern": null,
+      "minlength": null,
+      "maxlength": null,
+      "min": null,
+      "max": null,
+      "step": null,
+      "accept": null,
+      "multiple": null,
+      "disabled": null,
+      "readonly": null,
+      "checked": null,
+      "value": null
+     },
+     {
+      "name": "optout-phone",
+      "type": "tel",
+      "canonical": "phone",
+      "required": false,
+      "autocomplete": null,
+      "placeholder": "(555) 123-4567",
+      "id": null,
+      "label": null,
+      "inputmode": null,
+      "pattern": null,
+      "minlength": null,
+      "maxlength": null,
+      "min": null,
+      "max": null,
+      "step": null,
+      "accept": null,
+      "multiple": null,
+      "disabled": null,
+      "readonly": null,
+      "checked": null,
+      "value": null
+     },
+     {
+      "name": "optout-email",
+      "type": "email",
+      "canonical": "email",
+      "required": false,
+      "autocomplete": null,
+      "placeholder": "you@example.com",
+      "id": null,
+      "label": null,
+      "inputmode": null,
+      "pattern": null,
+      "minlength": null,
+      "maxlength": null,
+      "min": null,
+      "max": null,
+      "step": null,
+      "accept": null,
+      "multiple": null,
+      "disabled": null,
+      "readonly": null,
+      "checked": null,
+      "value": null
+     }
+    ],
+    "csrf_field_name": "csrfmiddlewaretoken",
+    "requires_profile_url": null,
+    "captcha": {
+     "provider": "turnstile",
+     "sitekey": "0x4AAAAAAA7p86cypi0A8CUB",
+     "pages": [
+      "https://www.tracerfy.com/privacy-choices"
+     ],
+     "checked": null,
+     "checked_url": null,
+     "detail": {
+      "mode": null,
+      "invisible": null,
+      "size": null,
+      "theme": null,
+      "action": null,
+      "badge": null,
+      "language": null,
+      "appearance": null,
+      "enterprise": null,
+      "api_domain": null,
+      "script_path": null,
+      "token_field": null,
+      "callback": null
+     }
+    },
+    "consent_vendor": null,
+    "success_text": null,
+    "suppression_not_deletion": null,
+    "processing_days": 45,
+    "processing_text": "When we'll respond We respond within 45 days",
+    "form_action": "https://www.tracerfy.com/privacy-choices",
+    "form_method": "http_form_post",
+    "form_meta": {
+     "id": null,
+     "name": null,
+     "autocomplete": null,
+     "novalidate": null,
+     "submit_label": null,
+     "hidden_names": []
+    }
+   },
+   "bot_defense": {
+    "vendor": null,
+    "outcome": "none"
+   },
+   "legal": {
+    "privacy_policy_url": "https://www.tracerfy.com/privacy-choices",
+    "terms_url": null,
+    "automation_prohibited": null,
+    "automation_clause": null,
+    "residency": [
+     "US-TX"
+    ],
+    "authorized_agent": true,
+    "data_categories": [
+     "identifiers"
+    ],
+    "sells_personal_information": null,
+    "sells_clause": null,
+    "children_not_directed": null
+   },
+   "pages": [
+    {
+     "url": "https://tracerfy.com/",
+     "final_url": "https://www.tracerfy.com/",
+     "status": 200,
+     "role": "home",
+     "title": "Real Estate Data & Skip Tracing, Pay-Per-Hit | Tracerfy",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.tracerfy.com/",
+     "final_url": "https://www.tracerfy.com/",
+     "status": 200,
+     "role": "home",
+     "title": "Real Estate Data & Skip Tracing, Pay-Per-Hit | Tracerfy",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.tracerfy.com/privacy-choices",
+     "final_url": "https://www.tracerfy.com/privacy-choices",
+     "status": 200,
+     "role": "catalog",
+     "title": "Your Privacy Choices | Tracerfy",
+     "liveness": "alive"
+    }
+   ],
+   "location": {
+    "country": "US",
+    "region": null,
+    "locality": null,
+    "postal_code": null,
+    "street": null,
+    "postal_address": null,
+    "coverage": [
+     "US-TX",
+     "US"
+    ],
+    "search_regions": [],
+    "sources": [
+     "page"
+    ]
+   },
+   "network": {
+    "checked": false,
+    "addresses": [],
+    "ipv6": [],
+    "cname": null,
+    "mx": [],
+    "mail_provider": null,
+    "spf": null,
+    "dmarc": null,
+    "dkim": [],
+    "nameservers": [],
+    "dns_provider": null,
+    "soa_primary": null,
+    "caa": [],
+    "dnssec": null,
+    "asn": null,
+    "asn_country": null,
+    "prefix": null,
+    "cdn": null,
+    "server": null,
+    "tls_org": null,
+    "tls_issuer": null,
+    "tls_names": [],
+    "tls_version": null,
+    "tls_not_before": null,
+    "tls_not_after": null,
+    "registrar": null,
+    "registered": null,
+    "registration_expires": null,
+    "domain_status": []
+   },
+   "request": {
+    "removal_host": "tracerfy.com",
+    "same_site": true,
+    "https": true,
+    "redirected": false,
+    "redirect_count": null,
+    "form_enctype": null,
+    "content_type": null,
+    "hsts": null,
+    "hsts_max_age": null,
+    "hsts_subdomains": null,
+    "hsts_preload": null,
+    "http_version": null,
+    "http3": null,
+    "frame_options": null,
+    "nosniff": null,
+    "referrer_policy": null,
+    "csp": null,
+    "powered_by": null,
+    "cookie_names": []
+   },
+   "automation": {
+    "search_scanned": true,
+    "search_fillable": false,
+    "search_captcha": false,
+    "search_fields": [],
+    "removal_form_fillable": false,
+    "removal_email_usable": false,
+    "removal_fields": [
+     "first_name",
+     "last_name",
+     "street_address",
+     "city",
+     "region",
+     "postal_code",
+     "phone",
+     "email"
+    ],
+    "removal_path": null,
+    "fully_automatable": false,
+    "usable_emails": [],
+    "search_required": [],
+    "removal_required": [
+     "first_name",
+     "last_name",
+     "street_address",
+     "city",
+     "region"
+    ],
+    "email_verification": null,
+    "id_document": null,
+    "shared_removal_ids": [],
+    "removal_captcha": true,
+    "captcha_blocks_form": true,
+    "captcha_email_fallback": false,
+    "removal_blocker": "captcha_form"
+   },
+   "search_test": {
+    "outcome": null,
+    "http_status": null,
+    "path_prefix": null,
+    "fields_sent": [],
+    "missing": [],
+    "page_kind": null,
+    "result_count": null,
+    "checked_at": null
+   }
+  },
+  "senioroi-llc": {
+   "schema_version": "4.0.0",
+   "id": "senioroi-llc",
+   "name": "SenioROI, LLC",
+   "category": "marketing",
+   "domain": "senioroi.com",
+   "checked_at": "2026-11-02T01:27:27+00:00",
+   "liveness": "alive",
+   "liveness_detail": "catalog URL loaded",
+   "homepage": "https://senioroi.com/",
+   "logo_url": "https://senioroi.com/wp-content/uploads/2026/10/aicpa-soc-for-service-organizations-logo.png",
+   "images": [
+    {
+     "url": "https://senioroi.com/wp-content/uploads/2026/08/cropped-Senioroi_Favicon-192x192.png",
+     "kind": "icon",
+     "source_page": "https://senioroi.com/"
+    },
+    {
+     "url": "https://senioroi.com/wp-content/uploads/2026/08/SenioROI-og-share-1200x630-2026-08-07.png",
+     "kind": "og_image",
+     "source_page": "https://senioroi.com/"
+    },
+    {
+     "url": "https://senioroi.com/wp-content/uploads/2026/08/SenioROI-2C-hdr-2026-08-07.png",
+     "kind": "json_ld",
+     "source_page": "https://senioroi.com/"
+    },
+    {
+     "url": "https://senioroi.com/wp-content/uploads/2026/10/aicpa-soc-for-service-organizations-logo.png",
+     "kind": "logo",
+     "source_page": "https://senioroi.com/"
+    }
+   ],
+   "theme_color": null,
+   "languages": [
+    "en"
+   ],
+   "legal_name": "SenioROI",
+   "search": {
+    "available": false,
+    "method": "none",
+    "page_url": null,
+    "form_action": null,
+    "inputs": [],
+    "url_pattern": null,
+    "directory_prefixes": [],
+    "paywall": null,
+    "login_wall": null,
+    "form_meta": {
+     "id": null,
+     "name": null,
+     "autocomplete": null,
+     "novalidate": null,
+     "submit_label": null,
+     "hidden_names": []
+    },
+    "captcha_provider": null,
+    "captcha_sitekey": null,
+    "captcha_detail": null,
+    "captcha_checked": null
+   },
+   "removal": {
+    "url": "https://senioroi.com/privacy-request/",
+    "final_url": "https://senioroi.com/privacy-request/",
+    "http_status": 200,
+    "kinds": [
+     "opt_out",
+     "do_not_sell"
+    ],
+    "channels": [
+     "email",
+     "phone"
+    ],
+    "emails": [
+     {
+      "email": "seniorsales@senioroi.com",
+      "confidence": "uncertain",
+      "source_url": "https://senioroi.com/"
+     },
+     {
+      "email": "privacy@senioroi.com",
+      "confidence": "extracted",
+      "source_url": "https://senioroi.com/privacy-request/"
+     }
+    ],
+    "phones": [
+     "844.841.3268",
+     "(844) 841-3268"
+    ],
+    "postal_address": null,
+    "portal": null,
+    "form_fields": [],
+    "csrf_field_name": null,
+    "requires_profile_url": null,
+    "captcha": {
+     "provider": "recaptcha_v3",
+     "sitekey": "6LedTc4gAAAAAOKv0qsSKK37RtikETJXQ2_IUjqi",
+     "pages": [
+      "https://senioroi.com/",
+      "https://senioroi.com/privacy-request/"
+     ],
+     "checked": null,
+     "checked_url": null,
+     "detail": {
+      "mode": "score",
+      "invisible": true,
+      "size": null,
+      "theme": null,
+      "action": null,
+      "badge": null,
+      "language": null,
+      "appearance": null,
+      "enterprise": false,
+      "api_domain": null,
+      "script_path": null,
+      "token_field": null,
+      "callback": null
+     }
+    },
+    "consent_vendor": null,
+    "success_text": null,
+    "suppression_not_deletion": null,
+    "processing_days": 14,
+    "processing_text": "listed in our Privacy Policy What happens next We will acknowledge your request within 10 business days",
+    "form_action": null,
+    "form_method": null,
+    "form_meta": {
+     "id": null,
+     "name": null,
+     "autocomplete": null,
+     "novalidate": null,
+     "submit_label": null,
+     "hidden_names": []
+    }
+   },
+   "bot_defense": {
+    "vendor": null,
+    "outcome": "none"
+   },
+   "legal": {
+    "privacy_policy_url": "https://senioroi.com/privacy-request/",
+    "terms_url": null,
+    "automation_prohibited": null,
+    "automation_clause": null,
+    "residency": [
+     "US-CA"
+    ],
+    "authorized_agent": null,
+    "data_categories": [
+     "identifiers"
+    ],
+    "sells_personal_information": null,
+    "sells_clause": null,
+    "children_not_directed": null
+   },
+   "pages": [
+    {
+     "url": "https://senioroi.com/",
+     "final_url": "https://senioroi.com/",
+     "status": 200,
+     "role": "home",
+     "title": "Senior Living Marketing Agency | Financially Qualified Leads",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.senioroi.com/",
+     "final_url": "https://senioroi.com/",
+     "status": 200,
+     "role": "home",
+     "title": "Senior Living Marketing Agency | Financially Qualified Leads",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://senioroi.com/privacy-request/",
+     "final_url": "https://senioroi.com/privacy-request/",
+     "status": 200,
+     "role": "catalog",
+     "title": "Submit a Privacy Rights Request | SenioROI",
+     "liveness": "alive"
+    }
+   ],
+   "location": {
+    "country": "US",
+    "region": "NC",
+    "locality": "Charlotte",
+    "postal_code": "28208",
+    "street": null,
+    "postal_address": "Charlotte, NC, 28208, US",
+    "coverage": [
+     "US-CA",
+     "US"
+    ],
+    "search_regions": [],
+    "sources": [
+     "page"
+    ]
+   },
+   "network": {
+    "checked": false,
+    "addresses": [],
+    "ipv6": [],
+    "cname": null,
+    "mx": [],
+    "mail_provider": null,
+    "spf": null,
+    "dmarc": null,
+    "dkim": [],
+    "nameservers": [],
+    "dns_provider": null,
+    "soa_primary": null,
+    "caa": [],
+    "dnssec": null,
+    "asn": null,
+    "asn_country": null,
+    "prefix": null,
+    "cdn": null,
+    "server": null,
+    "tls_org": null,
+    "tls_issuer": null,
+    "tls_names": [],
+    "tls_version": null,
+    "tls_not_before": null,
+    "tls_not_after": null,
+    "registrar": null,
+    "registered": null,
+    "registration_expires": null,
+    "domain_status": []
+   },
+   "request": {
+    "removal_host": "senioroi.com",
+    "same_site": true,
+    "https": true,
+    "redirected": false,
+    "redirect_count": null,
+    "form_enctype": null,
+    "content_type": null,
+    "hsts": null,
+    "hsts_max_age": null,
+    "hsts_subdomains": null,
+    "hsts_preload": null,
+    "http_version": null,
+    "http3": null,
+    "frame_options": null,
+    "nosniff": null,
+    "referrer_policy": null,
+    "csp": null,
+    "powered_by": null,
+    "cookie_names": []
+   },
+   "automation": {
+    "search_scanned": true,
+    "search_fillable": false,
+    "search_captcha": false,
+    "search_fields": [],
+    "removal_form_fillable": false,
+    "removal_email_usable": true,
+    "removal_fields": [],
+    "removal_path": "email",
+    "fully_automatable": false,
+    "usable_emails": [
+     "privacy@senioroi.com"
+    ],
+    "search_required": [],
+    "removal_required": [],
+    "email_verification": null,
+    "id_document": null,
+    "shared_removal_ids": [],
+    "removal_captcha": true,
+    "captcha_blocks_form": false,
+    "captcha_email_fallback": false,
+    "removal_blocker": null
+   },
+   "search_test": {
+    "outcome": null,
+    "http_status": null,
+    "path_prefix": null,
+    "fields_sent": [],
+    "missing": [],
+    "page_kind": null,
+    "result_count": null,
+    "checked_at": null
+   }
+  },
+  "alpine-digital-group-inc": {
+   "schema_version": "4.0.0",
+   "id": "alpine-digital-group-inc",
+   "name": "Alpine Digital Group, Inc.",
+   "category": "marketing",
+   "domain": "alpinedigitalgroup.com",
+   "checked_at": "2026-11-02T01:27:24+00:00",
+   "liveness": "alive",
+   "liveness_detail": "catalog URL loaded",
+   "homepage": "https://alpinedigitalgroup.com/",
+   "logo_url": "https://alpinedigitalgroup.com/images/logoSmall.png",
+   "images": [
+    {
+     "url": "https://alpinedigitalgroup.com/images/logoSmall.png",
+     "kind": "logo",
+     "source_page": "https://alpinedigitalgroup.com/"
+    },
+    {
+     "url": "https://alpinedigitalgroup.com/images/logo.png",
+     "kind": "logo",
+     "source_page": "https://alpinedigitalgroup.com/"
+    }
+   ],
+   "theme_color": null,
+   "languages": [
+    "en"
+   ],
+   "legal_name": null,
+   "search": {
+    "available": false,
+    "method": "none",
+    "page_url": null,
+    "form_action": null,
+    "inputs": [],
+    "url_pattern": null,
+    "directory_prefixes": [],
+    "paywall": null,
+    "login_wall": null,
+    "form_meta": {
+     "id": null,
+     "name": null,
+     "autocomplete": null,
+     "novalidate": null,
+     "submit_label": null,
+     "hidden_names": []
+    },
+    "captcha_provider": null,
+    "captcha_sitekey": null,
+    "captcha_detail": null,
+    "captcha_checked": null
+   },
+   "removal": {
+    "url": "https://alpinedigitalgroup.com/privacy-rights",
+    "final_url": "https://alpinedigitalgroup.com/privacy-rights",
+    "http_status": 200,
+    "kinds": [
+     "opt_out"
+    ],
+    "channels": [
+     "email"
+    ],
+    "emails": [
+     {
+      "email": "contact@alpinedigitalgroup.com",
+      "confidence": "uncertain",
+      "source_url": "https://alpinedigitalgroup.com/"
+     },
+     {
+      "email": "compliance@alpinedigitalgroup.com",
+      "confidence": "uncertain",
+      "source_url": "https://alpinedigitalgroup.com/privacy-rights"
+     }
+    ],
+    "phones": [],
+    "postal_address": null,
+    "portal": null,
+    "form_fields": [],
+    "csrf_field_name": null,
+    "requires_profile_url": null,
+    "captcha": {
+     "provider": null,
+     "sitekey": null,
+     "pages": [],
+     "checked": null,
+     "checked_url": null,
+     "detail": null
+    },
+    "consent_vendor": null,
+    "success_text": null,
+    "suppression_not_deletion": null,
+    "processing_days": null,
+    "processing_text": null,
+    "form_action": null,
+    "form_method": null,
+    "form_meta": {
+     "id": null,
+     "name": null,
+     "autocomplete": null,
+     "novalidate": null,
+     "submit_label": null,
+     "hidden_names": []
+    }
+   },
+   "bot_defense": {
+    "vendor": null,
+    "outcome": "none"
+   },
+   "legal": {
+    "privacy_policy_url": "https://alpinedigitalgroup.com/privacy-rights",
+    "terms_url": null,
+    "automation_prohibited": null,
+    "automation_clause": null,
+    "residency": [],
+    "authorized_agent": null,
+    "data_categories": [],
+    "sells_personal_information": null,
+    "sells_clause": null,
+    "children_not_directed": null
+   },
+   "pages": [
+    {
+     "url": "https://alpinedigitalgroup.com/",
+     "final_url": "https://alpinedigitalgroup.com/",
+     "status": 200,
+     "role": "home",
+     "title": "Alpine Digital Group",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.alpinedigitalgroup.com/",
+     "final_url": "https://alpinedigitalgroup.com/",
+     "status": 200,
+     "role": "home",
+     "title": "Alpine Digital Group",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://alpinedigitalgroup.com/privacy-rights",
+     "final_url": "https://alpinedigitalgroup.com/privacy-rights",
+     "status": 200,
+     "role": "catalog",
+     "title": "Privacy Rights | Alpine Digital Group",
+     "liveness": "alive"
+    }
+   ],
+   "location": {
+    "country": "US",
+    "region": null,
+    "locality": null,
+    "postal_code": null,
+    "street": null,
+    "postal_address": null,
+    "coverage": [
+     "US"
+    ],
+    "search_regions": [],
+    "sources": [
+     "manual"
+    ]
+   },
+   "network": {
+    "checked": false,
+    "addresses": [],
+    "ipv6": [],
+    "cname": null,
+    "mx": [],
+    "mail_provider": null,
+    "spf": null,
+    "dmarc": null,
+    "dkim": [],
+    "nameservers": [],
+    "dns_provider": null,
+    "soa_primary": null,
+    "caa": [],
+    "dnssec": null,
+    "asn": null,
+    "asn_country": null,
+    "prefix": null,
+    "cdn": null,
+    "server": null,
+    "tls_org": null,
+    "tls_issuer": null,
+    "tls_names": [],
+    "tls_version": null,
+    "tls_not_before": null,
+    "tls_not_after": null,
+    "registrar": null,
+    "registered": null,
+    "registration_expires": null,
+    "domain_status": []
+   },
+   "request": {
+    "removal_host": "alpinedigitalgroup.com",
+    "same_site": true,
+    "https": true,
+    "redirected": false,
+    "redirect_count": null,
+    "form_enctype": null,
+    "content_type": null,
+    "hsts": null,
+    "hsts_max_age": null,
+    "hsts_subdomains": null,
+    "hsts_preload": null,
+    "http_version": null,
+    "http3": null,
+    "frame_options": null,
+    "nosniff": null,
+    "referrer_policy": null,
+    "csp": null,
+    "powered_by": null,
+    "cookie_names": []
+   },
+   "automation": {
+    "search_scanned": true,
+    "search_fillable": false,
+    "search_captcha": false,
+    "search_fields": [],
+    "removal_form_fillable": false,
+    "removal_email_usable": false,
+    "removal_fields": [],
+    "removal_path": null,
+    "fully_automatable": false,
+    "usable_emails": [],
+    "search_required": [],
+    "removal_required": [],
+    "email_verification": null,
+    "id_document": null,
+    "shared_removal_ids": [],
+    "removal_captcha": false,
+    "captcha_blocks_form": false,
+    "captcha_email_fallback": false,
+    "removal_blocker": "generic_inbox"
+   },
+   "search_test": {
+    "outcome": null,
+    "http_status": null,
+    "path_prefix": null,
+    "fields_sent": [],
+    "missing": [],
+    "page_kind": null,
+    "result_count": null,
+    "checked_at": null
+   }
+  },
+  "mms-inc-medical-marketing-service": {
+   "schema_version": "4.0.0",
+   "id": "mms-inc-medical-marketing-service",
+   "name": "MMS Inc (Medical Marketing Service)",
+   "category": "marketing",
+   "domain": "mmslists.com",
+   "checked_at": "2026-11-02T01:27:25+00:00",
+   "liveness": "alive",
+   "liveness_detail": "catalog URL loaded",
+   "homepage": "https://www.mmslists.com/",
+   "logo_url": "https://images.squarespace-cdn.com/content/v1/58c9b895414fb537a75ee36b/1750693774218-KED0Z4T6EFX8VK2Z3RQK/AMA_logo.png",
+   "images": [
+    {
+     "url": "https://images.squarespace-cdn.com/content/v1/58c9b895414fb537a75ee36b/1490032090842-W6ZBOZX2FPRKZMRI6BGW/favicon.ico?format=100w",
+     "kind": "icon",
+     "source_page": "https://www.mmslists.com/"
+    },
+    {
+     "url": "http://static1.squarespace.com/static/58c9b895414fb537a75ee36b/t/5f1df1bd85a63622a2f124b7/1595797952717/opengraph.png?format=1500w",
+     "kind": "og_image",
+     "source_page": "https://www.mmslists.com/"
+    },
+    {
+     "url": "https://images.squarespace-cdn.com/content/v1/58c9b895414fb537a75ee36b/38c30065-dca3-43b2-90a4-fb27ddced5d4/mms-logo-reg.png",
+     "kind": "json_ld",
+     "source_page": "https://www.mmslists.com/"
+    },
+    {
+     "url": "https://images.squarespace-cdn.com/content/v1/58c9b895414fb537a75ee36b/1750693774218-KED0Z4T6EFX8VK2Z3RQK/AMA_logo.png",
+     "kind": "logo",
+     "source_page": "https://www.mmslists.com/"
+    },
+    {
+     "url": "https://images.squarespace-cdn.com/content/v1/58c9b895414fb537a75ee36b/1750693776337-XSG81H4G8SYECYT8ZMXX/AOA-logo.png",
+     "kind": "logo",
+     "source_page": "https://www.mmslists.com/"
+    },
+    {
+     "url": "https://images.squarespace-cdn.com/content/v1/58c9b895414fb537a75ee36b/1750693780247-5Z4YF9HHOXWHRTND2U10/AAPA_logomark_PA_rgb-jpg.png",
+     "kind": "logo",
+     "source_page": "https://www.mmslists.com/"
+    }
+   ],
+   "theme_color": null,
+   "languages": [
+    "en"
+   ],
+   "legal_name": "MMS Inc. (Medical Marketing Service, Inc.)",
+   "search": {
+    "available": false,
+    "method": "none",
+    "page_url": null,
+    "form_action": null,
+    "inputs": [],
+    "url_pattern": null,
+    "directory_prefixes": [],
+    "paywall": null,
+    "login_wall": null,
+    "form_meta": {
+     "id": null,
+     "name": null,
+     "autocomplete": null,
+     "novalidate": null,
+     "submit_label": null,
+     "hidden_names": []
+    },
+    "captcha_provider": null,
+    "captcha_sitekey": null,
+    "captcha_detail": null,
+    "captcha_checked": null
+   },
+   "removal": {
+    "url": "https://www.mmslists.com/privacy-policy",
+    "final_url": "https://www.mmslists.com/privacy-policy",
+    "http_status": 200,
+    "kinds": [
+     "opt_out"
+    ],
+    "channels": [
+     "email",
+     "phone"
+    ],
+    "emails": [
+     {
+      "email": "sales@mmslists.com",
+      "confidence": "uncertain",
+      "source_url": "https://www.mmslists.com/"
+     },
+     {
+      "email": "privacy@mmslists.com",
+      "confidence": "extracted",
+      "source_url": "https://www.mmslists.com/privacy-policy"
+     }
+    ],
+    "phones": [
+     "630.350.1717",
+     "(800) 633-5478"
+    ],
+    "postal_address": null,
+    "portal": null,
+    "form_fields": [],
+    "csrf_field_name": null,
+    "requires_profile_url": null,
+    "captcha": {
+     "provider": "custom",
+     "sitekey": "6LeDfeYZAAAAAKp2-HguI1bpoLGCGv94YszVvudm",
+     "pages": [
+      "https://www.mmslists.com/",
+      "https://www.mmslists.com/privacy-policy"
+     ],
+     "checked": null,
+     "checked_url": null,
+     "detail": {
+      "mode": null,
+      "invisible": null,
+      "size": null,
+      "theme": null,
+      "action": null,
+      "badge": null,
+      "language": null,
+      "appearance": null,
+      "enterprise": null,
+      "api_domain": null,
+      "script_path": null,
+      "token_field": null,
+      "callback": null
+     }
+    },
+    "consent_vendor": null,
+    "success_text": null,
+    "suppression_not_deletion": null,
+    "processing_days": null,
+    "processing_text": null,
+    "form_action": null,
+    "form_method": null,
+    "form_meta": {
+     "id": null,
+     "name": null,
+     "autocomplete": null,
+     "novalidate": null,
+     "submit_label": null,
+     "hidden_names": []
+    }
+   },
+   "bot_defense": {
+    "vendor": null,
+    "outcome": "none"
+   },
+   "legal": {
+    "privacy_policy_url": "https://www.mmslists.com/privacy-policy",
+    "terms_url": null,
+    "automation_prohibited": null,
+    "automation_clause": null,
+    "residency": [
+     "US"
+    ],
+    "authorized_agent": null,
+    "data_categories": [
+     "identifiers",
+     "internet_activity"
+    ],
+    "sells_personal_information": null,
+    "sells_clause": null,
+    "children_not_directed": null
+   },
+   "pages": [
+    {
+     "url": "https://mmslists.com/",
+     "final_url": "https://www.mmslists.com/",
+     "status": 200,
+     "role": "home",
+     "title": "Medical Marketing Service, Inc. | MMS",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.mmslists.com/",
+     "final_url": "https://www.mmslists.com/",
+     "status": 200,
+     "role": "home",
+     "title": "Medical Marketing Service, Inc. | MMS",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.mmslists.com/privacy-policy",
+     "final_url": "https://www.mmslists.com/privacy-policy",
+     "status": 200,
+     "role": "catalog",
+     "title": "Privacy Policy",
+     "liveness": "alive"
+    }
+   ],
+   "location": {
+    "country": "US",
+    "region": "AZ",
+    "locality": "Scottsdale",
+    "postal_code": "85255",
+    "street": null,
+    "postal_address": "Scottsdale, AZ, 85255, US",
+    "coverage": [
+     "US"
+    ],
+    "search_regions": [],
+    "sources": [
+     "page"
+    ]
+   },
+   "network": {
+    "checked": false,
+    "addresses": [],
+    "ipv6": [],
+    "cname": null,
+    "mx": [],
+    "mail_provider": null,
+    "spf": null,
+    "dmarc": null,
+    "dkim": [],
+    "nameservers": [],
+    "dns_provider": null,
+    "soa_primary": null,
+    "caa": [],
+    "dnssec": null,
+    "asn": null,
+    "asn_country": null,
+    "prefix": null,
+    "cdn": null,
+    "server": null,
+    "tls_org": null,
+    "tls_issuer": null,
+    "tls_names": [],
+    "tls_version": null,
+    "tls_not_before": null,
+    "tls_not_after": null,
+    "registrar": null,
+    "registered": null,
+    "registration_expires": null,
+    "domain_status": []
+   },
+   "request": {
+    "removal_host": "mmslists.com",
+    "same_site": true,
+    "https": true,
+    "redirected": false,
+    "redirect_count": null,
+    "form_enctype": null,
+    "content_type": null,
+    "hsts": null,
+    "hsts_max_age": null,
+    "hsts_subdomains": null,
+    "hsts_preload": null,
+    "http_version": null,
+    "http3": null,
+    "frame_options": null,
+    "nosniff": null,
+    "referrer_policy": null,
+    "csp": null,
+    "powered_by": null,
+    "cookie_names": []
+   },
+   "automation": {
+    "search_scanned": true,
+    "search_fillable": false,
+    "search_captcha": false,
+    "search_fields": [],
+    "removal_form_fillable": false,
+    "removal_email_usable": true,
+    "removal_fields": [],
+    "removal_path": "email",
+    "fully_automatable": false,
+    "usable_emails": [
+     "privacy@mmslists.com"
+    ],
+    "search_required": [],
+    "removal_required": [],
+    "email_verification": null,
+    "id_document": null,
+    "shared_removal_ids": [],
+    "removal_captcha": true,
+    "captcha_blocks_form": false,
+    "captcha_email_fallback": false,
+    "removal_blocker": null
+   },
+   "search_test": {
+    "outcome": null,
+    "http_status": null,
+    "path_prefix": null,
+    "fields_sent": [],
+    "missing": [],
+    "page_kind": null,
+    "result_count": null,
+    "checked_at": null
+   }
+  },
+  "adswapper-inc-toptop-leads": {
+   "schema_version": "4.0.0",
+   "id": "adswapper-inc-toptop-leads",
+   "name": "AdSwapper Inc (TopTop Leads)",
+   "category": "marketing",
+   "domain": "toptopleads.com",
+   "checked_at": "2026-11-02T01:27:28+00:00",
+   "liveness": "alive",
+   "liveness_detail": "catalog URL loaded",
+   "homepage": "https://www.toptopleads.com/",
+   "logo_url": "https://www.toptopleads.com/logo.png",
+   "images": [
+    {
+     "url": "https://www.toptopleads.com/favicon.svg",
+     "kind": "icon",
+     "source_page": "https://www.toptopleads.com/"
+    },
+    {
+     "url": "https://toptopleads.com/og-image.png",
+     "kind": "og_image",
+     "source_page": "https://www.toptopleads.com/"
+    },
+    {
+     "url": "https://toptopleads.com/logo.png",
+     "kind": "json_ld",
+     "source_page": "https://www.toptopleads.com/"
+    },
+    {
+     "url": "https://www.toptopleads.com/logo.png",
+     "kind": "logo",
+     "source_page": "https://www.toptopleads.com/"
+    },
+    {
+     "url": "https://www.toptopleads.com/logo-symbol.png",
+     "kind": "logo",
+     "source_page": "https://www.toptopleads.com/"
+    }
+   ],
+   "theme_color": null,
+   "languages": [
+    "en"
+   ],
+   "legal_name": "TopTop Leads",
+   "search": {
+    "available": false,
+    "method": "none",
+    "page_url": null,
+    "form_action": null,
+    "inputs": [],
+    "url_pattern": null,
+    "directory_prefixes": [],
+    "paywall": null,
+    "login_wall": null,
+    "form_meta": {
+     "id": null,
+     "name": null,
+     "autocomplete": null,
+     "novalidate": null,
+     "submit_label": null,
+     "hidden_names": []
+    },
+    "captcha_provider": null,
+    "captcha_sitekey": null,
+    "captcha_detail": null,
+    "captcha_checked": null
+   },
+   "removal": {
+    "url": "https://www.toptopleads.com/privacy-policy",
+    "final_url": "https://www.toptopleads.com/privacy-policy",
+    "http_status": 200,
+    "kinds": [
+     "opt_out",
+     "do_not_sell"
+    ],
+    "channels": [
+     "email"
+    ],
+    "emails": [
+     {
+      "email": "info@toptopleads.com",
+      "confidence": "uncertain",
+      "source_url": "https://www.toptopleads.com/"
+     }
+    ],
+    "phones": [],
+    "postal_address": null,
+    "portal": null,
+    "form_fields": [],
+    "csrf_field_name": null,
+    "requires_profile_url": null,
+    "captcha": {
+     "provider": null,
+     "sitekey": null,
+     "pages": [],
+     "checked": null,
+     "checked_url": null,
+     "detail": null
+    },
+    "consent_vendor": null,
+    "success_text": null,
+    "suppression_not_deletion": null,
+    "processing_days": null,
+    "processing_text": null,
+    "form_action": null,
+    "form_method": null,
+    "form_meta": {
+     "id": null,
+     "name": null,
+     "autocomplete": null,
+     "novalidate": null,
+     "submit_label": null,
+     "hidden_names": []
+    }
+   },
+   "bot_defense": {
+    "vendor": null,
+    "outcome": "none"
+   },
+   "legal": {
+    "privacy_policy_url": "https://www.toptopleads.com/privacy-policy",
+    "terms_url": null,
+    "automation_prohibited": null,
+    "automation_clause": null,
+    "residency": [],
+    "authorized_agent": null,
+    "data_categories": [
+     "identifiers",
+     "precise_location",
+     "sensitive"
+    ],
+    "sells_personal_information": false,
+    "sells_clause": "We do not sell",
+    "children_not_directed": null
+   },
+   "pages": [
+    {
+     "url": "https://toptopleads.com/",
+     "final_url": "https://www.toptopleads.com/",
+     "status": 200,
+     "role": "home",
+     "title": "TopTop Leads — Buy Auto Insurance & Home Services Leads",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.toptopleads.com/",
+     "final_url": "https://www.toptopleads.com/",
+     "status": 200,
+     "role": "home",
+     "title": "TopTop Leads — Buy Auto Insurance & Home Services Leads",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.toptopleads.com/privacy-policy",
+     "final_url": "https://www.toptopleads.com/privacy-policy",
+     "status": 200,
+     "role": "catalog",
+     "title": "Privacy Policy | TopTop Leads",
+     "liveness": "alive"
+    }
+   ],
+   "location": {
+    "country": "US",
+    "region": null,
+    "locality": null,
+    "postal_code": null,
+    "street": null,
+    "postal_address": null,
+    "coverage": [
+     "US"
+    ],
+    "search_regions": [],
+    "sources": [
+     "manual"
+    ]
+   },
+   "network": {
+    "checked": false,
+    "addresses": [],
+    "ipv6": [],
+    "cname": null,
+    "mx": [],
+    "mail_provider": null,
+    "spf": null,
+    "dmarc": null,
+    "dkim": [],
+    "nameservers": [],
+    "dns_provider": null,
+    "soa_primary": null,
+    "caa": [],
+    "dnssec": null,
+    "asn": null,
+    "asn_country": null,
+    "prefix": null,
+    "cdn": null,
+    "server": null,
+    "tls_org": null,
+    "tls_issuer": null,
+    "tls_names": [],
+    "tls_version": null,
+    "tls_not_before": null,
+    "tls_not_after": null,
+    "registrar": null,
+    "registered": null,
+    "registration_expires": null,
+    "domain_status": []
+   },
+   "request": {
+    "removal_host": "toptopleads.com",
+    "same_site": true,
+    "https": true,
+    "redirected": false,
+    "redirect_count": null,
+    "form_enctype": null,
+    "content_type": null,
+    "hsts": null,
+    "hsts_max_age": null,
+    "hsts_subdomains": null,
+    "hsts_preload": null,
+    "http_version": null,
+    "http3": null,
+    "frame_options": null,
+    "nosniff": null,
+    "referrer_policy": null,
+    "csp": null,
+    "powered_by": null,
+    "cookie_names": []
+   },
+   "automation": {
+    "search_scanned": true,
+    "search_fillable": false,
+    "search_captcha": false,
+    "search_fields": [],
+    "removal_form_fillable": false,
+    "removal_email_usable": false,
+    "removal_fields": [],
+    "removal_path": null,
+    "fully_automatable": false,
+    "usable_emails": [],
+    "search_required": [],
+    "removal_required": [],
+    "email_verification": null,
+    "id_document": null,
+    "shared_removal_ids": [],
+    "removal_captcha": false,
+    "captcha_blocks_form": false,
+    "captcha_email_fallback": false,
+    "removal_blocker": "generic_inbox"
+   },
+   "search_test": {
+    "outcome": null,
+    "http_status": null,
+    "path_prefix": null,
+    "fields_sent": [],
+    "missing": [],
+    "page_kind": null,
+    "result_count": null,
+    "checked_at": null
+   }
+  },
+  "common-room-inc": {
+   "schema_version": "4.0.0",
+   "id": "common-room-inc",
+   "name": "Common Room, Inc.",
+   "category": "marketing",
+   "domain": "commonroom.io",
+   "checked_at": "2026-11-02T01:27:25+00:00",
+   "liveness": "alive",
+   "liveness_detail": "catalog URL loaded",
+   "homepage": "https://www.commonroom.io/",
+   "logo_url": "https://www.commonroom.io/static/img/logos/common-room-logo-color.png",
+   "images": [
+    {
+     "url": "https://www.commonroom.io/static/meta/favicon.svg",
+     "kind": "icon",
+     "source_page": "https://www.commonroom.io/"
+    },
+    {
+     "url": "https://www.commonroom.io/static/meta/favicon.png",
+     "kind": "icon",
+     "source_page": "https://www.commonroom.io/"
+    },
+    {
+     "url": "https://www.commonroom.io/static/meta/apple-touch-icon.png",
+     "kind": "apple_touch_icon",
+     "source_page": "https://www.commonroom.io/"
+    },
+    {
+     "url": "https://cdn.sanity.io/images/vt347z5x/production/123593f41676c49b2a4733e23b27982d0aeef140-2400x1260.png?w=1536&q=80",
+     "kind": "og_image",
+     "source_page": "https://www.commonroom.io/"
+    },
+    {
+     "url": "https://www.commonroom.io/static/img/logos/common-room-logo-color.png",
+     "kind": "logo",
+     "source_page": "https://www.commonroom.io/"
+    },
+    {
+     "url": "https://cdn.sanity.io/images/vt347z5x/production/1e701726ff6a587a95180261f9d833b148e178b6-362x200.png?w=362&q=100&auto=format",
+     "kind": "logo",
+     "source_page": "https://www.commonroom.io/"
+    },
+    {
+     "url": "https://cdn.sanity.io/images/vt347z5x/production/6297bd75598729a2dc39ac9e63a9f6157f93911f-316x200.png?w=316&q=100&auto=format",
+     "kind": "logo",
+     "source_page": "https://www.commonroom.io/"
+    },
+    {
+     "url": "https://cdn.sanity.io/images/vt347z5x/production/950c8bc810a249c8c44045744c2f1718911050cc-350x200.png?w=350&q=100&auto=format",
+     "kind": "logo",
+     "source_page": "https://www.commonroom.io/"
+    },
+    {
+     "url": "https://cdn.sanity.io/images/vt347z5x/production/9b203ee437bc58a44c955910fdfe58a10052f948-156x100.svg?w=156&q=100&auto=format",
+     "kind": "logo",
+     "source_page": "https://www.commonroom.io/"
+    },
+    {
+     "url": "https://cdn.sanity.io/images/vt347z5x/production/13f9b038ffaf8f76f828f03aefcb4b549a6589f1-158x100.svg?w=158&q=100&auto=format",
+     "kind": "logo",
+     "source_page": "https://www.commonroom.io/"
+    },
+    {
+     "url": "https://cdn.sanity.io/images/vt347z5x/production/f8eeee6c0b0f6fff1e48b3e8e356864f2415d843-133x100.svg?w=133&q=100&auto=format",
+     "kind": "logo",
+     "source_page": "https://www.commonroom.io/"
+    },
+    {
+     "url": "https://cdn.sanity.io/images/vt347z5x/production/257ca2101dc4eef53df69abffb1257e35adfd066-195x100.svg?w=195&q=100&auto=format",
+     "kind": "logo",
+     "source_page": "https://www.commonroom.io/"
+    },
+    {
+     "url": "https://cdn.sanity.io/images/vt347z5x/production/d2df6de7c9e7af2e825c301a0c009c0488925265-147x100.svg?w=147&q=100&auto=format",
+     "kind": "logo",
+     "source_page": "https://www.commonroom.io/"
+    },
+    {
+     "url": "https://cdn.sanity.io/images/vt347z5x/production/892c2218c2cb7c0c1166ef8e51901ee7e726b4b8-178x100.svg?w=178&q=100&auto=format",
+     "kind": "logo",
+     "source_page": "https://www.commonroom.io/"
+    },
+    {
+     "url": "https://cdn.sanity.io/images/vt347z5x/production/c08053809dc14eba160c6ba49aee41df798c8321-84x100.svg?w=84&q=100&auto=format",
+     "kind": "logo",
+     "source_page": "https://www.commonroom.io/"
+    },
+    {
+     "url": "https://cdn.sanity.io/images/vt347z5x/production/c984587ed08a9be6bde25861bbfec3829fdf7262-180x100.svg?w=180&q=100&auto=format",
+     "kind": "logo",
+     "source_page": "https://www.commonroom.io/"
+    },
+    {
+     "url": "https://app.commonroom.io/commit/e8907cd13ca5d2b64966a512bfba74f5809ee354/favicon.app.commonroom.io.svg",
+     "kind": "icon",
+     "source_page": "https://app.commonroom.io/remove-my-info"
+    }
+   ],
+   "theme_color": null,
+   "languages": [
+    "en"
+   ],
+   "legal_name": "Common Room",
+   "search": {
+    "available": false,
+    "method": "none",
+    "page_url": null,
+    "form_action": null,
+    "inputs": [],
+    "url_pattern": null,
+    "directory_prefixes": [],
+    "paywall": null,
+    "login_wall": null,
+    "form_meta": {
+     "id": null,
+     "name": null,
+     "autocomplete": null,
+     "novalidate": null,
+     "submit_label": null,
+     "hidden_names": []
+    },
+    "captcha_provider": null,
+    "captcha_sitekey": null,
+    "captcha_detail": null,
+    "captcha_checked": null
+   },
+   "removal": {
+    "url": "https://app.commonroom.io/remove-my-info",
+    "final_url": "https://app.commonroom.io/remove-my-info",
+    "http_status": 200,
+    "kinds": [
+     "opt_out"
+    ],
+    "channels": [],
+    "emails": [],
+    "phones": [],
+    "postal_address": null,
+    "portal": null,
+    "form_fields": [],
+    "csrf_field_name": null,
+    "requires_profile_url": null,
+    "captcha": {
+     "provider": null,
+     "sitekey": null,
+     "pages": [],
+     "checked": null,
+     "checked_url": null,
+     "detail": null
+    },
+    "consent_vendor": null,
+    "success_text": null,
+    "suppression_not_deletion": null,
+    "processing_days": null,
+    "processing_text": null,
+    "form_action": null,
+    "form_method": null,
+    "form_meta": {
+     "id": null,
+     "name": null,
+     "autocomplete": null,
+     "novalidate": null,
+     "submit_label": null,
+     "hidden_names": []
+    }
+   },
+   "bot_defense": {
+    "vendor": null,
+    "outcome": "none"
+   },
+   "legal": {
+    "privacy_policy_url": null,
+    "terms_url": null,
+    "automation_prohibited": null,
+    "automation_clause": null,
+    "residency": [],
+    "authorized_agent": null,
+    "data_categories": [
+     "identifiers"
+    ],
+    "sells_personal_information": null,
+    "sells_clause": null,
+    "children_not_directed": null
+   },
+   "pages": [
+    {
+     "url": "https://commonroom.io/",
+     "final_url": "https://www.commonroom.io/",
+     "status": 200,
+     "role": "home",
+     "title": "Complete Buyer Intelligence That Turns Intent Into Pipeline",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.commonroom.io/",
+     "final_url": "https://www.commonroom.io/",
+     "status": 200,
+     "role": "home",
+     "title": "Complete Buyer Intelligence That Turns Intent Into Pipeline",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://app.commonroom.io/remove-my-info",
+     "final_url": "https://app.commonroom.io/remove-my-info",
+     "status": 200,
+     "role": "catalog",
+     "title": "Common Room",
+     "liveness": "alive"
+    }
+   ],
+   "location": {
+    "country": "US",
+    "region": null,
+    "locality": null,
+    "postal_code": null,
+    "street": null,
+    "postal_address": null,
+    "coverage": [
+     "US"
+    ],
+    "search_regions": [],
+    "sources": [
+     "manual"
+    ]
+   },
+   "network": {
+    "checked": false,
+    "addresses": [],
+    "ipv6": [],
+    "cname": null,
+    "mx": [],
+    "mail_provider": null,
+    "spf": null,
+    "dmarc": null,
+    "dkim": [],
+    "nameservers": [],
+    "dns_provider": null,
+    "soa_primary": null,
+    "caa": [],
+    "dnssec": null,
+    "asn": null,
+    "asn_country": null,
+    "prefix": null,
+    "cdn": null,
+    "server": null,
+    "tls_org": null,
+    "tls_issuer": null,
+    "tls_names": [],
+    "tls_version": null,
+    "tls_not_before": null,
+    "tls_not_after": null,
+    "registrar": null,
+    "registered": null,
+    "registration_expires": null,
+    "domain_status": []
+   },
+   "request": {
+    "removal_host": "app.commonroom.io",
+    "same_site": true,
+    "https": true,
+    "redirected": false,
+    "redirect_count": null,
+    "form_enctype": null,
+    "content_type": null,
+    "hsts": null,
+    "hsts_max_age": null,
+    "hsts_subdomains": null,
+    "hsts_preload": null,
+    "http_version": null,
+    "http3": null,
+    "frame_options": null,
+    "nosniff": null,
+    "referrer_policy": null,
+    "csp": null,
+    "powered_by": null,
+    "cookie_names": []
+   },
+   "automation": {
+    "search_scanned": true,
+    "search_fillable": false,
+    "search_captcha": false,
+    "search_fields": [],
+    "removal_form_fillable": false,
+    "removal_email_usable": false,
+    "removal_fields": [],
+    "removal_path": null,
+    "fully_automatable": false,
+    "usable_emails": [],
+    "search_required": [],
+    "removal_required": [],
+    "email_verification": null,
+    "id_document": null,
+    "shared_removal_ids": [],
+    "removal_captcha": false,
+    "captcha_blocks_form": false,
+    "captcha_email_fallback": false,
+    "removal_blocker": "no_channel"
+   },
+   "search_test": {
+    "outcome": null,
+    "http_status": null,
+    "path_prefix": null,
+    "fields_sent": [],
+    "missing": [],
+    "page_kind": null,
+    "result_count": null,
+    "checked_at": null
+   }
+  },
+  "yasni": {
+   "schema_version": "4.0.0",
+   "id": "yasni",
+   "name": "Yasni",
+   "category": "people-search",
+   "domain": "yasni.de",
+   "checked_at": "2026-11-02T01:27:29+00:00",
+   "liveness": "alive",
+   "liveness_detail": "catalog URL loaded",
+   "homepage": "https://www.yasni.de/",
+   "logo_url": "https://www.yasni.de/design/relaunch/yasni_logo.gif",
+   "images": [
+    {
+     "url": "https://www.yasni.de/favicon16.ico",
+     "kind": "icon",
+     "source_page": "https://www.yasni.de/"
+    },
+    {
+     "url": "https://www.yasni.de/design/relaunch/yasni_logo.gif",
+     "kind": "logo",
+     "source_page": "https://www.yasni.de/datenschutz"
+    }
+   ],
+   "theme_color": null,
+   "languages": [
+    "en"
+   ],
+   "legal_name": null,
+   "search": {
+    "available": false,
+    "method": "none",
+    "page_url": null,
+    "form_action": null,
+    "inputs": [],
+    "url_pattern": null,
+    "directory_prefixes": [],
+    "paywall": null,
+    "login_wall": null,
+    "form_meta": {
+     "id": null,
+     "name": null,
+     "autocomplete": null,
+     "novalidate": null,
+     "submit_label": null,
+     "hidden_names": []
+    },
+    "captcha_provider": null,
+    "captcha_sitekey": null,
+    "captcha_checked": null,
+    "captcha_detail": null
+   },
+   "removal": {
+    "url": "https://www.yasni.de/datenschutz",
+    "final_url": "https://www.yasni.de/datenschutz",
+    "http_status": 200,
+    "kinds": [
+     "opt_out"
+    ],
+    "channels": [
+     "email"
+    ],
+    "emails": [
+     {
+      "email": "datenschutz@yasni.de",
+      "confidence": "extracted",
+      "source_url": "https://www.yasni.de/datenschutz"
+     }
+    ],
+    "phones": [],
+    "postal_address": null,
+    "portal": null,
+    "form_fields": [],
+    "csrf_field_name": null,
+    "requires_profile_url": null,
+    "captcha": {
+     "provider": null,
+     "sitekey": null,
+     "pages": [],
+     "checked": null,
+     "checked_url": null,
+     "detail": null
+    },
+    "consent_vendor": null,
+    "success_text": null,
+    "suppression_not_deletion": null,
+    "processing_days": null,
+    "processing_text": null,
+    "form_action": null,
+    "form_method": null,
+    "form_meta": {
+     "id": null,
+     "name": null,
+     "autocomplete": null,
+     "novalidate": null,
+     "submit_label": null,
+     "hidden_names": []
+    }
+   },
+   "bot_defense": {
+    "vendor": null,
+    "outcome": "none"
+   },
+   "legal": {
+    "privacy_policy_url": null,
+    "terms_url": null,
+    "automation_prohibited": null,
+    "automation_clause": null,
+    "residency": [],
+    "authorized_agent": null,
+    "data_categories": [
+     "identifiers",
+     "internet_activity"
+    ],
+    "sells_personal_information": null,
+    "sells_clause": null,
+    "children_not_directed": null
+   },
+   "pages": [
+    {
+     "url": "https://yasni.de/",
+     "final_url": "http://www.yasni.de/",
+     "status": 500,
+     "role": "home",
+     "title": "",
+     "liveness": "error"
+    },
+    {
+     "url": "https://www.yasni.de/",
+     "final_url": "https://www.yasni.de/",
+     "status": 200,
+     "role": "home",
+     "title": "No.1 Free People Search - Yasni.de",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.yasni.de/datenschutz",
+     "final_url": "https://www.yasni.de/datenschutz",
+     "status": 200,
+     "role": "catalog",
+     "title": "No.1 Free People Search - Yasni.de",
+     "liveness": "alive"
+    }
+   ],
+   "location": {
+    "country": "DE",
+    "region": null,
+    "locality": null,
+    "postal_code": null,
+    "street": null,
+    "postal_address": null,
+    "coverage": [
+     "DE"
+    ],
+    "search_regions": [],
+    "sources": [
+     "manual"
+    ]
+   },
+   "network": {
+    "checked": false,
+    "addresses": [],
+    "ipv6": [],
+    "cname": null,
+    "mx": [],
+    "mail_provider": null,
+    "spf": null,
+    "dmarc": null,
+    "dkim": [],
+    "nameservers": [],
+    "dns_provider": null,
+    "soa_primary": null,
+    "caa": [],
+    "dnssec": null,
+    "asn": null,
+    "asn_country": null,
+    "prefix": null,
+    "cdn": null,
+    "server": null,
+    "tls_org": null,
+    "tls_issuer": null,
+    "tls_names": [],
+    "tls_version": null,
+    "tls_not_before": null,
+    "tls_not_after": null,
+    "registrar": null,
+    "registered": null,
+    "registration_expires": null,
+    "domain_status": []
+   },
+   "request": {
+    "removal_host": "yasni.de",
+    "same_site": true,
+    "https": true,
+    "redirected": false,
+    "redirect_count": null,
+    "form_enctype": null,
+    "content_type": null,
+    "hsts": null,
+    "hsts_max_age": null,
+    "hsts_subdomains": null,
+    "hsts_preload": null,
+    "http_version": null,
+    "http3": null,
+    "frame_options": null,
+    "nosniff": null,
+    "referrer_policy": null,
+    "csp": null,
+    "powered_by": null,
+    "cookie_names": []
+   },
+   "automation": {
+    "search_scanned": true,
+    "search_fillable": false,
+    "search_captcha": false,
+    "search_fields": [],
+    "removal_form_fillable": false,
+    "removal_email_usable": true,
+    "removal_fields": [],
+    "removal_path": "email",
+    "fully_automatable": false,
+    "usable_emails": [
+     "datenschutz@yasni.de"
+    ],
+    "search_required": [],
+    "removal_required": [],
+    "email_verification": null,
+    "id_document": null,
+    "shared_removal_ids": [],
+    "removal_captcha": false,
+    "captcha_blocks_form": false,
+    "captcha_email_fallback": false,
+    "removal_blocker": null
+   },
+   "search_test": {
+    "outcome": null,
+    "http_status": null,
+    "path_prefix": null,
+    "fields_sent": [],
+    "missing": [],
+    "page_kind": null,
+    "result_count": null,
+    "checked_at": null
+   }
+  },
+  "fonecta": {
+   "schema_version": "4.0.0",
+   "id": "fonecta",
+   "name": "Fonecta",
+   "category": "people-search",
+   "domain": "fonecta.fi",
+   "checked_at": "2026-11-02T01:27:25+00:00",
+   "liveness": "alive",
+   "liveness_detail": "catalog URL loaded",
+   "homepage": "https://www.fonecta.fi:443/",
+   "logo_url": "https://ucarecdn.com/a45d781d-3524-48e1-be86-9971179f321f/",
+   "images": [
+    {
+     "url": "https://ucarecdn.com/73d6e702-5602-4925-ae86-29bc9a495d21/-/quality/smart/-/format/auto/",
+     "kind": "og_image",
+     "source_page": "https://www.fonecta.fi:443/"
+    },
+    {
+     "url": "https://ucarecdn.com/a45d781d-3524-48e1-be86-9971179f321f/",
+     "kind": "logo",
+     "source_page": "https://www.fonecta.fi:443/"
+    },
+    {
+     "url": "https://ucarecdn.com/8d1e4d8c-3dc3-4c9c-91f9-8f2d7c29f59a/",
+     "kind": "logo",
+     "source_page": "https://www.fonecta.fi:443/"
+    },
+    {
+     "url": "https://tuki.fonecta.com/hs-fs/hubfs/Fonecta_logo_80px.png?width=191&height=50&name=Fonecta_logo_80px.png",
+     "kind": "logo",
+     "source_page": "https://tuki.fonecta.com/tietosuojaseloste"
+    }
+   ],
+   "theme_color": null,
+   "languages": [
+    "fi"
+   ],
+   "legal_name": null,
+   "search": {
+    "available": false,
+    "method": "none",
+    "page_url": null,
+    "form_action": null,
+    "inputs": [],
+    "url_pattern": null,
+    "directory_prefixes": [],
+    "paywall": null,
+    "login_wall": null,
+    "form_meta": {
+     "id": null,
+     "name": null,
+     "autocomplete": null,
+     "novalidate": null,
+     "submit_label": null,
+     "hidden_names": []
+    },
+    "captcha_provider": null,
+    "captcha_sitekey": null,
+    "captcha_checked": null,
+    "captcha_detail": null
+   },
+   "removal": {
+    "url": "https://tuki.fonecta.com/tietosuojaseloste",
+    "final_url": "https://tuki.fonecta.com/tietosuojaseloste",
+    "http_status": 200,
+    "kinds": [
+     "opt_out"
+    ],
+    "channels": [],
+    "emails": [],
+    "phones": [],
+    "postal_address": null,
+    "portal": null,
+    "form_fields": [],
+    "csrf_field_name": null,
+    "requires_profile_url": null,
+    "captcha": {
+     "provider": null,
+     "sitekey": null,
+     "pages": [],
+     "checked": null,
+     "checked_url": null,
+     "detail": null
+    },
+    "consent_vendor": null,
+    "success_text": null,
+    "suppression_not_deletion": null,
+    "processing_days": null,
+    "processing_text": null,
+    "form_action": null,
+    "form_method": null,
+    "form_meta": {
+     "id": null,
+     "name": null,
+     "autocomplete": null,
+     "novalidate": null,
+     "submit_label": null,
+     "hidden_names": []
+    }
+   },
+   "bot_defense": {
+    "vendor": null,
+    "outcome": "none"
+   },
+   "legal": {
+    "privacy_policy_url": null,
+    "terms_url": null,
+    "automation_prohibited": null,
+    "automation_clause": null,
+    "residency": [],
+    "authorized_agent": null,
+    "data_categories": [],
+    "sells_personal_information": null,
+    "sells_clause": null,
+    "children_not_directed": null
+   },
+   "pages": [
+    {
+     "url": "https://fonecta.fi/",
+     "final_url": "https://www.fonecta.fi:443/",
+     "status": 200,
+     "role": "home",
+     "title": "Haku, henkilöhaku, numerohaku, yrityshaku | Fonecta Caller",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.fonecta.fi/",
+     "final_url": "https://www.fonecta.fi/",
+     "status": 200,
+     "role": "home",
+     "title": "Haku, henkilöhaku, numerohaku, yrityshaku | Fonecta Caller",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://tuki.fonecta.com/tietosuojaseloste",
+     "final_url": "https://tuki.fonecta.com/tietosuojaseloste",
+     "status": 200,
+     "role": "catalog",
+     "title": "Tietosuojaseloste",
+     "liveness": "alive"
+    }
+   ],
+   "location": {
+    "country": "FI",
+    "region": null,
+    "locality": null,
+    "postal_code": null,
+    "street": null,
+    "postal_address": null,
+    "coverage": [
+     "FI"
+    ],
+    "search_regions": [],
+    "sources": [
+     "manual"
+    ]
+   },
+   "network": {
+    "checked": false,
+    "addresses": [],
+    "ipv6": [],
+    "cname": null,
+    "mx": [],
+    "mail_provider": null,
+    "spf": null,
+    "dmarc": null,
+    "dkim": [],
+    "nameservers": [],
+    "dns_provider": null,
+    "soa_primary": null,
+    "caa": [],
+    "dnssec": null,
+    "asn": null,
+    "asn_country": null,
+    "prefix": null,
+    "cdn": null,
+    "server": null,
+    "tls_org": null,
+    "tls_issuer": null,
+    "tls_names": [],
+    "tls_version": null,
+    "tls_not_before": null,
+    "tls_not_after": null,
+    "registrar": null,
+    "registered": null,
+    "registration_expires": null,
+    "domain_status": []
+   },
+   "request": {
+    "removal_host": "tuki.fonecta.com",
+    "same_site": false,
+    "https": true,
+    "redirected": false,
+    "redirect_count": null,
+    "form_enctype": null,
+    "content_type": null,
+    "hsts": null,
+    "hsts_max_age": null,
+    "hsts_subdomains": null,
+    "hsts_preload": null,
+    "http_version": null,
+    "http3": null,
+    "frame_options": null,
+    "nosniff": null,
+    "referrer_policy": null,
+    "csp": null,
+    "powered_by": null,
+    "cookie_names": []
+   },
+   "automation": {
+    "search_scanned": true,
+    "search_fillable": false,
+    "search_captcha": false,
+    "search_fields": [],
+    "removal_form_fillable": false,
+    "removal_email_usable": false,
+    "removal_fields": [],
+    "removal_path": null,
+    "fully_automatable": false,
+    "usable_emails": [],
+    "search_required": [],
+    "removal_required": [],
+    "email_verification": null,
+    "id_document": null,
+    "shared_removal_ids": [],
+    "removal_captcha": false,
+    "captcha_blocks_form": false,
+    "captcha_email_fallback": false,
+    "removal_blocker": "no_channel"
+   },
+   "search_test": {
+    "outcome": null,
+    "http_status": null,
+    "path_prefix": null,
+    "fields_sent": [],
+    "missing": [],
+    "page_kind": null,
+    "result_count": null,
+    "checked_at": null
+   }
+  },
+  "biluppgifter-se": {
+   "schema_version": "4.0.0",
+   "id": "biluppgifter-se",
+   "name": "Biluppgifter.se",
+   "category": "public-records",
+   "domain": "biluppgifter.se",
+   "checked_at": "2026-11-02T01:27:24+00:00",
+   "liveness": "alive",
+   "liveness_detail": "catalog URL loaded",
+   "homepage": "https://biluppgifter.se/",
+   "logo_url": "https://biluppgifter.se/favicon/apple-touch-icon.png",
+   "images": [
+    {
+     "url": "https://biluppgifter.se/favicon/favicon.ico",
+     "kind": "icon",
+     "source_page": "https://biluppgifter.se/"
+    },
+    {
+     "url": "https://biluppgifter.se/favicon/apple-touch-icon.png",
+     "kind": "apple_touch_icon",
+     "source_page": "https://biluppgifter.se/"
+    },
+    {
+     "url": "https://biluppgifter.se/favicon/favicon-96x96.png",
+     "kind": "icon",
+     "source_page": "https://biluppgifter.se/"
+    }
+   ],
+   "theme_color": null,
+   "languages": [
+    "sv"
+   ],
+   "legal_name": null,
+   "search": {
+    "available": false,
+    "method": "none",
+    "page_url": null,
+    "form_action": null,
+    "inputs": [],
+    "url_pattern": null,
+    "directory_prefixes": [],
+    "paywall": null,
+    "login_wall": null,
+    "form_meta": {
+     "id": null,
+     "name": null,
+     "autocomplete": null,
+     "novalidate": null,
+     "submit_label": null,
+     "hidden_names": []
+    },
+    "captcha_provider": null,
+    "captcha_sitekey": null,
+    "captcha_detail": null,
+    "captcha_checked": null
+   },
+   "removal": {
+    "url": "https://biluppgifter.se/integritetspolicy/",
+    "final_url": "https://biluppgifter.se/integritetspolicy/",
+    "http_status": 200,
+    "kinds": [
+     "opt_out"
+    ],
+    "channels": [],
+    "emails": [],
+    "phones": [],
+    "postal_address": null,
+    "portal": null,
+    "form_fields": [],
+    "csrf_field_name": null,
+    "requires_profile_url": null,
+    "captcha": {
+     "provider": null,
+     "sitekey": null,
+     "pages": [],
+     "checked": null,
+     "checked_url": null,
+     "detail": null
+    },
+    "consent_vendor": null,
+    "success_text": null,
+    "suppression_not_deletion": null,
+    "processing_days": null,
+    "processing_text": null,
+    "form_action": null,
+    "form_method": null,
+    "form_meta": {
+     "id": null,
+     "name": null,
+     "autocomplete": null,
+     "novalidate": null,
+     "submit_label": null,
+     "hidden_names": []
+    }
+   },
+   "bot_defense": {
+    "vendor": null,
+    "outcome": "none"
+   },
+   "legal": {
+    "privacy_policy_url": null,
+    "terms_url": null,
+    "automation_prohibited": null,
+    "automation_clause": null,
+    "residency": [
+     "EU"
+    ],
+    "authorized_agent": null,
+    "data_categories": [],
+    "sells_personal_information": null,
+    "sells_clause": null,
+    "children_not_directed": null
+   },
+   "pages": [
+    {
+     "url": "https://biluppgifter.se/",
+     "final_url": "https://biluppgifter.se/",
+     "status": 200,
+     "role": "home",
+     "title": "Sök Registreringsnummer, Bilars Regnr och Ägare i Bilregistret samt Gratis Bilvärdering på Biluppgifter.se",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.biluppgifter.se/",
+     "final_url": "https://biluppgifter.se/",
+     "status": 200,
+     "role": "home",
+     "title": "Sök Registreringsnummer, Bilars Regnr och Ägare i Bilregistret samt Gratis Bilvärdering på Biluppgifter.se",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://biluppgifter.se/integritetspolicy/",
+     "final_url": "https://biluppgifter.se/integritetspolicy/",
+     "status": 200,
+     "role": "catalog",
+     "title": "Integritetspolicy - Biluppgifter.se",
+     "liveness": "alive"
+    }
+   ],
+   "location": {
+    "country": "EU",
+    "region": null,
+    "locality": null,
+    "postal_code": null,
+    "street": null,
+    "postal_address": null,
+    "coverage": [
+     "EU"
+    ],
+    "search_regions": [],
+    "sources": [
+     "page"
+    ]
+   },
+   "network": {
+    "checked": false,
+    "addresses": [],
+    "ipv6": [],
+    "cname": null,
+    "mx": [],
+    "mail_provider": null,
+    "spf": null,
+    "dmarc": null,
+    "dkim": [],
+    "nameservers": [],
+    "dns_provider": null,
+    "soa_primary": null,
+    "caa": [],
+    "dnssec": null,
+    "asn": null,
+    "asn_country": null,
+    "prefix": null,
+    "cdn": null,
+    "server": null,
+    "tls_org": null,
+    "tls_issuer": null,
+    "tls_names": [],
+    "tls_version": null,
+    "tls_not_before": null,
+    "tls_not_after": null,
+    "registrar": null,
+    "registered": null,
+    "registration_expires": null,
+    "domain_status": []
+   },
+   "request": {
+    "removal_host": "biluppgifter.se",
+    "same_site": true,
+    "https": true,
+    "redirected": false,
+    "redirect_count": null,
+    "form_enctype": null,
+    "content_type": null,
+    "hsts": null,
+    "hsts_max_age": null,
+    "hsts_subdomains": null,
+    "hsts_preload": null,
+    "http_version": null,
+    "http3": null,
+    "frame_options": null,
+    "nosniff": null,
+    "referrer_policy": null,
+    "csp": null,
+    "powered_by": null,
+    "cookie_names": []
+   },
+   "automation": {
+    "search_scanned": true,
+    "search_fillable": false,
+    "search_captcha": false,
+    "search_fields": [],
+    "removal_form_fillable": false,
+    "removal_email_usable": false,
+    "removal_fields": [],
+    "removal_path": null,
+    "fully_automatable": false,
+    "usable_emails": [],
+    "search_required": [],
+    "removal_required": [],
+    "email_verification": null,
+    "id_document": null,
+    "shared_removal_ids": [],
+    "removal_captcha": false,
+    "captcha_blocks_form": false,
+    "captcha_email_fallback": false,
+    "removal_blocker": "no_channel"
    },
    "search_test": {
     "outcome": null,

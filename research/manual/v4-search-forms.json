@@ -7623,5 +7623,84 @@
     "kind": "register_or_purchase",
     "evidence": "GeoWarehouse (www2.geowarehouse.ca) is sold as an annual subscription (\"Login\", \"Subscribe\", \"Contact Sales to Secure Your Subscription\"). The homepage says the Client Property Report \"includes private data such as legal description, owner names, market information and comparable sales data.\" There is no public name or address search on geowarehouse.ca or teranet.ca, so no record can be read without an account. Teranet's privacy policy names PrivacyOfficer@teranet.ca. Nothing was submitted.",
     "result_check": "GET https://www2.geowarehouse.ca/ and https://www.teranet.ca/privacy/ (2026-10-29, CST): HTTP 200, no search form without login."
+  },
+  "scott-s-directories": {
+    "checked": "2026-11-01",
+    "country": "CA",
+    "kind": "register_or_purchase",
+    "not_a_person_search": true,
+    "evidence": "Sells contact or lead data to business customers; there is no free public name search on the site. The catalog points at its privacy or opt-out page. Nothing was submitted."
+  },
+  "haines-and-company-criss-cross": {
+    "checked": "2026-11-01",
+    "country": "US",
+    "kind": "register_or_purchase",
+    "not_a_person_search": true,
+    "evidence": "Sells contact or lead data to business customers; there is no free public name search on the site. The catalog points at its privacy or opt-out page. Nothing was submitted."
+  },
+  "logictree-inc-data247-ezcnam": {
+    "checked": "2026-11-01",
+    "country": "US",
+    "kind": "register_or_purchase",
+    "not_a_person_search": true,
+    "evidence": "Sells contact or lead data to business customers; there is no free public name search on the site. The catalog points at its privacy or opt-out page. Nothing was submitted."
+  },
+  "tracerfy-llc": {
+    "checked": "2026-11-01",
+    "country": "US",
+    "kind": "register_or_purchase",
+    "not_a_person_search": true,
+    "evidence": "Sells contact or lead data to business customers; there is no free public name search on the site. The catalog points at its privacy or opt-out page. Nothing was submitted."
+  },
+  "senioroi-llc": {
+    "checked": "2026-11-01",
+    "country": "US",
+    "kind": "register_or_purchase",
+    "not_a_person_search": true,
+    "evidence": "Sells contact or lead data to business customers; there is no free public name search on the site. The catalog points at its privacy or opt-out page. Nothing was submitted."
+  },
+  "alpine-digital-group-inc": {
+    "checked": "2026-11-01",
+    "country": "US",
+    "kind": "register_or_purchase",
+    "not_a_person_search": true,
+    "evidence": "Sells contact or lead data to business customers; there is no free public name search on the site. The catalog points at its privacy or opt-out page. Nothing was submitted."
+  },
+  "mms-inc-medical-marketing-service": {
+    "checked": "2026-11-01",
+    "country": "US",
+    "kind": "register_or_purchase",
+    "not_a_person_search": true,
+    "evidence": "Sells contact or lead data to business customers; there is no free public name search on the site. The catalog points at its privacy or opt-out page. Nothing was submitted."
+  },
+  "adswapper-inc-toptop-leads": {
+    "checked": "2026-11-01",
+    "country": "US",
+    "kind": "register_or_purchase",
+    "not_a_person_search": true,
+    "evidence": "Sells contact or lead data to business customers; there is no free public name search on the site. The catalog points at its privacy or opt-out page. Nothing was submitted."
+  },
+  "common-room-inc": {
+    "checked": "2026-11-01",
+    "country": "US",
+    "kind": "contact",
+    "not_a_person_search": true,
+    "evidence": "Sells contact or lead data to business customers; there is no free public name search on the site. The catalog points at its privacy or opt-out page. Nothing was submitted."
+  },
+  "yasni": {
+    "checked": "2026-11-01",
+    "country": "DE",
+    "evidence": "German people search engine. The homepage name search (Personensuche) loads, but no search was run in this pass. The catalog points at the Datenschutz page, which says people can ask for content to be deleted or blocked. Nothing was submitted."
+  },
+  "fonecta": {
+    "checked": "2026-11-01",
+    "country": "FI",
+    "evidence": "Finnish directory with a henkilöhaku (person) and numerohaku (number) search on fonecta.fi. No search was run in this pass. The catalog points at the privacy notice, which sends directory removals to the person's own telephone operator. Nothing was submitted."
+  },
+  "biluppgifter-se": {
+    "checked": "2026-11-01",
+    "country": "SE",
+    "evidence": "Swedish vehicle register lookup by registration number that shows the owner's name. It is not a name search, and no search was run in this pass. Nothing was submitted.",
+    "not_a_person_search": true
   }
 }

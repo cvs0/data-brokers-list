@@ -2,7 +2,7 @@
 
 People-search sites that publish names, phone numbers, relatives, or address history. Many ask for a profile URL and an email confirmation.
 
-222 entries. Link responses were checked on 2026-10-01 unless a note says otherwise.
+224 entries. Link responses were checked on 2026-10-01 unless a note says otherwise.
 
 | Broker | Opt-out / privacy URL | Notes |
 | --- | --- | --- |
@@ -75,6 +75,7 @@ People-search sites that publish names, phone numbers, relatives, or address his
 | FastPeopleSearch.io | https://fastpeoplesearch.io/remove-my-info | Opt-out or consumer privacy-request page. Email: support@fastpeoplesearch.io. |
 | FindPeopleFast.net | https://findpeoplefast.net/company/remove-my-info | Web form. Email: support@findpeoplefast.net. Open-dataset difficulty: easy. Automated check on 2026-10-01 got HTTP 403. Open the link in a browser. |
 | FindPeopleSearch | http://www.findpeoplesearch.com/customerservice/ | Customer-service contact form. Open-dataset difficulty: easy. Automated check on 2026-10-01 got HTTP 403. Open the link in a browser. |
+| Fonecta | https://tuki.fonecta.com/tietosuojaseloste | Finnish directory and Fonecta Caller app whose henkilöhaku (person search) and numerohaku list private people with name, address and phone number. The privacy notice (tietosuojaseloste) says the subscriber data comes from telephone operators and that a person who wants their number or address out of all directory services, or changed, must contact their own telephone operator. Other requests go to the data protection officer, Maria Järvi, Fonecta Oy, Firdonkatu 2T 151, 00520 Helsinki, tietosuoja@fonecta.com. Checked 2026-11-01: the page answered HTTP 200. No request was submitted. |
 | FQSG Avis de décès | https://federationgenealogie.qc.ca/politique-confidentialite | Quebec death-notice index run by the Fédération québécoise des sociétés de généalogie. It says it indexes more than 900,000 notices from newspapers and funeral cooperatives, and notices name parents, spouses, and other family. Free search is a GET to /search with q (date, place, and source filters are optional). Checked 2026-10-24: GET /search?q=Tremblay: "9837 avis trouvé(s)". q=Smith: "2610 avis trouvé(s)". q=Vanderwekken: "0 avis trouvé(s)" and "Aucun résultat trouvé". No CAPTCHA widget on those result pages. The privacy page covers cookies and says to use the contact page at https://federationgenealogie.qc.ca/contact for questions. No request was submitted. |
 | FreePeopleDirectory (Spokeo data) | https://www.freepeopledirectory.com/optout | On-site opt-out form (profile URL based). Open-dataset difficulty: easy. |
 | FreePeopleSearch.com | https://freepeoplesearch.com/privacy-policy/ | Privacy notice or privacy-policy page. Use the state-rights, do-not-sell, or request section. Automated check on 2026-10-01 got HTTP 403. Open the link in a browser. |
@@ -225,6 +226,7 @@ People-search sites that publish names, phone numbers, relatives, or address his
 | Whitepages | https://www.whitepages.com/suppression-requests | Suppression form. A phone call with a code is commonly required. The same request covers 411.com. Alternate email: privacyrequest@whitepages.com. Automated check on 2026-10-01 got HTTP 403. Open the link in a browser. Related domains using this form: property.whitepages.com. |
 | Whitepages (411.com) | https://www.whitepages.com/suppression-requests | Suppression form. Open-dataset difficulty: moderate. Automated check on 2026-10-01 got HTTP 403. Open the link in a browser. |
 | Whoscall | https://web.whoscall.com/en/privacy | Privacy notice for the Whoscall caller-ID service. Use the request section. |
+| Yasni | https://www.yasni.de/datenschutz | German people search engine (yasni.de) that collects web results about a name into person pages. The privacy policy (Datenschutz) says affected people can ask at any time for content to be deleted or blocked ("Betroffene können jederzeit die Löschung bzw. Sperrung von Inhalten verlangen") and that requests are checked without delay. Email: datenschutz@yasni.de. Checked 2026-11-01: the page answered HTTP 200. No request was submitted. |
 | Yellow Pages opt-out | https://optoutyp.com/ | Opt-out site for Yellow Pages listings. yellowpagesoptout.com redirects here. |
 | YellowPages People (Intelius data) | https://suppression.peopleconnect.us/ | Published opt-out URL is the site root. Confirm a request form is on the page before sending information. Email: ypcsupport@yp.com. |
 | ZabaSearch (PeopleConnect/Intelius) | https://suppression.peopleconnect.us/ | Uses the PeopleConnect suppression portal shared with Intelius. |
