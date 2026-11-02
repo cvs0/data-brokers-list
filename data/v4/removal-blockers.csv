@@ -29,7 +29,6 @@ new-hampshire-arrests,New Hampshire Arrests,nharrests.org,background-checks,aliv
 new-mexico-arrests,New Mexico Arrests,nmarrests.org,background-checks,alive,phone_postal,Phone and a mailing address are the only channels,,,,true,,,,postal_mail;phone
 new-york-arrests,New York Arrests,nyarrests.org,background-checks,alive,captcha_no_form,A CAPTCHA widget is on the removal page and no form fields or usable email were stored,turnstile,0x4AAAAAADypakHEOSYCaA2m,checkbox,true,,,,
 ohio-arrests,Ohio Arrests,ohioarrests.org,background-checks,alive,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,false,,,,
-openroom,Openroom,openroom.ca,background-checks,alive,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,,,,,
 oregon-arrests,Oregon Arrests,oregonarrest.org,background-checks,alive,postal,The only published channel is a mailing address,,,,true,,,,postal_mail
 pennsylvania-arrests,Pennsylvania Arrests,pennsylvaniaarrests.org,background-checks,alive,captcha_no_form,A CAPTCHA widget is on the removal page and no form fields or usable email were stored,turnstile,0x4AAAAAADyp56n_92FSO5ZN,checkbox,true,,,,
 peoplewhizr,PeopleWhizr,peoplewhizr.com,background-checks,alive,generic_inbox,"Only a generic inbox was found, and the page does not say to use it for removal",,,,false,,,info@peoplewhizr.com,email;phone
@@ -49,7 +48,7 @@ chexsystems,ChexSystems,chexsystems.com,credit-financial,robots_disallowed,robot
 clarity-services,Clarity Services,clarityservices.com,credit-financial,alive,phone_postal,Phone and a mailing address are the only channels,,,,false,,,,postal_mail;phone
 datax,DataX,dataxltd.com,credit-financial,alive,generic_inbox,"Only a generic inbox was found, and the page does not say to use it for removal",recaptcha_v2,6LertLEUAAAAAIy0dMsC97-mycmJWoShvKAOZ7mH,,false,,,sales@dataxltd.com,email
 equifax,Equifax,equifax.com,credit-financial,alive,phone_postal,Phone and a mailing address are the only channels,,,,false,,,,postal_mail;phone
-frontlobby,FrontLobby,frontlobby.com,credit-financial,alive,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,,,,,
+frontlobby,FrontLobby,frontlobby.com,credit-financial,alive,generic_inbox,"Only a generic inbox was found, and the page does not say to use it for removal",,,,,,,support@frontlobby.com,email
 innovis,Innovis,innovis.com,credit-financial,alive,phone_postal,Phone and a mailing address are the only channels,,,,false,,,,postal_mail;phone
 landlord-credit-bureau,Landlord Credit Bureau,landlordcreditbureau.ca,credit-financial,alive,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,,,,,
 microbilt,MicroBilt,microbilt.com,credit-financial,alive,generic_inbox,"Only a generic inbox was found, and the page does not say to use it for removal",,,,false,,,contact@microbilt.com;sales@microbilt.com;support@microbilt.com;customeraccounts@microbilt.com,email;phone
@@ -74,7 +73,6 @@ buzzfile,Buzzfile,buzzfile.com,marketing,alive,captcha_form,Removal form is behi
 catalina-marketing-corporation,Catalina Marketing Corporation,catalina.com,marketing,alive,phone,The only published channel is a phone number,,,,true,,,,phone
 cause-iq,Cause IQ,causeiq.com,marketing,alive,phone_postal,Phone and a mailing address are the only channels,,,,true,,,,postal_mail;phone
 common-room-inc,"Common Room, Inc.",commonroom.io,marketing,alive,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,,,,,
-data-axle-canada,Data Axle Canada,dataaxlecanada.ca,marketing,alive,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,,,,,
 datagma,Datagma,datagma.com,marketing,alive,captcha_no_form,A CAPTCHA widget is on the removal page and no form fields or usable email were stored,recaptcha_v2,6LeqZZcpAAAAAJmvzEDKV--ki8f4Tx5UqtvDY5tM,invisible,true,,,,
 digital-advertising-alliance-opt-out,Digital Advertising Alliance opt-out,optout.aboutads.info,marketing,alive,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,false,,,,
 distribution-processing-center,Distribution Processing Center,dpcoptout.com,marketing,alive,phone,The only published channel is a phone number,hcaptcha,,checkbox,true,,,,phone
@@ -176,7 +174,6 @@ lead-intelligence-inc,Lead Intelligence Inc.,infutor.com,other,alive,portal,An o
 lead-me-media-llc,"Lead Me Media, LLC",policy.leadmemedia.com,other,alive,captcha_form,Removal form is behind a CAPTCHA widget and no usable removal email was found,recaptcha_v3,6LfIx1EqAAAAAGiZ-aHd5nEOq8i33jgC9dHqvQXi,score,true,,true,,web_form
 lenso-ai,Lenso AI,lenso.ai,other,alive,captcha_form,Removal form is behind a CAPTCHA widget and no usable removal email was found,turnstile,,checkbox,true,,true,,web_form
 licenseplatedata,LicensePlateData,licenseplatedata.com,other,alive,captcha_form,Removal form is behind a CAPTCHA widget and no usable removal email was found,turnstile,0x4AAAAAAB5Jbptit0q4na62,checkbox,true,,true,,web_form
-live-data-technologies-inc,"Live Data Technologies, Inc.",livedatatech.com,other,alive,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,,,,,
 logictree-inc-data247-ezcnam,"LogicTree, Inc. (Data247, EZCNAM)",data247.com,other,alive,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,,,,,
 lookify,Lookify,lookify.io,other,blocked,phone,The only published channel is a phone number,turnstile,,,false,turnstile,,,phone
 m1-data-and-analytics-llc,"M1 Data & Analytics, LLC",m1-data.com,other,alive,generic_inbox,"Only a generic inbox was found, and the page does not say to use it for removal",recaptcha_v3,6LeT3D8fAAAAADODgURSYJATZv8SYVmK_mN0f8r8,score,false,,,service@m1-data.com,email;phone
@@ -236,14 +233,13 @@ zlookup,Zlookup,zlookup.com,other,alive,captcha_form,Removal form is behind a CA
 absolute-people-search,Absolute People Search,absolutepeoplesearch.com,people-search,alive,captcha_form,Removal form is behind a CAPTCHA widget and no usable removal email was found,recaptcha_v2,6Lcs1CUjAAAAAGboweLdAjYCmgw9I1ofpf6TR32i,,false,recaptcha_v2,true,,web_form;postal_mail;phone
 advancedbackgroundchecks,AdvancedBackgroundChecks,advancedbackgroundchecks.com,people-search,alive,captcha_form,Removal form is behind a CAPTCHA widget and no usable removal email was found,recaptcha_v2,6LdYzessAAAAACnQqZugXee4rNpMsD-6X1paSkS8,invisible,true,,true,,web_form;phone
 airdrietoday-obituaries,AirdrieToday Obituaries,airdrietoday.com,people-search,alive,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,,,,,
-alliance-funeraire-du-royaume,Alliance funéraire du Royaume,afdr.coop,people-search,alive,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,,,,,
+alliance-funeraire-du-royaume,Alliance funéraire du Royaume,afdr.coop,people-search,alive,phone,The only published channel is a phone number,,,,,,,,phone
 alumni-us,Alumni US,alumnius.net,people-search,alive,captcha_form,Removal form is behind a CAPTCHA widget and no usable removal email was found,recaptcha_v2,6LeJZx8UAAAAAG1Pz-HImpKLjGd-bKLV7BLw7mVf,checkbox,true,,true,,web_form
 americaphonebook,AmericaPhoneBook,americaphonebook.com,people-search,alive,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,false,,,,
 ancestry,Ancestry,ancestry.com,people-search,alive,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,false,,,,
 archives-com-ancestry,Archives.com (Ancestry),archives.com,people-search,alive,captcha_form,Removal form is behind a CAPTCHA widget and no usable removal email was found,recaptcha_v2,6LdowFQiAAAAAHzl-2ZUXBdU4BuMx1gIN76GUj78,checkbox,true,recaptcha_v2,true,,web_form;phone
 background-hawk-truthfinder,Background Hawk (TruthFinder),backgroundhawk.com,people-search,alive,captcha_no_form,A CAPTCHA widget is on the removal page and no form fields or usable email were stored,recaptcha_enterprise,6LdFxVQtAAAAAK6XNodX8W6CM56PH1xTrPGVZSqh,invisible,true,,,,
 barrietoday-obituaries,BarrieToday Obituaries,barrietoday.com,people-search,alive,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,,,,,
-basic-funerals,Basic Funerals,basicfunerals.ca,people-search,alive,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,,,,,
 baytoday-obituaries,BayToday Obituaries,baytoday.ca,people-search,alive,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,,,,,
 bradfordtoday-obituaries,BradfordToday Obituaries,bradfordtoday.ca,people-search,alive,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,,,,,
 bumper-beenverified-family,Bumper (BeenVerified family),bumper.com,people-search,alive,phone_postal,Phone and a mailing address are the only channels,recaptcha_v2,,,false,,,,postal_mail;phone
@@ -252,7 +248,6 @@ callercenter,CallerCenter,callercenter.com,people-search,blocked,bot_wall,The op
 cambridgetoday-obituaries,CambridgeToday Obituaries,cambridgetoday.ca,people-search,alive,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,,,,,
 canada-pages,Canada Pages,canadapages.com,people-search,alive,captcha_form,Removal form is behind a CAPTCHA widget and no usable removal email was found,recaptcha_v2,6LdsTDwUAAAAAJ-EC9YOGnZHYAWSOS5IHoW7GQu7,,,,true,,web_form;postal_mail
 canada411,Canada411,canada411.ca,people-search,alive,phone,The only published channel is a phone number,,,,false,,,,phone
-canadian-obituaries,Canadian Obituaries,canadianobituaries.com,people-search,alive,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,,,,,
 canadian-who-s-who,Canadian Who's Who,canadianwhoswho.ca,people-search,alive,captcha_form,Removal form is behind a CAPTCHA widget and no usable removal email was found,recaptcha_v2,,,,,true,info@canadianwhoswho.ca,web_form;email;phone
 castanet-obituaries,Castanet Obituaries,castanet.net,people-search,alive,captcha_form,Removal form is behind a CAPTCHA widget and no usable removal email was found,turnstile,0x4AAAAAAADpU7JZMPJXot_O,,,,true,news@castanet.net;classifieds@castanet.net;forums@castanet.net;letters@castanet.net;sales@castanet.net,web_form;email;phone
 checkpeople,CheckPeople,checkpeople.com,people-search,blocked,bot_wall,The opt-out URL returned a bot wall and a browser retry did not reveal a removal channel,,,,false,,,,
@@ -262,13 +257,12 @@ cocofinder,CocoFinder,cocofinder.com,people-search,dead,no_channel,"The page loa
 cocofinder-net,CocoFinder.net,cocofinder.net,people-search,dead,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,false,,,,
 collingwoodtoday-obituaries,CollingwoodToday Obituaries,collingwoodtoday.ca,people-search,alive,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,,,,,
 confidentialphonelookup,ConfidentialPhoneLookup,confidentialphonelookup.com,people-search,alive,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,false,,,,
-cooperative-funeraire-brunet,Coopérative funéraire Brunet,coopfbrunet.com,people-search,alive,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,,,,,
+cooperative-funeraire-brunet,Coopérative funéraire Brunet,coopfbrunet.com,people-search,alive,phone,The only published channel is a phone number,,,,,,,,phone
 cooperative-funeraire-de-l-abitibi,Coopérative funéraire de l'Abitibi,cfa.coop,people-search,alive,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,,,,,
-cooperative-funeraire-de-l-estrie,Coopérative funéraire de l'Estrie,coopfuneraireestrie.com,people-search,alive,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,,,,,
-cooperative-funeraire-de-l-outaouais,Coopérative funéraire de l'Outaouais,cfo.coop,people-search,alive,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,,,,,
-cooperative-funeraire-des-deux-rives,Coopérative funéraire des Deux Rives,coopfuneraire2rives.com,people-search,alive,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,,,,,
+cooperative-funeraire-de-l-outaouais,Coopérative funéraire de l'Outaouais,cfo.coop,people-search,alive,phone,The only published channel is a phone number,,,,,,,,phone
+cooperative-funeraire-des-deux-rives,Coopérative funéraire des Deux Rives,coopfuneraire2rives.com,people-search,alive,phone,The only published channel is a phone number,,,,,,,,phone
 cooperative-funeraire-des-eaux-vives,Coopérative funéraire des Eaux Vives,eauxvives.ca,people-search,alive,phone,The only published channel is a phone number,,,,,,,,phone
-cooperative-funeraire-des-laurentides,Coopérative funéraire des Laurentides,coopfunerairelaurentides.org,people-search,alive,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,,,,,
+cooperative-funeraire-des-laurentides,Coopérative funéraire des Laurentides,coopfunerairelaurentides.org,people-search,alive,phone,The only published channel is a phone number,,,,,,,,phone
 cooperative-funeraire-du-grand-montreal,Coopérative funéraire du Grand Montréal,cfgrandmontreal.com,people-search,alive,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,,,,,
 cooperative-funeraire-du-temiscamingue,Coopérative funéraire du Témiscamingue,cftemiscamingue.com,people-search,alive,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,,,,,
 cooperative-funeraire-haute-cote-nord-manicouagan,Coopérative funéraire Haute-Côte-Nord - Manicouagan,cfhcn.ca,people-search,alive,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,,,,,
@@ -276,8 +270,6 @@ cooperative-funeraire-matawinie-montcalm,Coopérative funéraire Matawinie-Montc
 courtrec-com,CourtRec.com,courtrec.com,people-search,alive,generic_inbox,"Only a generic inbox was found, and the page does not say to use it for removal",,,,false,,,support@courtrec.com,email;phone
 cyberbackgroundchecks,CyberBackgroundChecks,cyberbackgroundchecks.com,people-search,alive,generic_inbox,"Only a generic inbox was found, and the page does not say to use it for removal",,,,false,,,support@cyberbackgroundchecks.com,email
 dewarrants-org-infotracer-form,dewarrants.org (InfoTracer form),dewarrants.org,people-search,blocked,phone,The only published channel is a phone number,,,,false,,,,phone
-dignity-memorial,Dignity Memorial,dignitymemorial.com,people-search,alive,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,,,,,
-domaine-funeraire,Domaine funéraire (Corporation des thanatologues du Québec),domainefuneraire.com,people-search,alive,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,,,,,
 echovita,Echovita,echovita.com,people-search,alive,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,,,,,
 electronic-voice-services-inc-telephonelists-biz,"Electronic Voice Services, Inc. (telephonelists.biz)",telephonelists.biz,people-search,alive,phone,The only published channel is a phone number,,,,false,,,,phone
 elliotlaketoday-obituaries,ElliotLakeToday Obituaries,elliotlaketoday.com,people-search,alive,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,,,,,
@@ -290,12 +282,11 @@ fastpeoplesearch-io,FastPeopleSearch.io,fastpeoplesearch.io,people-search,dead,n
 findpeoplefast-net,FindPeopleFast.net,findpeoplefast.net,people-search,robots_disallowed,robots,robots.txt disallows the client. A later read still found no removal channel,,,,false,,,,
 findpeoplesearch,FindPeopleSearch,findpeoplesearch.com,people-search,dead,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,false,,,,
 fonecta,Fonecta,fonecta.fi,people-search,alive,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,,,,,
-fqsg-avis-de-deces,FQSG Avis de décès,federationgenealogie.qc.ca,people-search,alive,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,,,,,
+fqsg-avis-de-deces,FQSG Avis de décès,federationgenealogie.qc.ca,people-search,alive,phone,The only published channel is a phone number,,,,,,,,phone
 freepeopledirectory-spokeo-data,FreePeopleDirectory (Spokeo data),freepeopledirectory.com,people-search,alive,captcha_form,Removal form is behind a CAPTCHA widget and no usable removal email was found,recaptcha_v2,6LdwCOUsAAAAACok53xn1N9qQYsxPqzi1h3fMPqL,,false,,true,,web_form
 freepeoplesearch-com,FreePeopleSearch.com,freepeoplesearch.com,people-search,blocked,bot_wall,The opt-out URL returned a bot wall and a browser retry did not reveal a removal channel,,,,false,,,,
 freephonetracer-beenverified-form,FreePhoneTracer (BeenVerified form),freephonetracer.com,people-search,alive,phone,The only published channel is a phone number,,,,false,,,,phone
 funeral-co-operative-of-ottawa,Funeral Co-operative of Ottawa,fco-cfo.coop,people-search,alive,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,,,,,
-geni,Geni,geni.com,people-search,alive,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,,,,,
 getcontact,GetContact,getcontact.com,people-search,alive,generic_inbox,"Only a generic inbox was found, and the page does not say to use it for removal",,,,false,,,support@getcontact.com,email
 govwarrantsearch-org-infotracer-form,govwarrantsearch.org (InfoTracer form),govwarrantsearch.org,people-search,blocked,bot_wall,The opt-out URL returned a bot wall and a browser retry did not reveal a removal channel,,,,false,,,,
 guelphtoday-obituaries,GuelphToday Obituaries,guelphtoday.com,people-search,alive,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,,,,,
@@ -306,16 +297,14 @@ infomatics-llc-network-peoplesearch123-com,Infomatics LLC network (peoplesearch1
 infomatics-llc-network-peoplesearcher-com,Infomatics LLC network (peoplesearcher.com),peoplesearcher.com,people-search,error,fetch_error,The opt-out URL failed before a page was read,,,,false,,,,
 infomatics-llc-network-peoplesearchusa-org,Infomatics LLC network (peoplesearchusa.org),peoplesearchusa.org,people-search,error,fetch_error,The opt-out URL failed before a page was read,,,,false,,,,
 infotracer-network,InfoTracer network,clicksearch.us,people-search,blocked,bot_wall,The opt-out URL returned a bot wall and a browser retry did not reveal a removal channel,,,,false,,,,
-inmemoriam,InMemoriam,inmemoriam.ca,people-search,alive,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,,,,,
 innisfiltoday-obituaries,InnisfilToday Obituaries,innisfiltoday.ca,people-search,alive,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,,,,,
 instantcheckmate-peopleconnect,InstantCheckmate (PeopleConnect),instantcheckmate.com,people-search,alive,phone,The only published channel is a phone number,,,,false,,,,phone
 instantcheckspy-truthfinder,InstantCheckSpy (TruthFinder),instantcheckspy.com,people-search,alive,phone,The only published channel is a phone number,recaptcha_enterprise,6LdFxVQtAAAAAK6XNodX8W6CM56PH1xTrPGVZSqh,invisible,true,,,,phone
 intelius-peopleconnect,Intelius (PeopleConnect),intelius.com,people-search,alive,phone,The only published channel is a phone number,,,,false,,,,phone
-interment-net,Interment.net,interment.net,people-search,alive,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,,,,,
-kearney-funeral-services,Kearney Funeral Services,kearneyfs.com,people-search,alive,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,,,,,
+kearney-funeral-services,Kearney Funeral Services,kearneyfs.com,people-search,alive,phone,The only published channel is a phone number,,,,,,,,phone
 krak-dk,"Krak (krak.dk, personer)",krak.dk,people-search,alive,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,,,,,
 lakelandtoday-obituaries,LakelandToday Obituaries,lakelandtoday.ca,people-search,alive,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,,,,,
-le-necrologue,Le Nécrologue,lenecrologue.com,people-search,alive,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,,,,,
+le-necrologue,Le Nécrologue,lenecrologue.com,people-search,alive,phone,The only published channel is a phone number,,,,,,,,phone
 legacy-com,Legacy.com,legacy.com,people-search,alive,phone,The only published channel is a phone number,,,,,,,,phone
 locatefamily,LocateFamily,locatefamily.com,people-search,alive,captcha_no_form,A CAPTCHA widget is on the removal page and no form fields or usable email were stored,recaptcha_v2,6LcZ1XsUAAAAACe-4vEKFDHwD0gRVBU7L6_BVPEP,,false,,,,
 locatesmarter,LocateSmarter,locatesmarter.com,people-search,alive,captcha_form,Removal form is behind a CAPTCHA widget and no usable removal email was found,recaptcha_v2,6LcRRtQtAAAAAFPgIlBRmX7fNqcujXUGmEoAw07i,checkbox,true,,true,,web_form;phone
@@ -323,7 +312,6 @@ merinfo-se,Merinfo.se,merinfo.se,people-search,alive,captcha_no_form,A CAPTCHA w
 midlandtoday-obituaries,MidlandToday Obituaries,midlandtoday.ca,people-search,alive,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,,,,,
 miltontoday-obituaries,MiltonToday Obituaries,miltontoday.ca,people-search,alive,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,,,,,
 moosejawtoday-obituaries,MooseJawToday Obituaries,moosejawtoday.com,people-search,alive,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,,,,,
-mount-pleasant-group,Mount Pleasant Group,mountpleasantgroup.com,people-search,alive,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,,,,,
 mountainviewtoday-obituaries,MountainViewToday Obituaries,mountainviewtoday.ca,people-search,alive,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,,,,,
 mylife,MyLife,mylife.com,people-search,blocked,portal,An official privacy portal is linked and its fields were not stored,,,,false,,,,official_portal
 mysask411,Mysask411 (DirectWest Saskatchewan white pages),mysask411.com,people-search,alive,phone,The only published channel is a phone number,,,,,,,,phone
@@ -333,7 +321,7 @@ newmarkettoday-obituaries,NewmarketToday Obituaries,newmarkettoday.ca,people-sea
 nocallername,NoCallerName,nocallername.com,people-search,alive,generic_inbox,"Only a generic inbox was found, and the page does not say to use it for removal",recaptcha_v2,,,true,,,support@nocallername.com;biz@nocallername.com,email;phone
 northcarolinapublicrecords-org-truthfinder,NorthCarolinaPublicRecords.org (TruthFinder),northcarolinapublicrecords.org,people-search,dead,captcha_no_form,A CAPTCHA widget is on the removal page and no form fields or usable email were stored,recaptcha_enterprise,6LdFxVQtAAAAAK6XNodX8W6CM56PH1xTrPGVZSqh,invisible,true,,,,
 numberguru-beenverified-family,NumberGuru (BeenVerified family),numberguru.com,people-search,alive,phone_postal,Phone and a mailing address are the only channels,recaptcha_v2,,,false,,,,postal_mail;phone
-necrologie-ca,Nécrologie.ca,necrologie.ca,people-search,alive,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,,,,,
+necrologie-ca,Nécrologie.ca,necrologie.ca,people-search,alive,generic_inbox,"Only a generic inbox was found, and the page does not say to use it for removal",,,,,,,info@necrologie.ca,email
 okotokstoday-obituaries,OkotoksToday Obituaries,okotokstoday.ca,people-search,alive,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,,,,,
 openpeoplesearch,OpenPeopleSearch,openpeoplesearch.com,people-search,dead,generic_inbox,"Only a generic inbox was found, and the page does not say to use it for removal",,,,true,,,info@openpeoplesearch.com,email;postal_mail
 orilliamatters-obituaries,OrilliaMatters Obituaries,orilliamatters.com,people-search,alive,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,,,,,

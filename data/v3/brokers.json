@@ -1,23 +1,22 @@
 {
  "schema_version": "3.0.0",
- "checked_at": "2026-11-02T06:55:15+00:00",
+ "checked_at": "2026-11-02T09:58:23+00:00",
  "method": "Public pages only: homepage, catalog URL, and mapped privacy, contact, and legal links. robots.txt honored. No form submitted, no login, no CAPTCHA solved. A browser opened lookup homepages the static fetch never read, and catalog URLs that were blocked or failed, when robots.txt allowed the URL. Image fields are URLs, not copied files. People-search listing URLs are not stored. Null means the fetched page did not establish that fact. Every catalog id has a record.",
  "broker_count": 839,
  "counts": {
   "liveness": {
-   "alive": 644,
+   "alive": 676,
    "blocked": 51,
    "error": 22,
-   "not_checked": 32,
    "opt_out_missing": 1,
    "robots_disallowed": 89
   },
-  "with_logo": 682,
-  "with_image": 682,
-  "with_search": 411,
-  "with_email": 377,
-  "with_captcha": 339,
-  "with_form": 152
+  "with_logo": 714,
+  "with_image": 714,
+  "with_search": 438,
+  "with_email": 385,
+  "with_captcha": 341,
+  "with_form": 162
  },
  "brokers": {
   "alaska-arrests": {
@@ -59713,18 +59712,34 @@
    "name": "Samba TV, Inc.",
    "category": "other",
    "domain": "samba.com",
-   "checked_at": "2026-11-02T06:54:44+00:00",
-   "liveness": "not_checked",
-   "liveness_detail": "no crawl result in this log",
-   "homepage": null,
-   "logo_url": null,
-   "images": [],
+   "checked_at": "2026-11-02T09:57:20+00:00",
+   "liveness": "alive",
+   "liveness_detail": "catalog URL loaded",
+   "homepage": "https://samba.com/",
+   "logo_url": "https://framerusercontent.com/images/fZarkObP4dVHhUxRLd8NOsj3Jo0.png",
+   "images": [
+    {
+     "url": "https://framerusercontent.com/images/Lgs75RiIjCvkpdhdkHiMTzADnM.png",
+     "kind": "icon",
+     "source_page": "https://samba.com/"
+    },
+    {
+     "url": "https://framerusercontent.com/images/0edrdRzz4tkA2YUilkvXlr8IEWM.png",
+     "kind": "icon",
+     "source_page": "https://samba.com/"
+    },
+    {
+     "url": "https://framerusercontent.com/images/fZarkObP4dVHhUxRLd8NOsj3Jo0.png",
+     "kind": "apple_touch_icon",
+     "source_page": "https://samba.com/"
+    }
+   ],
    "theme_color": null,
    "languages": [],
    "legal_name": null,
    "search": {
-    "available": null,
-    "method": "unknown",
+    "available": false,
+    "method": "none",
     "page_url": null,
     "form_action": null,
     "inputs": [],
@@ -59735,8 +59750,8 @@
    },
    "removal": {
     "url": "https://samba.com/privacy-center/privacy-policy",
-    "final_url": null,
-    "http_status": null,
+    "final_url": "https://samba.com/privacy-center/privacy-policy",
+    "http_status": 200,
     "kinds": [
      "opt_out"
     ],
@@ -59761,18 +59776,48 @@
    },
    "bot_defense": {
     "vendor": null,
-    "outcome": "unknown"
+    "outcome": "none"
    },
    "legal": {
-    "privacy_policy_url": null,
+    "privacy_policy_url": "https://samba.com/privacy-center/privacy-policy",
     "terms_url": null,
     "automation_prohibited": null,
     "automation_clause": null,
-    "residency": [],
+    "residency": [
+     "US-CA",
+     "US"
+    ],
     "authorized_agent": null,
-    "data_categories": []
+    "data_categories": [
+     "internet_activity"
+    ]
    },
-   "pages": []
+   "pages": [
+    {
+     "url": "https://samba.com/",
+     "final_url": "https://samba.com/",
+     "status": 200,
+     "role": "home",
+     "title": "Samba",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.samba.com/",
+     "final_url": "https://samba.com/",
+     "status": 200,
+     "role": "home",
+     "title": "Samba",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://samba.com/privacy-center/privacy-policy",
+     "final_url": "https://samba.com/privacy-center/privacy-policy",
+     "status": 200,
+     "role": "catalog",
+     "title": "Samba",
+     "liveness": "alive"
+    }
+   ]
   },
   "sbfe-llc": {
    "schema_version": "3.0.0",
@@ -118095,18 +118140,101 @@
    "name": "Live Data Technologies, Inc.",
    "category": "other",
    "domain": "livedatatech.com",
-   "checked_at": "2026-11-02T06:55:01+00:00",
-   "liveness": "not_checked",
-   "liveness_detail": "no crawl result in this log",
-   "homepage": null,
-   "logo_url": null,
-   "images": [],
+   "checked_at": "2026-11-02T09:57:16+00:00",
+   "liveness": "alive",
+   "liveness_detail": "catalog URL loaded",
+   "homepage": "https://www.livedatatech.com/",
+   "logo_url": "https://cdn.prod.website-files.com/6571f8eafc0f1150ea56848a/6ae4ccd3f640da1a6ad1441a_6ae4c9e8dc7a3e5204716d30_logo-poets-and-quants-negative.png",
+   "images": [
+    {
+     "url": "https://cdn.prod.website-files.com/65705b930fb2e670f3206741/65ce5d7e5c14a33817daac5d_Group%2044189.png",
+     "kind": "icon",
+     "source_page": "https://www.livedatatech.com/"
+    },
+    {
+     "url": "https://cdn.prod.website-files.com/65705b930fb2e670f3206741/657cabd4848bed1e078a4105_Frame%202182.png",
+     "kind": "apple_touch_icon",
+     "source_page": "https://www.livedatatech.com/"
+    },
+    {
+     "url": "https://cdn.prod.website-files.com/65705b930fb2e670f3206741/67ae74ec2cc4de28903decee_image%201792.png",
+     "kind": "og_image",
+     "source_page": "https://www.livedatatech.com/"
+    },
+    {
+     "url": "https://cdn.prod.website-files.com/65705b930fb2e670f3206741/657cb4efdeed95030646ede2_Live%20Data%20Logo.svg",
+     "kind": "json_ld",
+     "source_page": "https://www.livedatatech.com/"
+    },
+    {
+     "url": "https://cdn.prod.website-files.com/6571f8eafc0f1150ea56848a/6ae4ccd3f640da1a6ad1441a_6ae4c9e8dc7a3e5204716d30_logo-poets-and-quants-negative.png",
+     "kind": "logo",
+     "source_page": "https://www.livedatatech.com/"
+    },
+    {
+     "url": "https://cdn.prod.website-files.com/6571f8eafc0f1150ea56848a/6ac68545c109302704ec6ac5_6ac6852bc78e1b250a03ec66_logo-the-cmo-club-negative.png",
+     "kind": "logo",
+     "source_page": "https://www.livedatatech.com/"
+    },
+    {
+     "url": "https://cdn.prod.website-files.com/6571f8eafc0f1150ea56848a/664f6c3e897104198c19a61c_Frame-44261.svg",
+     "kind": "logo",
+     "source_page": "https://www.livedatatech.com/"
+    },
+    {
+     "url": "https://cdn.prod.website-files.com/6571f8eafc0f1150ea56848a/6a556cb603cd1552b1e8379b_logo-mind-the-product.svg",
+     "kind": "logo",
+     "source_page": "https://www.livedatatech.com/"
+    },
+    {
+     "url": "https://cdn.prod.website-files.com/6571f8eafc0f1150ea56848a/6ab6bf2ee48381cd3357af29_6a5e4e59223ec7e2cb43d8e1_logo-business-times.svg",
+     "kind": "logo",
+     "source_page": "https://www.livedatatech.com/"
+    },
+    {
+     "url": "https://cdn.prod.website-files.com/6571f8eafc0f1150ea56848a/6ab6bf6a60e95da32d0e3813_6a5567db5787a240ff743d65_logo-bloomberg.svg",
+     "kind": "logo",
+     "source_page": "https://www.livedatatech.com/"
+    },
+    {
+     "url": "https://cdn.prod.website-files.com/6571f8eafc0f1150ea56848a/6792c4976b2b6f4071397d66_image.png",
+     "kind": "logo",
+     "source_page": "https://www.livedatatech.com/"
+    },
+    {
+     "url": "https://cdn.prod.website-files.com/6571f8eafc0f1150ea56848a/6ab6bf6a60e95da32d0e3816_6a556b86405a3a8ab870ae7c_logo-tfn.png",
+     "kind": "logo",
+     "source_page": "https://www.livedatatech.com/"
+    },
+    {
+     "url": "https://cdn.prod.website-files.com/6571f8eafc0f1150ea56848a/6ab6bf6a60e95da32d0e3819_6a556e04b42db4aaad8fa004_logo-business-insider.svg",
+     "kind": "logo",
+     "source_page": "https://www.livedatatech.com/"
+    },
+    {
+     "url": "https://cdn.prod.website-files.com/6571f8eafc0f1150ea56848a/6a556eda711856fd9583e0a1_logo-cnbc.svg",
+     "kind": "logo",
+     "source_page": "https://www.livedatatech.com/"
+    },
+    {
+     "url": "https://cdn.prod.website-files.com/6571f8eafc0f1150ea56848a/67860e4dda02945f81818615_image.png",
+     "kind": "logo",
+     "source_page": "https://www.livedatatech.com/"
+    },
+    {
+     "url": "https://cdn.prod.website-files.com/6571f8eafc0f1150ea56848a/664f71bb1e24a7d497a7ea62_Frame-44263.svg",
+     "kind": "logo",
+     "source_page": "https://www.livedatatech.com/"
+    }
+   ],
    "theme_color": null,
-   "languages": [],
-   "legal_name": null,
+   "languages": [
+    "en"
+   ],
+   "legal_name": "Live Data Technologies",
    "search": {
-    "available": null,
-    "method": "unknown",
+    "available": false,
+    "method": "none",
     "page_url": null,
     "form_action": null,
     "inputs": [],
@@ -118117,23 +118245,69 @@
    },
    "removal": {
     "url": "https://www.livedatatech.com/opt-out",
-    "final_url": null,
-    "http_status": null,
+    "final_url": "https://www.livedatatech.com/opt-out",
+    "http_status": 200,
     "kinds": [
-     "opt_out"
+     "opt_out",
+     "do_not_sell"
     ],
-    "channels": [],
-    "emails": [],
+    "channels": [
+     "web_form",
+     "email"
+    ],
+    "emails": [
+     {
+      "email": "remove@livedatatechnologies.com",
+      "confidence": "uncertain",
+      "source_url": "https://www.livedatatech.com/opt-out"
+     }
+    ],
     "phones": [],
     "postal_address": null,
     "portal": null,
-    "form_fields": [],
+    "form_fields": [
+     {
+      "name": "Full-Name",
+      "type": "text",
+      "canonical": "full_name",
+      "required": true,
+      "autocomplete": null,
+      "placeholder": "Your full name *"
+     },
+     {
+      "name": "Work-Email",
+      "type": "email",
+      "canonical": "email",
+      "required": true,
+      "autocomplete": null,
+      "placeholder": "Your work email *"
+     },
+     {
+      "name": "Postal-Address",
+      "type": "text",
+      "canonical": "postal_code",
+      "required": true,
+      "autocomplete": null,
+      "placeholder": "Your postal address *"
+     },
+     {
+      "name": "Message",
+      "type": "text",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": "I'd like to request an opt-out according to CCPA"
+     }
+    ],
     "csrf_field_name": null,
     "requires_profile_url": null,
     "captcha": {
-     "provider": null,
-     "sitekey": null,
-     "pages": []
+     "provider": "recaptcha_v2",
+     "sitekey": "6Le5WqMrAAAAAPPKSz2F2e0gTWIT2LHpczi-8SYI",
+     "pages": [
+      "https://www.livedatatech.com/",
+      "https://www.livedatatech.com/opt-out"
+     ]
     },
     "consent_vendor": null,
     "success_text": null,
@@ -118143,18 +118317,48 @@
    },
    "bot_defense": {
     "vendor": null,
-    "outcome": "unknown"
+    "outcome": "none"
    },
    "legal": {
     "privacy_policy_url": null,
     "terms_url": null,
     "automation_prohibited": null,
     "automation_clause": null,
-    "residency": [],
+    "residency": [
+     "US-CA",
+     "US"
+    ],
     "authorized_agent": null,
-    "data_categories": []
+    "data_categories": [
+     "identifiers"
+    ]
    },
-   "pages": []
+   "pages": [
+    {
+     "url": "https://livedatatech.com/",
+     "final_url": "https://www.livedatatech.com/",
+     "status": 200,
+     "role": "home",
+     "title": "Job change data: who joined, who left, where they went | Live Data",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.livedatatech.com/",
+     "final_url": "https://www.livedatatech.com/",
+     "status": 200,
+     "role": "home",
+     "title": "Job change data: who joined, who left, where they went | Live Data",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.livedatatech.com/opt-out",
+     "final_url": "https://www.livedatatech.com/opt-out",
+     "status": 200,
+     "role": "catalog",
+     "title": "Optout — Live Data Technologies",
+     "liveness": "alive"
+    }
+   ]
   },
   "modigie-inc": {
    "schema_version": "3.0.0",
@@ -154918,39 +155122,316 @@
    "name": "Data Axle Canada",
    "category": "marketing",
    "domain": "dataaxlecanada.ca",
-   "checked_at": "2026-11-02T06:55:11+00:00",
-   "liveness": "not_checked",
-   "liveness_detail": "no crawl result in this log",
-   "homepage": null,
-   "logo_url": null,
-   "images": [],
+   "checked_at": "2026-11-02T09:57:09+00:00",
+   "liveness": "alive",
+   "liveness_detail": "catalog URL loaded",
+   "homepage": "https://www.dataaxlecanada.ca/",
+   "logo_url": "https://www.dataaxlecanada.ca/wp-content/uploads/2021/02/data_axle_canada_logo.png",
+   "images": [
+    {
+     "url": "https://www.dataaxlecanada.ca/wp-content/themes/data_axle_canada/img/favicon.ico",
+     "kind": "icon",
+     "source_page": "https://www.dataaxlecanada.ca/"
+    },
+    {
+     "url": "https://www.infocanada.ca/wp-content/uploads/2021/03/DA-Canada.png",
+     "kind": "og_image",
+     "source_page": "https://www.dataaxlecanada.ca/"
+    },
+    {
+     "url": "https://www.dataaxlecanada.ca/wp-content/uploads/2021/02/data_axle_canada_logo.png",
+     "kind": "logo",
+     "source_page": "https://www.dataaxlecanada.ca/"
+    },
+    {
+     "url": "https://www.dataaxlecanada.ca/wp-content/uploads/2021/02/data_axle_canada_footer.png",
+     "kind": "logo",
+     "source_page": "https://www.dataaxlecanada.ca/"
+    },
+    {
+     "url": "https://www.infocanada.ca/wp-content/uploads/2021/02/blue-list-illus.png",
+     "kind": "twitter_image",
+     "source_page": "https://www.dataaxlecanada.ca/privacy-policy/"
+    }
+   ],
    "theme_color": null,
-   "languages": [],
-   "legal_name": null,
+   "languages": [
+    "en"
+   ],
+   "legal_name": "Data Axle Canada",
    "search": {
-    "available": null,
-    "method": "unknown",
-    "page_url": null,
-    "form_action": null,
-    "inputs": [],
-    "url_pattern": null,
+    "available": true,
+    "method": "http_form_post",
+    "page_url": "https://www.dataaxlecanada.ca/",
+    "form_action": "https://www.dataaxlecanada.ca/",
+    "inputs": [
+     {
+      "name": "input_1",
+      "type": "text",
+      "canonical": "first_name",
+      "required": false,
+      "autocomplete": null,
+      "placeholder": "First Name"
+     },
+     {
+      "name": "input_2",
+      "type": "text",
+      "canonical": "last_name",
+      "required": false,
+      "autocomplete": null,
+      "placeholder": "Last Name"
+     },
+     {
+      "name": "input_3",
+      "type": "text",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": "Company"
+     },
+     {
+      "name": "input_4",
+      "type": "tel",
+      "canonical": "phone",
+      "required": false,
+      "autocomplete": null,
+      "placeholder": "Phone"
+     },
+     {
+      "name": "input_5",
+      "type": "email",
+      "canonical": "email",
+      "required": false,
+      "autocomplete": null,
+      "placeholder": "Email Address"
+     },
+     {
+      "name": "input_21",
+      "type": "password",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": "Password"
+     },
+     {
+      "name": "input_19",
+      "type": "hidden",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "input_22",
+      "type": "hidden",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "input_23",
+      "type": "hidden",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "input_26",
+      "type": "hidden",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "input_27",
+      "type": "hidden",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "input_29",
+      "type": "hidden",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "input_30",
+      "type": "hidden",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "input_31",
+      "type": "hidden",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "gform_submission_method",
+      "type": "hidden",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "gform_theme",
+      "type": "hidden",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "gform_style_settings",
+      "type": "hidden",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "is_submit_2",
+      "type": "hidden",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "gform_submit",
+      "type": "hidden",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "gform_currency",
+      "type": "hidden",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "gform_unique_id",
+      "type": "hidden",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "state_2",
+      "type": "hidden",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "gform_target_page_number_2",
+      "type": "hidden",
+      "canonical": null,
+      "required": false,
+      "autocomplete": "off",
+      "placeholder": null
+     },
+     {
+      "name": "gform_source_page_number_2",
+      "type": "hidden",
+      "canonical": null,
+      "required": false,
+      "autocomplete": "off",
+      "placeholder": null
+     },
+     {
+      "name": "gform_field_values",
+      "type": "hidden",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     }
+    ],
+    "url_pattern": "https://www.dataaxlecanada.ca/",
     "directory_prefixes": [],
     "paywall": null,
     "login_wall": null
    },
    "removal": {
     "url": "https://www.dataaxlecanada.ca/privacy-policy/",
-    "final_url": null,
-    "http_status": null,
+    "final_url": "https://www.dataaxlecanada.ca/privacy-policy/",
+    "http_status": 200,
     "kinds": [
      "opt_out"
     ],
-    "channels": [],
+    "channels": [
+     "web_form",
+     "phone"
+    ],
     "emails": [],
-    "phones": [],
+    "phones": [
+     "800.565.7224",
+     "(402) 836-3377",
+     "(402) 836-7055"
+    ],
     "postal_address": null,
     "portal": null,
-    "form_fields": [],
+    "form_fields": [
+     {
+      "name": "input_1",
+      "type": "text",
+      "canonical": "first_name",
+      "required": false,
+      "autocomplete": null,
+      "placeholder": "First Name"
+     },
+     {
+      "name": "input_2",
+      "type": "text",
+      "canonical": "last_name",
+      "required": false,
+      "autocomplete": null,
+      "placeholder": "Last Name"
+     },
+     {
+      "name": "input_3",
+      "type": "text",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": "Business Name"
+     },
+     {
+      "name": "input_4",
+      "type": "tel",
+      "canonical": "phone",
+      "required": false,
+      "autocomplete": null,
+      "placeholder": "Business Phone"
+     },
+     {
+      "name": "input_5",
+      "type": "email",
+      "canonical": "email",
+      "required": false,
+      "autocomplete": null,
+      "placeholder": "Email Address"
+     }
+    ],
     "csrf_field_name": null,
     "requires_profile_url": null,
     "captcha": {
@@ -154966,18 +155447,48 @@
    },
    "bot_defense": {
     "vendor": null,
-    "outcome": "unknown"
+    "outcome": "none"
    },
    "legal": {
-    "privacy_policy_url": null,
+    "privacy_policy_url": "https://www.dataaxlecanada.ca/privacy-policy/",
     "terms_url": null,
     "automation_prohibited": null,
     "automation_clause": null,
-    "residency": [],
-    "authorized_agent": null,
-    "data_categories": []
+    "residency": [
+     "CA"
+    ],
+    "authorized_agent": true,
+    "data_categories": [
+     "identifiers",
+     "internet_activity"
+    ]
    },
-   "pages": []
+   "pages": [
+    {
+     "url": "https://dataaxlecanada.ca/",
+     "final_url": "https://www.dataaxlecanada.ca/",
+     "status": 200,
+     "role": "home",
+     "title": "Data Axle Canada | Mailing Lists | Business & Consumer | Marketing Campaigns",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.dataaxlecanada.ca/",
+     "final_url": "https://www.dataaxlecanada.ca/",
+     "status": 200,
+     "role": "home",
+     "title": "Data Axle Canada | Mailing Lists | Business & Consumer | Marketing Campaigns",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.dataaxlecanada.ca/privacy-policy/",
+     "final_url": "https://www.dataaxlecanada.ca/privacy-policy/",
+     "status": 200,
+     "role": "catalog",
+     "title": "Privacy Policy | Resources | Data Axle Canada",
+     "liveness": "alive"
+    }
+   ]
   },
   "prospects-influential": {
    "schema_version": "3.0.0",
@@ -154985,30 +155496,57 @@
    "name": "Prospects Influential",
    "category": "marketing",
    "domain": "prospectsinfluential.com",
-   "checked_at": "2026-11-02T06:55:11+00:00",
-   "liveness": "not_checked",
-   "liveness_detail": "no crawl result in this log",
-   "homepage": null,
-   "logo_url": null,
-   "images": [],
+   "checked_at": "2026-11-02T09:57:22+00:00",
+   "liveness": "alive",
+   "liveness_detail": "catalog URL loaded",
+   "homepage": "https://www.prospectsinfluential.com/",
+   "logo_url": "https://www.prospectsinfluential.com/wp-content/uploads/elementor/thumbs/logo-prospectsinfluential-qmi30gvj2sulx449wn20w3ai2b99qtetv8aabyia6m.png",
+   "images": [
+    {
+     "url": "https://www.prospectsinfluential.com/wp-content/uploads/2024/06/logo-prospectsinfluential-qmi30gvj2sulx449wn20w3ai2b99qtetv8aabyia6m.png",
+     "kind": "json_ld",
+     "source_page": "https://www.prospectsinfluential.com/"
+    },
+    {
+     "url": "https://www.prospectsinfluential.com/wp-content/uploads/elementor/thumbs/logo-prospectsinfluential-qmi30gvj2sulx449wn20w3ai2b99qtetv8aabyia6m.png",
+     "kind": "logo",
+     "source_page": "https://www.prospectsinfluential.com/"
+    },
+    {
+     "url": "https://www.prospectsinfluential.com/wp-content/uploads/2024/02/logo-prospectsinfluential-300x117.png",
+     "kind": "logo",
+     "source_page": "https://www.prospectsinfluential.com/"
+    }
+   ],
    "theme_color": null,
-   "languages": [],
-   "legal_name": null,
+   "languages": [
+    "en"
+   ],
+   "legal_name": "Prospects Influential, Inc.",
    "search": {
-    "available": null,
-    "method": "unknown",
-    "page_url": null,
-    "form_action": null,
-    "inputs": [],
-    "url_pattern": null,
+    "available": true,
+    "method": "http_get",
+    "page_url": "https://www.prospectsinfluential.com/",
+    "form_action": "https://www.prospectsinfluential.com/",
+    "inputs": [
+     {
+      "name": "s",
+      "type": "search",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": "Enter the list you are looking for..."
+     }
+    ],
+    "url_pattern": "https://www.prospectsinfluential.com/?s={s}",
     "directory_prefixes": [],
     "paywall": null,
     "login_wall": null
    },
    "removal": {
     "url": "https://www.prospectsinfluential.com/privacy-policy/",
-    "final_url": null,
-    "http_status": null,
+    "final_url": "https://www.prospectsinfluential.com/privacy-policy/",
+    "http_status": 200,
     "kinds": [
      "opt_out"
     ],
@@ -155033,18 +155571,45 @@
    },
    "bot_defense": {
     "vendor": null,
-    "outcome": "unknown"
+    "outcome": "none"
    },
    "legal": {
-    "privacy_policy_url": null,
+    "privacy_policy_url": "https://www.prospectsinfluential.com/privacy-policy/",
     "terms_url": null,
     "automation_prohibited": null,
     "automation_clause": null,
     "residency": [],
     "authorized_agent": null,
-    "data_categories": []
+    "data_categories": [
+     "identifiers"
+    ]
    },
-   "pages": []
+   "pages": [
+    {
+     "url": "https://prospectsinfluential.com/",
+     "final_url": "https://www.prospectsinfluential.com/",
+     "status": 200,
+     "role": "home",
+     "title": "Home | Prospects Influential",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.prospectsinfluential.com/",
+     "final_url": "https://www.prospectsinfluential.com/",
+     "status": 200,
+     "role": "home",
+     "title": "Home | Prospects Influential",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.prospectsinfluential.com/privacy-policy/",
+     "final_url": "https://www.prospectsinfluential.com/privacy-policy/",
+     "status": 200,
+     "role": "catalog",
+     "title": "Privacy Policy | Prospects Influential",
+     "liveness": "alive"
+    }
+   ]
   },
   "openroom": {
    "schema_version": "3.0.0",
@@ -155052,18 +155617,101 @@
    "name": "Openroom",
    "category": "background-checks",
    "domain": "openroom.ca",
-   "checked_at": "2026-11-02T06:55:11+00:00",
-   "liveness": "not_checked",
-   "liveness_detail": "no crawl result in this log",
-   "homepage": null,
-   "logo_url": null,
-   "images": [],
+   "checked_at": "2026-11-02T09:57:19+00:00",
+   "liveness": "alive",
+   "liveness_detail": "catalog URL loaded",
+   "homepage": "https://openroom.ca/",
+   "logo_url": "https://openroom.ca/img/home/equifax-logo.svg",
+   "images": [
+    {
+     "url": "https://openroom.ca/favicon.ico",
+     "kind": "icon",
+     "source_page": "https://openroom.ca/"
+    },
+    {
+     "url": "https://openroom.ca/img/openroom_preview.png",
+     "kind": "og_image",
+     "source_page": "https://openroom.ca/"
+    },
+    {
+     "url": "https://openroom.ca/img/small_openroom-logo-official-purple.png",
+     "kind": "json_ld",
+     "source_page": "https://openroom.ca/"
+    },
+    {
+     "url": "https://openroom.ca/img/home/equifax-logo.svg",
+     "kind": "logo",
+     "source_page": "https://openroom.ca/"
+    },
+    {
+     "url": "https://openroom.ca/img/home/mpbsdp-logo.svg",
+     "kind": "logo",
+     "source_page": "https://openroom.ca/"
+    },
+    {
+     "url": "https://openroom.ca/img/home/customers/legal-firms/aptekar-paralegal-pc-logo.svg",
+     "kind": "logo",
+     "source_page": "https://openroom.ca/"
+    },
+    {
+     "url": "https://openroom.ca/img/home/customers/legal-firms/carmen-dawdy-paralegal-service.svg",
+     "kind": "logo",
+     "source_page": "https://openroom.ca/"
+    },
+    {
+     "url": "https://openroom.ca/img/home/customers/legal-firms/lam-law-firm-pc.svg",
+     "kind": "logo",
+     "source_page": "https://openroom.ca/"
+    },
+    {
+     "url": "https://openroom.ca/img/home/customers/legal-firms/legacy-legal-llp-logo.svg",
+     "kind": "logo",
+     "source_page": "https://openroom.ca/"
+    },
+    {
+     "url": "https://openroom.ca/img/home/customers/legal-firms/melville-legal-solutions-logo.svg",
+     "kind": "logo",
+     "source_page": "https://openroom.ca/"
+    },
+    {
+     "url": "https://openroom.ca/img/home/customers/legal-firms/raymond-luk-pc.svg",
+     "kind": "logo",
+     "source_page": "https://openroom.ca/"
+    },
+    {
+     "url": "https://openroom.ca/img/home/customers/legal-firms/silverline-paralegal-logo.svg",
+     "kind": "logo",
+     "source_page": "https://openroom.ca/"
+    },
+    {
+     "url": "https://openroom.ca/img/home/customers/legal-firms/trust-paralegal-logo.svg",
+     "kind": "logo",
+     "source_page": "https://openroom.ca/"
+    },
+    {
+     "url": "https://openroom.ca/img/home/customers/legal-firms/green-economy-law-corp-logo.svg",
+     "kind": "logo",
+     "source_page": "https://openroom.ca/"
+    },
+    {
+     "url": "https://openroom.ca/img/home/customers/legal-firms/temple-of-justice.png",
+     "kind": "logo",
+     "source_page": "https://openroom.ca/"
+    },
+    {
+     "url": "https://openroom.ca/img/home/customers/pm-firms/amp-pm-logo.svg",
+     "kind": "logo",
+     "source_page": "https://openroom.ca/"
+    }
+   ],
    "theme_color": null,
-   "languages": [],
-   "legal_name": null,
+   "languages": [
+    "en"
+   ],
+   "legal_name": "Openroom",
    "search": {
-    "available": null,
-    "method": "unknown",
+    "available": false,
+    "method": "none",
     "page_url": null,
     "form_action": null,
     "inputs": [],
@@ -155074,13 +155722,26 @@
    },
    "removal": {
     "url": "https://openroom.ca/privacy/",
-    "final_url": null,
-    "http_status": null,
+    "final_url": "https://openroom.ca/privacy/",
+    "http_status": 200,
     "kinds": [
      "opt_out"
     ],
-    "channels": [],
-    "emails": [],
+    "channels": [
+     "email"
+    ],
+    "emails": [
+     {
+      "email": "hello@openroom.ca",
+      "confidence": "uncertain",
+      "source_url": "https://openroom.ca/privacy/"
+     },
+     {
+      "email": "privacy@openroom.ca",
+      "confidence": "extracted",
+      "source_url": "https://openroom.ca/privacy/"
+     }
+    ],
     "phones": [],
     "postal_address": null,
     "portal": null,
@@ -155100,18 +155761,46 @@
    },
    "bot_defense": {
     "vendor": null,
-    "outcome": "unknown"
+    "outcome": "none"
    },
    "legal": {
-    "privacy_policy_url": null,
+    "privacy_policy_url": "https://openroom.ca/privacy/",
     "terms_url": null,
     "automation_prohibited": null,
     "automation_clause": null,
     "residency": [],
     "authorized_agent": null,
-    "data_categories": []
+    "data_categories": [
+     "identifiers",
+     "employment"
+    ]
    },
-   "pages": []
+   "pages": [
+    {
+     "url": "https://openroom.ca/",
+     "final_url": "https://openroom.ca/",
+     "status": 200,
+     "role": "home",
+     "title": "Openroom - A transparent Canadian rental ecosystem",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.openroom.ca/",
+     "final_url": "https://openroom.ca/",
+     "status": 200,
+     "role": "home",
+     "title": "Openroom - A transparent Canadian rental ecosystem",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://openroom.ca/privacy/",
+     "final_url": "https://openroom.ca/privacy/",
+     "status": 200,
+     "role": "catalog",
+     "title": "Privacy Policy",
+     "liveness": "alive"
+    }
+   ]
   },
   "landlord-credit-bureau": {
    "schema_version": "3.0.0",
@@ -155119,30 +155808,137 @@
    "name": "Landlord Credit Bureau",
    "category": "credit-financial",
    "domain": "landlordcreditbureau.ca",
-   "checked_at": "2026-11-02T06:55:11+00:00",
-   "liveness": "not_checked",
-   "liveness_detail": "no crawl result in this log",
-   "homepage": null,
-   "logo_url": null,
-   "images": [],
+   "checked_at": "2026-11-02T09:57:16+00:00",
+   "liveness": "alive",
+   "liveness_detail": "catalog URL loaded",
+   "homepage": "https://landlordcreditbureau.ca/",
+   "logo_url": "https://landlordcreditbureau.ca/wp-content/uploads/LCB_logo_white_300-13-1024x242.png",
+   "images": [
+    {
+     "url": "https://landlordcreditbureau.ca/wp-content/uploads/cropped-LLCB_logo_vertical_green-32x32.jpg",
+     "kind": "icon",
+     "source_page": "https://landlordcreditbureau.ca/"
+    },
+    {
+     "url": "https://landlordcreditbureau.ca/wp-content/uploads/cropped-LLCB_logo_vertical_green-192x192.jpg",
+     "kind": "icon",
+     "source_page": "https://landlordcreditbureau.ca/"
+    },
+    {
+     "url": "https://landlordcreditbureau.ca/wp-content/uploads/cropped-LLCB_logo_vertical_green-180x180.jpg",
+     "kind": "apple_touch_icon",
+     "source_page": "https://landlordcreditbureau.ca/"
+    },
+    {
+     "url": "https://landlordcreditbureau.ca/wp-content/uploads/LCB-Header-1.png",
+     "kind": "og_image",
+     "source_page": "https://landlordcreditbureau.ca/"
+    },
+    {
+     "url": "https://landlordcreditbureau.ca/wp-content/uploads/profile.jpg",
+     "kind": "json_ld",
+     "source_page": "https://landlordcreditbureau.ca/"
+    },
+    {
+     "url": "https://landlordcreditbureau.ca/wp-content/uploads/LCB_logo_white_300-13-1024x242.png",
+     "kind": "logo",
+     "source_page": "https://landlordcreditbureau.ca/"
+    },
+    {
+     "url": "https://landlordcreditbureau.ca/wp-content/uploads/Landlord-Credit-Bureau-Logo-1024x966.png",
+     "kind": "logo",
+     "source_page": "https://landlordcreditbureau.ca/"
+    },
+    {
+     "url": "https://landlordcreditbureau.ca/wp-content/uploads/LCB_logo_white_300-1_1.png",
+     "kind": "logo",
+     "source_page": "https://landlordcreditbureau.ca/"
+    },
+    {
+     "url": "https://staging-ca.dev.landlordcreditbureau.com/wp-content/plugins/gdpr-cookie-compliance/dist/images/gdpr-logo.png",
+     "kind": "logo",
+     "source_page": "https://landlordcreditbureau.ca/"
+    },
+    {
+     "url": "https://landlordcreditbureau.ca/wp-content/uploads/View-Your-Tenant-Record-Body-Image-Hands-on-Laptop-with-Phone-scaled-1-1024x509.jpg",
+     "kind": "og_image",
+     "source_page": "https://landlordcreditbureau.ca/view-your-tenant-record/"
+    },
+    {
+     "url": "https://landlordcreditbureau.ca/wp-content/uploads/logo-1.png",
+     "kind": "logo",
+     "source_page": "https://landlordcreditbureau.ca/view-your-tenant-record/"
+    }
+   ],
    "theme_color": null,
-   "languages": [],
-   "legal_name": null,
+   "languages": [
+    "en"
+   ],
+   "legal_name": "Landlord-Credit-Bureau",
    "search": {
-    "available": null,
-    "method": "unknown",
-    "page_url": null,
-    "form_action": null,
-    "inputs": [],
-    "url_pattern": null,
+    "available": true,
+    "method": "http_form_post",
+    "page_url": "https://landlordcreditbureau.ca/view-your-tenant-record/",
+    "form_action": "https://landlordcreditbureau.us19.list-manage.com/subscribe/post?u=0cd1204579479bed138561b12&id=d169e4c484",
+    "inputs": [
+     {
+      "name": "FNAME",
+      "type": "text",
+      "canonical": "first_name",
+      "required": true,
+      "autocomplete": null,
+      "placeholder": "First Name"
+     },
+     {
+      "name": "LNAME",
+      "type": "text",
+      "canonical": "last_name",
+      "required": true,
+      "autocomplete": null,
+      "placeholder": "Last Name"
+     },
+     {
+      "name": "EMAIL",
+      "type": "email",
+      "canonical": "email",
+      "required": true,
+      "autocomplete": null,
+      "placeholder": "Email Address"
+     },
+     {
+      "name": "MMERGE9",
+      "type": "checkbox",
+      "canonical": null,
+      "required": true,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "gdpr[69041]",
+      "type": "checkbox",
+      "canonical": null,
+      "required": true,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "gdpr[68825]",
+      "type": "checkbox",
+      "canonical": null,
+      "required": true,
+      "autocomplete": null,
+      "placeholder": null
+     }
+    ],
+    "url_pattern": "https://landlordcreditbureau.us19.list-manage.com/subscribe/post?u=0cd1204579479bed138561b12&id=d169e4c484",
     "directory_prefixes": [],
     "paywall": null,
     "login_wall": null
    },
    "removal": {
     "url": "https://landlordcreditbureau.ca/view-your-tenant-record/",
-    "final_url": null,
-    "http_status": null,
+    "final_url": "https://landlordcreditbureau.ca/view-your-tenant-record/",
+    "http_status": 200,
     "kinds": [
      "opt_out"
     ],
@@ -155167,18 +155963,49 @@
    },
    "bot_defense": {
     "vendor": null,
-    "outcome": "unknown"
+    "outcome": "none"
    },
    "legal": {
     "privacy_policy_url": null,
     "terms_url": null,
     "automation_prohibited": null,
     "automation_clause": null,
-    "residency": [],
+    "residency": [
+     "US",
+     "EU"
+    ],
     "authorized_agent": null,
-    "data_categories": []
+    "data_categories": [
+     "identifiers",
+     "internet_activity"
+    ]
    },
-   "pages": []
+   "pages": [
+    {
+     "url": "https://landlordcreditbureau.ca/",
+     "final_url": "https://landlordcreditbureau.ca/",
+     "status": 200,
+     "role": "home",
+     "title": "Landlord Credit Bureau Canada | Report Rent Payments",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.landlordcreditbureau.ca/",
+     "final_url": "https://landlordcreditbureau.ca/",
+     "status": 200,
+     "role": "home",
+     "title": "Landlord Credit Bureau Canada | Report Rent Payments",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://landlordcreditbureau.ca/view-your-tenant-record/",
+     "final_url": "https://landlordcreditbureau.ca/view-your-tenant-record/",
+     "status": 200,
+     "role": "catalog",
+     "title": "View Your Tenant Record - Landlord Credit Bureau",
+     "liveness": "alive"
+    }
+   ]
   },
   "frontlobby": {
    "schema_version": "3.0.0",
@@ -155186,18 +156013,81 @@
    "name": "FrontLobby",
    "category": "credit-financial",
    "domain": "frontlobby.com",
-   "checked_at": "2026-11-02T06:55:11+00:00",
-   "liveness": "not_checked",
-   "liveness_detail": "no crawl result in this log",
-   "homepage": null,
-   "logo_url": null,
-   "images": [],
+   "checked_at": "2026-11-02T09:57:17+00:00",
+   "liveness": "alive",
+   "liveness_detail": "catalog URL loaded",
+   "homepage": "https://frontlobby.com/",
+   "logo_url": "https://frontlobby.com/wp-content/uploads/2021/09/Primary-Logo-White.svg",
+   "images": [
+    {
+     "url": "https://frontlobby.com/wp-content/uploads/2024/11/FrontLobby-House-Logo-2.png",
+     "kind": "icon",
+     "source_page": "https://frontlobby.com/"
+    },
+    {
+     "url": "https://frontlobby.com/wp-content/uploads/2024/10/FrontLobby-Homepage-Featured-Social-Image.png",
+     "kind": "og_image",
+     "source_page": "https://frontlobby.com/"
+    },
+    {
+     "url": "https://frontlobby.com/wp-content/uploads/2021/10/MicrosoftTeams-image-5.png",
+     "kind": "json_ld",
+     "source_page": "https://frontlobby.com/"
+    },
+    {
+     "url": "https://frontlobby.com/wp-content/uploads/2021/09/Primary-Logo-White.svg",
+     "kind": "logo",
+     "source_page": "https://frontlobby.com/"
+    },
+    {
+     "url": "https://frontlobby.com/wp-content/uploads/2026/08/Equifax-small-group-logo-1-1.png",
+     "kind": "logo",
+     "source_page": "https://frontlobby.com/"
+    },
+    {
+     "url": "https://frontlobby.com/wp-content/uploads/2026/08/transunion-small-group-logo-1-1.png",
+     "kind": "logo",
+     "source_page": "https://frontlobby.com/"
+    },
+    {
+     "url": "https://frontlobby.com/wp-content/uploads/2026/08/landlord-credit-bureau-small-group-logo-1-1.png",
+     "kind": "logo",
+     "source_page": "https://frontlobby.com/"
+    },
+    {
+     "url": "https://frontlobby.com/wp-content/uploads/2026/08/Equifax-logo-1.png",
+     "kind": "logo",
+     "source_page": "https://frontlobby.com/"
+    },
+    {
+     "url": "https://frontlobby.com/wp-content/uploads/2026/08/TansUnion-logo-1.png",
+     "kind": "logo",
+     "source_page": "https://frontlobby.com/"
+    },
+    {
+     "url": "https://frontlobby.com/wp-content/uploads/2026/08/Landlord-credit-bureau-logo-1.png",
+     "kind": "logo",
+     "source_page": "https://frontlobby.com/"
+    },
+    {
+     "url": "https://frontlobby.com/wp-content/uploads/2021/09/Primary-Logo-White-1.svg",
+     "kind": "logo",
+     "source_page": "https://frontlobby.com/"
+    },
+    {
+     "url": "https://frontlobby.com/wp-content/plugins/gdpr-cookie-compliance/dist/images/gdpr-logo.png",
+     "kind": "logo",
+     "source_page": "https://frontlobby.com/"
+    }
+   ],
    "theme_color": null,
-   "languages": [],
-   "legal_name": null,
+   "languages": [
+    "en"
+   ],
+   "legal_name": "FrontLobby",
    "search": {
-    "available": null,
-    "method": "unknown",
+    "available": false,
+    "method": "none",
     "page_url": null,
     "form_action": null,
     "inputs": [],
@@ -155208,13 +156098,21 @@
    },
    "removal": {
     "url": "https://frontlobby.com/privacy-policy-canada/",
-    "final_url": null,
-    "http_status": null,
+    "final_url": "https://frontlobby.com/privacy-policy-canada/",
+    "http_status": 200,
     "kinds": [
      "opt_out"
     ],
-    "channels": [],
-    "emails": [],
+    "channels": [
+     "email"
+    ],
+    "emails": [
+     {
+      "email": "support@frontlobby.com",
+      "confidence": "uncertain",
+      "source_url": "https://frontlobby.com/"
+     }
+    ],
     "phones": [],
     "postal_address": null,
     "portal": null,
@@ -155234,18 +156132,46 @@
    },
    "bot_defense": {
     "vendor": null,
-    "outcome": "unknown"
+    "outcome": "none"
    },
    "legal": {
-    "privacy_policy_url": null,
+    "privacy_policy_url": "https://frontlobby.com/privacy-policy-canada/",
     "terms_url": null,
     "automation_prohibited": null,
     "automation_clause": null,
     "residency": [],
     "authorized_agent": null,
-    "data_categories": []
+    "data_categories": [
+     "identifiers",
+     "internet_activity"
+    ]
    },
-   "pages": []
+   "pages": [
+    {
+     "url": "https://frontlobby.com/",
+     "final_url": "https://frontlobby.com/",
+     "status": 200,
+     "role": "home",
+     "title": "Rent Reporting Services for Landlords Canada | FrontLobby",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.frontlobby.com/",
+     "final_url": "https://frontlobby.com/",
+     "status": 200,
+     "role": "home",
+     "title": "Rent Reporting Services for Landlords Canada | FrontLobby",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://frontlobby.com/privacy-policy-canada/",
+     "final_url": "https://frontlobby.com/privacy-policy-canada/",
+     "status": 200,
+     "role": "catalog",
+     "title": "Privacy Policy Canada | FrontLobby Data Practices",
+     "liveness": "alive"
+    }
+   ]
   },
   "echovita": {
    "schema_version": "3.0.0",
@@ -155253,30 +156179,102 @@
    "name": "Echovita",
    "category": "people-search",
    "domain": "echovita.com",
-   "checked_at": "2026-11-02T06:55:11+00:00",
-   "liveness": "not_checked",
-   "liveness_detail": "no crawl result in this log",
-   "homepage": null,
-   "logo_url": null,
-   "images": [],
-   "theme_color": null,
-   "languages": [],
+   "checked_at": "2026-11-02T09:57:11+00:00",
+   "liveness": "alive",
+   "liveness_detail": "catalog URL loaded",
+   "homepage": "https://www.echovita.com/ca",
+   "logo_url": "https://www.echovita.com/assets/images/logos/png/logo-top.png",
+   "images": [
+    {
+     "url": "https://www.echovita.com/assets/favicon/apple-touch-icon-57x57.png",
+     "kind": "apple_touch_icon",
+     "source_page": "https://www.echovita.com/ca"
+    },
+    {
+     "url": "https://www.echovita.com/assets/favicon/apple-touch-icon-114x114.png",
+     "kind": "apple_touch_icon",
+     "source_page": "https://www.echovita.com/ca"
+    },
+    {
+     "url": "https://www.echovita.com/assets/favicon/apple-touch-icon-72x72.png",
+     "kind": "apple_touch_icon",
+     "source_page": "https://www.echovita.com/ca"
+    },
+    {
+     "url": "https://www.echovita.com/assets/favicon/apple-touch-icon-144x144.png",
+     "kind": "apple_touch_icon",
+     "source_page": "https://www.echovita.com/ca"
+    },
+    {
+     "url": "https://www.echovita.com/assets/favicon/apple-touch-icon-120x120.png",
+     "kind": "apple_touch_icon",
+     "source_page": "https://www.echovita.com/ca"
+    },
+    {
+     "url": "https://www.echovita.com/assets/favicon/apple-touch-icon-152x152.png",
+     "kind": "apple_touch_icon",
+     "source_page": "https://www.echovita.com/ca"
+    },
+    {
+     "url": "https://www.echovita.com/assets/favicon/favicon-32x32.png",
+     "kind": "icon",
+     "source_page": "https://www.echovita.com/ca"
+    },
+    {
+     "url": "https://www.echovita.com/assets/favicon/favicon-16x16.png",
+     "kind": "icon",
+     "source_page": "https://www.echovita.com/ca"
+    },
+    {
+     "url": "https://www.echovita.com/images/echovita-icon.png",
+     "kind": "og_image",
+     "source_page": "https://www.echovita.com/ca"
+    },
+    {
+     "url": "https://www.echovita.com/assets/images/logos/png/logo-top.png",
+     "kind": "logo",
+     "source_page": "https://www.echovita.com/ca"
+    },
+    {
+     "url": "https://www.echovita.com/assets/images/logos/png/echovita_big_loop_black_trim.kh0w2fkjwn.png",
+     "kind": "logo",
+     "source_page": "https://www.echovita.com/ca"
+    },
+    {
+     "url": "https://www.echovita.com/assets/images/logos/png/echovita_small_loop_black.png",
+     "kind": "logo",
+     "source_page": "https://www.echovita.com/ca"
+    }
+   ],
+   "theme_color": "#000",
+   "languages": [
+    "en"
+   ],
    "legal_name": null,
    "search": {
-    "available": null,
-    "method": "unknown",
-    "page_url": null,
-    "form_action": null,
-    "inputs": [],
-    "url_pattern": null,
+    "available": true,
+    "method": "http_get",
+    "page_url": "https://www.echovita.com/ca",
+    "form_action": "https://www.echovita.com/ca/obituaries",
+    "inputs": [
+     {
+      "name": "first_name",
+      "type": "search",
+      "canonical": "first_name",
+      "required": false,
+      "autocomplete": null,
+      "placeholder": "Search for an obituary"
+     }
+    ],
+    "url_pattern": "https://www.echovita.com/ca/obituaries?first_name={first_name}",
     "directory_prefixes": [],
     "paywall": null,
     "login_wall": null
    },
    "removal": {
     "url": "https://www.echovita.com/ca/privacy-policy",
-    "final_url": null,
-    "http_status": null,
+    "final_url": "https://www.echovita.com/ca/privacy-policy",
+    "http_status": 200,
     "kinds": [
      "opt_out"
     ],
@@ -155301,18 +156299,48 @@
    },
    "bot_defense": {
     "vendor": null,
-    "outcome": "unknown"
+    "outcome": "none"
    },
    "legal": {
-    "privacy_policy_url": null,
+    "privacy_policy_url": "https://www.echovita.com/ca/privacy-policy",
     "terms_url": null,
     "automation_prohibited": null,
     "automation_clause": null,
-    "residency": [],
+    "residency": [
+     "US"
+    ],
     "authorized_agent": null,
-    "data_categories": []
+    "data_categories": [
+     "identifiers",
+     "commercial"
+    ]
    },
-   "pages": []
+   "pages": [
+    {
+     "url": "https://echovita.com/",
+     "final_url": "https://www.echovita.com/ca",
+     "status": 200,
+     "role": "home",
+     "title": "Echovita - Search obituaries & funeral homes in Canada",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.echovita.com/",
+     "final_url": "https://www.echovita.com/ca",
+     "status": 200,
+     "role": "home",
+     "title": "Echovita - Search obituaries & funeral homes in Canada",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.echovita.com/ca/privacy-policy",
+     "final_url": "https://www.echovita.com/ca/privacy-policy",
+     "status": 200,
+     "role": "catalog",
+     "title": "Privacy policy",
+     "liveness": "alive"
+    }
+   ]
   },
   "inmemoriam": {
    "schema_version": "3.0.0",
@@ -155320,45 +156348,86 @@
    "name": "InMemoriam",
    "category": "people-search",
    "domain": "inmemoriam.ca",
-   "checked_at": "2026-11-02T06:55:11+00:00",
-   "liveness": "not_checked",
-   "liveness_detail": "no crawl result in this log",
-   "homepage": null,
-   "logo_url": null,
-   "images": [],
+   "checked_at": "2026-11-02T09:57:28+00:00",
+   "liveness": "alive",
+   "liveness_detail": "catalog URL loaded",
+   "homepage": "https://www.inmemoriam.ca/",
+   "logo_url": "https://www.inmemoriam.ca/media/images/favIcon.png",
+   "images": [
+    {
+     "url": "https://www.inmemoriam.ca/media/images/favIcon.png",
+     "kind": "icon",
+     "source_page": "https://www.inmemoriam.ca/"
+    }
+   ],
    "theme_color": null,
-   "languages": [],
+   "languages": [
+    "fr",
+    "en"
+   ],
    "legal_name": null,
    "search": {
-    "available": null,
-    "method": "unknown",
-    "page_url": null,
-    "form_action": null,
-    "inputs": [],
-    "url_pattern": null,
+    "available": true,
+    "method": "http_get",
+    "page_url": "https://www.inmemoriam.ca/",
+    "form_action": "https://www.inmemoriam.ca/resultats-de-recherche/",
+    "inputs": [
+     {
+      "name": "first_name",
+      "type": "text",
+      "canonical": "first_name",
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "last_name",
+      "type": "text",
+      "canonical": "last_name",
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     }
+    ],
+    "url_pattern": "https://www.inmemoriam.ca/resultats-de-recherche/?first_name={first_name}&last_name={last_name}",
     "directory_prefixes": [],
     "paywall": null,
     "login_wall": null
    },
    "removal": {
     "url": "https://www.inmemoriam.ca/privacy.php?lang=en",
-    "final_url": null,
-    "http_status": null,
+    "final_url": "https://www.inmemoriam.ca/privacy.php?lang=en",
+    "http_status": 200,
     "kinds": [
      "opt_out"
     ],
-    "channels": [],
-    "emails": [],
-    "phones": [],
+    "channels": [
+     "email",
+     "phone"
+    ],
+    "emails": [
+     {
+      "email": "chiefprivacyofficer@icimedias.ca",
+      "confidence": "uncertain",
+      "source_url": "https://www.inmemoriam.ca/privacy.php?lang=en"
+     }
+    ],
+    "phones": [
+     "416-391-2362",
+     "(514) 335-3999"
+    ],
     "postal_address": null,
     "portal": null,
     "form_fields": [],
     "csrf_field_name": null,
     "requires_profile_url": null,
     "captcha": {
-     "provider": null,
+     "provider": "recaptcha_v2",
      "sitekey": null,
-     "pages": []
+     "pages": [
+      "https://www.inmemoriam.ca/",
+      "https://www.inmemoriam.ca/privacy.php?lang=en"
+     ]
     },
     "consent_vendor": null,
     "success_text": null,
@@ -155368,7 +156437,7 @@
    },
    "bot_defense": {
     "vendor": null,
-    "outcome": "unknown"
+    "outcome": "none"
    },
    "legal": {
     "privacy_policy_url": null,
@@ -155377,9 +156446,37 @@
     "automation_clause": null,
     "residency": [],
     "authorized_agent": null,
-    "data_categories": []
+    "data_categories": [
+     "identifiers",
+     "commercial"
+    ]
    },
-   "pages": []
+   "pages": [
+    {
+     "url": "https://inmemoriam.ca/",
+     "final_url": null,
+     "status": null,
+     "role": "home",
+     "title": "",
+     "liveness": "error"
+    },
+    {
+     "url": "https://www.inmemoriam.ca/",
+     "final_url": "https://www.inmemoriam.ca/",
+     "status": 200,
+     "role": "home",
+     "title": "InMemoriam : avis de décès et nécrologie au Canada",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.inmemoriam.ca/privacy.php?lang=en",
+     "final_url": "https://www.inmemoriam.ca/privacy.php?lang=en",
+     "status": 200,
+     "role": "catalog",
+     "title": "InMemoriam.ca: Always in our Hearts",
+     "liveness": "alive"
+    }
+   ]
   },
   "necrologie-ca": {
    "schema_version": "3.0.0",
@@ -155387,35 +156484,96 @@
    "name": "Nécrologie.ca",
    "category": "people-search",
    "domain": "necrologie.ca",
-   "checked_at": "2026-11-02T06:55:11+00:00",
-   "liveness": "not_checked",
-   "liveness_detail": "no crawl result in this log",
-   "homepage": null,
-   "logo_url": null,
-   "images": [],
+   "checked_at": "2026-11-02T09:57:17+00:00",
+   "liveness": "alive",
+   "liveness_detail": "catalog URL loaded",
+   "homepage": "https://necrologie.ca/en/",
+   "logo_url": "https://necrologie.ca/images/logo/necrologie-logo-mono-white.svg",
+   "images": [
+    {
+     "url": "https://necrologie.ca/favicon.ico",
+     "kind": "icon",
+     "source_page": "https://necrologie.ca/en/"
+    },
+    {
+     "url": "https://necrologie.ca/favicon-48.png",
+     "kind": "icon",
+     "source_page": "https://necrologie.ca/en/"
+    },
+    {
+     "url": "https://necrologie.ca/favicon.svg",
+     "kind": "icon",
+     "source_page": "https://necrologie.ca/en/"
+    },
+    {
+     "url": "https://necrologie.ca/apple-touch-icon.png",
+     "kind": "apple_touch_icon",
+     "source_page": "https://necrologie.ca/en/"
+    },
+    {
+     "url": "https://necrologie.ca/images/og-default.png",
+     "kind": "og_image",
+     "source_page": "https://necrologie.ca/en/"
+    },
+    {
+     "url": "https://necrologie.ca/images/logo/necrologie-logo-marine@2x.png",
+     "kind": "json_ld",
+     "source_page": "https://necrologie.ca/en/"
+    },
+    {
+     "url": "https://necrologie.ca/images/logo/necrologie-logo-mono-white.svg",
+     "kind": "logo",
+     "source_page": "https://necrologie.ca/en/"
+    },
+    {
+     "url": "https://necrologie.ca/images/logo/necrologie-logo-mono-gold.svg",
+     "kind": "logo",
+     "source_page": "https://necrologie.ca/en/"
+    }
+   ],
    "theme_color": null,
-   "languages": [],
-   "legal_name": null,
+   "languages": [
+    "en",
+    "fr"
+   ],
+   "legal_name": "Necrologie.ca",
    "search": {
-    "available": null,
-    "method": "unknown",
-    "page_url": null,
-    "form_action": null,
-    "inputs": [],
-    "url_pattern": null,
+    "available": true,
+    "method": "http_get",
+    "page_url": "https://necrologie.ca/en/",
+    "form_action": "https://necrologie.ca/en/search/",
+    "inputs": [
+     {
+      "name": "q",
+      "type": "search",
+      "canonical": "city",
+      "required": false,
+      "autocomplete": "off",
+      "placeholder": "Name, city, funeral home…"
+     }
+    ],
+    "url_pattern": "https://necrologie.ca/en/search/?q={q}",
     "directory_prefixes": [],
     "paywall": null,
     "login_wall": null
    },
    "removal": {
     "url": "https://necrologie.ca/fr/politique-de-confidentialite/",
-    "final_url": null,
-    "http_status": null,
+    "final_url": "https://necrologie.ca/fr/politique-de-confidentialite/",
+    "http_status": 200,
     "kinds": [
      "opt_out"
     ],
-    "channels": [],
-    "emails": [],
+    "channels": [
+     "email"
+    ],
+    "emails": [
+     {
+      "email": "info@necrologie.ca",
+      "confidence": "uncertain",
+      "source_url": "https://necrologie.ca/fr/politique-de-confidentialite/"
+     }
+    ],
     "phones": [],
     "postal_address": null,
     "portal": null,
@@ -155435,18 +156593,45 @@
    },
    "bot_defense": {
     "vendor": null,
-    "outcome": "unknown"
+    "outcome": "none"
    },
    "legal": {
     "privacy_policy_url": null,
     "terms_url": null,
     "automation_prohibited": null,
     "automation_clause": null,
-    "residency": [],
+    "residency": [
+     "CA-QC"
+    ],
     "authorized_agent": null,
     "data_categories": []
    },
-   "pages": []
+   "pages": [
+    {
+     "url": "https://necrologie.ca/",
+     "final_url": "https://necrologie.ca/en/",
+     "status": 200,
+     "role": "home",
+     "title": "Necrologie.ca | Obituaries in Quebec and Canada",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.necrologie.ca/",
+     "final_url": "https://necrologie.ca/en/",
+     "status": 200,
+     "role": "home",
+     "title": "Necrologie.ca | Obituaries in Quebec and Canada",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://necrologie.ca/fr/politique-de-confidentialite/",
+     "final_url": "https://necrologie.ca/fr/politique-de-confidentialite/",
+     "status": 200,
+     "role": "catalog",
+     "title": "Politique de confidentialité | Nécrologie.ca",
+     "liveness": "alive"
+    }
+   ]
   },
   "geni": {
    "schema_version": "3.0.0",
@@ -155454,40 +156639,143 @@
    "name": "Geni",
    "category": "people-search",
    "domain": "geni.com",
-   "checked_at": "2026-11-02T06:55:11+00:00",
-   "liveness": "not_checked",
-   "liveness_detail": "no crawl result in this log",
-   "homepage": null,
-   "logo_url": null,
-   "images": [],
+   "checked_at": "2026-11-02T09:57:13+00:00",
+   "liveness": "alive",
+   "liveness_detail": "catalog URL loaded",
+   "homepage": "https://www.geni.com/",
+   "logo_url": "https://www.geni.com/images/v2025/geni_logo_tag.svg",
+   "images": [
+    {
+     "url": "https://www.geni.com/touch-icon-iphone.png",
+     "kind": "apple_touch_icon",
+     "source_page": "https://www.geni.com/"
+    },
+    {
+     "url": "https://www.geni.com/touch-icon-ipad.png",
+     "kind": "apple_touch_icon",
+     "source_page": "https://www.geni.com/"
+    },
+    {
+     "url": "https://www.geni.com/touch-icon-iphone-retina.png",
+     "kind": "apple_touch_icon",
+     "source_page": "https://www.geni.com/"
+    },
+    {
+     "url": "https://www.geni.com/touch-icon-ipad-retina.png",
+     "kind": "apple_touch_icon",
+     "source_page": "https://www.geni.com/"
+    },
+    {
+     "url": "https://assets10.geni.com/favicon.ico?v3",
+     "kind": "icon",
+     "source_page": "https://www.geni.com/"
+    },
+    {
+     "url": "https://www.geni.com/images/v2025/geni_logo_tag.svg",
+     "kind": "logo",
+     "source_page": "https://www.geni.com/"
+    },
+    {
+     "url": "https://www.geni.com/images/v2025/google-logo.svg",
+     "kind": "logo",
+     "source_page": "https://www.geni.com/"
+    },
+    {
+     "url": "https://www.geni.com/images/v2025/apple-logo.svg",
+     "kind": "logo",
+     "source_page": "https://www.geni.com/"
+    },
+    {
+     "url": "https://www.geni.com/images/v2025/trustpilot-logo.png",
+     "kind": "logo",
+     "source_page": "https://www.geni.com/"
+    },
+    {
+     "url": "https://www.geni.com/images/v2025/facebook-logo.svg",
+     "kind": "logo",
+     "source_page": "https://www.geni.com/"
+    },
+    {
+     "url": "https://stage.geni.com/images/external/Bluesky_Logo.svg?1736798726",
+     "kind": "logo",
+     "source_page": "https://www.geni.com/"
+    },
+    {
+     "url": "https://www.geni.com/images/external/Bluesky_Logo.svg?1793208863",
+     "kind": "logo",
+     "source_page": "https://www.geni.com/privacy"
+    }
+   ],
    "theme_color": null,
-   "languages": [],
+   "languages": [
+    "en"
+   ],
    "legal_name": null,
    "search": {
-    "available": null,
-    "method": "unknown",
-    "page_url": null,
-    "form_action": null,
-    "inputs": [],
-    "url_pattern": null,
+    "available": true,
+    "method": "http_get",
+    "page_url": "https://www.geni.com/",
+    "form_action": "https://www.geni.com/search",
+    "inputs": [
+     {
+      "name": "names",
+      "type": "text",
+      "canonical": null,
+      "required": false,
+      "autocomplete": "off",
+      "placeholder": null
+     },
+     {
+      "name": "search_type",
+      "type": "hidden",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     }
+    ],
+    "url_pattern": "https://www.geni.com/search?names={names}",
     "directory_prefixes": [],
     "paywall": null,
     "login_wall": null
    },
    "removal": {
     "url": "https://www.geni.com/privacy",
-    "final_url": null,
-    "http_status": null,
+    "final_url": "https://www.geni.com/privacy",
+    "http_status": 200,
     "kinds": [
      "opt_out"
     ],
-    "channels": [],
-    "emails": [],
+    "channels": [
+     "web_form",
+     "email"
+    ],
+    "emails": [
+     {
+      "email": "privacy@geni.com",
+      "confidence": "extracted",
+      "source_url": "https://www.geni.com/privacy"
+     },
+     {
+      "email": "dpo@geni.com",
+      "confidence": "extracted",
+      "source_url": "https://www.geni.com/privacy"
+     }
+    ],
     "phones": [],
     "postal_address": null,
     "portal": null,
-    "form_fields": [],
-    "csrf_field_name": null,
+    "form_fields": [
+     {
+      "name": "names",
+      "type": "text",
+      "canonical": null,
+      "required": false,
+      "autocomplete": "off",
+      "placeholder": null
+     }
+    ],
+    "csrf_field_name": "authenticity_token",
     "requires_profile_url": null,
     "captcha": {
      "provider": null,
@@ -155502,18 +156790,48 @@
    },
    "bot_defense": {
     "vendor": null,
-    "outcome": "unknown"
+    "outcome": "none"
    },
    "legal": {
-    "privacy_policy_url": null,
+    "privacy_policy_url": "https://www.geni.com/privacy",
     "terms_url": null,
     "automation_prohibited": null,
     "automation_clause": null,
-    "residency": [],
+    "residency": [
+     "US"
+    ],
     "authorized_agent": null,
-    "data_categories": []
+    "data_categories": [
+     "identifiers",
+     "internet_activity"
+    ]
    },
-   "pages": []
+   "pages": [
+    {
+     "url": "https://geni.com/",
+     "final_url": "https://www.geni.com/",
+     "status": 200,
+     "role": "home",
+     "title": "Join the World Family Tree - Geni.com",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.geni.com/",
+     "final_url": "https://www.geni.com/",
+     "status": 200,
+     "role": "home",
+     "title": "Join the World Family Tree - Geni.com",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.geni.com/privacy",
+     "final_url": "https://www.geni.com/privacy",
+     "status": 200,
+     "role": "catalog",
+     "title": "Privacy",
+     "liveness": "alive"
+    }
+   ]
   },
   "fqsg-avis-de-deces": {
    "schema_version": "3.0.0",
@@ -155521,36 +156839,424 @@
    "name": "FQSG Avis de décès",
    "category": "people-search",
    "domain": "federationgenealogie.qc.ca",
-   "checked_at": "2026-11-02T06:55:11+00:00",
-   "liveness": "not_checked",
-   "liveness_detail": "no crawl result in this log",
-   "homepage": null,
-   "logo_url": null,
-   "images": [],
+   "checked_at": "2026-11-02T09:57:11+00:00",
+   "liveness": "alive",
+   "liveness_detail": "catalog URL loaded",
+   "homepage": "https://federationgenealogie.qc.ca/",
+   "logo_url": "https://federationgenealogie.qc.ca/static/fqs_favicon.png",
+   "images": [
+    {
+     "url": "https://federationgenealogie.qc.ca/static/fqs_favicon.png",
+     "kind": "icon",
+     "source_page": "https://federationgenealogie.qc.ca/"
+    },
+    {
+     "url": "https://www.federationgenealogie.qc.ca/static/fqs_favicon.png",
+     "kind": "icon",
+     "source_page": "https://www.federationgenealogie.qc.ca/"
+    }
+   ],
    "theme_color": null,
-   "languages": [],
+   "languages": [
+    "fr"
+   ],
    "legal_name": null,
    "search": {
-    "available": null,
-    "method": "unknown",
-    "page_url": null,
-    "form_action": null,
-    "inputs": [],
-    "url_pattern": null,
+    "available": true,
+    "method": "http_get",
+    "page_url": "https://federationgenealogie.qc.ca/",
+    "form_action": "https://federationgenealogie.qc.ca/search",
+    "inputs": [
+     {
+      "name": "q",
+      "type": "text",
+      "canonical": "full_name",
+      "required": false,
+      "autocomplete": null,
+      "placeholder": "Nom, Prénom, mot-clé…"
+     },
+     {
+      "name": "date_debut",
+      "type": "text",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": "AAAA"
+     },
+     {
+      "name": "date_fin",
+      "type": "text",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": "AAAA"
+     },
+     {
+      "name": "lieu",
+      "type": "text",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": "Ville, région…"
+     },
+     {
+      "name": "source-filter",
+      "type": "text",
+      "canonical": null,
+      "required": false,
+      "autocomplete": "off",
+      "placeholder": "Tapez pour filtrer les sources..."
+     },
+     {
+      "name": "source_id",
+      "type": "select",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null,
+      "options": [
+       "Toutes les sources",
+       "Adam's Funeral Home, N.-D.-de-Lourdes, MB",
+       "Albuquerque Journal, NM, US",
+       "Alexandre Nicole Complexe funéraire Châteauguay, Châteauguay, QC",
+       "Alliance funéraire du Royaume, Saguenay, QC",
+       "Almanach du peuple 95",
+       "Almanach du peuple 96",
+       "Almanach du peuple 97",
+       "Almanach du peuple 98",
+       "Anctil-Rochette & Son Funeral Home, Nashua, NH, US",
+       "Andover Townsman, MA, US",
+       "Auclair Funeral Home and Cremation Service, Fall River, MA, US",
+       "Bangor Daily News, ME, US",
+       "Battleboro Reformer, VT, US",
+       "Beauce Média, Ste-Marie de Beauce, QC",
+       "Beaumont Enterprise, TX, US",
+       "Bessette Résidences et Jardins funéraires, Granby, QC",
+       "Boston Herald, MA, US",
+       "Brown Funeral Home, inc., Oakland, RI, US",
+       "Brownlee Funeral Homes, Ingleside, ON",
+       "Brunet Funeral Home, Rockland, ON",
+       "Bugle-Observer, Woodstock, NB",
+       "Burlington Free Press, VT, US",
+       "Cabinet Press Inc, Milford, NH, US",
+       "Cablevision, Abitibi, QC",
+       "Cadieux Maison Funéraire, Buckingham, QC",
+       "Calgary Herald, AB",
+       "Campbell Funeral Home, Beverly, MA, US",
+       "Canada's National Obituary serv.",
+       "Canoe.ca (Obituaries Today)",
+       "Cap Code Times, MA, US",
+       "Centre funéraire Bissonnette, Rimouski, QC",
+       "Centre funéraire Coop. du Granit, Lac Mégantic, QC",
+       "Centre Funéraire coopératif Région de Coaticook",
+       "Centre funéraire Côte-Des-Neiges, Inc., Montréal, QC",
+       "Centre funéraire Dupuis, Asbestos, QC",
+       "Centre funéraire E. Montpetit & fils, Salaberry-de-Valleyfield, QC",
+       "Centre Funéraire Jacques & Fils Inc., Lac-Mégantic, QC",
+       "Centre Funéraire Régional Joliette, QC",
+       "Centre funéraire Rousseau, Trois-Rivières, QC",
+       "Centre funéraire Sylvie Picard, Shawinigan, QC",
+       "Centre Funéraire Yves Houle, Drummondville, QC",
+       "Chicago Tribune, Chicago, IL, US",
+       "Cités Nouvelles, Montréal, QC",
+       "Clancy-Gernon Funeral Home, Kankakee, IL, US",
+       "CN2I - La Tribune",
+       "CN2I - La Voix de l'Est",
+       "CN2I - Le Droit",
+       "CN2I - Le Nouvelliste",
+       "CN2I - Le Quotidien",
+       "CN2I - Le Soleil",
+       "Collingwood Entreprise-Bulletin, ON",
+       "Collins Clarke MacGillivray White, St-Lambert, QC",
+       "Community Press Eastern Edition, ON",
+       "Community Press Quinte Edition, ON",
+       "Community Press Western Edition, ON",
+       "Complexe funéraire Aeterna / Maison funéraire Aaron, Montréal, QC",
+       "Complexe funéraire Bérubé & fils, Alma, QC",
+       "Complexe funéraire Brome-Missisquoi, Cowansville, QC",
+       "Complexe funéraire Brome-Missisquoi, QC",
+       "Complexe Funéraire Carl Savard, QC",
+       "Complexe funéraire Charles E. Rajotte, Montréal, QC",
+       "Complexe funéraire Charron et Lamoureux, Magog, QC",
+       "Complexe Funéraire de Châteauguay, QC",
+       "Complexe funéraire de la Cité, Québec, QC",
+       "Complexe funéraire des Trembles, QC",
+       "Complexe Funéraire Fortin, L’Épiphanie, QC",
+       "Complexe funéraire Girardot & Ménard, Granby, QC",
+       "Complexe Funéraire Heritage, Ottawa, ON",
+       "Complexe Funéraire J. H. Fleury, Rouyn-Noranda, QC",
+       "Complexe funéraire J.A. Guilbault, Montréal, QC",
+       "Complexe Funéraire Jacques Couture Inc., Laurierville, QC",
+       "Complexe funéraire Jean Comtois, L'Assomption, QC",
+       "Complexe funéraire Lachance inc., N.-D.-Des Prairies, QC",
+       "Complexe funéraire LeSieur, Granby, QC",
+       "Complexe Funéraire Loreto II Ltée, St-Léonard, QC",
+       "Complexe funéraire Marius Pelletier, La Pocatière, QC",
+       "Complexe funéraire Mozart Desforges, Lachute, QC",
+       "Complexe funéraire Shields Berthiaume, Petite Nation, QC",
+       "Complexe funéraire Stéphane Gendron, Beauharnois, QC",
+       "Complexe funéraire Stéphane Gendron, Greenfield Park, QC",
+       "Complexe funéraire Steve L. Elkas, Sherbrooke, QC",
+       "Complexe funéraire Sylvio Marceau, Québec, QC",
+       "Complexe funéraire Ubald Lalime, St-Hyacinthe, QC",
+       "Complexe thanatologique Lucas Fournier, Ste-Anne-des-Monts, QC",
+       "Complexes funéraires Yves Légaré, QC",
+       "Concord Monitor, NH, US",
+       "Connecticut on Line, Bridgeport, CT",
+       "ConnecticutPost, Bridgeport, CT, US",
+       "Connor-Healy Funeral Home and Cremation Center, Manchester, NH, US",
+       "Coopérative de la Rive-Nord, St-Marc-des-Carrières, QC",
+       "Coopérative funéraire Brunet, Mont-Laurier, QC",
+       "Coopérative Funéraire Charlevoisienne, QC",
+       "Coopérative Funéraire Charlevoix-Ouest, QC",
+       "Coopérative funéraire d'Asbestos, QC",
+       "Coopérative funéraire d'Ottawa, ON",
+       "Coopérative funéraire de l'Estrie, QC",
+       "Coopérative funéraire de l'Île de Montréal, Montréal, QC",
+       "Coopérative funéraire de l'Outaouais, Gatineau, QC",
+       "Coopérative funéraire de la Mauricie, QC",
+       "Coopérative funéraire de la région de Coaticook, Coaticook, QC",
+       "Coopérative funéraire de Montérégie-Est, Saint-Hyacinthe",
+       "Coopérative funéraire de Montérégie, Longueuil, QC",
+       "Coopérative funéraire de Montérégie, Saint-Hubert, QC",
+       "Coopérative funéraire de St-Hyacinthe, QC",
+       "Coopérative funéraire de St-Jean-de-Matha, QC",
+       "Coopérative funéraire des Deux Rives, QC",
+       "Coopérative funéraire des Eaux Vives, Rivière-du-Loup, QC",
+       "Coopérative funéraire du Bas-Saint-Laurent, QC",
+       "Coopérative funéraire du Fjord, La Baie, QC",
+       "Coopérative funéraire du Grand Montréal, QC",
+       "Coopérative funéraire du Témiscamingue, Ville-Marie, QC",
+       "Coopérative funéraire Haute-Côte-Nord Manicouagan, QC",
+       "Coopérative funéraire LeSieur, Granby, QC",
+       "Coopérative funéraire Montcalm, St-Jacques, QC",
+       "Cornwall Standard Freeholder, ON",
+       "Corporation des thanatologues du Québec",
+       "Courrier Ahunstic, QC",
+       "Courrier Bordeaux, Cartierville, QC",
+       "Courrier de Portneuf.com",
+       "Courrier Laval, QC",
+       "Cyberpresse - La Presse, Montréal, QC",
+       "Cyberpresse - La Tribune, Sherbrooke, QC",
+       "Cyberpresse - La Voix de l'Est, Granby, QC",
+       "Cyberpresse - Le Droit, Ottawa, ON",
+       "Cyberpresse - Le Nouvelliste, Trois-Rivières, QC",
+       "Cyberpresse - Le Soleil, Québec, QC",
+       "Daigle & Nadeau Funeral Home, Fort Kent, ME, US",
+       "Daily Hampshire Gazette, Northampton, MA, US",
+       "Daily Herald, Chicago, IL, US",
+       "Daily News, Los Angeles, CA, US",
+       "Daily Press, Victorville, CA, US",
+       "Davidson Funeral Home, Port Colborne, ON",
+       "Davis Funeral Home, Nashua, NH, US",
+       "Daytona Beach News-Journal, FL, US",
+       "Democrat and Chronicle, Rochester, NY, US",
+       "Derry News, NH, US",
+       "Descôteaux et frère, Pierreville, QC",
+       "Desnoyers Complexe Funéraire, Chambly, QC",
+       "Desrosiers & Fils, St-Jérôme, QC",
+       "Dolby Funeral Chapel, Windham, ME, US",
+       "Domaine Funéraire / CTQ",
+       "Duluth News Tribune, MN, US",
+       "Dumont Sullivan Funeral Homes, Nashua, NH, US",
+       "Dupuis salons funéraires, QC",
+       "DurhamRegion.com",
+       "Dyer-Lake Funeral Home and Cremation Services, North Attleboro, MA, US",
+       "Ebitiaries.ca",
+       "Edmonton Journal, AB",
+       "Elhatton's Funeral Home Ltd, Bathurst, NB",
+       "EstriePlus.com, Le Journal Internet",
+       "Express-News, San Antonio, TX, US",
+       "F. Thériault inc. Résidences funéraires, St-Félix-de-Valois, QC",
+       "Fair Haven Funeral Home, Moncton, NB",
+       "Family First Home & Chapel, Windsor, ON",
+       "Fédération des Coopératives funéraires du Québec, QC",
+       "Ferguson Knowles Funeral Home, Moncton, NB",
+       "Fitzpatrick's Funeral Home, Saint John, NB",
+       "Flint Journal, MI, US",
+       "Foothills Memorial Chapel, Edson, AB",
+       "Fort Frances Times Online, ON",
+       "Foster's Daily Democrat, Dover, NH, US",
+       "Fournier & Fournier Funeral Services, Woonsocket, RI, US",
+       "Free Press, Midland, ON",
+       "French Family Funeral Home Ltd, Kirkland Lake, ON",
+       "Frenette Funeral Home, Moncton, NB",
+       "Friscolanti Funeral Chapel, Hamilton, ON",
+       "Funérarium Beauchamp, Aylmer, QC",
+       "Funérarium Daniel Vachon, Drummondville, QC",
+       "Funérarium JB de Rimouski, QC",
+       "Gilbert Mandeville & Fils Ltée, Saint-Ours, QC",
+       "Gilbert Mandeville & Fils Ltée, Sainte-Victoire-de-Sorel, QC",
+       "Gilbert Mandeville & Fils Ltée, Sorel-Tracy, QC",
+       "Gilles Serre inc., QC",
+       "Gordon F. Tompkins Funeral Home, Kingston, ON",
+       "Granby enregion.ca",
+       "Grand Forks Herald, ND, US",
+       "Great Falls Tribune, MT, US",
+       "Green Bay Press-Gazette, Green Bay, WI, US",
+       "Grégoire & Desrochers, Victoriaville, QC",
+       "Groupe funéraire Caron, Saint-Alexandre, QC",
+       "Groupe Garneau Thanatologue, Lévis, QC",
+       "Guelph Daily Mercury, ON",
+       "Harmonia, Québec, QC",
+       "Hartford Courant, CT, US",
+       "Hathaway Family Funeral Home, Fall River, MA, US",
+       "Hebdo Rive Nord, Repentigny, QC",
+       "Herald Tribune, Sarasota, FL, US",
+       "HG Division Résidences funéraires, Gaspé, QC",
+       "Holcomb Des Groseilliers Funeral Home, East Hardwick, VT, US",
+       "Holt Funeral Home, Woonsocket, RI, US",
+       "HommageNB.com",
+       "Houma Today, LA, US",
+       "Houston Chronicle, TX, US",
+       "Hulse, Playfair & McGarry Funeral Homes, Ottawa, ON",
+       "In Memoriam, infiniti.net",
+       "Info Dimanche, Rivière-du-Loup, QC",
+       "Information du Nord, Mont-Tremblant, QC",
+       "Inland Valley Daily Bulletin, CA, US",
+       "J. A. Larin & Fils Inc., Salaberry-de-Valleyfield, QC",
+       "J. J. Duffy Funeral Home, Cumberland,RI, US",
+       "J. Philibert & Fils inc., thanatologues",
+       "J. Rosario Chabot, St-Prosper, QC",
+       "J.F. Fortin & fils, Port-Daniel, QC",
+       "J.N. Donais Coopérative funéraire, Drummondville, QC",
+       "J.N. Rousseau et frère, Nicolet, QC",
+       "J.N. Rousseau et frère, Saint-François-du-Lac, QC",
+       "Jackson Citizen Patriot, MI, US",
+       "Jean Fleury & Fils, Trois-Pistoles, QC",
+       "Johnson Funeral Home, Lake Charles, LA, US",
+       "Journal de Rosemont Petite Patrie, QC",
+       "Journal de St-Michel, Laval, QC",
+       "Journal des citoyens, Prévost, QC",
+       "Journal des Pays d'en Haut la Vallée, QC",
+       "Journal L'Avantage, Rimouski, QC",
+       "Journal L'oie blanche, Montmagny, QC",
+       "Journal La Gatineau, Egan-Sud, QC",
+       "Journal Le Placoteux, St-Pascal, QC",
+       "Journal Le Plus, Granby, QC",
+       "Journal Le Saint-François, Salaberry-de-Valleyfield, QC",
+       "Journal Sentinel, Milwakee, WI, US",
+       "Joyce Funeral Home, Walham, MA, US",
+       "Kalamazoo Gazette, MI, US",
+       "Kane et Fetterly, Montréal, QC",
+       "Kapuskasing Northern Times, ON",
+       "Kelly Funeral Home-Walkley Chapel, Ottawa, ON",
+       "Kennebec Journal, Augusta, ME, US",
+       "Kings County Record, Sussex, NB",
+       "Kingstonthisweek, ON",
+       "L. Gaston Gaudet Inc. Thanatologues, Bécancour, QC",
+       "L'Acadie Nouvelle, Caraquet, NB",
+       "L'Action populaire, Joliette, QC",
+       "L'Action, l'expression des gens d'ici, Joliette, QC",
+       "L'Action.com",
+       "L'Action/L'Expression Charlemagne, QC",
+       "L'Action/L'Expression, Laval, QC",
+       "l'Avant-Poste, Amqui, QC",
+       "L'Avenir de l'Est, Pte-aux-Trembles, QC",
+       "L'Eau Vive, Gravelbourg, SK",
+       "L'Écho Abitibien, Val D'Or, QC",
+       "L'Écho de Frontenac, Lac-Mégantic, QC",
+       "L'Écho de la Lièvre, Mont-Laurier, QC",
+       "L'Écho de La Tuque, Haut-St-Maurice, QC",
+       "L'Écho de Maskinongé, QC",
+       "L'Écho du Nord, St-Jérôme, QC",
+       "L'Éclaireur Progrès, St-Georges-de-Beauce, QC",
+       "L'Étincelle de Windsor, QC",
+       "L'Étoile du Lac (Lac-St-Jean)",
+       "L'Étoile du Lac, M.R.C. Domaine-du-Roy, QC",
+       "L'Étoile du Lac, Roberval, QC",
+       "L'Express et La Parole, Drummondville, QC",
+       "L'Informateur de Rivière-des-Prairies, QC",
+       "L’Étoile, Dieppe, NB",
+       "L’Étoile, Vaudreuil-Dorion, QC",
+       "La Frontière, Rouyn-Noranda, QC",
+       "La Liberté, St-Boniface, MB",
+       "La Maison Darche, QC",
+       "La Maison funéraire de l'Amiante, QC",
+       "La Maison Funéraire Laurent Normand, Montmagny, QC",
+       "La Maison Funéraire Serge Julien, QC",
+       "La maison Roland Couture et fils, Lac-Etchemin, QC",
+       "La Nouvelle, Victoriaville, QC",
+       "La Nouvelle/L'Union, Victoriaville, QC",
+       "La Presse",
+       "La Revue, Gatineau, QC",
+       "La Seigneurie, Coopérative funéraire, Québec, QC",
+       "La Sentinelle de Chibougamau, QC",
+       "La Voix de la Matanie, Matane, QC",
+       "La Voix Gaspésienne, QC",
+       "La Voix Populaire, Mtl, QC",
+       "La Voix, Chambly, QC",
+       "La Voix, Sorel-Tracy, QC",
+       "Lahaie & Sullivan, Cornwall, ON",
+       "Lambert Funeral Home, Manchester, NH, US",
+       "Lancaster on line, PA, US",
+       "Las Vegas Review-Journal, NV, US",
+       "Le Canada-Français, St-Jean-sur-Richelieu, QC",
+       "Le Cantonnier, Distraëli, QC",
+       "Le Carillon",
+       "Le Choix Vallée-de-la-Gatineau, Maniwaki, QC",
+       "Le Courrier de Frontenac, Thetford-Mines, QC",
+       "Le Courrier de St-Hyacinthe, QC",
+       "Le Courrier Sud, Nicolet-Bécancour, QC",
+       "Le Devoir, Montréal, QC",
+       "Le Flambeau, Arrondissements Mercier et Hochelaga-Maisonneuve, QC",
+       "Le Flambeau, St-Léonard, QC",
+       "Le Guide de Montréal-Nord, QC",
+       "Le Journal de Chambly, QC",
+       "Le Journal de Montréal, QC",
+       "Le Journal de Québec, QC",
+       "Le Journal de Sept-Îles, QC",
+       "Le Lac St-Jean, QC",
+       "Le Lac-St-Jean, MRC Lac Saint-Jean Est, QC",
+       "Le Madawaska, Edmunston, NB",
+       "Le Messager Lachine Dorval, QC",
+       "Le Mirabel, St-Jérôme, QC",
+       "Le Nécrologue",
+       "Le Nord, Hearst, ON",
+       "Le Plateau, Montréal, QC",
+       "Le Point de Dolbeau, QC",
+       "Le Progrès de Coaticook, QC",
+       "Le Progrès de St-Léonard, QC",
+       "Le Quotidien / Le Progrès Dimanche, Saguenay, QC",
+       "Le Reflet de Delson, QC",
+       "Le Reflet du Lac, Magog, QC",
+       "Le Régional, Lachute, QC",
+       "Le Régional, ON",
+       "Le Réveil, Saguenay, QC",
+       "Le Riverain, Ste-Anne-des-Monts, QC",
+       "Le Soleil de Châteauguay, Châteauguay, QC",
+       "Le Soleil de Châteauguay, QC",
+       "Le Soleil de Valleyfield, QC",
+       "Le Soleil du Mercredi, Châteauguay, QC",
+       "Le St-François, Valleyfield, QC",
+       "Le St-Laurent Portage, Rivière-du-Loup, QC",
+       "Le Trait d'Union, Laval, Qc",
+       "Le Voyageur, Sudbury, ON",
+       "Le-Survol-de-la-Rive-Nord, QC",
+       "Leader Post, Regina, SK",
+       "Leader-Telegram, Eau Claire, WI, US"
+      ]
+     }
+    ],
+    "url_pattern": "https://federationgenealogie.qc.ca/search?q={q}&date_debut={date_debut}&date_fin={date_fin}&lieu={lieu}&source-filter={source-filter}&source_id={source_id}",
     "directory_prefixes": [],
     "paywall": null,
     "login_wall": null
    },
    "removal": {
     "url": "https://federationgenealogie.qc.ca/politique-confidentialite",
-    "final_url": null,
-    "http_status": null,
+    "final_url": "https://federationgenealogie.qc.ca/politique-confidentialite",
+    "http_status": 200,
     "kinds": [
      "opt_out"
     ],
-    "channels": [],
+    "channels": [
+     "phone"
+    ],
     "emails": [],
-    "phones": [],
+    "phones": [
+     "418 653-3940"
+    ],
     "postal_address": null,
     "portal": null,
     "form_fields": [],
@@ -155569,18 +157275,47 @@
    },
    "bot_defense": {
     "vendor": null,
-    "outcome": "unknown"
+    "outcome": "none"
    },
    "legal": {
     "privacy_policy_url": null,
     "terms_url": null,
     "automation_prohibited": null,
     "automation_clause": null,
-    "residency": [],
+    "residency": [
+     "CA-QC"
+    ],
     "authorized_agent": null,
-    "data_categories": []
+    "data_categories": [
+     "internet_activity"
+    ]
    },
-   "pages": []
+   "pages": [
+    {
+     "url": "https://federationgenealogie.qc.ca/",
+     "final_url": "https://federationgenealogie.qc.ca/",
+     "status": 200,
+     "role": "home",
+     "title": "Avis de décès — FQSG",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.federationgenealogie.qc.ca/",
+     "final_url": "https://www.federationgenealogie.qc.ca/",
+     "status": 200,
+     "role": "home",
+     "title": "Avis de décès — FQSG",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://federationgenealogie.qc.ca/politique-confidentialite",
+     "final_url": "https://federationgenealogie.qc.ca/politique-confidentialite",
+     "status": 200,
+     "role": "catalog",
+     "title": "Mentions légales et confidentialité — Avis de décès FQSG",
+     "liveness": "alive"
+    }
+   ]
   },
   "domaine-funeraire": {
    "schema_version": "3.0.0",
@@ -155588,39 +157323,105 @@
    "name": "Domaine funéraire (Corporation des thanatologues du Québec)",
    "category": "people-search",
    "domain": "domainefuneraire.com",
-   "checked_at": "2026-11-02T06:55:11+00:00",
-   "liveness": "not_checked",
-   "liveness_detail": "no crawl result in this log",
-   "homepage": null,
-   "logo_url": null,
-   "images": [],
-   "theme_color": null,
-   "languages": [],
+   "checked_at": "2026-11-02T09:57:11+00:00",
+   "liveness": "alive",
+   "liveness_detail": "catalog URL loaded",
+   "homepage": "https://domainefuneraire.com/",
+   "logo_url": "https://domainefuneraire.com/static/images/logo-corporation-thanatologues-quebec-w.svg",
+   "images": [
+    {
+     "url": "https://domainefuneraire.com/static/images/icon/favicon.png",
+     "kind": "icon",
+     "source_page": "https://domainefuneraire.com/"
+    },
+    {
+     "url": "https://domainefuneraire.com/static/images/logo-corporation-thanatologues-quebec-w.svg",
+     "kind": "logo",
+     "source_page": "https://domainefuneraire.com/"
+    },
+    {
+     "url": "https://s3.ca-central-1.amazonaws.com/ctq-prod/assets/blog/_thumbnail/11832/Logo-CTQ_860x560_2026-10-29-162517_wnbl.jpg",
+     "kind": "logo",
+     "source_page": "https://domainefuneraire.com/"
+    },
+    {
+     "url": "https://s3.ca-central-1.amazonaws.com/ctq-prod/assets/blog/_thumbnail/11766/Logo-CTQ_860x560.jpg",
+     "kind": "logo",
+     "source_page": "https://domainefuneraire.com/"
+    },
+    {
+     "url": "https://domainefuneraire.com/static/images/logo-corporation-thanatologues-quebec-b.svg",
+     "kind": "logo",
+     "source_page": "https://domainefuneraire.com/"
+    },
+    {
+     "url": "https://www.domainefuneraire.com/static/images/icon/favicon.png",
+     "kind": "icon",
+     "source_page": "https://www.domainefuneraire.com/"
+    },
+    {
+     "url": "https://www.domainefuneraire.com/static/images/logo-corporation-thanatologues-quebec-w.svg",
+     "kind": "logo",
+     "source_page": "https://www.domainefuneraire.com/"
+    },
+    {
+     "url": "https://www.domainefuneraire.com/static/images/logo-corporation-thanatologues-quebec-b.svg",
+     "kind": "logo",
+     "source_page": "https://www.domainefuneraire.com/"
+    }
+   ],
+   "theme_color": "#A2D8EF",
+   "languages": [
+    "fr"
+   ],
    "legal_name": null,
    "search": {
-    "available": null,
-    "method": "unknown",
-    "page_url": null,
-    "form_action": null,
-    "inputs": [],
-    "url_pattern": null,
+    "available": true,
+    "method": "http_get",
+    "page_url": "https://domainefuneraire.com/",
+    "form_action": "https://domainefuneraire.com/recherche/avis-de-deces",
+    "inputs": [
+     {
+      "name": "keywords",
+      "type": "text",
+      "canonical": "full_name",
+      "required": false,
+      "autocomplete": null,
+      "placeholder": "Nom et/ou prénom"
+     }
+    ],
+    "url_pattern": "https://domainefuneraire.com/recherche/avis-de-deces?keywords={keywords}",
     "directory_prefixes": [],
     "paywall": null,
     "login_wall": null
    },
    "removal": {
     "url": "https://www.domainefuneraire.com/politique-de-confidentialite",
-    "final_url": null,
-    "http_status": null,
+    "final_url": "https://www.domainefuneraire.com/politique-de-confidentialite",
+    "http_status": 200,
     "kinds": [
      "opt_out"
     ],
-    "channels": [],
+    "channels": [
+     "web_form",
+     "phone"
+    ],
     "emails": [],
-    "phones": [],
+    "phones": [
+     "418-622-1717"
+    ],
     "postal_address": null,
     "portal": null,
-    "form_fields": [],
+    "form_fields": [
+     {
+      "name": "keywords",
+      "type": "text",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": "Nom et/ou prénom"
+     }
+    ],
     "csrf_field_name": null,
     "requires_profile_url": null,
     "captcha": {
@@ -155636,18 +157437,45 @@
    },
    "bot_defense": {
     "vendor": null,
-    "outcome": "unknown"
+    "outcome": "none"
    },
    "legal": {
     "privacy_policy_url": null,
     "terms_url": null,
     "automation_prohibited": null,
     "automation_clause": null,
-    "residency": [],
+    "residency": [
+     "CA-QC"
+    ],
     "authorized_agent": null,
     "data_categories": []
    },
-   "pages": []
+   "pages": [
+    {
+     "url": "https://domainefuneraire.com/",
+     "final_url": "https://domainefuneraire.com/",
+     "status": 200,
+     "role": "home",
+     "title": "Services Funéraires Adaptés - La Corporation des thanatologues du Québec",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.domainefuneraire.com/",
+     "final_url": "https://www.domainefuneraire.com/",
+     "status": 200,
+     "role": "home",
+     "title": "Services Funéraires Adaptés - La Corporation des thanatologues du Québec",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.domainefuneraire.com/politique-de-confidentialite",
+     "final_url": "https://www.domainefuneraire.com/politique-de-confidentialite",
+     "status": 200,
+     "role": "catalog",
+     "title": "Politique de confidentialité - La Corporation des thanatologues du Québec",
+     "liveness": "alive"
+    }
+   ]
   },
   "canadian-obituaries": {
    "schema_version": "3.0.0",
@@ -155655,39 +157483,132 @@
    "name": "Canadian Obituaries",
    "category": "people-search",
    "domain": "canadianobituaries.com",
-   "checked_at": "2026-11-02T06:55:11+00:00",
-   "liveness": "not_checked",
-   "liveness_detail": "no crawl result in this log",
-   "homepage": null,
-   "logo_url": null,
-   "images": [],
+   "checked_at": "2026-11-02T09:57:07+00:00",
+   "liveness": "alive",
+   "liveness_detail": "catalog URL loaded",
+   "homepage": "https://canadianobituaries.com/",
+   "logo_url": "https://canadianobituaries.com/wp-content/uploads/2026/10/cropped-canadian-site-mark-108-180x180.webp",
+   "images": [
+    {
+     "url": "https://canadianobituaries.com/wp-content/uploads/2026/10/cropped-canadian-site-mark-108-32x32.webp",
+     "kind": "icon",
+     "source_page": "https://canadianobituaries.com/"
+    },
+    {
+     "url": "https://canadianobituaries.com/wp-content/uploads/2026/10/cropped-canadian-site-mark-108-192x192.webp",
+     "kind": "icon",
+     "source_page": "https://canadianobituaries.com/"
+    },
+    {
+     "url": "https://canadianobituaries.com/wp-content/uploads/2026/10/cropped-canadian-site-mark-108-180x180.webp",
+     "kind": "apple_touch_icon",
+     "source_page": "https://canadianobituaries.com/"
+    },
+    {
+     "url": "https://canadianobituaries.com/wp-content/uploads/2026/08/canadian-site-mark.png",
+     "kind": "og_image",
+     "source_page": "https://canadianobituaries.com/"
+    }
+   ],
    "theme_color": null,
-   "languages": [],
-   "legal_name": null,
+   "languages": [
+    "en"
+   ],
+   "legal_name": "Canadian Obituaries",
    "search": {
-    "available": null,
-    "method": "unknown",
-    "page_url": null,
-    "form_action": null,
-    "inputs": [],
-    "url_pattern": null,
+    "available": true,
+    "method": "http_get",
+    "page_url": "https://canadianobituaries.com/",
+    "form_action": "https://canadianobituaries.com/obituaries/",
+    "inputs": [
+     {
+      "name": "s",
+      "type": "search",
+      "canonical": "full_name",
+      "required": false,
+      "autocomplete": null,
+      "placeholder": "Search by first or last name"
+     },
+     {
+      "name": "post_type",
+      "type": "hidden",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     }
+    ],
+    "url_pattern": "https://canadianobituaries.com/obituaries/?s={s}",
     "directory_prefixes": [],
     "paywall": null,
     "login_wall": null
    },
    "removal": {
     "url": "https://canadianobituaries.com/contact/",
-    "final_url": null,
-    "http_status": null,
+    "final_url": "https://canadianobituaries.com/contact/",
+    "http_status": 200,
     "kinds": [
-     "opt_out"
+     "unsubscribe"
     ],
-    "channels": [],
-    "emails": [],
-    "phones": [],
+    "channels": [
+     "web_form",
+     "email",
+     "phone"
+    ],
+    "emails": [
+     {
+      "email": "contact@canadianobituaries.com",
+      "confidence": "uncertain",
+      "source_url": "https://canadianobituaries.com/contact/"
+     }
+    ],
+    "phones": [
+     "(905) 767-0101"
+    ],
     "postal_address": null,
     "portal": null,
-    "form_fields": [],
+    "form_fields": [
+     {
+      "name": "srfm-sender-email-field",
+      "type": "hidden",
+      "canonical": "email",
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "srfm-input-c01a9e01-lbl-TmFtZQ-name",
+      "type": "text",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "srfm-email-c01a9e02-lbl-RW1haWwgQWRkcmVzcw-email-address",
+      "type": "email",
+      "canonical": "email",
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "srfm-input-c01a9e03-lbl-U3ViamVjdA-subject",
+      "type": "text",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "srfm-textarea-c01a9e04-lbl-TWVzc2FnZQ-message",
+      "type": "text",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     }
+    ],
     "csrf_field_name": null,
     "requires_profile_url": null,
     "captcha": {
@@ -155703,18 +157624,48 @@
    },
    "bot_defense": {
     "vendor": null,
-    "outcome": "unknown"
+    "outcome": "none"
    },
    "legal": {
     "privacy_policy_url": null,
     "terms_url": null,
     "automation_prohibited": null,
     "automation_clause": null,
-    "residency": [],
+    "residency": [
+     "CA-QC",
+     "CA-BC"
+    ],
     "authorized_agent": null,
-    "data_categories": []
+    "data_categories": [
+     "identifiers"
+    ]
    },
-   "pages": []
+   "pages": [
+    {
+     "url": "https://canadianobituaries.com/",
+     "final_url": "https://canadianobituaries.com/",
+     "status": 200,
+     "role": "home",
+     "title": "Canadian Obituaries | Search Recent Obituary Notices",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.canadianobituaries.com/",
+     "final_url": "https://canadianobituaries.com/",
+     "status": 200,
+     "role": "home",
+     "title": "Canadian Obituaries | Search Recent Obituary Notices",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://canadianobituaries.com/contact/",
+     "final_url": "https://canadianobituaries.com/contact/",
+     "status": 200,
+     "role": "catalog",
+     "title": "Contact Us – Get in Touch | Canadian Obituaries",
+     "liveness": "alive"
+    }
+   ]
   },
   "cooperative-funeraire-du-grand-montreal": {
    "schema_version": "3.0.0",
@@ -155722,32 +157673,87 @@
    "name": "Coopérative funéraire du Grand Montréal",
    "category": "people-search",
    "domain": "cfgrandmontreal.com",
-   "checked_at": "2026-11-02T06:55:11+00:00",
-   "liveness": "not_checked",
-   "liveness_detail": "no crawl result in this log",
-   "homepage": null,
-   "logo_url": null,
-   "images": [],
+   "checked_at": "2026-11-02T09:57:05+00:00",
+   "liveness": "alive",
+   "liveness_detail": "catalog URL loaded",
+   "homepage": "https://cfgrandmontreal.com/en",
+   "logo_url": "https://cfgrandmontreal.com/web/image/website/1/logo/Coop%C3%A9rative%20fun%C3%A9raire%20du%20grand%20Montr%C3%A9al?unique=d4b1489",
+   "images": [
+    {
+     "url": "https://cfgrandmontreal.com/web/image/website/1/favicon?unique=d4b1489",
+     "kind": "apple_touch_icon",
+     "source_page": "https://cfgrandmontreal.com/en"
+    },
+    {
+     "url": "https://cfgrandmontreal.com/web/image/website/1/logo?unique=31fa2fc",
+     "kind": "og_image",
+     "source_page": "https://cfgrandmontreal.com/en"
+    },
+    {
+     "url": "https://cfgrandmontreal.com/web/image/website/1/logo/Coop%C3%A9rative%20fun%C3%A9raire%20du%20grand%20Montr%C3%A9al?unique=d4b1489",
+     "kind": "logo",
+     "source_page": "https://cfgrandmontreal.com/en"
+    },
+    {
+     "url": "https://cfgrandmontreal.com/web/image/161469-af432a26/logos%20Espace%20Famille-VF.webp",
+     "kind": "logo",
+     "source_page": "https://cfgrandmontreal.com/en"
+    },
+    {
+     "url": "https://cfgrandmontreal.com/web/image/159357-059a5381/logo.webp",
+     "kind": "logo",
+     "source_page": "https://cfgrandmontreal.com/en"
+    },
+    {
+     "url": "https://cfgrandmontreal.com/web/image/website/1/logo?unique=d4b1489",
+     "kind": "og_image",
+     "source_page": "https://cfgrandmontreal.com/en/politique-confidentialite"
+    },
+    {
+     "url": "https://cfgrandmontreal.com/web/image/website/1/logo/300x300?unique=d4b1489",
+     "kind": "twitter_image",
+     "source_page": "https://cfgrandmontreal.com/en/politique-confidentialite"
+    }
+   ],
    "theme_color": null,
-   "languages": [],
+   "languages": [
+    "en"
+   ],
    "legal_name": null,
    "search": {
-    "available": null,
-    "method": "unknown",
-    "page_url": null,
-    "form_action": null,
-    "inputs": [],
-    "url_pattern": null,
+    "available": true,
+    "method": "http_get",
+    "page_url": "https://cfgrandmontreal.com/en",
+    "form_action": "https://cfgrandmontreal.com/en/website/search",
+    "inputs": [
+     {
+      "name": "search",
+      "type": "search",
+      "canonical": "full_name",
+      "required": false,
+      "autocomplete": null,
+      "placeholder": "Search..."
+     },
+     {
+      "name": "order",
+      "type": "hidden",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     }
+    ],
+    "url_pattern": "https://cfgrandmontreal.com/en/website/search?search={search}",
     "directory_prefixes": [],
     "paywall": null,
     "login_wall": null
    },
    "removal": {
     "url": "https://cfgrandmontreal.com/en/politique-confidentialite",
-    "final_url": null,
-    "http_status": null,
+    "final_url": "https://cfgrandmontreal.com/en/politique-confidentialite",
+    "http_status": 200,
     "kinds": [
-     "opt_out"
+     "unsubscribe"
     ],
     "channels": [],
     "emails": [],
@@ -155770,18 +157776,47 @@
    },
    "bot_defense": {
     "vendor": null,
-    "outcome": "unknown"
+    "outcome": "none"
    },
    "legal": {
     "privacy_policy_url": null,
     "terms_url": null,
     "automation_prohibited": null,
     "automation_clause": null,
-    "residency": [],
+    "residency": [
+     "CA-QC"
+    ],
     "authorized_agent": null,
-    "data_categories": []
+    "data_categories": [
+     "internet_activity"
+    ]
    },
-   "pages": []
+   "pages": [
+    {
+     "url": "https://cfgrandmontreal.com/",
+     "final_url": "https://cfgrandmontreal.com/en",
+     "status": 200,
+     "role": "home",
+     "title": "Accueil | Coopérative funéraire du grand Montréal",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.cfgrandmontreal.com/",
+     "final_url": "https://cfgrandmontreal.com/en",
+     "status": 200,
+     "role": "home",
+     "title": "Accueil | Coopérative funéraire du grand Montréal",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://cfgrandmontreal.com/en/politique-confidentialite",
+     "final_url": "https://cfgrandmontreal.com/en/politique-confidentialite",
+     "status": 200,
+     "role": "catalog",
+     "title": "politique-confidentialite | Coopérative funéraire du grand Montréal",
+     "liveness": "alive"
+    }
+   ]
   },
   "cooperative-funeraire-des-deux-rives": {
    "schema_version": "3.0.0",
@@ -155789,36 +157824,95 @@
    "name": "Coopérative funéraire des Deux Rives",
    "category": "people-search",
    "domain": "coopfuneraire2rives.com",
-   "checked_at": "2026-11-02T06:55:11+00:00",
-   "liveness": "not_checked",
-   "liveness_detail": "no crawl result in this log",
-   "homepage": null,
-   "logo_url": null,
-   "images": [],
+   "checked_at": "2026-11-02T09:57:08+00:00",
+   "liveness": "alive",
+   "liveness_detail": "catalog URL loaded",
+   "homepage": "https://coopfuneraire2rives.com/",
+   "logo_url": "https://coopfuneraire2rives.com/web/image/website/1/logo/Coop%C3%A9rative%20fun%C3%A9raire%20des%20Deux%20Rives?unique=393d31f",
+   "images": [
+    {
+     "url": "https://coopfuneraire2rives.com/web/image/website/1/favicon?unique=393d31f",
+     "kind": "icon",
+     "source_page": "https://coopfuneraire2rives.com/"
+    },
+    {
+     "url": "https://coopfuneraire2rives.com/web/image/225852-3483f208/Plan%20de%20travail%201%402x.png",
+     "kind": "og_image",
+     "source_page": "https://coopfuneraire2rives.com/"
+    },
+    {
+     "url": "https://coopfuneraire2rives.com/web/image/website/1/logo/Coop%C3%A9rative%20fun%C3%A9raire%20des%20Deux%20Rives?unique=393d31f",
+     "kind": "logo",
+     "source_page": "https://coopfuneraire2rives.com/"
+    },
+    {
+     "url": "https://coopfuneraire2rives.com/web/image/2872-af432a26/logos%20Espace%20Famille-VF.webp",
+     "kind": "logo",
+     "source_page": "https://coopfuneraire2rives.com/"
+    },
+    {
+     "url": "https://coopfuneraire2rives.com/web/image/2889-e9b6b0c6/logos%20Espace%20Famille-VF.webp",
+     "kind": "logo",
+     "source_page": "https://coopfuneraire2rives.com/"
+    },
+    {
+     "url": "https://coopfuneraire2rives.com/web/image/website/1/logo?unique=393d31f",
+     "kind": "og_image",
+     "source_page": "https://coopfuneraire2rives.com/politique-de-confidentialite"
+    },
+    {
+     "url": "https://coopfuneraire2rives.com/web/image/website/1/logo/300x300?unique=393d31f",
+     "kind": "twitter_image",
+     "source_page": "https://coopfuneraire2rives.com/politique-de-confidentialite"
+    }
+   ],
    "theme_color": null,
-   "languages": [],
+   "languages": [
+    "fr"
+   ],
    "legal_name": null,
    "search": {
-    "available": null,
-    "method": "unknown",
-    "page_url": null,
-    "form_action": null,
-    "inputs": [],
-    "url_pattern": null,
+    "available": true,
+    "method": "http_get",
+    "page_url": "https://coopfuneraire2rives.com/",
+    "form_action": "https://coopfuneraire2rives.com/website/search",
+    "inputs": [
+     {
+      "name": "search",
+      "type": "search",
+      "canonical": "full_name",
+      "required": false,
+      "autocomplete": null,
+      "placeholder": "Rechercher…"
+     },
+     {
+      "name": "order",
+      "type": "hidden",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     }
+    ],
+    "url_pattern": "https://coopfuneraire2rives.com/website/search?search={search}",
     "directory_prefixes": [],
     "paywall": null,
     "login_wall": null
    },
    "removal": {
     "url": "https://coopfuneraire2rives.com/politique-de-confidentialite",
-    "final_url": null,
-    "http_status": null,
+    "final_url": "https://coopfuneraire2rives.com/politique-de-confidentialite",
+    "http_status": 200,
     "kinds": [
      "opt_out"
     ],
-    "channels": [],
+    "channels": [
+     "phone"
+    ],
     "emails": [],
-    "phones": [],
+    "phones": [
+     "418 688-2411"
+    ],
     "postal_address": null,
     "portal": null,
     "form_fields": [],
@@ -155837,18 +157931,45 @@
    },
    "bot_defense": {
     "vendor": null,
-    "outcome": "unknown"
+    "outcome": "none"
    },
    "legal": {
     "privacy_policy_url": null,
     "terms_url": null,
     "automation_prohibited": null,
     "automation_clause": null,
-    "residency": [],
+    "residency": [
+     "CA-QC"
+    ],
     "authorized_agent": null,
     "data_categories": []
    },
-   "pages": []
+   "pages": [
+    {
+     "url": "https://coopfuneraire2rives.com/",
+     "final_url": "https://coopfuneraire2rives.com/",
+     "status": 200,
+     "role": "home",
+     "title": "Coopérative funéraire des Deux Rives",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.coopfuneraire2rives.com/",
+     "final_url": "https://coopfuneraire2rives.com/",
+     "status": 200,
+     "role": "home",
+     "title": "Coopérative funéraire des Deux Rives",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://coopfuneraire2rives.com/politique-de-confidentialite",
+     "final_url": "https://coopfuneraire2rives.com/politique-de-confidentialite",
+     "status": 200,
+     "role": "catalog",
+     "title": "Politique de confidentialité | Coopérative funéraire des Deux Rives",
+     "liveness": "alive"
+    }
+   ]
   },
   "alliance-funeraire-du-royaume": {
    "schema_version": "3.0.0",
@@ -155856,36 +157977,86 @@
    "name": "Alliance funéraire du Royaume",
    "category": "people-search",
    "domain": "afdr.coop",
-   "checked_at": "2026-11-02T06:55:11+00:00",
-   "liveness": "not_checked",
-   "liveness_detail": "no crawl result in this log",
-   "homepage": null,
-   "logo_url": null,
-   "images": [],
+   "checked_at": "2026-11-02T09:57:05+00:00",
+   "liveness": "alive",
+   "liveness_detail": "catalog URL loaded",
+   "homepage": "https://afdr.coop/",
+   "logo_url": "https://afdr.coop/web/image/website/1/logo/Alliance%20fun%C3%A9raire%20du%20royaume?unique=83ab4cb",
+   "images": [
+    {
+     "url": "https://afdr.coop/web/image/website/1/favicon?unique=83ab4cb",
+     "kind": "apple_touch_icon",
+     "source_page": "https://afdr.coop/"
+    },
+    {
+     "url": "https://afdr.coop/web/image/website/1/logo",
+     "kind": "og_image",
+     "source_page": "https://afdr.coop/"
+    },
+    {
+     "url": "https://afdr.coop/web/image/website/1/logo/Alliance%20fun%C3%A9raire%20du%20royaume?unique=83ab4cb",
+     "kind": "logo",
+     "source_page": "https://afdr.coop/"
+    },
+    {
+     "url": "https://afdr.coop/web/image/website/1/logo?unique=83ab4cb",
+     "kind": "og_image",
+     "source_page": "https://afdr.coop/nous-joindre"
+    },
+    {
+     "url": "https://afdr.coop/web/image/website/1/logo/300x300?unique=83ab4cb",
+     "kind": "twitter_image",
+     "source_page": "https://afdr.coop/nous-joindre"
+    }
+   ],
    "theme_color": null,
-   "languages": [],
+   "languages": [
+    "fr"
+   ],
    "legal_name": null,
    "search": {
-    "available": null,
-    "method": "unknown",
-    "page_url": null,
-    "form_action": null,
-    "inputs": [],
-    "url_pattern": null,
+    "available": true,
+    "method": "http_get",
+    "page_url": "https://afdr.coop/",
+    "form_action": "https://afdr.coop/website/search",
+    "inputs": [
+     {
+      "name": "search",
+      "type": "search",
+      "canonical": "full_name",
+      "required": false,
+      "autocomplete": null,
+      "placeholder": "Rechercher…"
+     },
+     {
+      "name": "order",
+      "type": "hidden",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     }
+    ],
+    "url_pattern": "https://afdr.coop/website/search?search={search}",
     "directory_prefixes": [],
     "paywall": null,
     "login_wall": null
    },
    "removal": {
     "url": "https://afdr.coop/nous-joindre",
-    "final_url": null,
-    "http_status": null,
+    "final_url": "https://afdr.coop/nous-joindre",
+    "http_status": 200,
     "kinds": [
      "opt_out"
     ],
-    "channels": [],
+    "channels": [
+     "phone"
+    ],
     "emails": [],
-    "phones": [],
+    "phones": [
+     "418 545-2643",
+     "(418) 545-2643"
+    ],
     "postal_address": null,
     "portal": null,
     "form_fields": [],
@@ -155904,18 +158075,45 @@
    },
    "bot_defense": {
     "vendor": null,
-    "outcome": "unknown"
+    "outcome": "none"
    },
    "legal": {
     "privacy_policy_url": null,
     "terms_url": null,
     "automation_prohibited": null,
     "automation_clause": null,
-    "residency": [],
+    "residency": [
+     "CA-QC"
+    ],
     "authorized_agent": null,
     "data_categories": []
    },
-   "pages": []
+   "pages": [
+    {
+     "url": "https://afdr.coop/",
+     "final_url": "https://afdr.coop/",
+     "status": 200,
+     "role": "home",
+     "title": "Accueil | Alliance funéraire du royaume",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.afdr.coop/",
+     "final_url": "https://afdr.coop/",
+     "status": 200,
+     "role": "home",
+     "title": "Accueil | Alliance funéraire du royaume",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://afdr.coop/nous-joindre",
+     "final_url": "https://afdr.coop/nous-joindre",
+     "status": 200,
+     "role": "catalog",
+     "title": "Contact Us | Alliance funéraire du royaume",
+     "liveness": "alive"
+    }
+   ]
   },
   "cooperative-funeraire-de-l-abitibi": {
    "schema_version": "3.0.0",
@@ -155923,30 +158121,80 @@
    "name": "Coopérative funéraire de l'Abitibi",
    "category": "people-search",
    "domain": "cfa.coop",
-   "checked_at": "2026-11-02T06:55:11+00:00",
-   "liveness": "not_checked",
-   "liveness_detail": "no crawl result in this log",
-   "homepage": null,
-   "logo_url": null,
-   "images": [],
+   "checked_at": "2026-11-02T09:57:05+00:00",
+   "liveness": "alive",
+   "liveness_detail": "catalog URL loaded",
+   "homepage": "https://cfa.coop/",
+   "logo_url": "https://cfa.coop/web/image/website/1/logo/Coop%C3%A9rative%20fun%C3%A9raire%20de%20l'Abitibi?unique=7daab06",
+   "images": [
+    {
+     "url": "https://cfa.coop/web/image/website/1/favicon?unique=7daab06",
+     "kind": "apple_touch_icon",
+     "source_page": "https://cfa.coop/"
+    },
+    {
+     "url": "https://cfa.coop/web/image/website/1/logo?unique=7daab06",
+     "kind": "og_image",
+     "source_page": "https://cfa.coop/"
+    },
+    {
+     "url": "https://cfa.coop/web/image/website/1/logo/300x300?unique=7daab06",
+     "kind": "twitter_image",
+     "source_page": "https://cfa.coop/"
+    },
+    {
+     "url": "https://cfa.coop/web/image/website/1/logo/Coop%C3%A9rative%20fun%C3%A9raire%20de%20l'Abitibi?unique=7daab06",
+     "kind": "logo",
+     "source_page": "https://cfa.coop/"
+    },
+    {
+     "url": "https://cfa.coop/web/image/141670-e9b6b0c6/logos%20Espace%20Famille-VF.webp",
+     "kind": "logo",
+     "source_page": "https://cfa.coop/"
+    },
+    {
+     "url": "https://cfa.coop/web/image/143113-aee966f9/logo.webp",
+     "kind": "logo",
+     "source_page": "https://cfa.coop/"
+    }
+   ],
    "theme_color": null,
-   "languages": [],
+   "languages": [
+    "fr"
+   ],
    "legal_name": null,
    "search": {
-    "available": null,
-    "method": "unknown",
-    "page_url": null,
-    "form_action": null,
-    "inputs": [],
-    "url_pattern": null,
+    "available": true,
+    "method": "http_get",
+    "page_url": "https://cfa.coop/",
+    "form_action": "https://cfa.coop/website/search",
+    "inputs": [
+     {
+      "name": "search",
+      "type": "search",
+      "canonical": "full_name",
+      "required": false,
+      "autocomplete": null,
+      "placeholder": "Rechercher…"
+     },
+     {
+      "name": "order",
+      "type": "hidden",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     }
+    ],
+    "url_pattern": "https://cfa.coop/website/search?search={search}",
     "directory_prefixes": [],
     "paywall": null,
     "login_wall": null
    },
    "removal": {
     "url": "https://cfa.coop/web/content/143111/Politique%20de%20confidentialit%C3%A9?unique=e509e84302b735b4ac29264cdcb56d29b10ae1bf&download=false",
-    "final_url": null,
-    "http_status": null,
+    "final_url": "https://cfa.coop/web/content/143111/Politique%20de%20confidentialit%C3%A9?unique=e509e84302b735b4ac29264cdcb56d29b10ae1bf&download=false",
+    "http_status": 200,
     "kinds": [
      "opt_out"
     ],
@@ -155971,18 +158219,45 @@
    },
    "bot_defense": {
     "vendor": null,
-    "outcome": "unknown"
+    "outcome": "none"
    },
    "legal": {
     "privacy_policy_url": null,
     "terms_url": null,
     "automation_prohibited": null,
     "automation_clause": null,
-    "residency": [],
+    "residency": [
+     "CA-QC"
+    ],
     "authorized_agent": null,
     "data_categories": []
    },
-   "pages": []
+   "pages": [
+    {
+     "url": "https://cfa.coop/",
+     "final_url": "https://cfa.coop/",
+     "status": 200,
+     "role": "home",
+     "title": "Accueil | Coopérative funéraire de l'Abitibi",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.cfa.coop/",
+     "final_url": "https://cfa.coop/",
+     "status": 200,
+     "role": "home",
+     "title": "Accueil | Coopérative funéraire de l'Abitibi",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://cfa.coop/web/content/143111/Politique%20de%20confidentialit%C3%A9?unique=e509e84302b735b4ac29264cdcb56d29b10ae1bf&download=false",
+     "final_url": "https://cfa.coop/web/content/143111/Politique%20de%20confidentialit%C3%A9?unique=e509e84302b735b4ac29264cdcb56d29b10ae1bf&download=false",
+     "status": 200,
+     "role": "catalog",
+     "title": "",
+     "liveness": "alive"
+    }
+   ]
   },
   "cooperative-funeraire-haute-cote-nord-manicouagan": {
    "schema_version": "3.0.0",
@@ -155990,30 +158265,75 @@
    "name": "Coopérative funéraire Haute-Côte-Nord - Manicouagan",
    "category": "people-search",
    "domain": "cfhcn.ca",
-   "checked_at": "2026-11-02T06:55:11+00:00",
-   "liveness": "not_checked",
-   "liveness_detail": "no crawl result in this log",
-   "homepage": null,
-   "logo_url": null,
-   "images": [],
+   "checked_at": "2026-11-02T09:57:05+00:00",
+   "liveness": "alive",
+   "liveness_detail": "catalog URL loaded",
+   "homepage": "https://cfhcn.ca/",
+   "logo_url": "https://cfhcn.ca/web/image/website/1/logo/Coop%C3%A9rative%20fun%C3%A9raire%20Haute-C%C3%B4te-Nord%20-%20Manicouagan?unique=999a239",
+   "images": [
+    {
+     "url": "https://cfhcn.ca/web/image/website/1/favicon?unique=999a239",
+     "kind": "apple_touch_icon",
+     "source_page": "https://cfhcn.ca/"
+    },
+    {
+     "url": "https://cfhcn.ca/web/image/website/1/logo",
+     "kind": "og_image",
+     "source_page": "https://cfhcn.ca/"
+    },
+    {
+     "url": "https://cfhcn.ca/web/image/website/1/logo/Coop%C3%A9rative%20fun%C3%A9raire%20Haute-C%C3%B4te-Nord%20-%20Manicouagan?unique=999a239",
+     "kind": "logo",
+     "source_page": "https://cfhcn.ca/"
+    },
+    {
+     "url": "https://cfhcn.ca/web/image/website/1/logo?unique=999a239",
+     "kind": "og_image",
+     "source_page": "https://cfhcn.ca/politique-confidentialite"
+    },
+    {
+     "url": "https://cfhcn.ca/web/image/website/1/logo/300x300?unique=999a239",
+     "kind": "twitter_image",
+     "source_page": "https://cfhcn.ca/politique-confidentialite"
+    }
+   ],
    "theme_color": null,
-   "languages": [],
+   "languages": [
+    "fr"
+   ],
    "legal_name": null,
    "search": {
-    "available": null,
-    "method": "unknown",
-    "page_url": null,
-    "form_action": null,
-    "inputs": [],
-    "url_pattern": null,
+    "available": true,
+    "method": "http_get",
+    "page_url": "https://cfhcn.ca/",
+    "form_action": "https://cfhcn.ca/website/search",
+    "inputs": [
+     {
+      "name": "search",
+      "type": "search",
+      "canonical": "full_name",
+      "required": false,
+      "autocomplete": null,
+      "placeholder": "Rechercher…"
+     },
+     {
+      "name": "order",
+      "type": "hidden",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     }
+    ],
+    "url_pattern": "https://cfhcn.ca/website/search?search={search}",
     "directory_prefixes": [],
     "paywall": null,
     "login_wall": null
    },
    "removal": {
     "url": "https://cfhcn.ca/politique-confidentialite",
-    "final_url": null,
-    "http_status": null,
+    "final_url": "https://cfhcn.ca/politique-confidentialite",
+    "http_status": 200,
     "kinds": [
      "opt_out"
     ],
@@ -156038,18 +158358,45 @@
    },
    "bot_defense": {
     "vendor": null,
-    "outcome": "unknown"
+    "outcome": "none"
    },
    "legal": {
     "privacy_policy_url": null,
     "terms_url": null,
     "automation_prohibited": null,
     "automation_clause": null,
-    "residency": [],
+    "residency": [
+     "CA-QC"
+    ],
     "authorized_agent": null,
     "data_categories": []
    },
-   "pages": []
+   "pages": [
+    {
+     "url": "https://cfhcn.ca/",
+     "final_url": "https://cfhcn.ca/",
+     "status": 200,
+     "role": "home",
+     "title": "Accueil | Coopérative funéraire Haute-Côte-Nord - Manicouagan",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.cfhcn.ca/",
+     "final_url": "https://cfhcn.ca/",
+     "status": 200,
+     "role": "home",
+     "title": "Accueil | Coopérative funéraire Haute-Côte-Nord - Manicouagan",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://cfhcn.ca/politique-confidentialite",
+     "final_url": "https://cfhcn.ca/politique-confidentialite",
+     "status": 200,
+     "role": "catalog",
+     "title": "politique-confidentialite | Coopérative funéraire Haute-Côte-Nord - Manicouagan",
+     "liveness": "alive"
+    }
+   ]
   },
   "cooperative-funeraire-de-l-outaouais": {
    "schema_version": "3.0.0",
@@ -156057,36 +158404,85 @@
    "name": "Coopérative funéraire de l'Outaouais",
    "category": "people-search",
    "domain": "cfo.coop",
-   "checked_at": "2026-11-02T06:55:11+00:00",
-   "liveness": "not_checked",
-   "liveness_detail": "no crawl result in this log",
-   "homepage": null,
-   "logo_url": null,
-   "images": [],
+   "checked_at": "2026-11-02T09:57:06+00:00",
+   "liveness": "alive",
+   "liveness_detail": "catalog URL loaded",
+   "homepage": "https://www.cfo.coop/en/home",
+   "logo_url": "https://www.cfo.coop/web/image/website/1/logo/Coop%C3%A9rative%20fun%C3%A9raire%20de%20l'Outaouais?unique=a9a9f74",
+   "images": [
+    {
+     "url": "https://www.cfo.coop/web/image/website/1/favicon?unique=a9a9f74",
+     "kind": "apple_touch_icon",
+     "source_page": "https://www.cfo.coop/en/home"
+    },
+    {
+     "url": "https://www.cfo.coop/web/image/website/1/logo?unique=a9a9f74",
+     "kind": "og_image",
+     "source_page": "https://www.cfo.coop/en/home"
+    },
+    {
+     "url": "https://www.cfo.coop/web/image/website/1/logo/300x300?unique=a9a9f74",
+     "kind": "twitter_image",
+     "source_page": "https://www.cfo.coop/en/home"
+    },
+    {
+     "url": "https://www.cfo.coop/web/image/website/1/logo/Coop%C3%A9rative%20fun%C3%A9raire%20de%20l'Outaouais?unique=a9a9f74",
+     "kind": "logo",
+     "source_page": "https://www.cfo.coop/en/home"
+    },
+    {
+     "url": "https://www.cfo.coop/web/image/152585-c06567bd/logo%20CFO%20%281076%20x%20922%20px%29.webp",
+     "kind": "logo",
+     "source_page": "https://www.cfo.coop/en/home"
+    }
+   ],
    "theme_color": null,
-   "languages": [],
+   "languages": [
+    "en"
+   ],
    "legal_name": null,
    "search": {
-    "available": null,
-    "method": "unknown",
-    "page_url": null,
-    "form_action": null,
-    "inputs": [],
-    "url_pattern": null,
+    "available": true,
+    "method": "http_get",
+    "page_url": "https://www.cfo.coop/en/home",
+    "form_action": "https://www.cfo.coop/en/website/search",
+    "inputs": [
+     {
+      "name": "search",
+      "type": "search",
+      "canonical": "full_name",
+      "required": false,
+      "autocomplete": null,
+      "placeholder": "Search..."
+     },
+     {
+      "name": "order",
+      "type": "hidden",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     }
+    ],
+    "url_pattern": "https://www.cfo.coop/en/website/search?search={search}",
     "directory_prefixes": [],
     "paywall": null,
     "login_wall": null
    },
    "removal": {
     "url": "https://www.cfo.coop/en/politique-confidentialite",
-    "final_url": null,
-    "http_status": null,
+    "final_url": "https://www.cfo.coop/en/politique-confidentialite",
+    "http_status": 200,
     "kinds": [
      "opt_out"
     ],
-    "channels": [],
+    "channels": [
+     "phone"
+    ],
     "emails": [],
-    "phones": [],
+    "phones": [
+     "819 568-2425"
+    ],
     "postal_address": null,
     "portal": null,
     "form_fields": [],
@@ -156105,7 +158501,7 @@
    },
    "bot_defense": {
     "vendor": null,
-    "outcome": "unknown"
+    "outcome": "none"
    },
    "legal": {
     "privacy_policy_url": null,
@@ -156114,9 +158510,36 @@
     "automation_clause": null,
     "residency": [],
     "authorized_agent": null,
-    "data_categories": []
+    "data_categories": [
+     "identifiers"
+    ]
    },
-   "pages": []
+   "pages": [
+    {
+     "url": "https://cfo.coop/",
+     "final_url": "https://www.cfo.coop/en/home",
+     "status": 200,
+     "role": "home",
+     "title": "Accueil | Coopérative funéraire de l'Outaouais",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.cfo.coop/",
+     "final_url": "https://www.cfo.coop/en/home",
+     "status": 200,
+     "role": "home",
+     "title": "Accueil | Coopérative funéraire de l'Outaouais",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.cfo.coop/en/politique-confidentialite",
+     "final_url": "https://www.cfo.coop/en/politique-confidentialite",
+     "status": 200,
+     "role": "catalog",
+     "title": "politique-confidentialite | Coopérative funéraire de l'Outaouais",
+     "liveness": "alive"
+    }
+   ]
   },
   "cooperative-funeraire-de-l-estrie": {
    "schema_version": "3.0.0",
@@ -156124,39 +158547,156 @@
    "name": "Coopérative funéraire de l'Estrie",
    "category": "people-search",
    "domain": "coopfuneraireestrie.com",
-   "checked_at": "2026-11-02T06:55:11+00:00",
-   "liveness": "not_checked",
-   "liveness_detail": "no crawl result in this log",
-   "homepage": null,
-   "logo_url": null,
-   "images": [],
+   "checked_at": "2026-11-02T09:57:08+00:00",
+   "liveness": "alive",
+   "liveness_detail": "catalog URL redirected and the final page loaded",
+   "homepage": "https://coopfuneraireestrie.com/en",
+   "logo_url": "https://coopfuneraireestrie.com/web/image/129696-f5546446/logos%20Espace%20Famille-VF-header.webp",
+   "images": [
+    {
+     "url": "https://coopfuneraireestrie.com/web/image/website/1/favicon?unique=5c24a20",
+     "kind": "apple_touch_icon",
+     "source_page": "https://coopfuneraireestrie.com/en"
+    },
+    {
+     "url": "https://coopfuneraireestrie.com/web/image/189063-edc75208/Logo_Noir%402x%20%283%29.png",
+     "kind": "og_image",
+     "source_page": "https://coopfuneraireestrie.com/en"
+    },
+    {
+     "url": "https://coopfuneraireestrie.com/web/image/129696-f5546446/logos%20Espace%20Famille-VF-header.webp",
+     "kind": "logo",
+     "source_page": "https://coopfuneraireestrie.com/en"
+    },
+    {
+     "url": "https://coopfuneraireestrie.com/web/image/website/1/logo/Coop%C3%A9rative%20fun%C3%A9raire%20de%20l'estrie?unique=5c24a20",
+     "kind": "logo",
+     "source_page": "https://coopfuneraireestrie.com/en"
+    },
+    {
+     "url": "https://coopfuneraireestrie.com/web/image/website/1/logo?unique=5c24a20",
+     "kind": "og_image",
+     "source_page": "https://coopfuneraireestrie.com/en/contactus"
+    },
+    {
+     "url": "https://coopfuneraireestrie.com/web/image/website/1/logo/300x300?unique=5c24a20",
+     "kind": "twitter_image",
+     "source_page": "https://coopfuneraireestrie.com/en/contactus"
+    }
+   ],
    "theme_color": null,
-   "languages": [],
+   "languages": [
+    "en"
+   ],
    "legal_name": null,
    "search": {
-    "available": null,
-    "method": "unknown",
-    "page_url": null,
-    "form_action": null,
-    "inputs": [],
-    "url_pattern": null,
+    "available": true,
+    "method": "http_get",
+    "page_url": "https://coopfuneraireestrie.com/en",
+    "form_action": "https://coopfuneraireestrie.com/en/website/search",
+    "inputs": [
+     {
+      "name": "search",
+      "type": "search",
+      "canonical": "full_name",
+      "required": false,
+      "autocomplete": null,
+      "placeholder": "Search..."
+     },
+     {
+      "name": "order",
+      "type": "hidden",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     }
+    ],
+    "url_pattern": "https://coopfuneraireestrie.com/en/website/search?search={search}",
     "directory_prefixes": [],
     "paywall": null,
     "login_wall": null
    },
    "removal": {
     "url": "https://coopfuneraireestrie.com/nous-joindre",
-    "final_url": null,
-    "http_status": null,
+    "final_url": "https://coopfuneraireestrie.com/en/contactus",
+    "http_status": 200,
     "kinds": [
      "opt_out"
     ],
-    "channels": [],
+    "channels": [
+     "web_form"
+    ],
     "emails": [],
     "phones": [],
     "postal_address": null,
     "portal": null,
-    "form_fields": [],
+    "form_fields": [
+     {
+      "name": "name",
+      "type": "text",
+      "canonical": "full_name",
+      "required": true,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "phone",
+      "type": "tel",
+      "canonical": "phone",
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "email_from",
+      "type": "email",
+      "canonical": "email",
+      "required": true,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "company",
+      "type": "text",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "subject",
+      "type": "text",
+      "canonical": null,
+      "required": true,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "description",
+      "type": "text",
+      "canonical": null,
+      "required": true,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "email_to",
+      "type": "hidden",
+      "canonical": "email",
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "website_form_signature",
+      "type": "hidden",
+      "canonical": "signature",
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     }
+    ],
     "csrf_field_name": null,
     "requires_profile_url": null,
     "captcha": {
@@ -156172,18 +158712,48 @@
    },
    "bot_defense": {
     "vendor": null,
-    "outcome": "unknown"
+    "outcome": "none"
    },
    "legal": {
     "privacy_policy_url": null,
     "terms_url": null,
     "automation_prohibited": null,
     "automation_clause": null,
-    "residency": [],
+    "residency": [
+     "CA-QC"
+    ],
     "authorized_agent": null,
-    "data_categories": []
+    "data_categories": [
+     "identifiers",
+     "internet_activity"
+    ]
    },
-   "pages": []
+   "pages": [
+    {
+     "url": "https://coopfuneraireestrie.com/",
+     "final_url": "https://coopfuneraireestrie.com/en",
+     "status": 200,
+     "role": "home",
+     "title": "Accueil | Coopérative funéraire de l'estrie",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.coopfuneraireestrie.com/",
+     "final_url": "https://coopfuneraireestrie.com/en",
+     "status": 200,
+     "role": "home",
+     "title": "Accueil | Coopérative funéraire de l'estrie",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://coopfuneraireestrie.com/nous-joindre",
+     "final_url": "https://coopfuneraireestrie.com/en/contactus",
+     "status": 200,
+     "role": "catalog",
+     "title": "Contact Us | Coopérative funéraire de l'estrie",
+     "liveness": "alive"
+    }
+   ]
   },
   "residence-funeraire-lac-st-jean": {
    "schema_version": "3.0.0",
@@ -156191,30 +158761,75 @@
    "name": "Résidence funéraire Lac St-Jean",
    "category": "people-search",
    "domain": "residencefunerairelacstjean.com",
-   "checked_at": "2026-11-02T06:55:11+00:00",
-   "liveness": "not_checked",
-   "liveness_detail": "no crawl result in this log",
-   "homepage": null,
-   "logo_url": null,
-   "images": [],
+   "checked_at": "2026-11-02T09:57:19+00:00",
+   "liveness": "alive",
+   "liveness_detail": "catalog URL loaded",
+   "homepage": "https://residencefunerairelacstjean.com/",
+   "logo_url": "https://residencefunerairelacstjean.com/web/image/website/1/logo/R%C3%A9sidence%20fun%C3%A9raire%20Lac%20St-Jean?unique=79daa40",
+   "images": [
+    {
+     "url": "https://residencefunerairelacstjean.com/web/image/website/1/favicon?unique=79daa40",
+     "kind": "apple_touch_icon",
+     "source_page": "https://residencefunerairelacstjean.com/"
+    },
+    {
+     "url": "https://residencefunerairelacstjean.com/web/image/website/1/logo?unique=79daa40",
+     "kind": "og_image",
+     "source_page": "https://residencefunerairelacstjean.com/"
+    },
+    {
+     "url": "https://residencefunerairelacstjean.com/web/image/website/1/logo/300x300?unique=79daa40",
+     "kind": "twitter_image",
+     "source_page": "https://residencefunerairelacstjean.com/"
+    },
+    {
+     "url": "https://residencefunerairelacstjean.com/web/image/website/1/logo/R%C3%A9sidence%20fun%C3%A9raire%20Lac%20St-Jean?unique=79daa40",
+     "kind": "logo",
+     "source_page": "https://residencefunerairelacstjean.com/"
+    },
+    {
+     "url": "https://residencefunerairelacstjean.com/web/image/39201-feb29bf3/16_logo-res-fun-lsj.webp",
+     "kind": "logo",
+     "source_page": "https://residencefunerairelacstjean.com/"
+    }
+   ],
    "theme_color": null,
-   "languages": [],
+   "languages": [
+    "fr"
+   ],
    "legal_name": null,
    "search": {
-    "available": null,
-    "method": "unknown",
-    "page_url": null,
-    "form_action": null,
-    "inputs": [],
-    "url_pattern": null,
+    "available": true,
+    "method": "http_get",
+    "page_url": "https://residencefunerairelacstjean.com/",
+    "form_action": "https://residencefunerairelacstjean.com/website/search",
+    "inputs": [
+     {
+      "name": "search",
+      "type": "search",
+      "canonical": "full_name",
+      "required": false,
+      "autocomplete": null,
+      "placeholder": "Rechercher…"
+     },
+     {
+      "name": "order",
+      "type": "hidden",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     }
+    ],
+    "url_pattern": "https://residencefunerairelacstjean.com/website/search?search={search}",
     "directory_prefixes": [],
     "paywall": null,
     "login_wall": null
    },
    "removal": {
     "url": "https://residencefunerairelacstjean.com/politique-confidentialite",
-    "final_url": null,
-    "http_status": null,
+    "final_url": "https://residencefunerairelacstjean.com/politique-confidentialite",
+    "http_status": 200,
     "kinds": [
      "opt_out"
     ],
@@ -156238,19 +158853,46 @@
     "processing_text": null
    },
    "bot_defense": {
-    "vendor": null,
-    "outcome": "unknown"
+    "vendor": "cloudflare",
+    "outcome": "none"
    },
    "legal": {
     "privacy_policy_url": null,
     "terms_url": null,
     "automation_prohibited": null,
     "automation_clause": null,
-    "residency": [],
+    "residency": [
+     "CA-QC"
+    ],
     "authorized_agent": null,
     "data_categories": []
    },
-   "pages": []
+   "pages": [
+    {
+     "url": "https://residencefunerairelacstjean.com/",
+     "final_url": "https://residencefunerairelacstjean.com/",
+     "status": 200,
+     "role": "home",
+     "title": "Accueil | Résidence funéraire Lac St-Jean",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.residencefunerairelacstjean.com/",
+     "final_url": "https://www.residencefunerairelacstjean.com/",
+     "status": 404,
+     "role": "home",
+     "title": "Error",
+     "liveness": "dead"
+    },
+    {
+     "url": "https://residencefunerairelacstjean.com/politique-confidentialite",
+     "final_url": "https://residencefunerairelacstjean.com/politique-confidentialite",
+     "status": 200,
+     "role": "catalog",
+     "title": "politique-confidentialite | Résidence funéraire Lac St-Jean",
+     "liveness": "alive"
+    }
+   ]
   },
   "cooperative-funeraire-brunet": {
    "schema_version": "3.0.0",
@@ -156258,36 +158900,80 @@
    "name": "Coopérative funéraire Brunet",
    "category": "people-search",
    "domain": "coopfbrunet.com",
-   "checked_at": "2026-11-02T06:55:11+00:00",
-   "liveness": "not_checked",
-   "liveness_detail": "no crawl result in this log",
-   "homepage": null,
-   "logo_url": null,
-   "images": [],
+   "checked_at": "2026-11-02T09:57:08+00:00",
+   "liveness": "alive",
+   "liveness_detail": "catalog URL loaded",
+   "homepage": "https://coopfbrunet.com/",
+   "logo_url": "https://coopfbrunet.com/web/image/website/1/logo/Coop%C3%A9rative%20fun%C3%A9raire%20Brunet?unique=5614d5f",
+   "images": [
+    {
+     "url": "https://coopfbrunet.com/web/image/website/1/favicon?unique=5614d5f",
+     "kind": "apple_touch_icon",
+     "source_page": "https://coopfbrunet.com/"
+    },
+    {
+     "url": "https://coopfbrunet.com/web/image/website/1/logo?unique=5614d5f",
+     "kind": "og_image",
+     "source_page": "https://coopfbrunet.com/"
+    },
+    {
+     "url": "https://coopfbrunet.com/web/image/website/1/logo/300x300?unique=5614d5f",
+     "kind": "twitter_image",
+     "source_page": "https://coopfbrunet.com/"
+    },
+    {
+     "url": "https://coopfbrunet.com/web/image/website/1/logo/Coop%C3%A9rative%20fun%C3%A9raire%20Brunet?unique=5614d5f",
+     "kind": "logo",
+     "source_page": "https://coopfbrunet.com/"
+    }
+   ],
    "theme_color": null,
-   "languages": [],
+   "languages": [
+    "fr"
+   ],
    "legal_name": null,
    "search": {
-    "available": null,
-    "method": "unknown",
-    "page_url": null,
-    "form_action": null,
-    "inputs": [],
-    "url_pattern": null,
+    "available": true,
+    "method": "http_get",
+    "page_url": "https://coopfbrunet.com/",
+    "form_action": "https://coopfbrunet.com/website/search",
+    "inputs": [
+     {
+      "name": "search",
+      "type": "search",
+      "canonical": "full_name",
+      "required": false,
+      "autocomplete": null,
+      "placeholder": "Rechercher…"
+     },
+     {
+      "name": "order",
+      "type": "hidden",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     }
+    ],
+    "url_pattern": "https://coopfbrunet.com/website/search?search={search}",
     "directory_prefixes": [],
     "paywall": null,
     "login_wall": null
    },
    "removal": {
     "url": "https://coopfbrunet.com/nous-joindre",
-    "final_url": null,
-    "http_status": null,
+    "final_url": "https://coopfbrunet.com/nous-joindre",
+    "http_status": 200,
     "kinds": [
      "opt_out"
     ],
-    "channels": [],
+    "channels": [
+     "phone"
+    ],
     "emails": [],
-    "phones": [],
+    "phones": [
+     "819 623-6232"
+    ],
     "postal_address": null,
     "portal": null,
     "form_fields": [],
@@ -156306,18 +158992,45 @@
    },
    "bot_defense": {
     "vendor": null,
-    "outcome": "unknown"
+    "outcome": "none"
    },
    "legal": {
     "privacy_policy_url": null,
     "terms_url": null,
     "automation_prohibited": null,
     "automation_clause": null,
-    "residency": [],
+    "residency": [
+     "CA-QC"
+    ],
     "authorized_agent": null,
     "data_categories": []
    },
-   "pages": []
+   "pages": [
+    {
+     "url": "https://coopfbrunet.com/",
+     "final_url": "https://coopfbrunet.com/",
+     "status": 200,
+     "role": "home",
+     "title": "Accueil | Coopérative funéraire Brunet",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.coopfbrunet.com/",
+     "final_url": "https://coopfbrunet.com/",
+     "status": 200,
+     "role": "home",
+     "title": "Accueil | Coopérative funéraire Brunet",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://coopfbrunet.com/nous-joindre",
+     "final_url": "https://coopfbrunet.com/nous-joindre",
+     "status": 200,
+     "role": "catalog",
+     "title": "Contact Us | Coopérative funéraire Brunet",
+     "liveness": "alive"
+    }
+   ]
   },
   "cooperative-funeraire-matawinie-montcalm": {
    "schema_version": "3.0.0",
@@ -156325,30 +159038,70 @@
    "name": "Coopérative funéraire Matawinie-Montcalm",
    "category": "people-search",
    "domain": "cfmm.coop",
-   "checked_at": "2026-11-02T06:55:11+00:00",
-   "liveness": "not_checked",
-   "liveness_detail": "no crawl result in this log",
-   "homepage": null,
-   "logo_url": null,
-   "images": [],
+   "checked_at": "2026-11-02T09:57:05+00:00",
+   "liveness": "alive",
+   "liveness_detail": "catalog URL loaded",
+   "homepage": "https://cfmm.coop/",
+   "logo_url": "https://cfmm.coop/web/image/website/1/logo/Coop%C3%A9rative%20fun%C3%A9raire%20Matawinie-Montcalm?unique=c5fb2d7",
+   "images": [
+    {
+     "url": "https://cfmm.coop/web/image/website/1/favicon?unique=c5fb2d7",
+     "kind": "apple_touch_icon",
+     "source_page": "https://cfmm.coop/"
+    },
+    {
+     "url": "https://cfmm.coop/web/image/website/1/logo?unique=c5fb2d7",
+     "kind": "og_image",
+     "source_page": "https://cfmm.coop/"
+    },
+    {
+     "url": "https://cfmm.coop/web/image/website/1/logo/300x300?unique=c5fb2d7",
+     "kind": "twitter_image",
+     "source_page": "https://cfmm.coop/"
+    },
+    {
+     "url": "https://cfmm.coop/web/image/website/1/logo/Coop%C3%A9rative%20fun%C3%A9raire%20Matawinie-Montcalm?unique=c5fb2d7",
+     "kind": "logo",
+     "source_page": "https://cfmm.coop/"
+    }
+   ],
    "theme_color": null,
-   "languages": [],
+   "languages": [
+    "fr"
+   ],
    "legal_name": null,
    "search": {
-    "available": null,
-    "method": "unknown",
-    "page_url": null,
-    "form_action": null,
-    "inputs": [],
-    "url_pattern": null,
+    "available": true,
+    "method": "http_get",
+    "page_url": "https://cfmm.coop/",
+    "form_action": "https://cfmm.coop/website/search",
+    "inputs": [
+     {
+      "name": "search",
+      "type": "search",
+      "canonical": "full_name",
+      "required": false,
+      "autocomplete": null,
+      "placeholder": "Rechercher…"
+     },
+     {
+      "name": "order",
+      "type": "hidden",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     }
+    ],
+    "url_pattern": "https://cfmm.coop/website/search?search={search}",
     "directory_prefixes": [],
     "paywall": null,
     "login_wall": null
    },
    "removal": {
     "url": "https://cfmm.coop/nous-joindre",
-    "final_url": null,
-    "http_status": null,
+    "final_url": "https://cfmm.coop/nous-joindre",
+    "http_status": 200,
     "kinds": [
      "opt_out"
     ],
@@ -156373,18 +159126,45 @@
    },
    "bot_defense": {
     "vendor": null,
-    "outcome": "unknown"
+    "outcome": "none"
    },
    "legal": {
     "privacy_policy_url": null,
     "terms_url": null,
     "automation_prohibited": null,
     "automation_clause": null,
-    "residency": [],
+    "residency": [
+     "CA-QC"
+    ],
     "authorized_agent": null,
     "data_categories": []
    },
-   "pages": []
+   "pages": [
+    {
+     "url": "https://cfmm.coop/",
+     "final_url": "https://cfmm.coop/",
+     "status": 200,
+     "role": "home",
+     "title": "Accueil | Coopérative funéraire Matawinie-Montcalm",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.cfmm.coop/",
+     "final_url": "https://cfmm.coop/",
+     "status": 200,
+     "role": "home",
+     "title": "Accueil | Coopérative funéraire Matawinie-Montcalm",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://cfmm.coop/nous-joindre",
+     "final_url": "https://cfmm.coop/nous-joindre",
+     "status": 200,
+     "role": "catalog",
+     "title": "Contact Us | Coopérative funéraire Matawinie-Montcalm",
+     "liveness": "alive"
+    }
+   ]
   },
   "cooperative-funeraire-des-laurentides": {
    "schema_version": "3.0.0",
@@ -156392,36 +159172,85 @@
    "name": "Coopérative funéraire des Laurentides",
    "category": "people-search",
    "domain": "coopfunerairelaurentides.org",
-   "checked_at": "2026-11-02T06:55:11+00:00",
-   "liveness": "not_checked",
-   "liveness_detail": "no crawl result in this log",
-   "homepage": null,
-   "logo_url": null,
-   "images": [],
+   "checked_at": "2026-11-02T09:57:09+00:00",
+   "liveness": "alive",
+   "liveness_detail": "catalog URL loaded",
+   "homepage": "https://www.coopfunerairelaurentides.org/",
+   "logo_url": "https://www.coopfunerairelaurentides.org/web/image/website/1/logo/Coop%C3%A9rative%20fun%C3%A9raire%20des%20Laurentides?unique=f80f397",
+   "images": [
+    {
+     "url": "https://www.coopfunerairelaurentides.org/web/image/website/1/favicon?unique=f80f397",
+     "kind": "apple_touch_icon",
+     "source_page": "https://www.coopfunerairelaurentides.org/"
+    },
+    {
+     "url": "https://coopfunerairelaurentides.org/web/image/website/1/logo?unique=f80f397",
+     "kind": "og_image",
+     "source_page": "https://www.coopfunerairelaurentides.org/"
+    },
+    {
+     "url": "https://coopfunerairelaurentides.org/web/image/website/1/logo/300x300?unique=f80f397",
+     "kind": "twitter_image",
+     "source_page": "https://www.coopfunerairelaurentides.org/"
+    },
+    {
+     "url": "https://www.coopfunerairelaurentides.org/web/image/website/1/logo/Coop%C3%A9rative%20fun%C3%A9raire%20des%20Laurentides?unique=f80f397",
+     "kind": "logo",
+     "source_page": "https://www.coopfunerairelaurentides.org/"
+    },
+    {
+     "url": "https://www.coopfunerairelaurentides.org/web/image/9435-ff19c2bc/Logo_Noir_crop.webp",
+     "kind": "logo",
+     "source_page": "https://www.coopfunerairelaurentides.org/"
+    }
+   ],
    "theme_color": null,
-   "languages": [],
+   "languages": [
+    "fr"
+   ],
    "legal_name": null,
    "search": {
-    "available": null,
-    "method": "unknown",
-    "page_url": null,
-    "form_action": null,
-    "inputs": [],
-    "url_pattern": null,
+    "available": true,
+    "method": "http_get",
+    "page_url": "https://www.coopfunerairelaurentides.org/",
+    "form_action": "https://www.coopfunerairelaurentides.org/website/search",
+    "inputs": [
+     {
+      "name": "search",
+      "type": "search",
+      "canonical": "full_name",
+      "required": false,
+      "autocomplete": null,
+      "placeholder": "Rechercher…"
+     },
+     {
+      "name": "order",
+      "type": "hidden",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     }
+    ],
+    "url_pattern": "https://www.coopfunerairelaurentides.org/website/search?search={search}",
     "directory_prefixes": [],
     "paywall": null,
     "login_wall": null
    },
    "removal": {
     "url": "https://www.coopfunerairelaurentides.org/nous-joindre",
-    "final_url": null,
-    "http_status": null,
+    "final_url": "https://www.coopfunerairelaurentides.org/nous-joindre",
+    "http_status": 200,
     "kinds": [
      "opt_out"
     ],
-    "channels": [],
+    "channels": [
+     "phone"
+    ],
     "emails": [],
-    "phones": [],
+    "phones": [
+     "(450) 504-9771"
+    ],
     "postal_address": null,
     "portal": null,
     "form_fields": [],
@@ -156440,18 +159269,45 @@
    },
    "bot_defense": {
     "vendor": null,
-    "outcome": "unknown"
+    "outcome": "none"
    },
    "legal": {
     "privacy_policy_url": null,
     "terms_url": null,
     "automation_prohibited": null,
     "automation_clause": null,
-    "residency": [],
+    "residency": [
+     "CA-QC"
+    ],
     "authorized_agent": null,
     "data_categories": []
    },
-   "pages": []
+   "pages": [
+    {
+     "url": "https://coopfunerairelaurentides.org/",
+     "final_url": "https://www.coopfunerairelaurentides.org/",
+     "status": 200,
+     "role": "home",
+     "title": "Accueil | Coopérative funéraire des Laurentides",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.coopfunerairelaurentides.org/",
+     "final_url": "https://www.coopfunerairelaurentides.org/",
+     "status": 200,
+     "role": "home",
+     "title": "Accueil | Coopérative funéraire des Laurentides",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.coopfunerairelaurentides.org/nous-joindre",
+     "final_url": "https://www.coopfunerairelaurentides.org/nous-joindre",
+     "status": 200,
+     "role": "catalog",
+     "title": "Contact Us | Coopérative funéraire des Laurentides",
+     "liveness": "alive"
+    }
+   ]
   },
   "residence-funeraire-maska": {
    "schema_version": "3.0.0",
@@ -156459,30 +159315,80 @@
    "name": "Résidence Funéraire Maska",
    "category": "people-search",
    "domain": "rfmaska.coop",
-   "checked_at": "2026-11-02T06:55:11+00:00",
-   "liveness": "not_checked",
-   "liveness_detail": "no crawl result in this log",
-   "homepage": null,
-   "logo_url": null,
-   "images": [],
+   "checked_at": "2026-11-02T09:57:20+00:00",
+   "liveness": "alive",
+   "liveness_detail": "catalog URL loaded",
+   "homepage": "https://rfmaska.coop/",
+   "logo_url": "https://rfmaska.coop/web/image/website/1/logo/R%C3%A9sidence%20fun%C3%A9raire%20Maska?unique=26e56cc",
+   "images": [
+    {
+     "url": "https://rfmaska.coop/web/image/website/1/favicon?unique=26e56cc",
+     "kind": "apple_touch_icon",
+     "source_page": "https://rfmaska.coop/"
+    },
+    {
+     "url": "https://rfmaska.coop/web/image/website/1/logo?unique=5c9641c",
+     "kind": "og_image",
+     "source_page": "https://rfmaska.coop/"
+    },
+    {
+     "url": "https://rfmaska.coop/web/image/website/1/logo/R%C3%A9sidence%20fun%C3%A9raire%20Maska?unique=26e56cc",
+     "kind": "logo",
+     "source_page": "https://rfmaska.coop/"
+    },
+    {
+     "url": "https://rfmaska.coop/web/image/53959-525014a9/Logo_Maska_Noir_Padding.webp",
+     "kind": "logo",
+     "source_page": "https://rfmaska.coop/"
+    },
+    {
+     "url": "https://rfmaska.coop/web/image/website/1/logo?unique=26e56cc",
+     "kind": "og_image",
+     "source_page": "https://rfmaska.coop/politique-confidentialite"
+    },
+    {
+     "url": "https://rfmaska.coop/web/image/website/1/logo/300x300?unique=26e56cc",
+     "kind": "twitter_image",
+     "source_page": "https://rfmaska.coop/politique-confidentialite"
+    }
+   ],
    "theme_color": null,
-   "languages": [],
+   "languages": [
+    "fr"
+   ],
    "legal_name": null,
    "search": {
-    "available": null,
-    "method": "unknown",
-    "page_url": null,
-    "form_action": null,
-    "inputs": [],
-    "url_pattern": null,
+    "available": true,
+    "method": "http_get",
+    "page_url": "https://rfmaska.coop/",
+    "form_action": "https://rfmaska.coop/website/search",
+    "inputs": [
+     {
+      "name": "search",
+      "type": "search",
+      "canonical": "full_name",
+      "required": false,
+      "autocomplete": null,
+      "placeholder": "Rechercher…"
+     },
+     {
+      "name": "order",
+      "type": "hidden",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     }
+    ],
+    "url_pattern": "https://rfmaska.coop/website/search?search={search}",
     "directory_prefixes": [],
     "paywall": null,
     "login_wall": null
    },
    "removal": {
     "url": "https://rfmaska.coop/politique-confidentialite",
-    "final_url": null,
-    "http_status": null,
+    "final_url": "https://rfmaska.coop/politique-confidentialite",
+    "http_status": 200,
     "kinds": [
      "opt_out"
     ],
@@ -156507,18 +159413,45 @@
    },
    "bot_defense": {
     "vendor": null,
-    "outcome": "unknown"
+    "outcome": "none"
    },
    "legal": {
     "privacy_policy_url": null,
     "terms_url": null,
     "automation_prohibited": null,
     "automation_clause": null,
-    "residency": [],
+    "residency": [
+     "CA-QC"
+    ],
     "authorized_agent": null,
     "data_categories": []
    },
-   "pages": []
+   "pages": [
+    {
+     "url": "https://rfmaska.coop/",
+     "final_url": "https://rfmaska.coop/",
+     "status": 200,
+     "role": "home",
+     "title": "Accueil | Résidence Funéraire Maska",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.rfmaska.coop/",
+     "final_url": "https://rfmaska.coop/",
+     "status": 200,
+     "role": "home",
+     "title": "Accueil | Résidence Funéraire Maska",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://rfmaska.coop/politique-confidentialite",
+     "final_url": "https://rfmaska.coop/politique-confidentialite",
+     "status": 200,
+     "role": "catalog",
+     "title": "politique-confidentialite | Résidence funéraire Maska",
+     "liveness": "alive"
+    }
+   ]
   },
   "dignity-memorial": {
    "schema_version": "3.0.0",
@@ -156526,41 +159459,197 @@
    "name": "Dignity Memorial",
    "category": "people-search",
    "domain": "dignitymemorial.com",
-   "checked_at": "2026-11-02T06:55:11+00:00",
-   "liveness": "not_checked",
-   "liveness_detail": "no crawl result in this log",
-   "homepage": null,
-   "logo_url": null,
-   "images": [],
-   "theme_color": null,
-   "languages": [],
-   "legal_name": null,
+   "checked_at": "2026-11-02T09:57:11+00:00",
+   "liveness": "alive",
+   "liveness_detail": "catalog URL loaded",
+   "homepage": "https://www.dignitymemorial.com/",
+   "logo_url": "https://www.dignitymemorial.com/dfsmedia/042808e1630c49a48950d5077d6556eb/36245-source",
+   "images": [
+    {
+     "url": "https://www.dignitymemorial.com/dfsmedia/042808e1630c49a48950d5077d6556eb/31535-50075",
+     "kind": "icon",
+     "source_page": "https://www.dignitymemorial.com/"
+    },
+    {
+     "url": "https://www.dignitymemorial.com/dfsmedia/042808e1630c49a48950d5077d6556eb/31534-50075",
+     "kind": "icon",
+     "source_page": "https://www.dignitymemorial.com/"
+    },
+    {
+     "url": "https://www.dignitymemorial.com/dfsmedia/042808e1630c49a48950d5077d6556eb/38799-source",
+     "kind": "json_ld",
+     "source_page": "https://www.dignitymemorial.com/"
+    },
+    {
+     "url": "https://www.sci-corp.com/dfsmedia/042808e1630c49a48950d5077d6556eb/33440-50075/",
+     "kind": "json_ld",
+     "source_page": "https://www.dignitymemorial.com/"
+    },
+    {
+     "url": "https://www.dignitymemorial.com/dfsmedia/042808e1630c49a48950d5077d6556eb/36245-source",
+     "kind": "logo",
+     "source_page": "https://www.dignitymemorial.com/"
+    },
+    {
+     "url": "https://www.dignitymemorial.com/dfsmedia/042808e1630c49a48950d5077d6556eb/37881-source",
+     "kind": "logo",
+     "source_page": "https://www.dignitymemorial.com/en-ca/contact-us"
+    }
+   ],
+   "theme_color": "#eeebe6",
+   "languages": [
+    "en"
+   ],
+   "legal_name": "Dignity Memorial",
    "search": {
-    "available": null,
-    "method": "unknown",
-    "page_url": null,
-    "form_action": null,
-    "inputs": [],
-    "url_pattern": null,
+    "available": true,
+    "method": "http_get",
+    "page_url": "https://www.dignitymemorial.com/",
+    "form_action": "https://www.dignitymemorial.com/",
+    "inputs": [
+     {
+      "name": "search-query",
+      "type": "search",
+      "canonical": null,
+      "required": false,
+      "autocomplete": "off",
+      "placeholder": "Find an obituary"
+     }
+    ],
+    "url_pattern": "https://www.dignitymemorial.com/?search-query={search-query}",
     "directory_prefixes": [],
     "paywall": null,
     "login_wall": null
    },
    "removal": {
     "url": "https://www.dignitymemorial.com/en-ca/contact-us",
-    "final_url": null,
-    "http_status": null,
+    "final_url": "https://www.dignitymemorial.com/en-ca/contact-us",
+    "http_status": 200,
     "kinds": [
-     "opt_out"
+     "do_not_sell"
     ],
-    "channels": [],
+    "channels": [
+     "web_form",
+     "phone"
+    ],
     "emails": [],
-    "phones": [],
+    "phones": [
+     "800-343-4464"
+    ],
     "postal_address": null,
     "portal": null,
-    "form_fields": [],
-    "csrf_field_name": null,
-    "requires_profile_url": null,
+    "form_fields": [
+     {
+      "name": "What would you like to do",
+      "type": "select",
+      "canonical": null,
+      "required": true,
+      "autocomplete": null,
+      "placeholder": null,
+      "options": [
+       "Choose an option",
+       "012U0000000aRSa",
+       "012U0000000aRSf",
+       "012U0000000aRSk",
+       "012U0000000aRG5",
+       "012U0000000aRFv",
+       "0123c000000cs8bAAA"
+      ]
+     },
+     {
+      "name": "First Name",
+      "type": "text",
+      "canonical": "first_name",
+      "required": true,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "Last Name",
+      "type": "text",
+      "canonical": "last_name",
+      "required": true,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "Phone Number",
+      "type": "tel",
+      "canonical": "phone",
+      "required": true,
+      "autocomplete": "tel-national",
+      "placeholder": null
+     },
+     {
+      "name": "Email",
+      "type": "email",
+      "canonical": "email",
+      "required": true,
+      "autocomplete": "email",
+      "placeholder": null
+     },
+     {
+      "name": "ZipCode",
+      "type": "text",
+      "canonical": "postal_code",
+      "required": true,
+      "autocomplete": "on",
+      "placeholder": null
+     },
+     {
+      "name": "Address",
+      "type": "text",
+      "canonical": "street_address",
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "City",
+      "type": "text",
+      "canonical": "city",
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "State",
+      "type": "select",
+      "canonical": "region",
+      "required": true,
+      "autocomplete": null,
+      "placeholder": null,
+      "options": [
+       "Choose a state/province"
+      ]
+     },
+     {
+      "name": "Message",
+      "type": "text",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": "Tell us what's going on"
+     },
+     {
+      "name": "Opt-In",
+      "type": "checkbox",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "Website Tag: URL",
+      "type": "hidden",
+      "canonical": "profile_url",
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     }
+    ],
+    "csrf_field_name": "__RequestVerificationToken",
+    "requires_profile_url": true,
     "captcha": {
      "provider": null,
      "sitekey": null,
@@ -156574,7 +159663,7 @@
    },
    "bot_defense": {
     "vendor": null,
-    "outcome": "unknown"
+    "outcome": "none"
    },
    "legal": {
     "privacy_policy_url": null,
@@ -156583,9 +159672,36 @@
     "automation_clause": null,
     "residency": [],
     "authorized_agent": null,
-    "data_categories": []
+    "data_categories": [
+     "identifiers"
+    ]
    },
-   "pages": []
+   "pages": [
+    {
+     "url": "https://dignitymemorial.com/",
+     "final_url": "https://www.dignitymemorial.com/",
+     "status": 200,
+     "role": "home",
+     "title": "Dignity Memorial - Funeral Homes, Cremation and Cemeteries",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.dignitymemorial.com/",
+     "final_url": "https://www.dignitymemorial.com/",
+     "status": 200,
+     "role": "home",
+     "title": "Dignity Memorial - Funeral Homes, Cremation and Cemeteries",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.dignitymemorial.com/en-ca/contact-us",
+     "final_url": "https://www.dignitymemorial.com/en-ca/contact-us",
+     "status": 200,
+     "role": "catalog",
+     "title": "Contact Dignity Memorial",
+     "liveness": "alive"
+    }
+   ]
   },
   "interment-net": {
    "schema_version": "3.0.0",
@@ -156593,39 +159709,321 @@
    "name": "Interment.net",
    "category": "people-search",
    "domain": "interment.net",
-   "checked_at": "2026-11-02T06:55:11+00:00",
-   "liveness": "not_checked",
-   "liveness_detail": "no crawl result in this log",
-   "homepage": null,
-   "logo_url": null,
-   "images": [],
+   "checked_at": "2026-11-02T09:57:13+00:00",
+   "liveness": "alive",
+   "liveness_detail": "catalog URL loaded",
+   "homepage": "https://www.interment.net/",
+   "logo_url": "https://www.interment.net/images/logo.png?v=402737b7355371668c96859567ce319ea2f00f6d75cbd748cd66c82d9282f12a",
+   "images": [
+    {
+     "url": "https://www.interment.net/img/favicon.ico?v=bb6a363fec25edee96f954a2d908d2d53aab67c0db3fc9350f3111ed295eeb93",
+     "kind": "icon",
+     "source_page": "https://www.interment.net/"
+    },
+    {
+     "url": "https://www.interment.net/images/cemetery-records-archive.jpg",
+     "kind": "og_image",
+     "source_page": "https://www.interment.net/"
+    },
+    {
+     "url": "https://www.interment.net/images/logo.png?v=402737b7355371668c96859567ce319ea2f00f6d75cbd748cd66c82d9282f12a",
+     "kind": "logo",
+     "source_page": "https://www.interment.net/"
+    }
+   ],
    "theme_color": null,
-   "languages": [],
+   "languages": [
+    "en"
+   ],
    "legal_name": null,
    "search": {
-    "available": null,
-    "method": "unknown",
-    "page_url": null,
-    "form_action": null,
-    "inputs": [],
-    "url_pattern": null,
+    "available": true,
+    "method": "http_get",
+    "page_url": "https://www.interment.net/",
+    "form_action": "https://www.genealogybank.com/static/fs/",
+    "inputs": [
+     {
+      "name": "fname",
+      "type": "text",
+      "canonical": "first_name",
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "lname",
+      "type": "text",
+      "canonical": "last_name",
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "state",
+      "type": "select",
+      "canonical": "region",
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null,
+      "options": [
+       "US",
+       "Alabama",
+       "Alaska",
+       "Arizona",
+       "Arkansas",
+       "California",
+       "Colorado",
+       "Connecticut",
+       "Delaware",
+       "District of Columbia",
+       "Florida",
+       "Georgia",
+       "Hawaii",
+       "Idaho",
+       "Illinois",
+       "Indiana",
+       "Iowa",
+       "Kansas",
+       "Kentucky",
+       "Louisiana",
+       "Maine",
+       "Maryland",
+       "Massachusetts",
+       "Michigan",
+       "Minnesota",
+       "Mississippi",
+       "Missouri",
+       "Montana",
+       "Nebraska",
+       "Nevada",
+       "New Hampshire",
+       "New Jersey",
+       "New Mexico",
+       "New York",
+       "North Carolina",
+       "North Dakota",
+       "Ohio",
+       "Oklahoma",
+       "Oregon",
+       "Pennsylvania",
+       "Rhode Island",
+       "South Carolina",
+       "South Dakota",
+       "Tennessee",
+       "Texas",
+       "Utah",
+       "Vermont",
+       "Virginia",
+       "Washington",
+       "West Virginia",
+       "Wisconsin",
+       "Wyoming"
+      ]
+     },
+     {
+      "name": "cam",
+      "type": "hidden",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "tid",
+      "type": "hidden",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "intver",
+      "type": "hidden",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "pq",
+      "type": "hidden",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "prebuy",
+      "type": "hidden",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "utm_campaign",
+      "type": "hidden",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "utm_source",
+      "type": "hidden",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "utm_medium",
+      "type": "hidden",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "s_siteloc",
+      "type": "hidden",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "s_trackval",
+      "type": "hidden",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "s_referrer",
+      "type": "hidden",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "kbid",
+      "type": "hidden",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "CCPRODCODE",
+      "type": "hidden",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     }
+    ],
+    "url_pattern": "https://www.genealogybank.com/static/fs/?fname={fname}&lname={lname}&state={state}",
     "directory_prefixes": [],
     "paywall": null,
     "login_wall": null
    },
    "removal": {
     "url": "https://www.interment.net/contact.php",
-    "final_url": null,
-    "http_status": null,
+    "final_url": "https://www.interment.net/contact.php",
+    "http_status": 200,
     "kinds": [
      "opt_out"
     ],
-    "channels": [],
+    "channels": [
+     "web_form"
+    ],
     "emails": [],
     "phones": [],
     "postal_address": null,
     "portal": null,
-    "form_fields": [],
+    "form_fields": [
+     {
+      "name": "fname",
+      "type": "text",
+      "canonical": "first_name",
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "lname",
+      "type": "text",
+      "canonical": "last_name",
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "state",
+      "type": "select",
+      "canonical": "region",
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null,
+      "options": [
+       "US",
+       "Alabama",
+       "Alaska",
+       "Arizona",
+       "Arkansas",
+       "California",
+       "Colorado",
+       "Connecticut",
+       "Delaware",
+       "District of Columbia",
+       "Florida",
+       "Georgia",
+       "Hawaii",
+       "Idaho",
+       "Illinois",
+       "Indiana",
+       "Iowa",
+       "Kansas",
+       "Kentucky",
+       "Louisiana",
+       "Maine",
+       "Maryland",
+       "Massachusetts",
+       "Michigan",
+       "Minnesota",
+       "Mississippi",
+       "Missouri",
+       "Montana",
+       "Nebraska",
+       "Nevada",
+       "New Hampshire",
+       "New Jersey",
+       "New Mexico",
+       "New York",
+       "North Carolina",
+       "North Dakota",
+       "Ohio",
+       "Oklahoma",
+       "Oregon",
+       "Pennsylvania",
+       "Rhode Island",
+       "South Carolina",
+       "South Dakota",
+       "Tennessee",
+       "Texas",
+       "Utah",
+       "Vermont",
+       "Virginia",
+       "Washington",
+       "West Virginia",
+       "Wisconsin",
+       "Wyoming"
+      ]
+     }
+    ],
     "csrf_field_name": null,
     "requires_profile_url": null,
     "captcha": {
@@ -156641,18 +160039,50 @@
    },
    "bot_defense": {
     "vendor": null,
-    "outcome": "unknown"
+    "outcome": "none"
    },
    "legal": {
     "privacy_policy_url": null,
     "terms_url": null,
     "automation_prohibited": null,
     "automation_clause": null,
-    "residency": [],
+    "residency": [
+     "US",
+     "GB",
+     "CA-QC",
+     "CA-BC"
+    ],
     "authorized_agent": null,
-    "data_categories": []
+    "data_categories": [
+     "identifiers"
+    ]
    },
-   "pages": []
+   "pages": [
+    {
+     "url": "https://interment.net/",
+     "final_url": "https://www.interment.net/",
+     "status": 200,
+     "role": "home",
+     "title": "Interment.net - Cemetery Records Online",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.interment.net/",
+     "final_url": "https://www.interment.net/",
+     "status": 200,
+     "role": "home",
+     "title": "Interment.net - Cemetery Records Online",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.interment.net/contact.php",
+     "final_url": "https://www.interment.net/contact.php",
+     "status": 200,
+     "role": "catalog",
+     "title": "Contact | Interment.net - Cemetery Records Online",
+     "liveness": "alive"
+    }
+   ]
   },
   "mount-pleasant-group": {
    "schema_version": "3.0.0",
@@ -156660,39 +160090,127 @@
    "name": "Mount Pleasant Group",
    "category": "people-search",
    "domain": "mountpleasantgroup.com",
-   "checked_at": "2026-11-02T06:55:11+00:00",
-   "liveness": "not_checked",
-   "liveness_detail": "no crawl result in this log",
-   "homepage": null,
-   "logo_url": null,
-   "images": [],
-   "theme_color": null,
-   "languages": [],
-   "legal_name": null,
+   "checked_at": "2026-11-02T09:57:18+00:00",
+   "liveness": "alive",
+   "liveness_detail": "catalog URL loaded",
+   "homepage": "https://www.mountpleasantgroup.com/",
+   "logo_url": "https://www.mountpleasantgroup.com/themes/custom/nc_theme/logo-light.svg",
+   "images": [
+    {
+     "url": "https://www.mountpleasantgroup.com/themes/custom/nc_theme/favicon.ico",
+     "kind": "icon",
+     "source_page": "https://www.mountpleasantgroup.com/"
+    },
+    {
+     "url": "https://www.mountpleasantgroup.com/themes/custom/nc_theme/src/images/favicons/apple-touch-icon.png",
+     "kind": "apple_touch_icon",
+     "source_page": "https://www.mountpleasantgroup.com/"
+    },
+    {
+     "url": "https://www.mountpleasantgroup.com/themes/custom/nc_theme/src/images/favicons/favicon-32x32.png",
+     "kind": "icon",
+     "source_page": "https://www.mountpleasantgroup.com/"
+    },
+    {
+     "url": "https://www.mountpleasantgroup.com/themes/custom/nc_theme/src/images/favicons/favicon-16x16.png",
+     "kind": "icon",
+     "source_page": "https://www.mountpleasantgroup.com/"
+    },
+    {
+     "url": "https://www.mountpleasantgroup.com/themes/custom/nc_theme/src/images/favicons/safari-pinned-tab.svg",
+     "kind": "icon",
+     "source_page": "https://www.mountpleasantgroup.com/"
+    },
+    {
+     "url": "https://www.mountpleasantgroup.com/themes/custom/nc_theme/logo.svg",
+     "kind": "json_ld",
+     "source_page": "https://www.mountpleasantgroup.com/"
+    },
+    {
+     "url": "https://www.mountpleasantgroup.com/themes/custom/nc_theme/logo-light.svg",
+     "kind": "logo",
+     "source_page": "https://www.mountpleasantgroup.com/"
+    },
+    {
+     "url": "https://www.mountpleasantgroup.com/sites/default/files/images/Banner200.jpg",
+     "kind": "logo",
+     "source_page": "https://www.mountpleasantgroup.com/"
+    },
+    {
+     "url": "https://www.mountpleasantgroup.com/sites/default/files/images/Licensed_by_BAO_0.png",
+     "kind": "logo",
+     "source_page": "https://www.mountpleasantgroup.com/"
+    },
+    {
+     "url": "https://www.mountpleasantgroup.com/sites/default/files/styles/open_graph_image/public/images/privacy.png?h=c74750f6&itok=IMqsizc-",
+     "kind": "og_image",
+     "source_page": "https://www.mountpleasantgroup.com/privacy"
+    },
+    {
+     "url": "https://www.mountpleasantgroup.com/sites/default/files/styles/twitter_large_image/public/images/privacy.png?h=c74750f6&itok=DQ-Bkejm",
+     "kind": "twitter_image",
+     "source_page": "https://www.mountpleasantgroup.com/privacy"
+    }
+   ],
+   "theme_color": "#ffffff",
+   "languages": [
+    "en"
+   ],
+   "legal_name": "Mount Pleasant Group",
    "search": {
-    "available": null,
-    "method": "unknown",
-    "page_url": null,
-    "form_action": null,
-    "inputs": [],
-    "url_pattern": null,
+    "available": true,
+    "method": "http_get",
+    "page_url": "https://www.mountpleasantgroup.com/",
+    "form_action": "https://www.mountpleasantgroup.com/search-results?opq=",
+    "inputs": [
+     {
+      "name": "opq",
+      "type": "text",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": "Search"
+     }
+    ],
+    "url_pattern": "https://www.mountpleasantgroup.com/search-results?opq=?opq={opq}",
     "directory_prefixes": [],
     "paywall": null,
     "login_wall": null
    },
    "removal": {
     "url": "https://www.mountpleasantgroup.com/privacy",
-    "final_url": null,
-    "http_status": null,
+    "final_url": "https://www.mountpleasantgroup.com/privacy",
+    "http_status": 200,
     "kinds": [
      "opt_out"
     ],
-    "channels": [],
-    "emails": [],
-    "phones": [],
+    "channels": [
+     "web_form",
+     "email",
+     "phone"
+    ],
+    "emails": [
+     {
+      "email": "clientfeedback@mountpleasantgroup.com",
+      "confidence": "uncertain",
+      "source_url": "https://www.mountpleasantgroup.com/"
+     }
+    ],
+    "phones": [
+     "1-800-408-6033"
+    ],
     "postal_address": null,
     "portal": null,
-    "form_fields": [],
+    "form_fields": [
+     {
+      "name": "opq",
+      "type": "text",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": "Search"
+     }
+    ],
     "csrf_field_name": null,
     "requires_profile_url": null,
     "captcha": {
@@ -156707,19 +160225,49 @@
     "processing_text": null
    },
    "bot_defense": {
-    "vendor": null,
-    "outcome": "unknown"
+    "vendor": "cloudflare",
+    "outcome": "none"
    },
    "legal": {
-    "privacy_policy_url": null,
+    "privacy_policy_url": "https://www.mountpleasantgroup.com/privacy",
     "terms_url": null,
     "automation_prohibited": null,
     "automation_clause": null,
-    "residency": [],
+    "residency": [
+     "CA"
+    ],
     "authorized_agent": null,
-    "data_categories": []
+    "data_categories": [
+     "identifiers",
+     "employment"
+    ]
    },
-   "pages": []
+   "pages": [
+    {
+     "url": "https://mountpleasantgroup.com/",
+     "final_url": "https://www.mountpleasantgroup.com/",
+     "status": 200,
+     "role": "home",
+     "title": "Mount Pleasant Group",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.mountpleasantgroup.com/",
+     "final_url": "https://www.mountpleasantgroup.com/",
+     "status": 200,
+     "role": "home",
+     "title": "Mount Pleasant Group",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.mountpleasantgroup.com/privacy",
+     "final_url": "https://www.mountpleasantgroup.com/privacy",
+     "status": 200,
+     "role": "catalog",
+     "title": "Privacy | Mount Pleasant Group",
+     "liveness": "alive"
+    }
+   ]
   },
   "kearney-funeral-services": {
    "schema_version": "3.0.0",
@@ -156727,36 +160275,181 @@
    "name": "Kearney Funeral Services",
    "category": "people-search",
    "domain": "kearneyfs.com",
-   "checked_at": "2026-11-02T06:55:11+00:00",
-   "liveness": "not_checked",
-   "liveness_detail": "no crawl result in this log",
-   "homepage": null,
-   "logo_url": null,
-   "images": [],
+   "checked_at": "2026-11-02T09:57:16+00:00",
+   "liveness": "alive",
+   "liveness_detail": "catalog URL loaded",
+   "homepage": "https://www.kearneyfs.com/",
+   "logo_url": "https://irp.cdn-website.com/88945bb9/dms3rep/multi/opt/kearney-funeral-services-logo-larger-337w.png?jxl&v=jxl",
+   "images": [
+    {
+     "url": "https://irp.cdn-website.com/88945bb9/dms3rep/multi/kearney-funeral-services-favicon.png",
+     "kind": "apple_touch_icon",
+     "source_page": "https://www.kearneyfs.com/"
+    },
+    {
+     "url": "https://irp.cdn-website.com/88945bb9/site_favicon_16_1726687592819.ico",
+     "kind": "icon",
+     "source_page": "https://www.kearneyfs.com/"
+    },
+    {
+     "url": "https://irp.cdn-website.com/88945bb9/dms3rep/multi/opt/kearney-funeral-services-logo-larger-1920w.png?jxl&v=jxl",
+     "kind": "og_image",
+     "source_page": "https://www.kearneyfs.com/"
+    },
+    {
+     "url": "https://irp.cdn-website.com/88945bb9/dms3rep/multi/opt/kearney-funeral-services-logo-larger-337w.png?jxl&v=jxl",
+     "kind": "logo",
+     "source_page": "https://www.kearneyfs.com/"
+    },
+    {
+     "url": "https://irp.cdn-website.com/88945bb9/dms3rep/multi/opt/kearney-funeral-services-favicon-1920w.png?jxl&v=jxl",
+     "kind": "twitter_image",
+     "source_page": "https://www.kearneyfs.com/privacy-policy"
+    }
+   ],
    "theme_color": null,
-   "languages": [],
-   "legal_name": null,
+   "languages": [
+    "en"
+   ],
+   "legal_name": "Kearney Funeral Services",
    "search": {
-    "available": null,
-    "method": "unknown",
-    "page_url": null,
-    "form_action": null,
-    "inputs": [],
-    "url_pattern": null,
+    "available": true,
+    "method": "http_form_post",
+    "page_url": "https://www.kearneyfs.com/",
+    "form_action": "https://www.kearneyfs.com/",
+    "inputs": [
+     {
+      "name": "dmform-0",
+      "type": "text",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "label-dmform-0",
+      "type": "hidden",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "dmform-1",
+      "type": "email",
+      "canonical": "email",
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "label-dmform-1",
+      "type": "hidden",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "dmform-2",
+      "type": "tel",
+      "canonical": "phone",
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "label-dmform-2",
+      "type": "hidden",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "dmform-3",
+      "type": "text",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "label-dmform-3",
+      "type": "hidden",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "dmformsendto",
+      "type": "hidden",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "action",
+      "type": "hidden",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "dmformsubject",
+      "type": "hidden",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "dmformfrom",
+      "type": "hidden",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "dmformsubmitparams",
+      "type": "hidden",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "page_uuid",
+      "type": "hidden",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     }
+    ],
+    "url_pattern": "https://www.kearneyfs.com/",
     "directory_prefixes": [],
     "paywall": null,
     "login_wall": null
    },
    "removal": {
     "url": "https://www.kearneyfs.com/privacy-policy",
-    "final_url": null,
-    "http_status": null,
+    "final_url": "https://www.kearneyfs.com/privacy-policy",
+    "http_status": 200,
     "kinds": [
      "opt_out"
     ],
-    "channels": [],
+    "channels": [
+     "phone"
+    ],
     "emails": [],
-    "phones": [],
+    "phones": [
+     "801-682-4391"
+    ],
     "postal_address": null,
     "portal": null,
     "form_fields": [],
@@ -156767,7 +160460,7 @@
      "sitekey": null,
      "pages": []
     },
-    "consent_vendor": null,
+    "consent_vendor": "cookiebot",
     "success_text": null,
     "suppression_not_deletion": null,
     "processing_days": null,
@@ -156775,18 +160468,48 @@
    },
    "bot_defense": {
     "vendor": null,
-    "outcome": "unknown"
+    "outcome": "none"
    },
    "legal": {
-    "privacy_policy_url": null,
+    "privacy_policy_url": "https://www.kearneyfs.com/privacy-policy",
     "terms_url": null,
     "automation_prohibited": null,
     "automation_clause": null,
-    "residency": [],
+    "residency": [
+     "US"
+    ],
     "authorized_agent": null,
-    "data_categories": []
+    "data_categories": [
+     "identifiers",
+     "internet_activity"
+    ]
    },
-   "pages": []
+   "pages": [
+    {
+     "url": "https://kearneyfs.com/",
+     "final_url": "https://www.kearneyfs.com/",
+     "status": 200,
+     "role": "home",
+     "title": "Kearney Funeral Services | Vancouver, BC\n  \r\n  A black and white clock in a circle on a white background.A black outline icon of a location ",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.kearneyfs.com/",
+     "final_url": "https://www.kearneyfs.com/",
+     "status": 200,
+     "role": "home",
+     "title": "Kearney Funeral Services | Vancouver, BC\n  \r\n  A black and white clock in a circle on a white background.A black outline icon of a location ",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.kearneyfs.com/privacy-policy",
+     "final_url": "https://www.kearneyfs.com/privacy-policy",
+     "status": 200,
+     "role": "catalog",
+     "title": "Privacy Policy | Kearney Funeral Services",
+     "liveness": "alive"
+    }
+   ]
   },
   "basic-funerals": {
    "schema_version": "3.0.0",
@@ -156794,18 +160517,81 @@
    "name": "Basic Funerals",
    "category": "people-search",
    "domain": "basicfunerals.ca",
-   "checked_at": "2026-11-02T06:55:11+00:00",
-   "liveness": "not_checked",
-   "liveness_detail": "no crawl result in this log",
-   "homepage": null,
-   "logo_url": null,
-   "images": [],
+   "checked_at": "2026-11-02T09:57:07+00:00",
+   "liveness": "alive",
+   "liveness_detail": "catalog URL loaded",
+   "homepage": "https://www.basicfunerals.ca/",
+   "logo_url": "https://irp.cdn-website.com/daf4b696/dms3rep/multi/opt/logo-768x126-1920w.webp?jxl&v=jxl",
+   "images": [
+    {
+     "url": "https://irp.cdn-website.com/daf4b696/dms3rep/multi/mobiletablet.png",
+     "kind": "apple_touch_icon",
+     "source_page": "https://www.basicfunerals.ca/"
+    },
+    {
+     "url": "https://irp.cdn-website.com/daf4b696/site_favicon_16_1692736704331.ico",
+     "kind": "icon",
+     "source_page": "https://www.basicfunerals.ca/"
+    },
+    {
+     "url": "https://irp.cdn-website.com/daf4b696/dms3rep/multi/opt/opengraph-1920w.png?jxl&v=jxl",
+     "kind": "twitter_image",
+     "source_page": "https://www.basicfunerals.ca/"
+    },
+    {
+     "url": "https://irp.cdn-website.com/daf4b696/dms3rep/multi/opt/logo-768x126-1920w.webp?jxl&v=jxl",
+     "kind": "logo",
+     "source_page": "https://www.basicfunerals.ca/"
+    },
+    {
+     "url": "https://irp.cdn-website.com/daf4b696/dms3rep/multi/opt/logo-768x126-340w.webp?jxl&v=jxl",
+     "kind": "logo",
+     "source_page": "https://www.basicfunerals.ca/"
+    },
+    {
+     "url": "https://irp.cdn-website.com/daf4b696/dms3rep/multi/opt/logo-768x126-b4477887-517w.webp?jxl&v=jxl",
+     "kind": "logo",
+     "source_page": "https://www.basicfunerals.ca/"
+    },
+    {
+     "url": "https://irp.cdn-website.com/daf4b696/dms3rep/multi/opt/60c8639507043d0addba4ef8_Griefsteps-Logo-75521ca5-4ada453b-381w.png?jxl&v=jxl",
+     "kind": "logo",
+     "source_page": "https://www.basicfunerals.ca/"
+    },
+    {
+     "url": "https://irp.cdn-website.com/daf4b696/dms3rep/multi/opt/logo-768x126-b4477887-1920w.webp?jxl&v=jxl",
+     "kind": "logo",
+     "source_page": "https://www.basicfunerals.ca/"
+    },
+    {
+     "url": "https://irp.cdn-website.com/daf4b696/dms3rep/multi/opt/6052f4ce0558ec740315cc5f_Griefsteps-Logo-88808d1c-1920w-1920w.png?jxl&v=jxl",
+     "kind": "logo",
+     "source_page": "https://www.basicfunerals.ca/"
+    },
+    {
+     "url": "https://irp.cdn-website.com/daf4b696/dms3rep/multi/opt/Park-Lawn-logo-240w.png?jxl&v=jxl",
+     "kind": "logo",
+     "source_page": "https://www.basicfunerals.ca/"
+    },
+    {
+     "url": "https://irp.cdn-website.com/daf4b696/dms3rep/multi/opt/60c8639507043d0addba4ef8_Griefsteps-Logo-75521ca5-4ada453b-1920w.png?jxl&v=jxl",
+     "kind": "logo",
+     "source_page": "https://www.basicfunerals.ca/privacy-policy"
+    },
+    {
+     "url": "https://irp.cdn-website.com/daf4b696/dms3rep/multi/opt/Park-Lawn-logo-1920w.png?jxl&v=jxl",
+     "kind": "logo",
+     "source_page": "https://www.basicfunerals.ca/privacy-policy"
+    }
+   ],
    "theme_color": null,
-   "languages": [],
-   "legal_name": null,
+   "languages": [
+    "en"
+   ],
+   "legal_name": "Basic Funerals and Cremation Choices",
    "search": {
-    "available": null,
-    "method": "unknown",
+    "available": false,
+    "method": "none",
     "page_url": null,
     "form_action": null,
     "inputs": [],
@@ -156816,17 +160602,32 @@
    },
    "removal": {
     "url": "https://www.basicfunerals.ca/privacy-policy",
-    "final_url": null,
-    "http_status": null,
+    "final_url": "https://www.basicfunerals.ca/privacy-policy",
+    "http_status": 200,
     "kinds": [
      "opt_out"
     ],
-    "channels": [],
+    "channels": [
+     "web_form",
+     "phone"
+    ],
     "emails": [],
-    "phones": [],
+    "phones": [
+     "(877) 229-7077",
+     "801-682-4391"
+    ],
     "postal_address": null,
     "portal": null,
-    "form_fields": [],
+    "form_fields": [
+     {
+      "name": "email",
+      "type": "email",
+      "canonical": "email",
+      "required": true,
+      "autocomplete": null,
+      "placeholder": "Email address"
+     }
+    ],
     "csrf_field_name": null,
     "requires_profile_url": null,
     "captcha": {
@@ -156834,7 +160635,7 @@
      "sitekey": null,
      "pages": []
     },
-    "consent_vendor": null,
+    "consent_vendor": "cookiebot",
     "success_text": null,
     "suppression_not_deletion": null,
     "processing_days": null,
@@ -156842,18 +160643,47 @@
    },
    "bot_defense": {
     "vendor": null,
-    "outcome": "unknown"
+    "outcome": "none"
    },
    "legal": {
-    "privacy_policy_url": null,
+    "privacy_policy_url": "https://www.basicfunerals.ca/privacy-policy",
     "terms_url": null,
     "automation_prohibited": null,
     "automation_clause": null,
     "residency": [],
     "authorized_agent": null,
-    "data_categories": []
+    "data_categories": [
+     "identifiers",
+     "internet_activity",
+     "employment"
+    ]
    },
-   "pages": []
+   "pages": [
+    {
+     "url": "https://basicfunerals.ca/",
+     "final_url": "https://www.basicfunerals.ca/",
+     "status": 200,
+     "role": "home",
+     "title": "Basic Funerals and Cremation Choices",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.basicfunerals.ca/",
+     "final_url": "https://www.basicfunerals.ca/",
+     "status": 200,
+     "role": "home",
+     "title": "Basic Funerals and Cremation Choices",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.basicfunerals.ca/privacy-policy",
+     "final_url": "https://www.basicfunerals.ca/privacy-policy",
+     "status": 200,
+     "role": "catalog",
+     "title": "Privacy Policy | Basic Funerals and Cremation Choices",
+     "liveness": "alive"
+    }
+   ]
   },
   "le-necrologue": {
    "schema_version": "3.0.0",
@@ -156861,36 +160691,123 @@
    "name": "Le Nécrologue",
    "category": "people-search",
    "domain": "lenecrologue.com",
-   "checked_at": "2026-11-02T06:55:11+00:00",
-   "liveness": "not_checked",
-   "liveness_detail": "no crawl result in this log",
-   "homepage": null,
-   "logo_url": null,
-   "images": [],
+   "checked_at": "2026-11-02T09:57:17+00:00",
+   "liveness": "alive",
+   "liveness_detail": "catalog URL loaded",
+   "homepage": "https://www.lenecrologue.com/",
+   "logo_url": "https://www.lenecrologue.com/layout/adapt/view/img/logo_fr.svg",
+   "images": [
+    {
+     "url": "https://www.lenecrologue.com/favicon.ico",
+     "kind": "icon",
+     "source_page": "https://www.lenecrologue.com/"
+    },
+    {
+     "url": "https://www.lenecrologue.com/layout/adapt/view/img/logo_fb.png",
+     "kind": "og_image",
+     "source_page": "https://www.lenecrologue.com/"
+    },
+    {
+     "url": "https://www.lenecrologue.com/layout/adapt/view/img/logo_fr.svg",
+     "kind": "logo",
+     "source_page": "https://www.lenecrologue.com/"
+    },
+    {
+     "url": "https://www.lenecrologue.com/layout/adapt/view/img/aurora-logo.svg",
+     "kind": "logo",
+     "source_page": "https://www.lenecrologue.com/"
+    },
+    {
+     "url": "https://www.lenecrologue.com/layout/bootstrap4/view/img/logo_fr.svg",
+     "kind": "logo",
+     "source_page": "https://www.lenecrologue.com/"
+    },
+    {
+     "url": "https://www.lenecrologue.com/layout/adapt/view/img/logo_en.svg",
+     "kind": "logo",
+     "source_page": "https://www.lenecrologue.com/privacy-policy/"
+    }
+   ],
    "theme_color": null,
-   "languages": [],
+   "languages": [
+    "fr",
+    "en"
+   ],
    "legal_name": null,
    "search": {
-    "available": null,
-    "method": "unknown",
-    "page_url": null,
-    "form_action": null,
-    "inputs": [],
-    "url_pattern": null,
+    "available": true,
+    "method": "http_get",
+    "page_url": "https://www.lenecrologue.com/",
+    "form_action": "https://www.lenecrologue.com/necrologie/recherche/",
+    "inputs": [
+     {
+      "name": "s",
+      "type": "search",
+      "canonical": null,
+      "required": true,
+      "autocomplete": null,
+      "placeholder": "Que recherchez-vous?"
+     },
+     {
+      "name": "choosen_method",
+      "type": "hidden",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "type_search",
+      "type": "radio",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "type_search",
+      "type": "radio",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "type_search",
+      "type": "radio",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "type_search",
+      "type": "radio",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     }
+    ],
+    "url_pattern": "https://www.lenecrologue.com/necrologie/recherche/?s={s}&type_search={type_search}&type_search={type_search}&type_search={type_search}&type_search={type_search}",
     "directory_prefixes": [],
     "paywall": null,
     "login_wall": null
    },
    "removal": {
     "url": "https://www.lenecrologue.com/privacy-policy/",
-    "final_url": null,
-    "http_status": null,
+    "final_url": "https://www.lenecrologue.com/privacy-policy/",
+    "http_status": 200,
     "kinds": [
-     "opt_out"
+     "do_not_sell"
     ],
-    "channels": [],
+    "channels": [
+     "phone"
+    ],
     "emails": [],
-    "phones": [],
+    "phones": [
+     "1-418-755-1737"
+    ],
     "postal_address": null,
     "portal": null,
     "form_fields": [],
@@ -156909,18 +160826,49 @@
    },
    "bot_defense": {
     "vendor": null,
-    "outcome": "unknown"
+    "outcome": "none"
    },
    "legal": {
-    "privacy_policy_url": null,
+    "privacy_policy_url": "https://www.lenecrologue.com/privacy-policy/",
     "terms_url": null,
     "automation_prohibited": null,
     "automation_clause": null,
-    "residency": [],
+    "residency": [
+     "CA-QC",
+     "CA-BC"
+    ],
     "authorized_agent": null,
-    "data_categories": []
+    "data_categories": [
+     "identifiers",
+     "precise_location"
+    ]
    },
-   "pages": []
+   "pages": [
+    {
+     "url": "https://lenecrologue.com/",
+     "final_url": "https://www.lenecrologue.com/",
+     "status": 200,
+     "role": "home",
+     "title": "Nécrologie - Lisez les avis de décès",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.lenecrologue.com/",
+     "final_url": "https://www.lenecrologue.com/",
+     "status": 200,
+     "role": "home",
+     "title": "Nécrologie - Lisez les avis de décès",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.lenecrologue.com/privacy-policy/",
+     "final_url": "https://www.lenecrologue.com/privacy-policy/",
+     "status": 200,
+     "role": "catalog",
+     "title": "",
+     "liveness": "alive"
+    }
+   ]
   },
   "companies-house-officers": {
    "schema_version": "3.0.0",

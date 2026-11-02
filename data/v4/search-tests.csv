@@ -1,6 +1,7 @@
 id,domain,outcome,status,method,path_prefix,page_kind,result_count,fields_sent,missing,checked_at
 118000-fr,118000.fr,http_error,404,http_get,search,,,full_name;city,,2026-10-26T10:40:16+00:00
 1881-no,1881.no,submitted,200,http_get,sjoetransport-og-shipping,results,12,full_name,,2026-10-26T10:40:16+00:00
+411-reverse-lookup-canada,411reverselookup.ca,results,200,http_form_post,People,results,411,phone;searchterm,,2026-11-02T10:03:17+00:00
 address-scoop,addressscoop.com,captcha,,http_form_post,,,,,,2026-10-25T03:02:26+00:00
 advancedbackgroundchecks,advancedbackgroundchecks.com,challenge,403,http_get,find,,,first_name;last_name,,2026-10-25T03:18:08+00:00
 affluense-ai,affluense.ai,unfilled,,http_get,,,,full_name;email;phone;domain,Message,2026-10-13T20:03:53+00:00
@@ -18,6 +19,7 @@ anywho-intelius-peopleconnect,anywho.com,submitted,200,http_get,,form,,full_name
 arrestwarrant-org,arrestwarrant.org,submitted,200,http_get,reg6,loader,,first_name;last_name;region,,2026-10-25T03:02:28+00:00
 attom-data,attomdata.com,submitted,200,http_get,,other,,full_name,,2026-10-13T19:31:02+00:00
 barrietoday-obituaries,barrietoday.com,challenge,403,http_get,search,,,full_name,,2026-10-26T12:20:12+00:00
+basic-funerals,basicfunerals.ca,submitted,200,http_get,obituaries,other,,full_name,,2026-11-02T10:04:09+00:00
 baytoday-obituaries,baytoday.ca,results,200,http_get,search,results,,full_name,,2026-10-26T12:20:12+00:00
 bc-assessment,bcassessment.ca,submitted,200,http_get,,other,,street_address,,2026-10-13T19:31:03+00:00
 becausal-inc,becausal.com,submitted,200,http_get,personal-information,other,,region;first_name;last_name;email;Opt-out-Type,,2026-10-13T19:31:04+00:00
@@ -39,6 +41,7 @@ campaignmoney-com,campaignmoney.com,submitted,200,http_get,advanced.asp,results,
 canada-pages,canadapages.com,submitted,200,http_get,wp,form,,last_name;city,,2026-10-26T08:01:55+00:00
 canadacompanyregistry-ca,canadacompanyregistry.ca,no_results,200,http_get,search,empty,0,full_name,,2026-10-26T12:20:12+00:00
 canadasunshinelist-ca,canadasunshinelist.ca,submitted,200,http_get,ontario,other,,full_name,,2026-10-26T10:40:16+00:00
+canadian-who-s-who,canadianwhoswho.ca,submitted,200,http_get,search_results.php,results,8,full_name,,2026-11-02T06:52:06+00:00
 castanet-obituaries,castanet.net,http_error,404,http_get,obituaries,,,full_name,,2026-10-26T10:40:16+00:00
 certn,certn.co,unfilled,,http_form_post,,,,full_name,widget,2026-10-13T20:03:53+00:00
 charitydata-ca,charitydata.ca,results,200,http_get,search,results,,first_name;last_name,,2026-10-26T21:38:34+00:00
@@ -70,6 +73,7 @@ dentistscalifornia-org-licensedata,dentistscalifornia.org,challenge,403,http_get
 dobsearch,dobsearch.com,submitted,200,http_get,,other,,first_name;last_name,,2026-10-13T19:31:25+00:00
 dstillery-inc,dstillery.com,submitted,200,http_get,,other,,full_name,,2026-10-13T19:31:26+00:00
 easybackgroundchecks-intelius,easybackgroundchecks.com,challenge,403,http_get,search,,,first_name;last_name;city;region,,2026-10-13T19:31:28+00:00
+echovita,echovita.com,submitted,200,http_get,ca,other,,full_name,,2026-11-02T10:04:09+00:00
 elliotlaketoday-obituaries,elliotlaketoday.com,results,200,http_get,search,results,,full_name,,2026-10-26T12:20:12+00:00
 eniro-se,eniro.se,challenge,403,http_get,lookup,,,full_name,,2026-10-26T13:08:02+00:00
 equifax-canada,equifax.ca,submitted,200,http_form_post,personal,other,,full_name,,2026-10-13T19:31:29+00:00
@@ -104,6 +108,7 @@ inbound-insight-llc,inboundinsight.com,submitted,200,http_get,,other,,full_name;
 indiana-arrests,indianaarrests.org,no_results,200,http_get,results,empty,0,first_name;last_name;region;city;sex,,2026-10-13T19:43:48+00:00
 information-com,information.com,challenge,403,http_get,pf,,,first_name;last_name;city;region,,2026-10-25T03:33:55+00:00
 infotracer,infotracer.com,no_results,200,http_form_post,results,empty,0,first_name;last_name;city;region,,2026-10-13T21:21:01+00:00
+inmemoriam,inmemoriam.ca,results,200,http_get,search-results,results,0,first_name;last_name,,2026-11-02T10:03:17+00:00
 innisfiltoday-obituaries,innisfiltoday.ca,challenge,403,http_get,search,,,full_name,,2026-10-26T12:20:20+00:00
 instantcheckmate-peopleconnect,instantcheckmate.com,challenge,403,http_get,results,,,first_name;last_name;region,,2026-10-25T03:33:56+00:00
 instantcheckspy-truthfinder,instantcheckspy.com,challenge,403,http_form_post,,,,first_name;last_name;region,,2026-10-25T03:18:20+00:00
@@ -114,6 +119,7 @@ intentmacro,intentmacro.com,submitted,200,http_form_post,,other,,full_name;email
 jmr-media-consulting-inc,jmr-media.com,submitted,200,http_form_post,,other,,first_name;last_name;email,,2026-10-13T19:31:53+00:00
 judyrecords,judyrecords.com,results,200,browser,getSearchResults,results,2071433,full_name,,2026-10-25T04:20:47+00:00
 kansas-arrests,kansasarrests.org,no_results,200,http_get,results,empty,0,first_name;last_name;region;city;sex,,2026-10-13T19:44:01+00:00
+kearney-funeral-services,kearneyfs.com,submitted,200,http_get,obituaries,other,,full_name,,2026-11-02T10:04:09+00:00
 kids-live-safe,kidslivesafe.com,submitted,200,http_get,,form,,full_name,,2026-10-25T03:02:44+00:00
 krak-dk,krak.dk,challenge,403,http_get,lookup,,,full_name,,2026-10-26T13:08:02+00:00
 lakelandtoday-obituaries,lakelandtoday.ca,results,200,http_get,search,results,,full_name,,2026-10-26T13:08:03+00:00
