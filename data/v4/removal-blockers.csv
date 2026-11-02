@@ -61,16 +61,19 @@ a-direct-marketing-inc,A Direct Marketing Inc,bookyourdata.com,marketing,alive,g
 accurate-append-inc,Accurate Append Inc.,clients.accurateappend.com,marketing,blocked,captcha_form,Removal form is behind a CAPTCHA widget and no usable removal email was found,turnstile,,checkbox,false,,true,,web_form;phone
 adapt-io,Adapt.io,adapt.io,marketing,robots_disallowed,captcha_form,Removal form is behind a CAPTCHA widget and no usable removal email was found,recaptcha_v3,,score,false,,true,support@adapt.io,web_form;email
 adstra-american-list-counsel,Adstra (American List Counsel),adstradata.com,marketing,alive,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,true,,,,
+adswapper-inc-toptop-leads,AdSwapper Inc (TopTop Leads),toptopleads.com,marketing,alive,generic_inbox,"Only a generic inbox was found, and the page does not say to use it for removal",,,,,,,info@toptopleads.com,email
 aeroleads,AeroLeads,aeroleads.com,marketing,alive,generic_inbox,"Only a generic inbox was found, and the page does not say to use it for removal",,,,true,,,support@aeroleads.com;hello@aeroleads.com,email
 agile-education-marketing-llc,"Agile Education Marketing, LLC",agile-ed.com,marketing,alive,phone,The only published channel is a phone number,,,,false,,,,phone
 alikeaudience-inc,"AlikeAudience, Inc.",alikeaudience.com,marketing,alive,captcha_no_form,A CAPTCHA widget is on the removal page and no form fields or usable email were stored,recaptcha_v3,6LfEjZ8dAAAAAEH6TwoVFZ8jGtOjolmrBH7qrnss,score,true,,,,
 allpeople,AllPeople,allpeople.com,marketing,blocked,bot_wall,The opt-out URL returned a bot wall and a browser retry did not reveal a removal channel,turnstile,,checkbox,false,,,,
 allpeople-biz,AllPeople.biz,allpeople.biz,marketing,blocked,bot_wall,The opt-out URL returned a bot wall and a browser retry did not reveal a removal channel,turnstile,,,false,,,,
+alpine-digital-group-inc,"Alpine Digital Group, Inc.",alpinedigitalgroup.com,marketing,alive,generic_inbox,"Only a generic inbox was found, and the page does not say to use it for removal",,,,,,,contact@alpinedigitalgroup.com;compliance@alpinedigitalgroup.com,email
 amerilist,AmeriList,amerilist.com,marketing,alive,captcha_form,Removal form is behind a CAPTCHA widget and no usable removal email was found,recaptcha_v2,6LeRRncrAAAAABLtH5NrtkOt3gHnSGXuHcdCaZfu,checkbox,true,,true,info@amerilist.com,web_form;email;phone
 atdata-formerly-towerdata,AtData (formerly TowerData),atdata.com,marketing,alive,phone,The only published channel is a phone number,recaptcha_v2,6LfiqCUUAAAAAGzo0BG2sKBIF-oZVi1_rXgUm5xn,checkbox,true,,,,phone
 buzzfile,Buzzfile,buzzfile.com,marketing,alive,captcha_form,Removal form is behind a CAPTCHA widget and no usable removal email was found,recaptcha_v2,,,true,,true,,web_form;phone
 catalina-marketing-corporation,Catalina Marketing Corporation,catalina.com,marketing,alive,phone,The only published channel is a phone number,,,,true,,,,phone
 cause-iq,Cause IQ,causeiq.com,marketing,alive,phone_postal,Phone and a mailing address are the only channels,,,,true,,,,postal_mail;phone
+common-room-inc,"Common Room, Inc.",commonroom.io,marketing,alive,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,,,,,
 data-axle-canada,Data Axle Canada,dataaxlecanada.ca,marketing,alive,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,,,,,
 datagma,Datagma,datagma.com,marketing,alive,captcha_no_form,A CAPTCHA widget is on the removal page and no form fields or usable email were stored,recaptcha_v2,6LeqZZcpAAAAAJmvzEDKV--ki8f4Tx5UqtvDY5tM,invisible,true,,,,
 digital-advertising-alliance-opt-out,Digital Advertising Alliance opt-out,optout.aboutads.info,marketing,alive,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,false,,,,
@@ -80,6 +83,7 @@ dynata,Dynata,dynata.com,marketing,alive,phone,The only published channel is a p
 exact-match-marketing-inc,Exact Match Marketing Inc,exactmatchmarketing.com,marketing,alive,phone,The only published channel is a phone number,,,,true,,,,phone
 fmadata,FMAData,fmadata.com,marketing,robots_disallowed,phone,The only published channel is a phone number,,,,false,,,,phone
 fushia-media-llc,"Fushia Media, LLC.",fushiamedia.com,marketing,alive,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,false,,,,
+haines-and-company-criss-cross,Haines & Company (Criss+Cross),haines.com,marketing,alive,postal,The only published channel is a mailing address,,,,,,,,postal_mail
 infofree,InfoFree,infofree.com,marketing,alive,generic_inbox,"Only a generic inbox was found, and the page does not say to use it for removal",recaptcha_v3,6LcQs9QtAAAAANu0aQrO6WCOkHrE7XqRtR9sMtLS,score,true,,,info@infofree.com,email;phone
 integrated-direct-marketing-llc,"Integrated Direct Marketing, LLC",idm.us.com,marketing,alive,captcha_form,Removal form is behind a CAPTCHA widget and no usable removal email was found,recaptcha_v2,6Lcd57EZAAAAACthQMQVJEvdYhWIWJasM30n8nDy,checkbox,true,,true,,web_form;phone
 lionshare-marketing-inc,"Lionshare Marketing, Inc",lionsharemarketing.com,marketing,alive,generic_inbox,"Only a generic inbox was found, and the page does not say to use it for removal",recaptcha_v2,6LeNz-QUAAAAANtZ73N0xef_z4CJhmCym5Azntns,checkbox,true,,,info@lionsharemarketing.com,email;phone
@@ -173,6 +177,7 @@ lead-me-media-llc,"Lead Me Media, LLC",policy.leadmemedia.com,other,alive,captch
 lenso-ai,Lenso AI,lenso.ai,other,alive,captcha_form,Removal form is behind a CAPTCHA widget and no usable removal email was found,turnstile,,checkbox,true,,true,,web_form
 licenseplatedata,LicensePlateData,licenseplatedata.com,other,alive,captcha_form,Removal form is behind a CAPTCHA widget and no usable removal email was found,turnstile,0x4AAAAAAB5Jbptit0q4na62,checkbox,true,,true,,web_form
 live-data-technologies-inc,"Live Data Technologies, Inc.",livedatatech.com,other,alive,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,,,,,
+logictree-inc-data247-ezcnam,"LogicTree, Inc. (Data247, EZCNAM)",data247.com,other,alive,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,,,,,
 lookify,Lookify,lookify.io,other,blocked,phone,The only published channel is a phone number,turnstile,,,false,turnstile,,,phone
 m1-data-and-analytics-llc,"M1 Data & Analytics, LLC",m1-data.com,other,alive,generic_inbox,"Only a generic inbox was found, and the page does not say to use it for removal",recaptcha_v3,6LeT3D8fAAAAADODgURSYJATZv8SYVmK_mN0f8r8,score,false,,,service@m1-data.com,email;phone
 michigan-residents,Michigan Residents,michiganresidentdatabase.com,other,blocked,bot_wall,The opt-out URL returned a bot wall and a browser retry did not reveal a removal channel,,,,false,,,,
@@ -205,6 +210,7 @@ swordfish-ai-inc,Swordfish AI Inc.,swordfish.ai,other,alive,captcha_no_form,A CA
 targetsmart-communications-llc,TargetSmart Communications LLC,privacy.targetsmart.com,other,robots_disallowed,robots,robots.txt disallows the client. A later read still found no removal channel,,,,false,,,,
 task-genie-inc,"Task Genie, Inc.",datalane.com,other,alive,phone,The only published channel is a phone number,,,,true,,,,phone
 the-data-group,The Data Group,thedatagroup.com,other,alive,captcha_form,Removal form is behind a CAPTCHA widget and no usable removal email was found,recaptcha_v2,,invisible,true,,true,compliance@thedatagroup.com;justin@thedatagroup.com,web_form;email;phone
+tracerfy-llc,Tracerfy LLC,tracerfy.com,other,alive,captcha_form,Removal form is behind a CAPTCHA widget and no usable removal email was found,turnstile,0x4AAAAAAA7p86cypi0A8CUB,,,,true,,web_form;phone
 trestle-solutions-inc,"Trestle Solutions, Inc.",trestleiq.com,other,robots_disallowed,robots,robots.txt disallows the client. A later read still found no removal channel,,,,false,,,,
 truthed-inc,"Truthed, Inc",truthed.com,other,blocked,bot_wall,The opt-out URL returned a bot wall and a browser retry did not reveal a removal channel,turnstile,,,false,,,,
 tunnl-llc,"Tunnl, LLC",tunnldata.com,other,alive,generic_inbox,"Only a generic inbox was found, and the page does not say to use it for removal",,,,false,,,notice@tunnldata.com,email;phone
@@ -281,6 +287,7 @@ fastpeoplesearch,FastPeopleSearch,fastpeoplesearch.com,people-search,alive,captc
 fastpeoplesearch-io,FastPeopleSearch.io,fastpeoplesearch.io,people-search,dead,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,false,,,,
 findpeoplefast-net,FindPeopleFast.net,findpeoplefast.net,people-search,robots_disallowed,robots,robots.txt disallows the client. A later read still found no removal channel,,,,false,,,,
 findpeoplesearch,FindPeopleSearch,findpeoplesearch.com,people-search,dead,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,false,,,,
+fonecta,Fonecta,fonecta.fi,people-search,alive,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,,,,,
 fqsg-avis-de-deces,FQSG Avis de décès,federationgenealogie.qc.ca,people-search,alive,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,,,,,
 freepeopledirectory-spokeo-data,FreePeopleDirectory (Spokeo data),freepeopledirectory.com,people-search,alive,captcha_form,Removal form is behind a CAPTCHA widget and no usable removal email was found,recaptcha_v2,6LdwCOUsAAAAACok53xn1N9qQYsxPqzi1h3fMPqL,,false,,true,,web_form
 freepeoplesearch-com,FreePeopleSearch.com,freepeoplesearch.com,people-search,blocked,bot_wall,The opt-out URL returned a bot wall and a browser retry did not reveal a removal channel,,,,false,,,,
@@ -397,6 +404,7 @@ white-pages-canada,White Pages Canada,whitepagescanada.ca,people-search,alive,ca
 yellowpages-people-intelius-data,YellowPages People (Intelius data),people.yellowpages.com,people-search,alive,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,false,,,,
 abn-lookup,ABN Lookup,abr.business.gov.au,public-records,alive,captcha_form,Removal form is behind a CAPTCHA widget and no usable removal email was found,recaptcha_v2,,,,,true,,web_form
 albertasunshinelist-ca,Alberta Sunshine List (albertasunshinelist.ca),albertasunshinelist.ca,public-records,alive,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,,,,,
+biluppgifter-se,Biluppgifter.se,biluppgifter.se,public-records,alive,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,,,,,
 blockshopper,BlockShopper,blockshopper.com,public-records,alive,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,,,,,
 brady-list,Brady List,giglio-bradylist.com,public-records,robots_disallowed,robots,robots.txt disallows the client. A later read still found no removal channel,,,,false,,,,
 canadacompanyregistry-ca,Canada Company Registry (canadacompanyregistry.ca),canadacompanyregistry.ca,public-records,alive,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,,,,,
