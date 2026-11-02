@@ -2951,8 +2951,8 @@
       "catalog": {
         "name": "Massachusetts Arrests",
         "category": "background-checks",
-        "url": "https://www.maarrests.org/request-portal",
-        "notes": "Arrests.org request portal for this state site. The portal URL was responding on 2026-10-01.",
+        "url": "https://www.maarrests.org/corrections",
+        "notes": "Arrests.org request portal for this state site. The portal URL was responding on 2026-10-01. On 2026-11-01 the old request portal URL (https://www.maarrests.org/request-portal) redirected to this Report an Error or Correction page. The page says the site cannot change, remove, seal, or hide an official record. It answered HTTP 200. No request was submitted.",
         "domain": "maarrests.org",
         "http_status": "200",
         "sources": [
@@ -4395,8 +4395,8 @@
       "catalog": {
         "name": "Ohio Arrests",
         "category": "background-checks",
-        "url": "https://www.ohioarrests.org/request-portal",
-        "notes": "Arrests.org request portal for this state site. The portal URL was responding on 2026-10-01.",
+        "url": "https://www.ohioarrests.org/corrections",
+        "notes": "Arrests.org request portal for this state site. The portal URL was responding on 2026-10-01. On 2026-11-01 the old request portal URL (https://www.ohioarrests.org/request-portal) redirected to this Report an Error or Correction page. The page says the site cannot change, remove, seal, or hide an official record. It answered HTTP 200. No request was submitted.",
         "domain": "ohioarrests.org",
         "http_status": "200",
         "sources": [
@@ -22725,8 +22725,8 @@
       "catalog": {
         "name": "BDEX, LLC",
         "category": "other",
-        "url": "https://www.bdex.com/privacy-policy/",
-        "notes": "Privacy notice or privacy-policy page. Use the state-rights, do-not-sell, or request section.",
+        "url": "https://www.bdex.com/privacy-policy/data-sharing-opt-out/",
+        "notes": "Privacy notice or privacy-policy page. Use the state-rights, do-not-sell, or request section. On 2026-11-01 the old URL (https://www.bdex.com/privacy-policy/) redirected to an archived policy at /privacy-policy-old/. The BDEX homepage now links this Data Sharing Opt Out page, which has a form to opt out of sharing on the BDEX platform and an email opt-out. It answered HTTP 200. No request was submitted.",
         "domain": "bdex.com",
         "http_status": "200",
         "sources": [
@@ -29831,8 +29831,8 @@
       "catalog": {
         "name": "Data Trust",
         "category": "other",
-        "url": "https://thedatatrust.com/do-not-sell-my-personal-information/",
-        "notes": "Opt-out or consumer privacy-request page. Email: info@thedatatrust.com.",
+        "url": "https://thedatatrust.com/your-privacy-choices/",
+        "notes": "Opt-out or consumer privacy-request page. Email: info@thedatatrust.com. On 2026-11-01 the old URL (https://thedatatrust.com/do-not-sell-my-personal-information/) redirected to the privacy policy, which links this Your Privacy Choices page. It answered HTTP 200. No request was submitted.",
         "domain": "thedatatrust.com",
         "http_status": "200",
         "sources": [
@@ -30440,10 +30440,10 @@
       "catalog": {
         "name": "Datanyze LLC",
         "category": "other",
-        "url": "https://www.datanyze.com/privacy-center",
-        "notes": "Opt-out or consumer privacy-request page. Automated check on 2026-10-01 got HTTP 403. Open the link in a browser.",
+        "url": "https://www.zoominfo.com/trust-center/your-privacy",
+        "notes": "Opt-out or consumer privacy-request page. Automated check on 2026-10-01 got HTTP 403. Open the link in a browser. Datanyze is part of ZoomInfo. On 2026-11-01 the old URL (https://www.datanyze.com/privacy-center) redirected to this ZoomInfo privacy page, which links the ZoomInfo removal request. It answered HTTP 200. No request was submitted.",
         "domain": "datanyze.com",
-        "http_status": "403",
+        "http_status": "200",
         "sources": [
           "markup"
         ]
@@ -30588,8 +30588,8 @@
       "catalog": {
         "name": "Dataskip",
         "category": "other",
-        "url": "https://dataskip.io/product/start-order/",
-        "notes": "Opt-out or consumer privacy-request page.",
+        "url": "https://dataskip.io/privacy",
+        "notes": "Opt-out or consumer privacy-request page. On 2026-11-01 the old URL (https://dataskip.io/product/start-order/) redirected to the pricing page, which is not a privacy page. This is the privacy policy linked from the homepage. Email: support@dataskip.io. It answered HTTP 200. No request was submitted.",
         "domain": "dataskip.io",
         "http_status": "200",
         "sources": [
@@ -33659,8 +33659,8 @@
       "catalog": {
         "name": "DOBSearch",
         "category": "other",
-        "url": "https://www.dobsearch.com/people-finder/",
-        "notes": "Web form. Open-dataset difficulty: easy.",
+        "url": "https://www.dobsearch.com/privacy-policy/",
+        "notes": "Web form. Open-dataset difficulty: easy. On 2026-11-01 the old URL (https://www.dobsearch.com/people-finder/) redirected to a how-to article. The site has no removal form; its privacy policy says a person can ask for their information to be deleted or send a do-not-sell request by email. It answered HTTP 200. No request was submitted.",
         "domain": "dobsearch.com",
         "http_status": "200",
         "sources": [
@@ -65739,8 +65739,8 @@
       "catalog": {
         "name": "Search Systems (directory of links)",
         "category": "other",
-        "url": "https://publicrecords.searchsystems.net/opt-out.php",
-        "notes": "Opt-out or consumer privacy-request page. Email: webmaster@searchsystems.net.",
+        "url": "https://www.searchsystems.net/privacy",
+        "notes": "Opt-out or consumer privacy-request page. Email: webmaster@searchsystems.net. On 2026-11-01 the old URL (https://publicrecords.searchsystems.net/opt-out.php) redirected here. It answered HTTP 200. No request was submitted.",
         "domain": "searchsystems.net",
         "http_status": "200",
         "sources": [
@@ -88244,8 +88244,8 @@
       "catalog": {
         "name": "PeopleWhiz network (mashpanel.com)",
         "category": "people-search",
-        "url": "https://www.mashpanel.com/remove.php",
-        "notes": "Opt-out or consumer privacy-request page.",
+        "url": "https://www.mashpanel.com/remove",
+        "notes": "Opt-out or consumer privacy-request page. On 2026-11-01 the old URL (https://www.mashpanel.com/remove.php) redirected here. It answered HTTP 200. No request was submitted.",
         "domain": "mashpanel.com",
         "http_status": "200",
         "sources": [
@@ -126351,8 +126351,8 @@
       "catalog": {
         "name": "Quadrant Global Pte. Ltd.",
         "category": "other",
-        "url": "https://www.quadrant.io/limit-data-privacy-request",
-        "notes": "Privacy notice or privacy-policy page. Use the state-rights, do-not-sell, or request section. Email: privacy@quadrant.io.",
+        "url": "https://www.quadrant.io/privacy-policy",
+        "notes": "Privacy notice or privacy-policy page. Use the state-rights, do-not-sell, or request section. Email: privacy@quadrant.io. On 2026-11-01 the old URL (https://www.quadrant.io/limit-data-privacy-request) redirected here. Requests go to privacy@quadrant.io. It answered HTTP 200. No request was submitted.",
         "domain": "quadrant.io",
         "http_status": "200",
         "sources": [
