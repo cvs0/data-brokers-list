@@ -7702,5 +7702,52 @@
     "country": "SE",
     "evidence": "Swedish vehicle register lookup by registration number that shows the owner's name. It is not a name search, and no search was run in this pass. Nothing was submitted.",
     "not_a_person_search": true
+  },
+  "411-ca": {
+    "checked": "2026-11-02",
+    "country": "CA",
+    "not_a_person_search": true,
+    "evidence": "Canadian directory with a person search drawn in script on 411.ca. The stored homepage form does not search: a GET to /?q=John Smith&type=person returned the homepage with no listings, and the person search route /person/search answered HTTP 504 and then 500 to a plain request. No working public search was found in this pass, so it is not marked searchable. The catalog points at the privacy policy, which names the Privacy Officer at privacy@411.ca. Nothing was submitted."
+  },
+  "yellowpages-ca": {
+    "checked": "2026-11-02",
+    "country": "CA",
+    "kind": "contact",
+    "not_a_person_search": true,
+    "evidence": "Business directory only; there is no person search on yellowpages.ca. The catalog points at the Yellow Pages privacy statement, which takes deletion and de-indexation requests at privacy@yp.ca. Nothing was submitted."
+  },
+  "infobel-canada": {
+    "checked": "2026-11-02",
+    "country": "CA",
+    "evidence": "Canadian edition of the Infobel directory with a residential and a business search by name and location on infobel.com/en/canada. No search was run in this pass. The catalog points at the personal data protection page. Nothing was submitted."
+  },
+  "canadian-who-s-who": {
+    "checked": "2026-11-02",
+    "country": "CA",
+    "liveness": "alive",
+    "liveness_detail": "canadianwhoswho.ca loaded on 2026-11-02. A free name search returned listing rows.",
+    "evidence": "Biographical reference of notable Canadians (Grey House Publishing Canada). Free name search is a GET to /search_results.php with keywords and onlyByName=1; rows give family name, given names, birth city, home city, birth province, occupation and status, and the full biography is a $14.99 purchase. Privacy: https://canadianwhoswho.ca/privacypolicy_new.php; requests to info@canadianwhoswho.ca. Nothing was submitted.",
+    "result_check": "GET /search_results.php?keywords=John Smith&onlyByName=1: \"1-5 of 5 records found\" (SMITH, John Roxburgh, resides Hamilton, and others). keywords=Quillon Vanderwekken: \"0-0 of 0 records found\". (2026-11-02, CST).",
+    "form": {
+      "method": "http_get",
+      "page_url": "https://canadianwhoswho.ca/",
+      "form_action": "https://canadianwhoswho.ca/search_results.php",
+      "url_pattern": "https://canadianwhoswho.ca/search_results.php?keywords={keywords}&onlyByName=1",
+      "form_id": null,
+      "form_name": null,
+      "submit_label": null,
+      "hidden_names": [],
+      "inputs": [
+        {
+          "name": "keywords",
+          "type": "text",
+          "canonical": "full_name",
+          "required": true,
+          "id": null,
+          "label": null,
+          "placeholder": null
+        }
+      ]
+    }
   }
 }

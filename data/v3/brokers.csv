@@ -834,3 +834,7 @@ common-room-inc,"Common Room, Inc.",commonroom.io,alive,https://www.commonroom.i
 yasni,Yasni,yasni.de,alive,https://www.yasni.de/design/relaunch/yasni_logo.gif,none,,https://www.yasni.de/datenschutz,email,datenschutz@yasni.de,,
 fonecta,Fonecta,fonecta.fi,alive,https://ucarecdn.com/a45d781d-3524-48e1-be86-9971179f321f/,none,,https://tuki.fonecta.com/tietosuojaseloste,,,,
 biluppgifter-se,Biluppgifter.se,biluppgifter.se,alive,https://biluppgifter.se/favicon/apple-touch-icon.png,http_form_post,https://biluppgifter.se/,https://biluppgifter.se/integritetspolicy/,,,,
+411-ca,411.ca,411.ca,alive,https://411.ca/resources/img/favicons/apple-touch-icon-57x57.png,http_get,https://411.ca/,https://411.ca/privacy-policy,email;phone,privacy@411.ca,,
+yellowpages-ca,YellowPages.ca,yellowpages.ca,alive,https://static.yellowpages.ca/ypca/ypui-7.3.11-20260930.1535/resources/images/verticals/yellowpages/logo-en.png,none,,https://corporate.yp.ca/privacy-statement,,,,
+infobel-canada,Infobel Canada,infobel.com,alive,https://www.infobel.com/Content/images/logos/infobel-logo-white.png,none,,https://www.infobel.com/en/canada/Landing/PersonalDataProtection,,,,
+canadian-who-s-who,Canadian Who's Who,canadianwhoswho.ca,alive,https://canadianwhoswho.ca/img/x-logo.svg,http_get,https://canadianwhoswho.ca/,https://canadianwhoswho.ca/privacypolicy_new.php,web_form;email;phone,info@canadianwhoswho.ca,recaptcha_v2,

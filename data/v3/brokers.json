@@ -1,23 +1,23 @@
 {
  "schema_version": "3.0.0",
- "checked_at": "2026-11-02T01:28:39+00:00",
+ "checked_at": "2026-11-02T06:55:15+00:00",
  "method": "Public pages only: homepage, catalog URL, and mapped privacy, contact, and legal links. robots.txt honored. No form submitted, no login, no CAPTCHA solved. A browser opened lookup homepages the static fetch never read, and catalog URLs that were blocked or failed, when robots.txt allowed the URL. Image fields are URLs, not copied files. People-search listing URLs are not stored. Null means the fetched page did not establish that fact. Every catalog id has a record.",
- "broker_count": 835,
+ "broker_count": 839,
  "counts": {
   "liveness": {
-   "alive": 640,
+   "alive": 644,
    "blocked": 51,
    "error": 22,
    "not_checked": 32,
    "opt_out_missing": 1,
    "robots_disallowed": 89
   },
-  "with_logo": 678,
-  "with_image": 678,
-  "with_search": 409,
-  "with_email": 375,
-  "with_captcha": 338,
-  "with_form": 151
+  "with_logo": 682,
+  "with_image": 682,
+  "with_search": 411,
+  "with_email": 377,
+  "with_captcha": 339,
+  "with_form": 152
  },
  "brokers": {
   "alaska-arrests": {
@@ -59713,7 +59713,7 @@
    "name": "Samba TV, Inc.",
    "category": "other",
    "domain": "samba.com",
-   "checked_at": "2026-11-02T01:28:08+00:00",
+   "checked_at": "2026-11-02T06:54:44+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -118095,7 +118095,7 @@
    "name": "Live Data Technologies, Inc.",
    "category": "other",
    "domain": "livedatatech.com",
-   "checked_at": "2026-11-02T01:28:25+00:00",
+   "checked_at": "2026-11-02T06:55:01+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -154918,7 +154918,7 @@
    "name": "Data Axle Canada",
    "category": "marketing",
    "domain": "dataaxlecanada.ca",
-   "checked_at": "2026-11-02T01:28:35+00:00",
+   "checked_at": "2026-11-02T06:55:11+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -154985,7 +154985,7 @@
    "name": "Prospects Influential",
    "category": "marketing",
    "domain": "prospectsinfluential.com",
-   "checked_at": "2026-11-02T01:28:35+00:00",
+   "checked_at": "2026-11-02T06:55:11+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -155052,7 +155052,7 @@
    "name": "Openroom",
    "category": "background-checks",
    "domain": "openroom.ca",
-   "checked_at": "2026-11-02T01:28:35+00:00",
+   "checked_at": "2026-11-02T06:55:11+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -155119,7 +155119,7 @@
    "name": "Landlord Credit Bureau",
    "category": "credit-financial",
    "domain": "landlordcreditbureau.ca",
-   "checked_at": "2026-11-02T01:28:35+00:00",
+   "checked_at": "2026-11-02T06:55:11+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -155186,7 +155186,7 @@
    "name": "FrontLobby",
    "category": "credit-financial",
    "domain": "frontlobby.com",
-   "checked_at": "2026-11-02T01:28:35+00:00",
+   "checked_at": "2026-11-02T06:55:11+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -155253,7 +155253,7 @@
    "name": "Echovita",
    "category": "people-search",
    "domain": "echovita.com",
-   "checked_at": "2026-11-02T01:28:35+00:00",
+   "checked_at": "2026-11-02T06:55:11+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -155320,7 +155320,7 @@
    "name": "InMemoriam",
    "category": "people-search",
    "domain": "inmemoriam.ca",
-   "checked_at": "2026-11-02T01:28:35+00:00",
+   "checked_at": "2026-11-02T06:55:11+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -155387,7 +155387,7 @@
    "name": "Nécrologie.ca",
    "category": "people-search",
    "domain": "necrologie.ca",
-   "checked_at": "2026-11-02T01:28:35+00:00",
+   "checked_at": "2026-11-02T06:55:11+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -155454,7 +155454,7 @@
    "name": "Geni",
    "category": "people-search",
    "domain": "geni.com",
-   "checked_at": "2026-11-02T01:28:35+00:00",
+   "checked_at": "2026-11-02T06:55:11+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -155521,7 +155521,7 @@
    "name": "FQSG Avis de décès",
    "category": "people-search",
    "domain": "federationgenealogie.qc.ca",
-   "checked_at": "2026-11-02T01:28:35+00:00",
+   "checked_at": "2026-11-02T06:55:11+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -155588,7 +155588,7 @@
    "name": "Domaine funéraire (Corporation des thanatologues du Québec)",
    "category": "people-search",
    "domain": "domainefuneraire.com",
-   "checked_at": "2026-11-02T01:28:35+00:00",
+   "checked_at": "2026-11-02T06:55:11+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -155655,7 +155655,7 @@
    "name": "Canadian Obituaries",
    "category": "people-search",
    "domain": "canadianobituaries.com",
-   "checked_at": "2026-11-02T01:28:35+00:00",
+   "checked_at": "2026-11-02T06:55:11+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -155722,7 +155722,7 @@
    "name": "Coopérative funéraire du Grand Montréal",
    "category": "people-search",
    "domain": "cfgrandmontreal.com",
-   "checked_at": "2026-11-02T01:28:35+00:00",
+   "checked_at": "2026-11-02T06:55:11+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -155789,7 +155789,7 @@
    "name": "Coopérative funéraire des Deux Rives",
    "category": "people-search",
    "domain": "coopfuneraire2rives.com",
-   "checked_at": "2026-11-02T01:28:35+00:00",
+   "checked_at": "2026-11-02T06:55:11+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -155856,7 +155856,7 @@
    "name": "Alliance funéraire du Royaume",
    "category": "people-search",
    "domain": "afdr.coop",
-   "checked_at": "2026-11-02T01:28:35+00:00",
+   "checked_at": "2026-11-02T06:55:11+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -155923,7 +155923,7 @@
    "name": "Coopérative funéraire de l'Abitibi",
    "category": "people-search",
    "domain": "cfa.coop",
-   "checked_at": "2026-11-02T01:28:35+00:00",
+   "checked_at": "2026-11-02T06:55:11+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -155990,7 +155990,7 @@
    "name": "Coopérative funéraire Haute-Côte-Nord - Manicouagan",
    "category": "people-search",
    "domain": "cfhcn.ca",
-   "checked_at": "2026-11-02T01:28:35+00:00",
+   "checked_at": "2026-11-02T06:55:11+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -156057,7 +156057,7 @@
    "name": "Coopérative funéraire de l'Outaouais",
    "category": "people-search",
    "domain": "cfo.coop",
-   "checked_at": "2026-11-02T01:28:35+00:00",
+   "checked_at": "2026-11-02T06:55:11+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -156124,7 +156124,7 @@
    "name": "Coopérative funéraire de l'Estrie",
    "category": "people-search",
    "domain": "coopfuneraireestrie.com",
-   "checked_at": "2026-11-02T01:28:35+00:00",
+   "checked_at": "2026-11-02T06:55:11+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -156191,7 +156191,7 @@
    "name": "Résidence funéraire Lac St-Jean",
    "category": "people-search",
    "domain": "residencefunerairelacstjean.com",
-   "checked_at": "2026-11-02T01:28:35+00:00",
+   "checked_at": "2026-11-02T06:55:11+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -156258,7 +156258,7 @@
    "name": "Coopérative funéraire Brunet",
    "category": "people-search",
    "domain": "coopfbrunet.com",
-   "checked_at": "2026-11-02T01:28:35+00:00",
+   "checked_at": "2026-11-02T06:55:11+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -156325,7 +156325,7 @@
    "name": "Coopérative funéraire Matawinie-Montcalm",
    "category": "people-search",
    "domain": "cfmm.coop",
-   "checked_at": "2026-11-02T01:28:35+00:00",
+   "checked_at": "2026-11-02T06:55:11+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -156392,7 +156392,7 @@
    "name": "Coopérative funéraire des Laurentides",
    "category": "people-search",
    "domain": "coopfunerairelaurentides.org",
-   "checked_at": "2026-11-02T01:28:35+00:00",
+   "checked_at": "2026-11-02T06:55:11+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -156459,7 +156459,7 @@
    "name": "Résidence Funéraire Maska",
    "category": "people-search",
    "domain": "rfmaska.coop",
-   "checked_at": "2026-11-02T01:28:35+00:00",
+   "checked_at": "2026-11-02T06:55:11+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -156526,7 +156526,7 @@
    "name": "Dignity Memorial",
    "category": "people-search",
    "domain": "dignitymemorial.com",
-   "checked_at": "2026-11-02T01:28:35+00:00",
+   "checked_at": "2026-11-02T06:55:11+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -156593,7 +156593,7 @@
    "name": "Interment.net",
    "category": "people-search",
    "domain": "interment.net",
-   "checked_at": "2026-11-02T01:28:35+00:00",
+   "checked_at": "2026-11-02T06:55:11+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -156660,7 +156660,7 @@
    "name": "Mount Pleasant Group",
    "category": "people-search",
    "domain": "mountpleasantgroup.com",
-   "checked_at": "2026-11-02T01:28:35+00:00",
+   "checked_at": "2026-11-02T06:55:11+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -156727,7 +156727,7 @@
    "name": "Kearney Funeral Services",
    "category": "people-search",
    "domain": "kearneyfs.com",
-   "checked_at": "2026-11-02T01:28:35+00:00",
+   "checked_at": "2026-11-02T06:55:11+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -156794,7 +156794,7 @@
    "name": "Basic Funerals",
    "category": "people-search",
    "domain": "basicfunerals.ca",
-   "checked_at": "2026-11-02T01:28:35+00:00",
+   "checked_at": "2026-11-02T06:55:11+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -156861,7 +156861,7 @@
    "name": "Le Nécrologue",
    "category": "people-search",
    "domain": "lenecrologue.com",
-   "checked_at": "2026-11-02T01:28:35+00:00",
+   "checked_at": "2026-11-02T06:55:11+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -171512,6 +171512,715 @@
      "status": 200,
      "role": "catalog",
      "title": "Integritetspolicy - Biluppgifter.se",
+     "liveness": "alive"
+    }
+   ]
+  },
+  "411-ca": {
+   "schema_version": "3.0.0",
+   "id": "411-ca",
+   "name": "411.ca",
+   "category": "people-search",
+   "domain": "411.ca",
+   "checked_at": "2026-11-02T06:49:00+00:00",
+   "liveness": "alive",
+   "liveness_detail": "catalog URL loaded",
+   "homepage": "https://411.ca/",
+   "logo_url": "https://411.ca/resources/img/favicons/apple-touch-icon-57x57.png",
+   "images": [
+    {
+     "url": "https://411.ca/resources/img/favicons/apple-touch-icon-57x57.png",
+     "kind": "apple_touch_icon",
+     "source_page": "https://411.ca/"
+    },
+    {
+     "url": "https://411.ca/resources/img/favicons/apple-touch-icon-60x60.png",
+     "kind": "apple_touch_icon",
+     "source_page": "https://411.ca/"
+    },
+    {
+     "url": "https://411.ca/resources/img/favicons/apple-touch-icon-72x72.png",
+     "kind": "apple_touch_icon",
+     "source_page": "https://411.ca/"
+    },
+    {
+     "url": "https://411.ca/resources/img/favicons/apple-touch-icon-76x76.png",
+     "kind": "apple_touch_icon",
+     "source_page": "https://411.ca/"
+    },
+    {
+     "url": "https://411.ca/resources/img/favicons/apple-touch-icon-114x114.png",
+     "kind": "apple_touch_icon",
+     "source_page": "https://411.ca/"
+    },
+    {
+     "url": "https://411.ca/resources/img/favicons/apple-touch-icon-120x120.png",
+     "kind": "apple_touch_icon",
+     "source_page": "https://411.ca/"
+    },
+    {
+     "url": "https://411.ca/resources/img/favicons/apple-touch-icon-144x144.png",
+     "kind": "apple_touch_icon",
+     "source_page": "https://411.ca/"
+    },
+    {
+     "url": "https://411.ca/resources/img/favicons/apple-touch-icon-152x152.png",
+     "kind": "apple_touch_icon",
+     "source_page": "https://411.ca/"
+    },
+    {
+     "url": "https://411.ca/resources/img/favicons/apple-touch-icon-180x180.png",
+     "kind": "apple_touch_icon",
+     "source_page": "https://411.ca/"
+    },
+    {
+     "url": "https://411.ca/resources/img/favicons/apple-touch-icon-precomposed.png",
+     "kind": "apple_touch_icon",
+     "source_page": "https://411.ca/"
+    },
+    {
+     "url": "https://411.ca/resources/img/favicons/favicon-32x32.png",
+     "kind": "icon",
+     "source_page": "https://411.ca/"
+    },
+    {
+     "url": "https://411.ca/resources/img/favicons/android-chrome-192x192.png",
+     "kind": "icon",
+     "source_page": "https://411.ca/"
+    },
+    {
+     "url": "https://411.ca/resources/img/favicons/favicon-96x96.png",
+     "kind": "icon",
+     "source_page": "https://411.ca/"
+    },
+    {
+     "url": "https://411.ca/resources/img/favicons/favicon-16x16.png",
+     "kind": "icon",
+     "source_page": "https://411.ca/"
+    },
+    {
+     "url": "https://411.ca/resources/img/favicons/safari-pinned-tab.svg",
+     "kind": "icon",
+     "source_page": "https://411.ca/"
+    },
+    {
+     "url": "https://411.ca/resources/img/favicons/favicon.ico",
+     "kind": "icon",
+     "source_page": "https://411.ca/"
+    },
+    {
+     "url": "https://www.411.ca/resources/img/favicons/apple-touch-icon-57x57.png",
+     "kind": "apple_touch_icon",
+     "source_page": "https://www.411.ca/"
+    },
+    {
+     "url": "https://www.411.ca/resources/img/favicons/apple-touch-icon-60x60.png",
+     "kind": "apple_touch_icon",
+     "source_page": "https://www.411.ca/"
+    },
+    {
+     "url": "https://www.411.ca/resources/img/favicons/apple-touch-icon-72x72.png",
+     "kind": "apple_touch_icon",
+     "source_page": "https://www.411.ca/"
+    },
+    {
+     "url": "https://www.411.ca/resources/img/favicons/apple-touch-icon-76x76.png",
+     "kind": "apple_touch_icon",
+     "source_page": "https://www.411.ca/"
+    },
+    {
+     "url": "https://www.411.ca/resources/img/favicons/apple-touch-icon-114x114.png",
+     "kind": "apple_touch_icon",
+     "source_page": "https://www.411.ca/"
+    },
+    {
+     "url": "https://www.411.ca/resources/img/favicons/apple-touch-icon-120x120.png",
+     "kind": "apple_touch_icon",
+     "source_page": "https://www.411.ca/"
+    },
+    {
+     "url": "https://www.411.ca/resources/img/favicons/apple-touch-icon-144x144.png",
+     "kind": "apple_touch_icon",
+     "source_page": "https://www.411.ca/"
+    },
+    {
+     "url": "https://www.411.ca/resources/img/favicons/apple-touch-icon-152x152.png",
+     "kind": "apple_touch_icon",
+     "source_page": "https://www.411.ca/"
+    }
+   ],
+   "theme_color": "#FFFFFF",
+   "languages": [
+    "fr"
+   ],
+   "legal_name": "411.ca",
+   "search": {
+    "available": true,
+    "method": "http_get",
+    "page_url": "https://411.ca/",
+    "form_action": "https://411.ca/",
+    "inputs": [
+     {
+      "name": "q",
+      "type": "text",
+      "canonical": "full_name",
+      "required": true,
+      "autocomplete": null,
+      "placeholder": "Start your search..."
+     },
+     {
+      "name": "type",
+      "type": "radio",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "type",
+      "type": "radio",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "type",
+      "type": "radio",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     }
+    ],
+    "url_pattern": "https://411.ca/?q={q}&type={type}&type={type}&type={type}",
+    "directory_prefixes": [
+     "/person",
+     "/person"
+    ],
+    "paywall": null,
+    "login_wall": null
+   },
+   "removal": {
+    "url": "https://411.ca/privacy-policy",
+    "final_url": "https://411.ca/privacy-policy",
+    "http_status": 200,
+    "kinds": [
+     "opt_out"
+    ],
+    "channels": [
+     "email",
+     "phone"
+    ],
+    "emails": [
+     {
+      "email": "privacy@411.ca",
+      "confidence": "extracted",
+      "source_url": "https://411.ca/privacy-policy"
+     },
+     {
+      "email": "help@411.ca",
+      "confidence": "uncertain",
+      "source_url": "https://411.ca/contact"
+     },
+     {
+      "email": "aide@411.ca",
+      "confidence": "uncertain",
+      "source_url": "https://411.ca/contact"
+     },
+     {
+      "email": "sales@411.ca",
+      "confidence": "uncertain",
+      "source_url": "https://411.ca/contact"
+     },
+     {
+      "email": "billing@411.ca",
+      "confidence": "uncertain",
+      "source_url": "https://411.ca/contact"
+     },
+     {
+      "email": "ventes@411.ca",
+      "confidence": "uncertain",
+      "source_url": "https://411.ca/contact"
+     },
+     {
+      "email": "facture@411.ca",
+      "confidence": "uncertain",
+      "source_url": "https://411.ca/contact"
+     },
+     {
+      "email": "cm@411.ca",
+      "confidence": "uncertain",
+      "source_url": "https://411.ca/terms-and-conditions"
+     }
+    ],
+    "phones": [
+     "647-259-4483",
+     "1-866-411-4411",
+     "647-722-3583"
+    ],
+    "postal_address": null,
+    "portal": null,
+    "form_fields": [],
+    "csrf_field_name": null,
+    "requires_profile_url": null,
+    "captcha": {
+     "provider": null,
+     "sitekey": null,
+     "pages": []
+    },
+    "consent_vendor": "onetrust",
+    "success_text": null,
+    "suppression_not_deletion": null,
+    "processing_days": null,
+    "processing_text": null
+   },
+   "bot_defense": {
+    "vendor": null,
+    "outcome": "none"
+   },
+   "legal": {
+    "privacy_policy_url": "https://411.ca/privacy-policy",
+    "terms_url": "https://411.ca/terms-and-conditions",
+    "automation_prohibited": null,
+    "automation_clause": null,
+    "residency": [
+     "CA-QC"
+    ],
+    "authorized_agent": null,
+    "data_categories": [
+     "identifiers",
+     "precise_location"
+    ]
+   },
+   "pages": [
+    {
+     "url": "https://411.ca/",
+     "final_url": "https://411.ca/",
+     "status": 200,
+     "role": "home",
+     "title": "Canada's Local Search Engine | 411.ca",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.411.ca/",
+     "final_url": "https://www.411.ca/",
+     "status": 200,
+     "role": "home",
+     "title": "Canada's Local Search Engine | 411.ca",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://411.ca/privacy-policy",
+     "final_url": "https://411.ca/privacy-policy",
+     "status": 200,
+     "role": "catalog",
+     "title": "Privacy Policy | 411.ca",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://411.ca/contact",
+     "final_url": "https://411.ca/contact",
+     "status": 200,
+     "role": "contact",
+     "title": "Contact Us | 411.ca",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://411.ca/terms-and-conditions",
+     "final_url": "https://411.ca/terms-and-conditions",
+     "status": 200,
+     "role": "legal",
+     "title": "Terms and Conditions | 411.ca",
+     "liveness": "alive"
+    }
+   ]
+  },
+  "yellowpages-ca": {
+   "schema_version": "3.0.0",
+   "id": "yellowpages-ca",
+   "name": "YellowPages.ca",
+   "category": "other",
+   "domain": "yellowpages.ca",
+   "checked_at": "2026-11-02T06:48:59+00:00",
+   "liveness": "alive",
+   "liveness_detail": "catalog URL loaded",
+   "homepage": "https://www.yellowpages.ca/",
+   "logo_url": "https://static.yellowpages.ca/ypca/ypui-7.3.11-20260930.1535/resources/images/verticals/yellowpages/logo-en.png",
+   "images": [
+    {
+     "url": "https://static.yellowpages.ca/ypca/ypui-7.3.11-20260930.1535/resources/images/homepage/og-image-home-en.png",
+     "kind": "og_image",
+     "source_page": "https://www.yellowpages.ca/"
+    },
+    {
+     "url": "https://corporate.yp.ca/static/assets/images/logo-yellow-pages-en.svg",
+     "kind": "json_ld",
+     "source_page": "https://www.yellowpages.ca/"
+    },
+    {
+     "url": "https://static.yellowpages.ca/ypca/ypui-7.3.11-20260930.1535/resources/images/verticals/yellowpages/logo-en.png",
+     "kind": "logo",
+     "source_page": "https://www.yellowpages.ca/"
+    },
+    {
+     "url": "https://static.wixstatic.com/media/053c0e_f01121c3325f4f4ca0cc5e94116be11e%7Emv2.png/v1/fill/w_192%2Ch_192%2Clg_1%2Cusm_0.66_1.00_0.01/053c0e_f01121c3325f4f4ca0cc5e94116be11e%7Emv2.png",
+     "kind": "icon",
+     "source_page": "https://corporate.yp.ca/privacy-statement"
+    },
+    {
+     "url": "https://static.wixstatic.com/media/053c0e_f01121c3325f4f4ca0cc5e94116be11e%7Emv2.png/v1/fill/w_32%2Ch_32%2Clg_1%2Cusm_0.66_1.00_0.01/053c0e_f01121c3325f4f4ca0cc5e94116be11e%7Emv2.png",
+     "kind": "icon",
+     "source_page": "https://corporate.yp.ca/privacy-statement"
+    },
+    {
+     "url": "https://static.wixstatic.com/media/053c0e_f01121c3325f4f4ca0cc5e94116be11e%7Emv2.png/v1/fill/w_180%2Ch_180%2Clg_1%2Cusm_0.66_1.00_0.01/053c0e_f01121c3325f4f4ca0cc5e94116be11e%7Emv2.png",
+     "kind": "apple_touch_icon",
+     "source_page": "https://corporate.yp.ca/privacy-statement"
+    }
+   ],
+   "theme_color": "#FFCD00",
+   "languages": [
+    "en"
+   ],
+   "legal_name": "Yellow Pages",
+   "search": {
+    "available": false,
+    "method": "none",
+    "page_url": null,
+    "form_action": null,
+    "inputs": [],
+    "url_pattern": null,
+    "directory_prefixes": [],
+    "paywall": null,
+    "login_wall": null
+   },
+   "removal": {
+    "url": "https://corporate.yp.ca/privacy-statement",
+    "final_url": "https://corporate.yp.ca/privacy-statement",
+    "http_status": 200,
+    "kinds": [
+     "opt_out"
+    ],
+    "channels": [],
+    "emails": [],
+    "phones": [],
+    "postal_address": null,
+    "portal": null,
+    "form_fields": [],
+    "csrf_field_name": null,
+    "requires_profile_url": null,
+    "captcha": {
+     "provider": null,
+     "sitekey": null,
+     "pages": []
+    },
+    "consent_vendor": "onetrust",
+    "success_text": null,
+    "suppression_not_deletion": null,
+    "processing_days": null,
+    "processing_text": null
+   },
+   "bot_defense": {
+    "vendor": null,
+    "outcome": "none"
+   },
+   "legal": {
+    "privacy_policy_url": "https://corporate.yp.ca/privacy-statement",
+    "terms_url": null,
+    "automation_prohibited": null,
+    "automation_clause": null,
+    "residency": [
+     "CA-QC"
+    ],
+    "authorized_agent": null,
+    "data_categories": []
+   },
+   "pages": [
+    {
+     "url": "https://yellowpages.ca/",
+     "final_url": "https://www.yellowpages.ca/",
+     "status": 200,
+     "role": "home",
+     "title": "Find local businesses, products, reviews and deals on YellowPages.ca - YP.ca",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.yellowpages.ca/",
+     "final_url": "https://www.yellowpages.ca/",
+     "status": 200,
+     "role": "home",
+     "title": "Find local businesses, products, reviews and deals on YellowPages.ca - YP.ca",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://corporate.yp.ca/privacy-statement",
+     "final_url": "https://corporate.yp.ca/privacy-statement",
+     "status": 200,
+     "role": "catalog",
+     "title": "Privacy Statement - Legal Notice - Yellow Pages Canada",
+     "liveness": "alive"
+    }
+   ]
+  },
+  "infobel-canada": {
+   "schema_version": "3.0.0",
+   "id": "infobel-canada",
+   "name": "Infobel Canada",
+   "category": "people-search",
+   "domain": "infobel.com",
+   "checked_at": "2026-11-02T06:48:59+00:00",
+   "liveness": "alive",
+   "liveness_detail": "catalog URL loaded",
+   "homepage": "https://www.infobel.com/fr/world",
+   "logo_url": "https://www.infobel.com/Content/images/logos/infobel-logo-white.png",
+   "images": [
+    {
+     "url": "https://www.infobel.com/favicon_Infobel.png",
+     "kind": "icon",
+     "source_page": "https://www.infobel.com/fr/world"
+    },
+    {
+     "url": "https://www.infobel.com/Content/images/logos/infobel-logo-white.png",
+     "kind": "logo",
+     "source_page": "https://www.infobel.com/fr/world"
+    },
+    {
+     "url": "https://www.infobel.com/Content/images/logos/infobel-logo-color.png",
+     "kind": "logo",
+     "source_page": "https://www.infobel.com/en/canada/Landing/PersonalDataProtection"
+    }
+   ],
+   "theme_color": "#000012",
+   "languages": [
+    "fr",
+    "en"
+   ],
+   "legal_name": null,
+   "search": {
+    "available": false,
+    "method": "none",
+    "page_url": null,
+    "form_action": null,
+    "inputs": [],
+    "url_pattern": null,
+    "directory_prefixes": [],
+    "paywall": null,
+    "login_wall": null
+   },
+   "removal": {
+    "url": "https://www.infobel.com/en/canada/Landing/PersonalDataProtection",
+    "final_url": "https://www.infobel.com/en/canada/Landing/PersonalDataProtection",
+    "http_status": 200,
+    "kinds": [
+     "opt_out"
+    ],
+    "channels": [],
+    "emails": [],
+    "phones": [],
+    "postal_address": null,
+    "portal": null,
+    "form_fields": [],
+    "csrf_field_name": null,
+    "requires_profile_url": null,
+    "captcha": {
+     "provider": null,
+     "sitekey": null,
+     "pages": []
+    },
+    "consent_vendor": null,
+    "success_text": null,
+    "suppression_not_deletion": null,
+    "processing_days": null,
+    "processing_text": null
+   },
+   "bot_defense": {
+    "vendor": null,
+    "outcome": "none"
+   },
+   "legal": {
+    "privacy_policy_url": "https://www.infobel.com/en/canada/Landing/PersonalDataProtection",
+    "terms_url": null,
+    "automation_prohibited": null,
+    "automation_clause": null,
+    "residency": [],
+    "authorized_agent": null,
+    "data_categories": []
+   },
+   "pages": [
+    {
+     "url": "https://infobel.com/",
+     "final_url": "https://www.infobel.com/fr/world",
+     "status": 200,
+     "role": "home",
+     "title": "Annuaire mondial des entreprises | Infobel",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.infobel.com/",
+     "final_url": "https://www.infobel.com/fr/world",
+     "status": 200,
+     "role": "home",
+     "title": "Annuaire mondial des entreprises | Infobel",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.infobel.com/en/canada/Landing/PersonalDataProtection",
+     "final_url": "https://www.infobel.com/en/canada/Landing/PersonalDataProtection",
+     "status": 200,
+     "role": "catalog",
+     "title": "Privacy policy",
+     "liveness": "alive"
+    }
+   ]
+  },
+  "canadian-who-s-who": {
+   "schema_version": "3.0.0",
+   "id": "canadian-who-s-who",
+   "name": "Canadian Who's Who",
+   "category": "people-search",
+   "domain": "canadianwhoswho.ca",
+   "checked_at": "2026-11-02T06:48:58+00:00",
+   "liveness": "alive",
+   "liveness_detail": "catalog URL loaded",
+   "homepage": "https://canadianwhoswho.ca/",
+   "logo_url": "https://canadianwhoswho.ca/img/x-logo.svg",
+   "images": [
+    {
+     "url": "https://canadianwhoswho.ca/iStock-1020968912.jpg",
+     "kind": "icon",
+     "source_page": "https://canadianwhoswho.ca/"
+    },
+    {
+     "url": "https://canadianwhoswho.ca/img/x-logo.svg",
+     "kind": "logo",
+     "source_page": "https://canadianwhoswho.ca/"
+    }
+   ],
+   "theme_color": null,
+   "languages": [
+    "en"
+   ],
+   "legal_name": null,
+   "search": {
+    "available": true,
+    "method": "http_get",
+    "page_url": "https://canadianwhoswho.ca/",
+    "form_action": "https://canadianwhoswho.ca/search_results.php",
+    "inputs": [
+     {
+      "name": "keywords",
+      "type": "text",
+      "canonical": "full_name",
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "onlyByName",
+      "type": "hidden",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     }
+    ],
+    "url_pattern": "https://canadianwhoswho.ca/search_results.php?keywords={keywords}",
+    "directory_prefixes": [],
+    "paywall": null,
+    "login_wall": null
+   },
+   "removal": {
+    "url": "https://canadianwhoswho.ca/privacypolicy_new.php",
+    "final_url": "https://canadianwhoswho.ca/privacypolicy_new.php",
+    "http_status": 200,
+    "kinds": [
+     "opt_out"
+    ],
+    "channels": [
+     "web_form",
+     "email",
+     "phone"
+    ],
+    "emails": [
+     {
+      "email": "info@canadianwhoswho.ca",
+      "confidence": "uncertain",
+      "source_url": "https://canadianwhoswho.ca/"
+     }
+    ],
+    "phones": [
+     "(416) 644-6479"
+    ],
+    "postal_address": null,
+    "portal": null,
+    "form_fields": [
+     {
+      "name": "cww-login[username]",
+      "type": "text",
+      "canonical": null,
+      "required": true,
+      "autocomplete": null,
+      "placeholder": "Username"
+     }
+    ],
+    "csrf_field_name": null,
+    "requires_profile_url": null,
+    "captcha": {
+     "provider": "recaptcha_v2",
+     "sitekey": null,
+     "pages": [
+      "https://canadianwhoswho.ca/",
+      "https://canadianwhoswho.ca/privacypolicy_new.php"
+     ]
+    },
+    "consent_vendor": null,
+    "success_text": null,
+    "suppression_not_deletion": null,
+    "processing_days": null,
+    "processing_text": null
+   },
+   "bot_defense": {
+    "vendor": null,
+    "outcome": "none"
+   },
+   "legal": {
+    "privacy_policy_url": null,
+    "terms_url": null,
+    "automation_prohibited": null,
+    "automation_clause": null,
+    "residency": [
+     "CA-QC"
+    ],
+    "authorized_agent": null,
+    "data_categories": [
+     "identifiers",
+     "internet_activity"
+    ]
+   },
+   "pages": [
+    {
+     "url": "https://canadianwhoswho.ca/",
+     "final_url": "https://canadianwhoswho.ca/",
+     "status": 200,
+     "role": "home",
+     "title": "",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.canadianwhoswho.ca/",
+     "final_url": "https://canadianwhoswho.ca/",
+     "status": 200,
+     "role": "home",
+     "title": "",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://canadianwhoswho.ca/privacypolicy_new.php",
+     "final_url": "https://canadianwhoswho.ca/privacypolicy_new.php",
+     "status": 200,
+     "role": "catalog",
+     "title": "",
      "liveness": "alive"
     }
    ]
