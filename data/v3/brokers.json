@@ -1,22 +1,22 @@
 {
  "schema_version": "3.0.0",
- "checked_at": "2026-11-02T09:58:23+00:00",
+ "checked_at": "2026-11-02T10:20:45+00:00",
  "method": "Public pages only: homepage, catalog URL, and mapped privacy, contact, and legal links. robots.txt honored. No form submitted, no login, no CAPTCHA solved. A browser opened lookup homepages the static fetch never read, and catalog URLs that were blocked or failed, when robots.txt allowed the URL. Image fields are URLs, not copied files. People-search listing URLs are not stored. Null means the fetched page did not establish that fact. Every catalog id has a record.",
- "broker_count": 839,
+ "broker_count": 845,
  "counts": {
   "liveness": {
-   "alive": 676,
+   "alive": 682,
    "blocked": 51,
    "error": 22,
    "opt_out_missing": 1,
    "robots_disallowed": 89
   },
-  "with_logo": 714,
-  "with_image": 714,
-  "with_search": 438,
-  "with_email": 385,
-  "with_captcha": 341,
-  "with_form": 162
+  "with_logo": 720,
+  "with_image": 720,
+  "with_search": 442,
+  "with_email": 386,
+  "with_captcha": 344,
+  "with_form": 164
  },
  "brokers": {
   "alaska-arrests": {
@@ -176169,6 +176169,1280 @@
      "status": 200,
      "role": "catalog",
      "title": "",
+     "liveness": "alive"
+    }
+   ]
+  },
+  "arbor-memorial": {
+   "schema_version": "3.0.0",
+   "id": "arbor-memorial",
+   "name": "Arbor Memorial",
+   "category": "people-search",
+   "domain": "arbormemorial.ca",
+   "checked_at": "2026-11-02T10:18:36+00:00",
+   "liveness": "alive",
+   "liveness_detail": "catalog URL loaded",
+   "homepage": "https://www.arbormemorial.ca/en.html",
+   "logo_url": "https://www.arbormemorial.ca/content/dam/arbormemorial/arbor-people/Every%20Life.%20Remembered.%20Hero%20Banner.jpg/jcr:content/renditions/360x360.webp",
+   "images": [
+    {
+     "url": "https://www.arbormemorial.ca/content/dam/arbormemorial/arbor-footer-icons/favicon.ico",
+     "kind": "icon",
+     "source_page": "https://www.arbormemorial.ca/en.html"
+    },
+    {
+     "url": "https://www.arbormemorial.ca/content/dam/arbormemorial/arbor-people/Every%20Life.%20Remembered.%20Hero%20Banner.jpg/jcr:content/renditions/360x360.webp",
+     "kind": "json_ld",
+     "source_page": "https://www.arbormemorial.ca/en.html"
+    }
+   ],
+   "theme_color": "#000000",
+   "languages": [
+    "en"
+   ],
+   "legal_name": "Arbor Memorial: Canada&#39;s Leading Cemetery, Funeral &amp; Cremation Provider",
+   "search": {
+    "available": false,
+    "method": "none",
+    "page_url": null,
+    "form_action": null,
+    "inputs": [],
+    "url_pattern": null,
+    "directory_prefixes": [],
+    "paywall": null,
+    "login_wall": null
+   },
+   "removal": {
+    "url": "https://www.arbormemorial.ca/en/privacy-policy.html",
+    "final_url": "https://www.arbormemorial.ca/en/privacy-policy.html",
+    "http_status": 200,
+    "kinds": [
+     "opt_out"
+    ],
+    "channels": [],
+    "emails": [],
+    "phones": [],
+    "postal_address": null,
+    "portal": null,
+    "form_fields": [],
+    "csrf_field_name": null,
+    "requires_profile_url": null,
+    "captcha": {
+     "provider": null,
+     "sitekey": null,
+     "pages": []
+    },
+    "consent_vendor": null,
+    "success_text": null,
+    "suppression_not_deletion": null,
+    "processing_days": null,
+    "processing_text": null
+   },
+   "bot_defense": {
+    "vendor": null,
+    "outcome": "none"
+   },
+   "legal": {
+    "privacy_policy_url": "https://www.arbormemorial.ca/en/privacy-policy.html",
+    "terms_url": null,
+    "automation_prohibited": null,
+    "automation_clause": null,
+    "residency": [],
+    "authorized_agent": null,
+    "data_categories": []
+   },
+   "pages": [
+    {
+     "url": "https://arbormemorial.ca/",
+     "final_url": "https://www.arbormemorial.ca/en.html",
+     "status": 200,
+     "role": "home",
+     "title": "Arbor Memorial: Canada's Leading Cemetery, Funeral & Cremation Provider",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.arbormemorial.ca/",
+     "final_url": "https://www.arbormemorial.ca/en.html",
+     "status": 200,
+     "role": "home",
+     "title": "Arbor Memorial: Canada's Leading Cemetery, Funeral & Cremation Provider",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.arbormemorial.ca/en/privacy-policy.html",
+     "final_url": "https://www.arbormemorial.ca/en/privacy-policy.html",
+     "status": 200,
+     "role": "catalog",
+     "title": "Privacy Policy",
+     "liveness": "alive"
+    }
+   ]
+  },
+  "urgel-bourgie": {
+   "schema_version": "3.0.0",
+   "id": "urgel-bourgie",
+   "name": "Urgel Bourgie",
+   "category": "people-search",
+   "domain": "urgelbourgie.com",
+   "checked_at": "2026-11-02T10:18:37+00:00",
+   "liveness": "alive",
+   "liveness_detail": "catalog URL loaded",
+   "homepage": "https://www.urgelbourgie.com/",
+   "logo_url": "https://www.urgelbourgie.com/wp-content/uploads/2020/10/UB_FR_2026_coul_FR-1-scaled.png",
+   "images": [
+    {
+     "url": "https://www.urgelbourgie.com/wp-content/uploads/2020/10/favicon.png",
+     "kind": "icon",
+     "source_page": "https://www.urgelbourgie.com/"
+    },
+    {
+     "url": "https://www.urgelbourgie.com/wp-content/uploads/2025/04/arrow2.png",
+     "kind": "og_image",
+     "source_page": "https://www.urgelbourgie.com/"
+    },
+    {
+     "url": "https://www.urgelbourgie.com/wp-content/uploads/2020/10/UB_FR_2026_coul_FR-1-scaled.png",
+     "kind": "json_ld",
+     "source_page": "https://www.urgelbourgie.com/"
+    },
+    {
+     "url": "https://www.urgelbourgie.com/wp-content/uploads/2024/08/arrow2.png",
+     "kind": "og_image",
+     "source_page": "https://www.urgelbourgie.com/politique-de-confidentialite/"
+    },
+    {
+     "url": "https://www.urgelbourgie.com/wp-content/uploads/2024/08/logo-en-black-v2.svg",
+     "kind": "json_ld",
+     "source_page": "https://www.urgelbourgie.com/politique-de-confidentialite/"
+    }
+   ],
+   "theme_color": null,
+   "languages": [
+    "fr"
+   ],
+   "legal_name": "Urgel Bourgie",
+   "search": {
+    "available": true,
+    "method": "http_form_post",
+    "page_url": "https://www.urgelbourgie.com/",
+    "form_action": "https://www.urgelbourgie.com/",
+    "inputs": [
+     {
+      "name": "post_id",
+      "type": "hidden",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "form_id",
+      "type": "hidden",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "referer_title",
+      "type": "hidden",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "queried_id",
+      "type": "hidden",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "form_fields[info][]",
+      "type": "checkbox",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "form_fields[info][]",
+      "type": "checkbox",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "form_fields[info][]",
+      "type": "checkbox",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "form_fields[info][]",
+      "type": "checkbox",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "form_fields[info][]",
+      "type": "checkbox",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "form_fields[info][]",
+      "type": "checkbox",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "form_fields[info][]",
+      "type": "checkbox",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "form_fields[specify]",
+      "type": "text",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "form_fields[nom]",
+      "type": "text",
+      "canonical": null,
+      "required": true,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "form_fields[postal]",
+      "type": "text",
+      "canonical": "postal_code",
+      "required": true,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "form_fields[phone]",
+      "type": "tel",
+      "canonical": "phone",
+      "required": true,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "form_fields[field_7251ea3]",
+      "type": "email",
+      "canonical": "email",
+      "required": true,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "form_fields[contacter_par]",
+      "type": "radio",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "form_fields[contacter_par]",
+      "type": "radio",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "form_fields[field_b80dfaa]",
+      "type": "text",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": "[Entrez votre message]"
+     },
+     {
+      "name": "form_fields[field_e8c2542]",
+      "type": "checkbox",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "form_fields[field_072b39c]",
+      "type": "text",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "lang",
+      "type": "hidden",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     }
+    ],
+    "url_pattern": "https://www.urgelbourgie.com/",
+    "directory_prefixes": [],
+    "paywall": null,
+    "login_wall": null
+   },
+   "removal": {
+    "url": "https://www.urgelbourgie.com/politique-de-confidentialite/",
+    "final_url": "https://www.urgelbourgie.com/politique-de-confidentialite/",
+    "http_status": 200,
+    "kinds": [
+     "opt_out"
+    ],
+    "channels": [
+     "phone"
+    ],
+    "emails": [],
+    "phones": [
+     "418 686-8811"
+    ],
+    "postal_address": null,
+    "portal": null,
+    "form_fields": [],
+    "csrf_field_name": null,
+    "requires_profile_url": null,
+    "captcha": {
+     "provider": "recaptcha_v2",
+     "sitekey": "6LfnTC0sAAAAAATPHPuE9RUhlzzMLRUM6M2aRFlW",
+     "pages": [
+      "https://www.urgelbourgie.com/"
+     ]
+    },
+    "consent_vendor": "cookiebot",
+    "success_text": null,
+    "suppression_not_deletion": null,
+    "processing_days": null,
+    "processing_text": null
+   },
+   "bot_defense": {
+    "vendor": null,
+    "outcome": "none"
+   },
+   "legal": {
+    "privacy_policy_url": null,
+    "terms_url": null,
+    "automation_prohibited": null,
+    "automation_clause": null,
+    "residency": [
+     "CA-QC"
+    ],
+    "authorized_agent": null,
+    "data_categories": []
+   },
+   "pages": [
+    {
+     "url": "https://urgelbourgie.com/",
+     "final_url": "https://www.urgelbourgie.com/",
+     "status": 200,
+     "role": "home",
+     "title": "Maison funéraire à Montréal – Services humains depuis 1903 | Urgel Bourgie",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.urgelbourgie.com/",
+     "final_url": "https://www.urgelbourgie.com/",
+     "status": 200,
+     "role": "home",
+     "title": "Maison funéraire à Montréal – Services humains depuis 1903 | Urgel Bourgie",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.urgelbourgie.com/politique-de-confidentialite/",
+     "final_url": "https://www.urgelbourgie.com/politique-de-confidentialite/",
+     "status": 200,
+     "role": "catalog",
+     "title": "Politique de confidentialité – Protection des données | Urgel Bourgie",
+     "liveness": "alive"
+    }
+   ]
+  },
+  "lepine-cloutier": {
+   "schema_version": "3.0.0",
+   "id": "lepine-cloutier",
+   "name": "Lépine Cloutier",
+   "category": "people-search",
+   "domain": "lepinecloutier.com",
+   "checked_at": "2026-11-02T10:18:37+00:00",
+   "liveness": "alive",
+   "liveness_detail": "catalog URL loaded",
+   "homepage": "https://www.lepinecloutier.com/",
+   "logo_url": "https://www.lepinecloutier.com/wp-content/uploads/2020/10/LC_Logo_2026_Bleu_RVB-scaled.png",
+   "images": [
+    {
+     "url": "https://www.lepinecloutier.com/wp-content/uploads/2020/10/lc_favicon-100x100.jpg",
+     "kind": "icon",
+     "source_page": "https://www.lepinecloutier.com/"
+    },
+    {
+     "url": "https://www.lepinecloutier.com/wp-content/uploads/2020/10/lc_favicon-300x300.jpg",
+     "kind": "icon",
+     "source_page": "https://www.lepinecloutier.com/"
+    },
+    {
+     "url": "https://www.lepinecloutier.com/wp-content/uploads/2020/10/logo-fr-noir.png",
+     "kind": "og_image",
+     "source_page": "https://www.lepinecloutier.com/"
+    },
+    {
+     "url": "https://www.lepinecloutier.com/wp-content/uploads/2020/10/LC_Logo_2026_Bleu_RVB-scaled.png",
+     "kind": "json_ld",
+     "source_page": "https://www.lepinecloutier.com/"
+    },
+    {
+     "url": "https://www.lepinecloutier.com/wp-content/uploads/logo-lepine-cloutier.png",
+     "kind": "json_ld",
+     "source_page": "https://www.lepinecloutier.com/"
+    },
+    {
+     "url": "https://www.lepinecloutier.com/wp-content/uploads/2024/08/arrow2.png",
+     "kind": "og_image",
+     "source_page": "https://www.lepinecloutier.com/politique-de-confidentialite/"
+    }
+   ],
+   "theme_color": null,
+   "languages": [
+    "fr"
+   ],
+   "legal_name": "Lépine Cloutier",
+   "search": {
+    "available": true,
+    "method": "http_form_post",
+    "page_url": "https://www.lepinecloutier.com/",
+    "form_action": "https://www.lepinecloutier.com/",
+    "inputs": [
+     {
+      "name": "post_id",
+      "type": "hidden",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "form_id",
+      "type": "hidden",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "referer_title",
+      "type": "hidden",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "queried_id",
+      "type": "hidden",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "form_fields[info][]",
+      "type": "checkbox",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "form_fields[info][]",
+      "type": "checkbox",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "form_fields[info][]",
+      "type": "checkbox",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "form_fields[info][]",
+      "type": "checkbox",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "form_fields[info][]",
+      "type": "checkbox",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "form_fields[info][]",
+      "type": "checkbox",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "form_fields[info][]",
+      "type": "checkbox",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "form_fields[info][]",
+      "type": "checkbox",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "form_fields[specify]",
+      "type": "text",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "form_fields[nom]",
+      "type": "text",
+      "canonical": null,
+      "required": true,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "form_fields[postal]",
+      "type": "text",
+      "canonical": "postal_code",
+      "required": true,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "form_fields[phone]",
+      "type": "tel",
+      "canonical": "phone",
+      "required": true,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "form_fields[field_7251ea3]",
+      "type": "email",
+      "canonical": "email",
+      "required": true,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "form_fields[contacter_par]",
+      "type": "radio",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "form_fields[contacter_par]",
+      "type": "radio",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "form_fields[field_b80dfaa]",
+      "type": "text",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": "[Entrez votre message]"
+     },
+     {
+      "name": "form_fields[field_e8c2542]",
+      "type": "checkbox",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "form_fields[field_26febdc]",
+      "type": "text",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "lang",
+      "type": "hidden",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     }
+    ],
+    "url_pattern": "https://www.lepinecloutier.com/",
+    "directory_prefixes": [],
+    "paywall": null,
+    "login_wall": null
+   },
+   "removal": {
+    "url": "https://www.lepinecloutier.com/politique-de-confidentialite/",
+    "final_url": "https://www.lepinecloutier.com/politique-de-confidentialite/",
+    "http_status": 200,
+    "kinds": [
+     "opt_out"
+    ],
+    "channels": [
+     "phone"
+    ],
+    "emails": [],
+    "phones": [
+     "418 686-8811"
+    ],
+    "postal_address": null,
+    "portal": null,
+    "form_fields": [],
+    "csrf_field_name": null,
+    "requires_profile_url": null,
+    "captcha": {
+     "provider": null,
+     "sitekey": null,
+     "pages": []
+    },
+    "consent_vendor": "cookiebot",
+    "success_text": null,
+    "suppression_not_deletion": null,
+    "processing_days": null,
+    "processing_text": null
+   },
+   "bot_defense": {
+    "vendor": null,
+    "outcome": "none"
+   },
+   "legal": {
+    "privacy_policy_url": null,
+    "terms_url": null,
+    "automation_prohibited": null,
+    "automation_clause": null,
+    "residency": [
+     "CA-QC"
+    ],
+    "authorized_agent": null,
+    "data_categories": []
+   },
+   "pages": [
+    {
+     "url": "https://lepinecloutier.com/",
+     "final_url": "https://www.lepinecloutier.com/",
+     "status": 200,
+     "role": "home",
+     "title": "Salon funéraire dans la région de Québec | Lépine Cloutier",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.lepinecloutier.com/",
+     "final_url": "https://www.lepinecloutier.com/",
+     "status": 200,
+     "role": "home",
+     "title": "Salon funéraire dans la région de Québec | Lépine Cloutier",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.lepinecloutier.com/politique-de-confidentialite/",
+     "final_url": "https://www.lepinecloutier.com/politique-de-confidentialite/",
+     "status": 200,
+     "role": "catalog",
+     "title": "Politique de confidentialité | Lépine Cloutier",
+     "liveness": "alive"
+    }
+   ]
+  },
+  "magnus-poirier": {
+   "schema_version": "3.0.0",
+   "id": "magnus-poirier",
+   "name": "Magnus Poirier",
+   "category": "people-search",
+   "domain": "magnuspoirier.com",
+   "checked_at": "2026-11-02T10:18:37+00:00",
+   "liveness": "alive",
+   "liveness_detail": "catalog URL loaded",
+   "homepage": "https://www.magnuspoirier.com/fr/",
+   "logo_url": "https://fichiers.magnuspoirier.com/logos/magnus_poirier_100_ans_V_fond_blanc_logo.png",
+   "images": [
+    {
+     "url": "https://www.magnuspoirier.com/app/uploads/sites/7/2026/02/favicon.png",
+     "kind": "icon",
+     "source_page": "https://www.magnuspoirier.com/fr/"
+    },
+    {
+     "url": "https://fichiers.magnuspoirier.com/logos/magnus_poirier_100_ans_V_fond_blanc_logo.png",
+     "kind": "logo",
+     "source_page": "https://www.magnuspoirier.com/fr/"
+    },
+    {
+     "url": "https://fichiers.magnuspoirier.com/logos/magnus_poirier_100_years_V_logo.png",
+     "kind": "logo",
+     "source_page": "https://www.magnuspoirier.com/fr/"
+    },
+    {
+     "url": "https://fichiers.magnuspoirier.com/logos/magnus_poirier_100_ans_H_logo.png",
+     "kind": "logo",
+     "source_page": "https://www.magnuspoirier.com/fr/"
+    },
+    {
+     "url": "https://www.magnuspoirier.com/app/uploads/sites/7/2025/08/logo_mapAssistant.png",
+     "kind": "logo",
+     "source_page": "https://www.magnuspoirier.com/fr/"
+    },
+    {
+     "url": "https://fichiers.magnuspoirier.com/logos/magnus_poirier_100_years_H_logo.png",
+     "kind": "logo",
+     "source_page": "https://www.magnuspoirier.com/fr/"
+    },
+    {
+     "url": "https://fichiers.magnuspoirier.com/logos/footer/cimetiere_laval_logo.png",
+     "kind": "logo",
+     "source_page": "https://www.magnuspoirier.com/fr/"
+    },
+    {
+     "url": "https://fichiers.magnuspoirier.com/logos/footer/les_sentiers_logo.png",
+     "kind": "logo",
+     "source_page": "https://www.magnuspoirier.com/fr/"
+    },
+    {
+     "url": "https://fichiers.magnuspoirier.com/logos/footer/dar_al_imane_logo.svg",
+     "kind": "logo",
+     "source_page": "https://www.magnuspoirier.com/fr/"
+    },
+    {
+     "url": "https://fichiers.magnuspoirier.com/logos/footer/maitres_et_compagnons_logo.svg",
+     "kind": "logo",
+     "source_page": "https://www.magnuspoirier.com/fr/"
+    },
+    {
+     "url": "https://fichiers.magnuspoirier.com/logos/footer/masters_and_companions_logo.svg",
+     "kind": "logo",
+     "source_page": "https://www.magnuspoirier.com/fr/"
+    }
+   ],
+   "theme_color": null,
+   "languages": [
+    "fr"
+   ],
+   "legal_name": "Magnus Poirier",
+   "search": {
+    "available": true,
+    "method": "http_form_post",
+    "page_url": "https://www.magnuspoirier.com/fr/nous-joindre/",
+    "form_action": "https://www.magnuspoirier.com/fr/nous-joindre/",
+    "inputs": [
+     {
+      "name": "post_id",
+      "type": "hidden",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "form_id",
+      "type": "hidden",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "referer_title",
+      "type": "hidden",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "queried_id",
+      "type": "hidden",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "form_fields[name]",
+      "type": "text",
+      "canonical": null,
+      "required": true,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "form_fields[email]",
+      "type": "email",
+      "canonical": "email",
+      "required": true,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "form_fields[email_confirmation]",
+      "type": "email",
+      "canonical": "email",
+      "required": true,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "form_fields[phone]",
+      "type": "tel",
+      "canonical": "phone",
+      "required": true,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "form_fields[message]",
+      "type": "text",
+      "canonical": null,
+      "required": true,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "form_fields[deceased_name]",
+      "type": "text",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "form_fields[language]",
+      "type": "hidden",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "form_fields[datetime]",
+      "type": "hidden",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     }
+    ],
+    "url_pattern": "https://www.magnuspoirier.com/fr/nous-joindre/",
+    "directory_prefixes": [],
+    "paywall": null,
+    "login_wall": null
+   },
+   "removal": {
+    "url": "https://www.magnuspoirier.com/fr/nous-joindre/",
+    "final_url": "https://www.magnuspoirier.com/fr/nous-joindre/",
+    "http_status": 200,
+    "kinds": [
+     "opt_out"
+    ],
+    "channels": [
+     "phone"
+    ],
+    "emails": [],
+    "phones": [
+     "450 661-7017",
+     "514 727-2847"
+    ],
+    "postal_address": null,
+    "portal": null,
+    "form_fields": [],
+    "csrf_field_name": null,
+    "requires_profile_url": null,
+    "captcha": {
+     "provider": "recaptcha_v2",
+     "sitekey": "6LfV3k4rAAAAAPf46EdPc2aRCKV19_haaX_7362i",
+     "pages": [
+      "https://www.magnuspoirier.com/fr/nous-joindre/"
+     ]
+    },
+    "consent_vendor": null,
+    "success_text": null,
+    "suppression_not_deletion": null,
+    "processing_days": null,
+    "processing_text": null
+   },
+   "bot_defense": {
+    "vendor": null,
+    "outcome": "none"
+   },
+   "legal": {
+    "privacy_policy_url": null,
+    "terms_url": null,
+    "automation_prohibited": null,
+    "automation_clause": null,
+    "residency": [
+     "CA-QC"
+    ],
+    "authorized_agent": null,
+    "data_categories": []
+   },
+   "pages": [
+    {
+     "url": "https://magnuspoirier.com/",
+     "final_url": "https://www.magnuspoirier.com/fr/",
+     "status": 200,
+     "role": "home",
+     "title": "Services Funéraires | Magnus Poirier",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.magnuspoirier.com/",
+     "final_url": "https://www.magnuspoirier.com/fr/",
+     "status": 200,
+     "role": "home",
+     "title": "Services Funéraires | Magnus Poirier",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.magnuspoirier.com/fr/nous-joindre/",
+     "final_url": "https://www.magnuspoirier.com/fr/nous-joindre/",
+     "status": 200,
+     "role": "catalog",
+     "title": "Nous joindre | Magnus Poirier",
+     "liveness": "alive"
+    }
+   ]
+  },
+  "isc-saskatchewan-land-registry": {
+   "schema_version": "3.0.0",
+   "id": "isc-saskatchewan-land-registry",
+   "name": "ISC Saskatchewan Land Registry",
+   "category": "public-records",
+   "domain": "isc.ca",
+   "checked_at": "2026-11-02T10:18:35+00:00",
+   "liveness": "alive",
+   "liveness_detail": "catalog URL loaded",
+   "homepage": "https://www.isc.ca/",
+   "logo_url": "https://www.isc.ca/hs-fs/hubfs/website/logos/isc-logo-white.png?width=71&height=70&name=isc-logo-white.png",
+   "images": [
+    {
+     "url": "https://www.isc.ca/hubfs/website/logos/isc-logo.svg",
+     "kind": "icon",
+     "source_page": "https://www.isc.ca/"
+    },
+    {
+     "url": "https://www.isc.ca/hs-fs/hubfs/website/logos/isc-logo-white.png?width=71&height=70&name=isc-logo-white.png",
+     "kind": "logo",
+     "source_page": "https://www.isc.ca/"
+    },
+    {
+     "url": "https://www.isc.ca/hs-fs/hubfs/website/logos/isc-logo-color.png?width=71&height=70&name=isc-logo-color.png",
+     "kind": "logo",
+     "source_page": "https://www.isc.ca/"
+    },
+    {
+     "url": "https://www.isc.ca/hs-fs/hubfs/website/logos/ISC%20Logo%20-%20thumbnail.png?width=113&height=111&name=ISC%20Logo%20-%20thumbnail.png",
+     "kind": "logo",
+     "source_page": "https://www.isc.ca/"
+    }
+   ],
+   "theme_color": "#006298",
+   "languages": [
+    "en"
+   ],
+   "legal_name": null,
+   "search": {
+    "available": false,
+    "method": "none",
+    "page_url": null,
+    "form_action": null,
+    "inputs": [],
+    "url_pattern": null,
+    "directory_prefixes": [],
+    "paywall": null,
+    "login_wall": null
+   },
+   "removal": {
+    "url": "https://www.isc.ca/privacy",
+    "final_url": "https://www.isc.ca/privacy",
+    "http_status": 200,
+    "kinds": [
+     "opt_out"
+    ],
+    "channels": [
+     "web_form"
+    ],
+    "emails": [],
+    "phones": [],
+    "postal_address": null,
+    "portal": null,
+    "form_fields": [
+     {
+      "name": "term",
+      "type": "text",
+      "canonical": null,
+      "required": false,
+      "autocomplete": "off",
+      "placeholder": "Search"
+     }
+    ],
+    "csrf_field_name": null,
+    "requires_profile_url": null,
+    "captcha": {
+     "provider": null,
+     "sitekey": null,
+     "pages": []
+    },
+    "consent_vendor": null,
+    "success_text": null,
+    "suppression_not_deletion": null,
+    "processing_days": null,
+    "processing_text": null
+   },
+   "bot_defense": {
+    "vendor": null,
+    "outcome": "none"
+   },
+   "legal": {
+    "privacy_policy_url": "https://www.isc.ca/privacy",
+    "terms_url": null,
+    "automation_prohibited": null,
+    "automation_clause": null,
+    "residency": [
+     "CA"
+    ],
+    "authorized_agent": null,
+    "data_categories": []
+   },
+   "pages": [
+    {
+     "url": "https://isc.ca/",
+     "final_url": "https://www.isc.ca/",
+     "status": 200,
+     "role": "home",
+     "title": "ISC | Information Services Corporation",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.isc.ca/",
+     "final_url": "https://www.isc.ca/",
+     "status": 200,
+     "role": "home",
+     "title": "ISC | Information Services Corporation",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.isc.ca/privacy",
+     "final_url": "https://www.isc.ca/privacy",
+     "status": 200,
+     "role": "catalog",
+     "title": "Privacy | ISC",
+     "liveness": "alive"
+    }
+   ]
+  },
+  "cleanlist": {
+   "schema_version": "3.0.0",
+   "id": "cleanlist",
+   "name": "Cleanlist",
+   "category": "marketing",
+   "domain": "cleanlist.ca",
+   "checked_at": "2026-11-02T10:18:35+00:00",
+   "liveness": "alive",
+   "liveness_detail": "catalog URL loaded",
+   "homepage": "https://cleanlist.ca/",
+   "logo_url": "https://cleanlist.ca/wp-content/uploads/2024/10/CleanlistLogoGreen-1-2.png",
+   "images": [
+    {
+     "url": "https://cleanlist.ca/wp-content/uploads/2022/10/cleanlist.ca_favicon.ico",
+     "kind": "icon",
+     "source_page": "https://cleanlist.ca/"
+    },
+    {
+     "url": "https://cleanlist.ca/wp-content/uploads/2026/04/6ae96ae27dd760d5ea272734a9edd78e267efc17.png",
+     "kind": "og_image",
+     "source_page": "https://cleanlist.ca/"
+    },
+    {
+     "url": "https://cleanlist.ca/wp-content/uploads/2022/12/Logo-TM.png",
+     "kind": "json_ld",
+     "source_page": "https://cleanlist.ca/"
+    },
+    {
+     "url": "https://cleanlist.ca/wp-content/uploads/2024/10/CleanlistLogoGreen-1-2.png",
+     "kind": "logo",
+     "source_page": "https://cleanlist.ca/"
+    },
+    {
+     "url": "https://cleanlist.ca/wp-content/uploads/2024/10/3569033-1-1.png",
+     "kind": "og_image",
+     "source_page": "https://cleanlist.ca/resources/privacy-policy/"
+    }
+   ],
+   "theme_color": null,
+   "languages": [
+    "en"
+   ],
+   "legal_name": "Cleanlist",
+   "search": {
+    "available": true,
+    "method": "http_get",
+    "page_url": "https://cleanlist.ca/",
+    "form_action": "https://cleanlist.ca",
+    "inputs": [
+     {
+      "name": "s",
+      "type": "search",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": "Search..."
+     }
+    ],
+    "url_pattern": "https://cleanlist.ca?s={s}",
+    "directory_prefixes": [],
+    "paywall": null,
+    "login_wall": null
+   },
+   "removal": {
+    "url": "https://cleanlist.ca/resources/privacy-policy/",
+    "final_url": "https://cleanlist.ca/resources/privacy-policy/",
+    "http_status": 200,
+    "kinds": [
+     "opt_out"
+    ],
+    "channels": [
+     "web_form",
+     "email"
+    ],
+    "emails": [
+     {
+      "email": "sales@cleanlist.ca",
+      "confidence": "uncertain",
+      "source_url": "https://cleanlist.ca/"
+     },
+     {
+      "email": "privacy@cleanlist.ca",
+      "confidence": "extracted",
+      "source_url": "https://cleanlist.ca/resources/privacy-policy/"
+     }
+    ],
+    "phones": [],
+    "postal_address": null,
+    "portal": null,
+    "form_fields": [
+     {
+      "name": "wpforms[fields][1]",
+      "type": "text",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "wpforms[fields][2]",
+      "type": "email",
+      "canonical": "email",
+      "required": true,
+      "autocomplete": null,
+      "placeholder": "Email Address"
+     }
+    ],
+    "csrf_field_name": null,
+    "requires_profile_url": null,
+    "captcha": {
+     "provider": "recaptcha_v2",
+     "sitekey": null,
+     "pages": [
+      "https://cleanlist.ca/"
+     ]
+    },
+    "consent_vendor": null,
+    "success_text": null,
+    "suppression_not_deletion": null,
+    "processing_days": null,
+    "processing_text": null
+   },
+   "bot_defense": {
+    "vendor": null,
+    "outcome": "none"
+   },
+   "legal": {
+    "privacy_policy_url": "https://cleanlist.ca/resources/privacy-policy/",
+    "terms_url": null,
+    "automation_prohibited": null,
+    "automation_clause": null,
+    "residency": [],
+    "authorized_agent": null,
+    "data_categories": [
+     "identifiers"
+    ]
+   },
+   "pages": [
+    {
+     "url": "https://cleanlist.ca/",
+     "final_url": "https://cleanlist.ca/",
+     "status": 200,
+     "role": "home",
+     "title": "Customer Data Solutions: Clean, Enrich, Validate & Acquire",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.cleanlist.ca/",
+     "final_url": "https://cleanlist.ca/",
+     "status": 200,
+     "role": "home",
+     "title": "Customer Data Solutions: Clean, Enrich, Validate & Acquire",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://cleanlist.ca/resources/privacy-policy/",
+     "final_url": "https://cleanlist.ca/resources/privacy-policy/",
+     "status": 200,
+     "role": "catalog",
+     "title": "Privacy Policy - Canada's Largest Customer Data Company - Cleanlist",
      "liveness": "alive"
     }
    ]

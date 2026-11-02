@@ -2,7 +2,7 @@
 
 Marketing and audience brokers. The link is an opt-out or the privacy page the company publishes for consumer requests.
 
-129 entries. Link responses were checked on 2026-10-01 unless a note says otherwise.
+130 entries. Link responses were checked on 2026-10-01 unless a note says otherwise.
 
 | Broker | Opt-out / privacy URL | Notes |
 | --- | --- | --- |
@@ -43,6 +43,7 @@ Marketing and audience brokers. The link is an opt-out or the privacy page the c
 | Catalist LLC | https://catalist.us/privacy-policy/ | Privacy notice or privacy-policy page. Use the state-rights, do-not-sell, or request section. |
 | Cause IQ | https://www.causeiq.com/privacy_policy/ccpa/ | Opt-out or consumer privacy-request page. |
 | Claritas LLC. | https://www.claritas.com/privacy-legal/ | Opt-out or consumer privacy-request page. |
+| Cleanlist | https://cleanlist.ca/resources/privacy-policy/ | Canadian consumer data company (a division of Interact Direct, London, Ontario) that sells consumer and business prospect lists, deceased-person suppression data and list cleaning, and calls itself Canada's largest customer data company. The privacy policy says individuals can opt out of disclosure to third parties and can access, correct or delete inaccurate information, with questions to the Privacy Officer at privacy@cleanlist.ca, 787 Industrial Road, London ON N5V 4J4. Checked 2026-11-02: the page answered HTTP 200. No request was submitted. |
 | Clearbit | https://clearbit.com/privacy-policy | Privacy notice or privacy-policy page. Use the state-rights, do-not-sell, or request section. |
 | Clodura.AI | https://www.clodura.ai/privacy-policy/ | Privacy notice or privacy-policy page. Use the state-rights, do-not-sell, or request section. |
 | CMA Do Not Mail | https://www.thecma.ca/resources/consumer-centre/get-less-print-mail | Canadian Marketing Association Do Not Mail service for personally addressed marketing mail. The CMA does not own, compile, or rent the lists. Telemarketing is the separate National Do Not Call List. |

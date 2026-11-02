@@ -237,6 +237,7 @@ alliance-funeraire-du-royaume,Alliance funéraire du Royaume,afdr.coop,people-se
 alumni-us,Alumni US,alumnius.net,people-search,alive,captcha_form,Removal form is behind a CAPTCHA widget and no usable removal email was found,recaptcha_v2,6LeJZx8UAAAAAG1Pz-HImpKLjGd-bKLV7BLw7mVf,checkbox,true,,true,,web_form
 americaphonebook,AmericaPhoneBook,americaphonebook.com,people-search,alive,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,false,,,,
 ancestry,Ancestry,ancestry.com,people-search,alive,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,false,,,,
+arbor-memorial,Arbor Memorial,arbormemorial.ca,people-search,alive,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,,,,,
 archives-com-ancestry,Archives.com (Ancestry),archives.com,people-search,alive,captcha_form,Removal form is behind a CAPTCHA widget and no usable removal email was found,recaptcha_v2,6LdowFQiAAAAAHzl-2ZUXBdU4BuMx1gIN76GUj78,checkbox,true,recaptcha_v2,true,,web_form;phone
 background-hawk-truthfinder,Background Hawk (TruthFinder),backgroundhawk.com,people-search,alive,captcha_no_form,A CAPTCHA widget is on the removal page and no form fields or usable email were stored,recaptcha_enterprise,6LdFxVQtAAAAAK6XNodX8W6CM56PH1xTrPGVZSqh,invisible,true,,,,
 barrietoday-obituaries,BarrieToday Obituaries,barrietoday.com,people-search,alive,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,,,,,
@@ -308,6 +309,8 @@ le-necrologue,Le Nécrologue,lenecrologue.com,people-search,alive,phone,The only
 legacy-com,Legacy.com,legacy.com,people-search,alive,phone,The only published channel is a phone number,,,,,,,,phone
 locatefamily,LocateFamily,locatefamily.com,people-search,alive,captcha_no_form,A CAPTCHA widget is on the removal page and no form fields or usable email were stored,recaptcha_v2,6LcZ1XsUAAAAACe-4vEKFDHwD0gRVBU7L6_BVPEP,,false,,,,
 locatesmarter,LocateSmarter,locatesmarter.com,people-search,alive,captcha_form,Removal form is behind a CAPTCHA widget and no usable removal email was found,recaptcha_v2,6LcRRtQtAAAAAFPgIlBRmX7fNqcujXUGmEoAw07i,checkbox,true,,true,,web_form;phone
+lepine-cloutier,Lépine Cloutier,lepinecloutier.com,people-search,alive,phone,The only published channel is a phone number,,,,,,,,phone
+magnus-poirier,Magnus Poirier,magnuspoirier.com,people-search,alive,phone,The only published channel is a phone number,recaptcha_v2,6LfV3k4rAAAAAPf46EdPc2aRCKV19_haaX_7362i,,,,,,phone
 merinfo-se,Merinfo.se,merinfo.se,people-search,alive,captcha_no_form,A CAPTCHA widget is on the removal page and no form fields or usable email were stored,turnstile,,,,,,,
 midlandtoday-obituaries,MidlandToday Obituaries,midlandtoday.ca,people-search,alive,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,,,,,
 miltontoday-obituaries,MiltonToday Obituaries,miltontoday.ca,people-search,alive,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,,,,,
@@ -381,6 +384,7 @@ truthfinder-peopleconnect,TruthFinder (PeopleConnect),truthfinder.com,people-sea
 ufind-name,uFind.name,ufind.name,people-search,blocked,bot_wall,The opt-out URL returned a bot wall and a browser retry did not reveal a removal channel,,,,false,,,,
 unitedstatesphonebook-usphonebook,UnitedStatesPhonebook (USPhoneBook),unitedstatesphonebook.com,people-search,blocked,captcha_form,Removal form is behind a CAPTCHA widget and no usable removal email was found,recaptcha_v2,6LcmiZYeAAAAACEbY_tBlLChTU8LZQbQ10M0o_pk,checkbox,false,,true,,web_form
 unmask,UnMask,unmask.com,people-search,blocked,bot_wall,The opt-out URL returned a bot wall and a browser retry did not reveal a removal channel,,,,false,,,,
+urgel-bourgie,Urgel Bourgie,urgelbourgie.com,people-search,alive,phone,The only published channel is a phone number,recaptcha_v2,6LfnTC0sAAAAAATPHPuE9RUhlzzMLRUM6M2aRFlW,,,,,,phone
 us-people-search,US People Search,uspeoplesearch.com,people-search,blocked,bot_wall,The opt-out URL returned a bot wall and a browser retry did not reveal a removal channel,,,,false,,,,
 us-search-peopleconnect,US Search (PeopleConnect),ussearch.com,people-search,alive,phone,The only published channel is a phone number,,,,false,,,,phone
 usa-people-search,USA-People-Search,usa-people-search.com,people-search,alive,captcha_form,Removal form is behind a CAPTCHA widget and no usable removal email was found,recaptcha_v2,6Lcoh5YeAAAAACoHRaRcgiuTlDQCn8ig8yatC7d3,,false,,true,,web_form
