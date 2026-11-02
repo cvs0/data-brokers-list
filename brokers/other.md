@@ -2,7 +2,7 @@
 
 Registered data brokers and privacy-request pages that do not fit the categories above.
 
-289 entries. Link responses were checked on 2026-10-01 unless a note says otherwise.
+290 entries. Link responses were checked on 2026-10-01 unless a note says otherwise.
 
 | Broker | Opt-out / privacy URL | Notes |
 | --- | --- | --- |
@@ -293,5 +293,6 @@ Registered data brokers and privacy-request pages that do not fit the categories
 | Wunderkind Corporation | https://www.wunderkind.co/privacy/ | Opt-out or consumer privacy-request page. |
 | Wyty | https://www.wyty.com/remove/ | Opt-out or consumer privacy-request page. Email: support@wyty.com. Automated check on 2026-10-01 got HTTP 403. Open the link in a browser. |
 | Xcelerated Data LLC | https://xcelerated.com | Published privacy-request URL is the site root. Confirm a request form is on the page before sending information. Email: privacy@xcelerated.com. |
+| YellowPages.ca | https://corporate.yp.ca/privacy-statement | Canadian business directory run by Yellow Pages Limited, the same network as Canada411. Listings are businesses, including sole proprietors listed under their own name, phone number and address. There is no person search on yellowpages.ca. The privacy statement says deletion or de-indexation requests, corrections and withdrawal of consent go to privacy@yp.ca. Residential listings are handled through Canada411 and the person's phone provider. Checked 2026-11-02: the page answered HTTP 200. No request was submitted. |
 | Zeta Global Corp. | https://zetaglobal.com/privacy-choices/ | Opt-out or consumer privacy-request page. |
 | Zlookup | https://www.zlookup.com/opt_out | Opt-out or consumer privacy-request page. Email: hello@zlookup.com. |
