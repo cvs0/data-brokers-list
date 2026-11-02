@@ -1,6 +1,6 @@
 {
  "schema_version": "3.0.0",
- "checked_at": "2026-10-30T03:05:58+00:00",
+ "checked_at": "2026-11-02T01:19:09+00:00",
  "method": "Public pages only: homepage, catalog URL, and mapped privacy, contact, and legal links. robots.txt honored. No form submitted, no login, no CAPTCHA solved. A browser opened lookup homepages the static fetch never read, and catalog URLs that were blocked or failed, when robots.txt allowed the URL. Image fields are URLs, not copied files. People-search listing URLs are not stored. Null means the fetched page did not establish that fact. Every catalog id has a record.",
  "broker_count": 823,
  "counts": {
@@ -14,7 +14,7 @@
   },
   "with_logo": 666,
   "with_image": 666,
-  "with_search": 405,
+  "with_search": 406,
   "with_email": 369,
   "with_captcha": 334,
   "with_form": 150
@@ -4725,9 +4725,9 @@
    "name": "Massachusetts Arrests",
    "category": "background-checks",
    "domain": "maarrests.org",
-   "checked_at": "2026-10-12T23:20:16+00:00",
+   "checked_at": "2026-11-02T01:18:13+00:00",
    "liveness": "alive",
-   "liveness_detail": "catalog URL redirected and the final page loaded",
+   "liveness_detail": "catalog URL loaded",
    "homepage": "https://www.maarrests.org/",
    "logo_url": "https://www.maarrests.org/wp-content/uploads/2017/12/favicon_0.ico",
    "images": [
@@ -4772,6 +4772,7 @@
       "autocomplete": null,
       "placeholder": null,
       "options": [
+       "Nationwide",
        "AL",
        "AK",
        "AZ",
@@ -4801,7 +4802,28 @@
        "MT",
        "NE",
        "NV",
-       "NH"
+       "NH",
+       "NJ",
+       "NM",
+       "NY",
+       "NC",
+       "ND",
+       "OH",
+       "OK",
+       "OR",
+       "PA",
+       "RI",
+       "SC",
+       "SD",
+       "TN",
+       "TX",
+       "UT",
+       "VT",
+       "VA",
+       "WA",
+       "WV",
+       "WI",
+       "WY"
       ]
      },
      {
@@ -4892,7 +4914,7 @@
     "login_wall": null
    },
    "removal": {
-    "url": "https://www.maarrests.org/request-portal",
+    "url": "https://www.maarrests.org/corrections",
     "final_url": "https://www.maarrests.org/corrections",
     "http_status": 200,
     "kinds": [
@@ -4954,18 +4976,10 @@
      "liveness": "alive"
     },
     {
-     "url": "https://www.maarrests.org/request-portal",
-     "final_url": "https://www.maarrests.org/corrections",
-     "status": 200,
-     "role": "catalog",
-     "title": "Report an Error or Correction | Massachusetts Arrests",
-     "liveness": "alive"
-    },
-    {
      "url": "https://www.maarrests.org/corrections",
      "final_url": "https://www.maarrests.org/corrections",
      "status": 200,
-     "role": "other",
+     "role": "catalog",
      "title": "Report an Error or Correction | Massachusetts Arrests",
      "liveness": "alive"
     },
@@ -4991,6 +5005,14 @@
      "status": 200,
      "role": "legal",
      "title": "Terms of Service - Massachusetts Arrests",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.maarrests.org/request-portal",
+     "final_url": "https://www.maarrests.org/corrections",
+     "status": 200,
+     "role": "other",
+     "title": "Report an Error or Correction | Massachusetts Arrests",
      "liveness": "alive"
     }
    ]
@@ -7309,9 +7331,9 @@
    "name": "Ohio Arrests",
    "category": "background-checks",
    "domain": "ohioarrests.org",
-   "checked_at": "2026-10-12T23:22:05+00:00",
+   "checked_at": "2026-11-02T01:18:13+00:00",
    "liveness": "alive",
-   "liveness_detail": "catalog URL redirected and the final page loaded",
+   "liveness_detail": "catalog URL loaded",
    "homepage": "https://www.ohioarrests.org/",
    "logo_url": "https://www.ohioarrests.org/wp-content/uploads/2017/12/favicon_0.ico",
    "images": [
@@ -7356,6 +7378,7 @@
       "autocomplete": null,
       "placeholder": null,
       "options": [
+       "Nationwide",
        "AL",
        "AK",
        "AZ",
@@ -7385,7 +7408,28 @@
        "MT",
        "NE",
        "NV",
-       "NH"
+       "NH",
+       "NJ",
+       "NM",
+       "NY",
+       "NC",
+       "ND",
+       "OH",
+       "OK",
+       "OR",
+       "PA",
+       "RI",
+       "SC",
+       "SD",
+       "TN",
+       "TX",
+       "UT",
+       "VT",
+       "VA",
+       "WA",
+       "WV",
+       "WI",
+       "WY"
       ]
      },
      {
@@ -7396,7 +7440,95 @@
       "autocomplete": null,
       "placeholder": null,
       "options": [
-       "All Counties"
+       "All Counties",
+       "Adams",
+       "Allen",
+       "Ashland",
+       "Ashtabula",
+       "Athens",
+       "Auglaize",
+       "Belmont",
+       "Brown",
+       "Butler",
+       "Carroll",
+       "Champaign",
+       "Clark",
+       "Clermont",
+       "Clinton",
+       "Columbiana",
+       "Coshocton",
+       "Crawford",
+       "Cuyahoga",
+       "Darke",
+       "Defiance",
+       "Delaware",
+       "Erie",
+       "Fairfield",
+       "Fayette",
+       "Franklin",
+       "Fulton",
+       "Gallia",
+       "Geauga",
+       "Greene",
+       "Guernsey",
+       "Hamilton",
+       "Hancock",
+       "Hardin",
+       "Harrison",
+       "Henry",
+       "Highland",
+       "Hocking",
+       "Holmes",
+       "Huron",
+       "Jackson",
+       "Jefferson",
+       "Knox",
+       "Lake",
+       "Lawrence",
+       "Licking",
+       "Logan",
+       "Lorain",
+       "Lucas",
+       "Madison",
+       "Mahoning",
+       "Marion",
+       "Medina",
+       "Meigs",
+       "Mercer",
+       "Miami",
+       "Monroe",
+       "Montgomery",
+       "Morgan",
+       "Morrow",
+       "Muskingum",
+       "Noble",
+       "Ottawa",
+       "Paulding",
+       "Perry",
+       "Pickaway",
+       "Pike",
+       "Portage",
+       "Preble",
+       "Putnam",
+       "Richland",
+       "Ross",
+       "Sandusky",
+       "Scioto",
+       "Seneca",
+       "Shelby",
+       "Stark",
+       "Summit",
+       "Trumbull",
+       "Tuscarawas",
+       "Union",
+       "Van Wert",
+       "Vinton",
+       "Warren",
+       "Washington",
+       "Wayne",
+       "Williams",
+       "Wood",
+       "Wyandot"
       ]
      },
      {
@@ -7462,7 +7594,7 @@
     "login_wall": null
    },
    "removal": {
-    "url": "https://www.ohioarrests.org/request-portal",
+    "url": "https://www.ohioarrests.org/corrections",
     "final_url": "https://www.ohioarrests.org/corrections",
     "http_status": 200,
     "kinds": [
@@ -7521,18 +7653,10 @@
      "liveness": "alive"
     },
     {
-     "url": "https://www.ohioarrests.org/request-portal",
-     "final_url": "https://www.ohioarrests.org/corrections",
-     "status": 200,
-     "role": "catalog",
-     "title": "Report an Error or Correction | Ohio Arrests",
-     "liveness": "alive"
-    },
-    {
      "url": "https://www.ohioarrests.org/corrections",
      "final_url": "https://www.ohioarrests.org/corrections",
      "status": 200,
-     "role": "other",
+     "role": "catalog",
      "title": "Report an Error or Correction | Ohio Arrests",
      "liveness": "alive"
     },
@@ -7558,6 +7682,14 @@
      "status": 200,
      "role": "legal",
      "title": "Terms of Service - Ohio Arrests",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.ohioarrests.org/request-portal",
+     "final_url": "https://www.ohioarrests.org/corrections",
+     "status": 200,
+     "role": "other",
+     "title": "Report an Error or Correction | Ohio Arrests",
      "liveness": "alive"
     }
    ]
@@ -31035,9 +31167,9 @@
    "name": "BDEX, LLC",
    "category": "other",
    "domain": "bdex.com",
-   "checked_at": "2026-10-12T23:12:05+00:00",
+   "checked_at": "2026-11-02T01:18:15+00:00",
    "liveness": "alive",
-   "liveness_detail": "catalog URL redirected and the final page loaded",
+   "liveness_detail": "catalog URL loaded",
    "homepage": "https://www.bdex.com/",
    "logo_url": "https://www.bdex.com/wp-content/uploads/2021/06/BDEX-LOGO-Final2.png",
    "images": [
@@ -31105,22 +31237,50 @@
     "login_wall": null
    },
    "removal": {
-    "url": "https://www.bdex.com/privacy-policy/",
-    "final_url": "https://www.bdex.com/privacy-policy-old/",
+    "url": "https://www.bdex.com/privacy-policy/data-sharing-opt-out/",
+    "final_url": "https://www.bdex.com/privacy-policy/data-sharing-opt-out/",
     "http_status": 200,
     "kinds": [
+     "opt_out",
      "do_not_sell"
     ],
-    "channels": [],
+    "channels": [
+     "web_form"
+    ],
     "emails": [],
     "phones": [],
     "postal_address": null,
     "portal": null,
-    "form_fields": [],
+    "form_fields": [
+     {
+      "name": "form_fields[email]",
+      "type": "email",
+      "canonical": "email",
+      "required": true,
+      "autocomplete": null,
+      "placeholder": "Email*"
+     },
+     {
+      "name": "form_fields[opt_out_bdex]",
+      "type": "checkbox",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "form_fields[show_info]",
+      "type": "checkbox",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     }
+    ],
     "csrf_field_name": null,
     "requires_profile_url": null,
     "captcha": {
-     "provider": "recaptcha_v3",
+     "provider": "recaptcha_v2",
      "sitekey": "6LfcLmkcAAAAAO1zGM4O83DVxIE5C7dWPhuivaXE",
      "pages": [
       "https://www.bdex.com/privacy-policy/data-sharing-opt-out/"
@@ -31137,7 +31297,7 @@
     "outcome": "none"
    },
    "legal": {
-    "privacy_policy_url": "https://www.bdex.com/privacy-policy-old/",
+    "privacy_policy_url": "https://www.bdex.com/privacy-policy/data-sharing-opt-out/",
     "terms_url": null,
     "automation_prohibited": null,
     "automation_clause": null,
@@ -31166,11 +31326,11 @@
      "liveness": "alive"
     },
     {
-     "url": "https://www.bdex.com/privacy-policy/",
-     "final_url": "https://www.bdex.com/privacy-policy-old/",
+     "url": "https://www.bdex.com/privacy-policy/data-sharing-opt-out/",
+     "final_url": "https://www.bdex.com/privacy-policy/data-sharing-opt-out/",
      "status": 200,
      "role": "catalog",
-     "title": "Privacy Policy : BDEX",
+     "title": "Data Sharing : BDEX",
      "liveness": "alive"
     },
     {
@@ -31179,14 +31339,6 @@
      "status": 200,
      "role": "privacy",
      "title": "Privacy Policy : BDEX",
-     "liveness": "alive"
-    },
-    {
-     "url": "https://www.bdex.com/privacy-policy/data-sharing-opt-out/",
-     "final_url": "https://www.bdex.com/privacy-policy/data-sharing-opt-out/",
-     "status": 200,
-     "role": "privacy",
-     "title": "Data Sharing : BDEX",
      "liveness": "alive"
     },
     {
@@ -31211,6 +31363,14 @@
      "status": 200,
      "role": "other",
      "title": "Why GDPR Won't Stop Programmatic Advertising : BDEX",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.bdex.com/privacy-policy",
+     "final_url": "https://www.bdex.com/privacy-policy-old/",
+     "status": 200,
+     "role": "privacy",
+     "title": "Privacy Policy : BDEX",
      "liveness": "alive"
     }
    ]
@@ -35186,9 +35346,9 @@
    "name": "Data Trust",
    "category": "other",
    "domain": "thedatatrust.com",
-   "checked_at": "2026-10-12T23:27:06+00:00",
+   "checked_at": "2026-11-02T01:18:18+00:00",
    "liveness": "alive",
-   "liveness_detail": "catalog URL redirected and the final page loaded",
+   "liveness_detail": "catalog URL loaded",
    "homepage": "https://thedatatrust.com/",
    "logo_url": "https://thedatatrust.com/wp-content/uploads/2024/10/Datatrust_Logo.svg",
    "images": [
@@ -35224,22 +35384,151 @@
    ],
    "legal_name": "Data Trust",
    "search": {
-    "available": false,
-    "method": "none",
-    "page_url": null,
-    "form_action": null,
-    "inputs": [],
-    "url_pattern": null,
+    "available": true,
+    "method": "http_form_post",
+    "page_url": "https://thedatatrust.com/",
+    "form_action": "https://thedatatrust.com/",
+    "inputs": [
+     {
+      "name": "input_deebede1eb58988cb2fbb62e7784c0db",
+      "type": "hidden",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "input_2.3",
+      "type": "text",
+      "canonical": "first_name",
+      "required": false,
+      "autocomplete": null,
+      "placeholder": "First Name"
+     },
+     {
+      "name": "input_2.6",
+      "type": "text",
+      "canonical": "last_name",
+      "required": false,
+      "autocomplete": null,
+      "placeholder": "Last Name"
+     },
+     {
+      "name": "input_1",
+      "type": "text",
+      "canonical": "email",
+      "required": false,
+      "autocomplete": null,
+      "placeholder": "Enter Email Address"
+     },
+     {
+      "name": "gform_ajax",
+      "type": "hidden",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "gform_submission_method",
+      "type": "hidden",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "gform_theme",
+      "type": "hidden",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "gform_style_settings",
+      "type": "hidden",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "is_submit_5",
+      "type": "hidden",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "gform_submit",
+      "type": "hidden",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "gform_currency",
+      "type": "hidden",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "gform_unique_id",
+      "type": "hidden",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "state_5",
+      "type": "hidden",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "gform_target_page_number_5",
+      "type": "hidden",
+      "canonical": null,
+      "required": false,
+      "autocomplete": "off",
+      "placeholder": null
+     },
+     {
+      "name": "gform_source_page_number_5",
+      "type": "hidden",
+      "canonical": null,
+      "required": false,
+      "autocomplete": "off",
+      "placeholder": null
+     },
+     {
+      "name": "gform_field_values",
+      "type": "hidden",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     }
+    ],
+    "url_pattern": "https://thedatatrust.com/",
     "directory_prefixes": [],
     "paywall": null,
     "login_wall": null
    },
    "removal": {
-    "url": "https://thedatatrust.com/do-not-sell-my-personal-information/",
-    "final_url": "https://thedatatrust.com/privacy-policy/",
+    "url": "https://thedatatrust.com/your-privacy-choices/",
+    "final_url": "https://thedatatrust.com/your-privacy-choices/",
     "http_status": 200,
     "kinds": [
-     "do_not_sell"
+     "opt_out"
     ],
     "channels": [
      "web_form",
@@ -35253,6 +35542,22 @@
     "portal": null,
     "form_fields": [
      {
+      "name": "input_2.3",
+      "type": "text",
+      "canonical": "first_name",
+      "required": false,
+      "autocomplete": null,
+      "placeholder": "First Name"
+     },
+     {
+      "name": "input_2.6",
+      "type": "text",
+      "canonical": "last_name",
+      "required": false,
+      "autocomplete": null,
+      "placeholder": "Last Name"
+     },
+     {
       "name": "input_1",
       "type": "text",
       "canonical": "email",
@@ -35264,12 +35569,12 @@
     "csrf_field_name": null,
     "requires_profile_url": null,
     "captcha": {
-     "provider": "recaptcha_v2",
-     "sitekey": null,
+     "provider": "recaptcha_enterprise",
+     "sitekey": "6Lc0uM4tAAAAAFFEy0tF8Z0YQN1dAZwmwIzZbuwd",
      "pages": [
       "https://thedatatrust.com/",
-      "https://thedatatrust.com/privacy-policy/",
       "https://thedatatrust.com/your-privacy-choices/",
+      "https://thedatatrust.com/privacy-policy/",
       "https://thedatatrust.com/contact/"
      ]
     },
@@ -35284,7 +35589,7 @@
     "outcome": "none"
    },
    "legal": {
-    "privacy_policy_url": "https://thedatatrust.com/privacy-policy/",
+    "privacy_policy_url": "https://thedatatrust.com/your-privacy-choices/",
     "terms_url": null,
     "automation_prohibited": null,
     "automation_clause": null,
@@ -35316,11 +35621,11 @@
      "liveness": "alive"
     },
     {
-     "url": "https://thedatatrust.com/do-not-sell-my-personal-information/",
-     "final_url": "https://thedatatrust.com/privacy-policy/",
+     "url": "https://thedatatrust.com/your-privacy-choices/",
+     "final_url": "https://thedatatrust.com/your-privacy-choices/",
      "status": 200,
      "role": "catalog",
-     "title": "Data Trust Privacy Notice - Data Trust",
+     "title": "Your Privacy Choices - Data Trust",
      "liveness": "alive"
     },
     {
@@ -35329,14 +35634,6 @@
      "status": 200,
      "role": "privacy",
      "title": "Data Trust Privacy Notice - Data Trust",
-     "liveness": "alive"
-    },
-    {
-     "url": "https://thedatatrust.com/your-privacy-choices/",
-     "final_url": "https://thedatatrust.com/your-privacy-choices/",
-     "status": 200,
-     "role": "privacy",
-     "title": "Your Privacy Choices - Data Trust",
      "liveness": "alive"
     },
     {
@@ -35695,7 +35992,7 @@
    "name": "Datanyze LLC",
    "category": "other",
    "domain": "datanyze.com",
-   "checked_at": "2026-10-12T23:14:44+00:00",
+   "checked_at": "2026-11-02T01:18:13+00:00",
    "liveness": "alive",
    "liveness_detail": "catalog URL loaded",
    "homepage": "https://www.datanyze.com/",
@@ -35725,6 +36022,71 @@
      "url": "https://www.datanyze.com/wp-content/themes/datanyze/images/datanyze-white-logo-new.svg",
      "kind": "logo",
      "source_page": "https://www.datanyze.com/"
+    },
+    {
+     "url": "https://cws-zoominfo-assets.zoominfo.com/Contentful/favicon/favicon.ico",
+     "kind": "icon",
+     "source_page": "https://www.zoominfo.com/trust-center/your-privacy"
+    },
+    {
+     "url": "https://cws-zoominfo-assets.zoominfo.com/Contentful/favicon/favicon-16x16-1.png",
+     "kind": "icon",
+     "source_page": "https://www.zoominfo.com/trust-center/your-privacy"
+    },
+    {
+     "url": "https://cws-zoominfo-assets.zoominfo.com/Contentful/favicon/favicon-32x32-1.png",
+     "kind": "icon",
+     "source_page": "https://www.zoominfo.com/trust-center/your-privacy"
+    },
+    {
+     "url": "https://cws-zoominfo-assets.zoominfo.com/Contentful/favicon/favicon-64x64-1.png",
+     "kind": "icon",
+     "source_page": "https://www.zoominfo.com/trust-center/your-privacy"
+    },
+    {
+     "url": "https://cws-zoominfo-assets.zoominfo.com/Contentful/favicon/favicon-128x128-1.png",
+     "kind": "icon",
+     "source_page": "https://www.zoominfo.com/trust-center/your-privacy"
+    },
+    {
+     "url": "https://cws-zoominfo-assets.zoominfo.com/Contentful/favicon/favicon-256x256-1.png",
+     "kind": "icon",
+     "source_page": "https://www.zoominfo.com/trust-center/your-privacy"
+    },
+    {
+     "url": "https://cws-zoominfo-assets.zoominfo.com/Contentful/favicon/favicon-512x512-1.png",
+     "kind": "icon",
+     "source_page": "https://www.zoominfo.com/trust-center/your-privacy"
+    },
+    {
+     "url": "https://images.ctfassets.net/kyld7105l6mt/1AxYsjcf1passgLY4dyItl/25b99943a01c3f18fc81cc1f8857892f/ZoomInfo-20260504-132451.png",
+     "kind": "og_image",
+     "source_page": "https://www.zoominfo.com/trust-center/your-privacy"
+    },
+    {
+     "url": "https://www.zoominfo.com/logos/acquisitions/zoominfo/zoominfo-red-logomark.svg",
+     "kind": "logo",
+     "source_page": "https://www.zoominfo.com/trust-center/your-privacy"
+    },
+    {
+     "url": "https://images.ctfassets.net/kyld7105l6mt/3bYyWlfKlTzXOQxZIN2xtD/b811430d46d6f43f8fd78f7da2b7dd88/microsoft-logomark.svg",
+     "kind": "logo",
+     "source_page": "https://www.zoominfo.com/trust-center/your-privacy"
+    },
+    {
+     "url": "https://images.ctfassets.net/kyld7105l6mt/2xv0kTwb8EIFCrjSQgxlmN/d1962f3259fd7cb5481ff884ab484c4b/monday-logo-square.png?w=256&q=75&fm=webp",
+     "kind": "logo",
+     "source_page": "https://www.zoominfo.com/trust-center/your-privacy"
+    },
+    {
+     "url": "https://images.ctfassets.net/kyld7105l6mt/6yCGeu9qQS0FrTK4M5Ho1/6f1d0740019cbe4b7fce878be299a903/capitalone-logo-square.png?w=256&q=75&fm=webp",
+     "kind": "logo",
+     "source_page": "https://www.zoominfo.com/trust-center/your-privacy"
+    },
+    {
+     "url": "https://images.ctfassets.net/kyld7105l6mt/2EccJK9s1DGpzhv12jnxkB/60641b8aac3a7db55c3aac6cfee5b598/mongoDB_logo_square.svg",
+     "kind": "logo",
+     "source_page": "https://www.zoominfo.com/trust-center/your-privacy"
     }
    ],
    "theme_color": null,
@@ -35744,22 +36106,21 @@
     "login_wall": null
    },
    "removal": {
-    "url": "https://www.datanyze.com/privacy-center",
-    "final_url": "https://www.datanyze.com/privacy-center",
+    "url": "https://www.zoominfo.com/trust-center/your-privacy",
+    "final_url": "https://www.zoominfo.com/trust-center/your-privacy",
     "http_status": 200,
     "kinds": [
-     "opt_out",
-     "do_not_sell",
-     "dsar"
+     "opt_out"
     ],
     "channels": [
-     "email"
+     "email",
+     "phone"
     ],
     "emails": [
      {
-      "email": "stateremoval@datanyze.com",
-      "confidence": "extracted",
-      "source_url": "https://www.datanyze.com/privacy-center"
+      "email": "stateremoval@zoominfo.com",
+      "confidence": "uncertain",
+      "source_url": "https://www.zoominfo.com/trust-center/your-privacy"
      },
      {
       "email": "privacy@zoominfo.com",
@@ -35772,7 +36133,9 @@
       "source_url": "https://www.datanyze.com/terms-conditions"
      }
     ],
-    "phones": [],
+    "phones": [
+     "866.904.9666"
+    ],
     "postal_address": null,
     "portal": null,
     "form_fields": [],
@@ -35794,7 +36157,7 @@
     "outcome": "none"
    },
    "legal": {
-    "privacy_policy_url": "https://www.datanyze.com/privacy-center",
+    "privacy_policy_url": "https://www.zoominfo.com/trust-center/your-privacy",
     "terms_url": "https://www.datanyze.com/terms-conditions",
     "automation_prohibited": null,
     "automation_clause": null,
@@ -35827,11 +36190,19 @@
      "liveness": "alive"
     },
     {
-     "url": "https://www.datanyze.com/privacy-center",
-     "final_url": "https://www.datanyze.com/privacy-center",
+     "url": "https://www.zoominfo.com/trust-center/your-privacy",
+     "final_url": "https://www.zoominfo.com/trust-center/your-privacy",
      "status": 200,
      "role": "catalog",
-     "title": "Privacy Center | Datanyze",
+     "title": "Your Privacy | ZoomInfoZoomInfo",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.datanyze.com/privacy-center",
+     "final_url": "https://www.zoominfo.com/trust-center/your-privacy",
+     "status": 200,
+     "role": "privacy",
+     "title": "Your Privacy | ZoomInfoZoomInfo",
      "liveness": "alive"
     },
     {
@@ -35874,9 +36245,9 @@
    "name": "Dataskip",
    "category": "other",
    "domain": "dataskip.io",
-   "checked_at": "2026-10-12T23:14:52+00:00",
+   "checked_at": "2026-11-02T01:18:12+00:00",
    "liveness": "alive",
-   "liveness_detail": "catalog URL redirected and the final page loaded",
+   "liveness_detail": "catalog URL loaded",
    "homepage": "https://dataskip.io/",
    "logo_url": "https://dataskip.io/assets/dataskip-logo.png",
    "images": [
@@ -35928,8 +36299,8 @@
     "login_wall": null
    },
    "removal": {
-    "url": "https://dataskip.io/product/start-order/",
-    "final_url": "https://dataskip.io/pricing",
+    "url": "https://dataskip.io/privacy",
+    "final_url": "https://dataskip.io/privacy",
     "http_status": 200,
     "kinds": [
      "opt_out"
@@ -35998,11 +36369,11 @@
      "liveness": "alive"
     },
     {
-     "url": "https://dataskip.io/product/start-order/",
-     "final_url": "https://dataskip.io/pricing",
+     "url": "https://dataskip.io/privacy",
+     "final_url": "https://dataskip.io/privacy",
      "status": 200,
      "role": "catalog",
-     "title": "Skip Tracing Pricing: 4 Cents Per Hit | DataSkip",
+     "title": "Privacy Policy | DataSkip",
      "liveness": "alive"
     },
     {
@@ -36011,14 +36382,6 @@
      "status": 200,
      "role": "other",
      "title": "Skip Tracing Pricing: 4 Cents Per Hit | DataSkip",
-     "liveness": "alive"
-    },
-    {
-     "url": "https://dataskip.io/privacy",
-     "final_url": "https://dataskip.io/privacy",
-     "status": 200,
-     "role": "privacy",
-     "title": "Privacy Policy | DataSkip",
      "liveness": "alive"
     },
     {
@@ -37881,9 +38244,9 @@
    "name": "DOBSearch",
    "category": "other",
    "domain": "dobsearch.com",
-   "checked_at": "2026-10-12T23:15:28+00:00",
+   "checked_at": "2026-11-02T01:18:13+00:00",
    "liveness": "alive",
-   "liveness_detail": "catalog URL redirected and the final page loaded",
+   "liveness_detail": "catalog URL loaded",
    "homepage": "https://www.dobsearch.com/",
    "logo_url": "https://www.dobsearch.com/wp-content/uploads/2022/01/DOBSearch.png",
    "images": [
@@ -38021,8 +38384,8 @@
     "login_wall": null
    },
    "removal": {
-    "url": "https://www.dobsearch.com/people-finder/",
-    "final_url": "https://www.dobsearch.com/how-to-find-information-someone-online/",
+    "url": "https://www.dobsearch.com/privacy-policy/",
+    "final_url": "https://www.dobsearch.com/privacy-policy/",
     "http_status": 200,
     "kinds": [
      "opt_out"
@@ -38047,7 +38410,7 @@
     "csrf_field_name": null,
     "requires_profile_url": null,
     "captcha": {
-     "provider": "turnstile",
+     "provider": "recaptcha_v2",
      "sitekey": "6LeF458fAAAAAA8PzqA4AhxijTdRCUM_kvJY8QDY",
      "pages": [
       "https://www.dobsearch.com/contact/"
@@ -38097,11 +38460,11 @@
      "liveness": "alive"
     },
     {
-     "url": "https://www.dobsearch.com/people-finder/",
-     "final_url": "https://www.dobsearch.com/how-to-find-information-someone-online/",
+     "url": "https://www.dobsearch.com/privacy-policy/",
+     "final_url": "https://www.dobsearch.com/privacy-policy/",
      "status": 200,
      "role": "catalog",
-     "title": "How To Find Information On Someone Online (7 Ways) – DOBSearch.com",
+     "title": "Privacy Policy – DOBSearch.com",
      "liveness": "alive"
     },
     {
@@ -38110,14 +38473,6 @@
      "status": 200,
      "role": "other",
      "title": "How To Find Information On Someone Online (7 Ways) – DOBSearch.com",
-     "liveness": "alive"
-    },
-    {
-     "url": "https://www.dobsearch.com/privacy-policy/",
-     "final_url": "https://www.dobsearch.com/privacy-policy/",
-     "status": 200,
-     "role": "privacy",
-     "title": "Privacy Policy – DOBSearch.com",
      "liveness": "alive"
     },
     {
@@ -59358,7 +59713,7 @@
    "name": "Samba TV, Inc.",
    "category": "other",
    "domain": "samba.com",
-   "checked_at": "2026-10-30T03:05:26+00:00",
+   "checked_at": "2026-11-02T01:18:40+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -59583,9 +59938,9 @@
    "name": "Search Systems (directory of links)",
    "category": "other",
    "domain": "searchsystems.net",
-   "checked_at": "2026-10-12T23:25:25+00:00",
+   "checked_at": "2026-11-02T01:18:17+00:00",
    "liveness": "alive",
-   "liveness_detail": "catalog URL redirected and the final page loaded",
+   "liveness_detail": "catalog URL loaded",
    "homepage": "https://www.searchsystems.net/",
    "logo_url": "https://www.searchsystems.net/static/img/logo-diamond.png",
    "images": [
@@ -59653,6 +60008,7 @@
       "autocomplete": null,
       "placeholder": null,
       "options": [
+       "Nationwide",
        "AL",
        "AK",
        "AZ",
@@ -59682,7 +60038,28 @@
        "MT",
        "NE",
        "NV",
-       "NH"
+       "NH",
+       "NJ",
+       "NM",
+       "NY",
+       "NC",
+       "ND",
+       "OH",
+       "OK",
+       "OR",
+       "PA",
+       "RI",
+       "SC",
+       "SD",
+       "TN",
+       "TX",
+       "UT",
+       "VT",
+       "VA",
+       "WA",
+       "WV",
+       "WI",
+       "WY"
       ]
      }
     ],
@@ -59692,7 +60069,7 @@
     "login_wall": null
    },
    "removal": {
-    "url": "https://publicrecords.searchsystems.net/opt-out.php",
+    "url": "https://www.searchsystems.net/privacy",
     "final_url": "https://www.searchsystems.net/privacy",
     "http_status": 200,
     "kinds": [
@@ -59700,7 +60077,6 @@
      "do_not_sell"
     ],
     "channels": [
-     "web_form",
      "email",
      "phone"
     ],
@@ -59717,64 +60093,7 @@
     ],
     "postal_address": null,
     "portal": null,
-    "form_fields": [
-     {
-      "name": "fname",
-      "type": "text",
-      "canonical": "first_name",
-      "required": false,
-      "autocomplete": "given-name",
-      "placeholder": null
-     },
-     {
-      "name": "lname",
-      "type": "text",
-      "canonical": "last_name",
-      "required": false,
-      "autocomplete": "family-name",
-      "placeholder": null
-     },
-     {
-      "name": "state",
-      "type": "select",
-      "canonical": "region",
-      "required": false,
-      "autocomplete": null,
-      "placeholder": null,
-      "options": [
-       "AL",
-       "AK",
-       "AZ",
-       "AR",
-       "CA",
-       "CO",
-       "CT",
-       "DC",
-       "DE",
-       "FL",
-       "GA",
-       "HI",
-       "ID",
-       "IL",
-       "IN",
-       "IA",
-       "KS",
-       "KY",
-       "LA",
-       "ME",
-       "MD",
-       "MA",
-       "MI",
-       "MN",
-       "MS",
-       "MO",
-       "MT",
-       "NE",
-       "NV",
-       "NH"
-      ]
-     }
-    ],
+    "form_fields": [],
     "csrf_field_name": null,
     "requires_profile_url": null,
     "captcha": {
@@ -59828,19 +60147,11 @@
      "liveness": "alive"
     },
     {
-     "url": "https://publicrecords.searchsystems.net/opt-out.php",
-     "final_url": "https://www.searchsystems.net/privacy",
-     "status": 200,
-     "role": "catalog",
-     "title": "Privacy Policy — SearchSystems.net",
-     "liveness": "alive"
-    },
-    {
      "url": "https://www.searchsystems.net/privacy",
      "final_url": "https://www.searchsystems.net/privacy",
      "status": 200,
-     "role": "privacy",
-     "title": "Privacy Policy — SearchSystems.net",
+     "role": "catalog",
+     "title": "Privacy Policy | SearchSystems.net",
      "liveness": "alive"
     },
     {
@@ -59856,7 +60167,7 @@
      "final_url": "https://www.searchsystems.net/terms",
      "status": 200,
      "role": "legal",
-     "title": "Terms of Service — SearchSystems.net",
+     "title": "Terms of Service | SearchSystems.net",
      "liveness": "alive"
     }
    ]
@@ -79259,9 +79570,9 @@
    "name": "PeopleWhiz network (mashpanel.com)",
    "category": "people-search",
    "domain": "mashpanel.com",
-   "checked_at": "2026-10-12T23:20:27+00:00",
+   "checked_at": "2026-11-02T01:18:10+00:00",
    "liveness": "alive",
-   "liveness_detail": "catalog URL redirected and the final page loaded",
+   "liveness_detail": "catalog URL loaded",
    "homepage": "https://www.mashpanel.com/",
    "logo_url": "https://www.mashpanel.com/images/logo.png",
    "images": [
@@ -79310,7 +79621,7 @@
     "login_wall": null
    },
    "removal": {
-    "url": "https://www.mashpanel.com/remove.php",
+    "url": "https://www.mashpanel.com/remove",
     "final_url": "https://www.mashpanel.com/remove",
     "http_status": 200,
     "kinds": [
@@ -79374,11 +79685,11 @@
    "pages": [
     {
      "url": "https://mashpanel.com/",
-     "final_url": "https://www.mashpanel.com/",
-     "status": 200,
+     "final_url": "http://www.mashpanel.com/",
+     "status": 500,
      "role": "home",
-     "title": "Usa People Search for free on mashpanel.com",
-     "liveness": "alive"
+     "title": "",
+     "liveness": "error"
     },
     {
      "url": "https://www.mashpanel.com/",
@@ -79389,18 +79700,10 @@
      "liveness": "alive"
     },
     {
-     "url": "https://www.mashpanel.com/remove.php",
-     "final_url": "https://www.mashpanel.com/remove",
-     "status": 200,
-     "role": "catalog",
-     "title": "Remove a listing from Mashpanel.com",
-     "liveness": "alive"
-    },
-    {
      "url": "https://www.mashpanel.com/remove",
      "final_url": "https://www.mashpanel.com/remove",
      "status": 200,
-     "role": "other",
+     "role": "catalog",
      "title": "Remove a listing from Mashpanel.com",
      "liveness": "alive"
     },
@@ -117792,7 +118095,7 @@
    "name": "Live Data Technologies, Inc.",
    "category": "other",
    "domain": "livedatatech.com",
-   "checked_at": "2026-10-30T03:05:44+00:00",
+   "checked_at": "2026-11-02T01:18:56+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -119068,9 +119371,9 @@
    "name": "Quadrant Global Pte. Ltd.",
    "category": "other",
    "domain": "quadrant.io",
-   "checked_at": "2026-10-12T23:24:10+00:00",
+   "checked_at": "2026-11-02T01:18:14+00:00",
    "liveness": "alive",
-   "liveness_detail": "catalog URL redirected and the final page loaded",
+   "liveness_detail": "catalog URL loaded",
    "homepage": "https://www.quadrant.io/",
    "logo_url": "https://www.quadrant.io/hs-fs/hubfs/Quadrant-assets/Q%20Logos/Quadrant%20web%20logo%20NEW.png?width=800&height=266&name=Quadrant%20web%20logo%20NEW.png",
    "images": [
@@ -119177,7 +119480,7 @@
     "login_wall": null
    },
    "removal": {
-    "url": "https://www.quadrant.io/limit-data-privacy-request",
+    "url": "https://www.quadrant.io/privacy-policy",
     "final_url": "https://www.quadrant.io/privacy-policy",
     "http_status": 200,
     "kinds": [
@@ -119257,18 +119560,10 @@
      "liveness": "alive"
     },
     {
-     "url": "https://www.quadrant.io/limit-data-privacy-request",
-     "final_url": "https://www.quadrant.io/privacy-policy",
-     "status": 200,
-     "role": "catalog",
-     "title": "Quadrant | Privacy Policy",
-     "liveness": "alive"
-    },
-    {
      "url": "https://www.quadrant.io/privacy-policy",
      "final_url": "https://www.quadrant.io/privacy-policy",
      "status": 200,
-     "role": "privacy",
+     "role": "catalog",
      "title": "Quadrant | Privacy Policy",
      "liveness": "alive"
     },
@@ -154623,7 +154918,7 @@
    "name": "Data Axle Canada",
    "category": "marketing",
    "domain": "dataaxlecanada.ca",
-   "checked_at": "2026-10-30T03:05:55+00:00",
+   "checked_at": "2026-11-02T01:19:06+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -154690,7 +154985,7 @@
    "name": "Prospects Influential",
    "category": "marketing",
    "domain": "prospectsinfluential.com",
-   "checked_at": "2026-10-30T03:05:55+00:00",
+   "checked_at": "2026-11-02T01:19:06+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -154757,7 +155052,7 @@
    "name": "Openroom",
    "category": "background-checks",
    "domain": "openroom.ca",
-   "checked_at": "2026-10-30T03:05:55+00:00",
+   "checked_at": "2026-11-02T01:19:06+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -154824,7 +155119,7 @@
    "name": "Landlord Credit Bureau",
    "category": "credit-financial",
    "domain": "landlordcreditbureau.ca",
-   "checked_at": "2026-10-30T03:05:55+00:00",
+   "checked_at": "2026-11-02T01:19:06+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -154891,7 +155186,7 @@
    "name": "FrontLobby",
    "category": "credit-financial",
    "domain": "frontlobby.com",
-   "checked_at": "2026-10-30T03:05:55+00:00",
+   "checked_at": "2026-11-02T01:19:06+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -154958,7 +155253,7 @@
    "name": "Echovita",
    "category": "people-search",
    "domain": "echovita.com",
-   "checked_at": "2026-10-30T03:05:55+00:00",
+   "checked_at": "2026-11-02T01:19:06+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -155025,7 +155320,7 @@
    "name": "InMemoriam",
    "category": "people-search",
    "domain": "inmemoriam.ca",
-   "checked_at": "2026-10-30T03:05:55+00:00",
+   "checked_at": "2026-11-02T01:19:06+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -155092,7 +155387,7 @@
    "name": "Nécrologie.ca",
    "category": "people-search",
    "domain": "necrologie.ca",
-   "checked_at": "2026-10-30T03:05:55+00:00",
+   "checked_at": "2026-11-02T01:19:06+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -155159,7 +155454,7 @@
    "name": "Geni",
    "category": "people-search",
    "domain": "geni.com",
-   "checked_at": "2026-10-30T03:05:55+00:00",
+   "checked_at": "2026-11-02T01:19:06+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -155226,7 +155521,7 @@
    "name": "FQSG Avis de décès",
    "category": "people-search",
    "domain": "federationgenealogie.qc.ca",
-   "checked_at": "2026-10-30T03:05:55+00:00",
+   "checked_at": "2026-11-02T01:19:06+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -155293,7 +155588,7 @@
    "name": "Domaine funéraire (Corporation des thanatologues du Québec)",
    "category": "people-search",
    "domain": "domainefuneraire.com",
-   "checked_at": "2026-10-30T03:05:55+00:00",
+   "checked_at": "2026-11-02T01:19:06+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -155360,7 +155655,7 @@
    "name": "Canadian Obituaries",
    "category": "people-search",
    "domain": "canadianobituaries.com",
-   "checked_at": "2026-10-30T03:05:55+00:00",
+   "checked_at": "2026-11-02T01:19:06+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -155427,7 +155722,7 @@
    "name": "Coopérative funéraire du Grand Montréal",
    "category": "people-search",
    "domain": "cfgrandmontreal.com",
-   "checked_at": "2026-10-30T03:05:55+00:00",
+   "checked_at": "2026-11-02T01:19:06+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -155494,7 +155789,7 @@
    "name": "Coopérative funéraire des Deux Rives",
    "category": "people-search",
    "domain": "coopfuneraire2rives.com",
-   "checked_at": "2026-10-30T03:05:55+00:00",
+   "checked_at": "2026-11-02T01:19:06+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -155561,7 +155856,7 @@
    "name": "Alliance funéraire du Royaume",
    "category": "people-search",
    "domain": "afdr.coop",
-   "checked_at": "2026-10-30T03:05:55+00:00",
+   "checked_at": "2026-11-02T01:19:06+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -155628,7 +155923,7 @@
    "name": "Coopérative funéraire de l'Abitibi",
    "category": "people-search",
    "domain": "cfa.coop",
-   "checked_at": "2026-10-30T03:05:55+00:00",
+   "checked_at": "2026-11-02T01:19:06+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -155695,7 +155990,7 @@
    "name": "Coopérative funéraire Haute-Côte-Nord - Manicouagan",
    "category": "people-search",
    "domain": "cfhcn.ca",
-   "checked_at": "2026-10-30T03:05:55+00:00",
+   "checked_at": "2026-11-02T01:19:06+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -155762,7 +156057,7 @@
    "name": "Coopérative funéraire de l'Outaouais",
    "category": "people-search",
    "domain": "cfo.coop",
-   "checked_at": "2026-10-30T03:05:55+00:00",
+   "checked_at": "2026-11-02T01:19:06+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -155829,7 +156124,7 @@
    "name": "Coopérative funéraire de l'Estrie",
    "category": "people-search",
    "domain": "coopfuneraireestrie.com",
-   "checked_at": "2026-10-30T03:05:55+00:00",
+   "checked_at": "2026-11-02T01:19:06+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -155896,7 +156191,7 @@
    "name": "Résidence funéraire Lac St-Jean",
    "category": "people-search",
    "domain": "residencefunerairelacstjean.com",
-   "checked_at": "2026-10-30T03:05:55+00:00",
+   "checked_at": "2026-11-02T01:19:06+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -155963,7 +156258,7 @@
    "name": "Coopérative funéraire Brunet",
    "category": "people-search",
    "domain": "coopfbrunet.com",
-   "checked_at": "2026-10-30T03:05:55+00:00",
+   "checked_at": "2026-11-02T01:19:06+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -156030,7 +156325,7 @@
    "name": "Coopérative funéraire Matawinie-Montcalm",
    "category": "people-search",
    "domain": "cfmm.coop",
-   "checked_at": "2026-10-30T03:05:55+00:00",
+   "checked_at": "2026-11-02T01:19:06+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -156097,7 +156392,7 @@
    "name": "Coopérative funéraire des Laurentides",
    "category": "people-search",
    "domain": "coopfunerairelaurentides.org",
-   "checked_at": "2026-10-30T03:05:55+00:00",
+   "checked_at": "2026-11-02T01:19:06+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -156164,7 +156459,7 @@
    "name": "Résidence Funéraire Maska",
    "category": "people-search",
    "domain": "rfmaska.coop",
-   "checked_at": "2026-10-30T03:05:55+00:00",
+   "checked_at": "2026-11-02T01:19:06+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -156231,7 +156526,7 @@
    "name": "Dignity Memorial",
    "category": "people-search",
    "domain": "dignitymemorial.com",
-   "checked_at": "2026-10-30T03:05:55+00:00",
+   "checked_at": "2026-11-02T01:19:06+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -156298,7 +156593,7 @@
    "name": "Interment.net",
    "category": "people-search",
    "domain": "interment.net",
-   "checked_at": "2026-10-30T03:05:55+00:00",
+   "checked_at": "2026-11-02T01:19:06+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -156365,7 +156660,7 @@
    "name": "Mount Pleasant Group",
    "category": "people-search",
    "domain": "mountpleasantgroup.com",
-   "checked_at": "2026-10-30T03:05:55+00:00",
+   "checked_at": "2026-11-02T01:19:06+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -156432,7 +156727,7 @@
    "name": "Kearney Funeral Services",
    "category": "people-search",
    "domain": "kearneyfs.com",
-   "checked_at": "2026-10-30T03:05:55+00:00",
+   "checked_at": "2026-11-02T01:19:06+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -156499,7 +156794,7 @@
    "name": "Basic Funerals",
    "category": "people-search",
    "domain": "basicfunerals.ca",
-   "checked_at": "2026-10-30T03:05:55+00:00",
+   "checked_at": "2026-11-02T01:19:06+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
@@ -156566,7 +156861,7 @@
    "name": "Le Nécrologue",
    "category": "people-search",
    "domain": "lenecrologue.com",
-   "checked_at": "2026-10-30T03:05:55+00:00",
+   "checked_at": "2026-11-02T01:19:06+00:00",
    "liveness": "not_checked",
    "liveness_detail": "no crawl result in this log",
    "homepage": null,
