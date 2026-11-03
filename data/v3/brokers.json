@@ -1,13 +1,13 @@
 {
  "schema_version": "3.0.0",
- "checked_at": "2026-11-03T22:42:23+00:00",
+ "checked_at": "2026-11-03T22:44:43+00:00",
  "method": "Public pages only: homepage, catalog URL, and mapped privacy, contact, and legal links. robots.txt honored. No form submitted, no login, no CAPTCHA solved. A browser opened lookup homepages the static fetch never read, and catalog URLs that were blocked or failed, when robots.txt allowed the URL. Image fields are URLs, not copied files. People-search listing URLs are not stored. Null means the fetched page did not establish that fact. Every catalog id has a record.",
  "broker_count": 841,
  "counts": {
   "liveness": {
-   "alive": 680,
+   "alive": 679,
    "blocked": 50,
-   "error": 21,
+   "error": 22,
    "opt_out_missing": 1,
    "robots_disallowed": 89
   },
@@ -14935,7 +14935,7 @@
   "bh-marketing-group-llc": {
    "schema_version": "3.0.0",
    "id": "bh-marketing-group-llc",
-   "name": "BH MARKETING GROUP LLC",
+   "name": "BH Marketing Group LLC",
    "category": "marketing",
    "domain": "usmarketinggrp.com",
    "checked_at": "2026-10-12T23:27:59+00:00",
@@ -36408,7 +36408,7 @@
   "datonics-llc": {
    "schema_version": "3.0.0",
    "id": "datonics-llc",
-   "name": "DATONICS LLC",
+   "name": "Datonics LLC",
    "category": "other",
    "domain": "datonics.com",
    "checked_at": "2026-10-12T23:14:58+00:00",
@@ -41357,7 +41357,7 @@
   "forewarn-llc": {
    "schema_version": "3.0.0",
    "id": "forewarn-llc",
-   "name": "FOREWARN, LLC",
+   "name": "Forewarn, LLC",
    "category": "other",
    "domain": "forewarn.com",
    "checked_at": "2026-10-12T23:17:05+00:00",
@@ -52076,7 +52076,7 @@
   "multimedia-lists-inc": {
    "schema_version": "3.0.0",
    "id": "multimedia-lists-inc",
-   "name": "MULTIMEDIA LISTS, INC.",
+   "name": "Multimedia Lists, Inc.",
    "category": "other",
    "domain": "multimedialists.com",
    "checked_at": "2026-10-12T23:21:14+00:00",
@@ -54410,7 +54410,7 @@
   "owmn-ltd": {
    "schema_version": "3.0.0",
    "id": "owmn-ltd",
-   "name": "OWMN, LTD.",
+   "name": "OWMN, Ltd.",
    "category": "other",
    "domain": "thebridgecorp.com",
    "checked_at": "2026-10-12T23:27:20+00:00",
@@ -74206,8 +74206,8 @@
    "category": "people-search",
    "domain": "findpeoplesearch.com",
    "checked_at": "2026-10-12T23:16:39+00:00",
-   "liveness": "alive",
-   "liveness_detail": "catalog URL loaded",
+   "liveness": "error",
+   "liveness_detail": "catalog URL was not fetched",
    "homepage": "https://findpeoplesearch.com/",
    "logo_url": null,
    "images": [],
@@ -74226,9 +74226,9 @@
     "login_wall": null
    },
    "removal": {
-    "url": "http://www.findpeoplesearch.com/customerservice/",
-    "final_url": "http://www.findpeoplesearch.com/customerservice/",
-    "http_status": 200,
+    "url": "https://www.findpeoplesearch.com/customerservice/",
+    "final_url": null,
+    "http_status": null,
     "kinds": [
      "opt_out"
     ],
@@ -111653,7 +111653,7 @@
   "becausal-inc": {
    "schema_version": "3.0.0",
    "id": "becausal-inc",
-   "name": "BECAUSAL, INC.",
+   "name": "Becausal, Inc.",
    "category": "other",
    "domain": "becausal.com",
    "checked_at": "2026-10-12T23:12:05+00:00",
@@ -116914,7 +116914,7 @@
   "jdm-list-services": {
    "schema_version": "3.0.0",
    "id": "jdm-list-services",
-   "name": "JDM LIST SERVICES",
+   "name": "JDM List Services",
    "category": "other",
    "domain": "jdmlistservices.com",
    "checked_at": "2026-10-12T23:18:58+00:00",
@@ -117168,7 +117168,7 @@
   "lead-enhance-llc": {
    "schema_version": "3.0.0",
    "id": "lead-enhance-llc",
-   "name": "LEAD ENHANCE LLC",
+   "name": "Lead Enhance LLC",
    "category": "other",
    "domain": "lead-enhance.com",
    "checked_at": "2026-10-12T23:19:28+00:00",
@@ -121057,7 +121057,7 @@
   "semantiq-inc": {
    "schema_version": "3.0.0",
    "id": "semantiq-inc",
-   "name": "SEMANTIQ INC",
+   "name": "Semantiq Inc",
    "category": "other",
    "domain": "semantiqhealth.com",
    "checked_at": "2026-10-12T23:25:32+00:00",

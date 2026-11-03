@@ -1,6 +1,6 @@
 {
  "schema_version": "4.0.0",
- "checked_at": "2026-11-03T22:43:01+00:00",
+ "checked_at": "2026-11-03T22:45:22+00:00",
  "method": "v3 records, with privacy and removal mailboxes on another domain kept as related_domain. Brokers whose loaded pages published no removal channel were crawled again for unfetched same-site opt-out and privacy URLs, then the catalog URL and homepage were opened once in a browser when those pages still showed no form. That recrawl honors robots.txt. A later pass reads the catalog URL and homepage of brokers whose robots.txt had disallowed the research client. A search pass reads homepages whose public search form was missing, including pages robots.txt had disallowed, and stores a name, phone, or address form. Those passes submit no form, no login, and no CAPTCHA. A legal pass re-reads stored privacy and terms text and fetches an unread privacy or terms page when robots.txt allows it. A network pass looks up public DNS and the site certificate, and reads response headers for the removal URL when robots.txt allows it. A later pass adds IPv6, SPF, DMARC, DKIM selectors, CAA, DNSSEC, the address block, certificate dates, RDAP registration, and the removal response's security headers. A captcha pass re-reads the removal URL and the search page for a widget. A browser reads the page when the static HTML has no widget and the page has a removal form, a stored CAPTCHA, or a public search form. A later pass reads the public widget settings, including whether it is a checkbox, an invisible check, or a score. A form pass re-reads stored search and removal forms for labels, limits, autocomplete, the submit button, and hidden field names. A browser opens when the static HTML does not contain the stored fields. Nothing is submitted. A search test then submits one synthetic query on each broker whose search and removal are both fillable, or with --searchable on each broker with a public search. A robots.txt disallow does not stop the test or count against a search; when --robots is set the log only notes it as robots_disallowed. Brokers whose homepage robots.txt disallowed the research client were later opened in a browser, and their liveness is the result of that read. Removal forms are not submitted and CAPTCHAs are not solved. search_test is on every broker. It stores the outcome, status, field names, the first path segment, the page kind, and a result count when the page states one. A loader page is followed to the count endpoint. The response body, record text, and listing URLs are not stored.",
  "broker_count": 841,
  "counts": {
@@ -20934,7 +20934,7 @@
   "bh-marketing-group-llc": {
    "schema_version": "4.0.0",
    "id": "bh-marketing-group-llc",
-   "name": "BH MARKETING GROUP LLC",
+   "name": "BH Marketing Group LLC",
    "category": "marketing",
    "domain": "usmarketinggrp.com",
    "checked_at": "2026-10-12T23:27:59+00:00",
@@ -56537,7 +56537,7 @@
   "datonics-llc": {
    "schema_version": "4.0.0",
    "id": "datonics-llc",
-   "name": "DATONICS LLC",
+   "name": "Datonics LLC",
    "category": "other",
    "domain": "datonics.com",
    "checked_at": "2026-10-12T23:14:58+00:00",
@@ -66145,7 +66145,7 @@
   "forewarn-llc": {
    "schema_version": "4.0.0",
    "id": "forewarn-llc",
-   "name": "FOREWARN, LLC",
+   "name": "Forewarn, LLC",
    "category": "other",
    "domain": "forewarn.com",
    "checked_at": "2026-10-12T23:17:05+00:00",
@@ -87104,7 +87104,7 @@
   "multimedia-lists-inc": {
    "schema_version": "4.0.0",
    "id": "multimedia-lists-inc",
-   "name": "MULTIMEDIA LISTS, INC.",
+   "name": "Multimedia Lists, Inc.",
    "category": "other",
    "domain": "multimedialists.com",
    "checked_at": "2026-10-12T23:21:14+00:00",
@@ -91679,7 +91679,7 @@
   "owmn-ltd": {
    "schema_version": "4.0.0",
    "id": "owmn-ltd",
-   "name": "OWMN, LTD.",
+   "name": "OWMN, Ltd.",
    "category": "other",
    "domain": "thebridgecorp.com",
    "checked_at": "2026-10-12T23:27:20+00:00",
@@ -129676,9 +129676,9 @@
     "captcha_detail": null
    },
    "removal": {
-    "url": "http://www.findpeoplesearch.com/customerservice/",
-    "final_url": "http://www.findpeoplesearch.com/customerservice/",
-    "http_status": 200,
+    "url": "https://www.findpeoplesearch.com/customerservice/",
+    "final_url": null,
+    "http_status": null,
     "kinds": [
      "opt_out"
     ],
@@ -129816,8 +129816,8 @@
    "request": {
     "removal_host": "findpeoplesearch.com",
     "same_site": true,
-    "https": false,
-    "redirected": false,
+    "https": true,
+    "redirected": null,
     "redirect_count": 0,
     "form_enctype": null,
     "content_type": "text/html",
@@ -214107,7 +214107,7 @@
   "becausal-inc": {
    "schema_version": "4.0.0",
    "id": "becausal-inc",
-   "name": "BECAUSAL, INC.",
+   "name": "Becausal, Inc.",
    "category": "other",
    "domain": "becausal.com",
    "checked_at": "2026-10-12T23:12:05+00:00",
@@ -224369,7 +224369,7 @@
   "jdm-list-services": {
    "schema_version": "4.0.0",
    "id": "jdm-list-services",
-   "name": "JDM LIST SERVICES",
+   "name": "JDM List Services",
    "category": "other",
    "domain": "jdmlistservices.com",
    "checked_at": "2026-10-12T23:18:58+00:00",
@@ -224935,7 +224935,7 @@
   "lead-enhance-llc": {
    "schema_version": "4.0.0",
    "id": "lead-enhance-llc",
-   "name": "LEAD ENHANCE LLC",
+   "name": "Lead Enhance LLC",
    "category": "other",
    "domain": "lead-enhance.com",
    "checked_at": "2026-10-12T23:19:28+00:00",
@@ -232070,7 +232070,7 @@
   "semantiq-inc": {
    "schema_version": "4.0.0",
    "id": "semantiq-inc",
-   "name": "SEMANTIQ INC",
+   "name": "Semantiq Inc",
    "category": "other",
    "domain": "semantiqhealth.com",
    "checked_at": "2026-10-12T23:25:32+00:00",
