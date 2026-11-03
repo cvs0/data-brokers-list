@@ -1,6 +1,6 @@
 {
  "schema_version": "3.0.0",
- "checked_at": "2026-11-03T22:44:43+00:00",
+ "checked_at": "2026-11-03T22:49:00+00:00",
  "method": "Public pages only: homepage, catalog URL, and mapped privacy, contact, and legal links. robots.txt honored. No form submitted, no login, no CAPTCHA solved. A browser opened lookup homepages the static fetch never read, and catalog URLs that were blocked or failed, when robots.txt allowed the URL. Image fields are URLs, not copied files. People-search listing URLs are not stored. Null means the fetched page did not establish that fact. Every catalog id has a record.",
  "broker_count": 841,
  "counts": {
@@ -13,8 +13,8 @@
   },
   "with_logo": 719,
   "with_image": 719,
-  "with_search": 442,
-  "with_email": 388,
+  "with_search": 441,
+  "with_email": 387,
   "with_captcha": 340,
   "with_form": 163
  },
@@ -11391,53 +11391,13 @@
    "id": "experian-health-inc",
    "name": "Experian Health, Inc.",
    "category": "credit-financial",
-   "domain": "experian.com",
-   "checked_at": "2026-10-12T23:16:16+00:00",
+   "domain": "consumerprivacy.experian.com",
+   "checked_at": "2026-10-12T23:14:00+00:00",
    "liveness": "alive",
    "liveness_detail": "catalog URL loaded",
-   "homepage": "https://www.experian.com/",
-   "logo_url": "https://www.experian.com/static/shared/logos/logo-experian.svg",
+   "homepage": "https://consumerprivacy.experian.com/",
+   "logo_url": "https://consumerprivacy.experian.com/assets/images/favicons/favicon-16x16.png",
    "images": [
-    {
-     "url": "https://www.experian.com/favicon.ico",
-     "kind": "icon",
-     "source_page": "https://www.experian.com/"
-    },
-    {
-     "url": "https://www.experian.com/favicon-16x16.png",
-     "kind": "icon",
-     "source_page": "https://www.experian.com/"
-    },
-    {
-     "url": "https://www.experian.com/favicon-32x32.png",
-     "kind": "icon",
-     "source_page": "https://www.experian.com/"
-    },
-    {
-     "url": "https://www.experian.com/favicon-192x192.png",
-     "kind": "icon",
-     "source_page": "https://www.experian.com/"
-    },
-    {
-     "url": "https://www.experian.com/favicon-512x512.png",
-     "kind": "icon",
-     "source_page": "https://www.experian.com/"
-    },
-    {
-     "url": "https://www.experian.com/static/shared/social/social-experian-generic.webp",
-     "kind": "og_image",
-     "source_page": "https://www.experian.com/"
-    },
-    {
-     "url": "https://www.experian.com/static/shared/logos/logo-experian.svg",
-     "kind": "logo",
-     "source_page": "https://www.experian.com/"
-    },
-    {
-     "url": "https://www.experian.com/content/dam/marketing/na/social/experian-og-image.png",
-     "kind": "og_image",
-     "source_page": "https://www.experian.com/privacy/opting_out"
-    },
     {
      "url": "https://consumerprivacy.experian.com/assets/images/favicons/favicon-16x16.png",
      "kind": "icon",
@@ -11457,34 +11417,20 @@
      "url": "https://consumerprivacy.experian.com/assets/images/favicons/favicon-194x194.png",
      "kind": "icon",
      "source_page": "https://consumerprivacy.experian.com/"
-    },
-    {
-     "url": "https://www.experian.com/blogs/ask-experian/wp-content/uploads/opt-out.jpg",
-     "kind": "og_image",
-     "source_page": "https://www.experian.com/blogs/ask-experian/credit-education/faqs/preapproved-credit-offers/opt-out/"
     }
    ],
    "theme_color": null,
    "languages": [
     "en"
    ],
-   "legal_name": "Experian",
+   "legal_name": null,
    "search": {
-    "available": true,
-    "method": "http_get",
-    "page_url": "https://www.experian.com/",
-    "form_action": "https://www.experian.com/",
-    "inputs": [
-     {
-      "name": "q",
-      "type": "text",
-      "canonical": "full_name",
-      "required": false,
-      "autocomplete": null,
-      "placeholder": "Search"
-     }
-    ],
-    "url_pattern": "https://www.experian.com/?q={q}",
+    "available": false,
+    "method": "none",
+    "page_url": null,
+    "form_action": null,
+    "inputs": [],
+    "url_pattern": null,
     "directory_prefixes": [],
     "paywall": null,
     "login_wall": null
@@ -11496,21 +11442,9 @@
     "kinds": [
      "opt_out"
     ],
-    "channels": [
-     "email",
-     "phone"
-    ],
-    "emails": [
-     {
-      "email": "optout@experian.com",
-      "confidence": "extracted",
-      "source_url": "https://www.experian.com/privacy/opt-out-targeted-advertising"
-     }
-    ],
-    "phones": [
-     "888-567-8688",
-     "1-888-567-8688"
-    ],
+    "channels": [],
+    "emails": [],
+    "phones": [],
     "postal_address": null,
     "portal": null,
     "form_fields": [],
@@ -11532,85 +11466,30 @@
     "outcome": "none"
    },
    "legal": {
-    "privacy_policy_url": "https://www.experian.com/privacy/opting_out",
+    "privacy_policy_url": "https://consumerprivacy.experian.com/",
     "terms_url": null,
     "automation_prohibited": null,
     "automation_clause": null,
-    "residency": [
-     "US",
-     "GB"
-    ],
+    "residency": [],
     "authorized_agent": null,
-    "data_categories": [
-     "identifiers",
-     "internet_activity",
-     "sensitive"
-    ]
+    "data_categories": []
    },
    "pages": [
-    {
-     "url": "https://experian.com/",
-     "final_url": "https://www.experian.com/",
-     "status": 200,
-     "role": "home",
-     "title": "Experian: Credit Report, FICO® Score & Financial Tools",
-     "liveness": "alive"
-    },
-    {
-     "url": "https://www.experian.com/",
-     "final_url": "https://www.experian.com/",
-     "status": 200,
-     "role": "home",
-     "title": "Experian: Credit Report, FICO® Score & Financial Tools",
-     "liveness": "alive"
-    },
-    {
-     "url": "https://www.experian.com/privacy/opting_out",
-     "final_url": "https://www.experian.com/privacy/opting_out",
-     "status": 200,
-     "role": "catalog",
-     "title": "Privacy Policy at Experian.com",
-     "liveness": "alive"
-    },
     {
      "url": "https://consumerprivacy.experian.com/",
      "final_url": "https://consumerprivacy.experian.com/",
      "status": 200,
-     "role": "other",
+     "role": "home",
      "title": "Experian - Consumer Privacy Application",
      "liveness": "alive"
     },
     {
-     "url": "https://www.experian.com/blogs/ask-experian/credit-education/faqs/preapproved-credit-offers/opt-out/",
-     "final_url": "https://www.experian.com/blogs/ask-experian/credit-education/faqs/preapproved-credit-offers/opt-out/",
-     "status": 200,
-     "role": "opt_out",
-     "title": "How to Opt Out of Preapproved Credit Offers",
-     "liveness": "alive"
-    },
-    {
-     "url": "https://www.experian.com/privacy/opt-out-targeted-advertising",
-     "final_url": "https://www.experian.com/privacy/opt-out-targeted-advertising",
-     "status": 200,
-     "role": "privacy",
-     "title": "Privacy Policy at Experian.com",
-     "liveness": "alive"
-    },
-    {
-     "url": "https://www.experian.com/protection/personal-privacy-scan/",
-     "final_url": "https://www.experian.com/protection/personal-privacy-scan/",
-     "status": 200,
-     "role": "other",
-     "title": "Personal Privacy Scan - Experian",
-     "liveness": "alive"
-    },
-    {
-     "url": "https://www.experian.com/privacy/index",
-     "final_url": "https://www.experian.com/privacy/index",
-     "status": 200,
-     "role": "privacy",
-     "title": "Pardon Our Interruption",
-     "liveness": "alive"
+     "url": "https://www.consumerprivacy.experian.com/",
+     "final_url": null,
+     "status": null,
+     "role": "home",
+     "title": "",
+     "liveness": "dead"
     }
    ]
   },

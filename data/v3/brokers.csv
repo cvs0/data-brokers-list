@@ -40,7 +40,7 @@ wyoming-arrests,Wyoming Arrests,wyomingarrests.org,alive,https://www.wyomingarre
 chexsystems,ChexSystems,chexsystems.com,robots_disallowed,,unknown,,https://www.chexsystems.com/optout,,,,
 equifax,Equifax,equifax.com,alive,https://assets.equifax.com/images/us/personal-misc/myEquifax-logo_163x44.svg,http_form_post,https://www.equifax.com/,https://myprivacy.equifax.com/opt-in-opt-out/personal-info,postal_mail;phone,,,
 experian,Experian,experian.com,alive,https://www.experian.com/static/shared/logos/logo-experian.svg,http_get,https://www.experian.com/,https://www.experian.com/privacy/opting_out,email;phone,optout@experian.com,,
-experian-health-inc,"Experian Health, Inc.",experian.com,alive,https://www.experian.com/static/shared/logos/logo-experian.svg,http_get,https://www.experian.com/,https://consumerprivacy.experian.com/,email;phone,optout@experian.com,,
+experian-health-inc,"Experian Health, Inc.",consumerprivacy.experian.com,alive,https://consumerprivacy.experian.com/assets/images/favicons/favicon-16x16.png,none,,https://consumerprivacy.experian.com/,,,,
 innovis,Innovis,innovis.com,alive,https://innovis.com/assets/innovisLogo-small-white-ce535cf2d8633c5f28e83e29a10a0952.svg,none,,https://innovis.com/home/foreign,postal_mail;phone,,,
 nctue,NCTUE,nctue.com,alive,,none,,https://nctueconsumerportal.com/,postal_mail;phone,,,
 optoutprescreen-experian-equifax-transunion-innovis,OptOutPrescreen (Experian/Equifax/TransUnion/Innovis),optoutprescreen.com,alive,,none,,https://optoutprescreen.com/,,,,
