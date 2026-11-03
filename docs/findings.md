@@ -69,17 +69,11 @@ The PIPEDA brief on priv.gc.ca loaded. Its captured text defines personal inform
 
 Shared request URLs and parsed-form families are indexed in `data/v1/workflow-groups.json`. One shared URL is one entry point. PeopleConnect's page says the suppression tool does not apply to Classmates.com or to user data; that exception is preserved. Arrests.org form families remove a commercial repost, not the government record. Catalog parenthetical brand hints remain unverified in `parent-companies.json`.
 
-## Origin mirror
-
-This agent could not update the Origin mirror at https://cursor.com/codebase/cvs0/data-brokers-list. A fetch of that URL returned HTTP 500, and this environment has no Origin write tool. GitHub `main` before this branch is commit `18faa83`, with 1122 catalog rows and `data/v1/`. The task described Origin as still on the early catalog of about 704 rows. That drift was not re-read from Origin.
-
-To sync after this pull request merges, fast-forward the Origin codebase to GitHub `main`. Confirm `opt-outs.csv` has 1122 data rows and that `data/v1/broker-opt-outs.enriched.json` is present. Do not copy a third-party opt-out guide into the mirror.
-
 ## Still unresolved
 
 - Headless-browser challenges and HTTP 403/429 responses. A residential proxy was not tested.
 - Screens behind submit buttons, email links, accounts, SMS, and CAPTCHA.
 - Whether a free search form leads to a full listing without payment. Result pages were not opened.
-- Provincial voter and commissioner pages that did not load in this environment.
+- Provincial voter and commissioner pages that did not load during this pass.
 - Sister brands that share only a catalog-name hint.
 - End-to-end acknowledgement, broker confirmation, and removal. None were tested.
