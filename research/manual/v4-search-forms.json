@@ -7910,5 +7910,26 @@
     "kind": "contact",
     "evidence": "Canadian list broker with no public person search. The catalog points at the privacy policy, which names privacy@cleanlist.ca. Nothing was submitted.",
     "country_override": true
+  },
+  "mobilemonkey-inc-customers-ai": {
+    "checked": "2026-11-02",
+    "country": "US",
+    "kind": "contact",
+    "not_a_person_search": true,
+    "evidence": "Sells marketing or audience data to business customers; there is no free public name search on the site. The catalog points at its privacy or request page. Nothing was submitted."
+  },
+  "bmg-services-llc-bulldog-media-group": {
+    "checked": "2026-11-02",
+    "country": "US",
+    "kind": "contact",
+    "not_a_person_search": true,
+    "evidence": "Sells marketing or audience data to business customers; there is no free public name search on the site. The catalog points at its privacy or request page. Nothing was submitted. Mailing address: P.O. Box #463, 114 N. Egan Avenue, Madison, SD 57042."
+  },
+  "visitiq-io": {
+    "checked": "2026-11-02",
+    "country": "US",
+    "kind": "contact",
+    "not_a_person_search": true,
+    "evidence": "The form the scan stored on the homepage is a Gravity Forms contact form, not a search for a person. The old /opt-out/ page answered HTTP 404 on 2026-11-02; the catalog now points at the privacy policy, whose opt-out section links /data-rights-and-privacy/ and gives 1-866-207-1399. Nothing was submitted."
   }
 }

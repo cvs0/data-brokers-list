@@ -69,6 +69,7 @@ allpeople-biz,AllPeople.biz,allpeople.biz,marketing,blocked,bot_wall,The opt-out
 alpine-digital-group-inc,"Alpine Digital Group, Inc.",alpinedigitalgroup.com,marketing,alive,generic_inbox,"Only a generic inbox was found, and the page does not say to use it for removal",,,,,,,contact@alpinedigitalgroup.com;compliance@alpinedigitalgroup.com,email
 amerilist,AmeriList,amerilist.com,marketing,alive,captcha_form,Removal form is behind a CAPTCHA widget and no usable removal email was found,recaptcha_v2,6LeRRncrAAAAABLtH5NrtkOt3gHnSGXuHcdCaZfu,checkbox,true,,true,info@amerilist.com,web_form;email;phone
 atdata-formerly-towerdata,AtData (formerly TowerData),atdata.com,marketing,alive,phone,The only published channel is a phone number,recaptcha_v2,6LfiqCUUAAAAAGzo0BG2sKBIF-oZVi1_rXgUm5xn,checkbox,true,,,,phone
+bmg-services-llc-bulldog-media-group,"BMG Services, LLC (Bulldog Media Group)",bulldogmediagroup.com,marketing,alive,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,,,,,
 buzzfile,Buzzfile,buzzfile.com,marketing,alive,captcha_form,Removal form is behind a CAPTCHA widget and no usable removal email was found,recaptcha_v2,,,true,,true,,web_form;phone
 catalina-marketing-corporation,Catalina Marketing Corporation,catalina.com,marketing,alive,phone,The only published channel is a phone number,,,,true,,,,phone
 cause-iq,Cause IQ,causeiq.com,marketing,alive,phone_postal,Phone and a mailing address are the only channels,,,,true,,,,postal_mail;phone
@@ -215,7 +216,7 @@ upcell-llc,"Upcell, LLC",upcell.io,other,alive,phone,The only published channel 
 uplead-llc,Uplead LLC,uplead.com,other,alive,phone,The only published channel is a phone number,,,,false,,,,phone
 user-searcher,User-Searcher,user-searcher.com,other,alive,generic_inbox,"Only a generic inbox was found, and the page does not say to use it for removal",,,,false,,,support@user-searcher.com;admin@user-searcher.com,email
 verifyrecords-infopay,VerifyRecords (InfoPay),verifyrecords.com,other,alive,generic_inbox,"Only a generic inbox was found, and the page does not say to use it for removal",,,,false,,,support@verifyrecords.com,email;postal_mail;phone
-visitiq-io,VisitIQ.io,visitiq.io,other,blocked,captcha_form,Removal form is behind a CAPTCHA widget and no usable removal email was found,hcaptcha,,,false,,true,,web_form
+visitiq-io,VisitIQ.io,visitiq.io,other,alive,captcha_form,Removal form is behind a CAPTCHA widget and no usable removal email was found,hcaptcha,0x4AAAAAABf_HxTDBjipvNr-,,false,,true,,web_form;phone
 visual-visitor-l-l-c,Visual Visitor L.L.C.,visualvisitor.com,other,alive,phone,The only published channel is a phone number,,,,true,,,,phone
 voxtur-data-services,Voxtur Data Services,benutech.com,other,error,fetch_error,The opt-out URL failed before a page was read,,,,false,,,,
 weinform-we-inform-llc,WeInform (We Inform LLC),weinform.org,other,error,fetch_error,The opt-out URL failed before a page was read,,,,false,,,,

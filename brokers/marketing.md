@@ -2,7 +2,7 @@
 
 Marketing and audience brokers. The link is an opt-out or the privacy page the company publishes for consumer requests.
 
-130 entries. Link responses were checked on 2026-10-01 unless a note says otherwise.
+132 entries. Link responses were checked on 2026-10-01 unless a note says otherwise.
 
 | Broker | Opt-out / privacy URL | Notes |
 | --- | --- | --- |
@@ -35,6 +35,7 @@ Marketing and audience brokers. The link is an opt-out or the privacy page the c
 | BH MARKETING GROUP LLC | https://usmarketinggrp.com/privacy-policy/#CCPA | Privacy notice or privacy-policy page. Use the state-rights, do-not-sell, or request section. |
 | Blue Hill Marketing Solutions, Inc | https://www.liftbasedata.com/your-privacy-choices/ | Opt-out or consumer privacy-request page. The Markup and CalMatters (2025) found page code that hid this URL from search engines. Automated check on 2026-10-01 got HTTP 403. Open the link in a browser. On 2026-10-29 the old URL (https://www.liftbasedata.com/request-to-know/) redirected here, and this page answered HTTP 200. No request was submitted. |
 | Blueprint Audiences | https://blueprintaudiences.com | Published privacy-request URL is the site root. Confirm a request form is on the page before sending information. Email: privacy@blueprintaudiences.com. Privacy-rights page submitted to the California Data Broker Registry. |
+| BMG Services, LLC (Bulldog Media Group) | https://www.bulldogmediagroup.com/privacy-policy.aspx | Marketing data company. The privacy policy says it may share, rent or sell the data it collects to third parties and lets you unsubscribe from its database by postal mail or its contact form. The site footer links a Privacy Rights Request / Consumer Data Request form at https://my.datasubject.com/AzykfeTlFAmOa2u7R/77548. Mail: BMG Services, LLC, P.O. Box #463, 114 N. Egan Avenue, Madison, SD 57042. Registered with the California data broker registry. Checked 2026-11-02: the privacy policy and the request form answered HTTP 200. No request was submitted. |
 | Bombora, Inc | https://bombora.com/privacy-philosophy/ | Opt-out or consumer privacy-request page. Automated check on 2026-10-01 got HTTP 403. Open the link in a browser. |
 | Brooks Integrated Marketing, LLC | https://www.brooksim.com/privacy-form | Opt-out or consumer privacy-request page. |
 | Buzzfile | https://www.buzzfile.com/Company/Remove | Opt-out or consumer privacy-request page. Automated check on 2026-10-01 got HTTP 403. Open the link in a browser. |
@@ -97,6 +98,7 @@ Marketing and audience brokers. The link is an opt-out or the privacy page the c
 | Merkle (Dentsu) | https://www.merkle.com/en/privacy-policy/data-product-privacy-notice/control-your-personal-information.html | Privacy notice or privacy-policy page. Use the state-rights, do-not-sell, or request section. Email: americas.dpo@dentsu.com. |
 | Milestone Marketing Solutions | https://www.milestonemarketingsolutions.com/privacy-policy | Privacy notice or privacy-policy page. Use the state-rights, do-not-sell, or request section. |
 | MMS Inc (Medical Marketing Service) | https://www.mmslists.com/privacy-policy | Healthcare marketing list company that sells physician, nurse, pharmacist, dentist and other clinician lists, email and programmatic audiences. The privacy policy says a person can ask it to delete their information or not sell it, and its Do Not Sell link opens an email to privacy@mmslists.com. Phone: (800) 633-5478. Registered with the California data broker registry. Checked 2026-11-01: the page answered HTTP 200. No request was submitted. |
+| MobileMonkey, Inc (Customers.ai) | https://customers.ai/privacy-policy | Identity resolution and website visitor identification company. The privacy policy says it collects data through tools on its customers' websites and under data licensing agreements, and that some disclosures may be a sale or sharing under state privacy laws. Requests go to info@customers.ai or through the Do Not Sell or Share / Your Privacy Choices link, which opens app.mobilemonkey.com/opt-out. The policy says it registers as a data broker where required, naming California, Texas, Oregon and Vermont. Registered with the California data broker registry. Checked 2026-11-02: the page answered HTTP 200. No request was submitted. |
 | Muraena | https://muraena.ai/optout | Opt-out or consumer privacy-request page. |
 | Network Advertising Initiative | https://thenai.org/how-to-opt-out/ | How to opt out of Network Advertising Initiative members. The NAI cookie opt-out tool ended on 2025-09-15; the page has the current instructions. Automated check on 2026-10-01 got HTTP 403. Open the link in a browser. |
 | Neustar (TransUnion) | https://privacychoices.home.neustar/ | TransUnion/Neustar privacy-choices page for marketing and identity data. A credit freeze is separate. Automated check on 2026-10-01 got HTTP 403. Open the link in a browser. |

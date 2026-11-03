@@ -1,22 +1,22 @@
 {
  "schema_version": "3.0.0",
- "checked_at": "2026-11-02T10:20:45+00:00",
+ "checked_at": "2026-11-02T19:35:56+00:00",
  "method": "Public pages only: homepage, catalog URL, and mapped privacy, contact, and legal links. robots.txt honored. No form submitted, no login, no CAPTCHA solved. A browser opened lookup homepages the static fetch never read, and catalog URLs that were blocked or failed, when robots.txt allowed the URL. Image fields are URLs, not copied files. People-search listing URLs are not stored. Null means the fetched page did not establish that fact. Every catalog id has a record.",
- "broker_count": 845,
+ "broker_count": 847,
  "counts": {
   "liveness": {
-   "alive": 682,
-   "blocked": 51,
+   "alive": 685,
+   "blocked": 50,
    "error": 22,
    "opt_out_missing": 1,
    "robots_disallowed": 89
   },
-  "with_logo": 720,
-  "with_image": 720,
-  "with_search": 442,
-  "with_email": 386,
+  "with_logo": 723,
+  "with_image": 723,
+  "with_search": 443,
+  "with_email": 387,
   "with_captcha": 344,
-  "with_form": 164
+  "with_form": 165
  },
  "brokers": {
   "alaska-arrests": {
@@ -67924,94 +67924,407 @@
    "name": "VisitIQ.io",
    "category": "other",
    "domain": "visitiq.io",
-   "checked_at": "2026-10-12T23:28:24+00:00",
-   "liveness": "blocked",
-   "liveness_detail": "catalog URL returned a bot wall or HTTP 401/403/429/503",
+   "checked_at": "2026-11-02T19:29:46+00:00",
+   "liveness": "alive",
+   "liveness_detail": "catalog URL loaded",
    "homepage": "https://visitiq.io/",
-   "logo_url": null,
-   "images": [],
+   "logo_url": "https://visitiq.io/wp-content/uploads/2025/03/VisitIQ_Brand_Logo.png",
+   "images": [
+    {
+     "url": "https://i0.wp.com/visitiq.io/wp-content/uploads/2025/03/cropped-VisitIQ_Brand_Logo.png?fit=32%2C32&ssl=1",
+     "kind": "icon",
+     "source_page": "https://visitiq.io/"
+    },
+    {
+     "url": "https://i0.wp.com/visitiq.io/wp-content/uploads/2025/03/cropped-VisitIQ_Brand_Logo.png?fit=192%2C192&ssl=1",
+     "kind": "icon",
+     "source_page": "https://visitiq.io/"
+    },
+    {
+     "url": "https://i0.wp.com/visitiq.io/wp-content/uploads/2025/03/cropped-VisitIQ_Brand_Logo.png?fit=180%2C180&ssl=1",
+     "kind": "apple_touch_icon",
+     "source_page": "https://visitiq.io/"
+    },
+    {
+     "url": "https://i0.wp.com/visitiq.io/wp-content/uploads/2025/04/VisitIQ-Logo-2025-1200-x-630-px.png",
+     "kind": "og_image",
+     "source_page": "https://visitiq.io/"
+    },
+    {
+     "url": "https://visitiq.io/wp-content/uploads/2025/04/VisitIQ-Logo-Isolated-2025-1350-x-1350-px.png",
+     "kind": "json_ld",
+     "source_page": "https://visitiq.io/"
+    },
+    {
+     "url": "https://visitiq.io/wp-content/uploads/2025/03/VisitIQ_Brand_Logo.png",
+     "kind": "logo",
+     "source_page": "https://visitiq.io/"
+    },
+    {
+     "url": "https://i0.wp.com/visitiq.io/wp-content/uploads/2025/03/carousel_logo_03.png?fit=198%2C53&ssl=1",
+     "kind": "logo",
+     "source_page": "https://visitiq.io/"
+    },
+    {
+     "url": "https://i0.wp.com/visitiq.io/wp-content/uploads/2025/03/carousel_logo_04.png?fit=198%2C53&ssl=1",
+     "kind": "logo",
+     "source_page": "https://visitiq.io/"
+    },
+    {
+     "url": "https://i0.wp.com/visitiq.io/wp-content/uploads/2025/03/carousel_logo_07.png?fit=198%2C53&ssl=1",
+     "kind": "logo",
+     "source_page": "https://visitiq.io/"
+    },
+    {
+     "url": "https://i0.wp.com/visitiq.io/wp-content/uploads/2025/03/carousel_logo_06.png?fit=198%2C53&ssl=1",
+     "kind": "logo",
+     "source_page": "https://visitiq.io/"
+    },
+    {
+     "url": "https://i0.wp.com/visitiq.io/wp-content/uploads/2025/03/carousel_logo_01.png?fit=198%2C53&ssl=1",
+     "kind": "logo",
+     "source_page": "https://visitiq.io/"
+    },
+    {
+     "url": "https://i0.wp.com/visitiq.io/wp-content/uploads/2025/03/carousel_logo_02.png?fit=198%2C53&ssl=1",
+     "kind": "logo",
+     "source_page": "https://visitiq.io/"
+    },
+    {
+     "url": "https://i0.wp.com/visitiq.io/wp-content/uploads/2025/03/carousel_logo_08.png?fit=198%2C53&ssl=1",
+     "kind": "logo",
+     "source_page": "https://visitiq.io/"
+    },
+    {
+     "url": "https://i0.wp.com/visitiq.io/wp-content/uploads/2025/03/carousel_logo_05.png?fit=198%2C53&ssl=1",
+     "kind": "logo",
+     "source_page": "https://visitiq.io/"
+    },
+    {
+     "url": "https://i0.wp.com/visitiq.io/wp-content/uploads/2025/12/Screenshot-2025-12-17-at-3.11.26-PM.png",
+     "kind": "og_image",
+     "source_page": "https://visitiq.io/privacy-policy/"
+    }
+   ],
    "theme_color": null,
    "languages": [
     "en"
    ],
-   "legal_name": null,
+   "legal_name": "VisitIQ",
    "search": {
-    "available": null,
-    "method": "unknown",
-    "page_url": null,
-    "form_action": null,
-    "inputs": [],
-    "url_pattern": null,
+    "available": true,
+    "method": "http_form_post",
+    "page_url": "https://visitiq.io/",
+    "form_action": "https://visitiq.io/",
+    "inputs": [
+     {
+      "name": "input_14",
+      "type": "hidden",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "input_21",
+      "type": "hidden",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "input_20",
+      "type": "hidden",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "input_22",
+      "type": "hidden",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "input_23",
+      "type": "hidden",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "input_15",
+      "type": "hidden",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "input_16",
+      "type": "hidden",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "input_17",
+      "type": "hidden",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "input_18",
+      "type": "hidden",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "input_19",
+      "type": "hidden",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "input_8.3",
+      "type": "text",
+      "canonical": "first_name",
+      "required": false,
+      "autocomplete": null,
+      "placeholder": "First Name (required)*"
+     },
+     {
+      "name": "input_8.6",
+      "type": "text",
+      "canonical": "last_name",
+      "required": false,
+      "autocomplete": null,
+      "placeholder": "Last Name (required)*"
+     },
+     {
+      "name": "input_9",
+      "type": "email",
+      "canonical": "email",
+      "required": false,
+      "autocomplete": null,
+      "placeholder": "Enter your email (required)*"
+     },
+     {
+      "name": "input_13",
+      "type": "tel",
+      "canonical": "phone",
+      "required": false,
+      "autocomplete": null,
+      "placeholder": "Enter your phone number"
+     },
+     {
+      "name": "input_6",
+      "type": "text",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": "Enter your company name"
+     },
+     {
+      "name": "gform_submission_method",
+      "type": "hidden",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "gform_theme",
+      "type": "hidden",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "gform_style_settings",
+      "type": "hidden",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "is_submit_3",
+      "type": "hidden",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "gform_submit",
+      "type": "hidden",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "gform_currency",
+      "type": "hidden",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "gform_unique_id",
+      "type": "hidden",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "state_3",
+      "type": "hidden",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "gform_target_page_number_3",
+      "type": "hidden",
+      "canonical": null,
+      "required": false,
+      "autocomplete": "off",
+      "placeholder": null
+     },
+     {
+      "name": "gform_source_page_number_3",
+      "type": "hidden",
+      "canonical": null,
+      "required": false,
+      "autocomplete": "off",
+      "placeholder": null
+     },
+     {
+      "name": "gform_field_values",
+      "type": "hidden",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "ak_hp_textarea",
+      "type": "text",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "ak_js",
+      "type": "hidden",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     }
+    ],
+    "url_pattern": "https://visitiq.io/",
     "directory_prefixes": [],
     "paywall": null,
     "login_wall": null
    },
    "removal": {
-    "url": "https://visitiq.io/opt-out/",
-    "final_url": "https://visitiq.io/opt-out/",
-    "http_status": 403,
+    "url": "https://visitiq.io/privacy-policy/",
+    "final_url": "https://visitiq.io/privacy-policy/",
+    "http_status": 200,
     "kinds": [
      "opt_out"
     ],
     "channels": [
-     "web_form"
+     "web_form",
+     "phone"
     ],
     "emails": [],
-    "phones": [],
+    "phones": [
+     "1-866-207-1399"
+    ],
     "postal_address": null,
     "portal": null,
     "form_fields": [
      {
-      "name": "ak_hp_textarea",
-      "type": "textarea",
-      "canonical": null,
-      "required": false,
-      "autocomplete": null,
-      "placeholder": "Δ"
-     },
-     {
-      "name": "names[first_name]",
+      "name": "input_8.3",
       "type": "text",
       "canonical": "first_name",
       "required": false,
       "autocomplete": null,
-      "placeholder": "First Name"
+      "placeholder": "First Name (required)*"
      },
      {
-      "name": "names_1[last_name]",
+      "name": "input_8.6",
       "type": "text",
       "canonical": "last_name",
       "required": false,
       "autocomplete": null,
-      "placeholder": "Last Name"
+      "placeholder": "Last Name (required)*"
      },
      {
-      "name": "email",
+      "name": "input_9",
       "type": "email",
       "canonical": "email",
       "required": false,
       "autocomplete": null,
-      "placeholder": "Email"
+      "placeholder": "Enter your email (required)*"
      },
      {
-      "name": "checkbox[]",
-      "type": "checkbox",
+      "name": "input_13",
+      "type": "tel",
+      "canonical": "phone",
+      "required": false,
+      "autocomplete": null,
+      "placeholder": "Enter your phone number"
+     },
+     {
+      "name": "input_6",
+      "type": "text",
       "canonical": null,
       "required": false,
       "autocomplete": null,
-      "placeholder": "I confirm the name and email address I have submitted are my own or submitted on"
+      "placeholder": "Enter your company name"
+     },
+     {
+      "name": "ak_hp_textarea",
+      "type": "text",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
      }
     ],
     "csrf_field_name": null,
     "requires_profile_url": null,
     "captcha": {
      "provider": "hcaptcha",
-     "sitekey": null,
+     "sitekey": "0x4AAAAAABf_HxTDBjipvNr-",
      "pages": [
-      "https://visitiq.io/opt-out/"
+      "https://visitiq.io/",
+      "https://visitiq.io/privacy-policy/"
      ]
     },
-    "consent_vendor": null,
+    "consent_vendor": "cookiebot",
     "success_text": null,
     "suppression_not_deletion": null,
     "processing_days": null,
@@ -68019,10 +68332,10 @@
    },
    "bot_defense": {
     "vendor": null,
-    "outcome": "hard_block"
+    "outcome": "none"
    },
    "legal": {
-    "privacy_policy_url": null,
+    "privacy_policy_url": "https://visitiq.io/privacy-policy/",
     "terms_url": null,
     "automation_prohibited": null,
     "automation_clause": null,
@@ -68031,33 +68344,34 @@
     ],
     "authorized_agent": null,
     "data_categories": [
-     "identifiers"
+     "identifiers",
+     "employment"
     ]
    },
    "pages": [
     {
      "url": "https://visitiq.io/",
      "final_url": "https://visitiq.io/",
-     "status": 429,
+     "status": 200,
      "role": "home",
-     "title": "429 Too Many Requests",
-     "liveness": "blocked"
+     "title": "VisitIQ | Identity Intelligence and Activation for Marketers",
+     "liveness": "alive"
     },
     {
      "url": "https://www.visitiq.io/",
      "final_url": "https://visitiq.io/",
-     "status": 429,
+     "status": 200,
      "role": "home",
-     "title": "429 Too Many Requests",
-     "liveness": "blocked"
+     "title": "VisitIQ | Identity Intelligence and Activation for Marketers",
+     "liveness": "alive"
     },
     {
-     "url": "https://visitiq.io/opt-out/",
-     "final_url": "https://visitiq.io/opt-out/",
-     "status": 403,
+     "url": "https://visitiq.io/privacy-policy/",
+     "final_url": "https://visitiq.io/privacy-policy/",
+     "status": 200,
      "role": "catalog",
-     "title": "| VisitIQ",
-     "liveness": "blocked"
+     "title": "VisitIQ™ Data Services and Website Privacy Policy | VisitIQ",
+     "liveness": "alive"
     }
    ]
   },
@@ -177443,6 +177757,440 @@
      "status": 200,
      "role": "catalog",
      "title": "Privacy Policy - Canada's Largest Customer Data Company - Cleanlist",
+     "liveness": "alive"
+    }
+   ]
+  },
+  "mobilemonkey-inc-customers-ai": {
+   "schema_version": "3.0.0",
+   "id": "mobilemonkey-inc-customers-ai",
+   "name": "MobileMonkey, Inc (Customers.ai)",
+   "category": "marketing",
+   "domain": "customers.ai",
+   "checked_at": "2026-11-02T19:29:40+00:00",
+   "liveness": "alive",
+   "liveness_detail": "catalog URL loaded",
+   "homepage": "https://customers.ai/",
+   "logo_url": "https://customers.ai/wp-content/uploads/2025/12/logo-customers-ai-orange.svg",
+   "images": [
+    {
+     "url": "https://customers.ai/wp-content/uploads/2026/06/apple-touch-icon.png",
+     "kind": "icon",
+     "source_page": "https://customers.ai/"
+    },
+    {
+     "url": "https://customers.ai/wp-content/uploads/2026/03/customersai-logo.jpg",
+     "kind": "og_image",
+     "source_page": "https://customers.ai/"
+    },
+    {
+     "url": "https://customers.ai/wp-content/uploads/2024/04/Blue-logo.svg",
+     "kind": "json_ld",
+     "source_page": "https://customers.ai/"
+    },
+    {
+     "url": "https://customers.ai/wp-content/uploads/2025/12/logo-customers-ai-orange.svg",
+     "kind": "logo",
+     "source_page": "https://customers.ai/"
+    },
+    {
+     "url": "https://customers.ai/wp-content/uploads/2025/11/logo-elevar.svg",
+     "kind": "logo",
+     "source_page": "https://customers.ai/"
+    },
+    {
+     "url": "https://customers.ai/wp-content/uploads/2025/03/blotout-logo-1024x260.webp",
+     "kind": "logo",
+     "source_page": "https://customers.ai/"
+    },
+    {
+     "url": "https://customers.ai/wp-content/uploads/2025/11/good_good_golf_logo.png",
+     "kind": "logo",
+     "source_page": "https://customers.ai/"
+    },
+    {
+     "url": "https://customers.ai/wp-content/uploads/2025/11/Shop_LC_Logo.png",
+     "kind": "logo",
+     "source_page": "https://customers.ai/"
+    },
+    {
+     "url": "https://customers.ai/wp-content/uploads/2025/11/fifteen_twenty_logo.webp",
+     "kind": "logo",
+     "source_page": "https://customers.ai/"
+    },
+    {
+     "url": "https://customers.ai/wp-content/uploads/2025/11/zogics_logo.png",
+     "kind": "logo",
+     "source_page": "https://customers.ai/"
+    },
+    {
+     "url": "https://customers.ai/wp-content/uploads/2025/11/bloomist_logo.png",
+     "kind": "logo",
+     "source_page": "https://customers.ai/"
+    },
+    {
+     "url": "https://customers.ai/wp-content/uploads/2025/11/cbdmd-logo.png",
+     "kind": "logo",
+     "source_page": "https://customers.ai/"
+    },
+    {
+     "url": "https://customers.ai/wp-content/uploads/2025/11/logo-shopify-partner.png",
+     "kind": "logo",
+     "source_page": "https://customers.ai/"
+    },
+    {
+     "url": "https://customers.ai/wp-content/uploads/2025/11/logo-klaviyo-partner.png",
+     "kind": "logo",
+     "source_page": "https://customers.ai/"
+    },
+    {
+     "url": "https://customers.ai/wp-content/uploads/2025/11/logo-meta-business-partner.png",
+     "kind": "logo",
+     "source_page": "https://customers.ai/"
+    }
+   ],
+   "theme_color": null,
+   "languages": [
+    "en"
+   ],
+   "legal_name": "Customers.ai",
+   "search": {
+    "available": false,
+    "method": "none",
+    "page_url": null,
+    "form_action": null,
+    "inputs": [],
+    "url_pattern": null,
+    "directory_prefixes": [],
+    "paywall": null,
+    "login_wall": null
+   },
+   "removal": {
+    "url": "https://customers.ai/privacy-policy",
+    "final_url": "https://customers.ai/privacy-policy",
+    "http_status": 200,
+    "kinds": [
+     "opt_out"
+    ],
+    "channels": [
+     "web_form",
+     "email"
+    ],
+    "emails": [
+     {
+      "email": "info@customers.ai",
+      "confidence": "uncertain",
+      "source_url": "https://customers.ai/privacy-policy"
+     }
+    ],
+    "phones": [],
+    "postal_address": null,
+    "portal": null,
+    "form_fields": [
+     {
+      "name": "wpforms[fields][1][first]",
+      "type": "text",
+      "canonical": "first_name",
+      "required": true,
+      "autocomplete": null,
+      "placeholder": "First Name"
+     },
+     {
+      "name": "wpforms[fields][1][last]",
+      "type": "text",
+      "canonical": "last_name",
+      "required": true,
+      "autocomplete": null,
+      "placeholder": "Last Name"
+     },
+     {
+      "name": "wpforms[fields][42]",
+      "type": "url",
+      "canonical": "profile_url",
+      "required": true,
+      "autocomplete": null,
+      "placeholder": "Website"
+     },
+     {
+      "name": "wpforms[fields][2]",
+      "type": "email",
+      "canonical": "email",
+      "required": true,
+      "autocomplete": null,
+      "placeholder": "Work Email"
+     },
+     {
+      "name": "wpforms[fields][55]",
+      "type": "tel",
+      "canonical": "phone",
+      "required": false,
+      "autocomplete": null,
+      "placeholder": "Phone Number (ex. +1 415 5552671)"
+     },
+     {
+      "name": "wpforms[fields][11]",
+      "type": "text",
+      "canonical": null,
+      "required": true,
+      "autocomplete": null,
+      "placeholder": "Company Name"
+     },
+     {
+      "name": "wpforms[fields][8]",
+      "type": "select",
+      "canonical": null,
+      "required": true,
+      "autocomplete": null,
+      "placeholder": null,
+      "options": [
+       "Business Type",
+       "Direct to Consumer",
+       "Marketing Agency",
+       "Business to Business"
+      ]
+     },
+     {
+      "name": "wpforms[fields][60]",
+      "type": "select",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null,
+      "options": [
+       "Have you used a visitor ID tool?",
+       "I have used website visitor ID tools",
+       "I have not used website visitor ID tools"
+      ]
+     },
+     {
+      "name": "wpforms[fields][67]",
+      "type": "select",
+      "canonical": null,
+      "required": true,
+      "autocomplete": null,
+      "placeholder": null,
+      "options": [
+       "Yes",
+       "No"
+      ]
+     },
+     {
+      "name": "wpforms[fields][68]",
+      "type": "select",
+      "canonical": null,
+      "required": true,
+      "autocomplete": null,
+      "placeholder": null,
+      "options": [
+       "0-20k",
+       "21k-50k",
+       "51k-100k",
+       "100k+"
+      ]
+     },
+     {
+      "name": "wpforms[fields][69]",
+      "type": "select",
+      "canonical": null,
+      "required": true,
+      "autocomplete": null,
+      "placeholder": null,
+      "options": [
+       "I refer my clients",
+       "I whitelabel solutions to my clients via HighLevel",
+       "I whitelabel solutions to my clients via another platform"
+      ]
+     },
+     {
+      "name": "wpforms[fields][70]",
+      "type": "select",
+      "canonical": null,
+      "required": true,
+      "autocomplete": null,
+      "placeholder": null,
+      "options": [
+       "Email Marketing",
+       "Meta Ads",
+       "Both Email and Meta Ads",
+       "We don’t offer Email or Meta Ads"
+      ]
+     }
+    ],
+    "csrf_field_name": "wpforms[time_token]",
+    "requires_profile_url": true,
+    "captcha": {
+     "provider": null,
+     "sitekey": null,
+     "pages": []
+    },
+    "consent_vendor": null,
+    "success_text": null,
+    "suppression_not_deletion": null,
+    "processing_days": null,
+    "processing_text": null
+   },
+   "bot_defense": {
+    "vendor": null,
+    "outcome": "none"
+   },
+   "legal": {
+    "privacy_policy_url": "https://customers.ai/privacy-policy",
+    "terms_url": null,
+    "automation_prohibited": null,
+    "automation_clause": null,
+    "residency": [
+     "US-CA"
+    ],
+    "authorized_agent": null,
+    "data_categories": [
+     "identifiers",
+     "precise_location",
+     "internet_activity",
+     "employment",
+     "sensitive"
+    ]
+   },
+   "pages": [
+    {
+     "url": "https://customers.ai/",
+     "final_url": "https://customers.ai/",
+     "status": 200,
+     "role": "home",
+     "title": "CustomersAI Visitor & Shopper Identification for Ecommerce",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.customers.ai/",
+     "final_url": "https://customers.ai/",
+     "status": 200,
+     "role": "home",
+     "title": "CustomersAI Visitor & Shopper Identification for Ecommerce",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://customers.ai/privacy-policy",
+     "final_url": "https://customers.ai/privacy-policy",
+     "status": 200,
+     "role": "catalog",
+     "title": "Customers.ai Privacy Policy",
+     "liveness": "alive"
+    }
+   ]
+  },
+  "bmg-services-llc-bulldog-media-group": {
+   "schema_version": "3.0.0",
+   "id": "bmg-services-llc-bulldog-media-group",
+   "name": "BMG Services, LLC (Bulldog Media Group)",
+   "category": "marketing",
+   "domain": "bulldogmediagroup.com",
+   "checked_at": "2026-11-02T19:32:36+00:00",
+   "liveness": "alive",
+   "liveness_detail": "catalog URL loaded",
+   "homepage": "https://www.bulldogmediagroup.com/",
+   "logo_url": "https://cdn.bmgfiles.com/bmg/img/favicons/apple-touch-icon.png",
+   "images": [
+    {
+     "url": "https://cdn.bmgfiles.com/bmg/img/favicons/apple-touch-icon.png",
+     "kind": "apple_touch_icon",
+     "source_page": "https://www.bulldogmediagroup.com/"
+    },
+    {
+     "url": "https://cdn.bmgfiles.com/bmg/img/favicons/bmg-32x32.png",
+     "kind": "icon",
+     "source_page": "https://www.bulldogmediagroup.com/"
+    },
+    {
+     "url": "https://cdn.bmgfiles.com/bmg/img/favicons/bmg-16x16.png",
+     "kind": "icon",
+     "source_page": "https://www.bulldogmediagroup.com/"
+    },
+    {
+     "url": "https://cdn.bmgfiles.com/bmg/img/favicons/safari-pinned-tab.svg",
+     "kind": "icon",
+     "source_page": "https://www.bulldogmediagroup.com/"
+    }
+   ],
+   "theme_color": "#18445F",
+   "languages": [
+    "en"
+   ],
+   "legal_name": null,
+   "search": {
+    "available": false,
+    "method": "none",
+    "page_url": null,
+    "form_action": null,
+    "inputs": [],
+    "url_pattern": null,
+    "directory_prefixes": [],
+    "paywall": null,
+    "login_wall": null
+   },
+   "removal": {
+    "url": "https://www.bulldogmediagroup.com/privacy-policy.aspx",
+    "final_url": "https://www.bulldogmediagroup.com/privacy-policy.aspx",
+    "http_status": 200,
+    "kinds": [
+     "opt_out",
+     "unsubscribe"
+    ],
+    "channels": [],
+    "emails": [],
+    "phones": [],
+    "postal_address": null,
+    "portal": null,
+    "form_fields": [],
+    "csrf_field_name": null,
+    "requires_profile_url": null,
+    "captcha": {
+     "provider": null,
+     "sitekey": null,
+     "pages": []
+    },
+    "consent_vendor": "osano",
+    "success_text": null,
+    "suppression_not_deletion": null,
+    "processing_days": null,
+    "processing_text": null
+   },
+   "bot_defense": {
+    "vendor": null,
+    "outcome": "none"
+   },
+   "legal": {
+    "privacy_policy_url": "https://www.bulldogmediagroup.com/privacy-policy.aspx",
+    "terms_url": null,
+    "automation_prohibited": null,
+    "automation_clause": null,
+    "residency": [],
+    "authorized_agent": null,
+    "data_categories": [
+     "identifiers"
+    ]
+   },
+   "pages": [
+    {
+     "url": "https://bulldogmediagroup.com/",
+     "final_url": "https://www.bulldogmediagroup.com/",
+     "status": 200,
+     "role": "home",
+     "title": "Bulldog Media Group",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.bulldogmediagroup.com/",
+     "final_url": "https://www.bulldogmediagroup.com/",
+     "status": 200,
+     "role": "home",
+     "title": "Bulldog Media Group",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.bulldogmediagroup.com/privacy-policy.aspx",
+     "final_url": "https://www.bulldogmediagroup.com/privacy-policy.aspx",
+     "status": 200,
+     "role": "catalog",
+     "title": "Privacy Policy | BulldogMediaGroup.com",
      "liveness": "alive"
     }
    ]
