@@ -1,6 +1,6 @@
 # Data broker opt-out list
 
-A catalog of **841** data broker, people-search, and consumer-reporting opt-out or privacy-request pages. Each row is a real URL, checked on **2026-10-01**.
+A catalog of **841** data broker, people-search, and consumer-reporting opt-out or privacy-request pages. Each row is a real URL, first checked on **2026-10-01**. Later rechecks are dated in the notes.
 
 This is a directory of links, not a removal service. Read the [disclaimer](DISCLAIMER.md) before you use it. Pages move, forms ask for different ID, and a successful request on one site does not remove you from the rest.
 
