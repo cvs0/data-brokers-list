@@ -744,12 +744,6 @@
     "kind": "optout",
     "evidence": "The stored search form on https://sourcepathdigital.com/california-consumer-portal/ is the broker's own opt-out, unsubscribe, privacy-request, or listing-change form, not a search for a person: submit button \"Submit Privacy Request\", controls Delete my personal information; Tell me what personal information Source; Tell me what personal information Source; Correct inaccurate personal information ; Do not sell or share my personal informa; Limit the use or disclosure of my sensit; First Name *; Last Name *. Frame planned it as a name search and would have typed the person's name into an opt-out or privacy request (a removal channel, not a search)."
   },
-  "the-alesco-group-llc": {
-    "checked": "2026-10-18",
-    "not_a_person_search": true,
-    "kind": "optout",
-    "evidence": "The stored search form on https://mydataprivacy.com/ is the broker's own opt-out, unsubscribe, privacy-request, or listing-change form, not a search for a person: submit button \"Download\", controls First Name *; Last Name *; Email Address *; Company Name. Frame planned it as a name search and would have typed the person's name into an opt-out or privacy request (a removal channel, not a search)."
-  },
   "xcelerated-data-llc": {
     "checked": "2026-10-18",
     "not_a_person_search": true,
@@ -2021,12 +2015,6 @@
     "not_a_person_search": true,
     "kind": "site_search",
     "evidence": "The stored search form is the GSDSI sitewide search of products and resources: a synthetic query lands on https://www.gsdsi.com/search?q=John+Smith. It searches the site's pages, not records about a person."
-  },
-  "iqvia-digital-inc-privacyportal-onetrust-com": {
-    "checked": "2026-10-18",
-    "not_a_person_search": true,
-    "kind": "site_search",
-    "evidence": "The stored search form is the IQVIA Digital website search: a synthetic query lands on https://www.iqviadigital.com/hs-search-results?q=John+Smith. It searches the site's pages, not records about a person."
   },
   "skydeo-inc": {
     "checked": "2026-10-18",
@@ -4649,12 +4637,6 @@
     "kind": "optout",
     "evidence": "The stored search form on https://www.upcell.io/data-claim is the broker's own opt-out, privacy-request, or unsubscribe form, not a search for a person. The page answered HTTP 200 on 2026-10-24, titled \"Data Rights & Removal Request | upcell\". Form action https://www.upcell.io/data-claim, submit button \"Submit\", controls First Name; Last Name; Business Email; Phone Number; Request Type Select… Opt-Out / Delete My Information Data Access Other Privacy R; website; company; message; subject; title. It was not submitted."
   },
-  "awl-holdings-llc-privacyportal-eu-onetrust-com": {
-    "checked": "2026-10-24",
-    "not_a_person_search": true,
-    "kind": "optout",
-    "evidence": "The stored search form on https://dnc.allwebleads.com/Unsubscribe is the broker's own opt-out, privacy-request, or unsubscribe form, not a search for a person. The page answered HTTP 200 on 2026-10-24, titled \"Unsubscribe | AWL\". Form action https://dnc.allwebleads.com/Unsubscribe, controls Email; Phone. It was not submitted."
-  },
   "pipl-inc": {
     "checked": "2026-10-24",
     "not_a_person_search": true,
@@ -5327,9 +5309,11 @@
     "evidence": "The Oracle privacy policy gives corporate headquarters at 2300 Oracle Way, Austin, TX 78741, USA. Checked 2026-10-24."
   },
   "experian-health-inc": {
-    "checked": "2026-10-24",
+    "checked": "2026-11-03",
     "country": "US",
-    "evidence": "The US consumer privacy policy gives Experian, 475 Anton Blvd., Costa Mesa, CA 92626. Checked 2026-10-24."
+    "evidence": "The US consumer privacy policy gives Experian, 475 Anton Blvd., Costa Mesa, CA 92626. Checked 2026-10-24. On 2026-11-03 the domain became experian.com, the company's own site; experianhealth.com did not accept a connection. The stored search form is then the site search on the Experian homepage, the same one the Experian row has, which searches the site's pages, not records about a person.",
+    "not_a_person_search": true,
+    "kind": "site_search"
   },
   "safegraph": {
     "checked": "2026-10-24",
@@ -7931,5 +7915,11 @@
     "kind": "contact",
     "not_a_person_search": true,
     "evidence": "The form the scan stored on the homepage is a Gravity Forms contact form, not a search for a person. The old /opt-out/ page answered HTTP 404 on 2026-11-02; the catalog now points at the privacy policy, whose opt-out section links /data-rights-and-privacy/ and gives 1-866-207-1399. Nothing was submitted."
+  },
+  "path2response-llc": {
+    "checked": "2026-11-03",
+    "not_a_person_search": true,
+    "kind": "contact",
+    "evidence": "The stored search form on https://path2response.com/ is a contact form, not a search for a person: controls First Name; Last Name; Company; Email; Message. The form was not submitted."
   }
 }

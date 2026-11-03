@@ -1,18 +1,18 @@
 {
  "schema_version": "4.0.0",
- "checked_at": "2026-11-02T19:37:12+00:00",
+ "checked_at": "2026-11-03T22:41:39+00:00",
  "method": "v3 records, with privacy and removal mailboxes on another domain kept as related_domain. Brokers whose loaded pages published no removal channel were crawled again for unfetched same-site opt-out and privacy URLs, then the catalog URL and homepage were opened once in a browser when those pages still showed no form. That recrawl honors robots.txt. A later pass reads the catalog URL and homepage of brokers whose robots.txt had disallowed the research client. A search pass reads homepages whose public search form was missing, including pages robots.txt had disallowed, and stores a name, phone, or address form. Those passes submit no form, no login, and no CAPTCHA. A legal pass re-reads stored privacy and terms text and fetches an unread privacy or terms page when robots.txt allows it. A network pass looks up public DNS and the site certificate, and reads response headers for the removal URL when robots.txt allows it. A later pass adds IPv6, SPF, DMARC, DKIM selectors, CAA, DNSSEC, the address block, certificate dates, RDAP registration, and the removal response's security headers. A captcha pass re-reads the removal URL and the search page for a widget. A browser reads the page when the static HTML has no widget and the page has a removal form, a stored CAPTCHA, or a public search form. A later pass reads the public widget settings, including whether it is a checkbox, an invisible check, or a score. A form pass re-reads stored search and removal forms for labels, limits, autocomplete, the submit button, and hidden field names. A browser opens when the static HTML does not contain the stored fields. Nothing is submitted. A search test then submits one synthetic query on each broker whose search and removal are both fillable, or with --searchable on each broker with a public search. A robots.txt disallow does not stop the test or count against a search; when --robots is set the log only notes it as robots_disallowed. Brokers whose homepage robots.txt disallowed the research client were later opened in a browser, and their liveness is the result of that read. Removal forms are not submitted and CAPTCHAs are not solved. search_test is on every broker. It stores the outcome, status, field names, the first path segment, the page kind, and a result count when the page states one. A loader page is followed to the count endpoint. The response body, record text, and listing URLs are not stored.",
- "broker_count": 847,
+ "broker_count": 841,
  "counts": {
   "with_related_email": 131,
-  "with_form": 197,
+  "with_form": 194,
   "with_email": 438,
   "with_extracted_email": 210,
   "with_stated_email": 11,
   "no_channel_remaining": 107,
   "with_search": 342,
   "with_search_fillable": 319,
-  "search_unscanned": 35,
+  "search_unscanned": 34,
   "fully_automatable": 143,
   "search_tested": 317,
   "search_results": 39,
@@ -25,84 +25,84 @@
   "search_page_results": 54,
   "search_page_loader": 12,
   "search_page_form": 27,
-  "with_country": 781,
-  "with_region": 486,
-  "with_locality": 366,
-  "with_removal_action": 152,
-  "shared_removal": 61,
+  "with_country": 777,
+  "with_region": 483,
+  "with_locality": 363,
+  "with_removal_action": 150,
+  "shared_removal": 59,
   "email_verification": 28,
   "id_document": 1,
-  "with_privacy": 639,
-  "with_terms": 399,
-  "with_automation_clause": 81,
+  "with_privacy": 634,
+  "with_terms": 397,
+  "with_automation_clause": 80,
   "with_authorized_agent": 143,
-  "with_residency": 580,
+  "with_residency": 577,
   "sells_personal_information": 4,
   "does_not_sell": 78,
   "children_not_directed": 39,
-  "with_mx": 576,
-  "with_mail_provider": 420,
-  "with_cdn": 418,
+  "with_mx": 574,
+  "with_mail_provider": 418,
+  "with_cdn": 414,
   "with_tls_org": 36,
-  "removal_offsite": 100,
-  "with_hsts": 273,
-  "with_form_enctype": 215,
-  "with_field_detail": 415,
-  "with_field_label": 279,
+  "removal_offsite": 99,
+  "with_hsts": 268,
+  "with_form_enctype": 214,
+  "with_field_detail": 413,
+  "with_field_label": 277,
   "with_field_constraint": 62,
-  "with_submit_label": 247,
-  "with_hidden_names": 164,
-  "with_ipv6": 263,
-  "with_spf": 516,
-  "with_dmarc": 443,
+  "with_submit_label": 246,
+  "with_hidden_names": 163,
+  "with_ipv6": 261,
+  "with_spf": 513,
+  "with_dmarc": 441,
   "dmarc_reject": 120,
-  "with_dkim": 345,
+  "with_dkim": 344,
   "with_caa": 68,
   "with_dnssec": 58,
-  "with_asn": 694,
-  "with_registrar": 557,
-  "with_tls_version": 692,
-  "with_http3": 264,
-  "with_csp": 181,
-  "with_hsts_preload": 119,
-  "removal_captcha": 271,
-  "removal_captcha_sitekey": 156,
-  "removal_captcha_checked": 349,
+  "with_asn": 687,
+  "with_registrar": 555,
+  "with_tls_version": 685,
+  "with_http3": 263,
+  "with_csp": 177,
+  "with_hsts_preload": 116,
+  "removal_captcha": 268,
+  "removal_captcha_sitekey": 153,
+  "removal_captcha_checked": 342,
   "search_captcha_widget": 16,
   "search_captcha_sitekey": 6,
   "search_captcha_checked": 317,
   "captcha_blocks_form": 96,
   "captcha_email_fallback": 32,
-  "removal_captcha_checkbox": 78,
+  "removal_captcha_checkbox": 75,
   "removal_captcha_invisible": 30,
   "removal_captcha_score": 32,
   "removal_captcha_action": 25,
-  "removal_captcha_theme": 35,
+  "removal_captcha_theme": 32,
   "removal_captcha_enterprise": 25,
   "search_captcha_checkbox": 11,
   "search_captcha_invisible": 0,
   "search_captcha_score": 0,
   "removal_blockers": {
    "captcha_form": 64,
-   "generic_inbox": 60,
+   "generic_inbox": 61,
    "phone_postal": 23,
-   "portal": 4,
-   "phone": 74,
+   "portal": 3,
+   "phone": 73,
    "postal": 7,
    "bot_wall": 25,
-   "fetch_error": 12,
+   "fetch_error": 11,
    "opt_out_gone": 0,
    "robots": 23,
-   "captcha_no_form": 28,
+   "captcha_no_form": 27,
    "no_channel": 115
   },
   "lookup_search": 285,
   "lookup_search_fillable": 268,
   "liveness": {
-   "alive": 721,
+   "alive": 716,
    "blocked": 46,
    "dead": 18,
-   "error": 13,
+   "error": 12,
    "opt_out_missing": 1,
    "robots_disallowed": 48
   }
@@ -14512,13 +14512,53 @@
    "id": "experian-health-inc",
    "name": "Experian Health, Inc.",
    "category": "credit-financial",
-   "domain": "consumerprivacy.experian.com",
-   "checked_at": "2026-10-12T23:14:00+00:00",
+   "domain": "experian.com",
+   "checked_at": "2026-10-12T23:16:16+00:00",
    "liveness": "alive",
    "liveness_detail": "catalog URL loaded",
-   "homepage": "https://consumerprivacy.experian.com/",
-   "logo_url": "https://consumerprivacy.experian.com/assets/images/favicons/favicon-16x16.png",
+   "homepage": "https://www.experian.com/",
+   "logo_url": "https://www.experian.com/static/shared/logos/logo-experian.svg",
    "images": [
+    {
+     "url": "https://www.experian.com/favicon.ico",
+     "kind": "icon",
+     "source_page": "https://www.experian.com/"
+    },
+    {
+     "url": "https://www.experian.com/favicon-16x16.png",
+     "kind": "icon",
+     "source_page": "https://www.experian.com/"
+    },
+    {
+     "url": "https://www.experian.com/favicon-32x32.png",
+     "kind": "icon",
+     "source_page": "https://www.experian.com/"
+    },
+    {
+     "url": "https://www.experian.com/favicon-192x192.png",
+     "kind": "icon",
+     "source_page": "https://www.experian.com/"
+    },
+    {
+     "url": "https://www.experian.com/favicon-512x512.png",
+     "kind": "icon",
+     "source_page": "https://www.experian.com/"
+    },
+    {
+     "url": "https://www.experian.com/static/shared/social/social-experian-generic.webp",
+     "kind": "og_image",
+     "source_page": "https://www.experian.com/"
+    },
+    {
+     "url": "https://www.experian.com/static/shared/logos/logo-experian.svg",
+     "kind": "logo",
+     "source_page": "https://www.experian.com/"
+    },
+    {
+     "url": "https://www.experian.com/content/dam/marketing/na/social/experian-og-image.png",
+     "kind": "og_image",
+     "source_page": "https://www.experian.com/privacy/opting_out"
+    },
     {
      "url": "https://consumerprivacy.experian.com/assets/images/favicons/favicon-16x16.png",
      "kind": "icon",
@@ -14538,13 +14578,18 @@
      "url": "https://consumerprivacy.experian.com/assets/images/favicons/favicon-194x194.png",
      "kind": "icon",
      "source_page": "https://consumerprivacy.experian.com/"
+    },
+    {
+     "url": "https://www.experian.com/blogs/ask-experian/wp-content/uploads/opt-out.jpg",
+     "kind": "og_image",
+     "source_page": "https://www.experian.com/blogs/ask-experian/credit-education/faqs/preapproved-credit-offers/opt-out/"
     }
    ],
    "theme_color": null,
    "languages": [
     "en"
    ],
-   "legal_name": null,
+   "legal_name": "Experian",
    "search": {
     "available": false,
     "method": "none",
@@ -14555,6 +14600,8 @@
     "directory_prefixes": [],
     "paywall": null,
     "login_wall": null,
+    "captcha_provider": null,
+    "captcha_sitekey": null,
     "form_meta": {
      "id": null,
      "name": null,
@@ -14563,10 +14610,8 @@
      "submit_label": null,
      "hidden_names": []
     },
-    "captcha_provider": null,
-    "captcha_sitekey": null,
-    "captcha_checked": null,
-    "captcha_detail": null
+    "captcha_detail": null,
+    "captcha_checked": null
    },
    "removal": {
     "url": "https://consumerprivacy.experian.com/",
@@ -14576,21 +14621,20 @@
      "opt_out"
     ],
     "channels": [
-     "email"
+     "email",
+     "phone"
     ],
     "emails": [
      {
       "email": "optout@experian.com",
       "confidence": "extracted",
-      "source_url": "https://www.experian.com/privacy/us-consumer-data-privacy-policy"
-     },
-     {
-      "email": "privacy@experian.com",
-      "confidence": "extracted",
-      "source_url": "https://www.experian.com/privacy/us-consumer-data-privacy-policy"
+      "source_url": "https://www.experian.com/privacy/opt-out-targeted-advertising"
      }
     ],
-    "phones": [],
+    "phones": [
+     "888-567-8688",
+     "1-888-567-8688"
+    ],
     "postal_address": null,
     "portal": null,
     "form_fields": [],
@@ -14600,8 +14644,8 @@
      "provider": null,
      "sitekey": null,
      "pages": [],
-     "checked_url": "https://consumerprivacy.experian.com/",
-     "checked": true,
+     "checked": false,
+     "checked_url": null,
      "detail": null
     },
     "consent_vendor": null,
@@ -14625,92 +14669,151 @@
     "outcome": "none"
    },
    "legal": {
-    "privacy_policy_url": "https://consumerprivacy.experian.com/",
-    "terms_url": null,
+    "privacy_policy_url": "https://www.experian.com/privacy/opting_out",
+    "terms_url": "https://www.experian.com/corporate/legalterms",
     "automation_prohibited": null,
     "automation_clause": null,
-    "residency": [],
+    "residency": [
+     "US",
+     "GB"
+    ],
     "authorized_agent": null,
-    "data_categories": [],
+    "data_categories": [
+     "identifiers",
+     "internet_activity",
+     "sensitive"
+    ],
     "sells_personal_information": null,
     "sells_clause": null,
     "children_not_directed": null
    },
    "pages": [
     {
+     "url": "https://experian.com/",
+     "final_url": "https://www.experian.com/",
+     "status": 200,
+     "role": "home",
+     "title": "Experian: Credit Report, FICO® Score & Financial Tools",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.experian.com/",
+     "final_url": "https://www.experian.com/",
+     "status": 200,
+     "role": "home",
+     "title": "Experian: Credit Report, FICO® Score & Financial Tools",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.experian.com/privacy/opting_out",
+     "final_url": "https://www.experian.com/privacy/opting_out",
+     "status": 200,
+     "role": "catalog",
+     "title": "Privacy Policy at Experian.com",
+     "liveness": "alive"
+    },
+    {
      "url": "https://consumerprivacy.experian.com/",
      "final_url": "https://consumerprivacy.experian.com/",
      "status": 200,
-     "role": "home",
+     "role": "other",
      "title": "Experian - Consumer Privacy Application",
      "liveness": "alive"
     },
     {
-     "url": "https://www.consumerprivacy.experian.com/",
-     "final_url": null,
-     "status": null,
-     "role": "home",
-     "title": "",
-     "liveness": "dead"
-    },
-    {
-     "url": "https://www.experian.com/privacy/ccpa-privacy-policy.html",
-     "final_url": "https://www.experian.com/privacy/us-consumer-data-privacy-policy",
+     "url": "https://www.experian.com/blogs/ask-experian/credit-education/faqs/preapproved-credit-offers/opt-out/",
+     "final_url": "https://www.experian.com/blogs/ask-experian/credit-education/faqs/preapproved-credit-offers/opt-out/",
      "status": 200,
      "role": "opt_out",
+     "title": "How to Opt Out of Preapproved Credit Offers",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.experian.com/privacy/opt-out-targeted-advertising",
+     "final_url": "https://www.experian.com/privacy/opt-out-targeted-advertising",
+     "status": 200,
+     "role": "privacy",
      "title": "Privacy Policy at Experian.com",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.experian.com/protection/personal-privacy-scan/",
+     "final_url": "https://www.experian.com/protection/personal-privacy-scan/",
+     "status": 200,
+     "role": "other",
+     "title": "Personal Privacy Scan - Experian",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.experian.com/privacy/index",
+     "final_url": "https://www.experian.com/privacy/index",
+     "status": 200,
+     "role": "privacy",
+     "title": "Pardon Our Interruption",
      "liveness": "alive"
     }
    ],
    "location": {
     "country": "US",
-    "region": null,
-    "locality": null,
-    "postal_code": null,
-    "street": null,
-    "postal_address": null,
+    "region": "CA",
+    "locality": "Costa Mesa",
+    "postal_code": "92626-7037",
+    "street": "475 Anton Blvd",
+    "postal_address": "475 Anton Blvd, Costa Mesa, CA, 92626-7037, US",
     "coverage": [
-     "US"
+     "US",
+     "GB"
     ],
     "search_regions": [],
     "sources": [
-     "manual"
+     "cppa_registry"
     ]
    },
    "network": {
     "checked": true,
     "addresses": [
-     "45.60.101.174"
+     "45.60.132.189",
+     "45.60.122.189"
     ],
     "ipv6": [],
-    "cname": "uf9rzbw.impervadns.net",
-    "mx": [],
-    "mail_provider": null,
+    "cname": null,
+    "mx": [
+     "mxb-001a8401.gslb.pphosted.com",
+     "mxa-001a8401.gslb.pphosted.com"
+    ],
+    "mail_provider": "proofpoint",
     "spf": null,
-    "dmarc": null,
+    "dmarc": "reject",
     "dkim": [],
-    "nameservers": [],
+    "nameservers": [
+     "exp4.experian.com",
+     "exp5.experian.com",
+     "exp1.experian.com"
+    ],
     "dns_provider": null,
-    "soa_primary": null,
+    "soa_primary": "exp1.experian.com",
     "caa": [],
     "dnssec": false,
     "asn": "19551",
     "asn_country": "US",
-    "prefix": "45.60.101.0/24",
-    "cdn": "imperva",
+    "prefix": "45.60.132.0/24",
+    "cdn": "cloudfront",
     "server": null,
     "tls_org": "Experian Information Solutions, Inc.",
     "tls_issuer": "Sectigo Limited",
     "tls_names": [
-     "consumerprivacy.experian.com"
+     "www.experian.com",
+     "experian.com"
     ],
     "tls_version": "TLSv1.3",
-    "tls_not_before": "2026-04-21",
-    "tls_not_after": "2026-11-05",
-    "registrar": null,
-    "registered": null,
-    "registration_expires": null,
-    "domain_status": []
+    "tls_not_before": "2026-07-13",
+    "tls_not_after": "2027-01-27",
+    "registrar": "Network Solutions, LLC",
+    "registered": "1996-10-28",
+    "registration_expires": "2027-10-27",
+    "domain_status": [
+     "client transfer prohibited"
+    ]
    },
    "request": {
     "removal_host": "consumerprivacy.experian.com",
@@ -14718,20 +14821,22 @@
     "https": true,
     "redirected": false,
     "redirect_count": 0,
-    "form_enctype": null,
+    "form_enctype": "urlencoded",
     "content_type": "text/html",
     "hsts": true,
-    "hsts_max_age": 31536000,
-    "hsts_subdomains": true,
+    "hsts_max_age": 31557600,
+    "hsts_subdomains": false,
     "hsts_preload": false,
     "http_version": "http/1.1",
     "http3": false,
     "frame_options": "sameorigin",
-    "nosniff": false,
+    "nosniff": true,
     "referrer_policy": null,
     "csp": true,
     "powered_by": null,
-    "cookie_names": []
+    "cookie_names": [
+     "affinity"
+    ]
    },
    "automation": {
     "search_scanned": true,
@@ -14744,8 +14849,7 @@
     "removal_path": "email",
     "fully_automatable": false,
     "usable_emails": [
-     "optout@experian.com",
-     "privacy@experian.com"
+     "optout@experian.com"
     ],
     "search_required": [],
     "removal_required": [],
@@ -33419,226 +33523,11 @@
     "removal_required": [],
     "email_verification": null,
     "id_document": null,
-    "shared_removal_ids": [
-     "neustar-inc"
-    ],
+    "shared_removal_ids": [],
     "removal_captcha": false,
     "captcha_blocks_form": false,
     "captcha_email_fallback": false,
     "removal_blocker": "robots"
-   },
-   "search_test": {
-    "outcome": null,
-    "http_status": null,
-    "path_prefix": null,
-    "fields_sent": [],
-    "missing": [],
-    "page_kind": null,
-    "result_count": null,
-    "checked_at": null
-   }
-  },
-  "neustar-inc": {
-   "schema_version": "4.0.0",
-   "id": "neustar-inc",
-   "name": "NeuStar, Inc.",
-   "category": "marketing",
-   "domain": "privacychoices.home.neustar",
-   "checked_at": "2026-10-12T23:23:27+00:00",
-   "liveness": "error",
-   "liveness_detail": "catalog URL was not fetched",
-   "homepage": "https://privacychoices.home.neustar/",
-   "logo_url": null,
-   "images": [],
-   "theme_color": null,
-   "languages": [],
-   "legal_name": null,
-   "search": {
-    "available": null,
-    "method": "unknown",
-    "page_url": null,
-    "form_action": null,
-    "inputs": [],
-    "url_pattern": null,
-    "directory_prefixes": [],
-    "paywall": null,
-    "login_wall": null,
-    "form_meta": {
-     "id": null,
-     "name": null,
-     "autocomplete": null,
-     "novalidate": null,
-     "submit_label": null,
-     "hidden_names": []
-    },
-    "captcha_provider": null,
-    "captcha_sitekey": null,
-    "captcha_checked": null,
-    "captcha_detail": null
-   },
-   "removal": {
-    "url": "https://privacychoices.home.neustar/?t=#/login",
-    "final_url": null,
-    "http_status": null,
-    "kinds": [
-     "opt_out"
-    ],
-    "channels": [],
-    "emails": [],
-    "phones": [],
-    "postal_address": null,
-    "portal": null,
-    "form_fields": [],
-    "csrf_field_name": null,
-    "requires_profile_url": null,
-    "captcha": {
-     "provider": null,
-     "sitekey": null,
-     "pages": [],
-     "checked": false,
-     "checked_url": null,
-     "detail": null
-    },
-    "consent_vendor": null,
-    "success_text": null,
-    "suppression_not_deletion": null,
-    "processing_days": null,
-    "processing_text": null,
-    "form_action": null,
-    "form_method": null,
-    "form_meta": {
-     "id": null,
-     "name": null,
-     "autocomplete": null,
-     "novalidate": null,
-     "submit_label": null,
-     "hidden_names": []
-    }
-   },
-   "bot_defense": {
-    "vendor": null,
-    "outcome": "none"
-   },
-   "legal": {
-    "privacy_policy_url": null,
-    "terms_url": null,
-    "automation_prohibited": null,
-    "automation_clause": null,
-    "residency": [],
-    "authorized_agent": null,
-    "data_categories": [],
-    "sells_personal_information": null,
-    "sells_clause": null,
-    "children_not_directed": null
-   },
-   "pages": [
-    {
-     "url": "https://privacychoices.home.neustar/",
-     "final_url": null,
-     "status": null,
-     "role": "home",
-     "title": "",
-     "liveness": "robots_disallowed"
-    },
-    {
-     "url": "https://www.privacychoices.home.neustar/",
-     "final_url": null,
-     "status": null,
-     "role": "home",
-     "title": "",
-     "liveness": "dead"
-    }
-   ],
-   "location": {
-    "country": null,
-    "region": null,
-    "locality": null,
-    "postal_code": null,
-    "street": null,
-    "postal_address": null,
-    "coverage": [],
-    "search_regions": [],
-    "sources": []
-   },
-   "network": {
-    "checked": true,
-    "addresses": [
-     "104.18.36.16",
-     "172.64.151.240"
-    ],
-    "ipv6": [],
-    "cname": "privacychoices.home.neustar.cdn.cloudflare.net",
-    "mx": [],
-    "mail_provider": null,
-    "spf": null,
-    "dmarc": null,
-    "dkim": [],
-    "nameservers": [],
-    "dns_provider": null,
-    "soa_primary": null,
-    "caa": [],
-    "dnssec": false,
-    "asn": "13335",
-    "asn_country": "US",
-    "prefix": "104.18.36.0/24",
-    "cdn": null,
-    "server": null,
-    "tls_org": null,
-    "tls_issuer": "DigiCert Inc",
-    "tls_names": [
-     "privacychoices.home.neustar"
-    ],
-    "tls_version": "TLSv1.3",
-    "tls_not_before": "2026-01-06",
-    "tls_not_after": "2027-01-05",
-    "registrar": null,
-    "registered": null,
-    "registration_expires": null,
-    "domain_status": []
-   },
-   "request": {
-    "removal_host": "privacychoices.home.neustar",
-    "same_site": true,
-    "https": true,
-    "redirected": null,
-    "redirect_count": null,
-    "form_enctype": null,
-    "content_type": null,
-    "hsts": null,
-    "hsts_max_age": null,
-    "hsts_subdomains": null,
-    "hsts_preload": null,
-    "http_version": null,
-    "http3": null,
-    "frame_options": null,
-    "nosniff": null,
-    "referrer_policy": null,
-    "csp": null,
-    "powered_by": null,
-    "cookie_names": []
-   },
-   "automation": {
-    "search_scanned": false,
-    "search_fillable": false,
-    "search_captcha": false,
-    "search_fields": [],
-    "removal_form_fillable": false,
-    "removal_email_usable": false,
-    "removal_fields": [],
-    "removal_path": null,
-    "fully_automatable": false,
-    "usable_emails": [],
-    "search_required": [],
-    "removal_required": [],
-    "email_verification": null,
-    "id_document": null,
-    "shared_removal_ids": [
-     "neustar-transunion"
-    ],
-    "removal_captcha": false,
-    "captcha_blocks_form": false,
-    "captcha_email_fallback": false,
-    "removal_blocker": "fetch_error"
    },
    "search_test": {
     "outcome": null,
@@ -44320,329 +44209,6 @@
     "captcha_blocks_form": false,
     "captcha_email_fallback": false,
     "removal_blocker": "phone"
-   },
-   "search_test": {
-    "outcome": null,
-    "http_status": null,
-    "path_prefix": null,
-    "fields_sent": [],
-    "missing": [],
-    "page_kind": null,
-    "result_count": null,
-    "checked_at": null
-   }
-  },
-  "analyticsiq-inc-privacyportal-onetrust-com": {
-   "schema_version": "4.0.0",
-   "id": "analyticsiq-inc-privacyportal-onetrust-com",
-   "name": "AnalyticsIQ, Inc.",
-   "category": "other",
-   "domain": "privacyportal.onetrust.com",
-   "checked_at": "2026-10-12T23:23:30+00:00",
-   "liveness": "alive",
-   "liveness_detail": "catalog URL loaded",
-   "homepage": "https://privacyportal.onetrust.com/ui/#/error",
-   "logo_url": "https://anteriad.com/hubfs/logo-1.svg",
-   "images": [
-    {
-     "url": "https://anteriad.com/hubfs/Anteriad-New-LP/anteriad-favicon.png",
-     "kind": "icon",
-     "source_page": "https://anteriad.com/privacy-center"
-    },
-    {
-     "url": "https://23432978.fs1.hubspotusercontent-na1.net/hubfs/23432978/Anteriad-FC-Pos-RGB.svg",
-     "kind": "json_ld",
-     "source_page": "https://anteriad.com/privacy-center"
-    },
-    {
-     "url": "https://anteriad.com/hubfs/Anteriad-FC-Pos-RGB.svg",
-     "kind": "json_ld",
-     "source_page": "https://anteriad.com/privacy-center"
-    },
-    {
-     "url": "https://anteriad.com/hubfs/logo-1.svg",
-     "kind": "logo",
-     "source_page": "https://anteriad.com/privacy-center"
-    },
-    {
-     "url": "https://23432978.fs1.hubspotusercontent-na1.net/hubfs/23432978/upland-logo.svg",
-     "kind": "logo",
-     "source_page": "https://anteriad.com/privacy-center"
-    },
-    {
-     "url": "https://23432978.fs1.hubspotusercontent-na1.net/hub/23432978/hubfs/Salesforce.com_logo.svg.png?width=200&name=Salesforce.com_logo.svg.png",
-     "kind": "logo",
-     "source_page": "https://anteriad.com/privacy-center"
-    },
-    {
-     "url": "https://23432978.fs1.hubspotusercontent-na1.net/hubfs/23432978/validity-logo.svg",
-     "kind": "logo",
-     "source_page": "https://anteriad.com/privacy-center"
-    },
-    {
-     "url": "https://23432978.fs1.hubspotusercontent-na1.net/hubfs/23432978/clari%20logo-white.svg",
-     "kind": "logo",
-     "source_page": "https://anteriad.com/privacy-center"
-    },
-    {
-     "url": "https://23432978.fs1.hubspotusercontent-na1.net/hub/23432978/hubfs/1200px-HubSpot_Logo.svg.png?width=200&name=1200px-HubSpot_Logo.svg.png",
-     "kind": "logo",
-     "source_page": "https://anteriad.com/privacy-center"
-    },
-    {
-     "url": "https://23432978.fs1.hubspotusercontent-na1.net/hub/23432978/hubfs/porch-group-media-logo.png?width=200&name=porch-group-media-logo.png",
-     "kind": "logo",
-     "source_page": "https://anteriad.com/privacy-center"
-    }
-   ],
-   "theme_color": null,
-   "languages": [
-    "en"
-   ],
-   "legal_name": "Anteriad",
-   "search": {
-    "available": false,
-    "method": "none",
-    "page_url": null,
-    "form_action": null,
-    "inputs": [],
-    "url_pattern": null,
-    "directory_prefixes": [],
-    "paywall": null,
-    "login_wall": null,
-    "form_meta": {
-     "id": null,
-     "name": null,
-     "autocomplete": null,
-     "novalidate": null,
-     "submit_label": null,
-     "hidden_names": []
-    },
-    "captcha_provider": null,
-    "captcha_sitekey": null,
-    "captcha_checked": null,
-    "captcha_detail": null
-   },
-   "removal": {
-    "url": "https://anteriad.com/privacy-center",
-    "final_url": "https://anteriad.com/privacy-center",
-    "http_status": 200,
-    "kinds": [
-     "opt_out"
-    ],
-    "channels": [
-     "web_form",
-     "phone"
-    ],
-    "emails": [],
-    "phones": [
-     "914-368-1000"
-    ],
-    "postal_address": null,
-    "portal": null,
-    "form_fields": [
-     {
-      "name": "term",
-      "type": "text",
-      "canonical": null,
-      "required": false,
-      "autocomplete": "off",
-      "placeholder": "Type search here",
-      "id": "pwr-js-burger-search__input",
-      "label": "Search",
-      "inputmode": null,
-      "pattern": null,
-      "minlength": null,
-      "maxlength": null,
-      "min": null,
-      "max": null,
-      "step": null,
-      "accept": null,
-      "multiple": false,
-      "disabled": false,
-      "readonly": false,
-      "checked": false,
-      "value": null
-     }
-    ],
-    "csrf_field_name": null,
-    "requires_profile_url": null,
-    "captcha": {
-     "provider": null,
-     "sitekey": null,
-     "pages": [],
-     "checked_url": "https://anteriad.com/privacy-center",
-     "checked": true,
-     "detail": null
-    },
-    "consent_vendor": null,
-    "success_text": null,
-    "suppression_not_deletion": null,
-    "processing_days": null,
-    "processing_text": null,
-    "form_action": null,
-    "form_method": null,
-    "form_meta": {
-     "id": null,
-     "name": null,
-     "autocomplete": null,
-     "novalidate": false,
-     "submit_label": null,
-     "hidden_names": [
-      "limit",
-      "property",
-      "type"
-     ]
-    }
-   },
-   "bot_defense": {
-    "vendor": null,
-    "outcome": "none"
-   },
-   "legal": {
-    "privacy_policy_url": "https://anteriad.com/privacy-center",
-    "terms_url": null,
-    "automation_prohibited": null,
-    "automation_clause": null,
-    "residency": [
-     "US-CA",
-     "EU",
-     "CA-QC"
-    ],
-    "authorized_agent": null,
-    "data_categories": [
-     "internet_activity"
-    ],
-    "sells_personal_information": null,
-    "sells_clause": null,
-    "children_not_directed": null
-   },
-   "pages": [
-    {
-     "url": "https://privacyportal.onetrust.com/",
-     "final_url": "https://privacyportal.onetrust.com/ui/#/error",
-     "status": 200,
-     "role": "home",
-     "title": "DS Portal",
-     "liveness": "alive"
-    },
-    {
-     "url": "https://www.privacyportal.onetrust.com/",
-     "final_url": null,
-     "status": null,
-     "role": "home",
-     "title": "",
-     "liveness": "dead"
-    },
-    {
-     "url": "https://anteriad.com/privacy-center",
-     "final_url": "https://anteriad.com/privacy-center",
-     "status": 200,
-     "role": "catalog",
-     "title": "Privacy Center",
-     "liveness": "alive"
-    }
-   ],
-   "location": {
-    "country": "US",
-    "region": "GA",
-    "locality": "Atlanta",
-    "postal_code": "30328",
-    "street": "6 Concourse Parkway Suite 1750",
-    "postal_address": "6 Concourse Parkway Suite 1750, Atlanta, GA, 30328, US",
-    "coverage": [
-     "US-CA",
-     "EU",
-     "CA-QC",
-     "US"
-    ],
-    "search_regions": [],
-    "sources": [
-     "cppa_registry"
-    ]
-   },
-   "network": {
-    "checked": true,
-    "addresses": [
-     "104.18.32.137",
-     "172.64.155.119"
-    ],
-    "ipv6": [
-     "2a06:98c1:3103::ac40:9b77",
-     "2606:4700:4403::6812:2089"
-    ],
-    "cname": null,
-    "mx": [],
-    "mail_provider": null,
-    "spf": null,
-    "dmarc": null,
-    "dkim": [],
-    "nameservers": [],
-    "dns_provider": null,
-    "soa_primary": null,
-    "caa": [],
-    "dnssec": false,
-    "asn": "13335",
-    "asn_country": "US",
-    "prefix": "104.18.32.0/24",
-    "cdn": "cloudflare",
-    "server": "cloudflare",
-    "tls_org": null,
-    "tls_issuer": "Google Trust Services",
-    "tls_names": [
-     "privacyportal.onetrust.com"
-    ],
-    "tls_version": "TLSv1.3",
-    "tls_not_before": "2026-09-22",
-    "tls_not_after": "2026-12-21",
-    "registrar": null,
-    "registered": null,
-    "registration_expires": null,
-    "domain_status": []
-   },
-   "request": {
-    "removal_host": "anteriad.com",
-    "same_site": false,
-    "https": true,
-    "redirected": false,
-    "redirect_count": 0,
-    "form_enctype": "urlencoded",
-    "content_type": "text/html",
-    "hsts": true,
-    "hsts_max_age": 31536000,
-    "hsts_subdomains": false,
-    "hsts_preload": false,
-    "http_version": "http/1.1",
-    "http3": true,
-    "frame_options": "sameorigin",
-    "nosniff": false,
-    "referrer_policy": "no-referrer-when-downgrade",
-    "csp": true,
-    "powered_by": null,
-    "cookie_names": [
-     "_cfuvid"
-    ]
-   },
-   "automation": {
-    "search_scanned": true,
-    "search_fillable": false,
-    "search_captcha": false,
-    "search_fields": [],
-    "removal_form_fillable": true,
-    "removal_email_usable": false,
-    "removal_fields": [],
-    "removal_path": "form",
-    "fully_automatable": false,
-    "usable_emails": [],
-    "search_required": [],
-    "removal_required": [],
-    "email_verification": null,
-    "id_document": null,
-    "shared_removal_ids": [],
-    "removal_captcha": false,
-    "captcha_blocks_form": false,
-    "captcha_email_fallback": false,
-    "removal_blocker": null
    },
    "search_test": {
     "outcome": null,
@@ -84594,18 +84160,33 @@
    "schema_version": "4.0.0",
    "id": "malvern-media-inc",
    "name": "Malvern Media Inc.",
-   "category": "other",
-   "domain": "privacyportal.privacypillar.com",
-   "checked_at": "2026-10-12T23:23:31+00:00",
+   "category": "marketing",
+   "domain": "malvernmedia.com",
+   "checked_at": "2026-11-03T20:26:28+00:00",
    "liveness": "alive",
    "liveness_detail": "catalog URL loaded",
-   "homepage": "https://privacyportal.privacypillar.com/",
-   "logo_url": "https://privacyportal.privacypillar.com/assets/imgs/privacypillarfav.png",
+   "homepage": "https://www.malvernmedia.com/",
+   "logo_url": "https://images.squarespace-cdn.com/content/v1/58668b52e6f2e17f4f11f804/1483125197769-5M3KCGFBC1A8IGFCPUB9/MM_Logo_FINAL.png?format=1500w",
    "images": [
     {
-     "url": "https://privacyportal.privacypillar.com/assets/imgs/privacypillarfav.png",
+     "url": "https://images.squarespace-cdn.com/content/v1/58668b52e6f2e17f4f11f804/1483125361075-56KLFT3Z9GMERF3ZI8ZX/favicon.ico?format=100w",
      "kind": "icon",
-     "source_page": "https://privacyportal.privacypillar.com/"
+     "source_page": "https://www.malvernmedia.com/"
+    },
+    {
+     "url": "http://static1.squarespace.com/static/58668b52e6f2e17f4f11f804/t/5866b1cd3e00be540c374bda/1483125209685/MM_Logo_FINAL.png?format=1500w",
+     "kind": "og_image",
+     "source_page": "https://www.malvernmedia.com/"
+    },
+    {
+     "url": "https://images.squarespace-cdn.com/content/v1/58668b52e6f2e17f4f11f804/1483125197769-5M3KCGFBC1A8IGFCPUB9/MM_Logo_FINAL.png",
+     "kind": "json_ld",
+     "source_page": "https://www.malvernmedia.com/"
+    },
+    {
+     "url": "https://images.squarespace-cdn.com/content/v1/58668b52e6f2e17f4f11f804/1483125197769-5M3KCGFBC1A8IGFCPUB9/MM_Logo_FINAL.png?format=1500w",
+     "kind": "logo",
+     "source_page": "https://www.malvernmedia.com/"
     },
     {
      "url": "https://privacyportal.privacypillar.com/dsar/assets/imgs/privacypillarfav.png",
@@ -84617,7 +84198,7 @@
    "languages": [
     "en"
    ],
-   "legal_name": null,
+   "legal_name": "Malvern Media",
    "search": {
     "available": false,
     "method": "none",
@@ -84649,67 +84230,22 @@
      "dsar"
     ],
     "channels": [
-     "web_form"
+     "phone"
     ],
     "emails": [],
-    "phones": [],
+    "phones": [
+     "1-800-702-3830"
+    ],
     "postal_address": null,
     "portal": null,
-    "form_fields": [
-     {
-      "name": "subjecttype",
-      "type": "radio",
-      "canonical": "region",
-      "required": true,
-      "autocomplete": null,
-      "placeholder": "Other US State Resident",
-      "id": null,
-      "label": null,
-      "inputmode": null,
-      "pattern": null,
-      "minlength": null,
-      "maxlength": null,
-      "min": null,
-      "max": null,
-      "step": null,
-      "accept": null,
-      "multiple": null,
-      "disabled": null,
-      "readonly": null,
-      "checked": null,
-      "value": null
-     },
-     {
-      "name": "",
-      "type": "email",
-      "canonical": "email",
-      "required": true,
-      "autocomplete": null,
-      "placeholder": "* Email",
-      "id": null,
-      "label": null,
-      "inputmode": null,
-      "pattern": null,
-      "minlength": null,
-      "maxlength": null,
-      "min": null,
-      "max": null,
-      "step": null,
-      "accept": null,
-      "multiple": null,
-      "disabled": null,
-      "readonly": null,
-      "checked": null,
-      "value": null
-     }
-    ],
+    "form_fields": [],
     "csrf_field_name": null,
     "requires_profile_url": null,
     "captcha": {
      "provider": null,
      "sitekey": null,
      "pages": [],
-     "checked_url": "https://privacyportal.privacypillar.com/dsar/form?orgid=369c8ff9-8ffb-4308-8362-f01691e77db8&propid=64c8904f-8bac-4dd9-8e6c-d052be1918a2&formid=6e6ff4b8-2296-4589-ae7f-563fa743ec2d&status=publish",
+     "checked_url": "https://www.malvernmedia.com/privacy-policy",
      "checked": true,
      "detail": null
     },
@@ -84718,8 +84254,8 @@
     "suppression_not_deletion": null,
     "processing_days": null,
     "processing_text": null,
-    "form_action": "https://privacyportal.privacypillar.com/dsar/form?orgid=369c8ff9-8ffb-4308-8362-f01691e77db8&propid=64c8904f-8bac-4dd9-8e6c-d052be1918a2&formid=6e6ff4b8-2296-4589-ae7f-563fa743ec2d&status=publish",
-    "form_method": "http_get",
+    "form_action": null,
+    "form_method": null,
     "form_meta": {
      "id": null,
      "name": null,
@@ -84734,16 +84270,19 @@
     "outcome": "none"
    },
    "legal": {
-    "privacy_policy_url": "https://privacyportal.privacypillar.com/",
-    "terms_url": null,
-    "automation_prohibited": null,
-    "automation_clause": null,
+    "privacy_policy_url": "https://privacyportal.privacypillar.com/dsar/form?orgid=369c8ff9-8ffb-4308-8362-f01691e77db8&propid=64c8904f-8bac-4dd9-8e6c-d052be1918a2&formid=6e6ff4b8-2296-4589-ae7f-563fa743ec2d&status=publish",
+    "terms_url": "https://www.malvernmedia.com/terms-of-use",
+    "automation_prohibited": true,
+    "automation_clause": "You are prohibited from harvesting, sweeping, or use any other means, to collect information about users of the Website; Use automated means, including spiders, robots, bots, scripts, crawlers, or the like, in connection with any activity o",
     "residency": [
-     "US-CA"
+     "US"
     ],
     "authorized_agent": null,
     "data_categories": [
-     "identifiers"
+     "identifiers",
+     "commercial",
+     "internet_activity",
+     "inferences"
     ],
     "sells_personal_information": null,
     "sells_clause": null,
@@ -84751,20 +84290,20 @@
    },
    "pages": [
     {
-     "url": "https://privacyportal.privacypillar.com/",
-     "final_url": "https://privacyportal.privacypillar.com/",
+     "url": "https://malvernmedia.com/",
+     "final_url": "https://www.malvernmedia.com/",
      "status": 200,
      "role": "home",
-     "title": "Privacy Portal",
+     "title": "Malvern Media",
      "liveness": "alive"
     },
     {
-     "url": "https://www.privacyportal.privacypillar.com/",
-     "final_url": null,
-     "status": null,
+     "url": "https://www.malvernmedia.com/",
+     "final_url": "https://www.malvernmedia.com/",
+     "status": 200,
      "role": "home",
-     "title": "",
-     "liveness": "dead"
+     "title": "Malvern Media",
+     "liveness": "alive"
     },
     {
      "url": "https://privacyportal.privacypillar.com/dsar/form?orgid=369c8ff9-8ffb-4308-8362-f01691e77db8&propid=64c8904f-8bac-4dd9-8e6c-d052be1918a2&formid=6e6ff4b8-2296-4589-ae7f-563fa743ec2d&status=publish",
@@ -84775,11 +84314,19 @@
      "liveness": "alive"
     },
     {
-     "url": "https://privacyportal.privacypillar.com/dsar/form?orgid=369c8ff9-8ffb-4308-8362-f01691e77db8&propid=64c8904f-8bac-4dd9-8e6c-d052be1918a2&formid=6e6ff4b8-2296-4589-ae7f-563fa743ec2d&status=publish",
-     "final_url": "https://privacyportal.privacypillar.com/dsar/form?orgid=369c8ff9-8ffb-4308-8362-f01691e77db8&propid=64c8904f-8bac-4dd9-8e6c-d052be1918a2&formid=6e6ff4b8-2296-4589-ae7f-563fa743ec2d&status=publish",
+     "url": "https://www.malvernmedia.com/privacy-policy",
+     "final_url": "https://www.malvernmedia.com/privacy-policy",
      "status": 200,
-     "role": "opt_out",
-     "title": "Privacy Portal",
+     "role": "privacy",
+     "title": "Privacy Policy — Malvern Media",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.malvernmedia.com/terms-of-use",
+     "final_url": "https://www.malvernmedia.com/terms-of-use",
+     "status": 200,
+     "role": "legal",
+     "title": "Terms of Use — Malvern Media",
      "liveness": "alive"
     }
    ],
@@ -84791,7 +84338,6 @@
     "street": "2129 Redcliff St.",
     "postal_address": "2129 Redcliff St., Los Angeles, CA, 90039, US",
     "coverage": [
-     "US-CA",
      "US"
     ],
     "search_regions": [],
@@ -84802,54 +84348,69 @@
    "network": {
     "checked": true,
     "addresses": [
-     "129.212.132.242"
+     "198.49.23.144",
+     "198.185.159.145",
+     "198.185.159.144",
+     "198.49.23.145"
     ],
     "ipv6": [],
     "cname": null,
-    "mx": [],
-    "mail_provider": null,
-    "spf": null,
+    "mx": [
+     "malvernmedia-com.mail.protection.outlook.com"
+    ],
+    "mail_provider": "microsoft",
+    "spf": "v=spf1 include:secureserver.net -all",
     "dmarc": null,
     "dkim": [],
-    "nameservers": [],
-    "dns_provider": null,
-    "soa_primary": null,
+    "nameservers": [
+     "ns53.domaincontrol.com",
+     "ns54.domaincontrol.com"
+    ],
+    "dns_provider": "godaddy",
+    "soa_primary": "ns53.domaincontrol.com",
     "caa": [],
     "dnssec": false,
-    "asn": "14061",
+    "asn": "53831",
     "asn_country": "US",
-    "prefix": "129.212.132.0/22",
+    "prefix": "198.49.23.0/24",
     "cdn": null,
-    "server": "nginx",
+    "server": "Squarespace",
     "tls_org": null,
-    "tls_issuer": "GoDaddy.com",
-    "tls_names": [],
+    "tls_issuer": "Let's Encrypt",
+    "tls_names": [
+     "malvernmedia.com"
+    ],
     "tls_version": "TLSv1.3",
-    "tls_not_before": "2026-06-18",
-    "tls_not_after": "2027-01-02",
-    "registrar": null,
-    "registered": null,
-    "registration_expires": null,
-    "domain_status": []
+    "tls_not_before": "2026-08-22",
+    "tls_not_after": "2026-11-20",
+    "registrar": "GoDaddy.com, LLC",
+    "registered": "2008-06-14",
+    "registration_expires": "2028-07-23",
+    "domain_status": [
+     "client delete prohibited",
+     "client renew prohibited",
+     "client transfer prohibited",
+     "client update prohibited"
+    ]
    },
    "request": {
     "removal_host": "privacyportal.privacypillar.com",
-    "same_site": true,
+    "same_site": false,
     "https": true,
     "redirected": false,
     "redirect_count": 0,
     "form_enctype": null,
     "content_type": "text/html",
     "hsts": true,
-    "hsts_max_age": 31536000,
-    "hsts_subdomains": true,
+    "hsts_max_age": 0,
+    "hsts_subdomains": false,
     "hsts_preload": false,
     "http_version": "http/1.1",
     "http3": false,
     "frame_options": null,
     "nosniff": true,
-    "referrer_policy": "same-origin",
-    "csp": true,
+    "referrer_policy": null,
+    "csp": false,
     "powered_by": null,
     "cookie_names": []
    },
@@ -84858,26 +84419,21 @@
     "search_fillable": false,
     "search_captcha": false,
     "search_fields": [],
-    "removal_form_fillable": true,
+    "removal_form_fillable": false,
     "removal_email_usable": false,
-    "removal_fields": [
-     "region",
-     "email"
-    ],
-    "removal_path": "form",
+    "removal_fields": [],
+    "removal_path": null,
     "fully_automatable": false,
     "usable_emails": [],
     "search_required": [],
-    "removal_required": [
-     "email"
-    ],
+    "removal_required": [],
     "email_verification": null,
     "id_document": null,
     "shared_removal_ids": [],
     "removal_captcha": false,
     "captcha_blocks_form": false,
     "captcha_email_fallback": false,
-    "removal_blocker": null
+    "removal_blocker": "phone"
    },
    "search_test": {
     "outcome": null,
@@ -93206,13 +92762,43 @@
    "id": "path2response-llc",
    "name": "Path2Response LLC",
    "category": "other",
-   "domain": "privacyportal-cdn.onetrust.com",
-   "checked_at": "2026-10-12T23:23:29+00:00",
+   "domain": "path2response.com",
+   "checked_at": "2026-11-03T20:24:19+00:00",
    "liveness": "alive",
    "liveness_detail": "catalog URL loaded",
-   "homepage": "https://privacyportal-cdn.onetrust.com/",
-   "logo_url": "https://privacyportal-cdn.onetrust.com/dsarwebform/2de26f06-de6f-45a7-8e1d-7d1148a3f301/draft/favicon-v2.ico",
+   "homepage": "https://path2response.com/",
+   "logo_url": "https://path2response.com/wp-content/uploads/2022/05/logo_white.png",
    "images": [
+    {
+     "url": "https://path2response.com/wp-content/uploads/2022/05/elementor/thumbs/favicon.svg",
+     "kind": "icon",
+     "source_page": "https://path2response.com/"
+    },
+    {
+     "url": "https://path2response.com/wp-content/uploads/2022/05/favicon.svg",
+     "kind": "icon",
+     "source_page": "https://path2response.com/"
+    },
+    {
+     "url": "https://path2response.com/wp-content/uploads/2022/05/growth-marketing.png",
+     "kind": "og_image",
+     "source_page": "https://path2response.com/"
+    },
+    {
+     "url": "https://path2response.com/wp-content/uploads/2022/05/logo.svg",
+     "kind": "json_ld",
+     "source_page": "https://path2response.com/"
+    },
+    {
+     "url": "https://path2response.com/wp-content/uploads/2022/05/logo_white.png",
+     "kind": "logo",
+     "source_page": "https://path2response.com/"
+    },
+    {
+     "url": "https://path2response.com/wp-content/uploads/2022/05/linkedin-logo-white.png",
+     "kind": "logo",
+     "source_page": "https://path2response.com/"
+    },
     {
      "url": "https://privacyportal-cdn.onetrust.com/dsarwebform/2de26f06-de6f-45a7-8e1d-7d1148a3f301/draft/favicon-v2.ico",
      "kind": "icon",
@@ -93223,11 +92809,11 @@
    "languages": [
     "en"
    ],
-   "legal_name": null,
+   "legal_name": "Path2Response",
    "search": {
     "available": false,
     "method": "none",
-    "page_url": "https://privacyportal-cdn.onetrust.com/",
+    "page_url": null,
     "form_action": null,
     "inputs": [],
     "url_pattern": null,
@@ -93244,8 +92830,8 @@
     },
     "captcha_provider": null,
     "captcha_sitekey": null,
-    "captcha_checked": null,
-    "captcha_detail": null
+    "captcha_detail": null,
+    "captcha_checked": null
    },
    "removal": {
     "url": "https://privacyportal-cdn.onetrust.com/dsarwebform/2de26f06-de6f-45a7-8e1d-7d1148a3f301/draft/7a5dc7d1-cc7e-43a8-9f24-702807deb65b.html",
@@ -93254,37 +92840,41 @@
     "kinds": [
      "dsar"
     ],
-    "channels": [],
-    "emails": [],
-    "phones": [],
+    "channels": [
+     "email",
+     "phone",
+     "official_portal"
+    ],
+    "emails": [
+     {
+      "email": "inquiries@path2response.com",
+      "confidence": "uncertain",
+      "source_url": "https://path2response.com/"
+     },
+     {
+      "email": "bhammer@path2response.com",
+      "confidence": "uncertain",
+      "source_url": "https://path2response.com/"
+     }
+    ],
+    "phones": [
+     "303.927.7733"
+    ],
     "postal_address": null,
-    "portal": null,
+    "portal": {
+     "vendor": "onetrust",
+     "url": "https://privacyportal-cdn.onetrust.com/dsarwebform/2de26f06-de6f-45a7-8e1d-7d1148a3f301/draft/7a5dc7d1-cc7e-43a8-9f24-702807deb65b.html"
+    },
     "form_fields": [],
     "csrf_field_name": null,
     "requires_profile_url": null,
     "captcha": {
-     "provider": "recaptcha_v2",
-     "sitekey": "6LfiqCUUAAAAAGzo0BG2sKBIF-oZVi1_rXgUm5xn",
-     "pages": [
-      "https://privacyportal-cdn.onetrust.com/dsarwebform/2de26f06-de6f-45a7-8e1d-7d1148a3f301/draft/7a5dc7d1-cc7e-43a8-9f24-702807deb65b.html"
-     ],
-     "checked_url": "https://privacyportal-cdn.onetrust.com/dsarwebform/2de26f06-de6f-45a7-8e1d-7d1148a3f301/draft/7a5dc7d1-cc7e-43a8-9f24-702807deb65b.html",
-     "detail": {
-      "mode": "checkbox",
-      "invisible": false,
-      "size": "normal",
-      "theme": "light",
-      "action": null,
-      "badge": null,
-      "language": "en-us",
-      "appearance": null,
-      "enterprise": false,
-      "api_domain": "www.google.com",
-      "script_path": "/recaptcha/api.js",
-      "token_field": null,
-      "callback": null
-     },
-     "checked": true
+     "provider": null,
+     "sitekey": null,
+     "pages": [],
+     "checked": null,
+     "checked_url": null,
+     "detail": null
     },
     "consent_vendor": null,
     "success_text": null,
@@ -93313,27 +92903,30 @@
     "automation_clause": null,
     "residency": [],
     "authorized_agent": null,
-    "data_categories": [],
+    "data_categories": [
+     "identifiers",
+     "commercial"
+    ],
     "sells_personal_information": null,
     "sells_clause": null,
     "children_not_directed": null
    },
    "pages": [
     {
-     "url": "https://privacyportal-cdn.onetrust.com/",
-     "final_url": "https://privacyportal-cdn.onetrust.com/",
-     "status": 400,
+     "url": "https://path2response.com/",
+     "final_url": "https://path2response.com/",
+     "status": 200,
      "role": "home",
-     "title": "",
-     "liveness": "error"
+     "title": "Path2Response | Campaign Audiences and Data Enrichment",
+     "liveness": "alive"
     },
     {
-     "url": "https://www.privacyportal-cdn.onetrust.com/",
-     "final_url": null,
-     "status": null,
+     "url": "https://www.path2response.com/",
+     "final_url": "https://path2response.com/",
+     "status": 200,
      "role": "home",
-     "title": "",
-     "liveness": "dead"
+     "title": "Path2Response | Campaign Audiences and Data Enrichment",
+     "liveness": "alive"
     },
     {
      "url": "https://privacyportal-cdn.onetrust.com/dsarwebform/2de26f06-de6f-45a7-8e1d-7d1148a3f301/draft/7a5dc7d1-cc7e-43a8-9f24-702807deb65b.html",
@@ -93360,15 +92953,9 @@
     ]
    },
    "network": {
-    "checked": true,
-    "addresses": [
-     "172.64.155.119",
-     "104.18.32.137"
-    ],
-    "ipv6": [
-     "2606:4700:4403::6812:2089",
-     "2a06:98c1:3103::ac40:9b77"
-    ],
+    "checked": false,
+    "addresses": [],
+    "ipv6": [],
     "cname": null,
     "mx": [],
     "mail_provider": null,
@@ -93379,18 +92966,18 @@
     "dns_provider": null,
     "soa_primary": null,
     "caa": [],
-    "dnssec": false,
-    "asn": "13335",
-    "asn_country": "US",
-    "prefix": "172.64.155.0/24",
-    "cdn": "cloudflare",
-    "server": "cloudflare",
+    "dnssec": null,
+    "asn": null,
+    "asn_country": null,
+    "prefix": null,
+    "cdn": null,
+    "server": null,
     "tls_org": null,
-    "tls_issuer": "Google Trust Services",
+    "tls_issuer": null,
     "tls_names": [],
-    "tls_version": "TLSv1.3",
-    "tls_not_before": "2026-10-13",
-    "tls_not_after": "2027-01-11",
+    "tls_version": null,
+    "tls_not_before": null,
+    "tls_not_after": null,
     "registrar": null,
     "registered": null,
     "registration_expires": null,
@@ -93398,22 +92985,22 @@
    },
    "request": {
     "removal_host": "privacyportal-cdn.onetrust.com",
-    "same_site": true,
+    "same_site": false,
     "https": true,
     "redirected": false,
-    "redirect_count": 0,
+    "redirect_count": null,
     "form_enctype": null,
-    "content_type": "text/html",
-    "hsts": true,
-    "hsts_max_age": 31536000,
-    "hsts_subdomains": true,
-    "hsts_preload": true,
-    "http_version": "http/1.1",
-    "http3": false,
+    "content_type": null,
+    "hsts": null,
+    "hsts_max_age": null,
+    "hsts_subdomains": null,
+    "hsts_preload": null,
+    "http_version": null,
+    "http3": null,
     "frame_options": null,
-    "nosniff": false,
+    "nosniff": null,
     "referrer_policy": null,
-    "csp": false,
+    "csp": null,
     "powered_by": null,
     "cookie_names": []
    },
@@ -93433,10 +93020,10 @@
     "email_verification": null,
     "id_document": null,
     "shared_removal_ids": [],
-    "removal_captcha": true,
+    "removal_captcha": false,
     "captcha_blocks_form": false,
     "captcha_email_fallback": false,
-    "removal_blocker": "captcha_no_form"
+    "removal_blocker": "generic_inbox"
    },
    "search_test": {
     "outcome": null,
@@ -109745,18 +109332,49 @@
    "id": "the-alesco-group-llc",
    "name": "The Alesco Group LLC",
    "category": "other",
-   "domain": "mydataprivacy.com",
-   "checked_at": "2026-10-12T23:21:17+00:00",
+   "domain": "alescodata.com",
+   "checked_at": "2026-10-12T23:11:03+00:00",
    "liveness": "alive",
    "liveness_detail": "catalog URL loaded",
-   "homepage": "https://mydataprivacy.com/",
-   "logo_url": null,
-   "images": [],
+   "homepage": "https://alescodata.com/",
+   "logo_url": "https://alescodata.com/wp-content/uploads/2018/02/logo_MLD_main.png",
+   "images": [
+    {
+     "url": "https://alescodata.com/wp-content/uploads/2020/02/cropped-Alesco-Wordpress-Site-Icon-32x32-1.webp",
+     "kind": "icon",
+     "source_page": "https://alescodata.com/"
+    },
+    {
+     "url": "https://alescodata.com/wp-content/uploads/2026/08/Because-Data-Matters-Mobile-Hero-Image.png",
+     "kind": "og_image",
+     "source_page": "https://alescodata.com/"
+    },
+    {
+     "url": "https://alescodata.com/wp-content/uploads/2018/02/logo_MLD_main.png",
+     "kind": "json_ld",
+     "source_page": "https://alescodata.com/"
+    },
+    {
+     "url": "https://alescodata.com/wp-content/uploads/2020/05/Mailing-Lists-Direct-from-Alesco-Data-1.png",
+     "kind": "json_ld",
+     "source_page": "https://alescodata.com/"
+    },
+    {
+     "url": "https://alescodata.com/wp-content/uploads/2026/07/AD_Stirista_FullColor_Logo-scaled.webp",
+     "kind": "og_image",
+     "source_page": "https://alescodata.com/privacy-center/"
+    },
+    {
+     "url": "https://alescodata.com/wp-content/uploads/2026/08/iOS-Privacy-Updates.jpg",
+     "kind": "og_image",
+     "source_page": "https://alescodata.com/resources/blog/how-ios-privacy-updates-affect-marketers/"
+    }
+   ],
    "theme_color": null,
    "languages": [
     "en"
    ],
-   "legal_name": null,
+   "legal_name": "Mailing Lists Direct",
    "search": {
     "available": false,
     "method": "none",
@@ -109767,8 +109385,6 @@
     "directory_prefixes": [],
     "paywall": null,
     "login_wall": null,
-    "captcha_provider": null,
-    "captcha_sitekey": null,
     "form_meta": {
      "id": null,
      "name": null,
@@ -109777,66 +109393,101 @@
      "submit_label": null,
      "hidden_names": []
     },
-    "captcha_detail": null,
-    "captcha_checked": null
+    "captcha_provider": null,
+    "captcha_sitekey": null,
+    "captcha_checked": null,
+    "captcha_detail": null
    },
    "removal": {
-    "url": "https://www.mydataprivacy.com/upload-csv",
-    "final_url": "https://www.mydataprivacy.com/upload-csv",
+    "url": "https://alescodata.com/privacy-center/",
+    "final_url": "https://alescodata.com/privacy-center/",
     "http_status": 200,
     "kinds": [
-     "opt_out"
+     "opt_out",
+     "do_not_sell"
     ],
     "channels": [
-     "web_form",
      "email",
      "phone"
     ],
     "emails": [
      {
-      "email": "info@mydataprivacy.com",
+      "email": "info@alescodata.com",
       "confidence": "uncertain",
-      "source_url": "https://mydataprivacy.com/"
+      "source_url": "https://alescodata.com/"
+     },
+     {
+      "email": "privacy@alescodata.com",
+      "confidence": "extracted",
+      "source_url": "https://alescodata.com/privacy-center/"
+     },
+     {
+      "email": "felicia.snyder@alescodata.com",
+      "confidence": "uncertain",
+      "source_url": "https://alescodata.com/contact-us/"
+     },
+     {
+      "email": "angie.trivette@alescodata.com",
+      "confidence": "uncertain",
+      "source_url": "https://alescodata.com/contact-us/"
+     },
+     {
+      "email": "collins@alescodata.com",
+      "confidence": "uncertain",
+      "source_url": "https://alescodata.com/contact-us/"
+     },
+     {
+      "email": "kelly.mccabe@alescodata.com",
+      "confidence": "uncertain",
+      "source_url": "https://alescodata.com/contact-us/"
+     },
+     {
+      "email": "kristen.mcgrath@alescodata.com",
+      "confidence": "uncertain",
+      "source_url": "https://alescodata.com/contact-us/"
+     },
+     {
+      "email": "linda.valyo@alescodata.com",
+      "confidence": "uncertain",
+      "source_url": "https://alescodata.com/contact-us/"
+     },
+     {
+      "email": "michelle.harness@alescodata.com",
+      "confidence": "uncertain",
+      "source_url": "https://alescodata.com/contact-us/"
+     },
+     {
+      "email": "natalie@alescodata.com",
+      "confidence": "uncertain",
+      "source_url": "https://alescodata.com/contact-us/"
+     },
+     {
+      "email": "natasha.rever@alescodata.com",
+      "confidence": "uncertain",
+      "source_url": "https://alescodata.com/contact-us/"
+     },
+     {
+      "email": "peter.lamphier@alescodata.com",
+      "confidence": "uncertain",
+      "source_url": "https://alescodata.com/contact-us/"
      }
     ],
     "phones": [
-     "866.652.5003"
+     "(855) 967-4266",
+     "(800) 701-6531",
+     "(877) 652-5002"
     ],
     "postal_address": null,
     "portal": null,
-    "form_fields": [
-     {
-      "name": "nest-messages_email",
-      "type": "text",
-      "canonical": null,
-      "required": false,
-      "autocomplete": null,
-      "placeholder": null,
-      "id": "nest-messages_email",
-      "label": "Email Address",
-      "inputmode": null,
-      "pattern": null,
-      "minlength": null,
-      "maxlength": null,
-      "min": null,
-      "max": null,
-      "step": null,
-      "accept": null,
-      "multiple": false,
-      "disabled": false,
-      "readonly": false,
-      "checked": false,
-      "value": null
-     }
-    ],
+    "form_fields": [],
     "csrf_field_name": null,
     "requires_profile_url": null,
     "captcha": {
      "provider": null,
      "sitekey": null,
      "pages": [],
-     "checked_url": "https://www.mydataprivacy.com/upload-csv",
-     "checked": true,
+     "checked": false,
+     "checked_url": null,
      "detail": null
     },
     "consent_vendor": null,
@@ -109844,14 +109495,14 @@
     "suppression_not_deletion": null,
     "processing_days": null,
     "processing_text": null,
-    "form_action": "https://mydataprivacy.com/",
-    "form_method": "http_get",
+    "form_action": null,
+    "form_method": null,
     "form_meta": {
-     "id": "nest-messages",
+     "id": null,
      "name": null,
      "autocomplete": null,
-     "novalidate": false,
-     "submit_label": "Search",
+     "novalidate": null,
+     "submit_label": null,
      "hidden_names": []
     }
    },
@@ -109860,19 +109511,21 @@
     "outcome": "none"
    },
    "legal": {
-    "privacy_policy_url": "https://mydataprivacy.com/",
-    "terms_url": "https://mydataprivacy.com/terms-of-use/index.html",
+    "privacy_policy_url": "https://alescodata.com/privacy-center/",
+    "terms_url": "https://alescodata.com/privacy-center/terms-of-service/",
     "automation_prohibited": null,
     "automation_clause": null,
     "residency": [
      "US-CA",
+     "US",
      "EU"
     ],
     "authorized_agent": null,
     "data_categories": [
      "identifiers",
      "commercial",
-     "sensitive"
+     "internet_activity",
+     "employment"
     ],
     "sells_personal_information": null,
     "sells_clause": null,
@@ -109880,67 +109533,67 @@
    },
    "pages": [
     {
-     "url": "https://mydataprivacy.com/",
-     "final_url": "https://mydataprivacy.com/",
+     "url": "https://alescodata.com/",
+     "final_url": "https://alescodata.com/",
      "status": 200,
      "role": "home",
-     "title": "My Data Privacy",
+     "title": "Alesco Data - Because Data Matters",
      "liveness": "alive"
     },
     {
-     "url": "https://www.mydataprivacy.com/",
-     "final_url": "https://www.mydataprivacy.com/",
+     "url": "https://www.alescodata.com/",
+     "final_url": "https://alescodata.com/",
      "status": 200,
      "role": "home",
-     "title": "My Data Privacy",
+     "title": "Alesco Data - Because Data Matters",
      "liveness": "alive"
     },
     {
-     "url": "https://www.mydataprivacy.com/upload-csv",
-     "final_url": "https://www.mydataprivacy.com/upload-csv",
+     "url": "https://alescodata.com/privacy-center/",
+     "final_url": "https://alescodata.com/privacy-center/",
      "status": 200,
-     "role": "catalog",
-     "title": "My Data Privacy",
+     "role": "privacy",
+     "title": "Privacy Center - Alesco Data",
      "liveness": "alive"
     },
     {
-     "url": "https://mydataprivacy.com/login",
-     "final_url": "https://mydataprivacy.com/login",
+     "url": "https://alescodata.com/privacy-center/privacy-policy/",
+     "final_url": "https://alescodata.com/privacy-center/privacy-policy/",
+     "status": 200,
+     "role": "privacy",
+     "title": "Privacy Policy - Alesco Data",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://alescodata.com/privacy-center/terms-of-service/",
+     "final_url": "https://alescodata.com/privacy-center/terms-of-service/",
+     "status": 200,
+     "role": "privacy",
+     "title": "Terms of Service - Alesco Data",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://alescodata.com/contact-us/",
+     "final_url": "https://alescodata.com/contact-us/",
+     "status": 200,
+     "role": "contact",
+     "title": "Contact - Alesco Data",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://alescodata.com/privacy-center/privacy-policy/acceptable-use-policy/",
+     "final_url": "https://alescodata.com/privacy-center/privacy-policy/acceptable-use-policy/",
+     "status": 200,
+     "role": "privacy",
+     "title": "Acceptable Use Policy - Alesco Data",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://alescodata.com/resources/blog/how-ios-privacy-updates-affect-marketers/",
+     "final_url": "https://alescodata.com/resources/blog/how-ios-privacy-updates-affect-marketers/",
      "status": 200,
      "role": "other",
-     "title": "My Data Privacy",
-     "liveness": "alive"
-    },
-    {
-     "url": "https://mydataprivacy.com/list-owners-and-mailers/index.html",
-     "final_url": "https://mydataprivacy.com/list-owners-and-mailers/index.html",
-     "status": 200,
-     "role": "other",
-     "title": "List Owners & Mailers",
-     "liveness": "alive"
-    },
-    {
-     "url": "https://mydataprivacy.com/ccpa.pdf",
-     "final_url": "https://mydataprivacy.com/ccpa.pdf",
-     "status": 200,
-     "role": "other",
-     "title": "",
-     "liveness": "alive"
-    },
-    {
-     "url": "https://mydataprivacy.com/faq/index.html",
-     "final_url": "https://mydataprivacy.com/faq/index.html",
-     "status": 200,
-     "role": "about",
-     "title": "Frequently Asked Questions",
-     "liveness": "alive"
-    },
-    {
-     "url": "https://mydataprivacy.com/news",
-     "final_url": "https://mydataprivacy.com/news",
-     "status": 200,
-     "role": "other",
-     "title": "My Data Privacy",
+     "title": "How iOS Privacy Updates Affect Marketers - Alesco Data",
      "liveness": "alive"
     }
    ],
@@ -109953,8 +109606,8 @@
     "postal_address": "4575 Via Royale Su 110, Fort Myers, FL, 33919, US",
     "coverage": [
      "US-CA",
-     "EU",
-     "US"
+     "US",
+     "EU"
     ],
     "search_regions": [],
     "sources": [
@@ -109964,50 +109617,53 @@
    "network": {
     "checked": true,
     "addresses": [
-     "20.49.97.9"
+     "192.124.249.152"
     ],
     "ipv6": [],
     "cname": null,
     "mx": [
-     "mydataprivacy-com.mail.protection.outlook.com"
+     "alescodata-com.mail.protection.outlook.com"
     ],
     "mail_provider": "microsoft",
-    "spf": "v=spf1 include:spf.protection.outlook.com include:spf.mandrillapp.com -all",
-    "dmarc": "quarantine",
+    "spf": "v=spf1 ip4:198.160.117.200 include:spf.protection.outlook.com include:customers.clickdimensions.com include:spf.mandrillapp.com include:mailingalescodata.com include:50251967.spf08.hubspotemail.net -a",
+    "dmarc": "none",
     "dkim": [
-     "default"
+     "selector1"
     ],
     "nameservers": [
-     "ns1.namebrightdns.com",
-     "ns2.namebrightdns.com"
+     "ns.synergy-networks.com",
+     "ns2.synergy-networks.com"
     ],
     "dns_provider": null,
-    "soa_primary": "ns1.namebrightdns.com",
+    "soa_primary": "ns.synergy-networks.com",
     "caa": [],
     "dnssec": false,
-    "asn": "8075",
+    "asn": "30148",
     "asn_country": "US",
-    "prefix": "20.48.0.0/12",
-    "cdn": null,
-    "server": "Microsoft-IIS",
+    "prefix": "192.124.249.0/24",
+    "cdn": "sucuri",
+    "server": "Sucuri",
     "tls_org": null,
-    "tls_issuer": "GoDaddy.com, Inc.",
+    "tls_issuer": "GoDaddy.com",
     "tls_names": [
-     "mydataprivacy.com",
-     "www.mydataprivacy.com"
+     "www.alescodata.com",
+     "alescodata.com"
     ],
     "tls_version": "TLSv1.3",
-    "tls_not_before": "2026-02-02",
-    "tls_not_after": "2027-03-06",
-    "registrar": "TurnCommerce, Inc. DBA NameBright.com",
-    "registered": "2012-03-08",
-    "registration_expires": "2032-03-08",
+    "tls_not_before": "2026-09-05",
+    "tls_not_after": "2026-12-04",
+    "registrar": "GoDaddy.com, LLC",
+    "registered": "2002-06-28",
+    "registration_expires": "2027-06-28",
     "domain_status": [
-     "client transfer prohibited"
+     "client delete prohibited",
+     "client renew prohibited",
+     "client transfer prohibited",
+     "client update prohibited"
     ]
    },
    "request": {
-    "removal_host": "mydataprivacy.com",
+    "removal_host": "alescodata.com",
     "same_site": true,
     "https": true,
     "redirected": false,
@@ -110019,12 +109675,12 @@
     "hsts_subdomains": false,
     "hsts_preload": false,
     "http_version": "http/1.1",
-    "http3": false,
-    "frame_options": null,
-    "nosniff": false,
+    "http3": true,
+    "frame_options": "sameorigin",
+    "nosniff": true,
     "referrer_policy": null,
-    "csp": false,
-    "powered_by": "ASP.NET",
+    "csp": true,
+    "powered_by": null,
     "cookie_names": []
    },
    "automation": {
@@ -110032,12 +109688,14 @@
     "search_fillable": false,
     "search_captcha": false,
     "search_fields": [],
-    "removal_form_fillable": true,
-    "removal_email_usable": false,
+    "removal_form_fillable": false,
+    "removal_email_usable": true,
     "removal_fields": [],
-    "removal_path": "form",
+    "removal_path": "email",
     "fully_automatable": false,
-    "usable_emails": [],
+    "usable_emails": [
+     "privacy@alescodata.com"
+    ],
     "search_required": [],
     "removal_required": [],
     "email_verification": null,
@@ -209846,283 +209504,6 @@
     "checked_at": null
    }
   },
-  "malvern-media-inc-malvernmedia-com": {
-   "schema_version": "4.0.0",
-   "id": "malvern-media-inc-malvernmedia-com",
-   "name": "Malvern Media Inc. (malvernmedia.com)",
-   "category": "marketing",
-   "domain": "malvernmedia.com",
-   "checked_at": "2026-10-12T23:20:20+00:00",
-   "liveness": "alive",
-   "liveness_detail": "catalog URL loaded",
-   "homepage": "https://www.malvernmedia.com/",
-   "logo_url": "https://images.squarespace-cdn.com/content/v1/58668b52e6f2e17f4f11f804/1483125197769-5M3KCGFBC1A8IGFCPUB9/MM_Logo_FINAL.png?format=1500w",
-   "images": [
-    {
-     "url": "https://images.squarespace-cdn.com/content/v1/58668b52e6f2e17f4f11f804/1483125361075-56KLFT3Z9GMERF3ZI8ZX/favicon.ico?format=100w",
-     "kind": "icon",
-     "source_page": "https://www.malvernmedia.com/"
-    },
-    {
-     "url": "http://static1.squarespace.com/static/58668b52e6f2e17f4f11f804/t/5866b1cd3e00be540c374bda/1483125209685/MM_Logo_FINAL.png?format=1500w",
-     "kind": "og_image",
-     "source_page": "https://www.malvernmedia.com/"
-    },
-    {
-     "url": "https://images.squarespace-cdn.com/content/v1/58668b52e6f2e17f4f11f804/1483125197769-5M3KCGFBC1A8IGFCPUB9/MM_Logo_FINAL.png",
-     "kind": "json_ld",
-     "source_page": "https://www.malvernmedia.com/"
-    },
-    {
-     "url": "https://images.squarespace-cdn.com/content/v1/58668b52e6f2e17f4f11f804/1483125197769-5M3KCGFBC1A8IGFCPUB9/MM_Logo_FINAL.png?format=1500w",
-     "kind": "logo",
-     "source_page": "https://www.malvernmedia.com/"
-    }
-   ],
-   "theme_color": null,
-   "languages": [
-    "en"
-   ],
-   "legal_name": "Malvern Media",
-   "search": {
-    "available": false,
-    "method": "none",
-    "page_url": null,
-    "form_action": null,
-    "inputs": [],
-    "url_pattern": null,
-    "directory_prefixes": [],
-    "paywall": null,
-    "login_wall": null,
-    "form_meta": {
-     "id": null,
-     "name": null,
-     "autocomplete": null,
-     "novalidate": null,
-     "submit_label": null,
-     "hidden_names": []
-    },
-    "captcha_provider": null,
-    "captcha_sitekey": null,
-    "captcha_checked": null,
-    "captcha_detail": null
-   },
-   "removal": {
-    "url": "https://www.malvernmedia.com/privacy-policy",
-    "final_url": "https://www.malvernmedia.com/privacy-policy",
-    "http_status": 200,
-    "kinds": [
-     "opt_out"
-    ],
-    "channels": [
-     "phone"
-    ],
-    "emails": [],
-    "phones": [
-     "1-800-702-3830"
-    ],
-    "postal_address": null,
-    "portal": null,
-    "form_fields": [],
-    "csrf_field_name": null,
-    "requires_profile_url": null,
-    "captcha": {
-     "provider": null,
-     "sitekey": null,
-     "pages": [],
-     "checked_url": "https://www.malvernmedia.com/privacy-policy",
-     "checked": true,
-     "detail": null
-    },
-    "consent_vendor": null,
-    "success_text": null,
-    "suppression_not_deletion": null,
-    "processing_days": null,
-    "processing_text": null,
-    "form_action": null,
-    "form_method": null,
-    "form_meta": {
-     "id": null,
-     "name": null,
-     "autocomplete": null,
-     "novalidate": null,
-     "submit_label": null,
-     "hidden_names": []
-    }
-   },
-   "bot_defense": {
-    "vendor": null,
-    "outcome": "none"
-   },
-   "legal": {
-    "privacy_policy_url": "https://www.malvernmedia.com/privacy-policy",
-    "terms_url": "https://www.malvernmedia.com/terms-of-use",
-    "automation_prohibited": true,
-    "automation_clause": "You are prohibited from harvesting, sweeping, or use any other means, to collect information about users of the Website; Use automated means, including spiders, robots, bots, scripts, crawlers, or the like, in connection with any activity o",
-    "residency": [
-     "US"
-    ],
-    "authorized_agent": null,
-    "data_categories": [
-     "identifiers",
-     "commercial",
-     "internet_activity",
-     "inferences"
-    ],
-    "sells_personal_information": null,
-    "sells_clause": null,
-    "children_not_directed": null
-   },
-   "pages": [
-    {
-     "url": "https://malvernmedia.com/",
-     "final_url": "https://www.malvernmedia.com/",
-     "status": 200,
-     "role": "home",
-     "title": "Malvern Media",
-     "liveness": "alive"
-    },
-    {
-     "url": "https://www.malvernmedia.com/",
-     "final_url": "https://www.malvernmedia.com/",
-     "status": 200,
-     "role": "home",
-     "title": "Malvern Media",
-     "liveness": "alive"
-    },
-    {
-     "url": "https://www.malvernmedia.com/privacy-policy",
-     "final_url": "https://www.malvernmedia.com/privacy-policy",
-     "status": 200,
-     "role": "catalog",
-     "title": "Privacy Policy — Malvern Media",
-     "liveness": "alive"
-    },
-    {
-     "url": "https://www.malvernmedia.com/terms-of-use",
-     "final_url": "https://www.malvernmedia.com/terms-of-use",
-     "status": 200,
-     "role": "legal",
-     "title": "Terms of Use — Malvern Media",
-     "liveness": "alive"
-    }
-   ],
-   "location": {
-    "country": "US",
-    "region": "CA",
-    "locality": "Los Angeles",
-    "postal_code": "90039",
-    "street": "2129 Redcliff St.",
-    "postal_address": "2129 Redcliff St., Los Angeles, CA, 90039, US",
-    "coverage": [
-     "US"
-    ],
-    "search_regions": [],
-    "sources": [
-     "cppa_registry"
-    ]
-   },
-   "network": {
-    "checked": true,
-    "addresses": [
-     "198.49.23.144",
-     "198.185.159.145",
-     "198.185.159.144",
-     "198.49.23.145"
-    ],
-    "ipv6": [],
-    "cname": null,
-    "mx": [
-     "malvernmedia-com.mail.protection.outlook.com"
-    ],
-    "mail_provider": "microsoft",
-    "spf": "v=spf1 include:secureserver.net -all",
-    "dmarc": null,
-    "dkim": [],
-    "nameservers": [
-     "ns53.domaincontrol.com",
-     "ns54.domaincontrol.com"
-    ],
-    "dns_provider": "godaddy",
-    "soa_primary": "ns53.domaincontrol.com",
-    "caa": [],
-    "dnssec": false,
-    "asn": "53831",
-    "asn_country": "US",
-    "prefix": "198.49.23.0/24",
-    "cdn": null,
-    "server": "Squarespace",
-    "tls_org": null,
-    "tls_issuer": "Let's Encrypt",
-    "tls_names": [
-     "malvernmedia.com"
-    ],
-    "tls_version": "TLSv1.3",
-    "tls_not_before": "2026-08-22",
-    "tls_not_after": "2026-11-20",
-    "registrar": "GoDaddy.com, LLC",
-    "registered": "2008-06-14",
-    "registration_expires": "2028-07-23",
-    "domain_status": [
-     "client delete prohibited",
-     "client renew prohibited",
-     "client transfer prohibited",
-     "client update prohibited"
-    ]
-   },
-   "request": {
-    "removal_host": "malvernmedia.com",
-    "same_site": true,
-    "https": true,
-    "redirected": false,
-    "redirect_count": 0,
-    "form_enctype": null,
-    "content_type": "text/html",
-    "hsts": true,
-    "hsts_max_age": 0,
-    "hsts_subdomains": false,
-    "hsts_preload": false,
-    "http_version": "http/1.1",
-    "http3": false,
-    "frame_options": null,
-    "nosniff": true,
-    "referrer_policy": null,
-    "csp": false,
-    "powered_by": null,
-    "cookie_names": []
-   },
-   "automation": {
-    "search_scanned": true,
-    "search_fillable": false,
-    "search_captcha": false,
-    "search_fields": [],
-    "removal_form_fillable": false,
-    "removal_email_usable": false,
-    "removal_fields": [],
-    "removal_path": null,
-    "fully_automatable": false,
-    "usable_emails": [],
-    "search_required": [],
-    "removal_required": [],
-    "email_verification": null,
-    "id_document": null,
-    "shared_removal_ids": [],
-    "removal_captcha": false,
-    "captcha_blocks_form": false,
-    "captcha_email_fallback": false,
-    "removal_blocker": "phone"
-   },
-   "search_test": {
-    "outcome": null,
-    "http_status": null,
-    "path_prefix": null,
-    "fields_sent": [],
-    "missing": [],
-    "page_kind": null,
-    "result_count": null,
-    "checked_at": null
-   }
-  },
   "milestone-marketing-solutions": {
    "schema_version": "4.0.0",
    "id": "milestone-marketing-solutions",
@@ -214126,364 +213507,6 @@
     "captcha_blocks_form": true,
     "captcha_email_fallback": false,
     "removal_blocker": "captcha_form"
-   },
-   "search_test": {
-    "outcome": null,
-    "http_status": null,
-    "path_prefix": null,
-    "fields_sent": [],
-    "missing": [],
-    "page_kind": null,
-    "result_count": null,
-    "checked_at": null
-   }
-  },
-  "awl-holdings-llc-privacyportal-eu-onetrust-com": {
-   "schema_version": "4.0.0",
-   "id": "awl-holdings-llc-privacyportal-eu-onetrust-com",
-   "name": "AWL Holdings, LLC (privacyportal-eu.onetrust.com)",
-   "category": "other",
-   "domain": "allwebleads.com",
-   "checked_at": "2026-10-12T23:11:06+00:00",
-   "liveness": "alive",
-   "liveness_detail": "catalog URL loaded",
-   "homepage": "https://awl.com/",
-   "logo_url": "https://dnc.allwebleads.com/Assets/Images/Awl/logo.png",
-   "images": [
-    {
-     "url": "https://awl.com/wp-content/uploads/2021/12/cropped-awl-logo-mark-32x32.png",
-     "kind": "icon",
-     "source_page": "https://awl.com/"
-    },
-    {
-     "url": "https://awl.com/wp-content/uploads/2021/12/cropped-awl-logo-mark-192x192.png",
-     "kind": "icon",
-     "source_page": "https://awl.com/"
-    },
-    {
-     "url": "https://awl.com/wp-content/uploads/2021/12/cropped-awl-logo-mark-180x180.png",
-     "kind": "apple_touch_icon",
-     "source_page": "https://awl.com/"
-    },
-    {
-     "url": "https://awl.com/wp-content/uploads/2022/01/awl-twitter-avatar-white.png",
-     "kind": "og_image",
-     "source_page": "https://awl.com/"
-    },
-    {
-     "url": "https://awl.com/wp-content/uploads/2021/11/awl-red.svg",
-     "kind": "json_ld",
-     "source_page": "https://awl.com/"
-    },
-    {
-     "url": "https://privacyportal-eu.onetrust.com/webform/031dc37f-2093-4055-9d04-22f83329fe9f/favicon-v2.ico",
-     "kind": "icon",
-     "source_page": "https://privacyportal-eu.onetrust.com/webform/031dc37f-2093-4055-9d04-22f83329fe9f/a4fb8ed6-8389-4a17-a3be-ca808c6b300e"
-    },
-    {
-     "url": "https://dnc.allwebleads.com/Assets/Images/Awl/favicon.ico",
-     "kind": "icon",
-     "source_page": "https://dnc.allwebleads.com/Unsubscribe"
-    },
-    {
-     "url": "https://d3u2k162a4hlu1.cloudfront.net/Assets/Images/apple-touch-icon-precomposed.png?awlav=26.10.0.69",
-     "kind": "apple_touch_icon",
-     "source_page": "https://dnc.allwebleads.com/Unsubscribe"
-    },
-    {
-     "url": "https://d3u2k162a4hlu1.cloudfront.net/Assets/Images/apple-touch-icon.png?awlav=26.10.0.69",
-     "kind": "apple_touch_icon",
-     "source_page": "https://dnc.allwebleads.com/Unsubscribe"
-    },
-    {
-     "url": "https://dnc.allwebleads.com/Assets/Images/Awl/logo.png",
-     "kind": "logo",
-     "source_page": "https://dnc.allwebleads.com/Unsubscribe"
-    },
-    {
-     "url": "https://awl.com/wp-content/uploads/2022/01/DJI_0235-scaled.jpg",
-     "kind": "og_image",
-     "source_page": "https://www.allwebleads.com/contact-us/"
-    }
-   ],
-   "theme_color": null,
-   "languages": [
-    "en"
-   ],
-   "legal_name": "AWL",
-   "search": {
-    "available": false,
-    "method": "none",
-    "page_url": null,
-    "form_action": null,
-    "inputs": [],
-    "url_pattern": null,
-    "directory_prefixes": [],
-    "paywall": null,
-    "login_wall": null,
-    "captcha_provider": null,
-    "captcha_sitekey": null,
-    "captcha_detail": null,
-    "form_meta": {
-     "id": null,
-     "name": null,
-     "autocomplete": null,
-     "novalidate": null,
-     "submit_label": null,
-     "hidden_names": []
-    },
-    "captcha_checked": null
-   },
-   "removal": {
-    "url": "https://privacyportal-eu.onetrust.com/webform/031dc37f-2093-4055-9d04-22f83329fe9f/a4fb8ed6-8389-4a17-a3be-ca808c6b300e",
-    "final_url": "https://privacyportal-eu.onetrust.com/webform/031dc37f-2093-4055-9d04-22f83329fe9f/a4fb8ed6-8389-4a17-a3be-ca808c6b300e",
-    "http_status": 200,
-    "kinds": [
-     "opt_out"
-    ],
-    "channels": [
-     "phone"
-    ],
-    "emails": [],
-    "phones": [
-     "1-888-522-7355"
-    ],
-    "postal_address": null,
-    "portal": null,
-    "form_fields": [],
-    "csrf_field_name": null,
-    "requires_profile_url": null,
-    "captcha": {
-     "provider": "recaptcha_v2",
-     "sitekey": "6LfiqCUUAAAAAGzo0BG2sKBIF-oZVi1_rXgUm5xn",
-     "pages": [
-      "https://privacyportal-eu.onetrust.com/webform/031dc37f-2093-4055-9d04-22f83329fe9f/a4fb8ed6-8389-4a17-a3be-ca808c6b300e"
-     ],
-     "checked_url": "https://privacyportal-eu.onetrust.com/webform/031dc37f-2093-4055-9d04-22f83329fe9f/a4fb8ed6-8389-4a17-a3be-ca808c6b300e",
-     "detail": {
-      "mode": "checkbox",
-      "invisible": false,
-      "size": "normal",
-      "theme": "light",
-      "action": null,
-      "badge": null,
-      "language": "en",
-      "appearance": null,
-      "enterprise": false,
-      "api_domain": "www.google.com",
-      "script_path": "/recaptcha/api.js",
-      "token_field": "g-recaptcha-response",
-      "callback": null
-     },
-     "checked": true
-    },
-    "consent_vendor": "onetrust",
-    "success_text": null,
-    "suppression_not_deletion": null,
-    "processing_days": null,
-    "processing_text": null,
-    "form_action": null,
-    "form_method": null,
-    "form_meta": {
-     "id": null,
-     "name": null,
-     "autocomplete": null,
-     "novalidate": null,
-     "submit_label": null,
-     "hidden_names": []
-    }
-   },
-   "bot_defense": {
-    "vendor": null,
-    "outcome": "none"
-   },
-   "legal": {
-    "privacy_policy_url": "https://privacyportal-eu.onetrust.com/webform/031dc37f-2093-4055-9d04-22f83329fe9f/a4fb8ed6-8389-4a17-a3be-ca808c6b300e",
-    "terms_url": "https://www.allwebleads.com/terms/",
-    "automation_prohibited": true,
-    "automation_clause": "You shall not modify, scrape, embed, frame, spider, deep link or use other similar automated data gathering or extraction tools, program, algorithm or methodology, meta tags or any other “hidden text” to access, acquire, copy or monitor our",
-    "residency": [
-     "US"
-    ],
-    "authorized_agent": null,
-    "data_categories": [
-     "identifiers"
-    ],
-    "sells_personal_information": null,
-    "sells_clause": null,
-    "children_not_directed": null
-   },
-   "pages": [
-    {
-     "url": "https://allwebleads.com/",
-     "final_url": "https://awl.com/",
-     "status": 200,
-     "role": "home",
-     "title": "AWL: The Smarter, Simpler, & Faster Way to Acquire Insurance Customers",
-     "liveness": "alive"
-    },
-    {
-     "url": "https://www.allwebleads.com/",
-     "final_url": "https://awl.com/",
-     "status": 200,
-     "role": "home",
-     "title": "AWL: The Smarter, Simpler, & Faster Way to Acquire Insurance Customers",
-     "liveness": "alive"
-    },
-    {
-     "url": "https://privacyportal-eu.onetrust.com/webform/031dc37f-2093-4055-9d04-22f83329fe9f/a4fb8ed6-8389-4a17-a3be-ca808c6b300e",
-     "final_url": "https://privacyportal-eu.onetrust.com/webform/031dc37f-2093-4055-9d04-22f83329fe9f/a4fb8ed6-8389-4a17-a3be-ca808c6b300e",
-     "status": 200,
-     "role": "catalog",
-     "title": "Privacy Web Form",
-     "liveness": "alive"
-    },
-    {
-     "url": "https://dnc.allwebleads.com/Unsubscribe",
-     "final_url": "https://dnc.allwebleads.com/Unsubscribe",
-     "status": 200,
-     "role": "other",
-     "title": "Unsubscribe | AWL",
-     "liveness": "alive"
-    },
-    {
-     "url": "https://www.allwebleads.com/terms/",
-     "final_url": "https://www.allwebleads.com/terms/",
-     "status": 200,
-     "role": "legal",
-     "title": "Terms of Use - All Web Leads",
-     "liveness": "alive"
-    },
-    {
-     "url": "https://www.allwebleads.com/privacy/",
-     "final_url": "https://www.allwebleads.com/privacy/",
-     "status": 200,
-     "role": "privacy",
-     "title": "Privacy Policy - AWL",
-     "liveness": "alive"
-    },
-    {
-     "url": "https://www.allwebleads.com/contact-us/",
-     "final_url": "https://www.allwebleads.com/contact-us/",
-     "status": 200,
-     "role": "contact",
-     "title": "Contact Us - AWL",
-     "liveness": "alive"
-    },
-    {
-     "url": "https://www.allwebleads.com/privacy",
-     "final_url": "https://www.allwebleads.com/privacy/",
-     "status": 200,
-     "role": "privacy",
-     "title": "Privacy Policy - AWL",
-     "liveness": "alive"
-    }
-   ],
-   "location": {
-    "country": "US",
-    "region": "TX",
-    "locality": "Austin",
-    "postal_code": "78729",
-    "street": null,
-    "postal_address": "Austin, TX, 78729, US",
-    "coverage": [
-     "US"
-    ],
-    "search_regions": [],
-    "sources": [
-     "page"
-    ]
-   },
-   "network": {
-    "checked": true,
-    "addresses": [
-     "141.193.213.21",
-     "141.193.213.20"
-    ],
-    "ipv6": [],
-    "cname": null,
-    "mx": [
-     "allwebleads-com.mail.protection.outlook.com"
-    ],
-    "mail_provider": "microsoft",
-    "spf": "v=spf1 a:mail.allwebleads.com include:_spf.salesforce.com include:aspmx.pardot.com include:spf.protection.outlook.com include:mail.zendesk.com include:transmail.net ip4:97.65.251.166 ip4:207.200.46.19",
-    "dmarc": "quarantine",
-    "dkim": [],
-    "nameservers": [
-     "ns-313.awsdns-39.com",
-     "ns-571.awsdns-07.net",
-     "ns-1838.awsdns-37.co.uk",
-     "ns-1031.awsdns-00.org"
-    ],
-    "dns_provider": "amazon",
-    "soa_primary": "ns-1031.awsdns-00.org",
-    "caa": [],
-    "dnssec": false,
-    "asn": "209242",
-    "asn_country": "US",
-    "prefix": "141.193.213.0/24",
-    "cdn": "cloudflare",
-    "server": "cloudflare",
-    "tls_org": null,
-    "tls_issuer": "GoDaddy.com",
-    "tls_names": [
-     "*.allwebleads.com",
-     "allwebleads.com"
-    ],
-    "tls_version": "TLSv1.3",
-    "tls_not_before": "2026-08-26",
-    "tls_not_after": "2027-03-12",
-    "registrar": "GoDaddy.com, LLC",
-    "registered": "2005-10-17",
-    "registration_expires": "2027-10-17",
-    "domain_status": [
-     "client delete prohibited",
-     "client renew prohibited",
-     "client transfer prohibited",
-     "client update prohibited"
-    ]
-   },
-   "request": {
-    "removal_host": "privacyportal-eu.onetrust.com",
-    "same_site": false,
-    "https": true,
-    "redirected": false,
-    "redirect_count": 0,
-    "form_enctype": null,
-    "content_type": "text/html",
-    "hsts": true,
-    "hsts_max_age": 31536000,
-    "hsts_subdomains": true,
-    "hsts_preload": true,
-    "http_version": "http/1.1",
-    "http3": false,
-    "frame_options": null,
-    "nosniff": true,
-    "referrer_policy": null,
-    "csp": true,
-    "powered_by": null,
-    "cookie_names": []
-   },
-   "automation": {
-    "search_scanned": true,
-    "search_fillable": false,
-    "search_captcha": false,
-    "search_fields": [],
-    "removal_form_fillable": false,
-    "removal_email_usable": false,
-    "removal_fields": [],
-    "removal_path": null,
-    "fully_automatable": false,
-    "usable_emails": [],
-    "search_required": [],
-    "removal_required": [],
-    "email_verification": null,
-    "id_document": null,
-    "shared_removal_ids": [],
-    "removal_captcha": true,
-    "captcha_blocks_form": false,
-    "captcha_email_fallback": false,
-    "removal_blocker": "phone"
    },
    "search_test": {
     "outcome": null,
@@ -225343,330 +224366,6 @@
     "checked_at": null
    }
   },
-  "iqvia-digital-inc-privacyportal-onetrust-com": {
-   "schema_version": "4.0.0",
-   "id": "iqvia-digital-inc-privacyportal-onetrust-com",
-   "name": "IQVIA Digital Inc. (privacyportal.onetrust.com)",
-   "category": "other",
-   "domain": "iqviadigital.com",
-   "checked_at": "2026-10-12T23:19:00+00:00",
-   "liveness": "alive",
-   "liveness_detail": "catalog URL loaded",
-   "homepage": "https://www.iqviadigital.com/",
-   "logo_url": "https://www.iqviadigital.com/hs-fs/hubfs/IQVIA-2024/IQVIA%20Digital%20Logo%20-%20Indigo%20RGB-PNG-1-1.png?width=847&height=449&name=IQVIA%20Digital%20Logo%20-%20Indigo%20RGB-PNG-1-1.png",
-   "images": [
-    {
-     "url": "https://www.iqviadigital.com/hubfs/image001%20(16)%202.png",
-     "kind": "icon",
-     "source_page": "https://www.iqviadigital.com/"
-    },
-    {
-     "url": "https://www.iqviadigital.com/hs-fs/hubfs/IQVIA-2024/IQVIA%20Digital%20Logo%20-%20Indigo%20RGB-PNG-1-1.png?width=847&height=449&name=IQVIA%20Digital%20Logo%20-%20Indigo%20RGB-PNG-1-1.png",
-     "kind": "logo",
-     "source_page": "https://www.iqviadigital.com/"
-    },
-    {
-     "url": "https://www.iqviadigital.com/hubfs/IQVIA-2024/Logo%20(3).svg",
-     "kind": "logo",
-     "source_page": "https://www.iqviadigital.com/"
-    },
-    {
-     "url": "https://privacyportal.onetrust.com/webform/07e8dc4d-6686-403e-9b11-39fe7347d2f4/favicon-v2.ico",
-     "kind": "icon",
-     "source_page": "https://privacyportal.onetrust.com/webform/07e8dc4d-6686-403e-9b11-39fe7347d2f4/2f999bd2-c826-498c-a504-894eaf543b6f"
-    },
-    {
-     "url": "https://www.iqviadigital.com/hubfs/PODCAST%20TEMPLATE.png",
-     "kind": "og_image",
-     "source_page": "https://www.iqviadigital.com/resources/podcasts/digital-dtc-advertising-in-the-evolving-legal-and-regulatory-environment"
-    },
-    {
-     "url": "https://www.iqviadigital.com/hubfs/IQVIA-2024/Website%20Featured%20Image_1920%20x%201440_People%20Working%20in%20Office.jpg",
-     "kind": "og_image",
-     "source_page": "https://www.iqviadigital.com/resources/blogs/ai-privacy-and-dtc-marketing-sxsw"
-    }
-   ],
-   "theme_color": null,
-   "languages": [
-    "en"
-   ],
-   "legal_name": null,
-   "search": {
-    "available": false,
-    "method": "none",
-    "page_url": null,
-    "form_action": null,
-    "inputs": [],
-    "url_pattern": null,
-    "directory_prefixes": [],
-    "paywall": null,
-    "login_wall": null,
-    "captcha_provider": null,
-    "captcha_sitekey": null,
-    "captcha_detail": null,
-    "form_meta": {
-     "id": null,
-     "name": null,
-     "autocomplete": null,
-     "novalidate": null,
-     "submit_label": null,
-     "hidden_names": []
-    },
-    "captcha_checked": null
-   },
-   "removal": {
-    "url": "https://privacyportal.onetrust.com/webform/07e8dc4d-6686-403e-9b11-39fe7347d2f4/2f999bd2-c826-498c-a504-894eaf543b6f",
-    "final_url": "https://privacyportal.onetrust.com/webform/07e8dc4d-6686-403e-9b11-39fe7347d2f4/2f999bd2-c826-498c-a504-894eaf543b6f",
-    "http_status": 200,
-    "kinds": [
-     "opt_out"
-    ],
-    "channels": [
-     "official_portal"
-    ],
-    "emails": [],
-    "phones": [],
-    "postal_address": null,
-    "portal": {
-     "vendor": "onetrust",
-     "url": "https://privacyportal.onetrust.com/webform/07e8dc4d-6686-403e-9b11-39fe7347d2f4/2f999bd2-c826-498c-a504-894eaf543b6f"
-    },
-    "form_fields": [],
-    "csrf_field_name": null,
-    "requires_profile_url": null,
-    "captcha": {
-     "provider": "recaptcha_v2",
-     "sitekey": "6LfiqCUUAAAAAGzo0BG2sKBIF-oZVi1_rXgUm5xn",
-     "pages": [
-      "https://privacyportal.onetrust.com/webform/07e8dc4d-6686-403e-9b11-39fe7347d2f4/2f999bd2-c826-498c-a504-894eaf543b6f"
-     ],
-     "checked_url": "https://privacyportal.onetrust.com/webform/07e8dc4d-6686-403e-9b11-39fe7347d2f4/2f999bd2-c826-498c-a504-894eaf543b6f",
-     "detail": {
-      "mode": "checkbox",
-      "invisible": false,
-      "size": "normal",
-      "theme": "light",
-      "action": null,
-      "badge": null,
-      "language": "en-us",
-      "appearance": null,
-      "enterprise": false,
-      "api_domain": "www.google.com",
-      "script_path": "/recaptcha/api.js",
-      "token_field": "g-recaptcha-response",
-      "callback": null
-     },
-     "checked": true
-    },
-    "consent_vendor": "onetrust",
-    "success_text": null,
-    "suppression_not_deletion": null,
-    "processing_days": null,
-    "processing_text": null,
-    "form_action": null,
-    "form_method": null,
-    "form_meta": {
-     "id": null,
-     "name": null,
-     "autocomplete": null,
-     "novalidate": null,
-     "submit_label": null,
-     "hidden_names": []
-    }
-   },
-   "bot_defense": {
-    "vendor": null,
-    "outcome": "none"
-   },
-   "legal": {
-    "privacy_policy_url": "https://privacyportal.onetrust.com/webform/07e8dc4d-6686-403e-9b11-39fe7347d2f4/2f999bd2-c826-498c-a504-894eaf543b6f",
-    "terms_url": "https://www.iqviadigital.com/terms-conditions",
-    "automation_prohibited": null,
-    "automation_clause": null,
-    "residency": [],
-    "authorized_agent": null,
-    "data_categories": [],
-    "sells_personal_information": null,
-    "sells_clause": null,
-    "children_not_directed": null
-   },
-   "pages": [
-    {
-     "url": "https://iqviadigital.com/",
-     "final_url": "https://www.iqviadigital.com/",
-     "status": 200,
-     "role": "home",
-     "title": "Healthcare Marketing for the Human Experience - IQVIA Digital",
-     "liveness": "alive"
-    },
-    {
-     "url": "https://www.iqviadigital.com/",
-     "final_url": "https://www.iqviadigital.com/",
-     "status": 200,
-     "role": "home",
-     "title": "Healthcare Marketing for the Human Experience - IQVIA Digital",
-     "liveness": "alive"
-    },
-    {
-     "url": "https://privacyportal.onetrust.com/webform/07e8dc4d-6686-403e-9b11-39fe7347d2f4/2f999bd2-c826-498c-a504-894eaf543b6f",
-     "final_url": "https://privacyportal.onetrust.com/webform/07e8dc4d-6686-403e-9b11-39fe7347d2f4/2f999bd2-c826-498c-a504-894eaf543b6f",
-     "status": 200,
-     "role": "catalog",
-     "title": "Your Privacy Choices - IQVIA",
-     "liveness": "alive"
-    },
-    {
-     "url": "https://www.iqviadigital.com/customers/pharma",
-     "final_url": "https://www.iqviadigital.com/customers/pharma",
-     "status": 200,
-     "role": "other",
-     "title": "Marketing Solutions for Life Sciences Brands - IQVIA Digital",
-     "liveness": "alive"
-    },
-    {
-     "url": "https://www.iqviadigital.com/contact",
-     "final_url": "https://www.iqviadigital.com/contact",
-     "status": 200,
-     "role": "contact",
-     "title": "Contact us - IQVIA Digital",
-     "liveness": "alive"
-    },
-    {
-     "url": "https://www.iqviadigital.com/resources/podcasts/digital-dtc-advertising-in-the-evolving-legal-and-regulatory-environment",
-     "final_url": "https://www.iqviadigital.com/resources/podcasts/digital-dtc-advertising-in-the-evolving-legal-and-regulatory-environment",
-     "status": 200,
-     "role": "other",
-     "title": "Digital DTC advertising in the evolving legal and regulatory environment",
-     "liveness": "alive"
-    },
-    {
-     "url": "https://www.iqviadigital.com/resources/blogs/ai-privacy-and-dtc-marketing-sxsw",
-     "final_url": "https://www.iqviadigital.com/resources/blogs/ai-privacy-and-dtc-marketing-sxsw",
-     "status": 200,
-     "role": "other",
-     "title": "AI, Privacy and DTC Marketing @ SXSW",
-     "liveness": "alive"
-    },
-    {
-     "url": "https://www.iqviadigital.com/resources/solution-briefs/iqvia-ai-governance-and-privacy-operations-reporting",
-     "final_url": "https://www.iqviadigital.com/resources/solution-briefs/iqvia-ai-governance-and-privacy-operations-reporting",
-     "status": 200,
-     "role": "other",
-     "title": "IQVIA AI Governance and Privacy  Operations Reporting",
-     "liveness": "alive"
-    }
-   ],
-   "location": {
-    "country": null,
-    "region": null,
-    "locality": null,
-    "postal_code": null,
-    "street": null,
-    "postal_address": null,
-    "coverage": [],
-    "search_regions": [],
-    "sources": []
-   },
-   "network": {
-    "checked": true,
-    "addresses": [
-     "199.60.103.106",
-     "199.60.103.6"
-    ],
-    "ipv6": [],
-    "cname": null,
-    "mx": [
-     "iqviadigital-com.mail.protection.outlook.com"
-    ],
-    "mail_provider": "microsoft",
-    "spf": "v=spf1 include:spf.protection.outlook.com include:357405.spf07.hubspotemail.net -all",
-    "dmarc": "reject",
-    "dkim": [],
-    "nameservers": [
-     "ns1.iqvia.com",
-     "ns3.iqvia.com",
-     "ns4.iqvia.com",
-     "ns2.iqvia.com"
-    ],
-    "dns_provider": null,
-    "soa_primary": "ns1.iqvia.com",
-    "caa": [],
-    "dnssec": false,
-    "asn": "209242",
-    "asn_country": "US",
-    "prefix": "199.60.103.0/24",
-    "cdn": "cloudflare",
-    "server": "cloudflare",
-    "tls_org": null,
-    "tls_issuer": "Google Trust Services",
-    "tls_names": [
-     "iqviadigital.com"
-    ],
-    "tls_version": "TLSv1.3",
-    "tls_not_before": "2026-09-14",
-    "tls_not_after": "2026-12-13",
-    "registrar": "SafeNames Ltd.",
-    "registered": "2024-02-27",
-    "registration_expires": "2027-02-27",
-    "domain_status": [
-     "client delete prohibited",
-     "client transfer prohibited",
-     "client update prohibited"
-    ]
-   },
-   "request": {
-    "removal_host": "privacyportal.onetrust.com",
-    "same_site": false,
-    "https": true,
-    "redirected": false,
-    "redirect_count": 0,
-    "form_enctype": null,
-    "content_type": "text/html",
-    "hsts": true,
-    "hsts_max_age": 31536000,
-    "hsts_subdomains": true,
-    "hsts_preload": true,
-    "http_version": "http/1.1",
-    "http3": false,
-    "frame_options": null,
-    "nosniff": true,
-    "referrer_policy": null,
-    "csp": true,
-    "powered_by": null,
-    "cookie_names": []
-   },
-   "automation": {
-    "search_scanned": true,
-    "search_fillable": false,
-    "search_captcha": false,
-    "search_fields": [],
-    "removal_form_fillable": false,
-    "removal_email_usable": false,
-    "removal_fields": [],
-    "removal_path": null,
-    "fully_automatable": false,
-    "usable_emails": [],
-    "search_required": [],
-    "removal_required": [],
-    "email_verification": null,
-    "id_document": null,
-    "shared_removal_ids": [],
-    "removal_captcha": true,
-    "captcha_blocks_form": false,
-    "captcha_email_fallback": false,
-    "removal_blocker": "portal"
-   },
-   "search_test": {
-    "outcome": null,
-    "http_status": null,
-    "path_prefix": null,
-    "fields_sent": [],
-    "missing": [],
-    "page_kind": null,
-    "result_count": null,
-    "checked_at": null
-   }
-  },
   "jdm-list-services": {
    "schema_version": "4.0.0",
    "id": "jdm-list-services",
@@ -236412,395 +235111,6 @@
     "fully_automatable": false,
     "usable_emails": [
      "privacy@tauxbe.com"
-    ],
-    "search_required": [],
-    "removal_required": [],
-    "email_verification": null,
-    "id_document": null,
-    "shared_removal_ids": [],
-    "removal_captcha": false,
-    "captcha_blocks_form": false,
-    "captcha_email_fallback": false,
-    "removal_blocker": null
-   },
-   "search_test": {
-    "outcome": null,
-    "http_status": null,
-    "path_prefix": null,
-    "fields_sent": [],
-    "missing": [],
-    "page_kind": null,
-    "result_count": null,
-    "checked_at": null
-   }
-  },
-  "the-alesco-group-llc-alescodata-com": {
-   "schema_version": "4.0.0",
-   "id": "the-alesco-group-llc-alescodata-com",
-   "name": "The Alesco Group LLC (alescodata.com)",
-   "category": "other",
-   "domain": "alescodata.com",
-   "checked_at": "2026-10-12T23:11:03+00:00",
-   "liveness": "alive",
-   "liveness_detail": "catalog URL loaded",
-   "homepage": "https://alescodata.com/",
-   "logo_url": "https://alescodata.com/wp-content/uploads/2018/02/logo_MLD_main.png",
-   "images": [
-    {
-     "url": "https://alescodata.com/wp-content/uploads/2020/02/cropped-Alesco-Wordpress-Site-Icon-32x32-1.webp",
-     "kind": "icon",
-     "source_page": "https://alescodata.com/"
-    },
-    {
-     "url": "https://alescodata.com/wp-content/uploads/2026/08/Because-Data-Matters-Mobile-Hero-Image.png",
-     "kind": "og_image",
-     "source_page": "https://alescodata.com/"
-    },
-    {
-     "url": "https://alescodata.com/wp-content/uploads/2018/02/logo_MLD_main.png",
-     "kind": "json_ld",
-     "source_page": "https://alescodata.com/"
-    },
-    {
-     "url": "https://alescodata.com/wp-content/uploads/2020/05/Mailing-Lists-Direct-from-Alesco-Data-1.png",
-     "kind": "json_ld",
-     "source_page": "https://alescodata.com/"
-    },
-    {
-     "url": "https://alescodata.com/wp-content/uploads/2026/07/AD_Stirista_FullColor_Logo-scaled.webp",
-     "kind": "og_image",
-     "source_page": "https://alescodata.com/privacy-center/"
-    },
-    {
-     "url": "https://alescodata.com/wp-content/uploads/2026/08/iOS-Privacy-Updates.jpg",
-     "kind": "og_image",
-     "source_page": "https://alescodata.com/resources/blog/how-ios-privacy-updates-affect-marketers/"
-    }
-   ],
-   "theme_color": null,
-   "languages": [
-    "en"
-   ],
-   "legal_name": "Mailing Lists Direct",
-   "search": {
-    "available": false,
-    "method": "none",
-    "page_url": null,
-    "form_action": null,
-    "inputs": [],
-    "url_pattern": null,
-    "directory_prefixes": [],
-    "paywall": null,
-    "login_wall": null,
-    "form_meta": {
-     "id": null,
-     "name": null,
-     "autocomplete": null,
-     "novalidate": null,
-     "submit_label": null,
-     "hidden_names": []
-    },
-    "captcha_provider": null,
-    "captcha_sitekey": null,
-    "captcha_checked": null,
-    "captcha_detail": null
-   },
-   "removal": {
-    "url": "https://www.alescodata.com",
-    "final_url": "https://alescodata.com/",
-    "http_status": 200,
-    "kinds": [
-     "opt_out"
-    ],
-    "channels": [
-     "email",
-     "phone"
-    ],
-    "emails": [
-     {
-      "email": "info@alescodata.com",
-      "confidence": "uncertain",
-      "source_url": "https://alescodata.com/"
-     },
-     {
-      "email": "privacy@alescodata.com",
-      "confidence": "extracted",
-      "source_url": "https://alescodata.com/privacy-center/"
-     },
-     {
-      "email": "felicia.snyder@alescodata.com",
-      "confidence": "uncertain",
-      "source_url": "https://alescodata.com/contact-us/"
-     },
-     {
-      "email": "angie.trivette@alescodata.com",
-      "confidence": "uncertain",
-      "source_url": "https://alescodata.com/contact-us/"
-     },
-     {
-      "email": "collins@alescodata.com",
-      "confidence": "uncertain",
-      "source_url": "https://alescodata.com/contact-us/"
-     },
-     {
-      "email": "kelly.mccabe@alescodata.com",
-      "confidence": "uncertain",
-      "source_url": "https://alescodata.com/contact-us/"
-     },
-     {
-      "email": "kristen.mcgrath@alescodata.com",
-      "confidence": "uncertain",
-      "source_url": "https://alescodata.com/contact-us/"
-     },
-     {
-      "email": "linda.valyo@alescodata.com",
-      "confidence": "uncertain",
-      "source_url": "https://alescodata.com/contact-us/"
-     },
-     {
-      "email": "michelle.harness@alescodata.com",
-      "confidence": "uncertain",
-      "source_url": "https://alescodata.com/contact-us/"
-     },
-     {
-      "email": "natalie@alescodata.com",
-      "confidence": "uncertain",
-      "source_url": "https://alescodata.com/contact-us/"
-     },
-     {
-      "email": "natasha.rever@alescodata.com",
-      "confidence": "uncertain",
-      "source_url": "https://alescodata.com/contact-us/"
-     },
-     {
-      "email": "peter.lamphier@alescodata.com",
-      "confidence": "uncertain",
-      "source_url": "https://alescodata.com/contact-us/"
-     }
-    ],
-    "phones": [
-     "(855) 967-4266",
-     "(800) 701-6531",
-     "(877) 652-5002"
-    ],
-    "postal_address": null,
-    "portal": null,
-    "form_fields": [],
-    "csrf_field_name": null,
-    "requires_profile_url": null,
-    "captcha": {
-     "provider": null,
-     "sitekey": null,
-     "pages": [],
-     "checked": false,
-     "checked_url": null,
-     "detail": null
-    },
-    "consent_vendor": null,
-    "success_text": null,
-    "suppression_not_deletion": null,
-    "processing_days": null,
-    "processing_text": null,
-    "form_action": null,
-    "form_method": null,
-    "form_meta": {
-     "id": null,
-     "name": null,
-     "autocomplete": null,
-     "novalidate": null,
-     "submit_label": null,
-     "hidden_names": []
-    }
-   },
-   "bot_defense": {
-    "vendor": null,
-    "outcome": "none"
-   },
-   "legal": {
-    "privacy_policy_url": "https://alescodata.com/privacy-center/",
-    "terms_url": "https://alescodata.com/privacy-center/terms-of-service/",
-    "automation_prohibited": null,
-    "automation_clause": null,
-    "residency": [
-     "US-CA",
-     "US",
-     "EU"
-    ],
-    "authorized_agent": null,
-    "data_categories": [
-     "identifiers",
-     "commercial",
-     "internet_activity",
-     "employment"
-    ],
-    "sells_personal_information": null,
-    "sells_clause": null,
-    "children_not_directed": null
-   },
-   "pages": [
-    {
-     "url": "https://alescodata.com/",
-     "final_url": "https://alescodata.com/",
-     "status": 200,
-     "role": "home",
-     "title": "Alesco Data - Because Data Matters",
-     "liveness": "alive"
-    },
-    {
-     "url": "https://www.alescodata.com/",
-     "final_url": "https://alescodata.com/",
-     "status": 200,
-     "role": "home",
-     "title": "Alesco Data - Because Data Matters",
-     "liveness": "alive"
-    },
-    {
-     "url": "https://alescodata.com/privacy-center/",
-     "final_url": "https://alescodata.com/privacy-center/",
-     "status": 200,
-     "role": "privacy",
-     "title": "Privacy Center - Alesco Data",
-     "liveness": "alive"
-    },
-    {
-     "url": "https://alescodata.com/privacy-center/privacy-policy/",
-     "final_url": "https://alescodata.com/privacy-center/privacy-policy/",
-     "status": 200,
-     "role": "privacy",
-     "title": "Privacy Policy - Alesco Data",
-     "liveness": "alive"
-    },
-    {
-     "url": "https://alescodata.com/privacy-center/terms-of-service/",
-     "final_url": "https://alescodata.com/privacy-center/terms-of-service/",
-     "status": 200,
-     "role": "privacy",
-     "title": "Terms of Service - Alesco Data",
-     "liveness": "alive"
-    },
-    {
-     "url": "https://alescodata.com/contact-us/",
-     "final_url": "https://alescodata.com/contact-us/",
-     "status": 200,
-     "role": "contact",
-     "title": "Contact - Alesco Data",
-     "liveness": "alive"
-    },
-    {
-     "url": "https://alescodata.com/privacy-center/privacy-policy/acceptable-use-policy/",
-     "final_url": "https://alescodata.com/privacy-center/privacy-policy/acceptable-use-policy/",
-     "status": 200,
-     "role": "privacy",
-     "title": "Acceptable Use Policy - Alesco Data",
-     "liveness": "alive"
-    },
-    {
-     "url": "https://alescodata.com/resources/blog/how-ios-privacy-updates-affect-marketers/",
-     "final_url": "https://alescodata.com/resources/blog/how-ios-privacy-updates-affect-marketers/",
-     "status": 200,
-     "role": "other",
-     "title": "How iOS Privacy Updates Affect Marketers - Alesco Data",
-     "liveness": "alive"
-    }
-   ],
-   "location": {
-    "country": "US",
-    "region": "FL",
-    "locality": "Fort Myers",
-    "postal_code": "33919",
-    "street": "4575 Via Royale Su 110",
-    "postal_address": "4575 Via Royale Su 110, Fort Myers, FL, 33919, US",
-    "coverage": [
-     "US-CA",
-     "US",
-     "EU"
-    ],
-    "search_regions": [],
-    "sources": [
-     "cppa_registry"
-    ]
-   },
-   "network": {
-    "checked": true,
-    "addresses": [
-     "192.124.249.152"
-    ],
-    "ipv6": [],
-    "cname": null,
-    "mx": [
-     "alescodata-com.mail.protection.outlook.com"
-    ],
-    "mail_provider": "microsoft",
-    "spf": "v=spf1 ip4:198.160.117.200 include:spf.protection.outlook.com include:customers.clickdimensions.com include:spf.mandrillapp.com include:mailingalescodata.com include:50251967.spf08.hubspotemail.net -a",
-    "dmarc": "none",
-    "dkim": [
-     "selector1"
-    ],
-    "nameservers": [
-     "ns.synergy-networks.com",
-     "ns2.synergy-networks.com"
-    ],
-    "dns_provider": null,
-    "soa_primary": "ns.synergy-networks.com",
-    "caa": [],
-    "dnssec": false,
-    "asn": "30148",
-    "asn_country": "US",
-    "prefix": "192.124.249.0/24",
-    "cdn": "sucuri",
-    "server": "Sucuri",
-    "tls_org": null,
-    "tls_issuer": "GoDaddy.com",
-    "tls_names": [
-     "www.alescodata.com",
-     "alescodata.com"
-    ],
-    "tls_version": "TLSv1.3",
-    "tls_not_before": "2026-09-05",
-    "tls_not_after": "2026-12-04",
-    "registrar": "GoDaddy.com, LLC",
-    "registered": "2002-06-28",
-    "registration_expires": "2027-06-28",
-    "domain_status": [
-     "client delete prohibited",
-     "client renew prohibited",
-     "client transfer prohibited",
-     "client update prohibited"
-    ]
-   },
-   "request": {
-    "removal_host": "alescodata.com",
-    "same_site": true,
-    "https": true,
-    "redirected": false,
-    "redirect_count": 0,
-    "form_enctype": "urlencoded",
-    "content_type": "text/html",
-    "hsts": false,
-    "hsts_max_age": null,
-    "hsts_subdomains": false,
-    "hsts_preload": false,
-    "http_version": "http/1.1",
-    "http3": true,
-    "frame_options": "sameorigin",
-    "nosniff": true,
-    "referrer_policy": null,
-    "csp": true,
-    "powered_by": null,
-    "cookie_names": []
-   },
-   "automation": {
-    "search_scanned": true,
-    "search_fillable": false,
-    "search_captcha": false,
-    "search_fields": [],
-    "removal_form_fillable": false,
-    "removal_email_usable": true,
-    "removal_fields": [],
-    "removal_path": "email",
-    "fully_automatable": false,
-    "usable_emails": [
-     "privacy@alescodata.com"
     ],
     "search_required": [],
     "removal_required": [],

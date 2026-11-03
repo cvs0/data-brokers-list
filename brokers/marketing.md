@@ -2,7 +2,7 @@
 
 Marketing and audience brokers. The link is an opt-out or the privacy page the company publishes for consumer requests.
 
-132 entries. Link responses were checked on 2026-10-01 unless a note says otherwise.
+131 entries. Link responses were checked on 2026-10-01 unless a note says otherwise.
 
 | Broker | Opt-out / privacy URL | Notes |
 | --- | --- | --- |
@@ -91,7 +91,7 @@ Marketing and audience brokers. The link is an opt-out or the privacy page the c
 | Lotame | https://www.lotame.com/privacy/information-privacy-choices-services/ | Privacy rights and choices page. The old opt-out path /about-lotame/privacy/lotames-opt-out/ returned HTTP 404 on 2026-10-24. This page describes how to make a privacy-rights request. No request was submitted. |
 | Lusha Systems, Inc. | https://www.lusha.com/legal/ccpa/ | Opt-out or consumer privacy-request page. |
 | Madison Logic | https://madisonlogic-privacy.my.onetrust.com/webform/b7449bea-44c6-4823-a2ac-30a8f33047d0/9a375b0c-9030-44ce-bfd3-217fd7a71993 | Privacy-request form. Email: privacy@madisonlogic.com. Phone: 1-800-401-7413. |
-| Malvern Media Inc. (malvernmedia.com) | https://www.malvernmedia.com/privacy-policy | Privacy notice or privacy-policy page. Use the state-rights, do-not-sell, or request section. Privacy-rights page submitted to the California Data Broker Registry. |
+| Malvern Media Inc. | https://privacyportal.privacypillar.com/dsar/form?orgid=369c8ff9-8ffb-4308-8362-f01691e77db8&propid=64c8904f-8bac-4dd9-8e6c-d052be1918a2&formid=6e6ff4b8-2296-4589-ae7f-563fa743ec2d&status=publish | Privacy Pillar request portal for Malvern Media. The privacy policy at https://www.malvernmedia.com/privacy-policy points to this portal for privacy requests, and that policy was submitted to the California Data Broker Registry. The registry row was merged into this one on 2026-11-03. |
 | MarketForce | https://www.marketforcecorp.com/opt-out/ | Opt-out or consumer privacy-request page. |
 | MCH | https://www.mchdata.com/about/ccpaemail | Opt-out or consumer privacy-request page. |
 | Melissa | https://apps.melissa.com/user/consumerprivacy.aspx | Opt-out or consumer privacy-request page. Email: consumerrequest@melissa.com. |
@@ -101,8 +101,7 @@ Marketing and audience brokers. The link is an opt-out or the privacy page the c
 | MobileMonkey, Inc (Customers.ai) | https://customers.ai/privacy-policy | Identity resolution and website visitor identification company. The privacy policy says it collects data through tools on its customers' websites and under data licensing agreements, and that some disclosures may be a sale or sharing under state privacy laws. Requests go to info@customers.ai or through the Do Not Sell or Share / Your Privacy Choices link, which opens app.mobilemonkey.com/opt-out. The policy says it registers as a data broker where required, naming California, Texas, Oregon and Vermont. Registered with the California data broker registry. Checked 2026-11-02: the page answered HTTP 200. No request was submitted. |
 | Muraena | https://muraena.ai/optout | Opt-out or consumer privacy-request page. |
 | Network Advertising Initiative | https://thenai.org/how-to-opt-out/ | How to opt out of Network Advertising Initiative members. The NAI cookie opt-out tool ended on 2025-09-15; the page has the current instructions. Automated check on 2026-10-01 got HTTP 403. Open the link in a browser. |
-| Neustar (TransUnion) | https://privacychoices.home.neustar/ | TransUnion/Neustar privacy-choices page for marketing and identity data. A credit freeze is separate. Automated check on 2026-10-01 got HTTP 403. Open the link in a browser. |
-| NeuStar, Inc. | https://privacychoices.home.neustar/?t=#/login | Published opt-out URL is the site root. Confirm a request form is on the page before sending information. Automated check on 2026-10-01 got HTTP 403. Open the link in a browser. |
+| Neustar (TransUnion) | https://privacychoices.home.neustar/ | TransUnion/Neustar privacy-choices page for marketing and identity data. A credit freeze is separate. Automated check on 2026-10-01 got HTTP 403. Open the link in a browser. The Markup dataset also listed NeuStar, Inc. with this portal's login page (https://privacychoices.home.neustar/?t=#/login). That row was merged into this one on 2026-11-03. |
 | Nexsales | https://nexsales.com/privacy-policy | Privacy notice or privacy-policy page. Use the state-rights, do-not-sell, or request section. Automated check on 2026-10-01 got HTTP 403. Open the link in a browser. |
 | Next Wave Marketing Strategies, Inc | https://agedleadstore.com/privacy-policy/ | Privacy notice or privacy-policy page. Use the state-rights, do-not-sell, or request section. |
 | NEXXA | https://www.nexxagroup.com/corporate-overview/consumer-opt-out/ | Opt-out or consumer privacy-request page. |
