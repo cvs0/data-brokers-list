@@ -1,6 +1,6 @@
 {
  "schema_version": "3.0.0",
- "checked_at": "2026-11-03T22:41:00+00:00",
+ "checked_at": "2026-11-03T22:42:23+00:00",
  "method": "Public pages only: homepage, catalog URL, and mapped privacy, contact, and legal links. robots.txt honored. No form submitted, no login, no CAPTCHA solved. A browser opened lookup homepages the static fetch never read, and catalog URLs that were blocked or failed, when robots.txt allowed the URL. Image fields are URLs, not copied files. People-search listing URLs are not stored. Null means the fetched page did not establish that fact. Every catalog id has a record.",
  "broker_count": 841,
  "counts": {
