@@ -1,6 +1,6 @@
 # Findings
 
-The counts below are from the 1122-row catalog used for this pass. The current link list is [`opt-outs.csv`](../opt-outs.csv). Current search, removal, location, and legal facts are in [v4.md](v4.md).
+This page belongs to the v1 layer, a frozen snapshot of the earlier 1,122-row catalog that is no longer maintained ([data/v1/README.md](../data/v1/README.md)). Current counts are in the [README](../README.md) and [v4.md](v4.md). The counts below are from that catalog. Current search, removal, location, and legal facts are in [v4.md](v4.md).
 
 This pass kept the **1122** catalog rows and their stable ids. It added a headless-browser read of the automation shortlist and of catalog URLs whose research GET was blocked, a freshness recheck of every catalog URL, search-page observations, Canadian official-page notes, and verification playbooks. No privacy request was submitted. No account was created. No identity document was uploaded. No SMS was sent. No CAPTCHA was solved.
 

@@ -1,4 +1,10 @@
+# Python
 __pycache__/
 *.pyc
-research/cache/
 .venv/
+
+# Local fetch cache
+research/cache/
+
+# OS files
+.DS_Store

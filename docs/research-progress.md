@@ -1,6 +1,6 @@
 # Research progress
 
-Counts below are for the catalog that was current when this file was built. The current link list is [`opt-outs.csv`](../opt-outs.csv).
+This page belongs to the v1 layer, a frozen snapshot of the earlier 1,122-row catalog that is no longer maintained ([data/v1/README.md](../data/v1/README.md)). Current counts are in the [README](../README.md) and [v4.md](v4.md).
 
 Dataset version `1.1.0`, schema `1.1.0`, generated 2026-10-01T23:11:41+00:00.
 

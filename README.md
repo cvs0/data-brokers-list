@@ -30,8 +30,6 @@ If you only do one sitting, use these. URLs are copied from [`opt-outs.csv`](opt
 | The Trade Desk | https://adsrvr.org/ |
 | ZoomInfo Technologies, LLC | https://privacyrequest.zoominfo.com/remove/verify |
 | LexisNexis | https://consumer.risk.lexisnexis.com/opt |
-| Checkr | https://checkr.com/legal/privacy-policy |
-| Sterling | https://sterling.com/privacyrequest/ |
 | Equifax | https://myprivacy.equifax.com/opt-in-opt-out/personal-info |
 | Experian | https://www.experian.com/privacy/opting_out |
 | TransUnion | https://www.transunion.com/consumer-privacy |
@@ -43,7 +41,6 @@ If you only do one sitting, use these. URLs are copied from [`opt-outs.csv`](opt
 | Canada411 | https://www.canada411.ca/help.html?key=faq |
 | Canada Post | https://www.canadapost-postescanada.ca/cpc/en/support/kb/receiving/delivery-faq/how-to-stop-receiving-advertising-mail.page |
 | CMA Do Not Mail | https://www.thecma.ca/resources/consumer-centre/get-less-print-mail |
-| Elections Canada | https://www.elections.ca/content.aspx?section=vot&dir=reg/des&document=index&lang=e |
 | UK open electoral register | https://www.gov.uk/electoral-register/opt-out-of-the-open-register |
 | DMAChoice | https://www.dmachoice.org/ |
 | Digital Advertising Alliance opt-out | https://optout.aboutads.info/ |
