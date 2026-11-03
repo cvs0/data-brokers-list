@@ -7854,5 +7854,61 @@
     "country_override": true,
     "country": "US",
     "evidence": "The stored postal address is \"225 W 34th Street, 9th Floor, New York, NY, 10122, CA\"; the trailing CA was read as Canada, but the address is in New York and the region is NY. The opt-out page at https://privacy.crsspxl.com/ cites CCPA section 1798.120 (California). Cross Pixel Media is a US company. Checked 2026-11-02."
+  },
+  "arbor-memorial": {
+    "checked": "2026-11-02",
+    "country": "CA",
+    "liveness": "alive",
+    "liveness_detail": "arbormemorial.ca answered HTTP 200 on 2026-11-02. A name search in the browser listed obituaries.",
+    "evidence": "Canadian funeral and cemetery company. Its obituary search loads results in script from obits_listing.obits.json, and the page URL does not change with the name, so there is no GET pattern to fill. It stays catalog-only. Privacy: https://www.arbormemorial.ca/en/privacy-policy.html; Chief Privacy Officer cpo@arbormemorial.com. Nothing was submitted.",
+    "result_check": "Browser search for Smith: 7 obituary links (2026-11-02, CST).",
+    "country_override": true
+  },
+  "urgel-bourgie": {
+    "checked": "2026-11-02",
+    "country": "CA",
+    "liveness": "alive",
+    "liveness_detail": "urgelbourgie.com answered HTTP 200 on 2026-11-02 and its notices page listed death notices.",
+    "evidence": "Quebec funeral network (Groupe Athos). Death notices load in script from the funeraweb.tv API, so there is no GET pattern to fill. It stays catalog-only. Privacy officer: demandeaccesinformation@athos.ca. Nothing was submitted. The form the scan stored on this site is its contact form (name, phone, email and message fields), not a search for a person, so it is cleared.",
+    "country_override": true,
+    "not_a_person_search": true,
+    "kind": "contact"
+  },
+  "lepine-cloutier": {
+    "checked": "2026-11-02",
+    "country": "CA",
+    "liveness": "alive",
+    "liveness_detail": "lepinecloutier.com answered HTTP 200 on 2026-11-02 and its notices page listed death notices.",
+    "evidence": "Quebec funeral network (Groupe Athos, same platform as Urgel Bourgie). Death notices load in script from the funeraweb.tv API, so there is no GET pattern to fill. It stays catalog-only. Privacy officer: demandeaccesinformation@athos.ca. Nothing was submitted. The form the scan stored on this site is its contact form (name, phone, email and message fields), not a search for a person, so it is cleared.",
+    "country_override": true,
+    "not_a_person_search": true,
+    "kind": "contact"
+  },
+  "magnus-poirier": {
+    "checked": "2026-11-02",
+    "country": "CA",
+    "liveness": "alive",
+    "liveness_detail": "magnuspoirier.com answered HTTP 200 on 2026-11-02. A name search in the browser listed notices.",
+    "evidence": "Quebec funeral group. The notice search is an XHR to https://www.magnuspoirier.com/api/obituaries?page=0&search={name}; the page URL does not change, so there is no page GET pattern to fill. It stays catalog-only. The privacy policy names no contact; the catalog points at the contact page. Nothing was submitted. The form the scan stored on this site is its contact form (name, phone, email and message fields), not a search for a person, so it is cleared.",
+    "result_check": "Browser search for Tremblay: 4 notices (2026-11-02, CST).",
+    "country_override": true,
+    "not_a_person_search": true,
+    "kind": "contact"
+  },
+  "isc-saskatchewan-land-registry": {
+    "checked": "2026-11-02",
+    "country": "CA",
+    "paywall": true,
+    "kind": "register_or_purchase",
+    "evidence": "Saskatchewan land titles registry. Owner-name searches need an ISC account and titles cost $15, so there is no public search. Privacy Officer: privacy@isc.ca. Nothing was submitted.",
+    "country_override": true
+  },
+  "cleanlist": {
+    "checked": "2026-11-02",
+    "country": "CA",
+    "not_a_person_search": true,
+    "kind": "contact",
+    "evidence": "Canadian list broker with no public person search. The catalog points at the privacy policy, which names privacy@cleanlist.ca. Nothing was submitted.",
+    "country_override": true
   }
 }
