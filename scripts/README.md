@@ -21,13 +21,13 @@ v3 is one public-page record per catalog broker. v4 starts from that record.
 
 ## Research (`scripts/research/`)
 
-Builds and refreshes the v1 evidence layer.
+Builds and refreshes the v1 evidence layer. v1 is a frozen snapshot of the earlier 1,122-row catalog and is not rebuilt when the catalog changes ([data/v1/README.md](../data/v1/README.md)). The build commands below are kept for reference. `validate_dataset.py` checks the snapshot on its own terms and checks that every current catalog row has a pinned id in `data/v1/catalog-ids.csv`.
 
 | Command | Writes |
 | --- | --- |
 | `python scripts/research/fetch_evidence.py --batch all` | `research/evidence/url-evidence.jsonl` |
 | `python scripts/research/build_dataset.py` | `data/v1/broker-opt-outs.enriched.json` and the generated broker tables |
-| `python scripts/research/validate_dataset.py` | Check only |
+| `python scripts/research/validate_dataset.py` | Check only. Warns that v1 is a frozen snapshot |
 | `python scripts/research/freshness_check.py` | `data/v1/freshness-report.json` |
 | `python scripts/research/browser_inspect.py` | Headless read of a page. No form is submitted |
 | `python scripts/research/apply_browser_pass.py` | Merges a browser pass into the v1 records |

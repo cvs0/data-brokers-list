@@ -1,6 +1,8 @@
 # Enriched opt-out dataset
 
-`opt-outs.csv` is still the link catalog. Its columns are unchanged. This dataset adds a stable ID and a researched record for every row.
+This page describes the v1 layer, a frozen snapshot of the earlier 1,122-row catalog. It is not maintained and is not rebuilt when `opt-outs.csv` changes; see [data/v1/README.md](../data/v1/README.md). `data/v1/catalog-ids.csv` is the one v1 file that is still kept current.
+
+`opt-outs.csv` is still the link catalog. Its columns are unchanged. This dataset added a stable ID and a researched record for every row of that earlier catalog.
 
 | File | Role |
 | --- | --- |
