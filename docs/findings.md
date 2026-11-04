@@ -1,6 +1,6 @@
 # Findings
 
-The counts below are from the 1122-row catalog used for this pass. The current link list is [`opt-outs.csv`](../opt-outs.csv). Current search, removal, location, and legal facts are in [v4.md](v4.md).
+This page belongs to the v1 layer, a frozen snapshot of the earlier 1,122-row catalog that is no longer maintained ([data/v1/README.md](../data/v1/README.md)). Current counts are in the [README](../README.md) and [v4.md](v4.md). The counts below are from that catalog. Current search, removal, location, and legal facts are in [v4.md](v4.md).
 
 This pass kept the **1122** catalog rows and their stable ids. It added a headless-browser read of the automation shortlist and of catalog URLs whose research GET was blocked, a freshness recheck of every catalog URL, search-page observations, Canadian official-page notes, and verification playbooks. No privacy request was submitted. No account was created. No identity document was uploaded. No SMS was sent. No CAPTCHA was solved.
 
@@ -69,17 +69,11 @@ The PIPEDA brief on priv.gc.ca loaded. Its captured text defines personal inform
 
 Shared request URLs and parsed-form families are indexed in `data/v1/workflow-groups.json`. One shared URL is one entry point. PeopleConnect's page says the suppression tool does not apply to Classmates.com or to user data; that exception is preserved. Arrests.org form families remove a commercial repost, not the government record. Catalog parenthetical brand hints remain unverified in `parent-companies.json`.
 
-## Origin mirror
-
-This agent could not update the Origin mirror at https://cursor.com/codebase/cvs0/data-brokers-list. A fetch of that URL returned HTTP 500, and this environment has no Origin write tool. GitHub `main` before this branch is commit `18faa83`, with 1122 catalog rows and `data/v1/`. The task described Origin as still on the early catalog of about 704 rows. That drift was not re-read from Origin.
-
-To sync after this pull request merges, fast-forward the Origin codebase to GitHub `main`. Confirm `opt-outs.csv` has 1122 data rows and that `data/v1/broker-opt-outs.enriched.json` is present. Do not copy a third-party opt-out guide into the mirror.
-
 ## Still unresolved
 
 - Headless-browser challenges and HTTP 403/429 responses. A residential proxy was not tested.
 - Screens behind submit buttons, email links, accounts, SMS, and CAPTCHA.
 - Whether a free search form leads to a full listing without payment. Result pages were not opened.
-- Provincial voter and commissioner pages that did not load in this environment.
+- Provincial voter and commissioner pages that did not load during this pass.
 - Sister brands that share only a catalog-name hint.
 - End-to-end acknowledgement, broker confirmation, and removal. None were tested.

@@ -60,7 +60,7 @@ astoria-company-marketing-llc,"Astoria Company Marketing LLC",marketing,astoriac
 atdata-formerly-towerdata,"AtData (formerly TowerData)",marketing,atdata.com,"https://privacyportal-cdn.onetrust.com/dsarwebform/b38ccfa3-c14a-451e-bf1d-974d1e278b7c/6214ac53-9059-474d-a847-800250556e9d.html"
 audience-acuity-llc,"Audience Acuity LLC",marketing,audienceacuity.com,"https://audienceacuity.com/california/"
 audiencepoint-inc,"AudiencePoint Inc.",marketing,audiencepoint.com,"https://audiencepoint.com/privacy-policy/"
-bh-marketing-group-llc,"BH MARKETING GROUP LLC",marketing,usmarketinggrp.com,"https://usmarketinggrp.com/privacy-policy/#CCPA"
+bh-marketing-group-llc,BH Marketing Group LLC,marketing,usmarketinggrp.com,https://usmarketinggrp.com/privacy-policy/#CCPA
 blue-hill-marketing-solutions-inc,"Blue Hill Marketing Solutions, Inc",marketing,liftbasedata.com,"https://www.liftbasedata.com/your-privacy-choices/"
 bombora-inc,"Bombora, Inc",marketing,bombora.com,"https://bombora.com/privacy-philosophy/"
 brooks-integrated-marketing-llc,"Brooks Integrated Marketing, LLC",marketing,brooksim.com,"https://www.brooksim.com/privacy-form"
@@ -206,7 +206,7 @@ datamentors-llc,"Datamentors, LLC",other,porchgroupmedia.com,"https://porchgroup
 datanyze-llc,"Datanyze LLC",other,datanyze.com,"https://www.zoominfo.com/trust-center/your-privacy"
 dataskip,"Dataskip",other,dataskip.io,"https://dataskip.io/privacy"
 datasys-group-inc,"Datasys Group, Inc.",other,datasys.com,"https://datasys.com/privacy-policy"
-datonics-llc,"DATONICS LLC",other,datonics.com,"https://www.datonics.com/privacy/privacy-choices"
+datonics-llc,Datonics LLC,other,datonics.com,https://www.datonics.com/privacy/privacy-choices
 dealerdirect-llc,"DealerDirect LLC",other,forddirectprivacy.com,"https://www.forddirect.com/privacy"
 dealersocket-llc,"DealerSocket, LLC",other,dealersocket.com,"https://dealersocket.com/privacy-policy/"
 dealerx-partners-llc,"DealerX Partners LLC",other,dealerx.com,"https://dealerx.com/privacy-options/"
@@ -261,7 +261,7 @@ focus-usa-inc,"Focus USA, Inc",other,focus-usa.com,"https://www.focus-usa.com/pr
 foller-me,"Foller.me",other,foller.me,"https://www.foller.me/do-not-sell"
 foo-monk-llc,"Foo Monk LLC",other,instantly.ai,"https://instantly.ai/privacy"
 forager-ai-llc,"Forager.ai, LLC",other,forager.ai,"https://www.forager.ai/privacy"
-forewarn-llc,"FOREWARN, LLC",other,forewarn.com,"https://www.forewarn.com/privacy-policy/"
+forewarn-llc,"Forewarn, LLC",other,forewarn.com,https://www.forewarn.com/privacy-policy/
 fourleaf-llc,"FourLeaf LLC",other,fourleafdata.com,"https://www.fourleafdata.com/privacy-policy/"
 foursquare-labs-inc,"Foursquare Labs, Inc.",other,location.foursquare.com,"https://foursquare.com/legal/privacy-center/#media_and_text-v1-a322121e-92c0-497b-85ae-e6c4672842ed"
 fourthwall-media-inc,"FourthWall Media, Inc.",other,fourthwall.tv,"https://www.fourthwall.tv/donotsellorshare-fourthwall"
@@ -368,7 +368,7 @@ modfx-labs-pvt-ltd,"ModFx Labs Pvt Ltd",other,modfxlabs.com,"https://modfxlabs.c
 mogean-inc,"Mogean, Inc.",other,mogean.com,"https://www.mogean.com/privacy-policy"
 monevo-inc,"Monevo, Inc.",other,app.monevo.us,"https://app.monevo.us/california-privacy-policy"
 moody-s-corporation,"Moody's Corporation",other,moodys.com,"https://www.moodys.com/web/en/us/legal/privacy-policy.html"
-multimedia-lists-inc,"MULTIMEDIA LISTS, INC.",other,multimedialists.com,"https://multimedialists.com/privacy-policy/"
+multimedia-lists-inc,"Multimedia Lists, Inc.",other,multimedialists.com,https://multimedialists.com/privacy-policy/
 names-and-facts,"Names and Facts",other,namesandfacts.com,"https://namesandfacts.com/do-not-sell-my-info"
 narvar-inc,"Narvar, Inc.",other,corp.narvar.com,"https://corp.narvar.com/legal/privacy-policy"
 national-opinion-institute-llc,"National Opinion Institute, LLC",other,nationalopinioninstitute.com,"https://nationalopinioninstitute.com/ca-privacy/"
@@ -386,7 +386,7 @@ opensend-inc,"Opensend Inc",other,opensend.com,"https://www.opensend.com/privacy
 orgio-inc,"Orgio, Inc.",other,theorg.com,"https://theorg.com/privacy"
 outlogic-llc,"Outlogic, LLC",other,outlogic.io,"https://outlogic.io/privacy-policy/"
 outward-media-inc,"Outward Media, Inc.",other,outwardmedia.com,"https://outwardmedia.com/do-not-sell"
-owmn-ltd,"OWMN, LTD.",other,thebridgecorp.com,"https://www.thebridgecorp.com/california-residents-ccpa/"
+owmn-ltd,"OWMN, Ltd.",other,thebridgecorp.com,https://www.thebridgecorp.com/california-residents-ccpa/
 ownco-llc,"Ownco, LLC",other,my.monitorbase.com,"https://my.monitorbase.com/privacypolicy"
 pacific-east-research-inc,"Pacific East Research Inc",other,pacificeast.com,"https://www.pacificeast.com/contact-us-privacy/"
 path2response-llc,"Path2Response LLC",other,privacyportal-cdn.onetrust.com,"https://privacyportal-cdn.onetrust.com/dsarwebform/2de26f06-de6f-45a7-8e1d-7d1148a3f301/draft/7a5dc7d1-cc7e-43a8-9f24-702807deb65b.html"
@@ -477,7 +477,7 @@ teamunify-llc,"TeamUnify, LLC",other,teamunify.com,"https://www.teamunify.com/te
 telesign-corporation,"Telesign Corporation",other,telesign.com,"https://www.telesign.com/privacy-requests"
 tennhelp,"TennHelp",other,tennhelp.com,"https://www.tennhelp.com/public-resources/change-listing"
 terminus-software-inc,"Terminus Software, Inc.",other,terminus.com,"https://demandscience.com/privacy-policy?utm_campaign=terminus-redirect"
-the-alesco-group-llc,"The Alesco Group LLC",other,mydataprivacy.com,"https://www.mydataprivacy.com/upload-csv"
+the-alesco-group-llc,"The Alesco Group LLC",other,alescodata.com,"https://alescodata.com/privacy-center/"
 the-bump,"The Bump",other,thebump.com,"https://support.thebump.com/hc/en-us/articles/34980593049748"
 the-data-group,"The Data Group",other,thedatagroup.com,"https://thedatagroup.com/privacy/california-consumer-privacy-act/"
 thomson-reuters-clear,"Thomson Reuters (CLEAR)",other,thomsonreuters.com,"https://privacyportal.onetrust.com/webform/dbf5ae8a-0a6a-4f4b-b527-7f94d0de6bbc/170d8ef9-9f1c-45f6-b338-9f3fb30c801e"
@@ -548,7 +548,7 @@ familytreenow,"FamilyTreeNow",people-search,familytreenow.com,"https://www.famil
 fastpeoplesearch,"FastPeopleSearch",people-search,fastpeoplesearch.com,"https://www.fastpeoplesearch.com/optout"
 fastpeoplesearch-io,"FastPeopleSearch.io",people-search,fastpeoplesearch.io,"https://fastpeoplesearch.io/remove-my-info"
 findpeoplefast-net,"FindPeopleFast.net",people-search,findpeoplefast.net,"https://findpeoplefast.net/company/remove-my-info"
-findpeoplesearch,"FindPeopleSearch",people-search,findpeoplesearch.com,"http://www.findpeoplesearch.com/customerservice/"
+findpeoplesearch,FindPeopleSearch,people-search,findpeoplesearch.com,https://www.findpeoplesearch.com/customerservice/
 freepeopledirectory-spokeo-data,"FreePeopleDirectory (Spokeo data)",people-search,freepeopledirectory.com,"https://www.freepeopledirectory.com/optout"
 freepeoplesearch-com,"FreePeopleSearch.com",people-search,freepeoplesearch.com,"https://freepeoplesearch.com/privacy-policy/"
 freephonetracer-beenverified-form,"FreePhoneTracer (BeenVerified form)",people-search,freephonetracer.com,"https://www.beenverified.com/app/optout/search"
@@ -741,7 +741,7 @@ awl-holdings-llc-privacyportal-eu-onetrust-com,"AWL Holdings, LLC (privacyportal
 babel-street-inc,"Babel Street, Inc.",other,babelstreet.com,"https://www.babelstreet.com/privacy"
 bachmanity-inc,"Bachmanity, Inc.",other,aviato.co,"https://www.aviato.co/legal/privacy"
 baron-app-inc,"Baron App, Inc.",other,candl.app,"https://legal.cameo.com/privacypolicy"
-becausal-inc,"BECAUSAL, INC.",other,becausal.com,"https://www.becausal.com/personal-information"
+becausal-inc,"Becausal, Inc.",other,becausal.com,https://www.becausal.com/personal-information
 biointelli-corporation,"Biointelli corporation",other,biointelli.com,"https://www.biointelli.com"
 biscred,"Biscred",other,biscred.com,"https://www.biscred.com/do-not-sell-my-information"
 blue-action-inc,"Blue Action Inc.",other,blueaction.io,"https://blueaction.io/do-not-sell/"
@@ -807,10 +807,10 @@ index-exchange-inc,"Index Exchange Inc.",other,indexexchange.com,"https://www.in
 innovation-brands-corp,"Innovation Brands Corp",other,proxima.ai,"https://www.proxima.ai"
 iqvia-digital-inc-privacyportal-onetrust-com,"IQVIA Digital Inc. (privacyportal.onetrust.com)",other,iqviadigital.com,"https://privacyportal.onetrust.com/webform/07e8dc4d-6686-403e-9b11-39fe7347d2f4/2f999bd2-c826-498c-a504-894eaf543b6f"
 j2-global-canada-inc-campaigner-com,"J2 Global Canada Inc.",other,campaigner.com,"https://www.campaigner.com/legal/privacy-policy"
-jdm-list-services,"JDM LIST SERVICES",other,jdmlistservices.com,"https://jdmlistservices.com/privacy-policy"
+jdm-list-services,JDM List Services,other,jdmlistservices.com,https://jdmlistservices.com/privacy-policy
 juicebox-app-inc,"Juicebox App, Inc.",other,juicebox.ai,"https://juicebox.ai/"
 kind-skiptracing-inc,"Kind Skiptracing, Inc",other,kindskiptracing.com,"https://kindskiptracing.com"
-lead-enhance-llc,"LEAD ENHANCE LLC",other,lead-enhance.com,"https://bathroom-remodel-today.com/privacy/"
+lead-enhance-llc,Lead Enhance LLC,other,lead-enhance.com,https://bathroom-remodel-today.com/privacy/
 lead-intelligence-inc,"Lead Intelligence Inc.",other,infutor.com,"https://infutor.com/privacy-center/"
 learnmore-llc,"LearnMore, LLC",other,learnmore.com,"https://learnmore.com/privacy-rights/"
 leidos-digital-solutions-inc,"Leidos Digital Solutions, Inc.",other,leidosiq.com,"https://leidosiq.com/"
@@ -858,7 +858,7 @@ ror-partners-llc,"ROR Partners, LLC",other,rorpartners.com,"https://rorpartners.
 rushmore-labs-llc,"Rushmore Labs, LLC",other,rushmorelabs.com,"https://www.censaianalytics.com/ccpa"
 s-and-p-global-inc,"S&P Global Inc",other,spglobal.com,"https://www.spglobal.com/en"
 scileads-ltd,"SciLeads Ltd",other,scileads.com,"https://scileads.com/privacy-policy/"
-semantiq-inc,"SEMANTIQ INC",other,semantiqhealth.com,"https://semantiqhealth.com/privacy-policy"
+semantiq-inc,Semantiq Inc,other,semantiqhealth.com,https://semantiqhealth.com/privacy-policy
 skydeo-inc,"Skydeo Inc.",other,skydeo.com,"https://skydeo.com"
 smarte-inc,"SMARTe Inc",other,smarte.pro,"https://www.smarte.pro"
 sojern-inc,"Sojern, Inc",other,sojern.com,"https://www.sojern.com/privacy/privacy-policy"

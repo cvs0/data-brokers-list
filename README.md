@@ -1,6 +1,6 @@
 # Data broker opt-out list
 
-A catalog of **847** data broker, people-search, and consumer-reporting opt-out or privacy-request pages. Each row is a real URL, checked on **2026-10-01**.
+A catalog of **841** data broker, people-search, and consumer-reporting opt-out or privacy-request pages. Each row is a real URL, first checked on **2026-10-01**. Later rechecks are dated in the notes.
 
 This is a directory of links, not a removal service. Read the [disclaimer](DISCLAIMER.md) before you use it. Pages move, forms ask for different ID, and a successful request on one site does not remove you from the rest.
 
@@ -30,8 +30,6 @@ If you only do one sitting, use these. URLs are copied from [`opt-outs.csv`](opt
 | The Trade Desk | https://adsrvr.org/ |
 | ZoomInfo Technologies, LLC | https://privacyrequest.zoominfo.com/remove/verify |
 | LexisNexis | https://consumer.risk.lexisnexis.com/opt |
-| Checkr | https://checkr.com/legal/privacy-policy |
-| Sterling | https://sterling.com/privacyrequest/ |
 | Equifax | https://myprivacy.equifax.com/opt-in-opt-out/personal-info |
 | Experian | https://www.experian.com/privacy/opting_out |
 | TransUnion | https://www.transunion.com/consumer-privacy |
@@ -43,7 +41,6 @@ If you only do one sitting, use these. URLs are copied from [`opt-outs.csv`](opt
 | Canada411 | https://www.canada411.ca/help.html?key=faq |
 | Canada Post | https://www.canadapost-postescanada.ca/cpc/en/support/kb/receiving/delivery-faq/how-to-stop-receiving-advertising-mail.page |
 | CMA Do Not Mail | https://www.thecma.ca/resources/consumer-centre/get-less-print-mail |
-| Elections Canada | https://www.elections.ca/content.aspx?section=vot&dir=reg/des&document=index&lang=e |
 | UK open electoral register | https://www.gov.uk/electoral-register/opt-out-of-the-open-register |
 | DMAChoice | https://www.dmachoice.org/ |
 | Digital Advertising Alliance opt-out | https://optout.aboutads.info/ |
@@ -59,17 +56,17 @@ Search the CSV before you send extra personal details. Notes say when a page ret
 | --- | --- | ---: |
 | People search | [brokers/people-search.md](brokers/people-search.md) | 231 |
 | Background checks | [brokers/background-checks.md](brokers/background-checks.md) | 69 |
-| Marketing | [brokers/marketing.md](brokers/marketing.md) | 132 |
+| Marketing | [brokers/marketing.md](brokers/marketing.md) | 131 |
 | Credit and financial | [brokers/credit-financial.md](brokers/credit-financial.md) | 18 |
 | Public records | [brokers/public-records.md](brokers/public-records.md) | 107 |
-| Other | [brokers/other.md](brokers/other.md) | 290 |
-| **Total** | [opt-outs.csv](opt-outs.csv) | **847** |
+| Other | [brokers/other.md](brokers/other.md) | 285 |
+| **Total** | [opt-outs.csv](opt-outs.csv) | **841** |
 
 `opt-outs.csv` is the source of truth for links. The Markdown files are tables generated from it. Column definitions and the check date are in [SOURCES.md](SOURCES.md).
 
 The default broker record for a full public-page scan is the v3 profile in [data/v3/brokers.json](data/v3/brokers.json). Notes are in [docs/v3.md](docs/v3.md). The working profile for search, removal, location, and legal facts is v4 in [data/v4/brokers.json](data/v4/brokers.json). Notes are in [docs/v4.md](docs/v4.md). A 2026-10-12 page map of an earlier, larger catalog is in [docs/broker-maps.md](docs/broker-maps.md). Commands that build and check these files are grouped in [scripts/README.md](scripts/README.md).
 
-Earlier layers are still in the repo. Researched workflow records are in [data/v1/broker-opt-outs.enriched.json](data/v1/broker-opt-outs.enriched.json) ([docs/dataset-fields.md](docs/dataset-fields.md), [docs/findings.md](docs/findings.md)). Hand-reviewed automation specs for a short list of brokers are in `data/v2/` ([docs/automation-layer.md](docs/automation-layer.md)). Catalog notes are claims. They are not proof that a removal workflow still works. No request was submitted to produce these files.
+Earlier layers are still in the repo. The v1 layer in `data/v1/` is a frozen snapshot of the earlier 1,122-row catalog and is not maintained ([data/v1/README.md](data/v1/README.md)). Its researched workflow records are in [data/v1/broker-opt-outs.enriched.json](data/v1/broker-opt-outs.enriched.json) ([docs/dataset-fields.md](docs/dataset-fields.md), [docs/findings.md](docs/findings.md)). Hand-reviewed automation specs for a short list of brokers are in `data/v2/` ([docs/automation-layer.md](docs/automation-layer.md)). Catalog notes are claims. They are not proof that a removal workflow still works. No request was submitted to produce these files.
 
 ## How to use a row
 

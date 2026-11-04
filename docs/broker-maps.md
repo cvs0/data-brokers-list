@@ -1,6 +1,6 @@
 # Broker page maps
 
-These maps were built for the catalog on the check date below. Rows added or removed in `opt-outs.csv` after that date are not in this file until the map is rebuilt.
+This page belongs to the v1 layer, a frozen snapshot of the earlier 1,122-row catalog that is no longer maintained ([data/v1/README.md](../data/v1/README.md)). Current counts are in the [README](../README.md) and [v4.md](v4.md).
 
 Check date: 2026-10-12T23:00:35+00:00. Catalog rows: 1122. Domains crawled: 1122.
 

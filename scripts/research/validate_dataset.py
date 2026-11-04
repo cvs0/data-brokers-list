@@ -1,5 +1,13 @@
 #!/usr/bin/env python3
-"""Validate the enriched dataset against the catalog, schema, and evidence rules."""
+"""Validate the v1 enriched dataset against its schema and evidence rules.
+
+The v1 layer is a frozen snapshot of the earlier 1,122-row catalog
+(see data/v1/README.md). When its catalog_row_count differs from
+opt-outs.csv, the record-by-record comparison with the current catalog is
+skipped with a warning, and the snapshot is checked against its own
+catalog fields instead. The current catalog is still checked for a pinned
+id in data/v1/catalog-ids.csv.
+"""
 
 from __future__ import annotations
 
@@ -55,8 +63,25 @@ def check_exclusive(errors: list[str], record_id: str, values: list) -> None:
 
 def main() -> int:
     errors: list[str] = []
-    rows = assign_ids(load_catalog())
+    warnings: list[str] = []
+    current_rows = assign_ids(load_catalog())
     dataset = load_json(DATASET)
+    frozen = dataset.get("catalog_row_count") != len(current_rows)
+    if frozen:
+        warnings.append(
+            f"data/v1 is a frozen snapshot of a {dataset.get('catalog_row_count')}-row catalog; "
+            f"opt-outs.csv has {len(current_rows)} rows. The comparison with the current catalog was skipped."
+        )
+        rows = [
+            {
+                **{column: (record.get("catalog") or {}).get(column) for column in ("name", "category", "url", "notes", "domain", "http_status")},
+                "id": record.get("id"),
+                "sources_list": (record.get("catalog") or {}).get("sources"),
+            }
+            for record in dataset.get("records") or []
+        ]
+    else:
+        rows = current_rows
     schema = load_json(SCHEMA)
     portals = load_json(PORTALS)
     parents = load_json(PARENTS)
@@ -181,8 +206,14 @@ def main() -> int:
         id_text = IDS.read_text(encoding="utf-8").splitlines()
         if not id_text or not id_text[0].startswith("id,"):
             fail(errors, "catalog-ids.csv is missing a header")
-        elif len(id_text) != len(rows) + 1:
-            fail(errors, "catalog-ids.csv row count does not match the catalog")
+        else:
+            import csv
+
+            with IDS.open(newline="", encoding="utf-8") as handle:
+                pinned = {(item["name"], item["url"]): item["id"] for item in csv.DictReader(handle)}
+            for row in current_rows:
+                if pinned.get((row["name"], row["url"])) != row["id"]:
+                    fail(errors, f"{row['id']}: current catalog row has no matching pinned id in catalog-ids.csv")
 
     if SHORTLIST.exists():
         shortlist = load_json(SHORTLIST)
@@ -259,7 +290,9 @@ def main() -> int:
             fail(errors, f"{record['id']}: search observation claims a submitted query")
 
     status_counts = Counter(record["verification"]["research_status"] for record in records)
-    print(json.dumps({"records": len(records), "research_status": dict(status_counts), "errors": len(errors)}, indent=2))
+    for warning in warnings:
+        print(f"warning: {warning}", file=sys.stderr)
+    print(json.dumps({"records": len(records), "frozen_snapshot": frozen, "research_status": dict(status_counts), "errors": len(errors)}, indent=2))
     if errors:
         print("\n".join(errors[:50]), file=sys.stderr)
         return 1

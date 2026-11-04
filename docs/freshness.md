@@ -1,5 +1,7 @@
 # Freshness check
 
+This page belongs to the v1 layer, a frozen snapshot of the earlier 1,122-row catalog that is no longer maintained ([data/v1/README.md](../data/v1/README.md)). Current counts are in the [README](../README.md) and [v4.md](v4.md).
+
 Recheck date: 2026-10-01. Method: direct HTTP GET from the research environment. No forms were submitted.
 `opt-outs.csv` was not rewritten. A blocked response is not treated as a dead page and is not evidence that a residential proxy is required.
 

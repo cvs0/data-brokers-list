@@ -1,5 +1,7 @@
 # Workflow groups
 
+This page belongs to the v1 layer, a frozen snapshot of the earlier 1,122-row catalog that is no longer maintained ([data/v1/README.md](../data/v1/README.md)). Current counts are in the [README](../README.md) and [v4.md](v4.md).
+
 Use `data/v1/workflow-groups.json` to pick one implementation target.
 
 A `shared_request_url` group is one published entry point. Sharing that URL does not, by itself, mean one submission removes every brand. `single_request_covers_members` is true only when an official page says so.
