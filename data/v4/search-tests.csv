@@ -14,6 +14,7 @@ airdrietoday-obituaries,airdrietoday.com,results,200,http_get,search,results,,fu
 alabama-arrests,alabamaarrests.org,no_results,200,http_get,results,empty,0,first_name;last_name;region;city;sex,,2026-10-13T19:43:21+00:00
 alarmscalifornia-licensedata,alarmscalifornia.org,challenge,403,http_get,licenses,,,full_name,,2026-10-25T03:18:09+00:00
 albertasunshinelist-ca,albertasunshinelist.ca,challenge,403,http_get,search-results,,,full_name,,2026-10-26T21:33:51+00:00
+alternatives-funeral-and-cremation,myalternatives.ca,submitted,200,http_get,obituaries,form,,full_name,,2026-11-04T23:52:49+00:00
 alumni-us,alumnius.net,submitted,200,http_get,search,results,3,full_name,,2026-10-25T03:02:26+00:00
 anywho-intelius-peopleconnect,anywho.com,submitted,200,http_get,,form,,full_name;city,,2026-10-13T20:47:49+00:00
 arrestwarrant-org,arrestwarrant.org,submitted,200,http_get,reg6,loader,,first_name;last_name;region,,2026-10-25T03:02:28+00:00
@@ -43,6 +44,7 @@ canadacompanyregistry-ca,canadacompanyregistry.ca,no_results,200,http_get,search
 canadasunshinelist-ca,canadasunshinelist.ca,submitted,200,http_get,ontario,other,,full_name,,2026-10-26T10:40:16+00:00
 canadian-who-s-who,canadianwhoswho.ca,submitted,200,http_get,search_results.php,results,8,full_name,,2026-11-02T06:52:06+00:00
 castanet-obituaries,castanet.net,http_error,404,http_get,obituaries,,,full_name,,2026-10-26T10:40:16+00:00
+catholic-cemeteries-and-funeral-services-toronto,catholic-cemeteries.ca,results,200,http_get,,results,,full_name,,2026-11-04T23:52:49+00:00
 certn,certn.co,unfilled,,http_form_post,,,,full_name,widget,2026-10-13T20:03:53+00:00
 charitydata-ca,charitydata.ca,results,200,http_get,search,results,,first_name;last_name,,2026-10-26T21:38:34+00:00
 clearbit,clearbit.com,submitted,200,http_get,hc,form,,full_name,,2026-10-13T19:43:27+00:00
@@ -136,6 +138,7 @@ merinfo-se,merinfo.se,submitted,200,http_get,search,form,,full_name,,2026-10-26T
 midlandtoday-obituaries,midlandtoday.ca,challenge,403,http_get,search,,,full_name,,2026-10-26T12:20:22+00:00
 miltontoday-obituaries,miltontoday.ca,challenge,403,http_get,search,,,full_name,,2026-10-26T13:08:03+00:00
 mineralholders,mineralholders.com,submitted,200,http_get,search,results,1,full_name,,2026-10-25T03:33:57+00:00
+monaco-monuments-ontario-obituaries,monacomonuments.ca,submitted,200,http_get,ontario-obituaries,other,,full_name,,2026-11-04T23:52:49+00:00
 moosejawtoday-obituaries,moosejawtoday.com,challenge,403,http_get,search,,,full_name,,2026-10-26T13:08:03+00:00
 mountainviewtoday-obituaries,mountainviewtoday.ca,results,200,http_get,search,results,,full_name,,2026-10-26T13:08:03+00:00
 mugshotlook,mugshotlook.com,results,200,http_get,nameSearch,results,,first_name;last_name;region,,2026-10-13T19:44:08+00:00
@@ -184,6 +187,7 @@ peoplesearchnow,peoplesearchnow.com,challenge,403,http_form_post,person-search,,
 peoplesmart-beenverified,peoplesmart.com,submitted,200,http_get,lp,loader,,full_name;region,,2026-10-13T20:48:25+00:00
 peoplewhiz,peoplewhiz.com,captcha,,http_get,,,,,,2026-10-25T03:34:04+00:00
 peoplewhizr,peoplewhizr.com,submitted,200,http_get,,other,,first_name;last_name;city;region,,2026-10-25T03:02:56+00:00
+personpages,personpages.com,unfilled,,http_get,,,,,,2026-11-04T23:52:49+00:00
 phonebooks-com,phonebooks.com,challenge,403,http_get,employee-results,,,full_name,,2026-10-25T03:34:04+00:00
 phonenumberinfo-us,phonenumberinfo.us,submitted,200,http_form_post,go,form,,phone,,2026-10-13T20:48:30+00:00
 pimeyes,pimeyes.com,unfilled,,http_get,,,,,,2026-10-13T20:03:53+00:00
