@@ -1,22 +1,22 @@
 {
  "schema_version": "3.0.0",
- "checked_at": "2026-11-04T23:51:01+00:00",
+ "checked_at": "2026-11-05T08:23:13+00:00",
  "method": "Public pages only: homepage, catalog URL, and mapped privacy, contact, and legal links. robots.txt honored. No form submitted, no login, no CAPTCHA solved. A browser opened lookup homepages the static fetch never read, and catalog URLs that were blocked or failed, when robots.txt allowed the URL. Image fields are URLs, not copied files. People-search listing URLs are not stored. Null means the fetched page did not establish that fact. Every catalog id has a record.",
- "broker_count": 849,
+ "broker_count": 851,
  "counts": {
   "liveness": {
-   "alive": 687,
+   "alive": 689,
    "blocked": 50,
    "error": 22,
    "opt_out_missing": 1,
    "robots_disallowed": 89
   },
-  "with_logo": 727,
-  "with_image": 727,
-  "with_search": 443,
-  "with_email": 394,
-  "with_captcha": 342,
-  "with_form": 165
+  "with_logo": 729,
+  "with_image": 729,
+  "with_search": 445,
+  "with_email": 396,
+  "with_captcha": 343,
+  "with_form": 166
  },
  "brokers": {
   "alaska-arrests": {
@@ -40311,7 +40311,7 @@
    "name": "First Beat Media",
    "category": "other",
    "domain": "phonelookup.com",
-   "checked_at": "2026-10-12T23:23:02+00:00",
+   "checked_at": "2026-11-05T08:22:11+00:00",
    "liveness": "alive",
    "liveness_detail": "catalog URL loaded",
    "homepage": "https://www.phonelookup.com/",
@@ -137697,7 +137697,7 @@
    "name": "411 Reverse Lookup Canada",
    "category": "people-search",
    "domain": "411reverselookup.ca",
-   "checked_at": "2026-10-12T23:10:15+00:00",
+   "checked_at": "2026-11-05T08:22:13+00:00",
    "liveness": "alive",
    "liveness_detail": "catalog URL loaded",
    "homepage": "https://www.411reverselookup.ca/",
@@ -137766,8 +137766,8 @@
     "login_wall": null
    },
    "removal": {
-    "url": "https://www.411reverselookup.ca/privacy-policy.php",
-    "final_url": "https://www.411reverselookup.ca/privacy-policy.php",
+    "url": "https://www.411reverselookup.ca/remove-info.php",
+    "final_url": "https://www.411reverselookup.ca/remove-info.php",
     "http_status": 200,
     "kinds": [
      "opt_out"
@@ -137780,32 +137780,40 @@
     "emails": [],
     "phones": [
      "416-725-0012",
-     "416-431-5313",
+     "905-318-0446",
      "1-866-482-7474"
     ],
     "postal_address": "Po Box 390, Whapmagoostui 780-720-5887 Aspen Asphalt & Dirt Works 10404 66 Ave NW, Edmonto",
     "portal": null,
     "form_fields": [
      {
-      "name": "searchphone",
+      "name": "name",
       "type": "text",
-      "canonical": "phone",
-      "required": false,
-      "autocomplete": "off",
-      "placeholder": "Enter a Phone Number"
-     },
-     {
-      "name": "business",
-      "type": "text",
-      "canonical": null,
+      "canonical": "full_name",
       "required": false,
       "autocomplete": null,
       "placeholder": null
      },
      {
-      "name": "person",
+      "name": "address",
       "type": "text",
-      "canonical": null,
+      "canonical": "street_address",
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "phone",
+      "type": "text",
+      "canonical": "phone",
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "email",
+      "type": "text",
+      "canonical": "email",
       "required": false,
       "autocomplete": null,
       "placeholder": null
@@ -137817,6 +137825,7 @@
      "provider": "recaptcha_v2",
      "sitekey": "6LdsTDwUAAAAAJ-EC9YOGnZHYAWSOS5IHoW7GQu7",
      "pages": [
+      "https://www.411reverselookup.ca/remove-info.php",
       "https://www.411reverselookup.ca/contact.php"
      ]
     },
@@ -137864,10 +137873,18 @@
      "liveness": "alive"
     },
     {
+     "url": "https://www.411reverselookup.ca/remove-info.php",
+     "final_url": "https://www.411reverselookup.ca/remove-info.php",
+     "status": 200,
+     "role": "catalog",
+     "title": "Remove your Phone Number and Profile, 411 Reverse Lookup",
+     "liveness": "alive"
+    },
+    {
      "url": "https://www.411reverselookup.ca/privacy-policy.php",
      "final_url": "https://www.411reverselookup.ca/privacy-policy.php",
      "status": 200,
-     "role": "catalog",
+     "role": "privacy",
      "title": "Privacy Policy - 411 Reverse Lookup - Canada Reverse Lookup",
      "liveness": "alive"
     },
@@ -179064,6 +179081,346 @@
      "status": 200,
      "role": "catalog",
      "title": "Contact mySteinbach",
+     "liveness": "alive"
+    }
+   ]
+  },
+  "reverse-canada": {
+   "schema_version": "3.0.0",
+   "id": "reverse-canada",
+   "name": "Reverse Canada",
+   "category": "people-search",
+   "domain": "reversecanada.com",
+   "checked_at": "2026-11-05T08:22:17+00:00",
+   "liveness": "alive",
+   "liveness_detail": "catalog URL loaded",
+   "homepage": "https://www.reversecanada.com/",
+   "logo_url": "https://www.reversecanada.com/images/logo-wide-ca.png",
+   "images": [
+    {
+     "url": "https://www.reversecanada.com/images/logo-ca.png",
+     "kind": "og_image",
+     "source_page": "https://www.reversecanada.com/"
+    },
+    {
+     "url": "https://www.reversecanada.com/images/logo-wide-ca.png",
+     "kind": "logo",
+     "source_page": "https://www.reversecanada.com/"
+    }
+   ],
+   "theme_color": null,
+   "languages": [
+    "en"
+   ],
+   "legal_name": null,
+   "search": {
+    "available": true,
+    "method": "http_form_post",
+    "page_url": "https://www.reversecanada.com/",
+    "form_action": "https://www.reversecanada.com/search.php",
+    "inputs": [
+     {
+      "name": "search",
+      "type": "text",
+      "canonical": "full_name",
+      "required": false,
+      "autocomplete": "off",
+      "placeholder": null
+     }
+    ],
+    "url_pattern": "https://www.reversecanada.com/search.php",
+    "directory_prefixes": [],
+    "paywall": null,
+    "login_wall": null
+   },
+   "removal": {
+    "url": "https://www.reversecanada.com/contact.php",
+    "final_url": "https://www.reversecanada.com/contact.php",
+    "http_status": 200,
+    "kinds": [
+     "opt_out"
+    ],
+    "channels": [
+     "email",
+     "phone"
+    ],
+    "emails": [
+     {
+      "email": "residential@reversecanada.com",
+      "confidence": "uncertain",
+      "source_url": "https://www.reversecanada.com/contact.php"
+     },
+     {
+      "email": "corporate@reversecanada.com",
+      "confidence": "uncertain",
+      "source_url": "https://www.reversecanada.com/contact.php"
+     }
+    ],
+    "phones": [
+     "555-123-1234",
+     "1 555 123 1234",
+     "(705) 470-1962"
+    ],
+    "postal_address": null,
+    "portal": null,
+    "form_fields": [],
+    "csrf_field_name": null,
+    "requires_profile_url": null,
+    "captcha": {
+     "provider": null,
+     "sitekey": null,
+     "pages": []
+    },
+    "consent_vendor": null,
+    "success_text": null,
+    "suppression_not_deletion": null,
+    "processing_days": null,
+    "processing_text": null
+   },
+   "bot_defense": {
+    "vendor": null,
+    "outcome": "none"
+   },
+   "legal": {
+    "privacy_policy_url": null,
+    "terms_url": null,
+    "automation_prohibited": null,
+    "automation_clause": null,
+    "residency": [],
+    "authorized_agent": null,
+    "data_categories": [
+     "identifiers",
+     "commercial"
+    ]
+   },
+   "pages": [
+    {
+     "url": "https://reversecanada.com/",
+     "final_url": "https://www.reversecanada.com/",
+     "status": 200,
+     "role": "home",
+     "title": "Reverse Phone Lookup - Reverse Canada",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.reversecanada.com/",
+     "final_url": "https://www.reversecanada.com/",
+     "status": 200,
+     "role": "home",
+     "title": "Reverse Phone Lookup - Reverse Canada",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.reversecanada.com/contact.php",
+     "final_url": "https://www.reversecanada.com/contact.php",
+     "status": 200,
+     "role": "catalog",
+     "title": "Contact Us - Reverse Phone Lookup - Reverse Canada",
+     "liveness": "alive"
+    }
+   ]
+  },
+  "phone-validator": {
+   "schema_version": "3.0.0",
+   "id": "phone-validator",
+   "name": "Phone Validator",
+   "category": "people-search",
+   "domain": "phonevalidator.com",
+   "checked_at": "2026-11-05T08:22:15+00:00",
+   "liveness": "alive",
+   "liveness_detail": "catalog URL loaded",
+   "homepage": "https://www.phonevalidator.com/",
+   "logo_url": "https://www.phonevalidator.com/assets/logo-square-cddcd6cf.png",
+   "images": [
+    {
+     "url": "https://www.phonevalidator.com/assets/favicon-b69e8ccf.ico",
+     "kind": "icon",
+     "source_page": "https://www.phonevalidator.com/"
+    },
+    {
+     "url": "https://www.phonevalidator.com/assets/social-card-a74b8488.png",
+     "kind": "og_image",
+     "source_page": "https://www.phonevalidator.com/"
+    },
+    {
+     "url": "https://www.phonevalidator.com/assets/logo-square-cddcd6cf.png",
+     "kind": "json_ld",
+     "source_page": "https://www.phonevalidator.com/"
+    }
+   ],
+   "theme_color": null,
+   "languages": [
+    "en"
+   ],
+   "legal_name": "Phone Validator",
+   "search": {
+    "available": true,
+    "method": "http_form_post",
+    "page_url": "https://www.phonevalidator.com/",
+    "form_action": "https://www.phonevalidator.com/search",
+    "inputs": [
+     {
+      "name": "authenticity_token",
+      "type": "hidden",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "form_token",
+      "type": "hidden",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "pv_ref_q7",
+      "type": "text",
+      "canonical": null,
+      "required": false,
+      "autocomplete": "off",
+      "placeholder": null
+     },
+     {
+      "name": "pv_ref_k2",
+      "type": "text",
+      "canonical": null,
+      "required": false,
+      "autocomplete": "off",
+      "placeholder": null
+     },
+     {
+      "name": "number",
+      "type": "tel",
+      "canonical": "phone",
+      "required": false,
+      "autocomplete": "off",
+      "placeholder": "555-123-1212"
+     }
+    ],
+    "url_pattern": "https://www.phonevalidator.com/search",
+    "directory_prefixes": [],
+    "paywall": null,
+    "login_wall": null,
+    "captcha_provider": "turnstile",
+    "captcha_sitekey": "0x4AAAAAAFD124ZQCmQX8wsU"
+   },
+   "removal": {
+    "url": "https://www.phonevalidator.com/privacy-request",
+    "final_url": "https://www.phonevalidator.com/privacy-request",
+    "http_status": 200,
+    "kinds": [
+     "opt_out"
+    ],
+    "channels": [
+     "web_form",
+     "email"
+    ],
+    "emails": [
+     {
+      "email": "info@phonevalidator.com",
+      "confidence": "uncertain",
+      "source_url": "https://www.phonevalidator.com/privacy-request"
+     }
+    ],
+    "phones": [],
+    "postal_address": null,
+    "portal": null,
+    "form_fields": [
+     {
+      "name": "privacy_request[email]",
+      "type": "email",
+      "canonical": "email",
+      "required": true,
+      "autocomplete": "email",
+      "placeholder": null
+     },
+     {
+      "name": "privacy_request[phone_numbers]",
+      "type": "text",
+      "canonical": "phone",
+      "required": true,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "privacy_request[details]",
+      "type": "text",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "WebsiteUrl",
+      "type": "text",
+      "canonical": null,
+      "required": false,
+      "autocomplete": "off",
+      "placeholder": null
+     }
+    ],
+    "csrf_field_name": "FormToken",
+    "requires_profile_url": null,
+    "captcha": {
+     "provider": "turnstile",
+     "sitekey": "0x4AAAAAAFD124ZQCmQX8wsU",
+     "pages": [
+      "https://www.phonevalidator.com/privacy-request"
+     ],
+     "checked": true,
+     "checked_url": "https://www.phonevalidator.com/privacy-request",
+     "detail": null
+    },
+    "consent_vendor": null,
+    "success_text": null,
+    "suppression_not_deletion": null,
+    "processing_days": 14,
+    "processing_text": "We email a receipt with a reference ID and aim to act within 10 business days"
+   },
+   "bot_defense": {
+    "vendor": null,
+    "outcome": "none"
+   },
+   "legal": {
+    "privacy_policy_url": "https://www.phonevalidator.com/privacy-request",
+    "terms_url": null,
+    "automation_prohibited": null,
+    "automation_clause": null,
+    "residency": [
+     "US"
+    ],
+    "authorized_agent": true,
+    "data_categories": [
+     "identifiers",
+     "employment"
+    ]
+   },
+   "pages": [
+    {
+     "url": "https://phonevalidator.com/",
+     "final_url": "https://www.phonevalidator.com/",
+     "status": 200,
+     "role": "home",
+     "title": "Phone Validator ✔️ | Is it a Cell or is it a Landline? Phone Number Checker",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.phonevalidator.com/",
+     "final_url": "https://www.phonevalidator.com/",
+     "status": 200,
+     "role": "home",
+     "title": "Phone Validator ✔️ | Is it a Cell or is it a Landline? Phone Number Checker",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.phonevalidator.com/privacy-request",
+     "final_url": "https://www.phonevalidator.com/privacy-request",
+     "status": 200,
+     "role": "catalog",
+     "title": "Phone Validator | Block Searches for Your Number",
      "liveness": "alive"
     }
    ]

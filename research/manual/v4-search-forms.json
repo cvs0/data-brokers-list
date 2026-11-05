@@ -7820,9 +7820,9 @@
     "evidence": "The stored phone form posts to https://www.numlookup.com/ with _tab=phone and phone_number. On 2026-11-02 that POST answered HTTP 404 with an empty body, as the catalog search test also recorded on 2026-10-25. The homepage name form (POST /search_name with full_name and location) answered HTTP 200 with only a \"Sign in / Sign Up ... Generating Report.... Your report will be ready in 30 seconds\" screen and no records. No result can be read without an account."
   },
   "411-reverse-lookup-canada": {
-    "checked": "2026-11-02",
+    "checked": "2026-11-05",
     "country": "CA",
-    "evidence": "The homepage form (id hmainform) has action=\"\" and a script that sets the action before submitting: https://www.411reverselookup.ca/People/Phone-Lookup/ for residential numbers and /Phone-Lookup/ for businesses. The stored form posted to the homepage, which only shows the form again. searchphone takes 10 digits. Nothing else was submitted.",
+    "evidence": "Canadian reverse phone lookup. Search: homepage form (id hmainform) posts searchphone to /People/Phone-Lookup/ (residential) or /Phone-Lookup/ (business). Removal: https://www.411reverselookup.ca/remove-info.php posts name/address/phone/email to remove-info-submit.php with reCAPTCHA v2 sitekey 6LdsTDwUAAAAAJ-EC9YOGnZHYAWSOS5IHoW7GQu7 (same family as whitepagescanada.ca). Catalog URL moved off privacy-policy.php on 2026-11-05. Nothing was submitted.",
     "result_check": "POST /People/Phone-Lookup/ with searchphone set to a Toronto number returned \"People Reverse Phone Lookup, <number>\" with a listing; a number with no listing returned \"No record found.\" (2026-11-02, CST).",
     "form": {
       "method": "http_form_post",
@@ -7858,7 +7858,8 @@
         }
       ]
     },
-    "captcha_widget": false
+    "captcha_widget": false,
+    "country_override": true
   },
   "cross-pixel-media-inc": {
     "checked": "2026-11-02",
@@ -8176,5 +8177,92 @@
       ]
     },
     "captcha_widget": false
+  },
+  "reverse-canada": {
+    "checked": "2026-11-05",
+    "country": "CA",
+    "country_override": true,
+    "captcha_widget": false,
+    "evidence": "Canadian reverse phone lookup (sister of Reverse Australia). Homepage POST /search.php with search={phone} returns a number page (checked with 555-555-0100 → title \"5555550100 who called…\"). No CAPTCHA widget on the homepage. Residential listing removal is by email to residential@reversecanada.com per https://www.reversecanada.com/contact.php. Nothing was submitted.",
+    "result_check": "POST /search.php search=555-555-0100 → HTTP 200 number page with comment form (2026-11-05, CST).",
+    "form": {
+      "method": "http_form_post",
+      "page_url": "https://www.reversecanada.com/",
+      "form_action": "https://www.reversecanada.com/search.php",
+      "url_pattern": null,
+      "form_id": null,
+      "form_name": null,
+      "submit_label": "Search",
+      "hidden_names": [],
+      "inputs": [
+        {
+          "name": "search",
+          "type": "text",
+          "canonical": "phone",
+          "required": false,
+          "id": null,
+          "label": null,
+          "placeholder": null
+        }
+      ]
+    }
+  },
+  "reverseaustralia": {
+    "checked": "2026-11-05",
+    "country": "AU",
+    "country_override": true,
+    "captcha_widget": false,
+    "evidence": "Australian reverse phone lookup (sister of Reverse Canada). Homepage POST /search.php with search={phone}. Live homepage HTML on 2026-11-05 had no reCAPTCHA/Turnstile widget; the stored search captcha_provider was bleed and is cleared so search_fillable can turn on. Removal remains email to residential@reverseaustralia.com (STATED_REMOVAL). Nothing was submitted.",
+    "form": {
+      "method": "http_form_post",
+      "page_url": "https://www.reverseaustralia.com/",
+      "form_action": "https://www.reverseaustralia.com/search.php",
+      "url_pattern": "https://www.reverseaustralia.com/search.php",
+      "form_id": null,
+      "form_name": null,
+      "submit_label": "Search",
+      "hidden_names": [],
+      "inputs": [
+        {
+          "name": "search",
+          "type": "text",
+          "canonical": "phone",
+          "required": false,
+          "id": null,
+          "label": null,
+          "placeholder": null
+        }
+      ]
+    }
+  },
+  "phone-validator": {
+    "checked": "2026-11-05",
+    "country": "US",
+    "country_override": true,
+    "evidence": "US reverse phone / line-type checker. Homepage form posts number to /search (authenticity_token + honeypot fields pv_ref_*). Cloudflare Turnstile sitekey 0x4AAAAAAFD124ZQCmQX8wsU is on the search and privacy-request pages; a POST without a token returned HTTP 422. CapSolver can solve Turnstile for search and for the privacy-request form (email, phone_numbers, details). Nothing was submitted.",
+    "form": {
+      "method": "http_form_post",
+      "page_url": "https://www.phonevalidator.com/",
+      "form_action": "https://www.phonevalidator.com/search",
+      "url_pattern": null,
+      "form_id": "free-search-form",
+      "form_name": null,
+      "submit_label": "Check phone number",
+      "hidden_names": [
+        "authenticity_token",
+        "form_token"
+      ],
+      "inputs": [
+        {
+          "name": "number",
+          "type": "tel",
+          "canonical": "phone",
+          "required": false,
+          "id": "number",
+          "label": null,
+          "placeholder": "555-123-1212"
+        }
+      ]
+    }
   }
 }

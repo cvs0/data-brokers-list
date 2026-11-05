@@ -120,6 +120,7 @@ STATED_REMOVAL = {
     "plug-industries.com": ["dataretrieval@plug-industries.com"],
     "postie.com": ["info@postie.com"],
     "reverseaustralia.com": ["residential@reverseaustralia.com", "corporate@reverseaustralia.com"],
+    "reversecanada.com": ["residential@reversecanada.com", "corporate@reversecanada.com"],
     "thebump.com": ["help@thebump.com"],
     "melissa.com": ["consumerrequest@melissa.com"],
     "ileads.com": ["dnc@ileads.com"],
