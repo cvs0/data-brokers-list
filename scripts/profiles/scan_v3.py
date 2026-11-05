@@ -530,7 +530,36 @@ def portal_of(urls: list[str]) -> dict | None:
 # request. filter_email drops these. scan_v4 promotes the same addresses to stated_removal.
 STATED_OFF_DOMAIN = {
     "thisnumber.com": {"thisnumber.com@gmail.com"},
+    "mysask411.com": {"dw@directwest.com"},
 }
+
+
+CF_EMAIL = re.compile(
+    r"<(a|span)\b[^>]*?data-cfemail=\"([0-9a-fA-F]+)\"[^>]*>.*?</\1>"
+    r"|/cdn-cgi/l/email-protection#([0-9a-fA-F]+)",
+    re.S,
+)
+
+
+def _cf_decode(hexed: str) -> str:
+    try:
+        key = int(hexed[:2], 16)
+        return "".join(chr(int(hexed[i:i + 2], 16) ^ key) for i in range(2, len(hexed) - 1, 2))
+    except ValueError:
+        return ""
+
+
+def decode_cf_emails(html: str) -> str:
+    """Cloudflare email obfuscation hides addresses in data-cfemail; put the plain address back."""
+    if "cfemail" not in html and "email-protection#" not in html:
+        return html
+
+    def swap(match: re.Match) -> str:
+        if match.group(2):
+            return _cf_decode(match.group(2))
+        return "mailto:" + _cf_decode(match.group(3))
+
+    return CF_EMAIL.sub(swap, html)
 
 
 def keep_stated(domain: str, email: str) -> tuple[str, str] | None:
@@ -541,7 +570,7 @@ def keep_stated(domain: str, email: str) -> tuple[str, str] | None:
 
 
 def analyze(res: dict, domain: str, parents: set[str]) -> dict:
-    html = res.get("html") or ""
+    html = decode_cf_emails(res.get("html") or "")
     doc = Doc()
     if html and "html" in (res.get("ctype") or "text/html").lower() or "<html" in html[:600].lower():
         try:

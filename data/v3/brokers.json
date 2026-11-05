@@ -1,6 +1,6 @@
 {
  "schema_version": "3.0.0",
- "checked_at": "2026-11-05T08:23:13+00:00",
+ "checked_at": "2026-11-05T10:52:11+00:00",
  "method": "Public pages only: homepage, catalog URL, and mapped privacy, contact, and legal links. robots.txt honored. No form submitted, no login, no CAPTCHA solved. A browser opened lookup homepages the static fetch never read, and catalog URLs that were blocked or failed, when robots.txt allowed the URL. Image fields are URLs, not copied files. People-search listing URLs are not stored. Null means the fetched page did not establish that fact. Every catalog id has a record.",
  "broker_count": 851,
  "counts": {
@@ -14,9 +14,9 @@
   "with_logo": 729,
   "with_image": 729,
   "with_search": 445,
-  "with_email": 396,
-  "with_captcha": 343,
-  "with_form": 166
+  "with_email": 398,
+  "with_captcha": 344,
+  "with_form": 167
  },
  "brokers": {
   "alaska-arrests": {
@@ -77462,7 +77462,7 @@
    "name": "NumberGuru (BeenVerified family)",
    "category": "people-search",
    "domain": "numberguru.com",
-   "checked_at": "2026-10-12T23:21:56+00:00",
+   "checked_at": "2026-11-05T10:51:07+00:00",
    "liveness": "robots_disallowed",
    "liveness_detail": "robots.txt disallows this client",
    "homepage": "https://www.numberguru.com/",
@@ -77530,10 +77530,32 @@
      "opt_out"
     ],
     "channels": [
+     "email",
      "postal_mail",
      "phone"
     ],
-    "emails": [],
+    "emails": [
+     {
+      "email": "support@numberguru.com",
+      "confidence": "uncertain",
+      "source_url": "https://www.numberguru.com/"
+     },
+     {
+      "email": "dpo@numberguru.com",
+      "confidence": "extracted",
+      "source_url": "https://www.numberguru.com/privacy-policy/"
+     },
+     {
+      "email": "privacy@numberguru.com",
+      "confidence": "extracted",
+      "source_url": "https://www.numberguru.com/privacy-policy/"
+     },
+     {
+      "email": "compliance@numberguru.com",
+      "confidence": "uncertain",
+      "source_url": "https://www.numberguru.com/terms-of-service/"
+     }
+    ],
     "phones": [
      "(555) 123-4567",
      "1-866-673-9048",
@@ -77545,10 +77567,9 @@
     "csrf_field_name": null,
     "requires_profile_url": null,
     "captcha": {
-     "provider": "recaptcha_v2",
+     "provider": "turnstile",
      "sitekey": null,
      "pages": [
-      "https://www.numberguru.com/privacy-policy/",
       "https://www.numberguru.com/contact/"
      ]
     },
@@ -136895,7 +136916,7 @@
    "name": "Canada Pages",
    "category": "people-search",
    "domain": "canadapages.com",
-   "checked_at": "2026-10-12T23:13:28+00:00",
+   "checked_at": "2026-11-05T10:49:13+00:00",
    "liveness": "alive",
    "liveness_detail": "catalog URL loaded",
    "homepage": "https://www.canadapages.com/",
@@ -136971,7 +136992,7 @@
     ],
     "emails": [],
     "phones": [],
-    "postal_address": "P.o. Box 23, St Ambroise 204-243-2009 Cobs Bread (Robson Street) 1709 Robson Street, Vancou",
+    "postal_address": "Po Box 4496, Bonnyville 780-207-5940 Yellow Brick House Aurora 905-727-0930 Cosmos Properti",
     "portal": null,
     "form_fields": [
      {
@@ -137077,19 +137098,19 @@
     },
     {
      "url": "https://www.canadapages.com/tos.php",
-     "final_url": null,
-     "status": null,
+     "final_url": "https://www.canadapages.com/tos.php",
+     "status": 200,
      "role": "other",
-     "title": "",
-     "liveness": "error"
+     "title": "Terms of Service, Canada Pages",
+     "liveness": "alive"
     },
     {
      "url": "https://www.canadapages.com/member/remove-phone-listing.php",
-     "final_url": null,
-     "status": null,
+     "final_url": "https://www.canadapages.com/member/remove-phone-listing.php",
+     "status": 200,
      "role": "other",
-     "title": "",
-     "liveness": "error"
+     "title": "Remove Your Listing - Canada Pages",
+     "liveness": "alive"
     }
    ]
   },
@@ -147342,7 +147363,7 @@
    "name": "PhoneNumbers.org",
    "category": "people-search",
    "domain": "phonenumbers.org",
-   "checked_at": "2026-10-12T23:23:06+00:00",
+   "checked_at": "2026-11-05T10:50:02+00:00",
    "liveness": "alive",
    "liveness_detail": "catalog URL loaded",
    "homepage": "https://phonenumbers.org/",
@@ -147382,13 +147403,28 @@
      "url": "https://phonenumbers.org/_next/image/?url=%2Fimages%2Flogos%2Flogo.png&w=384&q=75&dpl=dpl_BWK3qz9h4UCppQgsF3nUaePGpmXt",
      "kind": "logo",
      "source_page": "https://phonenumbers.org/"
+    },
+    {
+     "url": "https://infotracer.com/img/favicon.png",
+     "kind": "icon",
+     "source_page": "https://infotracer.com/do-not-sell-share-my-personal-information/"
+    },
+    {
+     "url": "https://infotracer.com/img/infotracer-cover-photo.jpg",
+     "kind": "og_image",
+     "source_page": "https://infotracer.com/do-not-sell-share-my-personal-information/"
+    },
+    {
+     "url": "https://infotracer.com/img/logo.png",
+     "kind": "json_ld",
+     "source_page": "https://infotracer.com/do-not-sell-share-my-personal-information/"
     }
    ],
    "theme_color": null,
    "languages": [
     "en"
    ],
-   "legal_name": null,
+   "legal_name": "InfoTracer",
    "search": {
     "available": true,
     "method": "http_get",
@@ -147410,17 +147446,24 @@
     "login_wall": null
    },
    "removal": {
-    "url": "https://phonenumbers.org/privacy/",
-    "final_url": "https://phonenumbers.org/privacy/",
+    "url": "https://infotracer.com/do-not-sell-share-my-personal-information/",
+    "final_url": "https://infotracer.com/do-not-sell-share-my-personal-information/",
     "http_status": 200,
     "kinds": [
-     "opt_out"
+     "opt_out",
+     "do_not_sell"
     ],
     "channels": [
+     "web_form",
      "email",
      "phone"
     ],
     "emails": [
+     {
+      "email": "privacy@infotracer.com",
+      "confidence": "uncertain",
+      "source_url": "https://infotracer.com/do-not-sell-share-my-personal-information/"
+     },
      {
       "email": "support@phonenumbers.org",
       "confidence": "uncertain",
@@ -147429,23 +147472,114 @@
     ],
     "phones": [
      "(855) 449-1860",
-     "(844)-872-4681"
+     "(844)-872-4681",
+     "(800) 791-1427"
     ],
     "postal_address": null,
     "portal": null,
-    "form_fields": [],
+    "form_fields": [
+     {
+      "name": "InfoPay_Core_Components_OptOuts_DataRemovalServiceModel[fname]",
+      "type": "text",
+      "canonical": "first_name",
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "InfoPay_Core_Components_OptOuts_DataRemovalServiceModel[lname]",
+      "type": "text",
+      "canonical": "last_name",
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "InfoPay_Core_Components_OptOuts_DataRemovalServiceModel[state]",
+      "type": "select",
+      "canonical": "region",
+      "required": true,
+      "autocomplete": null,
+      "placeholder": null,
+      "options": [
+       "ALL",
+       "AL",
+       "AK",
+       "AZ",
+       "AR",
+       "CA",
+       "CO",
+       "CT",
+       "DE",
+       "DC",
+       "FL",
+       "GA",
+       "HI",
+       "ID",
+       "IL",
+       "IN",
+       "IA",
+       "KS",
+       "KY",
+       "LA",
+       "ME",
+       "MD",
+       "MA",
+       "MI",
+       "MN",
+       "MS",
+       "MO",
+       "MT",
+       "NE",
+       "NV",
+       "NH",
+       "NJ",
+       "NM",
+       "NY",
+       "NC",
+       "ND",
+       "OH",
+       "OK",
+       "OR",
+       "PA",
+       "PR",
+       "RI",
+       "SC",
+       "SD",
+       "TN",
+       "TX",
+       "UT",
+       "VT",
+       "VA",
+       "WA",
+       "WV",
+       "WI",
+       "WY"
+      ]
+     },
+     {
+      "name": "InfoPay_Core_Components_OptOuts_DataRemovalServiceModel[city]",
+      "type": "text",
+      "canonical": "city",
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     }
+    ],
     "csrf_field_name": null,
     "requires_profile_url": null,
     "captcha": {
-     "provider": null,
-     "sitekey": null,
-     "pages": []
+     "provider": "turnstile",
+     "sitekey": "0x4AAAAAAFUnCgAIAEDCMazF",
+     "pages": [
+      "https://infotracer.com/do-not-sell-share-my-personal-information/"
+     ]
     },
     "consent_vendor": null,
     "success_text": null,
     "suppression_not_deletion": null,
-    "processing_days": null,
-    "processing_text": null
+    "processing_days": 15,
+    "processing_text": "If you chose to receive a confirmation and have not received it within 15 days, please contact us at privacy@infotracer"
    },
    "bot_defense": {
     "vendor": null,
@@ -147484,10 +147618,18 @@
      "liveness": "alive"
     },
     {
+     "url": "https://infotracer.com/do-not-sell-share-my-personal-information/",
+     "final_url": "https://infotracer.com/do-not-sell-share-my-personal-information/",
+     "status": 200,
+     "role": "catalog",
+     "title": "Do Not Sell or Share My Personal Information - InfoTracer.com",
+     "liveness": "alive"
+    },
+    {
      "url": "https://phonenumbers.org/privacy/",
      "final_url": "https://phonenumbers.org/privacy/",
      "status": 200,
-     "role": "catalog",
+     "role": "privacy",
      "title": "Privacy Policy | PhoneNumbers.org",
      "liveness": "alive"
     },
@@ -171167,7 +171309,7 @@
    "name": "Mysask411 (DirectWest Saskatchewan white pages)",
    "category": "people-search",
    "domain": "mysask411.com",
-   "checked_at": "2026-10-26T21:31:04+00:00",
+   "checked_at": "2026-11-05T10:50:58+00:00",
    "liveness": "alive",
    "liveness_detail": "catalog URL loaded",
    "homepage": "https://mysask411.com/",
@@ -171330,9 +171472,16 @@
      "opt_out"
     ],
     "channels": [
+     "email",
      "phone"
     ],
-    "emails": [],
+    "emails": [
+     {
+      "email": "dw@directwest.com",
+      "confidence": "uncertain",
+      "source_url": "https://mysask411.com/"
+     }
+    ],
     "phones": [
      "1-800-667-8201"
     ],
@@ -179368,11 +179517,9 @@
      "provider": "turnstile",
      "sitekey": "0x4AAAAAAFD124ZQCmQX8wsU",
      "pages": [
+      "https://www.phonevalidator.com/",
       "https://www.phonevalidator.com/privacy-request"
-     ],
-     "checked": true,
-     "checked_url": "https://www.phonevalidator.com/privacy-request",
-     "detail": null
+     ]
     },
     "consent_vendor": null,
     "success_text": null,

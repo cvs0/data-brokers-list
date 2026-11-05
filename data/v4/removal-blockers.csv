@@ -315,7 +315,6 @@ miltontoday-obituaries,MiltonToday Obituaries,miltontoday.ca,people-search,alive
 moosejawtoday-obituaries,MooseJawToday Obituaries,moosejawtoday.com,people-search,alive,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,,,,,
 mountainviewtoday-obituaries,MountainViewToday Obituaries,mountainviewtoday.ca,people-search,alive,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,,,,,
 mylife,MyLife,mylife.com,people-search,blocked,portal,An official privacy portal is linked and its fields were not stored,,,,false,,,,official_portal
-mysask411,Mysask411 (DirectWest Saskatchewan white pages),mysask411.com,people-search,alive,phone,The only published channel is a phone number,,,,,,,,phone
 mysteinbach-obituaries,mySteinbach obituaries,mysteinbach.ca,people-search,alive,captcha_form,Removal form is behind a CAPTCHA widget and no usable removal email was found,turnstile,0x4AAAAAAB5ijCZsw-PwPp9v,,,,true,,web_form;phone
 mediat-necrologie,MédiAT nécrologie,mediat.ca,people-search,alive,generic_inbox,"Only a generic inbox was found, and the page does not say to use it for removal",custom,0x4AAAAAAFs64IGKBusp2Dsl,,,,,info@mediat.ca;nouvelles@mediat.ca,email;phone
 national-public-data,National Public Data,nationalpublicdata.com,people-search,blocked,generic_inbox,"Only a generic inbox was found, and the page does not say to use it for removal",,,,false,,,support@nationalpublicdata.com,email
@@ -323,7 +322,6 @@ neighborwho-beenverified-family,NeighborWho (BeenVerified family),neighborwho.co
 newmarkettoday-obituaries,NewmarketToday Obituaries,newmarkettoday.ca,people-search,alive,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,,,,,
 nocallername,NoCallerName,nocallername.com,people-search,alive,generic_inbox,"Only a generic inbox was found, and the page does not say to use it for removal",recaptcha_v2,,,true,,,support@nocallername.com;biz@nocallername.com,email;phone
 northcarolinapublicrecords-org-truthfinder,NorthCarolinaPublicRecords.org (TruthFinder),northcarolinapublicrecords.org,people-search,dead,captcha_no_form,A CAPTCHA widget is on the removal page and no form fields or usable email were stored,recaptcha_enterprise,6LdFxVQtAAAAAK6XNodX8W6CM56PH1xTrPGVZSqh,invisible,true,,,,
-numberguru-beenverified-family,NumberGuru (BeenVerified family),numberguru.com,people-search,alive,phone_postal,Phone and a mailing address are the only channels,recaptcha_v2,,,false,,,,postal_mail;phone
 necrologie-ca,Nécrologie.ca,necrologie.ca,people-search,alive,generic_inbox,"Only a generic inbox was found, and the page does not say to use it for removal",,,,,,,info@necrologie.ca,email
 okotokstoday-obituaries,OkotoksToday Obituaries,okotokstoday.ca,people-search,alive,no_channel,"The page loaded and a deeper look still found no form, email, phone, postal address, or portal",,,,,,,,
 openpeoplesearch,OpenPeopleSearch,openpeoplesearch.com,people-search,dead,generic_inbox,"Only a generic inbox was found, and the page does not say to use it for removal",,,,true,,,info@openpeoplesearch.com,email;postal_mail
@@ -342,9 +340,8 @@ peoplesearchnow,PeopleSearchNow,peoplesearchnow.com,people-search,blocked,captch
 peoplewhiz,PeopleWhiz,peoplewhiz.com,people-search,alive,captcha_form,Removal form is behind a CAPTCHA widget and no usable removal email was found,turnstile,,,false,turnstile,true,support@peoplewhiz.com,web_form;email
 peoplewhiz-network-mashpanel-com,PeopleWhiz network (mashpanel.com),mashpanel.com,people-search,dead,captcha_form,Removal form is behind a CAPTCHA widget and no usable removal email was found,recaptcha_v2,,checkbox,true,recaptcha_v2,true,,web_form
 persopo,Persopo,persopo.com,people-search,alive,phone,The only published channel is a phone number,,,,false,,,,phone
-phone-validator,Phone Validator,phonevalidator.com,people-search,alive,captcha_form,Removal form is behind a CAPTCHA widget and no usable removal email was found,turnstile,0x4AAAAAAFD124ZQCmQX8wsU,,,turnstile,true,info@phonevalidator.com,web_form;email
+phone-validator,Phone Validator,phonevalidator.com,people-search,alive,captcha_form,Removal form is behind a CAPTCHA widget and no usable removal email was found,turnstile,0x4AAAAAAFD124ZQCmQX8wsU,,,,true,info@phonevalidator.com,web_form;email
 phonebooks-com,PhoneBooks.com,phonebooks.com,people-search,alive,phone,The only published channel is a phone number,turnstile,,,false,,,,phone
-phonenumbers-org,PhoneNumbers.org,phonenumbers.org,people-search,alive,generic_inbox,"Only a generic inbox was found, and the page does not say to use it for removal",,,,false,,,support@phonenumbers.org,email;phone
 privaterecords-net,PrivateRecords.net,privaterecords.net,people-search,error,fetch_error,The opt-out URL failed before a page was read,,,,false,,,,
 publicdatacheck,PublicDataCheck,publicdatacheck.com,people-search,alive,captcha_form,Removal form is behind a CAPTCHA widget and no usable removal email was found,turnstile,0x4AAAAAAAgFHkiRuynTw4bF,checkbox,true,,true,,web_form;phone
 publicrecords-com-peopleconnect,PublicRecords.com (PeopleConnect),publicrecords.com,people-search,alive,phone_postal,Phone and a mailing address are the only channels,,,,false,,,,postal_mail;phone
