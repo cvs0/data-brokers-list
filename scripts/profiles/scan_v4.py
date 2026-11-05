@@ -121,6 +121,7 @@ STATED_REMOVAL = {
     "postie.com": ["info@postie.com"],
     "reverseaustralia.com": ["residential@reverseaustralia.com", "corporate@reverseaustralia.com"],
     "reversecanada.com": ["residential@reversecanada.com", "corporate@reversecanada.com"],
+    "mysask411.com": ["dw@directwest.com"],
     "thebump.com": ["help@thebump.com"],
     "melissa.com": ["consumerrequest@melissa.com"],
     "ileads.com": ["dnc@ileads.com"],
