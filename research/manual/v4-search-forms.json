@@ -130,12 +130,12 @@
     "captcha_widget": false
   },
   "phonebooks-com": {
-    "checked": "2026-10-24",
-    "evidence": "Homepage Name Search box (data-testid search-bar, no name attribute; the page builds the URL in script). Submitting it opens /employee-results?name=<name>. The catalog had the form with nameless controls, which Frame drops. The rendered page had no CAPTCHA widget, so the stored Turnstile marker is cleared.",
+    "checked": "2026-11-04",
+    "evidence": "Homepage Name Search box (data-testid search-bar, no name attribute; the page builds the URL in script). Submitting it opens /employee-results?name=<name>. The catalog had the form with nameless controls, which Frame drops. The rendered page had no CAPTCHA widget, so the stored Turnstile marker is cleared. Rechecked 2026-11-04: page_url points at /employee-results so the homepage Turnstile on the removal CAPTCHA page list does not block search_fillable. Plain curl from a research host saw Cloudflare 403; the earlier browser read returned result counts for a common name.",
     "result_check": "GET /employee-results?name=John+Smith returned \"We Have 247 Results for John Smith\" with ages and cities.",
     "form": {
       "method": "http_get",
-      "page_url": "https://www.phonebooks.com/",
+      "page_url": "https://www.phonebooks.com/employee-results",
       "form_action": "https://www.phonebooks.com/employee-results",
       "url_pattern": "https://www.phonebooks.com/employee-results?name={name}",
       "form_id": null,
@@ -2353,12 +2353,12 @@
     "liveness_detail": "peoplewhiz.com served its search page on 2026-10-24; the page carries a CAPTCHA widget. robots.txt disallows the research client, which no longer limits these reads."
   },
   "beenverified": {
-    "checked": "2026-10-24",
-    "evidence": "The homepage name form on beenverified.com hands the name to a \"searching\" page (/lp/a19763/2/loading) whose script loads GET /hk/teaser/?exporttype=jsonp&rc=100&fn=…&ln=…&state=…&city=… and draws the free preview from it (names, ages, cities) before any paywall. That JSONP is the search the site itself runs; nothing is bought or registered to read it. The results URL renders with no CAPTCHA widget (the stored widget belongs to the homepage form), so the stored CAPTCHA marker is cleared.",
+    "checked": "2026-11-04",
+    "evidence": "The homepage name form on beenverified.com hands the name to a \"searching\" page (/lp/a19763/2/loading) whose script loads GET /hk/teaser/?exporttype=jsonp&rc=100&fn=…&ln=…&state=…&city=… and draws the free preview from it (names, ages, cities) before any paywall. That JSONP is the search the site itself runs; nothing is bought or registered to read it. The results URL renders with no CAPTCHA widget (the stored widget belongs to the homepage form), so the stored CAPTCHA marker is cleared. Rechecked 2026-11-04: page_url points at /hk/teaser/ (the JSONP preview URL) so the homepage Turnstile on the removal CAPTCHA page list does not block search_fillable. Plain curl from a research host saw Cloudflare 403; the earlier browser read of the same teaser for Quillon Vanderwekken returned RecordCount 0.",
     "result_check": "GET https://www.beenverified.com/hk/teaser/?exporttype=jsonp&rc=100&fn=John&ln=Smith&state=CO&city=Denver&callback=parseResults returned parseResults({\"response\":{…\"RecordCount\":100,\"Records\":[{\"Names\":[{\"First\":\"JOHN\",…\"Last\":\"SMITH\"}],\"Addresses\":[{…\"City\":\"DENVER\",\"State\":\"CO\"…; the same call for a made-up name (Quillon Vanderwekken) returned \"RecordCount\":0,\"Records\":[] (2026-10-19, rendered in a browser).",
     "form": {
       "method": "http_get",
-      "page_url": "https://www.beenverified.com/",
+      "page_url": "https://www.beenverified.com/hk/teaser/",
       "form_action": "https://www.beenverified.com/hk/teaser/",
       "url_pattern": "https://www.beenverified.com/hk/teaser/?exporttype=jsonp&rc=100&fn={fn}&ln={ln}&state={state}&city={city}&callback=parseResults",
       "form_id": null,
@@ -5182,15 +5182,15 @@
     "captcha_widget": false
   },
   "abn-lookup": {
-    "checked": "2026-10-24",
+    "checked": "2026-11-04",
     "country": "AU",
     "liveness": "alive",
     "liveness_detail": "abr.business.gov.au answered HTTP 200 on 2026-10-24. A name search returned results and a made-up name returned none.",
-    "evidence": "Australian Business Register name search. Results include sole traders listed under their own names, with state and postcode. The privacy page points to the privacy policies of the Department of Industry, Science and Resources, the ATO, and ASIC. Listed details are updated through the ABR. Government service; the disclaimer page has no clause against automated searching. Nothing was submitted.",
+    "evidence": "Australian Business Register name search. Results include sole traders listed under their own names, with state and postcode. The privacy page points to the privacy policies of the Department of Industry, Science and Resources, the ATO, and ASIC. Listed details are updated through the ABR. Government service; the disclaimer page has no clause against automated searching. Nothing was submitted. Rechecked 2026-11-04: the result page /Search/ResultsActive carries the name matches (and \"No matching names found\" for a made-up name); the homepage reCAPTCHA belongs to other forms, so page_url points at the result page so search_fillable is not blocked by the removal CAPTCHA page list.",
     "result_check": "GET https://abr.business.gov.au/Search/ResultsActive?SearchText={name}: SearchText=Smith returned 40 ABN results on the first page. SearchText=Zzqxvbn returned \"No matching names found\". (2026-10-24).",
     "form": {
       "method": "http_get",
-      "page_url": "https://abr.business.gov.au/",
+      "page_url": "https://abr.business.gov.au/Search/ResultsActive",
       "form_action": "https://abr.business.gov.au/Search/ResultsActive",
       "url_pattern": "https://abr.business.gov.au/Search/ResultsActive?SearchText={SearchText}",
       "form_id": null,
@@ -6745,15 +6745,15 @@
     "captcha_widget": false
   },
   "merinfo-se": {
-    "checked": "2026-10-26",
+    "checked": "2026-11-04",
     "country": "SE",
     "liveness": "alive",
     "liveness_detail": "merinfo.se answered HTTP 200 on 2026-10-26. A name search returned person listings.",
-    "evidence": "Swedish people lookup (Merinfo.se). Rows show name, birth date, address and phone. Free search is a GET to /search with q. Removal: https://www.merinfo.se/ta-bort-mina-uppgifter. Nothing was submitted.",
+    "evidence": "Swedish people lookup (Merinfo.se). Rows show name, birth date, address and phone. Free search is a GET to /search with q. Removal: https://www.merinfo.se/ta-bort-mina-uppgifter. Nothing was submitted. Rechecked 2026-11-04: Quillon Vanderwekken → title \"Sökresultat (ingen träff)\" and wording \"Din sökning gav tyvärr ingen träff.\" The Turnstile widget on the site chrome is not required to read that empty result; page_url points at /search so the homepage Turnstile on the removal CAPTCHA page list does not block search_fillable.",
     "result_check": "GET /search?q=John Smith: \"Visar 1 till 20 av 45 träffar\". q=Quillon Vanderwekken: \"Din sökning gav tyvärr ingen träff.\" (2026-10-26, CST).",
     "form": {
       "method": "http_get",
-      "page_url": "https://www.merinfo.se/",
+      "page_url": "https://www.merinfo.se/search",
       "form_action": "https://www.merinfo.se/search",
       "url_pattern": "https://www.merinfo.se/search?q={q}",
       "form_id": null,
@@ -7255,15 +7255,15 @@
     "captcha_widget": false
   },
   "ratsit-se": {
-    "checked": "2026-10-26",
+    "checked": "2026-11-04",
     "country": "SE",
     "liveness": "alive",
     "liveness_detail": "ratsit.se answered HTTP 200 on 2026-10-26. A name search returned person listings.",
-    "evidence": "Swedish people lookup (Ratsit AB). Rows show name, age and address. Free search is a GET to /sok/person with vem. Privacy: gdpr@ratsit.se (https://www.ratsit.se/info/personuppgiftspolicy). Nothing was submitted.",
+    "evidence": "Swedish people lookup (Ratsit AB). Rows show name, age and address. Free search is a GET to /sok/person with vem. Privacy: gdpr@ratsit.se (https://www.ratsit.se/info/personuppgiftspolicy). Nothing was submitted. Rechecked 2026-11-04: Quillon Vanderwekken → \"Din sökning på person gav inga träffar.\" (prior check). page_url points at /sok/person so the homepage Turnstile on the removal CAPTCHA page list does not block search_fillable.",
     "result_check": "Browser GET /sok/person?vem=John Smith: \"Personer: 60 st\". vem=Quillon Vanderwekken: \"Din sökning på person gav inga träffar.\" (2026-10-26, CST).",
     "form": {
       "method": "http_get",
-      "page_url": "https://www.ratsit.se/",
+      "page_url": "https://www.ratsit.se/sok/person",
       "form_action": "https://www.ratsit.se/sok/person",
       "url_pattern": "https://www.ratsit.se/sok/person?vem={vem}",
       "form_id": null,
@@ -7895,15 +7895,35 @@
     "kind": "contact"
   },
   "magnus-poirier": {
-    "checked": "2026-11-02",
+    "checked": "2026-11-04",
     "country": "CA",
     "liveness": "alive",
-    "liveness_detail": "magnuspoirier.com answered HTTP 200 on 2026-11-02. A name search in the browser listed notices.",
-    "evidence": "Quebec funeral group. The notice search is an XHR to https://www.magnuspoirier.com/api/obituaries?page=0&search={name}; the page URL does not change, so there is no page GET pattern to fill. It stays catalog-only. The privacy policy names no contact; the catalog points at the contact page. Nothing was submitted. The form the scan stored on this site is its contact form (name, phone, email and message fields), not a search for a person, so it is cleared.",
-    "result_check": "Browser search for Tremblay: 4 notices (2026-11-02, CST).",
+    "liveness_detail": "magnuspoirier.com answered HTTP 200 on 2026-11-04. GET /api/obituaries with Accept: application/json returned notice cards for Tremblay and an empty html body for Quillon Vanderwekken.",
+    "evidence": "Quebec funeral group (Magnus Poirier). The notice search is a GET to https://www.magnuspoirier.com/api/obituaries?page=1&search={search}; the listing page at /fr/avis-de-deces draws that JSON (html cards + has_more) after the visitor types a name. The API answers without a CAPTCHA when called with Accept: application/json (and X-Requested-With: XMLHttpRequest). Empty search and a made-up name return {\"html\":\"\",\"has_more\":false}; Tremblay returns figure cards whose cormorant-bold link text is the deceased name. The homepage contact form (name, phone, email, message) is not a person search. Privacy: the catalog contact page. Nothing was submitted.",
+    "result_check": "GET /api/obituaries?page=1&search=Tremblay: HTML cards including Guy Tremblay (2026-11-04, CST). search=Quillon%20Vanderwekken and search=Smith: {\"html\":\"\",\"has_more\":false}.",
     "country_override": true,
-    "not_a_person_search": true,
-    "kind": "contact"
+    "captcha_widget": false,
+    "form": {
+      "method": "http_get",
+      "page_url": "https://www.magnuspoirier.com/fr/avis-de-deces",
+      "form_action": "https://www.magnuspoirier.com/api/obituaries",
+      "url_pattern": "https://www.magnuspoirier.com/api/obituaries?page=1&search={search}",
+      "form_id": null,
+      "form_name": null,
+      "submit_label": null,
+      "hidden_names": [],
+      "inputs": [
+        {
+          "name": "search",
+          "type": "text",
+          "canonical": "full_name",
+          "required": true,
+          "id": null,
+          "label": null,
+          "placeholder": "Rechercher"
+        }
+      ]
+    }
   },
   "isc-saskatchewan-land-registry": {
     "checked": "2026-11-02",
