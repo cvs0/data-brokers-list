@@ -85456,7 +85456,7 @@
         "name": "Nuwber",
         "category": "people-search",
         "url": "https://nuwber.com/removal/link",
-        "notes": "Paste the profile URL and confirm by email. Each listing is separate. support@nuwber.com if the form rejects the URL. The form page was retrieved on 2026-10-01; a DNS lookup from the catalog checker failed the same day.",
+        "notes": "Paste the profile URL and confirm by email. Each listing is separate. support@nuwber.com if the form rejects the URL.",
         "domain": "nuwber.com",
         "http_status": "retrieved",
         "sources": [
@@ -85466,7 +85466,7 @@
         ]
       },
       "catalog_claims": {
-        "notes": "Paste the profile URL and confirm by email. Each listing is separate. support@nuwber.com if the form rejects the URL. The form page was retrieved on 2026-10-01; a DNS lookup from the catalog checker failed the same day.",
+        "notes": "Paste the profile URL and confirm by email. Each listing is separate. support@nuwber.com if the form rejects the URL.",
         "http_status_recorded": "retrieved",
         "sources": [
           "persprotect",
