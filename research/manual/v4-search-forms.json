@@ -7663,9 +7663,34 @@
     "evidence": "German people search engine. The homepage name search (Personensuche) loads, but no search was run in this pass. The catalog points at the Datenschutz page, which says people can ask for content to be deleted or blocked. Nothing was submitted."
   },
   "fonecta": {
-    "checked": "2026-11-01",
+    "checked": "2026-11-04",
     "country": "FI",
-    "evidence": "Finnish directory with a henkilöhaku (person) and numerohaku (number) search on fonecta.fi. No search was run in this pass. The catalog points at the privacy notice, which sends directory removals to the person's own telephone operator. Nothing was submitted."
+    "evidence": "Finnish directory with a henkilöhaku (person) and numerohaku (number) search on fonecta.fi. The catalog points at the privacy notice, which sends directory removals to the person's own telephone operator. Nothing was submitted. Rechecked 2026-11-04: free search is a GET to /haku/<words> (the path takes the words with spaces or hyphens alike: kesko-oyj and kesko oyj both list 551 results, 523 people). Results split into Henkilöt (people) and Yritykset (companies).",
+    "liveness": "alive",
+    "liveness_detail": "fonecta.fi answered HTTP 200 on 2026-11-04.",
+    "result_check": "GET /haku/quillon-vanderwekken: h1 'Haulle \"quillon-vanderwekken\" ei löydy tietoja', Henkilöt 0 (2026-11-04, CST).",
+    "form": {
+      "method": "http_get",
+      "page_url": "https://www.fonecta.fi/",
+      "form_action": "https://www.fonecta.fi/haku/",
+      "url_pattern": "https://www.fonecta.fi/haku/{what}",
+      "form_id": null,
+      "form_name": null,
+      "submit_label": null,
+      "hidden_names": [],
+      "inputs": [
+        {
+          "name": "what",
+          "type": "text",
+          "canonical": "full_name",
+          "required": true,
+          "id": null,
+          "label": "Hae",
+          "placeholder": null
+        }
+      ]
+    },
+    "captcha_widget": false
   },
   "biluppgifter-se": {
     "checked": "2026-11-01",
@@ -7689,7 +7714,7 @@
   "infobel-canada": {
     "checked": "2026-11-02",
     "country": "CA",
-    "evidence": "Canadian edition of the Infobel directory with a residential and a business search by name and location on infobel.com/en/canada. No search was run in this pass. The catalog points at the personal data protection page. Nothing was submitted."
+    "evidence": "Canadian edition of the Infobel directory with a residential and a business search by name and location on infobel.com/en/canada. The catalog points at the personal data protection page. Nothing was submitted."
   },
   "canadian-who-s-who": {
     "checked": "2026-11-02",
@@ -7697,10 +7722,10 @@
     "liveness": "alive",
     "liveness_detail": "canadianwhoswho.ca loaded on 2026-11-02. A free name search returned listing rows.",
     "evidence": "Biographical reference of notable Canadians (Grey House Publishing Canada). Free name search is a GET to /search_results.php with keywords and onlyByName=1; rows give family name, given names, birth city, home city, birth province, occupation and status, and the full biography is a $14.99 purchase. Privacy: https://canadianwhoswho.ca/privacypolicy_new.php; requests to info@canadianwhoswho.ca. Nothing was submitted.",
-    "result_check": "GET /search_results.php?keywords=John Smith&onlyByName=1: \"1-5 of 5 records found\" (SMITH, John Roxburgh, resides Hamilton, and others). keywords=Quillon Vanderwekken: \"0-0 of 0 records found\". (2026-11-02, CST).",
+    "result_check": "GET /search_results.php?keywords=John Smith&onlyByName=1: \"1-5 of 5 records found\" (SMITH, John Roxburgh, resides Hamilton, and others). keywords=Quillon Vanderwekken: \"0-0 of 0 records found\". (2026-11-02, CST). Rechecked 2026-11-04: the result page itself carries no CAPTCHA (the reCAPTCHA on the homepage belongs to its login box); Quillon Vanderwekken: \"0-0 of 0 records found\". The search URL also appears in the CC-MAIN-2026-43 crawl.",
     "form": {
       "method": "http_get",
-      "page_url": "https://canadianwhoswho.ca/",
+      "page_url": "https://canadianwhoswho.ca/search_results.php",
       "form_action": "https://canadianwhoswho.ca/search_results.php",
       "url_pattern": "https://canadianwhoswho.ca/search_results.php?keywords={keywords}&onlyByName=1",
       "form_id": null,
@@ -7718,7 +7743,8 @@
           "placeholder": null
         }
       ]
-    }
+    },
+    "captcha_widget": false
   },
   "ileads-com-llc": {
     "checked": "2026-11-02",
@@ -8100,5 +8126,34 @@
     },
     "captcha_widget": false,
     "country_override": true
+  },
+  "courtlistener": {
+    "checked": "2026-11-04",
+    "liveness": "alive",
+    "liveness_detail": "courtlistener.com answered HTTP 200 on 2026-11-04.",
+    "evidence": "Free Law Project's free US court-record search (opinions, PACER dockets via RECAP, oral arguments, judges). Free search is a GET to / with q; results list cases naming the query, so a match is a court record that names the person. Removal: https://wiki.free.law/c/terms/courtlistener/courtlistenercom-content-removal-policy. Nothing was submitted.",
+    "result_check": "GET /?q=Quillon Vanderwekken: \"Your search — … — had no results.\" and the title \"— 0 Results —\" (2026-11-04, CST).",
+    "form": {
+      "method": "http_get",
+      "page_url": "https://www.courtlistener.com/",
+      "form_action": "https://www.courtlistener.com/",
+      "url_pattern": "https://www.courtlistener.com/?q={q}",
+      "form_id": null,
+      "form_name": null,
+      "submit_label": null,
+      "hidden_names": [],
+      "inputs": [
+        {
+          "name": "q",
+          "type": "text",
+          "canonical": "full_name",
+          "required": true,
+          "id": null,
+          "label": "Search",
+          "placeholder": null
+        }
+      ]
+    },
+    "captcha_widget": false
   }
 }
