@@ -7921,5 +7921,184 @@
     "not_a_person_search": true,
     "kind": "contact",
     "evidence": "The stored search form on https://path2response.com/ is a contact form, not a search for a person: controls First Name; Last Name; Company; Email; Message. The form was not submitted."
+  },
+  "personpages": {
+    "checked": "2026-11-04",
+    "country": "US",
+    "liveness": "alive",
+    "liveness_detail": "personpages.com answered HTTP 200 on 2026-11-04.",
+    "evidence": "US people-search site that builds AI person dossiers. The name search runs in script through server functions; /search?name= answers 404, so there is no GET pattern to fill. It stays catalog-only, and no live search was run because a search builds a dossier. Removal: https://personpages.com/data-removal (form or removals@personpages.com, identity verification, up to 7 business days). Privacy: privacy@personpages.com. Nothing was submitted.",
+    "country_override": true
+  },
+  "property-ca": {
+    "checked": "2026-11-04",
+    "country": "CA",
+    "not_a_person_search": true,
+    "kind": "address",
+    "evidence": "Toronto real estate brokerage portal (myAbode: property.ca, condos.ca, mrloft.ca). Pages are per street address (/addresses/<slug>) with listing and sale history and no owner names; there is no search by a person's name. Privacy: https://property.ca/privacy, info@property.ca, 36 Distillery Lane, Suite 500, Toronto ON M5A 3C4. Nothing was submitted.",
+    "country_override": true
+  },
+  "monaco-monuments-ontario-obituaries": {
+    "checked": "2026-11-04",
+    "country": "CA",
+    "liveness": "alive",
+    "liveness_detail": "monacomonuments.ca answered HTTP 200 on 2026-11-04 and a name search listed obituaries.",
+    "evidence": "Newmarket, Ontario monument maker that republishes Ontario obituaries (about 700 pages). Free search is a GET to /ontario-obituaries/ with ontario_obituaries_search. Removal: the on-page obituary removal request form (family, funeral home or executor). Privacy: https://monacomonuments.ca/privacy-policy/, info@monacomonuments.ca. Nothing was submitted.",
+    "result_check": "GET ?ontario_obituaries_search=John Smith: 1 obituary found. Quillon Vanderwekken: \"0 obituaries found\" and \"No obituaries found.\" (2026-11-04, CST).",
+    "form": {
+      "method": "http_get",
+      "page_url": "https://monacomonuments.ca/ontario-obituaries/",
+      "form_action": "https://monacomonuments.ca/ontario-obituaries/",
+      "url_pattern": "https://monacomonuments.ca/ontario-obituaries/?ontario_obituaries_search={q}",
+      "form_id": null,
+      "form_name": null,
+      "submit_label": null,
+      "hidden_names": [],
+      "inputs": [
+        {
+          "name": "ontario_obituaries_search",
+          "type": "text",
+          "canonical": "full_name",
+          "required": false,
+          "id": null,
+          "label": "Search obituaries",
+          "placeholder": null
+        }
+      ]
+    },
+    "captcha_widget": false,
+    "country_override": true
+  },
+  "mediat-necrologie": {
+    "checked": "2026-11-04",
+    "country": "CA",
+    "liveness": "alive",
+    "liveness_detail": "mediat.ca answered HTTP 200 on 2026-11-04 and a name search listed death notices.",
+    "evidence": "Abitibi-Témiscamingue (Quebec) news site with a nécrologie section. Free search is a GET to /necrologie with query. The privacy policy (https://mediat.ca/politique-de-confidentialite) names no privacy officer; contact info@mediat.ca, 819 732-4905. Nothing was submitted.",
+    "result_check": "GET /necrologie?query=Tremblay: \"116 avis trouvés\". Quillon Vanderwekken: \"0 avis trouvés\" (2026-11-04, CST).",
+    "form": {
+      "method": "http_get",
+      "page_url": "https://mediat.ca/necrologie",
+      "form_action": "https://mediat.ca/necrologie",
+      "url_pattern": "https://mediat.ca/necrologie?query={q}",
+      "form_id": null,
+      "form_name": null,
+      "submit_label": null,
+      "hidden_names": [],
+      "inputs": [
+        {
+          "name": "query",
+          "type": "text",
+          "canonical": "full_name",
+          "required": false,
+          "id": null,
+          "label": "Rechercher",
+          "placeholder": null
+        }
+      ]
+    },
+    "captcha_widget": false,
+    "country_override": true
+  },
+  "catholic-cemeteries-and-funeral-services-toronto": {
+    "checked": "2026-11-04",
+    "country": "CA",
+    "liveness": "alive",
+    "liveness_detail": "catholic-cemeteries.ca answered HTTP 200 on 2026-11-04 and a name search listed obituaries.",
+    "evidence": "Catholic Cemeteries & Funeral Services, Archdiocese of Toronto. Obituaries are found by the WordPress site search, a GET with s. Older obituaries (before 2018-04-12) are in /obituary-archives/. Privacy: Chief Privacy Office, chiefprivacyoffice@cc-fs.ca, 4950 Yonge St, Suite 206, Toronto ON M2N 6K1. Nothing was submitted.",
+    "result_check": "GET /?s=Smith: obituary results. Quillon Vanderwekken: \"No results match your search.\" (2026-11-04, CST).",
+    "form": {
+      "method": "http_get",
+      "page_url": "https://www.catholic-cemeteries.ca/",
+      "form_action": "https://www.catholic-cemeteries.ca/",
+      "url_pattern": "https://www.catholic-cemeteries.ca/?s={q}",
+      "form_id": null,
+      "form_name": null,
+      "submit_label": null,
+      "hidden_names": [],
+      "inputs": [
+        {
+          "name": "s",
+          "type": "text",
+          "canonical": "full_name",
+          "required": false,
+          "id": null,
+          "label": "Search",
+          "placeholder": null
+        }
+      ]
+    },
+    "captcha_widget": false,
+    "country_override": true
+  },
+  "alternatives-funeral-and-cremation": {
+    "checked": "2026-11-04",
+    "country": "CA",
+    "liveness": "alive",
+    "liveness_detail": "myalternatives.ca answered HTTP 200 on 2026-11-04 and a name search listed obituaries.",
+    "evidence": "BC and Saskatchewan funeral and cremation company. Free search is a GET to /obituaries/search with query. The subscribe form carries a Turnstile widget; the search does not. Privacy Officer: care@myalternatives.ca (subject Privacy). Nothing was submitted.",
+    "result_check": "GET /obituaries/search?query=Smith: 12 obituary links. Quillon Vanderwekken: no obituary links (2026-11-04, CST).",
+    "form": {
+      "method": "http_get",
+      "page_url": "https://www.myalternatives.ca/obituaries",
+      "form_action": "https://www.myalternatives.ca/obituaries/search",
+      "url_pattern": "https://www.myalternatives.ca/obituaries/search?query={q}",
+      "form_id": null,
+      "form_name": null,
+      "submit_label": null,
+      "hidden_names": [],
+      "inputs": [
+        {
+          "name": "query",
+          "type": "text",
+          "canonical": "full_name",
+          "required": false,
+          "id": null,
+          "label": "Search",
+          "placeholder": null
+        }
+      ]
+    },
+    "captcha_widget": false,
+    "country_override": true
+  },
+  "east-coast-memorial": {
+    "checked": "2026-11-04",
+    "country": "CA",
+    "liveness": "alive",
+    "liveness_detail": "eastcoastmemorial.ca answered HTTP 200 on 2026-11-04.",
+    "evidence": "Windsor, Nova Scotia funeral home on the Tribute Technology (FrontRunner) platform. The obituary listing loads in script, so there is no GET pattern to fill. It stays catalog-only. Privacy: privacy@tributetech.com, 1-833-303-1880. Nothing was submitted.",
+    "country_override": true
+  },
+  "mysteinbach-obituaries": {
+    "checked": "2026-11-04",
+    "country": "CA",
+    "liveness": "alive",
+    "liveness_detail": "mysteinbach.ca answered HTTP 200 on 2026-11-04 and a name search listed obituaries.",
+    "evidence": "Steinbach, Manitoba community news site (Network Media). Free search is a GET to /obituaries/search/ with _sf_s. No privacy contact is named; the terms page carries the privacy statement and the catalog points at the contact form. Nothing was submitted.",
+    "result_check": "GET /obituaries/search/?_sf_s=Friesen: 10 obituary links. Quillon Vanderwekken: no obituary links (2026-11-04, CST).",
+    "form": {
+      "method": "http_get",
+      "page_url": "https://www.mysteinbach.ca/obituaries/",
+      "form_action": "https://www.mysteinbach.ca/obituaries/search/",
+      "url_pattern": "https://www.mysteinbach.ca/obituaries/search/?_sf_s={q}",
+      "form_id": null,
+      "form_name": null,
+      "submit_label": null,
+      "hidden_names": [],
+      "inputs": [
+        {
+          "name": "_sf_s",
+          "type": "text",
+          "canonical": "full_name",
+          "required": false,
+          "id": null,
+          "label": "Search",
+          "placeholder": null
+        }
+      ]
+    },
+    "captcha_widget": false,
+    "country_override": true
   }
 }

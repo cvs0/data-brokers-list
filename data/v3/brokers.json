@@ -1,22 +1,22 @@
 {
  "schema_version": "3.0.0",
- "checked_at": "2026-11-03T22:49:00+00:00",
+ "checked_at": "2026-11-04T23:51:01+00:00",
  "method": "Public pages only: homepage, catalog URL, and mapped privacy, contact, and legal links. robots.txt honored. No form submitted, no login, no CAPTCHA solved. A browser opened lookup homepages the static fetch never read, and catalog URLs that were blocked or failed, when robots.txt allowed the URL. Image fields are URLs, not copied files. People-search listing URLs are not stored. Null means the fetched page did not establish that fact. Every catalog id has a record.",
- "broker_count": 841,
+ "broker_count": 849,
  "counts": {
   "liveness": {
-   "alive": 679,
+   "alive": 687,
    "blocked": 50,
    "error": 22,
    "opt_out_missing": 1,
    "robots_disallowed": 89
   },
-  "with_logo": 719,
-  "with_image": 719,
-  "with_search": 441,
-  "with_email": 387,
-  "with_captcha": 340,
-  "with_form": 163
+  "with_logo": 727,
+  "with_image": 727,
+  "with_search": 443,
+  "with_email": 394,
+  "with_captcha": 342,
+  "with_form": 165
  },
  "brokers": {
   "alaska-arrests": {
@@ -177344,6 +177344,1726 @@
      "status": 200,
      "role": "catalog",
      "title": "Privacy Policy | BulldogMediaGroup.com",
+     "liveness": "alive"
+    }
+   ]
+  },
+  "personpages": {
+   "schema_version": "3.0.0",
+   "id": "personpages",
+   "name": "Personpages",
+   "category": "people-search",
+   "domain": "personpages.com",
+   "checked_at": "2026-11-04T23:50:04+00:00",
+   "liveness": "alive",
+   "liveness_detail": "catalog URL loaded",
+   "homepage": "https://personpages.com/",
+   "logo_url": "https://personpages.com/__l5e/assets-v1/9c410065-87ea-4a2b-937b-9b9d2e203615/logo.png",
+   "images": [
+    {
+     "url": "https://personpages.com/__l5e/assets-v1/9c410065-87ea-4a2b-937b-9b9d2e203615/logo.png",
+     "kind": "icon",
+     "source_page": "https://personpages.com/"
+    },
+    {
+     "url": "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/e802971f-52fd-438b-be3c-f954adf74487/id-preview-1a7e1c9d--86aec9a4-c336-4e63-a8be-2da64010a009.lovable.app-1783407814653.png",
+     "kind": "og_image",
+     "source_page": "https://personpages.com/"
+    }
+   ],
+   "theme_color": null,
+   "languages": [
+    "en"
+   ],
+   "legal_name": "Personpages",
+   "search": {
+    "available": true,
+    "method": "http_get",
+    "page_url": "https://personpages.com/",
+    "form_action": "https://personpages.com/",
+    "inputs": [
+     {
+      "name": "",
+      "type": "text",
+      "canonical": "full_name",
+      "required": true,
+      "autocomplete": null,
+      "placeholder": "Full Name"
+     },
+     {
+      "name": "",
+      "type": "number",
+      "canonical": "age",
+      "required": false,
+      "autocomplete": null,
+      "placeholder": "Age"
+     },
+     {
+      "name": "",
+      "type": "text",
+      "canonical": "city",
+      "required": false,
+      "autocomplete": null,
+      "placeholder": "City"
+     },
+     {
+      "name": "",
+      "type": "text",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": "Country"
+     }
+    ],
+    "url_pattern": null,
+    "directory_prefixes": [],
+    "paywall": null,
+    "login_wall": null
+   },
+   "removal": {
+    "url": "https://personpages.com/data-removal",
+    "final_url": "https://personpages.com/data-removal",
+    "http_status": 200,
+    "kinds": [
+     "opt_out"
+    ],
+    "channels": [
+     "email"
+    ],
+    "emails": [
+     {
+      "email": "support@personpages.com",
+      "confidence": "uncertain",
+      "source_url": "https://personpages.com/"
+     },
+     {
+      "email": "removals@personpages.com",
+      "confidence": "extracted",
+      "source_url": "https://personpages.com/data-removal"
+     },
+     {
+      "email": "appeals@personpages.com",
+      "confidence": "uncertain",
+      "source_url": "https://personpages.com/data-removal"
+     }
+    ],
+    "phones": [],
+    "postal_address": null,
+    "portal": null,
+    "form_fields": [],
+    "csrf_field_name": null,
+    "requires_profile_url": null,
+    "captcha": {
+     "provider": null,
+     "sitekey": null,
+     "pages": []
+    },
+    "consent_vendor": null,
+    "success_text": null,
+    "suppression_not_deletion": true,
+    "processing_days": 10,
+    "processing_text": "tart Search Transparency Portal Data Removal Request Free · Permanent · Honored within 7 business days If a Personpages profile page concerns you, you have the right to have it perma"
+   },
+   "bot_defense": {
+    "vendor": null,
+    "outcome": "none"
+   },
+   "legal": {
+    "privacy_policy_url": null,
+    "terms_url": null,
+    "automation_prohibited": null,
+    "automation_clause": null,
+    "residency": [
+     "US-CA",
+     "US",
+     "EU"
+    ],
+    "authorized_agent": null,
+    "data_categories": [
+     "identifiers",
+     "employment",
+     "sensitive"
+    ]
+   },
+   "pages": [
+    {
+     "url": "https://personpages.com/",
+     "final_url": "https://personpages.com/",
+     "status": 200,
+     "role": "home",
+     "title": "Personpages — AI Person Audit & Background Reports",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.personpages.com/",
+     "final_url": "https://personpages.com/",
+     "status": 200,
+     "role": "home",
+     "title": "Personpages — AI Person Audit & Background Reports",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://personpages.com/data-removal",
+     "final_url": "https://personpages.com/data-removal",
+     "status": 200,
+     "role": "catalog",
+     "title": "Data Removal Request — Personpages",
+     "liveness": "alive"
+    }
+   ]
+  },
+  "property-ca": {
+   "schema_version": "3.0.0",
+   "id": "property-ca",
+   "name": "Property.ca",
+   "category": "public-records",
+   "domain": "property.ca",
+   "checked_at": "2026-11-04T23:50:02+00:00",
+   "liveness": "alive",
+   "liveness_detail": "catalog URL loaded",
+   "homepage": "https://property.ca/",
+   "logo_url": "https://property.ca/static/svg/property-logo.svg",
+   "images": [
+    {
+     "url": "https://property.ca/static/favicon-property.ico",
+     "kind": "icon",
+     "source_page": "https://property.ca/"
+    },
+    {
+     "url": "https://property.ca/static/logos/property/property-logo-ios-72.png",
+     "kind": "apple_touch_icon",
+     "source_page": "https://property.ca/"
+    },
+    {
+     "url": "https://property.ca/static/logos/property/property-logo-ios-144.png",
+     "kind": "apple_touch_icon",
+     "source_page": "https://property.ca/"
+    },
+    {
+     "url": "https://property.ca/static/logos/property/property-logo-ios-180.png",
+     "kind": "apple_touch_icon",
+     "source_page": "https://property.ca/"
+    },
+    {
+     "url": "https://property.ca/static/images/property_blured_bg.jpg",
+     "kind": "og_image",
+     "source_page": "https://property.ca/"
+    },
+    {
+     "url": "https://property.ca/static/svg/property-logo.svg",
+     "kind": "json_ld",
+     "source_page": "https://property.ca/"
+    }
+   ],
+   "theme_color": "#023448",
+   "languages": [
+    "en"
+   ],
+   "legal_name": "Property.ca",
+   "search": {
+    "available": false,
+    "method": "none",
+    "page_url": null,
+    "form_action": null,
+    "inputs": [],
+    "url_pattern": null,
+    "directory_prefixes": [],
+    "paywall": null,
+    "login_wall": null
+   },
+   "removal": {
+    "url": "https://property.ca/privacy",
+    "final_url": "https://property.ca/privacy",
+    "http_status": 200,
+    "kinds": [
+     "opt_out",
+     "unsubscribe"
+    ],
+    "channels": [
+     "email"
+    ],
+    "emails": [
+     {
+      "email": "info@property.ca",
+      "confidence": "uncertain",
+      "source_url": "https://property.ca/privacy"
+     }
+    ],
+    "phones": [],
+    "postal_address": null,
+    "portal": null,
+    "form_fields": [],
+    "csrf_field_name": null,
+    "requires_profile_url": null,
+    "captcha": {
+     "provider": null,
+     "sitekey": null,
+     "pages": []
+    },
+    "consent_vendor": null,
+    "success_text": null,
+    "suppression_not_deletion": null,
+    "processing_days": null,
+    "processing_text": null
+   },
+   "bot_defense": {
+    "vendor": null,
+    "outcome": "none"
+   },
+   "legal": {
+    "privacy_policy_url": "https://property.ca/privacy",
+    "terms_url": null,
+    "automation_prohibited": null,
+    "automation_clause": null,
+    "residency": [
+     "EU"
+    ],
+    "authorized_agent": null,
+    "data_categories": [
+     "identifiers",
+     "internet_activity"
+    ]
+   },
+   "pages": [
+    {
+     "url": "https://property.ca/",
+     "final_url": "https://property.ca/",
+     "status": 200,
+     "role": "home",
+     "title": "Buy, Sell & Rent Homes in Toronto & Across Canada | Property.ca",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.property.ca/",
+     "final_url": "https://property.ca/",
+     "status": 200,
+     "role": "home",
+     "title": "Buy, Sell & Rent Homes in Toronto & Across Canada | Property.ca",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://property.ca/privacy",
+     "final_url": "https://property.ca/privacy",
+     "status": 200,
+     "role": "catalog",
+     "title": "Privacy Policy | Property.ca",
+     "liveness": "alive"
+    }
+   ]
+  },
+  "monaco-monuments-ontario-obituaries": {
+   "schema_version": "3.0.0",
+   "id": "monaco-monuments-ontario-obituaries",
+   "name": "Monaco Monuments Ontario Obituaries",
+   "category": "people-search",
+   "domain": "monacomonuments.ca",
+   "checked_at": "2026-11-04T23:50:04+00:00",
+   "liveness": "alive",
+   "liveness_detail": "catalog URL loaded",
+   "homepage": "https://monacomonuments.ca/",
+   "logo_url": "https://monacomonuments.ca/wp-content/uploads/2020/08/logo-main.png",
+   "images": [
+    {
+     "url": "https://monacomonuments.ca/wp-content/uploads/2026/11/monaco-site-icon-32x32.png",
+     "kind": "icon",
+     "source_page": "https://monacomonuments.ca/"
+    },
+    {
+     "url": "https://monacomonuments.ca/wp-content/uploads/2026/11/monaco-site-icon-192x192.png",
+     "kind": "icon",
+     "source_page": "https://monacomonuments.ca/"
+    },
+    {
+     "url": "https://monacomonuments.ca/wp-content/uploads/2026/11/monaco-site-icon-180x180.png",
+     "kind": "apple_touch_icon",
+     "source_page": "https://monacomonuments.ca/"
+    },
+    {
+     "url": "https://monacomonuments.ca/wp-content/uploads/2020/08/logo-main.png",
+     "kind": "logo",
+     "source_page": "https://monacomonuments.ca/"
+    },
+    {
+     "url": "https://monacomonuments.ca/wp-content/uploads/2020/08/mon-logo.png",
+     "kind": "logo",
+     "source_page": "https://monacomonuments.ca/"
+    }
+   ],
+   "theme_color": null,
+   "languages": [
+    "en"
+   ],
+   "legal_name": null,
+   "search": {
+    "available": false,
+    "method": "none",
+    "page_url": null,
+    "form_action": null,
+    "inputs": [],
+    "url_pattern": null,
+    "directory_prefixes": [],
+    "paywall": null,
+    "login_wall": null
+   },
+   "removal": {
+    "url": "https://monacomonuments.ca/ontario-obituaries/",
+    "final_url": "https://monacomonuments.ca/ontario-obituaries/",
+    "http_status": 200,
+    "kinds": [
+     "opt_out"
+    ],
+    "channels": [
+     "web_form",
+     "email",
+     "postal_mail",
+     "phone"
+    ],
+    "emails": [
+     {
+      "email": "info@monacomonuments.ca",
+      "confidence": "uncertain",
+      "source_url": "https://monacomonuments.ca/"
+     }
+    ],
+    "phones": [
+     "(905) 392-0778"
+    ],
+    "postal_address": "P.O. Box 698 Paisley, Ontario Palm Harbour, Florida Palmerston Paraiso, Costa Rica Paris Par",
+    "portal": null,
+    "form_fields": [
+     {
+      "name": "ontario_obituaries_search",
+      "type": "text",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": "Search obituaries..."
+     },
+     {
+      "name": "ontario_obituaries_location",
+      "type": "select",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null,
+      "options": [
+       "All Locations",
+       "Acton",
+       "Agincourt",
+       "Agincourt, Ontario",
+       "Ailsa Craig",
+       "Ajax",
+       "Ajax, Ontario",
+       "Ajijic, Mexico",
+       "Albright Manor Beamsville",
+       "Aldergrove",
+       "Alderwood",
+       "Alderwood United Church, Park Lawn Cemetery",
+       "Alexandria",
+       "Alfred",
+       "Alliston",
+       "Alliston, Ontario",
+       "Almonte",
+       "Alvinston",
+       "Amherstburg",
+       "Ancaste",
+       "Ancaster",
+       "Ariss",
+       "Armour Rd Peterborough",
+       "Arnprior",
+       "Atha, ON",
+       "Athens",
+       "Atherley",
+       "Aurora",
+       "Aurora, Ontario",
+       "Autlan",
+       "Aylmer",
+       "Ayr",
+       "Ayr, Ontario",
+       "Ayton, Ontario",
+       "Baden",
+       "Bahamas",
+       "Barbados",
+       "Barrie",
+       "Barrie, Ontario",
+       "Bath, Ontario",
+       "Bayfield, Ontario",
+       "Baysville",
+       "Beamsville",
+       "Beaverton",
+       "Beaverton, Ontario",
+       "Bedford",
+       "Bedford, Nova Scotia",
+       "Beechwood Avenue Ottawa",
+       "Beeton",
+       "Belfast, Northern Ireland, Canada",
+       "Belle River",
+       "Belleville",
+       "Belmont",
+       "Belmont Lake, Ontario",
+       "Benchlands, Alberta",
+       "Bethany, Ontario",
+       "Bethell House Hospice",
+       "Bexley",
+       "Binbrook",
+       "Blenheim",
+       "Bloomington",
+       "Bobcaygeon",
+       "Bolton",
+       "Bolton, Ontario",
+       "Bothwell",
+       "Boucher Street East Meaford",
+       "Bowmanville",
+       "Boynton Beach, Florida",
+       "Bracebridge",
+       "Bradford",
+       "Bradford, Ontario",
+       "Bramalea",
+       "Brampton",
+       "Brampton, Cataract, Mono Township, Orangeville",
+       "Brampton, Ontario",
+       "Brant St Burlington",
+       "Brantford",
+       "Brantford, Ontario",
+       "Breslau",
+       "Breslau, Ontario",
+       "Bridgewater",
+       "Bridgewater, NS",
+       "Brighton",
+       "Brockville",
+       "Burford",
+       "Burlington",
+       "Burlington, Ontario",
+       "Burnaby",
+       "Bushnell",
+       "Caistor Centre",
+       "Caledon",
+       "Caledonia",
+       "Calgary",
+       "Calgary, AB",
+       "Cambray, Ontario",
+       "Cambridge",
+       "Cambridge, Ontario",
+       "Campbell House",
+       "Campbell River, BC",
+       "Campbellford, Ontario",
+       "Campbellville",
+       "Canada",
+       "Cannifton",
+       "Cannington",
+       "Cardinal, Ontario",
+       "Carleton Place",
+       "Carlisle",
+       "Cartier",
+       "Catherines",
+       "Cayuga",
+       "Chagrin Falls, OH, USA",
+       "Chambly",
+       "Charing Cross Street Brantford",
+       "Charlton, ON",
+       "Châteauguay, Québec",
+       "Chatham",
+       "Chatham-Kent",
+       "Cherry Hill",
+       "Chesley",
+       "Chesterfield, VA",
+       "Chicopee",
+       "Chilliwack",
+       "China Grove, NC",
+       "Chippawa",
+       "Chippawa Creek at Bella Care Residence",
+       "Civitella, Abruzzo, Italy",
+       "Clifford",
+       "Clinton",
+       "Clinton Township",
+       "Cobalt",
+       "Cobourg",
+       "Cobourg, Ontario",
+       "Cochrane",
+       "Cochrane, AB",
+       "Colborne",
+       "Coldwater",
+       "Coleraine, Northern Ireland",
+       "Collingwood",
+       "Collingwood, Ontario",
+       "Colpitts Settlement",
+       "Combermere",
+       "Conestogo",
+       "Cookstown",
+       "Corner Brook",
+       "Cornwall",
+       "Corunna",
+       "Cottam",
+       "Courtenay",
+       "Courtice",
+       "DeBary, Florida",
+       "Debden",
+       "Delhi",
+       "Delta",
+       "Deseronto",
+       "Devon, AB",
+       "Digby",
+       "Don Mills",
+       "Don Valley Village, Toronto",
+       "Douro",
+       "Downsview Long Term Care",
+       "Drayton",
+       "Dresden",
+       "Dresden, Germany",
+       "Dryden",
+       "Dryden, Ontario",
+       "Dublin, Ireland",
+       "Dublin, Ohio",
+       "Duncan",
+       "Dundalk, Ontario",
+       "Dundas",
+       "Dundas, Ontario",
+       "Dunnville",
+       "Durham",
+       "East Amherst, New York",
+       "East Essex",
+       "East Hamilton",
+       "East Oshawa",
+       "East Windsor",
+       "East York",
+       "East York, Toronto",
+       "Edmonton",
+       "Edmonton, Alberta, Ontario",
+       "Eganville, Ontario",
+       "El Salvador",
+       "Elizabethtown",
+       "Elliot Lake",
+       "Elmira",
+       "Elmira, Ontario",
+       "Elora",
+       "Embro",
+       "Emeryville",
+       "empty",
+       "Erieau",
+       "Erin, Ontario",
+       "Essex",
+       "Etobicoke",
+       "Etobicoke, Ontario",
+       "Everette",
+       "Exeter",
+       "Fallbrook",
+       "Fenelon Falls",
+       "Fennell Avenue East Hamilton",
+       "Fenwick",
+       "Fenwick and Fonthill",
+       "Fenwick, Ont",
+       "Fergus",
+       "Fergus, Ontario",
+       "Finch",
+       "Fingal",
+       "Flesherton",
+       "Fletcher",
+       "Florida",
+       "Fonthill",
+       "Fonthill, Ontario",
+       "Fordwich",
+       "Fort Erie",
+       "Fort Frances",
+       "Fort McMurray",
+       "Fort Myers",
+       "Foxboro",
+       "Frankston, Texas",
+       "Frederick Street Kitchener",
+       "Fredericton",
+       "Fruitland",
+       "Gainesville",
+       "Galt",
+       "Galt, Cambridge, Ontario",
+       "Galt, Ontario",
+       "Gananoque",
+       "Garden City",
+       "Gatineau",
+       "Georgetown",
+       "Georgina",
+       "Glenburnie",
+       "Glencoe",
+       "Gloucester",
+       "Goderich",
+       "Grand Bend",
+       "Grande Prairie",
+       "Gravenhurst",
+       "Gravenhurst, Ontario",
+       "Greater Niagara General Hospital",
+       "Greater Sudbury",
+       "Greensville",
+       "Grimsby",
+       "Grimsby, Ontario",
+       "Grove",
+       "Guangzhou",
+       "Guelph",
+       "Guelph Line Burlington",
+       "Guelph, Ontario",
+       "Gull Lake, Ontario",
+       "Hagersville",
+       "Haileybury",
+       "Haliburton",
+       "Haliburton, Ontario",
+       "Halifax",
+       "Hamilton",
+       "Hamilton and Stoney Creek",
+       "Hamilton, Ontario",
+       "Hanmer",
+       "Hanoi, Vietnam",
+       "Hanover",
+       "Hanover, Ontario",
+       "Harriston",
+       "Havelock",
+       "Havelock, New Brunswick",
+       "Hawkesbury",
+       "Hepworth",
+       "Hermantown",
+       "Hespeler",
+       "Highgate",
+       "Hinsdale",
+       "Holland Landing",
+       "Houston",
+       "Houston, Texas",
+       "Huntsville",
+       "Huntsville, Ontario",
+       "India",
+       "Ingersoll",
+       "Ingersoll, Ontario",
+       "Ingleside",
+       "Innisfil",
+       "Ireland",
+       "Italy",
+       "Itri, Italy",
+       "Ivins, Utah",
+       "Jackson's Point, ON",
+       "Jarvis",
+       "Jordan",
+       "Jordan, Ontario",
+       "Jupiter, Florida",
+       "Kanata",
+       "Kawartha Lakes",
+       "Kawartha Lakes, Ontario",
+       "Kelowna",
+       "Kelowna, BC",
+       "Kemptville",
+       "Kennedy Rd Toronto",
+       "Kenora",
+       "Kent county, England",
+       "Keswick",
+       "Kincardine",
+       "Kincardine Township",
+       "King City",
+       "King St Midland",
+       "King Street East Dundas",
+       "King Street East Hamilton",
+       "King Street Hamilton",
+       "King Street West Hamilton",
+       "Kingsford",
+       "Kingston",
+       "Kingston, Ont",
+       "Kingston, Ontario",
+       "Kingsville",
+       "Kirkland",
+       "Kitchener",
+       "Kitchener-Waterloo",
+       "Kitchener, Ontario",
+       "La Passe"
+      ]
+     }
+    ],
+    "csrf_field_name": null,
+    "requires_profile_url": null,
+    "captcha": {
+     "provider": null,
+     "sitekey": null,
+     "pages": []
+    },
+    "consent_vendor": null,
+    "success_text": null,
+    "suppression_not_deletion": null,
+    "processing_days": null,
+    "processing_text": null
+   },
+   "bot_defense": {
+    "vendor": null,
+    "outcome": "none"
+   },
+   "legal": {
+    "privacy_policy_url": null,
+    "terms_url": null,
+    "automation_prohibited": null,
+    "automation_clause": null,
+    "residency": [
+     "CA-QC",
+     "CA-BC"
+    ],
+    "authorized_agent": null,
+    "data_categories": []
+   },
+   "pages": [
+    {
+     "url": "https://monacomonuments.ca/",
+     "final_url": "https://monacomonuments.ca/",
+     "status": 200,
+     "role": "home",
+     "title": "Monaco Monuments — Custom Headstones, Monuments & Memorials in Ontario",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.monacomonuments.ca/",
+     "final_url": "https://monacomonuments.ca/",
+     "status": 200,
+     "role": "home",
+     "title": "Monaco Monuments — Custom Headstones, Monuments & Memorials in Ontario",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://monacomonuments.ca/ontario-obituaries/",
+     "final_url": "https://monacomonuments.ca/ontario-obituaries/",
+     "status": 200,
+     "role": "catalog",
+     "title": "Ontario Obituaries — Monaco Monuments",
+     "liveness": "alive"
+    }
+   ]
+  },
+  "mediat-necrologie": {
+   "schema_version": "3.0.0",
+   "id": "mediat-necrologie",
+   "name": "MédiAT nécrologie",
+   "category": "people-search",
+   "domain": "mediat.ca",
+   "checked_at": "2026-11-04T23:50:03+00:00",
+   "liveness": "alive",
+   "liveness_detail": "catalog URL loaded",
+   "homepage": "https://mediat.ca/",
+   "logo_url": "https://mediat.ca//assets/apple-touch-icon-57x57.png",
+   "images": [
+    {
+     "url": "https://mediat.ca//assets/apple-touch-icon-57x57.png",
+     "kind": "apple_touch_icon",
+     "source_page": "https://mediat.ca/"
+    },
+    {
+     "url": "https://mediat.ca//assets/apple-touch-icon-60x60.png",
+     "kind": "apple_touch_icon",
+     "source_page": "https://mediat.ca/"
+    },
+    {
+     "url": "https://mediat.ca//assets/apple-touch-icon-72x72.png",
+     "kind": "apple_touch_icon",
+     "source_page": "https://mediat.ca/"
+    },
+    {
+     "url": "https://mediat.ca//assets/apple-touch-icon-76x76.png",
+     "kind": "apple_touch_icon",
+     "source_page": "https://mediat.ca/"
+    },
+    {
+     "url": "https://mediat.ca//assets/apple-touch-icon-114x114.png",
+     "kind": "apple_touch_icon",
+     "source_page": "https://mediat.ca/"
+    },
+    {
+     "url": "https://mediat.ca//assets/apple-touch-icon-120x120.png",
+     "kind": "apple_touch_icon",
+     "source_page": "https://mediat.ca/"
+    },
+    {
+     "url": "https://mediat.ca//assets/apple-touch-icon-144x144.png",
+     "kind": "apple_touch_icon",
+     "source_page": "https://mediat.ca/"
+    },
+    {
+     "url": "https://mediat.ca//assets/apple-touch-icon-152x152.png",
+     "kind": "apple_touch_icon",
+     "source_page": "https://mediat.ca/"
+    },
+    {
+     "url": "https://mediat.ca//assets/apple-touch-icon-167x167.png",
+     "kind": "apple_touch_icon",
+     "source_page": "https://mediat.ca/"
+    },
+    {
+     "url": "https://mediat.ca//assets/apple-touch-icon-180x180.png",
+     "kind": "apple_touch_icon",
+     "source_page": "https://mediat.ca/"
+    },
+    {
+     "url": "https://mediat.ca//assets/apple-touch-icon-1024x1024.png",
+     "kind": "apple_touch_icon",
+     "source_page": "https://mediat.ca/"
+    },
+    {
+     "url": "https://mediat.ca//assets/favicon-16x16.png",
+     "kind": "icon",
+     "source_page": "https://mediat.ca/"
+    },
+    {
+     "url": "https://mediat.ca//assets/favicon-32x32.png",
+     "kind": "icon",
+     "source_page": "https://mediat.ca/"
+    },
+    {
+     "url": "https://mediat.ca//assets/coast-228x228.png",
+     "kind": "icon",
+     "source_page": "https://mediat.ca/"
+    },
+    {
+     "url": "https://mediat.ca//assets/favicon.ico",
+     "kind": "icon",
+     "source_page": "https://mediat.ca/"
+    },
+    {
+     "url": "https://mediat.nyc3.digitaloceanspaces.com/site/transform/_1200x630_crop_center-center_82_none/MediatGenerique.jpg?mtime=1686081978",
+     "kind": "og_image",
+     "source_page": "https://mediat.ca/"
+    }
+   ],
+   "theme_color": "#fff",
+   "languages": [
+    "fr"
+   ],
+   "legal_name": "MédiAT",
+   "search": {
+    "available": true,
+    "method": "http_form_post",
+    "page_url": "https://mediat.ca/",
+    "form_action": "https://mediat.ca/",
+    "inputs": [
+     {
+      "name": "formHash",
+      "type": "hidden",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "action",
+      "type": "hidden",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "formSourceUrl",
+      "type": "hidden",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "freeform-action",
+      "type": "hidden",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "CRAFT_CSRF_TOKEN",
+      "type": "hidden",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "freeform_check",
+      "type": "text",
+      "canonical": null,
+      "required": false,
+      "autocomplete": "off",
+      "placeholder": null
+     },
+     {
+      "name": "username",
+      "type": "text",
+      "canonical": null,
+      "required": false,
+      "autocomplete": "off",
+      "placeholder": null
+     },
+     {
+      "name": "prenom",
+      "type": "text",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "nom",
+      "type": "text",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "telephone",
+      "type": "text",
+      "canonical": "phone",
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "courriel",
+      "type": "email",
+      "canonical": "email",
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "sujet",
+      "type": "text",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "message",
+      "type": "text",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "freeform_payload",
+      "type": "hidden",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     }
+    ],
+    "url_pattern": "https://mediat.ca/",
+    "directory_prefixes": [],
+    "paywall": null,
+    "login_wall": null
+   },
+   "removal": {
+    "url": "https://mediat.ca/politique-de-confidentialite",
+    "final_url": "https://mediat.ca/politique-de-confidentialite",
+    "http_status": 200,
+    "kinds": [
+     "opt_out"
+    ],
+    "channels": [
+     "email",
+     "phone"
+    ],
+    "emails": [
+     {
+      "email": "info@mediat.ca",
+      "confidence": "uncertain",
+      "source_url": "https://mediat.ca/"
+     },
+     {
+      "email": "nouvelles@mediat.ca",
+      "confidence": "uncertain",
+      "source_url": "https://mediat.ca/"
+     }
+    ],
+    "phones": [
+     "819 732-4905"
+    ],
+    "postal_address": null,
+    "portal": null,
+    "form_fields": [],
+    "csrf_field_name": null,
+    "requires_profile_url": null,
+    "captcha": {
+     "provider": "custom",
+     "sitekey": "0x4AAAAAAFs64IGKBusp2Dsl",
+     "pages": [
+      "https://mediat.ca/"
+     ]
+    },
+    "consent_vendor": null,
+    "success_text": null,
+    "suppression_not_deletion": null,
+    "processing_days": null,
+    "processing_text": null
+   },
+   "bot_defense": {
+    "vendor": null,
+    "outcome": "none"
+   },
+   "legal": {
+    "privacy_policy_url": null,
+    "terms_url": null,
+    "automation_prohibited": null,
+    "automation_clause": null,
+    "residency": [
+     "CA-QC"
+    ],
+    "authorized_agent": null,
+    "data_categories": []
+   },
+   "pages": [
+    {
+     "url": "https://mediat.ca/",
+     "final_url": "https://mediat.ca/",
+     "status": 200,
+     "role": "home",
+     "title": "MédiAT | Accueil",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.mediat.ca/",
+     "final_url": "https://mediat.ca/",
+     "status": 200,
+     "role": "home",
+     "title": "MédiAT | Accueil",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://mediat.ca/politique-de-confidentialite",
+     "final_url": "https://mediat.ca/politique-de-confidentialite",
+     "status": 200,
+     "role": "catalog",
+     "title": "Politique de confidentialité",
+     "liveness": "alive"
+    }
+   ]
+  },
+  "catholic-cemeteries-and-funeral-services-toronto": {
+   "schema_version": "3.0.0",
+   "id": "catholic-cemeteries-and-funeral-services-toronto",
+   "name": "Catholic Cemeteries & Funeral Services Toronto",
+   "category": "people-search",
+   "domain": "catholic-cemeteries.ca",
+   "checked_at": "2026-11-04T23:50:03+00:00",
+   "liveness": "alive",
+   "liveness_detail": "catalog URL loaded",
+   "homepage": "https://www.catholic-cemeteries.ca/",
+   "logo_url": "https://www.catholic-cemeteries.ca/wp-content/uploads/2025/10/logo-2.jpg",
+   "images": [
+    {
+     "url": "https://www.catholic-cemeteries.ca/wp-content/uploads/2022/03/cropped-favicon-32x32.jpg",
+     "kind": "icon",
+     "source_page": "https://www.catholic-cemeteries.ca/"
+    },
+    {
+     "url": "https://www.catholic-cemeteries.ca/wp-content/uploads/2022/03/cropped-favicon-192x192.jpg",
+     "kind": "icon",
+     "source_page": "https://www.catholic-cemeteries.ca/"
+    },
+    {
+     "url": "https://www.catholic-cemeteries.ca/wp-content/uploads/2022/03/cropped-favicon-180x180.jpg",
+     "kind": "apple_touch_icon",
+     "source_page": "https://www.catholic-cemeteries.ca/"
+    },
+    {
+     "url": "https://www.catholic-cemeteries.ca/wp-content/uploads/2025/10/logo-2.jpg",
+     "kind": "logo",
+     "source_page": "https://www.catholic-cemeteries.ca/"
+    },
+    {
+     "url": "https://www.catholic-cemeteries.ca/wp-content/uploads/2022/03/centered-logo.png",
+     "kind": "logo",
+     "source_page": "https://www.catholic-cemeteries.ca/"
+    }
+   ],
+   "theme_color": null,
+   "languages": [
+    "en"
+   ],
+   "legal_name": null,
+   "search": {
+    "available": false,
+    "method": "none",
+    "page_url": null,
+    "form_action": null,
+    "inputs": [],
+    "url_pattern": null,
+    "directory_prefixes": [],
+    "paywall": null,
+    "login_wall": null
+   },
+   "removal": {
+    "url": "https://www.catholic-cemeteries.ca/privacy/",
+    "final_url": "https://www.catholic-cemeteries.ca/privacy/",
+    "http_status": 200,
+    "kinds": [
+     "opt_out"
+    ],
+    "channels": [
+     "email"
+    ],
+    "emails": [
+     {
+      "email": "chiefprivacyoffice@cc-fs.ca",
+      "confidence": "uncertain",
+      "source_url": "https://www.catholic-cemeteries.ca/privacy/"
+     }
+    ],
+    "phones": [],
+    "postal_address": null,
+    "portal": null,
+    "form_fields": [],
+    "csrf_field_name": null,
+    "requires_profile_url": null,
+    "captcha": {
+     "provider": null,
+     "sitekey": null,
+     "pages": []
+    },
+    "consent_vendor": null,
+    "success_text": null,
+    "suppression_not_deletion": null,
+    "processing_days": null,
+    "processing_text": null
+   },
+   "bot_defense": {
+    "vendor": null,
+    "outcome": "none"
+   },
+   "legal": {
+    "privacy_policy_url": "https://www.catholic-cemeteries.ca/privacy/",
+    "terms_url": null,
+    "automation_prohibited": null,
+    "automation_clause": null,
+    "residency": [],
+    "authorized_agent": null,
+    "data_categories": [
+     "identifiers",
+     "commercial",
+     "employment"
+    ]
+   },
+   "pages": [
+    {
+     "url": "https://catholic-cemeteries.ca/",
+     "final_url": "https://www.catholic-cemeteries.ca/",
+     "status": 200,
+     "role": "home",
+     "title": "Catholic Cemeteries & Funeral Services - Archdiocese of Toronto - TORONTO ON | Faith Matters. Choose a Catholic Cemetery",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.catholic-cemeteries.ca/",
+     "final_url": "https://www.catholic-cemeteries.ca/",
+     "status": 200,
+     "role": "home",
+     "title": "Catholic Cemeteries & Funeral Services - Archdiocese of Toronto - TORONTO ON | Faith Matters. Choose a Catholic Cemetery",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.catholic-cemeteries.ca/privacy/",
+     "final_url": "https://www.catholic-cemeteries.ca/privacy/",
+     "status": 200,
+     "role": "catalog",
+     "title": "Privacy Policy | Catholic Cemeteries & Funeral Services - Archdiocese of Toronto - TORONTO ON",
+     "liveness": "alive"
+    }
+   ]
+  },
+  "alternatives-funeral-and-cremation": {
+   "schema_version": "3.0.0",
+   "id": "alternatives-funeral-and-cremation",
+   "name": "Alternatives Funeral & Cremation",
+   "category": "people-search",
+   "domain": "myalternatives.ca",
+   "checked_at": "2026-11-04T23:50:03+00:00",
+   "liveness": "alive",
+   "liveness_detail": "catalog URL loaded",
+   "homepage": "https://www.myalternatives.ca/",
+   "logo_url": "https://www.myalternatives.ca/images/alternatives-logo-desktop.svg",
+   "images": [
+    {
+     "url": "https://www.myalternatives.ca/apple-touch-icon.png",
+     "kind": "apple_touch_icon",
+     "source_page": "https://www.myalternatives.ca/"
+    },
+    {
+     "url": "https://www.myalternatives.ca/favicon-32x32.png",
+     "kind": "icon",
+     "source_page": "https://www.myalternatives.ca/"
+    },
+    {
+     "url": "https://www.myalternatives.ca/favicon-16x16.png",
+     "kind": "icon",
+     "source_page": "https://www.myalternatives.ca/"
+    },
+    {
+     "url": "https://www.myalternatives.ca/images/logos/alternatives_primary_logo.png",
+     "kind": "og_image",
+     "source_page": "https://www.myalternatives.ca/"
+    },
+    {
+     "url": "https://www.myalternatives.ca/images/alternatives-logo-desktop.svg",
+     "kind": "logo",
+     "source_page": "https://www.myalternatives.ca/"
+    },
+    {
+     "url": "https://www.myalternatives.ca/images/icons/google-logo-google-search-icon.png",
+     "kind": "logo",
+     "source_page": "https://www.myalternatives.ca/"
+    },
+    {
+     "url": "https://www.myalternatives.ca/images/Consumer-Protection-BC-Logo-licensed-by-WEB.png",
+     "kind": "logo",
+     "source_page": "https://www.myalternatives.ca/"
+    }
+   ],
+   "theme_color": "#708573",
+   "languages": [
+    "en"
+   ],
+   "legal_name": "Alternatives Funeral & Cremation Services",
+   "search": {
+    "available": false,
+    "method": "none",
+    "page_url": null,
+    "form_action": null,
+    "inputs": [],
+    "url_pattern": null,
+    "directory_prefixes": [],
+    "paywall": null,
+    "login_wall": null
+   },
+   "removal": {
+    "url": "https://www.myalternatives.ca/privacy-policy",
+    "final_url": "https://www.myalternatives.ca/privacy-policy",
+    "http_status": 200,
+    "kinds": [
+     "opt_out"
+    ],
+    "channels": [
+     "email",
+     "phone"
+    ],
+    "emails": [
+     {
+      "email": "care@myalternatives.ca",
+      "confidence": "uncertain",
+      "source_url": "https://www.myalternatives.ca/"
+     },
+     {
+      "email": "regina@myalternatives.ca",
+      "confidence": "uncertain",
+      "source_url": "https://www.myalternatives.ca/"
+     },
+     {
+      "email": "canada.privacychoicesmail@trustage.com",
+      "confidence": "uncertain",
+      "source_url": "https://www.myalternatives.ca/privacy-policy"
+     }
+    ],
+    "phones": [
+     "(604) 857-5779",
+     "(888) 857-5917",
+     "(306) 757-2327"
+    ],
+    "postal_address": null,
+    "portal": null,
+    "form_fields": [],
+    "csrf_field_name": null,
+    "requires_profile_url": null,
+    "captcha": {
+     "provider": null,
+     "sitekey": null,
+     "pages": []
+    },
+    "consent_vendor": null,
+    "success_text": null,
+    "suppression_not_deletion": null,
+    "processing_days": null,
+    "processing_text": null
+   },
+   "bot_defense": {
+    "vendor": null,
+    "outcome": "none"
+   },
+   "legal": {
+    "privacy_policy_url": "https://www.myalternatives.ca/privacy-policy",
+    "terms_url": null,
+    "automation_prohibited": null,
+    "automation_clause": null,
+    "residency": [
+     "CA",
+     "CA-BC"
+    ],
+    "authorized_agent": null,
+    "data_categories": [
+     "identifiers",
+     "precise_location"
+    ]
+   },
+   "pages": [
+    {
+     "url": "https://myalternatives.ca/",
+     "final_url": "https://www.myalternatives.ca/",
+     "status": 200,
+     "role": "home",
+     "title": "Affordable Cremation & Funeral Services - Alternatives Funeral & Cremation Services",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.myalternatives.ca/",
+     "final_url": "https://www.myalternatives.ca/",
+     "status": 200,
+     "role": "home",
+     "title": "Affordable Cremation & Funeral Services - Alternatives Funeral & Cremation Services",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.myalternatives.ca/privacy-policy",
+     "final_url": "https://www.myalternatives.ca/privacy-policy",
+     "status": 200,
+     "role": "catalog",
+     "title": "Privacy Policy",
+     "liveness": "alive"
+    }
+   ]
+  },
+  "east-coast-memorial": {
+   "schema_version": "3.0.0",
+   "id": "east-coast-memorial",
+   "name": "East Coast Memorial",
+   "category": "people-search",
+   "domain": "eastcoastmemorial.ca",
+   "checked_at": "2026-11-04T23:50:03+00:00",
+   "liveness": "alive",
+   "liveness_detail": "catalog URL loaded",
+   "homepage": "https://www.eastcoastmemorial.ca/",
+   "logo_url": "https://s3.amazonaws.com/fh-content/release/Content/Media/EastCoastMemorial/favicon.ico",
+   "images": [
+    {
+     "url": "https://s3.amazonaws.com/fh-content/release/Content/Media/EastCoastMemorial/favicon.ico",
+     "kind": "icon",
+     "source_page": "https://www.eastcoastmemorial.ca/"
+    }
+   ],
+   "theme_color": null,
+   "languages": [
+    "en"
+   ],
+   "legal_name": null,
+   "search": {
+    "available": false,
+    "method": "none",
+    "page_url": null,
+    "form_action": null,
+    "inputs": [],
+    "url_pattern": null,
+    "directory_prefixes": [],
+    "paywall": null,
+    "login_wall": null
+   },
+   "removal": {
+    "url": "https://www.eastcoastmemorial.ca/privacy-policy",
+    "final_url": "https://www.eastcoastmemorial.ca/privacy-policy",
+    "http_status": 200,
+    "kinds": [
+     "opt_out"
+    ],
+    "channels": [
+     "email",
+     "phone"
+    ],
+    "emails": [
+     {
+      "email": "privacy@tributetech.com",
+      "confidence": "uncertain",
+      "source_url": "https://www.eastcoastmemorial.ca/privacy-policy"
+     }
+    ],
+    "phones": [
+     "1-833-303-1880"
+    ],
+    "postal_address": null,
+    "portal": null,
+    "form_fields": [],
+    "csrf_field_name": null,
+    "requires_profile_url": null,
+    "captcha": {
+     "provider": null,
+     "sitekey": null,
+     "pages": []
+    },
+    "consent_vendor": "osano",
+    "success_text": null,
+    "suppression_not_deletion": null,
+    "processing_days": null,
+    "processing_text": null
+   },
+   "bot_defense": {
+    "vendor": null,
+    "outcome": "none"
+   },
+   "legal": {
+    "privacy_policy_url": "https://www.eastcoastmemorial.ca/privacy-policy",
+    "terms_url": null,
+    "automation_prohibited": null,
+    "automation_clause": null,
+    "residency": [],
+    "authorized_agent": null,
+    "data_categories": [
+     "identifiers",
+     "commercial"
+    ]
+   },
+   "pages": [
+    {
+     "url": "https://eastcoastmemorial.ca/",
+     "final_url": "https://www.eastcoastmemorial.ca/",
+     "status": 200,
+     "role": "home",
+     "title": "East Coast Memorial| Windsor, NS Funeral Home & Cremation",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.eastcoastmemorial.ca/",
+     "final_url": "https://www.eastcoastmemorial.ca/",
+     "status": 200,
+     "role": "home",
+     "title": "East Coast Memorial| Windsor, NS Funeral Home & Cremation",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.eastcoastmemorial.ca/privacy-policy",
+     "final_url": "https://www.eastcoastmemorial.ca/privacy-policy",
+     "status": 200,
+     "role": "catalog",
+     "title": "Privacy Policy",
+     "liveness": "alive"
+    }
+   ]
+  },
+  "mysteinbach-obituaries": {
+   "schema_version": "3.0.0",
+   "id": "mysteinbach-obituaries",
+   "name": "mySteinbach obituaries",
+   "category": "people-search",
+   "domain": "mysteinbach.ca",
+   "checked_at": "2026-11-04T23:50:03+00:00",
+   "liveness": "alive",
+   "liveness_detail": "catalog URL loaded",
+   "homepage": "https://www.mysteinbach.ca/",
+   "logo_url": "https://www.mysteinbach.ca/assets/template/web/images/global/logo-ms.png",
+   "images": [
+    {
+     "url": "https://www.mysteinbach.ca/assets/template/global/images/icon-apple.png",
+     "kind": "apple_touch_icon",
+     "source_page": "https://www.mysteinbach.ca/"
+    },
+    {
+     "url": "https://www.mysteinbach.ca/assets/template/global/images/icon-fav.png",
+     "kind": "icon",
+     "source_page": "https://www.mysteinbach.ca/"
+    },
+    {
+     "url": "https://www.mysteinbach.ca/assets/template/web/images/global/logo-ms.png",
+     "kind": "logo",
+     "source_page": "https://www.mysteinbach.ca/"
+    }
+   ],
+   "theme_color": null,
+   "languages": [
+    "en"
+   ],
+   "legal_name": null,
+   "search": {
+    "available": false,
+    "method": "none",
+    "page_url": null,
+    "form_action": null,
+    "inputs": [],
+    "url_pattern": null,
+    "directory_prefixes": [],
+    "paywall": null,
+    "login_wall": null
+   },
+   "removal": {
+    "url": "https://www.mysteinbach.ca/forms/contact-mysteinbach/",
+    "final_url": "https://www.mysteinbach.ca/forms/contact-mysteinbach/",
+    "http_status": 200,
+    "kinds": [
+     "opt_out"
+    ],
+    "channels": [
+     "web_form",
+     "phone"
+    ],
+    "emails": [],
+    "phones": [
+     "204-326-9831",
+     "204-392-5665",
+     "204-381-3264"
+    ],
+    "postal_address": null,
+    "portal": null,
+    "form_fields": [
+     {
+      "name": "input_13",
+      "type": "text",
+      "canonical": null,
+      "required": false,
+      "autocomplete": "new-password",
+      "placeholder": null
+     },
+     {
+      "name": "input_1.3",
+      "type": "text",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "input_1.6",
+      "type": "text",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "input_2",
+      "type": "tel",
+      "canonical": "phone",
+      "required": false,
+      "autocomplete": null,
+      "placeholder": "(999) 999-9999"
+     },
+     {
+      "name": "input_3",
+      "type": "email",
+      "canonical": "email",
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "input_9.1",
+      "type": "text",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "input_9.3",
+      "type": "text",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "input_9.4",
+      "type": "select",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null,
+      "options": [
+       "Alberta",
+       "British Columbia",
+       "Manitoba",
+       "New Brunswick",
+       "Newfoundland and Labrador",
+       "Northwest Territories",
+       "Nova Scotia",
+       "Nunavut",
+       "Ontario",
+       "Prince Edward Island",
+       "Quebec",
+       "Saskatchewan",
+       "Yukon"
+      ]
+     },
+     {
+      "name": "input_9.5",
+      "type": "text",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "input_5",
+      "type": "text",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "input_7.1",
+      "type": "checkbox",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     }
+    ],
+    "csrf_field_name": null,
+    "requires_profile_url": null,
+    "captcha": {
+     "provider": "turnstile",
+     "sitekey": "0x4AAAAAAB5ijCZsw-PwPp9v",
+     "pages": [
+      "https://www.mysteinbach.ca/forms/contact-mysteinbach/"
+     ]
+    },
+    "consent_vendor": null,
+    "success_text": null,
+    "suppression_not_deletion": null,
+    "processing_days": null,
+    "processing_text": null
+   },
+   "bot_defense": {
+    "vendor": null,
+    "outcome": "none"
+   },
+   "legal": {
+    "privacy_policy_url": null,
+    "terms_url": null,
+    "automation_prohibited": null,
+    "automation_clause": null,
+    "residency": [
+     "CA-QC",
+     "CA-BC"
+    ],
+    "authorized_agent": null,
+    "data_categories": [
+     "identifiers",
+     "employment"
+    ]
+   },
+   "pages": [
+    {
+     "url": "https://mysteinbach.ca/",
+     "final_url": "https://www.mysteinbach.ca/",
+     "status": 200,
+     "role": "home",
+     "title": "mySteinbach.ca - Steinbach Manitoba Online Community",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.mysteinbach.ca/",
+     "final_url": "https://www.mysteinbach.ca/",
+     "status": 200,
+     "role": "home",
+     "title": "mySteinbach.ca - Steinbach Manitoba Online Community",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.mysteinbach.ca/forms/contact-mysteinbach/",
+     "final_url": "https://www.mysteinbach.ca/forms/contact-mysteinbach/",
+     "status": 200,
+     "role": "catalog",
+     "title": "Contact mySteinbach",
      "liveness": "alive"
     }
    ]
