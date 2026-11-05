@@ -2565,13 +2565,13 @@
     "evidence": "DNS for governmentregistry.org and www.governmentregistry.org still does not resolve (getaddrinfo, 2026-10-24). 1.1.1.1 and 8.8.8.8 returned SERVFAIL with no address. example.com resolved from the same host. An earlier check on 2026-10-19 also returned SERVFAIL."
   },
   "192-com": {
-    "checked": "2026-10-19",
+    "checked": "2026-11-05",
     "country": "GB",
-    "evidence": "The live homepage (https://www.192.com/, fetched 2026-10-19) reads \"Search for People, Businesses & Places in the UK\" and \"192.com gives you more information about people, businesses, and places in the UK\". Its people search covers the UK electoral roll and directories. A synthetic search for John Smith (Toronto ON) returned UK people, and the stored entry had no country, so Frame planned it for US and Canadian addresses. The people search is a plain GET, /people/search/?looking_for=<name>&location=<town>. The stored form had it as a POST with the location unmapped; the location is the town.",
+    "evidence": "The live homepage (https://www.192.com/, fetched 2026-10-19) reads \"Search for People, Businesses & Places in the UK\" and \"192.com gives you more information about people, businesses, and places in the UK\". Its people search covers the UK electoral roll and directories. The people search is a plain GET, /people/search/?looking_for=<name>&location=<town>. Rechecked 2026-11-05: page_url points at /people/search/ so the homepage CAPTCHA on the removal CAPTCHA page list does not block search_fillable. Plain curl from a research host saw HTTP 403; the earlier GB residential browser read (2026-10-19) returned result rows for John Smith in London and \"Sorry, your search for Quillon Vanderwekken in London returned no results.\"",
     "result_check": "From a GB residential exit (browser, 2026-10-19): /people/search/?looking_for=John+Smith&location=London returned \"100 Results for John Smith in or near London … 1 John H Smith ER 2006-08, 2014-26 London, Greater London, SE2…\". Quillon Vanderwekken returned \"Sorry, your search for Quillon Vanderwekken in London returned no results.\" No sign-in is needed for the result list.",
     "form": {
       "method": "http_get",
-      "page_url": "https://www.192.com/",
+      "page_url": "https://www.192.com/people/search/",
       "form_action": "https://www.192.com/people/search/",
       "url_pattern": "https://www.192.com/people/search/?looking_for={looking_for}&location={location}",
       "form_id": null,
@@ -2598,7 +2598,8 @@
           "placeholder": null
         }
       ]
-    }
+    },
+    "captcha_widget": false
   },
   "backgroundcheckers": {
     "checked": "2026-10-19",
