@@ -1,6 +1,6 @@
 {
  "schema_version": "4.0.0",
- "checked_at": "2026-11-04T23:54:37+00:00",
+ "checked_at": "2026-11-05T00:44:07+00:00",
  "method": "v3 records, with privacy and removal mailboxes on another domain kept as related_domain. Brokers whose loaded pages published no removal channel were crawled again for unfetched same-site opt-out and privacy URLs, then the catalog URL and homepage were opened once in a browser when those pages still showed no form. That recrawl honors robots.txt. A later pass reads the catalog URL and homepage of brokers whose robots.txt had disallowed the research client. A search pass reads homepages whose public search form was missing, including pages robots.txt had disallowed, and stores a name, phone, or address form. Those passes submit no form, no login, and no CAPTCHA. A legal pass re-reads stored privacy and terms text and fetches an unread privacy or terms page when robots.txt allows it. A network pass looks up public DNS and the site certificate, and reads response headers for the removal URL when robots.txt allows it. A later pass adds IPv6, SPF, DMARC, DKIM selectors, CAA, DNSSEC, the address block, certificate dates, RDAP registration, and the removal response's security headers. A captcha pass re-reads the removal URL and the search page for a widget. A browser reads the page when the static HTML has no widget and the page has a removal form, a stored CAPTCHA, or a public search form. A later pass reads the public widget settings, including whether it is a checkbox, an invisible check, or a score. A form pass re-reads stored search and removal forms for labels, limits, autocomplete, the submit button, and hidden field names. A browser opens when the static HTML does not contain the stored fields. Nothing is submitted. A search test then submits one synthetic query on each broker whose search and removal are both fillable, or with --searchable on each broker with a public search. A robots.txt disallow does not stop the test or count against a search; when --robots is set the log only notes it as robots_disallowed. Brokers whose homepage robots.txt disallowed the research client were later opened in a browser, and their liveness is the result of that read. Removal forms are not submitted and CAPTCHAs are not solved. search_test is on every broker. It stores the outcome, status, field names, the first path segment, the page kind, and a result count when the page states one. A loader page is followed to the count endpoint. The response body, record text, and listing URLs are not stored.",
  "broker_count": 849,
  "counts": {
@@ -10,8 +10,8 @@
   "with_extracted_email": 211,
   "with_stated_email": 11,
   "no_channel_remaining": 107,
-  "with_search": 348,
-  "with_search_fillable": 325,
+  "with_search": 350,
+  "with_search_fillable": 328,
   "search_unscanned": 34,
   "fully_automatable": 147,
   "search_tested": 321,
@@ -47,8 +47,8 @@
   "removal_offsite": 99,
   "with_hsts": 268,
   "with_form_enctype": 213,
-  "with_field_detail": 418,
-  "with_field_label": 282,
+  "with_field_detail": 420,
+  "with_field_label": 284,
   "with_field_constraint": 62,
   "with_submit_label": 246,
   "with_hidden_names": 163,
@@ -70,7 +70,7 @@
   "removal_captcha_checked": 343,
   "search_captcha_widget": 16,
   "search_captcha_sitekey": 6,
-  "search_captcha_checked": 322,
+  "search_captcha_checked": 325,
   "captcha_blocks_form": 97,
   "captcha_email_fallback": 32,
   "removal_captcha_checkbox": 75,
@@ -96,8 +96,8 @@
    "captcha_no_form": 27,
    "no_channel": 115
   },
-  "lookup_search": 291,
-  "lookup_search_fillable": 274,
+  "lookup_search": 293,
+  "lookup_search_fillable": 277,
   "liveness": {
    "alive": 724,
    "blocked": 46,
@@ -249776,7 +249776,7 @@
    "domain": "courtlistener.com",
    "checked_at": "2026-10-12T23:14:11+00:00",
    "liveness": "alive",
-   "liveness_detail": "catalog URL loaded",
+   "liveness_detail": "courtlistener.com answered HTTP 200 on 2026-11-04.",
    "homepage": "https://courtlistener.com/",
    "logo_url": "https://storage.wiki.free.law/static/png/apple-touch-icon.72ac9918504a.png",
    "images": [
@@ -249802,12 +249802,36 @@
    ],
    "legal_name": "Free Law Project",
    "search": {
-    "available": false,
-    "method": "none",
+    "available": true,
+    "method": "http_get",
     "page_url": "https://www.courtlistener.com/",
-    "form_action": null,
-    "inputs": [],
-    "url_pattern": null,
+    "form_action": "https://www.courtlistener.com/",
+    "inputs": [
+     {
+      "name": "q",
+      "type": "text",
+      "canonical": "full_name",
+      "required": true,
+      "autocomplete": null,
+      "placeholder": null,
+      "id": null,
+      "label": "Search",
+      "inputmode": null,
+      "pattern": null,
+      "minlength": null,
+      "maxlength": null,
+      "min": null,
+      "max": null,
+      "step": null,
+      "accept": null,
+      "multiple": false,
+      "disabled": false,
+      "readonly": false,
+      "checked": false,
+      "value": null
+     }
+    ],
+    "url_pattern": "https://www.courtlistener.com/?q={q}",
     "directory_prefixes": [],
     "paywall": null,
     "login_wall": null,
@@ -249821,8 +249845,8 @@
     },
     "captcha_provider": null,
     "captcha_sitekey": null,
-    "captcha_checked": null,
-    "captcha_detail": null
+    "captcha_detail": null,
+    "captcha_checked": true
    },
    "removal": {
     "url": "https://wiki.free.law/c/terms/courtlistener/courtlistenercom-content-removal-policy",
@@ -250002,16 +250026,20 @@
    },
    "automation": {
     "search_scanned": true,
-    "search_fillable": false,
+    "search_fillable": true,
     "search_captcha": false,
-    "search_fields": [],
+    "search_fields": [
+     "full_name"
+    ],
     "removal_form_fillable": false,
     "removal_email_usable": false,
     "removal_fields": [],
     "removal_path": null,
     "fully_automatable": false,
     "usable_emails": [],
-    "search_required": [],
+    "search_required": [
+     "full_name"
+    ],
     "removal_required": [],
     "email_verification": null,
     "id_document": null,
@@ -341099,7 +341127,7 @@
    "domain": "fonecta.fi",
    "checked_at": "2026-11-02T01:27:25+00:00",
    "liveness": "alive",
-   "liveness_detail": "catalog URL loaded",
+   "liveness_detail": "fonecta.fi answered HTTP 200 on 2026-11-04.",
    "homepage": "https://www.fonecta.fi:443/",
    "logo_url": "https://ucarecdn.com/a45d781d-3524-48e1-be86-9971179f321f/",
    "images": [
@@ -341130,12 +341158,36 @@
    ],
    "legal_name": null,
    "search": {
-    "available": false,
-    "method": "none",
-    "page_url": null,
-    "form_action": null,
-    "inputs": [],
-    "url_pattern": null,
+    "available": true,
+    "method": "http_get",
+    "page_url": "https://www.fonecta.fi/",
+    "form_action": "https://www.fonecta.fi/haku/",
+    "inputs": [
+     {
+      "name": "what",
+      "type": "text",
+      "canonical": "full_name",
+      "required": true,
+      "autocomplete": null,
+      "placeholder": null,
+      "id": null,
+      "label": "Hae",
+      "inputmode": null,
+      "pattern": null,
+      "minlength": null,
+      "maxlength": null,
+      "min": null,
+      "max": null,
+      "step": null,
+      "accept": null,
+      "multiple": false,
+      "disabled": false,
+      "readonly": false,
+      "checked": false,
+      "value": null
+     }
+    ],
+    "url_pattern": "https://www.fonecta.fi/haku/{what}",
     "directory_prefixes": [],
     "paywall": null,
     "login_wall": null,
@@ -341149,8 +341201,8 @@
     },
     "captcha_provider": null,
     "captcha_sitekey": null,
-    "captcha_checked": null,
-    "captcha_detail": null
+    "captcha_detail": null,
+    "captcha_checked": true
    },
    "removal": {
     "url": "https://tuki.fonecta.com/tietosuojaseloste",
@@ -341302,16 +341354,20 @@
    },
    "automation": {
     "search_scanned": true,
-    "search_fillable": false,
+    "search_fillable": true,
     "search_captcha": false,
-    "search_fields": [],
+    "search_fields": [
+     "full_name"
+    ],
     "removal_form_fillable": false,
     "removal_email_usable": false,
     "removal_fields": [],
     "removal_path": null,
     "fully_automatable": false,
     "usable_emails": [],
-    "search_required": [],
+    "search_required": [
+     "full_name"
+    ],
     "removal_required": [],
     "email_verification": null,
     "id_document": null,
@@ -342505,7 +342561,7 @@
    "search": {
     "available": true,
     "method": "http_get",
-    "page_url": "https://canadianwhoswho.ca/",
+    "page_url": "https://canadianwhoswho.ca/search_results.php",
     "form_action": "https://canadianwhoswho.ca/search_results.php",
     "inputs": [
      {
@@ -342546,8 +342602,8 @@
     },
     "captcha_provider": null,
     "captcha_sitekey": null,
-    "captcha_checked": null,
-    "captcha_detail": null
+    "captcha_detail": null,
+    "captcha_checked": true
    },
    "removal": {
     "url": "https://canadianwhoswho.ca/privacypolicy_new.php",
@@ -342758,8 +342814,8 @@
    },
    "automation": {
     "search_scanned": true,
-    "search_fillable": false,
-    "search_captcha": true,
+    "search_fillable": true,
+    "search_captcha": false,
     "search_fields": [
      "full_name"
     ],
