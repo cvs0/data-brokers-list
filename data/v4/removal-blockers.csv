@@ -342,6 +342,7 @@ peoplesearchnow,PeopleSearchNow,peoplesearchnow.com,people-search,blocked,captch
 peoplewhiz,PeopleWhiz,peoplewhiz.com,people-search,alive,captcha_form,Removal form is behind a CAPTCHA widget and no usable removal email was found,turnstile,,,false,turnstile,true,support@peoplewhiz.com,web_form;email
 peoplewhiz-network-mashpanel-com,PeopleWhiz network (mashpanel.com),mashpanel.com,people-search,dead,captcha_form,Removal form is behind a CAPTCHA widget and no usable removal email was found,recaptcha_v2,,checkbox,true,recaptcha_v2,true,,web_form
 persopo,Persopo,persopo.com,people-search,alive,phone,The only published channel is a phone number,,,,false,,,,phone
+phone-validator,Phone Validator,phonevalidator.com,people-search,alive,captcha_form,Removal form is behind a CAPTCHA widget and no usable removal email was found,turnstile,0x4AAAAAAFD124ZQCmQX8wsU,,,turnstile,true,info@phonevalidator.com,web_form;email
 phonebooks-com,PhoneBooks.com,phonebooks.com,people-search,alive,phone,The only published channel is a phone number,turnstile,,,false,,,,phone
 phonenumbers-org,PhoneNumbers.org,phonenumbers.org,people-search,alive,generic_inbox,"Only a generic inbox was found, and the page does not say to use it for removal",,,,false,,,support@phonenumbers.org,email;phone
 privaterecords-net,PrivateRecords.net,privaterecords.net,people-search,error,fetch_error,The opt-out URL failed before a page was read,,,,false,,,,
