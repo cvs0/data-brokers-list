@@ -1,22 +1,22 @@
 {
  "schema_version": "3.0.0",
- "checked_at": "2026-11-05T10:52:11+00:00",
+ "checked_at": "2026-11-23T15:23:13+00:00",
  "method": "Public pages only: homepage, catalog URL, and mapped privacy, contact, and legal links. robots.txt honored. No form submitted, no login, no CAPTCHA solved. A browser opened lookup homepages the static fetch never read, and catalog URLs that were blocked or failed, when robots.txt allowed the URL. Image fields are URLs, not copied files. People-search listing URLs are not stored. Null means the fetched page did not establish that fact. Every catalog id has a record.",
  "broker_count": 851,
  "counts": {
   "liveness": {
-   "alive": 689,
+   "alive": 691,
    "blocked": 50,
-   "error": 22,
+   "error": 21,
    "opt_out_missing": 1,
-   "robots_disallowed": 89
+   "robots_disallowed": 88
   },
-  "with_logo": 729,
-  "with_image": 729,
+  "with_logo": 731,
+  "with_image": 731,
   "with_search": 445,
   "with_email": 398,
-  "with_captcha": 344,
-  "with_form": 167
+  "with_captcha": 345,
+  "with_form": 168
  },
  "brokers": {
   "alaska-arrests": {
@@ -18468,6 +18468,300 @@
      "status": 200,
      "role": "legal",
      "title": "Terms and Conditions - Data Axle",
+     "liveness": "alive"
+    }
+   ]
+  },
+  "dataline-inc": {
+   "schema_version": "3.0.0",
+   "id": "dataline-inc",
+   "name": "Dataline, Inc.",
+   "category": "marketing",
+   "domain": "datalinedata.com",
+   "checked_at": "2026-11-23T15:21:56+00:00",
+   "liveness": "alive",
+   "liveness_detail": "catalog URL loaded",
+   "homepage": "https://datalinedata.com/",
+   "logo_url": "https://datalinedata.com/wp-content/uploads/2026/07/Dataline-txt.png",
+   "images": [
+    {
+     "url": "https://datalinedata.com/wp-content/uploads/2026/07/Dataline-D-150x150.png",
+     "kind": "icon",
+     "source_page": "https://datalinedata.com/"
+    },
+    {
+     "url": "https://datalinedata.com/wp-content/uploads/2026/07/Dataline-D.png",
+     "kind": "icon",
+     "source_page": "https://datalinedata.com/"
+    },
+    {
+     "url": "https://datalinedata.com/wp-content/uploads/2026/07/Dataline-1.png",
+     "kind": "og_image",
+     "source_page": "https://datalinedata.com/"
+    },
+    {
+     "url": "https://datalinedata.com/wp-content/uploads/2026/07/Dataline-txt.png",
+     "kind": "json_ld",
+     "source_page": "https://datalinedata.com/"
+    }
+   ],
+   "theme_color": null,
+   "languages": [
+    "en"
+   ],
+   "legal_name": "Dataline",
+   "search": {
+    "available": false,
+    "method": "none",
+    "page_url": null,
+    "form_action": null,
+    "inputs": [],
+    "url_pattern": null,
+    "directory_prefixes": [],
+    "paywall": null,
+    "login_wall": null
+   },
+   "removal": {
+    "url": "https://datalinedata.com/do-not-sell-my-information/",
+    "final_url": "https://datalinedata.com/do-not-sell-my-information/",
+    "http_status": 200,
+    "kinds": [
+     "opt_out",
+     "do_not_sell"
+    ],
+    "channels": [
+     "web_form",
+     "email",
+     "phone"
+    ],
+    "emails": [
+     {
+      "email": "privacy.officer@datalinedata.com",
+      "confidence": "extracted",
+      "source_url": "https://datalinedata.com/do-not-sell-my-information/"
+     }
+    ],
+    "phones": [
+     "609.452.6014"
+    ],
+    "postal_address": null,
+    "portal": null,
+    "form_fields": [
+     {
+      "name": "input_1.1",
+      "type": "checkbox",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "input_1.2",
+      "type": "checkbox",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "input_1.3",
+      "type": "checkbox",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "input_1.4",
+      "type": "checkbox",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "input_1.5",
+      "type": "checkbox",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "input_6",
+      "type": "text",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "input_7",
+      "type": "email",
+      "canonical": "email",
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "input_8.1",
+      "type": "text",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "input_8.2",
+      "type": "text",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "input_8.3",
+      "type": "text",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "input_8.4",
+      "type": "select",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null,
+      "options": [
+       "Alabama",
+       "Alaska",
+       "American Samoa",
+       "Arizona",
+       "Arkansas",
+       "California",
+       "Colorado",
+       "Connecticut",
+       "Delaware",
+       "District of Columbia",
+       "Florida",
+       "Georgia",
+       "Guam",
+       "Hawaii",
+       "Idaho",
+       "Illinois",
+       "Indiana",
+       "Iowa",
+       "Kansas",
+       "Kentucky",
+       "Louisiana",
+       "Maine",
+       "Maryland",
+       "Massachusetts",
+       "Michigan",
+       "Minnesota",
+       "Mississippi",
+       "Missouri",
+       "Montana",
+       "Nebraska",
+       "Nevada",
+       "New Hampshire",
+       "New Jersey",
+       "New Mexico",
+       "New York",
+       "North Carolina",
+       "North Dakota",
+       "Northern Mariana Islands",
+       "Ohio",
+       "Oklahoma",
+       "Oregon",
+       "Pennsylvania",
+       "Puerto Rico",
+       "Rhode Island",
+       "South Carolina",
+       "South Dakota",
+       "Tennessee",
+       "Texas",
+       "Utah",
+       "U.S. Virgin Islands",
+       "Vermont",
+       "Virginia",
+       "Washington",
+       "West Virginia",
+       "Wisconsin",
+       "Wyoming",
+       "Armed Forces Americas",
+       "Armed Forces Europe",
+       "Armed Forces Pacific"
+      ]
+     },
+     {
+      "name": "input_8.5",
+      "type": "text",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     }
+    ],
+    "csrf_field_name": null,
+    "requires_profile_url": null,
+    "captcha": {
+     "provider": "recaptcha_enterprise",
+     "sitekey": "6LeqYWstAAAAACIW-CBZJfWhVa3jr-okOHOTdhhI",
+     "pages": [
+      "https://datalinedata.com/",
+      "https://datalinedata.com/do-not-sell-my-information/"
+     ]
+    },
+    "consent_vendor": null,
+    "success_text": null,
+    "suppression_not_deletion": null,
+    "processing_days": 10,
+    "processing_text": "rotection officer will be notified of your request immediately and will respond within 10 days once the identify information is verified"
+   },
+   "bot_defense": {
+    "vendor": null,
+    "outcome": "none"
+   },
+   "legal": {
+    "privacy_policy_url": null,
+    "terms_url": null,
+    "automation_prohibited": null,
+    "automation_clause": null,
+    "residency": [
+     "US-CA"
+    ],
+    "authorized_agent": null,
+    "data_categories": [
+     "identifiers",
+     "internet_activity"
+    ]
+   },
+   "pages": [
+    {
+     "url": "https://datalinedata.com/",
+     "final_url": "https://datalinedata.com/",
+     "status": 200,
+     "role": "home",
+     "title": "Dataline - Turning audience intelligence into marketing performance",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.datalinedata.com/",
+     "final_url": "https://datalinedata.com/",
+     "status": 200,
+     "role": "home",
+     "title": "Dataline - Turning audience intelligence into marketing performance",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://datalinedata.com/do-not-sell-my-information/",
+     "final_url": "https://datalinedata.com/do-not-sell-my-information/",
+     "status": 200,
+     "role": "catalog",
+     "title": "Do Not Sell My Information - Dataline",
      "liveness": "alive"
     }
    ]
@@ -62400,7 +62694,7 @@
    "name": "Spy Dialer",
    "category": "other",
    "domain": "spydialer.com",
-   "checked_at": "2026-10-29T20:38:33+00:00",
+   "checked_at": "2026-11-23T15:22:07+00:00",
    "liveness": "alive",
    "liveness_detail": "catalog URL loaded",
    "homepage": "https://www.spydialer.com/",
@@ -62454,7 +62748,7 @@
     {
      "url": "https://www.spydialer.com/images/Spy-Dialer-Reverse-Phone-Lookup-Small-Logo.png",
      "kind": "logo",
-     "source_page": "https://www.spydialer.com/consumers/"
+     "source_page": "https://www.spydialer.com/optout"
     }
    ],
    "theme_color": null,
@@ -62760,35 +63054,121 @@
     "login_wall": null
    },
    "removal": {
-    "url": "https://www.spydialer.com/consumers/",
-    "final_url": "https://www.spydialer.com/consumers/",
+    "url": "https://www.spydialer.com/optout",
+    "final_url": "https://www.spydialer.com/optout",
     "http_status": 200,
     "kinds": [
      "opt_out",
      "do_not_sell"
     ],
     "channels": [
+     "web_form",
+     "email",
      "phone"
     ],
-    "emails": [],
+    "emails": [
+     {
+      "email": "support@spydialer.com",
+      "confidence": "uncertain",
+      "source_url": "https://www.spydialer.com/privacy.aspx"
+     }
+    ],
     "phones": [
      "(866) 834-2579"
     ],
     "postal_address": null,
     "portal": null,
-    "form_fields": [],
+    "form_fields": [
+     {
+      "name": "RequesterTypeSelect",
+      "type": "select",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null,
+      "options": [
+       "subject",
+       "agent"
+      ]
+     },
+     {
+      "name": "AgentFirstNameInput",
+      "type": "text",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "AgentLastNameInput",
+      "type": "text",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "AgentEmailInput",
+      "type": "email",
+      "canonical": "email",
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "SubjectFirstNameInput",
+      "type": "text",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "SubjectMiddleNameInput",
+      "type": "text",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "SubjectLastNameInput",
+      "type": "text",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "SubjectEmailInput",
+      "type": "email",
+      "canonical": "email",
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "ConsentCheckbox",
+      "type": "checkbox",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     }
+    ],
     "csrf_field_name": null,
     "requires_profile_url": null,
     "captcha": {
-     "provider": "recaptcha_v2",
-     "sitekey": "6Lfo9tIrAAAAAPHnHsd2C1VRdHun9vmWMmiik8Fb",
+     "provider": "turnstile",
+     "sitekey": "0x4AAAAAAFW-e1uZFsX_kczx",
      "pages": [
+      "https://www.spydialer.com/optout",
       "https://www.spydialer.com/consumers/business.aspx",
       "https://www.spydialer.com/contact.aspx"
      ]
     },
     "consent_vendor": null,
-    "success_text": null,
+    "success_text": "ed. You will be taken to a confirmation page verifying that we have received your request and it is being processed. You will also receive a confirmation email. Your req",
     "suppression_not_deletion": null,
     "processing_days": null,
     "processing_text": null
@@ -62798,7 +63178,7 @@
     "outcome": "none"
    },
    "legal": {
-    "privacy_policy_url": "https://www.spydialer.com/privacy",
+    "privacy_policy_url": "https://www.spydialer.com/privacy.aspx",
     "terms_url": null,
     "automation_prohibited": null,
     "automation_clause": null,
@@ -62808,7 +63188,7 @@
      "US-OR",
      "US"
     ],
-    "authorized_agent": null,
+    "authorized_agent": true,
     "data_categories": [
      "identifiers",
      "commercial",
@@ -62835,16 +63215,24 @@
      "liveness": "alive"
     },
     {
-     "url": "https://www.spydialer.com/consumers/",
-     "final_url": "https://www.spydialer.com/consumers/",
+     "url": "https://www.spydialer.com/optout",
+     "final_url": "https://www.spydialer.com/optout",
      "status": 200,
      "role": "catalog",
-     "title": "Remove My Info | Spy Dialer",
+     "title": "Do Not Sell/Right to Opt-out | Spy Dialer",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://www.spydialer.com/consumers/",
+     "final_url": "https://www.spydialer.com/optout",
+     "status": 200,
+     "role": "other",
+     "title": "Do Not Sell/Right to Opt-out | Spy Dialer",
      "liveness": "alive"
     },
     {
      "url": "https://spydialer.com/do-not-sell",
-     "final_url": "https://www.spydialer.com/do-not-sell",
+     "final_url": "https://www.spydialer.com/donotsell.aspx",
      "status": 200,
      "role": "opt_out",
      "title": "Do Not Sell or Share My Personal Information | Spy Dialer",
@@ -62860,7 +63248,7 @@
     },
     {
      "url": "https://spydialer.com/privacy",
-     "final_url": "https://www.spydialer.com/privacy",
+     "final_url": "https://www.spydialer.com/privacy.aspx",
      "status": 200,
      "role": "privacy",
      "title": "Privacy Notice | Spy Dialer",
@@ -62872,14 +63260,6 @@
      "status": 200,
      "role": "other",
      "title": "Contact Us | Spy Dialer",
-     "liveness": "alive"
-    },
-    {
-     "url": "https://spydialer.com/terms.aspx",
-     "final_url": "https://www.spydialer.com/terms.aspx",
-     "status": 200,
-     "role": "other",
-     "title": "Terms & Conditions | Spy Dialer",
      "liveness": "alive"
     }
    ]
@@ -107642,7 +108022,7 @@
    "name": "Agile Education Marketing, LLC",
    "category": "marketing",
    "domain": "agile-ed.com",
-   "checked_at": "2026-10-12T23:10:42+00:00",
+   "checked_at": "2026-11-23T15:21:58+00:00",
    "liveness": "alive",
    "liveness_detail": "catalog URL loaded",
    "homepage": "https://agile-ed.com/",
@@ -107692,11 +108072,6 @@
      "url": "https://agile-ed.com/wp-content/uploads/2024/08/agileed-logo-white.svg",
      "kind": "logo",
      "source_page": "https://agile-ed.com/"
-    },
-    {
-     "url": "https://agile-ed.com/wp-content/uploads/elementor/thumbs/AGILE-BLOCK-LOGO_TRANS-HIGH-REZ-q1jjw2rxqfm3ig3tbpnzn4ecmfrnh1gmwobq5y3rv6.png",
-     "kind": "og_image",
-     "source_page": "https://agile-ed.com/california-privacy-rights/"
     }
    ],
    "theme_color": null,
@@ -107716,8 +108091,8 @@
     "login_wall": null
    },
    "removal": {
-    "url": "https://agile-ed.com/california-privacy-rights/",
-    "final_url": "https://agile-ed.com/california-privacy-rights/",
+    "url": "https://agile-ed.com/privacy-choices/",
+    "final_url": "https://agile-ed.com/privacy-choices/",
     "http_status": 200,
     "kinds": [
      "opt_out",
@@ -107753,7 +108128,7 @@
     "outcome": "none"
    },
    "legal": {
-    "privacy_policy_url": "https://agile-ed.com/california-privacy-rights/",
+    "privacy_policy_url": "https://agile-ed.com/privacy-choices/",
     "terms_url": null,
     "automation_prohibited": null,
     "automation_clause": null,
@@ -107783,11 +108158,19 @@
      "liveness": "alive"
     },
     {
-     "url": "https://agile-ed.com/california-privacy-rights/",
-     "final_url": "https://agile-ed.com/california-privacy-rights/",
+     "url": "https://agile-ed.com/privacy-choices/",
+     "final_url": "https://agile-ed.com/privacy-choices/",
      "status": 200,
      "role": "catalog",
-     "title": "Do Not Sell My Personal Information | AgileED",
+     "title": "Your Privacy Choices | AgileED",
+     "liveness": "alive"
+    },
+    {
+     "url": "https://agile-ed.com/california-privacy-rights/",
+     "final_url": "https://agile-ed.com/privacy-choices/",
+     "status": 200,
+     "role": "privacy",
+     "title": "Your Privacy Choices | AgileED",
      "liveness": "alive"
     },
     {
@@ -126329,18 +126712,66 @@
    "name": "PhoneBooks.com",
    "category": "people-search",
    "domain": "phonebooks.com",
-   "checked_at": "2026-10-12T23:22:56+00:00",
-   "liveness": "robots_disallowed",
-   "liveness_detail": "robots.txt disallows this client",
-   "homepage": "https://phonebooks.com/",
-   "logo_url": null,
-   "images": [],
+   "checked_at": "2026-11-23T15:21:59+00:00",
+   "liveness": "alive",
+   "liveness_detail": "catalog URL redirected and the final page loaded",
+   "homepage": "https://www.spydialer.com/",
+   "logo_url": "https://www.spydialer.com/Images/64px-Fox_News_Channel_logo.svg.png",
+   "images": [
+    {
+     "url": "https://www.spydialer.com/favicon.ico",
+     "kind": "icon",
+     "source_page": "https://www.spydialer.com/"
+    },
+    {
+     "url": "https://spydialer.com/images/spy-dialer-icon-200x200.jpg",
+     "kind": "og_image",
+     "source_page": "https://www.spydialer.com/"
+    },
+    {
+     "url": "https://www.spydialer.com/Images/Spy-Dialer-Reverse-Phone-Lookup-Logo.png",
+     "kind": "json_ld",
+     "source_page": "https://www.spydialer.com/"
+    },
+    {
+     "url": "https://www.spydialer.com/Images/64px-Fox_News_Channel_logo.svg.png",
+     "kind": "logo",
+     "source_page": "https://www.spydialer.com/"
+    },
+    {
+     "url": "https://www.spydialer.com/Images/search-quarry-logo.png",
+     "kind": "logo",
+     "source_page": "https://www.spydialer.com/"
+    },
+    {
+     "url": "https://www.spydialer.com/Images/mens-journal-logo-64px.png",
+     "kind": "logo",
+     "source_page": "https://www.spydialer.com/"
+    },
+    {
+     "url": "https://www.spydialer.com/Images/wikihow-logo-64px.png",
+     "kind": "logo",
+     "source_page": "https://www.spydialer.com/"
+    },
+    {
+     "url": "https://www.spydialer.com/Images/techjunkie-logo-64px.png",
+     "kind": "logo",
+     "source_page": "https://www.spydialer.com/"
+    },
+    {
+     "url": "https://www.spydialer.com/Images/dominion-post-logo.png",
+     "kind": "logo",
+     "source_page": "https://www.spydialer.com/"
+    }
+   ],
    "theme_color": null,
-   "languages": [],
-   "legal_name": null,
+   "languages": [
+    "en"
+   ],
+   "legal_name": "Spy Dialer",
    "search": {
-    "available": null,
-    "method": "unknown",
+    "available": false,
+    "method": "none",
     "page_url": null,
     "form_action": null,
     "inputs": [],
@@ -126351,8 +126782,8 @@
    },
    "removal": {
     "url": "https://www.phonebooks.com/",
-    "final_url": null,
-    "http_status": null,
+    "final_url": "https://www.spydialer.com/",
+    "http_status": 200,
     "kinds": [
      "opt_out"
     ],
@@ -126386,24 +126817,26 @@
     "automation_clause": null,
     "residency": [],
     "authorized_agent": null,
-    "data_categories": []
+    "data_categories": [
+     "identifiers"
+    ]
    },
    "pages": [
     {
      "url": "https://phonebooks.com/",
-     "final_url": null,
-     "status": null,
+     "final_url": "https://www.spydialer.com/",
+     "status": 200,
      "role": "home",
-     "title": "",
-     "liveness": "robots_disallowed"
+     "title": "Free Phone Number Lookup | SpyDialer",
+     "liveness": "alive"
     },
     {
      "url": "https://www.phonebooks.com/",
-     "final_url": null,
-     "status": null,
+     "final_url": "https://www.spydialer.com/",
+     "status": 200,
      "role": "home",
-     "title": "",
-     "liveness": "robots_disallowed"
+     "title": "Free Phone Number Lookup | SpyDialer",
+     "liveness": "alive"
     }
    ]
   },
@@ -126413,13 +126846,24 @@
    "name": "PhoneNumberInfo.us",
    "category": "people-search",
    "domain": "phonenumberinfo.us",
-   "checked_at": "2026-10-12T23:22:59+00:00",
-   "liveness": "error",
-   "liveness_detail": "catalog URL returned HTTP 200",
+   "checked_at": "2026-11-23T15:22:01+00:00",
+   "liveness": "alive",
+   "liveness_detail": "catalog URL loaded",
    "homepage": "https://phonenumberinfo.us/",
-   "logo_url": null,
-   "images": [],
-   "theme_color": null,
+   "logo_url": "https://phonenumberinfo.us/assets/favicon.svg",
+   "images": [
+    {
+     "url": "https://phonenumberinfo.us/assets/favicon.svg",
+     "kind": "icon",
+     "source_page": "https://phonenumberinfo.us/"
+    },
+    {
+     "url": "https://www.phonenumberinfo.us/assets/favicon.svg",
+     "kind": "icon",
+     "source_page": "https://www.phonenumberinfo.us/"
+    }
+   ],
+   "theme_color": "#6125d0",
    "languages": [
     "en"
    ],
@@ -126427,84 +126871,99 @@
    "search": {
     "available": true,
     "method": "http_form_post",
-    "page_url": "https://phonenumberinfo.us/contact.php",
-    "form_action": "https://phonenumberinfo.us/go",
+    "page_url": "https://phonenumberinfo.us/",
+    "form_action": "https://phonenumberinfo.us/search",
     "inputs": [
      {
-      "name": "q",
+      "name": "a",
+      "type": "hidden",
+      "canonical": null,
+      "required": false,
+      "autocomplete": null,
+      "placeholder": null
+     },
+     {
+      "name": "lookup",
       "type": "tel",
       "canonical": "phone",
       "required": true,
-      "autocomplete": null,
-      "placeholder": "ex: 234-555-5555"
+      "autocomplete": "lookup-number",
+      "placeholder": "(555) 123-4567"
      }
     ],
-    "url_pattern": "https://phonenumberinfo.us/go",
+    "url_pattern": "https://phonenumberinfo.us/search",
     "directory_prefixes": [],
     "paywall": null,
     "login_wall": null
    },
    "removal": {
-    "url": "https://phonenumberinfo.us/contact.php",
-    "final_url": "https://phonenumberinfo.us/contact.php",
+    "url": "https://phonenumberinfo.us/contact",
+    "final_url": "https://phonenumberinfo.us/contact",
     "http_status": 200,
     "kinds": [
-     "opt_out"
+     "opt_out",
+     "do_not_sell"
     ],
     "channels": [
      "web_form",
-     "email",
      "phone"
     ],
-    "emails": [
-     {
-      "email": "info@phonenumberinfo.us",
-      "confidence": "uncertain",
-      "source_url": "https://phonenumberinfo.us/contact.php"
-     }
-    ],
+    "emails": [],
     "phones": [
-     "012 345 6789",
-     "(718) 555-0142",
-     "(212) 555-0198"
+     "(000) 000-0000"
     ],
     "postal_address": null,
     "portal": null,
     "form_fields": [
      {
+      "name": "website",
+      "type": "text",
+      "canonical": null,
+      "required": false,
+      "autocomplete": "off",
+      "placeholder": null
+     },
+     {
       "name": "name",
       "type": "text",
       "canonical": "full_name",
-      "required": false,
-      "autocomplete": null,
-      "placeholder": "Your Name"
+      "required": true,
+      "autocomplete": "name",
+      "placeholder": null
      },
      {
       "name": "email",
       "type": "email",
       "canonical": "email",
-      "required": false,
-      "autocomplete": null,
-      "placeholder": "Your Email"
+      "required": true,
+      "autocomplete": "email",
+      "placeholder": null
      },
      {
       "name": "subject",
-      "type": "text",
+      "type": "select",
       "canonical": null,
       "required": false,
       "autocomplete": null,
-      "placeholder": "Subject"
+      "placeholder": null,
+      "options": [
+       "general",
+       "search",
+       "privacy",
+       "feedback",
+       "business"
+      ]
      },
      {
       "name": "message",
-      "type": "textarea",
+      "type": "text",
       "canonical": null,
-      "required": false,
+      "required": true,
       "autocomplete": null,
-      "placeholder": "Message"
+      "placeholder": null
      }
     ],
-    "csrf_field_name": null,
+    "csrf_field_name": "csrf",
     "requires_profile_url": null,
     "captcha": {
      "provider": null,
@@ -126518,7 +126977,7 @@
     "processing_text": null
    },
    "bot_defense": {
-    "vendor": "cloudflare",
+    "vendor": null,
     "outcome": "none"
    },
    "legal": {
@@ -126531,40 +126990,33 @@
     ],
     "authorized_agent": null,
     "data_categories": [
-     "identifiers"
+     "identifiers",
+     "employment"
     ]
    },
    "pages": [
     {
      "url": "https://phonenumberinfo.us/",
      "final_url": "https://phonenumberinfo.us/",
-     "status": 520,
+     "status": 200,
      "role": "home",
-     "title": "phonenumberinfo.us | 520: Web server is returning an unknown error",
-     "liveness": "error"
+     "title": "Find Out Who Called You — Reverse Phone Lookup",
+     "liveness": "alive"
     },
     {
      "url": "https://www.phonenumberinfo.us/",
      "final_url": "https://www.phonenumberinfo.us/",
-     "status": 520,
+     "status": 200,
      "role": "home",
-     "title": "phonenumberinfo.us | 520: Web server is returning an unknown error",
-     "liveness": "error"
+     "title": "Find Out Who Called You — Reverse Phone Lookup",
+     "liveness": "alive"
     },
     {
-     "url": "https://phonenumberinfo.us/contact.php",
-     "final_url": "https://phonenumberinfo.us/contact.php",
+     "url": "https://phonenumberinfo.us/contact",
+     "final_url": "https://phonenumberinfo.us/contact",
      "status": 200,
      "role": "catalog",
-     "title": "Reverse Phone Lookup",
-     "liveness": "error"
-    },
-    {
-     "url": "https://phonenumberinfo.us/",
-     "final_url": "https://phonenumberinfo.us/",
-     "status": 200,
-     "role": "home",
-     "title": "Reverse Phone Lookup — Find Out Who Called You",
+     "title": "Contact Us",
      "liveness": "alive"
     }
    ]
@@ -156108,7 +156560,7 @@
    "schema_version": "3.0.0",
    "id": "necrologie-ca",
    "name": "Nécrologie.ca",
-   "category": "people-search",
+   "category": "other",
    "domain": "necrologie.ca",
    "checked_at": "2026-11-02T09:57:17+00:00",
    "liveness": "alive",
@@ -156463,7 +156915,7 @@
    "schema_version": "3.0.0",
    "id": "fqsg-avis-de-deces",
    "name": "FQSG Avis de décès",
-   "category": "people-search",
+   "category": "other",
    "domain": "federationgenealogie.qc.ca",
    "checked_at": "2026-11-02T09:57:11+00:00",
    "liveness": "alive",
@@ -156947,7 +157399,7 @@
    "schema_version": "3.0.0",
    "id": "domaine-funeraire",
    "name": "Domaine funéraire (Corporation des thanatologues du Québec)",
-   "category": "people-search",
+   "category": "other",
    "domain": "domainefuneraire.com",
    "checked_at": "2026-11-02T09:57:11+00:00",
    "liveness": "alive",
@@ -157107,7 +157559,7 @@
    "schema_version": "3.0.0",
    "id": "canadian-obituaries",
    "name": "Canadian Obituaries",
-   "category": "people-search",
+   "category": "other",
    "domain": "canadianobituaries.com",
    "checked_at": "2026-11-02T09:57:07+00:00",
    "liveness": "alive",
@@ -157297,7 +157749,7 @@
    "schema_version": "3.0.0",
    "id": "cooperative-funeraire-du-grand-montreal",
    "name": "Coopérative funéraire du Grand Montréal",
-   "category": "people-search",
+   "category": "other",
    "domain": "cfgrandmontreal.com",
    "checked_at": "2026-11-02T09:57:05+00:00",
    "liveness": "alive",
@@ -157448,7 +157900,7 @@
    "schema_version": "3.0.0",
    "id": "cooperative-funeraire-des-deux-rives",
    "name": "Coopérative funéraire des Deux Rives",
-   "category": "people-search",
+   "category": "other",
    "domain": "coopfuneraire2rives.com",
    "checked_at": "2026-11-02T09:57:08+00:00",
    "liveness": "alive",
@@ -157601,7 +158053,7 @@
    "schema_version": "3.0.0",
    "id": "alliance-funeraire-du-royaume",
    "name": "Alliance funéraire du Royaume",
-   "category": "people-search",
+   "category": "other",
    "domain": "afdr.coop",
    "checked_at": "2026-11-02T09:57:05+00:00",
    "liveness": "alive",
@@ -157745,7 +158197,7 @@
    "schema_version": "3.0.0",
    "id": "cooperative-funeraire-de-l-abitibi",
    "name": "Coopérative funéraire de l'Abitibi",
-   "category": "people-search",
+   "category": "other",
    "domain": "cfa.coop",
    "checked_at": "2026-11-02T09:57:05+00:00",
    "liveness": "alive",
@@ -157889,7 +158341,7 @@
    "schema_version": "3.0.0",
    "id": "cooperative-funeraire-haute-cote-nord-manicouagan",
    "name": "Coopérative funéraire Haute-Côte-Nord - Manicouagan",
-   "category": "people-search",
+   "category": "other",
    "domain": "cfhcn.ca",
    "checked_at": "2026-11-02T09:57:05+00:00",
    "liveness": "alive",
@@ -158028,7 +158480,7 @@
    "schema_version": "3.0.0",
    "id": "cooperative-funeraire-de-l-outaouais",
    "name": "Coopérative funéraire de l'Outaouais",
-   "category": "people-search",
+   "category": "other",
    "domain": "cfo.coop",
    "checked_at": "2026-11-02T09:57:06+00:00",
    "liveness": "alive",
@@ -158171,7 +158623,7 @@
    "schema_version": "3.0.0",
    "id": "cooperative-funeraire-de-l-estrie",
    "name": "Coopérative funéraire de l'Estrie",
-   "category": "people-search",
+   "category": "other",
    "domain": "coopfuneraireestrie.com",
    "checked_at": "2026-11-02T09:57:08+00:00",
    "liveness": "alive",
@@ -158385,7 +158837,7 @@
    "schema_version": "3.0.0",
    "id": "residence-funeraire-lac-st-jean",
    "name": "Résidence funéraire Lac St-Jean",
-   "category": "people-search",
+   "category": "other",
    "domain": "residencefunerairelacstjean.com",
    "checked_at": "2026-11-02T09:57:19+00:00",
    "liveness": "alive",
@@ -158524,7 +158976,7 @@
    "schema_version": "3.0.0",
    "id": "cooperative-funeraire-brunet",
    "name": "Coopérative funéraire Brunet",
-   "category": "people-search",
+   "category": "other",
    "domain": "coopfbrunet.com",
    "checked_at": "2026-11-02T09:57:08+00:00",
    "liveness": "alive",
@@ -158662,7 +159114,7 @@
    "schema_version": "3.0.0",
    "id": "cooperative-funeraire-matawinie-montcalm",
    "name": "Coopérative funéraire Matawinie-Montcalm",
-   "category": "people-search",
+   "category": "other",
    "domain": "cfmm.coop",
    "checked_at": "2026-11-02T09:57:05+00:00",
    "liveness": "alive",
@@ -158796,7 +159248,7 @@
    "schema_version": "3.0.0",
    "id": "cooperative-funeraire-des-laurentides",
    "name": "Coopérative funéraire des Laurentides",
-   "category": "people-search",
+   "category": "other",
    "domain": "coopfunerairelaurentides.org",
    "checked_at": "2026-11-02T09:57:09+00:00",
    "liveness": "alive",
@@ -158939,7 +159391,7 @@
    "schema_version": "3.0.0",
    "id": "residence-funeraire-maska",
    "name": "Résidence Funéraire Maska",
-   "category": "people-search",
+   "category": "other",
    "domain": "rfmaska.coop",
    "checked_at": "2026-11-02T09:57:20+00:00",
    "liveness": "alive",
@@ -159083,7 +159535,7 @@
    "schema_version": "3.0.0",
    "id": "dignity-memorial",
    "name": "Dignity Memorial",
-   "category": "people-search",
+   "category": "other",
    "domain": "dignitymemorial.com",
    "checked_at": "2026-11-02T09:57:11+00:00",
    "liveness": "alive",
@@ -159899,7 +160351,7 @@
    "schema_version": "3.0.0",
    "id": "kearney-funeral-services",
    "name": "Kearney Funeral Services",
-   "category": "people-search",
+   "category": "other",
    "domain": "kearneyfs.com",
    "checked_at": "2026-11-02T09:57:16+00:00",
    "liveness": "alive",
@@ -160141,7 +160593,7 @@
    "schema_version": "3.0.0",
    "id": "basic-funerals",
    "name": "Basic Funerals",
-   "category": "people-search",
+   "category": "other",
    "domain": "basicfunerals.ca",
    "checked_at": "2026-11-02T09:57:07+00:00",
    "liveness": "alive",
@@ -160315,7 +160767,7 @@
    "schema_version": "3.0.0",
    "id": "le-necrologue",
    "name": "Le Nécrologue",
-   "category": "people-search",
+   "category": "other",
    "domain": "lenecrologue.com",
    "checked_at": "2026-11-02T09:57:17+00:00",
    "liveness": "alive",
@@ -163642,7 +164094,7 @@
    "schema_version": "3.0.0",
    "id": "cooperative-funeraire-du-temiscamingue",
    "name": "Coopérative funéraire du Témiscamingue",
-   "category": "people-search",
+   "category": "other",
    "domain": "cftemiscamingue.com",
    "checked_at": "2026-10-26T07:56:42+00:00",
    "liveness": "alive",
@@ -163776,7 +164228,7 @@
    "schema_version": "3.0.0",
    "id": "funeral-co-operative-of-ottawa",
    "name": "Funeral Co-operative of Ottawa",
-   "category": "people-search",
+   "category": "other",
    "domain": "fco-cfo.coop",
    "checked_at": "2026-10-26T07:56:42+00:00",
    "liveness": "alive",
@@ -163924,7 +164376,7 @@
    "schema_version": "3.0.0",
    "id": "timiskaming-funeral-cooperative",
    "name": "Timiskaming Funeral Cooperative",
-   "category": "people-search",
+   "category": "other",
    "domain": "timiskamingfc.com",
    "checked_at": "2026-10-26T07:56:42+00:00",
    "liveness": "alive",
@@ -164131,7 +164583,7 @@
    "schema_version": "3.0.0",
    "id": "passage-funeral-co-operative",
    "name": "Passage Funeral Co-operative",
-   "category": "people-search",
+   "category": "other",
    "domain": "funerairepassagefuneral.ca",
    "checked_at": "2026-10-26T07:56:41+00:00",
    "liveness": "robots_disallowed",
@@ -164223,7 +164675,7 @@
    "schema_version": "3.0.0",
    "id": "cooperative-funeraire-des-eaux-vives",
    "name": "Coopérative funéraire des Eaux Vives",
-   "category": "people-search",
+   "category": "other",
    "domain": "eauxvives.ca",
    "checked_at": "2026-10-26T10:37:49+00:00",
    "liveness": "alive",
@@ -164366,7 +164818,7 @@
    "schema_version": "3.0.0",
    "id": "castanet-obituaries",
    "name": "Castanet Obituaries",
-   "category": "people-search",
+   "category": "other",
    "domain": "castanet.net",
    "checked_at": "2026-10-26T10:37:51+00:00",
    "liveness": "alive",
@@ -164639,7 +165091,7 @@
    "schema_version": "3.0.0",
    "id": "remembering-ca",
    "name": "Remembering.ca (Postmedia Obituaries)",
-   "category": "people-search",
+   "category": "other",
    "domain": "remembering.ca",
    "checked_at": "2026-10-26T10:37:50+00:00",
    "liveness": "blocked",
@@ -164731,7 +165183,7 @@
    "schema_version": "3.0.0",
    "id": "sootoday-obituaries",
    "name": "SooToday Obituaries (Village Media)",
-   "category": "people-search",
+   "category": "other",
    "domain": "sootoday.com",
    "checked_at": "2026-10-26T10:37:57+00:00",
    "liveness": "alive",
@@ -165806,7 +166258,7 @@
    "schema_version": "3.0.0",
    "id": "sudbury-com-obituaries",
    "name": "Sudbury.com Obituaries",
-   "category": "people-search",
+   "category": "other",
    "domain": "sudbury.com",
    "checked_at": "2026-10-26T12:17:36+00:00",
    "liveness": "alive",
@@ -165981,7 +166433,7 @@
    "schema_version": "3.0.0",
    "id": "baytoday-obituaries",
    "name": "BayToday Obituaries",
-   "category": "people-search",
+   "category": "other",
    "domain": "baytoday.ca",
    "checked_at": "2026-10-26T12:17:29+00:00",
    "liveness": "alive",
@@ -166169,7 +166621,7 @@
    "schema_version": "3.0.0",
    "id": "guelphtoday-obituaries",
    "name": "GuelphToday Obituaries",
-   "category": "people-search",
+   "category": "other",
    "domain": "guelphtoday.com",
    "checked_at": "2026-10-26T12:17:29+00:00",
    "liveness": "alive",
@@ -166357,7 +166809,7 @@
    "schema_version": "3.0.0",
    "id": "barrietoday-obituaries",
    "name": "BarrieToday Obituaries",
-   "category": "people-search",
+   "category": "other",
    "domain": "barrietoday.com",
    "checked_at": "2026-10-26T12:17:28+00:00",
    "liveness": "blocked",
@@ -166449,7 +166901,7 @@
    "schema_version": "3.0.0",
    "id": "timminstoday-obituaries",
    "name": "TimminsToday Obituaries",
-   "category": "people-search",
+   "category": "other",
    "domain": "timminstoday.com",
    "checked_at": "2026-10-26T12:17:36+00:00",
    "liveness": "blocked",
@@ -166639,7 +167091,7 @@
    "schema_version": "3.0.0",
    "id": "newmarkettoday-obituaries",
    "name": "NewmarketToday Obituaries",
-   "category": "people-search",
+   "category": "other",
    "domain": "newmarkettoday.ca",
    "checked_at": "2026-10-26T12:17:32+00:00",
    "liveness": "blocked",
@@ -166809,7 +167261,7 @@
    "schema_version": "3.0.0",
    "id": "cambridgetoday-obituaries",
    "name": "CambridgeToday Obituaries",
-   "category": "people-search",
+   "category": "other",
    "domain": "cambridgetoday.ca",
    "checked_at": "2026-10-26T12:17:28+00:00",
    "liveness": "blocked",
@@ -166901,7 +167353,7 @@
    "schema_version": "3.0.0",
    "id": "orilliamatters-obituaries",
    "name": "OrilliaMatters Obituaries",
-   "category": "people-search",
+   "category": "other",
    "domain": "orilliamatters.com",
    "checked_at": "2026-10-26T12:17:33+00:00",
    "liveness": "alive",
@@ -167086,7 +167538,7 @@
    "schema_version": "3.0.0",
    "id": "collingwoodtoday-obituaries",
    "name": "CollingwoodToday Obituaries",
-   "category": "people-search",
+   "category": "other",
    "domain": "collingwoodtoday.ca",
    "checked_at": "2026-10-26T12:17:29+00:00",
    "liveness": "alive",
@@ -167267,7 +167719,7 @@
    "schema_version": "3.0.0",
    "id": "elliotlaketoday-obituaries",
    "name": "ElliotLakeToday Obituaries",
-   "category": "people-search",
+   "category": "other",
    "domain": "elliotlaketoday.com",
    "checked_at": "2026-10-26T12:17:29+00:00",
    "liveness": "alive",
@@ -167450,7 +167902,7 @@
    "schema_version": "3.0.0",
    "id": "bradfordtoday-obituaries",
    "name": "BradfordToday Obituaries",
-   "category": "people-search",
+   "category": "other",
    "domain": "bradfordtoday.ca",
    "checked_at": "2026-10-26T12:17:28+00:00",
    "liveness": "blocked",
@@ -167542,7 +167994,7 @@
    "schema_version": "3.0.0",
    "id": "innisfiltoday-obituaries",
    "name": "InnisfilToday Obituaries",
-   "category": "people-search",
+   "category": "other",
    "domain": "innisfiltoday.ca",
    "checked_at": "2026-10-26T12:17:32+00:00",
    "liveness": "blocked",
@@ -167717,7 +168169,7 @@
    "schema_version": "3.0.0",
    "id": "midlandtoday-obituaries",
    "name": "MidlandToday Obituaries",
-   "category": "people-search",
+   "category": "other",
    "domain": "midlandtoday.ca",
    "checked_at": "2026-10-26T12:17:32+00:00",
    "liveness": "blocked",
@@ -167890,7 +168342,7 @@
    "schema_version": "3.0.0",
    "id": "st-albert-gazette-obituaries",
    "name": "St. Albert Gazette Obituaries",
-   "category": "people-search",
+   "category": "other",
    "domain": "stalbertgazette.com",
    "checked_at": "2026-10-26T12:17:36+00:00",
    "liveness": "blocked",
@@ -168965,7 +169417,7 @@
    "schema_version": "3.0.0",
    "id": "airdrietoday-obituaries",
    "name": "AirdrieToday Obituaries",
-   "category": "people-search",
+   "category": "other",
    "domain": "airdrietoday.com",
    "checked_at": "2026-10-28T07:40:03+00:00",
    "liveness": "alive",
@@ -169100,7 +169552,7 @@
    "schema_version": "3.0.0",
    "id": "cochranetoday-obituaries",
    "name": "CochraneToday Obituaries",
-   "category": "people-search",
+   "category": "other",
    "domain": "cochranetoday.ca",
    "checked_at": "2026-10-28T07:40:02+00:00",
    "liveness": "alive",
@@ -169242,7 +169694,7 @@
    "schema_version": "3.0.0",
    "id": "okotokstoday-obituaries",
    "name": "OkotoksToday Obituaries",
-   "category": "people-search",
+   "category": "other",
    "domain": "okotokstoday.ca",
    "checked_at": "2026-10-28T07:40:12+00:00",
    "liveness": "alive",
@@ -169372,7 +169824,7 @@
    "schema_version": "3.0.0",
    "id": "rmoutlook-obituaries",
    "name": "Rocky Mountain Outlook Obituaries",
-   "category": "people-search",
+   "category": "other",
    "domain": "rmoutlook.com",
    "checked_at": "2026-10-26T13:05:32+00:00",
    "liveness": "alive",
@@ -169537,7 +169989,7 @@
    "schema_version": "3.0.0",
    "id": "lakelandtoday-obituaries",
    "name": "LakelandToday Obituaries",
-   "category": "people-search",
+   "category": "other",
    "domain": "lakelandtoday.ca",
    "checked_at": "2026-10-26T13:05:28+00:00",
    "liveness": "alive",
@@ -169712,7 +170164,7 @@
    "schema_version": "3.0.0",
    "id": "townandcountrytoday-obituaries",
    "name": "Town & Country Today Obituaries",
-   "category": "people-search",
+   "category": "other",
    "domain": "townandcountrytoday.com",
    "checked_at": "2026-10-26T13:05:32+00:00",
    "liveness": "alive",
@@ -169882,7 +170334,7 @@
    "schema_version": "3.0.0",
    "id": "mountainviewtoday-obituaries",
    "name": "MountainViewToday Obituaries",
-   "category": "people-search",
+   "category": "other",
    "domain": "mountainviewtoday.ca",
    "checked_at": "2026-10-28T07:40:10+00:00",
    "liveness": "alive",
@@ -170017,7 +170469,7 @@
    "schema_version": "3.0.0",
    "id": "sasktoday-obituaries",
    "name": "SaskToday Obituaries",
-   "category": "people-search",
+   "category": "other",
    "domain": "sasktoday.ca",
    "checked_at": "2026-10-26T13:05:32+00:00",
    "liveness": "alive",
@@ -170187,7 +170639,7 @@
    "schema_version": "3.0.0",
    "id": "moosejawtoday-obituaries",
    "name": "MooseJawToday Obituaries",
-   "category": "people-search",
+   "category": "other",
    "domain": "moosejawtoday.com",
    "checked_at": "2026-10-26T13:05:28+00:00",
    "liveness": "blocked",
@@ -170279,7 +170731,7 @@
    "schema_version": "3.0.0",
    "id": "tbnewswatch-obituaries",
    "name": "TBNewsWatch Obituaries",
-   "category": "people-search",
+   "category": "other",
    "domain": "tbnewswatch.com",
    "checked_at": "2026-10-26T13:05:32+00:00",
    "liveness": "blocked",
@@ -170371,7 +170823,7 @@
    "schema_version": "3.0.0",
    "id": "burlingtontoday-obituaries",
    "name": "BurlingtonToday Obituaries",
-   "category": "people-search",
+   "category": "other",
    "domain": "burlingtontoday.com",
    "checked_at": "2026-10-26T13:05:28+00:00",
    "liveness": "blocked",
@@ -170463,7 +170915,7 @@
    "schema_version": "3.0.0",
    "id": "miltontoday-obituaries",
    "name": "MiltonToday Obituaries",
-   "category": "people-search",
+   "category": "other",
    "domain": "miltontoday.ca",
    "checked_at": "2026-10-26T13:05:28+00:00",
    "liveness": "blocked",
@@ -170555,7 +171007,7 @@
    "schema_version": "3.0.0",
    "id": "thoroldtoday-obituaries",
    "name": "ThoroldToday Obituaries",
-   "category": "people-search",
+   "category": "other",
    "domain": "thoroldtoday.ca",
    "checked_at": "2026-10-26T13:05:32+00:00",
    "liveness": "blocked",
@@ -175810,7 +176262,7 @@
    "schema_version": "3.0.0",
    "id": "arbor-memorial",
    "name": "Arbor Memorial",
-   "category": "people-search",
+   "category": "other",
    "domain": "arbormemorial.ca",
    "checked_at": "2026-11-02T10:18:36+00:00",
    "liveness": "alive",
@@ -177817,486 +178269,11 @@
     }
    ]
   },
-  "monaco-monuments-ontario-obituaries": {
-   "schema_version": "3.0.0",
-   "id": "monaco-monuments-ontario-obituaries",
-   "name": "Monaco Monuments Ontario Obituaries",
-   "category": "people-search",
-   "domain": "monacomonuments.ca",
-   "checked_at": "2026-11-04T23:50:04+00:00",
-   "liveness": "alive",
-   "liveness_detail": "catalog URL loaded",
-   "homepage": "https://monacomonuments.ca/",
-   "logo_url": "https://monacomonuments.ca/wp-content/uploads/2020/08/logo-main.png",
-   "images": [
-    {
-     "url": "https://monacomonuments.ca/wp-content/uploads/2026/11/monaco-site-icon-32x32.png",
-     "kind": "icon",
-     "source_page": "https://monacomonuments.ca/"
-    },
-    {
-     "url": "https://monacomonuments.ca/wp-content/uploads/2026/11/monaco-site-icon-192x192.png",
-     "kind": "icon",
-     "source_page": "https://monacomonuments.ca/"
-    },
-    {
-     "url": "https://monacomonuments.ca/wp-content/uploads/2026/11/monaco-site-icon-180x180.png",
-     "kind": "apple_touch_icon",
-     "source_page": "https://monacomonuments.ca/"
-    },
-    {
-     "url": "https://monacomonuments.ca/wp-content/uploads/2020/08/logo-main.png",
-     "kind": "logo",
-     "source_page": "https://monacomonuments.ca/"
-    },
-    {
-     "url": "https://monacomonuments.ca/wp-content/uploads/2020/08/mon-logo.png",
-     "kind": "logo",
-     "source_page": "https://monacomonuments.ca/"
-    }
-   ],
-   "theme_color": null,
-   "languages": [
-    "en"
-   ],
-   "legal_name": null,
-   "search": {
-    "available": false,
-    "method": "none",
-    "page_url": null,
-    "form_action": null,
-    "inputs": [],
-    "url_pattern": null,
-    "directory_prefixes": [],
-    "paywall": null,
-    "login_wall": null
-   },
-   "removal": {
-    "url": "https://monacomonuments.ca/ontario-obituaries/",
-    "final_url": "https://monacomonuments.ca/ontario-obituaries/",
-    "http_status": 200,
-    "kinds": [
-     "opt_out"
-    ],
-    "channels": [
-     "web_form",
-     "email",
-     "postal_mail",
-     "phone"
-    ],
-    "emails": [
-     {
-      "email": "info@monacomonuments.ca",
-      "confidence": "uncertain",
-      "source_url": "https://monacomonuments.ca/"
-     }
-    ],
-    "phones": [
-     "(905) 392-0778"
-    ],
-    "postal_address": "P.O. Box 698 Paisley, Ontario Palm Harbour, Florida Palmerston Paraiso, Costa Rica Paris Par",
-    "portal": null,
-    "form_fields": [
-     {
-      "name": "ontario_obituaries_search",
-      "type": "text",
-      "canonical": null,
-      "required": false,
-      "autocomplete": null,
-      "placeholder": "Search obituaries..."
-     },
-     {
-      "name": "ontario_obituaries_location",
-      "type": "select",
-      "canonical": null,
-      "required": false,
-      "autocomplete": null,
-      "placeholder": null,
-      "options": [
-       "All Locations",
-       "Acton",
-       "Agincourt",
-       "Agincourt, Ontario",
-       "Ailsa Craig",
-       "Ajax",
-       "Ajax, Ontario",
-       "Ajijic, Mexico",
-       "Albright Manor Beamsville",
-       "Aldergrove",
-       "Alderwood",
-       "Alderwood United Church, Park Lawn Cemetery",
-       "Alexandria",
-       "Alfred",
-       "Alliston",
-       "Alliston, Ontario",
-       "Almonte",
-       "Alvinston",
-       "Amherstburg",
-       "Ancaste",
-       "Ancaster",
-       "Ariss",
-       "Armour Rd Peterborough",
-       "Arnprior",
-       "Atha, ON",
-       "Athens",
-       "Atherley",
-       "Aurora",
-       "Aurora, Ontario",
-       "Autlan",
-       "Aylmer",
-       "Ayr",
-       "Ayr, Ontario",
-       "Ayton, Ontario",
-       "Baden",
-       "Bahamas",
-       "Barbados",
-       "Barrie",
-       "Barrie, Ontario",
-       "Bath, Ontario",
-       "Bayfield, Ontario",
-       "Baysville",
-       "Beamsville",
-       "Beaverton",
-       "Beaverton, Ontario",
-       "Bedford",
-       "Bedford, Nova Scotia",
-       "Beechwood Avenue Ottawa",
-       "Beeton",
-       "Belfast, Northern Ireland, Canada",
-       "Belle River",
-       "Belleville",
-       "Belmont",
-       "Belmont Lake, Ontario",
-       "Benchlands, Alberta",
-       "Bethany, Ontario",
-       "Bethell House Hospice",
-       "Bexley",
-       "Binbrook",
-       "Blenheim",
-       "Bloomington",
-       "Bobcaygeon",
-       "Bolton",
-       "Bolton, Ontario",
-       "Bothwell",
-       "Boucher Street East Meaford",
-       "Bowmanville",
-       "Boynton Beach, Florida",
-       "Bracebridge",
-       "Bradford",
-       "Bradford, Ontario",
-       "Bramalea",
-       "Brampton",
-       "Brampton, Cataract, Mono Township, Orangeville",
-       "Brampton, Ontario",
-       "Brant St Burlington",
-       "Brantford",
-       "Brantford, Ontario",
-       "Breslau",
-       "Breslau, Ontario",
-       "Bridgewater",
-       "Bridgewater, NS",
-       "Brighton",
-       "Brockville",
-       "Burford",
-       "Burlington",
-       "Burlington, Ontario",
-       "Burnaby",
-       "Bushnell",
-       "Caistor Centre",
-       "Caledon",
-       "Caledonia",
-       "Calgary",
-       "Calgary, AB",
-       "Cambray, Ontario",
-       "Cambridge",
-       "Cambridge, Ontario",
-       "Campbell House",
-       "Campbell River, BC",
-       "Campbellford, Ontario",
-       "Campbellville",
-       "Canada",
-       "Cannifton",
-       "Cannington",
-       "Cardinal, Ontario",
-       "Carleton Place",
-       "Carlisle",
-       "Cartier",
-       "Catherines",
-       "Cayuga",
-       "Chagrin Falls, OH, USA",
-       "Chambly",
-       "Charing Cross Street Brantford",
-       "Charlton, ON",
-       "Châteauguay, Québec",
-       "Chatham",
-       "Chatham-Kent",
-       "Cherry Hill",
-       "Chesley",
-       "Chesterfield, VA",
-       "Chicopee",
-       "Chilliwack",
-       "China Grove, NC",
-       "Chippawa",
-       "Chippawa Creek at Bella Care Residence",
-       "Civitella, Abruzzo, Italy",
-       "Clifford",
-       "Clinton",
-       "Clinton Township",
-       "Cobalt",
-       "Cobourg",
-       "Cobourg, Ontario",
-       "Cochrane",
-       "Cochrane, AB",
-       "Colborne",
-       "Coldwater",
-       "Coleraine, Northern Ireland",
-       "Collingwood",
-       "Collingwood, Ontario",
-       "Colpitts Settlement",
-       "Combermere",
-       "Conestogo",
-       "Cookstown",
-       "Corner Brook",
-       "Cornwall",
-       "Corunna",
-       "Cottam",
-       "Courtenay",
-       "Courtice",
-       "DeBary, Florida",
-       "Debden",
-       "Delhi",
-       "Delta",
-       "Deseronto",
-       "Devon, AB",
-       "Digby",
-       "Don Mills",
-       "Don Valley Village, Toronto",
-       "Douro",
-       "Downsview Long Term Care",
-       "Drayton",
-       "Dresden",
-       "Dresden, Germany",
-       "Dryden",
-       "Dryden, Ontario",
-       "Dublin, Ireland",
-       "Dublin, Ohio",
-       "Duncan",
-       "Dundalk, Ontario",
-       "Dundas",
-       "Dundas, Ontario",
-       "Dunnville",
-       "Durham",
-       "East Amherst, New York",
-       "East Essex",
-       "East Hamilton",
-       "East Oshawa",
-       "East Windsor",
-       "East York",
-       "East York, Toronto",
-       "Edmonton",
-       "Edmonton, Alberta, Ontario",
-       "Eganville, Ontario",
-       "El Salvador",
-       "Elizabethtown",
-       "Elliot Lake",
-       "Elmira",
-       "Elmira, Ontario",
-       "Elora",
-       "Embro",
-       "Emeryville",
-       "empty",
-       "Erieau",
-       "Erin, Ontario",
-       "Essex",
-       "Etobicoke",
-       "Etobicoke, Ontario",
-       "Everette",
-       "Exeter",
-       "Fallbrook",
-       "Fenelon Falls",
-       "Fennell Avenue East Hamilton",
-       "Fenwick",
-       "Fenwick and Fonthill",
-       "Fenwick, Ont",
-       "Fergus",
-       "Fergus, Ontario",
-       "Finch",
-       "Fingal",
-       "Flesherton",
-       "Fletcher",
-       "Florida",
-       "Fonthill",
-       "Fonthill, Ontario",
-       "Fordwich",
-       "Fort Erie",
-       "Fort Frances",
-       "Fort McMurray",
-       "Fort Myers",
-       "Foxboro",
-       "Frankston, Texas",
-       "Frederick Street Kitchener",
-       "Fredericton",
-       "Fruitland",
-       "Gainesville",
-       "Galt",
-       "Galt, Cambridge, Ontario",
-       "Galt, Ontario",
-       "Gananoque",
-       "Garden City",
-       "Gatineau",
-       "Georgetown",
-       "Georgina",
-       "Glenburnie",
-       "Glencoe",
-       "Gloucester",
-       "Goderich",
-       "Grand Bend",
-       "Grande Prairie",
-       "Gravenhurst",
-       "Gravenhurst, Ontario",
-       "Greater Niagara General Hospital",
-       "Greater Sudbury",
-       "Greensville",
-       "Grimsby",
-       "Grimsby, Ontario",
-       "Grove",
-       "Guangzhou",
-       "Guelph",
-       "Guelph Line Burlington",
-       "Guelph, Ontario",
-       "Gull Lake, Ontario",
-       "Hagersville",
-       "Haileybury",
-       "Haliburton",
-       "Haliburton, Ontario",
-       "Halifax",
-       "Hamilton",
-       "Hamilton and Stoney Creek",
-       "Hamilton, Ontario",
-       "Hanmer",
-       "Hanoi, Vietnam",
-       "Hanover",
-       "Hanover, Ontario",
-       "Harriston",
-       "Havelock",
-       "Havelock, New Brunswick",
-       "Hawkesbury",
-       "Hepworth",
-       "Hermantown",
-       "Hespeler",
-       "Highgate",
-       "Hinsdale",
-       "Holland Landing",
-       "Houston",
-       "Houston, Texas",
-       "Huntsville",
-       "Huntsville, Ontario",
-       "India",
-       "Ingersoll",
-       "Ingersoll, Ontario",
-       "Ingleside",
-       "Innisfil",
-       "Ireland",
-       "Italy",
-       "Itri, Italy",
-       "Ivins, Utah",
-       "Jackson's Point, ON",
-       "Jarvis",
-       "Jordan",
-       "Jordan, Ontario",
-       "Jupiter, Florida",
-       "Kanata",
-       "Kawartha Lakes",
-       "Kawartha Lakes, Ontario",
-       "Kelowna",
-       "Kelowna, BC",
-       "Kemptville",
-       "Kennedy Rd Toronto",
-       "Kenora",
-       "Kent county, England",
-       "Keswick",
-       "Kincardine",
-       "Kincardine Township",
-       "King City",
-       "King St Midland",
-       "King Street East Dundas",
-       "King Street East Hamilton",
-       "King Street Hamilton",
-       "King Street West Hamilton",
-       "Kingsford",
-       "Kingston",
-       "Kingston, Ont",
-       "Kingston, Ontario",
-       "Kingsville",
-       "Kirkland",
-       "Kitchener",
-       "Kitchener-Waterloo",
-       "Kitchener, Ontario",
-       "La Passe"
-      ]
-     }
-    ],
-    "csrf_field_name": null,
-    "requires_profile_url": null,
-    "captcha": {
-     "provider": null,
-     "sitekey": null,
-     "pages": []
-    },
-    "consent_vendor": null,
-    "success_text": null,
-    "suppression_not_deletion": null,
-    "processing_days": null,
-    "processing_text": null
-   },
-   "bot_defense": {
-    "vendor": null,
-    "outcome": "none"
-   },
-   "legal": {
-    "privacy_policy_url": null,
-    "terms_url": null,
-    "automation_prohibited": null,
-    "automation_clause": null,
-    "residency": [
-     "CA-QC",
-     "CA-BC"
-    ],
-    "authorized_agent": null,
-    "data_categories": []
-   },
-   "pages": [
-    {
-     "url": "https://monacomonuments.ca/",
-     "final_url": "https://monacomonuments.ca/",
-     "status": 200,
-     "role": "home",
-     "title": "Monaco Monuments — Custom Headstones, Monuments & Memorials in Ontario",
-     "liveness": "alive"
-    },
-    {
-     "url": "https://www.monacomonuments.ca/",
-     "final_url": "https://monacomonuments.ca/",
-     "status": 200,
-     "role": "home",
-     "title": "Monaco Monuments — Custom Headstones, Monuments & Memorials in Ontario",
-     "liveness": "alive"
-    },
-    {
-     "url": "https://monacomonuments.ca/ontario-obituaries/",
-     "final_url": "https://monacomonuments.ca/ontario-obituaries/",
-     "status": 200,
-     "role": "catalog",
-     "title": "Ontario Obituaries — Monaco Monuments",
-     "liveness": "alive"
-    }
-   ]
-  },
   "mediat-necrologie": {
    "schema_version": "3.0.0",
    "id": "mediat-necrologie",
    "name": "MédiAT nécrologie",
-   "category": "people-search",
+   "category": "other",
    "domain": "mediat.ca",
    "checked_at": "2026-11-04T23:50:03+00:00",
    "liveness": "alive",
@@ -178604,7 +178581,7 @@
    "schema_version": "3.0.0",
    "id": "catholic-cemeteries-and-funeral-services-toronto",
    "name": "Catholic Cemeteries & Funeral Services Toronto",
-   "category": "people-search",
+   "category": "other",
    "domain": "catholic-cemeteries.ca",
    "checked_at": "2026-11-04T23:50:03+00:00",
    "liveness": "alive",
@@ -178736,7 +178713,7 @@
    "schema_version": "3.0.0",
    "id": "alternatives-funeral-and-cremation",
    "name": "Alternatives Funeral & Cremation",
-   "category": "people-search",
+   "category": "other",
    "domain": "myalternatives.ca",
    "checked_at": "2026-11-04T23:50:03+00:00",
    "liveness": "alive",
@@ -178895,7 +178872,7 @@
    "schema_version": "3.0.0",
    "id": "east-coast-memorial",
    "name": "East Coast Memorial",
-   "category": "people-search",
+   "category": "other",
    "domain": "eastcoastmemorial.ca",
    "checked_at": "2026-11-04T23:50:03+00:00",
    "liveness": "alive",
@@ -179009,7 +178986,7 @@
    "schema_version": "3.0.0",
    "id": "mysteinbach-obituaries",
    "name": "mySteinbach obituaries",
-   "category": "people-search",
+   "category": "other",
    "domain": "mysteinbach.ca",
    "checked_at": "2026-11-04T23:50:03+00:00",
    "liveness": "alive",
@@ -179452,9 +179429,7 @@
     "url_pattern": "https://www.phonevalidator.com/search",
     "directory_prefixes": [],
     "paywall": null,
-    "login_wall": null,
-    "captcha_provider": "turnstile",
-    "captcha_sitekey": "0x4AAAAAAFD124ZQCmQX8wsU"
+    "login_wall": null
    },
    "removal": {
     "url": "https://www.phonevalidator.com/privacy-request",

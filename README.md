@@ -54,9 +54,9 @@ Search the CSV before you send extra personal details. Notes say when a page ret
 
 | Category | File | Entries |
 | --- | --- | ---: |
-| People search | [brokers/people-search.md](brokers/people-search.md) | 238 |
+| People search | [brokers/people-search.md](brokers/people-search.md) | 237 |
 | Background checks | [brokers/background-checks.md](brokers/background-checks.md) | 69 |
-| Marketing | [brokers/marketing.md](brokers/marketing.md) | 131 |
+| Marketing | [brokers/marketing.md](brokers/marketing.md) | 132 |
 | Credit and financial | [brokers/credit-financial.md](brokers/credit-financial.md) | 18 |
 | Public records | [brokers/public-records.md](brokers/public-records.md) | 108 |
 | Other | [brokers/other.md](brokers/other.md) | 285 |
