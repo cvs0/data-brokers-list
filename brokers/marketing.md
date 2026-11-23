@@ -2,7 +2,7 @@
 
 Marketing and audience brokers. The link is an opt-out or the privacy page the company publishes for consumer requests.
 
-131 entries. Link responses were checked on 2026-10-01 unless a note says otherwise.
+132 entries. Link responses were checked on 2026-10-01 unless a note says otherwise.
 
 | Broker | Opt-out / privacy URL | Notes |
 | --- | --- | --- |
@@ -17,7 +17,7 @@ Marketing and audience brokers. The link is an opt-out or the privacy page the c
 | AeroLeads | https://aeroleads.com/gdpr | Privacy notice or privacy-policy page. Use the state-rights, do-not-sell, or request section. |
 | Affluense.ai | https://www.affluense.ai/privacy-policy | Privacy notice or privacy-policy page. Use the state-rights, do-not-sell, or request section. |
 | Aged Solar Leads | https://agedsolarleads.com/do-not-sell-or-share-my-information/ | Opt-out or consumer privacy-request page. |
-| Agile Education Marketing, LLC | https://agile-ed.com/california-privacy-rights/ | Privacy notice or privacy-policy page. Use the state-rights, do-not-sell, or request section. Email: personal_data_opt_out@agile-ed.com. An automated check on 2026-10-01 got HTTP 403. A recheck on 2026-11-03 loaded the page (HTTP 200). |
+| Agile Education Marketing, LLC | https://agile-ed.com/privacy-choices/ | Privacy choices page with the Privacy Request Portal, a Do Not Sell or Share request path, and delete or correct requests. Email: personal_data_opt_out@agile-ed.com. On 2026-11-23 the old URL (https://agile-ed.com/california-privacy-rights/) redirected to this page, which answered HTTP 200. |
 | AGR Marketing Solutions LLC | https://agrmarketingsolutions.com/privacy-policy/ | Privacy notice or privacy-policy page. Use the state-rights, do-not-sell, or request section. |
 | AlikeAudience, Inc. | https://www.alikeaudience.com/privacy-policy/ | Privacy notice or privacy-policy page. Use the state-rights, do-not-sell, or request section. |
 | AllPeople | https://allpeople.com/removal | Opt-out or consumer privacy-request page. Automated checks on 2026-10-01 (HTTP 403) and 2026-11-03 (HTTP 403) were blocked. Open the link in a browser. |
@@ -56,6 +56,7 @@ Marketing and audience brokers. The link is an opt-out or the privacy page the c
 | Data Axle (InfoUSA) | https://www.data-axle.com/privacy-rights-request/ | Web privacy rights form. Email: privacyteam@data-axle.com. Open-dataset difficulty: easy. An automated check on 2026-10-01 got HTTP 403. A recheck on 2026-11-03 loaded the page (HTTP 200). On 2026-10-29 the old URL (https://www.data-axle.com/do-not-sell-my-data/) redirected here, and this page answered HTTP 200. No request was submitted. |
 | Datagma | https://form.typeform.com/to/MCuF90xu | Privacy notice or privacy-policy page. Use the state-rights, do-not-sell, or request section. |
 | DataLead | https://data-lead.com/support/removal_request | Opt-out or consumer privacy-request page. |
+| Dataline, Inc. | https://datalinedata.com/do-not-sell-my-information/ | Do Not Sell My Information web form (name, email, address). Covers opt-out, delete, and correct requests; email privacy.officer@datalinedata.com. Listed in the California data broker registry. Checked 2026-11-23: the page answered HTTP 200. No request was submitted. |
 | Demandbase, Inc. | https://www.demandbase.com/privacy-center.html?ketch_preferences_tab=rightsTab | Opt-out or consumer privacy-request page. |
 | Digital Advertising Alliance opt-out | https://optout.aboutads.info/ | Browser opt-out for participating interest-based advertisers. Linked from YourAdChoices (youradchoices.com). An automated check on 2026-10-01 got HTTP 429. A recheck on 2026-11-03 loaded the page (HTTP 200). |
 | Distribution Processing Center | https://dpcoptout.com/ | Opt-out or consumer privacy-request page. |

@@ -241,7 +241,7 @@ Registered data brokers and privacy-request pages that do not fit the categories
 | Snovio Inc | https://snov.io/do-not-sell-my-personal-information | Opt-out or consumer privacy-request page. The Markup and CalMatters (2025) found page code that hid this URL from search engines. |
 | Solar Connect, LLC | https://www.bluefireleads.com/privacy-policy.php | Privacy notice or privacy-policy page. Use the state-rights, do-not-sell, or request section. Privacy-rights page submitted to the California Data Broker Registry. |
 | Source Path Digital | https://sourcepathdigital.com/california-consumer-portal/ | Opt-out or consumer privacy-request page. |
-| Spy Dialer | https://www.spydialer.com/consumers/ | Web form. Open-dataset difficulty: easy. On 2026-10-29 the old URL (https://www.spydialer.com/optout.aspx) redirected here, and this page answered HTTP 200. No request was submitted. |
+| Spy Dialer | https://www.spydialer.com/optout | Web form. On 2026-11-23 the old URL (https://www.spydialer.com/consumers/) redirected to this Do Not Sell/Right to Opt-out page, which answered HTTP 200. No request was submitted. |
 | SpyCloud, Inc. | https://spycloud.com/legal/privacy-policy/ | Privacy notice or privacy-policy page. Use the state-rights, do-not-sell, or request section. |
 | StateRecords.org network (statecourts.org) | https://www.statecourts.org/optout/ | Opt-out or consumer privacy-request page. Email: privacy@courtrecords.us. |
 | StatSocial, Inc | https://www.statsocial.com/privacy-policy | Privacy notice or privacy-policy page. Use the state-rights, do-not-sell, or request section. |

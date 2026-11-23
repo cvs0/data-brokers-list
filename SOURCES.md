@@ -77,6 +77,8 @@ On 2026-11-03 the catalog URL of each row that v4 marks offline (liveness `dead`
 
 On 2026-11-03 the catalog URLs whose notes still said the 2026-10-01 check got HTTP 403 or 429 were fetched again, one at a time. 74 rows loaded (HTTP 200); their notes now say so and their `http_status` is `200`. 63 rows were blocked again (HTTP 403); their notes give both dates. 25 rows kept the old wording because the recheck was inconclusive (a challenge page, HTTP 202, HTTP 404, or no connection).
 
+A weekly pass on 2026-11-23 fetched every opt-out URL and homepage again, four at a time with a 15 second timeout. Spy Dialer's old /consumers/ URL now redirects to its Do Not Sell/Right to Opt-out page, so the row uses that page. Agile Education Marketing's old California privacy page redirects to its Your Privacy Choices page, so the row uses that page. PhoneNumberInfo.us's /contact.php answers HTTP 404 and /contact answers HTTP 200, so the row uses /contact. The PhoneBooks.com root now redirects to Spy Dialer, and its note says so. Monaco Monuments Ontario Obituaries moved to `data/removed-brokers.csv` because its obituary page answers HTTP 410 Gone. Dataline, Inc. was added from the California data broker registry after its Do Not Sell My Information form loaded. Timeouts, Cloudflare 52x errors, TLS failures, and 403 pages from one network were not treated as offline, and those rows were left unchanged. No request was submitted.
+
 The Markdown files in `brokers/` repeat `name`, `url`, and `notes` for reading. They do not add URLs.
 
 ## Columns
@@ -106,9 +108,9 @@ A row can list more than one source, for example `persprotect;markup`.
 
 | Category | File | Entries |
 | --- | --- | ---: |
-| `people-search` | [brokers/people-search.md](brokers/people-search.md) | 238 |
+| `people-search` | [brokers/people-search.md](brokers/people-search.md) | 237 |
 | `background-checks` | [brokers/background-checks.md](brokers/background-checks.md) | 69 |
-| `marketing` | [brokers/marketing.md](brokers/marketing.md) | 131 |
+| `marketing` | [brokers/marketing.md](brokers/marketing.md) | 132 |
 | `credit-financial` | [brokers/credit-financial.md](brokers/credit-financial.md) | 18 |
 | `public-records` | [brokers/public-records.md](brokers/public-records.md) | 108 |
 | `other` | [brokers/other.md](brokers/other.md) | 285 |
